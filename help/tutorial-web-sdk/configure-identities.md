@@ -3,10 +3,10 @@ title: 配置身份命名空间
 description: 了解如何配置身份命名空间以与Adobe Experience Platform Web SDK结合使用。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2b5013ea01bf4e2388a6e1fc046b1685945be238
 workflow-type: tm+mt
-source-wordcount: '666'
-ht-degree: 6%
+source-wordcount: '695'
+ht-degree: 5%
 
 ---
 
@@ -52,6 +52,11 @@ ht-degree: 6%
 
 1. 打开 [数据收集界面](https://launch.adobe.com/){target=&quot;_blank&quot;}
 1. 选择您在教程中使用的沙盒
+
+   >[!NOTE]
+   >
+   >如果您是基于平台的应用程序（如实时CDP）的客户，我们建议在本教程中使用一个开发沙盒。 如果没有，请使用 **[!UICONTROL 生产]** 沙盒。
+
 1. 选择 **[!UICONTROL 标识]** 在左侧导航中
 1. 选择 **[!UICONTROL 浏览]**
 

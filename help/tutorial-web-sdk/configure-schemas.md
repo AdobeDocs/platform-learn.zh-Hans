@@ -3,9 +3,9 @@ title: 为Web数据创建XDM模式
 description: 了解如何在数据收集界面中为Web数据创建XDM模式。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
+source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1125'
 ht-degree: 5%
 
 ---
@@ -47,7 +47,7 @@ XDM架构是描述Experience Platform中数据的标准方式，它允许符合�
 
    >[!NOTE]
    >
-   >如果您是基于平台的应用程序（如实时CDP）的客户，我们建议在本教程中使用一个开发沙盒。
+   >如果您是基于平台的应用程序（如实时CDP）的客户，我们建议在本教程中使用一个开发沙盒。 如果没有，请使用 **[!UICONTROL 生产]** 沙盒。
 
 1. 转到 **[!UICONTROL 模式]** 在左侧导航中
 1. 选择 **[!UICONTROL 创建架构]** 按钮
@@ -63,10 +63,10 @@ XDM架构是描述Experience Platform中数据的标准方式，它允许符合�
 
 >[!TIP]
 > 
->在本练习中，您为Web数据收集添加了建议的预定义字段组： _**[!UICONTROL AEP Web SDK ExperienceEvent Mixin]**_&#x200B;和 _**[!UICONTROL 消费者体验事件]**_.
+>在本练习中，您为Web数据收集添加了建议的预定义字段组： _**[!UICONTROL AEP Web SDK ExperienceEvent]**_&#x200B;和 _**[!UICONTROL 消费者体验事件]**_.
 
-1. 保留 **[!UICONTROL 使用现有字段组]** 选中单选按钮
-1. 搜索 [!UICONTROL `AEP Web SDK ExperienceEvent Mixin`]
+1. 在 **[!UICONTROL 字段组]** 选择 **[!UICONTROL 添加]**
+1. 搜索 [!UICONTROL `AEP Web SDK ExperienceEvent`]
 1. 选中框
 1. 搜索 [!UICONTROL `Consumer Experience Event`]
 1. 选中框
@@ -83,7 +83,7 @@ XDM架构是描述Experience Platform中数据的标准方式，它允许符合�
 
 ![Luma Web事件数据](assets/schema-luma-web-event-data.png)
 
-使用这两个字段组，请注意您有权访问Web上数据收集所需的最常用键值对。 单击任一字段组名称时，界面会突出显示该字段组所属的键值对组。 在以下示例中，您可以看到哪些组属于 **[!UICONTROL 消费者体验事件]**.
+使用这两个字段组，请注意您有权访问Web上数据收集所需的最常用键值对。 的 [!UICONTROL 显示名称] 在基于平台的应用程序的区段生成器界面中，每个字段的显示名称都会向营销人员显示，您可以根据自己的需求更改标准字段的显示名称。 您还可以删除您不希望的字段。 单击任一字段组名称时，界面会突出显示该字段组所属的键值对组。 在以下示例中，您可以看到哪些组属于 **[!UICONTROL 消费者体验事件]**.
 
 ![架构字段组](assets/schema-consumer-experience-event.jpg)
 

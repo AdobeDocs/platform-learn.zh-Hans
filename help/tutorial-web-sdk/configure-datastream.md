@@ -3,9 +3,9 @@ title: 配置数据流
 description: 了解如何启用数据流并配置Experience Cloud解决方案。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 762195148f7594e30b361546941dfcd8076ab7b1
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '450'
 ht-degree: 4%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >如果您是基于平台的应用程序（如实时CDP）的客户，我们建议在本教程中使用一个开发沙盒。
+   >如果您是基于平台的应用程序（如实时CDP）的客户，我们建议在本教程中使用一个开发沙盒。 如果没有，请使用 **[!UICONTROL 生产]** 沙盒。
 
 1. 转到 **[!UICONTROL 数据流]** 在左侧导航中
 1. 选择 **[!UICONTROL 新数据流]** 屏幕右侧。

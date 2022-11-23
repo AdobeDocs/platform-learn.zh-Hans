@@ -3,9 +3,9 @@ title: 配置教程的权限
 description: 了解如何请求访问Experience PlatformWeb SDK，并配置完成“使用Web SDK实施Adobe Experience Cloud”教程所需的权限。
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7377d87394d52bc9ed1f35f071a57bc341d5f969
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 6%
 
 ---
@@ -16,14 +16,14 @@ ht-degree: 6%
 
 ## 数据收集
 
-* 拥有 **[!UICONTROL 开发]**, **[!UICONTROL 编辑]**, **[!UICONTROL 批准]**, **[!UICONTROL 发布]**, **[!UICONTROL 管理扩展]**&#x200B;和 **[!UICONTROL 管理环境]** 标记属性。 有关标记权限的更多信息，请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* 拥有 **[!UICONTROL 开发]**, **[!UICONTROL 编辑]**, **[!UICONTROL 批准]**, **[!UICONTROL 发布]**, **[!UICONTROL 管理扩展]**, **[!UICONTROL 管理环境]**&#x200B;和 **[!UICONTROL 管理资产]**. 有关标记权限的更多信息，请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * 如果您将要完成可选事件转发课程，请获得包含边缘转发和权限项的产品许可证 **[!UICONTROL 平台]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
 
 这些功能应当可供所有Experience Cloud客户使用，即使您不是基于平台的应用程序（如Real-time CDP）的客户也是如此。
 
-* 访问 **默认生产** 沙盒。
+* 访问 **默认生产**, **&quot;Prod&quot;** 沙盒(.
 * 访问 **[!UICONTROL 管理架构]** 和 **[!UICONTROL 查看架构]** 在 **[!UICONTROL 数据建模]**
 * 访问 **[!UICONTROL 管理身份命名空间]** 和 **[!UICONTROL 查看身份命名空间]** 在 **[!UICONTROL Identity Management]**
 * 访问 **[!UICONTROL 管理数据流]** 和 **[!UICONTROL 查看数据流]** 在 **[!UICONTROL 数据收集]**
