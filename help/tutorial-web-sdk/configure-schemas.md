@@ -3,9 +3,9 @@ title: 为Web数据创建XDM模式
 description: 了解如何在数据收集界面中为Web数据创建XDM模式。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: f493b0d53bba223f78683551a1a43e25bf43ee8d
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1080'
 ht-degree: 5%
 
 ---
@@ -78,6 +78,7 @@ XDM架构是描述Experience Platform中数据的标准方式，它允许符合�
 
 1. 在**[!UICONTROL 合成**] 面板，选择 `Untitled schema name`
 1. 在 **[!UICONTROL 架构属性]** 面板，输入 **[!UICONTROL 显示名称]** `Luma Web Event Data`
+1. 选择 **[!UICONTROL 显示名称]** 字段来激活 **[!UICONTROL 保存]** 选项
 1. 选择 **[!UICONTROL 保存]**
 
 ![Luma Web事件数据](assets/schema-luma-web-event-data.png)
