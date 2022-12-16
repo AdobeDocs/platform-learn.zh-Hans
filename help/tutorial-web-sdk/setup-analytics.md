@@ -3,9 +3,9 @@ title: 使用Experience PlatformWeb SDK设置Adobe Analytics
 description: 了解如何使用Experience PlatformWeb SDK设置Adobe Analytics。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: eb635ea8befa6a908df5bed1c05b48deaf164cb6
 workflow-type: tm+mt
-source-wordcount: '3500'
+source-wordcount: '3554'
 ht-degree: 1%
 
 ---
@@ -121,7 +121,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 ### 创建电子商务数据元素
 
-在创建数据元素课程中，您 [创建的JavaScript数据元素](create-data-elements.md#create-data-elements-to-capture-the-data-layer) 捕获了内容和身份详细信息。 现在，您将创建其他数据元素以捕获电子商务数据。 因为 [Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;}对购物车中的产品详细信息页面和产品使用不同的数据层结构，您必须为每个方案创建数据元素。 使用以下提供的代码片段：
+在创建数据元素课程中，您 [创建的JavaScript数据元素](create-data-elements.md#create-data-elements-to-capture-the-data-layer) 捕获了内容和身份详细信息。 现在，您将创建其他数据元素以捕获电子商务数据。 因为 [Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html){target=&quot;_blank&quot;}对购物车中的产品详细信息页面和产品使用不同的数据层结构，您必须为每个方案创建数据元素。 您必须创建一些自定义代码数据元素，才能从Luma数据层获取所需的内容，在您自己的网站上实施时，可能需要（也可能不需要）该数据层。 在这种情况下，您需要循环查看一系列购物车项目，以获取每个产品的特定详细信息。 使用以下提供的代码片段：
 
 1. 打开您在教程中使用的标记属性
 1. 转到 **[!UICONTROL 数据元素]**
