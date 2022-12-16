@@ -3,9 +3,9 @@ title: 创建标记规则
 description: 了解如何使用标记规则，通过XDM对象将事件发送到Platform Edge Network。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7b978e1d98aa539c98b7f11ae33432729ac33bea
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '849'
 ht-degree: 4%
 
 ---
@@ -54,6 +54,8 @@ ht-degree: 4%
 
 ## 创建标记规则
 
+在标记中，规则用于在各种条件下执行操作（触发调用）。 您将使用第一个规则，使用Web SDK的 [!UICONTROL 发送事件] 操作。 在本教程的后面，您将根据访客所在的页面类型发送不同版本的XDM对象。 因此，您将使用规则条件排除其他类型的页面。
+
 要创建标记规则，请执行以下操作：
 
 1. 打开您在本教程中使用的标记属性
@@ -84,7 +86,7 @@ ht-degree: 4%
 1. 为以下URL路径添加另外三个例外
 
    * **`Core - checkout page`** for `/content/luma/us/en/user/checkout.html`
-   * **`Core - thank you page`** 表示 `/content/luma/us/en/user/checkout/order/thank-you.html`
+   * **`Core - thank you page`** for `/content/luma/us/en/user/checkout/order/thank-you.html`
    * **`Core - product page`** 表示 `/products/` Regex开关打开时
 
    ![添加条件](assets/rule-condition-exception-all.png)
