@@ -3,7 +3,7 @@ title: 为Web数据创建XDM模式
 description: 了解如何在数据收集界面中为Web数据创建XDM模式。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: fc0567823039f8a2005aa64a3f10c5a2564cbf64
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 5%
@@ -47,7 +47,7 @@ XDM架构是描述Experience Platform中数据的标准方式，它允许符合�
 
    >[!NOTE]
    >
-   >如果您是基于平台的应用程序（如实时CDP）的客户，我们建议在本教程中使用一个开发沙盒。 如果没有，请使用 **[!UICONTROL 生产]** 沙盒。
+   >如果您是基于平台的应用程序(如Real-Time CDP)的客户，我们建议在本教程中使用开发沙盒。 如果没有，请使用 **[!UICONTROL 生产]** 沙盒。
 
 1. 转到 **[!UICONTROL 模式]** 在左侧导航中
 1. 选择 **[!UICONTROL 创建架构]** 按钮

@@ -8,7 +8,7 @@ feature: Queries
 kt: 4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 2%

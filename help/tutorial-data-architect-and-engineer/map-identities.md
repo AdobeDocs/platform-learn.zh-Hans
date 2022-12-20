@@ -8,7 +8,7 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '954'
 ht-degree: 2%
@@ -124,7 +124,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 ### 为主标识标记XDM字段
 
-需要与实时客户用户档案一起使用的每个架构都指定一个主标识。 并且所摄取的每个记录都必须具有该字段的值。
+与实时客户配置文件一起使用的每个架构都需要指定主标识。 并且所摄取的每个记录都必须具有该字段的值。
 
 让我们将主标识添加到 `Luma Loyalty Schema`:
 

@@ -2,7 +2,7 @@
 title: 创建数据流
 description: 创建数据流
 exl-id: 4a33a7f3-8bd8-4d28-9ae4-a0609444485f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 公司通常具有任何网站更新的促销路径。 公司中的某人（营销人员或工程师，具体取决于所做的更改）通常会在只有该人员正在使用的开发环境中测试其更改。 在对更改感到满意后，所做的更改会被提升到暂存环境，以便他们接受进一步的测试。 最后，将所做的更改发布到用户看到的生产网站。 数据流支持此促销模式。
 
-如果您支持基于平台的应用程序，如实时CDP、Journey Optimizer或Customer Journey Analytics，则必须在与这些环境对应的单独平台沙箱中创建其他数据流。
+如果您支持基于平台的应用程序，如Real-Time CDP、Journey Optimizer或Customer Journey Analytics，则必须在与这些环境对应的单独Platform沙箱中创建其他数据流。
 
 如果您不是Platform客户，则可以在单个沙盒中创建多个数据流，并可以使用数据流复制功能来复制设置。
 

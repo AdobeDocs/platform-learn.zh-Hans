@@ -4,7 +4,7 @@ breadcrumb-title: 教程
 user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '987'
 ht-degree: 29%
@@ -39,7 +39,7 @@ ht-degree: 29%
 + [数据收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target=&quot;_blank&quot;}
 + 仪表板 {#dashboards}
    + [创建功能板](/help/platform/dashboards/create-a-dashboard.md)
-+ 数据管理 {#data-governance}
++ 数据治理 {#data-governance}
    + [概述](/help/platform/governance/understanding-data-governance.md)
    + [端到端演示](/help/platform/governance/introduction-to-data-governance.md)
    + [使用管理标签对数据进行分类](/help/platform/governance/classify-data-using-governance-labels.md)
@@ -56,14 +56,14 @@ ht-degree: 29%
    + [创建和填充数据集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [将CSV文件映射到XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=zh-Hans){target=&quot;_blank&quot;}
    + [源概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-   + [从Adobe Analytics摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
+   + [从Adobe Analytics摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hans)
    + [从Audience Manager中摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
-   + [从云存储中摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html)
-   + [从CRM中摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html)
+   + [从云存储中摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=zh-Hans)
+   + [从CRM中摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=zh-Hans)
    + [从数据库引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
    + [流摄取概述](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [使用HTTP API流数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
-   + [使用源连接器流式传输数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
+   + [使用HTTP API流数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=zh-Hans)
+   + [使用源连接器流式传输数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=zh-Hans)
    + [Web SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target=&quot;_blank&quot;}
    + [Mobile SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target=&quot;_blank&quot;}
 + 数据科学工作区 {#data-science-workspace}
@@ -110,7 +110,7 @@ ht-degree: 29%
    + [查看帐户配置文件](/help/platform/profiles/view-account-profiles.md)
    + [创建合并策略](/help/platform/profiles/create-merge-policies.md)
    + [合并模式概述](/help/platform/profiles/union-schemas-overview.md)
-+ 隐私和安全 {#privacy}
++ 隐私和安全性 {#privacy}
    + [Privacy Service简介](/help/platform/privacy/introduction-to-privacy-services.md)
    + [隐私请求中的身份数据](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [隐私JavaScript库](/help/platform/privacy/using-privacy-javascript-library.md)
@@ -184,7 +184,7 @@ ht-degree: 29%
    + [Customer Journey Analytics教程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [Journey Orchestration教程](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
    + [offer decisioning教程](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=zh-Hans){target=&quot;_blank&quot;}
-   + Real-time CDP教程{#rtcdp}
+   + Real-Time CDP教程{#rtcdp}
       + [概述](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
       + [B2B版本概述](/help/platform/rtcdp/b2b-overview.md)
       + [端到端演示](/help/platform/rtcdp/demo.md)

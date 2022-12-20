@@ -1,15 +1,15 @@
 ---
 title: 合并模式概述
-description: 在客户历程的每个阶段，实时客户资料都支持大规模跨渠道个性化。 通过启用架构和相应的数据集，可以为实时客户配置文件启用批量数据或流式数据。
+description: 在客户历程的每个阶段，实时客户资料都支持大规模的跨渠道个性化。通过启用架构和相应的数据集，可以为实时客户配置文件启用批量数据或流式数据。
 role: Data Architect, Data Engineer
 feature: Profiles
 kt: 6754
 thumbnail: 329940.jpg
 exl-id: 6e6512c2-2d8e-4b56-b8b8-d318b98f3627
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '111'
-ht-degree: 5%
+ht-degree: 19%
 
 ---
 

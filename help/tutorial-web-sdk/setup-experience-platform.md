@@ -2,7 +2,7 @@
 title: 使用Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 5%
@@ -156,7 +156,7 @@ Experience Platform使用之前创建的相同XDM架构从Luma网站中捕获事
 
 ## 为实时客户配置文件启用数据集和架构
 
-下一步是为实时客户用户档案启用数据集和架构。 来自Web SDK的数据流将是流入Platform的众多数据源之一，您希望将Web数据与其他数据源相连，以构建360度客户配置文件。 要进一步了解实时客户资料，请观看此简短视频：
+下一步是为实时客户用户档案启用数据集和架构。 来自Web SDK的数据流将是流入Platform的众多数据源之一，您希望将Web数据与其他数据源相连，以构建360度客户配置文件。 要了解有关实时客户资料的更多信息，请观看此简短视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on&captions=eng)
 
@@ -235,7 +235,7 @@ Experience Platform使用之前创建的相同XDM架构从Luma网站中捕获事
 
    ![客户用户档案](assets/experience-platform-validate-dataset-custProfile.png)
 
-您现在已为Experience Platform启用Platform Web SDK(和实时CDP! Customer Journey Analytics! 还有Journey Optimizer!)!
+您现在已为Experience Platform启用Platform Web SDK(和Real-Time CDP! Customer Journey Analytics! 还有Journey Optimizer!)!
 
 
 [下一个： ](setup-analytics.md)

@@ -7,7 +7,7 @@ role: User
 kt: 9261
 thumbnail: 338252.jpg
 exl-id: 8432f6d5-bc96-404b-ae5f-7cbef7e16abb
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 0%
@@ -22,6 +22,6 @@ ht-degree: 0%
 
 >[!INFO]
 >
-> 这个视频是课程的一部分， [面向营销人员的Real-time CDP B2B Edition快速入门](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b)，可在Experience League上免费使用！
+> 这个视频是课程的一部分， [Real-Time CDP B2B Edition营销人员入门](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b)，可在Experience League上免费使用！
 
 有关详细信息，请参阅 [分段文档](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).

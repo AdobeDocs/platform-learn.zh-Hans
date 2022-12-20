@@ -1,15 +1,15 @@
 ---
 title: 源概述
-description: 了解如何轻松地将数据从 Adobe、第一方和第三方应用程序引入到 Platform 的 Real-time Customer Profile 和数据湖。
+description: 了解如何轻松将数据从Adobe、第一方和第三方应用程序摄取到平台的实时客户资料和数据湖中。
 role: Data Engineer, Data Architect
 feature: Sources
 kt: 3800
 thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 31%
+ht-degree: 11%
 
 ---
 

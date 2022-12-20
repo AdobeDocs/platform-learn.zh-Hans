@@ -2,7 +2,7 @@
 title: 创建 XDM 架构
 description: 了解如何为移动设备应用程序事件创建XDM模式。
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1297'
 ht-degree: 6%
@@ -53,7 +53,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
    >[!NOTE]
    >
-   > 基于平台的应用程序（如Real-time CDP）的客户应在本教程中使用一个开发沙盒。 其他客户将使用默认的生产沙盒。
+   > 基于平台的应用程序(如Real-Time CDP)的客户应在本教程中使用一个开发沙盒。 其他客户将使用默认的生产沙盒。
 
 
 1. 选择 **[!UICONTROL 模式]** 在 **[!UICONTROL 数据管理]**.
@@ -66,7 +66,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 * **类** 定义架构所包含数据的行为方面。 例如： `XDM ExperienceEvent` 捕获时间系列、事件数据和 `XDM Individual Profile` 捕获有关个人的属性数据。
 * **数据类型** 在类或字段组中用作引用字段类型，其方式与基本文字字段相同。
 
-以上描述是高级概述。 有关更多详细信息，请参阅 [架构构建块](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=zh-CN) 视频或阅读 [架构组合的基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) （在产品文档中）。
+以上描述是高级概述。 有关更多详细信息，请参阅 [架构构建块](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=zh-CN) 视频或阅读 [架构组合的基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans) （在产品文档中）。
 
 在本教程中，您将使用消费者体验事件字段组并创建一个自定义字段组来演示该过程。
 

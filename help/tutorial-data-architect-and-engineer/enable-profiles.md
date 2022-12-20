@@ -1,6 +1,6 @@
 ---
 title: 启用实时客户用户档案
-seo-title: Enable Real-time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 启用实时客户用户档案
 description: 在本课程中，您将为实时客户用户档案启用架构和数据集。
 role: Data Architect
@@ -8,10 +8,10 @@ feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1123'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 好，当我说数据集课程是本教程中最短的课程时，我撒了谎 — 这个课程应该花费更少的时间！ 实际上，你要做的就是翻转一堆开关。 但是当你翻开这些切换开关时 _真的_ 所以我想为它贡献一整页。
 
-通过实时客户资料，您可以查看每个客户的整体视图，该视图将来自多个渠道的数据（包括在线、离线、CRM和第三方数据）进行整合。 利用用户档案，可将不同的客户数据整合到统一视图中，为每次客户互动提供一个可操作且加盖时间戳的帐户。
+通过实时客户资料，您可以全面了解每个客户的情况，这些客户综合了来自多个渠道的数据，包括在线、离线、CRM和第三方数据。 利用用户档案，可将不同的客户数据整合到统一视图中，为每次客户互动提供一个可操作且加盖时间戳的帐户。
 
 尽管听起来很神奇，但您无需激活 *所有数据* 中。 事实上，您只应启用激活用例所需的数据。 启用要用于营销用例、呼叫中心集成等的数据，以便您能够快速访问强大的客户用户档案。 如果您上载数据仅供分析，则可能不应为用户档案启用该数据。
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 -->
 
-## 使用平台用户界面为实时客户资料启用架构
+## 使用平台用户界面启用实时客户用户档案的架构
 
 让我们从启用架构的简单任务开始：
 
@@ -146,7 +146,7 @@ ht-degree: 1%
 
 首先，我们得 `id` 的 `Luma CRM Dataset`:
 
-1. 打开 [!DNL Postman]
+1. Open [!DNL Postman]
 1. 如果您在过去24小时内未发出请求，则授权令牌可能已过期。 打开请求 **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** 选择 **发送** 请求新的JWT和访问令牌，就像您在 [!DNL Postman] 课程。
 1. 打开请求 **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
 1. 选择 **发送** 按钮

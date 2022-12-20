@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -134,7 +134,7 @@ CRM ID是 `Luma Loyalty Dataset`，但只能使用主标识来查找用户档案
 
 ![查看具有不同合并策略的用户档案](assets/mergepolicies-backToDanny.png)
 
-这是怎么回事？ 好吧，档案合并不是一回事。 实时客户用户档案会根据各种因素（包括使用哪些合并策略）动态组装。 您可以创建多个合并策略以在不同的上下文中使用，具体取决于您需要的客户视图。
+这是怎么回事？ 好吧，档案合并不是一回事。 实时客户用户档案会根据各种因素（包括使用哪些合并策略）动态组合。 您可以创建多个合并策略以在不同的上下文中使用，具体取决于您需要的客户视图。
 
 合并策略的一个关键用例用于数据管理。 例如，假设您将第三方数据摄取到平台，该平台不能用于个性化用例，但 _can_ 用于广告用例。 您可以创建一个合并策略来排除此第三方数据集，并使用此合并策略为广告用例构建区段。
 

@@ -1,5 +1,5 @@
 ---
-title: 使用实时 CDP 和 Adobe Target 实现下一次点击个性化
+title: 使用Real-Time CDP和Adobe Target进行下一次点击的个性化
 description: 了解如何使用Real-time Customer Data Platform(CDP)和Adobe Target在下一次点击时进行个性化。
 role: User
 solution: Real-time Customer Data Platform,Target
@@ -8,16 +8,16 @@ feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experi
 kt: 9629
 thumbnail: 340091.jpg
 exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
 workflow-type: tm+mt
 source-wordcount: '99'
-ht-degree: 32%
+ht-degree: 0%
 
 ---
 
-# 使用实时 CDP 和 Adobe Target 实现下一次点击个性化
+# 使用Real-Time CDP和Adobe Target进行下一次点击的个性化
 
-了解如何使用 Real-time Customer Data Platform 和 Adobe Target 在下一次点击时个性化Real-time CDP中的Adobe Target目标允许您通过管理和隐私支持，将Adobe Target中的Experience Platform区段用于同一页面和下一页面个性化。
+了解如何使用Real-time Customer Data Platform和Adobe Target在下一次点击时进行个性化。 通过Real-Time CDP中的Adobe Target目标，您可以在管理和隐私支持下，将Adobe Target中的Experience Platform区段用于同一页面和下一页个性化。
 
 >[!VIDEO](https://video.tv.adobe.com/v/340091?quality=12&learn=on)
 

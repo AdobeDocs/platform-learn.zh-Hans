@@ -6,7 +6,7 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '1620'
 ht-degree: 4%
@@ -159,7 +159,7 @@ Experience Platform业务用户通常必须完成一系列步骤，包括确定�
 
 ## 验证
 
-样例数据经过设计，以便在集合运行后，可以构建实时客户配置文件，以合并来自多个系统的数据。 例如，这是忠诚度、CRM和离线购买数据集的第一个记录。 查找该用户档案以确认已摄取数据。 在 [Adobe Experience Platform界面](https://platform.adobe.com/):
+样例数据经过设计，以便运行集合后，可构建可合并多个系统数据的实时客户配置文件。 例如，这是忠诚度、CRM和离线购买数据集的第一个记录。 查找该用户档案以确认已摄取数据。 在 [Adobe Experience Platform界面](https://platform.adobe.com/):
 
 1. 转到 **[!UICONTROL 用户档案]** > **[!UICONTROL 浏览]**
 1. 选择 `Luma Loyalty Id` 作为 **[!UICONTROL 身份命名空间]**
@@ -176,10 +176,10 @@ Experience Platform业务用户通常必须完成一系列步骤，包括确定�
 如果您想了解合并策略、数据管理、查询服务和区段生成器，请跳转到 [数据架构师和数据工程师快速入门教程中的第11课](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). 您可以手动构建刚刚由这些Postman收藏集填充的所有内容，并享受开端！
 
 如果要构建一个用于链接到此沙盒的Web SDK实施示例，请执行
-[使用Web SDK实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). 在设置Web SDK教程的“初始配置”、“标记配置”和“设置Experience Platform”课程后，使用 `luma-crm.json` 使用密码的文件 `test` ，以查看配置文件片段与本教程中上传的数据合并。
+[使用Web SDK实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans). 在设置Web SDK教程的“初始配置”、“标记配置”和“设置Experience Platform”课程后，使用 `luma-crm.json` 使用密码的文件 `test` ，以查看配置文件片段与本教程中上传的数据合并。
 
 如果要构建一个用于链接到此沙盒的Mobile SDK实施示例，请执行
-[在移动设备应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). 在设置Web SDK教程的“初始配置”、“应用程序实施”和“Experience Platform”课程后，使用 `luma-crm.json` 文件，以查看与本教程中上传的数据合并的配置文件片段。
+[在移动设备应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans). 在设置Web SDK教程的“初始配置”、“应用程序实施”和“Experience Platform”课程后，使用 `luma-crm.json` 文件，以查看与本教程中上传的数据合并的配置文件片段。
 
 ## 重置沙盒环境 {#reset-sandbox}
 

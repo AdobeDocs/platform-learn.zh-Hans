@@ -7,7 +7,7 @@ kt: 4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Adobe Experience Platform是一个技术平台，旨在帮助您实现营销目�
 ## 先决条件
 
 * 您已完成 [Adobe Experience Platform课程简介](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) Experience League，熟悉平台功能
-* 您有权访问已通过Adobe Experience Platform(或基于平台的应用程序，如Real-time CDP或Journey Optimizer)和数据收集（以前称为Launch）进行配置的帐户。
+* 您有权访问已配置Adobe Experience Platform(或基于平台的应用程序，如Real-Time CDP或Journey Optimizer)和数据收集（以前称为Launch）的帐户。
 * 您是该帐户的系统管理员，或者可以拥有 [配置用户权限](configure-permissions.md) 为你。
 
 ## 使用本教程
