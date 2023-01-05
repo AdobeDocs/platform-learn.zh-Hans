@@ -2,10 +2,10 @@
 title: 渲染VEC活动 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何通过Adobe Target的Web SDK实施来检索和应用可视化体验编辑器活动。
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 72eaefe62bc84c81bee4930218854ec1d83e99ab
 workflow-type: tm+mt
-source-wordcount: '1130'
-ht-degree: 8%
+source-wordcount: '885'
+ht-degree: 5%
 
 ---
 
@@ -183,27 +183,6 @@ Platform Web SDK为开发人员提供了在请求和渲染内容方面的极大�
 >[!TIP]
 >
 > 使用标记功能（以前称为Launch）实施Web SDK时，标记嵌入代码会替换上面的“Platform Web SDK基本代码”、“异步加载的Platform Web SDK”和“配置Platform Web SDK”部分。 在规则中使用 [!UICONTROL 发送事件] 包含的操作类型 [!UICONTROL 呈现可视化个性化决策] 选项。
-
-## 使用可视化编辑助手浏览器扩展构建活动
-
-借助适用于Google Chrome的Adobe Experience Cloud可视化编辑助手浏览器扩展，您可以在Adobe Target可视化体验编辑器(VEC)内可靠地加载网站，以快速创作和QA Web体验。
-
-可视化编辑助手浏览器扩展可以与使用at.js或Platform Web SDK的网站配合使用。
-
->[!IMPORTANT]
->
->新的Visual Editing Helper扩展取代了 [Target VEC助手浏览器扩展](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). 如果安装了旧版VEC助手扩展，则在使用可视化编辑助手扩展之前，应删除或禁用该扩展。
-
-### 获取并安装可视化编辑助手
-
-1. 导航到 [Adobe Experience Cloud Chrome网上应用店中的Visual Editing Helper浏览器扩展](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
-1. 单击添加到 **铬黄** > **添加扩展**.
-1. 在Target中打开VEC。
-1. 要使用扩展，请在 VEC 或 QA 模式下，单击 Chrome 浏览器工具栏中的可视化编辑帮助程序浏览器扩展图标（可视化编辑扩展图标）。
-
-当在Target VEC中打开网站以支持创作时，会自动启用可视化编辑助手。 该扩展不具有任何有条件的设置。该扩展会自动处理所有设置，包括 SameSite cookie 设置。
-
-有关 [Visual Editing Helper扩展](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) 和 [可视化体验编辑器故障诊断](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
 
 接下来，了解如何请求和 [渲染基于表单的Target活动](render-form-based-activities.md).
 
