@@ -2,9 +2,9 @@
 title: 渲染VEC活动 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何通过Adobe Target的Web SDK实施来检索和应用可视化体验编辑器活动。
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 72eaefe62bc84c81bee4930218854ec1d83e99ab
+source-git-commit: 7e6aa296429844552ad164ba209a504ddc908571
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '883'
 ht-degree: 5%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 5%
 
 Target活动是使用可视化体验编辑器(VEC)或基于表单的编辑器来设置的。 平台Web SDK可以像at.js一样，检索基于VEC的活动并将其应用到页面。 对于迁移的这一部分，您将：
 
-* 如有需要，请安装Visual Editing Helper浏览器扩展
+* 安装Visual Editing Helper浏览器扩展
 * 执行 `sendEvent` 使用Platform Web SDK调用以请求活动。
 * 更新来自您的at.js实施的任何引用，这些引用使用 `getOffers()` 执行目标 `pageLoad` 请求。
 
