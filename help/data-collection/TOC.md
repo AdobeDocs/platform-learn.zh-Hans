@@ -26,11 +26,11 @@ ht-degree: 34%
    + [用户和权限](tags/users-and-permissions.md)
    + [使用Web SDK在网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans){target=&quot;_blank&quot;}
    + [使用解决方案SDK在网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target=&quot;_blank&quot;}
-   + [在移动设备应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [在移动设备应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans){target=&quot;_blank&quot;}
 + Web SDK{#web-sdk}
    + [概述](web-sdk/overview.md)
    + [演示](web-sdk/demo.md)
-   + [实施教程（包含标记）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target=&quot;_blank&quot;}
+   + [实施教程（包含标记）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans){target=&quot;_blank&quot;}
    + 同意{#consent}
       + [概述](web-sdk/consent/overview.md)
       + [使用Adobe标准设置同意值](web-sdk/consent/set-consent-adobe.md)
@@ -41,7 +41,7 @@ ht-degree: 34%
    + [概述](mobile-sdk/overview.md)
    + [创建移动资产](mobile-sdk/create-mobile-properties.md)
    + [使用依赖关系管理器](mobile-sdk/use-dependency-managers.md)
-   + [在移动设备应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [在移动设备应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans){target=&quot;_blank&quot;}
 + 服务器API{#server-api}
    + [概述](server-api/overview.md)
    + [API基础知识](server-api/introduction.md)

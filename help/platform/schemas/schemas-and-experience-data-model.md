@@ -1,6 +1,6 @@
 ---
 title: 架构和体验数据模型(XDM)概述
-description: 了解用来描述客户体验的标准数据模型 - 体验数据模型 (XDM)。
+description: 了解体验数据模型 (XDM)，它是用于描述客户体验的标准数据模型。
 role: Data Architect, Data Engineer
 feature: Schemas
 kt: 2696
