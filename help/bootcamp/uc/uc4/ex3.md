@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: 402e032fe150745893528ffbd6a01533f30fb5d6
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1615'
 ht-degree: 2%
 
 ---
@@ -175,6 +174,8 @@ ht-degree: 2%
 | Transaction ID | Transaction ID |  |
 | URL(web.webPageDetails.URL) | URL |  |
 | 用户代理 | 用户代理 | 最近，会话 |
+| 级别 | 忠诚度级别 |  |
+| 点 | 客户生命周期值 |  |
 
 ### 量度
 
@@ -278,7 +279,7 @@ ht-degree: 2%
 
 ![演示](./images/8-v2.png)
 
-在此选项卡中，您可以修改一些重要设置以更改数据的处理方式。 我们先通过设置 **会话超时** 到30分钟。 由于每个体验事件的时间戳，您可以在所有渠道中扩展会话的概念。 例如，如果客户在访问网站后致电呼叫中心，会发生什么情况？ 使用自定义会话超时，您在决定什么是会话以及该会话如何将数据合并在一起方面缺乏灵活性。
+在此选项卡中，您可以修改一些重要设置以更改数据的处理方式。 我们先通过设置 **会话超时** 到30分钟。 由于每个体验事件的时间戳，您可以在所有渠道中扩展会话的概念。 例如，如果客户在访问网站后致电呼叫中心，会发生什么情况？ 使用自定义会话超时，您在决定什么是会话以及该会话如何将数据合并在一起方面具有很大的灵活性。
 
 ![演示](./images/ext8.png)
 

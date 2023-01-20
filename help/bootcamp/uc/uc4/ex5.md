@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: b44d2a7ad44dd113889a7f996d7e33da46402b4a
 workflow-type: tm+mt
-source-wordcount: '1500'
+source-wordcount: '1497'
 ht-degree: 1%
 
 ---
@@ -31,7 +30,7 @@ ht-degree: 1%
 
 打开您的项目 `yourLastName - Omnichannel Analysis`.
 
-打开项目并查看数据 `yourLastName - Omnichannel Analysis` 选定后，您便可以开始构建第一个可视化图表。
+打开项目并查看数据 `CJA Bootcamp - Omnichannel Data View` 选定后，您便可以开始构建第一个可视化图表。
 
 ![演示](./images/prodataView1.png)
 
@@ -41,7 +40,7 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->请选择日期范围，如 **本周** 或 **本月**. 2022年9月19日摄取了最新可用数据。
+>已在19/09/2022上摄取最新可用数据，请选择包含此日期的日期范围。
 
 ![演示](./images/pro1.png)
 
@@ -77,9 +76,9 @@ ht-degree: 1%
 
 ![演示](./images/pro7b.png)
 
-## 查看的5大产品
+## 查看的4大产品
 
-查看的5大产品中有哪些？
+4大产品查看次数是多少？
 
 请记住，每时每刻都要保存项目。
 
@@ -88,7 +87,7 @@ ht-degree: 1%
 | Windows | Control + S |
 | Mac | Command + S |
 
-让我们开始查找查看的5大产品。 在左侧菜单中，找到 **产品名称** -Dimension。
+让我们开始查找查看的4大产品。 在左侧菜单中，找到 **产品名称** -Dimension。
 
 ![演示](./images/pro8.png)
 
@@ -102,7 +101,7 @@ ht-degree: 1%
 
 ![演示](./images/pro13.png)
 
-接下来，使用用户代理进行划分。 搜索 **用户代理** 并将其拖动到品牌名称下。
+接下来，使用忠诚度级别进行划分。 搜索 **忠诚度级别** 并将其拖动到品牌名称下。
 
 ![演示](./images/pro15.png)
 
@@ -114,7 +113,7 @@ ht-degree: 1%
 
 ![演示](./images/pro18.png)
 
-接下来，在表中，选择前5个 **用户代理**  在 **Google Pixel XL 32GB黑色智能手机** > **花旗信号**. 选择5行时，按住 **CTRL** 按钮（在Windows上）或 **命令** 按钮(在Mac上)。
+接下来，在表中，选择 **忠诚度级别**  在 **Google Pixel XL 32GB黑色智能手机** > **花旗信号**. 选择3行时，按住 **CTRL** 按钮（在Windows上）或 **命令** 按钮(在Mac上)。
 
 ![演示](./images/pro20.png)
 
@@ -154,7 +153,7 @@ ht-degree: 1%
 
 选择与上一个练习相同的日期范围。
 
-![演示](./images/prodatef.png)
+![演示](./images/pro1.png)
 
 然后你会看到这个。
 
@@ -216,7 +215,7 @@ ht-degree: 1%
 
 选择与上一个练习相同的日期范围。
 
-![演示](./images/pro0b.png)
+![演示](./images/pro1.png)
 
 查找维度 **页面名称** 在左侧的组件下：
 
@@ -297,7 +296,7 @@ ht-degree: 1%
 
 选择与上一个练习相同的日期范围。
 
-![演示](./images/pro24d.png)
+![演示](./images/pro1.png)
 
 单击 **自由格式表**.
 

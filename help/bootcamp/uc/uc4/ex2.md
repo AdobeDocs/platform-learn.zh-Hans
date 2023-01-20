@@ -5,10 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f63a92b9477b47edbf6a3fee162299491399ea56
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '674'
 ht-degree: 3%
 
 ---
@@ -60,7 +59,7 @@ ht-degree: 3%
 
 ![演示](./images/cja7.png)
 
-现在，搜索并选中复选框 `Demo System - Event Dataset for Voice Assistants (Global v1.1)` 和 `Demo System - Event Dataset for Call Center (Global v1.1)`.
+现在，搜索并选中复选框 `Demo System - Profile Dataset for Loyalty (Global v1.1)` 和 `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
 然后你会得到这个。 单击&#x200B;**下一步**。
 
@@ -84,7 +83,7 @@ ht-degree: 3%
 
 如前所述，您可以为每个数据集设置不同的人员ID。 这允许您在CJA中将多个源中的不同数据集合在一起。 想象一下，引入NPS或调查数据，这些数据将非常有趣，有助于了解背景以及为什么发生了什么情况。
 
-“人员ID”字段的名称并不重要，只要“人员ID”字段中的值对应。 假设我们有 `email` 在一个数据集中 `emailAddress` 在另一个定义为“人员ID”的数据集中。 如果 `delaigle@adobe.com` 是两个数据集上“人员ID”字段的相同值，CJA将能够拼合数据。
+“人员ID”字段的名称并不重要，只要“人员ID”字段中的值对应。 例如，如果人员ID为 `email` 在一个数据集中 `emailAddress` 在另一个中，和 `dnb-bootcamp@adobe.com` 是两个数据集中人员ID字段的相同值，CJA将能够拼合数据。
 
 目前还存在一些其他限制，例如，我们拼合已知的匿名行为。 请在此处查看常见问题解答： [常见问题解答](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans).
 
@@ -107,7 +106,7 @@ ht-degree: 3%
 | 数据集 | 人员 ID |
 | ----------------- |-------------| 
 | 演示系统 — 网站事件数据集（全局v1.1） | 电子邮件 |
-| 演示系统 — 语音助理事件数据集（全局v1.1） | 电子邮件 |
+| 演示系统 — 忠诚度的用户档案数据集（全局v1.1） | 电子邮件 |
 | 演示系统 — 呼叫中心事件数据集（全局v1.1） | 电子邮件 |
 
 您还需要确保为每个数据集启用以下选项：

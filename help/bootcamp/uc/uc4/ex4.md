@@ -6,10 +6,10 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: bc872b4fe440106475668eeb790242e1862875aa
 workflow-type: tm+mt
-source-wordcount: '754'
-ht-degree: 3%
+source-wordcount: '755'
+ht-degree: 2%
 
 ---
 
@@ -48,9 +48,7 @@ Customer Journey Analytics将此解决方案引入到平台数据之上。 我�
 
 ![演示](./images/premptyprojects.png)
 
-首先，确保在屏幕的右上角选择正确的数据视图。 在此示例中，要选择的数据视图是 `vangeluwe - Omnichannel Data View`.
-
-![演示](./images/prdv.png)
+首先，确保在屏幕的右上角选择正确的数据视图。 在此示例中，要选择的数据视图是 `CJA Bootcamp - Omnichannel Data View`.
 
 接下来，您将保存项目并为其命名。 您可以使用以下命令进行保存：
 
@@ -113,7 +111,7 @@ Customer Journey Analytics将此解决方案引入到平台数据之上。 我�
 
 | 标题 | 描述 |
 | ----------------- |-------------| 
-| 转化率 | 转化率 |
+| yourLastName — 转化率 | yourLastName — 转化率 |
 
 您的屏幕上将显示如下内容：
 
