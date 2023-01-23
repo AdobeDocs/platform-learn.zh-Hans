@@ -3,9 +3,9 @@ title: 使用Platform Web SDK设置Adobe Target
 description: 了解如何使用Platform Web SDK实施Adobe Target。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3779'
 ht-degree: 1%
 
 ---
@@ -117,7 +117,7 @@ Adobe建议异步实施标记，如Luma网站上所示。 但是，如果同步�
 
 要在数据流中配置Target，请执行以下操作：
 
-1. 转到 [数据收集](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;}接口
+1. 转到 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面
 1. 在左侧导航中，选择 **[!UICONTROL 数据流]**
 1. 选择之前创建的 `Luma Web SDK` 数据流
 
@@ -184,7 +184,7 @@ Adobe建议对每个开发、暂存和生产数据流以不同的方式设置Tar
 
 如果在数据流中启用了Target，则Target的可视化个性化决策将由Platform Web SDK提供。 但是， _它们不会自动呈现_. 您必须修改全局页面加载规则才能启用自动渲染。
 
-1. 在 [数据收集](https://experience.adobe.com/#/data-collection){target=&quot;blank&quot;}界面，打开您在本教程中使用的标记属性
+1. 在 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面中，打开您在本教程中使用的标记属性
 1. 打开 `all pages - library load - AA & AT` 规则
 1. 选择 `Adobe Experience Platform Web SDK - Send event` 操作
 1. 启用 **[!UICONTROL 呈现可视化个性化决策]** 复选框
@@ -334,7 +334,7 @@ Adobe建议对每个开发、暂存和生产数据流以不同的方式设置Tar
    // Send a "display" event 
    alloy("sendEvent", {
       xdm: {
-         eventType: "display",
+         eventType: "propositionDisplay",
          _experience: {
             decisioning: {
                propositions: [
@@ -420,7 +420,7 @@ Adobe建议对每个开发、暂存和生产数据流以不同的方式设置Tar
 
 有些数据点可能对Target有用，但它们未从XDM对象进行映射。 这些特殊的Target参数包括：
 
-* [配置文件属性](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes.html?lang=en)
+* [用户档案属性](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes.html?lang=en)
 * [Recommendations实体属性](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html?lang=en)
 * [Recommendations保留参数](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * 类别值 [类别亲和度](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
