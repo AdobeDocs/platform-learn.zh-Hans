@@ -3,7 +3,7 @@ title: Experience Makers Bootcamp
 description: 体验创造者Bootcamp参与者的起点
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
-source-git-commit: f2af156bd09ed90e5f65e3e7730a20a7e799dccb
+source-git-commit: 9658437fec6208e2688fc7857f13adcc52660caa
 workflow-type: tm+mt
 source-wordcount: '716'
 ht-degree: 1%
@@ -40,9 +40,9 @@ ht-degree: 1%
 
 14.00 - 15.30:用户流程1:&quot;获取&quot;动手练习
 
-15.00 - 15.15:中断
+15.30 - 15.45:中断
 
-15.15 - 17.00:用户流量2:&quot;登记和载入&quot;实践练习
+15.45 - 17.00:用户流量2:&quot;登记和载入&quot;实践练习
 
 18.00 - 19.00:体验&quot;鸡尾酒制作竞赛&quot;
 
