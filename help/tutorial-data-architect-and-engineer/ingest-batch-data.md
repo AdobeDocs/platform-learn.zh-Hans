@@ -8,9 +8,9 @@ feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
 workflow-type: tm+mt
-source-wordcount: '2529'
+source-wordcount: '2553'
 ht-degree: 0%
 
 ---
@@ -289,6 +289,7 @@ ht-degree: 0%
 
 1. 您应该已经下载并解压 [luma-data.zip](assets/luma-data.zip) 到 `Luma Tutorial Assets` 文件夹。
 1. 打开 `luma-offline-purchases.json` ，并替换 `_techmarketingdemos` ，如您的架构中所示
+1. 更新所有时间戳，以便事件在上个月发生(例如，搜索 `"timestamp":"2022-06` 和替换年份和月份)
 1. 选择首选的云存储提供商，确保该提供商位于 [!UICONTROL 源] 目录
 1. 上传 `luma-offline-purchases.json` 到首选云存储提供商中的位置
 
