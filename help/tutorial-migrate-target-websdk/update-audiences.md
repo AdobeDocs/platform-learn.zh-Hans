@@ -1,9 +1,9 @@
 ---
 title: 更新受众和配置文件脚本 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何更新Adobe Target受众和配置文件脚本，以与Experience PlatformWeb SDK兼容。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,11 @@ ht-degree: 0%
 * 更新使用mbox参数的受众
 * 更新使用mbox参数的配置文件脚本
 * 更新任何选件和活动时都会使用mbox参数令牌替换(例如， `${mbox.parameter_name}`)
+
+
+>[!WARNING]
+>
+> 2022年10月1日之后开始的平台Web SDK实施可能需要使用 [prefetch解决方法](prefetch-workaround.md) 以便成功使用此页面中介绍的某些功能。
 
 ## 调整受众
 
