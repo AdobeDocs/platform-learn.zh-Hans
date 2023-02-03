@@ -1,9 +1,9 @@
 ---
 title: 替换库 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何将Adobe Target实施从at.js 2.x迁移到Adobe Experience Platform Web SDK。 主题包括库概述、实施差异和其他值得注意的标注。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1708'
 ht-degree: 1%
 
 ---
@@ -207,6 +207,12 @@ Adobe建议异步实施Platform Web SDK，以获得最佳的整体页面性能�
 
 必须在每次加载页面时配置平台Web SDK。 的 `configure` 命令必须始终是名为的第一个SDK命令。 以下示例假定在单个部署中将整个站点升级到Platform Web SDK:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+的 `edgeConfigId` 是 [!UICONTROL 数据流ID]
+
 ```JavaScript
 alloy("configure", {
   "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
@@ -214,7 +220,19 @@ alloy("configure", {
 });
 ```
 
+>[!TAB 标记]
+
+在标记实施中，许多字段会自动填充，也可以从下拉菜单中选择。 请注意，不同的平台 [!UICONTROL 沙箱] 和 [!UICONTROL 数据流] 可为每个环境选择。 数据流将根据发布过程中标记库的状态进行更改。
+
+![配置Web SDK标记扩展](assets/tags-config.png)
+>[!ENDTABS]
+
 如果您计划逐页从at.js迁移到Platform Web SDK，则需要以下配置选项：
+
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("configure", {
@@ -225,9 +243,14 @@ alloy("configure", {
 });
 ```
 
+>[!TAB 标记]
+
+![配置Web SDK标记扩展迁移选项](assets/tags-config-migration.png)
+>[!ENDTABS]
+
 下面概述了与Target相关的值得注意的配置选项：
 
-| 选项 | 描述 | 示例 值 |
+| 选项 | 描述 | 示例值 |
 | --- | --- | --- |
 | `edgeConfigId` | 数据流ID | `ebebf826-a01f-4458-8cec-ef61de241c93` |
 | `orgId` | Adobe Experience Cloud组织ID | `ADB3LETTERSANDNUMBERS@AdobeOrg` |
