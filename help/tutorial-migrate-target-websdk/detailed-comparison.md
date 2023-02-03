@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x与Web SDK的比较 |将Target从at.js 2.x迁移到Web SDK
 description: 了解at.js 2.x与Platform Web SDK之间的差异，包括特性、函数、设置和数据流。
-source-git-commit: f690664b187c5b09f1243ce46877da6fad38efa3
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '2164'
+source-wordcount: '2154'
 ht-degree: 8%
 
 ---
@@ -43,8 +43,8 @@ ht-degree: 8%
 | 远程选件 | 受支持 | 受支持 |
 | 重定向选件 | 受支持 | 受支持. 但是，不支持从具有Platform Web SDK的页面重定向到具有at.js（且方向相反）的页面。 |
 | 设备内决策 | 受支持 | 当前不支持 |
-| 预取Mbox | 受支持 | 部分支持。 联系客户支持以启用此功能，因为它会更改活动预取行为。 |
-| 自定义事件 | 受支持 | 不支持。请参阅 [公共路线图](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) 的值。 |
+| 预取Mbox | 受支持 | 默认情况下，在2022年10月1日之后开始的所有新迁移中启用 |
+| 自定义事件 | 受支持 | 不支持。请参阅 [公共路线图](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 的值。 |
 | 响应令牌 | 受支持 | 受支持. 请参阅 [专用响应令牌文档](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) ，以了解代码示例以及at.js和Platform Web SDK之间的差异 |
 | 数据提供程序 | 受支持 | 不支持。自定义代码可用于触发平台Web SDK `sendEvent` 命令。 |
 
@@ -79,7 +79,7 @@ ht-degree: 8%
 | `trackEvent()` 和 `sendNotifications()` | 使用 `sendEvent` 命令 [特定 `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) 设置：<br><br>`decisioning.propositionDisplay` 表示活动的呈现<br><br>`decisioning.propositionInteract` 表示用户与活动的交互，如鼠标单击。 |
 | `targetGlobalSettings()` | 没有直接对等项。 请参阅 [Target设置比较](detailed-comparison.md) 以了解更多详细信息。 |
 | `targetPageParams()` 和 `targetPageParamsAll()` | 在 `xdm` 的 `sendEvent` 命令映射到Target mbox参数。 由于mbox参数是使用序列化的点表示法命名的，因此迁移到Platform Web SDK可能需要您更新现有受众和活动，以使用新的mbox参数名称。 <br><br>作为 `data.__adobe.target` 的 `sendEvent` 命令映射到 [Target配置文件和Recommendations特定参数](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| at.js 自定义事件 | 不支持。请参阅 [公共路线图](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target=&quot;_blank&quot;}) 的值。 [响应令牌](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) 作为 `propositions` 的 `sendEvent` 呼叫。 |
+| at.js 自定义事件 | 不支持。请参阅 [公共路线图](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 的值。 [响应令牌](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) 作为 `propositions` 的 `sendEvent` 呼叫。 |
 
 ## at.js设置和平台Web SDK等效项
 

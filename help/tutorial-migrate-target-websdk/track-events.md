@@ -1,9 +1,9 @@
 ---
 title: 跟踪事件 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何使用Experience PlatformWeb SDK跟踪Adobe Target转化事件。
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '654'
 ht-degree: 0%
 
 ---
@@ -16,10 +16,6 @@ ht-degree: 0%
 * 自动跟踪不需要任何配置的事件
 * 购买应根据最佳实践Platform Web SDK实施进行调整的转化事件
 * 需要更新代码的非购买转化事件
-
->[!WARNING]
->
-> 2022年10月1日之后开始的平台Web SDK实施可能需要使用 [prefetch解决方法](prefetch-workaround.md) 以便成功跟踪此页面中描述的某些事件。
 
 ## 目标跟踪比较
 

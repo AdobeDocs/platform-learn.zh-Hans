@@ -1,9 +1,9 @@
 ---
 title: 发送参数 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何使用Experience PlatformWeb SDK将mbox、配置文件和实体参数发送到Adobe Target。
-source-git-commit: 43740912bc5a941aa21c5f38ed2c1aac74abffbc
+source-git-commit: 8209b13b745dbea418003b133a6834825947950e
 workflow-type: tm+mt
-source-wordcount: '1294'
+source-wordcount: '1269'
 ht-degree: 0%
 
 ---
@@ -11,10 +11,6 @@ ht-degree: 0%
 # 使用Platform Web SDK将参数发送到Target
 
 Target实施因站点架构、业务需求和所使用的功能而异。 大多数Target实施包括为上下文信息、受众和内容推荐传递各种参数。
-
->[!WARNING]
->
-> 2022年10月1日之后开始的平台Web SDK实施可能需要使用 [prefetch解决方法](prefetch-workaround.md) 以成功传递此页面中描述的参数。
 
 让我们使用简单的产品详细信息页面和订单确认页面来演示库在将参数传递到Target时之间的差异。
 
