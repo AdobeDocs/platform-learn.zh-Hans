@@ -5,87 +5,87 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
 
-# 2.6呼叫中心中的个性化
+# 2.6个性化呼叫中心
 
 正如在引导营销期间多次讨论的，个性化客户体验应以全渠道方式实现。 呼叫中心通常与客户历程的其余部分非常脱节，这通常会导致令人沮丧的客户体验，但不需要。 让我们为您展示一个示例，说明呼叫中心如何能够轻松实时连接到Adobe Experience Platform。
 
-## 客户历程流
+## 克里恩特河
 
-在上一个练习中，使用移动应用程序，您通过单击 **购买** 按钮。
+前无运动，无运动，无运动 **购买**.
 
 ![DSN](./images/app20.png)
 
-假设您对订单状态有疑问，您会怎么做？ 通常您会呼叫呼叫中心。
+那么，你们想说什么，什么，什么，什么，什么，什么，什么，什么，什么？ 普罗曼特，电话中心。
 
-在呼叫呼叫中心之前，您需要了解 **忠诚度ID**. 您可以在网站的用户档案查看器中找到您的忠诚度ID。
+Antes de ligar para o call center， você precisa saber seu **忠诚度ID**. Você pode encontrar seu ID de fidelidade no Visualizador de Perfil do site.
 
 ![DSN](./images/cc1.png)
 
-在本例中， **忠诚度ID** is **5863105**. 在演示环境中作为呼叫中心功能的自定义实施的一部分，您需要在 **忠诚度ID**. 前缀为 **11373**，因此在此示例中使用的忠诚度ID是 **11373 5863105**.
+内斯卡索， o **忠诚度ID** é **5863105**. Como parte de nossa implementationção personalizada do recurso de call center no ambiente de de dedorção， você deve adicionar um prefixo ao seu **忠诚度ID**. O前缀 **11373**, portanto， ID de fidelidade a ser usado neste smadeoé **11373 5863105**.
 
-现在就开始吧。 用你的电话打电话 **+1(323)745-1670**.
+再见，我也是。 使用seu telefone e ligue para o número **+1(323)745-1670**.
 
 ![DSN](./images/cc2.png)
 
-系统将要求您输入忠诚度ID，然后 **#**. 输入您的忠诚度ID。
+Será solicitado que vicê insira seu ID de fidelidade， seguido de **#**. Digite seu ID de fidelidade。
 
 ![DSN](./images/cc3.png)
 
-然后你会听到 **你好，名字**. 该名字取自Adobe Experience Platform的实时客户资料。 然后有3种选择。 按号 **1**, **订单状态**.
+沃凯乌维拉 **你好，女人**, nome。 Esse nome e retirado do Perfil do Cliente em tempo real na Adobe Experience Platform。 第三项。 普雷西奥内乌努梅罗 **1**, **订单状态**.
 
 ![DSN](./images/cc4.png)
 
-听到您的订单状态后，您将可以选择按 **1** 要返回主菜单或其他，请按2。 按 **2**.
+Depois de ouvir o status do seu pedido， você terá a opção de pressionar **1** para voltar ao菜单主体，第2版。 普雷西奥内 **2**.
 
 ![DSN](./images/cc5.png)
 
-然后，系统将要求您通过选择介于1到5之间、1为低且5为高的数字来对呼叫中心体验进行评级。 做出选择。
+Em seguida， será solicitado que você avalie sua experincia de call center， selecionando um número entre 1 e 5, sendo 1 baixo e 5 alto。 真是太棒了。
 
 ![DSN](./images/cc6.png)
 
-您呼叫呼叫中心的呼叫现在将结束。
+呼叫中心的Sua chamada para o call center será encerrada。
 
-转到 [Adobe Experience Platform](https://experience.adobe.com/platform). 登录后，您将登陆Adobe Experience Platform的主页。
+阿塞斯 [Adobe Experience Platform](https://experience.adobe.com/platform). 登录后，我会在Adobe Experience Platform。
 
 ![数据获取](./images/home.png)
 
-在继续之前，您需要选择 **沙盒**. 要选择的沙盒已命名 ``Bootcamp``. 您可以通过单击 **[!UICONTROL 生产产品]** 的蓝线。 选择相应的 [!UICONTROL 沙盒]，您将看到屏幕更改，现在，您已加入您的专述 [!UICONTROL 沙盒].
+连续性，职业是选择者 **沙盒**. 没人会用沙盒做选择 ``Bootcamp``. É posível fazer isso clicando no texto **[!UICONTROL 生产产品]** na linha azul na parte superior da tela。 Depois de selecionar o [!UICONTROL 沙盒] 普罗皮亚多， você verá a tela mudando e agora vicê está em se [!UICONTROL 沙盒] 专门的。
 
 ![数据获取](./images/sb1.png)
 
-在左侧菜单中，转到 **用户档案** 和 **浏览**.
+没有菜单 **用户档案** e **浏览**.
 
 ![客户资料](./images/homemenu.png)
 
-选择 **身份命名空间** **电子邮件** 并输入客户用户档案的电子邮件地址。 单击 **查看**. 单击以打开您的用户档案。
+选择o **身份命名空间** **电子邮件** e insira o endereço de e-mail do seu perfil de cliente. 团 **查看**. Cligue para rir seu perfil.
 
 ![DSN](./images/cc7.png)
 
-您将再次看到客户资料。 转到 **事件**.
+维塞·佩菲·德·克里恩特·诺瓦门特。 阿塞斯 **事件**.
 
 ![DSN](./images/cc8.png)
 
-在events下，您将看到2个events，其eventType为 **callCenter**. 第一个事件是您对问题的回答的结果 **给您的电话满意度打分**.
+Em eventos， você verá 2 eventos com um eventType de **callCenter**. O primeiro eventoé o resultado da sua resposta à pergunta Avalie o seu n **给您的电话满意度打分**.
 
 ![DSN](./images/cc9.png)
 
-向下滚动一点，您将看到在选择选项以检查 **订单状态**.
+Are um pouco para baixo e você verá o evento que quando você selecionou a opção de verifar o **订单状态**.
 
 ![DSN](./images/cc10.png)
 
-转到 **区段成员资格**. 现在，您将根据您通过呼叫中心进行的交互，实时看到配置文件中有2个区段符合条件。 这些区段成员关系随后可用于影响任何其他渠道间的通信和个性化情况。
+阿塞斯 **区段成员资格**. Agora você verá que 2 segmentos se qualificam em seu perfil， em tempo real， com base nas interções que voce teve por meio do呼叫中心。 Essas associações de segmento podem e devemer ser usadas para impactar qual comunicação e personalização acontece em qualquer outro canal.
 
 ![DSN](./images/cc11.png)
 
-你现在已经完成了这个练习。
+这是行动。
 
-[返回到用户流量2](./uc2.md)
+[乌萨里奥2号河道](./uc2.md)
 
-[返回到所有模块](../../overview.md)
+[托多斯 — 莫杜洛斯](../../overview.md)

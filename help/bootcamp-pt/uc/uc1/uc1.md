@@ -5,47 +5,47 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 3%
+source-wordcount: '224'
+ht-degree: 0%
 
 ---
 
-# 1.收购
+# 1.阿基西桑
 
-## 学习目标
+## 阿普伦迪扎多河
 
-## 先决条件
+## 普雷雷基托斯
 
-- 访问 Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- 访问Adobe Experience Platform数据收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 访问演示网站
+- Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de doreção
 
 >[!IMPORTANT]
 >
->本教程的创建是为了促进特定的Bootcamp格式。 它使用您可能无权访问的特定系统和帐户。 即使没有访问权限，我们认为您仍然可以通过阅读这些非常详细的内容来学习很多知识。 如果您是某个Bootcamp的参与者，并且需要您的访问凭据，请联系您的Adobe代表，该代表将为您提供所需的信息。
+>特别是Bootcamp教程。 Sistemas e contas specíficos aos quais você pode não ter acesso são ulidados教程不提供。 Mesmo sem acesso， você ainda pode aprender muito com a leitura deste contest do detalhado。 请参加bootcamp de um Bootcamp e precisa das credenciais de acesso，让contato com代表在Adobe接收者中提供必要的信息。
 
-## 练习
+## 埃克雷西奥斯
 
-[1.1访问网站](./ex1.md)
+[1.1网站访问](./ex1.md)
 
-在本练习中，您将按照脚本浏览网站。
+现场的Neste Extrecício， você irá seguir um roteiro e percorrer.
 
-[1.2可视化您自己的实时客户用户档案 — UI](./ex2.md)
+[1.2真实呈现seu próprio perfil de cliente em tempo - UI](./ex2.md)
 
-在本练习中，您将登录Adobe Experience Platform，并在UI中查看您自己的实时客户资料。
+Neste expericício， você irá fazer login na Adobe Experience Platform e visualizar seu próprio de cliente em tempo real na UI。
 
-[1.3创建区段 — UI](./ex3.md)
+[1.3标准区段 — UI](./ex3.md)
 
-在本练习中，您将通过使用Adobe Experience Platform的区段生成器来创建一个区段。
+Neste experactício， você irá criar summento usando o Constructor de Segmentos da Adobe Experience Platform。
 
-[1.4采取行动：将区段发送到Adobe Target](./ex4.md)
+[1.4阿桑：恩维埃·塞门托·帕拉·Adobe Target](./ex4.md)
 
-使用在练习1.1中构建的区段在Adobe Target中配置体验定位活动。
+使用segmento construtido no extrecio 1.1 para configurar uma de segmentação por experincia no Adobe Target。
 
-[1.5采取行动：将区段发送到Facebook](./ex5.md)
+[1.5阿桑：恩维埃·塞门托·帕拉·Facebook](./ex5.md)
 
-将练习1.1中构建的区段连接到目标Facebook。
+1.1 AO destino Facebook。
 
-[返回到所有模块](../../overview.md)
+[托多斯 — 莫杜洛斯](../../overview.md)

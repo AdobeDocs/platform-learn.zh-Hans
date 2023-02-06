@@ -5,55 +5,54 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 072179998d19c32589280defdb257a86d8728fea
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1655'
 ht-degree: 2%
 
 ---
 
-# 4.3创建数据视图
+# 4.3 《达多斯可视化图表》
 
-## 目标
+## 奥别蒂沃斯
 
-- 了解数据视图UI
-- 了解访问定义的基本设置
-- 了解数据视图中的归因和持久性
+- 了解可视化图表的UI
+- Fropenda as configações básicas de definitição de visita
+- Comprenda a atribuição e a Persistência em uma Visualização de
 
-## 4.3.1数据视图
+## 4.3.1可视化图表
 
-完成连接后，您现在可以进步来影响可视化图表。 Adobe Analytics与CJA的区别在于，CJA需要数据视图，以便在可视化之前清理和准备数据。
+Agora， com sua conexão censulída， y possivel progredir para influenciar a visualização. Uma diferença entre o Adobe Analytics e o CJA e que o CJA precisa de uma visualização de dados para limpar e prepar a os dados andes da visualização.
 
-数据视图与Adobe Analytics中虚拟报表包的概念类似，在虚拟报表包中，您可以定义上下文感知的访问定义、过滤，以及组件的调用方式。
+Uma Visualização de Dadosé semelhante ao conceito de Virtual Report Suites no Adobe Analytics, onde você estelece as definitções de visita com reconhecimento de contexto， filtargm e também como os componentes são chamados。
 
-每个连接至少需要一个数据视图。 但是，对于某些用例，最好为同一连接提供多个数据视图，以便对不同的团队提供不同的洞察。
-如果您希望公司成为数据驱动型公司，则应调整每个团队查看数据的方式。 一些示例：
+Será nequário， no mínimo， uma Visualização de Dados por conexão. 没有entanto， para alguns casos de uso， eótimo ter múltiplas Visualizações de Dados para a mesma conexão， com o objetivo de fornecer insights diferents para equipinitas distintas。 我们可以用você deseja que sua empresa seja orientada por dados， deve adaptar a forma como são vistos em cada equipe。 Alguns执行员：
 
-- 仅适用于UX设计团队的UX量度
-- 将KPI和量度的名称用于Google Analytics，与Customer Journey Analytics的名称相同，以便Digital Analytics团队只能讲1种语言。
-- 过滤的数据视图，以仅显示一个市场、一个品牌或移动设备的数据。
+- UX Métricas de UX apenas para a equipe de UX设计
+- 使用mesmos nomes para KPIs e métricas para oGoogle Analyticspara oCustomer Journey Analytics, para que a equipe de análise digital fale apenas 1 idioma。
+- Visualização de Dados filtrada para mostrar， por smadeo， dados para apenas um mercado， ou uma marca， ou apenas para Dispositivos móveis。
 
-在 **连接** 屏幕上，选中您刚刚创建的连接前面的复选框。 单击 **创建数据视图**.
+Na tela de **连接** marque a caixa de seleção da conexão que você abou de criar. 团  **创建数据视图**.
 
 ![演示](./images/exta.png)
 
-您将被重定向到 **创建数据视图** 工作流。
+Você será redirecionado para o fluxo de trabalho **创建数据视图** 工作流。
 
 ![演示](./images/0-v2.png)
 
-## 4.3.2数据视图定义
+## 4.3.2 《可视化图表》
 
-您现在可以为数据视图配置基本定义。
+Agora você pode配置为definitions básicas para sua Visualização de dados。
 
 ![演示](./images/0-v2.png)
 
-的 **连接** 您在上一个练习中创建的内容已被选中。 您的连接已命名 `yourLastName – Omnichannel Data Connection`.
+A **连接** 不行动，就是前身。 沙马 `yourLastName – Omnichannel Data Connection`.
 
 ![演示](./images/ext5.png)
 
-接下来，按照此命名约定为数据视图指定一个名称： `yourLastName – Omnichannel Data View`.
+Em seguida， dê um nome à sua Visualização de Dados seguindo este modelo de nomenclatura: `yourLastName – Omnichannel Data View`.
 
-为描述输入相同的值： `yourLastName – Omnichannel Data View`.
+Insira o mesmo valor para a descrição: `yourLastName – Omnichannel Data View`.
 
 | 名称 | 描述 |
 | ----------------- |-------------| 
@@ -61,75 +60,75 @@ ht-degree: 2%
 
 ![演示](./images/1-v2.png)
 
-对于 **时区**，选择时区 **柏林、斯德哥尔摩、罗马、伯尔尼、布鲁塞尔、维也纳、阿姆斯特丹GMT+01:00**. 这真的很有趣，因为有些公司在不同的国家和地区经营。 为每个国家分配适当的时区将避免典型的数据错误，例如相信在秘鲁，大多数人会在凌晨4:00购买T恤。
+段 **时区**，选择一男 **贝利姆、埃斯托科尔莫、罗马、贝尔纳、布鲁克塞拉斯、维耶纳、阿姆斯特丹GMT+01:00**. 我们的目标是，我们的目标是，我们的目标是，我们的目标是，我们的目标是，我们的目标是，我们的目标是，我们的目标是，我们的目标是，我们的目标是，我们的目标是，我们的目标是，我们的目标是，我们的目标。 在秘鲁，Alocar o fuso horário certo para cada país evitará erros típicos de dados， como， por smadeo， a a maioria das pessoas compra camisetasàs 4h。
 
 ![演示](./images/ext7.png)
 
-您还可以修改主要量度命名（人员、会话和事件）。 这不是必需的，但是有些客户希望使用“人员”、“访问”和“点击”，而不是“人员”、“会话”和“事件”(默认的Customer Journey Analytics命名约定)。
+Você também pode modificar a nomentcula das métricas principais(Pessoa， Sessão e Evento)。 Isso não e obrigatório， mas alguns clientes gostam de usar Pessoas， Visitas e Acessos em vez de Pessoa， Sessão e Eventos(convenção de nomenclatura padrão doCustomer Journey Analytics)。
 
-您现在应该配置以下设置：
+Agora você deve ter as seguintes configurações definidas:
 
 ![演示](./images/1-v2.png)
 
-单击 **保存并继续**.
+团 **保存并继续**.
 
 ![演示](./images/12-v2.png)
 
-## 4.3.3数据视图组件
+## 4.3.3 Visualização de Dados的组件
 
-在本练习中，您将配置分析数据并使用Analysis Workspace将其可视化所需的组件。 在此UI中，有三个主要区域：
+Neste extrecício， você irá configur os components， analyisar os dados e visualizá-los usando o Analysis Workspace。 Nesta IU，há três areas principais:
 
-- 左侧：选定数据集中的可用组件
-- 中间：向数据视图添加了组件
-- 右侧：组件设置
+- 拉多·埃斯凯多：组件disponíveis dos数据集选择者
+- 媒体：Visualização de Dados组件
+- 拉多·迪雷托：Configurações do componente
 
 ![演示](./images/2-v2.png)
 
 >[!IMPORTANT]
 >
->如果找不到特定量度或维度，请检查字段 `Contains data` 会从数据视图中删除。 如果没有，请删除该字段。
+>我们可以在坎波市 `Contains data` foi removido de sua visualização de dados. 卡索·孔塔里奥，我们的鲜花。
 >
 >![演示](./images/2-v2a.png)
 
-现在，您必须将分析所需的组件拖放到 **添加的组件**. 要实现此目的，您需要选择左侧菜单中的组件，并将它们拖放到中间的画布上。
+Agora você preisa arrastar e soltar os components a nos **添加的组件**. Para isso， você deve selecionar os components no menu esquerda e arrastá-los e soltá-los na tela no meio.
 
-让我们从第一个组件开始： **名称(web.webPageDetails.name)**. 搜索此组件，然后将其拖放到画布上。
+Vamos começar com o primeiro componente: **名称(web.webPageDetails.name)**. Pesquise componente e arraste-o e solte-o na tela。
 
 ![演示](./images/3-v2.png)
 
-此组件是页面名称，因为您可以从读取架构字段派生该组件 `(web.webPageDetails.name)`.
+Esse componente e o nome da página， como vice pode derivar da leitura do campo do schema `(web.webPageDetails.name)`.
 
-但是，使用 **名称** 由于名称不是企业用户快速了解此维度的最佳命名约定。
+没有恩坦托，乌萨尔 **名称** como o nome não a melhor convenção de nomenclatura para uário corativo compreander rapadamente essa dimensão
 
-让我们将名称改为 **页面名称**. 单击组件，然后在 **组件设置** 的上界。
+《吸血鬼》 **页面名称**. Cligue no componente e o renomeie na area **组件设置**.
 
 ![演示](./images/3-0-v2.png)
 
-真正重要的是 **持久性设置**. CJA中不存在evar和prop的概念，但“持久性”设置使类似行为成为可能。
+佩西斯特恩西亚城 **持久性设置**. Os conceitos de eVars e prop não is existem no CJA， mas as configurações de Persstência possibilitam um comportamento semelhante.
 
 ![演示](./images/3-0-v21.png)
 
-如果不更改这些设置，CJA会将维度解释为 **Prop** （点击级别）。 此外，我们还可以更改持久性，以使维度成为 **eVar** （在整个历程中保留值）。
+请参阅você não alterar essas configurações， o CJA irá interpreta a dimenssão como um **Prop** (nível de ocorência)。 Além disso， podemos a Persistência para tornar a dimensãouma **eVar** (persistir o valor ao longo da jornada)。
 
-如果您不熟悉eVar和Prop，则可以 [在文档中阅读有关这些文档的更多信息](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+她在《家庭福利》中， [莉娅·玛斯·索布尔·伊索·娜·多古塔桑](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)..
 
-让我们将页面名称保留为Prop。 因此，您无需更改任何 **持久性设置**.
+去吧，去吧，去吧。 Dessa备考， você não precisa alterar nenhuma **持久性设置**.
 
 | 要搜索的组件名称 | 新名称 | 持久性设置 |
 | ----------------- |-------------| --------------------| 
 | 名称(web.webPageDetails.name) | 页面名称 |  |
 
-接下来，选择维度 **phoneNumber** 然后把它放在画布上。 新名称应为 **电话号码**.
+Em seguida， escolha a dimensão **phoneNumber** 我的日子。 从头开始 **电话号码**.
 
 ![演示](./images/3-1-v2.png)
 
-最后，让我们更改“持久性”设置，因为“移动号码”应在用户级别持久保留。
+Por fim， vamos alterar as Configurações de persistência， pois o Número do Celular deve persistir no nível do uusário.
 
-要更改“持久性”，请在右侧菜单中向下滚动，然后打开 **持久性** 选项卡：
+Para altera a Persistência，角色是pabaxo no menu a direita e abra a aba **持久性**:
 
 ![演示](./images/5-v2.png)
 
-选中此复选框可修改持久性设置。 选择 **最近** 和 **人员（报告窗口）** 范围，因为我们只关心此人的最后一个手机号码。 如果客户未来访问中未填写移动设备，您仍会看到此值已填充。
+Marque a caixa de seleção para modificar as configurações de persistência。 选择项 **最近** e o escopo **人员（报告窗口）**, pois nos preocupamos apenas com oúltimo número de celular da pessoa. 请参加cliente não preencher o celular em visitas futuras， você ainda verá esse valor preenchido。
 
 ![演示](./images/6-v2.png)
 
@@ -137,11 +136,11 @@ ht-degree: 2%
 | ----------------- |-------------| --------------------| 
 | phoneNumber | 电话号码 | 最近，人员（报告窗口） |
 
-下一个组件是 `web.webPageDetails.pageViews.value`.
+O próximo componente `web.webPageDetails.pageViews.value`.
 
-在左侧菜单中，搜索 `web.webPageDetails.pageViews.value`. 将此量度拖放到画布上。
+没有菜单，蛋酱 `web.webPageDetails.pageViews.value`. Arraste e solte essa métrica na tela。
 
-将名称更改为 **页面查看次数** 下 **组件设置**.
+Altere o nome para **页面查看次数** 下 **组件设置**.
 
 | 要搜索的组件名称 | 新名称 | 归因设置 |
 | ----------------- |-------------| --------------------| 
@@ -149,14 +148,13 @@ ht-degree: 2%
 
 ![演示](./images/7-v2.png)
 
-对于归因设置，我们将此值留空。
+Para as configurações de atribuição， deixaremos em branco.
 
-注意：量度的持久性设置也可以在Analysis Workspace中更改。 在某些情况下，您可以选择在此处设置此持久性模型，以避免业务用户不得不考虑哪种持久性模型是最佳的。
+Observação:As configurações de persistência nas métricas também podem ser alteradas no Analysis Workspace。 Am alguns casos， você pode optar por configá-las aqui para evitar que os usuários de negócios tenham que pensar qual e o melhor modelo de persistência。
 
-接下来，您必须配置大量Dimension和量度，如下表所示。
+Em seguida， você terá que configur várias várias Dimensões e Métricas， conforme indicado na tabela abaixo.
 
-### Dimension
-
+### 维森斯
 
 | 要搜索的组件名称 | 新名称 | 持久性设置 |
 | ----------------- |-------------| --------------------| 
@@ -175,39 +173,38 @@ ht-degree: 2%
 | URL(web.webPageDetails.URL) | URL |  |
 | 用户代理 | 用户代理 | 最近，会话 |
 
-### 量度
+### 美特里察
 
 | 要搜索的组件名称 | 新名称 | 归因设置 |
 | ----------------- |-------------| --------------------| 
 | 数量 | 数量 |  |
 | commerce.order.priceTotal | 收入 |  |
 
-然后，您的配置应如下所示：
+Sua configuração deve semelhante ao seguinte:
 
 ![演示](./images/11-v2.png)
 
-别忘了 **保存** 您的数据视图。 所以单击 **保存** 现在。
+Não se esqueça de Salvar sua Visualização de Dados。 恩唐团 **保存**.
 
 ![演示](./images/12-v2s.png)
 
-## 4.3.4计算量度
+## 4.3.4 Métricas calculadas
 
-尽管我们在数据视图中组织了所有组件，但您仍需要调整其中一些组件，以便业务用户能够开始分析。
+Embora tenhamos organizado todos os components na Visualização de dados， você ainda deve adaptar alguns deles para que os usuarios de negócios estejam prontos para iniciar suas analises。
 
-如果您记得，我们并未专门将“添加到购物车”、“产品查看”或“购买”等量度纳入数据视图。
-但是，我们确实有一个维度名为： **事件类型**. 因此，让我们通过创建3个计算量度来派生这些交互类型。
+Se você se lembra， não trouxemos sedificamente Métricas como Adicionar ao Carrinho， Visualização do produto ou Compras para a Visualização de dados。 没有entanto，temos uma dimensão chamada: **事件类型**. Então， vamos derivar seses tipos de interção criando 3 métricas calculadas。
 
-让我们从第一个量度开始： **产品查看**.
+Vamos começar com a primeira Métrica: **产品查看**.
 
-请在左侧搜索 **事件类型** ，然后选择维度。 然后，将其拖放到 **包含的组件** 画布。
+不要拉多·埃斯凯多，佩斯奎斯 **事件类型** 选择维度。 阿姆·塞吉达，阿拉斯特 — o e solte-o na tela **包含的组件**.
 
 ![演示](./images/calcmetr1.png)
 
-单击以选择新量度 **事件类型**.
+新墨西哥 **事件类型**.
 
 ![演示](./images/calcmetr2.png)
 
-现在，将组件名称和描述更改为以下值：
+Agora altere o nome e a descrição do componente para os seguintes valores:
 
 | 组件名称 | 组件描述 |
 | ----------------- |-------------| 
@@ -215,31 +212,31 @@ ht-degree: 2%
 
 ![演示](./images/calcmetr3.png)
 
-现在，仅允许计数 **产品查看** 事件。 要实现此目的，请在 **组件设置** 直到你看到 **包含排除值**. 确保启用选项 **设置包含/排除值**.
+爱鬼魔鬼夜总会 **产品查看**. Para fazer isso， para baixo em **组件设置** 瓦洛雷斯河 **包含排除值**. 奥普桑河 **设置包含/排除值**.
 
 ![演示](./images/calcmetr4.png)
 
-因为我们只想数 **产品查看**，请指定 **commerce.productViews** 中，将其标记为“隐藏”。
+Como queremos contar apenas **产品查看**，特别是 **commerce.productViews** 克里特里奥斯号。
 
 ![演示](./images/calcmetr5.png)
 
-您的计算量度现已准备就绪！
+我的脑子真够劲！
 
-接下来，对 **添加到购物车** 和 **购买** 事件。
+Em seguida， repita o mesmo processo para os eventos **添加到购物车** e **购买**.
 
 ### 添加到购物车
 
-首先拖放同一维度 **事件类型**.
+Primeiro， arraste e solte a mesma dimensão **事件类型**.
 
 ![演示](./images/calcmetr1.png)
 
-由于我们使用的是同一变量，因此您将看到一个重复字段的弹出警报。 请单击 **仍添加**:
+Você verá um alerta poup de um Campo Duplicado， pois estamos usando a mesma variavel. 团 **仍添加**:
 
 ![演示](./images/calcmetr6.png)
 
-现在，请按照与“产品查看次数”量度相同的流程操作：
-- 首先更改名称和描述。
-- 最后添加 **commerce.productListAdds** 作为仅计数“添加到购物车”的标准
+Agora， siga o mesmo processo que fizemos para a métrica Visualizações de produto:
+- Primeiro altere o nome e a descrição.
+- 波菲姆，阿迪西奥内 **commerce.productListAdds** como critério para contar apenas Add To Cart
 
 | 名称 | 描述 | 标准 |
 | ----------------- |-------------| -------------|
@@ -249,17 +246,17 @@ ht-degree: 2%
 
 ### 购买
 
-首先拖放同一维度 **事件类型** 与之前两个量度的操作一样。
+Primeiro， arraste e solte a mesma dimensão **事件类型** 我们的朋友们。
 
 ![演示](./images/calcmetr1.png)
 
-由于我们使用的是同一变量，因此您将看到一个重复字段的弹出警报。 请单击 **仍添加**:
+Você verá um alerta poup de um Campo Duplicado， pois estamos usando a mesma variavel. 团 **仍添加**:
 
 ![演示](./images/calcmetr7.png)
 
-现在，请按照与产品查看次数和添加到购物车量度相同的流程操作：
-- 首先更改名称和描述。
-- 最后添加 **commerce.purches** 作为仅计数购买的标准
+Agora， siga o mesmo processo que fizemos para as métricas产品查看添加到购物车：
+- Primeiro altere o nome e a descrição.
+- 波菲姆，阿迪西奥内 **commerce.purches** 科莫·克里里奥斯·帕拉·康帕尼亚斯
 
 | 名称 | 描述 | 标准 |
 | ----------------- |-------------| -------------|
@@ -267,36 +264,36 @@ ht-degree: 2%
 
 ![演示](./images/calcmetr7a.png)
 
-然后，您的最终配置应类似于此。 单击 **保存并继续**.
+Sua configuração final deve semelhante ao seguinte. 团 **保存并继续**.
 
 ![演示](./images/calcmetr8.png)
 
-## 4.3.5数据视图设置
+## 4.3.5 Configuração de Dados组件
 
-您应被重定向到此屏幕：
+Você deve ser redirecionado para tela:
 
 ![演示](./images/8-v2.png)
 
-在此选项卡中，您可以修改一些重要设置以更改数据的处理方式。 我们先通过设置 **会话超时** 到30分钟。 由于每个体验事件的时间戳，您可以在所有渠道中扩展会话的概念。 例如，如果客户在访问网站后致电呼叫中心，会发生什么情况？ 使用自定义会话超时，您在决定什么是会话以及该会话如何将数据合并在一起方面缺乏灵活性。
+Nesta aba， você po de modificar algumas configurações importantes para alterar a forma como os dados são processados。 《魔鬼》 **会话超时** 30分钟。 Graças ao registro de data e hora de cada evento de experiencia， você pode esteno o conceito de uma sessão em todos os canais。 Por smadeo， o que acontece se um cliente ligar para o call center depois de visitar o site? Usando Tempos Limite de Sessão personalizados， você tem muita flibilidade para decidir o que u ma sessão e como sessão irá mesclar os dados。
 
 ![演示](./images/ext8.png)
 
-在此选项卡中，您可以修改其他内容，如使用区段/过滤器过滤数据。 在本练习中，您无需执行此操作。
+Nesta aba ba você pode modificar outras coisas como filtrar os dados usando um segmento/filtro. 不过，我不会去训练。
 
 ![演示](./images/10-v2.png)
 
-完成后，请单击 **保存并完成**.
+干多·塔玛尔，小伙 **保存并完成**.
 
 ![演示](./images/13-v2.png)
 
 >[!NOTE]
 >
->之后，您可以返回此数据视图，并随时更改设置和组件。 更改将影响历史数据的显示方式。
+>Você pode voltar a esta Visualização de dados asterar as configurações e os componentes a qualquer momento. 如alterações afetarão a forma como os dados históricos são mostrados。
 
-您现在可以继续使用可视化和分析部分！
+Agora você pode continuar com a parte de visualização e análise!
 
-下一步： [4.4在Customer Journey Analytics中准备数据](./ex4.md)
+埃塔帕： [4.4准备Customer Journey Analytics](./ex4.md)
 
-[返回到用户流量4](./uc4.md)
+[Retornar para Fluxo de Uuário 4](./uc4.md)
 
-[返回到所有模块](./../../overview.md)
+[托多斯 — 莫杜洛斯](./../../overview.md)

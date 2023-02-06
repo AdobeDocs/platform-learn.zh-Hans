@@ -5,103 +5,104 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '679'
-ht-degree: 3%
+source-wordcount: '701'
+ht-degree: 2%
 
 ---
 
-# 4.2在Customer Journey Analytics中连接Adobe Experience Platform数据集
+# 4.2连接数据集da Adobe Experience Platform无Customer Journey Analytics
 
-## 目标
+## 奥别蒂沃斯
 
-- 了解数据连接UI
-- 将Adobe Experience Platform数据导入CJA
-- 了解人员ID和数据拼合
-- 了解Customer Journey Analytics中数据流的概念
+- 全面的UI da conexão de dados
+- 《Adobe Experience Platform行动》
+- 了解ID da pessoa e compilação de dados
+- Aprenda o conceito de streaming de dados no Customer历程
 
-## 4.2.1连接
+## 4.2.1科内桑
 
-转到 [analytics.adobe.com](https://analytics.adobe.com) 以访问Customer Journey Analytics。
+阿塞斯 [analytics.adobe.com](https://analytics.adobe.com) Customer Journey Analytics。
 
-在Customer Journey Analytics主页上，转到 **连接**.
+我们的Customer Journey Analytics **连接**.
 
 ![演示](./images/cja2.png)
 
-在此，您可以看到CJA与平台之间建立的所有不同连接。 这些连接的目标与Adobe Analytics中的报表包相同。 但是，数据的收集却截然不同。 所有数据都来自Adobe Experience Platform数据集。
+Aqui você ver todas as diferentes conexões feitas entre o CJA e a Plataforma. Essas conexöes têm o mesmo objetivo dos conjuntos de relatórios no Adobe Analytics。 不能做，不能做完。 Todos os dados vêm de da Adobe Experience Platform。
 
-让我们创建您的第一个连接。 单击&#x200B;**“创建新连接”**。
+来吧，来吧。 团 **创建新连接**.
 
 ![演示](./images/cja4.png)
 
-然后您将看到 **创建连接** UI。
+Você verá a UI **创建连接** UI。
 
 ![演示](./images/cja5.png)
 
-您现在可以为连接提供名称。
+Agora você pode dar nome à conexão.
 
-请使用此命名约定： `yourLastName – Omnichannel Data Connection`.
+使用este modelo de nomenclataura: `yourLastName – Omnichannel Data Connection`.
 
-示例：`vangeluw - Omnichannel Data Connection`
+样本： `vangeluw - Omnichannel Data Connection`
 
-您还需要选择要使用的正确沙盒。 在沙盒菜单中，选择您的沙盒，沙盒应为 `Bootcamp`. 在此示例中，要使用的沙盒为 **Bootcamp**. 您还需要将 **平均每日事件数** to **不到100万**.
+Você também会选择沙盒或沙盒。 无菜单沙盒，选择一个安全沙盒，请求 `Bootcamp`. 不是样本，就是沙盒 **Bootcamp**. 我的女人 **平均每日事件数** to **不到100万**.
 
 ![演示](./images/cjasb.png)
 
-选择沙盒后，您可以开始向此连接添加数据集。 单击 **添加数据集**.
+Após selecionar seu沙盒、 você pode começar a adicionar数据集a esta conexão。 团 **添加数据集**.
 
 ![演示](./images/cjasb1.png)
 
-## 4.2.2选择Adobe Experience Platform数据集
+## 4.2.2选择数据集da Adobe Experience Platform
 
-搜索数据集 `Demo System - Event Dataset for Website (Global v1.1)`. 单击 **+** 将数据集添加到此连接。
+数据集问题 `Demo System - Event Dataset for Website (Global v1.1)`. 团 **+** para adicionar o dataset a esta conexão
 
 ![演示](./images/cja7.png)
 
-现在，搜索并选中复选框 `Demo System - Event Dataset for Voice Assistants (Global v1.1)` 和 `Demo System - Event Dataset for Call Center (Global v1.1)`.
+塞莱桑的圣女 `Demo System - Event Dataset for Voice Assistants (Global v1.1)` 和 `Demo System - Event Dataset for Call Center (Global v1.1)`.
 
-然后你会得到这个。 单击&#x200B;**下一步**。
+她的话，我就是个空话。 团 **下一个**.
 
 ![演示](./images/cja9.png)
 
-## 4.2.3人员ID和数据拼合
+## 4.2.3 ID da pessoa e compilação de dados
 
-### 人员 ID
+### ID da pessoa
 
-现在的目标是加入这些数据集。 对于您选择的每个数据集，您将看到一个名为 **人员ID**. 每个数据集都有其自己的“人员ID”字段。
+O objetivo agora e juntar处理数据集。 Para cada数据集selectionado， você verá um campo chamado **人员ID**. Cada数据集tem seu próprio campo de ID de pessoa。
 
 ![演示](./images/cja11.png)
 
-如您所见，大多数客户会自动选择人员ID。 这是因为在Adobe Experience Platform的每个架构中都选择了主标识符。 例如，以下是 `Demo System - Event Schema for Call Center (Global v1.1)`，您可以看到主标识符设置为 `phoneNumber`.
+Como voê pode ver， a maioria detem o ID da pessoa selecionado automaticamente. Isso ocorre porque mum identification ador princialéé selecionado em cada esquema na Adobe Experience Platform。 象科莫一样，我是个好人 `Demo System - Event Schema for Call Center (Global v1.1)`在Primário está definitido como身份识别员身份识别上 `phoneNumber`.
 
 ![演示](./images/cja13.png)
 
-但是，您仍可能会影响使用哪个标识符拼合连接数据集。 您可以使用在链接到数据集的架构中配置的任何标识符。 单击下拉菜单以浏览每个数据集上可用的ID。
+没有entanto， você ainda pode influeciar qual identifiador será usado para compilar datas para sua conexão。 Você pode usar qualquer identification ador configurado no esquema vinculado seu数据集。 Cligue无菜单暂停搜索ID的搜索ID和AEM CAD数据集。
 
 ![演示](./images/cja14.png)
 
-如前所述，您可以为每个数据集设置不同的人员ID。 这允许您在CJA中将多个源中的不同数据集合在一起。 想象一下，引入NPS或调查数据，这些数据将非常有趣，有助于了解背景以及为什么发生了什么情况。
+Conforme mencionado、você pode定义不同的ID， de pessoa para cada数据集。 Isso permite引用CJA上的múltiplas origens数据集。 想象一下NPS在达多斯·德·佩斯奎萨·克·塞里亚姆·米托的故事中，你想的是，你想想想想想想想想想想想想想想想想想想想想想想想想想想想想想，想想想想想想想想想想想就想想想想想想想想想想想，想想想想想想想想想想想想想，想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想就想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想想
 
-“人员ID”字段的名称并不重要，只要“人员ID”字段中的值对应。 假设我们有 `email` 在一个数据集中 `emailAddress` 在另一个定义为“人员ID”的数据集中。 如果 `delaigle@adobe.com` 是两个数据集上“人员ID”字段的相同值，CJA将能够拼合数据。
+O nome do campo ID da pessoa não e importante， desque o valor nos campos ID da pessoa对应。 迪加莫斯的特莫斯 `email` em um数据集 `emailAddress` em outro数据集定义como ID da pessoa。 Se `delaigle@adobe.com` tiver o mesmo valor para o campo ID da pessoa em ambos os数据集， o CJA poderá compilar os dados。
 
-目前还存在一些其他限制，例如，我们拼合已知的匿名行为。 请在此处查看常见问题解答： [常见问题解答](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans).
+Atualmente，现有algumas outras limitações， compilar o comportamento anônimo para conhecido。 参考perguntas频度： [常见问题解答](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans).
 
-### 使用人员ID拼合数据
 
-现在，您已了解使用人员ID拼合数据集的概念，接下来，让我们选择 `email` 作为每个数据集的人员ID。
+### 编辑ID da pessoa
+
+Agora que vocke do conceinde o concei to de compilar dataset usando o ID da pessoa， vamos escolher `email` como ID da pessoa para cada数据集。
 
 ![演示](./images/cja15.png)
 
-转到每个数据集以更新人员ID。
+Acesse cada数据集para autalizar o ID da pessoa。
 
 ![演示](./images/cja12a.png)
 
-现在，填写人员ID字段，选择 `email` 中。
+阿戈拉·普林查·坎波ID达佩索阿·埃斯科伦多 `email` 不行。
 
 ![演示](./images/cja17.png)
 
-拼合这三个数据集后，我们便可以继续。
+Depois de compilar os três数据集， esamos prontos para continuar。
 
 | 数据集 | 人员 ID |
 | ----------------- |-------------| 
@@ -109,22 +110,21 @@ ht-degree: 3%
 | 演示系统 — 语音助理事件数据集（全局v1.1） | 电子邮件 |
 | 演示系统 — 呼叫中心事件数据集（全局v1.1） | 电子邮件 |
 
-您还需要确保为每个数据集启用以下选项：
+Você também precisa garantir que， para cada数据集， essa opções estejam habilitadas:
 
-- 导入所有新数据
-- 回填所有现有数据
+- 重要的todos os novos dados
+- Preencher todos os dados存在者
 
-单击 **添加数据集**.
+团 **添加数据集**.
 
 ![演示](./images/cja16.png)
 
-单击 **保存** 然后去下一个练习。
-创建 **连接** 在CJA中提供数据可能需要几个小时。
+团 **保存** e vá para o próximo excreício. Depois de criar sua **连接**, pode levar algumas horas até que seus dados estejam disponíveis no CJA.
 
 ![演示](./images/cja20.png)
 
-下一步： [4.3创建数据视图](./ex3.md)
+埃塔帕： [4.3 《达多斯可视化图表》](./ex3.md)
 
-[返回到用户流量4](./uc4.md)
+[Retornar para Fluxo de Uuário 4](./uc4.md)
 
-[返回到所有模块](./../../overview.md)
+[托多斯 — 莫杜洛斯](./../../overview.md)

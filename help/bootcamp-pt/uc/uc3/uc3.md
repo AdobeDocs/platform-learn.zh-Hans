@@ -5,43 +5,43 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 3%
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
-# 3.将物理和数字混合
+# 3. Retornar para Todos os Módulos
 
-## 学习目标
+## 阿普伦迪扎多河
 
-## 先决条件
+## 普雷雷基托斯
 
-- 访问 Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- 访问Adobe Experience Platform数据收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 访问演示网站
+- Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de doreção
 
 >[!IMPORTANT]
 >
->本教程的创建是为了促进特定的Bootcamp格式。 它使用您可能无权访问的特定系统和帐户。 即使没有访问权限，我们认为您仍然可以通过阅读这些非常详细的内容来学习很多知识。 如果您是某个Bootcamp的参与者，并且需要您的访问凭据，请联系您的Adobe代表，该代表将为您提供所需的信息。
+>特别是私营的教程。 Sistemas e contas specíficos aos quais você pode não ter acesso são ulidados教程不提供。 Mesmo sem acesso， você ainda pode aprender muito com a leitura deste contest do detalhado。 请参加bootcamp e precisa das credenciais de acesso，让contato com seu代表da Para receber作为必要的信息。
 
-## 练习
+## 埃克雷西奥斯
 
-[3.1使用移动设备应用程序并触发信标条目](./ex1.md)
+[3.1使用aplicativo móvel e acione sinalizador信标](./ex1.md)
 
-在本练习中，您将学习如何配置事件。
+我们要好好谈谈心。
 
-[3.2创建事件](./ex2.md)
+[3.2克里休事件](./ex2.md)
 
-在本练习中，您将学习如何配置事件。
+我们要好好谈谈心。
 
-[3.3创建历程和推送通知](./ex3.md)
+[3.3 Crie sua jornada e notificação push](./ex3.md)
 
-在本练习中，您将了解如何配置历程和推送通知，以及如何将事件和消息关联到该历程。
+Neste expercuício， você irá aprender como配置uma jornada e uma notifação puse e comul seu evento e mensagem para jornada。
 
-[3.4测试您的历程](./ex4.md)
+[3.4佐田泰斯特](./ex4.md)
 
-在本练习中，您将学习如何配置旅程以及如何将事件和消息关联到该旅程。
+Neste excrecio， você irá aprender como confira muma jornada e comu vincual seu evento e mensagem para jornada。
 
-[返回到所有模块](../../overview.md)
+[托多斯 — 莫杜洛斯](../../overview.md)

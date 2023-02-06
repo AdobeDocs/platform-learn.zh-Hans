@@ -5,54 +5,54 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 1%
+source-wordcount: '194'
+ht-degree: 0%
 
 ---
 
-# 3.4测试您的历程
+# 3.4佐田泰斯特
 
-要测试您的历程，您需要使用在练习3.2中创建的事件的事件ID，如下所示。
+Para testar sujornada， você deve usar o eventID criado no expericício 3.2, que deve semelhante ao seguinte。
 
 ![ACOP](./images/payloadeventID.png)
 
-事件ID是需要发送到Adobe Experience Platform才能触发历程的内容。 在此示例中，eventID为：
+不要让前人为Adobe Experience Platform而嫉妒。 删除样本，或事件IDé:
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-打开移动设备应用程序，然后转到主页。 单击&#x200B;**设置**&#x200B;图标。
+我的手术是为了。 伊科内集团 **Configuração**.
 
 ![DSN](./images/appsett.png)
 
-将事件ID粘贴到字段中 **信标事件ID** 单击 **保存**.
+科尔城事件ID无坎波 **信标事件ID** e团 **保存**.
 
 ![DSN](./images/beacon1.png)
 
-在继续之前，请在您的计算机上打开此网页： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar， abra esta página da Web em seu compuador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-然后您将看到：
+Em seguida， será exibida a tela:
 
 ![DSN](./images/screen1.png)
 
-接下来，返回主页。 单击 **信标** 图标。
+我们是来做假人的。 伊科内集团 **信标**.
 
 ![DSN](./images/app23.png)
 
-然后你会看到这个。 首先，选择 **Bootcamp屏幕信标** ，然后单击 **条目** 按钮。 这将允许您模拟信标条目。
+普里米罗，选野 **Bootcamp屏幕信标** e集团 **恩特拉达** 按钮。 我们要做一个信标。
 
 ![DSN](./images/app21.png)
 
-现在，看看店内屏幕。 您将在5秒内看到您查看的最后一个产品。
+阿哥拉确认了一条线索。 Você verá oúltimo produto visualizado aparecer nessa em 5 segundos.
 
 ![DSN](./images/beacon3.png)
 
-您还会收到推送通知。
+Você também terá recibido sua notificação push.
 
 ![DSN](./images/beacon2.png)
 
-你现在已经完成了这个练习。
+这是行动。
 
-[返回到用户流量3](./uc3.md)
+[乌萨里奥河3](./uc3.md)
 
-[返回到所有模块](../../overview.md)
+[托多斯 — 莫杜洛斯](../../overview.md)

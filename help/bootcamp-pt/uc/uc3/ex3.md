@@ -5,137 +5,137 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '842'
 ht-degree: 2%
 
 ---
 
-# 3.3创建历程和推送通知
+# 3.3 Crie sua jornada e notificação push
 
-在本练习中，您将配置当用户使用移动设备应用程序进入信标时需要触发的历程和消息。
+Neste exeracticio， você irá配置jornada e a mensagem precisa ser acionada quando alguém inser ir uma sinalização（信标）usando o aplicativo móvel。
 
-通过转到Adobe Journey Optimizer [Adobe Experience Cloud](https://experience.adobe.com). 单击 **Journey Optimizer**.
+Faça login no Adobe Journey Optimizer acessando a [Adobe Experience Cloud](https://experience.adobe.com). 团 **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-您将被重定向到 **主页**  查看Journey Optimizer。 首先，确保您使用的是正确的沙盒。 要使用的沙盒称为 `Bootcamp`. 要从一个沙盒更改为另一个沙盒，请单击 **生产** 并从列表中选择沙盒。 在此示例中，沙盒名为 **Bootcamp**. 然后你会在 **主页** 沙盒视图 `Bootcamp`.
+Você será redirecionado para a visualização da **主页** 不，Journey Optimizer。 普里米罗，我的梦想是沙盒的。 没人会沙箱里的 `Bootcamp`. Para alternar de um sandbox para outro， plicaem **生产** 选择沙盒和沙盒。 新样本，没人做沙盒 **Bootcamp**. Você estará na visualização da **主页**  做seu沙盒 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.3.1创建历程
+## 3.3.1小日记
 
-在左侧菜单中，单击 **历程**. 接下来，单击 **创建历程** 以创建新历程。
+没有菜单，小朋友 **历程**. 阿姆·塞吉达，小团 **创建历程** 新约拉达河。
 
 ![ACOP](./images/createjourney.png)
 
-然后，您将看到一个空历程屏幕。
+那是我的天。
 
 ![ACOP](./images/journeyempty.png)
 
-在上一个练习中，您创建了一个 **事件**. 你这样命名的 `yourLastNameBeaconEntryEvent` 替换 `yourLastName` 姓氏。 这是事件创建的结果：
+前不行动，从头开始 **事件**. 波凯诺梅乌奥文托 `yourLastNameBeaconEntryEvent` e代替 `yourLastName` 佩洛·苏·索布雷诺姆。 Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
-现在，您需要将此事件作为此历程的开始。 为此，您可以转到屏幕左侧，并在事件列表中搜索您的事件。
+阿戈拉认为，这一切都是乔纳达的事。 Você pode fazer isso indo para o lado esquerdo da e procando pelo seu evento na lista de eventos。
 
 ![ACOP](./images/eventlist.png)
 
-选择您的事件，将其拖放到历程画布上。 你的旅程现在是这样。 单击 **确定** 以保存更改。
+选择一个seu evento， arraste e solte o evento na tela de jornada。 《我的日记》。 团 **确定** 萨尔瓦·苏亚斯·阿尔特拉松斯。
 
 ![ACOP](./images/journeyevent.png)
 
-作为历程的第二步，您需要添加 **推送** 操作。 转到屏幕左侧的 **操作**，选择 **推送** 操作，然后将其拖放到历程中的第二个节点。
+科莫·塞贡达·埃塔帕·达·约纳达， você deve adicionar uma ação **推送**. Vá para o lado esquerdo da tela para **操作**，选择ação **推送** arraste e solte a ação no segundo nó da sua jornada.
 
 ![ACOP](./images/journeyactions.png)
 
-现在，您需要在屏幕右侧创建推送通知。
+不要用lado direito da tela， agora você deve criar sua notifição推。
 
-设置 **类别** to **营销** ，然后选择可用于发送推送通知的推送表面。 在这种情况下，要选取的推曲面是 **mmeewis-app-mobile-bootcamp**.
+定义a **类别** 科科 **营销** e selecione uma supfície push que permite envior notificações push. Nesse caso，一个浅薄的人推着选手 **mmeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
-## 3.3.2创建消息
+## 3.3.2 Crie a sua mensagem
 
-单击 **编辑内容**.
+团 **编辑内容**.
 
 ![ACOP](./images/emptymsg.png)
 
-然后您将看到：
+Em seguida，一个有害的人：
 
 ![ACOP](./images/emailmsglist.png)
 
-让我们定义推送通知的内容。
+用上面的话来定义。
 
-单击 **标题** 文本。
+坎波德特克斯托团 **标题**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-在文本区域中开始写入 **你好**. 单击个性化图标。
+德克斯托，科米切 **奥拉**. 个人化团体。
 
 ![Journey Optimizer](./images/msg6.png)
 
-现在，您需要为字段引入个性化令牌 **名字** 存储在 `profile.person.name.firstName`. 在左侧菜单中，选择 **配置文件属性**，向下滚动/导航以查找 **人员** 元素并单击箭头可更深入地查看，直到您到达该字段 `profile.person.name.firstName`. 单击 **+** 图标将字段添加到画布。 单击&#x200B;**保存**。
+Agora você precisa trazer o to kom de personalização para o campo **名字** 她是阿尔玛泽纳多 `profile.person.name.firstName`. 无菜单esquerda， selecione **配置文件属性**, para baixo/navegue para encontra o elemento **人员** e plicue na seta para avançum nível até chegar ao campo `profile.person.name.firstName`. 伊科内集团 **+** para adicionar o campo à tela。 团 **保存**.
 
 ![Journey Optimizer](./images/msg7.png)
 
-然后你会回来。 单击字段旁边的个性化图标 **正文**.
+Então， você irá retor nar para esta tela。 个人化团体 **正文**.
 
 ![Journey Optimizer](./images/msg11.png)
 
-在文本区域中，写 `Welcome at the `.
+德克斯托，埃斯克里瓦 `Bem-vindo(a)`.
 
 ![Journey Optimizer](./images/msg12.png)
 
-接下来，单击 **上下文属性** 然后 **Journey Orchestration**.
+阿姆·塞吉达，小团  **上下文属性** 然后 **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
-单击 **事件**.
+团 **事件**.
 
 ![ACOP](./images/jomsg4.png)
 
-单击事件的名称，该名称应如下所示： **yourLastNameBeaconEntryEvent**.
+Cligue no nome do seu evento， que deve semelhante ao seguinte: **yourLastNameBeaconEntryEvent**.
 
 ![ACOP](./images/jomsg5.png)
 
-单击 **放置上下文**.
+团 **放置上下文**.
 
 ![ACOP](./images/jomsg6.png)
 
-单击 **POI互动**.
+团 **POI互动**.
 
 ![ACOP](./images/jomsg7.png)
 
-单击 **POI详细信息**.
+团 **POI详细信息**.
 
 ![ACOP](./images/jomsg8.png)
 
-单击 **+** 图标 **POI名称**.
-然后你会看到这个。 单击**保存**。
+团 **+** 图标号 **POI名称**.
+是塞吉达，是塞金特塞拉。 团 **保存**.
 
 ![ACOP](./images/jomsg9.png)
 
-您的消息现已准备就绪。 单击左上角的箭头以返回您的历程。
+我的脑袋很象。 Cligue na seta no canto superesquerdo para retorn a sua jornada。
 
 ![ACOP](./images/jomsg11.png)
 
-单击 **确定**.
+团 **确定**.
 
 ![ACOP](./images/jomsg14.png)
 
-## 3.3.2向屏幕发送消息
+## 3.3.2 Envie uma mensagem para uma tela
 
-作为历程的第三步，您需要添加 **sendMessageToScreen** 操作。 转到屏幕左侧的 **操作**，选择 **sendMessageToScreen** 操作，然后将其拖放到历程的第三个节点。 然后你会看到这个。
+Como terceira etapa da jornada， você deve adicionar uma ação  **sendMessageToScreen** 操作。 Vá para o lado esquerdo da tela para **操作**，选择ação **sendMessageToScreen** arraste e solte a ação no terceiro nó da sua jornada. 她的话，我就是个空话。
 
 ![ACOP](./images/jomsg15.png)
 
-的 **sendMessageToScreen** 操作是一个自定义操作，它将消息发布到存储内显示所使用的端点。 的 **sendMessageToScreen** 操作需要定义多个变量。 您可以通过向下滚动直至看到 **操作参数**.
+**sendMessageToScreen** é uma ação personalizada que irá publicar mensagem no ponto de extremidade usado pela exibição na loja. 阿桑 **sendMessageToScreen** 她想要玛蒂普拉斯·瓦里维斯·塞贾姆·德菲达斯。 Você pode visualizar essas variáveis rolando para baixo até ver **操作参数**.
 
 ![ACOP](./images/jomsg16.png)
 
-现在，您需要为每个操作参数设置值。 请参阅下表，了解在哪些情况下需要哪些值。
+Agora você precisa definir os valores para cada parâmetro de ação. Siga esta tabela para entender quais alores são equisários e onde.
 
 | 参数 | 值 |
 |:-------------:| :---------------:|
@@ -151,29 +151,29 @@ ht-degree: 2%
 
 {style=&quot;table-layout:auto&quot;}
 
-要设置这些值，请单击 **编辑** 图标。
+Paradefinir是Valores， Clium noícone **编辑**.
 
 ![ACOP](./images/jomsg17.png)
 
-接下来，选择 **高级模式**.
+Em seguida， selecione **高级模式**.
 
 ![ACOP](./images/jomsg18.png)
 
-然后，根据上表粘贴值。 单击 **确定**.
+Em seguida， cole o valor com bas a tabela acima. 团 **确定**.
 
 ![ACOP](./images/jomsg19.png)
 
-重复此过程为每个字段添加值。
+Repita加强了对para adicionar valores para cada campo的处理。
 
 >[!IMPORTANT]
 >
->对于字段ECID，有对事件的引用 `yourLastNameBeaconEntryEvent`. 请确保更换 `yourLastName` 姓氏。
+>Para o campo ECID， há uma referncia ao evento`yourLastNameBeaconEntryEvent`. 朗布雷 — 塞替基尔  `yourLastName` 佩洛·苏·索布雷诺姆。
 
-最终结果应如下所示：
+最后，最后一个Semelhante ao seguinte:
 
 ![ACOP](./images/jomsg20.png)
 
-向上滚动并单击 **确定**.
+Ar para cima e clique **确定**.
 
 ![ACOP](./images/jomsg21.png)
 
@@ -181,28 +181,28 @@ ht-degree: 2%
 
 ![ACOP](./images/journeyname.png)
 
-然后，您可以在此处输入历程的名称。 请使用 `yourLastName - Beacon Entry Journey`. 单击 **确定** 以保存更改。
+我的船就是。 使用 `yourLastName - Beacon Entry Journey`. 团 **确定** 萨尔瓦·苏亚斯·阿尔特拉松斯。
 
 ![ACOP](./images/journeyname1.png)
 
-您现在可以通过单击 **发布**.
+我的歌声是公开的 **发布**.
 
 ![ACOP](./images/publishjourney.png)
 
-单击 **发布** 再次。
+团 **发布** 诺瓦门特。
 
 ![ACOP](./images/publish1.png)
 
-然后，您将看到一个绿色确认栏，表示您的历程现已发布。
+Você verá uma barra de confirmmação verde informando que sua jornada agora está Publicada.
 
 ![ACOP](./images/published.png)
 
-您的历程现已上线，可以触发。
+我们的生活很愉快。
 
-你现在已经完成了这个练习。
+这是行动。
 
-下一步： [3.4测试您的历程](./ex4.md)
+埃塔帕： [3.4佐田泰斯特](./ex4.md)
 
-[返回到用户流量3](./uc3.md)
+[乌萨里奥河3](./uc3.md)
 
-[返回到所有模块](../../overview.md)
+[托多斯 — 莫杜洛斯](../../overview.md)

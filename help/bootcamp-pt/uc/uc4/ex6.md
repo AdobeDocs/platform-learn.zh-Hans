@@ -5,31 +5,30 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '95'
-ht-degree: 1%
+source-wordcount: '97'
+ht-degree: 0%
 
 ---
 
-# 4.6从洞察到行动
+# 4.6 Dos insights à ação
 
-## 目标
+## 奥别蒂沃斯
 
-- 了解如何根据在Customer Journey Analytics中收集的洞察信息创建受众
-- 在Real-Time CDP和Adobe Journey Optimizer中使用该受众
+- Entenda como criar um público com base em u ma visão coletada noCustomer Journey Analytics
+- 使用esse público no CDP em tempo real e no Adobe Journey Optimizer
 
-## 4.6.1创建受众并发布该受众
+## 4.6.1 Crie uma audincia e publique-a
 
-在您的项目中，您创建了一个名为
+我是说，我可是说。
 
-## 4.6.2将受众用作区段的一部分
+## 4.6.2使用sua audincia como parte de um segmento
 
+## 4.6.2使用seu segmento na Real-Time CDP em tempo real
 
-## 4.6.2在Real-Time CDP中使用您的区段
-
-## 4.6.3在Adobe Journey Optimizer中使用您的区段
+## 4.6.3使用seu segmento no Adobe Journey Optimizer
 
 [返回到用户流量4](./uc4.md)
 
-[返回到所有模块](./../../overview.md)
+[马多洛斯岛](./../../overview.md)

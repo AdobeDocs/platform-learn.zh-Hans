@@ -6,9 +6,9 @@ audience: all/bootcamp-pt/
 index: false
 hide: true
 doc-type: multipage
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '158'
 ht-degree: 3%
 
 ---
@@ -18,32 +18,32 @@ ht-degree: 3%
 
 + [概述](/help/bootcamp-pt/overview.md)
 + [准备工作](/help/bootcamp-pt/prework.md)
-+ 1 — 收购 {#uc1}
++ 1 — 阿基西桑 {#uc1}
    + [概述](/help/bootcamp-pt/uc/uc1/uc1.md)
-   + [1.1访问网站](/help/bootcamp-pt/uc/uc1/ex1.md)
-   + [1.2可视化您自己的实时客户用户档案 — UI](/help/bootcamp-pt/uc/uc1/ex2.md)
-   + [1.3创建区段 — UI](/help/bootcamp-pt/uc/uc1/ex3.md)
-   + [1.4采取行动：将区段发送到Adobe Target](/help/bootcamp-pt/uc/uc1/ex4.md)
-   + [1.5采取行动：将区段发送到Facebook](/help/bootcamp-pt/uc/uc1/ex5.md)
-+ 2 — 注册和载入 {#uc2}
+   + [1.1做德康河多岛综合登录网站](/help/bootcamp-pt/uc/uc1/ex1.md)
+   + [1.2真实呈现seu próprio perfil de cliente em tempo - UI](/help/bootcamp-pt/uc/uc1/ex2.md)
+   + [1.3标准区段 — UI](/help/bootcamp-pt/uc/uc1/ex3.md)
+   + [1.4阿桑：恩维埃·塞门托·帕拉·Adobe Target](/help/bootcamp-pt/uc/uc1/ex4.md)
+   + [1.5阿桑：恩维埃·塞门托·帕拉·Facebook](/help/bootcamp-pt/uc/uc1/ex5.md)
++ 2 — 地籍和载入 {#uc2}
    + [概述](/help/bootcamp-pt/uc/uc2/uc2.md)
-   + [2.1访问网站并创建帐户](/help/bootcamp-pt/uc/uc2/ex1.md)
-   + [2.2创建事件](/help/bootcamp-pt/uc/uc2/ex2.md)
-   + [2.3创建历程和电子邮件消息](/help/bootcamp-pt/uc/uc2/ex3.md)
-   + [2.4测试您的历程](/help/bootcamp-pt/uc/uc2/ex4.md)
-   + [2.5安装和使用移动设备应用程序](/help/bootcamp-pt/uc/uc2/ex5.md)
-   + [2.6呼叫中心中的个性化](/help/bootcamp-pt/uc/uc2/ex6.md)
-+ 3 — 混合物理和数字 {#uc3}
+   + [2.1访问站点](/help/bootcamp-pt/uc/uc2/ex1.md)
+   + [2.2 Crie seu evento](/help/bootcamp-pt/uc/uc2/ex2.md)
+   + [2.3 《Crie sua jornada e mensagem de e-mail》](/help/bootcamp-pt/uc/uc2/ex3.md)
+   + [2.4佐贺寺](/help/bootcamp-pt/uc/uc2/ex4.md)
+   + [2.5安装在aplicativo móvel上使用](/help/bootcamp-pt/uc/uc2/ex5.md)
+   + [2.6 Personalização无呼叫中心](/help/bootcamp-pt/uc/uc2/ex6.md)
++ 3 — 整合物理电子数字 {#uc3}
    + [概述](/help/bootcamp-pt/uc/uc3/uc3.md)
-   + [3.1使用移动设备应用程序并触发信标条目](/help/bootcamp-pt/uc/uc3/ex1.md)
-   + [3.2创建事件](/help/bootcamp-pt/uc/uc3/ex2.md)
-   + [3.3创建历程和推送通知](/help/bootcamp-pt/uc/uc3/ex3.md)
-   + [3.4测试您的历程](/help/bootcamp-pt/uc/uc3/ex4.md)
+   + [3.1使用aplicativo móvel e acione um信标](/help/bootcamp-pt/uc/uc3/ex1.md)
+   + [3.2克里休事件](/help/bootcamp-pt/uc/uc3/ex2.md)
+   + [3.3 Crie sua jornada e notificação push](/help/bootcamp-pt/uc/uc3/ex3.md)
+   + [3.4佐田泰斯特](/help/bootcamp-pt/uc/uc3/ex4.md)
 + 4 — 客户历程分析 {#uc4}
    + [概述](/help/bootcamp-pt/uc/uc4/uc4.md)
    + [4.1Customer Journey Analytics101](/help/bootcamp-pt/uc/uc4/ex1.md)
-   + [4.2在Customer Journey Analytics中连接Adobe Experience Platform数据集](/help/bootcamp-pt/uc/uc4/ex2.md)
-   + [4.3创建数据视图](/help/bootcamp-pt/uc/uc4/ex3.md)
-   + [4.4在Customer Journey Analytics中准备数据](/help/bootcamp-pt/uc/uc4/ex4.md)
-   + [4.5使用Customer Journey Analytics的可视化](/help/bootcamp-pt/uc/uc4/ex5.md)
-   + [4.6从洞察到行动](/help/bootcamp-pt/uc/uc4/ex6.md)
+   + [4.2连接数据集da Adobe Experience Platform无Customer Journey Analytics](/help/bootcamp-pt/uc/uc4/ex2.md)
+   + [4.3 《达多斯可视化图表》](/help/bootcamp-pt/uc/uc4/ex3.md)
+   + [4.4准备Customer Journey Analytics](/help/bootcamp-pt/uc/uc4/ex4.md)
+   + [4.5可视化UsandoCustomer Journey Analytics](/help/bootcamp-pt/uc/uc4/ex5.md)
+   + [4.6 Dos insights à ação](/help/bootcamp-pt/uc/uc4/ex6.md)

@@ -2,111 +2,109 @@
 title: Experience Makers Bootcamp — 巴西
 description: 体验创造者Bootcamp参与者的起点
 doc-type: multipage-overview
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 1%
+source-wordcount: '775'
+ht-degree: 0%
 
 ---
 
 # Experience Makers Bootcamp
 
-## 概述
+## 维桑热拉尔
 
-葡萄牙语：许多组织并不知道其客户历程中存在的摩擦，这是在编排客户通信时采用孤立而分散的方法所造成的。 数据、用户档案和内容需要完全协调，以便设计和提供卓越的客户体验。
+Muitas empresas não estão cientes do atrito que existe na jornada dos seus clientes， conseência de uma abordagem fragmentada e não integra da a ourquestrar a comunicação com o cliente。 Dados， perfil e contesúdo precisam estar perfeitamente alinhados para projetar e ofer experincias exceptionais ao consumidor。
 
-加入此试点，了解如何使用基于平台的方法来帮助您获得识别和消除摩擦点所需的洞察，从而改进客户的历程。
+参加者Bootcamp para aprender como u ma abordaem baseada em plataforma pode ajudar na obtenção dos insights arequist arios para identifiar e remover pontos de aparimorar a jornada do seu cliente。
 
-大规模个性化首先需要了解可以改进的内容，而客户的实时视图对于此至关重要。 洞察促成行动，从而获得更多洞察。 Adobe独特的以平台为中心的方法不仅为您提供了推动技术变革的工具，而且还会影响您的组织、团队以及您提供整体客户体验而不是特定于渠道的客户体验的能力。
+一个个性化的em escala começa com a com pasensão do que pode ser aprimorado e， para isso， uma visão em tempo real do seu clienteé essencial。 Insights levam à ação， o que leva a mais insights。 a aabordagem exclusiva daAdobefocada na platforma forfar ramentas para， além de impulsionar os avanços tecnológicos， impactar sua organização， sua equipe a capacia de oferecer experincia holística a a a o cliente em de uma experincia do cliente por canal。
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 
 ## 议程
 
-### 第1天
+### Dia 1
 
-10.00 - 10.30:启动和简介
+9.00 - 10.00:Café da manhã &amp; Networking
 
-10.30 - 11.15:白板会议：“1-1个性化、摩擦搜寻、竖井、AdobePOV”
+10.00 - 10.30:博阿温达&#x200B;斯
 
-11.15 - 11.30:中断
+10.30 - 11.00:Jornada do cliente:&quot;可能的艺术&quot;(sessão em inglês)&#x200B;
 
-11.30 - 12.00:“客户历程演示 — 尽可能的艺术”
+11.00 - 12.00:个性化Ação指数与Ecossistemas Silos(sessão em inglês)&#x200B;
 
-12.00 - 12.45:白板会议：“解决方案架构划分”
+12.00 - 13.30:Almoço e联网&#x200B;
 
-12.45 - 13.45:中断
+13.30 - 14.30:Arquitetura de solução(sessão em inglês)&#x200B;
 
-13.45 - 15.00:用户流程1:&quot;获取&quot;动手练习
+14.30 - 16.00:自己动手：阿基西桑&#x200B;
 
-15.00 - 15.15:中断
+16.00 - 16.15:中断时间
 
-15.15 - 17.00:用户流量2:&quot;登记和载入&quot;实践练习
+16.15 - 18.00:自己动手：地籍和入&#x200B;门
 
-### 第2天
 
-08.00 - 09.30:早餐会：“基于用户历程的投放、团队结构、投放积压简介”
+### Dia 2
 
-09.30 - 09.45:中断
+09.00 - 10.00:Café da manhã &amp; Networking
 
-09.45 - 11.15:用户流量3:“融合实体和数字”动手练习
+10.00 - 10.45:因杜桑：jorada do cliente， estrutura de times e backlog
 
-11.15 - 11.30:中断
+10.45 - 12.00:自己动手：整合到在线e或离线
 
-11.30 - 12.30:用户流量3继续
+12.00 - 13.40:Almoço e联网&#x200B;
 
-12.30 - 13.30:午餐
+13.45 - 14.45:自己动手：乔纳达斯 — 菲德利赞多保留地
 
-13.30 - 14.30:用户流量4:“客户分析”动手练习
+14.45 - 16.00:帕索斯岛
 
-14.30 - 15.00:总结、总结和后续步骤
+16.00 - 19.00:用户流量4:网络与快乐时刻
 
-15:30: 出发
 
-## 先决条件
+## 普雷雷基托斯
 
-- 访问 Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- 访问Adobe Experience Platform数据收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 访问Bootcamp网站，网址为 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acessoa网站do bootcamp em [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
 
 >[!IMPORTANT]
 >
->本教程的创建是为了促进特定研讨会格式。 它使用您可能无权访问的特定系统和帐户。 即使没有访问权限，我们认为您仍然可以通过阅读这些非常详细的内容来学习很多知识。 如果您是某个研讨会的参加者，并且需要您的访问凭据，请联系您的Adobe代表，他们将为您提供所需的信息。
+>特别是讲习班。 Sistemas e contas specíficos aos quais você pode não ter acesso são ulidados教程不提供。 Mesmo sem acesso， você ainda pode aprender muito com a leitura deste contest do detalhado。 在信息方面，我们参加的讲习班是credencias de acesso，让contato com seu代表参加Adobe会。.
 
-## 架构
+## 阿尔基特图拉
 
-在开始动手练习之前，请先查看本教程背后的架构。 此Bootcamp将深入介绍Adobe Experience Platform的众多特性和功能，并将讨论跨不同来源和目标的多个集成。 为了让您能够正确了解本教程背后的架构以及Adobe Experience Platform在您的企业生态系统中的整体定位，请首先查看架构视频和图表。
+Antes de começar os expericios práticos，请参阅教程。 Este bootcamp irá detalhar vários recursos e funcionalidades da Adobe Experience Platform e discutir múltiplas integrações e m várias fontes e destinos. a arquitetura por trás deste tura o posicionamento geral da Adobe Experience Platform no seu ecossistema corporativo， come revisando o vídeo e o diagrama da arquitetura。
 
-转到 [架构](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+阿塞萨 [阿尔基特图拉](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=pt-BR).
 
-## 视频
+## 维代奥斯
 
-我们的Experience Maker Bootcamp的主要目标是帮助组织了解大规模个性化的含义，以及它与大多数组织今天所做的非常不同。 要在全渠道世界中提供一致、符合情境且实时的客户体验，您需要一种以平台为本的思维模式，即只需定义一次所有内容，然后随处重复使用。 在Bootcamp中，我们带您进入一个真正的旅程，它将网站、移动应用程序、呼叫中心以及离线的店内环境中的客户交互整合在一起，以实际操作的方式展示大规模个性化的真正含义。
+O objetivo principal do nosso bootcamp para Experience Makersé ajudar是一个全面的体验，它意味着个性化，意味着，我们的目标是，我们的目标是： Para ofer experiencia do cliente que sejam稠度，contextuais e tempo ream mundo omnichannel， você precisa de mentalidade que coloque a platforma em primeiro lugar， onde tudo e definitio apenas uma e reulidado em todos os lugares。 没有Bootcamp， levamos vicê em uma jornada real com bina interações com o cliente，没有aplicativo móvel，没有呼叫中心e no ambiente offline da loja para mostrar o que a personalização em escala realmente a maritica， de maneira prática。
 
 >[!VIDEO](https://video.tv.adobe.com/v/345446?quality=12&enable=on)
 
-已创建其他几个视频，以展示bootcamp的元素以及Adobe Experience Platform与非Adobe应用程序之间的强大集成。 单击以下链接以查找这些视频的概述。
+Vários outros vídeos for am criados para derire elementos do Bootcamp e integraçóes poderosas entre a Adobe Experience Platform e aplicativos que são daAdobe。 Cligue没有链接abaixo para encontrur uma visão geral dess vídeos。
 
-转到 [视频](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+Acesse: [维代奥斯](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=pt-BR).
 
 ## YouTube
 
-您可以找到其他有趣的视频 [在YouTube频道](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+É postível encontrar vídeos intersantes adicionais [埃姆诺索运河至YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## 用户流量
 
-[1.收购](./uc/uc1/uc1.md)
+[1.阿基西桑](./uc/uc1/uc1.md)
 
-在此用户流程中，您将了解为使用Real-Time CDP的未知未验证用户以及已知已验证用户实施以客户获取为中心的用例所需的所有元素。
+Neste用户流， você irá comprender todos os elementos aquerios para implementars para casos de uso com foco em aquisição para usurios desconhecidos e não autenticados， em conjunto com usurios autenticados e conhecidos usando a Real-Time CDP。
 
-[2.注册和载入](./uc/uc2/uc2.md)
+[2.地籍登记](./uc/uc2/uc2.md)
 
-在此用户流程中，您将了解使用Real-Time CDP和Adobe Journey Optimizer实施注册和载入用例所需的所有元素。
+Neste用户流， você irá comprender todos os elementos aquerios para implementars casos de uso de cadastro e ontaping usando a Real-Time CDP e o Adobe Journey Optimizer。
 
-[3.将物理和数字混合](./uc/uc3/uc3.md)
+[3.数字电子餐 ](./uc/uc3/uc3.md)
 
-在此用户流程中，您将使用Real-Time CDP和Adobe Journey Optimizer，以一致的方式跨线上和线下渠道个性化客户体验。
+Nesse用户流， você irá personalizar a experiencia do cliente nos canais online e offline de maneira consistente， usando a Real-Time CDP e o Adobe Journey Optimizer。
 
 [4.客户历程分析](./uc/uc4/uc4.md)
 
-在此用户流程中，您将熟悉Customer Journey Analytics，并深入了解客户如何从一个渠道演变到另一个渠道，从在线到离线到呼叫中心等。
+Neste用户流， você irá se familiarizar com oCustomer Journey Analyticse obter informatioes sobre como os clientes estão evoludindo de um canal para outro， do online para o offline， para o call center e muito mais。

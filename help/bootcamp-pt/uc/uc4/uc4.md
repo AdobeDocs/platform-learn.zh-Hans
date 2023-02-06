@@ -5,67 +5,67 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
 
 # 4.客户历程分析
 
-在此用户流程中，您将获得Customer Journey Analytics应用程序服务的实际操作体验。
+Neste fluxo de usuário， você terá experincia prática com o serviço de aplicativoCustomer Journey Analytics。
 
-Customer Journey Analytics为商业智能和数据科学团队提供了一个工具包，用于拼合和分析跨渠道数据（在线和离线）。 Customer Journey Analytics中的功能为复杂的多渠道客户历程提供了上下文和清晰度。 提供的上下文可为如何从客户转化流程中删除棘手问题，并在最重要的时刻提供积极体验生成切实可行的洞察。
+OCustomer Journey Analyticsforence uma界面em que os times de Analytics， Negócios e Tecnologia conseguem unir todos dos da companias a jornada cross-channel（在线e offline）do cliente de ponta a ponta。 OCustomer Journey Analyticscapaz de fornecer contexto e clareza para as jornadas de cliente multicanal complexas。 O contexto fornecido gera uma visão acionável em dificuldades no processo de conversão e possibilita experincias relatentes e personalizadas nos pontos mais relatedants。
 
-请观看此视频，以了解价值、客户历程和配置流程：
+Assista a est vídeo para freander o valor， a jornada do cliente e o processo de configuração:
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-有关Customer Journey Analytics的更多信息，请参阅 [此处](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+Mais informações sobre oCustomer Journey Analyticspodem ser encontradas [阿奎](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
-## 学习目标
+## 阿普伦迪扎多河
 
-- 熟悉Customer Journey AnalyticsUI
-- 将Adobe Experience Platform数据集引入Customer Journey Analytics
-- 了解人员ID和数据拼合在Customer Journey Analytics中
-- 了解数据连接和数据视图的概念
-- 将Analysis Workspace与Adobe Experience Platform数据集结合使用
+- Fard-se com a UI doCustomer Journey Analytics
+- Traga os数据集da Adobe Experience Platform para oCustomer Journey Analytics
+- Entenda o ID da pessoa e junção de dados noCustomer Journey Analytics
+- Entenda os conceitos de uma conexão de dados e uma visualização de dados
+- 使用Analysis Workspace com数据集da Adobe Experience Platform
 
-## 先决条件
+## 普雷雷基托斯
 
-- 首选一定程度熟悉Analysis Workspace，但不是必需的
-- 访问Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- 访问Customer Journey Analytics应用程序服务
+- É preferível que haja certa familiaridade com o Analysis Workspace, mas nãoé obrigatório
+- Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso ao serviço de aplicativo deCustomer Journey Analytics
 
 >[!IMPORTANT]
 >
->本教程的创建是为了促进特定的Bootcamp格式。 它使用您可能无权访问的特定系统和帐户。 即使没有访问权限，我们认为您仍然可以通过阅读这些非常详细的内容来学习很多知识。 如果您是某个Bootcamp的参与者，并且需要您的访问凭据，请联系您的Adobe代表，该代表将为您提供所需的信息。
+>特别是Bootcamp教程。 Sistemas e contas specíficos aos quais você pode não ter acesso são ulidados教程不提供。 Mesmo sem acesso， você ainda pode aprender muito com a leitura deste contest do detalhado。 请参加bootcamp de um Bootcamp e precisa das credenciais de acesso，让contato com代表在Adobe接收者中提供必要的信息。
 
-## 练习
+## 埃克雷西奥斯
 
 [4.1Customer Journey Analytics101](./ex1.md)
 
-了解有关Customer Journey Analytics概念的所有信息。
+赛巴·图多·奥斯·孔特斯的Customer Journey Analytics。
 
-[4.2在Customer Journey Analytics中连接Adobe Experience Platform数据集](./ex2.md)
+[4.2连接数据集da Adobe Experience Platform无Customer Journey Analytics](./ex2.md)
 
-了解如何将多个数据集从Adobe Experience Platform用于Customer Journey Analytics。
+Saiba como使用múltiplos数据集Adobe Experience Platform无Customer Journey Analytics。
 
-[4.3创建数据视图](./ex3.md)
+[4.3 《达多斯可视化图表》](./ex3.md)
 
-了解如何在Customer Journey Analytics中配置数据视图。
+Saiba como配置了uma visualização de dados，无Customer Journey Analytics。
 
-[4.4在Customer Journey Analytics中准备数据](./ex4.md)
+[4.4准备Customer Journey Analytics](./ex4.md)
 
-了解如何在继续进行分析之前进行一些数据准备。
+Aprenda como fazer alguma preparição de dados antes de continuar com a análise.
 
-[4.5使用Customer Journey Analytics的可视化](./ex5.md)
+[4.5 Visualização usandoCustomer Journey Analytics](./ex5.md)
 
-了解如何使用Adobe Experience Platform可视化Customer Journey Analytics数据。
+“Saiba como visualizar os dos da Adobe Experience Platform usando oCustomer Journey Analytics”。
 
-[4.6从洞察到行动](./ex6.md)
+[4.6阿桑](./ex6.md)
 
-了解如何使用实时CPD和Adobe Journey Optimizer将受众形式的洞察付诸实践。
+Aprenda como usar seus insights a form a fum público em ação usando o CPD em tempo real e o Adobe Journey Optimizer。
 
-[返回到所有模块](../../overview.md)
+[托多斯 — 莫杜洛斯](../../overview.md)

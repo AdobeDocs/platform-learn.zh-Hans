@@ -5,51 +5,51 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-source-git-commit: 75a878ba596078e6d013b65062606931402302dd
+source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
 workflow-type: tm+mt
-source-wordcount: '218'
-ht-degree: 3%
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
-# 2.注册和载入
+# 2. Objetivos de aprendizado
 
 ## 学习目标
 
-## 先决条件
+## 普雷雷基托斯
 
-- 访问 Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- 访问Adobe Experience Platform数据收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 访问演示网站
+- Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de doreção
 
 >[!IMPORTANT]
 >
->本教程的创建是为了促进特定的Bootcamp格式。 它使用您可能无权访问的特定系统和帐户。 即使没有访问权限，我们认为您仍然可以通过阅读这些非常详细的内容来学习很多知识。 如果您是某个Bootcamp的参与者，并且需要您的访问凭据，请联系您的Adobe代表，该代表将为您提供所需的信息。
+>特别是私营的教程。 Sistemas e contas specíficos aos quais você pode não ter acesso são ulidados教程不提供。 Mesmo sem acesso， você ainda pode aprender muito com a leitura deste contest do detalhado。 请参加bootcamp e precisa das credenciais de acesso，让contato com seu代表da Para receber作为必要的信息。
 
-## 练习
+## 埃克雷西奥斯
 
-[2.1访问网站并创建帐户](./ex1.md)
+[2.1访问站点](./ex1.md)
 
-在本练习中，您将学习如何配置事件。
+我们要好好谈谈心。
 
-[2.2创建事件](./ex2.md)
+[2.2 Crie seu evento](./ex2.md)
 
-在本练习中，您将学习如何配置事件。
+我们要好好谈谈心。
 
-[2.3创建历程和电子邮件消息](./ex3.md)
+[2.3 《Crie sua jornada e mensagem de e-mail》](./ex3.md)
 
-在本练习中，您将学习如何配置历程和电子邮件消息。
+Neste expercicio， você irá aprender como configurar mu ma jornada e mensagem de e-mail。
 
-[2.4测试您的历程](./ex4.md)
+[2.4佐贺寺](./ex4.md)
 
-在本练习中，您将测试您刚刚创建的历程。
+不要再做运动，不要再做运动。
 
-[2.5安装和使用移动设备应用程序](./ex5.md)
+[2.5安装在aplicativo móvel上使用](./ex5.md)
 
-在本练习中，您将安装移动设备应用程序。
+Neste expericício， você irá install o aplicativo móvel.
 
-[2.6呼叫中心中的个性化](./ex6.md)
+[2.6个性化呼叫中心](./ex6.md)
 
-在本练习中，您将了解如何根据Adobe Experience Platform的智能优化呼叫中心体验。
+Neste expericício， você verá como uma experincia de call center pode ser otimizada com base na inteligência da Adobe Experience Platform。
 
-[返回到所有模块](../../overview.md)
+[托多斯 — 莫杜洛斯](../../overview.md)
