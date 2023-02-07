@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '467'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Faça login no Adobe Journey Optimizer acessando a [Adobe Experience Cloud]. �
 
 ![ACOP](./images/acophome.png)
 
-Você será redirecionado para a **主页** 不，Journey Optimizer。 普里米罗，我的梦想是沙盒的。 没人会沙箱里的 `Bootcamp`. Para alternar de um sandbox para outro， plicaem **生产** 选择沙盒和沙盒。 新样本，没人做沙盒 **Bootcamp2**. Você estará na visualização da **主页** 做seu沙盒 `Bootcamp`.
+Você será redirecionado para a **主页** 不，Journey Optimizer。 普里米罗，我的梦想是沙盒的。 没人会沙箱里的 `Bootcamp`. Para alternar de um sandbox para outro， plicaem **生产** 选择沙盒和沙盒。 新样本，没人做沙盒 **Bootcamp**. Você estará na visualização da **主页** 做seu沙盒 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -68,7 +68,7 @@ Lichu n seu evento novamente para abrir a tela **编辑事件** 马伊斯·�
 
 ![ACOP](./images/viewevent.png)
 
-我的心里很清楚。
+我的副艇员就是世界号。
 Seu evento tem um eventID de orquestraçãoúnico， que você pode encontrar rolando para baixo nessa cargaútil até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)

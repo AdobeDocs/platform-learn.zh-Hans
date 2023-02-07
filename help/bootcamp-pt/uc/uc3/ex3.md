@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '838'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ Você será redirecionado para a visualização da **主页** 不，Journey Opti
 
 不要用lado direito da tela， agora você deve criar sua notifição推。
 
-定义a **类别** 科科 **营销** e selecione uma supfície push que permite envior notificações push. Nesse caso，一个浅薄的人推着选手 **mmeewis-app-mobile-bootcamp**.
+定义a **类别** 科科 **营销** e selecione um推送表面que permite environotificações推送。 Nesse caso，一个浅薄的人推着选手 **mmeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -88,7 +88,7 @@ Então， você irá retor nar para esta tela。 个人化团体 **正文**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-阿姆·塞吉达，小团  **上下文属性** 然后 **Journey Orchestration**.
+阿姆·塞吉达，小团  **上下文属性** e **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
@@ -127,11 +127,11 @@ Cligue no nome do seu evento， que deve semelhante ao seguinte: **yourLastNameB
 
 ## 3.3.2 Envie uma mensagem para uma tela
 
-Como terceira etapa da jornada， você deve adicionar uma ação  **sendMessageToScreen** 操作。 Vá para o lado esquerdo da tela para **操作**，选择ação **sendMessageToScreen** arraste e solte a ação no terceiro nó da sua jornada. 她的话，我就是个空话。
+Como terceira etapa da jornada， você deve adicionar uma ação  **sendMessageToScreen**. Vá para o lado esquerdo da tela para **操作**，选择ação **sendMessageToScreen** arraste e solte a ação no terceiro nó da sua jornada. 她的话，我就是个空话。
 
 ![ACOP](./images/jomsg15.png)
 
-**sendMessageToScreen** é uma ação personalizada que irá publicar mensagem no ponto de extremidade usado pela exibição na loja. 阿桑 **sendMessageToScreen** 她想要玛蒂普拉斯·瓦里维斯·塞贾姆·德菲达斯。 Você pode visualizar essas variáveis rolando para baixo até ver **操作参数**.
+**sendMessageToScreen** é uma ação personalizada que irá publicum mensagem no **端点** 乌萨多·佩拉·埃克西比桑·娜·洛哈。 阿桑 **sendMessageToScreen** 她想要玛蒂普拉斯·瓦里维斯·塞贾姆·德菲达斯。 Você pode visualizar essas variáveis rolando para baixo até ver **操作参数**.
 
 ![ACOP](./images/jomsg16.png)
 

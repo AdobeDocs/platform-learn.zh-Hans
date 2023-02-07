@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,7 @@ ht-degree: 0%
 
 ## 安装到aplicativo móvel
 
-在安装应用程序之前，您需要启用 **跟踪** 在iOS设备上。 要执行此操作，请转到 **设置** > **隐私和安全** > **跟踪** 并确保 **允许应用程序请求跟踪**.
-
-阿普利卡蒂沃的安装员 **拉斯特里曼托** 不，我是iOS。 帕拉伊索，阿塞斯 **配置索伊斯** > **西格兰萨** > **拉斯特里曼托** e verifque a opção **Permitir que os aplicativos solicitem o rastreamento**.
+阿普利卡蒂沃的安特斯 **拉斯特里曼托** 不，我是iOS。 帕拉伊索，阿塞斯 **配置索伊斯** > **西格兰萨** > **拉斯特里曼托** e verifque a opção **Permitir que os aplicativos solicitem o rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
@@ -26,7 +24,7 @@ Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. 团 **安装程
 
 ![DSN](./../uc3/images/app1.png)
 
-安装应用装置，团 **打开**.
+安装应用装置，团 **阿布里尔**.
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -84,7 +82,7 @@ Você receberá uma uma confirmmação de que está conectado e receberá uma no
 
 ![DSN](./images/app20.png)
 
-Agora você irá simar um evento de entrada de sinalização（信标）em um local de armazenamento offline。 O objetivo da simulaçãoé personalizar a experiencia do cliente nas telas da loja。 Para visualizar a experiencecia na loja， foi criada uma página que mostrará de forma dinâmica a informações relates para o cliente ao entrar na loja。
+Agora você irá simar um evento de entrada de sinalização（信标）em uma loja offline。 O objetivo da simulaçãoé personalizar a experiencia do cliente nas telas da loja。 Para visualizar a experiencecia na loja， foi criada uma página que mostrará de forma dinâmica a informações relates para o cliente ao entrar na loja。
 
 Antes de continuar， abra esta página da Web em seu compuador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
@@ -96,7 +94,6 @@ Em seguida，一个有害的人：
 
 ![DSN](./images/app23.png)
 
-然后你会看到这个。 首先，选择 **Bootcamp屏幕信标** ，然后单击 **条目** 按钮。 这将允许您模拟信标条目。
 艾莎·埃塔帕，塞金特·塞拉·埃比多。 普里米罗，选野 **Bootcamp屏幕信标** e集团 **恩特拉达**. Isso permitirá que você simule uma entrada de sinalização com beacon。
 
 ![DSN](./images/app21.png)

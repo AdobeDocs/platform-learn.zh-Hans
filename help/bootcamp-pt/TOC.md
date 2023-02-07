@@ -6,9 +6,9 @@ audience: all/bootcamp-pt/
 index: false
 hide: true
 doc-type: multipage
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '160'
 ht-degree: 3%
 
 ---
@@ -32,8 +32,8 @@ ht-degree: 3%
    + [2.3 《Crie sua jornada e mensagem de e-mail》](/help/bootcamp-pt/uc/uc2/ex3.md)
    + [2.4佐贺寺](/help/bootcamp-pt/uc/uc2/ex4.md)
    + [2.5安装在aplicativo móvel上使用](/help/bootcamp-pt/uc/uc2/ex5.md)
-   + [2.6 Personalização无呼叫中心](/help/bootcamp-pt/uc/uc2/ex6.md)
-+ 3 — 整合物理电子数字 {#uc3}
+   + [2.6个性化呼叫中心](/help/bootcamp-pt/uc/uc2/ex6.md)
++ 3 — 整合数字 {#uc3}
    + [概述](/help/bootcamp-pt/uc/uc3/uc3.md)
    + [3.1使用aplicativo móvel e acione um信标](/help/bootcamp-pt/uc/uc3/ex1.md)
    + [3.2克里休事件](/help/bootcamp-pt/uc/uc3/ex2.md)

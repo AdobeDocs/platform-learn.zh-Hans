@@ -5,9 +5,9 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '934'
 ht-degree: 3%
 
 ---
@@ -34,7 +34,7 @@ Você será redirecionado para a visualização da **主页**  不，Journey Opt
 
 ![ACOP](./images/journeyempty.png)
 
-前不行动，从头开始 **事件**. 波凯诺梅乌奥文托 `yourLastNameAccountCreationEvent` e代替 `yourLastName` 佩洛·苏·索布雷诺姆。 Este foi o resultado da criação do Evento:
+前不行动，从头开始 **事件**. 波凯诺梅乌奥文托 `seuSobrenomeAccountCreationEvent` e代替 `seuSobrenome` 佩洛·苏·索布雷诺姆。 Este foi o resultado da criação do Evento:
 
 ![ACOP](./images/eventdone.png)
 
@@ -60,9 +60,7 @@ Como terceira etapa da jornada， você deve adicionar uma ação **电子邮件
 
 ![ACOP](./images/journeyactions.png)
 
-设置 **类别** to **营销** 并选择用于发送电子邮件的电子邮件界面。 在这种情况下，要选择的电子邮件界面是 **电子邮件**. 确保对应的复选框 **电子邮件的点击** 和 **电子邮件打开** 都已启用。
-
-定义a **类别** 科科 **营销** e selectione uma supfície de e-mail可允许环境电子邮件。 Nesse caso，一封简单的电子邮件，一位用户选择的电子邮件。 塞莱桑的Certifique **电子邮件的点击** e **电子邮件打开** 埃斯特金·马卡达斯。
+定义a **类别** 科科 **营销** e selecone uma **电子邮件界面** 允许发送电子邮件。 Nesse caso， a **电子邮件界面** 一个用户选择电子邮件。 塞莱桑的Certifique **电子邮件的点击** e **电子邮件打开** 埃斯特金·马卡达斯。
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -88,11 +86,11 @@ Para criar sua mensagem， plickeem **编辑内容**.
 
 ![Journey Optimizer](./images/msg6.png)
 
-一个linha de assunto ainda não está pronta。 Em seguida， você precisa trazer o token de personalização para o **名字** 她是阿尔玛泽纳多 `profile.person.name.firstName`. 无菜单，角色para baixo para encontror o elemento **人员** e cligue na seta para ir um nível mais profundo.
+一个linha de assunto ainda não está pronta。 Em seguida， você precisa trazer o token de personalização para o **名字** 她是阿尔玛泽纳多 `profile.person.name.firstName`. 无菜单，角色para baixo para encontror o elemento **人员** e cligue na seta para visualizaris mais campos
 
 ![Journey Optimizer](./images/msg7.png)
 
-埃莱门托的阿戈拉 **全名** e cligue na seta para ir um nível mais profundo.
+埃莱门托的阿戈拉 **全名** e cligue na seta para visualizar mais campos.
 
 ![Journey Optimizer](./images/msg8.png)
 
@@ -100,7 +98,7 @@ Para criar sua mensagem， plickeem **编辑内容**.
 
 ![Journey Optimizer](./images/msg9.png)
 
-艾姆·塞吉达，阿迪西奥内， **阿格拉迪莫斯，苏卡！** 塞尔瓦小伙。. 团 **保存**.
+艾姆·塞吉达，阿迪西奥内， **阿格拉迪莫斯，苏卡！**&#x200B;的问题。团 **保存**.
 
 ![Journey Optimizer](./images/msg10.png)
 
@@ -118,7 +116,7 @@ Na próxima tela， será solicitado que vicê forneça o conteúdo do email atr
 
 ![Journey Optimizer](./images/msg12.png)
 
-阿拉斯特·索尔特·阿基沃 **mailtemplatebootcamp.html**、阙歌·波佩沙 [此处](../../assets/html/mailtemplatebootcamp.html.zip). 小伙很重要。
+阿拉斯特·索尔特·阿基沃 **mailtemplatebootcamp.html**、阙歌·波佩沙 [阿奎](../../assets/html/mailtemplatebootcamp.html.zip). 小伙很重要。
 
 ![Journey Optimizer](./images/msg13.png)
 
@@ -130,7 +128,7 @@ Na próxima tela， será solicitado que vicê forneça o conteúdo do email atr
 
 ![Journey Optimizer](./images/msg35.png)
 
-Em seguida， você precisa trazer o token de personalização **名字** 她是阿尔玛泽纳多 `profile.person.name.firstName`. 无菜单，本地化为elemento **人员**, faça uma busca detalada no elemento **全名** e集团 **+** para adicionon o campo **名字** ao编辑德expressão。
+Em seguida， você precisa trazer o token de personalização **名字** 她是阿尔玛泽纳多 `profile.person.name.firstName`. 无菜单，本地化为elemento **人员**, faça uma busca detalada no elemento **全名** e集团 **+** para adicionon o campo **名字** ao编辑。
 
 团 **保存**.
 
@@ -162,7 +160,7 @@ Agora você总结了一份《地籍电子邮件》。 Cligue na seta no canto su
 
 ![ACOP](./images/journeyname.png)
 
-《我的歌》。 法泽岛 `yourLastName - Account Creation Journey`. 团 **确定** 把萨尔瓦当成穆丹卡。
+Você pode fazer isso clicando no item clicar no item &quot;Name&quot; e insindo o seguinte nome `yourLastName - Account Creation Journey`. 团 **确定** 把萨尔瓦当成穆丹卡。
 
 ![ACOP](./images/journeyname1.png)
 

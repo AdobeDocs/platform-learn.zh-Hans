@@ -5,7 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
 source-wordcount: '463'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Você verá uma visão geral de todos os eventos disponíveis. 团 **创建事
 
 ![ACOP](./images/emptyevent1.png)
 
-Em primeiro lugar， dê um nome ao seu evento como， por smadeo: `yourLastNameAccountCreationEvent` e adicione uma描述como， por smade: `Account Creation Event`.
+Em primeiro lugar， dê um nome ao seu evento como， por smadeo: `seuSobrenomeAccountCreationEvent` e adicione uma描述como， por smade: `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
@@ -79,7 +79,7 @@ Miclu n seu evento novamente para abrir mais uma vez a tela **编辑事件**. 
 ![ACOP](./images/viewevent.png)
 
 我的心里很清楚。
-Seu evento tem um事件ID de orquestraçãoúnico， qu você pode encontrar rolando para baixo nessa cargaútil（有效负荷）até visualiza `_experience.campaign.orchestration.eventID`.
+Seu evento tem um事件ID de orquestraçãoúnico， qu você pode encontrar rolando para baixo nessa cargaútil（有效负荷）até visualizar `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 

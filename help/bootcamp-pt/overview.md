@@ -2,9 +2,9 @@
 title: Experience Makers Bootcamp — 巴西
 description: 体验创造者Bootcamp参与者的起点
 doc-type: multipage-overview
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '777'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Muitas empresas não estão cientes do atrito que existe na jornada dos seus clientes， conseência de uma abordagem fragmentada e não integra da a ourquestrar a comunicação com o cliente。 Dados， perfil e contesúdo precisam estar perfeitamente alinhados para projetar e ofer experincias exceptionais ao consumidor。
 
-参加者Bootcamp para aprender como u ma abordaem baseada em plataforma pode ajudar na obtenção dos insights arequist arios para identifiar e remover pontos de aparimorar a jornada do seu cliente。
+参加者Bootcamp para aprender como u ma abordaem baseada emExperience Platformpode ajudar na obtenção dos insights arequirios para identifiar e remover pontos de atrito para a parimorar a jornada do seu cliente。
 
-一个个性化的em escala começa com a com pasensão do que pode ser aprimorado e， para isso， uma visão em tempo real do seu clienteé essencial。 Insights levam à ação， o que leva a mais insights。 a aabordagem exclusiva daAdobefocada na platforma forfar ramentas para， além de impulsionar os avanços tecnológicos， impactar sua organização， sua equipe a capacia de oferecer experincia holística a a a o cliente em de uma experincia do cliente por canal。
+一个个性化的em escala começa com a com pasensão do que pode ser aprimorado e， para isso， uma visão em tempo real do seu clienteé essencial。 Insights levam à ação， o que leva a mais insights。 一个abordagem exclusiva daAdobefocada naExperience Platformforence， ferramentas para， além de impulsionar os avanços tecnológicos， impactar sua organização， sua equipe a capacida de oferecer exer emcia holística a a o cliente em de uma experincia do cliente clifpor canal。
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 

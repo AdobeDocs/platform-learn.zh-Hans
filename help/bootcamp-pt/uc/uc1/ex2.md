@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '537'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Neste expericício， você irá fazer login na Adobe Experience Platform e visu
 
 ![客户资料](./images/identities.png)
 
-没有painel Visualizador de perfil， agora você pode ver esta标识：
+没有painel Visualizador de perfil， agora você pode ver uma identidate semelhante a seguinte:
 
 | 命名空间 | 标识 |
 |:-------------:| :---------------:|

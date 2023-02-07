@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Na lista de segmentos disponíveis，selecione o segmento que criem [1.3 Crie 
 >
 >Imediatamente após criar seu destino do Adobe Target no Real-Time CDP, pode levar até mu hora para que o destino seja ativado。 Este e mpo de esperaúnico devido à definição da configuração de back-end. Depois que o tempo de espera initial de 1 hora e a configuração do back-end forem gentidos， os segmentos de borda recém-adicionados que são enviados destino do Adobe Target estarão disponíveis para segmentação tempo real。
 
-## 1.4.2配置sua atividade baseada em formulario do Adobe Target
+## 1.4.2配置sua atividade no Adobe Target
 
 Agora que seu segmento Real-Time CDP está configurado para enviado ao Adobe Target,é posível configurar sua atividade de Segmentação por experincia no Adobe Target。 Neste expericio， você irá configurar uma atividade baseada no Visual Experience Composer。
 
@@ -62,8 +62,6 @@ Agora que seu segmento Real-Time CDP está configurado para enviado ao Adobe Tar
 
 ![RTCDP](./images/excl.png)
 
-在 **Adobe Target** 主页，您将看到所有现有活动。
-单击 **+创建活动** 创建新活动。
 真正的 **Adobe Target**无言无语的存在。
 团 **+创建活动** 新阿提维达德。
 
@@ -73,7 +71,7 @@ Agora que seu segmento Real-Time CDP está configurado para enviado ao Adobe Tar
 
 ![RTCDP](./images/exclatcrxt.png)
 
-选择项 **可视** e定义a **活动URL** 科科 `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`在01e30中替代XXpor umreo entre 01e30。
+选择项 **可视** e定义a **活动URL** 科科 `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`在01e60中替代XXpor umreo entre 01e60。
 
 >[!IMPORTANT]
 >
@@ -137,7 +135,7 @@ Cligue no título da sua atividade no canto superesquerdo para renomeá-la.
 
 段，使用：
 
-- `yourLastName - RTCDP - XT (VEC)`
+- `seuSobrenome - RTCDP - XT (VEC)`
 
 团 **下一个**.
 
@@ -181,7 +179,7 @@ Se agora você voltar ao seu site de dedoção e visitar a página do produto pa
 
 ![RTCDP](./images/atform12a.png)
 
-埃塔帕： [1.5采取行动：将区段发送到Facebook](./ex5.md)
+埃塔帕： [1.5阿桑：恩维埃·塞门托·帕拉·Facebook](./ex5.md)
 
 [乌萨里奥1号河畔](./uc1.md)
 

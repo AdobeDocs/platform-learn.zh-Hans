@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
 workflow-type: tm+mt
 source-wordcount: '516'
 ht-degree: 2%
@@ -70,7 +70,7 @@ Sempre que adicionar um elemento ao constructor de segmentos， você pode clica
 
 Como modelo de nomenclatura，使用：
 
-- `yourLastName - Interest in Real-Time CDP`
+- `seuSobrenome - Interest in Real-Time CDP`
 
 Em seguida，帮不了 **保存并关闭** 塞尔瓦·塞门托。
 
