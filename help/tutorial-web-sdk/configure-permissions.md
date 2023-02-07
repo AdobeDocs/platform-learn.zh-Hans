@@ -3,7 +3,7 @@ title: 配置教程的权限
 description: 了解如何请求访问Experience PlatformWeb SDK，并配置完成“使用Web SDK实施Adobe Experience Cloud”教程所需的权限。
 feature: Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 4eaa7ae1cf4c4c1478484eaeb877733a43c6fdf5
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 6%
@@ -23,7 +23,7 @@ ht-degree: 6%
 
 这些功能应当可供所有Experience Cloud客户使用，即使您不是基于平台的应用程序(如Real-Time CDP)的客户也是如此。
 
-* 访问 **默认生产**, **&quot;Prod&quot;** 沙盒(.
+* 访问 **默认生产**, **&quot;Prod&quot;** 沙盒。
 * 访问 **[!UICONTROL 管理架构]** 和 **[!UICONTROL 查看架构]** 在 **[!UICONTROL 数据建模]**
 * 访问 **[!UICONTROL 管理身份命名空间]** 和 **[!UICONTROL 查看身份命名空间]** 在 **[!UICONTROL Identity Management]**
 * 访问 **[!UICONTROL 管理数据流]** 和 **[!UICONTROL 查看数据流]** 在 **[!UICONTROL 数据收集]**
