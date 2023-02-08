@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 020e9fb8a1d02b93e4e95a4274806c7926c02757
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1586'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 - Conheça alguns会反复出现Analysis Workspace的tornam或diferente。
 - Aprenda a analysirar no CJA usando o Analysis Workspace
 
-## 上下文
+## Contexto
 
 Neste experacticio， você usará o Analysis Workspace no CJA paraanalisar visualizações de produtos， funis de productos， rotatividade等
 
@@ -316,7 +316,7 @@ Graças à primeira análise de fluxo， uma nova pergunta surgiu. Então decidi
 
 ## 重述Analysis WorkspaceCustomer Journey Analytics
 
-科莫·阿普伦德乌·内斯特·拉沃拉托里奥，Analysis Workspace·雷乌内·达多斯·托多斯·卡纳斯·帕拉纳利萨·约纳达·科尔纳达·科尔内特。 Além disso， lembre-se de que você pode trazer dados para o mesmo workspace que não está vinculado à jornada。 Pode ser muitoútil trazer dados desconectados para sua análise par a contextulazar a jornada。 Alguns的执行人员包括：coisas como dados NPS、pesquisas、eventos de anúncios do Facebook ou interções offline(não identifiadas)。
+O Analysis Workspace将todas作为limitações típicas de um relatório do Analytics删除。 Ele fore uma tela hobusta e flexível para criar projetos de analytics personalizados. Arraste e solte qualquer número de tabelas de dados， visualizações e componentes(dimensões， métricas， segmentos e gralearidades de tempo)para um projeto。 Você pode criar de forma instantânea filtros e analises， gráficos de coorte， alertas， segmentos， análises de fluxo e relatórios de curadoria e a genamento para compartilhar com qualquer pessoa em seu negócio。
 
 埃塔帕： [4.6阿桑](./ex6.md)
 

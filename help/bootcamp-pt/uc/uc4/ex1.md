@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+source-git-commit: 3272d288185415b4604fe48f18c19f8f06e6dce0
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
@@ -91,10 +91,8 @@ Verifique将架构与数据集一起托管在Adobe Experience Platform。
 
 Certifique-se de ter verificado ao menos:
 
-- 身份：CRMID、phoneNumber、ECID、电子邮件。 哪些标识是主标识符，哪些是次标识符？
-您可以通过打开架构并查看对象来查找标识符 `_experienceplatform.identification.core`. 查看架构 [演示系统 — 网站的事件模式（全局v1.1）](https://experience.adobe.com/platform/schema).
-
 - 标识：CRMID、phoneNumber、ECID、电子邮件。 Qua是圣身份识别者，圣身份识别者，塞昆达里奥斯？
+
 Você pode enconcrar os identification abrindo um schema e objeto observanto o o bjeto `_experienceplatform.identification.core`. 架构验证 [演示系统 — 网站的事件模式（全局v1.1）](https://experience.adobe.com/platform/schema).
 
 ![演示](./images/identity.png)
@@ -107,7 +105,7 @@ Você pode enconcrar os identification abrindo um schema e objeto observanto o o
 
 Agora você está ponto para começar a usar a interface do usuário doCustomer Journey Analytics。
 
-埃塔帕： [连接数据集da Adobe Experience Platform无Customer Journey Analytics](./ex2.md)
+埃塔帕： [4.2连接数据集da Adobe Experience Platform无Customer Journey Analytics](./ex2.md)
 
 [Retornar para Fluxo de Uuário 4](./uc4.md)
 
