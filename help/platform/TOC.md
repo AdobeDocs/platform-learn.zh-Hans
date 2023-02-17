@@ -4,10 +4,10 @@ breadcrumb-title: 教程
 user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: ef085f3bdfe385d072551bbafa1ae39e847b147d
 workflow-type: tm+mt
-source-wordcount: '987'
-ht-degree: 29%
+source-wordcount: '950'
+ht-degree: 31%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 29%
    + [基本架构](/help/platform/intro-to-platform/basic-architecture.md)
    + [使用Platform用户界面](/help/platform/intro-to-platform/interface-tour.md)
    + [角色和项目阶段](/help/platform/intro-to-platform/roles-and-project-phases.md)
-+ [入门指南：数据架构师和数据工程师](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target=&quot;_blank&quot;}
++ [入门指南：数据架构师和数据工程师](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [验证Experience PlatformAPI](/help/platform/authentication/platform-api-authentication.md)
 + [将样本数据导入到 Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
@@ -36,7 +36,7 @@ ht-degree: 29%
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [管理产品配置文件](/help/platform/admin/managing-product-profiles.md)
 + [审核日志](/help/platform/governance/audit-logs.md)
-+ [数据收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target=&quot;_blank&quot;}
++ [数据收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + 仪表板 {#dashboards}
    + [创建功能板](/help/platform/dashboards/create-a-dashboard.md)
 + 数据治理 {#data-governance}
@@ -47,14 +47,12 @@ ht-degree: 29%
    + [强制实施数据使用策略](/help/platform/governance/enforce-data-usage-policies.md)
    + [强制同意](/help/platform/governance/enforce-consent.md)
 + 数据安全机制 {#data-hygiene}
-   + [概述](/help/platform/data-hygiene/overview.md)
-   + [删除消费者](/help/platform/data-hygiene/delete-consumers.md)
    + [删除数据集](/help/platform/data-hygiene/delete-datasets.md)
 + 数据引入 {#data-ingestion}
    + [概述](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批量摄取概述](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [创建和填充数据集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [将CSV文件映射到XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=zh-Hans){target=&quot;_blank&quot;}
+   + [将CSV文件映射到XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=zh-Hans){target="_blank"}
    + [源概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [从Adobe Analytics摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hans)
    + [从Audience Manager中摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -64,8 +62,8 @@ ht-degree: 29%
    + [流摄取概述](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [使用HTTP API流数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=zh-Hans)
    + [使用源连接器流式传输数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=zh-Hans)
-   + [Web SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target=&quot;_blank&quot;}
-   + [Mobile SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target=&quot;_blank&quot;}
+   + [Web SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+   + [Mobile SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + 数据科学工作区 {#data-science-workspace}
    + [概述](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [架构](data-science-workspace/architecture-overview.md)
@@ -79,9 +77,9 @@ ht-degree: 29%
    + [创建和发布经过培训的模型(UI)](data-science-workspace/create-model-ui.md)
    + [为服务安排自动培训和评分](data-science-workspace/schedule-training-scoring.md)
    + [利用机器学习分析丰富实时客户档案](data-science-workspace/dsw-profile-segmentation.md)
-   + [将源文件打包到方法中](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target=&quot;_blank&quot;}
-   + [导入打包的方法(UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target=&quot;_blank&quot;}
-   + [导入打包的方法(API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target=&quot;_blank&quot;}
+   + [将源文件打包到方法中](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
+   + [导入打包的方法(UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
+   + [导入打包的方法(API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + 目标 {#destinations}
    + [目标概述](/help/platform/destinations/understanding-destinations.md)
    + [连接目标](/help/platform/destinations/connecting-to-destinations.md)
@@ -106,7 +104,7 @@ ht-degree: 29%
    + [了解实时客户资料](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [配置文件概述图](/help/platform/profiles/overview-diagram.md)
    + [将数据导入用户档案](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [自定义配置文件视图详细信息](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target=&quot;_blank&quot;}
+   + [自定义配置文件视图详细信息](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [查看帐户配置文件](/help/platform/profiles/view-account-profiles.md)
    + [创建合并策略](/help/platform/profiles/create-merge-policies.md)
    + [合并模式概述](/help/platform/profiles/union-schemas-overview.md)
@@ -131,12 +129,12 @@ ht-degree: 29%
    + [Adobe定义的函数](/help/platform/queries/adobe-defined-functions.md)
    + [数据使用模式](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [运行查询](/help/platform/queries/run-queries.md)
-   + [根据查询结果生成数据集](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target=&quot;_blank&quot;}
+   + [根据查询结果生成数据集](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
    + [塔布洛](/help/platform/queries/psql-client-tableau.md)
    + [分析和可视化数据](/help/platform/queries/analyze-and-visualize.md)
    + [使用BI工具构建功能板](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [为客户数据重新充电](/help/platform/queries/recharge-your-customer-data.md)
-   + [将客户端连接到查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target=&quot;_blank&quot;}
+   + [将客户端连接到查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
 + 架构 {#schemas}
    + [概述](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [构建基块](/help/platform/schemas/schema-building-blocks.md)
@@ -151,7 +149,7 @@ ht-degree: 29%
    + [使用枚举字段和建议值](/help/platform/schemas/use-enumerated-fields.md)
    + [在沙盒之间复制架构](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [更新架构](/help/platform/schemas/update-schemas.md)
-   + [创建临时架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target=&quot;_blank&quot;}
+   + [创建临时架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + 区段{#segments}
    + [区段生成器概述](/help/platform/segments/segment-builder-overview.md)
    + [创建区段](/help/platform/segments/create-segments.md)
@@ -163,8 +161,8 @@ ht-degree: 29%
    + [创建多实体区段](/help/platform/segments/create-multi-entity-segments.md)
    + [使用B2B数据创建区段](/help/platform/segments/create-segments-with-b2b-data.md)
    + [流分段演示](/help/platform/segments/streaming-segmentation-demo.md)
-   + [评估区段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target=&quot;_blank&quot;}
-   + [创建用于导出数据的数据集](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target=&quot;_blank&quot;}
+   + [评估区段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [创建用于导出数据的数据集](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
    + [区段匹配连接设置](/help/platform/segments/segment-match-connection-setup.md)
    + [区段匹配数据管理](/help/platform/segments/segment-match-data-governance.md)
    + [区段匹配配置流程](/help/platform/segments/segment-match-configuration-flow.md)
@@ -181,9 +179,9 @@ ht-degree: 29%
    + [使用HTTP API流数据](/help/platform/sources/streaming-ingestion-http-api.md)
    + [使用源连接器流式传输数据](/help/platform/sources/streaming-ingestion-source-connector.md)
 + 应用程序服务 {#application-services}
-   + [Customer Journey Analytics教程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target=&quot;_blank&quot;}
-   + [Journey Orchestration教程](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target=&quot;_blank&quot;}
-   + [offer decisioning教程](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=zh-Hans){target=&quot;_blank&quot;}
+   + [Customer Journey Analytics 教程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
+   + [Journey Orchestration教程](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
+   + [offer decisioning教程](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=zh-Hans){target="_blank"}
    + Real-Time CDP教程{#rtcdp}
       + [概述](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
       + [B2B版本概述](/help/platform/rtcdp/b2b-overview.md)
