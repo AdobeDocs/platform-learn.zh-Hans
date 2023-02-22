@@ -1,9 +1,9 @@
 ---
 title: 替换库 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何将Adobe Target实施从at.js 2.x迁移到Adobe Experience Platform Web SDK。 主题包括库概述、实施差异和其他值得注意的标注。
-source-git-commit: 8d41e5d6434dabff0443e932be842b37553d72a9
+source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1715'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,8 @@ Target功能由at.js和Platform Web SDK提供。 如果同时使用两个库，�
 * 一个或多个第三方帮助程序库，其功能可以在Target活动中使用（例如，jQuery）
 * 用于缓解闪烁的预隐藏代码片段
 * Target at.js库会使用默认设置异步加载，以自动请求和渲染活动：
+
++++请参阅at.js的示例HTML代码
 
 ```HTML
 <!doctype html>
@@ -126,6 +128,8 @@ Target功能由at.js和Platform Web SDK提供。 如果同时使用两个库，�
 </body>
 </html>
 ```
+
++++
 
 要升级Target以使用平台Web SDK，请首先删除at.js:
 
