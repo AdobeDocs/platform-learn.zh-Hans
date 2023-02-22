@@ -1,9 +1,9 @@
 ---
 title: 将Target从at.js 2.x迁移到Web SDK
 description: 了解如何将Adobe Target实施从at.js 2.x迁移到Adobe Experience Platform Web SDK。 主题包括库概述、实施差异和其他值得注意的标注。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '411'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,8 @@ ht-degree: 2%
 
 使用Target基于表单的编辑器创建并交付到区域mbox的活动，无法由Platform Web SDK自动呈现。 与at.js类似，交付到特定Target位置的选件需要根据需要进行渲染。
 
-at.js示例(使用 `getOffer()` 和 `applyOffer()`:
+
++++at.js示例使用 `getOffer()` 和 `applyOffer()`:
 
 1. 执行 `getOffer()` 请求选件
 1. 执行 `applyOffer()` 将选件渲染到指定的选择器
@@ -45,7 +46,9 @@ adobe.target.getOffer({
 });
 ```
 
-平台Web SDK等效函数使用 `applyPropositions` 命令：
++++
+
++++平台Web SDK等效函数使用 `applyPropositions` 命令：
 
 1. 执行 `sendEvent` 命令请求一个或多个位置（范围）的选件（建议）
 1. 执行 `applyPropositions` 元数据对象的命令，该对象提供有关如何将内容应用到每个范围的页面的说明
@@ -86,6 +89,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 平台Web SDK可更好地控制如何使用 `applyPropositions` 命令 `actionType` 指定：
 
 | `actionType` | 描述 | at.js `applyOffer()` | 平台Web SDK `applyPropositions` |
@@ -99,6 +104,8 @@ alloy("sendEvent", {
 ## 实施示例
 
 以下示例页面基于上一节中概述的实施，只是它向 `sendEvent` 命令。
+
++++具有多个作用域的Platform Web SDK示例
 
 ```HTML
 <!doctype html>

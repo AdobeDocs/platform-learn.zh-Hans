@@ -1,9 +1,9 @@
 ---
 title: 调试 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何使用Adobe Experience Platform Web SDK调试Adobe Target实施。 主题包括调试选项、浏览器扩展，以及at.js和Platform Web SDK之间的差异。
-source-git-commit: dad7a1b01c4313d6409ce07d01a6520ed83f5e89
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1534'
 ht-degree: 3%
 
 ---
@@ -120,7 +120,7 @@ Target跟踪提供有关活动资格和访客Target配置文件的详细信息�
 1. 重新加载页面，日志中应填充有关边缘网络交互的详细信息
 1. 在描述中重点关注以“目标跟踪”开头的日志条目，然后选择 **[!UICONTROL 查看]** 查看Target跟踪详细信息
 
-![如何使用Adobe Experience Platform Debugger查看Target跟踪](assets/target-trace-debugger.png)
+![如何使用Adobe Experience Platform Debugger查看Target跟踪](assets/target-trace-debugger.png){zoomable=&quot;yes&quot;}
 
 选择后 **[!UICONTROL 查看]**，将显示一个叠加图，允许您查看与请求相关的以下信息：
 
@@ -142,7 +142,7 @@ Target跟踪提供有关活动资格和访客Target配置文件的详细信息�
 1. 选择类型为的日志条目 `com.adobe.target.trace`
 1. 展开有效负载的详细信息，并查看 `context > targetTrace`
 
-![如何确保查看Target跟踪](assets/target-trace-assurance.png)
+![如何确保查看Target跟踪](assets/target-trace-assurance.png){zoomable=&quot;yes&quot;}
 
 ## 检查网络请求和响应
 
@@ -150,7 +150,7 @@ Platform Web SDK的请求负载和响应 `sendEvent` 调用与at.js有所不同�
 
 ### 内容请求负载
 
-![定位平台Web SDK有效负载的特定元素](assets/target-payload.png)
+![定位平台Web SDK有效负载的特定元素](assets/target-payload.png){zoomable=&quot;yes&quot;}
 
 - 配置文件、实体和其他非mbox参数将在事件数组中的 `data.__adobe.target`
 - 决策范围位于事件数组下 `query.personalization.decisionScopes`
@@ -158,7 +158,7 @@ Platform Web SDK的请求负载和响应 `sendEvent` 调用与at.js有所不同�
 
 ### 内容响应正文
 
-![定位平台Web SDK响应正文的特定元素](assets/target-response.png)
+![定位平台Web SDK响应正文的特定元素](assets/target-response.png){zoomable=&quot;yes&quot;}
 
 - Platform Web SDK会返回 `handle` 对象
 - 的 `personalization:decisions` 操作表示来自Target或offer decisioning的响应
@@ -169,7 +169,7 @@ Platform Web SDK的请求负载和响应 `sendEvent` 调用与at.js有所不同�
 
 ### 建议事件有效负载
 
-![Target建议事件示例](assets/target-proposition-event.png)
+![Target建议事件示例](assets/target-proposition-event.png){zoomable=&quot;yes&quot;}
 
 - Target特定SDK事件包括 `decisioning.propositionDisplay` 展示或 `decisioning.propositionInteract` ，例如点击
 - 建议事件的详细信息位于 `xdm._experience.decisioning`

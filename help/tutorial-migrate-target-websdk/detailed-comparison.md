@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x与Web SDK的比较 |将Target从at.js 2.x迁移到Web SDK
 description: 了解at.js 2.x与Platform Web SDK之间的差异，包括特性、函数、设置和数据流。
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '2154'
+source-wordcount: '2156'
 ht-degree: 8%
 
 ---
@@ -118,7 +118,7 @@ ht-degree: 8%
 
 ### at.js 2.x系统图
 
-![at.js 2.0页面加载时的行为](assets/target-at-js-2x-diagram.png)
+![at.js 2.0页面加载时的行为](assets/target-at-js-2x-diagram.png){zoomable=&quot;yes&quot;}
 
 | 调用 | 详细信息 |
 | --- | --- |

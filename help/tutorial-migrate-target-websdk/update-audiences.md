@@ -1,9 +1,9 @@
 ---
 title: 更新受众和配置文件脚本 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何更新Adobe Target受众和配置文件脚本，以与Experience PlatformWeb SDK兼容。
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '497'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 确保与at.js和Platform Web SDK兼容的一种方法是更新任何相关受众，以便 `OR` 条件，如下所示：
 
-![如何查看更新Target受众以实现平台Web SDK兼容性](assets/target-audience-update.png)
+![如何查看更新Target受众以实现平台Web SDK兼容性](assets/target-audience-update.png){zoomable=&quot;yes&quot;}
 
 ## 编辑配置文件脚本
 

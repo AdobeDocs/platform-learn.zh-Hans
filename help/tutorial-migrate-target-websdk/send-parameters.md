@@ -1,9 +1,9 @@
 ---
 title: 发送参数 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何使用Experience PlatformWeb SDK将mbox、配置文件和实体参数发送到Adobe Target。
-source-git-commit: 10dbc8ecbfee511a97e64cb571c43dbf05e3076c
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1652'
 ht-degree: 1%
 
 ---
@@ -124,7 +124,7 @@ Platform Web SDK提供了一种发送数据的一致方式，无需额外的功�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 自定义实体参数用于更新Recommendations产品目录。 这些自定义参数必须作为 `data` 对象。 |
 | `cartIds` | `data.__adobe.target.cartIds` | 用于Target基于购物车的推荐算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用于阻止特定实体ID在推荐设计中返回。 |
-| `mbox3rdPartyId` | 在identityMap中设置。 请参阅 [使用客户ID同步用户档案](#synching-profiles-with-a-customer-id) | 用于跨设备和客户属性同步Target配置文件。 必须在 [数据流的目标配置](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | 在identityMap中设置。 | 用于跨设备和客户属性同步Target配置文件。 必须在 [数据流的目标配置](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | 用于识别Target转化跟踪的唯一顺序。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | 用于跟踪Target转化和优化目标的订单总计。 |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>或者<br> `xdm.productListItems[0-n].SKU` | 用于Target转化跟踪和推荐算法。 请参阅 [实体参数](#entity-parameters) 部分以了解详细信息。 |
@@ -134,7 +134,7 @@ Platform Web SDK提供了一种发送数据的一致方式，无需额外的功�
 
 ## 自定义参数
 
-所有自定义mbox参数都必须作为XDM数据传递，并且 `sendEvent` 命令。 务必确保XDM架构包含Target实施所需的所有数据点。
+自定义mbox参数必须作为XDM数据传递，并且 `sendEvent` 命令。 请务必确保XDM架构包含Target实施所需的所有字段。
 
 at.js示例使用 `targetPageParams()`:
 
@@ -359,7 +359,7 @@ alloy("sendEvent", {
 >的 `productPurchasedId` 值也可以作为以逗号分隔的实体ID列表(位于 `data` 对象。
 
 
-## 使用客户ID同步用户档案
+## 客户ID(mbox3rdPartyId)
 
 Target允许使用单个客户ID跨设备和系统同步配置文件。 使用at.js，可以将此参数设置为 `mbox3rdPartyId` 作为发送到Experience CloudIdentity Service的第一个客户ID。 与at.js不同，Platform Web SDK实施允许您指定要用作 `mbox3rdPartyId` 如果有多个。 例如，如果您的企业具有全局客户ID，并且为不同的业务线分隔了客户ID，则您可以配置Target应使用的ID。
 
@@ -411,7 +411,7 @@ alloy("sendEvent", {
 
 ![在发送事件中包含XDM对象数据元素](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
 
-在您的数据流的Adobe Target服务中，确保将 [!UICONTROL Target第三方ID命名空间] 到 [!UICONTROL 身份映射] 数据元素
+在您的数据流的Adobe Target服务中，确保将 [!UICONTROL Target第三方ID命名空间] 到 [!UICONTROL 身份映射] 数据元素：
 ![在数据流中设置Target第三方ID命名空间](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]

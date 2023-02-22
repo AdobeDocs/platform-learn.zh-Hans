@@ -2,9 +2,9 @@
 title: 渲染VEC活动 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何通过Adobe Target的Web SDK实施来检索和应用可视化体验编辑器活动。
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 7e6aa296429844552ad164ba209a504ddc908571
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '812'
 ht-degree: 5%
 
 ---
@@ -32,7 +32,7 @@ Target活动是使用可视化体验编辑器(VEC)或基于表单的编辑器来
 1. 导航到 [Adobe Experience Cloud Chrome网上应用店中的Visual Editing Helper浏览器扩展](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 1. 单击添加到 **铬黄** > **添加扩展**.
 1. 在Target中打开VEC。
-1. 要使用该扩展，请单击Visual Editing Helper浏览器扩展图标 ![“可视化编辑扩展”图标](assets/VEC-Helper.png) 在VEC或QA模式下，在Chrome浏览器的工具栏中显示。
+1. 要使用该扩展，请单击Visual Editing Helper浏览器扩展图标 ![“可视化编辑扩展”图标](assets/VEC-Helper.png)在VEC或QA模式下，在Chrome浏览器的工具栏中显示{zoomable=&quot;yes&quot;}。
 
 当在目标 Target 中打开网站以进行创作时，会自动启用可视化编辑帮助程序。该扩展不具有任何有条件的设置。该扩展会自动处理所有设置，包括 SameSite cookie 设置。
 
@@ -44,25 +44,35 @@ Target活动是使用可视化体验编辑器(VEC)或基于表单的编辑器来
 
 如果您的at.js实施具有 `pageLoadEnabled` 设置为 `true` 这样可以自动渲染基于VEC的活动，然后您将执行以下操作 `sendEvent` 命令：
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
 ```Javascript
 alloy("sendEvent", {
   "renderDecisions": true
 });
 ```
 
->[!TIP]
->
-> 使用标记功能（以前称为Launch）实施Web SDK时，可以在规则中使用 [!UICONTROL 发送事件] 包含的操作类型 [!UICONTROL 呈现可视化个性化决策] 选项。
+>[!TAB 标记]
 
-当平台Web SDK向页面呈现活动时， `renderDecisions` 设置为 `true`，则会自动触发额外的通知调用以增加展示次数并将访客归因于活动。 此调用使用具有值的事件类型 `decisioning.propositionDisplay`.
+在标记中，使用 [!UICONTROL 发送事件] 包含的操作类型 [!UICONTROL 呈现可视化个性化决策] 选项：
 
-![平台Web SDK调用会增加Target展示次数](assets/target-impression-call.png)
+![在标记中将“呈现个性化”设置为true的情况下发送事件](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
+
+<!--
+When the Platform Web SDK renders an activity to the page with `renderDecisions` set to `true`, an additional notification call fires automatically to increment an impression and attribute the visitor to the activity. This call uses an event type with the value `decisioning.propositionDisplay`.
+
+![Platform Web SDK call incrementing a Target impression](assets/target-impression-call.png){zoomable="yes"}
+-->
 
 ## 按需请求和应用内容
 
-某些Target at.js实施可能具有 `pageLoadEnabled` 设置为 `false` 而是使用 `getOffers()` 执行函数 `pageLoad` 请求。 如果您的实施需要对 `getOffers()` 响应，然后再将内容应用到页面或在一次调用中请求多个位置的内容。
+某些Target实施需要先对VEC选件进行一些自定义处理，然后再将它们应用到页面。 或者，他们在一次调用中请求多个位置。 在at.js实施中，可以通过设置 `pageLoadEnabled` to `false` 和使用 `getOffers()` 执行函数 `pageLoad` 请求。
 
-以下代码使用 `getOffers()` 和 `applyOffers()` 以根据需要应用基于VEC的活动，而不是在库加载时自动应用。
++++ at.js示例使用 `getOffers()` 和 `applyOffers()` 手动渲染基于VEC的活动
 
 ```JavaScript
 adobe.target.getOffers({
@@ -75,7 +85,11 @@ adobe.target.getOffers({
 then(response => adobe.target.applyOffers({ response: response }));
 ```
 
-平台Web SDK没有特定的 `pageLoad` 事件。 所有对Target内容的请求都通过 `decisionScopes` 选项 `sendEvent` 命令。 的 `__view__` 范围的目的 `pageLoad` 请求。 等效的平台Web SDK `sendEvent` 方法是：
++++
+
+平台Web SDK没有特定的 `pageLoad` 事件。 所有对Target内容的请求都通过 `decisionScopes` 选项 `sendEvent` 命令。 的 `__view__` 范围的目的 `pageLoad` 请求。
+
++++ 等效的平台Web SDK `sendEvent` 方法：
 
 1. 执行 `sendEvent` 命令，其中包括 `__view__` 决策范围
 1. 将返回的内容应用到具有 `applyPropositions` 命令
@@ -110,6 +124,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 >[!NOTE]
 >
 >可以 [手动渲染修改](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content) 在可视化体验编辑器中创建。 手动渲染基于VEC的修改并不常见。 检查您的at.js实施是否使用 `getOffers()` 手动执行Target的函数 `pageLoad` 请求而不使用 `applyOffers()` 以将内容应用到页面。
@@ -118,7 +134,9 @@ Platform Web SDK为开发人员提供了在请求和渲染内容方面的极大�
 
 ## 实施示例
 
-基础平台Web SDK实施现已完成。 我们启用了自动Target内容渲染的基本示例页面应当如下所示：
+基础平台Web SDK实施现已完成。
+
++++自动渲染Target内容的Web SDK示例页面：
 
 ```HTML
 <!doctype html>
@@ -179,6 +197,8 @@ Platform Web SDK为开发人员提供了在请求和渲染内容方面的极大�
 </body>
 </html>
 ```
+
++++
 
 >[!TIP]
 >

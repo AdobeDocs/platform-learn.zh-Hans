@@ -1,9 +1,9 @@
 ---
 title: 替换库 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何将Adobe Target实施从at.js 2.x迁移到Adobe Experience Platform Web SDK。 主题包括库概述、实施差异和其他值得注意的标注。
-source-git-commit: 51958a425c946fc806d38209ac4b0b4fa17945e8
+source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -64,7 +64,7 @@ Target功能由at.js和Platform Web SDK提供。 如果同时使用两个库，�
 * 用于缓解闪烁的预隐藏代码片段
 * Target at.js库会使用默认设置异步加载，以自动请求和渲染活动：
 
-+++请参阅at.js的示例HTML代码
++++at.jsHTML页面上实施的示例
 
 ```HTML
 <!doctype html>
@@ -201,21 +201,17 @@ Adobe建议异步实施Platform Web SDK，以获得最佳的整体页面性能�
 
 同步实施的预隐藏样式可以使用 [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) 选项。 下一节将介绍平台Web SDK配置。
 
->[!TIP]
->
-> 使用标记功能（以前称为Launch）实施Web SDK时，可以在Adobe Experience Platform Web SDK扩展配置中编辑预隐藏样式。
-
 要进一步了解Platform Web SDK如何管理闪烁，您可以参阅指南部分：  [管理个性化体验中的闪烁](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
 
 ## 配置平台Web SDK
 
-必须在每次加载页面时配置平台Web SDK。 的 `configure` 命令必须始终是名为的第一个SDK命令。 以下示例假定在单个部署中将整个站点升级到Platform Web SDK:
+必须在每次加载页面时配置平台Web SDK。 以下示例假定在单个部署中将整个站点升级到Platform Web SDK:
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript]
 
-的 `edgeConfigId` 是 [!UICONTROL 数据流ID]
+的 `configure` 命令必须始终是名为的第一个SDK命令。 的 `edgeConfigId` 是 [!UICONTROL 数据流ID]
 
 ```JavaScript
 alloy("configure", {
@@ -228,7 +224,7 @@ alloy("configure", {
 
 在标记实施中，许多字段会自动填充，也可以从下拉菜单中选择。 请注意，不同的平台 [!UICONTROL 沙箱] 和 [!UICONTROL 数据流] 可为每个环境选择。 数据流将根据发布过程中标记库的状态进行更改。
 
-![配置Web SDK标记扩展](assets/tags-config.png)
+![配置Web SDK标记扩展](assets/tags-config.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 如果您计划逐页从at.js迁移到Platform Web SDK，则需要以下配置选项：
@@ -249,7 +245,7 @@ alloy("configure", {
 
 >[!TAB 标记]
 
-![配置Web SDK标记扩展迁移选项](assets/tags-config-migration.png)
+![配置Web SDK标记扩展迁移选项](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
 >[!ENDTABS]
 
 下面概述了与Target相关的值得注意的配置选项：
@@ -263,19 +259,15 @@ alloy("configure", {
 | `thirdPartyCookiesEnabled` | 启用Adobe第三方Cookie的设置。 SDK可以在第三方上下文中保留访客ID，以便允许在网站之间使用相同的访客ID。 如果您有多个网站，请使用此选项；但是，有时出于隐私原因不需要此选项。 | `true` |
 | `prehidingStyle` | 用于创建CSS样式定义，当从服务器加载个性化内容时，该定义会隐藏网页的内容区域。 此操作仅用于SDK的同步部署。 | `body { opacity: 0 !important }` |
 
->[!NOTE]
->
->`thirdPartyCookiesEnabled` 可以设置为 `true` 以维护跨多个域的一致Target访客配置文件。 此选项应设置为 `false` 或忽略，除非需要多域访客配置文件持久性。
-
->[!TIP]
->
-> 使用标记功能（以前称为Launch）实施Web SDK时，可以在Adobe Experience Platform Web SDK扩展配置中管理这些配置。
-
 有关选项的完整列表，请参阅 [配置平台Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=zh-Hans) 的双曲余切值。
 
 ## 实施示例
 
 正确放置Platform Web SDK后，示例页面将如下所示。
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!doctype html>
@@ -332,9 +324,61 @@ alloy("configure", {
 </html>
 ```
 
->[!TIP]
->
-> 使用标记功能（以前称为Launch）实施Web SDK时，标记嵌入代码会替换上面的“Platform Web SDK基本代码”、“异步加载的Platform Web SDK”和“配置Platform Web SDK”部分。
+>[!TAB 标记]
+
+页面代码：
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+在标记中，添加Adobe Experience Platform Web SDK扩展：
+
+![添加Adobe Experience Platform Web SDK扩展](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+并添加所需的配置：
+![配置Web SDK标记扩展迁移选项](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
+
 
 请务必注意，仅按照上面所示包含和配置Platform Web SDK库，不会执行对Adobe Edge网络的任何网络调用。
 
