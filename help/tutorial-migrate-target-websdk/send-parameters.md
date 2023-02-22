@@ -1,9 +1,9 @@
 ---
 title: 发送参数 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何使用Experience PlatformWeb SDK将mbox、配置文件和实体参数发送到Adobe Target。
-source-git-commit: ff43774a0b36c5cd7fcefc7008e9f710abc059f7
+source-git-commit: 10dbc8ecbfee511a97e64cb571c43dbf05e3076c
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1663'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Target实施因站点架构、业务需求和所使用的功能而异。 大多�
         // Property token
         "at_property": "5a0fd9bb-67de-4b5a-0fd7-9cc09f50a58d",
         // Mbox parameters
-        "siteSection": "product details",
+        "pageName": "product detail",
         // Profile parameters
         "profile.gender": "male",
         "user.categoryId": "clothing",
@@ -95,16 +95,16 @@ Target实施因站点架构、业务需求和所使用的功能而异。 大多�
 
 ## 参数映射摘要
 
-使用Platform Web SDK时，这两个示例页面上使用的Target参数必须以某种不同的方式发送。 使用at.js可通过多种方式将参数传递到Target:
+使用Platform Web SDK会以不同方式发送这些页面的Target参数。 使用at.js可通过多种方式将参数传递到Target:
 
 - 设置为 `targetPageParams()` 函数
 - 设置为 `targetPageParamsAll()` 函数
 - 直接使用 `getOffer()` 函数
 - 直接使用 `getOffers()` 用于一个或多个位置
 
-在本例中， `targetPageParams()` 方法。
+对于这些示例， `targetPageParams()` 方法。
 
-Platform Web SDK通过提供一种无需额外功能即可发送数据的统一方式来简化此过程。 所有参数都必须在有效负载中通过 `sendEvent` 命令。
+Platform Web SDK提供了一种发送数据的一致方式，无需额外的功能。 所有参数都必须在有效负载中通过 `sendEvent` 命令。
 
 与Platform Web SDK一起传递的参数 `sendEvent` 有效负载分为两类：
 
@@ -116,7 +116,7 @@ Platform Web SDK通过提供一种无需额外功能即可发送数据的统一�
 | at.js参数示例 | 平台Web SDK选项 | 注释 |
 | --- | --- | --- |
 | `at_property` | 不适用 | 属性令牌在 [数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) 和无法在中设置 `sendEvent` 呼叫。 |
-| `siteSection` | `xdm.web.webPageDetails.siteSection` | 所有Target mbox参数都必须作为 `xdm` 对象，并使用XDM ExperienceEvent类符合架构。 Mbox参数不能作为 `data` 对象。 |
+| `pageName` | `xdm.web.webPageDetails.name` | 所有Target mbox参数都必须作为 `xdm` 对象，并使用XDM ExperienceEvent类符合架构。 Mbox参数不能作为 `data` 对象。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 所有Target配置文件参数都必须作为 `data` 对象和前缀为 `profile.` 以正确映射。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | 用于Target类别亲和度功能的保留参数，该功能必须作为 `data` 对象。 |
 | `entity.id` | `data.__adobe.target.entity.id` <br>或者<br> `xdm.productListItems[0].SKU` | 实体ID用于Target Recommendations行为计数器。 这些实体ID可以作为 `data` 对象或自动从 `xdm.productListItems` 数组（如果您的实施使用该字段组）。 |
@@ -169,18 +169,18 @@ alloy("sendEvent", {
 
 在标记中，首先使用 [!UICONTROL XDM对象] 要映射到XDM字段的数据元素：
 
-![映射到XDM对象数据元素中的XDM字段](assets/params-tags-pageName.png)
+![映射到XDM对象数据元素中的XDM字段](assets/params-tags-pageName.png){zoomable=&quot;yes&quot;}
 
 然后，将 [!UICONTROL XDM对象] 在 [!UICONTROL 发送事件] [!UICONTROL 操作] (多个 [!UICONTROL XDM对象] 可以 [合并](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![在发送事件中包含XDM对象数据元素](assets/params-tags-sendEvent.png)
+![在发送事件中包含XDM对象数据元素](assets/params-tags-sendEvent.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
 
 >[!NOTE]
 >
->由于自定义mbox参数必须作为 `xdm` 对象 `sendEvent` 命令中，at.js Target实施中使用的任何mbox参数都需要重新分配到XDM等效项中。 这意味着您需要更新引用这些mbox参数的任何受众、活动或配置文件脚本。
+>因为自定义mbox参数是 `xdm` 对象，您需要使用新名称更新引用这些mbox参数的任何受众、活动或配置文件脚本。 请参阅 [为兼容Platform Web SDK更新Target受众和配置文件脚本](update-audiences.md) 页面以了解更多信息。
 
 
 ## 配置文件参数
@@ -223,11 +223,11 @@ alloy("sendEvent", {
 
 在标记中，首先创建一个数据元素以定义 `data.__adobe.target` 对象：
 
-![在数据元素中定义数据对象](assets/params-tags-dataObject.png)
+![在数据元素中定义数据对象](assets/params-tags-dataObject.png){zoomable=&quot;yes&quot;}
 
 然后，将您的数据对象包含在 [!UICONTROL 发送事件] [!UICONTROL 操作] (多个 [!UICONTROL 对象] 可以 [合并](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![在发送事件中包含数据对象](assets/params-tags-sendEvent-withData.png)
+![在发送事件中包含数据对象](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -277,11 +277,11 @@ alloy("sendEvent", {
 
 在标记中，首先创建一个数据元素以定义 `data.__adobe.target` 对象：
 
-![在数据元素中定义数据对象](assets/params-tags-dataObject-entities.png)
+![在数据元素中定义数据对象](assets/params-tags-dataObject-entities.png){zoomable=&quot;yes&quot;}
 
 然后，将您的数据对象包含在 [!UICONTROL 发送事件] [!UICONTROL 操作] (多个 [!UICONTROL 对象] 可以 [合并](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![在发送事件中包含数据对象](assets/params-tags-sendEvent-withData.png)
+![在发送事件中包含数据对象](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -345,11 +345,11 @@ alloy("sendEvent", {
 
 在标记中，首先使用 [!UICONTROL XDM对象] 要映射到XDM字段的数据元素：
 
-![映射到XDM对象数据元素中的XDM字段](assets/params-tags-purchase.png)
+![映射到XDM对象数据元素中的XDM字段](assets/params-tags-purchase.png){zoomable=&quot;yes&quot;}
 
 然后，将 [!UICONTROL XDM对象] 在 [!UICONTROL 发送事件] [!UICONTROL 操作] (多个 [!UICONTROL XDM对象] 可以 [合并](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![在发送事件中包含XDM对象数据元素](assets/params-tags-sendEvent.png)
+![在发送事件中包含XDM对象数据元素](assets/params-tags-sendEvent-purchase.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -402,17 +402,17 @@ alloy("sendEvent", {
 >[!TAB 标记]
 
 的 [!UICONTROL ID] 值， [!UICONTROL 已验证状态] 和 [!UICONTROL 命名空间] 在 [!UICONTROL 身份映射] 数据元素：
-![捕获客户ID的身份映射数据元素](assets/params-tags-customerIdDataElement.png)
+![捕获客户ID的身份映射数据元素](assets/params-tags-customerIdDataElement.png){zoomable=&quot;yes&quot;}
 
 的 [!UICONTROL 身份映射] 然后，使用数据元素设置 [!UICONTROL identityMap] 字段 [!UICONTROL XDM对象] 数据元素：
-![XDM对象数据元素中使用的身份映射数据元素](assets/params-tags-customerIdInXDMObject.png)
+![XDM对象数据元素中使用的身份映射数据元素](assets/params-tags-customerIdInXDMObject.png){zoomable=&quot;yes&quot;}
 
 的 [!UICONTROL XDM对象] 之后， [!UICONTROL 发送事件] 规则的操作：
 
-![在发送事件中包含XDM对象数据元素](assets/params-tags-sendEvent.png)
+![在发送事件中包含XDM对象数据元素](assets/params-tags-sendEvent-xdm.png){zoomable=&quot;yes&quot;}
 
 在您的数据流的Adobe Target服务中，确保将 [!UICONTROL Target第三方ID命名空间] 到 [!UICONTROL 身份映射] 数据元素
-![在数据流中设置Target第三方ID命名空间](assets/params-tags-customerIdNamespaceInDatastream.png)
+![在数据流中设置Target第三方ID命名空间](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -472,7 +472,7 @@ alloy("sendEvent", {
         "web": {
           "webPageDetails": {
             // Other attributes included according to XDM schema
-            "siteSection": "product detail"
+            "pageName": "product detail"
           }
         }
       },
