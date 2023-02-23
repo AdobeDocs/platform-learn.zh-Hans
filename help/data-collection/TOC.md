@@ -4,10 +4,10 @@ breadcrumb-title: 数据收集教程
 user-guide-description: 可让您成为 Experience Platform 中数据收集的高级用户的操作方法视频和教程。
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 6f2410a66538d3e16ba27f5330ec95ef2600b154
+source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
 workflow-type: tm+mt
-source-wordcount: '244'
-ht-degree: 34%
+source-wordcount: '239'
+ht-degree: 40%
 
 ---
 
@@ -24,13 +24,14 @@ ht-degree: 34%
    + [生成规则](tags/build-rules.md)
    + [构建和发布库](tags/build-and-publish-a-library.md)
    + [用户和权限](tags/users-and-permissions.md)
-   + [使用Web SDK在网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans){target=&quot;_blank&quot;}
-   + [使用解决方案SDK在网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target=&quot;_blank&quot;}
-   + [在移动设备应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans){target=&quot;_blank&quot;}
+   + [使用Web SDK在网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans){target="_blank"}
+   + [使用解决方案SDK在网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+   + [在移动设备应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans){target="_blank"}
 + Web SDK{#web-sdk}
    + [概述](web-sdk/overview.md)
    + [演示](web-sdk/demo.md)
-   + [实施教程（包含标记）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans){target=&quot;_blank&quot;}
+   + [实施教程（包含标记）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans){target="_blank"}
+   + [迁移Target教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans){target="_blank"}
    + 同意{#consent}
       + [概述](web-sdk/consent/overview.md)
       + [使用Adobe标准设置同意值](web-sdk/consent/set-consent-adobe.md)
@@ -41,7 +42,7 @@ ht-degree: 34%
    + [概述](mobile-sdk/overview.md)
    + [创建移动资产](mobile-sdk/create-mobile-properties.md)
    + [使用依赖关系管理器](mobile-sdk/use-dependency-managers.md)
-   + [在移动设备应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans){target=&quot;_blank&quot;}
+   + [在移动设备应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans){target="_blank"}
 + 服务器API{#server-api}
    + [概述](server-api/overview.md)
    + [API基础知识](server-api/introduction.md)
@@ -65,5 +66,5 @@ ht-degree: 34%
    + Experience Cloud 调试器{#experience-cloud}
       + [安装调试器](debugger/experience-cloud/add-the-extension.md)
       + [使用Debugger](debugger/experience-cloud/use-the-experience-cloud-debugger.md)
-      + [Target故障诊断](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target=&quot;_blank&quot;}
-      + [切换标记环境](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target=&quot;_blank&quot;}
+      + [Target 故障诊断](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target="_blank"}
+      + [切换标记环境](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target="_blank"}

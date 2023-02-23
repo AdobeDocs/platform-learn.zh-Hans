@@ -1,8 +1,8 @@
 ---
 title: 简介 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何将Adobe Target实施从at.js 2.x迁移到Adobe Experience Platform Web SDK。 主题包括加载JavaScript库、发送参数、渲染活动和其他值得注意的标注。
-recommendations: catalog,noDisplay
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+last-substantial-update: 2023-02-23T00:00:00Z
+source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
 workflow-type: tm+mt
 source-wordcount: '617'
 ht-degree: 5%

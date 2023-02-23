@@ -3,9 +3,9 @@ title: 使用Platform Web SDK设置Adobe Target
 description: 了解如何使用Platform Web SDK实施Adobe Target。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: edbc433e9bd72dfa9b9025063fc90c7fdc2c2774
+source-git-commit: 13f2c87d7c4cfe21f04a945b9e11dc64e9bf6e0c
 workflow-type: tm+mt
-source-wordcount: '3779'
+source-wordcount: '3801'
 ht-degree: 1%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 1%
 了解如何使用Platform Web SDK实施Adobe Target。 了解如何交付体验以及如何将其他参数传递到Target。
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html) 是Adobe Experience Cloud应用程序，可为您提供定制和个性化客户体验所需的一切功能，从而最大限度地增加您的Web和移动设备网站、应用程序及其他数字渠道的收入。
+
 
 ## 学习目标
 
@@ -26,6 +27,10 @@ ht-degree: 1%
 * 将XDM数据传递到Target，并了解到与Target参数的映射
 * 将自定义数据传递到Target，如配置文件和实体参数
 * 使用Platform Web SDK验证Target实施
+
+>[!TIP]
+>
+>查看我们的 [将Target从at.js 2.x迁移到平台Web SDK](/help/tutorial-migrate-target-websdk/introduction.md) 此教程介绍了如何迁移现有at.js实施的分步指南。
 
 
 ## 先决条件
