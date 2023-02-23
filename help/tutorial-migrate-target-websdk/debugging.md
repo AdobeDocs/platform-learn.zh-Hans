@@ -1,9 +1,9 @@
 ---
 title: 调试 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何使用Adobe Experience Platform Web SDK调试Adobe Target实施。 主题包括调试选项、浏览器扩展，以及at.js和Platform Web SDK之间的差异。
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '1534'
+source-wordcount: '1535'
 ht-degree: 3%
 
 ---
@@ -180,4 +180,4 @@ Platform Web SDK的请求负载和响应 `sendEvent` 调用与at.js有所不同�
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

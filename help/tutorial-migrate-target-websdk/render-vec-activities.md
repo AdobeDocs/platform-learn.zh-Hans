@@ -2,9 +2,9 @@
 title: 渲染VEC活动 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何通过Adobe Target的Web SDK实施来检索和应用可视化体验编辑器活动。
 feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '824'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ alloy("sendEvent", {
 
 在标记中，使用 [!UICONTROL 发送事件] 包含的操作类型 [!UICONTROL 呈现可视化个性化决策] 选项：
 
-![在标记中将“呈现个性化”设置为true的情况下发送事件](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+![发送在标记中选择呈现可视化个性化决策的事件](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
 
@@ -136,7 +136,11 @@ Platform Web SDK为开发人员提供了在请求和渲染内容方面的极大�
 
 基础平台Web SDK实施现已完成。
 
-+++自动渲染Target内容的Web SDK示例页面：
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
+
+自动渲染Target内容的JavaScript示例：
 
 ```HTML
 <!doctype html>
@@ -198,14 +202,65 @@ Platform Web SDK为开发人员提供了在请求和渲染内容方面的极大�
 </html>
 ```
 
-+++
 
->[!TIP]
->
-> 使用标记功能（以前称为Launch）实施Web SDK时，标记嵌入代码会替换上面的“Platform Web SDK基本代码”、“异步加载的Platform Web SDK”和“配置Platform Web SDK”部分。 在规则中使用 [!UICONTROL 发送事件] 包含的操作类型 [!UICONTROL 呈现可视化个性化决策] 选项。
+>[!TAB 标记]
+
+自动渲染Target内容的标记示例页面：
+
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+在标记中，添加Adobe Experience Platform Web SDK扩展：
+
+![添加Adobe Experience Platform Web SDK扩展](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+添加所需的配置：
+![配置Web SDK标记扩展迁移选项](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
+使用 [!UICONTROL 发送事件] 操作和 [!UICONTROL 呈现可视化个性化决策] 选定项：
+![发送在标记中选择了“呈现个性化”的事件](assets/vec-sendEvent-renderTrue.png){zoomable=&quot;yes&quot;}
+
+>[!ENDTABS]
 
 接下来，了解如何请求和 [渲染基于表单的Target活动](render-form-based-activities.md).
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

@@ -1,9 +1,9 @@
 ---
 title: 替换库 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何将Adobe Target实施从at.js 2.x迁移到Adobe Experience Platform Web SDK。 主题包括库概述、实施差异和其他值得注意的标注。
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: ac5cee1888b39e5ba0134c850c378737e142f1d4
 workflow-type: tm+mt
-source-wordcount: '1646'
+source-wordcount: '1654'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 * 查看Target管理设置并记下IMS组织ID
 * 将at.js库替换为Platform Web SDK
 * 更新同步库实施的预隐藏代码片段
-* 在页面上配置Platform Web SDK
+* 配置平台Web SDK
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ Target功能由at.js和Platform Web SDK提供。 如果同时使用两个库，�
 * 用于缓解闪烁的预隐藏代码片段
 * Target at.js库会使用默认设置异步加载，以自动请求和渲染活动：
 
-+++at.jsHTML页面上实施的示例
++++at.jsHTML页面上的实施示例
 
 ```HTML
 <!doctype html>
@@ -138,7 +138,11 @@ Target功能由at.js和Platform Web SDK提供。 如果同时使用两个库，�
 <script src="/libraries/at.js" async></script>
 ```
 
-并将替换为当前支持的Platform Web SDK(alloy.js)版本：
+并将替换为alloy JavsScript库或您的标记嵌入代码和Adobe Experience Platform Web SDK扩展：
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```HTML
 <!--Platform Web SDK base code-->
@@ -152,12 +156,21 @@ Target功能由at.js和Platform Web SDK提供。 如果同时使用两个库，�
 <script src="https://cdn1.adoberesources.net/alloy/2.13.1/alloy.min.js" async></script>
 ```
 
+>[!TAB 标记]
+
+```HTML
+<!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+<script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+```
+
+在标记属性中，添加Adobe Experience Platform Web SDK扩展：
+
+![添加Adobe Experience Platform Web SDK扩展](assets/library-tags-addExtension.png){zoomable=&quot;yes&quot;}
+
+
+>[!ENDTABS]
+
 预建独立版本要求直接将“基本代码”添加到页面，该页面将创建一个名为alloy的全局函数。 使用此函数与SDK进行交互。 如果要为全局函数命名其他名称，请更改 `alloy` 名称。
-
->[!TIP]
->
-> 使用标记功能（以前称为Launch）实施Web SDK时，会通过添加Adobe Experience Platform Web SDK扩展，将alloy.js库添加到标记库中。
-
 
 请参阅 [安装平台Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=zh-Hans) 有关更多详细信息和部署选项的文档。
 
@@ -168,7 +181,7 @@ Platform Web SDK实施可能需要预隐藏代码片段，具体取决于库是�
 
 ### 异步实施
 
-与at.js一样，如果异步加载Platform Web SDK库，则页面可能会在Target执行内容交换之前完成渲染。 此行为可能会导致所谓的“闪烁”，在这种情况下，会先短暂显示默认内容，然后再将其替换为Target指定的个性化内容。 如果要避免出现这种闪烁情况，Adobe建议在紧靠异步Platform Web SDK脚本引用之前的位置添加特殊的预隐藏代码片段。
+与at.js一样，如果异步加载Platform Web SDK库，则页面可能会在Target执行内容交换之前完成渲染。 此行为可能会导致所谓的“闪烁”，在这种情况下，会先短暂显示默认内容，然后再将其替换为Target指定的个性化内容。 如果要避免出现这种闪烁情况，Adobe建议在紧靠异步Platform Web SDK脚本引用或标记嵌入代码之前的位置添加特殊的预隐藏代码片段。
 
 如果您的实施与上面的示例类似，请将at.js预隐藏代码片段替换为与Platform Web SDK兼容的以下版本：
 
@@ -191,13 +204,13 @@ Platform Web SDK实施可能需要预隐藏代码片段，具体取决于库是�
 
 * `3000` 指定预隐藏的超时时间（以毫秒为单位）。 如果在超时前未收到来自Target的响应，则会删除预隐藏样式标记。 达到此超时的情况应该很少。
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >请务必为Platform Web SDK使用正确的代码片段，因为它使用的样式ID不同 `alloy-prehiding`. 如果使用at.js的预隐藏代码片段，则该代码片段可能无法正常工作。
 
 ### 同步实施
 
-Adobe建议异步实施Platform Web SDK，以获得最佳的整体页面性能。 但是，如果库同步加载，则不需要预隐藏代码片段。 而是在Platform Web SDK配置中指定预隐藏样式。
+Adobe建议异步实施Platform Web SDK，以获得最佳的整体页面性能。 但是，如果同步加载alloy.js库或标记嵌入代码，则不需要预隐藏代码片段。 而是在Platform Web SDK配置中指定预隐藏样式。
 
 同步实施的预隐藏样式可以使用 [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) 选项。 下一节将介绍平台Web SDK配置。
 
@@ -246,6 +259,7 @@ alloy("configure", {
 >[!TAB 标记]
 
 ![配置Web SDK标记扩展迁移选项](assets/tags-config-migration.png){zoomable=&quot;yes&quot;}
+
 >[!ENDTABS]
 
 下面概述了与Target相关的值得注意的配置选项：
@@ -352,9 +366,8 @@ alloy("configure", {
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
 
-    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
     <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
-    <!--/Tags Header Embed Code-->
 </head>
 <body>
   <h1 id="title">Home Page</h1><br><br>
@@ -386,4 +399,4 @@ alloy("configure", {
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

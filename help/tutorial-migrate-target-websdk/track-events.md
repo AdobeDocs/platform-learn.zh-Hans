@@ -1,9 +1,9 @@
 ---
 title: 跟踪事件 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何使用Experience PlatformWeb SDK跟踪Adobe Target转化事件。
-source-git-commit: 8209b13b745dbea418003b133a6834825947950e
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -147,4 +147,4 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

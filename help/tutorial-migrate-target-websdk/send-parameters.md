@@ -1,9 +1,9 @@
 ---
 title: 发送参数 |将Target从at.js 2.x迁移到Web SDK
 description: 了解如何使用Experience PlatformWeb SDK将mbox、配置文件和实体参数发送到Adobe Target。
-source-git-commit: 63edfc214c678a976fbec20e87e76d33180e61f1
+source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1646'
 ht-degree: 1%
 
 ---
@@ -97,19 +97,16 @@ Target实施因站点架构、业务需求和所使用的功能而异。 大多�
 
 使用Platform Web SDK会以不同方式发送这些页面的Target参数。 使用at.js可通过多种方式将参数传递到Target:
 
-- 设置为 `targetPageParams()` 函数
+- 设置为 `targetPageParams()` 函数（在本页的示例中使用）
 - 设置为 `targetPageParamsAll()` 函数
 - 直接使用 `getOffer()` 函数
 - 直接使用 `getOffers()` 用于一个或多个位置
 
-对于这些示例， `targetPageParams()` 方法。
 
-Platform Web SDK提供了一种发送数据的一致方式，无需额外的功能。 所有参数都必须在有效负载中通过 `sendEvent` 命令。
+Platform Web SDK提供了一种发送数据的一致方式，无需额外的功能。 所有参数都必须在有效负载中通过 `sendEvent` 命令和属于两类：
 
-与Platform Web SDK一起传递的参数 `sendEvent` 有效负载分为两类：
-
-1. 自动从 `xdm` 对象
-1. 使用手动传递 `data.__adobe.target` 对象
+- 自动从 `xdm` 对象
+- 使用手动传递 `data.__adobe.target` 对象
 
 下表概述了如何使用Platform Web SDK重新映射示例参数：
 
@@ -124,7 +121,7 @@ Platform Web SDK提供了一种发送数据的一致方式，无需额外的功�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 自定义实体参数用于更新Recommendations产品目录。 这些自定义参数必须作为 `data` 对象。 |
 | `cartIds` | `data.__adobe.target.cartIds` | 用于Target基于购物车的推荐算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用于阻止特定实体ID在推荐设计中返回。 |
-| `mbox3rdPartyId` | 在identityMap中设置。 | 用于跨设备和客户属性同步Target配置文件。 必须在 [数据流的目标配置](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
+| `mbox3rdPartyId` | 在 `xdm.identityMap` 对象 | 用于跨设备和客户属性同步Target配置文件。 必须在 [数据流的目标配置](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). |
 | `orderId` | `xdm.commerce.order.purchaseID` | 用于识别Target转化跟踪的唯一顺序。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | 用于跟踪Target转化和优化目标的订单总计。 |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>或者<br> `xdm.productListItems[0-n].SKU` | 用于Target转化跟踪和推荐算法。 请参阅 [实体参数](#entity-parameters) 部分以了解详细信息。 |
@@ -233,7 +230,7 @@ alloy("sendEvent", {
 
 ## 实体参数
 
-实体参数用于传递Target Recommendations的行为数据和补充目录信息。 与配置文件参数类似，所有实体参数都必须在 `data.__adobe.target` 平台Web SDK中的对象 `sendEvent` 命令负载。
+实体参数用于传递Target Recommendations的行为数据和补充目录信息。 全部 [实体参数](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) 平台Web SDK也支持at.js支持。 与配置文件参数类似，所有实体参数都应在 `data.__adobe.target` 平台Web SDK中的对象 `sendEvent` 命令负载。
 
 特定项目的实体参数必须带有前缀 `entity.` 以获取正确的数据。 保留 `cartIds` 和 `excludedIds` recommendations算法的参数不应添加前缀，且每个算法的值必须包含以逗号分隔的实体ID列表。
 
@@ -284,12 +281,6 @@ alloy("sendEvent", {
 ![在发送事件中包含数据对象](assets/params-tags-sendEvent-withData.png){zoomable=&quot;yes&quot;}
 
 >[!ENDTABS]
-
-
-
-
-
-全部 [实体参数](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) 平台Web SDK也支持at.js支持。
 
 >[!NOTE]
 >
@@ -576,4 +567,4 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
