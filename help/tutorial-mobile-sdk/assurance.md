@@ -2,9 +2,9 @@
 title: 设置保证
 description: 了解如何在移动设备应用程序中实施保证扩展。
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 7df759ec0ea248ee91ae673e3468ffa3f6cc5be5
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '583'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ Assurance（正式称为Project Griffon）旨在帮助您在移动设备应用�
 
 通过完成以下步骤，确认贵组织有权访问“保证”：
 
-1. 访问 [https://experience.adobe.com/griffon](https://experience.adobe.com/griffon){target=&quot;_blank&quot;}
+1. 访问 [https://experience.adobe.com/#/assurance](https://experience.adobe.com/griffon){target="_blank"}
 1. 使用您的Adobe ID凭据登录Experience Cloud。
 1. 如果您被带到 **[!UICONTROL 会话]** ，则您拥有访问权限。 如果您被带到测试版访问页面，请选择 **[!UICONTROL 注册]**.
 
@@ -61,7 +61,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 }
 ```
 
-可以找到更多信息 [此处](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance#implement-aep-assurance-session-start-apis-ios-only){target=&quot;_blank&quot;}。
+可以找到更多信息 [此处](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance#implement-aep-assurance-session-start-apis-ios-only){target="_blank"}.
 
 ## 设置基本URL
 
@@ -73,13 +73,13 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
 
 ![保证url](assets/mobile-assurance-url-type.png)
 
-要进一步了解iOS中的URL方案，请查阅 [Apple文档](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target=&quot;_blank&quot;}。
+要进一步了解iOS中的URL方案，请查阅 [Apple文档](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 通过浏览器或二维码打开URL，可确保该URL以基本URL开头，该基本URL可打开应用程序并包含其他参数。 这些唯一参数用于连接会话。
 
 ## 连接到会话
 
-1. 导航到 [保证UI](https://experience.adobe.com/griffon){target=&quot;_blank&quot;}。
+1. 导航到 [保证UI](https://experience.adobe.com/griffon){target="_blank"}.
 1. 选择 **[!UICONTROL 创建会话]**.
 1. 提供 **[!UICONTROL 会话名称]** 例如 `Luma App QA` 和 **[!UICONTROL 基本URL]** `lumadeeplink://default`
 1. 选择&#x200B;**[!UICONTROL 下一步]**。
@@ -94,7 +94,7 @@ func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>)
    * Experience Cloud事件在Web UI中传入。
       ![保证事件](assets/mobile-assurance-events.png)
 
-如果您遇到任何挑战，请查看 [技术](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance){target=&quot;_blank&quot;}和 [常规文档](https://aep-sdks.gitbook.io/docs/beta/project-griffon){target=&quot;_blank&quot;}。
+如果您遇到任何挑战，请查看 [技术](https://aep-sdks.gitbook.io/docs/foundation-extensions/adobe-experience-platform-assurance){target="_blank"} and [general documentation](https://aep-sdks.gitbook.io/docs/beta/project-griffon){target="_blank"}.
 
 下一个： **[同意](consent.md)**
 
