@@ -1,13 +1,12 @@
 ---
 title: Attribution AI 的商业价值
 description: 此视频展示了营销人员如何通过了解客户旅程各个阶段每个客户互动的影响来衡量和优化营销和广告支出，其中包含Attribution AI。
-role: User
-solution: Intelligent Services
 feature: Attribution AI
+role: User
 kt: 6248
 thumbnail: 40375.jpg
 exl-id: 12aa5c9a-ac48-4506-bbe7-14106fc17675
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2bc058bac9dc5f95587655420ef254e896eba3b
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 8%
