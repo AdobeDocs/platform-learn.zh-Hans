@@ -8,8 +8,8 @@ thumbnail: 34148.jpg
 exl-id: 3b8984d2-cc05-4c46-9c4f-027616fb9810
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '144'
+ht-degree: 74%
 
 ---
 
