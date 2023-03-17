@@ -1,9 +1,9 @@
 ---
 title: at.js 2.x与Web SDK的比较 |将Target从at.js 2.x迁移到Web SDK
 description: 了解at.js 2.x与Platform Web SDK之间的差异，包括特性、函数、设置和数据流。
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+source-git-commit: 28a88e6865211d7d39c18bd48b95070ae0ba259b
 workflow-type: tm+mt
-source-wordcount: '2157'
+source-wordcount: '2159'
 ht-degree: 8%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 8%
 | 远程选件 | 受支持 | 受支持 |
 | 重定向选件 | 受支持 | 受支持. 但是，不支持从具有Platform Web SDK的页面重定向到具有at.js（且方向相反）的页面。 |
 | 设备内决策 | 受支持 | 当前不支持 |
-| 预取Mbox | 受支持 | 默认情况下，在2022年10月1日之后开始的所有新迁移中启用 |
+| 预取Mbox | 支持自定义作用域和SPA VEC | 常规VEC当前不支持 |
 | 自定义事件 | 受支持 | 不支持。请参阅 [公共路线图](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 的值。 |
 | 响应令牌 | 受支持 | 受支持. 请参阅 [专用响应令牌文档](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) ，以了解代码示例以及at.js和Platform Web SDK之间的差异 |
 | 数据提供程序 | 受支持 | 不支持。自定义代码可用于触发平台Web SDK `sendEvent` 命令。 |
