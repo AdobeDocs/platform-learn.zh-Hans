@@ -7,9 +7,9 @@ kt: 10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2022-07-28T00:00:00Z
 exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: f19d3851c5d8e8c54823aa115cc7068f91776da6
 workflow-type: tm+mt
-source-wordcount: '102'
+source-wordcount: '127'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,10 @@ ht-degree: 0%
 了解如何配置基于属性的访问控制以限制对特定Experience Platform资源的访问。 有关详细信息，请访问 [访问控制文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/345641?quality=12&learn=on)
+
+>[!NOTE]
+>
+> 此视频中显示的策略构建功能并不完全可用，但客户帐户中的默认策略的配置方式与显示的策略类似。
 
 >[!IMPORTANT]
 >
