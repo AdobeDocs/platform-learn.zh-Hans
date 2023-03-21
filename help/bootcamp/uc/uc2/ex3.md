@@ -6,9 +6,9 @@ audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
-source-git-commit: ead28f5631fc430c41e8c756b23dc69ffe19510e
+source-git-commit: f018e3aae714879de0cccb3a47b1f2242b57abc1
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '938'
 ht-degree: 4%
 
 ---
@@ -113,11 +113,11 @@ ht-degree: 4%
 - **编码您自己的**:使用HTML对电子邮件模板进行编码，以创建您自己的电子邮件模板
 - **导入HTML**:导入现有HTML模板，您将能够对其进行编辑。
 
-单击 **导入HTML**.
+单击 **导入HTML**. 或者，您也可以单击 **保存的模板** 并选择模板 **Bootcamp — 电子邮件模板**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-拖放文件 **mailtemplatebootcamp.html**，您可以下载 [此处](../../assets/html/mailtemplatebootcamp.html.zip). 单击导入。
+如果已选择 **导入HTML**，您现在可以拖放文件 **mailtemplatebootcamp.html**，您可以下载 [此处](../../assets/html/mailtemplatebootcamp.html.zip). 单击导入。
 
 ![Journey Optimizer](./images/msg13.png)
 
