@@ -6,9 +6,9 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
+source-git-commit: d5988bd8e6d31b183e2a264bea4fb05cd90ef1a7
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1832'
 ht-degree: 5%
 
 ---
@@ -160,7 +160,6 @@ Experience Platform业务用户通常必须完成一系列步骤，包括确定�
    * `2-Luma-CRM-Data.postman_collection.json` 为客户的CRM数据创建架构并填充数据集。 此架构基于XDM个人用户档案类，该类包含人口统计详细信息、个人联系详细信息、首选项详细信息和自定义身份字段组。
    * `3-Luma-Product-Catalog.postman_collection.json` 为产品目录信息创建架构并填充数据集。 此架构基于自定义产品目录类，并使用自定义产品目录字段组。
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` 为客户的离线购买事件数据创建架构并填充数据集。 此架构基于XDM ExperienceEvent类，包含自定义标识和商务详细信息字段组。
-
    * `5-Luma-Product-Inventory-Events.postman_collection.json` 为与进货和出货产品相关的事件创建架构并填充数据集。 架构基于自定义业务事件类和自定义字段组。
    * `6-Luma-Test-Profiles.postman_collection.json` 创建架构并使用测试用户档案填充数据集以在Adobe Journey Optimizer中使用
    * `7-Luma-Web-Events.postman_collection.json` 创建一个架构并使用简单的历史Web数据填充数据集。
@@ -173,7 +172,12 @@ Experience Platform业务用户通常必须完成一系列步骤，包括确定�
 1. 转到 **[!UICONTROL 用户档案]** > **[!UICONTROL 浏览]**
 1. 选择 `Luma Loyalty Id` 作为 **[!UICONTROL 身份命名空间]**
 1. 搜索 `5625458` 作为 **[!UICONTROL 标识值]**
-1. 打开 `Danny Wright` 个人资料
+1. 打开 `Daniel Wright` 个人资料
+
+>[!TIP]
+>
+>如果看不到用户档案，请检查 [!UICONTROL 数据集] 页面，以确认已成功创建并摄取了所有数据集。 如果显示正常，请等待15分钟，查看查看器中是否提供了用户档案。  如果数据摄取存在问题，请检查错误消息以尝试找到问题。 您还可以尝试对 [!UICONTROL 数据集] 页面，然后拖放json数据文件以重新摄取数据。
+
 
 ![打开用户档案](../assets/data-generator/images/validation-profile-open.png)
 
