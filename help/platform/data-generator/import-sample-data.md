@@ -6,10 +6,10 @@ feature: API
 kt: 7349
 thumbnail: 7349.jpg
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 6a501b3ee36bc2be21816547e01efa0a862a63ba
+source-git-commit: a04bd682ff8d16981700598d9eef8db94c0ea568
 workflow-type: tm+mt
-source-wordcount: '1650'
-ht-degree: 4%
+source-wordcount: '1752'
+ht-degree: 5%
 
 ---
 
@@ -25,7 +25,7 @@ Experience Platform业务用户通常必须完成一系列步骤，包括确定�
 
 >[!NOTE]
 >
->本教程的最终结果是一个沙盒，其中包含与 [面向数据架构师和数据工程师的Adobe Experience Platform快速入门教程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html).
+>本教程的最终结果是一个沙盒，其中包含与 [面向数据架构师和数据工程师的Adobe Experience Platform快速入门教程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). 更新于2023年4月，以支持 [Journey Optimizer挑战](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hans).
 
 
 ## 先决条件
@@ -48,9 +48,9 @@ Experience Platform业务用户通常必须完成一系列步骤，包括确定�
    >
    >包含在 [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) 文件是虚构的，仅用于演示目的。
 
-1. 从下载文件夹中，移动 `platform-utils-main.zip` 文件到计算机上的所需位置，然后将其解压缩。
-1. 在 `luma-data` 文件夹，打开所有 `json` 文件，并替换所有实例 `_techmarketingdemos` 使用您自己的租户id，前面有一个下划线。
-1. 打开 `luma-offline-purchases.json` 在文本编辑器中更新所有时间戳，以便事件在上个月发生(例如，搜索 `"timestamp":"2022-06` 和替换年份和月份)
+1. 从下载文件夹中，将 `platform-utils-main.zip` 文件移动到计算机上的所需位置，然后将其解压缩。
+1. 在 `luma-data` 文件夹，打开所有 `json` 文件，并替换所有实例 `_yourOrganizationID` 使用您自己的租户id，前面有一个下划线。
+1. 打开 `luma-offline-purchases.json` 和 `luma-web-events.json` 在文本编辑器中更新所有时间戳，以便事件在上个月发生(例如，搜索 `"timestamp":"2022-11` 和替换年份和月份)
 1. 请注意解压缩文件夹的位置，因为您稍后在设置 `FILE_PATH` Postman环境变量：
 
    >[!NOTE]
@@ -113,6 +113,9 @@ Experience Platform业务用户通常必须完成一系列步骤，包括确定�
    * `2-Luma-CRM-Data.postman_collection.json`
    * `3-Luma-Product-Catalog.postman_collection.json`
    * `4-Luma-Offline-Purchase-Events.postman_collection.json`
+   * `5-Luma-Product-Inventory-Events.postman_collection.json`
+   * `6-Luma-Test-Profiles.postman_collection.json`
+   * `7-Luma-Web-Events.postman_collection.json`
 
    ![收藏集导入](../assets/data-generator/images/collection-files.png)
 
@@ -158,6 +161,11 @@ Experience Platform业务用户通常必须完成一系列步骤，包括确定�
    * `3-Luma-Product-Catalog.postman_collection.json` 为产品目录信息创建架构并填充数据集。 此架构基于自定义产品目录类，并使用自定义产品目录字段组。
    * `4-Luma-Offline-Purchase-Events.postman_collection.json` 为客户的离线购买事件数据创建架构并填充数据集。 此架构基于XDM ExperienceEvent类，包含自定义标识和商务详细信息字段组。
 
+   * `5-Luma-Product-Inventory-Events.postman_collection.json` 为与进货和出货产品相关的事件创建架构并填充数据集。 架构基于自定义业务事件类和自定义字段组。
+   * `6-Luma-Test-Profiles.postman_collection.json` 创建架构并使用测试用户档案填充数据集以在Adobe Journey Optimizer中使用
+   * `7-Luma-Web-Events.postman_collection.json` 创建一个架构并使用简单的历史Web数据填充数据集。
+
+
 ## 验证
 
 样例数据经过设计，以便运行集合后，可构建可合并多个系统数据的实时客户配置文件。 例如，这是忠诚度、CRM和离线购买数据集的第一个记录。 查找该用户档案以确认已摄取数据。 在 [Adobe Experience Platform界面](https://platform.adobe.com/):
@@ -173,6 +181,8 @@ Experience Platform业务用户通常必须完成一系列步骤，包括确定�
 ![离线购买事件文件中的事件数据](../assets/data-generator/images/validation-profile-events.png)
 
 ## 后续步骤
+
+如果您想要了解Adobe Journey Optimizer，则此沙盒包含您需要获取的所有内容 [Journey Optimizer挑战](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hans)
 
 如果您想了解合并策略、数据管理、查询服务和区段生成器，请跳转到 [数据架构师和数据工程师快速入门教程中的第11课](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). 您可以手动构建刚刚由这些Postman收藏集填充的所有内容，并享受开端！
 
