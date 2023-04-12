@@ -2,14 +2,14 @@
 title: Adobe Experience Platform Web SDK和Edge Network概述
 description: 了解 Adobe Experience Platform Web SDK 和 Edge Network 如何让客户使用一个 JavaScript 库和一个信标将数据发送到 Adobe 应用程序和第三方目标。
 landing-page-description: 大致了解 Web SDK 和 Edge Network。
-short-description: Get an overview of Web SDK and Edge Network.
+short-description: 大致了解 Web SDK 和 Edge Network。
 kt: 5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 38%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 

@@ -2,14 +2,14 @@
 title: Adobe Experience Platform Debugger概述
 description: 了解 Adobe Experience Platform Debugger Chrome 扩展程序和 Firefox 加载项如何帮助您调试 Adobe Experience Platform Web SDK、Adobe Analytics、Adobe Target、Adobe Audience Manager、标记等的 Web 实施。
 landing-page-description: 调试 Adobe Experience Platform Web SDK 和 Experience Cloud 应用程序的 Web 实施。
-short-description: Debug your web implementations of the Adobe Experience Platform Web SDK and Experience Cloud applications.
+short-description: 调试 Adobe Experience Platform Web SDK 和 Experience Cloud 应用程序的 Web 实施。
 kt: 4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
 source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 59%
+source-wordcount: '166'
+ht-degree: 63%
 
 ---
 
