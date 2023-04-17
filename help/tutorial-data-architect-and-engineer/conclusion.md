@@ -6,10 +6,10 @@ description: 在本课程中，您将使用Adobe Experience Platform的Admin Con
 role: Data Architect, Data Engineer
 kt: 4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 13ecb084c5b107d48b8b7e4d2844b8c108e98bfe
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 5%
+source-wordcount: '426'
+ht-degree: 4%
 
 ---
 
@@ -50,9 +50,5 @@ ht-degree: 5%
 * [Experience Platform 教程](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
 * [Experience Platform 文档](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=zh-Hans)
 * [Experience League课程](https://experienceleague.adobe.com/#dashboard/learning)
-
-以下是另一个教程，您可以查看该教程以了解有关与第三方应用程序连接的更多信息：
-
-* [Adobe Experience Platform 综合技术教程](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v21/overview.html)
 
 感谢您的努力和祝您与Adobe Experience Platform的旅途愉快！
