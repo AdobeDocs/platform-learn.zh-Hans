@@ -4,10 +4,10 @@ breadcrumb-title: 教程
 user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
-source-git-commit: ef085f3bdfe385d072551bbafa1ae39e847b147d
+source-git-commit: 6a41de42497c142913ec80b978db27d8a6e638c0
 workflow-type: tm+mt
-source-wordcount: '950'
-ht-degree: 31%
+source-wordcount: '925'
+ht-degree: 32%
 
 ---
 
@@ -26,9 +26,15 @@ ht-degree: 31%
    + [基本架构](/help/platform/intro-to-platform/basic-architecture.md)
    + [使用Platform用户界面](/help/platform/intro-to-platform/interface-tour.md)
    + [角色和项目阶段](/help/platform/intro-to-platform/roles-and-project-phases.md)
++ Real-Time CDP简介 {#rtcdp}
+   + [概述](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+   + [端到端演示](/help/platform/rtcdp/demo.md)
+   + [工作流](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+   + [B2B版本概述](/help/platform/rtcdp/b2b-overview.md)
+   + [使用Marketo Engage编排活动](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [入门指南：数据架构师和数据工程师](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [验证Experience PlatformAPI](/help/platform/authentication/platform-api-authentication.md)
-+ [将样本数据导入到 Experience Platform](/help/platform/data-generator/import-sample-data.md)
++ [将示例数据导入到 Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [使用警报](/help/platform/admin/use-alerts.md)
    + [使用沙箱](/help/platform/admin/use-sandboxes.md)
@@ -46,21 +52,22 @@ ht-degree: 31%
    + [创建数据使用策略](/help/platform/governance/create-data-usage-policies.md)
    + [强制实施数据使用策略](/help/platform/governance/enforce-data-usage-policies.md)
    + [强制同意](/help/platform/governance/enforce-consent.md)
+   + [与IAB透明度和同意框架2.0集成](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 数据安全机制 {#data-hygiene}
    + [删除数据集](/help/platform/data-hygiene/delete-datasets.md)
 + 数据引入 {#data-ingestion}
    + [概述](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批量摄取概述](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [创建和填充数据集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-   + [将CSV文件映射到XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html?lang=zh-Hans){target="_blank"}
+   + [将CSV文件映射到XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [源概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-   + [从Adobe Analytics摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hans)
+   + [从Adobe Analytics摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [从Audience Manager中摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [从云存储中摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=zh-Hans)
    + [从CRM中摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=zh-Hans)
    + [从数据库引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
-   + [流摄取概述](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [使用HTTP API流数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=zh-Hans)
+   + [流式摄取概述](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
+   + [使用 HTTP API 流式传输数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=zh-Hans)
    + [使用源连接器流式传输数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=zh-Hans)
    + [Web SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Mobile SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
@@ -90,12 +97,25 @@ ht-degree: 31%
    + [配置Marketo目标](/help/platform/destinations/configure-the-marketo-destination.md)
    + [配置基于文件的云存储或电子邮件营销目标](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [配置社交目标](/help/platform/destinations/configure-a-social-destination.md)
-   + [使用Adobe Target进行下一次点击的个性化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hans)
+   + Adobe Target和自定义个性化{#target}
+      + [使用Adobe Target进行下一次点击的个性化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hans)
+      + [配置Adobe Target目标](/help/platform/destinations/target/configure-the-target-destination.md)
+      + [激活区段和配置文件属性](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
    + [将数据激活到非Adobe应用程序网络研讨会](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + 标识 {#identities}
    + [身份和身份图概述](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [标记、引入并验证身份数据](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [查看身份图](/help/platform/identities/view-identity-graphs.md)
++ Intelligent Services {#intelligent-services}
+   + [概述](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
+   + [归因人工智能概述](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
+   + [Attribution AI值](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
+   + [配置归因人工智能](/help/platform/intelligent-services/configure-attribution-ai.md)
+   + [使用归因人工智能评分和分析](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
+   + [客户人工智能概述](/help/platform/intelligent-services/introduction-to-customer-ai.md)
+   + [客户人工智能价值](/help/platform/intelligent-services/business-value-of-customer-ai.md)
+   + [配置客户人工智能](/help/platform/intelligent-services/configure-customer-ai.md)
+   + [使用客户人工智能评分和分析](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + 监控 {#monitoring}
    + [监测数据提取](/help/platform/monitoring/monitoring-dashboard.md)
    + [监控区段激活](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
@@ -176,30 +196,9 @@ ht-degree: 31%
    + [从云存储中摄取数据](/help/platform/sources/ingest-data-from-cloud-storage.md)
    + [从CRM中摄取数据](/help/platform/sources/ingest-data-from-crm.md)
    + [从数据库引入数据](/help/platform/sources/ingest-data-from-databases.md)
-   + [使用HTTP API流数据](/help/platform/sources/streaming-ingestion-http-api.md)
+   + [使用 HTTP API 流式传输数据](/help/platform/sources/streaming-ingestion-http-api.md)
    + [使用源连接器流式传输数据](/help/platform/sources/streaming-ingestion-source-connector.md)
-+ 应用程序服务 {#application-services}
-   + [Customer Journey Analytics 教程](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
-   + [Journey Orchestration教程](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
-   + [offer decisioning教程](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html?lang=zh-Hans){target="_blank"}
-   + Real-Time CDP教程{#rtcdp}
-      + [概述](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
-      + [B2B版本概述](/help/platform/rtcdp/b2b-overview.md)
-      + [端到端演示](/help/platform/rtcdp/demo.md)
-      + [工作流](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-      + [使用Marketo Engage编排活动](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-      + [与IAB透明度和同意框架2.0集成](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
-      + [强制使用数据策略](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies.html)
-+ Intelligent Services {#intelligent-services}
-   + [概述](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
-   + [归因人工智能概述](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
-   + [Attribution AI值](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
-   + [配置归因人工智能](/help/platform/intelligent-services/configure-attribution-ai.md)
-   + [使用归因人工智能评分和分析](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
-   + [客户人工智能概述](/help/platform/intelligent-services/introduction-to-customer-ai.md)
-   + [客户人工智能价值](/help/platform/intelligent-services/business-value-of-customer-ai.md)
-   + [配置客户人工智能](/help/platform/intelligent-services/configure-customer-ai.md)
-   + [使用客户人工智能评分和分析](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
+
 + Experience Cloud 集成 {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
    + [使用Marketo Engage编排活动](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
