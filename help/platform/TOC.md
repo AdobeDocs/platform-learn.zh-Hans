@@ -4,9 +4,9 @@ breadcrumb-title: 教程
 user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
-source-git-commit: aa6ffcb3ecdb1e8a3c1450d62d0c090a0a49d720
+source-git-commit: 1ff4dd53ab63666df1975b9f4c957da841f0820d
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '932'
 ht-degree: 31%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 31%
    + [配置基于文件的云存储或电子邮件营销目标](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [配置社交目标](/help/platform/destinations/configure-a-social-destination.md)
    + Adobe Target和自定义个性化{#target}
-      + [使用Adobe Target进行下一次点击的个性化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hans)
+      + [使用Adobe Target进行下一次点击的个性化](/help/platform/destinations/target/next-hit-personalization.md)
       + [配置Adobe Target目标](/help/platform/destinations/target/configure-the-target-destination.md)
       + [激活区段和配置文件属性](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [在Target中使用Real-Time CDP区段](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
@@ -199,11 +199,10 @@ ht-degree: 31%
    + [从数据库引入数据](/help/platform/sources/ingest-data-from-databases.md)
    + [使用 HTTP API 流式传输数据](/help/platform/sources/streaming-ingestion-http-api.md)
    + [使用源连接器流式传输数据](/help/platform/sources/streaming-ingestion-source-connector.md)
-
+   + [使用Adobe Target进行下一次点击的个性化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud 集成 {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
    + [使用Marketo Engage编排活动](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [使用Adobe Target进行下一次点击的个性化](/help/platform/experience-cloud/next-hit-personalization.md)
 + 行业趋势 {#industry}
    + [数据管理的未来和复杂多变的环境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [一个故事，两种看法 - 品牌对消费者](/help/platform/industry/brands-vs-consumers.md)
