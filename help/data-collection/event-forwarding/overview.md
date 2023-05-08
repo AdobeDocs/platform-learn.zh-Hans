@@ -1,6 +1,6 @@
 ---
 title: 事件转发概述
-description: 了解事件转发如何集中数据收集，减少 Web 和移动应用程序中所需的代码量，以及通过 Adobe Experience Platform Edge Network 将数据流式传输到非 Adobe 解决方案。
+description: 了解事件转发如何集中收集数据、减少 Web 和移动应用程序中所需的代码量以及通过 Adobe Experience Platform Edge Network 将数据流式传输到非 Adobe 解决方案。
 feature: Event Forwarding
 kt: 6419
 thumbnail: 331937.jpeg
@@ -14,7 +14,7 @@ ht-degree: 45%
 
 # 事件转发概述
 
-了解事件转发如何集中数据收集，减少 Web 和移动应用程序中所需的代码量，以及通过 Adobe Experience Platform Edge Network 将数据流式传输到非 Adobe 解决方案。
+了解事件转发如何集中收集数据、减少 Web 和移动应用程序中所需的代码量以及通过 Adobe Experience Platform Edge Network 将数据流式传输到非 Adobe 解决方案。
 
 >[!NOTE]
 >

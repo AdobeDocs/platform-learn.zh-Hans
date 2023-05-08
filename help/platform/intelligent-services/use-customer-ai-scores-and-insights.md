@@ -1,6 +1,6 @@
 ---
 title: 使用客户人工智能评分和分析
-description: 了解如何使用 Customer AI 倾向评分和分析以转化并维系客户。
+description: 了解如何使用 Customer AI 倾向评分和见解转化和维系客户。
 solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI
 role: User
@@ -16,7 +16,7 @@ ht-degree: 50%
 
 # 使用客户人工智能评分和分析
 
-了解如何使用 Customer AI 倾向评分和分析以转化并维系客户。
+了解如何使用 Customer AI 倾向评分和见解转化和维系客户。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32666?quality=12&learn=on)
 

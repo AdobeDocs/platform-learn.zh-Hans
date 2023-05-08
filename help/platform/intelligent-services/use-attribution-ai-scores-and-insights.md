@@ -1,6 +1,6 @@
 ---
 title: 使用归因人工智能评分和分析
-description: 了解如何使用 Attribution AI 分析页面，以获取营销渠道和营销活动 ROI 的信息
+description: 了解如何使用 Attribution AI 分析页面以了解营销渠道和营销活动的 ROI
 feature: Attribution AI
 role: User
 kt: 4173
@@ -15,7 +15,7 @@ ht-degree: 53%
 
 # 使用归因人工智能评分和分析
 
-了解如何使用 Attribution AI 分析页面，以获取营销渠道和营销活动 ROI 的信息.
+了解如何使用 Attribution AI 分析页面以了解营销渠道和营销活动的 ROI.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?quality=12&learn=on)
 
