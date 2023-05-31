@@ -6,10 +6,10 @@ feature: Data Ingestion
 kt: 7022
 thumbnail: 330995.jpg
 exl-id: 300acb73-2099-438d-97b3-48d2af5afdb0
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '91'
-ht-degree: 16%
+source-wordcount: '68'
+ht-degree: 14%
 
 ---
 
@@ -19,8 +19,4 @@ ht-degree: 16%
 
 >[!VIDEO](https://video.tv.adobe.com/v/330995?quality=12&learn=on)
 
->[!INFO]
->
-> 此视频是课程的一部分 [面向数据工程师的数据摄取](https://experienceleague.adobe.com/?lang=zh-Hans?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)，可在Experience League上免费使用！
-
-有关详细信息，请访问 [数据摄取文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans).
+欲知更多信息，请访问 [数据引入文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans).

@@ -1,27 +1,23 @@
 ---
-title: 实时客户用户档案概述图
-description: 此视频将指导您完成一个概述图表，其中展示了Adobe Experience Platform的实时客户资料功能。
+title: 实时客户配置文件概览图
+description: 此视频向您介绍一个概览图表，该图表展示了Adobe Experience Platform的实时客户资料功能。
 role: Data Architect, Data Engineer
 feature: Profiles
 kt: 4943
 thumbnail: 33600.jpg
 exl-id: 1cff5492-82bb-484c-a96a-3417288d4766
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 11%
+source-wordcount: '64'
+ht-degree: 9%
 
 ---
 
-# 实时客户用户档案概述图
+# 实时客户配置文件概览图
 
-此视频将指导您完成一个概述图表，其中展示了Adobe Experience Platform的实时客户资料功能。
+此视频向您介绍一个概览图表，该图表展示了Adobe Experience Platform的实时客户资料功能。
 
 >[!VIDEO](https://video.tv.adobe.com/v/33600?quality=12&learn=on)
 
->[!INFO]
->
-> 此视频是课程的一部分 [面向数据工程师的Adobe Experience Platform快速入门](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2)，可在Experience League上免费使用！
-
-有关详细信息，请访问 [实时客户资料文档](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans).
+欲知更多信息，请访问 [Real-time Customer Profile文档](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans).
 

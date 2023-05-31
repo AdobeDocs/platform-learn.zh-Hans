@@ -1,24 +1,20 @@
 ---
-title: 界面浏览
-description: 了解如何导航Adobe Experience Platform的用户界面。
+title: 界面导览
+description: 了解如何在Adobe Experience Platform用户界面中导航。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 kt: 4821
 thumbnail: 32792.jpg
 exl-id: 2d7af2cb-7222-4f87-8bd5-cb0c341cdd33
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '48'
-ht-degree: 8%
+source-wordcount: '26'
+ht-degree: 0%
 
 ---
 
-# 界面浏览Adobe Experience Platform
+# Adobe Experience Platform界面导览
 
-了解如何导航Adobe Experience Platform的用户界面。
+了解如何在Adobe Experience Platform用户界面中导航。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32792?quality=12&learn=on)
-
->[!INFO]
->
-> 此视频是课程的一部分 [Adobe Experience Platform简介](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1)，可在Experience League上免费使用！
 

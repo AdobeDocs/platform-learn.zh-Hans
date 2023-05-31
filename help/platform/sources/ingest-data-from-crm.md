@@ -7,10 +7,10 @@ kt: 3826, 13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: ddacac4554be54f16b533b95baba652bacc5eb1e
+source-git-commit: 17be24fe619139056a69190b98610644387ca18f
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 2%
+source-wordcount: '208'
+ht-degree: 0%
 
 ---
 
@@ -29,10 +29,6 @@ ht-degree: 2%
 了解如何使用模板工作流为Salesforce CRM配置源连接器。 此工作流会根据模板自动生成引入Salesforce数据所需的资产。 它节省了前期时间，并且可以根据您的需求自定义资产。 并非所有CRM源连接器都支持此工作流。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?quality=12&learn=on)
-
->[!INFO]
->
-> 此视频是课程的一部分 [面向数据工程师的数据引入](https://experienceleague.adobe.com/?lang=zh-Hans?recommended=ExperiencePlatform-D-1-2020.1.dataingestion)，可在Experience League上免费使用！
 
 有关更多信息，请参阅以下文档：
 * [Salesforce创建连接文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
