@@ -2,9 +2,9 @@
 title: 安装Adobe Experience Platform Mobile SDK
 description: 了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '573'
 ht-degree: 1%
 
 ---
@@ -15,32 +15,32 @@ ht-degree: 1%
 
 ## 先决条件
 
-* 使用 [上一课](configure-tags.md).
-* 开发环境文件ID，来自 [移动设备安装说明](configure-tags.md#generate-sdk-install-instructions).
-* 已下载，空 [示例应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target=&quot;_blank&quot;}。
-* 体验 [XCode](https://developer.apple.com/xcode/){target=&quot;_blank&quot;}。
-* 基本 [命令行](https://en.wikipedia.org/wiki/Command-line_interface){target=&quot;_blank&quot;}知识。
+* 已成功使用“ ”中描述的扩展构建标记库 [上一课程](configure-tags.md).
+* 来自的开发环境文件ID [移动设备安装说明](configure-tags.md#generate-sdk-install-instructions).
+* 已下载，为空 [示例应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* 体验 [XCode](https://developer.apple.com/xcode/){target="_blank"}.
+* 基本 [命令行](https://en.wikipedia.org/wiki/Command-line_interface){target="_blank"} 知识。
 
 ## 学习目标
 
-在本课程中，您将：
+在本课程中，您将执行以下操作：
 
-* 更新CocoaPod文件。
+* 更新您的CocoaPod文件。
 * 导入所需的SDK。
 * 注册扩展。
 
 >[!NOTE]
 >
->在移动设备应用程序实施中，术语“扩展”和“SDK”几乎可以互换。
+>在移动应用程序实施中，“扩展”和“SDK”这两个术语几乎可以互换。
 
 
 ## 更新PodFile
 
 >[!NOTE]
 >
-> 如果你不熟悉可可豆荚，请查阅 [入门指南](https://guides.cocoapods.org/using/getting-started.html).
+> 如果您不熟悉CocoaPods，请查阅 [快速入门指南](https://guides.cocoapods.org/using/getting-started.html).
 
-安装通常是一个简单的sudo命令：
+Install通常是简单的sudo命令：
 
 ```console
 sudo gem install cocoapods
@@ -50,7 +50,7 @@ sudo gem install cocoapods
 
 ![初始podfile](assets/mobile-install-initial-podfile.png)
 
-更新文件以包含以下Pod:
+更新文件以包含以下pod：
 
 ```swift
 pod 'AEPCore', '~> 3'
@@ -67,45 +67,45 @@ pod 'AEPSignal', '~>3'
 
 >[!NOTE]
 >
-> `AEPMessaging` 仅当您计划使用Adobe Journey Optimizer实施推送消息时，才需要使用。 请阅读 [使用Adobe Journey Optimizer实施推送消息](journey-optimizer-push.md) 以了解更多信息。
+> `AEPMessaging` 仅当您计划使用Adobe Journey Optimizer实施推送消息时，才需要。 请阅读以下教程： [使用Adobe Journey Optimizer实施推送消息](journey-optimizer-push.md) 了解更多信息。
 
-将更改保存到Podfile后，导航到项目所在的文件夹并运行 `pod install` 命令来安装更改。
+将更改保存到Podfile后，导航到包含项目的文件夹并运行 `pod install` 命令以安装更改。
 
 ![pod install](assets/mobile-install-podfile-install.png)
 
 >[!NOTE]
 >
-> 如果您收到“在项目目录中找不到No Podfile”。 错误，您的终端位于错误文件夹中。 导航到包含您更新的Podfile的文件夹，然后重试。
+> 如果您收到“在项目目录中找不到Podfile”。 错误，您的终端位于错误的文件夹中。 导航到包含您更新的Podfile的文件夹，然后重试。
 
 如果要升级到最新版本，请运行 `pod update` 命令。
 
 >[!INFO]
 >
->如果你无法在自己的应用程序中使用CocoaPods，你可以了解其他 [支持的实施](https://github.com/adobe/aepsdk-core-ios#binaries) 在GitHub项目中。
+>如果您无法在自己的应用程序中使用CocoaPods，则可以了解其他 [支持的实施](https://github.com/adobe/aepsdk-core-ios#binaries) 在GitHub项目中。
 
 ## 构建CocoaPods
 
-要构建CocoaPods，请打开 `Luma.xcworkspace`，然后选择 **产品**，后跟 **清理生成文件夹**.
+要构建CocoaPods，请打开 `Luma.xcworkspace`，并选择 **产品**，后接 **清理生成文件夹**.
 
 >[!NOTE]
 >
-> 您可能需要设置 **仅构建活动架构** to **否**. 为此，请从项目导航器中选择Pod项目，然后选择 **生成设置**，并设置 **构建活动架构** to **否**.
+> 您可能需要设置 **仅构建活动架构** 到 **否**. 要执行此操作，请从项目导航器中选择Pods项目，然后选择 **内部版本设置**，并设置 **构建活动架构** 到 **否**.
 
-您现在可以构建并运行项目。
+您现在可以构建和运行项目。
 
-![构建设置](assets/mobile-install-build-settings.png)
+![内部版本设置](assets/mobile-install-build-settings.png)
 
 >[!NOTE]
 >
->Luma项目是在M1芯片组上使用Xcode v12.5构建的，并在iOS模拟器上运行。 如果您使用的是其他设置，则可能需要更改内部版本设置以反映您的架构。
+>Luma项目是在M1芯片组上使用Xcode v12.5构建的，并在iOS模拟器中运行。 如果您使用的是其他设置，则可能需要更改构建设置以反映您的架构。
 >
 >如果生成失败，请尝试还原 **构建活动架构** > **调试** 设置回 **是**.
 >
->在创作本教程时使用了模拟器配置“iPod touch（第7代）”。
+>在创作本教程时，使用了模拟器配置“iPod touch（第7代）”。
 
 ## 导入扩展
 
-在 `.swift` ，请添加以下导入。 首先，将添加到 `AppDelegate.swift`.
+在每个 `.swift` 文件，添加以下导入。 首先，将添加到 `AppDelegate.swift`.
 
 ```swift
 import AEPUserProfile
@@ -122,7 +122,7 @@ import AEPServices
 
 ## 更新AppDelegate
 
-在 `AppDelegate.swift` 文件中，将以下代码添加到 `didFinishLaunchingWithOptions`. 将currentAppId替换为您从 [上一课](configure-tags.md).
+在 `AppDelegate.swift` 文件，添加以下代码到 `didFinishLaunchingWithOptions`. 将currentAppId替换为您从中的标记检索到的开发环境文件ID值。 [上一课程](configure-tags.md).
 
 ```swift
 let currentAppId = "b5cbd1a1220e/bae66382cce8/launch-88492c6dcb6e-development"
@@ -136,19 +136,19 @@ MobileCore.registerExtensions(extensions, {
 })
 ```
 
-`Messaging.self` 仅当您计划按照所述通过Adobe Journey Optimizer实施推送消息时，才需要使用 [此处](journey-optimizer-push.md).
+`Messaging.self` 仅当您计划通过Adobe Journey Optimizer实施推送消息时（如所述），才需要使用此字段 [此处](journey-optimizer-push.md).
 
-上述代码会执行以下操作：
+上述代码执行以下操作：
 
 * 注册所需的扩展。
-* 配置MobileCore和其他扩展以使用您的标记属性配置。
-* 启用调试日志记录。 有关更多详细信息和选项，请参阅 [移动SDK文档](https://aep-sdks.gitbook.io/docs/getting-started/enable-debug-logging).
+* 配置MobileCore和其他扩展以使用标记属性配置。
+* 启用调试日志记录。 欲知更多详情和选项，请参阅 [Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
 
 >[!IMPORTANT]
 >在生产应用程序中，您必须根据当前环境(dev/stag/prod)切换AppId。
 
-下一个： **[设置保证](assurance.md)**
+下一步： **[设置保证](assurance.md)**
 
 >[!NOTE]
 >
->感谢您花时间了解Adobe Experience Platform Mobile SDK。 如果您有任何疑问、想要分享一般反馈或对未来内容提出建议，请就此分享 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间来了解Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此分享这些内容 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

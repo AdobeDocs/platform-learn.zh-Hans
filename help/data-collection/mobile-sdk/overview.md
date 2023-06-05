@@ -4,9 +4,9 @@ description: 了解 Adobe Experience Platform Mobile SDK 如何支持您的移�
 feature: Mobile SDK
 kt: 3698
 exl-id: 0d55971d-35cc-4684-b1fb-f1aabd0b561c
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
-source-wordcount: '146'
+source-wordcount: '147'
 ht-degree: 82%
 
 ---
@@ -17,8 +17,8 @@ ht-degree: 82%
 
 >[!NOTE]
 >
-> Launch现已启动 **[!DNL tags]**
+> 现在启动 **[!DNL tags]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/28948?quality=12&learn=on)
 
-有关详细信息，请访问 [Platform Mobile SDK文档](https://aep-sdks.gitbook.io/docs/).
+欲知更多信息，请访问 [Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/).

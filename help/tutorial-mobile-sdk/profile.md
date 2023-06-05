@@ -1,8 +1,8 @@
 ---
 title: 配置文件
-description: 了解如何在移动设备应用程序中收集用户档案数据。
+description: 了解如何在移动应用程序中收集用户档案数据。
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: cf0193e3aae4d6536c868f078f4773ee14e90408
+source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 2%
@@ -11,21 +11,21 @@ ht-degree: 2%
 
 # 配置文件
 
-了解如何在移动设备应用程序中收集用户档案数据。
+了解如何在移动应用程序中收集用户档案数据。
 
-您可以使用配置文件扩展在客户端上存储有关用户的属性。 此信息稍后可用于在线或离线场景期间定位和个性化消息，而无需连接到服务器即可获得最佳性能。 配置文件扩展可管理客户端操作配置文件(CSOP)，提供一种对API做出响应、更新用户配置文件属性，以及将用户配置文件属性与系统其余部分共享为生成事件的方法。
+您可以使用Profile扩展在客户端上存储有关用户的属性。 此信息以后可用于在线或离线情景中定位和个性化消息，而无需连接到服务器以获得最佳性能。 配置文件扩展管理客户端操作配置文件(CSOP)，提供对API做出反应的方式，更新用户配置文件属性，并将用户配置文件属性作为生成事件与系统的其他部分共享。
 
-其他扩展会使用配置文件数据来执行与配置文件相关的操作。 例如，规则引擎扩展使用用户档案数据并根据用户档案数据运行规则。 进一步了解 [用户档案扩展](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile) 文档
+配置文件数据由其他扩展用来执行与配置文件相关的操作。 例如，规则引擎扩展会使用用户档案数据并基于用户档案数据运行规则。 进一步了解 [配置文件扩展](https://developer.adobe.com/client-sdks/documentation/profile/) 在文档中
 
 >[!IMPORTANT]
 >
->本课程中描述的用户档案功能与Adobe Experience Platform和基于平台的应用程序中的实时客户用户档案功能是分开提供的。
+>本课程中介绍的配置文件功能与Adobe Experience Platform和基于Platform的应用程序中的实时客户配置文件功能不同。
 
 
 ## 先决条件
 
-* 已成功构建并运行安装并配置了SDK的应用程序。
-* 导入了配置文件SDK。
+* 成功构建并运行安装并配置了SDK的应用程序。
+* 已导入配置文件SDK。
 
    ```swift
    import AEPUserProfile
@@ -33,15 +33,15 @@ ht-degree: 2%
 
 ## 学习目标
 
-在本课程中，您将：
+在本课程中，您将执行以下操作：
 
 * 设置或更新用户属性。
 * 检索用户属性。
 
 
-## 设置和更新
+## 设置并更新
 
-快速了解用户之前是否在应用程序中购买过产品，这有助于进行定位和/或进行个性化。 让我们在Luma应用程序中设置。
+快速了解用户以前是否曾在应用程序中购买过产品，这对于定位和/或个性化很有帮助。 让我们在Luma应用程序中设置它。
 
 1. 导航至 `Cart.swift`
 
@@ -53,7 +53,7 @@ ht-degree: 2%
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
-个性化团队可能还希望根据用户的忠诚度级别进行定位。 让我们在Luma应用程序中设置。
+个性化团队可能还希望根据用户的忠诚度级别进行定位。 让我们在Luma应用程序中设置它。
 
 1. 导航至 `Account.swift`
 
@@ -65,9 +65,9 @@ ht-degree: 2%
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
-其他 `updateUserAttributes` 文档可找到 [此处](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile/profile-api-references#update-user-attributes).
+其他 `updateUserAttributes` 可以找到文档 [此处](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
-## 获取
+## Get
 
 更新用户的属性后，该属性将可供其他AdobeSDK使用，但您也可以显式检索属性。
 
@@ -78,20 +78,20 @@ UserProfile.getUserAttributes(attributeNames: ["isPaidUser","loyaltyLevel"]){
 }
 ```
 
-其他 `getUserAttributes` 文档可找到 [此处](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile/profile-api-references#get-user-attributes).
+其他 `getUserAttributes` 可以找到文档 [此处](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
-## 通过保证进行验证
+## 使用保证进行验证
 
-1. 查看 [设置说明](assurance.md) 中。
+1. 查看 [设置说明](assurance.md) 部分。
 1. 安装应用程序。
-1. 使用生成的保证URL启动应用程序。
-1. 选择帐户图标，然后选择登录。 注意：您没有提供任何凭据。
+1. 使用保证生成的URL启动应用程序。
+1. 选择帐户图标，然后选择登录。 注意：您未提供任何凭据。
 1. 关闭登录菜单，然后再次选择帐户图标。 这会将您转到帐户详细信息屏幕，其中 `loyaltyLevel` 设置。
-1. 您应会看到 **[!UICONTROL UserProfileUpdate]** 在Assurance UI中发生事件，并且更新了 `profileMap` 值。
+1. 您应会看到 **[!UICONTROL UserProfileUpdate]** 使用更新后的Assurance UI中的事件 `profileMap` 值。
    ![验证配置文件](assets/mobile-profile-validate.png)
 
-下一个： **[将数据映射到Adobe Analytics](analytics.md)**
+下一步： **[将数据映射到Adobe Analytics](analytics.md)**
 
 >[!NOTE]
 >
->感谢您花时间了解Adobe Experience Platform Mobile SDK。 如果您有任何疑问、想要分享一般反馈或对未来内容提出建议，请就此分享 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间来了解Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此分享这些内容 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
