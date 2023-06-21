@@ -5,50 +5,50 @@ role: Developer
 feature: API
 kt: 3688
 thumbnail: 28832.jpeg
+last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 60f509ef55ce121f572466a8f13953dba982a0ce
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 10%
+source-wordcount: '260'
+ht-degree: 15%
 
 ---
 
 # 身份验证和访问 [!DNL Experience Platform] API
 
-要调用Adobe Experience Platform API，您必须先获取Experience Platform开发人员帐户的访问权限。
+要向Adobe Experience Platform API发出请求，您必须具有Experience Platform开发人员帐户。
 
-有关如何获取开发人员帐户访问权限的分步说明，请访问 [Experience PlatformAPI身份验证教程](https://www.adobe.com/go/platform-api-authentication-en).
+## 在Adobe Developer控制台中创建项目并导出Postman环境
 
-## 创建Experience PlatformAPI并将其导出到Postman
+[[!DNL Postman]](https://www.postman.com/) 是一款允许开发人员快速轻松地与Adobe Experience Platform API进行交互的工具。
 
-[Postman](https://www.getpostman.com/) 是一个工具，允许开发人员快速轻松地与Adobe Experience Platform API交互。
-
-Adobe Developer Console **导出详细信息Postman** 该功能提供了一种轻松的方法，可导出在单个Postman环境文件中访问Experience PlatformAPI并与之交互所需的所有帐户详细信息，从而无需将值从Adobe Developer控制台复制并粘贴到Postman中。
+Adobe Developer控制台的 **导出Postman的详细信息** 通过功能，可以轻松地在一个Postman Environment文件中导出访问某个Experience PlatformAPI并与之交互所需的所有帐户详细信息，从而无需从Adobe Developer Console复制值并将其粘贴到Postman中。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
 
+>[!IMPORTANT]
+>
+>创建API凭据后，公司的系统管理员必须将该凭据与Experience Platform角色关联。
+
+
 ## 使用Postman生成访问令牌
 
-使用 [AdobeIdentity Management服务API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) 获取访问令牌以访问非生产用的Adobe Experience Platform API
+使用 [AdobeIdentity Management服务API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) 获取访问Adobe Experience Platform API的访问令牌。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29698/?quality=12&learn=on)
 
->[!WARNING]
->
-> 如Adobe I/O访问令牌生成Postman集合中所述，表示的生成方法适用于非生产用途。 本地签名从第三方主机加载JavaScript库，远程签名将私钥发送给Adobe拥有和运行的Web服务。 虽然Adobe不存储此私钥，但生产密钥绝不应与任何人共享。
 
-## 使用Postman与Adobe I/OAPI交互
+## 使用Postman与Experience PlatformAPI交互
 
-探索与Adobe I/OAPI交互的方法 [Adobe提供的Experience PlatformAPI Postman集合](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)，在 [Adobe I/O环境变量](#export-adobe-io-integration-details-to-postman) 和 [生成的访问令牌](#generate-an-access-token-with-postman).
+探索使用与Adobe Experience Platform API交互 [Adobe提供的Experience PlatformAPI Postman收藏集](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)，构建在 [Adobe Developer控制台环境变量](#export-adobe-io-integration-details-to-postman) 和 [生成的访问令牌](#generate-an-access-token-with-postman).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
 
-请注意，并非每个Adobe I/OAPI都存在Adobe提供的Postman集合，但提供的 [Experience PlatformAPI Postman收藏集](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform) 可用作有关如何为这些用例定义您自己的Postman收藏集的指南。
 
 ## 其他资源
 
-* [Adobe I/O控制台](https://console.adobe.io)
+* [Adobe Developer Console](https://developer.adobe.com/console/home)
 * [Adobe Experience Platform Postman示例](https://github.com/adobe/experience-platform-postman-samples)
-   * [Adobe I/O访问令牌生成Postman集合](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)
+   * [用于生成访问令牌的Identity Management System Postman收藏集](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)
    * [Adobe Experience Platform API Postman收藏集](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)
-* [下载Postman](https://www.getpostman.com/)
+* [下载Postman](https://www.postman.com/)
