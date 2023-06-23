@@ -1,91 +1,92 @@
 ---
-title: Bootcamp — 呼叫中心的个性化 — 巴西
-description: Bootcamp — 呼叫中心的个性化 — 巴西
-kt: 5342
+title: Bootcamp — 呼叫中心中的个性化 — 巴西
+description: Bootcamp — 呼叫中心中的个性化 — 巴西
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: 7acf778b-042f-4deb-9406-ddcf63daacda
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '557'
 ht-degree: 0%
 
 ---
 
-# 2.6个性化呼叫中心
+# 2.6 Personalizaçao无呼叫中心
 
-Conforme discutido várias vezes durante o bootcamp， personalizar a experincia do cliente algo deve acontecer de maneira omnichannel. 呼叫中心geralmenteé bastante desconectado do restante da jornada do cliente do cliente e isso pode， com frequencia， levar a experincia struntes do cliente， mas não precisa ser assim。 Vamos mostrar am smadeo de como o call center pode ser pasfimente conectado à Adobe Experience Platform,em tempo real。
+在布特坎普酒庄的酒会上，瓦里亚斯大吃一惊，亲身体验了酒庄的酒水。 呼叫中心geralmente é bastante desconectado do restante da jornada do cliente e isso pode， com frequencia， levar a experiencias frustrantes do cliente， mas nao precisa ser assim. Vamos mostrar um exemploo de como o call center pode ser facilmente conectado à Adobe Experience Platform， em tempo real.
 
-## 克里恩特河
+## Fluxo da jornada do cliente
 
-前无运动，无运动，无运动 **购买**.
+前方没有活动，乌桑多，木乃伊，前方有木乃伊，后方有木乃伊 **购买**.
 
 ![DSN](./images/app20.png)
 
-那么，你们想说什么，什么，什么，什么，什么，什么，什么，什么，什么？ 普罗曼特，电话中心。
+要不你做个声音吗？要不你做个声音吗？ 普通话，语音连字号呼叫中心。
 
-Antes de ligar para o call center， você precisa saber seu **忠诚度ID**. Você pode encontrar seu ID de fidelidade no Visualizador de Perfil do site.
+安特斯德利加呼叫中心，前卫军刀 **忠诚度ID**. Voce pode包含seu ID de fidelidade no Visualizador de Perfil do site。
 
 ![DSN](./images/cc1.png)
 
-内斯卡索， o **忠诚度ID** é **5863105**. Como parte de nossa implementationção personalizada do recurso de call center no ambiente de de dedorção， você deve adicionar um prefixo ao seu **忠诚度ID**. O前缀 **11373**, portanto， ID de fidelidade a ser usado neste smadeoé **11373 5863105**.
+内斯·卡索， o **忠诚度ID** é **5863105**. Como parte de nossa implementacao personalizada do recurso de call center no ambiente de demonstracao， voce deve adicionar um prefixo ao seu **忠诚度ID**. O前缀 **11373**，portanto， o ID de fidelidade a ser usado neste示例 **11373 5863105**.
 
-再见，我也是。 使用seu telefone e ligue para o número **+1(323)745-1670**.
+法泽尔很幸运。 使用seu telefone e ligue para o nurmero **+1 (323) 745-1670**.
 
 ![DSN](./images/cc2.png)
 
-Será solicitado que vicê insira seu ID de fidelidade， seguido de **#**. Digite seu ID de fidelidade。
+塞拉索里塔多，塞吉多·德 **#**. Digite seu ID de fidelidade。
 
 ![DSN](./images/cc3.png)
 
-沃凯乌维拉 **你好，女人**. Esse nome e retirado do Perfil do Cliente em tempo real na Adobe Experience Platform。 第三项。 普雷西奥内乌努梅罗 **1**, **订单状态**.
+沃切·乌维拉 **你好，圣诺姆**. Adobe Experience Platform的Esse nome é retirado do Perfil do Cliente em tempo real。 Voce tem 3 escolhas。 努梅罗总统 **1**， **订单状态**.
 
 ![DSN](./images/cc4.png)
 
-Depois de ouvir o status do seu pedido， você terá a opção de pressionar **1** para voltar ao菜单主体，第2版。 普雷西奥内 **2**.
+我们的地位如何，我们的地位如何 **1** para voltar ao菜单主体ou pressionar 2. Pressione **2**.
 
 ![DSN](./images/cc5.png)
 
-Em seguida， será solicitado que você avalie sua experincia de call center， selecionando um número entre 1 e 5, sendo 1 baixo e 5 alto。 真是太棒了。
+Em seguida， será solicitado que voce avalie sua experiencia de call center， selecionando um número entre 1 e 5， sendo 1 baixo e 5 alto. 法卡·苏亚·埃斯科拉。
 
 ![DSN](./images/cc6.png)
 
-呼叫中心的Sua chamada para o call center será encerrada。
+Sua chamada para o call center será encerrada.
 
-阿塞斯 [Adobe Experience Platform](https://experience.adobe.com/platform). 登录后，我会在Adobe Experience Platform。
+访问 [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer登录，voce irá访问página inicial da Adobe Experience Platform。
 
 ![数据获取](./images/home.png)
 
-连续性，职业是选择者 **沙盒**. 没人会用沙盒做选择 ``Bootcamp``. É posível fazer isso clicando no texto **[!UICONTROL 生产产品]** na linha azul na parte superior da tela。 Depois de selecionar o [!UICONTROL 沙盒] 普罗皮亚多， você verá a tela mudando e agora vicê está em se [!UICONTROL 沙盒] 专门的。
+永恒的万年期，先有先兆 **沙盒**. 做沙箱什么的 ``Bootcamp``. 你这小嘴真不赖啊 **[!UICONTROL 生产产品]** 娜丽莎·阿苏尔·娜帕特·苏必利尔·达·泰拉。 Depois de selectionar o [!UICONTROL 沙盒] 阿普里亚多，我们来看看吧 [!UICONTROL 沙盒] 奉献精神。
 
 ![数据获取](./images/sb1.png)
 
-没有菜单 **用户档案** e **浏览**.
+无菜单，访问 **配置文件** e **浏览**.
 
-![客户资料](./images/homemenu.png)
+![客户配置文件](./images/homemenu.png)
 
-选择o **身份命名空间** **电子邮件** e insira o endereço de e-mail do seu perfil de cliente. 团 **查看**. Cligue para rir seu perfil.
+选择一个o **身份命名空间** **电子邮件** 在电子邮件中，用户会做出伪造。 小团体 **视图**. 这个小圈子背叛了你。
 
 ![DSN](./images/cc7.png)
 
-维塞·佩菲·德·克里恩特·诺瓦门特。 阿塞斯 **事件**.
+新客户的首选。 访问 **事件**.
 
 ![DSN](./images/cc8.png)
 
-Em eventos， você verá 2 eventos com um eventType de **callCenter**. O primeiro eventoé to resultado da sua resposta à pergunta **给您的电话满意度打分** (avalie seu chamada)。
+Em eventos， voce verá 2 eventos com um eventType de **呼叫中心**. 再来个再来个再来个再来个再来个再来 **评价您的通话满意度** （夏玛利·苏查玛达）。
 
 ![DSN](./images/cc9.png)
 
-Are um pouco para baixo e você verá o evento que quando você selecionou a opção de verifar o **订单状态**.
+Pouco para baixo e voce verá o evento que foi registrado quando voce selecionou a opcao de verificar o **订单状态**.
 
 ![DSN](./images/cc10.png)
 
-阿塞斯 **区段成员资格**. Agora você verá que 2 segmentos se qualificam em seu perfil， em tempo real， com base nas interções que voce teve por meio do呼叫中心。 Essas associações de segmento podem e devemer ser usadas para impactar qual comunicação e personalização acontece em qualquer outro canal.
+访问 **区段成员资格**. Agora voce verá que 2 segmentos se qualificam em seu perfil， em tempo real， com base nas interacoes que voce teve por meio do call center. Essas associacoes de segmento podem e devem ser usadas para impactar qual comunicação e personalização acontece em qualquer outtro channel.
 
 ![DSN](./images/cc11.png)
 
-这是行动。
+沃斯·特米努埃斯特·艾希西奥。
 
-[乌萨里奥2号河道](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[托多斯 — 莫杜洛斯](../../overview.md)
+[莫杜洛斯·托多斯·托诺纳尔](../../overview.md)

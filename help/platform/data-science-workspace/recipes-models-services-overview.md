@@ -3,10 +3,10 @@ title: 配方、模型和服务概述
 description: 了解Adobe Experience Platform数据科学工作区中的配方、模型和服务。
 role: User
 feature: Data Science Workspace
-kt: 7807
+jira: KT-7807
 thumbnail: 333380.jpg
 exl-id: 1aa07a46-5997-4288-959d-2d255fd76983
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '52'
 ht-degree: 11%

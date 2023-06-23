@@ -5,10 +5,10 @@ breadcrumb-title: 配置权限
 description: 在本课程中，您将使用Adobe的Admin Console配置Adobe Experience Platform用户权限。
 role: Data Architect, Data Engineer
 feature: Access Control
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-configure-permissions.jpg
 exl-id: ca01f99e-f10c-4bf0-bef2-b011ac29a565
-source-git-commit: 35242a037bc79f18e90399c47e47064634d26a37
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 2%

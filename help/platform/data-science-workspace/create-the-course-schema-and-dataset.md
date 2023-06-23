@@ -3,11 +3,11 @@ title: 创建课程模式和数据集
 description: 了解如何创建数据科学工作区课程数据集和架构，以在课程的剩余时间中使用。
 role: User
 feature: Data Science Workspace
-kt: 7285
+jira: KT-7285
 thumbnail: 333312.jpg
 hidefromtoc: true
 exl-id: c7f927d1-87fc-4bf3-83c3-6efb97f88c9e
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 8%

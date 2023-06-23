@@ -3,10 +3,10 @@ title: 配置架构之间的关系
 description: 本视频说明如何在Adobe Experience Platform中配置两个架构之间的关系。 利用关系，您可以将一个数据集用作另一个数据集的查找表。
 role: Data Architect
 feature: Schemas
-kt: 7935
+jira: KT-7935
 thumbnail: 333536.jpg
 exl-id: e52cacce-bcf7-4583-9125-113634250e19
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 39%

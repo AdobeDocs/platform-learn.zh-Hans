@@ -1,38 +1,39 @@
 ---
-title: Bootcamp — 混合物理和数字 — 使用移动应用程序并触发信标条目 — 巴西
-description: Bootcamp — 混合物理和数字 — 使用移动应用程序并触发信标条目 — 巴西
-kt: 5342
+title: Bootcamp — 将物理和数字相结合 — 使用移动应用程序并触发信标条目 — 巴西
+description: Bootcamp — 将物理和数字相结合 — 使用移动应用程序并触发信标条目 — 巴西
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: 14bfbebe-6df3-4a0e-875c-b4c0d016f8da
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
 
 ---
 
-# 3.1使用aplicativo móvel e acione um信标
+# 3.1使用applicativo móvel e acione um信标
 
-## 安装到aplicativo móvel
+## 应用程序安装móvel
 
-阿普利卡蒂沃的安特斯 **拉斯特里曼托** 不，我是iOS。 帕拉伊索，阿塞斯 **配置索伊斯** > **西格兰萨** > **拉斯特里曼托** e verifque a opção **Permitir que os aplicativos solicitem o rastreamento**.
+安特斯·德·因斯塔拉尔·奥普利卡蒂沃 **Rastreamento** 没有seu dispositivo iOS。 Para isso， accesse **配置** > **安全隐私** > **Rastreamento** 我查了一下opcao **允许应用程序请求Rastreamento**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. 团 **安装程序** 欧 **下载**.
+访问App Store da Apple e pesquise `aepmobile-bootcamp`. 小团体 **安装** ou **下载**.
 
 ![DSN](./../uc3/images/app1.png)
 
-安装应用装置，团 **阿布里尔**.
+小团体们，他们要用行动来解决 **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-团 **确定**.
+小团体 **确定**.
 
 ![DSN](./../uc3/images/app9.png)
 
-团 **佩尔米特尔**.
+小团体 **权限**.
 
 ![DSN](./../uc3/images/app3.png)
 
@@ -40,92 +41,92 @@ Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. 团 **安装程
 
 ![DSN](./../uc3/images/app7.png)
 
-团 **Permitir enquanto usa o aplicativo**.
+小团体 **美国应用程序权限**.
 
 ![DSN](./../uc3/images/app8.png)
 
-团 **佩尔米特尔**.
+小团体 **权限**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Agora você está no aplicativo， na página incitial， pronto(a)para verificar toda a jornada do cliente。
+我们来验证一下他们的客户。
 
 ![DSN](./../uc3/images/app12.png)
 
-## 克里恩特河
+## Fluxo da jornada do cliente
 
-Primeiramente，需要加法泽才能登录。 团 **登录**.
+要登入就得有法泽。 小团体 **登录**.
 
 ![DSN](./images/app13.png)
 
-Depois de criar sua conta nos excericios anteriores， issoé exibido no site. Agora equistário ruilizar o endereço de e-mail da conta que você criou no aplicativo para fazer o login.
+前方有种运动设施，没有场地。 Agora é necessário reutilizar o endereco de email da contra que voce crious no applicativo para fazer or login.
 
 ![演示](./images/pv1.png)
 
-电子邮件中的“无地点” **登录**.
+Digite o endereco de email que voce usou not site e clike em **登录**.
 
 ![DSN](./images/app14.png)
 
-Você receberá uma uma confirmmação de que está conectado e receberá uma notifação push.
+Voce receberá uma concetaño de que está conectado e receberá uma notificação push.
 
 ![DSN](./images/app15.png)
 
-人工干净的干净的人。
+在脑部有了一个小小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的
 
 ![DSN](./images/app17.png)
 
-阿塞斯普里米罗 **产品**. Cligue am qualquer producto， nest semadeo: **咖啡去**.
+Primeiro， acesse **产品**. 小团体优等产品，举个例子： **咖啡待用**.
 
 ![DSN](./images/app19.png)
 
-不过，我可以做产品 **咖啡去** 没有阿普利卡蒂沃。
+把一个小品当做产品 **咖啡待用** 没有应用程序。
 
 ![DSN](./images/app20.png)
 
-Agora você irá simar um evento de entrada de sinalização（信标）em uma loja offline。 O objetivo da simulaçãoé personalizar a experiencia do cliente nas telas da loja。 Para visualizar a experiencecia na loja， foi criada uma página que mostrará de forma dinâmica a informações relates para o cliente ao entrar na loja。
+Agora voce irá simular um evento de entrada de sinalização （信标） em uma loja offline. O objetivo da simulação é personalizar a experiencia do cliente nas telas da loja. 为了解这些信息，我们把那些与你相关的信息当做一个视觉化的。
 
-Antes de continuar， abra esta página da Web em seu compuador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar， abra esta página da Web em seu computador： [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-Em seguida，一个有害的人：
+Em seguida是前科的阿巴伊克索牧场：
 
 ![DSN](./images/screen1.png)
 
-《我的朋友》。 伊科内集团 **信标**.
+塞吉达先生，请转告她们。 小圈子不做任何事 **beacon**.
 
 ![DSN](./images/app23.png)
 
-艾莎·埃塔帕，塞金特·塞拉·埃比多。 普里米罗，选野 **Bootcamp屏幕信标** e集团 **恩特拉达**. Isso permitirá que você simule uma entrada de sinalização com beacon。
+阿波斯·埃萨·埃塔帕，再来看看你的生活。 Primeiro，选择 **Bootcamp屏幕信标** e clique no botao de **entrada**. 我允许你把你的声音传到锡纳利萨索的通讯信标。
 
 ![DSN](./images/app21.png)
 
-阿哥拉确认了一条线索。 Você verá oúltimo produto visualizado aparecer nessa em 5 segundos.
+Agora confira a tela da loja. 你这身是视觉化的，你这身是5号街道。
 
 ![DSN](./images/screen2.png)
 
-Em seguida， rethern para **产品**. Cligue am qualquer producto， nest semadeo: **滩毯滩**.
+Em seguida， retorne para **产品**. 小团体优等产品，举个例子： **沙滩毯棕褐色**.
 
 ![DSN](./images/app22.png)
 
-《我的朋友》。 伊科内集团 **信标**.
+塞吉达先生，请转告她们。 小圈子不做任何事 **beacon**.
 
 ![DSN](./images/app23.png)
 
-Em seguida， selecione **Bootcamp屏幕信标** e集团 **恩特拉达** 诺瓦门特。 Isso permitirá que voê simule uma entrada de sinalização（信标）。
+Em seguida，选择 **Bootcamp屏幕信标** e clique no botao de **Entrada** 诺瓦门特。 Isso permitirá que voce simule uma entrada de sinalização （信标）。
 
 ![DSN](./images/app21.png)
 
-阿哥拉，确认是新手。 Você verá oúltimo produto visualizado aparecer nessa em 5 segundos.
+阿戈拉，确认一下。 你这身是视觉化的，你这身是5号街道。
 
 ![DSN](./images/screen3.png)
 
-阿戈拉，我们可以在Perfil的Visualizador上找到。 Você verá muitos eventos que for am adicionados， para mostrar que qualquer interção com um cliente coletada e armazenada na Adobe Experience Platform。
+Agora、vamos verificar também或seu Visualizador de Perfil没有场地。 Voce verá muitos eventos que foram adicionados， para mostrar que alquer interacao com um cliente é coletada e armazenada na Adobe Experience Platform.
 
 ![DSN](./images/screen4.png)
 
-不，不，不，不，不，不，不。
+Nos próximos exercícios， voce irá configurar e testar sua própria jornada de entrada do beacon.
 
-埃塔帕： [3.2克里休事件](./ex2.md)
+埃塔帕： [3.2 Crie seu evento](./ex2.md)
 
-[乌萨里奥河3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[托多斯 — 莫杜洛斯](../../overview.md)
+[莫杜洛斯·托多斯·托诺纳尔](../../overview.md)

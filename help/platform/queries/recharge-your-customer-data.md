@@ -1,25 +1,25 @@
 ---
-title: 为您的客户数据重新充电，以提供令人兴奋的体验
-description: 了解如何通过在多个用例中使用相同的数据来减轻低质量数据的影响、缩短实现价值的时间并增加ROI。
+title: 为您的客户数据重新充电，以提供令人振奋的体验
+description: 了解如何减轻低质量数据的影响，缩短实现价值的时间，并通过在多种用例中使用相同的数据来提高ROI。
 role: Data Engineer, Data Architect, Developer
 feature: Queries
-kt: 10323
+jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
 
 ---
 
-# 为您的客户数据重新充电，以提供令人兴奋的体验
+# 为您的客户数据重新充电，以提供令人振奋的体验
 
-全渠道数据是加强营销人员用于编排激活和衡量所产生客户旅程的可操作客户用户档案的关键要素。 但是，在管理此数据的质量、规模和种类方面，组织面临着挑战。 他们需要简化的解决方案来减轻低质量数据的影响、缩短价值实现时间，并通过在多个用例中使用相同的数据来增加ROI。
+全渠道数据是提供可操作客户配置文件的一个关键要素，营销人员可使用这些数据编排激活并衡量产生的客户历程。 但是，各组织在管理此类数据的质量、规模和多样性方面面临着挑战。 它们需要简化的解决方案来减轻低质量数据的影响，缩短实现价值的时间，并通过在多种用例中使用相同的数据来提高ROI。
 
-本视频探讨：
+本视频探索：
 
-* Adobe Experience Platform数据准备功能
+* 您可以利用的Adobe Experience Platform数据准备功能
 * 提高Adobe Real-Time CDP、Adobe Journey Optimizer和Customer Journey Analytics的ROI
 
 >[!VIDEO](https://video.tv.adobe.com/v/342533?quality=12&learn=on)
@@ -45,8 +45,8 @@ GROUP BY customerId,sku
 order by price desc)D;
 ```
 
-有关详细信息，请访问 [查询服务文档](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans).
+欲知更多信息，请访问 [查询服务文档](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans).
 
 >[!NOTE]
 >
->此视频是Adobe Summit2020会话的摘录 *[为体验充电而充电的全渠道数据](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.
+>本视频摘自Adobe Summit2020会话 *[为全渠道数据充电，让体验变得振奋](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*.

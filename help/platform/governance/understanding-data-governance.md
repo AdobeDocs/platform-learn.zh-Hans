@@ -3,10 +3,10 @@ title: 数据治理概述
 description: 了解如何完全控制您的数据，从在数据源中收集数据的那一刻开始，一直到将数据整合到Adobe Experience Platform之外的目标那一刻为止。
 role: Data Architect
 feature: Data Governance
-kt: 3991
+jira: KT-3991
 thumbnail: 29708.jpg
 exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 5%

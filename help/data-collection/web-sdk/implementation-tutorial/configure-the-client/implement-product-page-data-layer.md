@@ -4,11 +4,11 @@ description: 在产品页面上实施数据层
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: true
 hidefromtoc: true
 exl-id: a72011a5-ea9c-45df-a0f3-5eb40bc99d3f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # 在产品页面上实施数据层
 
-在本教程中，您将为典型的电子商务网站实施Adobe客户端数据层。 如果您尚未执行此操作，请阅读 [如何使用Adobe客户端数据层](how-to-use-the-adobe-client-data-layer.md) 首先了解Adobe客户端数据层的操作方式。
+在本教程中，您将为典型的电子商务网站实施Adobe客户端数据层。 如果您尚未这样做，请阅读 [如何使用Adobe客户端数据层](how-to-use-the-adobe-client-data-layer.md) 首先了解Adobe客户端数据层的运行方式。
 
-假设用户浏览您的产品并点击泡沫辊以了解更多信息。 用户登陆泡沫辊产品详细信息页面。
+假设用户浏览您的产品并单击泡沫辊以了解详情。 用户登陆泡沫辊产品详细信息页面。
 
-以下是您的简单产品详细信息页面的HTML:
+以下是您的简单产品详细信息页面的HTML：
 
 ```html
 <!DOCTYPE html>
@@ -41,9 +41,9 @@ ht-degree: 0%
 </html>
 ```
 
-如您所注意， `<head>` 标记存在 `<script>` 标记。 您将在此处放置JavaScript代码。 不必将 `<script>` 标记 `<head>`，但是尽快将数据推送到数据层有助于确保营销人员在用户离开页面之前可以快速将数据发送到Adobe Experience Platform。
+正如你所注意到的那样 `<head>` 标记有一个 `<script>` 标记之前。 您将在此处放置JavaScript代码。 无需放置 `<script>` 标记范围 `<head>`，但尽快将数据推送到数据层有助于确保营销人员在用户离开页面之前可以快速将数据发送到Adobe Experience Platform。
 
-内部 `<script>` 标记，您首先会创建 `adobeDataLayer` 数组，然后将相应的事件和数据信息推送到数组中。 数据符合XDM架构 [您之前创建的](../configure-the-server/create-a-schema.md).
+内部 `<script>` 标记之前，请先创建 `adobeDataLayer` 数组，然后将相应的事件和数据信息推入数组。 数据符合XDM架构 [您之前已创建](../configure-the-server/create-a-schema.md).
 
 ```js
 window.adobeDataLayer = window.adobeDataLayer || [];
@@ -69,17 +69,17 @@ window.adobeDataLayer.push({
 });
 ```
 
-在此示例中，您向数据层进行了两次推动，每次推动都包含 `event` 键。 包括 `event` 键不仅可告知页面上发生了什么事件，而且使营销人员在Adobe Experience Platform标记中创建适当规则更加简单。
+在本例中，您向数据层进行了两次推送，每次都包含 `event` 键。 包括 `event` key不仅可以传达页面上发生了什么事件，而且还可以简化营销人员在Adobe Experience Platform Tags中创建相应规则的过程。
 
-首次向数据层推送消息会通知侦听器（标记规则）用户已查看页面。 它还会将页面名称和网站区域添加到数据层。
+第一次推送到数据层会通知侦听器（标记规则）用户已查看页面。 它还会将页面名称和网站区域添加到数据层。
 
-第二次向数据层推送时，会通知侦听器（标记规则）用户已查看产品。 它还会将产品信息添加到数据层。
+第二次推送到数据层会通知侦听器（标记规则）用户已查看产品。 它还会将产品信息添加到数据层。
 
 ## 添加到购物车
 
-您可能还希望跟踪用户在 [!UICONTROL 添加到购物车] 按钮。
+您可能还希望跟踪用户何时单击 [!UICONTROL 添加到购物车] 按钮。
 
-为此，请创建一个在用户单击 [!UICONTROL 添加到购物车] 按钮。
+要实现此目的，请创建一个在用户单击 [!UICONTROL 添加到购物车] 按钮。
 
 ```js
 window.onAddToCartClick = function() {
@@ -97,11 +97,11 @@ window.onAddToCartClick = function() {
 };
 ```
 
-调用此函数时，首先会检查用户是否已存在购物车。 通常，可通过检查特定Cookie或变量是否存在来完成此操作。 如果购物车不存在，您将推送 `cartOpened` 事件。 随后，您将 `productAddedToCart` 事件。 产品信息已在数据层中存在，因此无需再次添加。
+调用此函数时，将首先检查某个用户是否已存在购物车。 通常，可以通过检查特定Cookie或变量是否存在来完成此操作。 如果购物车不存在，您将推送 `cartOpened` 事件移入数据层。 随后，您将 `productAddedToCart` 事件移入数据层。 产品信息已存在于Data Layer中，因此您无需再次添加。
 
-添加 `onclick` 属性 [!UICONTROL 添加到购物车] 按钮 `onAddToCartClick` 函数。
+添加 `onclick` 归因于 [!UICONTROL 添加到购物车] 用于调用您的新的 `onAddToCartClick` 函数。
 
-HTML页面的结果应如下所示：
+HTML页的结果应如下所示：
 
 ```html
 <!DOCTYPE html>
@@ -156,9 +156,9 @@ HTML页面的结果应如下所示：
 
 ## 下载应用程序
 
-最后要执行的一项操作是跟踪用户何时单击 _[!UICONTROL 下载应用程序]_ 链接。
+最后要做的一件事是跟踪用户何时单击 _[!UICONTROL 下载应用程序]_ 链接。
 
-为此，请创建一个在用户单击 _[!UICONTROL 下载应用程序]_ 链接。
+要实现此目的，请创建一个在用户单击 _[!UICONTROL 下载应用程序]_ 链接。
 
 ```js
 window.onDownloadAppClick = function(event) {
@@ -177,11 +177,11 @@ window.onDownloadAppClick = function(event) {
 };
 ```
 
-在这种情况下，有关链接的信息将封装在 `eventInfo` 键。 如 [如何使用Adobe客户端数据层](how-to-use-the-adobe-client-data-layer.md)，这会告知数据层将此数据与事件一起通信，但是 _not_ 在数据层中保留数据。 对于链接点击，将有关已点击链接的信息添加到数据层将没有用处，因为它与整个页面无关，也不适用于可能发生的其他事件。
+在这种情况下，有关链接的信息将封装在 `eventInfo` 键。 如中所述 [如何使用Adobe客户端数据层](how-to-use-the-adobe-client-data-layer.md)，这会告知数据层将此数据与事件进行通信，但 _非_ 将数据保留在数据层中。 对于链接点击，将有关已点击链接的信息添加到数据层没有用处，因为它与页面整体无关，并且不适用于可能发生的其他事件。
 
-添加 `onclick` 属性 [!UICONTROL 下载应用程序] 调用新 `onDownloadAppClick` 函数。
+添加 `onclick` 归因于 [!UICONTROL 下载应用程序] 调用您的新的 `onDownloadAppClick` 函数。
 
-HTML页面的结果应如下所示：
+HTML页的结果应如下所示：
 
 ```html
 <!DOCTYPE html>

@@ -1,84 +1,85 @@
 ---
-title: Bootcamp -Customer Journey Analytics — 从洞察到行动 — 巴西
-description: Bootcamp -Customer Journey Analytics — 从洞察到行动 — 巴西
-kt: 5342
+title: Bootcamp -Customer Journey Analytics — 从见解到行动 — 巴西
+description: Bootcamp -Customer Journey Analytics — 从见解到行动 — 巴西
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: febeba3596d3f98b2352c5ef8688ee011d25c9fe
+exl-id: 28b87e21-3168-447e-9a93-a6ae7e969657
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
 
 ---
 
-# 4.6 Dos insights à ação
+# 4.6 Dos insights à acao
 
-## 奥别蒂沃斯
+## 目标
 
-- Entenda como criar um público com base em u ma visão coletada noCustomer Journey Analytics
+- Entenda como criar um público com base em uma visao coletada无Customer Journey Analytics
 - 使用esse público no CDP em tempo real e no Adobe Journey Optimizer
 
-## 4.6.1 Crie uma audincia e publique-a
+## 4.6.1 Crie uma audiencia e publicque-a
 
-我的爱，我的爱 **调情** conseguiu visualiza a quantade de uusários que tiveram suas ligeções a o call-center classificadas como **positivas**. Agora， você poderá criar um segmento com， es usários e ativação-los em jornadas ou em canais de comunicação.
+我们先做个计划，先做个筛选 **呼叫感情** e conseguiu visualizar a quantidade de usuários que tiveram suas ligacoes ao call center classificadas como **正面**. Agora， voce poderá criar um segmento com essuários e ativacao-los em jornadas ou em canais de comunicacao.
 
-O primeiro passoé:不要画，不要画，要选一个林哈 **1. 通话感觉 — 积极**, cligue com o botão direito de semouse e selecone a opção **从选定范围中创建受众**:
+O primeiro passo é： No painel criado no último exercício， selecione a linha **1. 通话感觉 — 正面**，clique com o botao direito de seu mouse e selecione a opcao **从所选内容创建受众**：
 
 ![演示](./images/aud1.png)
 
-Em seguida， dê um nome para a sua audincia seguindo o modelo **yourLastName - cia的受众感到乐观**:
+Em seguida， de um nome para a sua audiencia seguindo o modelo **yourLastName - cia受众通话感觉良好**：
 
 ![演示](./images/aud2.png)
 
-请注意que possível ter um preview da audincia que sendo criada:
+关于预览声音的注释：
 
 ![演示](./images/aud3.png)
 
-准最终化，团 **阳狮**:
+准最终化，小集团 **公共**：
 
 ![演示](./images/aud4.png)
 
-## 4.6.2使用sua audincia como parte de um segmento
+## 4.6.2使用sua audiencia como parte de um segmento
 
-Voltando para a Adobe Experience Platform **区段>浏览** e você conseguirá visualizar o seu segmento criado no CJA pronto e disponível para ser usado nas suas ativações e jornadas!
+Voltando para a Adobe Experience Platform **区段>浏览** 我们把目光投向了视觉，视觉，视觉，视觉，视觉，视觉，视觉，视觉，视觉，视觉，视觉，视觉，视觉，视觉，视觉，视觉，视觉！
 
 ![演示](./images/aud5.png)
 
-我们要为我们的生活而努力！
+阿古拉岛乌萨岛区段em uma ativacao no Facebook e em uma jornada do cliente！
 
 ## 4.6.3使用seu segmento na Real-Time CDP em tempo real
 
-那Adobe Experience Platform，那个 **区段>浏览** 在CJA中加入一个受众，其中一个是
+那是Adobe Experience Platform **区段>浏览** 我们请观众来听听CJA的演讲：
 
 ![演示](./images/aud6.png)
 
-Cligue no segmento e， em seguida， cligue em **激活到目标**:
+Clique no seu segmento e， em seguida， clique em **激活到目标**：
 
 ![演示](./images/aud7.png)
 
-选择目的地chamada bootcamp-facebooke、em seguida、cligue em Next:
+选择a destination chamada bootcamp-facebook e， em seguida， clique em下一步：
 
 ![演示](./images/aud8.png)
 
-埃姆·塞吉达，小团·下一个新手：
+Em seguida，小团体em Next novamente：
 
 ![演示](./images/aud9.png)
 
-选择奥普桑 **受众的来源** e definio como **直接从客户处** e团下一步：
+选择一个opcao **受众的来源** e defina como **直接来自客户** 小团体下一步：
 
 ![演示](./images/aud10.png)
 
-波尔菲姆，帕金娜 **审阅** 小组完成！
+帕金，帕吉娜 **审核** 小团体，完成！
 
 ![演示](./images/aud11.png)
 
-普伦托！ Agora o seu segmento está vinculado aos públicos personalizados do Facebook。
-阿哥拉，吸血鬼利用AJO!
+普伦托！ 我们来看看这个Facebook吧。
+阿戈拉，阿莫斯用完了，别再说了！
 
 ## 4.6.4使用seu segmento no Adobe Journey Optimizer
 
-Na界面da Adobe Experience Platform团em Journey Optimizere，em seguida，无菜单侧esquerdo，cligueem **历程** 我们是一个criuma jornada clicando em **创建历程**:
+Na interface da Adobe Experience Platform clique em Journey Optimizer e， em seguida，无菜单侧边快捷键， clique em **历程** 我们来听听一个叫criar uma jornada clicando em **创建历程**：
 
 ![演示](./images/aud20.png)
 
@@ -86,20 +87,20 @@ Na界面da Adobe Experience Platform团em Journey Optimizere，em seguida，无�
 
 ![演示](./images/aud22.png)
 
-Em seguida，无菜单侧面esquerdo， EM Eventos，选择 **区段鉴别** arraste o até a jorada:
+Em seguida，无菜单侧边栏，em事件，选择 **区段鉴别** 我为约纳达的阿拉斯特：
 
 ![演示](./images/aud23.png)
 
-埃姆塞吉达，埃姆 **区段** 团 **编辑** 段塞尔乔纳姆·塞格门托：
+Em seguida， em **区段** 小团体 **编辑** para selectionar um segmento：
 
 ![演示](./images/aud24.png)
 
-选择一个受众 **保存**:
+选择听众，无论他们是什么团体 **保存**：
 
 ![演示](./images/aud25.png)
 
-普伦托！ 一个派对的人，为了给你个机会！
+普伦托！ 一个当事人可以说，他们要求被监禁者必须拥有被隔离的资格！
 
-[返回到用户流量4](./uc4.md)
+[返回用户流程4](./uc4.md)
 
-[马多洛斯岛](./../../overview.md)
+[Voltar para todos os módulos](./../../overview.md)

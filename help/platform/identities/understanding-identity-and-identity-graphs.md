@@ -3,10 +3,10 @@ title: 身份和身份图概述
 description: 了解Adobe Experience Platform&mdash；身份收集、身份图和API中身份解析的关键功能。 了解Identity服务如何链接断开连接的身份，以通过构建统一的用户档案来提供一致的连接体验。
 role: Data Architect
 feature: Identities
-kt: 3039
+jira: KT-3039
 thumbnail: 27841.jpg
 exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 5%

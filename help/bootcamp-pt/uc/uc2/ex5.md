@@ -1,93 +1,94 @@
 ---
-title: Bootcamp — 安装和使用移动设备应用程序 — 巴西
-description: Bootcamp — 安装和使用移动设备应用程序 — 巴西
-kt: 5342
+title: Bootcamp — 安装和使用移动应用程序 — 巴西
+description: Bootcamp — 安装和使用移动应用程序 — 巴西
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: e3b920b1-e5e6-4fcc-b707-29c5943acec8
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 0%
 
 ---
 
-# 2.5安装在aplicativo móvel上使用
+# 2.5安装使用Applicativo Móvel
 
 
-## 安装到aplicativo móvel
+## 应用程序安装móvel
 
-安特斯·德·安塔尔·阿普利卡蒂沃，必要的是，Rastreamento no seu dispositivo iOS。 Paraisso， esse Configurações > Privacidade e segurança > Rastreamento e confirme a opção Permitir que os aplicativos solicitem o rastreamento。
+Antes de instalar o aplicativo， é necsário habilitar Rastreamento no seu dispositivo iOS. para isso，访问Configuracoes > Privacidade e seguranca > Rastreamento e confirm a opcao Permitir que os applicativos solicitem o rastreamento。
 
 ![DSN](./../uc3/images/app4.png)
 
-Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`.\
-团 **安装程序** 欧 **下载**.
+访问App Store da Apple e pesquise `aepmobile-bootcamp`.\
+小团体 **安装** ou **下载**.
 
 ![DSN](./../uc3/images/app1.png)
 
-安装应用装置，团 **阿布里尔**.
+小团体们，他们要用行动来解决 **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-团 **确定**.
+小团体 **确定**.
 
 ![DSN](./../uc3/images/app9.png)
 
-团 **佩尔米特尔**.
+小团体 **权限**.
 
 ![DSN](./../uc3/images/app3.png)
 
-团 **康科多**.
+小团体 **Concordo**.
 
 ![DSN](./../uc3/images/app7.png)
 
-团 **Permitir enquanto uso应用程序**.
+小团体 **允许使用应用程序**.
 
 ![DSN](./../uc3/images/app8.png)
 
-团 **佩尔米特尔**.
+小团体 **权限**.
 
 ![DSN](./../uc3/images/app5.png)
 
-Agora você está no aplicativo， na página incitial， pronto(a)para verificar toda a jornada do cliente。
+我们来验证一下他们的客户。
 
 ![DSN](./../uc3/images/app12.png)
 
-## 克里恩特河
+## Fluxo da jornada do cliente
 
-Primeiramente，需要加法泽才能登录。 团 **登录**.
+要登入就得有法泽。 小团体 **登录**.
 
 ![DSN](./../uc3/images/app13.png)
 
-Depois de criar sua conta nos excericios anteriores， issoé exibido no site. Agora equistário ruilizar o endereço de e-mail da conta que você criou no aplicativo para fazer o login.
+前方有种运动设施，没有场地。 Agora é necessário reutilizar o endereco de email da contra que voce crious no applicativo para fazer or login.
 
 ![演示](./../uc3/images/pv1.png)
 
-电子邮件中的“无地点” **登录**.
+Digite o endereco de email que voce usou not site e clike em **登录**.
 
 ![DSN](./../uc3/images/app14.png)
 
-Você receberá uma uma confirmmação de que está conectado e receberá uma notifação push.
+Voce receberá uma concetaño de que está conectado e receberá uma notificação push.
 
 ![DSN](./../uc3/images/app15.png)
 
-人工干净的干净的人。
+在脑部有了一个小小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的
 
 ![DSN](./../uc3/images/app17.png)
 
-阿塞斯 **产品**. Cligue am qualquer producto， nest semadeo: **咖啡去**.
+访问 **产品**. 小团体优等产品，举个例子： **咖啡待用**.
 
 ![DSN](./images/app19.png)
 
-不过，我可以做产品 **咖啡去** 没有阿普利卡蒂沃。 团 **购买**.
+把一个小品当做产品 **咖啡待用** 没有应用程序。 小团体 **购买**.
 
 ![DSN](./images/app20.png)
 
-Agora você terminou es temecício e está pronta para as próximas atividades.
+Agora voce terminou esteriste exercício e está pronto para as próximas atividades.
 
-埃塔帕： [ 2.6个性化呼叫中心](./ex6.md)
+埃塔帕： [ 2.6 Personalizaçao无呼叫中心](./ex6.md)
 
-[乌萨里奥2号河道](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[托多斯 — 莫杜洛斯](../../overview.md)
+[莫杜洛斯·托多斯·托诺纳尔](../../overview.md)

@@ -1,9 +1,9 @@
 ---
 title: 处理Web视图
 description: 了解如何在移动应用程序中通过WebViews处理数据收集。
-kt: 6987
+jira: KT-6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%

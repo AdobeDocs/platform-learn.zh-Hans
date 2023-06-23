@@ -5,10 +5,10 @@ breadcrumb-title: 引入流数据
 description: 在本课程中，您将使用Web SDK将数据流式传输到Experience Platform中。
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '3346'
 ht-degree: 1%
@@ -82,7 +82,6 @@ ht-degree: 1%
 要创建您的 [!UICONTROL 数据流]：
 
 1. 登录 [Experience Platform数据收集用户界面](https://experience.adobe.com/launch/)
-
    <!--when will the edge config go live?-->
 
 1. 选择 **[!UICONTROL 数据流]** 在左侧导航中
@@ -103,7 +102,6 @@ ht-degree: 1%
 1. 对象 **[!UICONTROL 事件数据集]**，选择 `Luma Web Events Dataset`
 1. 如果您使用其他Adobe应用程序，请随意浏览其他部分，以了解在这些其他解决方案的Edge Configuration中需要哪些信息。 请记住，开发Web SDK不仅是为了将数据流式传输到Experience Platform中，而且也是为了替换其他Adobe应用程序使用的所有以前的JavaScript库。 Edge Configuration用于指定要将数据发送到的每个应用程序的帐户详细信息。
 1. 选择 **[!UICONTROL 保存]**
-
    ![配置数据流并保存](assets/websdk-edgeConfig-addEnvironment.png)
 
 保存Edge配置后，生成的屏幕将显示已创建用于开发、暂存和生产环境的三个环境。 可以添加其他开发环境：
@@ -124,7 +122,6 @@ ht-degree: 1%
 1. 作为 **[!UICONTROL 名称]**，输入 `Luma Platform Tutorial` （如果您公司的多个人员学习本教程，请向结尾添加您的姓名）
 1. 作为 **[!UICONTROL 域]**，输入 `enablementadobe.com` （稍后解释）
 1. 选择 **[!UICONTROL 保存]**
-
    ![属性详细信息](assets/websdk-property-propertyDetails.png)
 
 <!--
@@ -248,7 +245,7 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
 
 ## 验证请求中的数据
 
-### 添加Adobe Experience Platform调试器
+### 添加Adobe Experience Platform Debugger
 
 Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展，可帮助您查看在网页中实现的Adobe技术。 下载首选浏览器的版本：
 
@@ -281,7 +278,6 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 1. 现在转到 **[!UICONTROL Launch]** 在左侧导航中
 1. 选择配置选项卡
 1. 右边显示了 **[!UICONTROL 页面嵌入代码]**，打开 **[!UICONTROL 操作]** 下拉列表，然后选择 **[!UICONTROL Replace]**
-
    ![选择操作>替换](assets/websdk-debugger-replaceLibrary.png)
 1. 由于您已经过身份验证，因此Debugger将提取您可用的Launch属性和环境。 选择您的 `Luma Platform Tutorial` 属性
 1. 选择您的 `Development` 环境
@@ -364,7 +360,6 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 1. 选择 `web.webPageDetails.name` 字段
 1. 作为 **[!UICONTROL 值]**，选择图标以打开数据元素选择模式窗口，然后选择 `Page Name` 数据元素
 1. 选择 **[!UICONTROL 保存到库]**
-
    ![将页面名称映射到XDM对象数据元素](assets/websdk-property-dataElement-createXDMObject.png)
 
 可使用同一过程将网站上的其他自定义数据映射到XDM字段。

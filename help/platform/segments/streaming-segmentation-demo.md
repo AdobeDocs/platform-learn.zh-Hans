@@ -1,23 +1,23 @@
 ---
-title: 流分段演示
-description: 了解Adobe Experience Platform中的流分段功能如何让品牌根据实时数据个性化客户体验。 查看客户体验示例并快速浏览界面。
+title: 流式分段演示
+description: 了解Adobe Experience Platform中的流分段功能如何让品牌商根据实时数据个性化客户体验。 查看客户体验示例，并快速浏览界面。
 role: User
 feature: Segments
-kt: 5628
+jira: KT-5628
 thumbnail: 36184.jpg
 exl-id: 822a5115-1dba-4b8c-931b-416e94a0eadf
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '88'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
-# 流分段演示
+# 流式分段演示
 
-了解Adobe Experience Platform中的流分段功能如何让品牌根据实时数据个性化客户体验。 查看客户体验示例并快速浏览界面。
+了解Adobe Experience Platform中的流分段功能如何让品牌商根据实时数据个性化客户体验。 查看客户体验示例，并快速浏览界面。
 
 >[!VIDEO](https://video.tv.adobe.com/v/36184?quality=12&learn=on)
 
-有关详细信息，请参阅 [区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
+欲知更多信息，请参见 [区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
 

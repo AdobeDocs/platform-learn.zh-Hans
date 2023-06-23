@@ -1,185 +1,186 @@
 ---
-title: Bootcamp - Journey Optimizer创建历程和电子邮件 — 巴西
-description: Bootcamp - Journey Optimizer创建历程和电子邮件 — 巴西
-kt: 5342
+title: Bootcamp - Journey Optimizer创建您的旅程和电子邮件 — 巴西
+description: Bootcamp - Journey Optimizer创建您的旅程和电子邮件 — 巴西
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: d486d1aa-7b8e-4301-91e6-4c84fba0c72a
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '934'
 ht-degree: 3%
 
 ---
 
-# 2.3 《Crie sua jornada e mensagem de e-mail》
+# 2.3 Crie sua jornada e mensagem de电子邮件
 
-Neste excericio， você irá配置了一个jornada que presisa ser acionada quando alguém criar uma，conta no site de dejorção.
+Neste exercício， voce irá configurar a jornada que precisa ser acionada quando alguém criar uma conta no site de demonstração.
 
-Faça login no Adobe Journey Optimizer acessando a [Adobe Experience Cloud](https://experience.adobe.com). 团 **Journey Optimizer**.
+Faca登录无Adobe Journey Optimizer访问权限 [Adobe Experience Cloud](https://experience.adobe.com). 小团体 **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Você será redirecionado para a visualização da **主页**  不，Journey Optimizer。 普里米罗，我的梦想是沙盒的。 没人会沙箱里的 `Bootcamp`. Para alternar de um sandbox para outro， plicaem **生产** 选择沙盒和沙盒。 新样本，没人做沙盒 **Bootcamp**. Você estará na visualização da **主页** 做seu沙盒 `Bootcamp`.
+Voce será redirecionado para a visualização da **主页**  没有Journey Optimizer。 Primeiro，验证一下Está对Sandbox Correto的评价。 我做沙盒也行 `Bootcamp`. Para alternar de um sandbox para outtro， clique em **Prod** 选择沙盒和沙盒。 Neste示例，不要做沙盒 **Bootcamp**. 达维斯达拉之家 **主页** 执行seu sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 2.3.1西班牙
+## 2.3.1朱尔纳达
 
-没有菜单，小朋友 **历程**. 阿姆·塞吉达，小团 **创建历程** 新约拉达河。
+没有菜单，小朋友们 **历程**. 塞吉达，小集团 **创建历程** para criar uma nova jornada.
 
 ![ACOP](./images/createjourney.png)
 
-那是我的天。
+我们来看看吧。
 
 ![ACOP](./images/journeyempty.png)
 
-前不行动，从头开始 **事件**. 波凯诺梅乌奥文托 `seuSobrenomeAccountCreationEvent` e代替 `seuSobrenome` 佩洛·苏·索布雷诺姆。 Este foi o resultado da criação do Evento:
+前方没有锻炼，前方没有锻炼 **事件**. Voce nomeou o evento `seuSobrenomeAccountCreationEvent` e替代 `seuSobrenome` 佩洛·塞乌·索布雷诺姆。 Este foi o resultado da criação do Evento：
 
 ![ACOP](./images/eventdone.png)
 
-阿戈拉认为，这一切都是乔纳达的事。 Você pode fazer isso indo para o lado esquerdo da e procando pelo seu evento na lista de eventos。
+Agora voce deve考虑了este evento como o o início desta Jornada。 Voce pode fazer isso indo para o lado esquerdo da tela e procurando pelo seu evento na lista de eventos.
 
 ![ACOP](./images/eventlist.png)
 
-选择一个seu evento， arraste e solte o evento na tela de Jornada。 Sua Jornada agora deve semelhante ao seguinte:
+选择selecione seu evento， arraste e solte o evento na tela de Jornada。 Sua Jornada agora deve ser semelhante ao seguinte：
 
 ![ACOP](./images/journeyevent.png)
 
-科莫·塞贡达·埃塔帕·达·乔纳达， você deve adicionar uma etapa curta de **等待**. Vá para o lado esquerdo da tela a seção **编排** 准康诺特尔岛。 Você usará atributos de perfil e preisará garantir que eles sejam preenchidos no Perfil do Cliente em tempo real。
+Como segunda etapa da jornada， voce deve adicionar uma etapa curta de **等待**. Vá para o lado esquerdo da tela até a secao **编排** para encontract isso. Voce usará atributos de perfil e precisará garantir que ejam preenchidos no Perfil do Cliente em tempo real.
 
 ![ACOP](./images/journeywait.png)
 
-《我的日记》。 不能把世界语的节奏改成。 定义1分钟。 Isso dará bastante tempo para para que os atributos do perfil estejam disponíveis após o de staedo evento.
+苏亚·乔纳达·阿古拉·德韦斯为塞梅尔汗特·奥·塞甘特效力。 没有lado direito da tela voce precisa configurar o tempo de espera。 Defina como 1分钟。 我敢说巴斯坦的节奏，违背了你的心愿。
 
 ![ACOP](./images/journeywait1.png)
 
-团 **确定** 萨尔瓦·苏亚斯·阿尔特拉松斯。
+小团体 **确定** 如变体。
 
-Como terceira etapa da jornada， você deve adicionar uma ação **电子邮件**. Vá para o lado esquerdo da tela para **操作**，选择ação **电子邮件** arraste e solte a ação no segundo nó da sua jornada. 阿哥拉，塞金特，塞比多。
+Como terceira etapa da jornada， voce deve adicionar uma açao **电子邮件**. Vá para o lado esquerdo da tela para **操作**，选择a acao **电子邮件** 我绝对不会罢休。 我再说一遍。
 
 ![ACOP](./images/journeyactions.png)
 
-定义a **类别** 科科 **营销** e selecone uma **电子邮件界面** 允许发送电子邮件。 Nesse caso， a **电子邮件界面** 一个用户选择电子邮件。 塞莱桑的Certifique **电子邮件的点击** e **电子邮件打开** 埃斯特金·马卡达斯。
+定义a **类别** como **营销** e选择器uma **电子邮件表面** 电子邮件允许范围。 Nesse caso，a **电子邮件表面** 一个电邮选手。 作为凯哈斯·德·塞莱索的证书 **电子邮件的点击次数** e **电子邮件打开次数** 埃斯特贾姆·马尔卡达斯。
 
 ![ACOP](./images/journeyactions1.png)
 
-一个月的夜晚。 帕拉伊索，朋友 **编辑内容**.
+这是门萨盖姆的戒指。 帕拉伊索，小集团 **编辑内容**.
 
 ![ACOP](./images/journeyactions2.png)
 
-## 2.3.2 Crie a sua mensagem
+## 2.3.2基本概念
 
-Para criar sua mensagem， plickeem **编辑内容**.
+小团体，关于孟沙加姆的段子 **编辑内容**.
 
 ![ACOP](./images/journeyactions2.png)
 
-你好，塞拉。
+再说一遍。
 
 ![ACOP](./images/journeyactions3.png)
 
-坎波德特克斯托团 **主题行**.
+小团体无坎波·德特克斯托 **主题行**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-德克斯托，科米切 **奥拉**
+我叫科米斯 **奥拉**
 
 ![Journey Optimizer](./images/msg6.png)
 
-一个linha de assunto ainda não está pronta。 Em seguida， você precisa trazer o token de personalização para o **名字** 她是阿尔玛泽纳多 `profile.person.name.firstName`. 无菜单，角色para baixo para encontror o elemento **人员** e cligue na seta para visualizaris mais campos
+一个爱因达·娜欧·艾斯塔·普朗塔。 Em seguida， voce precisa trazer o token de personalização para **名字** 我是个阿玛泽纳多人 `profile.person.name.firstName`. 没有esquerda菜单，role para baixo para contract o elemento **人员** 我们为视觉化的mais campos建立社区
 
 ![Journey Optimizer](./images/msg7.png)
 
-埃莱门托的阿戈拉 **全名** e cligue na seta para visualizar mais campos.
+Agora entry o elemento **全名** 我们为那些视觉化的mais campos建立小团体。
 
 ![Journey Optimizer](./images/msg8.png)
 
-波菲姆，当地化到坎波 **名字** e团 **+**  拉多·德莱。 个人化的阿帕雷克人的托克。
+Por fim，本地化到campo **名字** 无辛博罗集团 **+**  是拉多·德勒。 无论如何都不要用坎波·德特克斯托来表示个人化。
 
 ![Journey Optimizer](./images/msg9.png)
 
-艾姆·塞吉达，阿迪西奥内， **阿格拉迪莫斯，苏卡！**&#x200B;的问题。团 **保存**.
+塞吉达，阿迪西奥和特克托， **阿格拉德塞莫斯是你的灵魂！**&#x200B;的问题。小团体 **保存**.
 
 ![Journey Optimizer](./images/msg10.png)
 
-Então， você irá retor nar para esta tela。 团 **Email Designer**  向contúdo发送电子邮件。
+恩陶，听我说，我回过头来。 小团体 **电子邮件设计工具**  欢迎您发送电子邮件。
 
 ![Journey Optimizer](./images/msg11.png)
 
-Na próxima tela， será solicitado que vicê forneça o conteúdo do email através de 3 métodos diferentes:
+Na próxima tela， será solicitado que voce forneca o conteúdo do email através de 3 métodos diferentes：
 
-- **从头开始设计**:Comece com uma tela em branco e use o editor WYSIWYG pararastar e soltar a estrutura e os componentes de contensudo para criar visualmente o contensudo e-mail。
-- **编码您自己的**:Crie seu próprio modelo de e-mail codificando usandoHTML
-- **导入HTML**:重要的HTML存在者，那就是você poderá editar。
+- **从头开始设计**：Comece com uma tela em branco e use o editor WYSIWYG para arrastar e soltar a estructura e os componentes de conteúdo para criar visualmente o conteúdo email.
+- **自己编写代码**：Crie seu próprio modelo de email codificando usandoHTML
+- **导入HTML**：汇入um modeloHTML存在，que voce poderá editar。
 
-团 **导入HTML**.
+小团体 **导入HTML**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-阿拉斯特·索尔特·阿基沃 **mailtemplatebootcamp.html**、阙歌·波佩沙 [阿奎](../../assets/html/mailtemplatebootcamp.html.zip). 小伙很重要。
+阿拉斯特·索尔特·奥基沃 **mailtemplatebootcamp.html**，我叫沃斯·波德·拜克萨 [阿基](../../assets/html/mailtemplatebootcamp.html.zip). 小圈子是进口的。
 
 ![Journey Optimizer](./images/msg13.png)
 
-电子邮件中的模式：
+Voce verá este modelo de email padrao：
 
 ![Journey Optimizer](./images/msg14.png)
 
-使用个性化电子邮件。 拉多小团 **奥拉** e、em、seguida、glicue noícone **添加个性化**.
+电子邮件个性化设置。 小集团拉多多德克斯托 **奥拉** 埃姆·塞吉达，伊科内集团 **添加个性化**.
 
 ![Journey Optimizer](./images/msg35.png)
 
-Em seguida， você precisa trazer o token de personalização **名字** 她是阿尔玛泽纳多 `profile.person.name.firstName`. 无菜单，本地化为elemento **人员**, faça uma busca detalada no elemento **全名** e集团 **+** para adicionon o campo **名字** ao编辑。
+Em seguida， voce precisa trazer o token de personalização **名字** 我是个阿玛泽纳多人 `profile.person.name.firstName`. 无菜单，本地化元素 **人员**，法玛·布卡·德塔尔哈达没有元素 **全名** 没有伊科内的集团 **+** 露营的伴侣 **名字** ao编辑。
 
-团 **保存**.
+小团体 **保存**.
 
 ![Journey Optimizer](./images/msg36.png)
 
-Agora você verá como o campo de personalização foi cionado ao seu texto.
+Agora voce verá como o campo de personalização foi adicionado ao seu texto.
 
 ![Journey Optimizer](./images/msg37.png)
 
-团 **保存** 萨尔瓦·苏亚·门萨盖姆。
+小团体 **保存** para salvar sua mensagem.
 
 ![Journey Optimizer](./images/msg55.png)
 
-Retorne para o painel de mensagens clicando na seta ao lado do texto da linha de assunto no canto上级esquerdo。
+Retorne para o painel de mensagens clicando na seta ao lado do texto da linha de assunto no canto superior esquerdo。
 
 ![Journey Optimizer](./images/msg56.png)
 
-Agora você总结了一份《地籍电子邮件》。 Cligue na seta no canto superesquerdo para retorn a sua jornada。
+Agora voce得出以下结论： criação do seu email de cadastro. 小团体不能作为上级的陪审团。
 
 ![Journey Optimizer](./images/msg57.png)
 
-团 **确定**.
+小团体 **确定**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 2.3.3共和国
+## 2.3.3若尔纳达公共
 
-《我的歌》。 法泽岛 **属性** 不能向上级迪雷托·达特拉下手。
+我们来做个前科吧。 沃斯·波德·法泽尔是克利坎多·诺伊科内 **属性** 没有上级的迪雷伊托·达·泰拉。
 
 ![ACOP](./images/journeyname.png)
 
-Você pode fazer isso clicando no item clicar no item &quot;Name&quot; e insindo o seguinte nome `yourLastName - Account Creation Journey`. 团 **确定** 把萨尔瓦当成穆丹卡。
+Voce pode fazer isso clicando no item clicar no item &quot;Name&quot; e inserindo o seguinte nome `yourLastName - Account Creation Journey`. 小团体 **确定** para salvar as mudancas.
 
 ![ACOP](./images/journeyname1.png)
 
-我的歌声是公开的 **发布**.
+Agora voce pode publicar sua jornada clicando em **Publish**.
 
 ![ACOP](./images/publishjourney.png)
 
-团 **发布**  诺瓦门特。
+小团体 **Publish**  诺瓦门特。
 
 ![ACOP](./images/publish1.png)
 
-Você verá uma barra de confirmmação verde informando que sua jornada agora está Publicada.
+西班牙公共事业部向游客提供咨询。
 
 ![ACOP](./images/published.png)
 
-这是行动。
+沃斯·特米努埃斯特·艾希西奥。
 
-埃塔帕： [2.4佐贺寺](./ex4.md)
+埃塔帕： [2.4乔尔纳达测验](./ex4.md)
 
-[乌萨里奥2号河道](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[托多斯 — 莫杜洛斯](../../overview.md)
+[莫杜洛斯·托多斯·托诺纳尔](../../overview.md)

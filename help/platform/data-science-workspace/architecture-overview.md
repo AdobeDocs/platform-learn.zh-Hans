@@ -3,10 +3,10 @@ title: 数据科学工作区架构概述
 description: 此视频介绍了总体架构，并展示了Adobe Experience Platform中数据科学工作区的主要组件。
 role: User
 feature: Data Science Workspace
-kt: 7181
+jira: KT-7181
 thumbnail: 332368.jpg
 exl-id: de40f58b-36bd-458c-b792-c8963546f42e
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 8%

@@ -1,73 +1,74 @@
 ---
-title: Bootcamp — 实时客户资料 — 可视化您自己的实时客户资料 — UI — 巴西
-description: Bootcamp — 实时客户资料 — 可视化您自己的实时客户资料 — UI — 巴西
-kt: 5342
+title: Bootcamp - Real-time Customer Profile — 可视化您自己的Real-time Customer Profile - UI — 巴西
+description: Bootcamp - Real-time Customer Profile — 可视化您自己的Real-time Customer Profile - UI — 巴西
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 5d824244766135cd4998feab48be7f6a69c42a70
+exl-id: 4eebb080-77fd-4162-aa64-d599f1274c93
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '537'
 ht-degree: 2%
 
 ---
 
-# 1.2真实呈现seu próprio perfil de cliente em tempo - UI
+# 1.2真实地呈现客户体验的先决条件 — UI
 
-Neste expericício， você irá fazer login na Adobe Experience Platform e visualizar seu próprio de cliente em tempo real na UI。
+Neste exercício， voce irá fazer登录Adobe Experience Platform e visualizar seu próprio Perfil de cliente em tempo real na UI。
 
-## 希斯托里亚
+## 史托里亚
 
-没有Perfil do cliente em tempo real， todos os do perfil sãoexibidos juntamente com os dados do evento， além das associações de segmentos existes。 Os dados mostrados podem vir de qualquer lugar， de aplicativos da Soluções externasAdobe。 埃萨是Adobe Experience Platform，当地的西斯泰马德埃雷恩西亚。
+没有Perfil do cliente em tempo real， todos os dados do perfil sao exibidos juntamente com os dados do evento， além das associacoes de segmentos existes. Os dados mostrados podem vir de qualquer lugar， de aplicativos daAdobe解决方案外部。 Essa é a exibicao mais poderosa da Adobe Experience Platform， o verdadeiro local do sistema de experiencia.
 
-## 1.2.1使用可视化图表 — do perfil do cliente na Adobe Experience Platform
+## 1.2.1使用visualizaçao do perfil do cliente na Adobe Experience Platform
 
-阿塞斯 [Adobe Experience Platform](https://experience.adobe.com/platform). 登录后，我会在Adobe Experience Platform。
+访问 [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer登录，voce irá访问página inicial da Adobe Experience Platform。
 
 ![数据获取](./images/home.png)
 
-连续性，职业是选择者 **沙盒**. 没人会跟一个选手做沙箱。 É posível fazer isso clicando no texto **[!UICONTROL 生产产品]** na linha azul na parte superior da tela。 在沙箱里自行选择 [!UICONTROL 沙盒] 专门的。
+永恒的万年期，先有先兆 **沙盒**. 做沙箱也不行，我是布特坎普。 你这小嘴真不赖啊 **[!UICONTROL 生产产品]** 娜丽莎·阿苏尔·娜帕特·苏必利尔·达·泰拉。 Depois de selecionar o sandbox apriado， voce verá a tela mudando e agora voce está em seu [!UICONTROL 沙盒] 奉献精神。
 
 ![数据获取](./images/sb1.png)
 
-没有菜单 **用户档案** e **浏览**.
+无菜单，访问 **配置文件** e **浏览**.
 
-![客户资料](./images/homemenu.png)
+![客户配置文件](./images/homemenu.png)
 
-没有painel Visualizador de perfil的站点， você pode encontrar a visão geral da identidade。 Cada identidade在Vinculada上，这是个命名空间。
+没有painel Visualizador de perfil没有seu站点，voce pode包含一个visao geral da identidade。 Cada识别了está vinculada的命名空间。
 
-![客户资料](./images/identities.png)
+![客户配置文件](./images/identities.png)
 
-没有painel Visualizador de perfil， agora você pode ver uma identidate semelhante a seguinte:
+没有painel Visualizador de perfil， agora voce pode ver uma identidade semelhante a seguinte：
 
 | 命名空间 | 标识 |
 |:-------------:| :---------------:|
 | Experience Cloud ID (ECID) | 19428085896177382402834560825640259081 |
 
-Com a Adobe Experience Platform, todos IDs são igualmente importantes. Anteriormente， o ECID era o ID mais ante no context to daAdobee todos outors IDsetavam vinculados ao ECID em uma relação hierárquica。 Com a Adobe Experience Platform, isso mudou e cada ID pode ser consideado um identification ador primário.
+Com a Adobe Experience Platform， todos os IDs sao igualmente importants. 前言，在ECID时代ID服务很重要，没有上下文可为AdobeID服务estavam vinculados ao ECID em uma relaçao hierárquica。 Com a Adobe Experience Platform， isso mudou e cada ID pode ser considerado um identificador primário.
 
-诺玛门特，我的身份证明是从事的。 世伟·佩贡塔尔·奥苏呼叫中心： **真的很重要吗？** Eles provavelmente responderão: **你是铁杆人！** Mas se você perguntar à sua equipe de CRM， eles responderão: **你的电邮！** 一个Adobe Experience Platform人，爱莎的肤色。 Cada aplicativo， seja um aplicativo daAdobeou não， se comunicará com a Adobe Experience Platform referindo-se ao ID que cousideam principal。 我简单的。
+要识别上下文依赖的初级用户，请执行以下操作： Se voce perguntar ao seu呼叫中心： **ID女士是否重要？** Eles提供了回复： **不许打扰你！** Mas se voce perguntar à sua equipe de CRM， eles responderao ： **o endereco de email！** 一个Adobe Experience Platform在语音方面做出了一些复杂的事情。 Cada aplicativo， seja um aplicativo da Adobe ou nao， se comunicará com a Adobe Experience Platform referindo-se ao ID que consideram principal. 简化了功能。
 
-帕拉奥坎波 **身份命名空间**，选择一项 **ECID** e para campoo **标识值** insira o ECID você pode encontrar no painel Visualizador de perfil do site do Bootcamp. 团 **查看**. 那是我的天。 团 **配置文件ID** para abrir seu perfil.
+Para o campo **身份命名空间**，选择器 **ECID** e para o campo **标识值** 在ECID中，任何音符都不会出现任何画笔Visualizador de perfil do site do Bootcamp。 小团体 **视图**. 你背叛了我。 小团体否 **配置文件ID** 一手包办事。
 
-![客户资料](./images/popupecid.png)
+![客户配置文件](./images/popupecid.png)
 
-阿戈拉·瓦斯托姆 **佩尔菲尔特里布托斯** 重要人物，都是克里恩特人。
+Agora voce tem uma visão geral de alguns **Attributos de perfil** 重要的是要让客户背叛。
 
-![客户资料](./images/profile.png)
+![客户配置文件](./images/profile.png)
 
-阿塞斯 **事件**，在entradas de cada evento de experiencia vinculado ao seu Perfil的身上放着一张歌。
+访问 **事件**，然后把酒瓶当成entradas de cada evento de experiencia vinculado ao seu Perfil。
 
-![客户资料](./images/profileee.png)
+![客户配置文件](./images/profileee.png)
 
-Por fim， A opção de menu **区段成员资格**. Agora verá todos os segmentos， que se qualificam para este perfil.
+打开opcao de菜单，打开 **区段成员资格**. 要确保符合资格，我们还要努力。
 
-![客户资料](./images/profileseg.png)
+![客户配置文件](./images/profileseg.png)
 
-Agora vamos criar no vesgmento que permitirá que você将一个体验个性化为cliencia do cliente par anônimo ou conhecido。
+Agora vamos criar um novo segmento que permitirá que voce periencia do cliente para um cliente anonimo ou conhecido.
 
-埃塔帕： [1.3标准区段 — UI](./ex3.md)
+埃塔帕： [1.3 Crie um segmento - UI](./ex3.md)
 
-[乌萨里奥1号河畔](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[托多斯 — 莫杜洛斯](../../overview.md)
+[莫杜洛斯·托多斯·托诺纳尔](../../overview.md)

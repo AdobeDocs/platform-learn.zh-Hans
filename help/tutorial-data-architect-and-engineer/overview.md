@@ -3,12 +3,12 @@ title: 面向数据架构师和数据工程师的Adobe Experience Platform入门
 description: 面向数据架构师和数据工程师的Adobe Experience Platform快速入门。
 breadcrumb-title: 概述
 role: Data Architect, Data Engineer
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 191fe710c6cd00b5355881158a7e0af85523e22e
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%

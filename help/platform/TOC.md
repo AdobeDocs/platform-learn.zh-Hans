@@ -4,10 +4,10 @@ breadcrumb-title: 教程
 user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
-source-git-commit: 13a1983f0706686d53c9d218cde0b583bd44578d
+source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 30%
+source-wordcount: '937'
+ht-degree: 31%
 
 ---
 
@@ -203,7 +203,7 @@ ht-degree: 30%
    + [使用Adobe Target实现下一次点击个性化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud 集成 {#experience-cloud}
    + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-   + [使用Marketo Engage编排活动](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+   + [使用Marketo Engage编排活动](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
 + 行业趋势 {#industry}
    + [数据管理的未来和复杂多变的环境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [一个故事，两种看法 - 品牌对消费者](/help/platform/industry/brands-vs-consumers.md)

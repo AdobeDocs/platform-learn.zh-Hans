@@ -1,22 +1,22 @@
 ---
 title: 将Google客户匹配与Adobe的Real-time Customer Data Platform集成
-description: 此视频演示了Adobe的Real-time Customer Data Platform和Google的“客户匹配”功能如何帮助品牌与Google自有和运营资产上的客户互动以扩展其外展活动。
+description: 此视频展示了Adobe的Real-time Customer Data Platform和Google的“客户匹配”功能如何帮助品牌厂商就Google自有资产和运营资产与客户接洽，以扩展其外联活动。
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
-kt: 5948
+jira: KT-5948
 thumbnail: 38180.jpg
 exl-id: 6888eeed-e091-4dd4-a34f-f00be887ab21
-source-git-commit: 2d4f4f933650ef1a0ac98d47b28d0d750ae0e908
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '89'
 ht-degree: 7%
 
 ---
 
-# 集成Google客户匹配
+# 集成Google Customer Match
 
-此视频演示了Adobe的Real-time Customer Data Platform和Google的“客户匹配”功能如何帮助品牌与Google自有和运营资产上的客户互动以扩展其外展活动。
+此视频展示了Adobe的Real-time Customer Data Platform和Google的“客户匹配”功能如何帮助品牌厂商就Google自有资产和运营资产与客户接洽，以扩展其外联活动。
 
 >[!VIDEO](https://video.tv.adobe.com/v/38180?quality=12&learn=on)
 

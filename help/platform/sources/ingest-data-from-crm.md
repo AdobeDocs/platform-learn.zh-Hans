@@ -3,18 +3,18 @@ title: 使用CRM源连接器引入数据
 description: 了解如何轻松地将数据从CRM源无缝地批量引入Adobe Experience Platform的Real-Time Customer Profile和数据湖。
 role: Data Engineer, Data Architect
 feature: Sources
-kt: 3826, 13272
+jira: KT-3826, 13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
-source-git-commit: 17be24fe619139056a69190b98610644387ca18f
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# 使用CRM源连接器引入数据
+# 使用 CRM 源连接器引入数据
 
 了解如何轻松地将数据从CRM源无缝地批量引入Adobe Experience Platform的Real-Time Customer Profile和数据湖。 有关更详细的产品文档，请参阅 [客户关系管理(CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) 在源连接器概述页面上。
 

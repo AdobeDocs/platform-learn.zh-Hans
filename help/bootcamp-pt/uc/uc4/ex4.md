@@ -1,158 +1,159 @@
 ---
-title: Bootcamp -Customer Journey Analytics-Analysis Workspace的数据准备 — 巴西
-description: Bootcamp -Customer Journey Analytics-Analysis Workspace的数据准备 — 巴西
-kt: 5342
+title: Bootcamp -Customer Journey Analytics- Analysis Workspace中的数据准备 — 巴西
+description: Bootcamp -Customer Journey Analytics- Analysis Workspace中的数据准备 — 巴西
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-source-git-commit: 9cc01c7d3018319137f915e103bce9dc39b0d472
+exl-id: d56128af-dd1e-47ea-922f-85418e9da687
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '793'
 ht-degree: 1%
 
 ---
 
-# 4.4准备Customer Journey Analytics
+# 4.4 Preparação de dados emCustomer Journey Analytics
 
-## 奥别蒂沃斯
+## 目标
 
-- 关于UO的Analysis Workspace CJA
-- 为达多斯而建立的Analysis Workspace
-- 阿普伦达的卡库洛斯德达多斯
+- Entenda a UO do Analysis Workspace no CJA
+- Entenda os conceitos de preparação de dados no Analysis Workspace
+- 阿普伦达·卡库洛斯·德·达多斯
 
-## 4.4.1 UI用于Analysis Workspace no CJA
+## 4.4.1 UI do Analysis Workspace no CJA
 
-O Analysis Workspace将todas作为limitações típicas de umúnico relatório do Analytics删除。 Ele fore uma tela hobusta e flexível para criar projetos de analytics personalizados. Arraste e solte qualquer número de tabelas de dados， visualizações e componentes(dimensões， métricas， segmentos e gralearidades de tempo)para um projeto。 Criação instantânea de avarias e segmentos， criação de cortes para análise， criação de alertas， compatorção de segmentos， análise de fluxo e falhas e relatrios de curadoria e a agendamento para compartilhar com qualquer pessssoem seu negócio。
+OAnalysis Workspace移除了todas as limitacoes típicas de um único relatório do Analytics。 Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados. Arraste e solte qualquerer número de tabelas de dados， visualizacoes e components(dimensoes， métricas， segmentos e granularidades de tempo) para um projeto. Criação instantanea de avarias e segmentos， criação de cortes para análise， criação de alertas， comparação de segmentos， análise de fluxo e de falhas e relatórios de curadoria e agendamento partilhar com qualquer pessoa em seu negócio.
 
-OCustomer Journey Analyticstraz essa solução além dos dados da plataforma. É altamente recommendável assistia a vídeo de visão geral de quatro minutos:
+OCustomer Journey Analyticstraz essa solução além dos dados da plataforma。 我建议你先走几步路：
 
 >[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
 
-她不是Analysis Workspace人，是我推荐的。
+在Analysis Workspace的祖先面前我们来回敬一下：
 
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
-### 克里·苏·普罗耶托
+### 赤星专案
 
-Agora de criar seu primeiro projeto do CJA. 在CJA中，Vá para a aba de projetos dentro do CJA. 团 **新建**.
+我们很荣幸地参加了CJA项目。 CJA计划的一部分。 小团体 **新建**.
 
 ![演示](./images/prmenu.png)
 
-她的话，我就是个空话。 选择项 **空白项目** então gliea em **创建**.
+塞吉达，敬请光临。 选择器 **空白项目** 恩陶集团 **创建**.
 
 ![演示](./images/prmenu1.png)
 
-那是我的天。
+我愿意，愿意。
 
 ![演示](./images/premptyprojects.png)
 
-Primeiro， certifique-se de selecionar a Visualização de dados correta no canto super direito da tela。 Neste smadeo， a Visualização de dados a serselectionadaé `vangeluwe - Omnichannel Data View`.
+Primeiro， certifique-se de selecionar a Visualização de dados correta no canto superior direito da tela. Neste范本，Visualização de dados的seseleconada é `vangeluwe - Omnichannel Data View`.
 
 ![演示](./images/prdv.png)
 
-我们要去救我。 Você pode usar o seguinte comando para salvar:
+埃姆·塞吉达，我愿意。 Voce pode usar o seguinte comando para salvar：
 
-| 操作系统 | 短切 |
+| 操作系统 | 快捷键 |
 | ----------------- |-------------| 
 | Windows | Control + S |
 | Mac | Command + S |
 
-以前的弹出窗口是：
+Voce verá este弹出窗口：
 
 ![演示](./images/prsave.png)
 
-使用este modelo de nomenclataura:
+使用este modelo de nomenclatura：
 
 | 名称 | 描述 |
 | ----------------- |-------------| 
 | `yourLastName - Omnichannel Analysis` | `yourLastName - Omnichannel Analysis` |
 
-阿姆·塞吉达，小团 **保存**.
+塞吉达，小集团 **保存**.
 
 ![演示](./images/prsave2.png)
 
 ## 4.4.2梅特里卡斯计算器
 
-Embora tenhamos organizado todos os components na Visualização de dados， você ainda deve adaptar alguns deles para que os usuarios de negócios estejam prontos para iniciar suas analises。 Além disso， durante qualquer processo de analytics， você pode criar métricas calculadas para profundar a descoberta de insights.
+Embora tenhamos organizado todos os componentes na Visualização de dados， voce ainda deve adaptar alguns deles para que os usuários de negócios estejam prontos para iniciar suas análises. Além disso， durante qualquer processo de analytics， voce pode criar métricas calculadas para profundar a descoberta de insights.
 
-以Como为例， Criaremos Taxa de conversão calcuada usando a métrica/evento Compras que definitios na Visualização de dados。
+Como示例， criaremos uma taxa de converso calculada usando a metric/evento Compras que definimos na Visualização de dados.
 
-## 转化税
+## 转化塔克萨
 
-我们是个建筑师。 团 **+** Para criar sua primeira Métrica calcuda no Analysis Workspace
+Vamos comecar a abrir o constructor de métricas calculadas. 小团体 **+** 在Analysis Workspace的初级市场上。
 
 ![演示](./images/pradd.png)
 
-O **计算量度生成器** 伊拉·阿帕雷克：
+O **计算指标生成器** 伊拉·阿帕雷克：
 
 ![演示](./images/prbuilder.png)
 
-恩康特 **购买** 不吃菜的，就是拉多·埃斯凯多。 Em **量度** 团 **显示全部**
+Encontre **购买** 没有菜单是拉多·埃斯奎多。 Em **量度** 小团体 **全部显示**
 
 ![演示](./images/calcbuildercr1.png)
 
-美国人 **购买** 那就算是计算。
+Agora arraste e solte a metric **购买** 一个美特丽卡·科特拉达的作品。
 
 ![演示](./images/calcbuildercr2.png)
 
-Normalmente， taxa de conversão ampila **转化/会话**. Então， vamos fazer o mesmo cálculo na de definitição de métrica calculada. 美国 **会话** e arraste e solte a no criador de definitição， no evento **购买**.
+Normalmente， taxa de conversão significa **转化/会话**. Entao， vamos fazer o mesmo cálculo na tela de definicao de métrica calculada. 进入媒体 **会话** 我绝对不信你，没有事件 **购买**.
 
 ![演示](./images/calcbuildercr3.png)
 
-观察divisãoé selecionado automaticamente的操作员。
+自动观察操作员。
 
 ![演示](./images/calcbuildercr4.png)
 
-一个代表porcentagem的taxa de conversãoé comumente。 Então， vamos mudar o formato para porcentagem e selecionar 2 casas decimais。
+一个转化类群代表一个前人。 Entao， vamos mudar o formato para porcentagem e selectionar 2 casas decimais.
 
 ![演示](./images/calcbuildercr5.png)
 
-最后，更改计算量度的名称和描述：
+最后，更改计算指标的名称和描述：
 
 | 标题 | 描述 |
 | ----------------- |-------------| 
 | 转化率 | 转化率 |
 
-Por fim， altere o nome e a descrição da métrica calculada:
+请认一下，再来一句“美特丽卡”计算器：
 
 ![演示](./images/calcbuildercr6.png)
 
-昂塞什凯萨德 **萨尔瓦尔** 一个美国的计算器。
+Nao se esqueca de **萨尔瓦尔** 一个微型计算机。
 
 ![演示](./images/pr9.png)
 
-## 4.4.3维度计算：Filtros(segmentação)e intervalos de datas
+## 4.4.3维度计算器：Filtros (segmentacao) e intervalos de data
 
-### 过滤器：维森斯计算器
+### 过滤器：维度计算器
 
-卡尔库洛斯·诺·德韦纳斯·帕拉·梅特里卡斯。 Antes de iniciar qualquer análise， também e intersante criar algumas **计算Dimension**. 意义重大，也很加安全， **区段** 不，Adobe Analytics。 没有Customer Journey Analytics，塞门托斯圣查马多斯 **过滤器**.
+可恶的恶灵之夜。 Antes de iniciar qualquer análise， também é interessante criar algumas **计算Dimension**. 这意义重大，非常关键， **区段** 没有Adobe Analytics。 无Customer Journey Analytics，esses segmentos sao chamados de **筛选器**.
 
 ![演示](./images/prfilters.png)
 
-criação de filtros ajudará os usários de negócios a iniciar o analytics com algumas dimensionsões calculadas valiosas。 Isso irá automatizar algumas tarefas， além de ajudar na parte de adoção. Abaixo estão alguns exemplois:
+分析算法维度计算值作为分析工具的criação de filtros ajudará os usuários de negócios。 Isso irá automatizar algumas tarefas， além de ajudar na parte de adocao. Abaixo estão算法示例：
 
-1. Mídia Própria， Mídia Paga，
+1. 米迪亚·普洛普利亚，米迪亚·帕加，
 2. Visitas novas x recorrentes
-3. Clientes com carrinho abandonado
+3. 客户公司放弃购买
 
-Ses filtros podem ser criados ou durante a parte de análise(você fará no próximo excrecio)。
+埃塞斯·波德姆·塞克里多斯在阿纳利塞的床上做了一个实验。
 
-### 数据间隔：节奏计算器
+### 数据间隔：时间计算维度
 
-就象dimensøes de tempo são outro tipo de dimensøes calculadas。 Alguns já foram criados， mas você também pode criar suas próprias Dimensões dempo personalizadas na fase de preparição de dados。
+作为维度demensoes de tempo sao outro tipo de dimensoes calculadas。 Alguns já foram criados， mas voce também pode criar suas próprias Dimensoes de tempo personalizadas na fase de preparação de dados.
 
-Essas Dimensões de tempo calculado ajudarão analistas e uuários de negócios a lembrar datas importantes e usá-las para filtrar e alterar o tempo de relatório. Perguntas e dúvidas típicas quando fazemos análises:
+Essas Dimensoes de tempo calculado ajudarao analistas e usuários de negócios a lembrar datas important e usá-las para filtrar e alterar o tempo de relatório. 佩尔贡塔斯·杜维达斯·蒂皮卡斯·坎多·法泽莫斯·阿纳利塞斯：
 
-- 凡多有黑色的星期五吗？ 恩特雷奥斯21 e29?
-- 坎多·维卡莫斯·阿奎拉·坎帕尼亚·德桑布罗电视节目？
-- 2018年的旺达斯·德凡多·德·凡多·菲泽莫斯？ 查询比较网2019。 2019年，我是个好人？
+- 宽都去过黑色星期五吗？ 输入操作系统21 e 29？
+- 全都veiculamos aquela campanha de TV em dezembro？
+- De quando a quando fizemos as vendas de verao de 2018？ Quero comparar com 2019年。 2019年sabe os dias exatos em？
 
 ![演示](./images/timedimensions.png)
 
-Agora você总结了为Analysis Workspace争取和平而努力的经验。
+Agora voce concluiu o exercício de preparação de dados usando o o Analysis Workspace do CJA.
 
 埃塔帕： [4.5 Visualização usandoCustomer Journey Analytics](./ex5.md)
 
-[Retornar para Fluxo de Uuário 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[托多斯 — 莫杜洛斯](./../../overview.md)
+[莫杜洛斯·托多斯·托诺纳尔](./../../overview.md)

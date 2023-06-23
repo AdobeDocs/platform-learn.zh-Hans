@@ -1,7 +1,7 @@
 ---
 user-guide-title: 将Target从at.js 2.x迁移到Web SDK
 breadcrumb-title: 将Target从at.js 2.x迁移到Web SDK
-user-guide-description: 面向Target客户的动手实践教程，介绍如何成功从at.js迁移到Web SDK实施。
+user-guide-description: 一个面向Target客户的实践教程，其中涵盖了如何成功从at.js迁移到Web SDK实施。
 feature-set: Target,Experience Platform
 solution: Target,Data Collection,Experience Platform
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
@@ -9,8 +9,8 @@ role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
-kt: 11159
-source-git-commit: 4b695b4578f0e725fc3fe1e455aa4886b9cc0669
+jira: KT-11159
+source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
 workflow-type: tm+mt
 source-wordcount: '88'
 ht-degree: 5%
@@ -18,7 +18,7 @@ ht-degree: 5%
 ---
 
 
-# 将Target从at.js 2.x迁移到平台Web SDK {#migrate-target-to-websdk}
+# 将Target从at.js 2.x迁移到Platform Web SDK {#migrate-target-to-websdk}
 
 + [教程简介](introduction.md)
 
@@ -26,7 +26,7 @@ ht-degree: 5%
 
 + [规划迁移](plan-migration.md)
 
-+ [将at.js与平台Web SDK进行比较](detailed-comparison.md)
++ [比较at.js与Platform Web SDK](detailed-comparison.md)
 
 + [执行初始设置](initial-setup.md)
 
