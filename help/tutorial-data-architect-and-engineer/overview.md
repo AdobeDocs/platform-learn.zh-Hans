@@ -8,9 +8,9 @@ thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: fabbc591-840b-40dc-89af-305626a16338
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: e640a7e5c3a5f745462aa0d4e9d5f5c0b34ca8d7
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '777'
 ht-degree: 1%
 
 ---
@@ -73,5 +73,10 @@ Adobe Experience Platform是一个技术平台，旨在帮助您实现营销目�
 ### 第三方技术
 
 虽然在本教程中您将使用多种技术，但您几乎完全停留在Adobe生态系统内。 在您自己的Platform实施中，您可能会将Platform与特定的第三方技术集成。 为了使本教程适用于所有客户，我们将使用更通用的实施。
+
+## 教程更新
+
+* 2023年6月：更新以包含新的权限工作流和使用OAuth服务器到服务器API凭据
+
 
 现在，让我们转到第一课……[配置权限](configure-permissions.md).
