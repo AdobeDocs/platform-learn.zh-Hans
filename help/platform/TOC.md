@@ -4,10 +4,10 @@ breadcrumb-title: 教程
 user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
-source-git-commit: e9ac0c059a896e552fd14e6456f121a70254bca0
+source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 31%
+source-wordcount: '943'
+ht-degree: 32%
 
 ---
 
@@ -130,6 +130,7 @@ ht-degree: 31%
    + [查看帐户配置文件](/help/platform/profiles/view-account-profiles.md)
    + [创建合并策略](/help/platform/profiles/create-merge-policies.md)
    + [合并模式概述](/help/platform/profiles/union-schemas-overview.md)
+   + [使用upsert更新特定属性](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + 隐私和安全性 {#privacy}
    + [Privacy Service简介](/help/platform/privacy/introduction-to-privacy-services.md)
    + [隐私请求中的身份数据](/help/platform/privacy/identity-data-in-privacy-requests.md)
