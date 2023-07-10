@@ -1,12 +1,12 @@
 ---
 title: 使用查询服务运行查询
 description: 本视频说明如何在Adobe Experience Platform界面和PSQL客户端中运行查询。 此外，还演示了在XDM对象中使用单个属性、使用Adobe定义的函数以及使用CREATE TABLE AS SELECT (CTAS)等方法。
-role: Data Engineer,User
 feature: Queries
+role: Data Engineer
 jira: KT-3140
 thumbnail: 29796.jpg
 exl-id: 7b264733-a0e0-44cd-a2c0-680a473f8cf6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '115'
 ht-degree: 11%

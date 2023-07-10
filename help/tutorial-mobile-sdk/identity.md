@@ -1,8 +1,9 @@
 ---
 title: 标识
 description: 了解如何在移动应用程序中收集身份数据。
+feature: Mobile SDK,Identities
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '591'
 ht-degree: 3%

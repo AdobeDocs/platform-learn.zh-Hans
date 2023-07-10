@@ -2,10 +2,11 @@
 title: 将 Tableau 连接到查询服务
 description: 了解如何从各种支持PostgreSQL协议的桌面客户端应用程序连接到查询服务，以及如何使用PostgreSQL工具和驱动程序连接和写入查询。
 feature: Queries
+role: Data Engineer
 jira: KT-7688
 thumbnail: 333702.jpg
 exl-id: c81e669e-af61-4b6b-8eb6-a516731b6529
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '87'
 ht-degree: 18%

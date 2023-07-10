@@ -1,9 +1,9 @@
 ---
 title: 添加带有标记的Adobe Target
-description: 了解如何使用标记和at.js、页面加载请求、参数、订单请求和自定义页眉/页脚代码来实施Adobe Target。 本课程是“在网站中实施Experience Cloud”教程的一部分。
+description: 了解如何使用at.js中的标记、页面加载请求、参数、订单请求和自定义页眉/页脚代码实施Adobe Target。 本课程是“在网站中实施Experience Cloud”教程的一部分。
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '4445'
 ht-degree: 74%
@@ -18,18 +18,17 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch将作为一套数据收集技术集成到Adobe Experience Platform中。 界面中已推出一些术语更改，在使用此内容时，您应该注意这些更改：
+>Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在界面中推出了几项术语更改，您在使用本内容时应注意这些更改：
 >
 > * platform launch（客户端）现在为 **[!DNL tags]**
 > * platform launch服务器端现在为 **[!DNL event forwarding]**
-> * 现在已提供边缘配置 **[!DNL datastreams]**
-
+> * Edge配置现在为 **[!DNL datastreams]**
 
 ## 学习目标
 
 在本课程结束后，您将能够：
 
-* 添加预隐藏代码片段，以用于管理在将Target与异步标签嵌入代码结合使用时出现的闪烁情况
+* 添加预隐藏代码片段，以用于管理在将Target与异步标记嵌入代码结合使用时出现的闪烁情况
 * 添加 Target v2 扩展
 * 触发页面加载请求（以前称为“全局 mbox”）
 * 向页面加载请求添加参数
@@ -40,11 +39,11 @@ ht-degree: 74%
 
 ## 先决条件
 
-要完成此部分中的课程，您必须先完成 [配置标记](create-a-property.md) 和 [添加Identity服务](id-service.md).
+要完成此部分中的课程，您必须先完成以下课程中的课程： [配置标记](create-a-property.md) 和 [添加Id服务](id-service.md).
 
 ## 添加 Target 预隐藏代码片段
 
-在开始之前，我们需要对标记嵌入代码稍作更新。 异步加载标记嵌入代码时，页面可能会在Target库完全加载并执行内容交换之前完成渲染。 这可能会导致所谓的“闪烁”，在这种情况下，会先短暂显示默认内容，然后再将该内容替换为 Target 指定的个性化内容。如果要避免出现这种闪烁情况，我们强烈建议在紧靠标记异步嵌入代码之前的特殊预隐藏代码片段进行硬编码。
+在开始之前，我们需要对标记嵌入代码稍微做些更新。 异步加载标记嵌入代码时，页面可能会在Target库完全加载并执行其内容交换之前完成渲染。 这可能会导致所谓的“闪烁”，在这种情况下，会先短暂显示默认内容，然后再将该内容替换为 Target 指定的个性化内容。如果要避免这种闪烁，我们强烈建议在紧靠标记的异步嵌入代码之前的位置对特殊的预隐藏代码片段进行硬编码。
 
 该硬编码操作已在 Luma 网站上完成，但我们将继续在示例页面上执行此操作，以便您了解实施。复制以下代码行：
 
@@ -83,9 +82,9 @@ ht-degree: 74%
 </script>
 ```
 
-打开示例页面，并将其粘贴到紧靠标记嵌入代码之前的位置，如下图所示（如果行号不同，请不用担心）。 在此屏幕截图中，已缩小预隐藏代码片段：
+打开示例页面，并将其粘贴到紧靠标记嵌入代码之前的位置，如下图所示（无需担心行号不同）。 在此屏幕快照中，预隐藏代码片段已缩小：
 
-![将鼠标悬停在扩展上](images/target-prehidingSnippet.png)
+![将鼠标悬停在该扩展上](images/target-prehidingSnippet.png)
 
 重新加载示例页面。您将注意到该页面会隐藏 3 秒才显示。这种行为是暂时性的，在您部署 Target 后便会消失。这种预隐藏行为由预隐藏代码片段末尾的两个配置控制，虽然这两个配置可以自定义，但通常情况下最好保留默认设置：
 
@@ -137,7 +136,7 @@ Target v2 扩展包含两个主要部分：
 
 **加载 Target**
 
-1. 转到 **[!UICONTROL 规则]** ，然后单击 `All Pages - Library Loaded` 打开规则编辑器
+1. 转到 **[!UICONTROL 规则]** ，然后单击 `All Pages - Library Loaded` 以打开规则编辑器
 
    ![打开 All Pages - Library Loaded 规则](images/target-editRule.png)
 
@@ -179,7 +178,7 @@ Target v2 扩展包含两个主要部分：
 
 ### 验证页面加载请求
 
-现在，您已添加Target v2扩展并触发了 `Load Target` 和 `Fire Page Load Request` 操作时，在使用标记属性的所有页面上都应发出页面加载请求。
+现在，您已添加Target v2扩展并触发 `Load Target` 和 `Fire Page Load Request` 操作，则应在使用标记属性的所有页面上发出页面加载请求。
 
 **验证 Load Target 和 Fire Page Load Request 操作**
 
@@ -187,7 +186,7 @@ Target v2 扩展包含两个主要部分：
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 确保Debugger将标记属性映射到 *您的* 开发环境，如 [前课](switch-environments.md)
+1. 确保Debugger将标记属性映射到 *您的* 开发环境，如 [先前的教训](switch-environments.md)
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -264,7 +263,7 @@ Target v2 扩展包含两个主要部分：
 
 **验证 pageName 请求参数**
 
-1. 重新加载Luma网站，并确保该网站已映射到您自己的标记属性
+1. 重新加载Luma网站，确保该网站已映射到您自己的标记资产
 1. 打开浏览器的开发人员工具
 1. 单击“网络”选项卡
 1. 使用 `tt.omtrdc`（或 Target 请求的 CNAME&#39;d 域）筛选请求
@@ -292,17 +291,17 @@ Target v2 扩展包含两个主要部分：
 1. 用于收集访客行为以提供推荐算法，例如“最近查看的产品”或“查看次数最多的产品”
 1. 用于填充 Recommendations 目录。Recommendations 中有一个数据库，其中包含您网站上的所有产品或文章，以便可在推荐选件中提供这些产品或文章。例如，推荐产品时，您通常希望显示诸如产品名称 (`entity.name`) 和图像 (`entity.thumbnailUrl`) 之类的属性。有些客户会使用后端信息源填充其目录，但这些目录也可以使用 Target 请求中的实体参数进行填充。
 
-在本教程中，您无需传递任何实体参数，但其工作流程与之前在传递 `pageName` 请求参数 — 只需为参数指定一个前缀为“entity”的名称即可。 并将其映射到相关数据元素。请注意，一些常见实体具有必须要使用的保留名称（例如，产品 SKU 必须使用 entity.id）。下面显示了在 `Add Params to Page Load Request` 操作中设置的实体参数：
+在本教程中，您无需传递任何实体参数，但其工作流程与之前传递 `pageName` request parameter — 只需为参数提供一个前缀为“entity”的名称。 并将其映射到相关数据元素。请注意，一些常见实体具有必须要使用的保留名称（例如，产品 SKU 必须使用 entity.id）。下面显示了在 `Add Params to Page Load Request` 操作中设置的实体参数：
 
 ![添加实体参数](images/target-entityParameters.png)
 
 ### 添加客户 ID 参数
 
-通过 Adobe Experience Platform Identity Service 收集客户 ID，可以使用 Adobe Experience Cloud 的[客户属性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html)功能轻松地将 CRM 数据导入 Target。它还支持[跨设备访客拼合](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html)，当客户在笔记本电脑和移动设备之间切换时，可以保持一致的用户体验。
+通过 Adobe Experience Platform Identity Service 收集客户 ID，可以使用 Adobe Experience Cloud 的[客户属性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=zh-Hans)功能轻松地将 CRM 数据导入 Target。它还支持[跨设备访客拼合](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html)，当客户在笔记本电脑和移动设备之间切换时，可以保持一致的用户体验。
 
 在触发页面加载请求之前，必须在 Identity Service 的 `Set Customer IDs` 操作中设置客户 ID。为此，请确保您能够在网站上执行以下操作：
 
-* 必须在页面上先提供客户ID，然后再提供标记嵌入代码
+* 必须在页面上先提供客户ID，然后再提供标记Embed Code
 * 必须安装 Adobe Experience Platform Identity Service
 * 必须在发生“Library Loaded (Page Top)”事件时触发的规则中使用 `Set Customer IDs` 操作
 * 在“Set Customer IDs”操作“之后”**&#x200B;触发的规则中使用 `Fire Page Load Request` 操作
@@ -317,7 +316,7 @@ Target v2 扩展包含两个主要部分：
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 确保Debugger将标记属性映射到 *您的* 开发环境，如 [前课](switch-environments.md)
+1. 确保Debugger将标记属性映射到 *您的* 开发环境，如 [先前的教训](switch-environments.md)
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -352,10 +351,10 @@ Target v2 扩展包含两个主要部分：
 
 资产令牌是一个与 Target Premium [企业用户权限](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=zh-Hans)功能一起使用的保留参数。资产令牌用于定义不同的数字资产，以便可以为 Experience Cloud 组织的不同成员分配每个资产的不同权限。例如，您可能希望一组用户能够在您的网站上设置 Target 活动，但不能在您的移动设备应用程序中设置。
 
-Target资产类似于标记资产和Analytics报表包。 具有多个品牌、网站和营销团队的企业可能会为每个网站或移动设备应用程序使用不同的Target资产、标记资产和Analytics报表包。 标记属性通过其嵌入代码进行区分，Analytics报表包通过其报表包ID进行区分，Target属性通过其资产令牌参数进行区分。
+Target属性与标记属性和Analytics报表包类似。 具有多个品牌、网站和营销团队的企业可能会为每个网站或移动设备应用程序使用不同的Target资产、标记资产和Analytics报表包。 标记资产通过其嵌入代码进行区分，Analytics报表包通过其报表包ID进行区分，而Target资产则通过其资产令牌参数进行区分。
 
 
-必须在具有 `targetPageParams()` 函数。 如果您通过单个标记属性使用不同的at_property值来实施具有不同的多个网站，则可以通过数据元素管理at_property值。
+必须通过使用标记的自定义代码操作实施资产令牌 `targetPageParams()` 函数。 如果您要实施多个网站，并将不同的at_property值与单个标记属性一起使用，则可以通过数据元素管理at_property值。
 
 如果您是 Target Premium 客户，并且希望在 Tutorial 资产中实施资产令牌，则可以选择完成下面的练习：
 
@@ -363,9 +362,9 @@ Target资产类似于标记资产和Analytics报表包。 具有多个品牌、�
 
 1. 转到 **[!UICONTROL 管理>属性]**
 
-1. 识别要使用的资产，然后单击 **[!UICONTROL &lt;/>]** （或创建新资产）
+1. 标识要使用的资产，然后单击 **[!UICONTROL &lt;/>]** （或创建新资产）
 
-1. 复制 `<script></script>` 到剪贴板
+1. 将代码段复制到 `<script></script>` 到您的剪贴板
 
    ![从 Adobe Target 界面获取资产令牌](images/target-addATProperty-targetProperties.png)
 
@@ -377,23 +376,22 @@ Target资产类似于标记资产和Analytics报表包。 具有多个品牌、�
 
    ![打开 Add Params to Page Load Request 操作](images/target-openCustomCodeAction.png)
 
-1. 打开代码编辑器，并从包含 `targetPageParams()` 函数
+1. 打开代码编辑器，然后从包含的Target界面粘贴代码 `targetPageParams()` 函数
 1. 单击 **[!UICONTROL 保存]** 按钮
 
    ![打开 Add Params to Page Load Request 操作](images/target-addATProperty.png)
 
-1. 检查 **[!UICONTROL 全局执行]** 框 `targetPageParams()` 在全局范围中声明
+1. 查看 **[!UICONTROL 全局执行]** 框so `targetPageParams()` 在全局范围内声明
 1. 单击 **[!UICONTROL Keep Changes]**
 
    ![单击 Keep Changes](images/target-addATProperty-keepChanges.png)
 
 1. 单击 **[!UICONTROL Save to Library and Build]**
-
    ![单击 Save to Library and Build](images/target-addATProperty-save.png)
 
 >[!WARNING]
 >
->如果您尝试添加 `at_property` 参数 **[!UICONTROL 将参数添加到页面加载请求]** 操作时，参数将在网络请求中填充，但Target的可视化体验编辑器(VEC)在加载页面时无法自动检测到参数。 始终填充 `at_property` 使用 `targetPageParams()` 函数。
+>如果您尝试添加 `at_property` 参数通过 **[!UICONTROL 向页面加载请求添加参数]** 操作，参数将会填充到网络请求中，但Target的可视化体验编辑器(VEC)在加载页面时无法自动检测该参数。 始终填充 `at_property` 使用 `targetPageParams()` 函数。
 
 #### 验证资产令牌
 
@@ -402,7 +400,7 @@ Target资产类似于标记资产和Analytics报表包。 具有多个品牌、�
 **验证资产令牌参数**
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
-1. 确保Debugger将标记属性映射到 *您的* 开发环境，如 [前课](switch-environments.md)
+1. 确保Debugger将标记属性映射到 *您的* 开发环境，如 [先前的教训](switch-environments.md)
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -432,7 +430,7 @@ Target资产类似于标记资产和Analytics报表包。 具有多个品牌、�
 
 最佳做法是在所有订单漏斗中使用订单确认请求，即使在非零售网站上也是如此。 例如，潜在客户生成网站中的潜在客户漏斗通常会在末尾生成一个唯一的“潜在客户 ID”。这些网站应该实施订单请求，并对 orderTotal 使用一个静态值（例如“1”）。
 
-如果客户使用不支持A4T的Automated Personalization活动，则在大多数报表中使用Analytics for Target(A4T)集成的客户可能还希望实施订单请求。 此外，订单请求是 Recommendations 实施中的一个关键元素，可根据购买行为提供适当的算法。有关A4T支持的最新信息，请参阅 [文档](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
+Automated Personalization如果客户在大多数报表中使用Analytics for Target (A4T)集成，并且使用的活动不支持A4T，则他们可能还希望实施订单请求。 此外，订单请求是 Recommendations 实施中的一个关键元素，可根据购买行为提供适当的算法。有关A4T支持的最新信息，请参阅 [文档](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA).
 
 订单确认请求应通过只在订单确认页面上或仅在发生订单确认事件时触发的规则进行触发。通常，订单确认请求可以与设置 Adobe Analytics 购买事件的规则结合使用。订单确认请求必须使用核心扩展的 Custom Code 操作进行配置，并使用适当的数据元素来设置 orderId、orderTotal 和 productPurchasedId 参数。
 
@@ -488,7 +486,7 @@ Target资产类似于标记资产和Analytics报表包。 具有多个品牌、�
 1. 将规则命名为 `Order Confirmation Page - Library Loaded - 60`
 1. 单击 **[!UICONTROL Events > Add]**
    1. 选择 **[!UICONTROL Event Type > Library Loaded (Page Top)]**
-   1. 在 **[!UICONTROL 高级选项]**，请更改 `Order` to `60` 这样它就会在 `Load Target` 操作(位于 `All Pages - Library Loaded` 规则 `Order` 设置为 `50`)
+   1. 下 **[!UICONTROL 高级选项]**，更改 `Order` 到 `60` 这样它就会在 `Load Target` action(位于我们的 `All Pages - Library Loaded` 规则位置 `Order` 设置为 `50`)
    1. 单击 **[!UICONTROL Keep Changes]**
 1. 单击 **[!UICONTROL Conditions > Add]**
    1. 选择 **[!UICONTROL Condition Type > Path Without Query String]**
@@ -533,7 +531,7 @@ Target资产类似于标记资产和Analytics报表包。 具有多个品牌、�
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 确保Debugger将标记属性映射到 *您的* 开发环境，如 [前课](switch-environments.md)
+1. 确保Debugger将标记属性映射到 *您的* 开发环境，如 [先前的教训](switch-environments.md)
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -563,9 +561,9 @@ Target资产类似于标记资产和Analytics报表包。 具有多个品牌、�
 
 ### 自定义请求
 
-在极少数情况下，您需要发起除页面加载请求和订单确认请求之外的其他Target请求。 例如，有时您要用于个性化的重要数据未在页面上的标记嵌入代码之前定义，这些数据可能会在页面底部进行硬编码，或从异步API请求返回。 此数据可以使用其他请求发送到Target，不过在页面可见的情况下使用此请求交付内容并不是最佳做法。 此数据可用于扩充访客配置文件以供日后使用（使用配置文件参数）或填充Recommendations目录。
+在极少数情况下，您可能需要发出页面加载和订单确认请求以外的Target请求。 例如，有时您想要用于个性化的重要数据未在页面上的标记嵌入代码之前定义，此类数据可能会在页面底部进行硬编码，或从异步API请求返回。 此数据可以使用其他请求发送到Target，不过在页面已可见的情况下使用此请求交付内容并不是最佳做法。 此数据可用于丰富访客配置文件以供以后使用（使用配置文件参数）或填充Recommendations目录。
 
-在这些情况下，使用核心扩展中的 Custom Code 操作，以使用 [getOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-applyoffer.html) 和 [trackEvent()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-trackevent.html) 方法触发请求。这非常类似于在[订单确认请求](#order-confirmation-request)练习中所执行的操作，但使用的请求名称有所不同，而且不会使用特殊的订单参数。在通过自定义代码发起 Target 请求之前，务必先使用 **[!UICONTROL Load Target]** 操作。
+在这些情况下，使用核心扩展中的 Custom Code 操作，以使用 [getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html) 和 [trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html) 方法触发请求。这非常类似于在[订单确认请求](#order-confirmation-request)练习中所执行的操作，但使用的请求名称有所不同，而且不会使用特殊的订单参数。在通过自定义代码发起 Target 请求之前，务必先使用 **[!UICONTROL Load Target]** 操作。
 
 ## 库页眉和库页脚
 

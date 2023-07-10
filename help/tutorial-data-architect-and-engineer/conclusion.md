@@ -6,10 +6,10 @@ description: 在本课程中，您将使用Adobe的Admin Console配置Adobe Expe
 role: Data Architect, Data Engineer
 jira: KT-4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 4%
 
 主要资源：
 
-* [Experience Platform 教程](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
+* [Experience Platform 教程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=zh-Hans)
 * [Experience Platform 文档](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=zh-Hans)
 * [Experience League课程](https://experienceleague.adobe.com/#dashboard/learning)
 

@@ -1,8 +1,9 @@
 ---
 title: 配置标记属性
 description: 了解如何在中配置标记属性 [!UICONTROL 数据收集] 界面。
+feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '715'
 ht-degree: 10%
@@ -33,9 +34,8 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 ## 初始设置
 
 1. 创建新的移动标记属性：
-   1. 在 [数据收集界面](https://experience.adobe.com/data-collection?lang=zh-Hans/){target="_blank"}，选择 **[!UICONTROL 标记]** 在左侧导航中
+   1. 在 [数据收集界面](https://experience.adobe.com/data-collection/){target="_blank"}，选择 **[!UICONTROL 标记]** 在左侧导航中
    1. 选择 **[!UICONTROL 新建属性]**
-
       ![创建标记属性](assets/mobile-tags-new-property.png).
    1. 对于 **[!UICONTROL 名称]**，输入 `Mobile SDK Course`.
    1. 对于 **[!UICONTROL Platform]**，选择 **[!UICONTROL 移动设备]**.

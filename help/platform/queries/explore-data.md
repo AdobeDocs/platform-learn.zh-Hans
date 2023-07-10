@@ -2,10 +2,11 @@
 title: 浏览数据
 description: 了解如何使用 SQL 函数验证提取的数据、预览数据以及探索数据的统计和分析属性。
 feature: Queries
+role: Data Engineer
 jira: KT-7684
 thumbnail: 333415.jpg
 exl-id: 7288da8f-4646-4519-81cc-dae33d79b86e
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 77%

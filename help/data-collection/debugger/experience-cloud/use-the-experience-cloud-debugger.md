@@ -1,25 +1,28 @@
 ---
-title: 如何使用Adobe Experience Cloud Debugger
+title: 如何使用Adobe Experience Cloud调试器
 description: 了解如何使用 Adobe Experience Cloud Debugger 帮助您了解 Experience Cloud 实施并对这些实施进行故障排除。
 landing-page-description: 了解如何使用 Experience Cloud Debugger 为您的实施排除故障。了解实施了什么 Adobe 解决方案及其作出了什么调用。
 short-description: 了解如何使用 Experience Cloud Debugger 为您的实施排除故障。了解实施了什么 Adobe 解决方案及其作出了什么调用。
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/use-the-experience-cloud-debugger.html
+feature: Debugger
+role: Data Engineer
+level: Beginner
 thumbnail: 23114.jpeg
 exl-id: 6428ce8e-8a99-4b0b-83d8-02795447179f
-source-git-commit: 8c602618cee3b0167d4d864b24b936d719d730a6
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '190'
 ht-degree: 50%
 
 ---
 
-# 如何使用Adobe Experience Cloud Debugger
+# 如何使用Adobe Experience Cloud调试器
 
-了解如何使用 Adobe Experience Cloud Debugger 帮助您了解您的 Experience Cloud 实施并为其排除故障。Debugger经过优化，可准确显示实施了哪些Adobe解决方案及其进行了哪些调用(特别是对于Analytics、Target、Audience Manager、Ad Cloud、标记、Dynamic Tag Management和Identity服务)
+了解如何使用 Adobe Experience Cloud Debugger 帮助您了解您的 Experience Cloud 实施并为其排除故障。Debugger已经过优化，可向您准确显示实施了哪些Adobe解决方案及其进行了哪些调用 — 特别是对于Analytics、Target、Audience Manager、Ad Cloud、tags、Dynamic Tag Management和Identity Service
 
 >[!NOTE]
 >
->考虑升级到 [Adobe Experience Platform Debugger](../overview.md)，此扩展是此视频中特有的扩展的更新版本，包含对Platform Web SDK等新功能的支持。
+>考虑升级到 [Adobe Experience Platform调试器](../overview.md)，此扩展是本视频中展示的扩展的更新版本，包含对Platform Web SDK等新功能的支持。
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/23064/?quality=12)

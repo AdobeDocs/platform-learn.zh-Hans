@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3344'
 ht-degree: 1%
 
 ---
@@ -30,6 +30,7 @@ ht-degree: 1%
 **数据工程师** 将需要在本教程之外摄取流数据。 在实施Adobe Experience Platform的Web或移动SDK时，通常由Web或移动开发人员参与数据层创建和标记属性配置。
 
 在开始练习之前，请观看这两个简短视频，详细了解流数据摄取和Web SDK：
+
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
@@ -454,7 +455,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
 * [利用 Web SDK 实施 Adobe Experience Cloud](/help/tutorial-web-sdk/overview.md)
 * [流摄取文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html?lang=zh-Hans)
-* [流摄取API参考](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
+* [流摄取API参考](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
 做得好！这是关于Web SDK和Launch的大量信息。 现在，还有更多内容需要投入到全面实施中，但是这些是帮助您开始使用Platform并查看结果的基础知识。
 

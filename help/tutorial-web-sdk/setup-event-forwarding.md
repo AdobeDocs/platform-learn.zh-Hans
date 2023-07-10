@@ -1,9 +1,9 @@
 ---
 title: 设置事件转发属性
 description: 了解如何使用Experience PlatformWeb SDK数据来使用事件转发属性。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
-feature: Event Forwarding
+feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
 workflow-type: tm+mt
 source-wordcount: '1887'
 ht-degree: 3%
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
-   <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
 
 
 >[!NOTE]
@@ -45,7 +45,7 @@ ht-degree: 3%
 * 包含事件转发的软件许可证。 事件转发是数据收集的一项付费功能。 有关更多详细信息，请联系您的Adobe客户团队。
 * 已在您的Experience Cloud组织中启用事件转发。
 * 事件转发的用户权限。 (In [Admin Console](https://adminconsole.adobe.com/)，在Adobe Experience Platform Launch产品下，的权限项[!UICONTROL 平台] > [!UICONTROL Edge] 和所有 [!UICONTROL 资产权限])。 授予权限后，您应会看到 [!UICONTROL 事件转发] 在数据收集界面的左侧导航中：
-   ![事件转发属性](assets/event-forwarding-menu.png)
+  ![事件转发属性](assets/event-forwarding-menu.png)
 
 * 配置为将数据发送到Edge Network的Adobe Experience Platform Web或移动SDK。 您必须完成本教程中的以下课程：
 
@@ -55,13 +55,13 @@ ht-degree: 3%
       * [配置XDM架构](configure-schemas.md)
       * [配置身份命名空间](configure-identities.md)
       * [配置数据流](configure-datastream.md)
+
    * 标记配置
 
       * [安装Web SDK扩展](install-web-sdk.md)
       * [创建数据元素](create-data-elements.md)
       * [创建标记规则](create-tag-rule.md)
       * [使用Adobe Experience Platform Debugger进行验证](validate-with-debugger.md)
-
 
 
 ## 创建事件转发属性
@@ -91,7 +91,6 @@ ht-degree: 3%
    ![选择Luma Web SDK数据流](assets/datastream-luma-web-sdk.png)
 
 1. 选择 **[!UICONTROL 添加服务]**
-
    ![向数据流添加服务](assets/event-forwarding-datastream-addService.png)
 1. 选择 **[!UICONTROL 事件转发]** 作为 **[!UICONTROL 服务]**
 
@@ -183,6 +182,7 @@ ht-degree: 3%
 
 
    >[!TIP]
+   >
    使用您自己的网站时，您可以使用Web浏览器网络工具找到XDM对象路径，并过滤 `/ee` 请求，打开信标 [!UICONTROL **有效负荷**] 并向下钻取到要查找的变量。 然后，用鼠标右键单击并选择“复制属性路径”。 以下是浏览器视区高度的示例：
    ![事件转发XDM路径](assets/event-forwarding-xdm-path.png)
 
@@ -277,6 +277,7 @@ ht-degree: 3%
 创建一个库并生成对事件转发开发环境的所有更改，就像在标记资产中通常所做的那样。
 
 >[!NOTE]
+>
 如果尚未将暂存和生产事件转发属性链接到数据流，您将看到开发环境是生成库的唯一选项。
 
 ![保存事件转发规则](assets/event-forwarding-initial-build.png)
@@ -319,4 +320,5 @@ ht-degree: 3%
 [下一步： ](conclusion.md)
 
 >[!NOTE]
+>
 感谢您投入时间来了解Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此分享这些内容 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
