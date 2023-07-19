@@ -4,10 +4,10 @@ breadcrumb-title: 教程
 user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
-source-git-commit: 8bd3dd0cddcc7daec1b1af582b28e2dd844cc7ae
+source-git-commit: 88a876834089348a2eb0be92ca2bd03e91d49caf
 workflow-type: tm+mt
-source-wordcount: '943'
-ht-degree: 32%
+source-wordcount: '955'
+ht-degree: 33%
 
 ---
 
@@ -41,6 +41,26 @@ ht-degree: 32%
    + [配置基于属性的访问控制](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [管理产品配置文件](/help/platform/admin/managing-product-profiles.md)
++ 受众和分段 {#audiences}
+   + [受众门户和构成简介](audiences/introduction-to-audience-portal-and-composition.md)
+   + [上传受众](audiences/upload-audiences.md)
+   + [受众规则生成器概述](audiences/audience-rule-builder-overview.md)
+   + [创建受众](audiences/create-audiences.md)
+   + [创建基于内容的受众](audiences/create-content-based-audiences.md)
+   + [创建转化受众](audiences/create-conversion-audiences.md)
+   + [从现有受众创建受众](audiences/create-audiences-from-existing-audiences.md)
+   + [创建顺序受众](audiences/create-sequential-audiences.md)
+   + [创建动态受众](audiences/create-dynamic-audiences.md)
+   + [创建多实体受众](audiences/create-multi-entity-audiences.md)
+   + [使用B2B数据创建受众](audiences/create-audiences-with-b2b-data.md)
+   + [流式客户细分演示](/help/platform/audiences/streaming-segmentation-demo.md)
+   + [评估受众规则](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+   + [创建数据集以导出数据](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [区段匹配连接设置](/help/platform/segments/segment-match-connection-setup.md)
+   + [区段匹配数据管理](/help/platform/segments/segment-match-data-governance.md)
+   + [区段匹配配置流程](/help/platform/segments/segment-match-configuration-flow.md)
+   + [区段匹配预共享 Insights](/help/platform/segments/segment-match-pre-share-insights.md)
+   + [区段匹配接收数据](/help/platform/segments/segment-match-receiving-data.md)
 + [审核日志](/help/platform/governance/audit-logs.md)
 + [数据收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + 仪表板 {#dashboards}
@@ -104,7 +124,7 @@ ht-degree: 32%
       + [在Target中使用Real-Time CDP区段](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [在Target中使用Real-Time CDP配置文件属性](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [将数据激活到非Adobe应用程序网络研讨会](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
-+ 标识 {#identities}
++ 身份 {#identities}
    + [身份和身份图概述](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [标记、引入并验证身份数据](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [查看身份图](/help/platform/identities/view-identity-graphs.md)
@@ -122,7 +142,7 @@ ht-degree: 32%
    + [监测数据提取](/help/platform/monitoring/monitoring-dashboard.md)
    + [监测区段激活](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [监测数据流](/help/platform/monitoring/data-monitoring.md)
-+ 用户档案 {#profiles}
++ 配置文件 {#profiles}
    + [了解Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [配置文件概述图](/help/platform/profiles/overview-diagram.md)
    + [将数据引入配置文件](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
@@ -137,9 +157,9 @@ ht-degree: 32%
    + [隐私JavaScript库](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analytics中的隐私标签](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Privacy ServiceAPI快速入门](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [PRIVACY SERVICEUI](/help/platform/privacy/using-privacy-services-ui.md)
-   + [PRIVACY SERVICEAPI](/help/platform/privacy/using-the-privacy-service-api.md)
-   + [订阅隐私事件](/help/platform/privacy/subscribe-to-privacy-events.md)
+   + [Privacy Service UI](/help/platform/privacy/using-privacy-services-ui.md)
+   + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [订阅隐私活动](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [设置客户管理的密钥](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [负责任的客户数据管理的 10 个注意事项](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [提升营销人员作为数据管理者的角色](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
@@ -173,24 +193,6 @@ ht-degree: 32%
    + [在沙盒之间复制架构](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [更新架构](/help/platform/schemas/update-schemas.md)
    + [创建临时架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
-+ 区段{#segments}
-   + [区段生成器概述](/help/platform/segments/segment-builder-overview.md)
-   + [创建区段](/help/platform/segments/create-segments.md)
-   + [创建基于内容的区段](/help/platform/segments/create-content-based-segments.md)
-   + [创建转化区段](/help/platform/segments/create-conversion-segments.md)
-   + [从现有区段创建区段](/help/platform/segments/create-segments-from-existing-segments.md)
-   + [创建顺序区段](/help/platform/segments/create-sequential-segments.md)
-   + [创建动态区段](/help/platform/segments/create-dynamic-segments.md)
-   + [创建多实体区段](/help/platform/segments/create-multi-entity-segments.md)
-   + [使用B2B数据创建区段](/help/platform/segments/create-segments-with-b2b-data.md)
-   + [流式客户细分演示](/help/platform/segments/streaming-segmentation-demo.md)
-   + [评估区段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-   + [创建数据集以导出数据](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
-   + [区段匹配连接设置](/help/platform/segments/segment-match-connection-setup.md)
-   + [区段匹配数据管理](/help/platform/segments/segment-match-data-governance.md)
-   + [区段匹配配置流程](/help/platform/segments/segment-match-configuration-flow.md)
-   + [区段匹配预共享 Insights](/help/platform/segments/segment-match-pre-share-insights.md)
-   + [区段匹配接收数据](/help/platform/segments/segment-match-receiving-data.md)
 + 源 {#sources}
    + [源概述](/help/platform/sources/overview.md)
    + [从Adobe Analytics引入数据](/help/platform/sources/ingest-data-from-adobe-analytics.md)
