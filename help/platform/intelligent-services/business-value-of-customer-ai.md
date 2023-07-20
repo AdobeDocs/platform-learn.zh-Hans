@@ -1,13 +1,13 @@
 ---
 title: 客户人工智能的商业价值
 description: 此视频展示了客户人工智能如何通过基于人工智能的倾向性来丰富客户档案，并支持客户细分和定位工作。
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
 jira: KT-6247
 thumbnail: 40374.jpg
 exl-id: 2dc34425-62e7-4d56-ab13-6855371b1d7d
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 75%

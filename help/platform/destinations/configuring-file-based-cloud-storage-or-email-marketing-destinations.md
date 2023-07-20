@@ -1,13 +1,13 @@
 ---
 title: 配置基于文件的云存储或电子邮件营销目标
 description: 在演练如何在Adobe的Real-Time CDP中配置基于文件的目标的过程中获取提示。 这适用于云存储目标（例如S3或SFTP）以及电子邮件营销目标。
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 role: User
 feature: Destinations
 jira: KT-6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '158'
 ht-degree: 10%

@@ -1,13 +1,13 @@
 ---
 title: 将IAB的透明度和同意框架2.0与Adobe Real-time Customer Data Platform集成
 description: 此视频展示了 Adobe 的“实时客户数据平台”如何在品牌加入数字资产后，帮助品牌尊重消费者的知情同意权。通过 IAB Transparency & Consent Framework 2.0 的支持，品牌在加大消费者对其知情同意权的控制力度的同时，围绕如何与消费者互动，获得了更大的灵活性。
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 role: Data Architect
 feature: Destinations
 jira: KT-5950
 thumbnail: 38346.jpg
 exl-id: 337b97d0-fd29-4bdb-a79a-9fe428adaae8
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
 workflow-type: tm+mt
 source-wordcount: '118'
 ht-degree: 84%
