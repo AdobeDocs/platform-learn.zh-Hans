@@ -1,26 +1,23 @@
 ---
-title: 如何從Adobe Real-time CDP啟用區段和設定檔屬性至Adobe Target？
-description: 瞭解如何從Adobe Real-time Customer Data Platform啟用Adobe Target的區段和設定檔屬性，以在您的網站、行動應用程式和其他數位屬性中顯示即時個人化內容。
+title: 如何将AdobeReal-time CDP中的区段和配置文件属性激活到Adobe Target？
+description: 了解如何从Adobe Real-time Customer Data Platform向Adobe Target激活区段和配置文件属性，以在您的网站、移动应用程序和其他数字资产中显示实时个性化内容。
 feature: Destinations
 role: User
 level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13140
-source-git-commit: 7195ef3b361424079069202f4835728c265b12f1
+exl-id: 10d19094-0fc3-4075-b52e-684805c85213
+source-git-commit: c25b0b613618401d51463a108dde8e4a6d3393b1
 workflow-type: tm+mt
-source-wordcount: '138'
-ht-degree: 0%
+source-wordcount: '103'
+ht-degree: 4%
 
 ---
 
+# 激活区段和配置文件属性
 
-# 啟用區段和設定檔屬性
+了解如何从Adobe Real-time Customer Data Platform向Adobe Target激活区段和配置文件属性，以在您的网站、移动应用程序和其他数字资产中显示实时个性化内容。 欲了解更多信息，请参见 [将受众数据激活到配置文件请求目标文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-profile-request-destinations.html).
 
-瞭解如何從Adobe Real-time Customer Data Platform啟用Adobe Target的區段和設定檔屬性，以在您的網站、行動應用程式和其他數位屬性中顯示即時個人化內容。 如需詳細資訊，請參閱 [將受眾資料啟用至設定檔請求目的地檔案](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-profile-request-destinations.html).
-
->[!IMPORTANT]
->
->Real-Time CDP設定檔屬性功能目前處於Beta版。 包含設定檔屬性功能的增強型Adobe Target V2目的地聯結器目前為測試版，僅適用於特定數量的客戶。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419036/?learn=on)

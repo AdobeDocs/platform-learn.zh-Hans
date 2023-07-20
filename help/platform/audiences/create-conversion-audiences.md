@@ -8,16 +8,20 @@ doc-type: feature video
 thumbnail: 333303.jpg
 jira: KT-7890
 exl-id: 5a4e4cce-5371-4731-978e-2ace22fb4551
-source-git-commit: 4767adf8daee2ba9f432ffbb3a30468504c12694
+source-git-commit: 63edf327306054ffbcd4a842961a67fea6e85ff9
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 7%
+source-wordcount: '113'
+ht-degree: 6%
 
 ---
 
 # 创建转化受众
 
 在本视频中，了解如何在Experience Platform中使用受众规则生成器创建已在网站或其他数据系统中执行转化事件的受众。
+
+>[!NOTE]
+>
+> ”[!UICONTROL 区段]已重命名“ ”[!UICONTROL 受众]&quot;。 选择 **[!UICONTROL 创建受众]** > **[!UICONTROL 生成规则]** 以输入本视频中介绍的规则生成器。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333303/?quality=12&learn=on)
 
