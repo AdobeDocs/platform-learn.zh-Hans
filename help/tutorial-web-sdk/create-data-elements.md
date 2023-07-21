@@ -3,9 +3,9 @@ title: 创建数据元素
 description: 了解如何在标记中创建XDM对象并将数据元素映射到该对象。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 9b112881a3b062cbd56502b3644c701c82380735
+source-git-commit: 28333d3079f586996cd6b6933831ffd9f3caacd1
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1179'
 ht-degree: 4%
 
 ---
@@ -131,10 +131,18 @@ ht-degree: 4%
 -->
 
 1. 作为 **[!UICONTROL 已验证状态]**，选择 **[!UICONTROL 已验证]**
+1. 选择 **[!UICONTROL 主要]**
 
 1. 选择 **[!UICONTROL 保存]**
 
    ![数据收集界面](assets/identity-id-namespace.png)
+
+>[!TIP]
+>
+> Adobe建议发送代表个人的身份，例如 `Luma CRM Id`，作为 [!UICONTROL 主要] 身份。
+
+
+
 
 <!--
 1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
