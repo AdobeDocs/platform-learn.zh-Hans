@@ -3,7 +3,7 @@ title: 创建数据元素
 description: 了解如何在标记中创建XDM对象并将数据元素映射到该对象。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 0c9c8c679c2c0b3446e802bf52028194b08e6644
+source-git-commit: e1c7ab68d0292edaaa3a93ae8da8cd49d8b4874c
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 4%
@@ -141,7 +141,7 @@ ht-degree: 4%
 >
 > Adobe建议发送代表个人的身份，例如 `Luma CRM Id`，作为 [!UICONTROL 主要] 身份。
 >
-> 如果身份映射包含这两者 `Luma CRM Id` 和ECID，然后 `Luma CRM Id` 会变为 [!UICONTROL 主要] 身份。 如果标识映射仅包含ECID，则ECID将变为 [!UICONTROL 主要] 身份。
+> 如果身份映射包含人员标识符（例如Luma CRM Id），则人员标识符将变为 [!UICONTROL 主要] 身份。 否则，ECID将变为 [!UICONTROL 主要] 身份。
 
 
 
