@@ -3,11 +3,11 @@ user-guide-title: “利用 Web SDK 实施 Adobe Experience Cloud”教程
 breadcrumb-title: Web SDK 教程
 solution: Data Collection
 feature: Web SDK,Tags
-role: Data Engineer
+role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '81'
 ht-degree: 25%
@@ -15,7 +15,7 @@ ht-degree: 25%
 ---
 
 
-# 使用Web SDK教程实施Adobe Experience Cloud。 {#implement-web-sdk}
+# 使用Web SDK实施Adobe Experience Cloud教程。 {#implement-web-sdk}
 
 + [教程概述](overview.md)
 + 初始配置 {#initial-configuration}

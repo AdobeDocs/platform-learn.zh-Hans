@@ -1,12 +1,13 @@
 ---
 title: 创建数据类型
-description: 本视频说明如何在Adobe Experience Platform中创建用于Experience Data Model (XDM)架构的数据类型。
-role: Data Architect
+description: 本视频说明如何在Adobe Experience Platform中创建用于体验数据模型(XDM)架构的数据类型。
 feature: Schemas
+role: Data Architect, Developer
+level: Beginner
 jira: KT-7934
 thumbnail: 333537.jpg
 exl-id: 00239ee1-db57-4bd0-acfc-5ba27a9c8fb6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '64'
 ht-degree: 9%
@@ -15,7 +16,7 @@ ht-degree: 9%
 
 # 创建数据类型
 
-本视频说明如何在Adobe Experience Platform中创建用于Experience Data Model (XDM)架构的数据类型。
+本视频说明如何在Adobe Experience Platform中创建用于体验数据模型(XDM)架构的数据类型。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333537?quality=12&learn=on)
 

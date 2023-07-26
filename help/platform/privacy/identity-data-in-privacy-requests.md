@@ -1,12 +1,13 @@
 ---
 title: 审核存储的个人数据
-description: 了解与审核个人数据和根据业务的隐私需求准备相关的关键概念和决策。
-role: Data Engineer, Data Architect
+description: 了解与审核个人数据相关的关键概念和决策，以及根据业务的隐私需求进行准备。
 feature: Privacy
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-7717
 thumbnail: 336076.png
 exl-id: c5533831-5bba-45c6-8ff8-eb38accf0d42
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '65'
 ht-degree: 9%
@@ -15,7 +16,7 @@ ht-degree: 9%
 
 # 审核存储的个人数据
 
-了解与审核个人数据和根据业务的隐私需求准备相关的关键概念和决策。
+了解与审核个人数据相关的关键概念和决策，以及根据业务的隐私需求进行准备。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336076?quality=12&learn=on)
 

@@ -1,28 +1,29 @@
 ---
 title: 验证和访问 Experience Platform API
 description: 了解如何访问 Adobe Experience Platform API。
-role: Developer
 feature: API
+role: Developer
+level: Beginner
 jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '334'
-ht-degree: 11%
+ht-degree: 18%
 
 ---
 
-# 身份验证和访问 [!DNL Experience Platform] API
+# 验证和访问[!DNL Experience Platform]API
 
-了解如何使用Adobe Experience Platform API。 本教程将指导您完成创建身份验证凭据并开始发出Experience PlatformAPI请求的过程。
+了解如何开始使用Adobe Experience Platform API。 本教程将指导您完成创建身份验证凭据并开始发出Experience PlatformAPI请求的过程。
 
 ## 在Adobe Developer控制台中创建项目并导出Postman环境{#export-integration-details-to-postman}
 
 [[!DNL Postman]](https://www.postman.com/) 是第三方应用程序，可帮助开发人员快速轻松地与Adobe Experience Platform API交互。
 
-[Adobe Developer控制台的](https://developer.adobe.com/console/home) **导出Postman的详细信息** 此功能提供了一种简单的方式来导出在单个Postman Environment文件中访问和与Experience PlatformAPI交互所需的帐户详细信息，从而无需从Adobe Developer Console将值复制并粘贴到Postman中。
+[Adobe Developer控制台的](https://developer.adobe.com/console/home) **导出Postman的详细信息** 通过功能，可以轻松地将访问一个Postman Environment文件中的Experience PlatformAPI并与之交互所需的帐户详细信息导出，从而无需从Adobe Developer Console中将值复制并粘贴到Postman中。
 
 >[!IMPORTANT]
 >
@@ -44,7 +45,7 @@ ht-degree: 11%
 
 ## 使用Postman与Experience PlatformAPI交互
 
-探索使用与Adobe Experience Platform API交互 [Adobe提供的Experience PlatformAPI Postman收藏集](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)，构建在 [Adobe Developer控制台环境变量](#export-integration-details-to-postman) 和 [生成的访问令牌](#generate-an-access-token-with-postman).
+探索使用与Adobe Experience Platform API交互 [Adobe提供的Experience PlatformAPI Postman收藏集](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)，基于 [Adobe Developer控制台环境变量](#export-integration-details-to-postman) 和 [生成的访问令牌](#generate-an-access-token-with-postman).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
 

@@ -1,12 +1,13 @@
 ---
 title: 为隐私请求的Analytics数据设置标签
 description: 了解将数据隐私标签添加到Analytics变量的过程，包括划分每个标签类型的含义以及何时使用它们。
-role: Data Engineer, Data Architect
 feature: Privacy
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-7718
 thumbnail: 336077.png
 exl-id: a7662d99-d3c4-4cb1-8c72-afaa04b628a6
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 7%

@@ -2,11 +2,10 @@
 title: 使用依赖关系管理器
 description: 了解如何使用CocoaPods和Gradle管理Mobile SDK扩展和依赖项。
 feature: Mobile SDK
-role: Developer
 level: Beginner
 jira: KT-2638
 exl-id: 92b8c63a-0ce5-493e-8ebd-2fabfa88d37e
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '61'
 ht-degree: 0%
@@ -19,6 +18,6 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 现在启动 **[!DNL tags]**
+> Launch现在为 **[!DNL tags]**
 
 >[!VIDEO](https://video.tv.adobe.com/v/26263/?quality=12&learn=on)

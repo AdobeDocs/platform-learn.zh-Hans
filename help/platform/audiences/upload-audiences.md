@@ -4,11 +4,10 @@ description: 了解如何将CSV格式的受众上传到Adobe Experience Platform
 feature: Segments
 role: User
 level: Beginner
-doc-type: Feature Video
-last-substantial-update: 2023-07-19T00:00:00Z
 jira: KT-13699
 thumbnail: 3421714.jpeg
-source-git-commit: 4767adf8daee2ba9f432ffbb3a30468504c12694
+last-substantial-update: 2023-07-19T00:00:00Z
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '36'
 ht-degree: 0%

@@ -1,14 +1,15 @@
 ---
 title: 从Marketo Engage引入数据
-description: 了解如何使用标准工作流和模板工作流，使用源连接器从Marketo Engage摄取数据。
+description: 了解如何使用标准工作流和模板工作流，通过源连接器从Marketo Engage摄取数据。
 solution: Real-Time Customer Data Platform
 feature: Sources
-role: Data Engineer, Data Architect
-jira: KT-9259, 13303
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
+jira: KT-9259, KT-13303
 last-substantial-update: 2023-05-24T00:00:00Z
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -17,11 +18,11 @@ ht-degree: 0%
 
 # 从Marketo Engage引入数据
 
-了解如何使用两个工作流通过源连接器轻松地将数据从Marketo Engage摄取到Real-time Customer Data Platform、B2B版本和Adobe Experience Platform。
+了解如何使用两个工作流的source connector将数据从Marketo Engage轻松地摄取到Real-time Customer Data Platform、B2B Edition和Adobe Experience Platform中。
 
 ## 模板工作流
 
-了解如何使用模板工作流为Marketo配置源连接器。 此工作流会根据模板自动生成引入Marketo数据所需的资源。 它节省了前期时间，并且可以根据您的需求自定义资产。
+了解如何使用模板工作流为Marketo配置源连接器。 此工作流会根据模板自动生成引入Marketo数据所需的资产。 这样可节省前期时间，并且可根据您的需求自定义资产。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419550?quality=12&learn=on)
 
@@ -33,4 +34,4 @@ ht-degree: 0%
 
 有关更多信息，请参阅以下文档：
 * [Marketo Engage源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
-* [使用UI中的模板创建源数据流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [在UI中使用模板创建源数据流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

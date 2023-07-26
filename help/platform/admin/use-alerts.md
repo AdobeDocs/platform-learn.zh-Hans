@@ -1,12 +1,13 @@
 ---
 title: 使用警报
-description: 了解如何在 Adobe Experience Platform 中订阅和管理警报。警报可帮助您监控各种进程，以确保您的Platform实施顺利运行。
-role: Data Engineer, User, Admin
+description: 了解如何在 Adobe Experience Platform 中订阅和管理警报。警报可帮助您监控各种进程，以确保您的Platform实施顺畅运行。
 feature: Alerts
+role: Data Engineer, User, Admin
+level: Beginner
 jira: KT-8324
 thumbnail: 336218.jpg
 exl-id: 56f927db-1f16-4c0b-a0e0-a25e43f1a535
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 47%
@@ -15,7 +16,7 @@ ht-degree: 47%
 
 # 使用警报
 
-了解如何在 Adobe Experience Platform 中订阅和管理警报。警报可帮助您监控各种进程，以确保您的Platform实施顺利运行。
+了解如何在 Adobe Experience Platform 中订阅和管理警报。警报可帮助您监控各种进程，以确保您的Platform实施顺畅运行。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336218?quality=12&learn=on)
 

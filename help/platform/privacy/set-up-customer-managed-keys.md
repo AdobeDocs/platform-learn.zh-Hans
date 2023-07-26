@@ -2,13 +2,13 @@
 title: 设置客户管理的密钥(CMK)
 description: 使用您自己的加密密钥管理静态数据加密。
 feature: Privacy
-role: Admin, Data Architect
+role: Admin, Data Architect, Data Engineer, Developer
 level: Experienced
-last-substantial-update: 2022-11-01T00:00:00Z
 jira: KT-11382
 thumbnail: 3410673.jpeg
+last-substantial-update: 2022-11-01T00:00:00Z
 exl-id: 04cb1aeb-3260-4259-bb02-8392d9d787a2
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '100'
 ht-degree: 7%
@@ -27,4 +27,4 @@ ht-degree: 7%
 
 >[!WARNING]
 >
->设置CMK后，无法还原为系统管理的密钥。 您有责任安全地管理您的密钥，并提供对Azure中您的密钥保管库、密钥和CMK应用程序的访问权限，以防止无法访问您的数据。
+>设置CMK后，无法还原为系统管理的密钥。 您有责任安全地管理您的密钥，并提供对Azure中您的密钥库、密钥和CMK应用程序的访问权限，以防止无法访问您的数据。

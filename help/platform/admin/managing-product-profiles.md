@@ -1,12 +1,13 @@
 ---
 title: 产品配置文件
 description: 了解如何创建产品配置文件并分配用户、开发人员、管理员和权限。
-role: Admin, User
 feature: Access Control
+role: Admin, User
+level: Beginner
 jira: KT-7924
 thumbnail: 336081.jpg
 exl-id: f29d8a20-9af9-4f87-949e-bb9393ccf049
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 80%

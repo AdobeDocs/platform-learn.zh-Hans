@@ -2,10 +2,11 @@
 title: 生成第一方设备 ID
 description: 了解如何生成第一方设备 ID
 feature: Web SDK
+level: Experienced
 jira: KT-9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '687'
 ht-degree: 2%
@@ -20,41 +21,41 @@ Adobe Experience Cloud应用程序传统上会使用不同的技术生成Cookie�
 1. Adobe服务器使用域名的CNAME配置设置的第一方Cookie
 1. JavaScript设置的第一方Cookie
 
-最近的浏览器更改限制了这些类型Cookie的持续时间。 当使用客户拥有的服务器设置第一方Cookie（使用DNS A/AAAA记录而不是DNS CNAME）时，它们最有效。 通过第一方设备ID (FPID)功能，实施Adobe Experience Platform Web SDK的客户可以从使用DNS A/AAAA-records的服务器上使用Cookie中的设备ID。 然后，可以将这些ID发送到Adobe，并将其用作种子来生成Experience CloudID (ECID)，该ID仍是Adobe Experience Cloud应用程序中的主要标识符。
+最近的浏览器更改限制了这类Cookie的持续时间。 在使用客户拥有的服务器（使用DNS A/AAAA记录而非DNS CNAME）设置第一方Cookie时，它们最有效。 第一方设备ID (FPID)功能允许实施Adobe Experience Platform Web SDK的客户使用DNS A/AAAA-records在来自服务器的Cookie中使用设备ID。 然后，可以将这些ID发送到Adobe，并用作种子来生成Experience CloudID (ECID)，这仍然是Adobe Experience Cloud应用程序中的主要标识符。
 
-下面是该功能如何工作的快速示例：
+以下是有关该功能的工作原理的简短示例：
 
 ![第一方设备ID (FPID)和Experience CloudID (ECID)](../assets/kt-9728.png)
 
 1. 最终用户的浏览器从客户的Web服务器或CDN请求网页。
-1. 客户在其Web服务器或CDN上生成一个设备ID (FPID)（Web服务器应绑定到域名的DNS A/AAAA-record）。
+1. 客户在其Web服务器或CDN上生成设备ID (FPID)（Web服务器应绑定到域名的DNS A/AAAA-record）。
 1. 客户设置第一方Cookie以将FPID存储在最终用户的浏览器中。
 1. 客户的Adobe Experience Platform Web SDK实施会向Platform Edge Network发出请求，包括标识映射中的FPID。
 1. Experience Platform边缘网络接收FPID并使用它生成Experience CloudID (ECID)。
 1. Platform Web SDK响应会将ECID发送回最终用户的浏览器。
-1. 如果 `idMigrationEnabled=true`，Platform Web SDK使用JavaScript将ECID存储为 `AMCV_` 最终用户浏览器中的Cookie。
-1. 如果 `AMCV_` Cookie过期，该过程将自行重复。 只要相同的第一方设备ID可用，就会有一个新的 `AMCV_` Cookie是使用与之前相同的ECID值创建的。
+1. 如果 `idMigrationEnabled=true`， Platform Web SDK使用JavaScript将ECID存储为 `AMCV_` 最终用户浏览器中的Cookie 。
+1. 如果 `AMCV_` Cookie过期，该过程将自行重复。 只要相同的第一方设备ID可用，就会有一个新的 `AMCV_` 创建的Cookie与之前的ECID值相同。
 
 >[!NOTE]
 >
 >此 `idMigrationEnabled` 不需要设置为 `true` 以使用FPID。 替换为 `idMigrationEnabled=false` 您可能看不到 `AMCV_` 但是，和Cookie将需要在网络响应中查找ECID值。
 
 
-在本教程中，使用了一个使用PHP脚本语言的特定示例来说明如何：
+在本教程中，我们使用了一个使用PHP脚本语言的特定示例来说明如何：
 
 * 生成UUIDv4
 * 将UUIDv4值写入Cookie
 * 在身份映射中包含Cookie值
 * 验证ECID生成
 
-有关第一方设备ID的其他文档可在产品文档中找到。
+在产品文档中可找到与第一方设备ID相关的其他文档。
 
 ## 生成UUIDv4
 
-PHP没有用于生成UUID的本地库，因此这些代码示例比使用其他编程语言时可能需要的代码示例更加广泛。 选择PHP是因为它是一种广泛支持的服务器端语言。
+PHP没有用于生成UUID的本地库，因此这些代码示例比使用其他编程语言时可能需要的代码示例更加广泛。 PHP之所以选择用于此示例，是因为它是一种广泛支持的服务器端语言。
 
 
-调用以下函数时，会生成一个随机UUID版本4：
+调用以下函数时，会生成一个随机的UUID版本4：
 
 ```
 <?php
@@ -74,7 +75,7 @@ PHP没有用于生成UUID的本地库，因此这些代码示例比使用其他�
 
 ## 将UUIDv4值写入Cookie
 
-以下代码向上述函数发出请求以生成UUID。 然后，它会设置由您的组织决定的Cookie标记。 如果已生成Cookie，则会延长到期时间。
+以下代码会向上述函数发出请求以生成UUID。 然后，它会设置由您的组织决定的Cookie标记。 如果已生成Cookie，则会延长到期时间。
 
 ```
 <?php
@@ -145,8 +146,8 @@ PHP没有用于生成UUID的本地库，因此这些代码示例比使用其他�
 1. 生成FPID Cookie。
 1. 使用Platform Web SDK向Platform Edge Network发送请求。
 1. 格式为的cookie `AMCV_<IMSORGID@AdobeOrg>` 生成。 此Cookie包含ECID。
-1. 记下生成的Cookie值，然后删除网站的所有Cookie，但 `FPID` Cookie。
+1. 记下生成的Cookie值，然后删除网站的所有Cookie，但以下内容除外 `FPID` Cookie。
 1. 向Platform Edge Network发送另一个请求。
-1. 在中确认值 `AMCV_<IMSORGID@AdobeOrg>` Cookie相同 `ECID` 值，如下所示 `AMCV_` 已删除的Cookie。 如果给定FPID的Cookie值相同，则ECID的种子设定过程成功。
+1. 在中确认值 `AMCV_<IMSORGID@AdobeOrg>` Cookie是相同的 `ECID` 值，如下所示 `AMCV_` 已删除的Cookie。 如果给定FPID的Cookie值相同，则ECID的设定种子过程成功。
 
-有关此功能的更多信息，请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).
+有关此功能的详细信息，请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html).

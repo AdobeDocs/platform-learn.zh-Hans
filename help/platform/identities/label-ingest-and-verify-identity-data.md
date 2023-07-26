@@ -1,12 +1,13 @@
 ---
 title: 标记、引入并验证身份数据
 description: 了解如何将数据字段标记为身份、提取身份数据以及验证 Adobe Experience Platform Identity Service 私有图中的数据。
-role: Data Architect
 feature: Identities
+role: Data Architect, Data Engineer, Developer
+level: Beginner
 jira: KT-2707
 thumbnail: 28167.jpg
 exl-id: 9a4fbd95-74e3-4e10-8663-8fafefe324a8
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '75'
 ht-degree: 72%

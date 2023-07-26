@@ -1,12 +1,14 @@
 ---
-title: 使用Marketo Engage和Real-time Customer Data Platform B2B版编排活动
+title: 使用Marketo Engage和Real-time Customer Data Platform B2B版本编排活动
 description: 了解如何使用Marketo Engage和Real-time Customer Data Platform (CDP) B2B版本编排活动。
 solution: Real-Time Customer Data Platform
+feature: Data Ingestion, Segments, Destinations, Profiles, Destinations
 role: User
+level: Intermediate
 jira: KT-9263
 thumbnail: 338254.jpg
 exl-id: 1e5b951a-2b14-4e28-a2f2-818db7a8b376
-source-git-commit: 19656b66225e827769d01e65fd52504b33a4b649
+source-git-commit: cd12d146be122c2b0dc94f1b60816a57ccbb296d
 workflow-type: tm+mt
 source-wordcount: '104'
 ht-degree: 0%
@@ -15,7 +17,7 @@ ht-degree: 0%
 
 # 使用Marketo Engage和Real-time Customer Data Platform (CDP) B2B版本编排活动。
 
-了解如何使用Marketo Engage和Real-time Customer Data Platform (CDP) B2B版本编排B2B营销活动。 了解数据摄取、帐户配置文件、分段和目标如何共同增强B2B营销活动的编排功能。 获取常见问题的答案。
+了解如何使用Marketo Engage和Real-time Customer Data Platform (CDP) B2B版本编排B2B营销活动。 了解数据摄取、帐户配置文件、分段和目标如何相结合来增强B2B活动编排。 获取常见问题的答案。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338254?quality=12&learn=on)
 

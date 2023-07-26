@@ -1,12 +1,13 @@
 ---
 title: 架构和Experience Data Model (XDM)概述
 description: 了解体验数据模型 (XDM)，它是用于描述客户体验的标准数据模型。
-role: Data Architect, Data Engineer
 feature: Schemas
+role: Data Architect, Data Engineer, Developer, User
+level: Beginner
 jira: KT-2696
 thumbnail: 27105.jpg
 exl-id: f517ada0-c106-45f0-96ea-3b3cc8bd03ba
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '96'
 ht-degree: 20%
@@ -15,7 +16,7 @@ ht-degree: 20%
 
 # 架构和Experience Data Model (XDM)概述
 
-体验数据模型(XDM)是用于描述客户体验的标准数据模型。 当您使用XDM构建架构并摄取符合这些架构的数据时，您可以开始使用XDM系统。 XDM System是Adobe Experience Platform中支持实时客户档案、机器学习和Customer Journey Analytics的基础架构。
+体验数据模型(XDM)是用来描述客户体验的标准数据模型。 当您使用XDM构建架构并摄取符合这些架构的数据时，您可以开始使用XDM系统。 XDM System是一种基础架构，它支持Adobe Experience Platform中的实时客户档案、机器学习和Customer Journey Analytics。
 
 >[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
 

@@ -1,13 +1,14 @@
 ---
 title: 计划数据集删除
 description: 了解如何使用Adobe Experience Platform的数据卫生功能删除数据集。
-role: Data Engineer, Data Architect
 feature: Data Hygiene
+role: Data Engineer, Data Architect
+level: Experienced
 jira: KT-10697
 thumbnail: 345065.jpeg
 last-substantial-update: 2022-07-27T00:00:00Z
 exl-id: 7764de70-e0c1-48a8-8d1f-a5426f8d580a
-source-git-commit: 90f7621536573f60ac6585404b1ac0e49cb08496
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '95'
 ht-degree: 6%

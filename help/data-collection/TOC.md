@@ -4,7 +4,8 @@ breadcrumb-title: 数据收集教程
 user-guide-description: 可让您成为 Experience Platform 中数据收集的高级用户的操作方法视频和教程。
 solution: Data Collection,Experience Platform
 doc-type: video
-source-git-commit: 286a5570d33d1d812d1a54c28e1ea4f68f00b988
+role: Developer, Data Engineer
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '239'
 ht-degree: 40%
@@ -45,7 +46,7 @@ ht-degree: 40%
    + [在移动应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans){target="_blank"}
 + 服务器API{#server-api}
    + [概述](server-api/overview.md)
-   + [API基础知识](server-api/introduction.md)
+   + [API基础](server-api/introduction.md)
 + 事件转发{#event-forwarding}
    + [概述](event-forwarding/overview.md)
    + [创建资产](event-forwarding/create-a-property.md)
@@ -55,7 +56,7 @@ ht-degree: 40%
    + [监测事件转发](event-forwarding/monitor.md)
    + [移动客户端标记](event-forwarding/consider-moving-tags.md)
    + [设置Google Ads增强型转化](event-forwarding/set-up-google-ads-enhanced-conversions.md)
-   + [Mailchimp的Adobe扩展](event-forwarding/adobe-extension-for-mailchimp.md)
+   + [适用于Mailchimp的Adobe扩展](event-forwarding/adobe-extension-for-mailchimp.md)
 + 数据流和边缘网络{#edge-network}
    + [配置数据流](edge/configure-datastreams.md)
    + [数据准备](edge/data-prep.md)

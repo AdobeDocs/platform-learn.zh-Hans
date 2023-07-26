@@ -1,13 +1,12 @@
 ---
 title: 添加事件转发扩展
-description: 了解如何在Data Collection中添加事件转发扩展。
+description: 了解如何在数据收集中添加事件转发扩展。
 feature: Event Forwarding
-role: Data Engineer
 level: Intermediate
 jira: KT-6422
 thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -16,11 +15,11 @@ ht-degree: 0%
 
 # 添加事件转发扩展
 
-了解如何在Data Collection中添加事件转发扩展。
+了解如何在数据收集中添加事件转发扩展。
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在界面中推出了几项术语更改，您在使用本内容时应注意这些更改：
+>Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
 > * platform launch（客户端）现在为 **[!DNL tags]**
 > * platform launch服务器端现在为 **[!DNL event forwarding]**

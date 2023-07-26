@@ -1,12 +1,13 @@
 ---
 title: 准备数据
-description: 了解如何清理、准备和合并来自多个数据集的数据，以使用CTAS（创建表AS）和Spark SQL函数创建新的数据集以用于报告和仪表板。
+description: 了解如何清理、准备和合并来自多个数据集的数据，以使用CTAS(Create Table AS)和Spark SQL函数创建新的数据集以用于报告和仪表板。
 feature: Queries
-role: Data Engineer
+role: Data Engineer, Developer
+level: Beginner
 jira: KT-8005
 thumbnail: 333699.jpg
 exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '77'
 ht-degree: 7%
@@ -15,7 +16,7 @@ ht-degree: 7%
 
 # 准备数据
 
-了解如何清理、准备和合并来自多个数据集的数据，以使用CTAS（创建表AS）和Spark SQL函数创建新的数据集以用于报告和仪表板。
+了解如何清理、准备和合并来自多个数据集的数据，以使用CTAS(Create Table AS)和Spark SQL函数创建新的数据集以用于报告和仪表板。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333699?quality=12&learn=on)
 
