@@ -4,9 +4,9 @@ breadcrumb-title: 教程
 user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
-source-git-commit: 9d27093463ecf1af8ed90412475e4fd34d231265
+source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '975'
 ht-degree: 33%
 
 ---
@@ -21,10 +21,10 @@ ht-degree: 33%
    + [Experience Platform 概述](/help/platform/intro-to-platform/overview.md)
    + [主要功能](/help/platform/intro-to-platform/key-capabilities.md)
    + [应用程序和智能服务](/help/platform/intro-to-platform/application-and-intelligent-services.md)
-   + [与Experience Cloud应用程序的集成](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
+   + [与Experience Cloud应用程序集成](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [主要用例](/help/platform/intro-to-platform/key-use-cases.md)
    + [基本架构](/help/platform/intro-to-platform/basic-architecture.md)
-   + [使用Platform用户界面](/help/platform/intro-to-platform/interface-tour.md)
+   + [用户界面](/help/platform/intro-to-platform/interface-tour.md)
    + [角色和项目阶段](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Real-Time CDP简介 {#rtcdp}
    + [概述](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
@@ -105,8 +105,8 @@ ht-degree: 33%
    + [安排服务的自动培训和评分](data-science-workspace/schedule-training-scoring.md)
    + [利用机器学习见解丰富实时客户档案](data-science-workspace/dsw-profile-segmentation.md)
    + [将源文件打包到方法中](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-   + [导入包装的配方(UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
-   + [导入包装的配方(API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
+   + [导入打包的方法(UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
+   + [导入打包的方法(API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + 目标 {#destinations}
    + [目标概述](/help/platform/destinations/understanding-destinations.md)
    + [连接目标](/help/platform/destinations/connecting-to-destinations.md)
@@ -118,13 +118,13 @@ ht-degree: 33%
    + [配置基于文件的云存储或电子邮件营销目标](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [配置社交目标](/help/platform/destinations/configure-a-social-destination.md)
    + Adobe Target和自定义个性化{#target}
-      + [使用Adobe Target实现下一次点击个性化](/help/platform/destinations/target/next-hit-personalization.md)
+      + [使用Adobe Target进行下一次点击个性化](/help/platform/destinations/target/next-hit-personalization.md)
       + [配置Adobe Target目标](/help/platform/destinations/target/configure-the-target-destination.md)
       + [激活区段和配置文件属性](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
       + [在Target中使用Real-Time CDP区段](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [在Target中使用Real-Time CDP配置文件属性](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
-   + [将数据激活到非Adobe应用程序网络研讨会](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
-+ 身份 {#identities}
+   + [向非Adobe应用程序激活数据网络研讨会](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
++ 标识 {#identities}
    + [身份和身份图概述](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [标记、引入并验证身份数据](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [查看身份图](/help/platform/identities/view-identity-graphs.md)
@@ -182,7 +182,7 @@ ht-degree: 33%
    + [概述](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [构建基块](/help/platform/schemas/schema-building-blocks.md)
    + [计划您的数据模型](/help/platform/schemas/plan-your-data-model.md)
-   + [将数据模型转换为XDM](/help/platform/schemas/convert-your-data-model-to-xdm.md)
+   + [将您的数据模型转换为XDM](/help/platform/schemas/convert-your-data-model-to-xdm.md)
    + [创建架构](/help/platform/schemas/create-schemas.md)
    + [为B2B数据创建架构](/help/platform/schemas/create-schemas-for-b2b-data.md)
    + [创建类](/help/platform/schemas/create-classes.md)
@@ -203,7 +203,7 @@ ht-degree: 33%
    + [从数据库引入数据](/help/platform/sources/ingest-data-from-databases.md)
    + [使用 HTTP API 流式传输数据](/help/platform/sources/streaming-ingestion-http-api.md)
    + [使用源连接器流式传输数据](/help/platform/sources/streaming-ingestion-source-connector.md)
-   + [使用Adobe Target实现下一次点击个性化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
+   + [使用Adobe Target进行下一次点击个性化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud 集成 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -213,7 +213,7 @@ ht-degree: 33%
 + 行业趋势 {#industry}
    + [数据管理的未来和复杂多变的环境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [一个故事，两种看法 - 品牌对消费者](/help/platform/industry/brands-vs-consumers.md)
-   + [发展您的受众卓越中心](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
+   + [发展您的卓越受众中心](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [利用客户配置文件构建更好的体验](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
    + [第一方数据上下文中的数据协作](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
-   + [转换](translate.md)
+   + [Translate](translate.md)
