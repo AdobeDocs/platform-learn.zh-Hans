@@ -2,15 +2,17 @@
 title: 使用Adobe Audience Manager Data Connector引入数据
 description: 在重新配置从Adobe Audience Manager移动到Real-time Customer Data Platform的流程和人员时，您可以使用Audience ManagerData Connector将特征和区段从AAM引入平台，将它们与其他丰富数据（包括PII）相结合，并将它们发送给目标合作伙伴。 本视频向您介绍适用于Real-Time CDP的AAM Data Connector的配置。
 feature: Sources
+topic: Integrations
+badgeIntegration: label="集成" type="positive"
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 2%
+source-wordcount: '296'
+ht-degree: 3%
 
 ---
 

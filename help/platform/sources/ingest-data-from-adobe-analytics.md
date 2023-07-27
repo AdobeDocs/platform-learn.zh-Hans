@@ -2,16 +2,18 @@
 title: 使用 Adobe Analytics 源连接器引入数据
 description: Adobe Analytics源连接器允许您轻松地将数据从Adobe Analytics流式传输、映射和过滤到Adobe Experience Platform的Real-Time Customer Profile和Experience Data Lake。
 feature: Sources
+topic: Integrations
+badgeIntegration: label="集成" type="positive"
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
 last-substantial-update: 2023-02-23T00:00:00Z
 jira: KT-3824
 thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
 workflow-type: tm+mt
-source-wordcount: '127'
-ht-degree: 19%
+source-wordcount: '128'
+ht-degree: 20%
 
 ---
 
