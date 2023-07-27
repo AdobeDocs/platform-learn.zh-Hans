@@ -4,10 +4,10 @@ breadcrumb-title: 教程
 user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
-source-git-commit: b0d1506f538e39a519351e0325cec0f0e5ee9121
+source-git-commit: 839fc42ebad3b9091e8f9bdebd66f7d7afdebaa8
 workflow-type: tm+mt
-source-wordcount: '975'
-ht-degree: 33%
+source-wordcount: '965'
+ht-degree: 34%
 
 ---
 
@@ -203,7 +203,7 @@ ht-degree: 33%
    + [从数据库引入数据](/help/platform/sources/ingest-data-from-databases.md)
    + [使用 HTTP API 流式传输数据](/help/platform/sources/streaming-ingestion-http-api.md)
    + [使用源连接器流式传输数据](/help/platform/sources/streaming-ingestion-source-connector.md)
-   + [使用Adobe Target进行下一次点击个性化](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
+   + [疑难解答：SFTP连接器](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Experience Cloud 集成 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
