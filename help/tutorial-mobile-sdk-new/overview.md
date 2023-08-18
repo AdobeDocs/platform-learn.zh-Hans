@@ -1,0 +1,87 @@
+---
+title: 在移动应用程序中实施Adobe Experience Cloud教程概述
+description: 了解如何实施Adobe Experience Cloud移动应用程序。 本教程将指导您在一个示例Swift应用程序中实施Experience Cloud应用程序。
+recommendations: noDisplay,catalog
+hide: true
+hidefromtoc: true
+source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 11%
+
+---
+
+# 在移动应用程序中实施 Adobe Experience Cloud 指南
+
+了解如何用 Adobe Experience Platform 移动 SDK 在移动应用程序中实施 Adobe Experience Cloud 应用程序。
+
+Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience Cloud的客户通过Adobe Experience Platform Edge Network与Adobe应用程序和第三方服务进行交互。 请参阅 [Adobe Experience Platform移动SDK文档](https://developer.adobe.com/client-sdks/documentation/) 以了解更多详细信息。
+
+![内部版本设置](assets/data-collection-mobile-sdk.png)
+
+
+本教程将指导您在名为Luma的示例零售应用程序中实施Platform Mobile SDK。 此 [Luma应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 具有的功能可让您构建现实的实施。 完成本教程后，您应该可以在自己的移动应用程序中开始通过Experience PlatformMobile SDK实施所有营销解决方案。
+
+这些课程是为iOS设计的，使用Swift/SwiftUI编写，但许多概念也适用于Android™。
+
+完成本教程后，您将能够：
+
+* 使用标准和自定义字段组创建架构。
+* 设置数据流.
+* 配置移动标记属性。
+* 设置Experience Platform数据集（可选）。
+* 在应用程序中安装并实施标记扩展。
+* 添加以下Adobe Experience Cloud应用程序/扩展：
+   * [Adobe Experience Platform Edge (XDM)](events.md)
+   * [生命周期数据收集](lifecycle-data.md)
+   * [通过XDM的Adobe Analytics](analytics.md)
+   * [同意](consent.md)
+   * [标识](identity.md)
+   * [配置文件](profile.md)
+   * [Adobe Experience Platform](platform.md)
+   * [使用Journey Optimizer推送消息](journey-optimizer-push.md)
+* 将Experience Cloud参数正确传递给 [webview](web-views.md).
+* 使用验证实施 [Adobe Experience Platform Assurance](assurance.md).
+
+>[!NOTE]
+>
+>类似的多解决方案教程可用于 [Web SDK](../tutorial-web-sdk/overview.md).
+
+## 先决条件
+
+在这些课程中，我们假定您拥有 Adobe ID 和完成练习所需的权限。如果没有，您应该联系Adobe管理员以请求获取访问权限。
+
+* 在数据收集中，您必须具有：
+   * **[!UICONTROL 平台]** — 权限项 **[!UICONTROL 移动设备]**
+   * **[!UICONTROL 资产权限]** — 权限项至 **[!UICONTROL 开发]**， **[!UICONTROL 批准]**， **[!UICONTROL Publish]**， **[!UICONTROL 管理扩展]**、和 **[!UICONTROL 管理环境]**.
+   * **[!UICONTROL 公司权限]** — 权限项至 **[!UICONTROL 管理资产]** 此外，如果您已完成可选的推送消息课程， **[!UICONTROL 管理应用程序配置]**
+
+     有关标记权限的更多信息，请参阅 [标记的用户权限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hans){target="_blank"} 在产品文档中。
+* 在Experience Platform中，您必须具有：
+   * **[!UICONTROL 数据建模]** — 用于管理和查看架构的权限项。
+   * **[!UICONTROL Identity Management]** — 用于管理和查看身份命名空间的权限项。
+   * **[!UICONTROL 数据收集]** — 用于管理和查看数据流的权限项。
+
+   * 如果您是基于Platform的应用程序(如Real-Time CDP、Journey Optimizer或Customer Journey Analytics)的客户，则还应：
+      * **[!UICONTROL 数据管理]** — 用于管理和查看数据集以完成 _可选平台练习_ （需要基于平台的应用程序的许可证）。
+      * 开发 **沙盒** 供本教程使用。
+* 对于Adobe Analytics，您必须知道是哪个 **报表包** 您可以使用完成本教程。
+
+所有Experience Cloud客户都应有权访问部署Mobile SDK所需的功能。
+
+此外，我们还假定您熟悉 [!DNL Swift]. 您无需成为专家即可完成课程，但如果您能够轻松阅读和理解代码，将可从课程中学到更多知识。
+
+## 下载Luma应用程序
+
+示例应用程序有两个版本可供下载。
+
+1. [空](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"})：一个没有任何Experience Cloud代码的版本，用于完成本教程中的动手练习
+1. [完全实施](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"})：具有完整Experience Cloud实现的版本以供参考。
+
+让我们开始吧！
+
+>[!NOTE]
+>
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+
+下一步： **[创建XDM架构](create-schema.md)**.

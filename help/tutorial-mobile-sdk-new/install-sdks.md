@@ -1,0 +1,161 @@
+---
+title: 安装Adobe Experience Platform Mobile SDK
+description: 了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。
+hide: true
+hidefromtoc: true
+source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+workflow-type: tm+mt
+source-wordcount: '914'
+ht-degree: 1%
+
+---
+
+# 安装Adobe Experience Platform Mobile SDK
+
+了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。
+
+## 先决条件
+
+* 使用中所述的扩展成功构建了标记库 [上一课程](configure-tags.md).
+* 来自的开发环境文件ID [移动设备安装说明](configure-tags.md#generate-sdk-install-instructions).
+* 已下载，为空 [示例应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}).
+* 体验 [XCode](https://developer.apple.com/xcode/{target="_blank"}).
+
+## 学习目标
+
+在本课程中，您将执行以下操作：
+
+* 使用Swift包管理器将所需的SDK添加到您的项目中。
+* 注册扩展。
+
+>[!NOTE]
+>
+>在移动应用程序实施中，“扩展”和“SDK”这两个术语几乎可以互换。
+
+## Swift包管理器
+
+不要使用CocoaPods和Pod文件（如移动设备安装说明中所述），请参阅 [生成SDK安装说明](./configure-tags.md#generate-sdk-install-instructions))，您可使用Xcode的本机Swift包管理器添加单个包。
+
+在Xcode中，使用 **[!UICONTROL 文件]** > **[!UICONTROL 添加包……]** 并安装下表中列出的所有软件包。 选择表中包的链接以获取特定包的完整URL。
+
+| 包 | 描述 |
+|---|---|
+| [AEP核心](https://github.com/adobe/aepsdk-core-ios.git) | 此 `AEPCore`， `AEPServices`、和 `AEPIdentity` 扩展是Adobe Experience Platform SDK的基础 — 使用SDK的每个应用程序都必须包含这些扩展。 这些模块包含所有SDK扩展所需的一组通用功能和服务。<br/>`AEPCore` 包含事件中心的实施。 事件中心是在应用程序和SDK之间交付事件的机制。 事件中心还用于在扩展之间共享数据。<br/>`AEPServices` 提供平台支持所需的多种可重用的实现，包括网络、磁盘访问和数据库管理。<br/>`AEPIdentity` 实施与Adobe Experience Platform Identity服务的集成。<br/>`AEPSignal` 表示Adobe Experience Platform SDK的Signal扩展，该扩展允许营销人员向其应用程序发送“信号”，以将数据发送到外部目标或打开URL。<br/>`AEPLifecycle` 表示Adobe Experience Platform SDK的生命周期扩展，该扩展可帮助收集应用程序生命周期量度，例如应用程序安装或升级信息、应用程序启动和会话信息、设备信息以及应用程序开发人员提供的任何其他上下文数据。 |
+| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios.git) | Adobe Experience Platform Edge Network移动扩展允许您从移动应用程序向Adobe Edge Network发送数据。 通过此扩展，您可以更稳健地实施Adobe Experience Cloud功能，通过一个网络调用提供多个Adobe解决方案，并同时将此信息转发到Adobe Experience Platform。<br/>Edge Network移动扩展是Adobe Experience Platform SDK的扩展，它需要 `AEPCore` 和 `AEPServices` 事件处理的扩展，以及 `AEPEdgeIdentity` 用于检索身份（如ECID）的扩展。 |
+| [AEP Edge标识](https://github.com/adobe/aepsdk-edgeidentity-ios.git) | AEP Edge Identity移动扩展在使用Adobe Experience Platform SDK和Edge Network扩展时，支持处理来自移动应用程序的用户身份数据。 |
+| [AEP Edge同意](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | 使用Adobe Experience Platform SDK和Edge Network扩展时，AEP同意收集移动扩展支持从移动应用程序中收集同意首选项。 |
+| [AEP用户配置文件](https://github.com/adobe/aepsdk-userprofile-ios.git) | Adobe Experience Platform用户配置文件移动扩展是一个扩展，用于管理Adobe Experience Platform SDK的用户配置文件。 |
+| [AEP Places](https://github.com/adobe/aepsdk-places-ios) | Adobe Experience Platform Places扩展是Adobe Experience Platform Swift SDK的扩展。 AEPPlaces扩展允许您跟踪Launch Places UI和AdobeLaunch规则中定义的地理位置Adobe。 |
+| [AEP消息](https://github.com/adobe/aepsdk-messaging-ios.git) | AEP报文传送扩展是Adobe Experience Platform Swift SDK的扩展。 AEP消息扩展允许您将推送通知令牌和推送通知点进反馈发送到Adobe Experience Platform。 |
+| [AEP优化](https://github.com/adobe/aepsdk-optimize-ios) | AEP优化扩展提供了API，以使用Adobe Target或Adobe Journey OptimizerOffer decisioning在Adobe Experience Platform Mobile SDK中启用实时个性化工作流。 它需要 `AEPCore` 和 `AEPEdge` 用于将个性化查询事件发送到Experience Edge网络的扩展。 |
+| [AEP保证](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance （也称为Griffon项目）是一种新的创新产品，可帮助您检查、验证、模拟和验证如何在移动应用程序中收集数据或提供体验。 |
+
+
+安装所有软件包后，您的Xcode **[!UICONTROL 程序包依赖项]** 屏幕应如下所示：
+
+![Xcode包依赖项](assets/xcode-package-dependencies.png)
+
+
+## 导入扩展
+
+在源中的Xcode中 **[!UICONTROL AppDelegate]** 和 **[!UICONTROL MobileSDK]**，添加以下导入。
+
+```swift
+import AEPCore
+import AEPServices
+import AEPIdentity
+import AEPSignal
+import AEPLifecycle
+import AEPEdge
+import AEPEdgeIdentity
+import AEPEdgeConsent
+import AEPUserProfile
+import AEPPlaces
+import AEPMessaging
+import AEPOptimize
+import AEPAssurance
+```
+
+## 更新AppDelegate
+
+在 **AppDelegate**，
+
+1. 设置 `@AppStorage` 值 `environmentFileId` ，作为开发环境文件ID值，该值是在的步骤6中检索的。 [生成SDK安装说明](configure-tags.md#generate-sdk-install-instructions).
+
+   ```swift
+   @AppStorage("environmentFileId") private var environmentFileId = "b5cbd1a1220e/1857ef6cacb5/launch-2594f26b23cd-development"
+   ```
+
+1. 将以下高亮显示的代码添加到 `application(_, didFinishLaunchingWithOptions)` 函数。
+
+   ```swift {highlight="10-39"}
+   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+   
+       UNUserNotificationCenter.current().delegate = self
+   
+       // step-init-start
+       MobileCore.setLogLevel(.trace)
+       let appState = application.applicationState;
+   
+       let extensions = [
+           AEPIdentity.Identity.self,
+           Lifecycle.self,
+           Signal.self,
+           Edge.self,
+           AEPEdgeIdentity.Identity.self,
+           Consent.self,
+           UserProfile.self,
+           Places.self,
+           Messaging.self,
+           Optimize.self,
+           Assurance.self
+       ]
+   
+       MobileCore.registerExtensions(extensions, {
+           // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
+           Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
+           MobileCore.configureWith(appId: self.environmentFileId)
+   
+           // set this to false or comment it when deploying to TestFlight (default is false),
+           // set this to true when testing on your device.
+           MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])
+           if appState != .background {
+               // only start lifecycle if the application is not in the background
+               MobileCore.lifecycleStart(additionalContextData: nil)
+           }
+   
+           // assume unknown, adapt to your needs.
+           MobileCore.setPrivacyStatus(.unknown)
+   
+           // update version and build
+           Logger.configuration.info("Luma - Updating version and build number...")
+           SettingsBundleHelper.setVersionAndBuildNumber()
+       })
+   
+       // register push notification
+       registerForPushNotifications(application: application)
+   
+       // set up core location
+       let locationManager = LocationManager()
+       locationManager.requestAuthorisation()
+   
+       return true
+   }
+   ```
+
+上述代码执行以下操作：
+
+1. 注册所需的扩展。
+1. 配置MobileCore和其他扩展以使用标记属性配置。
+1. 启用调试日志记录。 欲知更多详情和选项，请参见 [Adobe Experience Platform移动SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+
+>[!IMPORTANT]
+>
+>确保更新 `MobileCore.configureWith(appId: self.environmentFileId)` 使用 `appId` 基于 `environmentFileId` 从您为（开发、暂存或生产）构建的标记环境中。
+>
+
+>[!SUCCESS]
+>
+>您现在已安装必要的包并更新了项目，以正确注册您将在本教程的其余部分使用的所需Adobe Experience Platform Mobile SDK扩展。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+下一步： **[设置保证](assurance.md)**

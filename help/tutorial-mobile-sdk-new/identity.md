@@ -1,0 +1,181 @@
+---
+title: 标识
+description: 了解如何在移动应用程序中收集身份数据。
+feature: Mobile SDK,Identities
+hide: true
+hidefromtoc: true
+source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+workflow-type: tm+mt
+source-wordcount: '626'
+ht-degree: 6%
+
+---
+
+# 标识
+
+了解如何在移动应用程序中收集身份数据。
+
+Adobe Experience Platform Identity Service通过跨设备和系统桥接身份，允许您实时提供有影响力的个人数字体验，从而帮助您更好地了解客户及其行为。 身份字段和命名空间是将不同数据源连接在一起的粘合剂，可构建360度实时客户档案。
+
+了解关于 [身份扩展](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) 和 [身份服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans) 在文档中。
+
+## 先决条件
+
+* 在安装和配置SDK的情况下成功构建和运行应用程序。
+
+## 学习目标
+
+在本课程中，您将执行以下操作：
+
+* 设置自定义身份命名空间。
+* 更新身份。
+* 验证身份图。
+* 获取ECID和其他身份。
+
+
+## 设置自定义身份命名空间
+
+身份命名空间是的组件 [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans) 作为与身份相关的上下文指示器。 例如，它们会将`name@email.com`的值区别于电子邮件地址或将`443522`区别于数字 CRM ID。
+
+1. 在数据收集界面中，选择 **[!UICONTROL 身份]** 从左边栏导航中。
+1. 选择&#x200B;**[!UICONTROL 创建身份命名空间]**。
+1. 提供 **[!UICONTROL 显示名称]** 之 `Luma CRM ID` 和 **[!UICONTROL 身份符号]** 值 `lumaCRMId`.
+1. 选择 **[!UICONTROL 跨设备ID]**.
+1. 选择&#x200B;**[!UICONTROL 创建]**。
+
+   ![创建身份命名空间](assets/identity-create.png)
+
+
+
+
+## 更新身份
+
+当用户登录应用程序时，您希望同时更新标准身份（电子邮件）和自定义身份(Luma CRM ID)。
+
+1. 导航到 **[!UICONTROL 登录表]** (in **[!UICONTROL 视图]** > **[!UICONTROL 常规]**)并找到对的调用 `updateIdentities`：
+
+   ```swift {highlight="3,4"}
+   Button("Login") {
+       // call updaeIdentities
+       MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
+   
+       // Send app interaction event
+       MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
+       dismiss()
+   }
+   .disabled(currentEmailId.isValidEmail == false)
+   .buttonStyle(.bordered)
+   ```
+
+1. 导航至 `updateIdentities` 函数实现 **[!UICONTROL MobileSDK]** (in **[!UICONTROL 实用工具]**)。 将以下高亮显示的代码添加到函数中。
+
+   ```swift {highlight="2-12"}
+   func updateIdentities(emailAddress: String, crmId: String) {
+       let identityMap: IdentityMap = IdentityMap()
+       // Add identity items
+       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
+       let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+       identityMap.add(item:emailIdentity, withNamespace: "Email")
+       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
+   
+       // Update identities
+       Identity.updateIdentities(with: identityMap)
+   }
+   ```
+
+   此代码：
+
+   1. 创建空的 `IdentityMap` 对象。
+
+      ```swift
+      let identityMap: IdentityMap = IdentityMap()
+      ```
+
+   1. 设置 `IdentityItem` 电子邮件和CRM ID的对象。
+
+      ```swift
+      let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
+      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+      ```
+
+   1. 添加这些 `IdentityItem` 对象到 `IdentityMap` 对象。
+
+      ```swift
+      identityMap.add(item:emailIdentity, withNamespace: "Email")
+      identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
+      ```
+
+   1. 发送 `IdentityItem` 对象，作为 `Identity.updateIdentities` 对Edge Network的API调用。
+
+      ```swift
+      Identity.updateIdentities(with: identityMap) 
+      ```
+
+
+>[!NOTE]
+>
+>您可以在单个中发送多个身份 `updateIdentities` 呼叫。 您还可以修改以前发送的身份。
+
+
+## 删除身份
+
+您可以使用 `removeIdentity` 从存储的客户端IdentityMap中删除身份。 Identity扩展停止向Edge Network发送标识符。 使用此API不会从服务器端用户配置文件图或身份图中删除标识符。
+
+1. 导航到 **[!UICONTROL 登录表]** (in **[!UICONTROL 视图]** > **[!UICONTROL 常规]**)并找到对的调用 `removeIdentities`：
+
+   ```swift {highlight="3"}
+   Button("Logout", role: .destructive) {
+       // call removeIdentities
+       MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
+       dismiss()                   
+   }
+   .buttonStyle(.bordered)
+   ```
+
+1. 将以下代码添加到 `removeIdentities` 函数位于 `MobileSDK`：
+
+   ```swift {highlight="2-8"}
+   func removeIdentities(emailAddress: String, crmId: String) {
+       Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
+       Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
+       // reset email and CRM Id to their defaults
+       currentEmailId = "testUser@gmail.com"
+       currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
+   }
+   ```
+
+
+## 使用保障进行验证
+
+1. 查看 [设置说明](assurance.md) 并将模拟器或设备连接到Assurance。
+1. 在Luma应用程序中
+   1. 选择 **[!UICONTROL 主页]** 选项卡。
+   1. 选择 **[!UICONTROL 登录]** 图标。
+   1. 提供电子邮件地址和CRM ID，或者
+   1. 选择A|以随机生成 **[!UICONTROL 电子邮件]** 和 **[!UICONTROL CRM ID]**.
+   1. 选择 **[!UICONTROL 登录]**.
+
+      <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
+
+
+1. 在Assurance Web UI中查找该**[!UICONTROL Edge Identity更新身份]**来自的事件 **[!UICONTROL com.adobe.griffon.mobile]** 供应商。
+1. 选择事件并查看 **[!UICONTROL ACPExtensionEventData]** 对象。 您应该会看到已更新的身份。
+   ![验证身份更新](assets/identity-validate-assurance.png)
+
+## 使用身份图进行验证
+
+一旦您完成 [Experience Platform课程](platform.md)，您便能够在Platforms身份图查看器中确认身份捕获：
+
+1. 选择 **[!UICONTROL 身份]** 在数据收集UI中。
+1. 选择 **[!UICONTROL 身份图]** 从顶部栏中。
+1. 输入 `Luma CRM ID` 作为 **[!UICONTROL 身份命名空间]** 和您的CRM ID(例如， `24e620e255734d8489820e74f357b5c8`)作为 **[!UICONTROL 标识值]**.
+1. 您会看到 **[!UICONTROL 身份]** 已列出。
+
+   ![验证身份图](assets/identity-validate-graph.png)
+
+
+>[!SUCCESS]
+>
+>现在，您已设置应用程序以在Edge Network中和（设置后）使用Adobe Experience Platform更新身份。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+下一步： **[个人资料](profile.md)**
