@@ -1,0 +1,22 @@
+---
+title: Real-time CDP中的合作伙伴数据支持概述
+description: 了解如何 [!DNL Real-Time Customer Data Platform] 由于第三方Cookie继续被弃用，支持使用合作伙伴数据进行完全漏斗营销的第一方数据扩充和潜在客户用例。 
+feature: Integrations
+topic: Integrations
+role: User
+level: Beginner
+jira: KT-13805
+thumbnail: 3422855.jpg
+last-substantial-update: 2023-08-23T00:00:00Z
+source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
+workflow-type: tm+mt
+source-wordcount: '62'
+ht-degree: 0%
+
+---
+
+# 中的合作伙伴数据支持概述 [!DNL Real-time CDP]
+
+了解如何 [!DNL Real-Time Customer Data Platform] 由于第三方Cookie继续被弃用，支持使用合作伙伴数据进行完全漏斗营销的第一方数据扩充和潜在客户用例。 
+
+>[!VIDEO](https://video.tv.adobe.com/v/3422855/?quality=12&learn=on)

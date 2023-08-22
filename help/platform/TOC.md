@@ -4,10 +4,10 @@ breadcrumb-title: 教程
 user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
-source-git-commit: 6969ffb934783dc5e9b448ad28738b56084114cf
+source-git-commit: 8441913e61137d97e25dc098bb1cdbdec6a1282e
 workflow-type: tm+mt
-source-wordcount: '969'
-ht-degree: 34%
+source-wordcount: '989'
+ht-degree: 33%
 
 ---
 
@@ -142,6 +142,11 @@ ht-degree: 34%
    + [监测数据提取](/help/platform/monitoring/monitoring-dashboard.md)
    + [监测区段激活](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [监测数据流](/help/platform/monitoring/data-monitoring.md)
++ 合作伙伴数据支持 {#partner-data-support}
+   + [合作伙伴数据支持概述](/platform/partner-data-support/partner-data-support-overview.md)
+   + [支持异地勘探](/platform/partner-data-support/offsite-prospecting-partner-data.md)
+   + [将合作伙伴属性添加到配置文件](/platform/partner-data-support/partner-enrichment-partner-data.md)
+   + [为未知访客在现场进行个性化](/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
 + 配置文件 {#profiles}
    + [了解Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [配置文件概述图](/help/platform/profiles/overview-diagram.md)
