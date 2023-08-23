@@ -4,9 +4,9 @@ description: 了解如何在中配置标记属性 [!UICONTROL 数据收集] 界�
 feature: Mobile SDK,Tags
 hide: true
 hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '1015'
 ht-degree: 8%
 
 ---
@@ -136,7 +136,12 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
    安装说明为您提供了一个良好的实施起点。 您可以找到其他信息 [此处](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-1. 选择 **[!UICONTROL Swift]** 选项卡 **[!UICONTROL 添加初始化代码]**. 此代码块显示了如何导入所需的SDK并在启动时注册扩展。
+   >[!INFO]
+   >
+   >在本教程的其余部分中，您将 **非** 使用CocoaPods说明，而是使用基于本机Swift Package Manager (SPM)的设置。
+   >
+
+1. 选择 **[!UICONTROL Swift]** 选项卡 **[!UICONTROL 添加初始化代码]**. 此代码块显示了如何导入所需的SDK并在启动时注册扩展。 有关更多详细信息，请参见 [安装SDK](install-sdks.md).
 
 1. 复制 ![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 该 **[!UICONTROL 环境文件Id]** 以后根据需要将其存储到某个位置。 此唯一ID指向您的开发环境。 每个环境（生产、暂存、开发）都有其自己的唯一ID值。
 
@@ -146,14 +151,9 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 >
 >应将安装说明视为起点，而不是最终的文档。 可以在官方网站中找到最新的SDK版本和代码示例 [文档](https://developer.adobe.com/client-sdks/documentation/).
 
->[!INFO]
->
->在本教程的其余部分中，您将 **非** 使用CocoaPods指令，但查看基于软件包的本机Swift设置。
-
-
 ## 移动标记架构
 
-如果您熟悉标记的Web版本（以前称为Launch），那么了解移动设备上的差异非常重要。
+如果您熟悉Tags的Web版本（以前称为Launch），那么了解移动设备上的差异非常重要。
 
 * 在Web上，标记属性呈现到JavaScript中，然后（通常）将该属性托管在云中。 该JavaScript文件直接在网站中引用。
 
