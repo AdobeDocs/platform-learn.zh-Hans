@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 2f9298a140c7bd483c8c533427f0e90d90d14af0
 workflow-type: tm+mt
 source-wordcount: '1899'
 ht-degree: 2%
@@ -97,8 +97,8 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 1. 在 **[!UICONTROL 安装扩展]** 对话框
    1. 选择环境，例如 **[!UICONTROL 开发]**.
    1. 选择 **[!UICONTROL AJO推送跟踪体验事件数据集]** 来自的数据集 **[!UICONTROL 事件数据集]** 下拉列表。
-      ![AJO扩展设置](assets/push-tags-ajo.png)
    1. 选择 **[!UICONTROL 保存到库并生成]**.
+      ![AJO扩展设置](assets/push-tags-ajo.png)
 
 >[!NOTE]
 >
@@ -189,7 +189,7 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
    1. 提供 **[!UICONTROL 描述]**&#x200B;例如 `Test event to trigger push notifications in Luma app`.
 
    1. 选择您之前在中创建的移动应用程序体验事件架构 [创建XDM架构](create-schema.md) 从 **[!UICONTROL 架构]** 列表，例如 **[!UICONTROL Luma移动应用程序事件架构v.1]**.
-   1. 选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 字段列表旁边的。
+   1. 选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 旁边的 **[!UICONTROL 字段]** 列表。
 
       ![编辑事件步骤1](assets/ajo-edit-event1.png)
 

@@ -4,7 +4,7 @@ description: 了解如何使用Platform Mobile SDK和Adobe Journey Optimizer在�
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
+source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 2%
@@ -123,6 +123,7 @@ Journey Optimizer允许您创建历程，并向目标受众发送应用程序内
 1. 转到 **[!UICONTROL 设置]** 选项卡。
 
 1. 点按 **[!UICONTROL 应用程序内消息]**. 您会在应用程序中看到应用程序内消息。
+
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 
