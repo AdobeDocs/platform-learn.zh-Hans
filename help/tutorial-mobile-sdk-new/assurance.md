@@ -3,11 +3,10 @@ title: 设置保证
 description: 了解如何在移动应用程序中实施Assurance扩展。
 feature: Mobile SDK,Assurance
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 8%
+source-wordcount: '741'
+ht-degree: 9%
 
 ---
 
@@ -43,17 +42,19 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 
 ## 实施
 
-除了一般 [SDK安装](install-sdks.md)（已在之前的课程中完成），iOS还需要添加以下内容才能启动应用程序的保障会话。 将以下代码添加到 **[!UICONTROL SceneDelegate]**：
+除了一般 [SDK安装](install-sdks.md)（已在之前的课程中完成），iOS还需要添加以下内容才能启动应用程序的保障会话。
 
-```swift {highlight="5"}
-func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        // Called when the app in background is opened with a deep link.
-        if let deepLinkURL = URLContexts.first?.url {
-            // Start the Assurance session
-            Assurance.startSession(url: deepLinkURL)
-        }
-    }
-```
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** 在Xcode的项目导航器中。
+
+1. 将以下代码添加到 `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>`：
+
+   ```swift
+   // Called when the app in background is opened with a deep link.
+   if let deepLinkURL = URLContexts.first?.url {
+       // Start the Assurance session
+       Assurance.startSession(url: deepLinkURL)
+   }
+   ```
 
 可以找到更多信息 [此处](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"}).
 
@@ -94,7 +95,7 @@ Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基�
 1. 提供 **[!UICONTROL 会话名称]** 例如 `Luma Mobile App Session` 和 **[!UICONTROL 基本URL]**，这是您在Xcode中输入的URL方案，后面接着 `://`. 例如：`lumatutorialswiftui://`。
 1. 选择&#x200B;**[!UICONTROL 下一步]**。
    ![保证创建会话](assets/assurance-create-session.png)
-1. 在创建新会话对话框中：
+1. 在 **[!UICONTROL 创建新会话]** 模式对话框：
 
    如果您使用的是物理设备：
 

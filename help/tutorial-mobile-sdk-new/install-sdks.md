@@ -2,10 +2,9 @@
 title: 安装Adobe Experience Platform Mobile SDK
 description: 了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。
 hide: true
-hidefromtoc: true
-source-git-commit: a7d20a6de8eb9bae62494ff5e71f47ed672e4681
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '927'
 ht-degree: 1%
 
 ---
@@ -58,9 +57,10 @@ ht-degree: 1%
 
 ## 导入扩展
 
-在Xcode中，在 **[!UICONTROL AppDelegate]** 和 **[!UICONTROL MobileSDK]**，添加以下导入。
+在Xcode中，导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 并添加以下导入。
 
 ```swift
+// import AEP MobileSDK libraries
 import AEPCore
 import AEPServices
 import AEPIdentity
@@ -76,9 +76,11 @@ import AEPOptimize
 import AEPAssurance
 ```
 
+对执行相同操作 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]**.
+
 ## 更新AppDelegate
 
-在 **AppDelegate**，
+导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** 在Xcode项目导航器中。
 
 1. 设置 `@AppStorage` 值 `environmentFileId` ，作为开发环境文件ID值，该值是在的步骤6中检索的。 [生成SDK安装说明](configure-tags.md#generate-sdk-install-instructions).
 

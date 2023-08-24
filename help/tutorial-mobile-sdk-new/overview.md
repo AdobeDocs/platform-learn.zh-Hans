@@ -3,8 +3,7 @@ title: 在移动应用程序中实施Adobe Experience Cloud教程概述
 description: 了解如何实施Adobe Experience Cloud移动应用程序。 本教程将指导您在一个示例Swift应用程序中实施Experience Cloud应用程序。
 recommendations: noDisplay,catalog
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 11%

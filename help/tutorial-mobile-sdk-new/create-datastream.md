@@ -3,8 +3,7 @@ title: 配置数据流
 description: 了解如何在Experience Platform中创建数据流。
 feature: Mobile SDK,Datastreams
 hide: true
-hidefromtoc: true
-source-git-commit: 45481ca81f2ee4119bc900a0dd2652818269df6b
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
 source-wordcount: '552'
 ht-degree: 6%
@@ -88,7 +87,7 @@ ht-degree: 6%
 >
 >启用您的组织使用的每项服务，可确保随时随地使用在移动应用程序中收集的数据。 有关数据流设置的更多信息，请参阅文档 [此处](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-在您自己的网站上实施Platform Mobile SDK时，您应该创建三个数据流以映射到三个标记环境（开发、暂存和生产）。 如果您将Platform Mobile SDK与基于Platform的应用程序(如Adobe Real-time Customer Data Platform或Adobe Journey Optimizer)一起使用，则应确保在适当的Platform沙盒中创建这些数据流。
+在您自己的应用程序中实施Platform Mobile SDK时，您应该创建三个数据流以映射到三个标记环境（开发、暂存和生产）。 如果您将Platform Mobile SDK与基于Platform的应用程序(如Adobe Real-time Customer Data Platform或Adobe Journey Optimizer)一起使用，则应确保在适当的Platform沙盒中创建这些数据流。
 
 >[!SUCCESS]
 >

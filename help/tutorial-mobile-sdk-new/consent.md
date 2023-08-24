@@ -3,11 +3,10 @@ title: 同意
 description: 了解如何在移动应用程序中实施同意。
 feature: Mobile SDK,Consent
 hide: true
-hidefromtoc: true
-source-git-commit: ca83bbb571dc10804adcac446e2dba4fda5a2f1d
+source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 3%
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
 
@@ -37,7 +36,7 @@ ht-degree: 3%
 
 1. 您只想询问用户一次。 因此，您希望将Mobile SDK同意与使用Apple进行跟踪所需的授权结合使用 [应用程序跟踪透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 在此应用程序中，您假设当用户授权跟踪时，用户也同意收集事件。
 
-1. 导航到 `MobileSDK`，它是一个通用静态结构，其中捆绑了对Adobe Experience Platform SDK的所有API调用以便重用。
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。
 
    将此代码添加到 `updateConsent` 函数。
 
@@ -48,17 +47,17 @@ ht-degree: 3%
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. 导航到 `DisclaimerView.swift`，这是安装或重新安装应用程序并首次启动应用程序后显示的视图。 系统会根据Apple提示用户授权跟踪 [应用程序跟踪透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 如果用户授权，则还需要更新同意。
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 常规]** > **[!UICONTROL 免责声明视图]** 在Xcode的项目导航器中，该视图是在安装或重新安装应用程序并首次启动应用程序后显示的视图。 系统会根据Apple提示用户授权跟踪 [应用程序跟踪透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 如果用户授权，则还需要更新同意。
 
    将以下代码添加到 `ATTrackingManager.requestTrackingAuthorization { status in` 结束。
 
-   ```swift {highlight="3,6"}
+   ```swift
    if status == .authorized {
-       // Set consent to yes
-       MobileSDK.shared.updateConsent(value: "y")
+         // Set consent to yes
+         MobileSDK.shared.updateConsent(value: "y")
    }
    else {
-       MobileSDK.shared.updateConsent(value: "n")
+         MobileSDK.shared.updateConsent(value: "n")
    }
    ```
 
@@ -66,28 +65,26 @@ ht-degree: 3%
 
 同意移动扩展会根据当前同意值自动禁止/挂起/允许跟踪。 您还可以自行访问当前同意状态：
 
-1. 导航到 `MobileSDK.swift`。
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode的项目导航器中。
 
    将以下代码添加到 `getConsents` 函数：
 
    ```swift
    Consent.getConsents { consents, error in
-            guard error == nil, let consents = consents else { return }
-            guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
-            guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
-            Logger.aepMobileSDK.info("Consent getConsents: \(jsonStr)")
-        }
+      guard error == nil, let consents = consents else { return }
+      guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
+      guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
+      Logger.aepMobileSDK.info("Consent getConsents: \(jsonStr)")
+   }
    ```
 
-2. 导航到 **[!UICONTROL 主页视图]**.
+2. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 常规]** > **[!UICONTROL 主页视图]** 在Xcode的项目导航器中。
 
-   将以下高亮显示的代码添加到 `.task` 修饰符：
+   将以下代码添加到 `.task` 修饰符：
 
-   ```swift {highlight="3"}
-   .task {
-        // Ask status of consents
-        MobileSDK.shared.getConsents()   
-   }
+   ```swift
+   // Ask status of consents
+   MobileSDK.shared.getConsents()   
    ```
 
 在上例中，您只是将同意状态记录到Xcode中的控制台。 在真实场景中，您可以使用该场景来修改向用户显示的菜单或选项。
