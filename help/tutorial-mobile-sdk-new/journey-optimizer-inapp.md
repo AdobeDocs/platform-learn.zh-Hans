@@ -4,7 +4,7 @@ description: 了解如何使用Platform Mobile SDK和Adobe Journey Optimizer在�
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 4fa65f2e39d3fa7b8b77f5d06d51f10235474b36
+source-git-commit: c3c12d63762f439faa9c45d27e66468455774b43
 workflow-type: tm+mt
 source-wordcount: '994'
 ht-degree: 2%
@@ -73,11 +73,11 @@ Journey Optimizer允许您创建历程，并向目标受众发送应用程序内
 1. 向下滚动到 **[!UICONTROL 操作]**，并选择 **[!UICONTROL 编辑内容]**.
 1. 在 **[!UICONTROL 应用程序内消息]** 屏幕：
    1. 选择 **[!UICONTROL 模态]** 作为 **[!UICONTROL 消息布局]**.
-   1. 输入 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 对象 **[!UICONTROL 媒体URL]**.
-   1. 输入 **[!UICONTROL 页眉]**&#x200B;例如 `Welcome to this Luma In-App Message` 并输入 **[!UICONTROL 正文]**&#x200B;例如 `Triggered by pushing that button in the app...`.
-   1. 输入 **[!UICONTROL 取消]** 作为 **[!UICONTROL 按钮#1文本（主要）]**.
-   1. 请注意预览的更新方式。
-   1. 选择 **[!UICONTROL 审查以激活]**.
+   2. 输入 `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` 对象 **[!UICONTROL 媒体URL]**.
+   3. 输入 **[!UICONTROL 页眉]**&#x200B;例如 `Welcome to this Luma In-App Message` 并输入 **[!UICONTROL 正文]**&#x200B;例如 `Triggered by pushing that button in the app...`.
+   4. 输入 **[!UICONTROL 取消]** 作为 **[!UICONTROL 按钮#1文本（主要）]**.
+   5. 请注意预览的更新方式。
+   6. 选择 **[!UICONTROL 审查以激活]**.
       ![应用程序内编辑器](assets/ajo-in-app-editor.png)
 1. 在 **[!UICONTROL 审查以激活（Luma — 应用程序内消息传送促销活动）]** 屏幕，选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 在 **[!UICONTROL 计划]** 磁贴。
    ![复查计划选择计划](assets/ajo-review-select-schedule.png)
@@ -88,7 +88,7 @@ Journey Optimizer允许您创建历程，并向目标受众发送应用程序内
    1. 单击&#x200B;**[!UICONTROL 完成]**。
       ![触发器逻辑](assets/ajo-trigger-logic.png)
 
-   您已定义一个跟踪操作，其中 **[!UICONTROL 操作]** 等于 `in-app` 和 **[!UICONTROL 上下文数据]** （操作是键值对） `showMessage = true`.
+   您已定义一个跟踪操作，其中 **[!UICONTROL 操作]** 等于 `in-app` 和 **[!UICONTROL 上下文数据]** （操作是键值对） `"showMessage" : "true"`.
 
 1. 返回 **[!UICONTROL Luma — 应用程序内消息传送促销活动]** 屏幕，选择 **[!UICONTROL 审查以激活]**.
 1. 在 **[!UICONTROL 审查以激活（Luma — 应用程序内消息传送促销活动）]** 屏幕，选择 **[!UICONTROL 激活]**.
@@ -103,14 +103,14 @@ Journey Optimizer允许您创建历程，并向目标受众发送应用程序内
 1. 在Xcode项目导航器中，转到Luma > Luma > Utils > MobileSDK，然后找到 `func sendTrackAction(action: String, data: [String: Any]?)` 函数，并添加以下代码，以调用 `MobileCore.track` 函数，基于参数 `action` 和 `data`.
 
 
-   ```
+   ```swift
    // send trackAction event
    MobileCore.track(action: action, data: data)
    ```
 
-1. 在Xcode项目导航器中，转到Luma > Luma >视图>常规> ConfigView 。 查找应用程序内消息按钮的代码并添加以下代码：
+1. 转到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 常规]** > **[!UICONTROL 配置视图]** 在Xcode项目导航器中。 查找应用程序内消息按钮的代码并添加以下代码：
 
-   ```
+   ```swift
    Task {
        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
    }
