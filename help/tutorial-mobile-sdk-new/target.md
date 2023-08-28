@@ -5,7 +5,7 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
+source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
 workflow-type: tm+mt
 source-wordcount: '1394'
 ht-degree: 2%
@@ -42,7 +42,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 * 更新您的架构以捕获建议事件。
 * 验证Assurance中的设置。
 * 在Target中创建简单的A/B测试。
-* 更新您的应用程序以包含优化扩展。
+* 更新您的应用程序以包含Optimizer扩展。
 * 在应用程序中实施A/B测试。
 * 在Assurance中验证实施。
 
@@ -192,9 +192,9 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
    * XDM词典 `xdmData`，包含ECID以标识必须提供A/B测试的配置文件，并且
    * 该 `decisionScope`，提供A/B测试的位置数组。
 
-   然后，函数调用两个API： [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 这些函数清除任何缓存的建议并更新此用户档案的建议。
+   然后，函数调用两个API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 这些函数清除任何缓存的建议并更新此用户档案的建议。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 个性化]** > **[!UICONTROL TargetOffersView]** 在Xcode项目导航器中。 查找 `func getPropositionAT(location: String) async` 函数并检查此函数的代码。 此函数最重要的部分是  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API调用，其中
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 个性化]** > **[!UICONTROL TargetOffersView]** 在Xcode项目导航器中。 查找 `func getPropositionAT(location: String) async` 函数并检查此函数的代码。 此函数最重要的部分是  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API调用，其中
    * 根据决策范围（即您在A/B测试中定义的位置）检索当前用户档案的建议，并且
    * 在应用程序中正确显示的内容中将结果解包。
 
