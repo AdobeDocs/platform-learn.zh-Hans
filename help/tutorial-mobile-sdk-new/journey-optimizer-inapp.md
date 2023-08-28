@@ -4,9 +4,9 @@ description: 了解如何使用Platform Mobile SDK和Adobe Journey Optimizer在�
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 hide: true
-source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
+source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
 workflow-type: tm+mt
-source-wordcount: '994'
+source-wordcount: '1070'
 ht-degree: 2%
 
 ---
@@ -25,14 +25,28 @@ Journey Optimizer允许您创建历程，并向目标受众发送应用程序内
 ## 先决条件
 
 * 在安装和配置SDK的情况下成功构建和运行应用程序。
-* 对Adobe Journey Optimizer的访问权限和足够的权限，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 您还需要具有足够权限才能使用以下Adobe Journey Optimizer功能。
-   * 创建营销活动.
+* 对Adobe Journey Optimizer的访问权限和足够的权限，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 此外，您需要具有足够的权限才能使用以下Adobe Journey Optimizer功能。
+   * 管理营销策划。
 * 具有创建证书、标识符和密钥的足够访问权限的付费Apple开发人员帐户。
 * 用于测试的物理iOS设备或模拟器。
-* [已注册应用程序的APN ID](journey-optimizer-push.md#register-app-id-with-apn)
+* [向Apple推送通知服务注册的应用程序ID](journey-optimizer-push.md#register-app-id-with-apn)
 * [已在数据收集中添加您的应用程序推送凭据](journey-optimizer-push.md#add-your-app-push-credentials-in-data-collection)
 * [已安装Adobe Journey Optimizer标记扩展](journey-optimizer-push.md#install-adobe-journey-optimizer-tags-extension)
 * [在应用程序中实施了Adobe Journey Optimizer](journey-optimizer-push.md#implement-adobe-journey-optimizer-in-the-app)
+
+
+## 学习目标
+
+在本课程中，您将执行以下操作
+
+* 向Apple推送通知服务(APN)注册应用程序ID。
+* 创建 **[!UICONTROL 应用程序表面]** 在AJO中。
+* 更新您的 **[!UICONTROL 架构]** 以包含推送消息字段。
+* 安装和配置 **[!UICONTROL Adobe Journey Optimizer]** 标记扩展。
+* 更新您的应用程序以包含AJO标记扩展。
+* 验证Assurance中的设置。
+* 在Journey Optimizer中定义您自己的营销活动和应用程序内消息体验。
+* 在应用程序中发送您自己的应用程序内消息。
 
 
 ## 使用保障进行验证
@@ -146,4 +160,4 @@ Journey Optimizer允许您创建历程，并向目标受众发送应用程序内
 >
 >现在，您已为应用程序内消息传送启用应用程序，并为Adobe Experience Platform Mobile SDK使用Adobe Journey Optimizer和Adobe Journey Optimizer扩展添加了应用程序内消息传送促销活动。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[结论和后续步骤](conclusion.md)**
+下一步： **[通过Journey Optimizer显示优惠](journey-optimizer-offers.md)**

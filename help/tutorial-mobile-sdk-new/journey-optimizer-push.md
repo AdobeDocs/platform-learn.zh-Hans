@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 2f9298a140c7bd483c8c533427f0e90d90d14af0
+source-git-commit: 35b38e7491a3751d21afe4a7b998e5dc2292ba27
 workflow-type: tm+mt
-source-wordcount: '1899'
+source-wordcount: '2005'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 ## 先决条件
 
 * 在安装和配置SDK的情况下成功构建和运行应用程序。
-* 对Adobe Journey Optimizer的访问权限和足够的权限，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 您还需要具有足够权限才能使用以下Adobe Journey Optimizer功能。
+* 对Adobe Journey Optimizer的访问权限和足够的权限，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 此外，您需要具有足够的权限才能使用以下Adobe Journey Optimizer功能。
    * 创建应用程序表面。
    * 创建历程
    * 创建消息.
@@ -36,7 +36,7 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 
 ## 学习目标
 
-在本课程中，您将执行以下操作：
+在本课程中，您将执行以下操作
 
 * 向Apple推送通知服务(APN)注册应用程序ID。
 * 创建 **[!UICONTROL 应用程序表面]** 在AJO中。
@@ -81,7 +81,7 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 1. 在“应用程序ID(iOS捆绑包ID)”字段中输入移动应用程序捆绑包ID。 如果您将与Luma应用程序一起关注，则该值为 `com.adobe.luma.tutorial.swiftui`.
 1. 打开 **[!UICONTROL 推送凭据]** 按钮以添加您的凭据。
 1. 拖放 `.p8` **Apple推送通知身份验证密钥** 文件。
-1. 提供 **[!UICONTROL 密钥ID]**，在创建期间分配的10个字符的字符串 `p8` 身份验证密钥。 它可以在以下位置找到 **[!UICONTROL 键]** tab in **证书、标识符和配置文件** Apple开发人员门户页面的页面。
+1. 提供 **[!UICONTROL 密钥ID]**，在创建期间分配的10个字符的字符串 `p8` 身份验证密钥。 它可以在以下位置找到 **[!UICONTROL 键]** 选项卡 **证书、标识符和配置文件** Apple开发人员门户页面的页面。
 1. 提供 **[!UICONTROL 团队编号]**. “团队ID”是一个值，该值可在下找到 **会员资格** 选项卡或Apple开发人员门户页面顶部的。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -105,7 +105,7 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 >如果您没有看到 `AJO Push Tracking Experience Event Dataset` 或者，请联系客户关怀团队。
 >
 
-## 在应用程序中实施Adobe Journey Optimizer
+## 在应用程序中实施Journey Optimizer
 
 如前面的课程中所述，安装移动标记扩展仅提供配置。 接下来，您必须安装并注册消息传送SDK。 如果这些步骤不明确，请查阅 [安装SDK](install-sdks.md) 部分。
 
@@ -175,6 +175,20 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 
 要创建自己的推送通知，您必须在Journey Optimizer中定义一个事件，以触发负责发送推送通知的历程。
 
+### 更新架构
+
+您即将定义一个新的事件类型，该类型尚不能作为您在架构中定义的事件列表的一部分使用。
+
+1. 在Journey Optimizer UI中，选择 **[!UICONTROL 架构]** 从左边栏开始。
+1. 选择 **[!UICONTROL 浏览]** 在选项卡栏中。
+1. 选择您的架构，例如 **[!UICONTROL Luma移动应用程序事件架构]** 打开它。
+1. 在架构编辑器中：
+   1. 选择 **[!UICONTROL 事件类型]** 字段。
+   1. 在 **[!UICONTROL 字段属性]** 窗格，向下滚动以查看事件类型可能值的列表。 选择 **[!UICONTROL 添加行]**，并添加 `application.test` 作为 **[!UICONTROL 值]** 和 **[!UICONTROL 推送通知的测试事件]** 作为 `DISPLAY NAME`.
+   1. 选择&#x200B;**[!UICONTROL 应用]**。
+   1. 选择&#x200B;**[!UICONTROL 保存]**。
+      ![为事件类型添加值](assets/ajo-update-schema-eventtype-enum.png)
+
 ### 定义事件
 
 1. 在Journey Optimizer UI中，选择 **[!UICONTROL 配置]** 从左边栏开始。
@@ -193,7 +207,7 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 
       ![编辑事件步骤1](assets/ajo-edit-event1.png)
 
-      在 **[!UICONTROL 字段]** 对话框，请确保选择以下字段(位于始终选择的默认字段（_id、id和时间戳）之上)。 您可以使用下拉列表在 **[!UICONTROL 已选择]**， **[!UICONTROL 全部]** 和 **[!UICONTROL 主要]** 或使用 ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 字段。
+      在 **[!UICONTROL 字段]** 对话框，请确保选择以下字段(位于始终选择的默认字段之上(**[!UICONTROL _id]**， **[!UICONTROL id]**、和 **[!UICONTROL 时间戳]**)。 您可以使用下拉列表在 **[!UICONTROL 已选择]**， **[!UICONTROL 全部]** 和 **[!UICONTROL 主要]** 或使用 ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 字段。
 
       * **[!UICONTROL 已识别应用程序(ID)]**，
       * **[!UICONTROL 事件类型(eventType)]**，
@@ -205,9 +219,8 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 
    1. 选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 旁边的 **[!UICONTROL 事件ID条件]** 字段。
 
-      1. 在 **[!UICONTROL 添加事件ID条件]** 对话框，拖放 **[!UICONTROL 应用程序标识符(id)]** 下 **[!UICONTROL 应用程序（应用程序）]** 到 **[!UICONTROL 将元素拖放到此处]**.
-      1. 在弹出窗口中，输入Xcode中的捆绑包标识符，例如 `com.adobe.luma.tutorial.swiftui` 在旁边的字段中 **[!UICONTROL 等于]**.
-      1. 单击 **[!UICONTROL 确定]**.
+      1. 在 **[!UICONTROL 添加事件ID条件]** 对话框，拖放 **[!UICONTROL 事件类型(eventType)]** 到 **[!UICONTROL 将元素拖放到此处]**.
+      1. 在弹出窗口中，滚动到底部并选择 **[!UICONTROL application.test]**. 然后向上滚动到顶部并选择 **[!UICONTROL 确定]**.
       1. 单击 **[!UICONTROL 确定]**.
          ![编辑事件条件](assets/ajo-edit-condition.png)
 
