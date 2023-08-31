@@ -3,9 +3,9 @@ title: 设置保证
 description: 了解如何在移动应用程序中实施Assurance扩展。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: e364d70375f687b9c50691efd04a1db757fee364
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '738'
 ht-degree: 9%
 
 ---
@@ -36,7 +36,7 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 
 通过完成以下步骤，确认贵组织有权访问Assurance：
 
-1. 访问 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance{target="_blank"}).
+1. 访问 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
 1. 使用您的Adobe ID凭据登录该Experience Cloud。
 1. 如果您看到 **[!UICONTROL 会话]** 屏幕上，则表示您拥有访问权限。 如果您看到（测试版）访问页面，请选择 **[!UICONTROL 注册]** 注册。
 
@@ -56,7 +56,7 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
    }
    ```
 
-可以找到更多信息 [此处](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"}).
+可以找到更多信息 [此处](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## 签名
 
@@ -81,7 +81,7 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 
    ![保证url](assets/assurance-url-type.png)
 
-要了解有关iOS中URL方案的更多信息，请查看 [Apple的文档](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app{target="_blank"}).
+要了解有关iOS中URL方案的更多信息，请查看 [Apple的文档](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基本URL开头，该URL可打开应用程序并包含其他参数。 这些唯一参数用于连接会话。
 
@@ -129,7 +129,7 @@ Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基�
 
      ![保证事件](assets/assurance-events.png)
 
-如果您遇到任何挑战，请查看 [技术](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/{target="_blank"}) 和 [常规文档](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html{target="_blank"}).
+如果您遇到任何挑战，请查看 [技术](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 >[!SUCCESS]
 >
