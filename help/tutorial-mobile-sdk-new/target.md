@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
+source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1418'
 ht-degree: 2%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 2%
 
 Target提供了您必须定制和个性化客户体验的所有功能。 Target可帮助您最大限度地提高网站和移动网站、应用程序、社交媒体和其他数字渠道的收入。 本教程重点介绍Target的A/B测试功能。 请参阅 [A/B测试概述](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) 以了解更多信息。
 
-在使用Target Premium执行A/B测试之前，您必须确保已实施适当的配置和集成。
+在使用Target执行A/B测试之前，您必须确保已进行适当的配置和集成。
 
 >[!NOTE]
 >
->本课程是可选的，仅适用于希望执行A/B测试的Adobe Target Premium用户。
+>本课程是可选的，仅适用于希望执行A/B测试的Adobe Target用户。
 
 
 ## 先决条件
@@ -47,7 +47,13 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 * 在Assurance中验证实施。
 
 
-## 更新Edge配置
+## 设置您的应用程序
+
+>[!TIP]
+>
+>如果您已将应用程序设置为 [Journey Optimizer优惠](journey-optimizer-offers.md) 教程，
+
+### 更新Edge配置
 
 要确保将从您的移动应用程序发送到边缘网络的数据转发到Adobe Target，您必须更新Experience Edge配置。
 
@@ -62,7 +68,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
    ![向数据流添加Target](assets/edge-datastream-target.png)
 
 
-## 安装Adobe Journey Optimizer - Decisioning标记扩展
+### 安装Adobe Journey Optimizer - Decisioning标记扩展
 
 1. 导航到 **[!UICONTROL 标记]** 并找到您的移动标记资产并打开该资产。
 1. 选择 **[!UICONTROL 扩展]**.
@@ -73,7 +79,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
    ![Add Decisioning扩展](assets/tag-add-decisioning-extension.png)
 
 
-## 更新您的架构
+### 更新您的架构
 
 1. 导航到数据收集UI，然后从左边栏中选择架构。
 1. 选择 **[!UICONTROL 浏览]** 从顶部栏中。
@@ -84,7 +90,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 1. 要保存对架构所做的更改，请选择 **[!UICONTROL 保存]** .
 
 
-## 验证Assurance中的设置
+### 验证Assurance中的设置
 
 要在Assurance中验证设置，请执行以下操作：
 
@@ -161,12 +167,12 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 >[!NOTE]
 >
->如果您已完成 [安装SDK](install-sdks.md) 部分，则该SDK已安装，您可以跳至步骤#7。
+>如果您已完成 [安装SDK](install-sdks.md) 部分，则该SDK已安装，您可以跳过此步骤。
 >
 
 1. 在Xcode中，确保 [AEP优化](https://github.com/adobe/aepsdk-messaging-ios.git) 会添加到包依赖关系中的包列表中。 请参阅 [Swift包管理器](install-sdks.md#swift-package-manager).
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]**.
-1. 确保 `AEPMessaging` 是导入列表的一部分。
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 在Xcode项目导航器中。
+1. 确保 `AEPOptimize` 是导入列表的一部分。
 
    `import AEPOptimize`
 
@@ -239,17 +245,17 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 1. 选择 **[!UICONTROL 配置]** 在左边栏中选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边 **[!UICONTROL 审阅和模拟]** 下 **[!UICONTROL Adobe Journey Optimizer决策]**.
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 选择 **[!UICONTROL 审阅和模拟]** 在左边栏中。 数据流设置以及应用程序中的SDK设置均已验证。
-1. 选择 **[!UICONTROL 请求]** 在顶栏里。 您可以看到您的Target请求。
+1. 选择 **[!UICONTROL 请求]** 在顶栏里。 您看到您的 **[!UICONTROL Target]** 请求。
    ![AJO决策验证](assets/assurance-decisioning-requests.png)
 
 1. 您可以浏览“模拟”和“事件列表”选项卡，以进一步了解功能检查您的Target选件设置。
 
-## 在应用程序中实施
+## 后续步骤
 
-您现在应该拥有所有工具，以便开始向Luma应用程序添加更多A/B测试或其他Target活动（如果相关适用）。
+现在，您应该拥有所有工具，以便开始向Luma应用程序添加更多A/B测试或其他Target活动（例如体验定位、多变量测试）（如果相关且适用）。
 
 >[!SUCCESS]
 >
->您现在已为应用程序启用A/B测试，并显示了使用Adobe Target和适用于Adobe Experience Platform Mobile SDK的Adobe Journey Optimizer - Decisioning扩展的A/B测试的结果。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>您已为应用程序启用A/B测试，并显示了使用Adobe Target和适用于Adobe Experience Platform Mobile SDK的Adobe Journey Optimizer - Decisioning扩展的A/B测试的结果。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[结论和后续步骤](conclusion.md)**
