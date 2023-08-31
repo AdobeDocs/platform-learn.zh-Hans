@@ -3,18 +3,18 @@ title: Adobe Journey Optimizer优惠
 description: 了解如何使用Platform Mobile SDK和Adobe Journey Optimizer Decision Management创建和显示优惠。
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
-feature: Push
+feature: Offers
 hide: true
-source-git-commit: 78cbdc441a470448a0bc91ec4d1670ebbf251a8d
+source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
 workflow-type: tm+mt
-source-wordcount: '2309'
+source-wordcount: '2344'
 ht-degree: 2%
 
 ---
 
-# Adobe Journey Optimizer优惠
+# Journey Optimizer优惠
 
-了解如何使用Platform Mobile SDK在移动应用程序中显示Adobe Journey Optimizer决策管理中的选件。
+了解如何使用Platform Mobile SDK在移动应用程序中显示Journey Optimizer决策管理中的选件。
 
 Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的客户提供最佳优惠和体验。 设计完成后，为您的受众提供个性化优惠。
 
@@ -23,13 +23,13 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 
 >[!NOTE]
 >
->本课程是可选的，仅适用于希望使用决策管理功能在移动应用程序中显示Adobe的历程优化器用户。
+>本课程为可选课程，仅适用于希望使用决策管理功能在移动应用程序中显示历程的选件优化器用户。
 
 
 ## 先决条件
 
 * 在安装和配置SDK的情况下成功构建和运行应用程序。
-* 访问Adobe Journey Optimizer — 具有相应权限以管理优惠和决策的决策管理，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+* 访问Journey Optimizer — 具有相应权限以管理优惠和决策的决策管理，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 
 ## 学习目标
@@ -45,9 +45,15 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 * 在应用程序中实施来自决策管理的选件。
 
 
-## 更新Edge配置
+## 设置您的应用程序
 
-要确保将从您的移动应用程序发送到边缘网络的数据转发到Adobe Journey Optimizer — 决策管理，请更新您的Experience Edge配置。
+>[!TIP]
+>
+>如果您已将应用程序设置为 [使用Target设置A/B测试](target.md) 教程，您可以跳过 [安装Adobe Journey Optimizer - Decisioning标记扩展](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的架构](#update-your-schema).
+
+### 更新Edge配置
+
+要确保将从您的移动应用程序发送到边缘网络的数据转发到Journey Optimizer — 决策管理，请更新您的Experience Edge配置。
 
 1. 在数据收集UI中，选择 **[!UICONTROL 数据流]**，并选择您的数据流，例如 **[!UICONTROL Luma移动应用程序]**.
 1. 选择 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 对象 **[!UICONTROL Experience Platform]** 并选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]** 从上下文菜单中。
@@ -57,7 +63,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
    ![AEP数据流配置](assets/datastream-aep-configuration.png)
 
 
-## 安装Adobe Journey Optimizer - Decisioning标记扩展
+### 安装Journey Optimizer - Decisioning标记扩展
 
 1. 导航到 **[!UICONTROL 标记]** 并找到您的移动标记资产并打开该资产。
 1. 选择 **[!UICONTROL 扩展]**.
@@ -68,7 +74,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
    ![Add Decisioning扩展](assets/tag-add-decisioning-extension.png)
 
 
-## 更新您的架构
+### 更新您的架构
 
 1. 导航到数据收集UI并选择 **[!UICONTROL 架构]** 从左边栏开始。
 1. 选择 **[!UICONTROL 浏览]** 从顶部栏中。
@@ -97,7 +103,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 1. 选择 **[!UICONTROL 创建选件]**.
 1. 在 **[!UICONTROL 新优惠]** 对话框，选择 **[!UICONTROL 个性化优惠]** 并单击 **[!UICONTROL 下一个]**.
 1. 在 **[!UICONTROL 详细信息]** 第步/共步 **[!UICONTROL 创建新的个性化优惠]**：
-   1. 输入 **[!UICONTROL 名称]** 例如，对于选件 `Luma - Juno Jacket`，并输入 **[!UICONTROL 开始日期和时间]** 和 **[!UICONTROL 结束日期和时间]**. 这些日期决定在请求下一个最佳选件时是否考虑该选件。
+   1. 输入 **[!UICONTROL 名称]** 例如，对于选件 `Luma - Juno Jacket`，并输入 **[!UICONTROL 开始日期和时间]** 和 **[!UICONTROL 结束日期和时间]**. 在这些日期之外，决策引擎将不会选择选件。
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
       ![优惠 — 详细信息](assets/ajo-offers-details.png)
 
@@ -132,24 +138,24 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 
 1. 重复步骤3 - 8以创建四个具有不同名称和内容的更多选件。 所有其他配置值（例如开始日期和时间或优先级）与您创建的第一个选件相似。 您可以快速创建重复和编辑选件。
 
-1. 在Journey Optimizer UI中，选择 ![选件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg) **[!UICONTROL 选件]** 从左边栏中，然后从顶部栏中选择选件。
-1. 选择您创建的选件的行。
-1. 在右窗格中，选择 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmall_18_N.svg) **[!UICONTROL 更多操作]** 并从上下文菜单中选择 ![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Duplicate_18_N.svg) **[!UICONTROL 复制]**.
+   1. 在Journey Optimizer UI中，选择 ![选件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Offers_18_N.svg) **[!UICONTROL 选件]** 从左边栏中，然后从顶部栏中选择选件。
+   1. 选择您创建的选件的行。
+   1. 在右窗格中，选择 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmall_18_N.svg) **[!UICONTROL 更多操作]** 并从上下文菜单中选择 ![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Duplicate_18_N.svg) **[!UICONTROL 复制]**.
 
-   使用下表定义四个选件。
+      使用下表定义其他四个选件。
 
-   | 选件名称 | 选件内容 |
-   |---|---|
-   | Luma - Affirm水瓶 | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
-   | Luma - Desiree健身球 | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
-   | Luma - Adrienne Trek Jacket | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
-   | Luma - Aero每日健身运动鞋 | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
+      | 选件名称 | 选件内容 |
+      |---|---|
+      | Luma - Affirm水瓶 | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
+      | Luma - Desiree健身球 | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
+      | Luma - Adrienne Trek Jacket | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
+      | Luma - Aero每日健身运动鞋 | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
 
-   {style="table-layout:fixed"}
+      {style="table-layout:fixed"}
 
-1. 作为最后一步，您必须创建后备优惠，如果配置文件不符合任何个性化优惠的条件，则始终可以返回该优惠。
-   1. 选择创建选件。
-   1. 在 **[!UICONTROL 详细信息]** 第步/共步 **[!UICONTROL 创建新的个性化优惠]** 屏幕：
+1. 作为最后一步，您必须创建后备优惠，如果客户不符合其他优惠的条件，该优惠将发送给客户。
+   1. 选择 **[!UICONTROL 创建选件]**.
+   1. 在 **[!UICONTROL 详细信息]** 第步/共步 **[!UICONTROL 创建新的个性化优惠]**：
    1. 输入 **[!UICONTROL 名称]** 例如，对于选件 `Luma - Fallback Offer`，并输入 **[!UICONTROL 开始日期和时间]** 和 **[!UICONTROL 结束日期和时间]**.
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
@@ -204,7 +210,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 * 资格规则：例如，选件仅适用于特定受众，
 * 排名方法：当有多个选件可供选择时，您使用哪个方法对它们进行排名（例如，按选件优先级、使用公式或AI模型）。
 
-请参阅 [创建和管理优惠的关键步骤](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 如果您想更好地了解投放位置、规则、排名、优惠、呈现、收藏集、决策等如何进行交互。 本教程侧重于使用决策的输出，而不是定义决策的灵活性。
+请参阅 [创建和管理优惠的关键步骤](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 如果您想更好地了解投放位置、规则、排名、优惠、呈现、收藏集、决策等如何相互交互和相互关联。 本教程仅侧重于使用决策的输出，而不是侧重于定义决策的灵活性。
 
 1. 在Journey Optimizer UI中，选择 **[!UICONTROL 选件]** 从左边栏开始。
 1. 选择 **[!UICONTROL 决策]** 从顶部栏中。
@@ -214,7 +220,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 
 1. 在 **[!UICONTROL 添加决策范围]** 第步/共步 **[!UICONTROL 创建新的优惠决策]**：
-   1. 选择**[!UICONTROL  移动设备JSON]发**自 **[!UICONTROL 投放]** 列表。
+   1. 选择 **[!UICONTROL 移动设备JSON]** 从 **[!UICONTROL 投放]** 列表。
    1. 在 **[!UICONTROL 评估标准]** 图块，选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加]**.
       1. 在 **[!UICONTROL 添加优惠收藏集]** 对话框中，选择您的选件收藏集。 例如， **[!UICONTROL Luma — 移动应用程序收藏集]**.
       1. 选择 **[!UICONTROL 添加]**.
@@ -237,12 +243,13 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 1. 选择您的决策，例如 **[!UICONTROL Luma — 移动设备应用程序决策]**.
 1. 在 **[!UICONTROL 决策范围]** 图块，选择 ![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 复制]**.
 1. 从上下文菜单中，选择 **[!UICONTROL 决策范围]**.
+   ![复制决策范围](assets/ajo-copy-decisionscope.png)
 1. 使用任意文本编辑器粘贴决策范围以供将来使用。 决策范围具有以下JSON格式。
 
    ```json
    {
-       "xdm:activityId":"xcore:offer-activity:177cdaa5e1fd589d",
-       "xdm:placementId":"xcore:offer-placement:13a3b264ce69bb14"
+       "xdm:activityId":"xcore:offer-activity:xxxxxxxxxxxxxxx",
+       "xdm:placementId":"xcore:offer-placement:xxxxxxxxxxxxxxx"
    }
    ```
 
@@ -252,12 +259,12 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 
 >[!NOTE]
 >
->如果您已完成 [安装SDK](install-sdks.md) 部分，则该SDK已安装，您可以跳至步骤#7。
+>如果您已完成 [安装SDK](install-sdks.md) 部分，则该SDK已安装，您可以跳过此步骤。
 >
 
 1. 在Xcode中，确保 [AEP优化](https://github.com/adobe/aepsdk-messaging-ios.git) 会添加到包依赖关系中的包列表中。 请参阅 [Swift包管理器](install-sdks.md#swift-package-manager).
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]**.
-1. 确保 `AEPMessaging` 是导入列表的一部分。
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 在Xcode项目导航器中。
+1. 确保 `AEPOptimize` 是导入列表的一部分。
 
    `import AEPOptimize`
 
@@ -282,7 +289,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。 查找 `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 函数。 Inspect代码
 
    * 设置XDM词典 `xdmData`，包含ECID以标识必须提供选件的配置文件。
-   * 定义 `decisionScope`，确定版面、要使用的收藏集、排名公式和资格规则的对象，如您在Journey Optimizer — 决策管理UI中定义。
+   * 定义 `decisionScope`，该对象基于您在Journey Optimizer — 决策管理UI中定义的决策，并使用从复制的决策范围进行定义 [创建决策](#create-a-decision).
    * 调用两个API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   这些函数清除任何缓存的建议并更新此用户档案的建议。 Luma应用程序使用配置文件(`decisions.json`)以检索范围参数，具体取决于以下JSON格式：
 
      ```swift
@@ -296,7 +303,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
      ]
      ```
 
-     但是，您可以使用任何类型的实施来确保Optimizer API获得正确的参数(`activityId`， `placementId` 和， `itemCount`)，以构造有效的 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 实施对象。
+     但是，您可以使用任何类型的实施来确保优化API获得正确的参数(`activityId`， `placementId` 和， `itemCount`)，以构造有效的 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 实施对象。
 
 1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 个性化]** > **[!UICONTROL EdgeOffersView]** 在Xcode项目导航器中。 查找 `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` 函数并检查此函数的代码。 此函数最重要的部分是  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API调用，其中
 
@@ -335,15 +342,16 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 
 1. 选择 **[!UICONTROL 边缘个性化]**.
 
-1. 滚动到顶部，您会看到您在选件收藏集中定义的两个随机选件，它们显示在 **[!UICONTROL 决策LUMA — 移动应用程序决策]** 磁贴。
+1. 滚动到顶部，您将看到您在中定义的收藏集中显示的两个随机选件。 **[!UICONTROL 决策LUMA — 移动应用程序决策]** 磁贴。
 
    <img src="assets/ajo-app-offers.png" width="300">
 
-   这些选件是随机的，因为您已为所有选件指定相同的优先级，并根据优先级进行排名。
+   这些优惠是随机的，因为您为所有优惠提供了相同的优先级，且决策的排名基于优先级。
+
 
 ## 在Assurance中验证实施
 
-要在保证中验证A/B测试，请执行以下操作：
+验证Assurance中的选件实施：
 
 1. 转到Assurance UI。
 1. 选择 **[!UICONTROL 配置]** 在左边栏中选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边 **[!UICONTROL 审阅和模拟]** 下 **[!UICONTROL Adobe Journey Optimizer决策]**.
@@ -354,7 +362,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 
 1. 您可以浏览 **[!UICONTROL 模拟]** 和 **[!UICONTROL 事件列表]** 选项卡以了解更多功能，检查您的Journey Optimizer决策管理设置。
 
-## 在应用程序中实施
+## 后续步骤
 
 您现在应该拥有所有工具，可以开始向Journey Optimizer — 决策管理实施添加更多功能。 例如：
 
@@ -364,6 +372,6 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 
 >[!SUCCESS]
 >
->您现在已启用了使用Adobe Experience Platform Mobile SDK的Adobe Journey Optimizer - Decisioning扩展显示选件的应用程序。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>您已启用应用程序，以便使用适用于Experience PlatformMobile SDK的Journey Optimizer - Decisioning扩展来显示Offers。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[使用Target执行A/B测试](target.md)**
