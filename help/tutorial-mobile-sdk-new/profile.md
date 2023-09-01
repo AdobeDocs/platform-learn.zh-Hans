@@ -2,9 +2,9 @@
 title: 配置文件
 description: 了解如何在移动应用程序中收集用户档案数据。
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '594'
 ht-degree: 2%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 快速了解用户以前是否曾在应用程序中购买过产品，这对定位和/或个性化会很有帮助。 让我们在Luma应用程序中设置它。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** >  **[!UICONTROL MobileSDK]** 并查找 `func updateUserAttribute(attributeName: String, attributeValue: String)` 函数。 添加以下代码：
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** >  **[!UICONTROL MobileSDK]** 在Xcode项目导航器中查找 `func updateUserAttribute(attributeName: String, attributeValue: String)` 函数。 添加以下代码：
 
    ```swift
    // Create a profile map
@@ -113,9 +113,13 @@ ht-degree: 2%
    1. 选择 <img src="assets/saveforlater.png" width="15" />。
    1. 选择 <img src="assets/addtocart.png" width="20" />。
    1. 选择 <img src="assets/purchase.png" width="15" />。
-   1. 返回至 **[!UICONTROL 主页]** 屏幕。 您应该会看到以下项的更新值： **[!UICONTROL 电子邮件]** 和 **[!UICONTROL CRM ID]**.
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200"> <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+   1. 返回至 **[!UICONTROL 主页]** 屏幕。 您应该会看到已添加的徽章 <img src="assets/person-badge-icon.png" width="15" />。
+
+      <img src="./assets/personbadges.png" width="200">
+
+
 
 1. 在Assurance UI中，您应该看到 **[!UICONTROL UserProfileUpdate]** 和 **[!UICONTROL getuserattributes]** 具有已更新内容的事件 `profileMap` 值。
    ![验证配置文件](assets/profile-validate.png)

@@ -3,9 +3,9 @@ title: 标识
 description: 了解如何在移动应用程序中收集身份数据。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '656'
 ht-degree: 6%
 
 ---
@@ -144,7 +144,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
       <img src="./assets/identity1.png" width="300"> <img src="./assets/identity2.png" width="300">
 
 
-1. 在Assurance Web UI中查找该**[!UICONTROL Edge Identity更新身份]**来自的事件 **[!UICONTROL com.adobe.griffon.mobile]** 供应商。
+1. 在Assurance Web UI中查找 **[!UICONTROL Edge Identity更新身份]** 来自的事件 **[!UICONTROL com.adobe.griffon.mobile]** 供应商。
 1. 选择事件并查看 **[!UICONTROL ACPExtensionEventData]** 对象。 您应该会看到已更新的身份。
    ![验证身份更新](assets/identity-validate-assurance.png)
 

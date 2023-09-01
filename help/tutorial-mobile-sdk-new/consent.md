@@ -3,9 +3,9 @@ title: 同意
 description: 了解如何在移动应用程序中实施同意。
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '535'
 ht-degree: 2%
 
 ---

@@ -3,9 +3,9 @@ title: 在移动应用程序中实施Adobe Experience Cloud教程概述
 description: 了解如何实施Adobe Experience Cloud移动应用程序。 本教程将指导您在一个示例Swift应用程序中实施Experience Cloud应用程序。
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '659'
 ht-degree: 11%
 
 ---
@@ -39,6 +39,10 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
    * [配置文件](profile.md)
    * [Adobe Experience Platform](platform.md)
    * [使用Journey Optimizer推送消息](journey-optimizer-push.md)
+   * [Journey Optimizer的Im-app消息传递](journey-optimizer-inapp.md)
+   * [Journey Optimizer的优惠](journey-optimizer-offers.md)
+   * [使用Target进行A/B测试](target.md)
+
 * 将Experience Cloud参数正确传递给 [webview](web-views.md).
 * 使用验证实施 [Adobe Experience Platform Assurance](assurance.md).
 
@@ -74,12 +78,12 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
 
 示例应用程序有两个版本可供下载。
 
-1. [空](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"})：一个没有任何Experience Cloud代码的版本，用于完成本教程中的动手练习
-1. [完全实施](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"})：具有完整Experience Cloud实现的版本以供参考。
+1. [空](https://git.corp.adobe.com/rmaur/Luma{target="_blank"})：一个没有任何Experience Cloud代码的版本，用于完成本教程中的动手练习
+1. [完全实施](https://git.corp.adobe.com/Luma{target="_blank"})：具有完整Experience Cloud实现的版本以供参考。
 
 让我们开始吧！
 
->[!NOTE]
+>[!SUCCESS]
 >
 >感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
