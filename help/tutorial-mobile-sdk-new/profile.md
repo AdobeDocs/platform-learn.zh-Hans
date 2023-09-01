@@ -2,9 +2,9 @@
 title: 配置文件
 description: 了解如何在移动应用程序中收集用户档案数据。
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '592'
 ht-degree: 2%
 
 ---
@@ -128,4 +128,4 @@ ht-degree: 2%
 >
 >您现在已设置应用程序，以更新Edge Network和（设置后）Adobe Experience Platform中用户档案的属性。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[将数据映射到Adobe Analytics](analytics.md)**
+下一步： **[使用地理定位服务](places.md)**

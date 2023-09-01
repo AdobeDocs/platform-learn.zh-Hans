@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f0fa0b524cd4a12aaab8c8c0cd560a31003fbd8
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2344'
+source-wordcount: '2342'
 ht-degree: 2%
 
 ---
@@ -45,11 +45,11 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 * 在应用程序中实施来自决策管理的选件。
 
 
-## 设置您的应用程序
+## 设置
 
 >[!TIP]
 >
->如果您已将应用程序设置为 [使用Target设置A/B测试](target.md) 教程，您可以跳过 [安装Adobe Journey Optimizer - Decisioning标记扩展](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的架构](#update-your-schema).
+>如果您已将环境设置为 [使用Target设置A/B测试](target.md) 教程，您可以跳过 [安装Adobe Journey Optimizer - Decisioning标记扩展](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的架构](#update-your-schema).
 
 ### 更新Edge配置
 
@@ -368,7 +368,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 
 * 将不同的参数应用于选件（例如，优先级、上限）
 * 收集应用程序中的配置文件属性(请参阅 [个人资料](profile.md))，并使用这些配置文件属性构建受众。 然后，将这些受众用作您决策中的资格规则的一部分。
-* 合并多个决策范围
+* 合并多个决策范围。
 
 >[!SUCCESS]
 >

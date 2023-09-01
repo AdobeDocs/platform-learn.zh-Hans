@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
 workflow-type: tm+mt
-source-wordcount: '2175'
+source-wordcount: '2173'
 ht-degree: 2%
 
 ---
@@ -49,11 +49,11 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 * 从应用程序内发送您自己的推送通知。
 
 
-## 设置您的应用程序
+## 设置
 
 >[!TIP]
 >
->如果您已将应用程序设置为 [Journey Optimizer应用程序内消息传送](journey-optimizer-inapp.md) 教程中，您可以跳过此部分。
+>如果您已将环境设置为 [Journey Optimizer应用程序内消息传送](journey-optimizer-inapp.md) 教程中，您可以跳过此部分。
 
 ### 向APNS注册应用程序ID
 
