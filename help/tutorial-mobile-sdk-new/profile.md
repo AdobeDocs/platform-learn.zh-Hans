@@ -2,10 +2,10 @@
 title: 配置文件
 description: 了解如何在移动应用程序中收集用户档案数据。
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 2%
+source-wordcount: '612'
+ht-degree: 1%
 
 ---
 
@@ -41,16 +41,14 @@ ht-degree: 2%
 
 ## 设置和更新用户属性
 
-快速了解用户以前是否曾在应用程序中购买过产品，这对定位和/或个性化会很有帮助。 让我们在Luma应用程序中设置它。
+快速了解用户过去或最近是否进行了购买有助于在应用程序中定位和/或个性化。 让我们在Luma应用程序中设置它。
 
 1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** >  **[!UICONTROL MobileSDK]** 在Xcode项目导航器中查找 `func updateUserAttribute(attributeName: String, attributeValue: String)` 函数。 添加以下代码：
 
    ```swift
-   // Create a profile map
+   // Create a profile map, add attributes to the map and update profile using the map
    var profileMap = [String: Any]()
-   // Add attributes to profile map
    profileMap[attributeName] = attributeValue
-   // Use profile map to update user attributes
    UserProfile.updateUserAttributes(attributeDict: profileMap)
    ```
 
@@ -60,22 +58,21 @@ ht-degree: 2%
 
    1. 使用以下方式将元素添加到词典 `attributeName` (例如 `isPaidUser`)，和 `attributeValue` (例如 `yes`)。
 
-   1. 使用 `profileMap` 词典作为值 `attributeDict` 的参数 `UserProfile.updateUserAttributes` API调用。
+   1. 使用 `profileMap` 词典作为值 `attributeDict` 的参数 [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API调用。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 产品]** > **[!UICONTROL 产品视图]** 在Xcode项目导航器中找到对的调用 `updateUserAttributes` (在购买行为守则内， <img src="assets/purchase.png" width="15" /> 按钮):
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 产品]** > **[!UICONTROL 产品视图]** 在Xcode项目导航器中找到对的调用 `updateUserAttributes` (在购买行为守则内， <img src="assets/purchase.png" width="15" /> 按钮). 添加以下代码：
 
    ```swift
    // Update attributes
    MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
-可找到其他文档 [此处](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## 获取用户属性
 
-更新用户的属性后，该属性便可用于其他AdobeSDK，但您也可以显式检索属性。
+更新了用户的属性后，其他AdobeSDK便可以使用该属性，但您也可以显式检索属性，以使应用程序按所需的方式运行。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** >常规> **[!UICONTROL 主页视图]** 在Xcode项目导航器中查找 `.onAppear` 修饰符。 添加以下代码：
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 常规]** > **[!UICONTROL 主页视图]** 在Xcode项目导航器中查找 `.onAppear` 修饰符。 添加以下代码：
 
    ```swift
    // Get attributes
@@ -91,7 +88,7 @@ ht-degree: 2%
 
    此代码：
 
-   1. 调用 `UserProfile.getUserAttributes` 关闭 `iPaidUser` 属性名称作为 `attributeNames` 数组。
+   1. 调用 [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 包含的API `iPaidUser` 属性名称作为 `attributeNames` 数组。
    1. 然后检查的值 `isPaidUser` 属性和时间 `yes`，在 <img src="assets/paiduser.png" width="20" /> 图标（位于右上角）进行标记。
 
 可找到其他文档 [此处](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
@@ -106,18 +103,25 @@ ht-degree: 2%
    1. 将“Assurance（保证）”图标向左移动。
    1. 选择 **[!UICONTROL 主页]** 在选项卡栏中。
    1. 要打开“登录”工作表，请选择 <img src="assets/login.png" width="15" /> 按钮.
+
+      <img src="./assets/mobile-app-events-1.png" width="300">
+
    1. 要插入随机电子邮件和客户ID，请选择 <img src="assets/insert.png" width="15" /> 按钮 .
    1. 选择 **[!UICONTROL 登录]**.
+
+      <img src="./assets/mobile-app-events-2.png" width="300">
+
    1. 选择 **[!UICONTROL 产品]** 在选项卡栏中。
    1. 选择一个产品。
    1. 选择 <img src="assets/saveforlater.png" width="15" />。
    1. 选择 <img src="assets/addtocart.png" width="20" />。
    1. 选择 <img src="assets/purchase.png" width="15" />。
 
-      <img src="./assets/mobile-app-events-1.png" width="200"> <img src="./assets/mobile-app-events-2.png" width="200"> <img src="./assets/mobile-app-events-3.png" width="200">
+      <img src="./assets/mobile-app-events-3.png" width="300">
+
    1. 返回至 **[!UICONTROL 主页]** 屏幕。 您应该会看到已添加的徽章 <img src="assets/person-badge-icon.png" width="15" />。
 
-      <img src="./assets/personbadges.png" width="200">
+      <img src="./assets/personbadges.png" width="300">
 
 
 

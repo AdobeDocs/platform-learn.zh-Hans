@@ -3,9 +3,9 @@ title: 创建 XDM 架构
 description: 了解如何为移动应用程序事件创建XDM架构。
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '1414'
+source-wordcount: '1416'
 ht-degree: 7%
 
 ---
@@ -100,7 +100,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
    ![从下拉列表中选择ExperienceEvent](assets/schema-create.png)
 
-1. 选择 ![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **添加** 旁边 [!UICONTROL 字段组].
+1. 选择 ![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **添加** 旁边 **[!UICONTROL 字段组]**.
 
    ![添加字段组](assets/add-field-group.png)
 
@@ -116,7 +116,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
    您将返回到主架构组合屏幕，在该屏幕中可以查看所有可用字段。
 
-1. 通过选择为架构命名 **[!UICONTROL 无标题架构]** 从左上角开始，然后提供 **[!UICONTROL 显示名称]** 和 **[!UICONTROL 描述]**&#x200B;例如 `Luma Mobile App Event Schema` 和 `Schema for Luma mobile app experience events.`
+1. 通过选择为架构命名 **[!UICONTROL 无标题架构]** 从 **[!UICONTROL 合成]** 窗格（下） **[!UICONTROL 架构]**)，并提供 **[!UICONTROL 显示名称]** 和 **[!UICONTROL 描述]**&#x200B;例如 `Luma Mobile App Event Schema` 和 `Schema for Luma mobile app experience events.`
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -125,8 +125,8 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 >[!NOTE]
 >
 >请记住，您不必使用组中的所有字段。 如果这很有帮助，您可以将架构视为空数据层。 在应用程序中，您可在适当时填充相关值。
->
->此 `Consumer Experience Event` 具有的数据类型名为 `Web information`，用于描述页面查看和链接点击等事件。 在编写本文时，由于移动设备应用程序无法与这项功能媲美，因此您将创建自己的移动应用程序。
+
+此 [!UICONTROL 使用者体验事件] 字段组具有名为的数据类型 [!UICONTROL Web信息]，用于描述页面查看和链接点击等事件。 在编写本文时，由于移动设备应用程序无法与这项功能媲美，因此您将创建自己的移动应用程序。
 
 ## 创建自定义数据类型
 
@@ -152,9 +152,8 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
 1. 要添加字段，请选择 ![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 按钮。
 
-   此字段是用于应用程序交互的容器对象。
 
-1. 提供驼峰式拼写 **[!UICONTROL 字段名称]** `appInteraction`， **[!UICONTROL 显示名称]** `App Interaction`，并选择 `Object` 从 **[!UICONTROL 类型]** 列表。
+1. 此字段是用于应用程序交互的容器对象，因此请提供驼峰式大小写 **[!UICONTROL 字段名称]** `appInteraction`， **[!UICONTROL 显示名称]** `App Interaction`，并选择 `Object` 从 **[!UICONTROL 类型]** 列表。
 
 1. 选择&#x200B;**[!UICONTROL 应用]**。
 
@@ -180,7 +179,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
 1. 滚动到右边栏的底部并选择 **[!UICONTROL 应用]**.
 
-1. 创建 `appStateDetails` 包含 **[!UICONTROL 衡量]** 已调用的字段 `screenView` 和两个 **[!UICONTROL 字符串]** 已调用的字段 `screenName` 和 `screenType` 执行创建 **[!UICONTROL appInteraction]** 对象。
+1. 创建 `appStateDetails` 包含 **[!UICONTROL 衡量]** 已调用的字段 `screenView` 和两个 **[!UICONTROL 字符串]** 已调用的字段 `screenName` 和 `screenType`，请执行创建 **[!UICONTROL appInteraction]** 对象。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -196,7 +195,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
    ![添加新字段组](assets/schema-fieldgroup-add.png)
 
-1. 通过选择 **[!UICONTROL 创建新字段组]** 顶部附近的单选按钮。
+1. 选择&#x200B;**[!UICONTROL 创建新字段组]**。
 
 1. 提供 **[!UICONTROL 显示名称]** 和 **[!UICONTROL 描述]**&#x200B;例如， `App Interactions` 和 `Fields for app interactions`.
 
@@ -210,7 +209,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
 1. 在右边栏中，提供 **[!UICONTROL 字段名称]** 之 `appInformation`， a **[!UICONTROL 显示名称]** 之 `App Information`，和 **[!UICONTROL 类型]** 之 `App Information`.
 
-1. 选择 **[!UICONTROL 应用程序交互]** 从 **[!UICONTROL 类型]** 下拉列表，您在上一个练习中创建的数据类型。
+1. 选择 **[!UICONTROL 应用程序交互]** 从 **[!UICONTROL 类型]** 下拉列表，在上一个练习中创建的自定义数据类型。
 
 1. 选择&#x200B;**[!UICONTROL 应用]**。
 
@@ -220,7 +219,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
 >[!NOTE]
 >
->自定义字段组始终位于您的Experience Cloud组织标识符下。 因此 `_techmarketingdemos` 将被替换为您的组织的唯一值。
+>自定义字段组始终位于您的Experience Cloud组织标识符下。 因此 `_techmarketingdemos`在屏幕截图中使用的，将被替换为您组织的唯一值。
 
 
 >[!SUCCESS]

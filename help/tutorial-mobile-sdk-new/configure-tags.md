@@ -3,7 +3,7 @@ title: 配置标记属性
 description: 了解如何在中配置标记属性 [!UICONTROL 数据收集] 界面。
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 8%
@@ -129,7 +129,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
    ![环境主屏幕](assets/tags-environments.png)
 
-1. 在 [!UICONTROL 移动设备安装说明] 对话框，选择 **[!UICONTROL iOS]** 选项卡。
+1. 在 **[!UICONTROL 移动设备安装说明]** 对话框，选择 **[!UICONTROL iOS]** 选项卡。
 
 1. 您可以复制 ![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 有关使用CocoaPods设置项目的说明。 CocoaPod用于管理SDK版本和下载。 要了解更多信息，请查阅 [文档](https://cocoapods.org/).
 

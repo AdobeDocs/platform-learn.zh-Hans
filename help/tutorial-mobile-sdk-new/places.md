@@ -2,9 +2,9 @@
 title: Places
 description: 了解如何在移动应用程序中使用Places地理位置服务。
 hide: true
-source-git-commit: c31dd74cf8ff9c0856b29e82d9c8be2ad027df4a
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '1731'
+source-wordcount: '1754'
 ht-degree: 3%
 
 ---
@@ -88,8 +88,8 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 导航到 **[!UICONTROL 标记]** 并找到您的移动标记资产并打开该资产。
 1. 选择 **[!UICONTROL 扩展]**.
 1. 选择 **[!UICONTROL 目录]**.
-1. 搜索 **[!UICONTROL Adobe Journey Optimizer - Decisioning]** 扩展。
-1. 安装扩展。 该扩展不需要其他配置。
+1. 搜索 **[!UICONTROL 地标]** 扩展。
+1. 安装扩展。
 
    ![Add Decisioning扩展](assets/tag-places-extension.png)
 
@@ -116,7 +116,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
 ### 更新您的标记
 
-Places扩展提供了用于监视地理位置事件的功能，并允许您根据这些事件触发操作。 您可以使用此功能最大程度地减少必须在应用程序中实施的API编码。
+适用于标记的Places扩展提供了用于监视地理位置事件的功能，并允许您根据这些事件触发操作。 您可以使用此功能最大程度地减少必须在应用程序中实施的API编码。
 
 **数据元素**
 
@@ -128,7 +128,7 @@ Places扩展提供了用于监视地理位置事件的功能，并允许您根�
 1. 在 **[!UICONTROL 创建数据元素]** 屏幕，输入名称，例如 `Name - Entered`.
 1. 选择 **[!UICONTROL 地标]** 从 **[!UICONTROL 扩展名]** 列表。
 1. 选择 **[!UICONTROL 名称]** 从 **[!UICONTROL 数据元素类型]** 列表。
-1. 选择**[!UICONTROL 当前POI]**下方 **[!UICONTROL TARGET]**.
+1. 选择 **[!UICONTROL 当前POI]** 下 **[!UICONTROL TARGET]**.
 1. 选择 **[!UICONTROL 保存到库]**.
    ![数据元素](assets/tags-create-data-element.png)
 
@@ -148,9 +148,9 @@ Places扩展提供了用于监视地理位置事件的功能，并允许您根�
 
 **规则**
 
-现在，您将定义用于这些数据元素的规则。
+接下来，您将定义用于这些数据元素的规则。
 
-1. 选择 **[!UICONTROL 规则]** 从左边栏开始。
+1. 在您的标记属性中。 选择 **[!UICONTROL 规则]** 从左边栏开始。
 1. 选择 **[!UICONTROL 添加规则]**.
 1. 在 **[!UICONTROL 创建规则]** 屏幕中，输入规则的名称，例如 `POI - Entry`.
 1. 选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 下 **[!UICONTROL 活动]**.
@@ -183,7 +183,7 @@ Places扩展提供了用于监视地理位置事件的功能，并允许您根�
       }
       ```
 
-      此 `{%% ... %%}` 也可以通过选择 ![数据](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) ，并从对话框中选择数据元素。
+      您还可以插入 `{%% ... %%}` JSON中的数据元素占位符值，方法是选择 ![数据](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). 弹出对话框允许您选择创建的任何数据元素。
 
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
       ![标记操作](assets/tags-action-mobile-core.png)
@@ -249,7 +249,7 @@ Places扩展提供了用于监视地理位置事件的功能，并允许您根�
 要在Assurance中验证设置，请执行以下操作：
 
 1. 转到Assurance UI。
-1. 如果在左边栏中尚不可用。 选择 **[!UICONTROL 配置]** 在左边栏中选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边 **[!UICONTROL 活动]** 和 **[!UICONTROL 映射和模拟]** 下 **[!UICONTROL PLACES服务]**.
+1. 如果左边栏中尚不可用，请选择 **[!UICONTROL 配置]** 在左边栏中选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边 **[!UICONTROL 活动]** 和 **[!UICONTROL 映射和模拟]** 下 **[!UICONTROL PLACES服务]**.
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 选择 **[!UICONTROL 映射和模拟]** 在左边栏中。
 1. 选择Places服务中定义的某个POI，然后从弹出菜单中选择一个 ![齿轮](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 模拟进入事件]**.
@@ -291,12 +291,21 @@ Places扩展提供了用于监视地理位置事件的功能，并允许您根�
    ]
    ```
 
-1. 在Xcode项目导航器中导航到Luma > Luma > Utils > MobileSDK，然后找到函数processRegionEvent(regionEvent： PlacesRegionEvent， forRegion： CLRegion)异步函数。 此函数是 [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API。
-1. 在Xcode的项目导航器中，导航到Luma > Luma >视图>位置>地理围栏工作表。
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中查找 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.添加以下代码：
+
+   ```swift
+   // Process geolocation event
+   Places.processRegionEvent(regionEvent, forRegion: region)
+   ```
+
+   此 [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API将地理位置信息传递给Places服务。
+
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 位置]** > **[!UICONTROL 地理围栏工作表]** 在Xcode的项目导航器中。
 
    1. 对于“输入”按钮，输入以下代码
 
    ```swift
+   // Simulate geofence entry event
    Task {
        await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
    }
@@ -305,6 +314,7 @@ Places扩展提供了用于监视地理位置事件的功能，并允许您根�
    1. 对于“退出”按钮，输入以下代码
 
    ```swift
+   // Simulate geofence exit event
    Task {
        await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
    }
@@ -321,13 +331,13 @@ Places扩展提供了用于监视地理位置事件的功能，并允许您根�
 
 1. 四处移动地图，以确保中间的蓝色圆圈位于您的目标点上方，例如伦敦。
 
-1. 点按蓝色 <img src="assets/geobutton.png" width="20" /> 反复出现，直到在右下角看到类别和名称。
+1. 点按 <img src="assets/geobutton.png" width="20" /> 反复出现，直到在右下角看到类别和名称。
 
-1. 点按POI的标签，这会打开附近的POI工作表。
+1. 点按POI的标签，这会打开 **[!UICONTROL 附近POI]** 工作表。
 
    <img src="assets/appgeolocation.png" width="300" />
 
-1. 按进入或退出按钮以模拟应用程序中的地理位置事件。
+1. 按 **[!UICONTROL 登入]** 或 **[!UICONTROL 退出]** 按钮来模拟应用程序中的地理围栏进入和地理围栏退出事件。
 
    <img src="assets/appentryexit.png" width="300" />
 
@@ -337,9 +347,11 @@ Places扩展提供了用于监视地理位置事件的功能，并允许您根�
 
 ## 后续步骤
 
-您现在应该拥有所有工具，以便开始在应用程序中为地理位置功能添加更多功能。 在将事件转发到边缘网络并通过数据流转发到Experience Platform时，您应该会看到应用程序中使用的配置文件所显示的体验事件。 这些体验事件可用于在Journey Optimizer中触发历程(请参阅 [推送通知](journey-optimizer-inapp.md) 和 [应用程序内消息传送](journey-optimizer-push.md) Journey Optimizer)。 例如，当有人进入实体商店的地理围栏时，向应用程序用户发送推送通知的常见示例。
+您现在应该拥有所有工具，以便开始在应用程序中为地理位置功能添加更多功能。 在设置应用程序后，由于已将事件转发到边缘网络， [Experience Platform](platform.md)时，您应该会看到应用程序中所用用户档案所显示的体验事件。
 
-您已看到应用程序功能的实施，这些功能主要由Places服务以及您在Tag属性中定义的数据元素和规则驱动。 或者，您可以使用直接在应用程序中实施相同的功能 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API(请参阅 [活动](events.md) ，以了解更多信息)，XDM有效负载包含填充的placeContext对象。
+在本教程的Journey Optimizer部分中，您将看到体验事件可用于触发历程(请参阅 [推送通知](journey-optimizer-inapp.md) 和 [应用程序内消息传送](journey-optimizer-push.md) Journey Optimizer)。 例如，通常情况下，当用户进入实体商店的地理围栏时，向应用程序用户发送推送通知并促销某些产品。
+
+您已看到应用程序功能的实施，这些功能主要由Places服务以及您在标记属性中定义的数据元素和规则驱动。 因此，请最大限度地减少应用程序中的代码。 或者，您可以使用直接在应用程序中实施相同的功能 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API(请参阅 [活动](events.md) ，以了解更多信息)，XDM有效负载中包含填充的 `placeContext` 对象。
 
 >[!SUCCESS]
 >

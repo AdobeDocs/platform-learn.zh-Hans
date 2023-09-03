@@ -2,9 +2,9 @@
 title: 生命周期数据
 description: 了解如何在移动应用程序中收集生命周期数据。
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '613'
 ht-degree: 3%
 
 ---
@@ -102,7 +102,8 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    1. 选择 **[!UICONTROL 背景]** 作为 **[!UICONTROL 事件类型]**.
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
       ![规则事件配置](assets/rule-event-configuration-background.png)
-      ![规则添加操作](assets/rule-action-button.png)
+1. 返回 **[!UICONTROL 创建规则]** 屏幕，选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加]** 下 **[!UICONTROL 操作]**.
+   ![规则添加操作](assets/rule-action-button.png)
 1. 在 **[!UICONTROL 操作配置]** 步骤：
    1. 选择 **[!UICONTROL AdobeExperience Edge Network]** 作为 **[!UICONTROL 扩展名]**.
    1. 选择 **[!UICONTROL 将事件转发到Edge Network]** 作为 **[!UICONTROL 操作类型]**.

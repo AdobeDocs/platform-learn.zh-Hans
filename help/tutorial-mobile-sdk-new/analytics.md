@@ -3,9 +3,9 @@ title: Analytics映射
 description: 了解如何在移动应用程序中收集Adobe Analytics的数据。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '641'
 ht-degree: 3%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 3%
 
 ### 示例#1 - s.products
 
-一个很好的示例是 [products变量](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=zh-Hans) 无法使用处理规则填充的部分。 对于XDM实施，您会传递productListItems中的所有必要数据，并且s.products会通过Analytics映射自动填充。
+一个很好的示例是 [products变量](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=zh-Hans) 无法使用处理规则填充的部分。 对于XDM实施，您会将所有必需的数据传入 `productListItems` 和 `s.products` 通过Analytics映射自动填充。
 
 此对象：
 
@@ -56,7 +56,7 @@ ht-degree: 3%
 ]
 ```
 
-将导致以下结果：
+结果位于：
 
 ```
 s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
@@ -65,6 +65,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 >[!NOTE]
 >
 >当前 `productListItems[N].SKU` 被自动映射忽略。
+
 
 ### 示例#2 - scAdd
 
@@ -80,7 +81,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 }
 ```
 
-将导致以下结果：
+结果位于：
 
 ```
 s.events = "scAdd"
@@ -97,7 +98,7 @@ s.events = "scAdd"
 }
 ```
 
-将导致以下结果：
+结果位于：
 
 ```
 s.events = "scAdd:321435"
@@ -105,7 +106,7 @@ s.events = "scAdd:321435"
 
 ## 使用保障进行验证
 
-使用 [Assurance QA工具](assurance.md) 您可以确认正在发送ExperienceEvent，XDM数据正确，并且Analytics映射按预期发生。 例如：
+使用 [Assurance](assurance.md) 您可以确认正在发送体验事件，XDM数据正确，并且Analytics映射按预期进行。 例如：
 
 1. 发送productListAdds事件。
 
@@ -157,10 +158,10 @@ a.x.[xdm path]
 例如：
 
 ```
-//Standard Field
+// Standard Field
 a.x.commerce.saveforlaters.value
 
-//Custom Field
+// Custom Field
 a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 ```
 

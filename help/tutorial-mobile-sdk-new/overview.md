@@ -3,10 +3,10 @@ title: 在移动应用程序中实施Adobe Experience Cloud教程概述
 description: 了解如何实施Adobe Experience Cloud移动应用程序。 本教程将指导您在一个示例Swift应用程序中实施Experience Cloud应用程序。
 recommendations: noDisplay,catalog
 hide: true
-source-git-commit: 4101425bd97e271fa6cc15157a7be435c034e764
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 11%
+source-wordcount: '725'
+ht-degree: 10%
 
 ---
 
@@ -30,6 +30,8 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
 * 配置移动标记属性。
 * 设置Experience Platform数据集（可选）。
 * 在应用程序中安装并实施标记扩展。
+* 将Experience Cloud参数正确传递给 [webview](web-views.md).
+* 使用验证实施 [Adobe Experience Platform Assurance](assurance.md).
 * 添加以下Adobe Experience Cloud应用程序/扩展：
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [生命周期数据收集](lifecycle-data.md)
@@ -37,14 +39,14 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
    * [同意](consent.md)
    * [标识](identity.md)
    * [配置文件](profile.md)
+   * [Places](places.md)
+   * [Analytics](analytics.md)
    * [Adobe Experience Platform](platform.md)
    * [使用Journey Optimizer推送消息](journey-optimizer-push.md)
    * [Journey Optimizer的Im-app消息传递](journey-optimizer-inapp.md)
    * [Journey Optimizer的优惠](journey-optimizer-offers.md)
    * [使用Target进行A/B测试](target.md)
 
-* 将Experience Cloud参数正确传递给 [webview](web-views.md).
-* 使用验证实施 [Adobe Experience Platform Assurance](assurance.md).
 
 >[!NOTE]
 >
@@ -72,14 +74,18 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
 
 所有Experience Cloud客户都应有权访问部署Mobile SDK所需的功能。
 
-此外，我们还假定您熟悉 [!DNL Swift]. 您无需成为专家即可完成课程，但如果您能够轻松阅读和理解代码，将可从课程中学到更多知识。
+>[!NOTE]
+>
+>您将使用iOS作为平台， [!DNL Swift] 作为编程语言， [!DNL SwiftUI] 作为UI框架和 [!DNL Xcode] 作为集成开发环境(IDE)。 但是，解释的许多实施概念与其他开发平台类似。 我们假定您有点熟悉 [!DNL Swift] 和 [!DNL SwiftUI]. 您无需成为专家即可完成课程，但如果您能够轻松阅读和理解代码，将可从课程中学到更多知识。
+
 
 ## 下载Luma应用程序
 
-示例应用程序有两个版本可供下载。
+示例应用程序有两个版本可供下载。 这两个版本都可以下载/克隆 [Github](https://git.corp.adobe.com/rmaur/Luma). 您将找到两个文件夹：
 
-1. [空](https://git.corp.adobe.com/rmaur/Luma{target="_blank"})：一个没有任何Experience Cloud代码的版本，用于完成本教程中的动手练习
-1. [完全实施](https://git.corp.adobe.com/Luma{target="_blank"})：具有完整Experience Cloud实现的版本以供参考。
+
+1. [开始](https://git.corp.adobe.com/rmaur/Luma{target="_blank"})：对于大多数Experience PlatformMobile SDK代码，您都需要使用此类项目来完成本教程中的动手练习，但该项目没有代码，也没有占位符代码。
+1. [完成](https://git.corp.adobe.com/Luma{target="_blank"})：具有完整实施的版本以供参考。
 
 让我们开始吧！
 

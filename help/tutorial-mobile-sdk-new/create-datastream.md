@@ -3,9 +3,9 @@ title: 配置数据流
 description: 了解如何在Experience Platform中创建数据流。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 7de7c7e13ea6d02f1193620e0cc35299e07d59e5
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '546'
 ht-degree: 6%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 ## 先决条件
 
-要创建数据流，必须在数据收集界面（以前称为）中为您的组织配置此功能 [!UICONTROL Launch])并且您必须拥有的用户权限 [!UICONTROL Experience Platform] > [!UICONTROL 数据收集] > **[!UICONTROL 管理数据流]** 和 **[!UICONTROL 查看数据流]**.
+要创建数据流，必须在数据收集界面（以前称为）中为您的组织配置此功能 [!UICONTROL Launch])，并且您必须具有管理和查看数据流的用户权限。
 
 ## 学习目标
 
@@ -74,7 +74,7 @@ ht-degree: 6%
 
 1. 通过切换启用服务 **[!UICONTROL 已启用]** 打开。
 
-1. 选择 **[!UICONTROL 事件数据集]** 您在 [创建数据集](platform.md#create-a-dataset) 指令，例如 **Luma移动应用程序事件数据集**
+1. 选择 **[!UICONTROL 事件数据集]** 您在 [创建数据集](platform.md#create-a-dataset) 说明，例如 **Luma移动应用程序事件数据集**
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -88,7 +88,7 @@ ht-degree: 6%
 >
 >启用您的组织使用的每项服务，可确保随时随地使用在移动应用程序中收集的数据。 有关数据流设置的更多信息，请参阅文档 [此处](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-在您自己的应用程序中实施Platform Mobile SDK时，您应该创建三个数据流以映射到三个标记环境（开发、暂存和生产）。 如果您将Platform Mobile SDK与基于Platform的应用程序(如Adobe Real-time Customer Data Platform或Adobe Journey Optimizer)一起使用，则应确保在适当的Platform沙盒中创建这些数据流。
+在您自己的应用程序中实施Platform Mobile SDK时，您最终应创建三个数据流以映射到三个标记环境（开发、暂存和生产）。 如果您将Platform Mobile SDK与基于Platform的应用程序(如Adobe Real-time Customer Data Platform或Adobe Journey Optimizer)结合使用，则应确保在相应的沙盒中创建这些数据流。
 
 >[!SUCCESS]
 >

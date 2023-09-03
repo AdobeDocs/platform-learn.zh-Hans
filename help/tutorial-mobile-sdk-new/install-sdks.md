@@ -2,9 +2,9 @@
 title: 安装Adobe Experience Platform Mobile SDK
 description: 了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。
 hide: true
-source-git-commit: 6cc58d3d40112b14b1c1b8664c5e7aeb0880b59c
+source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
 workflow-type: tm+mt
-source-wordcount: '928'
+source-wordcount: '943'
 ht-degree: 1%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 1%
 
 ## 先决条件
 
-* 使用中所述的扩展成功构建了标记库 [上一课程](configure-tags.md).
+* 使用中所述的扩展成功构建标记库 [上一课程](configure-tags.md).
 * 来自的开发环境文件ID [移动设备安装说明](configure-tags.md#generate-sdk-install-instructions).
-* 已下载，为空 [示例应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* 已下载空的 [示例应用程序](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}.
 * 体验 [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## 学习目标
@@ -44,10 +44,10 @@ ht-degree: 1%
 | [AEP Edge标识](https://github.com/adobe/aepsdk-edgeidentity-ios.git) | AEP Edge Identity移动扩展在使用Adobe Experience Platform SDK和Edge Network扩展时，支持处理来自移动应用程序的用户身份数据。 |
 | [AEP Edge同意](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | 使用Adobe Experience Platform SDK和Edge Network扩展时，AEP同意收集移动扩展支持从移动应用程序中收集同意首选项。 |
 | [AEP用户配置文件](https://github.com/adobe/aepsdk-userprofile-ios.git) | Adobe Experience Platform用户配置文件移动扩展是一个扩展，用于管理Adobe Experience Platform SDK的用户配置文件。 |
-| [AEP Places](https://github.com/adobe/aepsdk-places-ios) | Adobe Experience Platform Places扩展是Adobe Experience Platform Swift SDK的扩展。 AEPPlaces扩展允许您跟踪Launch Places UI和AdobeLaunch规则中定义的地理位置Adobe。 |
-| [AEP消息](https://github.com/adobe/aepsdk-messaging-ios.git) | AEP报文传送扩展是Adobe Experience Platform Swift SDK的扩展。 AEP消息扩展允许您将推送通知令牌和推送通知点进反馈发送到Adobe Experience Platform。 |
+| [AEP Places](https://github.com/adobe/aepsdk-places-ios) | AEPPlaces扩展允许您跟踪AdobePlaces UI和Adobe数据收集标记规则中定义的地理位置事件。 |
+| [AEP消息](https://github.com/adobe/aepsdk-messaging-ios.git) | AEP消息扩展允许您将推送通知令牌和推送通知点进反馈发送到Adobe Experience Platform。 |
 | [AEP优化](https://github.com/adobe/aepsdk-optimize-ios) | AEP优化扩展提供了API，以使用Adobe Target或Adobe Journey OptimizerOffer decisioning在Adobe Experience Platform Mobile SDK中启用实时个性化工作流。 它需要 `AEPCore` 和 `AEPEdge` 用于将个性化查询事件发送到Experience Edge网络的扩展。 |
-| [AEP保证](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance （也称为Griffon项目）是一种新的创新产品，可帮助您检查、验证、模拟和验证如何在移动应用程序中收集数据或提供体验。 |
+| [AEP保证](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance （也称为Griffon项目）是一种新的创新产品，可帮助您检查、验证、模拟和验证如何在移动应用程序中收集数据或提供体验。 此扩展可为您的应用程序启用保证。 |
 
 
 安装所有软件包后，您的Xcode **[!UICONTROL 程序包依赖项]** 屏幕应如下所示：
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 ## 导入扩展
 
-在Xcode中，导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 并添加以下导入。
+在Xcode中，导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 并确保以下导入是此源文件的一部分。
 
 ```swift
 // import AEP MobileSDK libraries
@@ -91,6 +91,7 @@ import AEPAssurance
 1. 将以下代码添加到 `application(_, didFinishLaunchingWithOptions)` 函数。
 
    ```swift
+   // Define extensions
    let extensions = [
        AEPIdentity.Identity.self,
        Lifecycle.self,
@@ -105,6 +106,7 @@ import AEPAssurance
        Assurance.self
    ]
    
+   // Register extensions
    MobileCore.registerExtensions(extensions, {
        // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
        Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
@@ -120,10 +122,6 @@ import AEPAssurance
    
        // assume unknown, adapt to your needs.
        MobileCore.setPrivacyStatus(.unknown)
-   
-       // update version and build
-       Logger.configuration.info("Luma - Updating version and build number...")
-       SettingsBundleHelper.setVersionAndBuildNumber()
    })
    ```
 
@@ -132,6 +130,8 @@ import AEPAssurance
 1. 注册所需的扩展。
 1. 配置MobileCore和其他扩展以使用标记属性配置。
 1. 启用调试日志记录。 欲知更多详情和选项，请参见 [Adobe Experience Platform移动SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+1. 启动生命周期监控。 请参阅 [生命周期](lifecycle-data.md) 有关更多详细信息，请参阅教程中的步骤。
+1. 将默认同意设置为“未知”。 请参阅 [同意](consent.md) 有关更多详细信息，请参阅教程中的步骤。
 
 >[!IMPORTANT]
 >
