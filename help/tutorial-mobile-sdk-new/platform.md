@@ -4,9 +4,9 @@ description: 了解如何将数据发送到Adobe Experience Platform。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
 workflow-type: tm+mt
-source-wordcount: '963'
+source-wordcount: '965'
 ht-degree: 4%
 
 ---
@@ -133,6 +133,9 @@ Experience Platform的实时客户资料允许您构建每个客户的整体视�
    此可视化显示了在用户档案中链接到一起的所有身份及其来源。 以下是一个由完成此Mobile SDK教程（数据源2）和 [Web SDK教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans) （数据源1）：
 
    ![获取标识值](assets/platform-profile-identitygraph.png)
+
+
+## 后续步骤
 
 营销人员和Analytics还可处理在Experience Platform中捕获的数据很多事情，包括在Customer Journey Analytics中分析数据以及在Real-time Customer Data Platform中构建区段。 你开了一个好头！
 
