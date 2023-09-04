@@ -3,10 +3,10 @@ title: 配置数据流
 description: 了解如何在Experience Platform中创建数据流。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 6%
+source-wordcount: '551'
+ht-degree: 7%
 
 ---
 
@@ -50,6 +50,8 @@ ht-degree: 6%
 
 接下来，将Experience Cloud服务连接到数据流。 当Platform Mobile SDK向Edge Network发送数据时，数据流将数据发送到这些服务：
 
+### Adobe Analytics
+
 1. 选择 **[!UICONTROL 添加服务]**。
 
 1. 添加 **[!UICONTROL Adobe Analytics]** 从 [!UICONTROL 服务] 列表，
@@ -61,6 +63,9 @@ ht-degree: 6%
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
    ![将Adobe Analytics添加为数据流服务](assets/datastream-service-aa.png)
+
+
+### Adobe Experience Platform
 
 您可能还希望启用Adobe Experience Platform服务。
 

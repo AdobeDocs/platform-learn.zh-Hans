@@ -4,10 +4,10 @@ description: 了解如何将数据发送到Adobe Experience Platform。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: e119e2bdce524c834cdaf43ed9eb9d26948b0ac6
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '919'
-ht-degree: 5%
+source-wordcount: '963'
+ht-degree: 4%
 
 ---
 
@@ -51,21 +51,20 @@ ht-degree: 5%
 1. 选择&#x200B;**[!UICONTROL 使用模式创建数据集]**。
    ![数据集主页](assets/dataset-create.png)
 
-1. 搜索您的架构
-
-1. 选择您的架构。
+1. 搜索您的架构。 例如，使用 `Luma Mobile` 在搜索字段中。
+1. 选择您的架构，例如 **[!UICONTROL Luma移动应用程序事件架构]**.
 
 1. 选择&#x200B;**[!UICONTROL 下一步]**。
    ![数据集配置](assets/dataset-configure.png)
 
-1. 提供 **[!UICONTROL 名称]** 和 **[!UICONTROL 描述]**.
+1. 提供 **[!UICONTROL 名称]**&#x200B;例如 `Luma Mobile App Events Dataset` 和 **[!UICONTROL 描述]**.
 
 1. 选择&#x200B;**[!UICONTROL 完成]**。
    ![数据集完成](assets/dataset-finish.png)
 
 ## 更新数据流
 
-创建数据集后，请确保 [更新您的数据流](create-datastream.md) 以添加Adobe Experience Platform。 此更新可确保数据流入Platform。
+创建数据集后，请确保 [更新您的数据流](create-datastream.md#adobe-experience-platform) 以添加Adobe Experience Platform。 此更新可确保数据流入Platform。
 
 ## 验证数据集中的数据
 
@@ -88,23 +87,23 @@ Experience Platform的实时客户资料允许您构建每个客户的整体视�
 
 ### 启用架构
 
-1. 打开您的架构
-1. 启用 **[!UICONTROL 个人资料]**
-1. 选择 **[!UICONTROL 此架构的数据将在identityMap字段中包含主标识。]** 在模式对话框中
-1. **[!UICONTROL 保存]** 架构
+1. 打开您的架构，例如 **[!UICONTROL Luma移动应用程序事件架构]**.
+1. 启用 **[!UICONTROL 个人资料]**.
+1. 选择 **[!UICONTROL 此架构的数据将在identityMap字段中包含主标识。]** 在对话框中。
+1. **[!UICONTROL 保存]** 架构。
 
    ![为配置文件启用架构](assets/platform-profile-schema.png)
 
 ### 启用数据集
 
-1. 打开数据集
-1. 启用 **[!UICONTROL 个人资料]**
+1. 打开您的数据集，例如 **[!UICONTROL Luma移动应用程序事件数据集]**.
+1. 启用 **[!UICONTROL 个人资料]**.
 
    ![为用户档案启用数据集](assets/platform-profile-dataset.png)
 
 ### 验证配置文件中的数据
 
-打开应用程序，然后导航到要跟踪事件的屏幕。 登录Luma应用程序并进行购买。
+打开应用程序，然后导航到要在其中跟踪事件的屏幕，例如：登录Luma应用程序并购买。
 
 使用Assurance查找在identityMap中传递的某个身份（电子邮件、lumaCrmId或ECID），例如CRM Id。
 
@@ -112,9 +111,9 @@ Experience Platform的实时客户资料允许您构建每个客户的整体视�
 
 在平台界面中，
 
-1. 导航到 **[!UICONTROL 配置文件]** > **[!UICONTROL 浏览]**，
+1. 导航到 **[!UICONTROL 配置文件]**，并选择 **[!UICONTROL 浏览]** 从顶部栏中。
 1. 指定您刚刚捕获的身份详细信息，例如 `Luma CRM ID` 对象 **[!UICONTROL 身份命名空间]** 以及您复制的值 **[!UICONTROL 标识值]**. 然后选择 **[!UICONTROL 视图]**.
-1. 要查看详细信息，请选择用户档案。
+1. 要查看详细信息，请选择配置文件。
 
 ![查找标识值](assets/platform-profile-lookup.png)
 
@@ -128,7 +127,7 @@ Experience Platform的实时客户资料允许您构建每个客户的整体视�
 
 在配置文件详细信息屏幕中：
 
-1. 要查看身份图，请单击链接或导航到 **[!UICONTROL 身份]** > **[!UICONTROL 身份图]**
+1. 要查看身份图，请单击链接或导航到 **[!UICONTROL 身份]**，然后选择 **[!UICONTROL 身份图]** 从顶部栏中。
 1. 要查找标识值，请指定 `Luma CRM ID` 作为 **[!UICONTROL 身份命名空间]** 而复制的值作为 **[!UICONTROL 标识值]**. 然后选择 **[!UICONTROL 视图]**.
 
    此可视化显示了在用户档案中链接到一起的所有身份及其来源。 以下是一个由完成此Mobile SDK教程（数据源2）和 [Web SDK教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans) （数据源1）：

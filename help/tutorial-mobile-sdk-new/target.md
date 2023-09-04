@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 593dcce7d1216652bb0439985ec3e7a45fc811de
+source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1434'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 >[!TIP]
 >
->如果您已将应用程序设置为 [Journey Optimizer优惠](journey-optimizer-offers.md) 教程，
+>如果您已将应用程序设置为 [Journey Optimizer优惠](journey-optimizer-offers.md) 教程，您可以跳过 [安装Adobe Journey Optimizer - Decisioning标记扩展](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的架构](#update-your-schema).
 
 ### 更新Edge配置
 
@@ -61,7 +61,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 1. 选择 **[!UICONTROL 添加服务]** 并选择 **[!UICONTROL Adobe Target]** 从 **[!UICONTROL 服务]** 列表。
 1. 输入目标 **[!UICONTROL 资产令牌]** 要用于此集成的值。
 
-   您可以在Target UI中的以下位置找到您的属性： **[!UICONTROL 管理]** > **[!UICONTROL 属性]**. 选择 ![代码](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) 用于显示要使用的资产的资产令牌。 资产令牌的格式如下 `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`；您只需输入值 `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
+   您可以在Target UI中的以下位置找到您的属性： **[!UICONTROL 管理]** > **[!UICONTROL 属性]**. 选择 ![代码](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) 用于显示要使用的资产的资产令牌。 资产令牌的格式如下 `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`；必须只输入值 `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -104,13 +104,13 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 1. 在Target UI中，选择 **[!UICONTROL 活动]** 从顶部栏中。
 1. 选择 **[!UICONTROL 创建活动]** 和 **[!UICONTROL A/B测试]** 从上下文菜单中。
-1. 在 **[!UICONTROL 创建A/B测试活动]** 模式，选择 **[!UICONTROL 移动设备]** 作为 **[!UICONTROL 类型]**，从中选择工作区 **[!UICONTROL 选择工作区]** ，并从中选择您的资产 **[!UICONTROL 选择属性]** 列表。
+1. 在 **[!UICONTROL 创建A/B测试活动]** 对话框，选择 **[!UICONTROL 移动设备]** 作为 **[!UICONTROL 类型]**，从中选择工作区 **[!UICONTROL 选择工作区]** ，并从中选择您的资产 **[!UICONTROL 选择属性]** 列表。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
    ![创建Target活动](assets/target-create-activity1.png)
 
 1. 在 **[!UICONTROL 无标题活动]** 屏幕，位于 **[!UICONTROL 体验]** 步骤：
 
-   1. 输入 `luma-mobileapp-abtest` 在 **[!UICONTROL 选择位置]** L**下[!UICONTROL 位置1]**。
+   1. 输入 `luma-mobileapp-abtest` 在 **[!UICONTROL 选择位置]** 下 **[!UICONTROL 位置1]**.
    1. 选择 ![Chrevron下降](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) 旁边 **[!UICONTROL 默认内容]** 并选择 **[!UICONTROL 创建JSON选件]** 从上下文菜单中。
    1. 将以下JSON复制到 **[!UICONTROL 输入有效的JSON对象]**.
 
@@ -194,9 +194,23 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
    ]
    ```
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。 查找 ` func updatePropositionAT(ecid: String, location: String) async` 函数。 Inspect用于设置的代码
-   * XDM词典 `xdmData`，包含ECID以标识必须提供A/B测试的配置文件，并且
-   * 该 `decisionScope`，提供A/B测试的位置数组。
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。 查找 ` func updatePropositionAT(ecid: String, location: String) async` 函数。 添加以下代码：
+
+   ```swift
+   Task {
+       let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+       let identityMap = ["identityMap" : ecid]
+       let xdmData = ["xdm" : identityMap]
+       let decisionScope = DecisionScope(name: location)
+       Optimize.clearCachedPropositions()
+       Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   此函数
+
+   * 设置XDM词典 `xdmData`，包含ECID以标识必须提供A/B测试的配置文件，并且
+   * 定义 `decisionScope`，提供A/B测试的位置数组。
 
    然后，函数调用两个API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 这些函数清除任何缓存的建议并更新此用户档案的建议。
 
