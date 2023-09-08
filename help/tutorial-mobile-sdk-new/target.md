@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
+source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
 workflow-type: tm+mt
-source-wordcount: '1433'
+source-wordcount: '1519'
 ht-degree: 2%
 
 ---
@@ -214,29 +214,27 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
    然后，函数调用两个API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 这些函数清除任何缓存的建议并更新此用户档案的建议。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 个性化]** > **[!UICONTROL TargetOffersView]** 在Xcode项目导航器中。 查找 `func getPropositionAT(location: String) async` 函数并检查此函数的代码。 此函数最重要的部分是  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API调用，其中
-   * 根据决策范围（即您在A/B测试中定义的位置）检索当前用户档案的建议，并且
-   * 在应用程序中正确显示的内容中将结果解包。
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 个性化]** > **[!UICONTROL TargetOffersView]** 在Xcode项目导航器中。 查找 `func onPropositionsUpdateAT(location: String) async {` 函数并检查此函数的代码。 此函数最重要的部分是  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API调用，其中
+   * 根据决策范围（即您在A/B测试中定义的位置）检索当前用户档案的建议，
+   * 从建议中检索优惠，
+   * 解包选件的内容，以便该内容可以在应用程序中正确显示，并且
+   * 触发 `displayed()` 将显示选件上的操作，该操作会将事件发送回Edge Network，通知选件。
 
-1. 仍在使用 **[!UICONTROL TargetOffersView]**，查找 `func updatePropositions(location: String) async` 函数并添加以下代码：
+1. 仍在使用 **[!UICONTROL TargetOffersView]**，将以下代码添加到 `.onFirstAppear` 修饰符。 此代码将确保用于更新优惠的回调仅注册一次。
 
    ```swift
-       Task {
-           await self.updatePropositionAT(
-               ecid: currentEcid,
-               location: location
-           )
-       }
-       try? await Task.sleep(seconds: 2.0)
-       Task {
-           await self.getPropositionAT(
-               location: location
-           )
-       }
+   // Invoke callback for offer updates
+   Task {
+       await self.onPropositionsUpdateAT(location: location)
+   }
    ```
 
-   此代码确保您更新建议，然后使用步骤5和步骤6中描述的函数检索结果。
+1. 仍在使用 **[!UICONTROL TargetOffersView]**，将以下代码添加到 `.task` 修饰符。 刷新视图后，此代码将更新选件。
 
+   ```swift
+   // Clear and update offers
+   await self.updatePropositionsAT(ecid: currentEcid, location: location)
+   ```
 
 ## 使用应用程序进行验证
 
@@ -262,11 +260,11 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 1. 选择 **[!UICONTROL 请求]** 在顶栏里。 您看到您的 **[!UICONTROL Target]** 请求。
    ![AJO决策验证](assets/assurance-decisioning-requests.png)
 
-1. 您可以浏览“模拟”和“事件列表”选项卡，以进一步了解功能检查您的Target选件设置。
+1. 您可以浏览 **[!UICONTROL 模拟]** 和 **[!UICONTROL 事件列表]** 选项卡中的更多功能，用于检查您的Target选件设置。
 
 ## 后续步骤
 
-现在，您应该拥有所有工具，以便开始向Luma应用程序添加更多A/B测试或其他Target活动（例如体验定位、多变量测试）（如果相关且适用）。
+现在，您应该拥有所有工具，以便开始向Luma应用程序添加更多A/B测试或其他Target活动（例如体验定位、多变量测试）（如果相关且适用）。 有关更深入的信息，请参见 [Optimize扩展的Github存储库](https://github.com/adobe/aepsdk-optimize-ios) 您还可以在该处找到指向专用的 [教程](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) ，了解如何跟踪Adobe Target选件。
 
 >[!SUCCESS]
 >

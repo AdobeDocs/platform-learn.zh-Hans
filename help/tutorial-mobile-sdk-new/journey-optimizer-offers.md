@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
 workflow-type: tm+mt
-source-wordcount: '2368'
+source-wordcount: '2367'
 ht-degree: 2%
 
 ---
@@ -320,35 +320,12 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
      但是，您可以使用任何类型的实施来确保优化API获得正确的参数(`activityId`， `placementId` 和， `itemCount`)，以构造有效的 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 实施对象。
    * 调用两个API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  这些函数清除任何缓存的建议并更新此用户档案的建议。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 个性化]** > **[!UICONTROL EdgeOffersView]** 在Xcode项目导航器中。 查找 `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` 函数并检查此函数的代码。 此函数最重要的部分是  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API调用，其中
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 个性化]** > **[!UICONTROL EdgeOffersView]** 在Xcode项目导航器中。 查找 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 函数并检查此函数的代码。 此函数最重要的部分是 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API调用，其中
 
-   * 根据决策范围(您在Journey Optimizer — 决策管理中定义)检索当前用户档案的建议，并且
-   * 在应用程序中正确显示的内容中将结果解包。
-
-1. 仍在使用 **[!UICONTROL EdgeOffersView]**，查找 `func updatePropositions(activityId: String, placementId: String, itemCount: Int) async` 函数并添加以下代码：
-
-   ```swift
-   // Update and then get propositions
-   Logger.viewCycle.info("EdgeOffersView - updatePropopsitions - Activity Id: \(activityId)")
-   Task {
-      await self.updatePropositionOD(
-          ecid: currentEcid,
-          activityId: activityId,
-          placementId: placementId,
-          itemCount: itemCount
-     )
-   }
-   try? await Task.sleep(seconds: 2.0)
-   Task {
-      await self.getPropositionOD(
-          activityId: activityId,
-          placementId: placementId,
-          itemCount: itemCount
-      )
-   }
-   ```
-
-   此代码确保您更新建议，然后使用步骤5和步骤6中描述的函数检索结果。
+   * 根据决策范围(您在Journey Optimizer — 决策管理中定义)检索当前用户档案的建议，
+   * 从建议中检索优惠，
+   * 解包选件的内容，以便该内容可以在应用程序中正确显示，并且
+   * 触发 `displayed()` 将显示选件上的操作，该操作会将事件发送回Edge Network，通知选件。
 
 
 ## 使用应用程序进行验证
