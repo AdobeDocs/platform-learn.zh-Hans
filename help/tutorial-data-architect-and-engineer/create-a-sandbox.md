@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: fc1c25d9fa4e78dfabb33bc9cb4a2e3779d940c9
+source-git-commit: fdb6a49caa29d98d73524fd0887d25641ef67780
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 1%
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 等到您的沙盒为“[!UICONTROL 活动]”然后再继续进行下一个练习。
 
-## 将新沙盒添加到您的角色
+## 将新沙盒添加到角色
 
 一旦沙盒处于活动状态，您就必须将其包含在您的角色中才能使用它。 要将其添加到您的角色（需要系统管理员或产品管理员权限），请执行以下操作：
 
