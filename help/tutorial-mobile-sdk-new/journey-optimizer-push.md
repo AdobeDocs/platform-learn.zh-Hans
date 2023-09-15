@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2241'
 ht-degree: 2%
 
 ---
@@ -16,7 +16,9 @@ ht-degree: 2%
 
 了解如何使用Experience PlatformMobile SDK和Journey Optimizer为移动应用程序创建推送消息。
 
-Journey Optimizer允许您创建历程，并向目标受众发送消息。 在使用Journey Optimizer发送推送通知之前，您必须确保已进行适当的配置和集成。 要了解Journey Optimizer中的推送通知数据流，请参阅 [文档](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+Journey Optimizer允许您创建历程并向目标受众发送消息。 在使用Journey Optimizer发送推送通知之前，您必须确保已进行适当的配置和集成。 要了解Journey Optimizer中的推送通知数据流，请参阅 [文档](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+
+![架构](assets/architecture-ajo.png)
 
 >[!NOTE]
 >
@@ -26,6 +28,7 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 ## 先决条件
 
 * 在安装和配置SDK的情况下成功构建并运行应用程序。
+* 为Adobe Experience Platform设置应用程序。
 * 对Journey Optimizer的访问权限和足够的权限，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 此外，您需要具有足够的权限才能使用以下Journey Optimizer功能。
    * 创建应用程序表面。
    * 创建历程.
@@ -42,7 +45,7 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 * 在Journey Optimizer中创建应用程序表面。
 * 更新您的架构以包含推送消息字段。
 * 安装和配置Journey Optimizer标记扩展。
-* 更新您的应用程序以包含Journey Optimizer标记扩展。
+* 更新您的应用程序以注册Journey Optimizer标记扩展。
 * 验证Assurance中的设置。
 * 从Assurance发送测试消息
 * 在Journey Optimizer中定义您自己的推送通知事件、历程和体验。
@@ -55,9 +58,9 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 >
 >如果您已将环境设置为 [Journey Optimizer应用程序内消息传送](journey-optimizer-inapp.md) 教程中，您可以跳过此部分。
 
-### 向APNS注册应用程序ID
+### 向APN注册应用程序ID
 
-以下步骤并非特定于Adobe Experience Cloud，而是旨在引导您完成APNS配置。
+以下步骤并非特定于Adobe Experience Cloud，而是旨在引导您完成APN配置。
 
 ### 创建私钥
 
@@ -70,7 +73,7 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 1. 选择 **[!UICONTROL 继续]**.
    ![配置新密钥](assets/mobile-push-apple-dev-config-key.png)
 1. 查看配置并选择 **[!UICONTROL 注册]**.
-1. 下载 `.p8` 私钥。 它用在应用程序表面配置中。
+1. 下载 `.p8` 私钥。 在本课程的后面部分，它将在“应用程序表面”配置中使用。
 1. 记下 **[!UICONTROL 密钥ID]**. 它用在应用程序表面配置中。
 1. 记下 **[!UICONTROL 团队编号]**. 它用在应用程序表面配置中。
    ![关键详细信息](assets/push-apple-dev-key-details.png)
@@ -194,7 +197,7 @@ Journey Optimizer允许您创建历程，并向目标受众发送消息。 在�
 1. 选择您的架构，例如 **[!UICONTROL Luma移动应用程序事件架构]** 打开它。
 1. 在架构编辑器中：
    1. 选择 **[!UICONTROL 事件类型]** 字段。
-   1. 在 **[!UICONTROL 字段属性]** 窗格，向下滚动以查看事件类型可能值的列表。 选择 **[!UICONTROL 添加行]**，并添加 `application.test` 作为 **[!UICONTROL 值]** 和 **[!UICONTROL 推送通知的测试事件]** 作为 `DISPLAY NAME`.
+   1. 在 **[!UICONTROL 字段属性]** 窗格，向下滚动以查看事件类型可能值的列表。 选择 **[!UICONTROL 添加行]**，并添加 `application.test` 作为 **[!UICONTROL 值]** 和 `[!UICONTROL Test event for push notification]` 作为 `DISPLAY NAME`.
    1. 选择&#x200B;**[!UICONTROL 应用]**。
    1. 选择&#x200B;**[!UICONTROL 保存]**。
       ![为事件类型添加值](assets/ajo-update-schema-eventtype-enum.png)
@@ -357,7 +360,7 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
 
 ## 后续步骤
 
-现在，您应该拥有所有工具来开始构建发送推送通知的历程，以及处理来自Journey Optimizer的推送通知的应用程序。 例如，在登录应用程序时欢迎用户。
+现在，您应该拥有在应用程序中处理推送通知的所有工具。 例如，您可以在Journey Optimizer中构建一个历程，当应用程序用户登录时，该历程会发送欢迎推送通知。 或者，当用户在应用程序中购买产品时显示确认推送消息。 或输入位置的地理围栏(如您所看到的 [地标](places.md) 课程)。
 
 >[!SUCCESS]
 >

@@ -2,9 +2,9 @@
 title: 生命周期数据
 description: 了解如何在移动应用程序中收集生命周期数据。
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '630'
 ht-degree: 3%
 
 ---
@@ -18,7 +18,7 @@ Adobe Experience Platform Mobile SDK生命周期扩展支持来自您的移动�
 
 ## 先决条件
 
-* 在安装和配置SDK的情况下成功构建和运行应用程序。
+* 在安装和配置SDK的情况下成功构建和运行应用程序。 在本课程中，您已启动生命周期监控。 请参阅 [安装SDK — 更新AppDelegate](install-sdks.md#update-appdelegate) 以进行审核。
 * 已注册保证扩展，如中所述 [上一课程](install-sdks.md).
 
 ## 学习目标

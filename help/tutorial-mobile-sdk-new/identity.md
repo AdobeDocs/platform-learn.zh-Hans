@@ -3,9 +3,9 @@ title: 标识
 description: 了解如何在移动应用程序中收集身份数据。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '681'
 ht-degree: 6%
 
 ---
@@ -108,7 +108,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 ## 删除身份
 
-您可以使用 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 用于从存储的客户端身份映射中删除身份的API。 Identity扩展停止向Edge Network发送标识符。 使用此API不会从服务器端用户配置文件图或身份图中删除标识符。
+您可以使用 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 用于从存储的客户端身份映射中删除身份的API。 Identity扩展停止向Edge Network发送标识符。 使用此API不会从服务器端标识图中删除标识符。 请参阅 [查看身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) 以了解有关身份图的详细信息。
 
 1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 常规]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中，将以下代码添加到 `func removeIdentities(emailAddress: String, crmId: String)` 函数：
 
@@ -144,7 +144,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
       <img src="./assets/identity2.png" width="300">
 
 
-1. 在Assurance Web UI中查找 **[!UICONTROL Edge Identity更新身份]** 来自的事件 **[!UICONTROL com.adobe.griffon.mobile]** 供应商。
+1. 在Assurance Web界面中查看 **[!UICONTROL Edge Identity更新身份]** 来自的事件 **[!UICONTROL com.adobe.griffon.mobile]** 供应商。
 1. 选择事件并查看 **[!UICONTROL ACPExtensionEventData]** 对象。 您应该会看到已更新的身份。
    ![验证身份更新](assets/identity-validate-assurance.png)
 

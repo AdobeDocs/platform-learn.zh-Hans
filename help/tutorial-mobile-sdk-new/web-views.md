@@ -3,9 +3,9 @@ title: 处理Web视图
 description: 了解如何在移动应用程序中通过WebViews处理数据收集。
 jira: KT-6987
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 要解决该不良情况，请务必将用户的ECID从应用程序的本机部分传递到您可能想要在应用程序中使用的WebView。
 
-WebView中的Experience CloudID服务JavaScript扩展会从URL中提取ECID，而不是向Adobe发送请求以获取新ID。 ID服务使用此ECID来跟踪访客。
+WebView中使用的AEP Edge Identity扩展可收集当前ECID并将其添加到URL，而不是向Adobe发送请求以获取新ID。 然后，实施将使用此ECID来请求URL。
 
 ## 实施
 

@@ -4,20 +4,22 @@ description: 了解如何将数据发送到Adobe Experience Platform。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 7435a2758bdd8340416b70faf8337e33167a7193
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '965'
-ht-degree: 4%
+source-wordcount: '968'
+ht-degree: 5%
 
 ---
 
 # 将数据发送到Adobe Experience Platform
 
-了解如何将数据发送到Adobe Experience Platform。
+了解如何将移动应用程序数据发送到Adobe Experience Platform。
 
 本可选课程与Real-time Customer Data Platform (Real-Time CDP)、Journey Optimizer和Customer Journey Analytics的所有客户都相关。 Experience Platform是Experience Cloud产品的基础，它是一个开放系统，可将您的所有数据(Adobe和非Adobe)转换为强大的客户档案。 这些客户配置文件会实时更新，并使用AI驱动的见解来帮助您在每个渠道中提供正确的体验。
 
 此 [事件](events.md)， [生命周期](lifecycle-data.md)、和 [身份](identity.md) 您在之前的课程中收集并发送到Platform Edge Network的数据将转发到您在数据流中配置的服务，包括Adobe Experience Platform。
+
+![架构](assets/architecture-aep.png)
 
 
 ## 先决条件

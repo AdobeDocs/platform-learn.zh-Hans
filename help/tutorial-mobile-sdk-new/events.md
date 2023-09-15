@@ -2,9 +2,9 @@
 title: 活动
 description: 了解如何在移动应用程序中收集事件数据。
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1321'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Adobe Experience Platform Edge扩展可以将遵循之前定义的XDM架构的�
    * `commerce.productViews.id`：表示产品SKU的字符串值
    * `commerce.productViews.value`：事件的数值或布尔值。 如果它是一个布尔值(在Adobe Analytics中为“计数器”)，则该值始终设置为1。 如果是数值或货币事件，该值可以大于1。
 
-* 在您的架构中，标识与商业产品查看事件关联的任何其他数据。 在此示例中，包括 **[!UICONTROL productListItem]** 这是用于任何商业相关事件的标准字段集：
+* 在您的架构中，标识与商业产品查看事件关联的任何其他数据。 在此示例中，包括 **[!UICONTROL productListItems]** 这是与任何商业相关事件一起使用的一组标准字段：
 
   ![产品列表项架构](assets/datacollection-prodListItems-schema.png)
    * 请注意 **[!UICONTROL productListItems]** 是一个数组，因此可以提供多个产品。
@@ -189,6 +189,11 @@ var xdmData: [String: Any] = [
          // Send purchases commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
          ```
+
+>[!TIP]
+>
+>如果您正在针对Android进行开发，请使用Map (`java.util.Map`)作为构建XDM有效负载的基本接口。
+
 
 ### 自定义字段组
 
@@ -339,15 +344,7 @@ var xdmData: [String: Any] = [
 1. 运行应用程序，登录并与产品交互。
 
    1. 将“Assurance（保证）”图标向左移动。
-   1. 选择 **[!UICONTROL 主页]** 在选项卡栏中。
-   1. 选择 <img src="assets/login.png" width="15" /> 按钮以打开“登录”工作表。
-
-      <img src="./assets/mobile-app-events-1.png" width="300">
-
-   1. 选择 <img src="assets/insert.png" width="15" /> 按钮以插入随机电子邮件和客户id。
-   1. 选择 **[!UICONTROL 登录]**.
-
-      <img src="./assets/mobile-app-events-2.png" width="300">
+   1. 选择 **[!UICONTROL 主页]** 选项卡栏中验证您是否看到了 **[!UICONTROL ECID]**， **[!UICONTROL 电子邮件]** 和 **[!UICONTROL CRM ID]** 在主屏幕中。
    1. 选择 **[!UICONTROL 产品]** 在选项卡栏中。
    1. 选择产品。
    1. 选择 <img src="assets/saveforlater.png" width="15" />。

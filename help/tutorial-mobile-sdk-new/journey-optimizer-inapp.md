@@ -5,10 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '1569'
-ht-degree: 2%
+source-wordcount: '1689'
+ht-degree: 3%
 
 ---
 
@@ -16,7 +16,11 @@ ht-degree: 2%
 
 了解如何使用Experience PlatformMobile SDK和Journey Optimizer为移动应用程序创建应用程序内消息。
 
-Journey Optimizer允许您创建营销活动，以将应用程序内消息发送给目标受众。 在使用Journey Optimizer发送应用程序内消息之前，必须确保进行适当的配置和集成。 要了解Journey Optimizer中的应用程序内消息传送数据流，请参阅 [文档](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
+Journey Optimizer允许您创建营销活动，以将应用程序内消息发送给目标受众。 Journey Optimizer中的营销活动用于通过各种渠道向特定受众投放一次性内容。 借助营销活动，可同时执行诸多操作：立即执行或根据指定计划执行。使用历程时(请参阅 [Journey Optimizer推送通知](journey-optimizer-push.md) 课程)，操作将按顺序执行。
+
+![架构](assets/architecture-ajo.png)
+
+在使用Journey Optimizer发送应用程序内消息之前，必须确保进行适当的配置和集成。 要了解Journey Optimizer中的应用程序内消息传送数据流，请参阅 [文档](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
 >[!NOTE]
 >
@@ -26,6 +30,7 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 ## 先决条件
 
 * 在安装和配置SDK的情况下成功构建和运行应用程序。
+* 为Adobe Experience Platform设置应用程序。
 * 对Journey Optimizer的访问权限和足够的权限，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 此外，您需要具有足够的权限才能使用以下Journey Optimizer功能。
    * 管理营销活动。
 * 具有创建证书、标识符和密钥的足够访问权限的付费Apple开发人员帐户。
@@ -43,7 +48,7 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 * 向Apple推送通知服务(APN)注册应用程序ID。
 * 在AJO中创建应用程序表面。
 * 安装和配置Journey Optimizer标记扩展。
-* 更新您的应用程序以包含Journey Optimizer标记扩展。
+* 更新您的应用程序以注册Journey Optimizer标记扩展。
 * 验证Assurance中的设置。
 * 在Journey Optimizer中定义您自己的营销活动和应用程序内消息体验。
 * 在应用程序中发送您自己的应用程序内消息。
@@ -96,7 +101,7 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 
 要使您的应用程序能够与Journey Optimizer配合使用，您需要更新标记属性。
 
-1. 导航到 **[!UICONTROL 标记]** > **[!UICONTROL 扩展]** > **[!UICONTROL 目录]**，
+1. 导航到 **[!UICONTROL 标记]** > **[!UICONTROL 扩展]** > **[!UICONTROL 目录]**.
 1. 打开您的资产，例如 **[!UICONTROL Luma移动应用程序教程]**.
 1. 选择 **[!UICONTROL 目录]**.
 1. 搜索 **[!UICONTROL Adobe Journey Optimizer]** 扩展。
@@ -171,7 +176,8 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 * 应用程序生命周期事件，例如启动、安装、升级、关闭或崩溃，
 * 地理位置事件，例如进入或退出目标点。
 
-在本教程中，您将使用Mobile Core通用和独立于扩展的API来促进对用户屏幕、操作和PII数据的事件跟踪。 这些API生成的事件将发布到SDK事件中心，可供扩展使用。 例如，安装Analytics扩展后，所有用户操作和应用程序屏幕事件数据都会发送到相应的Analytics报表端点。
+在本教程中，您将使用移动核心通用和独立于扩展的API(请参阅 [Mobile Core通用API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis))以方便对用户屏幕、操作和PII数据进行事件跟踪。 这些API生成的事件将发布到SDK事件中心，可供扩展使用。 SDK事件中心提供了与所有AEP Mobile SDK扩展绑定的核心数据结构，其中维护着已注册的扩展和内部模块的列表、已注册的事件侦听器的列表以及共享状态数据库。
+SDK事件中心发布并接收来自已注册的扩展的事件数据，以简化与Adobe和第三方解决方案的集成。 例如，在安装优化扩展时，事件中心将处理所有请求以及与Journey Optimizer — 决策管理选件引擎的交互。
 
 1. 在Journey Optimizer UI中，选择 **[!UICONTROL 营销活动]** 从左边栏开始。
 1. 选择 **[!UICONTROL 创建营销活动]**.
@@ -252,7 +258,7 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 
 ## 后续步骤
 
-您现在应该拥有所有工具，可以开始向Luma应用程序添加相关的适用应用程序内消息。 例如，根据您在应用程序中跟踪的特定交互来促销产品。
+现在，您应该拥有所有相关和适用的所有工具，以便开始添加应用程序内消息。  例如，根据您在应用程序中跟踪的特定交互来促销产品。
 
 >[!SUCCESS]
 >

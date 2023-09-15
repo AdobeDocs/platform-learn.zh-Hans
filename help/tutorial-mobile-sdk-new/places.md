@@ -2,7 +2,7 @@
 title: Places
 description: 了解如何在移动应用程序中使用Places地理位置服务。
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
 source-wordcount: '1754'
 ht-degree: 3%
@@ -31,7 +31,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 * 使用Places扩展更新您的标记属性。
 * 更新您的架构以捕获地理位置事件。
 * 验证Assurance中的设置。
-* 更新您的应用程序以包含Places扩展。
+* 更新您的应用程序以注册Places扩展。
 * 从应用程序中的Places服务实施地理位置跟踪。
 
 
@@ -49,7 +49,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 * 更新您的架构以捕获建议事件。
 * 验证Assurance中的设置。
 * 根据Journey Optimizer - Decision Management中的优惠创建优惠决策。
-* 更新您的应用程序以包含Optimizer扩展。
+* 更新您的应用程序以注册Optimizer扩展。
 * 在应用程序中实施来自决策管理的选件。
 
 
@@ -106,7 +106,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
 验证您的架构是否如中定义 [创建架构](create-schema.md)，整合了收集POI和地理位置数据所需的字段组和类。
 
-1. 导航到数据收集UI并选择 **[!UICONTROL 架构]** 从左边栏开始。
+1. 导航到数据收集界面并选择 **[!UICONTROL 架构]** 从左边栏开始。
 1. 选择 **[!UICONTROL 浏览]** 从顶部栏中。
 1. 选择您的架构以将其打开。
 1. 在架构编辑器中，选择 **[!UICONTROL 使用者体验事件]**.
@@ -320,7 +320,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
    }
    ```
 
-此教程超出了本教程的主题，无法解释有关iOS中位置管理器实施的详细信息。
+解释有关iOS中位置管理器实施的详细信息超出了本课程的主题范围。
 
 
 ## 使用应用程序进行验证

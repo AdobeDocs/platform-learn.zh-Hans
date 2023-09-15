@@ -3,9 +3,9 @@ title: 配置标记属性
 description: 了解如何在中配置标记属性 [!UICONTROL 数据收集] 界面。
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1095'
 ht-degree: 8%
 
 ---
@@ -45,7 +45,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
       >[!NOTE]
       >
-      > 对于基于Edge的Mobile Sdk实施（例如，您在本教程中正在执行的实施），默认同意设置来自 [!UICONTROL 同意扩展] 而不是 [!UICONTROL 隐私] 设置。 您可在本课程的后面部分添加并配置同意扩展。 有关更多信息，请参阅 [文档](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > 基于Edge的Mobile SDK实施（例如您在本课程中正在执行的实施）的默认同意设置来自 [!UICONTROL 同意扩展] 而不是 [!UICONTROL 隐私] 设置。 您可在本课程的后面部分添加并配置同意扩展。 有关更多信息，请参阅 [文档](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. 打开新资产。
@@ -112,13 +112,13 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
    1. 在 **[!UICONTROL 数据流]** 选择 **[!UICONTROL 数据流]** 您在 [上一步](create-datastream.md) 例如，针对每个环境 **[!UICONTROL Luma移动应用程序]**.
 
-   1. 指定 **[!UICONTROL Edge Network域]** 范围 **[!UICONTROL 域配置]**. Edge Network域是沙盒的名称，其后跟 `data.adobedc.net`例如 `techmarketingdemos.data.adobedc.net`.
+   1. 指定 **[!UICONTROL Edge Network域]** 范围 **[!UICONTROL 域配置]**. Edge Network域是您组织的名称，后面跟有 `data.adobedc.net`例如 `techmarketingdemos.data.adobedc.net`.
 
    1. 从 **[!UICONTROL 保存到库]** 菜单，选择 **[!UICONTROL 保存到库并生成]**.
 
       ![边缘网络设置](assets/tags-extension-edge.png)
 
-您的库是为新的扩展和配置而构建的。 成功构建由表示 <span style="color:green">●</span> 在 **[!UICONTROL 初始构建]** 按钮。
+您的库是为新扩展和配置构建的。 成功构建由表示 <span style="color:green">●</span> 在 **[!UICONTROL 初始构建]** 按钮。
 
 
 ## 生成SDK安装说明
@@ -131,7 +131,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
 1. 在 **[!UICONTROL 移动设备安装说明]** 对话框，选择 **[!UICONTROL iOS]** 选项卡。
 
-1. 您可以复制 ![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 有关使用CocoaPods设置项目的说明。 CocoaPod用于管理SDK版本和下载。 要了解更多信息，请查阅 [文档](https://cocoapods.org/).
+1. 您可以复制 ![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) 有关使用CocoaPods设置项目的说明。 CocoaPod用于管理SDK版本和下载。 要了解更多信息，请查阅 [Cocoapods文档](https://cocoapods.org/). 如果您使用Android作为开发平台，Gradle是用于管理SDK版本、下载和依赖项的工具。 要了解更多信息，请查阅 [Gradle文档](https://gradle.org/)
 
    安装说明为您提供了一个良好的实施起点。 您可以找到其他信息 [此处](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -156,7 +156,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
 * 在Web上，标记属性呈现到JavaScript中，然后（通常）将该属性托管在云中。 该JavaScript文件直接在网站中引用。
 
-* 在移动标记属性中，规则和配置将渲染到云中托管的JSON文件中。 JSON文件由移动设备应用程序中的Mobile Core扩展下载和读取。 扩展是相互协作的分隔SDK。 如果向标记属性添加扩展，则还必须更新应用程序。 如果更改扩展设置或创建规则，则在发布更新的标记库后，这些更改将反映在应用程序中。
+* 在移动标记属性中，规则和配置将渲染到云中托管的JSON文件中。 JSON文件由移动设备应用程序中的Mobile Core扩展下载和读取。 扩展是相互协作的分隔SDK。 如果向标记属性添加扩展，则还必须更新应用程序。 如果更改扩展设置或创建规则，则在发布更新的标记库后，这些更改将反映在应用程序中。 这种灵活性允许您修改设置(如AdobeAnalytics报表包ID)，甚至可以更改应用程序的行为（使用数据元素和规则，您将在后面的课程中看到这一点），而无需更改应用程序中的代码，并且必须将应用程序重新提交到应用商店。
 
 >[!SUCCESS]
 >

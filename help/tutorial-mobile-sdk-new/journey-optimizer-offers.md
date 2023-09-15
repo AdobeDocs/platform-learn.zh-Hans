@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: a49311ffc7791621b360ea7fe4f945669d0d0990
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '2412'
+source-wordcount: '2467'
 ht-degree: 2%
 
 ---
@@ -16,9 +16,13 @@ ht-degree: 2%
 
 了解如何使用Experience Platform移动SDK在移动应用程序中显示Journey Optimizer决策管理中的选件。
 
-Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的客户提供最佳优惠和体验。 设计完成后，为您的受众提供个性化优惠。
+Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点为客户提供最佳优惠和体验。 设计完成后，为您的受众提供个性化优惠。
+
+![架构](assets/architecture-od.png)
 
 决策管理通过集中的营销优惠库和决策引擎(该引擎可将规则和约束应用于Adobe Experience Platform创建的丰富实时用户档案)轻松实现个性化。 这样，您就可以在适当的时间向客户发送合适的优惠。 请参阅 [关于决策管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) 以了解更多信息。
+
+
 
 
 >[!NOTE]
@@ -29,6 +33,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 ## 先决条件
 
 * 在安装和配置SDK的情况下成功构建和运行应用程序。
+* 为Adobe Experience Platform设置应用程序。
 * 访问Journey Optimizer — 具有相应权限以管理优惠和决策的决策管理，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 
@@ -41,7 +46,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 * 更新您的架构以捕获建议事件。
 * 验证Assurance中的设置。
 * 根据Journey Optimizer - Decision Management中的优惠创建优惠决策。
-* 更新您的应用程序以包含Optimizer扩展。
+* 更新您的应用程序以注册Optimizer扩展。
 * 在应用程序中实施来自决策管理的选件。
 
 
@@ -51,7 +56,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 >
 >如果您已将环境设置为 [使用Target设置A/B测试](target.md) 教程，您可以跳过 [安装Adobe Journey Optimizer - Decisioning标记扩展](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的架构](#update-your-schema).
 
-### 更新Edge配置
+### 更新数据流配置
 
 要确保将从您的移动应用程序发送到边缘网络的数据转发到Journey Optimizer — 决策管理，请更新您的Experience Edge配置。
 
@@ -76,11 +81,11 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 
 ### 更新您的架构
 
-1. 导航到数据收集UI并选择 **[!UICONTROL 架构]** 从左边栏开始。
+1. 导航到数据收集界面并选择 **[!UICONTROL 架构]** 从左边栏开始。
 1. 选择 **[!UICONTROL 浏览]** 从顶部栏中。
 1. 选择您的架构以将其打开。
 1. 在架构编辑器中，选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加]** ，位于字段组旁边。
-1. 在 **[!UICONTROL 添加字段组]** 对话框， ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 搜索 `proposition`，选择 **[!UICONTROL 体验事件 — 建议交互]** 并选择 **[!UICONTROL 添加字段组]**.
+1. 在 **[!UICONTROL 添加字段组]** 对话框， ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) 搜索 `proposition`，选择 **[!UICONTROL 体验事件 — 建议交互]** 并选择 **[!UICONTROL 添加字段组]**. 此字段组收集与选件相关的体验事件数据：显示哪些选件，作为哪些收集、决策和其他参数的一部分（请参阅本课程后面部分的）。 但是，优惠中还发生了什么：它是否显示、交互、被忽略等等。
    ![建议](assets/schema-fieldgroup-proposition.png)
 1. 选择 **[!UICONTROL 保存]** 以保存对架构所做的更改。
 
@@ -211,7 +216,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
 * 资格规则：例如，选件仅适用于特定受众，
 * 排名方法：当有多个选件可供选择时，您使用哪个方法为其排名（例如，按选件优先级、使用公式或AI模型）。
 
-请参阅 [创建和管理优惠的关键步骤](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 如果您想更好地了解投放位置、规则、排名、优惠、呈现、收藏集、决策等如何相互交互和相互关联。 本教程仅侧重于使用决策的输出，而不是侧重于在Journey Optimizer中定义决策的灵活性 — 决策管理。
+请参阅 [创建和管理优惠的关键步骤](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) 如果您想更好地了解投放位置、规则、排名、优惠、呈现、收藏集、决策等如何相互交互和相互关联。 本课程仅侧重于使用决策的输出，而不是侧重于在Journey Optimizer中定义决策的灵活性 — 决策管理。
 
 1. 在Journey Optimizer UI中，选择 **[!UICONTROL 选件]** 从左边栏开始。
 1. 选择 **[!UICONTROL 决策]** 从顶部栏中。
@@ -304,7 +309,7 @@ Journey Optimizer决策管理可帮助您在适当的时间为所有接触点的
    此函数：
 
    * 设置XDM词典 `xdmData`，包含ECID以标识必须提供选件的配置文件。
-   * 定义 `decisionScope`，该对象基于您在Journey Optimizer — 决策管理UI中定义的决策，并使用从复制的决策范围进行定义 [创建决策](#create-a-decision).  Luma应用程序使用配置文件(`decisions.json`)以检索范围参数，具体取决于以下JSON格式：
+   * 定义 `decisionScope`，该对象基于您在Journey Optimizer — 决策管理界面中定义的决策，并使用从复制的决策范围进行定义 [创建决策](#create-a-decision).  Luma应用程序使用配置文件(`decisions.json`)以检索范围参数，具体取决于以下JSON格式：
 
      ```swift
      "scopes": [

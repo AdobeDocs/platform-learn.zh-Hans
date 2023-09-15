@@ -3,10 +3,10 @@ title: 设置保证
 description: 了解如何在移动应用程序中实施Assurance扩展。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
 workflow-type: tm+mt
-source-wordcount: '765'
-ht-degree: 9%
+source-wordcount: '754'
+ht-degree: 8%
 
 ---
 
@@ -34,11 +34,7 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 
 ## 确认访问
 
-通过完成以下步骤，确认贵组织有权访问Assurance：
-
-1. 访问 [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. 使用您的Adobe ID凭据登录Experience Cloud。
-1. 如果您看到 **[!UICONTROL 会话]** 屏幕上，则表示您拥有访问权限。 如果您看到（测试版）访问页面，请选择 **[!UICONTROL 注册]** 注册。
+确认您的组织有权访问Assurance。 您作为用户，应该被添加到Adobe Experience Platform的配置文件。 请参阅 [用户访问权限](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) ，以了解详细信息。
 
 ## 实施
 
@@ -70,7 +66,7 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 1. 选择 **签名和功能** 选项卡。
 1. 配置 **[!UICONTROL 自动管理签名]**， **[!UICONTROL 团队]**、和 **[!UICONTROL 捆绑标识符]**，或使用您的特定Apple开发配置详细信息。
 
-   ![Xcode签名功能](assets/xcode-signing-capabilities.png)
+   ![Xcode签名功能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 ## 设置基本URL
 

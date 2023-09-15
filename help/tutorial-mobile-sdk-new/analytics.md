@@ -3,7 +3,7 @@ title: Analytics映射
 description: 了解如何在移动应用程序中收集Adobe Analytics的数据。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 371d71f06796c0f7825217a2ebd87d72ae7e8639
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 3%
@@ -15,6 +15,8 @@ ht-degree: 3%
 了解如何将移动数据映射到Adobe Analytics。
 
 此 [事件](events.md) 您在之前的课程中收集并发送到Platform Edge Network的数据将转发到您在数据流中配置的服务，包括Adobe Analytics。 您可以将数据映射到报表包中的正确变量。
+
+![架构](assets/architecture-aa.png)
 
 ## 先决条件
 
@@ -186,10 +188,10 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 >某些自动映射的变量在处理规则中可能不可用。
 >
 >
->首次映射到处理规则时，UI不会显示XDM对象中的上下文数据变量。 要修复该错误，请选择任意值，请保存并返回进行编辑。 此时应会显示所有XDM变量。
+>首次映射到处理规则时，界面不会显示XDM对象中的上下文数据变量。 要修复该错误，请选择任意值，请保存并返回进行编辑。 此时应会显示所有XDM变量。
 
 
-可以找到有关处理规则和上下文数据的其他信息 [此处](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+可找到有关处理规则和上下文数据的其他信息 [此处](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >

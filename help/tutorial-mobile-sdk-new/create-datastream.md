@@ -3,9 +3,9 @@ title: 配置数据流
 description: 了解如何在Experience Platform中创建数据流。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 56323387deae4a977a6410f9b69db951be37059f
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '598'
 ht-degree: 7%
 
 ---
@@ -16,6 +16,8 @@ ht-degree: 7%
 了解如何在Experience Platform中创建数据流。
 
 数据流是Platform边缘网络上的服务器端配置。 数据流确保将传入到Platform边缘网络的数据正确路由到Adobe Experience Cloud应用程序和服务。 欲了解更多信息，请参见 [文档](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) 或此 [视频](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=zh-Hans).
+
+![架构](assets/architecture.png)
 
 ## 先决条件
 
@@ -33,13 +35,18 @@ ht-degree: 7%
 
 可以在以下位置创建数据流： [!UICONTROL 数据收集] 界面使用 [!UICONTROL 数据流] 配置工具。 要创建数据流，请执行以下操作：
 
-1. 由于数据流是在沙盒级别定义的，因此请确保您处于正确的Experience Platform沙盒中。
+1. 当数据流在沙盒级别定义时，请确保您处于正确的Experience Platform沙盒中。
 1. 选择 **[!UICONTROL 数据流]** 在左边栏中。
 1. 选择&#x200B;**[!UICONTROL 新数据流]**。
 
    ![数据流主页](assets/datastream-new.png)
 
 1. 提供 **[!UICONTROL 名称]**&#x200B;例如 `Luma Mobile App` 和 **[!UICONTROL 描述]**&#x200B;例如 `Datastream for Luma Mobile App`.
+
+   >[!NOTE]
+   >
+   >最后提醒：如果您正在阅读本教程，将多人放在一个沙盒上，或者您使用的是共享帐户，请考虑在命名约定中附加或附加标识作为命名约定的一部分。 例如，使用 `Luma Mobile App Event Dataset - Joe Smith`，而不是 `Luma Mobile App Event Dataset`。另请参阅中的注释 [概述](overview.md).
+
 1. 从中选择您在上一课中创建的架构 **事件架构**&#x200B;列表。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 

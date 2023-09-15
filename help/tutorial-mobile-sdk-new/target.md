@@ -5,9 +5,9 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: 2e70022313faac2b6d965a838c03fc6f55806506
+source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1601'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,9 @@ ht-degree: 2%
 
 了解如何使用Platform Mobile SDK和Adobe Target在移动应用程序中执行A/B测试。
 
-Target提供了您必须定制和个性化客户体验的所有功能。 Target可帮助您最大限度地提高网站和移动网站、应用程序、社交媒体和其他数字渠道的收入。 本教程重点介绍Target的A/B测试功能。 请参阅 [A/B测试概述](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) 以了解更多信息。
+Target提供了您必须定制和个性化客户体验的所有功能。 Target可帮助您最大限度地提高网站和移动网站、应用程序、社交媒体和其他数字渠道的收入。 Target可以执行A/B测试、多变量测试、推荐产品和内容、定位内容、使用AI自动个性化内容等等。 本课程重点介绍Target的A/B测试功能。  请参阅 [A/B测试概述](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) 以了解更多信息。
+
+![架构](assets/architecture-at.png)
 
 在使用Target执行A/B测试之前，您必须确保已进行适当的配置和集成。
 
@@ -29,20 +31,19 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 ## 先决条件
 
 * 在安装和配置SDK的情况下成功构建和运行应用程序。
-* 通过权限、正确配置的角色、工作区和属性访问Adobe Target Premium，如所述 [此处](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=zh-Hans).
-您也应该能够使用Target Standard，但本教程使用了一些Target Premium特有的高级概念（例如Target属性）。
+* 通过权限、正确配置的角色、工作区和属性访问Adobe Target，如所述 [此处](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=zh-Hans).
 
 
 ## 学习目标
 
 在本课程中，您将执行以下操作
 
-* 更新Target集成的Edge配置。
+* 更新数据流以进行Target集成。
 * 使用Journey Optimizer - Decisioning扩展更新您的标记属性。
 * 更新您的架构以捕获建议事件。
 * 验证Assurance中的设置。
 * 在Target中创建简单的A/B测试。
-* 更新您的应用程序以包含Optimizer扩展。
+* 更新您的应用程序以注册Optimizer扩展。
 * 在应用程序中实施A/B测试。
 * 在Assurance中验证实施。
 
@@ -51,15 +52,15 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 >[!TIP]
 >
->如果您已将应用程序设置为 [Journey Optimizer优惠](journey-optimizer-offers.md) 教程，您可以跳过 [安装Adobe Journey Optimizer - Decisioning标记扩展](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的架构](#update-your-schema).
+>如果您已将应用程序设置为 [Journey Optimizer优惠](journey-optimizer-offers.md) 课程，你可以跳过两者 [安装Adobe Journey Optimizer - Decisioning标记扩展](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的架构](#update-your-schema).
 
-### 更新Edge配置
+### 更新数据流配置
 
-要确保将从您的移动应用程序发送到边缘网络的数据转发到Adobe Target，您必须更新Experience Edge配置。
+要确保将从您的移动应用程序发送到Experience Platform边缘网络的数据转发到Adobe Target，您必须更新数据流配置。
 
 1. 在数据收集UI中，选择 **[!UICONTROL 数据流]**，并选择您的数据流，例如 **[!UICONTROL Luma移动应用程序]**.
 1. 选择 **[!UICONTROL 添加服务]** 并选择 **[!UICONTROL Adobe Target]** 从 **[!UICONTROL 服务]** 列表。
-1. 输入目标 **[!UICONTROL 资产令牌]** 要用于此集成的值。
+1. 如果您是Target Premium客户并希望使用资产令牌，请输入Target **[!UICONTROL 资产令牌]** 要用于此集成的值。 Target Standard用户可以跳过此步骤。
 
    您可以在Target UI中的以下位置找到您的属性： **[!UICONTROL 管理]** > **[!UICONTROL 属性]**. 选择 ![代码](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) 用于显示要使用的资产的资产令牌。 资产令牌的格式如下 `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`；必须只输入值 `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
@@ -70,7 +71,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 ### 安装Adobe Journey Optimizer - Decisioning标记扩展
 
-1. 导航到 **[!UICONTROL 标记]** 并找到您的移动标记资产并打开该资产。
+1. 导航到 **[!UICONTROL 标记]**，查找您的移动标记属性，然后打开该属性。
 1. 选择 **[!UICONTROL 扩展]**.
 1. 选择 **[!UICONTROL 目录]**.
 1. 搜索 **[!UICONTROL Adobe Journey Optimizer - Decisioning]** 扩展。
@@ -81,13 +82,13 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 ### 更新您的架构
 
-1. 导航到数据收集UI，然后从左边栏中选择架构。
+1. 导航到数据收集界面并选择 **[!UICONTROL 架构]** 从左边栏开始。
 1. 选择 **[!UICONTROL 浏览]** 从顶部栏中。
 1. 选择您的架构以将其打开。
 1. 在架构编辑器中，选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加]** 旁边 **[!UICONTROL 字段组]**.
 1. 在添加字段组对话框中，搜索 `proposition`，选择 **[!UICONTROL 体验事件 — 建议交互]** 并选择 **[!UICONTROL 添加字段组]**.
    ![建议](assets/schema-fieldgroup-proposition.png)
-1. 要保存对架构所做的更改，请选择 **[!UICONTROL 保存]** .
+1. 要保存对架构所做的更改，请选择 **[!UICONTROL 保存]**.
 
 
 ### 验证Assurance中的设置
@@ -102,15 +103,17 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 ## 创建 A/B 测试
 
+您可以在Adobe Target中创建并在移动应用程序中实施多种类型的活动，如简介中所述。 在本课程中，您将重点介绍如何创建和实施A/B测试。
+
 1. 在Target UI中，选择 **[!UICONTROL 活动]** 从顶部栏中。
 1. 选择 **[!UICONTROL 创建活动]** 和 **[!UICONTROL A/B测试]** 从上下文菜单中。
-1. 在 **[!UICONTROL 创建A/B测试活动]** 对话框，选择 **[!UICONTROL 移动设备]** 作为 **[!UICONTROL 类型]**，从中选择工作区 **[!UICONTROL 选择工作区]** ，并从中选择您的资产 **[!UICONTROL 选择属性]** 列表。
+1. 在 **[!UICONTROL 创建A/B测试活动]** 对话框，选择 **[!UICONTROL 移动设备]** 作为 **[!UICONTROL 类型]**，从中选择工作区 **[!UICONTROL 选择工作区]** ，并从中选择您的资产 **[!UICONTROL 选择属性]** 列出您是否是Target Premium客户并在数据流中指定了资产令牌。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
    ![创建Target活动](assets/target-create-activity1.png)
 
 1. 在 **[!UICONTROL 无标题活动]** 屏幕，位于 **[!UICONTROL 体验]** 步骤：
 
-   1. 输入 `luma-mobileapp-abtest` 在 **[!UICONTROL 选择位置]** 下 **[!UICONTROL 位置1]**.
+   1. 输入 `luma-mobileapp-abtest` 在 **[!UICONTROL 选择位置]** 下 **[!UICONTROL 位置1]**. 此位置名称（通常称为mbox）稍后将在应用程序实施中使用。
    1. 选择 ![Chrevron下降](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) 旁边 **[!UICONTROL 默认内容]** 并选择 **[!UICONTROL 创建JSON选件]** 从上下文菜单中。
    1. 将以下JSON复制到 **[!UICONTROL 输入有效的JSON对象]**.
 
@@ -207,14 +210,14 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
    }
    ```
 
-   此函数
+   此函数：
 
    * 设置XDM词典 `xdmData`，包含ECID以标识必须提供A/B测试的配置文件，并且
    * 定义 `decisionScope`，提供A/B测试的位置数组。
 
    然后，函数调用两个API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 这些函数清除任何缓存的建议并更新此用户档案的建议。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 个性化]** > **[!UICONTROL TargetOffersView]** 在Xcode项目导航器中。 查找 `func onPropositionsUpdateAT(location: String) async {` 函数并检查此函数的代码。 此函数最重要的部分是  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API调用，其中
+1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 个性化]** > **[!UICONTROL TargetOffersView]** 在Xcode项目导航器中。 查找 `func onPropositionsUpdateAT(location: String) async {` 函数并检查此函数的代码。 此函数最重要的部分是  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API调用，其中：
    * 根据决策范围（即您在A/B测试中定义的位置）检索当前用户档案的建议，
    * 从建议中检索优惠，
    * 解包选件的内容，以便该内容可以在应用程序中正确显示，并且
@@ -264,7 +267,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 ## 后续步骤
 
-现在，您应该拥有所有工具，以便开始向Luma应用程序添加更多A/B测试或其他Target活动（例如体验定位、多变量测试）（如果相关且适用）。 有关更深入的信息，请参见 [Optimize扩展的Github存储库](https://github.com/adobe/aepsdk-optimize-ios) 您还可以在该处找到指向专用的 [教程](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) ，了解如何跟踪Adobe Target选件。
+现在，您应该拥有所有工具，能够根据相关情况和适用情况，开始向应用程序添加更多A/B测试或其他Target活动（例如体验定位、多变量测试）。 有关更深入的信息，请参见 [Optimize扩展的Github存储库](https://github.com/adobe/aepsdk-optimize-ios) 您还可以在该处找到指向专用的 [教程](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) ，了解如何跟踪Adobe Target选件。
 
 >[!SUCCESS]
 >
