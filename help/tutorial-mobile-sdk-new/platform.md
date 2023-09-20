@@ -4,9 +4,9 @@ description: 了解如何将数据发送到Adobe Experience Platform。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '968'
+source-wordcount: '1056'
 ht-degree: 5%
 
 ---
@@ -33,6 +33,7 @@ ht-degree: 5%
 在本课程中，您将执行以下操作：
 
 * 创建Experience Platform数据集。
+* 配置数据流以将数据转发到Experience Platform。
 * 验证数据集中的数据。
 * 为Real-time Customer Profile启用架构和数据集。
 * 验证实时客户档案中的数据。
@@ -54,7 +55,7 @@ ht-degree: 5%
    ![数据集主页](assets/dataset-create.png)
 
 1. 搜索您的架构。 例如，使用 `Luma Mobile` 在搜索字段中。
-1. 选择您的架构，例如 **[!UICONTROL Luma移动应用程序事件架构]**.
+1. 选择您的架构，例如 **[!DNL Luma Mobile App Event Schema]**.
 
 1. 选择&#x200B;**[!UICONTROL 下一步]**。
    ![数据集配置](assets/dataset-configure.png)
@@ -64,9 +65,32 @@ ht-degree: 5%
 1. 选择&#x200B;**[!UICONTROL 完成]**。
    ![数据集完成](assets/dataset-finish.png)
 
-## 更新数据流
 
-创建数据集后，请确保 [更新您的数据流](create-datastream.md#adobe-experience-platform) 以添加Adobe Experience Platform。 此更新可确保数据流入Platform。
+## 添加Adobe Experience Platform数据流服务
+
+要将XDM数据从Edge Network发送到Adobe Experience Platform，请将Adobe Experience Platform服务配置为包含在中设置的数据流 [创建数据流](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>您只能在创建事件数据集后启用Adobe Experience Platform服务。
+
+1. 在数据收集UI中，选择 **[!UICONTROL 数据流]** 和您的数据流。
+
+1. 然后选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加服务]**.
+
+1. 从 [!UICONTROL 服务] 列表中选择 **[!UICONTROL Adobe Experience Platform]**。
+
+1. 通过切换启用服务 **[!UICONTROL 已启用]** 打开。
+
+1. 选择 **[!UICONTROL 事件数据集]** 之前创建的对象，例如 **[!DNL Luma Mobile App Event Dataset]**.
+
+1. 选择&#x200B;**[!UICONTROL 保存]**。
+
+   ![将Adobe Experience Platform添加为数据流服务](assets/datastream-service-aep.png)
+1. 最终配置应如下所示。
+
+   ![数据流设置](assets/datastream-settings.png)
+
 
 ## 验证数据集中的数据
 
@@ -89,7 +113,7 @@ Experience Platform的实时客户资料允许您构建每个客户的整体视�
 
 ### 启用架构
 
-1. 打开您的架构，例如 **[!UICONTROL Luma移动应用程序事件架构]**.
+1. 打开您的架构，例如 **[!DNL Luma Mobile App Event Schema]**.
 1. 启用 **[!UICONTROL 个人资料]**.
 1. 选择 **[!UICONTROL 此架构的数据将在identityMap字段中包含主标识。]** 在对话框中。
 1. **[!UICONTROL 保存]** 架构。
@@ -98,7 +122,7 @@ Experience Platform的实时客户资料允许您构建每个客户的整体视�
 
 ### 启用数据集
 
-1. 打开您的数据集，例如 **[!UICONTROL Luma移动应用程序事件数据集]**.
+1. 打开您的数据集，例如 **[!DNL Luma Mobile App Event Dataset]**.
 1. 启用 **[!UICONTROL 个人资料]**.
 
    ![为用户档案启用数据集](assets/platform-profile-dataset.png)

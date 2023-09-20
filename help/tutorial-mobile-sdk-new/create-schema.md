@@ -3,10 +3,10 @@ title: 创建 XDM 架构
 description: 了解如何为移动应用程序事件创建XDM架构。
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1473'
-ht-degree: 7%
+source-wordcount: '1482'
+ht-degree: 8%
 
 ---
 
@@ -28,7 +28,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
 >[!TIP]
 >
->如果您熟悉Analytics解决方案设计参考(SDR)，则可以将架构视为更强大的SDR。
+>如果您熟悉Analytics解决方案设计参考(SDR)，则可以将架构视为更强大的SDR。 请参阅 [创建和维护解决方案设计参考(SDR)文档](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=zh-Hans) 以了解更多信息。
 
 ## 先决条件
 
@@ -214,7 +214,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
 1. 在右边栏中，提供 **[!UICONTROL 字段名称]** 之 `appInformation`， a **[!UICONTROL 显示名称]** 之 `App Information`，和 **[!UICONTROL 类型]** 之 `App Information`.
 
-1. 选择 **[!UICONTROL 应用程序交互]** 从 **[!UICONTROL 类型]** 下拉列表，在上一个练习中创建的自定义数据类型。
+1. 选择 **[!UICONTROL 应用程序交互]** 从 **[!UICONTROL 字段组]** 下拉列表，以将字段分配给新字段组。
 
 1. 选择&#x200B;**[!UICONTROL 应用]**。
 
@@ -224,7 +224,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
 >[!NOTE]
 >
->自定义字段组始终位于您的Experience Cloud组织标识符下。 因此 `_techmarketingdemos`在屏幕截图中使用的，将被替换为您组织的唯一值。
+>自定义字段组始终位于您的Experience Cloud组织标识符下。
 
 
 >[!SUCCESS]

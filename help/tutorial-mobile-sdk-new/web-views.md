@@ -3,9 +3,9 @@ title: 处理Web视图
 description: 了解如何在移动应用程序中通过WebViews处理数据收集。
 jira: KT-6987
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ WebView中使用的AEP Edge Identity扩展可收集当前ECID并将其添加到U
 
 ## 实施
 
-导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 信息]** > **[!UICONTROL 服务条款表]**，然后找到 `func loadUrl()` 中的函数 `final class SwiftUIWebViewModel: ObservableObject` 类。 添加以下调用以处理Web视图：
+导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**，然后找到 `func loadUrl()` 中的函数 `final class SwiftUIWebViewModel: ObservableObject` 类。 添加以下调用以处理Web视图：
 
 ```swift
 // Handle web view
@@ -68,7 +68,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 要执行代码，请执行以下操作：
 
 1. 转到 **[!UICONTROL 设置]** 在应用程序中
-1. 点按 **[!UICONTROL 查看……]** 按钮以显示 **[!UICONTROL 使用条款]**.
+1. 点按 **[!DNL View...]** 按钮以显示 **[!DNL Terms of Use]**.
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
@@ -90,6 +90,8 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
      ```html
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
+
+很遗憾，调试Web会话受到限制；例如，您不能在浏览器中使用该Adobe Experience Platform Debugger继续调试WebView会话。
 
 >[!NOTE]
 >

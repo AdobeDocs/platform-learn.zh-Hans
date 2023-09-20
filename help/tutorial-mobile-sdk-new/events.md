@@ -1,15 +1,15 @@
 ---
-title: 活动
+title: 收集事件数据
 description: 了解如何在移动应用程序中收集事件数据。
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 0%
+source-wordcount: '1309'
+ht-degree: 1%
 
 ---
 
-# 活动
+# 收集事件数据
 
 了解如何跟踪移动应用程序中的事件。
 
@@ -127,7 +127,7 @@ var xdmData: [String: Any] = [
 
 要以可重用方式实施与商业相关的体验事件的发送，请使用专用函数：
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中，将以下内容添加到 `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 函数。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中，将以下内容添加到 `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 函数。
 
    ```swift
    // Set up a data dictionary, create an experience event and send the event.
@@ -158,7 +158,7 @@ var xdmData: [String: Any] = [
    * 使用词典设置体验事件，
    * 使用发送体验事件 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 产品]** > **[!UICONTROL 产品视图]** 在Xcode项目导航器中，将各种调用添加到 `sendCommerceExperienceEvent` 函数：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL 产品视图]** 在Xcode项目导航器中，将各种调用添加到 `sendCommerceExperienceEvent` 函数：
 
    1. 在 `.task` 修饰符，在 `ATTrackingManager.trackingAuthorizationStatus` 结束。 此 `.task` 在初始化和显示产品视图时，将调用修饰符，这样您就要在特定时刻发送产品视图事件。
 
@@ -263,7 +263,7 @@ var xdmData: [String: Any] = [
 
 再次重申，让我们在您的Xcode项目中实际实施此代码。
 
-1. 为方便起见，您在中定义了两个函数 **[!UICONTROL MobileSDK]**. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。
+1. 为方便起见，您在中定义了两个函数 **[!UICONTROL MobileSDK]**. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。
 
    1. 一个用于应用程序交互。 将此代码添加到 `func sendAppInteractionEvent(actionName: String)` 函数：
 
@@ -321,7 +321,7 @@ var xdmData: [String: Any] = [
       * 使用词典设置体验事件，
       * 使用发送体验事件 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 常规]** > **[!UICONTROL 登录表]**.
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登录表]**.
 
    1. 在“登录”按钮结尾处添加以下高亮显示的代码：
 
@@ -345,7 +345,7 @@ var xdmData: [String: Any] = [
 
    1. 将“Assurance（保证）”图标向左移动。
    1. 选择 **[!UICONTROL 主页]** 选项卡栏中验证您是否看到了 **[!UICONTROL ECID]**， **[!UICONTROL 电子邮件]** 和 **[!UICONTROL CRM ID]** 在主屏幕中。
-   1. 选择 **[!UICONTROL 产品]** 在选项卡栏中。
+   1. 选择 **[!DNL Products]** 在选项卡栏中。
    1. 选择产品。
    1. 选择 <img src="assets/saveforlater.png" width="15" />。
    1. 选择 <img src="assets/addtocart.png" width="20" />。
@@ -361,7 +361,7 @@ var xdmData: [String: Any] = [
 
 ## 后续步骤
 
-您现在应该拥有所有工具，能够开始将数据收集添加到Luma应用程序。 您可以为用户在应用程序中与产品的交互方式添加更多智能，并为应用程序添加更多应用程序交互和屏幕跟踪调用：
+您现在应该拥有所有工具，能够开始向应用程序添加数据收集。 您可以为用户在应用程序中与产品的交互方式添加更多智能，并为应用程序添加更多应用程序交互和屏幕跟踪调用：
 
 * 在应用程序中实施订单、结帐、空购物篮和其他功能，并将相关的商务体验事件添加到此功能。
 * 重复呼叫 `sendAppInteractionEvent` ，以便通过相应的参数跟踪用户进行的其他应用程序交互。

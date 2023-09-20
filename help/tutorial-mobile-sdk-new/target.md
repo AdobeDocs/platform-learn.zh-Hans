@@ -5,10 +5,10 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 2%
+source-wordcount: '1771'
+ht-degree: 3%
 
 ---
 
@@ -48,17 +48,19 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 * 在Assurance中验证实施。
 
 
-## 设置您的应用程序
+## 设置
 
 >[!TIP]
 >
->如果您已将应用程序设置为 [Journey Optimizer优惠](journey-optimizer-offers.md) 课程，你可以跳过两者 [安装Adobe Journey Optimizer - Decisioning标记扩展](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的架构](#update-your-schema).
+>如果您已将应用程序设置为 [Journey Optimizer优惠](journey-optimizer-offers.md) 课程，您可能已经执行了此设置部分中的某些步骤。
 
 ### 更新数据流配置
 
+### Adobe Target
+
 要确保将从您的移动应用程序发送到Experience Platform边缘网络的数据转发到Adobe Target，您必须更新数据流配置。
 
-1. 在数据收集UI中，选择 **[!UICONTROL 数据流]**，并选择您的数据流，例如 **[!UICONTROL Luma移动应用程序]**.
+1. 在数据收集UI中，选择 **[!UICONTROL 数据流]**，并选择您的数据流，例如 **[!DNL Luma Mobile App]**.
 1. 选择 **[!UICONTROL 添加服务]** 并选择 **[!UICONTROL Adobe Target]** 从 **[!UICONTROL 服务]** 列表。
 1. 如果您是Target Premium客户并希望使用资产令牌，请输入Target **[!UICONTROL 资产令牌]** 要用于此集成的值。 Target Standard用户可以跳过此步骤。
 
@@ -67,6 +69,18 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
    ![向数据流添加Target](assets/edge-datastream-target.png)
+
+
+#### Adobe Journey Optimizer
+
+要确保将从您的移动应用程序发送到边缘网络的数据转发到Journey Optimizer — 决策管理，请更新您的Experience Edge配置。
+
+1. 在数据收集UI中，选择 **[!UICONTROL 数据流]**，并选择您的数据流，例如 **[!DNL Luma Mobile App]**.
+1. 选择 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 对象 **[!UICONTROL Experience Platform]** 并选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]** 从上下文菜单中。
+1. 在 **[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 屏幕，确保 **[!UICONTROL offer decisioning]**， **[!UICONTROL 边缘分段]**、和 **[!UICONTROL 个性化目标]** 已选中。 如果您还参加了Journey Optimizer课程，则应选择 **[!UICONTROL Adobe Journey Optimizer]** 也一样。 请参阅 [Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 以了解更多信息。
+1. 要保存数据流配置，请选择 **[!UICONTROL 保存]** .
+
+   ![AEP数据流配置](assets/datastream-aep-configuration-target.png)
 
 
 ### 安装Adobe Journey Optimizer - Decisioning标记扩展
@@ -143,7 +157,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
       ![体验 B](assets/target-create-activity-experienceB.png)
 
-1. 在 **[!UICONTROL 定位]** 步骤，查看A/B测试的设置。 默认情况下，这两个选件会平均分配到所有访客。 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以继续。
+1. 在 **[!DNL Targeting]** 步骤，查看A/B测试的设置。 默认情况下，这两个选件会平均分配到所有访客。 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以继续。
 
    ![设定目标](assets/taget-targeting.png)
 
@@ -151,7 +165,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
    1. 将无标题活动重命名，例如 `Luma Mobile SDK Tutorial - A/B Test Example`.
    1. 输入 **[!UICONTROL 目标]** 例如，用于您的A/B测试 `A/B Test for Luma mobile app tutorial`.
-   1. 选择 **[!UICONTROL 转化]**， **[!UICONTROL 已单击mbox]** 在 **[!UICONTROL 目标量度]** > **[!UICONTROL 我的主要目标]** 并输入您的位置(mbox)名称，例如 `luma-mobileapp-abtest`.
+   1. 选择 **[!UICONTROL 转化]**， **[!UICONTROL 已查看mbox]** 在 **[!UICONTROL 目标量度]** > **[!UICONTROL 我的主要目标]** 并输入您的位置(mbox)名称，例如 `luma-mobileapp-abtest`.
    1. 选择 **[!UICONTROL 保存并关闭]**.
 
       ![目标设置](assets/target-goals.png)
@@ -174,7 +188,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 >
 
 1. 在Xcode中，确保 [AEP优化](https://github.com/adobe/aepsdk-messaging-ios.git) 会添加到包依赖关系中的包列表中。 请参阅 [Swift包管理器](install-sdks.md#swift-package-manager).
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 在Xcode项目导航器中。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** 在Xcode项目导航器中。
 1. 确保 `AEPOptimize` 是导入列表的一部分。
 
    `import AEPOptimize`
@@ -197,7 +211,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
    ]
    ```
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。 查找 ` func updatePropositionAT(ecid: String, location: String) async` 函数。 添加以下代码：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** 在Xcode项目导航器中。 查找 ` func updatePropositionAT(ecid: String, location: String) async` 函数。 添加以下代码：
 
    ```swift
    Task {
@@ -217,13 +231,13 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
    然后，函数调用两个API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). 这些函数清除任何缓存的建议并更新此用户档案的建议。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 个性化]** > **[!UICONTROL TargetOffersView]** 在Xcode项目导航器中。 查找 `func onPropositionsUpdateAT(location: String) async {` 函数并检查此函数的代码。 此函数最重要的部分是  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API调用，其中：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Personalization]** > **[!DNL TargetOffersView]** 在Xcode项目导航器中。 查找 `func onPropositionsUpdateAT(location: String) async {` 函数并检查此函数的代码。 此函数最重要的部分是  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API调用，其中：
    * 根据决策范围（即您在A/B测试中定义的位置）检索当前用户档案的建议，
    * 从建议中检索优惠，
    * 解包选件的内容，以便该内容可以在应用程序中正确显示，并且
    * 触发 `displayed()` 将显示选件上的操作，该操作会将事件发送回Edge Network，通知选件。
 
-1. 仍在使用 **[!UICONTROL TargetOffersView]**，将以下代码添加到 `.onFirstAppear` 修饰符。 此代码将确保用于更新优惠的回调仅注册一次。
+1. 仍在使用 **[!DNL TargetOffersView]**，将以下代码添加到 `.onFirstAppear` 修饰符。 此代码将确保用于更新优惠的回调仅注册一次。
 
    ```swift
    // Invoke callback for offer updates
@@ -232,12 +246,15 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
    }
    ```
 
-1. 仍在使用 **[!UICONTROL TargetOffersView]**，将以下代码添加到 `.task` 修饰符。 刷新视图后，此代码将更新选件。
+1. 仍在使用 **[!DNL TargetOffersView]**，将以下代码添加到 `.task` 修饰符。 刷新视图后，此代码将更新选件。
 
    ```swift
    // Clear and update offers
    await self.updatePropositionsAT(ecid: currentEcid, location: location)
    ```
+
+您可以在个性化查询请求中向Experience Edge网络发送其他Target参数（如mbox、配置文件、产品或订单参数），方法是在调用 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions) API。 有关详细信息，请参阅 [Target参数](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#target-parameters).
+
 
 ## 使用应用程序进行验证
 
@@ -260,7 +277,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 1. 选择 **[!UICONTROL 配置]** 在左边栏中选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边 **[!UICONTROL 审阅和模拟]** 下 **[!UICONTROL Adobe Journey Optimizer决策]**.
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 选择 **[!UICONTROL 审阅和模拟]** 在左边栏中。 数据流设置以及应用程序中的SDK设置均已验证。
-1. 选择 **[!UICONTROL 请求]** 在顶栏里。 您看到您的 **[!UICONTROL Target]** 请求。
+1. 选择 **[!UICONTROL 请求]** 在顶栏里。 您看到您的 **[!DNL Target]** 请求。
    ![AJO决策验证](assets/assurance-decisioning-requests.png)
 
 1. 您可以浏览 **[!UICONTROL 模拟]** 和 **[!UICONTROL 事件列表]** 选项卡中的更多功能，用于检查您的Target选件设置。

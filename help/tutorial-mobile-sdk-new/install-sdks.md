@@ -2,9 +2,9 @@
 title: 安装Adobe Experience Platform Mobile SDK
 description: 了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '948'
 ht-degree: 1%
 
 ---
@@ -33,9 +33,12 @@ ht-degree: 1%
 
 ## Swift包管理器
 
-不要使用CocoaPods和Pod文件（如移动设备安装说明中所述），请参阅 [生成SDK安装说明](./configure-tags.md#generate-sdk-install-instructions))，您可使用Xcode的本机Swift包管理器添加单个包。
+不要使用CocoaPods和Pod文件（如移动设备安装说明中所述），请参阅 [生成SDK安装说明](./configure-tags.md#generate-sdk-install-instructions))，您可使用Xcode的本机Swift包管理器添加单个包。 Xcode项目已经为您添加了所有包依赖项。 Xcode **[!UICONTROL 程序包依赖项]** 屏幕应如下所示：
 
-在Xcode中，使用 **[!UICONTROL 文件]** > **[!UICONTROL 添加包……]** 并安装下表中列出的所有软件包。 选择表中包的链接以获取特定包的完整URL。
+![Xcode包依赖项](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
+
+
+在Xcode中，您可以使用 **[!UICONTROL 文件]** > **[!UICONTROL 添加包……]** 以添加包。 下表提供了用于添加包的URL的链接。 这些链接还将引导您了解有关每个特定包的更多信息。
 
 | 包 | 描述 |
 |---|---|
@@ -50,14 +53,9 @@ ht-degree: 1%
 | [AEP保证](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance（又称Griffon项目）是一种新颖的扩展(`AEPAssurance`)，以帮助您检查、验证、模拟和验证在移动设备应用程序中收集数据或提供体验的方式。 此扩展可为您的应用程序启用保证。 |
 
 
-安装所有软件包后，您的Xcode **[!UICONTROL 程序包依赖项]** 屏幕应如下所示：
-
-![Xcode包依赖项](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
-
-
 ## 导入扩展
 
-在Xcode中，导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 并确保以下导入是此源文件的一部分。
+在Xcode中，导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 并确保以下导入是此源文件的一部分。
 
 ```swift
 // import AEP MobileSDK libraries
@@ -76,16 +74,16 @@ import AEPOptimize
 import AEPAssurance
 ```
 
-对执行相同操作 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]**.
+对执行相同操作 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**.
 
 ## 更新AppDelegate
 
-导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** 在Xcode项目导航器中。
+导航到 **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** 在Xcode项目导航器中。
 
-1. 设置 `@AppStorage` 值 `environmentFileId` ，作为开发环境文件ID值，该值是在的步骤6中检索的。 [生成SDK安装说明](configure-tags.md#generate-sdk-install-instructions).
+1. 替换 `@AppStorage` 值 `YOUR_ENVIRONMENT_ID_GOES_HERE` 对象 `environmentFileId` ，作为开发环境文件ID值，该值是在的步骤6中检索的。 [生成SDK安装说明](configure-tags.md#generate-sdk-install-instructions).
 
    ```swift
-   @AppStorage("environmentFileId") private var environmentFileId = "b5cbd1a1220e/1857ef6cacb5/launch-2594f26b23cd-development"
+   @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
    ```
 
 1. 将以下代码添加到 `application(_, didFinishLaunchingWithOptions)` 函数。

@@ -1,16 +1,16 @@
 ---
-title: 同意
+title: 实施同意
 description: 了解如何在移动应用程序中实施同意。
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: 1b09f81b364fe8cfa9d5d1ac801d7781d1786259
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '523'
 ht-degree: 2%
 
 ---
 
-# 同意
+# 实施同意
 
 了解如何在移动应用程序中实施同意。
 
@@ -36,7 +36,7 @@ ht-degree: 2%
 
 1. 您只想询问用户一次。 因此，您希望将Mobile SDK同意与使用Apple进行跟踪所需的授权结合使用 [应用程序跟踪透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 在此应用程序中，您假设当用户授权跟踪时，用户也同意收集事件。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。
 
    将此代码添加到 `updateConsent` 函数。
 
@@ -48,7 +48,7 @@ ht-degree: 2%
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 常规]** > **[!UICONTROL 免责声明视图]** 在Xcode的项目导航器中，该视图是在安装或重新安装应用程序并首次启动应用程序后显示的视图。 系统会根据Apple提示用户授权跟踪 [应用程序跟踪透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 如果用户授权，则还需要更新同意。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 免责声明视图]** 在Xcode的项目导航器中，该视图是在安装或重新安装应用程序并首次启动应用程序后显示的视图。 系统会根据Apple提示用户授权跟踪 [应用程序跟踪透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 如果用户授权，则还需要更新同意。
 
    将以下代码添加到 `ATTrackingManager.requestTrackingAuthorization { status in` 结束。
 
@@ -68,7 +68,7 @@ ht-degree: 2%
 
 同意移动扩展会根据当前同意值自动禁止/挂起/允许跟踪。 您还可以自行访问当前同意状态：
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode的项目导航器中。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode的项目导航器中。
 
    将以下代码添加到 `getConsents` 函数：
 
@@ -82,7 +82,7 @@ ht-degree: 2%
    }
    ```
 
-2. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 常规]** > **[!UICONTROL 主页视图]** 在Xcode的项目导航器中。
+2. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 主页视图]** 在Xcode的项目导航器中。
 
    将以下代码添加到 `.task` 修饰符：
 

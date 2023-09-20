@@ -1,20 +1,20 @@
 ---
-title: Adobe Journey Optimizer推送消息
-description: 了解如何使用Platform Mobile SDK和Adobe Journey Optimizer创建指向移动应用程序的推送消息。
+title: 创建和发送推送通知
+description: 了解如何使用Platform Mobile SDK和Adobe Journey Optimizer创建到移动应用程序的推送通知。
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '2241'
-ht-degree: 2%
+source-wordcount: '2554'
+ht-degree: 3%
 
 ---
 
-# Journey Optimizer推送消息
+# 创建和发送推送通知
 
-了解如何使用Experience PlatformMobile SDK和Journey Optimizer为移动应用程序创建推送消息。
+了解如何使用Experience PlatformMobile SDK和Journey Optimizer为移动应用程序创建推送通知。
 
 Journey Optimizer允许您创建历程并向目标受众发送消息。 在使用Journey Optimizer发送推送通知之前，您必须确保已进行适当的配置和集成。 要了解Journey Optimizer中的推送通知数据流，请参阅 [文档](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
@@ -22,7 +22,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 
 >[!NOTE]
 >
->本课程是可选的，仅适用于希望发送推送消息的Journey Optimizer用户。
+>本课程是可选的，仅适用于希望发送推送通知的Journey Optimizer用户。
 
 
 ## 先决条件
@@ -56,13 +56,13 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 
 >[!TIP]
 >
->如果您已将环境设置为 [Journey Optimizer应用程序内消息传送](journey-optimizer-inapp.md) 教程中，您可以跳过此部分。
+>如果您已将环境设置为 [Journey Optimizer应用程序内消息传送](journey-optimizer-inapp.md) 课程，您可能已经执行了此设置部分中的某些步骤。
 
 ### 向APN注册应用程序ID
 
 以下步骤并非特定于Adobe Experience Cloud，而是旨在引导您完成APN配置。
 
-### 创建私钥
+#### 创建私钥
 
 1. 在Apple开发人员门户中，导航到 **[!UICONTROL 键]**.
 1. 要创建键，请选择 **[!UICONTROL +]**.
@@ -80,7 +80,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 
 其他文档可以是 [在此处找到](https://help.apple.com/developer-account/#/devcdfbb56a3).
 
-### 在数据收集中添加您的应用程序推送凭据
+#### 在数据收集中添加应用程序表面
 
 1. 从 [数据收集界面](https://experience.adobe.com/data-collection/)，选择 **[!UICONTROL 应用程序表面]** 在左侧面板中。
 1. 要创建配置，请选择 **[!UICONTROL 创建应用程序表面]**.
@@ -96,12 +96,25 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 
    ![应用程序表面配置](assets/push-app-surface-config.png)
 
+### 更新数据流配置
+
+要确保将从您的移动应用程序发送到边缘网络的数据转发到Journey Optimizer，请更新您的Experience Edge配置。
+
+1. 在数据收集UI中，选择 **[!UICONTROL 数据流]**，并选择您的数据流，例如 **[!DNL Luma Mobile App]**.
+1. 选择 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 对象 **[!UICONTROL Experience Platform]** 并选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]** 从上下文菜单中。
+1. 在 **[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 屏幕，确保 **[!UICONTROL Adobe Journey Optimizer]** 已选中。 请参阅 [Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 以了解更多信息。
+1. 要保存数据流配置，请选择 **[!UICONTROL 保存]**.
+
+   ![AEP数据流配置](assets/datastream-aep-configuration.png)
+
+
+
 ### 安装Journey Optimizer标记扩展
 
 要使您的应用程序能够与Journey Optimizer配合使用，您需要更新标记属性。
 
 1. 导航到 **[!UICONTROL 标记]** > **[!UICONTROL 扩展]** > **[!UICONTROL 目录]**，
-1. 打开您的资产，例如 **[!UICONTROL Luma移动应用程序教程]**.
+1. 打开您的资产，例如 **[!DNL Luma Mobile App Tutorial]**.
 1. 选择 **[!UICONTROL 目录]**.
 1. 搜索 **[!UICONTROL Adobe Journey Optimizer]** 扩展。
 1. 安装扩展。
@@ -116,6 +129,49 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 >如果您没有看到 **[!UICONTROL AJO推送跟踪体验事件数据集]** 或者，请联系客户关怀团队。
 >
 
+## 使用Assurance验证设置
+
+1. 查看 [设置说明](assurance.md) 部分。
+1. 在物理设备或模拟器上安装应用程序。
+1. 使用保障生成的URL启动应用程序。
+1. 在Assurance UI中，选择 **[!UICONTROL 配置]**.
+   ![配置点击](assets/push-validate-config.png)
+1. 选择 ![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边 **[!UICONTROL 推送调试]**.
+1. 选择&#x200B;**[!UICONTROL 保存]**。
+   ![保存](assets/push-validate-save.png)
+1. 选择 **[!UICONTROL 推送调试]** 从左侧导航栏中。
+1. 选择 **[!UICONTROL 验证设置]** 选项卡。
+1. 从中选择设备 **[!UICONTROL 客户端]** 列表。
+1. 确认您没有收到任何错误。
+   ![验证](assets/push-validate-confirm.png)
+1. 选择 **[!UICONTROL 发送测试推送]** 选项卡。
+1. （可选）更改的默认详细信息 **[!UICONTROL 标题]** 和 **[!UICONTROL 正文]**
+1. 选择 ![错误](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL 发送测试推送通知]**.
+1. 查看 **[!UICONTROL 测试结果]**.
+1. 您应会看到测试推送通知显示在应用程序中。
+
+   <img src="assets/luma-app-push.png" width="300" />
+
+
+### 向应用程序添加推送通知功能
+
+>[!IMPORTANT]
+>
+>要在iOS应用程序中实施和测试推送通知，您必须拥有 **已付** Apple开发人员帐户。 如果您没有付费Apple开发人员帐户，则可以跳过本课程的剩余部分。
+
+1. 在Xcode中，选择 **[!DNL Luma]** 从 **[!UICONTROL 目标]** 列表，选择 **[!UICONTROL 签名和功能]** 选项卡，选择 **[!UICONTROL +功能]** 按钮，然后选择 **[!UICONTROL 推送通知]**. 这将使您的应用程序能够接收推送通知。
+
+1. 接下来，您需要向应用程序添加通知扩展。 返回 **[!DNL General]** 选项卡，然后选择 **[!UICONTROL +]** 图标底部的 **[!UICONTROL 目标]** 部分。
+
+1. 系统将提示您为新目标选择模板。 选择 **[!UICONTROL 通知服务扩展]** 然后选择 **[!UICONTROL 下一个]**.
+
+1. 在下一个窗口中，使用 `NotificationExtension` 作为扩展的名称，然后单击 **[!UICONTROL 完成]** 按钮。
+
+现在，您应该将推送通知扩展添加到应用程序中，类似于以下屏幕。
+
+![Pusn通知扩展](assets/xcode-signing-capabilities-pushnotifications.png)
+
+
 ### 在应用程序中实施Journey Optimizer
 
 如前面的课程中所述，安装移动标记扩展仅提供配置。 接下来，您必须安装并注册消息传送SDK。 如果这些步骤不明确，请查阅 [安装SDK](install-sdks.md) 部分。
@@ -126,7 +182,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 >
 
 1. 在Xcode中，确保 [AEP消息](https://github.com/adobe/aepsdk-messaging-ios.git) 会添加到包依赖关系中的包列表中。 请参阅 [Swift包管理器](install-sdks.md#swift-package-manager).
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 在Xcode项目导航器中。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 在Xcode项目导航器中。
 1. 确保 `AEPMessaging` 是导入列表的一部分。
 
    `import AEPMessaging`
@@ -160,28 +216,9 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 
    此函数检索与安装应用程序的设备特有的设备令牌。 然后，使用您设置的依赖于Apple推送通知服务(APN)的配置来设置推送通知投放令牌。
 
-## 使用Assurance验证设置
-
-1. 查看 [设置说明](assurance.md) 部分。
-1. 在物理设备或模拟器上安装应用程序。
-1. 使用保障生成的URL启动应用程序。
-1. 在Assurance UI中，选择 **[!UICONTROL 配置]**.
-   ![配置点击](assets/push-validate-config.png)
-1. 选择 ![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边 **[!UICONTROL 推送调试]**.
-1. 选择&#x200B;**[!UICONTROL 保存]**。
-   ![保存](assets/push-validate-save.png)
-1. 选择 **[!UICONTROL 推送调试]** 从左侧导航栏中。
-1. 选择 **[!UICONTROL 验证设置]** 选项卡。
-1. 从中选择设备 **[!UICONTROL 客户端]** 列表。
-1. 确认您没有收到任何错误。
-   ![验证](assets/push-validate-confirm.png)
-1. 选择 **[!UICONTROL 发送测试推送]** 选项卡。
-1. （可选）更改的默认详细信息 **[!UICONTROL 标题]** 和 **[!UICONTROL 正文]**
-1. 选择 ![错误](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL 发送测试推送通知]**.
-1. 查看 **[!UICONTROL 测试结果]**.
-1. 您应会看到测试推送通知显示在应用程序中。
-
-   <img src="assets/luma-app-push.png" width="300" />
+>[!IMPORTANT]
+>
+>此 `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` 确定推送通知是使用APNs沙盒还是生产服务器来发送推送通知。 在模拟器中或在设备上测试应用程序时，请确保 `messaging.useSandbox` 设置为 `true` 这样您就会收到推送通知。 在使用Apple的Testflight部署应用程序以进行生产测试时，请确保已设置 `messaging.useSandbox` 到 `false` 否则，您的生产应用程序将无法接收推送通知。
 
 
 ## 创建自己的推送通知
@@ -194,7 +231,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 
 1. 在Journey Optimizer UI中，选择 **[!UICONTROL 架构]** 从左边栏开始。
 1. 选择 **[!UICONTROL 浏览]** 在选项卡栏中。
-1. 选择您的架构，例如 **[!UICONTROL Luma移动应用程序事件架构]** 打开它。
+1. 选择您的架构，例如 **[!DNL Luma Mobile App Event Schema]** 打开它。
 1. 在架构编辑器中：
    1. 选择 **[!UICONTROL 事件类型]** 字段。
    1. 在 **[!UICONTROL 字段属性]** 窗格，向下滚动以查看事件类型可能值的列表。 选择 **[!UICONTROL 添加行]**，并添加 `application.test` 作为 **[!UICONTROL 值]** 和 `[!UICONTROL Test event for push notification]` 作为 `DISPLAY NAME`.
@@ -217,7 +254,7 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
    1. 输入 `LumaTestEvent` 作为 **[!UICONTROL 名称]** 事件的。
    1. 提供 **[!UICONTROL 描述]**&#x200B;例如 `Test event to trigger push notifications in Luma app`.
 
-   1. 选择您之前在中创建的移动应用程序体验事件架构 [创建XDM架构](create-schema.md) 从 **[!UICONTROL 架构]** 列表，例如 **[!UICONTROL Luma移动应用程序事件架构v.1]**.
+   1. 选择您之前在中创建的移动应用程序体验事件架构 [创建XDM架构](create-schema.md) 从 **[!UICONTROL 架构]** 列表，例如 **[!DNL Luma Mobile App Event Schema v.1]**.
    1. 选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) 旁边的 **[!UICONTROL 字段]** 列表。
 
       ![编辑事件步骤1](assets/ajo-edit-event1.png)
@@ -259,13 +296,13 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
    1. 选择 **[!UICONTROL 确定]**.
       ![历程属性](assets/ajo-journey-properties.png)
 
-1. 返回历程画布，从 **[!UICONTROL 活动]**，拖放 ![事件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!UICONTROL LumaTestEvent]** 在画布上显示 **[!UICONTROL 选择进入事件或读取受众活动]**.
+1. 返回历程画布，从 **[!UICONTROL 活动]**，拖放 ![事件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!DNL LumaTestEvent]** 在画布上显示 **[!UICONTROL 选择进入事件或读取受众活动]**.
 
    * 在 **[!UICONTROL 事件：LumaTestEvent]** 面板，输入 **[!UICONTROL 标签]**&#x200B;例如 `Luma Test Event`.
 
-1. 从 **[!UICONTROL 操作]** 下拉列表，拖放 ![推送](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL 推送]** 在 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 出现在您的右侧 **[!UICONTROL LumaTestEvent]** 活动。 在 **[!UICONTROL 操作：推送]** 窗格：
+1. 从 **[!UICONTROL 操作]** 下拉列表，拖放 ![推送](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL 推送]** 在 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 出现在您的右侧 **[!DNL LumaTestEvent]** 活动。 在 **[!UICONTROL 操作：推送]** 窗格：
 
-   1. 提供 **[!UICONTROL 标签]**&#x200B;例如 `Luma Test Push Notification`，提供 **[!UICONTROL 描述]**&#x200B;例如 `Test push notification for Luma mobile app`，选择 **[!UICONTROL 事务性]** 从 **[!UICONTROL 类别]** 列出并选择 **[!UICONTROL Luma]** 从 **[!UICONTROL 推送表面]**.
+   1. 提供 **[!UICONTROL 标签]**&#x200B;例如 `Luma Test Push Notification`，提供 **[!UICONTROL 描述]**&#x200B;例如 `Test push notification for Luma mobile app`，选择 **[!UICONTROL 事务性]** 从 **[!UICONTROL 类别]** 列出并选择 **[!DNL Luma]** 从 **[!UICONTROL 推送表面]**.
    1. 选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑内容]** 以开始编辑实际的推送通知。
       ![推送属性](assets/ajo-push-properties.png)
 
@@ -287,7 +324,7 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
 
 此时，您即将发送的体验事件未构建为简单的XDM词典。 您将使用 `struct` 表示推送通知有效负载。 定义专用数据类型是如何在应用程序中实施构建体验事件有效负载的替代方法。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 模型]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** 在Xcode项目导航器中检查代码。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL 模型]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** 在Xcode项目导航器中检查代码。
 
    ```swift
    import Foundation
@@ -315,7 +352,7 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
    }
    ```
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中，将以下代码添加到 `func sendTestPushEvent(applicationId: String, eventType: String)`：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中，将以下代码添加到 `func sendTestPushEvent(applicationId: String, eventType: String)`：
 
    ```swift
    // Create payload and send experience event
@@ -335,7 +372,7 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
 
    此代码将创建 `testPushPayload` 实例来使用提供给函数的参数(`applicationId` 和 `eventType`)，然后调用 `sendExperienceEvent` 将有效负载转换为词典时。 Adobe Experience Platform这一次，该代码还通过使用基于 `await` 和 `async`.
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 常规]** > **[!UICONTROL 配置视图]** 在Xcode项目导航器中。 在推送通知按钮定义中，添加以下代码以发送测试推送通知体验事件有效负载，以便在点击该按钮时触发您的历程。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 配置视图]** 在Xcode项目导航器中。 在推送通知按钮定义中，添加以下代码以发送测试推送通知体验事件有效负载，以便在点击该按钮时触发您的历程。
 
    ```swift
    // Setting parameters and calling function to send push notification
@@ -360,7 +397,7 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
 
 ## 后续步骤
 
-现在，您应该拥有在应用程序中处理推送通知的所有工具。 例如，您可以在Journey Optimizer中构建一个历程，当应用程序用户登录时，该历程会发送欢迎推送通知。 或者，当用户在应用程序中购买产品时显示确认推送消息。 或输入位置的地理围栏(如您所看到的 [地标](places.md) 课程)。
+现在，您应该拥有在应用程序中处理推送通知的所有工具。 例如，您可以在Journey Optimizer中构建一个历程，当应用程序用户登录时，该历程会发送欢迎推送通知。 或确认推送通知（当用户在该应用程序中购买产品时）。 或输入位置的地理围栏(如您所看到的 [地标](places.md) 课程)。
 
 >[!SUCCESS]
 >

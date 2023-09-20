@@ -3,9 +3,9 @@ title: 配置数据流
 description: 了解如何在Experience Platform中创建数据流。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '615'
 ht-degree: 7%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 7%
    >
    >最后提醒：如果您正在阅读本教程，将多人放在一个沙盒上，或者您使用的是共享帐户，请考虑在命名约定中附加或附加标识作为命名约定的一部分。 例如，使用 `Luma Mobile App Event Dataset - Joe Smith`，而不是 `Luma Mobile App Event Dataset`。另请参阅中的注释 [概述](overview.md).
 
-1. 从中选择您在上一课中创建的架构 **事件架构**&#x200B;列表。
+1. 从中选择您在上一课中创建的架构 **事件架构** 列表。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
    ![新数据流](assets/datastream-name.png)
@@ -55,7 +55,7 @@ ht-degree: 7%
 
 ## 添加服务
 
-接下来，将Experience Cloud服务连接到数据流。 当Platform Mobile SDK向Edge Network发送数据时，数据流将数据发送到这些服务：
+当您查看（可选）时 [分析](analytics.md) 和 [Experience Platform](platform.md) 在本教程的课程中，您将向数据流添加服务，以确保当Platform Mobile SDK将数据发送到Edge Network时，数据流会将该数据转发到配置的服务。
 
 ### Adobe Analytics
 

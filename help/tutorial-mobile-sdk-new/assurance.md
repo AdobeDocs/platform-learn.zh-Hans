@@ -3,14 +3,14 @@ title: 设置保证
 description: 了解如何在移动应用程序中实施Assurance扩展。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '776'
 ht-degree: 8%
 
 ---
 
-# Assurance
+# 设置保证
 
 了解如何在移动应用程序中设置Adobe Experience Platform保障。
 
@@ -40,7 +40,7 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 
 除了一般 [SDK安装](install-sdks.md)（已在之前的课程中完成），iOS还需要添加以下内容才能启动应用程序的保障会话。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** 在Xcode的项目导航器中。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** 在Xcode的项目导航器中。
 
 1. 将以下代码添加到 `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>`：
 
@@ -61,18 +61,23 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 在Xcode中首次运行应用程序之前，请确保更新签名。
 
 1. 在Xcode中打开项目。
-1. 选择 **[!UICONTROL Luma]** 在项目导航器中。
-1. 选择 **[!UICONTROL Luma]** 目标。
+1. 选择 **[!DNL Luma]** 在项目导航器中。
+1. 选择 **[!DNL Luma]** 目标。
 1. 选择 **签名和功能** 选项卡。
 1. 配置 **[!UICONTROL 自动管理签名]**， **[!UICONTROL 团队]**、和 **[!UICONTROL 捆绑标识符]**，或使用您的特定Apple开发配置详细信息。
+
+   >[!IMPORTANT]
+   >
+   >由于每个捆绑标识符必须是唯一的，因此请确保您选择的唯一捆绑标识符不同于在启动项目中输入的默认标识符。
+
 
    ![Xcode签名功能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 ## 设置基本URL
 
 1. 转到Xcode中的项目。
-1. 选择 **[!UICONTROL Luma]** 在项目导航器中。
-1. 选择 **[!UICONTROL Luma]** 目标。
+1. 选择 **[!DNL Luma]** 在项目导航器中。
+1. 选择 **[!DNL Luma]** 目标。
 1. 选择 **信息** 选项卡。
 1. 要添加基本URL，请向下滚动到 **URL类型** 并选择 **+** 按钮。
 1. 设置 **标识符** 到您在中配置的捆绑包标识符 [签名](#signing) (例如 `com.adobe.luma.tutorial.swiftui`)并设置 **URL方案**&#x200B;例如 `lumatutorialswiftui`.
@@ -90,7 +95,7 @@ Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基�
 1. 选择 **[!UICONTROL Assurance]** 从数据收集UI的左边栏中。
 1. 选择 **[!UICONTROL 创建会话]**.
 1. 选择 **[!UICONTROL 开始]**.
-1. 提供 **[!UICONTROL 会话名称]** 例如 `Luma Mobile App Session` 和 **[!UICONTROL 基本URL]**，这是您在Xcode中输入的URL方案，后面接着 `://`. 例如：`lumatutorialswiftui://`。
+1. 提供 **[!UICONTROL 会话名称]** 例如 `Luma Mobile App Session` 和 **[!UICONTROL 基本URL]**，这是您在Xcode中输入的URL方案，后面接着 `://` 例如： `lumatutorialswiftui://`
 1. 选择&#x200B;**[!UICONTROL 下一步]**。
    ![保证创建会话](assets/assurance-create-session.png)
 1. 在 **[!UICONTROL 创建新会话]** 模式对话框：

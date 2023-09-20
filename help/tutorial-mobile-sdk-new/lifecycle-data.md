@@ -1,15 +1,15 @@
 ---
-title: 生命周期数据
+title: 收集生命周期数据
 description: 了解如何在移动应用程序中收集生命周期数据。
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 3%
 
 ---
 
-# 生命周期数据
+# 收集生命周期数据
 
 了解如何在移动应用程序中收集生命周期数据。
 
@@ -52,7 +52,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 现在，您可以更新项目以注册生命周期事件。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** 在Xcode项目导航器中。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** 在Xcode项目导航器中。
 
 1. 启动后，如果您的应用程序从后台状态恢复，iOS可能会调用您的 `sceneWillEnterForeground:` 委托方法，并且您要在此触发生命周期开始事件。 将此代码添加到 `func sceneWillEnterForeground(_ scene: UIScene)`：
 

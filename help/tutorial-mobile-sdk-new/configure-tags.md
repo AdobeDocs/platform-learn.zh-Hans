@@ -3,9 +3,9 @@ title: 配置标记属性
 description: 了解如何在中配置标记属性 [!UICONTROL 数据收集] 界面。
 feature: Mobile SDK,Tags
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '1095'
+source-wordcount: '1096'
 ht-degree: 8%
 
 ---
@@ -110,9 +110,9 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
 1. 使用 ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search]** 字段以查找并安装 **Adobe Experience Platform边缘网络** 扩展。
 
-   1. 在 **[!UICONTROL 数据流]** 选择 **[!UICONTROL 数据流]** 您在 [上一步](create-datastream.md) 例如，针对每个环境 **[!UICONTROL Luma移动应用程序]**.
+   1. 在 **[!UICONTROL 数据流]** 选择 **[!UICONTROL 数据流]** 您在 [上一步](create-datastream.md) 例如，针对每个环境 **[!DNL Luma Mobile App]**.
 
-   1. 指定 **[!UICONTROL Edge Network域]** 范围 **[!UICONTROL 域配置]**. Edge Network域是您组织的名称，后面跟有 `data.adobedc.net`例如 `techmarketingdemos.data.adobedc.net`.
+   1. 如果尚未填充，请指定 **[!UICONTROL Edge Network域]** 范围 **[!UICONTROL 域配置]**. Edge Network域是您组织的名称，后面跟有 `data.adobedc.net`例如 `techmarketingdemos.data.adobedc.net`.
 
    1. 从 **[!UICONTROL 保存到库]** 菜单，选择 **[!UICONTROL 保存到库并生成]**.
 

@@ -1,18 +1,18 @@
 ---
-title: Adobe Journey Optimizer优惠
+title: 创建和显示优惠
 description: 了解如何使用Platform Mobile SDK和Adobe Journey Optimizer Decision Management创建和显示优惠。
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: ae1e05b3f93efd5f2a9b48dc10761dbe7a84fb1e
+source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
 workflow-type: tm+mt
-source-wordcount: '2467'
-ht-degree: 2%
+source-wordcount: '2443'
+ht-degree: 3%
 
 ---
 
-# Journey Optimizer优惠
+# 创建和显示优惠
 
 了解如何使用Experience Platform移动SDK在移动应用程序中显示Journey Optimizer决策管理中的选件。
 
@@ -54,18 +54,20 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 
 >[!TIP]
 >
->如果您已将环境设置为 [使用Target设置A/B测试](target.md) 教程，您可以跳过 [安装Adobe Journey Optimizer - Decisioning标记扩展](#install-adobe-journey-optimizer---decisioning-tags-extension) 和 [更新您的架构](#update-your-schema).
+>如果您已将环境设置为 [使用Target设置A/B测试](target.md) 课程，您可能已经执行了此设置部分中的某些步骤。
 
 ### 更新数据流配置
 
 要确保将从您的移动应用程序发送到边缘网络的数据转发到Journey Optimizer — 决策管理，请更新您的Experience Edge配置。
 
-1. 在数据收集UI中，选择 **[!UICONTROL 数据流]**，并选择您的数据流，例如 **[!UICONTROL Luma移动应用程序]**.
+1. 在数据收集UI中，选择 **[!UICONTROL 数据流]**，并选择您的数据流，例如 **[!DNL Luma Mobile App]**.
 1. 选择 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 对象 **[!UICONTROL Experience Platform]** 并选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]** 从上下文菜单中。
-1. 在 **[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 屏幕，确保 **[!UICONTROL offer decisioning]**， **[!UICONTROL 边缘分段]**， **[!UICONTROL 个性化目标]**、和 **[!UICONTROL Adobe Journey Optimizer]** 已选中。 请参阅 [Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 以了解更多信息。
+1. 在 **[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 屏幕，确保 **[!UICONTROL offer decisioning]**， **[!UICONTROL 边缘分段]**、和 **[!UICONTROL Adobe Journey Optimizer]** 已选中。 如果您还参加了Target课程，则应选择 **[!UICONTROL 个性化目标]** 也一样。 请参阅 [Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 以了解更多信息。
 1. 要保存数据流配置，请选择 **[!UICONTROL 保存]** .
 
-   ![AEP数据流配置](assets/datastream-aep-configuration.png)
+   ![AEP数据流配置](assets/datastream-aep-configuration-offers.png)
+
+
 
 
 ### 安装Journey Optimizer - Decisioning标记扩展
@@ -198,7 +200,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 1. 选择 **[!UICONTROL 收藏集]** 从顶部栏中。
 1. 选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 创建收藏集]**.
 1. 在 **[!UICONTROL 新建收藏集]** 对话框，请输入 **[!UICONTROL 名称]** 例如，对于您的收藏集 `Luma - Mobile App Collection`，选择 **[!UICONTROL 创建静态收藏集]**，然后单击 **[!UICONTROL 下一个]**.
-1. 在 **[!UICONTROL Luma — 移动应用程序收藏集]**&#x200B;中，选择要包含在收藏集中的选件。 在本教程中，选择您创建的五个选件。 您可以使用搜索字段轻松筛选列表，例如，通过键入 **[!UICONTROL Luma]**.
+1. 在 **[!DNL Luma - Mobile App Collection]**&#x200B;中，选择要包含在收藏集中的选件。 在本教程中，选择您创建的五个选件。 您可以使用搜索字段轻松筛选列表，例如，通过键入 **[!DNL Luma]**.
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
    ![优惠 — 收藏集](assets/ajo-collection-offersselected.png)
@@ -228,14 +230,14 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 1. 在 **[!UICONTROL 添加决策范围]** 第步/共步 **[!UICONTROL 创建新的优惠决策]**：
    1. 选择 **[!UICONTROL 移动设备JSON]** 从 **[!UICONTROL 投放]** 列表。
    1. 在 **[!UICONTROL 评估标准]** 图块，选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加]**.
-      1. 在 **[!UICONTROL 添加优惠收藏集]** 对话框中，选择您的选件收藏集。 例如， **[!UICONTROL Luma — 移动应用程序收藏集]**.
+      1. 在 **[!UICONTROL 添加优惠收藏集]** 对话框中，选择您的选件收藏集。 例如：**[!DNL Luma - Mobile App Collection]**。
       1. 选择 **[!UICONTROL 添加]**.
          ![决策 — 选择收藏集](assets/ajo-decision-selectcollection.png)
    1. 确保 **[!UICONTROL 无]** 已选定用于 **[!UICONTROL 资格]**、和 **[!UICONTROL 优惠优先级]** 已选为 **[!UICONTROL 排名方法]**.
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
       ![决策范围](assets/ajo-decision-scopes.png).
 1. 在 **[!UICONTROL 添加后备优惠]** 第步/共步 **[!UICONTROL 创建新的优惠决策]**：
-   1. 选择您的后备优惠，例如 **[!UICONTROL Luma — 后备优惠]**.
+   1. 选择您的后备优惠，例如 **[!DNL Luma - Fallback offer]**.
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
 1. 在 **[!UICONTROL 摘要]** 第步/共步 **[!UICONTROL 创建新的优惠决策]**：
    1. 选择&#x200B;**[!UICONTROL 完成]**。
@@ -246,7 +248,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 
 1. 在Journey Optimizer UI中，选择 **[!UICONTROL 选件]**.
 1. 选择 **[!UICONTROL 决策]** 从顶部栏中。
-1. 选择您的决策，例如 **[!UICONTROL Luma — 移动设备应用程序决策]**.
+1. 选择您的决策，例如 **[!DNL Luma - Mobile App Decision]**.
 1. 在 **[!UICONTROL 决策范围]** 图块，选择 ![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 复制]**.
 1. 从上下文菜单中，选择 **[!UICONTROL 决策范围]**.
    ![复制决策范围](assets/ajo-copy-decisionscope.png)
@@ -269,7 +271,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 >
 
 1. 在Xcode中，确保 [AEP优化](https://github.com/adobe/aepsdk-messaging-ios.git) 会添加到包依赖关系中的包列表中。 请参阅 [Swift包管理器](install-sdks.md#swift-package-manager).
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 在Xcode项目导航器中。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 在Xcode项目导航器中。
 1. 确保 `AEPOptimize` 是导入列表的一部分。
 
    `import AEPOptimize`
@@ -292,7 +294,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
    ]
    ```
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。 查找 `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 函数。 添加以下代码：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。 查找 `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` 函数。 添加以下代码：
 
    ```swift
    // set up the XDM dictionary, define decision scope and call update proposition API
@@ -325,14 +327,14 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
      但是，您可以使用任何类型的实施来确保优化API获得正确的参数(`activityId`， `placementId` 和， `itemCount`)，以构造有效的 [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) 实施对象。
    * 调用两个API： [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  和 [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  这些函数清除任何缓存的建议并更新此用户档案的建议。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 个性化]** > **[!UICONTROL EdgeOffersView]** 在Xcode项目导航器中。 查找 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 函数并检查此函数的代码。 此函数最重要的部分是 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API调用，其中
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL 个性化]** > **[!UICONTROL EdgeOffersView]** 在Xcode项目导航器中。 查找 `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` 函数并检查此函数的代码。 此函数最重要的部分是 [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API调用，其中
 
    * 根据决策范围(您在Journey Optimizer — 决策管理中定义)检索当前用户档案的建议，
    * 从建议中检索优惠，
    * 解包选件的内容，以便该内容可以在应用程序中正确显示，并且
    * 触发 `displayed()` 将显示选件上的操作，该操作会将事件发送回Edge Network，通知选件。
 
-1. 仍在使用 **[!UICONTROL EdgeOffersView]**，将以下代码添加到 `.onFirstAppear` 修饰符。 此代码将确保用于更新优惠的回调仅注册一次。
+1. 仍在使用 **[!DNL EdgeOffersView]**，将以下代码添加到 `.onFirstAppear` 修饰符。 此代码将确保用于更新优惠的回调仅注册一次。
 
    ```swift
    // Invoke callback for offer updates
@@ -354,11 +356,11 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 
 1. 在设备或模拟器中打开您的应用程序。
 
-1. 转到 **[!UICONTROL 个性化]** 选项卡。
+1. 转到 **[!DNL Personalisation]** 选项卡。
 
-1. 选择 **[!UICONTROL 边缘个性化]**.
+1. 选择 **[!DNL Edge Personalisation]**。
 
-1. 滚动到顶部，您将看到您在中定义的收藏集中显示的两个随机选件。 **[!UICONTROL 决策LUMA — 移动应用程序决策]** 磁贴。
+1. 滚动到顶部，您将看到您在中定义的收藏集中显示的两个随机选件。 **[!DNL DECISION LUMA - MOBILE APP DECISION]** 磁贴。
 
    <img src="assets/ajo-app-offers.png" width="300">
 

@@ -1,15 +1,15 @@
 ---
-title: Places
+title: 使用地理定位服务
 description: 了解如何在移动应用程序中使用Places地理位置服务。
 hide: true
-source-git-commit: b3cf168fc9b20ea78df0f8863a6395e9a45ed832
+source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1745'
 ht-degree: 3%
 
 ---
 
-# Places
+# 使用地理定位服务
 
 了解如何在应用程序中使用地理位置服务。
 
@@ -72,7 +72,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 要关闭 **[!UICONTROL 管理库]** 对话框，选择 **[!UICONTROL 关闭]**.
 1. 返回 **[!UICONTROL POI管理]**，选择 **[!UICONTROL 导入POI]**.
 1. 选择 **[!UICONTROL 开始]** 在t**中[!UICONTROL 导入位置]选**对话框。
-1. 选择 **[!UICONTROL Luma]** 从图书馆名单上，
+1. 选择 **[!DNL Luma]** 从图书馆名单上，
 1. 选择&#x200B;**[!UICONTROL 下一步]**。
    ![选择库](assets/places-import-select-library.png)
 1. 下载 [Luma POI ZIP文件](assets/luma_pois.csv.zip) 然后将其提取到您计算机上的某个位置。
@@ -94,7 +94,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
    ![Add Decisioning扩展](assets/tag-places-extension.png)
 
 1. 在 **[!UICONTROL 安装扩展]** 对话框：
-   1. 选择 **[!UICONTROL Luma]** 从 **[!UICONTROL 选择库]** 列表。
+   1. 选择 **[!DNL Luma]** 从 **[!UICONTROL 选择库]** 列表。
    1. 确保已选取工作库，例如 **[!UICONTROL 初始构建]**.
    1. 选择 **[!UICONTROL 保存到库并生成]** 从 **[!UICONTROL 保存到库]**.
       ![Install Places扩展](assets/places-install-extension.png).
@@ -268,7 +268,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 >
 
 1. 在Xcode中，确保 [AEP Places](https://github.com/adobe/aepsdk-places-ios) 会添加到包依赖关系中的包列表中。 请参阅 [Swift包管理器](install-sdks.md#swift-package-manager).
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** 在Xcode项目导航器中。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** 在Xcode项目导航器中。
 1. 确保 `AEPPlaces` 是导入列表的一部分。
 
    `import AEPPlaces`
@@ -291,7 +291,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
    ]
    ```
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 实用工具]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中查找 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.添加以下代码：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中查找 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.添加以下代码：
 
    ```swift
    // Process geolocation event
@@ -300,7 +300,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
    此 [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API将地理位置信息传递给Places服务。
 
-1. 导航到 **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL 视图]** > **[!UICONTROL 位置]** > **[!UICONTROL 地理围栏工作表]** 在Xcode的项目导航器中。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]** 在Xcode的项目导航器中。
 
    1. 对于“输入”按钮，输入以下代码
 
