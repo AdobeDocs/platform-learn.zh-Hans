@@ -2,9 +2,9 @@
 title: 使用地理定位服务
 description: 了解如何在移动应用程序中使用Places地理位置服务。
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1669'
 ht-degree: 3%
 
 ---
@@ -33,24 +33,6 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 * 验证Assurance中的设置。
 * 更新您的应用程序以注册Places扩展。
 * 从应用程序中的Places服务实施地理位置跟踪。
-
-
-## 先决条件
-
-* 已成功生成并运行安装了正确SDK的应用程序。
-
-
-## 学习目标
-
-在本课程中，您将执行以下操作
-
-* 为决策管理更新您的边缘配置。
-* 使用Journey Optimizer - Decisioning扩展更新您的标记属性。
-* 更新您的架构以捕获建议事件。
-* 验证Assurance中的设置。
-* 根据Journey Optimizer - Decision Management中的优惠创建优惠决策。
-* 更新您的应用程序以注册Optimizer扩展。
-* 在应用程序中实施来自决策管理的选件。
 
 
 ## 设置

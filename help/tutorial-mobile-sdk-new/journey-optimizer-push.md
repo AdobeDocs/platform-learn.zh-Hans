@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 3%
@@ -403,5 +403,5 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
 >
 >现在，您已使用适用于Experience PlatformMobile SDK的Journey Optimizer和Journey Optimizer扩展为推送通知启用应用程序。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[Journey Optimizer的应用程序内消息传递](journey-optimizer-inapp.md)**
+下一步： **[创建和发送应用程序内消息](journey-optimizer-inapp.md)**
 

@@ -1,11 +1,11 @@
 ---
-title: 收集和映射Analytics数据
+title: 将数据映射到Analytics数据
 description: 了解如何在移动应用程序中收集和映射Adobe Analytics的数据。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '632'
 ht-degree: 3%
 
 ---
@@ -230,4 +230,4 @@ Additional information about processing rules and context data can be found [her
 >
 >您已设置应用程序，将Experience Edge XDM对象映射到Adobe Analytics变量，以在您的数据流中启用Adobe Analytics服务并在适用的情况下使用处理规则。<br/> 感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[Experience Platform](platform.md)**
+下一步： **[将数据发送到Experience Platform](platform.md)**

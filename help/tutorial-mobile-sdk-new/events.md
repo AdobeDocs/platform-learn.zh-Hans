@@ -1,15 +1,15 @@
 ---
-title: 收集事件数据
-description: 了解如何在移动应用程序中收集事件数据。
+title: 跟踪事件数据
+description: 了解如何跟踪移动应用程序中的事件数据。
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1309'
-ht-degree: 1%
+source-wordcount: '1310'
+ht-degree: 0%
 
 ---
 
-# 收集事件数据
+# 跟踪事件数据
 
 了解如何跟踪移动应用程序中的事件。
 
@@ -380,4 +380,4 @@ var xdmData: [String: Any] = [
 >
 >现在，您已设置应用程序，以跟踪与Adobe Experience Platform Edge Network以及您在数据流中定义的所有服务的商务、应用程序交互和屏幕跟踪事件。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[WebViews](web-views.md)**
+下一步： **[处理Web视图](web-views.md)**

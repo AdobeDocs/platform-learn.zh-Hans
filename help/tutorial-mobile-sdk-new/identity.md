@@ -3,9 +3,9 @@ title: 收集身份数据
 description: 了解如何在移动应用程序中收集身份数据。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '762'
 ht-degree: 5%
 
 ---
@@ -171,4 +171,4 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 >
 >现在，您已设置应用程序以在Edge Network中和（设置后）使用Adobe Experience Platform更新身份。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-下一步： **[个人资料](profile.md)**
+下一步： **[收集配置文件数据](profile.md)**

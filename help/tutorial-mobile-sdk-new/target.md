@@ -5,15 +5,15 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1769'
 ht-degree: 3%
 
 ---
 
 
-# 使用Target执行A/B测试
+# 执行A/B测试
 
 了解如何使用Platform Mobile SDK和Adobe Target在移动应用程序中执行A/B测试。
 

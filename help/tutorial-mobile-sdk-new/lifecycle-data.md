@@ -2,9 +2,9 @@
 title: 收集生命周期数据
 description: 了解如何在移动应用程序中收集生命周期数据。
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '631'
 ht-degree: 3%
 
 ---
@@ -124,4 +124,4 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 >
 >现在，您已将应用程序设置为将应用程序状态（前台、后台）事件发送到Adobe Experience Platform Edge Network以及您在数据流中定义的所有服务。<br>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-下一步： **[跟踪事件](events.md)**
+下一步： **[跟踪事件数据](events.md)**

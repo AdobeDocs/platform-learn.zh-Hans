@@ -5,9 +5,9 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1546'
 ht-degree: 4%
 
 ---
@@ -247,4 +247,4 @@ SDK事件中心发布并接收来自已注册的扩展的事件数据，以简�
 >
 >您已为应用程序内消息传送启用应用程序，并为Experience PlatformMobile SDK使用Journey Optimizer和Journey Optimizer扩展添加了应用程序内消息传送促销活动。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[通过Journey Optimizer显示优惠](journey-optimizer-offers.md)**
+下一步： **[创建和显示优惠](journey-optimizer-offers.md)**
