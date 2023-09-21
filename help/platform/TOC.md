@@ -4,10 +4,10 @@ breadcrumb-title: 教程
 user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
-source-git-commit: 78b5ee6e1bcda449d8adf453088ddba6f0e42f36
+source-git-commit: c61d9d10c25cba92136d1dca635e12cbf222b947
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 33%
+source-wordcount: '994'
+ht-degree: 34%
 
 ---
 
@@ -112,6 +112,7 @@ ht-degree: 33%
    + [连接目标](/help/platform/destinations/connecting-to-destinations.md)
    + [创建目标和激活数据](/help/platform/destinations/create-destinations-and-activate-data.md)
    + [将个人资料和区段激活到目标](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [配置数据集导出目标](/help/platform/destinations/configure-dataset-export-destination.md)
    + [与Google Customer Match集成](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [配置Azure Blob目标](/help/platform/destinations/configure-the-azure-blob-destination.md)
    + [配置Marketo目标](/help/platform/destinations/configure-the-marketo-destination.md)
@@ -157,7 +158,7 @@ ht-degree: 33%
    + [合并模式概述](/help/platform/profiles/union-schemas-overview.md)
    + [使用upsert更新特定属性](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + 隐私和安全性 {#privacy}
-   + [Privacy Service简介](/help/platform/privacy/introduction-to-privacy-services.md)
+   + [Privacy Service 简介](/help/platform/privacy/introduction-to-privacy-services.md)
    + [隐私请求中的身份数据](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [隐私JavaScript库](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analytics中的隐私标签](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
