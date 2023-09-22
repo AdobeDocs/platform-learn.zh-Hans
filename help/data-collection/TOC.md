@@ -5,10 +5,10 @@ user-guide-description: 可让您成为 Experience Platform 中数据收集的�
 solution: Data Collection,Experience Platform
 doc-type: video
 role: Developer, Data Engineer
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e3ef25638384554bf21a50dc57db3152805bfac2
 workflow-type: tm+mt
-source-wordcount: '239'
-ht-degree: 40%
+source-wordcount: '242'
+ht-degree: 39%
 
 ---
 
@@ -53,6 +53,7 @@ ht-degree: 40%
    + [设置数据流](event-forwarding/set-up-a-datastream.md)
    + [添加扩展](event-forwarding/add-an-extension.md)
    + [创建规则](event-forwarding/create-a-rule.md)
+   + [快速入门工作流](event-forwarding/quick-start-workflows.md)
    + [监测事件转发](event-forwarding/monitor.md)
    + [移动客户端标记](event-forwarding/consider-moving-tags.md)
    + [设置Google Ads增强型转化](event-forwarding/set-up-google-ads-enhanced-conversions.md)
