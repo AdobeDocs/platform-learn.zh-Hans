@@ -4,8 +4,9 @@ breadcrumb-title: 数据收集教程
 user-guide-description: 可让您成为 Experience Platform 中数据收集的高级用户的操作方法视频和教程。
 solution: Data Collection,Experience Platform
 doc-type: video
+auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: e3ef25638384554bf21a50dc57db3152805bfac2
+source-git-commit: 906993f14376f7a1a6344436c7068c747d275fb4
 workflow-type: tm+mt
 source-wordcount: '242'
 ht-degree: 39%
