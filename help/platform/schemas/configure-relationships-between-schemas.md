@@ -7,7 +7,7 @@ level: Intermediate
 jira: KT-7935
 thumbnail: 333536.jpg
 exl-id: e52cacce-bcf7-4583-9125-113634250e19
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 39%
@@ -18,5 +18,5 @@ ht-degree: 39%
 
 本视频说明如何在Adobe Experience Platform中配置两个架构之间的关系。 利用关系，您可以将一个数据集用作另一个数据集的查找表。有关详细的产品文档，请参阅 [使用架构编辑器定义两个架构之间的关系](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html?lang=zh-Hans) 和 [使用架构注册表API定义两个架构之间的关系](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-api.html)
 
->[!VIDEO](https://video.tv.adobe.com/v/333536?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333536?learn=on)
 

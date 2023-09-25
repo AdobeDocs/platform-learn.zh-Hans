@@ -1,25 +1,25 @@
 ---
 title: 使用源连接器流式传输数据
-description: 此视频展示如何实时让数据从云存储源流入 Platform 以及实时使用数据吸引客户参与。
+description: 了解如何实时地将数据从云存储源流入Platform以及实时地使用数据吸引客户参与。
 feature: Sources
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
 jira: KT-7100
 thumbnail: 331943.jpg
 exl-id: bd788a1e-123f-488f-8df7-23336aae88fd
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '117'
-ht-degree: 52%
+source-wordcount: '113'
+ht-degree: 10%
 
 ---
 
 # 使用源连接器流式传输数据
 
-此视频展示如何实时让数据从云存储源流入 Platform 以及实时使用数据吸引客户参与。
+了解如何实时地将数据从云存储源流入Platform以及实时地使用数据吸引客户参与。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on)
 
 ## 其他资源
 

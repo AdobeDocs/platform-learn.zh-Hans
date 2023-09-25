@@ -7,17 +7,15 @@ level: Beginner
 jira: KT-7104
 thumbnail: 330549.jpg
 exl-id: f02477d3-8e7c-4f53-a547-b37d0c63c79a
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '110'
-ht-degree: 73%
+ht-degree: 80%
 
 ---
 
 # 监测数据提取
 
-了解如何使用监测仪表板，监测和跟踪提取到 Adobe Experience Platform 中的数据。此监控仪表板从上到下提供了通过数据湖到Profile和Identity服务的源数据处理视图，以及可操作的见解。
+了解如何使用监测仪表板，监测和跟踪提取到 Adobe Experience Platform 中的数据。此监控仪表板从上到下提供了通过数据湖到Profile和Identity服务的源数据处理视图，以及可操作的见解。 有关更多信息，请参阅[此文档](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/331776?quality=12&learn=on)
-
-有关更多信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html)。
+>[!VIDEO](https://video.tv.adobe.com/v/331776?learn=on)

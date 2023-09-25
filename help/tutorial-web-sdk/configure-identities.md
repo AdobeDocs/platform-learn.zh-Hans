@@ -1,9 +1,9 @@
 ---
 title: 配置身份命名空间
-description: 了解如何配置身份命名空间以用于Adobe Experience Platform Web SDK。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
+description: 了解如何配置要与Adobe Experience Platform Web SDK一起使用的身份命名空间。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 11%
@@ -12,15 +12,15 @@ ht-degree: 11%
 
 # 配置身份命名空间
 
-了解如何配置身份命名空间以用于Adobe Experience Platform Web SDK。
+了解如何配置要与Adobe Experience Platform Web SDK一起使用的身份命名空间。
 
-此 [Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans) 在所有Adobe解决方案中设置一个通用访客ID，以便增强Experience Cloud功能（如解决方案之间的受众共享）。 您还可以将自己的客户ID发送到该服务，以启用跨设备定位以及与其他系统(如客户关系管理(CRM)系统)的集成。
+此 [Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/docs/id-service/using/home.html) 在所有Adobe解决方案中设置一个通用访客ID，以便增强Experience Cloud功能，如解决方案之间的受众共享。 您还可以将自己的客户ID发送到该服务，以启用跨设备定位以及与其他系统(例如客户关系管理(CRM)系统)的集成。
 
-如果您的网站已经在您的网站上通过访客API或Experience CloudID服务标签扩展使用Experience CloudID服务，并且您希望在迁移到Adobe Experience Platform Web SDK时继续使用它，则必须使用最新版本的访客API或Experience CloudID服务标签扩展。 参见 [ID迁移](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) 了解更多信息。
+如果您的网站已经在您的网站上通过访客API或Experience CloudID服务标签扩展使用Experience CloudID服务，并且您希望在迁移到Adobe Experience Platform Web SDK时继续使用该服务，则必须使用最新版本的访客API或Experience CloudID服务标签扩展。 请参阅 [ID迁移](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) 以了解更多信息。
 
 >[!NOTE]
 >
-> 出于演示目的，本课程中的练习允许您捕获登录到中的虚构客户的身份详细信息 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 使用凭据， **用户： test@adobe.com /密码：测试**. 虽然您可以使用这些步骤为自己的目的创建不同的标识，但要了解数据收集界面中标识映射的功能，建议您首先按照以下步骤捕获示例标识。
+> 出于演示目的，本课程中的练习允许您捕获登录到中的虚构客户的身份详细信息。 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 使用凭据， **用户： test@adobe.com /密码：测试**. 虽然您可以使用这些步骤创建不同的身份以满足您自己的目的，要了解数据收集界面中身份映射的功能，建议您首先按照以下步骤捕获示例身份。
 
 ## 学习目标
 
@@ -32,7 +32,7 @@ ht-degree: 11%
 
 ## 先决条件
 
-您必须已完成前面的课程：
+您必须已完成之前的课程：
 
 * [配置权限](configure-permissions.md)
 * [配置架构](configure-schemas.md)
@@ -46,7 +46,7 @@ ht-degree: 11%
 在本练习中，您将为Luma的自定义身份字段创建一个身份命名空间， `lumaCrmId`. 身份命名空间在构建实时客户个人资料方面发挥着关键作用，因为同一命名空间的两个匹配值会让两个数据源形成身份图。
 
 在开始练习之前，请观看此简短视频，了解有关Adobe Experience Platform中标识的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 现在，为Luma CRM ID创建一个命名空间：
 
@@ -55,12 +55,12 @@ ht-degree: 11%
 
    >[!NOTE]
    >
-   >如果您是基于Platform的应用程序(如Real-Time CDP)的客户，我们建议在本教程中使用开发沙盒。 如果不是，请使用 **[!UICONTROL Prod]** 沙盒。
+   >如果您是基于Platform的应用程序(如Real-Time CDP)的客户，我们建议您在本教程中使用开发沙盒。 如果不是，请使用 **[!UICONTROL Prod]** 沙盒。
 
 1. 选择 **[!UICONTROL 身份]** 在左侧导航中
 1. 选择 **[!UICONTROL 浏览]**
 
-   标识命名空间列表会显示在页面的主界面中，其中显示其名称、标识符号、上次更新日期以及它们是标准命名空间还是自定义命名空间。 右边栏包含有关身份图强度的信息。
+   该页面的主界面中将显示一个身份命名空间列表，其中显示了身份命名空间的名称、身份符号、上次更新日期以及它们是标准命名空间还是自定义命名空间。 右边栏包含有关身份图强度的信息。
 
 1. 选择 **[!UICONTROL 创建身份命名空间]**
 
@@ -85,16 +85,16 @@ ht-degree: 11%
 
 >[!INFO]
 >
-> 在 [创建数据元素](create-data-elements.md) 课程，您将学习如何在向Platform Edge Network发送身份时使用此命名空间。
+> 在 [创建数据元素](create-data-elements.md) 课程，您将学习如何在向Platform Edge Network发送身份信息时使用此命名空间。
 
 ## 在生产沙盒中创建身份命名空间
 
-由于Web SDK扩展中的当前限制，还必须在生产沙盒中创建身份命名空间，才能使用该命名空间将数据发送到开发沙盒。 因此，如果您在本教程中使用了开发沙盒，请同时创建 `Luma CRM ID` 生产沙盒中的命名空间。
+由于Web SDK扩展中的当前限制，还必须在生产沙盒中创建身份命名空间，才能使用命名空间将数据发送到开发沙盒。 因此，如果您在本教程中使用了开发沙盒，则还应创建 `Luma CRM ID` 生产沙盒中的命名空间。
 
 ## 其他资源
 
 * [Identity Service 文档](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans)
-* [身份服务API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
+* [标识服务API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
 现在，标识已准备就绪，可以配置数据流。
 
@@ -102,4 +102,4 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->感谢您投入时间来了解Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此分享这些内容 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '172'
 ht-degree: 3%
@@ -17,13 +17,14 @@ ht-degree: 3%
 # 为您的客户数据重新充电，以提供令人振奋的体验
 
 全渠道数据是支持营销人员用于编排激活和衡量所生成客户历程的可操作客户配置文件的关键要素。 但是，各组织在管理此类数据的质量、规模和多样性方面仍面临挑战。 它们需要简化的解决方案来减轻低质量数据的影响，缩短实现价值的时间，并通过在多种用例中使用相同的数据来提高ROI。
+欲知更多信息，请访问 [查询服务文档](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans).
 
 本视频探讨了以下内容：
 
 * 您可以利用的Adobe Experience Platform数据准备功能
 * 从Adobe Real-Time CDP、Adobe Journey Optimizer和Customer Journey Analytics中提高ROI
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on)
 
 ## SQL示例
 
@@ -45,8 +46,6 @@ AND timestamp > current_date - interval '4 day'
 GROUP BY customerId,sku
 order by price desc)D;
 ```
-
-欲知更多信息，请访问 [查询服务文档](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans).
 
 >[!NOTE]
 >

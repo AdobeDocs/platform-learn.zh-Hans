@@ -11,7 +11,7 @@ level: Beginner
 jira: KT-9629
 thumbnail: 340091.jpg
 exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
-source-git-commit: bcf6079bc2e05c8c59bcc1b020ac15d1db6a02f2
+source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
 source-wordcount: '102'
 ht-degree: 8%
@@ -22,5 +22,5 @@ ht-degree: 8%
 
 了解如何使用Real-time Customer Data Platform和Adobe Target在下一次点击时个性化 Real-Time CDP中的Adobe Target目标允许您在Adobe Target中使用Experience Platform区段来实现具有治理和隐私支持的相同页面和下一页个性化。 欲了解更多信息，请参见 [为同一页面和下一页面个性化文档配置个性化目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)
 
->[!VIDEO](https://video.tv.adobe.com/v/340091?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340091?learn=on)
 
