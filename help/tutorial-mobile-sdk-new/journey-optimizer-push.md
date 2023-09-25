@@ -5,7 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
 workflow-type: tm+mt
 source-wordcount: '2554'
 ht-degree: 3%
@@ -153,7 +153,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
    <img src="assets/luma-app-push.png" width="300" />
 
 
-### 向应用程序添加推送通知功能
+## 向应用程序添加推送通知功能
 
 >[!IMPORTANT]
 >
@@ -172,7 +172,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 ![Pusn通知扩展](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
-### 在应用程序中实施Journey Optimizer
+## 在应用程序中实施Journey Optimizer
 
 如前面的课程中所述，安装移动标记扩展仅提供配置。 接下来，您必须安装并注册消息传送SDK。 如果这些步骤不明确，请查阅 [安装SDK](install-sdks.md) 部分。
 
@@ -205,7 +205,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
    ]
    ```
 
-### 注册推送通知的设备令牌
+## 注册推送通知的设备令牌
 
 1. 添加 [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) 的API `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` 函数。
 
