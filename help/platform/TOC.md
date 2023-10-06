@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 906993f14376f7a1a6344436c7068c747d275fb4
+source-git-commit: 6564012147237b1ccd25e1507030f846c8564321
 workflow-type: tm+mt
-source-wordcount: '994'
-ht-degree: 34%
+source-wordcount: '998'
+ht-degree: 35%
 
 ---
 
@@ -38,7 +38,8 @@ ht-degree: 34%
 + [将示例数据导入到 Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [使用警报](/help/platform/admin/use-alerts.md)
-   + [使用沙盒](/help/platform/admin/use-sandboxes.md)
+   + [使用沙盒](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [在沙盒之间复制对象](/help/platform/admin/use-sandboxes.md)
    + [配置基于属性的访问控制](/help/platform/admin/configure-attribute-based-access-control.md)
    + [Admin Console](/help/platform/admin/admin-console.md)
    + [管理产品配置文件](/help/platform/admin/managing-product-profiles.md)
@@ -180,7 +181,7 @@ ht-degree: 34%
    + [数据使用模式](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [运行查询](/help/platform/queries/run-queries.md)
    + [从查询结果生成数据集](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
-   + [表格](/help/platform/queries/psql-client-tableau.md)
+   + [Tableau](/help/platform/queries/psql-client-tableau.md)
    + [分析和可视化数据](/help/platform/queries/analyze-and-visualize.md)
    + [使用BI工具构建仪表板](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [为您的客户数据充电](/help/platform/queries/recharge-your-customer-data.md)
