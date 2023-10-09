@@ -3,10 +3,11 @@ title: 设置保证
 description: 了解如何在移动应用程序中实施Assurance扩展。
 feature: Mobile SDK,Assurance
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '775'
-ht-degree: 8%
+source-wordcount: '962'
+ht-degree: 6%
 
 ---
 
@@ -68,7 +69,7 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 
    >[!IMPORTANT]
    >
-   >确保使用不同于默认的唯一捆绑包标识符 `com.adobe.luma.tutorial.swiftui`  在开始项目中输入，因为每个捆绑标识符必须是唯一的。
+   >确保使用 _独特_ 捆绑标识符并替换 `Luma` 捆绑标识符，因为每个捆绑标识符必须是唯一的。 通常，会对捆绑ID字符串使用反向DNS格式，如 `com.organization.brand.uniqueidentifier`. 例如，本教程的完成版本使用 `com.adobe.luma.tutorial.swiftui`.
 
 
    ![Xcode签名功能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
@@ -91,7 +92,7 @@ Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基�
 
 ## 连接到会话
 
-1. 在模拟器中或在连接的物理设备上运行应用程序。
+1. 在模拟器中或在Xcode的物理设备上重建并运行应用程序，使用 ![播放](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 1. 选择 **[!UICONTROL Assurance]** 从数据收集UI的左边栏中。
 1. 选择 **[!UICONTROL 创建会话]**.
 1. 选择 **[!UICONTROL 开始]**.
@@ -133,6 +134,34 @@ Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基�
          ![保证事件](assets/assurance-events.png)
 
 如果您遇到任何挑战，请查看 [技术](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+
+
+## 验证扩展
+
+要验证您的应用程序是否使用了最新的扩展，请执行以下操作：
+
+1. 选择 **[!UICONTROL 配置]**.
+
+1. 选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 对象 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 扩展版本]**.
+
+1. 选择&#x200B;**[!UICONTROL 保存]**。
+
+   ![配置扩展版本](assets/assurance-configure-extension-versions.png)
+
+1. 选择 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 扩展版本]**. 您将看到应用程序版本中可用的最新扩展以及使用的扩展的概述。
+
+   ![扩展版本](assets/assurance-extension-versions.png)
+
+1. 更新扩展版本(例如 **[!UICONTROL 消息传送]** 和 **[!UICONTROL 优化]**)中，对于需要升级的特定扩展，请从中选择包（扩展） **[!UICONTROL 程序包依赖项]** (例如 **[!UICONTROL AEPMessaging]**)，然后从上下文菜单中选择 **[!UICONTROL 更新包]**. Xcode将更新包依赖项。
+
+
+>[!NOTE]
+>
+>在Xcode中更新扩展（包）后，您需要关闭并删除当前会话，然后从重复所有步骤 [连接到会话](#connecting-to-a-session) 和 [验证扩展](#verify-extensions) 确保Assurance在新的Assurance会话中正确报告正确的扩展。
+
+
+
+
 
 >[!SUCCESS]
 >

@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1546'
+source-wordcount: '1563'
 ht-degree: 4%
 
 ---
@@ -32,7 +33,7 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 * 在安装和配置SDK的情况下成功构建和运行应用程序。
 * 为Adobe Experience Platform设置应用程序。
 * 对Journey Optimizer的访问权限和足够的权限，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 此外，您需要具有足够的权限才能使用以下Journey Optimizer功能。
-   * 管理营销活动。
+   * 管理活动.
 * 具有创建证书、标识符和密钥的足够访问权限的付费Apple开发人员帐户。
 * 用于测试的物理iOS设备或模拟器。
 
@@ -136,9 +137,7 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 
 ## 使用Assurance验证设置
 
-1. 查看 [设置说明](assurance.md) 部分。
-1. 在物理设备或模拟器上安装应用程序。
-1. 使用保障生成的URL启动应用程序。
+1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
 1. 在Assurance UI中，选择 **[!UICONTROL 配置]**.
    ![配置点击](assets/push-validate-config.png)
 1. 选择 ![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 按钮旁边 **[!UICONTROL 应用程序内消息传送]**.
@@ -159,7 +158,8 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 * 应用程序生命周期事件，例如启动、安装、升级、关闭或崩溃，
 * 地理位置事件，例如进入或退出目标点。
 
-在本教程中，您将使用移动核心通用和独立于扩展的API(请参阅 [Mobile Core通用API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis))以方便对用户屏幕、操作和PII数据进行事件跟踪。 这些API生成的事件将发布到SDK事件中心，可供扩展使用。 SDK事件中心提供了与所有AEP Mobile SDK扩展绑定的核心数据结构，其中维护着已注册的扩展和内部模块的列表、已注册的事件侦听器的列表以及共享状态数据库。
+在本教程中，您将使用移动核心通用和独立于扩展的API(请参阅 [Mobile Core通用API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis))以方便对用户屏幕、操作和PII数据进行事件跟踪。 这些API生成的事件将发布到SDK事件中心，可供扩展使用。 SDK事件中心提供了与所有Mobile Platform SDK扩展绑定的核心数据结构，其中维护着已注册的扩展和内部模块的列表、已注册的事件侦听器的列表以及共享状态数据库。
+
 SDK事件中心发布并接收来自已注册的扩展的事件数据，以简化与Adobe和第三方解决方案的集成。 例如，在安装优化扩展时，事件中心将处理所有请求以及与Journey Optimizer — 决策管理选件引擎的交互。
 
 1. 在Journey Optimizer UI中，选择 **[!UICONTROL 营销活动]** 从左边栏开始。
@@ -219,7 +219,7 @@ SDK事件中心发布并接收来自已注册的扩展的事件数据，以简�
 
 ## 使用应用程序进行验证
 
-1. 在设备或模拟器中打开您的应用程序。
+1. 在模拟器中或在Xcode的物理设备上重建并运行应用程序，使用 ![播放](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. 转到 **[!UICONTROL 设置]** 选项卡。
 
@@ -232,6 +232,7 @@ SDK事件中心发布并接收来自已注册的扩展的事件数据，以简�
 
 您可以在Assurance UI中验证应用程序内消息。
 
+1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
 1. 选择 **[!UICONTROL 应用程序内消息传送]**.
 1. 选择 **[!UICONTROL 事件列表]**.
 1. 选择 **[!UICONTROL 显示消息]** 进入。

@@ -3,13 +3,13 @@ title: 配置数据流
 description: 了解如何在Experience Platform中创建数据流。
 feature: Mobile SDK,Datastreams
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 7%
+source-wordcount: '459'
+ht-degree: 5%
 
 ---
-
 
 # 创建数据流
 
@@ -57,43 +57,47 @@ ht-degree: 7%
 
 当您查看（可选）时 [分析](analytics.md) 和 [Experience Platform](platform.md) 在本教程的课程中，您将向数据流添加服务，以确保当Platform Mobile SDK将数据发送到Edge Network时，数据流会将该数据转发到配置的服务。
 
+<!--
+
 ### Adobe Analytics
 
-1. 选择 **[!UICONTROL 添加服务]**。
+1. Select **[!UICONTROL Add Service]**.
 
-1. 添加 **[!UICONTROL Adobe Analytics]** 从 [!UICONTROL 服务] 列表，
+1. Add **[!UICONTROL Adobe Analytics]** from the [!UICONTROL Service] list, 
 
-1. 输入要在其中使用的报表站点的名称 **[!UICONTROL 报表包ID]**.
+1. Enter the name of the report site that you want to use in **[!UICONTROL Report Suite ID]**.
 
-1. 通过切换启用服务 **[!UICONTROL 已启用]** 打开。
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。
+1. Select **[!UICONTROL Save]**.
 
-   ![将Adobe Analytics添加为数据流服务](assets/datastream-service-aa.png)
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
 
 
 ### Adobe Experience Platform
 
-您可能还希望启用Adobe Experience Platform服务。
+You might also want to enable the Adobe Experience Platform service. 
 
 >[!IMPORTANT]
 >
->您只能在创建事件数据集后启用Adobe Experience Platform服务。 如果尚未创建事件数据集，请按照相关说明操作 [此处](platform.md).
+>You can only enable the Adobe Experience Platform service when having created an event dataset. If you don't already have an event dataset created, follow the instructions [here](platform.md).
 
-1. 单击 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加服务]** 以添加其他服务。
+1. Click ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]** to add another service.
 
-1. 从 [!UICONTROL 服务] 列表中选择 **[!UICONTROL Adobe Experience Platform]**。
+1. Select **[!UICONTROL Adobe Experience Platform]** from the [!UICONTROL Service] list.
 
-1. 通过切换启用服务 **[!UICONTROL 已启用]** 打开。
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. 选择 **[!UICONTROL 事件数据集]** 您在 [创建数据集](platform.md#create-a-dataset) 说明，例如 **Luma移动应用程序事件数据集**
+1. Select the **[!UICONTROL Event Dataset]** that you created as part of the [Create a dataset](platform.md#create-a-dataset) instructions, for example **Luma Mobile App Event Dataset**
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。
+1. Select **[!UICONTROL Save]**.
 
-   ![将Adobe Experience Platform添加为数据流服务](assets/datastream-service-aep.png)
-1. 最终配置应如下所示。
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+1. The final configuration should look something like this.
+   
+   ![datastream settings](assets/datastream-settings.png)
 
-   ![数据流设置](assets/datastream-settings.png)
+-->
 
 
 >[!NOTE]

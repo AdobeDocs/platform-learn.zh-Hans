@@ -2,9 +2,10 @@
 title: 收集配置文件数据
 description: 了解如何在移动应用程序中收集用户档案数据。
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '601'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -64,7 +65,7 @@ ht-degree: 1%
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -95,9 +96,7 @@ ht-degree: 1%
 
 ## 使用保障进行验证
 
-1. 查看 [设置说明](assurance.md) 部分。
-1. 安装应用程序。
-1. 使用保障生成的URL启动应用程序。
+1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
 1. 运行应用程序以登录并与产品交互。
 
    1. 将“Assurance（保证）”图标向左移动。
@@ -132,4 +131,4 @@ ht-degree: 1%
 >
 >您现在已设置应用程序，以更新Edge Network和（设置后）Adobe Experience Platform中用户档案的属性。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[使用地理定位服务](places.md)**
+下一步： **[使用地标](places.md)**

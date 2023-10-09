@@ -3,10 +3,11 @@ title: 实施同意
 description: 了解如何在移动应用程序中实施同意。
 feature: Mobile SDK,Consent
 hide: true
-source-git-commit: cd1efbfaa335c08cbcc22603fe349b4594cc1056
+exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 2%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
@@ -32,9 +33,9 @@ ht-degree: 2%
 
 如果您从一开始就学习了本教程，则可能会记得您已将同意扩展中的默认同意设置为 **[!UICONTROL 待处理 — 在用户提供同意首选项之前发生的队列事件。]**
 
-要开始收集数据，您必须获得用户的同意。 在本教程中，您只需通过警报询问用户是否同意。 在真实世界应用程序中，您需要咨询所在地区的同意最佳实践。
+要开始收集数据，您必须获得用户的同意。 在真实世界应用程序中，您将需要咨询所在地区的同意最佳实践。 在本教程中，您只需通过询问并发出警报即可获得用户的同意：
 
-1. 您只想询问用户一次。 因此，您希望将Mobile SDK同意与使用Apple进行跟踪所需的授权结合使用 [应用程序跟踪透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 在此应用程序中，您假设当用户授权跟踪时，用户也同意收集事件。
+1. 您只需请求用户一次同意即可。 因此，您希望将Mobile SDK同意与使用Apple进行跟踪所需的授权结合使用 [应用程序跟踪透明度框架](https://developer.apple.com/documentation/apptrackingtransparency). 在此应用程序中，您假设当用户授权跟踪时，用户也同意收集事件。
 
 1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。
 
@@ -95,9 +96,7 @@ ht-degree: 2%
 
 ## 使用保障进行验证
 
-1. 查看 [Assurance](assurance.md) 上课。
-1. 安装应用程序。
-1. 使用保障生成的URL启动应用程序。
+1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
 1. 如果您正确添加了上述代码，则会提示您提供同意。
 
    选择 **[!UICONTROL 继续……]** 然后选择 **[!UICONTROL 允许]**.
@@ -107,6 +106,17 @@ ht-degree: 2%
 
 1. 您应该会看到 **[!UICONTROL 获取同意响应]** Assurance UI中的事件。
    ![验证同意](assets/consent-update.png)
+
+
+## 重置同意
+
+如果要重置同意，请执行以下操作：
+
+1. 转到 **[!UICONTROL 设置]** 在应用程序中。
+
+1. 选择 **[!UICONTROL 应用程序设置……]** 此操作将在iOS设置应用程序中打开Luma应用程序设置。
+
+1. 切换 **[!UICONTROL 允许跟踪]** 关闭。
 
 
 

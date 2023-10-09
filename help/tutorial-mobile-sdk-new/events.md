@@ -2,9 +2,10 @@
 title: 跟踪事件数据
 description: 了解如何跟踪移动应用程序中的事件数据。
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: b926480b-b431-4db8-835c-fa1db6436a93
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1310'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -67,7 +68,6 @@ Adobe Experience Platform Edge扩展可以将遵循之前定义的XDM架构的�
       "eventType": "commerce.productViews",
       "commerce": [
           "productViews": [
-            "id": sku,
             "value": 1
           ]
       ]
@@ -75,7 +75,6 @@ Adobe Experience Platform Edge扩展可以将遵循之前定义的XDM架构的�
   ```
 
    * `eventType`：描述发生的事件，使用 [已知值](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) 如果可能。
-   * `commerce.productViews.id`：表示产品SKU的字符串值
    * `commerce.productViews.value`：事件的数值或布尔值。 如果它是一个布尔值(在Adobe Analytics中为“计数器”)，则该值始终设置为1。 如果是数值或货币事件，该值可以大于1。
 
 * 在您的架构中，标识与商业产品查看事件关联的任何其他数据。 在此示例中，包括 **[!UICONTROL productListItems]** 这是与任何商业相关事件一起使用的一组标准字段：
@@ -85,25 +84,24 @@ Adobe Experience Platform Edge扩展可以将遵循之前定义的XDM架构的�
 
 * 要添加此数据，请展开 `xdmData` 要包含补充数据的对象：
 
-```swift
-var xdmData: [String: Any] = [
-    "eventType": "commerce.productViews",
-        "commerce": [
-        "productViews": [
-            "id": sku,
-            "value": 1
-        ]
-    ],
-    "productListItems": [
-        [
-            "name":  productName,
-            "SKU": sku,
-            "priceTotal": priceString,
-            "quantity": 1
-        ]
-    ]
-]
-```
+  ```swift
+  var xdmData: [String: Any] = [
+      "eventType": "commerce.productViews",
+          "commerce": [
+          "productViews": [
+              "value": 1
+          ]
+      ],
+      "productListItems": [
+          [
+              "name":  productName,
+              "SKU": sku,
+              "priceTotal": priceString,
+              "quantity": 1
+          ]
+      ]
+  ]
+  ```
 
 * 现在，您可以使用此数据结构创建 `ExperienceEvent`：
 
@@ -116,6 +114,8 @@ var xdmData: [String: Any] = [
   ```swift
   Edge.sendEvent(experienceEvent: productViewEvent)
   ```
+
+此 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API是AEP Mobile SDK的等效项 [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 和 [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API调用。 请参阅 [从Analytics移动扩展迁移到Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) 以了解更多信息。
 
 现在，您即将在您的Xcode项目中实际实施此代码。
 您的应用程序中有不同的商业产品相关操作，并且您要根据用户执行的以下操作发送事件：
@@ -135,7 +135,6 @@ var xdmData: [String: Any] = [
        "eventType": "commerce." + commerceEventType,
        "commerce": [
            commerceEventType: [
-               "id": product.sku,
                "value": 1
            ]
        ],
@@ -328,7 +327,6 @@ var xdmData: [String: Any] = [
       ```swift
       // Send app interaction event
       MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
-      dismiss()
       ```
 
    1. 将以下高亮显示的代码添加到 `onAppear` 修饰符：
@@ -340,8 +338,7 @@ var xdmData: [String: Any] = [
 
 ## 验证
 
-1. 查看 [设置说明](assurance.md) 并将模拟器或设备连接到Assurance。
-1. 运行应用程序，登录并与产品交互。
+1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
 
    1. 将“Assurance（保证）”图标向左移动。
    1. 选择 **[!UICONTROL 主页]** 选项卡栏中验证您是否看到了 **[!UICONTROL ECID]**， **[!UICONTROL 电子邮件]** 和 **[!UICONTROL CRM ID]** 在主屏幕中。
@@ -355,7 +352,8 @@ var xdmData: [String: Any] = [
 
 
 1. 在Assurance UI中，查找 **[!UICONTROL hitReceived]** 来自的事件 **[!UICONTROL com.adobe.edge.konductor]** 供应商。
-1. 选择事件并在以下位置查看XDM数据： **[!UICONTROL 消息]** 对象。
+1. 选择事件并在以下位置查看XDM数据： **[!UICONTROL 消息]** 对象。 或者，您可以使用 ![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 复制原始事件]** 并使用首选项的文本或代码编辑器粘贴和检查事件。
+
    ![数据收集验证](assets/datacollection-validation.png)
 
 
@@ -374,7 +372,7 @@ var xdmData: [String: Any] = [
 
 ## 将事件发送到Analytics和Platform
 
-现在，您已收集事件并将它们发送到Platform Edge Network，将它们发送到在中配置的应用程序和服务。 [数据流](create-datastream.md). 在后续课程中，您可以将此数据映射到 [Adobe Analytics](analytics.md) 和 [Adobe Experience Platform](platform.md).
+现在，您已收集事件并将它们发送到Platform Edge Network，将它们发送到在中配置的应用程序和服务。 [数据流](create-datastream.md). 在后续课程中，您可以将此数据映射到 [Adobe Analytics](analytics.md)， [Adobe Experience Platform](platform.md) 和其他Adobe Experience Cloud解决方案，如 [Adobe Target](target.md) 和Adobe Journey Optimizer。
 
 >[!SUCCESS]
 >

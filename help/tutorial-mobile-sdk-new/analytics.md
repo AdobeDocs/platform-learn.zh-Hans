@@ -3,10 +3,11 @@ title: 将数据映射到Analytics数据
 description: 了解如何在移动应用程序中收集和映射Adobe Analytics的数据。
 solution: Data Collection,Experience Platform,Analytics
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 631588df-a540-41b5-94e3-c8e1dc5f240b
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 3%
+source-wordcount: '901'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +23,7 @@ ht-degree: 3%
 
 * 了解ExperienceEvent跟踪。
 * 在示例应用程序中成功发送XDM数据。
-* 数据流已配置给Adobe Analytics
+* 供您在本课程中使用的Adobe Analytics报表包。
 
 ## 学习目标
 
@@ -128,9 +129,11 @@ s.events = "scAdd:321435"
 
 ## 使用保障进行验证
 
-使用 [Assurance](assurance.md) 您可以确认正在发送体验事件，XDM数据正确，并且Analytics映射按预期进行。 例如：
+使用 [Assurance](assurance.md) 您可以确认正在发送体验事件，XDM数据正确，并且Analytics映射按预期进行。
 
-1. 发送productListAdds事件。
+1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
+
+1. 发送 **[!UICONTROL productListAdd]** 活动（向购物篮中添加产品）。
 
 1. 查看ExperienceEvent点击。
 
@@ -149,7 +152,6 @@ s.events = "scAdd:321435"
    "eventType" : "commerce.productListAdds",
    "commerce" : {
      "productListAdds" : {
-       "id" : "LLWS05.1-XS",
        "value" : 1
      }
    }
@@ -193,38 +195,45 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >`_techmarketingdemos` 将被替换为您的组织的唯一值。
 
+
+
 要将此XDM上下文数据映射到报表包中的Analytics数据，您可以：
+
+### 使用字段组
 
 * 添加 **[!UICONTROL Adobe Analytics ExperienceEvent完整扩展]** 字段组添加到您的架构。
 
   ![Analytics ExperienceEvent FullExtension字段组](assets/schema-analytics-extension.png)
-* 在“标记”属性中构建规则，以将上下文数据映射到Adobe Analytics ExperienceEvent完整扩展字段组中的字段。 例如，映射 `_techmarketingdemo.appinformation.appstatedetails.screenname` 到 `_experience.analytics.customDimensions.eVars.eVar2`.
 
-<!-- Old processing rules section
-Here is what a processing rule using this data might look like:
+* 在应用程序中构建XDM负载，与Adobe Analytics ExperienceEvent Full Extension字段组保持一致，类似于在中完成的工作 [跟踪事件数据](events.md) 课程，或
+* 在Tags属性中生成规则，这些规则使用规则操作将数据附加或修改到Adobe Analytics ExperienceEvent Full Extension字段组。 有关更多详细信息，请参阅 [将数据附加到SDK事件](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) 或 [修改SDK事件中的数据](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
 
-* You **[!UICONTROL Overwrite value of]** (1) **[!UICONTROL App Screen Name (eVar2)]** (2) with the value of **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) if **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is set]** (5).
 
-* You **[!UICONTROL Set event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7) to **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) if **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is set]** (10).
+### 使用处理规则
 
-![analytics processing rules](assets/analytics-processing-rules.png)
+以下是使用此数据的处理规则的外观：
+
+* 您 **[!UICONTROL 覆盖值]** (1) **[!UICONTROL 应用程序屏幕名称(eVar2)]** (2)具有下列值： **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3)如果 **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL 已设置]** （五）。
+
+* 您 **[!UICONTROL 设置事件]** (6) **[!UICONTROL 添加到愿望清单（事件3）]** (7)至 **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8)如果 **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL 已设置]** (10)。
+
+![analytics处理规则](assets/analytics-processing-rules.png)
 
 >[!IMPORTANT]
 >
 >
->Some of the automatically mapped variables may not be available for use in processing rules.
+>某些自动映射的变量在处理规则中可能不可用。
 >
 >
->The first time you map to a processing rule, the interface does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
+>首次映射到处理规则时，界面不会显示XDM对象中的上下文数据变量。 要修复该错误，请选择任意值，请保存并返回进行编辑。 此时应会显示所有XDM变量。
 
 
-Additional information about processing rules and context data can be found [here](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+可找到有关处理规则和上下文数据的其他信息 [此处](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >
->Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
+>与以前的移动应用程序实施不同，页面/屏幕查看次数与其他事件之间没有区别。 相反，您可以递增 **[!UICONTROL 页面查看]** 量度，方法是设置 **[!UICONTROL 页面名称]** 处理规则中的维度。 由于您正在收集自定义 `screenName` 字段，强烈建议将屏幕名称映射到 **[!UICONTROL 页面名称]** 在处理规则中。
 
--->
 
 >[!SUCCESS]
 >

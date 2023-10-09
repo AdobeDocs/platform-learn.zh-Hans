@@ -3,10 +3,11 @@ title: 收集身份数据
 description: 了解如何在移动应用程序中收集身份数据。
 feature: Mobile SDK,Identities
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 5%
+source-wordcount: '860'
+ht-degree: 4%
 
 ---
 
@@ -103,7 +104,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 1. 导航到 **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登录表]** 在Xcode项目导航器中，找到要在选择 **[!UICONTROL 登录]** 按钮。 添加以下代码：
 
    ```swift
-   // Update identities
+   // Call updateIdentities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -117,7 +118,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 您可以使用 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 用于从存储的客户端身份映射中删除身份的API。 Identity扩展停止向Edge Network发送标识符。 使用此API不会从服务器端标识图中删除标识符。 请参阅 [查看身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) 以了解有关身份图的详细信息。
 
-1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中，将以下代码添加到 `func removeIdentities(emailAddress: String, crmId: String)` 函数：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中，将以下代码添加到 `func removeIdentities(emailAddress: String, crmId: String)` 函数：
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -137,9 +138,9 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 ## 使用保障进行验证
 
-1. 查看 [设置说明](assurance.md) 并将模拟器或设备连接到Assurance。
+1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
 1. 在Luma应用程序中
-   1. 选择 **[!UICONTROL 主页]** 选项卡。
+   1. 选择 **[!UICONTROL 主页]** 选项卡，并将“保证”图标向左移动。
    1. 选择 <img src="assets/login.png" width="15" /> 图标。
 
       <img src="./assets/identity1.png" width="300">
@@ -165,6 +166,10 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 1. 您会看到 **[!UICONTROL 身份]** 已列出。
 
    ![验证身份图](assets/identity-validate-graph.png)
+
+>[!INFO]
+>
+>应用程序中没有任何代码可重置ECID，这意味着您只能通过卸载并重新安装应用程序来重置ECID（并有效使用设备上的新ECID创建新配置文件）。 要实施标识符重置，请参见 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) 和 [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API调用。 但是，在使用推送通知标识符时，请注意(请参阅 [发送推送通知](journey-optimizer-push.md))，则该标识符将成为设备上的另一个“粘性”配置文件标识符。
 
 
 >[!SUCCESS]

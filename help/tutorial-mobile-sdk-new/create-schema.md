@@ -3,9 +3,10 @@ title: 创建 XDM 架构
 description: 了解如何为移动应用程序事件创建XDM架构。
 feature: Mobile SDK,Schemas
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1506'
 ht-degree: 8%
 
 ---
@@ -96,9 +97,22 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
 1. 选择 **[!UICONTROL 创建架构]**.
 
-1. 选择 **[!UICONTROL XDM ExperienceEvent]** 菜单。
+1. 在 **[!UICONTROL 选择类]** 步骤 **[!UICONTROL 创建架构]** 向导，选择 **[!UICONTROL 体验事件]** 下 **[!UICONTROL 为此架构选择基类]**.
 
-   ![从下拉列表中选择ExperienceEvent](assets/schema-create.png)
+1. 选择&#x200B;**[!UICONTROL 下一步]**。
+
+   ![架构向导基类](assets/schema-wizard-base-class.png)
+
+1. 在 **[!UICONTROL 名称和审核]** 步骤 **[!UICONTROL 创建架构]** 向导，输入 **[!UICONTROL 架构显示名称]**&#x200B;例如 `Luma Mobile Event Schema` 和 [!UICONTROL 描述]例如 `Schema for Luma mobile app experience events`.
+
+   >[!NOTE]
+   >
+   >如果您正在学习本教程，将多个人员放在一个沙盒中，或者您使用的是共享帐户，请考虑在命名约定中附加或附加标识作为命名约定的一部分。 例如，使用 `Luma Mobile App Event Schema - Joe Smith`，而不是 `Luma Mobile App Event Schema`。另请参阅中的注释 [概述](overview.md).
+
+1. 选择 **[!UICONTROL 完成]** 完成向导。
+
+   ![架构名称和审核](assets/schema-wizard-name-and-review.png)
+
 
 1. 选择 ![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **添加** 旁边 **[!UICONTROL 字段组]**.
 
@@ -116,16 +130,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
    您将返回到主架构组合屏幕，在该屏幕中可以查看所有可用字段。
 
-1. 通过选择为架构命名 **[!UICONTROL 无标题架构]** 从 **[!UICONTROL 合成]** 窗格（下） **[!UICONTROL 架构]**)，并提供 **[!UICONTROL 显示名称]** 和 **[!UICONTROL 描述]**&#x200B;例如 `Luma Mobile App Event Schema` 和 `Schema for Luma mobile app experience events.`
-
-   >[!NOTE]
-   >
-   >如果您正在学习本教程，将多个人员放在一个沙盒中，或者您使用的是共享帐户，请考虑在命名约定中附加或附加标识作为命名约定的一部分。 例如，使用 `Luma Mobile App Event Schema - Joe Smith`，而不是 `Luma Mobile App Event Schema`。另请参阅中的注释 [概述](overview.md).
-
-
 1. 选择&#x200B;**[!UICONTROL 保存]**。
-
-   ![选择应用](assets/schema-name-save.png)
 
 >[!NOTE]
 >

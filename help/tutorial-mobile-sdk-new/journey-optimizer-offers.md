@@ -5,14 +5,15 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '2441'
-ht-degree: 3%
+source-wordcount: '2618'
+ht-degree: 2%
 
 ---
 
-# 创建和显示优惠
+# 使用决策管理创建和显示优惠
 
 了解如何使用Experience Platform移动SDK在移动应用程序中显示Journey Optimizer决策管理中的选件。
 
@@ -101,6 +102,27 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 选择 **[!UICONTROL 验证设置]** 在左边栏中。 您的应用程序中的数据流设置和SDK设置都经过验证。
    ![AJO决策验证](assets/ajo-decisioning-validation.png)
+
+
+## 创建投放位置
+
+在实际创建选件之前，您必须定义这些选件在移动设备应用程序中的放置方式和位置。 在决策管理中，您可以为此定义版面，并为支持JSON有效负载的移动渠道定义版面：
+
+1. 在Journey Optimizer UI中，选择 ![组件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL 组件]** 从 **[!UICONTROL 决策管理]** 在左边栏中。
+
+1. 选择 **[!UICONTROL 版面]** 从顶部栏中。
+
+1. 如果没有带名称的版面 **[!UICONTROL 移动设备JSON]**，  **[!UICONTROL 移动设备]** 作为 **[!UICONTROL 渠道类型]** 和 **[!UICONTROL JSON]** 作为 **[!UICONTROL 内容类型]** 列出，您需要创建投放位置。 否则，请继续 [创建优惠](#create-offers).
+
+要创建移动JSON投放位置，请执行以下操作：
+
+1. 选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 创建投放位置。
+
+   1. 在 **[!UICONTROL 详细信息]** 部分，输入 `Mobile JSON` 作为 **[!UICONTROL 名称]**，选择 **[!UICONTROL 移动设备]** 从 **[!UICONTROL 渠道类型]** 和 **[!UICONTROL JSON]** 从 **[!UICONTROL 内容类型]**.
+   1. 选择 **[!UICONTROL 保存]** 以保存投放位置。
+
+   ![创建投放位置](assets/ajo-create-placement.png)
+
 
 
 ## 创建优惠
@@ -354,7 +376,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 
 ## 使用应用程序进行验证
 
-1. 在设备或模拟器中打开您的应用程序。
+1. 在模拟器中或在Xcode的物理设备上重建并运行应用程序，使用 ![播放](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. 转到 **[!DNL Personalisation]** 选项卡。
 
@@ -371,7 +393,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 
 验证Assurance中的选件实施：
 
-1. 转到Assurance UI。
+1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
 1. 选择 **[!UICONTROL 配置]** 在左边栏中选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边 **[!UICONTROL 审阅和模拟]** 下 **[!UICONTROL Adobe Journey Optimizer决策]**.
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 选择 **[!UICONTROL 审阅和模拟]** 在左边栏中。 数据流设置以及应用程序中的SDK设置均已验证。

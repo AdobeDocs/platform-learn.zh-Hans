@@ -2,9 +2,10 @@
 title: 收集生命周期数据
 description: 了解如何在移动应用程序中收集生命周期数据。
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: a3b26e45-2a17-4b44-aec0-fdf83526a273
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '627'
 ht-degree: 3%
 
 ---
@@ -66,13 +67,11 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    ```swift
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
-   }
    ```
 
 ## 使用保障进行验证
 
-1. 查看 [设置说明](assurance.md) 并将模拟器或设备连接到Assurance。
-1. 启动应用程序。
+1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
 1. 将应用程序发送到后台。 检查 **[!UICONTROL LifecyclePause]** Assurance UI中的事件。
 1. 将应用程序置于前台。 检查 **[!UICONTROL LifecycleResume]** Assurance UI中的事件。
    ![验证生命周期](assets/lifecycle-lifecycle-assurance.png)
@@ -82,7 +81,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 上一个练习将前台和后台事件调度到Adobe Experience Platform Mobile SDK。 要将这些事件转发到Platform Edge Network，请执行以下操作：
 
-1. 选择 **[!UICONTROL 规则]** 在数据收集UI中。
+1. 选择 **[!UICONTROL 规则]** 在Tags属性中。
    ![创建规则](assets/rule-create.png)
 1. 选择 **[!UICONTROL 初始构建]** 作为要使用的库。
 1. 选择&#x200B;**[!UICONTROL 创建新规则]**。

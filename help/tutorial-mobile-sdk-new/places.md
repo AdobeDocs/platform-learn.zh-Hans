@@ -1,17 +1,18 @@
 ---
-title: 使用地理定位服务
+title: 使用地标
 description: 了解如何在移动应用程序中使用Places地理位置服务。
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1669'
+source-wordcount: '1666'
 ht-degree: 3%
 
 ---
 
-# 使用地理定位服务
+# 使用地标
 
-了解如何在应用程序中使用地理位置服务。
+了解如何在应用程序中使用Places地理位置服务。
 
 Adobe Experience Platform数据收集位置服务是一种地理位置服务，它使具有位置感知的移动应用程序能够了解位置上下文。 该服务使用丰富且易于使用的SDK接口，并随附了灵活的兴趣点(POI)数据库。
 
@@ -81,7 +82,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
    1. 选择 **[!UICONTROL 保存到库并生成]** 从 **[!UICONTROL 保存到库]**.
       ![Install Places扩展](assets/places-install-extension.png).
 
-1. 正在重建您的库。
+1. 已重建您的库。
 
 
 ### 验证您的架构
@@ -96,7 +97,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
    ![架构位置](assets/schema-places-context.png).
 
 
-### 更新您的标记
+### 更新您的标记属性
 
 适用于标记的Places扩展提供了用于监视地理位置事件的功能，并允许您根据这些事件触发操作。 您可以使用此功能最大程度地减少必须在应用程序中实施的API编码。
 
@@ -132,7 +133,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
 接下来，您将定义用于这些数据元素的规则。
 
-1. 在您的标记属性中。 选择 **[!UICONTROL 规则]** 从左边栏开始。
+1. 在标记属性中，选择 **[!UICONTROL 规则]** 从左边栏开始。
 1. 选择 **[!UICONTROL 添加规则]**.
 1. 在 **[!UICONTROL 创建规则]** 屏幕中，输入规则的名称，例如 `POI - Entry`.
 1. 选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 下 **[!UICONTROL 活动]**.
@@ -215,6 +216,10 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边的 **[!UICONTROL 移动核心 — 附加数据]** 操作。
    1. 选择 **[!UICONTROL Adobe Experience Platform边缘网络]** 从 **[!UICONTROL 扩展名]** 列出并选择 **[!UICONTROL 将事件转发到Edge Network]**.
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
+
+1. 要保存规则，请选择 **[!UICONTROL 保存到库]**.
+
+   ![规则](assets/tags-rule-poi-exit.png)
 
 
 要确保发布标记中的所有更改，请执行以下操作
@@ -302,18 +307,15 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
    }
    ```
 
-解释有关iOS中位置管理器实施的详细信息超出了本课程的主题范围。
-
-
 ## 使用应用程序进行验证
 
 1. 在设备或模拟器中打开您的应用程序。
 
 1. 转到 **[!UICONTROL 位置]** 选项卡。
 
-1. 四处移动地图，以确保中间的蓝色圆圈位于您的目标点上方，例如伦敦。
+1. 四处移动（拖动）地图，以确保蓝色中间圆圈位于某个POI的上方，例如伦敦。
 
-1. 点按 <img src="assets/geobutton.png" width="20" /> 反复出现，直到在右下角看到类别和名称。
+1. 点按 <img src="assets/geobutton.png" width="20" /> 直到您看到类别和名称显示在带有图钉的红色位置的标签中。
 
 1. 点按POI的标签，这会打开 **[!UICONTROL 附近POI]** 工作表。
 

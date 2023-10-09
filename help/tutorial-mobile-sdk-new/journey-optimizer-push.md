@@ -5,9 +5,10 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: true
-source-git-commit: 7f77a26dfae71c2f0e643deba6c72a8ecdb0de02
+exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '2554'
+source-wordcount: '2607'
 ht-degree: 3%
 
 ---
@@ -102,8 +103,13 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 
 1. 在数据收集UI中，选择 **[!UICONTROL 数据流]**，并选择您的数据流，例如 **[!DNL Luma Mobile App]**.
 1. 选择 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 对象 **[!UICONTROL Experience Platform]** 并选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]** 从上下文菜单中。
-1. 在 **[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 屏幕，确保 **[!UICONTROL Adobe Journey Optimizer]** 已选中。 请参阅 [Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 以了解更多信息。
-1. 要保存数据流配置，请选择 **[!UICONTROL 保存]**.
+1. 在 **[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 屏幕：
+
+   1. 如果尚未选择，请选择 **[!UICONTROL AJO推送配置文件数据集]** 从 **[!UICONTROL 配置文件数据集]**. 使用时需要此用户档案数据集 `MobileCore.setPushIdentifier` API调用(请参阅 [注册推送通知的设备令牌](#register-device-token-for-push-notifications))确保将推送通知的唯一标识符（即推送标识符）存储为用户配置文件的一部分。
+
+   1. **[!UICONTROL Adobe Journey Optimizer]** 已选中。 请参阅 [Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 以了解更多信息。
+
+   1. 要保存数据流配置，请选择 **[!UICONTROL 保存]**.
 
    ![AEP数据流配置](assets/datastream-aep-configuration.png)
 
@@ -131,9 +137,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 
 ## 使用Assurance验证设置
 
-1. 查看 [设置说明](assurance.md) 部分。
-1. 在物理设备或模拟器上安装应用程序。
-1. 使用保障生成的URL启动应用程序。
+1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
 1. 在Assurance UI中，选择 **[!UICONTROL 配置]**.
    ![配置点击](assets/push-validate-config.png)
 1. 选择 ![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边 **[!UICONTROL 推送调试]**.
@@ -386,7 +390,7 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
 
 ## 使用应用程序进行验证
 
-1. 在设备或模拟器中打开您的应用程序。
+1. 在模拟器中或在Xcode的物理设备上重建并运行应用程序，使用 ![播放](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. 转到 **[!UICONTROL 设置]** 选项卡。
 
@@ -404,4 +408,3 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
 >现在，您已使用适用于Experience PlatformMobile SDK的Journey Optimizer和Journey Optimizer扩展为推送通知启用应用程序。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[创建和发送应用程序内消息](journey-optimizer-inapp.md)**
-

@@ -4,9 +4,10 @@ description: 了解如何将数据发送到Experience Platform。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1069'
 ht-degree: 5%
 
 ---
@@ -94,11 +95,11 @@ ht-degree: 5%
 
 ## 验证数据集中的数据
 
-现在，您已创建一个数据集并更新数据流以将数据发送到Experience Platform，所有发送到Platform边缘网络的XDM数据将转发到Platform并载入数据集。
+现在，您已创建一个数据集并更新数据流以将数据发送到Experience Platform，所有发送到Platform边缘网络的XDM数据将转发到Platform并登陆数据集。
 
 打开应用程序，然后导航到要跟踪事件的屏幕。 您还可以触发生命周期量度。
 
-在Platform界面中打开数据集。 您应该会看到数据批次到达数据集
+在Platform界面中打开数据集。 您应该会看到数据批次到达数据集。 数据通常每15分钟以微批次的形式访问一次，因此您可能不会立即看到您的数据。
 
 ![验证数据登陆Platform数据集批次](assets/platform-dataset-batches.png)
 
@@ -170,4 +171,4 @@ Experience Platform的实时客户资料允许您构建每个客户的整体视�
 >
 >现在，您已将应用程序设置为将数据不仅发送到Edge Network，还发送到Adobe Experience Platform。<br>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-下一步： **[创建和推送通知](journey-optimizer-push.md)**
+下一步： **[创建和发送推送通知](journey-optimizer-push.md)**

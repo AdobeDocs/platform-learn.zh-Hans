@@ -8,10 +8,10 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 5f178f4bd30f78dff3243b3f5bd2f9d11c308045
+source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
 workflow-type: tm+mt
-source-wordcount: '74'
-ht-degree: 68%
+source-wordcount: '75'
+ht-degree: 69%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 68%
    + 历程优化器{#journey-optimizer}
       + [推送通知](journey-optimizer-push.md)
       + [应用程序内消息](journey-optimizer-inapp.md)
-      + [选件](journey-optimizer-offers.md)
+      + [决策管理](journey-optimizer-offers.md)
    + [Target](target.md)
 + [结论](conclusion.md)
 
