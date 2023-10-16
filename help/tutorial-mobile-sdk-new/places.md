@@ -3,9 +3,9 @@ title: 使用地标
 description: 了解如何在移动应用程序中使用Places地理位置服务。
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1691'
 ht-degree: 3%
 
 ---
@@ -239,7 +239,10 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 如果左边栏中尚不可用，请选择 **[!UICONTROL 配置]** 在左边栏中选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边 **[!UICONTROL 活动]** 和 **[!UICONTROL 映射和模拟]** 下 **[!UICONTROL PLACES服务]**.
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 选择 **[!UICONTROL 映射和模拟]** 在左边栏中。
-1. 选择Places服务中定义的某个POI，然后从弹出菜单中选择一个 ![齿轮](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 模拟进入事件]**.
+1. 将地图移动到某个POI的位置。
+1. 选择 ![齿轮](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 模拟加载POI。  使用圆圈和pin标识您的POI。
+1. 选择您的POI。
+1. 在弹出窗口中，选择 ![齿轮](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 模拟进入事件]**.
    ![模拟进入事件](assets/places-simulate.png)
 1. 选择 **[!UICONTROL 活动]** 从左边栏中，您应该会看到模拟的事件。
    ![AJO决策验证](assets/places-events.png)
@@ -258,7 +261,9 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** 在Xcode项目导航器中。
 1. 确保 `AEPPlaces` 是导入列表的一部分。
 
-   `import AEPPlaces`
+   ```swift
+   import AEPPlaces
+   ```
 
 1. 确保 `Places.self` 是您注册的扩展数组的一部分。
 

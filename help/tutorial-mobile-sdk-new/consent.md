@@ -4,9 +4,9 @@ description: 了解如何在移动应用程序中实施同意。
 feature: Mobile SDK,Consent
 hide: true
 exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '542'
 ht-degree: 1%
 
 ---
@@ -96,28 +96,10 @@ ht-degree: 1%
 
 ## 使用保障进行验证
 
+1. 从您的设备或模拟器中删除应用程序，因为我们希望正确重置并初始化跟踪和同意。
 1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
-1. 如果您正确添加了上述代码，则会提示您提供同意。
-
-   选择 **[!UICONTROL 继续……]** 然后选择 **[!UICONTROL 允许]**.
-
-   <img src="./assets/consent-update-1.png" width="300" /> 
-   <img src="./assets/consent-update-2.png" width="300" />
-
-1. 您应该会看到 **[!UICONTROL 获取同意响应]** Assurance UI中的事件。
+1. 从移动应用程序时 **[!UICONTROL 主页]** 屏幕至 **[!UICONTROL 产品]** 屏幕并返回至 **[!UICONTROL 主页]** 屏幕，您应该会看到 **[!UICONTROL 获取同意响应]** Assurance UI中的事件。
    ![验证同意](assets/consent-update.png)
-
-
-## 重置同意
-
-如果要重置同意，请执行以下操作：
-
-1. 转到 **[!UICONTROL 设置]** 在应用程序中。
-
-1. 选择 **[!UICONTROL 应用程序设置……]** 此操作将在iOS设置应用程序中打开Luma应用程序设置。
-
-1. 切换 **[!UICONTROL 允许跟踪]** 关闭。
-
 
 
 >[!SUCCESS]

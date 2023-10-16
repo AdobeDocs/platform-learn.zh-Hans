@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: Push
 hide: true
 exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '2607'
-ht-degree: 3%
+source-wordcount: '2734'
+ht-degree: 2%
 
 ---
 
@@ -155,6 +155,26 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 1. 您应会看到测试推送通知显示在应用程序中。
 
    <img src="assets/luma-app-push.png" width="300" />
+
+
+## 签名
+
+仅()需要对Luma应用程序进行签名 [创建和发送推送通知](journey-optimizer-push.md) 和 [创建和发送应用程序内消息](journey-optimizer-inapp.md) 本教程中的课程。 这些课程需要Apple配置配置文件，该配置文件必须 **需要付费Apple开发人员帐户**.
+
+要更新应用程序的签名，请执行以下操作：
+
+1. 在Xcode中转到您的应用程序。
+1. 选择 **[!DNL Luma]** 在项目导航器中。
+1. 选择 **[!DNL Luma]** 目标。
+1. 选择 **签名和功能** 选项卡。
+1. 配置 **[!UICONTROL 自动管理签名]**， **[!UICONTROL 团队]**、和 **[!UICONTROL 捆绑标识符]**，或使用您的特定Apple开发配置详细信息。
+
+   >[!IMPORTANT]
+   >
+   >确保使用 _独特_ 捆绑标识符并替换 `com.adobe.luma.tutorial.swiftui` 捆绑标识符，因为每个捆绑标识符必须是唯一的。 通常，会对捆绑ID字符串使用反向DNS格式，如 `com.organization.brand.uniqueidentifier`. 例如，本教程的完成版本使用 `com.adobe.luma.tutorial.swiftui`.
+
+
+   ![Xcode签名功能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
 
 
 ## 向应用程序添加推送通知功能

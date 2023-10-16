@@ -4,9 +4,9 @@ description: 了解如何在移动应用程序中实施Assurance扩展。
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '976'
 ht-degree: 6%
 
 ---
@@ -57,22 +57,28 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 
 可以找到更多信息 [此处](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-## 签名
+<!-- not initially required
 
-在Xcode中首次运行应用程序之前，请确保更新签名。
+## Signing
 
-1. 在Xcode中打开项目。
-1. 选择 **[!DNL Luma]** 在项目导航器中。
-1. 选择 **[!DNL Luma]** 目标。
-1. 选择 **签名和功能** 选项卡。
-1. 配置 **[!UICONTROL 自动管理签名]**， **[!UICONTROL 团队]**、和 **[!UICONTROL 捆绑标识符]**，或使用您的特定Apple开发配置详细信息。
+Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
 
+To update the signing for the lessons that require that you sign the application:
+
+1. Open the project in Xcode.
+1. Select **[!DNL Luma]** in the Project navigator.
+1. Select the **[!DNL Luma]** target.
+1. Select the **Signing & Capabilities** tab.
+1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
+ 
    >[!IMPORTANT]
    >
-   >确保使用 _独特_ 捆绑标识符并替换 `Luma` 捆绑标识符，因为每个捆绑标识符必须是唯一的。 通常，会对捆绑ID字符串使用反向DNS格式，如 `com.organization.brand.uniqueidentifier`. 例如，本教程的完成版本使用 `com.adobe.luma.tutorial.swiftui`.
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
 
-   ![Xcode签名功能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
+    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+
+-->
 
 ## 设置基本URL
 
@@ -81,9 +87,13 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 1. 选择 **[!DNL Luma]** 目标。
 1. 选择 **信息** 选项卡。
 1. 要添加基本URL，请向下滚动到 **URL类型** 并选择 **+** 按钮。
-1. 设置 **标识符** 到您在中配置的捆绑包标识符 [签名](#signing) (例如 `com.adobe.luma.tutorial.swiftui`)并设置 **URL方案**&#x200B;例如 `lumatutorialswiftui`.
+1. 设置 **标识符** 至所选的捆绑标识符，并设置 **URL方案** 中。
 
    ![保证url](assets/assurance-url-type.png)
+
+   >[!IMPORTANT]
+   >
+   >确保使用 _独特_ 捆绑标识符并替换 `com.adobe.luma.tutorial.swiftui` 捆绑标识符，因为每个捆绑标识符必须是唯一的。 通常，会对捆绑ID字符串使用反向DNS格式，如 `com.organization.brand.uniqueidentifier`.<br/>同样，使用唯一的URL方案，并替换已经提供的 `lumatutorialswiftui` 使用您的唯一URL方案。
 
 要了解有关iOS中URL方案的更多信息，请查看 [Apple的文档](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -92,8 +102,31 @@ Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基�
 
 ## 连接到会话
 
-1. 在模拟器中或在Xcode的物理设备上重建并运行应用程序，使用 ![播放](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
-1. 选择 **[!UICONTROL Assurance]** 从数据收集UI的左边栏中。
+在Xcode中：
+
+1. 使用在模拟器或Xcode的物理设备上构建或重建并运行应用程序 ![播放](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+1. 在 **[!UICONTROL 允许“Luma应用程序”使用您的位置]** 对话框，选择 **[!UICONTROL 使用应用程序时允许]**.
+
+   <img src="assets/geolocation-permissions.png" width="300">
+
+1. 在 **[!UICONTROL “Luma应用程序”想要向您发送通知]** 对话框，选择 **[!UICONTROL 允许]**.
+
+   <img src="assets/notification-permissions.png" width="300">
+
+1. 选择 **[!UICONTROL 继续……]** 以允许应用程序跟踪您的活动。
+
+   <img src="assets/tracking-continue.png" width="300">
+
+1. 在 **[!UICONTROL 允许“Luma应用程序”在其他公司的应用程序和网站上跟踪您的活动]** 对话框，选择 **[!UICONTROL 允许]**.
+
+   <img src="assets/tracking-allow.png" width="300">
+
+
+在您的浏览器中：
+
+1. 转到数据收集UI。
+1. 选择 **[!UICONTROL Assurance]** 从左边栏开始。
 1. 选择 **[!UICONTROL 创建会话]**.
 1. 选择 **[!UICONTROL 开始]**.
 1. 提供 **[!UICONTROL 会话名称]** 例如 `Luma Mobile App Session` 和 **[!UICONTROL 基本URL]**，这是您在Xcode中输入的URL方案，后面接着 `://` 例如： `lumatutorialswiftui://`

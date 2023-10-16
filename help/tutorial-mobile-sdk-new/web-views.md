@@ -3,13 +3,13 @@ title: 处理Web视图
 description: 了解如何在移动应用程序中通过WebViews处理数据收集。
 jira: KT-6987
 hide: true
-source-git-commit: a2788110b1c43d24022672bb5ba0f36af66d962b
+exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
+source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
-
 
 # 处理Web视图
 
@@ -67,6 +67,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 
 要执行代码，请执行以下操作：
 
+1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
 1. 转到 **[!UICONTROL 设置]** 在应用程序中
 1. 点按 **[!DNL View...]** 按钮以显示 **[!DNL Terms of Use]**.
 
