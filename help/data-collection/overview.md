@@ -1,18 +1,18 @@
 ---
 title: 数据收集教程
-description: 使您成为数据收集高级用户的操作方法视频和教程
+description: 让您成为数据收集高级用户的操作方法视频和教程
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '241'
 ht-degree: 37%
 
 ---
 
 # 数据收集教程
 
-数据收集是Adobe推出的新一代网站标记和移动SDK管理功能。 数据收集为客户提供了一种简单的方式来部署和管理用来加强相关客户体验的分析、营销和广告解决方案。 使用这些视频和教程来帮助学习此关键技术。
+数据收集是Adobe推出的新一代网站标记和移动SDK管理功能。 数据收集为客户提供了一种简单的方式来部署和管理用来加强相关客户体验的分析、营销和广告解决方案。 使用这些视频和教程帮助学习此关键技术。
 
 <div id="whats-new-section">
 
@@ -64,6 +64,19 @@ ht-degree: 37%
     </div>
     <p>
     <em>使用标记实施Platform Mobile SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <img alt="将Target迁移到Web SDK" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong>将Adobe Target迁移到Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>从at.js迁移到Web SDK</em>
     <p>
   </td>
 </tr>
