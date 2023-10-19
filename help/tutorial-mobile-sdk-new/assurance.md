@@ -4,9 +4,9 @@ description: 了解如何在移动应用程序中实施Assurance扩展。
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '1002'
 ht-degree: 6%
 
 ---
@@ -105,6 +105,11 @@ Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基�
 在Xcode中：
 
 1. 使用在模拟器或Xcode的物理设备上构建或重建并运行应用程序 ![播放](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+   >[!TIP]
+   >
+   >或者，您可能希望“清理”内部版本，尤其是看到意外结果时。 要执行此操作，请选择 **[!UICONTROL 清理生成文件夹……]** 从Xcode **[!UICONTROL 产品]** 菜单。
+
 
 1. 在 **[!UICONTROL 允许“Luma应用程序”使用您的位置]** 对话框，选择 **[!UICONTROL 使用应用程序时允许]**.
 
