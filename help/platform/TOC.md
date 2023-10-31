@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 3523a5b3af3b3efebaea593e723d8ca2a136986e
+source-git-commit: 85e0c45336044091151a866d8838eae482fde84d
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1002'
 ht-degree: 35%
 
 ---
@@ -120,6 +120,7 @@ ht-degree: 35%
    + [配置Marketo目标](/help/platform/destinations/configure-the-marketo-destination.md)
    + [配置基于文件的云存储或电子邮件营销目标](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
    + [配置社交目标](/help/platform/destinations/configure-a-social-destination.md)
+   + [通过LiveRamp目标激活](/help/platform/destinations/liveramp-destinations.md)
    + Adobe Target和自定义个性化{#target}
       + [使用Adobe Target进行下一次点击个性化](/help/platform/destinations/target/next-hit-personalization.md)
       + [配置Adobe Target目标](/help/platform/destinations/target/configure-the-target-destination.md)
