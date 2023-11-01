@@ -1,12 +1,13 @@
 ---
 title: 主要用例
-description: 大致了解Experience Platform&mdash、实时客户数据平台、客户历程智能、交付和跨渠道体验以及客户体验应用程序开发等四个主要用例。
+description: 大致了解Experience Platform&mdash；智能重新参与、“永不损失”促销活动、客户转化优化、上下文识别以及一次性值到生命周期值这五个关键用例。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
+last-substantial-update: 2023-11-01T00:00:00Z
 jira: KT-4337
 thumbnail: 32806.jpg
 exl-id: fcc80ca6-8163-4a4c-b164-4f12f76c03e3
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: cc38679e0e7f27a10fe2513b4b4986347e501010
 workflow-type: tm+mt
 source-wordcount: '67'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # Adobe Experience Platform的主要用例
 
-大致了解Experience Platform的四个主要用例：实时客户数据平台、客户历程智能、交付和跨渠道体验以及客户体验应用程序开发。
+大致了解Experience Platform的五个关键用例 — 智能重新参与、“永不损失”促销活动、客户转化优化、上下文识别以及一次性价值到存留期价值。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on)
 
