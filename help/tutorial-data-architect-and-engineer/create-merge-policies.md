@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 915502e54365eedb09b12a92aa3b1af71f6de1f4
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Adobe Experience Platform允许您将来自多个来源的数据整合在一起�
 
 请注意，ExperienceEvent类没有合并架构。 虽然ExperienceEvent数据仍登陆配置文件，因为它是基于时间序列的，但每个事件都包含时间戳和ID，因此不存在冲突。
 
-现在，如果您不喜欢该默认合并策略，该怎么办？ 如果Luma决定在发生冲突时，他们的CRM系统应该成为事实来源，该怎么办？ 为此，我们将创建一个合并策略。
+现在，如果您不喜欢该默认合并策略，该怎么办？ 如果Luma认为他们的忠诚体系应该成为冲突时真相的来源呢？ 为此，我们将创建一个合并策略。
 
 ## 在UI中创建合并策略
 
