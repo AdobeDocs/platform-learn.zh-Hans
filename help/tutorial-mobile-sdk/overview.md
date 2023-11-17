@@ -3,9 +3,9 @@ title: 在移动应用程序中实施Adobe Experience Cloud教程概述
 description: 了解如何实施Adobe Experience Cloud移动应用程序。 本教程将指导您在一个示例Swift应用程序中实施Experience Cloud应用程序。
 recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '660'
 ht-degree: 11%
 
 ---
@@ -88,4 +88,4 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

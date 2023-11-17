@@ -4,9 +4,9 @@ description: 了解如何在移动应用程序中收集和映射Adobe Analytics�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 exl-id: 631588df-a540-41b5-94e3-c8e1dc5f240b
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '902'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 * 了解ExperienceEvent跟踪。
 * 在示例应用程序中成功发送XDM数据。
-* 供您在本课程中使用的Adobe Analytics报表包。
+* 可用于本课程的Adobe Analytics报表包。
 
 ## 学习目标
 

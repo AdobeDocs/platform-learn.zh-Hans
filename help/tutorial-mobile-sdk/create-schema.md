@@ -3,10 +3,10 @@ title: 创建 XDM 架构
 description: 了解如何为移动应用程序事件创建XDM架构。
 feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '1315'
-ht-degree: 6%
+source-wordcount: '1314'
+ht-degree: 7%
 
 ---
 
@@ -214,4 +214,4 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

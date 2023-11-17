@@ -3,9 +3,9 @@ title: 配置标记属性
 description: 了解如何在中配置标记属性 [!UICONTROL 数据收集] 界面。
 feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '732'
 ht-degree: 10%
 
 ---
@@ -135,4 +135,4 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

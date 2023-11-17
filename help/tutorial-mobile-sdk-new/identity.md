@@ -4,9 +4,9 @@ description: 了解如何在移动应用程序中收集身份数据。
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '856'
 ht-degree: 4%
 
 ---
@@ -39,7 +39,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 >[!NOTE]
 >
->Mobile SDK会在安装应用程序后在自身的命名空间中生成一个唯一标识，名为Experience CloudID (ECID)。 此ECID存储在移动设备上的永久内存中，随每次点击一起发送。 当用户卸载应用程序或将Mobile SDK全局隐私状态设置为optedout时，将删除ECID。 在示例Luma应用程序中，您应该删除并重新安装该应用程序，以使用它自己的唯一ECID创建新配置文件。
+>Mobile SDK会在安装应用程序后在自身的命名空间中生成一个唯一标识，名为Experience CloudID (ECID)。 此ECID存储在移动设备上的永久内存中，随每次点击一起发送。 当用户卸载应用程序或将Mobile SDK全局隐私状态设置为选择退出时，将会删除ECID。 在示例Luma应用程序中，您应该删除并重新安装该应用程序，以使用它自己的唯一ECID创建新配置文件。
 
 
 要创建新的身份命名空间，请执行以下操作：
@@ -59,7 +59,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 当用户登录应用程序时，您希望同时更新标准身份（电子邮件）和自定义身份(Luma CRM ID)。
 
-1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中找到 `func updateIdentities(emailAddress: String, crmId: String)` 函数实现。 将以下代码添加到函数中。
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中查找 `func updateIdentities(emailAddress: String, crmId: String)` 函数实现。 将以下代码添加到函数中。
 
    ```swift
    // Set up identity map, add identities to map and update identities
@@ -101,10 +101,10 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
       Identity.updateIdentities(with: identityMap) 
       ```
 
-1. 导航到 **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登录表]** 在Xcode项目导航器中，找到要在选择 **[!UICONTROL 登录]** 按钮。 添加以下代码：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登录表]** 在Xcode项目导航器中，找到要在选择 **[!UICONTROL 登录]** 按钮。 添加以下代码：
 
    ```swift
-   // Call updateIdentities
+   // Update identities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -169,11 +169,13 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 >[!INFO]
 >
->应用程序中没有任何代码可重置ECID，这意味着您只能通过卸载并重新安装应用程序来重置ECID（并有效使用设备上的新ECID创建新配置文件）。 要实施标识符重置，请参见 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) 和 [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API调用。 但是，在使用推送通知标识符时，请注意(请参阅 [发送推送通知](journey-optimizer-push.md))，则该标识符将成为设备上的另一个“粘性”配置文件标识符。
+>应用程序中没有用于重置ECID的代码，这意味着您只能通过卸载和重新安装应用程序来重置ECID（并有效使用新的ECID创建新配置文件）。 要实施标识符重置，请参见 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) 和 [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API调用。 但是，在使用推送通知标识符时，请注意(请参阅 [发送推送通知](journey-optimizer-push.md))，则该标识符将成为设备上的另一个“粘性”配置文件标识符。
 
 
 >[!SUCCESS]
 >
->现在，您已设置应用程序以在Edge Network中和（设置后）使用Adobe Experience Platform更新身份。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>现在，您已设置应用程序以在Edge Network中和（设置后）使用Adobe Experience Platform更新身份。
+>
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 下一步： **[收集配置文件数据](profile.md)**

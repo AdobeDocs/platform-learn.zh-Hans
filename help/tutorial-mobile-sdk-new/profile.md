@@ -3,10 +3,10 @@ title: 收集配置文件数据
 description: 了解如何在移动应用程序中收集用户档案数据。
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 1%
+source-wordcount: '596'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 快速了解用户过去或最近是否进行了购买有助于在应用程序中定位和/或个性化。 让我们在Luma应用程序中设置它。
 
-1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** 在Xcode项目导航器中查找 `func updateUserAttribute(attributeName: String, attributeValue: String)` 函数。 添加以下代码：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** 在Xcode项目导航器中查找 `func updateUserAttributes(attributeName: String, attributeValue: String)` 函数。 添加以下代码：
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -56,11 +56,11 @@ ht-degree: 1%
 
    1. 使用 `profileMap` 词典作为值 `attributeDict` 的参数 [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API调用。
 
-1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** 在Xcode项目导航器中找到对的调用 `updateUserAttributes` (在购买行为守则内， <img src="assets/purchase.png" width="15" /> 按钮). 添加以下代码：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** 在Xcode项目导航器中找到对的调用 `updateUserAttributes` (在购买行为守则内， <img src="assets/purchase.png" width="15" /> 按钮)。 添加以下代码：
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -98,11 +98,11 @@ ht-degree: 1%
 
    1. 将“Assurance（保证）”图标向左移动。
    1. 选择 **[!UICONTROL 主页]** 在选项卡栏中。
-   1. 要打开“登录”工作表，请选择 <img src="assets/login.png" width="15" /> 按钮.
+   1. 要打开“登录”工作表，请选择 <img src="assets/login.png" width="15" /> 按钮。
 
       <img src="./assets/mobile-app-events-1.png" width="300">
 
-   1. 要插入随机电子邮件和客户ID，请选择 <img src="assets/insert.png" width="15" /> 按钮 .
+   1. 要插入随机电子邮件和客户ID，请选择 <img src="assets/insert.png" width="15" /> 按钮。
    1. 选择 **[!UICONTROL 登录]**.
 
       <img src="./assets/mobile-app-events-2.png" width="300">
@@ -115,7 +115,7 @@ ht-degree: 1%
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
-   1. 返回至 **[!UICONTROL 主页]** 屏幕。 您应该会看到已添加的徽章 <img src="assets/person-badge-icon.png" width="15" />。
+   1. 返回至 **[!UICONTROL 主页]** 屏幕。 您应该会看到已添加徽章 <img src="assets/person-badge-icon.png" width="15" />。
 
       <img src="./assets/personbadges.png" width="300">
 
@@ -126,6 +126,8 @@ ht-degree: 1%
 
 >[!SUCCESS]
 >
->您现在已设置应用程序，以更新Edge Network和（设置后）Adobe Experience Platform中用户档案的属性。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>您现在已设置应用程序，以更新Edge Network和（设置后）Adobe Experience Platform中用户档案的属性。
+>
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[使用地标](places.md)**

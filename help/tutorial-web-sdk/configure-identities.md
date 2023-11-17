@@ -3,9 +3,9 @@ title: 配置身份命名空间
 description: 了解如何配置要与Adobe Experience Platform Web SDK一起使用的身份命名空间。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '692'
 ht-degree: 11%
 
 ---

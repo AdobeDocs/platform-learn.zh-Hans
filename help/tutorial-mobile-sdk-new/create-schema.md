@@ -4,9 +4,9 @@ description: 了解如何为移动应用程序事件创建XDM架构。
 feature: Mobile SDK,Schemas
 hide: true
 exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1506'
+source-wordcount: '1505'
 ht-degree: 8%
 
 ---
@@ -134,7 +134,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
 >[!NOTE]
 >
->请记住，您不必使用组中的所有字段。 如果有助于保持架构简洁且易于理解，您还可以删除字段。 如果这很有帮助，您可以将架构视为空数据层。 在应用程序中，您可在适当时填充相关值。
+>请记住，您不必使用组中的所有字段。 您还可以删除字段以帮助保持架构简洁和可理解。 如果这很有帮助，您可以将架构视为空数据层。 在应用程序中，您可在适当时填充相关值。
 
 此 [!UICONTROL 使用者体验事件] 字段组具有名为的数据类型 [!UICONTROL Web信息]，用于描述页面查看和链接点击等事件。 在编写本文时，由于移动设备应用程序无法与这项功能媲美，因此您将创建自己的移动应用程序。
 
@@ -234,6 +234,8 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
 >[!SUCCESS]
 >
->现在，您有一个模式可用于本教程的其余部分。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>现在，您有一个模式可用于本教程的其余部分。
+>
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[创建 [!UICONTROL 数据流]](create-datastream.md)**

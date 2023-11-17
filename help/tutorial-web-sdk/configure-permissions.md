@@ -3,16 +3,16 @@ title: 配置教程的权限
 description: 了解如何请求访问Experience PlatformWeb SDK并配置完成“使用Web SDK实施Adobe Experience Cloud”教程所需的权限。
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '414'
 ht-degree: 6%
 
 ---
 
 # 配置教程的权限
 
-了解如何请求对Experience PlatformWeb SDK的访问权限并配置完成本教程所需的权限。 要使用数据收集界面中的标记实施Platform Web SDK，您必须具有在中配置的适当用户权限。 [Admin Console](https://adminconsole.adobe.com).
+了解如何请求访问Experience PlatformWeb SDK并配置完成本教程所需的权限。 要使用数据收集界面中的标记实施Platform Web SDK，您必须具有在中配置的适当用户权限 [Admin Console](https://adminconsole.adobe.com).
 
 ## 数据收集
 
@@ -21,18 +21,18 @@ ht-degree: 6%
 
 ## Experience Platform
 
-这些功能应该可供所有Experience Cloud客户使用，即使您不是基于Platform的应用程序(如Real-Time CDP)的客户。
+这些功能应该可供所有Experience Cloud客户使用，即使您不是基于平台的应用程序(如Real-Time CDP)的客户。
 
 * 访问 **默认生产**， **&quot;Prod&quot;** 沙盒。
 * 访问 **[!UICONTROL 管理架构]** 和 **[!UICONTROL 查看架构]** 下 **[!UICONTROL 数据建模]**
 * 访问 **[!UICONTROL 管理身份命名空间]** 和 **[!UICONTROL 查看身份命名空间]** 下 **[!UICONTROL Identity Management]**
 * 访问 **[!UICONTROL 管理数据流]** 和 **[!UICONTROL 查看数据流]** 下 **[!UICONTROL 数据收集]**
-* 如果您是基于Platform的应用程序的客户，并将完成 [设置Experience Platform](setup-experience-platform.md) 课程，您还应该拥有：
+* 如果您是某个基于平台的应用程序的客户，并且将要完成 [设置Experience Platform](setup-experience-platform.md) 课程中，您还应具有：
    * 访问 **开发** 沙盒。
-   * 下的所有权限项 **[!UICONTROL 数据管理]**、和 **[!UICONTROL 配置文件管理]**：
+   * 下的所有权限项 **[!UICONTROL 数据管理]**、和 **[!UICONTROL 用户档案管理]**：
 
 
-有关Platform访问控制的详细信息，请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans).
+有关Platform访问控制的更多信息，请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans).
 
 ## Adobe Analytics
 
@@ -44,7 +44,7 @@ ht-degree: 6%
 
 ## Adobe Audience Manager
 
-* 对于可选Audience Manager课程，您必须具有创建、读取和写入特征、区段和目标的权限。 有关更多信息，请参阅以下教程： [Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* 对于可选的Audience Manager课程，您必须有权创建、读取和写入特征、区段和目标。 有关更多信息，请参阅以下教程： [Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
 
 现在，您已准备好开始初始配置步骤。
 
@@ -52,4 +52,4 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->感谢您投入时间来了解Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此分享这些内容 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

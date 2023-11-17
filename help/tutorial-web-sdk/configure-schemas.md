@@ -3,9 +3,9 @@ title: 为Web数据创建XDM架构
 description: 了解如何在数据收集界面中为Web数据创建XDM架构。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 3b57d20410dda5dc44dfbb806f6637b0fd4f4f04
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1121'
 ht-degree: 5%
 
 ---

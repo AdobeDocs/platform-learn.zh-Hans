@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1690'
+source-wordcount: '1546'
 ht-degree: 4%
 
 ---
@@ -32,9 +32,8 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 
 * 在安装和配置SDK的情况下成功构建和运行应用程序。
 * 为Adobe Experience Platform设置应用程序。
-* 对Journey Optimizer的访问权限和足够的权限，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). 此外，您需要具有足够的权限才能使用以下Journey Optimizer功能。
+* 对Journey Optimizer的访问权限和足够的权限，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). 此外，您需要具有足够的权限才能使用以下Journey Optimizer功能。
    * 管理活动.
-* 具有创建证书、标识符和密钥的足够访问权限的付费Apple开发人员帐户。
 * 用于测试的物理iOS设备或模拟器。
 
 
@@ -67,23 +66,26 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 1. 在中输入移动应用程序捆绑包ID **[!UICONTROL 应用程序ID(iOS捆绑包ID)]** 字段。 例如：`com.adobe.luma.tutorial.swiftui`。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
-   ![应用程序表面配置](assets/push-app-surface-config.png)
+   ![应用程序表面配置](assets/push-app-surface-config-inapp.png)
 
 ### 更新数据流配置
 
 要确保将从您的移动应用程序发送到边缘网络的数据转发到Journey Optimizer，请更新您的Experience Edge配置。
+
+
 
 1. 在数据收集UI中，选择 **[!UICONTROL 数据流]**，并选择您的数据流，例如 **[!DNL Luma Mobile App]**.
 1. 选择 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 对象 **[!UICONTROL Experience Platform]** 并选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]** 从上下文菜单中。
 1. 在 **[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 屏幕，确保 **[!UICONTROL Adobe Journey Optimizer]** 已选中。 请参阅 [Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 以了解更多信息。
 1. 要保存数据流配置，请选择 **[!UICONTROL 保存]**.
 
+
    ![AEP数据流配置](assets/datastream-aep-configuration.png)
 
 
 ### 安装Journey Optimizer标记扩展
 
-要使您的应用程序能够与Journey Optimizer配合使用，您需要更新标记属性。
+要使您的应用程序能够与Journey Optimizer配合使用，必须更新标记属性。
 
 1. 导航到 **[!UICONTROL 标记]** > **[!UICONTROL 扩展]** > **[!UICONTROL 目录]**.
 1. 打开您的资产，例如 **[!DNL Luma Mobile App Tutorial]**.
@@ -101,27 +103,6 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 >如果您没有看到 `AJO Push Tracking Experience Event Dataset` 或者，请联系客户关怀团队。
 >
 
-
-## 签名
-
-仅()需要对Luma应用程序进行签名 [创建和发送推送通知](journey-optimizer-push.md) 和 [创建和发送应用程序内消息](journey-optimizer-inapp.md) 本教程中的课程。 这些课程需要Apple配置配置文件，该配置文件必须 **需要付费Apple开发人员帐户**.
-
-要更新应用程序的签名，请执行以下操作：
-
-1. 在Xcode中转到您的应用程序。
-1. 选择 **[!DNL Luma]** 在项目导航器中。
-1. 选择 **[!DNL Luma]** 目标。
-1. 选择 **签名和功能** 选项卡。
-1. 配置 **[!UICONTROL 自动管理签名]**， **[!UICONTROL 团队]**、和 **[!UICONTROL 捆绑标识符]**，或使用您的特定Apple开发配置详细信息。
-
-   >[!IMPORTANT]
-   >
-   >确保使用 _独特_ 捆绑标识符并替换 `com.adobe.luma.tutorial.swiftui` 捆绑标识符，因为每个捆绑标识符必须是唯一的。 通常，会对捆绑ID字符串使用反向DNS格式，如 `com.organization.brand.uniqueidentifier`. 例如，本教程的完成版本使用 `com.adobe.luma.tutorial.swiftui`.
-
-
-   ![Xcode签名功能](assets/xcode-signing-capabilities.png){zoomable=&quot;yes&quot;}
-
-
 ### 在应用程序中实施Journey Optimizer
 
 如前面的课程中所述，安装移动标记扩展仅提供配置。 接下来，您必须安装并注册消息传送SDK。 如果这些步骤不明确，请查阅 [安装SDK](install-sdks.md) 部分。
@@ -131,7 +112,7 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 >如果您已完成 [安装SDK](install-sdks.md) 部分，则该SDK已安装，您可以跳过此步骤。
 >
 
-1. 在Xcode中，确保 [AEP消息](https://github.com/adobe/aepsdk-messaging-ios.git) 会添加到包依赖关系中的包列表中。 请参阅 [Swift包管理器](install-sdks.md#swift-package-manager).
+1. 在Xcode中，确保 [AEP消息](https://github.com/adobe/aepsdk-messaging-ios) 会添加到包依赖关系中的包列表中。 请参阅 [Swift包管理器](install-sdks.md#swift-package-manager).
 1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 在Xcode项目导航器中。
 1. 确保 `AEPMessaging` 是导入列表的一部分。
 
@@ -263,10 +244,12 @@ SDK事件中心发布并接收来自已注册的扩展的事件数据，以简�
 
 ## 后续步骤
 
-现在，您应该拥有所有相关和适用的所有工具，以便开始添加应用程序内消息。  例如，根据您在应用程序中跟踪的特定交互来促销产品。
+现在，您应该拥有所有相关和适用的所有工具，以便开始添加应用程序内消息。 例如，根据您在应用程序中跟踪的特定交互来促销产品。
 
 >[!SUCCESS]
 >
->您已为应用程序内消息传送启用应用程序，并为Experience PlatformMobile SDK使用Journey Optimizer和Journey Optimizer扩展添加了应用程序内消息传送促销活动。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>您已为应用程序内消息传送启用应用程序，并为Experience PlatformMobile SDK使用Journey Optimizer和Journey Optimizer扩展添加了应用程序内消息传送促销活动。
+>
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[创建和显示优惠](journey-optimizer-offers.md)**

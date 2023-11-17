@@ -4,10 +4,10 @@ description: 了解如何在Experience Platform中创建数据流。
 feature: Mobile SDK,Datastreams
 hide: true
 exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '459'
-ht-degree: 5%
+source-wordcount: '444'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 5%
 
 了解如何在Experience Platform中创建数据流。
 
-数据流是Platform边缘网络上的服务器端配置。 数据流确保将传入到Platform边缘网络的数据正确路由到Adobe Experience Cloud应用程序和服务。 欲了解更多信息，请参见 [文档](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) 或此 [视频](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=zh-Hans).
+数据流是Platform边缘网络上的服务器端配置。 数据流确保将传入到Platform边缘网络的数据正确路由到Adobe Experience Cloud应用程序和服务。 欲了解更多信息，请参见 [文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans) 或此 [视频](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=zh-Hans).
 
 ![架构](assets/architecture.png)
 
@@ -55,7 +55,7 @@ ht-degree: 5%
 
 ## 添加服务
 
-当您查看（可选）时 [分析](analytics.md) 和 [Experience Platform](platform.md) 在本教程的课程中，您将向数据流添加服务，以确保当Platform Mobile SDK将数据发送到Edge Network时，数据流会将该数据转发到配置的服务。
+浏览（可选）时， [分析](analytics.md) 和 [Experience Platform](platform.md) 在本教程的课程中，您需要向数据流添加服务，以便将发送到Platform Edge Network的数据转发到这些应用程序。
 
 <!--
 
@@ -102,12 +102,14 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->启用您的组织使用的每项服务，可确保随时随地使用在移动应用程序中收集的数据。 有关数据流设置的更多信息，请参阅文档 [此处](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
+>启用您的组织使用的每项服务，可确保随时随地使用在移动应用程序中收集的数据。 有关数据流设置的更多信息，请参阅文档 [此处](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html?lang=zh-Hans).
 
 在您自己的应用程序中实施Platform Mobile SDK时，您最终应创建三个数据流以映射到三个标记环境（开发、暂存和生产）。 如果您将Platform Mobile SDK与基于Platform的应用程序(如Adobe Real-time Customer Data Platform或Adobe Journey Optimizer)结合使用，则应确保在相应的沙盒中创建这些数据流。
 
 >[!SUCCESS]
 >
->您现在有了一个数据流用于本教程的其余部分。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>您现在有了一个数据流用于本教程的其余部分。
+>
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 下一步： **[配置标记属性](configure-tags.md)**

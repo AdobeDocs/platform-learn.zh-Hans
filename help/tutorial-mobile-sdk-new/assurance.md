@@ -4,9 +4,9 @@ description: 了解如何在移动应用程序中实施Assurance扩展。
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 68610d961e4825706a5f524652f7ec103c615ecf
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1002'
+source-wordcount: '985'
 ht-degree: 6%
 
 ---
@@ -93,7 +93,7 @@ To update the signing for the lessons that require that you sign the application
 
    >[!IMPORTANT]
    >
-   >确保使用 _独特_ 捆绑标识符并替换 `com.adobe.luma.tutorial.swiftui` 捆绑标识符，因为每个捆绑标识符必须是唯一的。 通常，会对捆绑ID字符串使用反向DNS格式，如 `com.organization.brand.uniqueidentifier`.<br/>同样，使用唯一的URL方案，并替换已经提供的 `lumatutorialswiftui` 使用您的唯一URL方案。
+   >确保使用 _独特_ 捆绑标识符并替换 `com.adobe.luma.tutorial.swiftui` 捆绑标识符，因为每个捆绑标识符都必须是唯一的。 通常，会对捆绑ID字符串使用反向DNS格式，如 `com.organization.brand.uniqueidentifier`.<br/>同样，使用唯一的URL方案，并替换已经提供的 `lumatutorialswiftui` 使用您的唯一URL方案。
 
 要了解有关iOS中URL方案的更多信息，请查看 [Apple的文档](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -141,7 +141,7 @@ Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基�
 
    如果您使用的是物理设备：
 
-   * 选择 **[!UICONTROL 扫描二维码]**. 使用物理设备上的摄像头扫描二维码并点击链接以打开应用程序。
+   * 选择 **[!UICONTROL 扫描二维码]**. 要打开应用程序，请使用物理设备上的摄像头扫描二维码并点击链接。
 
      ![保证qa代码](assets/assurance-qr-code.png)
 
@@ -186,16 +186,16 @@ Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基�
 
    ![配置扩展版本](assets/assurance-configure-extension-versions.png)
 
-1. 选择 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 扩展版本]**. 您将看到应用程序版本中可用的最新扩展以及使用的扩展的概述。
+1. 选择 ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL 扩展版本]** 查看有关可用的最新扩展以及您的应用程序版本中使用的扩展的概述。
 
    ![扩展版本](assets/assurance-extension-versions.png)
 
-1. 更新扩展版本(例如 **[!UICONTROL 消息传送]** 和 **[!UICONTROL 优化]**)中，对于需要升级的特定扩展，请从中选择包（扩展） **[!UICONTROL 程序包依赖项]** (例如 **[!UICONTROL AEPMessaging]**)，然后从上下文菜单中选择 **[!UICONTROL 更新包]**. Xcode将更新包依赖项。
+1. 要更新扩展版本(例如， **[!UICONTROL 消息传送]** 和 **[!UICONTROL 优化]**)从中选择包（扩展） **[!UICONTROL 程序包依赖项]** (例如， **[!UICONTROL AEPMessaging]**)，然后从上下文菜单中选择 **[!UICONTROL 更新包]**. Xcode将更新包依赖项。
 
 
 >[!NOTE]
 >
->在Xcode中更新扩展（包）后，您需要关闭并删除当前会话，然后从重复所有步骤 [连接到会话](#connecting-to-a-session) 和 [验证扩展](#verify-extensions) 确保Assurance在新的Assurance会话中正确报告正确的扩展。
+>在Xcode中更新扩展（包）后，关闭并删除当前会话，然后从重复所有步骤 [连接到会话](#connecting-to-a-session) 和 [验证扩展](#verify-extensions) 确保Assurance在新的Assurance会话中正确报告正确的扩展。
 
 
 
@@ -203,7 +203,9 @@ Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基�
 
 >[!SUCCESS]
 >
->您现在已将应用程序设置为在教程的其余部分使用Assurance 。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>您现在已将应用程序设置为在教程的其余部分使用Assurance 。
+>
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 下一步： **[实施同意](consent.md)**

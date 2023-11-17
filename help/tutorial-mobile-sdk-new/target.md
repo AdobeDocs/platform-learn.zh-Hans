@@ -6,9 +6,9 @@ feature-set: Target
 feature: A/B Tests
 hide: true
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1921'
+source-wordcount: '1911'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 了解如何使用Platform Mobile SDK和Adobe Target优化和个性化移动应用程序中的体验。
 
-Target提供了您必须定制和个性化客户体验的所有功能。 Target可帮助您最大限度地提高网站和移动网站、应用程序、社交媒体和其他数字渠道的收入。 Target可以执行A/B测试、多变量测试、推荐产品和内容、定位内容、使用AI自动个性化内容等等。 本课程重点介绍Target的A/B测试功能。  请参阅 [A/B测试概述](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) 以了解更多信息。
+Target提供了您必须定制和个性化客户体验的所有功能。 Target可帮助您最大限度地提高网站和移动网站、应用程序、社交媒体和其他数字渠道的收入。 Target可以执行A/B测试、多变量测试、推荐产品和内容、定位内容、使用AI自动个性化内容等等。 本课程重点介绍Target的A/B测试功能。 请参阅 [A/B测试概述](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) 以了解更多信息。
 
 ![架构](assets/architecture-at.png)
 
@@ -81,7 +81,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 1. 在数据收集UI中，选择 **[!UICONTROL 数据流]**，并选择您的数据流，例如 **[!DNL Luma Mobile App]**.
 1. 选择 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) 对象 **[!UICONTROL Experience Platform]** 并选择 ![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]** 从上下文菜单中。
-1. 在 **[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 屏幕，确保 **[!UICONTROL offer decisioning]**， **[!UICONTROL 边缘分段]**、和 **[!UICONTROL 个性化目标]** 已选中。 如果您还参加了Journey Optimizer课程，则应选择 **[!UICONTROL Adobe Journey Optimizer]** 也一样。 请参阅 [Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 以了解更多信息。
+1. 在 **[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** 屏幕，确保 **[!UICONTROL offer decisioning]**， **[!UICONTROL 边缘分段]**、和 **[!UICONTROL 个性化目标]** 已选中。 如果您还参加了Journey Optimizer课程，请选择 **[!UICONTROL Adobe Journey Optimizer]**. 请参阅 [Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) 以了解更多信息。
 1. 要保存数据流配置，请选择 **[!UICONTROL 保存]** .
 
    ![AEP数据流配置](assets/datastream-aep-configuration-target.png)
@@ -104,7 +104,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 1. 选择 **[!UICONTROL 浏览]** 从顶部栏中。
 1. 选择您的架构以将其打开。
 1. 在架构编辑器中，选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加]** 旁边 **[!UICONTROL 字段组]**.
-1. 在添加字段组对话框中，搜索 `proposition`，选择 **[!UICONTROL 体验事件 — 建议交互]** 并选择 **[!UICONTROL 添加字段组]**.
+1. 在 **[!UICONTROL 添加字段组]** 对话框，搜索 `proposition`，选择 **[!UICONTROL 体验事件 — 建议交互]** 并选择 **[!UICONTROL 添加字段组]**.
    ![建议](assets/schema-fieldgroup-proposition.png)
 1. 要保存对架构所做的更改，请选择 **[!UICONTROL 保存]**.
 
@@ -121,7 +121,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 ## 创建 A/B 测试
 
-您可以在Adobe Target中创建并在移动应用程序中实施多种类型的活动，如简介中所述。 在本课程中，您将重点介绍如何创建和实施A/B测试。
+您可以在Adobe Target中创建并在移动应用程序中实施多种类型的活动，如简介中所述。 在本课程中，您将实施A/B测试。
 
 1. 在Target UI中，选择 **[!UICONTROL 活动]** 从顶部栏中。
 1. 选择 **[!UICONTROL 创建活动]** 和 **[!UICONTROL A/B测试]** 从上下文菜单中。
@@ -191,7 +191,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 >如果您已完成 [安装SDK](install-sdks.md) 部分，则该SDK已安装，您可以跳过此步骤。
 >
 
-1. 在Xcode中，确保 [AEP优化](https://github.com/adobe/aepsdk-messaging-ios.git) 会添加到包依赖关系中的包列表中。 请参阅 [Swift包管理器](install-sdks.md#swift-package-manager).
+1. 在Xcode中，确保 [AEP优化](https://github.com/adobe/aepsdk-messaging-ios) 会添加到包依赖关系中的包列表中。 请参阅 [Swift包管理器](install-sdks.md#swift-package-manager).
 1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** 在Xcode项目导航器中。
 1. 确保 `AEPOptimize` 是导入列表的一部分。
 
@@ -240,9 +240,9 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
    * 根据决策范围（即您在A/B测试中定义的位置）检索当前用户档案的建议，
    * 从建议中检索优惠，
    * 解包选件的内容，以便该内容可以在应用程序中正确显示，并且
-   * 触发 `displayed()` 将显示选件上的操作，该操作会将事件发送回Edge Network，通知选件。
+   * 触发 `displayed()` 选件上的操作会将事件发送回Platform Edge Network，从而通知该选件。
 
-1. 仍在使用 **[!DNL TargetOffersView]**，将以下代码添加到 `.onFirstAppear` 修饰符。 此代码将确保用于更新优惠的回调仅注册一次。
+1. 仍在使用 **[!DNL TargetOffersView]**，将以下代码添加到 `.onFirstAppear` 修饰符。 此代码确保用于更新优惠的回调仅注册一次。
 
    ```swift
    // Invoke callback for offer updates
@@ -251,7 +251,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
    }
    ```
 
-1. 仍在使用 **[!DNL TargetOffersView]**，将以下代码添加到 `.task` 修饰符。 刷新视图后，此代码将更新选件。
+1. 仍在使用 **[!DNL TargetOffersView]**，将以下代码添加到 `.task` 修饰符。 刷新视图后，此代码会更新选件。
 
    ```swift
    // Clear and update offers
@@ -287,10 +287,12 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 ## 后续步骤
 
-现在，您应该拥有所有工具，能够根据相关情况和适用情况，开始向应用程序添加更多A/B测试或其他Target活动（例如体验定位、多变量测试）。 有关更深入的信息，请参见 [Optimize扩展的Github存储库](https://github.com/adobe/aepsdk-optimize-ios) 您还可以在该处找到指向专用的 [教程](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) ，了解如何跟踪Adobe Target选件。
+现在，您应该拥有所有工具，能够根据相关情况和适用情况，开始向应用程序添加更多A/B测试或其他Target活动（例如体验定位、多变量测试）。 有关更深入的信息，请参见 [用于优化扩展的GitHub存储库](https://github.com/adobe/aepsdk-optimize-ios) 您还可以在该处找到指向专用的 [教程](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) ，了解如何跟踪Adobe Target选件。
 
 >[!SUCCESS]
 >
->您已为应用程序启用A/B测试，并显示了使用Adobe Target和适用于Adobe Experience Platform Mobile SDK的Adobe Journey Optimizer - Decisioning扩展的A/B测试的结果。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>您已为应用程序启用A/B测试并显示Adobe Target和适用于Adobe Experience Platform Mobile SDK的Adobe Journey Optimizer - Decisioning扩展的A/B测试的结果。
+>
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[结论和后续步骤](conclusion.md)**

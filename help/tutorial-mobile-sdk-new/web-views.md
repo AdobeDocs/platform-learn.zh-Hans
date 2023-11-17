@@ -4,9 +4,9 @@ description: 了解如何在移动应用程序中通过WebViews处理数据收�
 jira: KT-6987
 hide: true
 exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 在本课程中，您将执行以下操作：
 
-* 了解为什么您必须对应用程序中的WebViews采取特殊注意事项。
+* 了解为什么您的应用程序中必须对WebViews进行特别考虑。
 * 了解防止跟踪问题所需的代码。
 
 ## 潜在的跟踪问题
@@ -92,7 +92,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
      adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
      ```
 
-很遗憾，调试Web会话受到限制；例如，您不能在浏览器中使用该Adobe Experience Platform Debugger继续调试WebView会话。
+很遗憾，调试Web会话的功能有限。 例如，您不能在浏览器中使用Adobe Experience Platform Debugger继续调试Webview会话。
 
 >[!NOTE]
 >
@@ -101,6 +101,8 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 
 >[!SUCCESS]
 >
->现在，您已经将应用程序设置为在Webview中根据URL显示内容，该URL使用与Adobe Experience Platform Mobile SDK已颁发的ECID相同的ECID。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>现在，您已经将应用程序设置为在Webview中根据URL显示内容，该URL使用与Adobe Experience Platform Mobile SDK已颁发的ECID相同的ECID。
+>
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 下一步： **[标识](identity.md)**

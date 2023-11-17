@@ -3,9 +3,9 @@ title: 使用地标
 description: 了解如何在移动应用程序中使用Places地理位置服务。
 hide: true
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 5d34e510ef72190762c29b71359b362ef4be7b22
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1692'
 ht-degree: 3%
 
 ---
@@ -54,7 +54,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
    ![创建库](assets/places-create-library.png)
 1. 要关闭 **[!UICONTROL 管理库]** 对话框，选择 **[!UICONTROL 关闭]**.
 1. 返回 **[!UICONTROL POI管理]**，选择 **[!UICONTROL 导入POI]**.
-1. 选择 **[!UICONTROL 开始]** 在t**中[!UICONTROL 导入位置]选**对话框。
+1. 选择 **[!UICONTROL 开始]** 在 **[!UICONTROL 导入位置]** 对话框。
 1. 选择 **[!DNL Luma]** 从图书馆名单上，
 1. 选择&#x200B;**[!UICONTROL 下一步]**。
    ![选择库](assets/places-import-select-library.png)
@@ -172,7 +172,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
       ![标记操作](assets/tags-action-mobile-core.png)
 
 1. 选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 旁边的 **[!UICONTROL 移动核心 — 附加数据]** 操作。
-   1. 选择 **[!UICONTROL Adobe Experience Platform边缘网络]** 从 **[!UICONTROL 扩展名]** 列出并选择 **[!UICONTROL 将事件转发到Edge Network]**. 此操作确保将事件和其他有效负载数据转发到边缘网络。
+   1. 选择 **[!UICONTROL Adobe Experience Platform边缘网络]** 从 **[!UICONTROL 扩展名]** 列出并选择 **[!UICONTROL 将事件转发到Edge Network]**. 此操作确保将事件和其他有效负载数据转发到Platform Edge Network。
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
 
 1. 要保存规则，请选择 **[!UICONTROL 保存到库]**.
@@ -240,9 +240,9 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 选择 **[!UICONTROL 映射和模拟]** 在左边栏中。
 1. 将地图移动到某个POI的位置。
-1. 选择 ![齿轮](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 模拟加载POI。  使用圆圈和pin标识您的POI。
+1. 选择 ![齿轮](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) 模拟加载POI。 使用圆圈和pin标识您的POI。
 1. 选择您的POI。
-1. 在弹出窗口中，选择 ![齿轮](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 模拟进入事件]**.
+1. 从弹出窗口中，选择 ![齿轮](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL 模拟进入事件]**.
    ![模拟进入事件](assets/places-simulate.png)
 1. 选择 **[!UICONTROL 活动]** 从左边栏中，您应该会看到模拟的事件。
    ![AJO决策验证](assets/places-events.png)
@@ -283,7 +283,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
    ]
    ```
 
-1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中查找 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.添加以下代码：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中查找 `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` 函数。 添加以下代码：
 
    ```swift
    // Process geolocation event
@@ -344,6 +344,8 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
 >[!SUCCESS]
 >
->现在，您已使用Experience PlatformMobile SDK中的Places扩展为地理定位服务启用应用程序。<br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>现在，您已使用Experience PlatformMobile SDK中的Places扩展为地理定位服务启用应用程序。
+>
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[将数据映射到Adobe Analytics](analytics.md)**

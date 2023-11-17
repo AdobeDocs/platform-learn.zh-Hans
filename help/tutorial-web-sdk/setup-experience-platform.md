@@ -2,9 +2,9 @@
 title: 使用Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1606'
+source-wordcount: '1605'
 ht-degree: 7%
 
 ---

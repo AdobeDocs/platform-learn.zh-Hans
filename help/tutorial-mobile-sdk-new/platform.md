@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: true
 exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 5%
 
 ---
@@ -69,7 +69,7 @@ ht-degree: 5%
 
 ## 添加Adobe Experience Platform数据流服务
 
-要将XDM数据从Edge Network发送到Adobe Experience Platform，请将Adobe Experience Platform服务配置为包含在中设置的数据流 [创建数据流](create-datastream.md).
+要将XDM数据从Edge Network发送到Adobe Experience Platform，请将Adobe Experience Platform服务添加到您作为的一部分设置的数据流 [创建数据流](create-datastream.md).
 
 >[!IMPORTANT]
 >
@@ -169,6 +169,6 @@ Experience Platform的实时客户资料允许您构建每个客户的整体视�
 
 >[!SUCCESS]
 >
->现在，您已将应用程序设置为将数据不仅发送到Edge Network，还发送到Adobe Experience Platform。<br>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>现在，您已将应用程序设置为将数据不仅发送到Edge Network，还发送到Adobe Experience Platform。<br>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[创建和发送推送通知](journey-optimizer-push.md)**

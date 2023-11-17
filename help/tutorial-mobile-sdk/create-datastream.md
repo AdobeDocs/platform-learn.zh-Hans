@@ -3,9 +3,9 @@ title: 配置数据流
 description: 了解如何在Experience Platform中创建数据流。
 feature: Mobile SDK,Datastreams
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
+source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '425'
 ht-degree: 4%
 
 ---
@@ -73,4 +73,4 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
