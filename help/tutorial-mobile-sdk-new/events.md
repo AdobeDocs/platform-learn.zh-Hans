@@ -3,7 +3,7 @@ title: 跟踪事件数据
 description: 了解如何跟踪移动应用程序中的事件数据。
 hide: true
 exl-id: b926480b-b431-4db8-835c-fa1db6436a93
-source-git-commit: d7410a19e142d233a6c6597de92f112b961f5ad6
+source-git-commit: f592fc61ad28d04eba3c1c21a0a66bda6e816a5b
 workflow-type: tm+mt
 source-wordcount: '1390'
 ht-degree: 0%
@@ -367,7 +367,7 @@ Adobe Experience Platform Edge扩展可以将遵循之前定义的XDM架构的�
 
 >[!TIP]
 >
->查看 [已完成的应用程序](https://git.corp.adobe.com/rmaur/Luma) 以了解更多示例。
+>查看 [已完成的应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 以了解更多示例。
 
 
 ## 将事件发送到Analytics和Platform

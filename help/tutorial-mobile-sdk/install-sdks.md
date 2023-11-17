@@ -2,10 +2,10 @@
 title: 安装Adobe Experience Platform Mobile SDK
 description: 了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: b2e1bf08d9fb145ba63263dfa078c96258342708
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 1%
+source-wordcount: '591'
+ht-degree: 2%
 
 ---
 
@@ -13,9 +13,13 @@ ht-degree: 1%
 
 了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。
 
+>[!INFO]
+>
+> 2023年11月下旬，本教程将替换为使用新示例移动应用程序的新教程
+
 ## 先决条件
 
-* 已成功使用“ ”中描述的扩展构建标记库 [上一课程](configure-tags.md).
+* 使用中所述的扩展成功构建了标记库 [上一课程](configure-tags.md).
 * 来自的开发环境文件ID [移动设备安装说明](configure-tags.md#generate-sdk-install-instructions).
 * 已下载，为空 [示例应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
 * 体验 [XCode](https://developer.apple.com/xcode/){target="_blank"}.
@@ -40,7 +44,7 @@ ht-degree: 1%
 >
 > 如果您不熟悉CocoaPods，请查阅 [快速入门指南](https://guides.cocoapods.org/using/getting-started.html).
 
-Install通常是简单的sudo命令：
+安装通常是简单的sudo命令：
 
 ```console
 sudo gem install cocoapods
@@ -67,9 +71,9 @@ pod 'AEPSignal', '~>3'
 
 >[!NOTE]
 >
-> `AEPMessaging` 仅当您计划使用Adobe Journey Optimizer实施推送消息时，才需要。 请阅读以下教程： [使用Adobe Journey Optimizer实施推送消息](journey-optimizer-push.md) 了解更多信息。
+> `AEPMessaging` 仅当您计划使用Adobe Journey Optimizer实施推送消息时，才需要使用。 请阅读以下教程： [使用Adobe Journey Optimizer实施推送消息](journey-optimizer-push.md) 以了解更多信息。
 
-将更改保存到Podfile后，导航到包含项目的文件夹并运行 `pod install` 命令以安装更改。
+保存对Podfile所做的更改后，导航到包含您的项目的文件夹，然后运行 `pod install` 命令以安装更改。
 
 ![pod install](assets/mobile-install-podfile-install.png)
 
@@ -81,7 +85,7 @@ pod 'AEPSignal', '~>3'
 
 >[!INFO]
 >
->如果您无法在自己的应用程序中使用CocoaPods，则可以了解其他 [支持的实施](https://github.com/adobe/aepsdk-core-ios#binaries) 在GitHub项目中。
+>如果您无法在自己的应用程序中使用CocoaPods，则可以了解其他应用程序 [支持的实施](https://github.com/adobe/aepsdk-core-ios#binaries) 在GitHub项目中。
 
 ## 构建CocoaPods
 
@@ -97,11 +101,11 @@ pod 'AEPSignal', '~>3'
 
 >[!NOTE]
 >
->Luma项目是在M1芯片组上使用Xcode v12.5构建的，并在iOS模拟器中运行。 如果您使用的是其他设置，则可能需要更改构建设置以反映您的架构。
+>Luma项目是在M1芯片组上使用Xcode v12.5构建的，并在iOS模拟器中运行。 如果您使用的是其他设置，则可能需要更改生成设置以反映您的架构。
 >
 >如果生成失败，请尝试还原 **构建活动架构** > **调试** 设置回 **是**.
 >
->在创作本教程时，使用了模拟器配置“iPod touch（第7代）”。
+>创作本教程时使用模拟器配置“iPod touch（第7代）”。
 
 ## 导入扩展
 
@@ -122,7 +126,7 @@ import AEPServices
 
 ## 更新AppDelegate
 
-在 `AppDelegate.swift` 文件，添加以下代码到 `didFinishLaunchingWithOptions`. 将currentAppId替换为您从中的标记检索到的开发环境文件ID值。 [上一课程](configure-tags.md).
+在 `AppDelegate.swift` 文件，添加以下代码到 `didFinishLaunchingWithOptions`. 将currentAppId替换为您从中的标记检索到的开发环境文件ID值 [上一课程](configure-tags.md).
 
 ```swift
 let currentAppId = "b5cbd1a1220e/bae66382cce8/launch-88492c6dcb6e-development"
@@ -136,19 +140,20 @@ MobileCore.registerExtensions(extensions, {
 })
 ```
 
-`Messaging.self` 仅当您计划通过Adobe Journey Optimizer实施推送消息时（如所述），才需要使用此字段 [此处](journey-optimizer-push.md).
+`Messaging.self` 仅当您计划通过Adobe Journey Optimizer实施推送消息时，才需要使用此字段，如所述 [此处](journey-optimizer-push.md).
 
 上述代码执行以下操作：
 
 * 注册所需的扩展。
 * 配置MobileCore和其他扩展以使用标记属性配置。
-* 启用调试日志记录。 欲知更多详情和选项，请参阅 [Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+* 启用调试日志记录。 欲知更多详情和选项，请参见 [移动SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
 
 >[!IMPORTANT]
 >在生产应用程序中，您必须根据当前环境(dev/stag/prod)切换AppId。
+>
 
 下一步： **[设置保证](assurance.md)**
 
 >[!NOTE]
 >
->感谢您投入时间来了解Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此分享这些内容 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

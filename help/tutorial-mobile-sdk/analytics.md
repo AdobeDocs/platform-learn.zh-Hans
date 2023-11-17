@@ -1,11 +1,11 @@
 ---
 title: Analytics映射
-description: 了解如何在移动应用程序中为Adobe Analytics收集数据。
+description: 了解如何在移动应用程序中收集Adobe Analytics的数据。
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '609'
 ht-degree: 3%
 
 ---
@@ -13,6 +13,11 @@ ht-degree: 3%
 # Analytics映射
 
 了解如何将移动数据映射到Adobe Analytics。
+
+>[!INFO]
+>
+> 2023年11月下旬，本教程将替换为使用新示例移动应用程序的新教程
+
 
 此 [事件](events.md) 您在之前的课程中收集并发送到Platform Edge Network的数据将转发到您在数据流中配置的服务，包括Adobe Analytics。 您只需将数据映射到报表包中的正确变量即可。
 
@@ -35,7 +40,7 @@ ht-degree: 3%
 
 ### 示例#1 - s.products
 
-一个很好的示例是 [products变量](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=zh-Hans) 无法使用处理规则填充的区段。 在XDM实施中，您传递了productListItems中的所有必要数据，并且s.products通过Analytics映射自动填充。
+一个很好的示例是 [products变量](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=zh-Hans) 无法使用处理规则填充的部分。 对于XDM实施，您会传递productListItems中的所有必要数据，并且s.products会通过Analytics映射自动填充。
 
 此对象：
 
@@ -68,7 +73,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 
 ### 示例#2 - scAdd
 
-如果仔细查看，所有事件都有两个字段 `value` （必需）和 `id` （可选）。 此 `value` 字段用于递增事件计数。 此 `id` 字段用于序列化。
+仔细查看，所有事件都有两个字段 `value` （必需）和 `id` （可选）。 此 `value` 字段用于递增事件计数。 此 `id` 字段用于序列化。
 
 此对象：
 
@@ -103,9 +108,9 @@ s.events = "scAdd"
 s.events = "scAdd:321435"
 ```
 
-## 使用保证进行验证
+## 使用保障进行验证
 
-使用 [Assurance QA工具](assurance.md) 您可以确认自己发送的是ExperienceEvent，XDM数据正确，并且Analytics映射按预期发生。 例如：
+使用 [Assurance QA工具](assurance.md) 您可以确认正在发送ExperienceEvent，XDM数据正确，并且Analytics映射按预期发生。 例如：
 
 1. 发送productListAdds事件。
 
@@ -159,9 +164,9 @@ s.events = "scAdd:321435"
 
 在Analytics映射中注意以下事项：
 
-* “events”已根据以下条件使用“scAdd”填充 `commerce.productListAdds`.
-* “pl”（products变量）填充了一个基于以下项的连接值： `productListItems`.
-* 此事件中还有其他有趣的信息，包括所有上下文数据。
+* “events”已使用“scAdd”填充，具体基于 `commerce.productListAdds`.
+* “pl”（products变量）填充了一个拼接值，该拼接值基于 `productListItems`.
+* 此事件中还有其它有趣的信息，包括所有上下文数据。
 
 
 ## 与上下文数据映射
@@ -186,7 +191,7 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 >[!NOTE]
 >
->自定义字段放置在您的Experience Cloud组织标识符下。
+>自定义字段放在Experience Cloud组织标识符下。
 >
 >“_techmarketingdemos”被替换为您的组织的唯一值。
 
@@ -200,18 +205,18 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 >某些自动映射的变量在处理规则中可能不可用。
 >
 >
->首次映射到处理规则时，UI不会显示XDM对象中的上下文数据变量。 要修复该错误，请选择任意值，请保存，然后返回进行编辑。 此时应会显示所有XDM变量。
+>首次映射到处理规则时，UI不会显示XDM对象中的上下文数据变量。 要修复该错误，请选择任意值，请保存并返回进行编辑。 此时应会显示所有XDM变量。
 
 
-可以找到有关处理规则和上下文数据的附加信息 [此处](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+可以找到有关处理规则和上下文数据的其他信息 [此处](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >
->与以前的移动应用程序实施不同，页面/屏幕查看次数和其他事件之间没有区别。 相反，您可以递增 **[!UICONTROL 页面查看]** 量度，方法是设置 **[!UICONTROL 页面名称]** 处理规则中的维度。 由于您正在收集自定义 `screenName` 字段，强烈建议将此字段映射到 **[!UICONTROL 页面名称]** 在处理规则中。
+>与以前的移动应用程序实施不同，页面/屏幕查看次数与其他事件之间没有区别。 相反，您可以递增 **[!UICONTROL 页面查看]** 量度，方法是设置 **[!UICONTROL 页面名称]** 处理规则中的维度。 由于您正在收集自定义 `screenName` 字段，强烈建议将此字段映射到 **[!UICONTROL 页面名称]** 在处理规则中。
 
 
 下一步： **[Experience Platform](platform.md)**
 
 >[!NOTE]
 >
->感谢您投入时间来了解Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此分享这些内容 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

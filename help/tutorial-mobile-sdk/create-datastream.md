@@ -3,9 +3,9 @@ title: 配置数据流
 description: 了解如何在Experience Platform中创建数据流。
 feature: Mobile SDK,Datastreams
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '426'
 ht-degree: 4%
 
 ---
@@ -14,11 +14,15 @@ ht-degree: 4%
 
 了解如何在Experience Platform中创建数据流。
 
-数据流是Platform边缘网络上的服务器端配置。  数据流确保将传入到Platform Edge Network的数据正确路由到Adobe Experience Cloud应用程序和服务。 欲了解更多信息，请参见 [文档](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) 或此 [视频](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=zh-Hans).
+>[!INFO]
+>
+> 2023年11月下旬，本教程将替换为使用新示例移动应用程序的新教程
+
+数据流是Platform边缘网络上的服务器端配置。  数据流确保将传入到Platform边缘网络的数据正确路由到Adobe Experience Cloud应用程序和服务。 欲了解更多信息，请参见 [文档](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) 或此 [视频](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html?lang=zh-Hans).
 
 ## 先决条件
 
-要创建数据流，必须在数据收集界面（以前称为）中为您的组织配置此功能 [!UICONTROL Launch])，并且您必须拥有的用户权限 [!UICONTROL Experience Platform] > [!UICONTROL 数据收集] > **[!UICONTROL 管理数据流]** 和 **[!UICONTROL 查看数据流]**.
+要创建数据流，必须在数据收集界面（以前称为）中为您的组织配置此功能 [!UICONTROL Launch])并且您必须拥有的用户权限 [!UICONTROL Experience Platform] > [!UICONTROL 数据收集] > **[!UICONTROL 管理数据流]** 和 **[!UICONTROL 查看数据流]**.
 
 ## 学习目标
 
@@ -30,7 +34,7 @@ ht-degree: 4%
 
 ## 创建数据流
 
-可以在中创建数据流 [!UICONTROL 数据收集] 界面使用 [!UICONTROL 数据流] 配置工具。 要创建数据流，请执行以下操作：
+可以在以下位置创建数据流： [!UICONTROL 数据收集] 界面使用 [!UICONTROL 数据流] 配置工具。 要创建数据流，请执行以下操作：
 
 1. 确保您在正确的Platform沙盒中。
 1. 选择&#x200B;**[!UICONTROL 新数据流]**。
@@ -46,7 +50,7 @@ ht-degree: 4%
 
 ## 添加服务
 
-接下来，您可以将Experience Cloud服务连接到数据流。 当Platform Mobile SDK将数据发送到Edge Network时，数据流会将数据发送到以下服务：
+接下来，您可以将Experience Cloud服务连接到数据流。 当Platform Mobile SDK将数据发送到Edge Network时，数据流会将数据发送到这些服务：
 
 1. 添加 **[!UICONTROL Adobe Analytics]** 并提供报表包。
 
@@ -61,12 +65,12 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->启用您的组织使用的每个服务，可确保移动应用程序中收集的数据可在任何地方使用。 查找有关数据流设置的更多信息，请查看文档 [此处](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
+>启用您的组织使用的每项服务，可确保随时随地使用在移动应用程序中收集的数据。 查找有关数据流设置的更多信息，请查看文档 [此处](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-在您自己的网站上实施Platform Mobile SDK时，您应创建三个数据流以映射到三个标记环境（开发、暂存和生产）。 如果您将Platform Mobile SDK与基于Platform的应用程序(如Adobe Real-time Customer Data Platform或Adobe Journey Optimizer)结合使用，则应确保在适当的Platform沙盒中创建这些数据流。
+在您自己的网站上实施Platform Mobile SDK时，您应该创建三个数据流以映射到三个标记环境（开发、暂存和生产）。 如果您将Platform Mobile SDK与基于Platform的应用程序(如Adobe Real-time Customer Data Platform或Adobe Journey Optimizer)一起使用，则应确保在适当的Platform沙盒中创建这些数据流。
 
 下一步： **[配置标记](configure-tags.md)**
 
 >[!NOTE]
 >
->感谢您投入时间来了解Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此分享这些内容 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

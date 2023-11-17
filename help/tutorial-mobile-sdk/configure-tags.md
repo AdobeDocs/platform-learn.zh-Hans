@@ -3,9 +3,9 @@ title: 配置标记属性
 description: 了解如何在中配置标记属性 [!UICONTROL 数据收集] 界面。
 feature: Mobile SDK,Tags
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '733'
 ht-degree: 10%
 
 ---
@@ -14,7 +14,11 @@ ht-degree: 10%
 
 了解如何在中配置标记属性 [!UICONTROL 数据收集] 界面。
 
-Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理功能。标记为客户提供了一种简单的方式，让客户可以部署和管理所有用来加强相关客户体验的分析、营销和广告标记。详细了解 [标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) ，位于产品文档中。
+>[!INFO]
+>
+> 2023年11月下旬，本教程将替换为使用新示例移动应用程序的新教程
+
+Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理功能。标记为客户提供了一种简单的方式，让客户可以部署和管理所有用来加强相关客户体验的分析、营销和广告标记。了解有关 [标记](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) 在产品文档中。
 
 ## 先决条件
 
@@ -38,27 +42,27 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
    1. 选择 **[!UICONTROL 新建属性]**
       ![创建标记属性](assets/mobile-tags-new-property.png).
    1. 对于 **[!UICONTROL 名称]**，输入 `Mobile SDK Course`.
-   1. 对于 **[!UICONTROL Platform]**，选择 **[!UICONTROL 移动设备]**.
+   1. 对于 **[!UICONTROL 平台]**，选择 **[!UICONTROL 移动设备]**.
    1. 选择&#x200B;**[!UICONTROL 保存]**。
 
       ![配置标记属性](assets/mobile-tags-property-config.png)
 
       >[!NOTE]
       >
-      > 基于Edge的Mobile Sdk实施（例如，您在本教程中正在执行的实施）的默认同意设置来自 [!UICONTROL 同意扩展] 而不是 [!UICONTROL 隐私] 设置。 您将在本课程的后面部分添加并配置同意扩展。 有关更多信息，请参阅 [文档](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+      > 对于基于Edge的Mobile Sdk实施（例如，您在本教程中正在执行的实施），默认同意设置来自 [!UICONTROL 同意扩展] 而不是 [!UICONTROL 隐私] 设置。 您将在本课程的后面部分添加并配置同意扩展。 有关更多信息，请参阅 [文档](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. 打开新资产
 1. 创建库:
 
-   1. 转到 **[!UICONTROL 发布流]** 左侧导航栏中。
+   1. 转到 **[!UICONTROL 发布流]** 在左侧导航中。
    1. 选择 **[!UICONTROL 添加库]**.
 
-      ![选择添加库](assets/mobile-tags-create-library.png)
+      ![选择“添加库”](assets/mobile-tags-create-library.png)
 
    1. 对于 **[!UICONTROL 名称]**，输入 `Initial Build`.
    1. 对于 **[!UICONTROL 环境]**，选择 **[!UICONTROL 开发]**.
-   1. 选择  **[!UICONTROL 添加所有更改的资源]**.
+   1. 选择  **[!UICONTROL 添加所有已更改资源]**.
    1. 选择 **[!UICONTROL 保存并生成到开发环境]**.
 
       ![构建库](assets/mobile-tags-save-library.png)
@@ -73,7 +77,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
    ![初始设置](assets/mobile-tags-starting.png)
 
-1. 使用 [!UICONTROL 搜索] 功能查找并安装以下扩展。 这两个扩展均不需要任何配置：
+1. 使用 [!UICONTROL Search] 功能查找并安装以下扩展。 这两个扩展均不需要进行任何配置：
    * 标识
    * AEP保证
 
@@ -81,7 +85,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
 1. 安装 **同意** 扩展。
 
-   在本教程中，请选择 **[!UICONTROL 待处理]**. 在中了解有关Consent扩展的更多信息 [文档](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
+   在本教程中，选择 **[!UICONTROL 待处理]**. 在中进一步了解Consent扩展 [文档](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
 
    ![同意设置](assets/mobile-tags-extension-consent.png)
 
@@ -112,8 +116,8 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
    您可以找到其他信息 [此处](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-   * **[!UICONTROL 环境文件Id]**：此唯一ID指向您的开发环境，请记下此值。 生产/暂存/开发都具有不同的ID值。
-   * **[!UICONTROL Podfile]**：CocoaPods用于管理SDK版本和下载。 要了解更多信息，请查看 [文档](https://cocoapods.org/).
+   * **[!UICONTROL 环境文件Id]**：此唯一ID指向您的开发环境，请记下此值。 生产/暂存/开发都将具有不同的ID值。
+   * **[!UICONTROL Podfile]**：CocoaPod用于管理SDK版本和下载。 要了解更多信息，请查阅 [文档](https://cocoapods.org/).
    * **[!UICONTROL 初始化代码]**：此代码块显示了如何导入所需的SDK并在启动时注册扩展。
 
 >[!NOTE]
@@ -125,10 +129,10 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
 在Web上，标记属性呈现到JavaScript中，然后（通常）将该属性托管在云中。 该JS文件直接在网站中引用。
 
-在移动标记属性中，规则和配置将渲染到云中托管的JSON文件中。 JSON文件由移动设备应用程序中的Mobile Core扩展下载和读取。 扩展是单独的SDK，可一起工作。 如果向标记资产中添加扩展，则还必须更新应用程序。 如果更改扩展设置或创建规则，则在发布更新的标记库后，这些更改将反映在应用程序中。
+在移动标记属性中，规则和配置将渲染到云中托管的JSON文件中。 JSON文件由移动设备应用程序中的Mobile Core扩展下载和读取。 扩展是相互协作的分隔SDK。 如果向标记属性添加扩展，则还必须更新应用程序。 如果更改扩展设置或创建规则，则在发布更新的标记库后，这些更改将反映在应用程序中。
 
 下一步： **[安装SDK](install-sdks.md)**
 
 >[!NOTE]
 >
->感谢您投入时间来了解Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此分享这些内容 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

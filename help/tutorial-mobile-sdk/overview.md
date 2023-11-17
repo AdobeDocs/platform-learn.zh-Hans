@@ -3,9 +3,9 @@ title: 在移动应用程序中实施Adobe Experience Cloud教程概述
 description: 了解如何实施Adobe Experience Cloud移动应用程序。 本教程将指导您在一个示例Swift应用程序中实施Experience Cloud应用程序。
 recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 4bccc95ff94e9377b65771268e82b1900c003fc1
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '661'
 ht-degree: 11%
 
 ---
@@ -14,14 +14,18 @@ ht-degree: 11%
 
 了解如何用 Adobe Experience Platform 移动 SDK 在移动应用程序中实施 Adobe Experience Cloud 应用程序。
 
-Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience Cloud的客户通过Adobe Experience Platform Edge Network与Adobe应用程序和第三方服务进行交互。 请参阅 [Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/) 以了解更多详细信息。
+>[!INFO]
+>
+> 2023年11月下旬，本教程将替换为使用新示例移动应用程序的新教程
+
+Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience Cloud的客户通过Adobe Experience Platform Edge Network与Adobe应用程序和第三方服务进行交互。 请参阅 [Adobe Experience Platform移动SDK文档](https://developer.adobe.com/client-sdks/documentation/) 以了解更多详细信息。
 
 ![内部版本设置](assets/data-collection-mobile-sdk.png)
 
 
 本教程将指导您在名为Luma的示例零售应用程序中实施Platform Mobile SDK。 此 [Luma应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 具有的功能可让您构建现实的实施。 完成本教程后，您应该可以在自己的移动应用程序中开始通过Platform Mobile SDK实施所有营销解决方案。
 
-这些课程专为iOS设计并且用Swift编写，但许多概念也适用于Android™。
+这些课程是为iOS设计的，使用Swift编写，但许多概念也适用于Android™。
 
 完成本教程后，您将能够：
 
@@ -38,7 +42,7 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
    * [标识](identity.md)
    * [配置文件](profile.md)
    * [Adobe Experience Platform](platform.md)
-   * [Journey Optimizer推送消息](journey-optimizer-push.md)
+   * [使用Journey Optimizer推送消息](journey-optimizer-push.md)
 * 将Experience Cloud参数正确传递给 [webview](web-views.md).
 * 使用验证实施 [Adobe Experience Platform Assurance](assurance.md).
 
@@ -52,21 +56,21 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
 
 * 在数据收集中，您必须具有：
    * **[!UICONTROL 平台]** — 权限项 **[!UICONTROL 移动设备]**
-   * **[!UICONTROL 资产权限]** — 权限项 **[!UICONTROL 开发]**， **[!UICONTROL 批准]**， **[!UICONTROL Publish]**， **[!UICONTROL 管理扩展]**、和 **[!UICONTROL 管理环境]**.
-   * **[!UICONTROL 公司权限]** — 权限项 **[!UICONTROL 管理资产]** 此外，如果您已完成可选的推送消息课程， **[!UICONTROL 管理应用程序配置]**
+   * **[!UICONTROL 资产权限]** — 权限项至 **[!UICONTROL 开发]**， **[!UICONTROL 批准]**， **[!UICONTROL Publish]**， **[!UICONTROL 管理扩展]**、和 **[!UICONTROL 管理环境]**.
+   * **[!UICONTROL 公司权限]** — 权限项至 **[!UICONTROL 管理资产]** 此外，如果您已完成可选的推送消息课程， **[!UICONTROL 管理应用程序配置]**
 
-      有关标记权限的更多信息，请参阅 [标记的用户权限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hans){target="_blank"} ，位于产品文档中。
+     有关标记权限的更多信息，请参阅 [标记的用户权限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hans){target="_blank"} 在产品文档中。
 * 在Experience Platform中，您必须具有：
    * **[!UICONTROL 数据建模]** — 用于管理和查看架构的权限项。
    * **[!UICONTROL Identity Management]** — 用于管理和查看身份命名空间的权限项。
    * **[!UICONTROL 数据收集]** — 用于管理和查看数据流的权限项。
 
-   * 如果您是基于Platform的应用程序(如Real-Time CDP、Journey Optimizer或Customer Journey Analytics)的客户，则还应该拥有：
+   * 如果您是基于Platform的应用程序(如Real-Time CDP、Journey Optimizer或Customer Journey Analytics)的客户，则还应：
       * **[!UICONTROL 数据管理]** — 用于管理和查看数据集以完成 _可选平台练习_ （需要基于平台的应用程序的许可证）。
       * 开发 **沙盒** 供本教程使用。
-* 对于Adobe Analytics，您必须知道是哪个 **报告包** 您可以使用完成本教程。
+* 对于Adobe Analytics，您必须知道是哪个 **报表包** 您可以使用完成本教程。
 
-所有Experience Cloud客户都应该有权访问部署Mobile SDK所需的功能。
+所有Experience Cloud客户都应有权访问部署Mobile SDK所需的功能。
 
 此外，我们还假定您熟悉 [!DNL Swift]. 您无需成为专家即可完成课程，但如果您能够轻松阅读和理解代码，将可从这些课程中学到更多知识。
 
@@ -84,4 +88,4 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
 
 >[!NOTE]
 >
->感谢您投入时间来了解Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此分享这些内容 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

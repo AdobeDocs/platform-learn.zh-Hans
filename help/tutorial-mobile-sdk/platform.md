@@ -4,10 +4,10 @@ description: 了解如何将数据发送到Adobe Experience Platform。
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
-source-git-commit: adbe8f4476340abddebbf9231e3dde44ba328063
+source-git-commit: 94ca4a238c241518219fb2e8d73f775836f86d86
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 7%
+source-wordcount: '862'
+ht-degree: 8%
 
 ---
 
@@ -15,7 +15,11 @@ ht-degree: 7%
 
 了解如何将数据发送到Adobe Experience Platform。
 
-本可选课程与Real-time Customer Data Platform (Real-Time CDP)、Journey Optimizer和Customer Journey Analytics的所有客户都相关。 Experience Platform是Experience Cloud产品的基础，它是一个开放系统，可将您的所有数据(Adobe和非Adobe)转换为强大的客户档案，这些档案会实时更新，并使用AI驱动的见解来帮助您在各个渠道中提供正确的体验。
+>[!INFO]
+>
+> 2023年11月下旬，本教程将替换为使用新示例移动应用程序的新教程
+
+本可选课程与Real-time Customer Data Platform (Real-Time CDP)、Journey Optimizer和Customer Journey Analytics的所有客户都相关。 Experience Platform是Experience Cloud产品的基础，它是一个开放系统，可将您的所有数据(Adobe和非Adobe)转换为强大的客户档案，这些档案会实时更新，并使用人工智能驱动的见解来帮助您在各个渠道中提供正确的体验。
 
 此 [事件](events.md)， [生命周期](lifecycle-data.md)、和 [身份](identity.md) 您在之前的课程中收集并发送到Platform Edge Network的数据将转发到您在数据流中配置的服务，包括Adobe Experience Platform。
 
@@ -24,7 +28,7 @@ ht-degree: 7%
 
 必须配置您的组织并授予Adobe Experience Platform权限。
 
-如果您没有访问权限，则可以 [跳过本课程](install-sdks.md).
+如果您没有访问权限，可以 [跳过本课程](install-sdks.md).
 
 ## 学习目标
 
@@ -33,13 +37,13 @@ ht-degree: 7%
 * 创建Experience Platform数据集。
 * 验证数据集中的数据。
 * 为Real-time Customer Profile启用架构和数据集。
-* 验证Real-Time Customer Profile的数据。
+* 验证实时客户档案中的数据。
 * 验证身份图中的数据。
 
 
 ## 创建数据集
 
-所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 数据集是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。数据集还包含描述其存储的数据的各方面特性的元数据。请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh-Hans) 以获取信息。
+所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 数据集是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。数据集还包含描述其存储的数据的各方面特性的元数据。请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=zh-Hans) 了解相关信息。
 
 1. 从右上方的3x3菜单中选择Experience Platform界面，以导航到该界面。
    ![数据集菜单](assets/mobile-dataset-menu.png)
@@ -58,7 +62,7 @@ ht-degree: 7%
    ![数据集配置](assets/mobile-dataset-configure.png)
 
 1. 提供 **[!UICONTROL 名称]**， **[!UICONTROL 描述]**，并选择 **[!UICONTROL 完成]**.
-   ![数据集完成时间](assets/mobile-dataset-finish.png)
+   ![数据集完成](assets/mobile-dataset-finish.png)
 
 ## 更新数据流
 
@@ -66,22 +70,22 @@ ht-degree: 7%
 
 ## 验证数据集中的数据
 
-现在，您已创建一个数据集并更新了数据流以将数据发送到Experience Platform，所有发送到Platform Edge Network的XDM数据都将转发到Platform并进入数据集。
+现在，您已创建一个数据集并更新数据流以将数据发送到Experience Platform，所有发送到Platform边缘网络的XDM数据将转发到Platform并载入数据集。
 
-打开应用程序，然后导航到要在其中跟踪事件的屏幕。 您还可以触发生命周期量度。
+打开应用程序，然后导航到要跟踪事件的屏幕。 您还可以触发生命周期量度。
 
 在Platform界面中打开数据集。 您应该会看到数据批次到达数据集
 
-![验证数据登录Platform数据集批次](assets/mobile-platform-dataset-batches.png)
+![验证数据登陆Platform数据集批次](assets/mobile-platform-dataset-batches.png)
 
-您还应该能够查看示例记录和使用 **[!UICONTROL 预览数据集]** 功能：
+您还应该能够使用 **[!UICONTROL 预览数据集]** 功能：
 ![验证发送到Platform数据集的生命周期](assets/mobile-lifecycle-platform-dataset.png)
 
 用于验证数据的更强大的工具是Platform的 [查询服务](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=zh-CN).
 
 ## 启用Real-time Customer Profile
 
-Experience Platform的Real-Time Customer Profile允许您构建每个客户的整体视图，该视图将来自多个渠道（包括在线、离线、CRM和第三方数据）的数据整合在一起。 用户档案允许您将不同的客户数据整合到一个统一的视图中，并提供每个客户互动的可操作、带时间戳的帐户。
+Experience Platform的实时客户资料允许您构建每个客户的整体视图，该视图将来自多个渠道的数据（包括在线、离线、CRM和第三方数据）整合在一起。 用户档案允许您将不同的客户数据整合到一个统一的视图中，并提供每个客户交互的带时间戳的可操作帐户。
 
 ### 启用架构
 
@@ -97,13 +101,13 @@ Experience Platform的Real-Time Customer Profile允许您构建每个客户的�
 1. 打开数据集
 1. 启用 **[!UICONTROL 个人资料]**
 
-   ![为配置文件启用数据集](assets/mobile-platform-profile-dataset.png)
+   ![为用户档案启用数据集](assets/mobile-platform-profile-dataset.png)
 
 ### 验证配置文件中的数据
 
-打开应用程序，然后导航到要在其中跟踪事件的屏幕。 登录Luma应用程序并购买。
+打开应用程序，然后导航到要跟踪事件的屏幕。 登录Luma应用程序并进行购买。
 
-使用Assurance查找identityMap中传递的标识之一（电子邮件、lumaCrmId或ECID）：
+使用Assurance查找identityMap中传递的某个身份（电子邮件、lumaCrmId或ECID）：
 
 >[!TIP]
 >
@@ -112,14 +116,14 @@ Experience Platform的Real-Time Customer Profile允许您构建每个客户的�
 
 ![获取标识值](assets/mobile-platform-identity.png)
 
-在Platform界面中，导航到 **[!UICONTROL 配置文件]** > **[!UICONTROL 浏览]**，查找您刚刚获取的标识值，并打开用户档案：
+在Platform界面中，导航到 **[!UICONTROL 配置文件]** > **[!UICONTROL 浏览]**，查找您刚刚获取的标识值，并打开配置文件：
 
 ![查找标识值](assets/mobile-platform-profile-lookup.png)
 
-在 **[!UICONTROL 详细信息]** 屏幕，您可以查看有关用户的基本信息，包括 **[!UICONTROL **&#x200B;链接的身份&#x200B;**]**：
+在 **[!UICONTROL 详细信息]** 屏幕您可以查看有关用户的基本信息，包括 **[!UICONTROL **&#x200B;链接身份&#x200B;**]**：
 ![配置文件详细信息](assets/mobile-platform-profile-details.png)
 
-在 **[!UICONTROL 事件]**&#x200B;中，您可以看到从您的移动设备应用程序实施中为此用户收集的事件：
+在 **[!UICONTROL 活动]**，您可以查看从您的移动设备应用程序实施中为此用户收集的事件：
 
 ![配置文件事件](assets/mobile-platform-profile-events.png)
 
@@ -128,10 +132,10 @@ Experience Platform的Real-Time Customer Profile允许您构建每个客户的�
 
 ![获取标识值](assets/mobile-platform-profile-identitygraph.png)
 
-营销人员和Experience Platform人员还可以处理在Analytics中捕获的数据很多事情，包括在Customer Journey Analytics中分析该数据以及在Real-time Customer Data Platform中构建区段。 你有一个良好的开端！
+营销人员和Analytics还可处理在Experience Platform中捕获的数据很多事情，包括在Customer Journey Analytics中分析数据以及在Real-time Customer Data Platform中构建区段。 你开了一个好头！
 
-下一步： **[Journey Optimizer推送消息](journey-optimizer-push.md)**
+下一步： **[使用Journey Optimizer推送消息](journey-optimizer-push.md)**
 
 >[!NOTE]
 >
->感谢您投入时间来了解Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此分享这些内容 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
