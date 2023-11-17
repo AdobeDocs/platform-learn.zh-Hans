@@ -4,7 +4,7 @@ description: 了解如何在移动应用程序中收集和映射Adobe Analytics�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 exl-id: 631588df-a540-41b5-94e3-c8e1dc5f240b
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: f2d64236d7d5a0b56ead3fd0e69818813c907b03
 workflow-type: tm+mt
 source-wordcount: '902'
 ht-degree: 2%
@@ -54,7 +54,7 @@ ht-degree: 2%
 
 ## 自动映射
 
-许多标准XDM字段会自动映射到Analytics变量。 请在[此处](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en)查看完整列表。
+许多标准XDM字段会自动映射到Analytics变量。 请在[此处](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en)查看完整列表。
 
 ### 示例#1 - s.products
 
@@ -237,6 +237,6 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 >[!SUCCESS]
 >
->您已设置应用程序，将Experience Edge XDM对象映射到Adobe Analytics变量，以在您的数据流中启用Adobe Analytics服务并在适用的情况下使用处理规则。<br/> 感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>您已设置应用程序，将Experience Edge XDM对象映射到Adobe Analytics变量，以在您的数据流中启用Adobe Analytics服务并在适用的情况下使用处理规则。<br/> 感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 下一步： **[将数据发送到Experience Platform](platform.md)**
