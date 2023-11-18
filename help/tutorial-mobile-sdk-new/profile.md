@@ -3,7 +3,7 @@ title: 收集配置文件数据
 description: 了解如何在移动应用程序中收集用户档案数据。
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 快速了解用户过去或最近是否进行了购买有助于在应用程序中定位和/或个性化。 让我们在Luma应用程序中设置它。
 
-1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** 在Xcode项目导航器中查找 `func updateUserAttributes(attributeName: String, attributeValue: String)` 函数。 添加以下代码：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** 在Xcode项目导航器中查找 `func updateUserAttribute(attributeName: String, attributeValue: String)` 函数。 添加以下代码：
 
    ```swift
    // Create a profile map, add attributes to the map and update profile using the map
@@ -60,7 +60,7 @@ ht-degree: 0%
 
    ```swift
    // Update attributes
-   MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+   MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
    ```
 
 
@@ -86,7 +86,7 @@ ht-degree: 0%
 
    此代码：
 
-   1. 调用 [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 包含的API `iPaidUser` 属性名称作为 `attributeNames` 数组。
+   1. 调用 [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) 包含的API `isPaidUser` 属性名称作为 `attributeNames` 数组。
    1. 然后检查的值 `isPaidUser` 属性和时间 `yes`，在 <img src="assets/paiduser.png" width="20" /> 图标（位于右上角）进行标记。
 
 可找到其他文档 [此处](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
