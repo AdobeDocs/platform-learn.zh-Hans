@@ -5,9 +5,9 @@ feature: Web SDK, Tags
 level: Intermediate
 doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
-source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '3321'
+source-wordcount: '3320'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 1%
 
 #### 使用Platform Consent Standard 1.0设置Consent
 
-让我们创建一个规则来演示这一点。 在Platform标记属性中，选择规则，然后按蓝色的“添加规则”按钮。 让我们将规则命名为“setAdobeConsent”，然后选择以添加事件。 对于“事件类型”，请选择“已加载窗口”，这样当页面加载到我们的网站时，将触发此规则。 接下来，在“操作”下选择“添加”以打开操作配置屏幕。 我们将在此处设置同意数据。 选择“Extension”下拉列表，再选择“Platform Web SDK”，然后选择“Action Type”并选择“Set Consent”。
+让我们创建一个规则来演示这一点。 在Platform标记属性中，选择规则，然后单击蓝色的“添加规则”按钮。 让我们将规则命名为“setAdobeConsent”，然后选择以添加事件。 对于“事件类型”，请选择“已加载窗口”，这样当页面加载到我们的网站时，将触发此规则。 接下来，在“操作”下选择“添加”以打开操作配置屏幕。 我们将在此处设置同意数据。 选择“Extension”下拉列表，再选择“Platform Web SDK”，然后选择“Action Type”并选择“Set Consent”。
 
 在“同意信息”下，选择“填写表单”。 在此规则操作中，我们将使用Web SDK通过填写显示的表单来为Adobe1.0同意标准设置同意：
 
@@ -138,7 +138,7 @@ return {
 
 ![](./images/2-0-form.png)
 
-要查看此示例操作，我们从Platform Web SDK扩展中调用“设置同意”，并从表单中传递标准和版本，同时从我们之前创建的数据元素中传递收集和时间的值。
+要查看此示例操作，我们从Platform Web SDK扩展中调用“设置同意”，并从表单中传递标准和版本，同时从我们之前创建的数据元素中传递集合和时间的值。
 
 选择蓝色的Save按钮，然后再次选择以保存规则。
 
@@ -152,7 +152,7 @@ return {
 
 ![](./images/consentStrings.png)
 
-此字段组包含IAB TCF 2.0标准所需的同意首选项字段。 有关架构和字段组的更多信息，请参见 [XDM系统概述](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans).
+此字段组包含IAB TCF 2.0标准所需的同意首选项字段。 有关架构和字段组的更多信息，请参见 [XDM系统概述](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
 ### 步骤1：创建同意数据元素
 
@@ -236,7 +236,7 @@ addEventListener();
 
 ### 步骤4：Inspect并验证数据收集
 
-在我们的网站上，我们刷新页面并在中确认库内部版本 [调试程序](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) Chrome扩展，在标记菜单部分：
+在我们的网站上，我们刷新页面并在中确认库内部版本 [调试程序](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome扩展，在标记菜单部分：
 
 ![](./images/build-date.png)
 

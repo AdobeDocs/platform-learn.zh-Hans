@@ -3,10 +3,10 @@ title: 在网站中使用标记实施 Experience Cloud
 description: 对于希望了解如何在网站中实施Adobe Experience Cloud解决方案的前端开发人员或技术营销人员而言，“使用标签在网站中实施Experience Cloud”是他们的最佳起点。
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: 8c3b487691c95b16da2a270b7d71cfd3bab1f0eb
+source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '897'
-ht-degree: 39%
+source-wordcount: '896'
+ht-degree: 37%
 
 ---
 
@@ -80,7 +80,7 @@ Adobe Experience Platform的标记功能是Adobe推出的新一代网站标记�
 ## 获取工具
 
 1. 由于您将使用某些特定于浏览器的扩展，因此我们建议您使用 [Chrome Web 浏览器](https://www.google.com/chrome/)来完成教程
-1. 将 [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 扩展添加到您的 Chrome 浏览器中
+1. 添加 [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome浏览器的扩展
 1. 复制示例html页面代码
 
    +++示例HTML页面代码

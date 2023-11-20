@@ -1,26 +1,25 @@
 ---
-title: 发布标记属性
+title: 发布您的标记属性
 description: 了解如何将标记资产从开发环境发布到暂存环境和生产环境。 本课程是“在网站中实施Experience Cloud”教程的一部分。
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '598'
-ht-degree: 67%
+source-wordcount: '597'
+ht-degree: 64%
 
 ---
 
-# 发布标记属性
+# 发布您的标记属性
 
 现在，您已在开发环境中实施 Adobe Experience Cloud 的一些关键解决方案，接下来该学习发布工作流程。
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch将作为一套数据收集技术集成到Adobe Experience Platform中。 界面中已推出一些术语更改，在使用此内容时，您应该注意这些更改：
+>Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
+> * platform launch（客户端）现在为 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
 > * platform launch服务器端现在为 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * 现在已提供边缘配置 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
+> * Edge配置现在为 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 学习目标
 
@@ -34,7 +33,7 @@ ht-degree: 67%
 
 现在，您已在开发环境中创建并验证库，接下来该将其发布到暂存环境。
 
-1. 转到 **[!UICONTROL 发布流程]** 页面
+1. 转到 **[!UICONTROL 发布流]** 页面
 
 1. 打开库旁边的下拉菜单，然后选择 **[!UICONTROL Submit for Approval]**
 
@@ -56,7 +55,7 @@ ht-degree: 67%
 
 **验证暂存库中所做的更改**
 
-1. 在标记资产中，打开 [!UICONTROL 环境] 页面
+1. 在标记属性中，打开 [!UICONTROL 环境] 页面
 
 1. 在 [!UICONTROL Staging] 行中，单击安装图标 ![安装图标](images/launch-installIcon.png) 以打开模式窗口
 
@@ -70,22 +69,22 @@ ht-degree: 67%
 
 1. 在您的 Chrome 浏览器中打开 [Luma 演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 单击 ![Debugger 图标](images/icon-debugger.png) 图标，以打开 [Experience Cloud Debugger 扩展](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj)
+1. 打开 [Experience Platform调试器扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 通过单击 ![Debugger图标](images/icon-debugger.png) 图标
 
    ![单击调试器图标](images/switchEnvironments-openDebugger.png)
 
 1. 转到“工具”选项卡
 
 1. 在 **[!UICONTROL AdobeLaunch >替换Launch嵌入代码]** 部分粘贴剪贴板中的暂存嵌入代码
-1. 打开 **[!UICONTROL 在luma.enablementadobe.com中应用]** 开关
+1. 打开 **[!UICONTROL 跨luma.enablementadobe.com应用]** 切换
 
 1. 单击磁盘图标以进行保存
 
-   ![标记环境（如Debugger中所示）](images/switchEnvironments-debugger-save.png)
+   ![Debugger中显示的标记环境](images/switchEnvironments-debugger-save.png)
 
-1. 重新加载并查看调试器的“概要”选项卡。在Launch部分下，您现在应会看到已实施暂存资产，并显示资产名称(例如，“标记Tutorial”或您命名的任何属性)!
+1. 重新加载并查看调试器的“概要”选项卡。在Launch部分下，您现在应该看到已实施暂存资产，并显示资产名称（例如，“tags Tutorial”或您命名的任何资产名称）！
 
-   ![标记环境（如Debugger中所示）](images/publishing-debugger-staging.png)
+   ![Debugger中显示的标记环境](images/publishing-debugger-staging.png)
 
 在实际工作中，当您的 QA 团队通过审核暂存环境中的更改进行签核后，便可以将其发布到生产环境。
 
@@ -113,6 +112,6 @@ ht-degree: 67%
 
 1. 此时库将显示在 [!UICONTROL Published] 列中：
 
-   ![已发布](images/publishing-published.png)
+   ![Published](images/publishing-published.png)
 
 操作完成！您已完成本教程并在标记中发布了您的第一个资产！
