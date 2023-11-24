@@ -6,10 +6,10 @@ feature-set: Journey Optimizer
 feature: In App
 hide: true
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '1546'
-ht-degree: 4%
+source-wordcount: '1536'
+ht-degree: 5%
 
 ---
 
@@ -41,7 +41,6 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 
 在本课程中，您将执行以下操作
 
-* 向Apple推送通知服务(APN)注册应用程序ID。
 * 在AJO中创建应用程序表面。
 * 安装和配置Journey Optimizer标记扩展。
 * 更新您的应用程序以注册Journey Optimizer标记扩展。

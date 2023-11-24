@@ -4,9 +4,9 @@ description: 了解如何在移动应用程序中收集身份数据。
 feature: Mobile SDK,Identities
 hide: true
 exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '919'
 ht-degree: 4%
 
 ---
@@ -66,7 +66,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
    let identityMap: IdentityMap = IdentityMap()
    
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
    
@@ -81,12 +81,14 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
       let identityMap: IdentityMap = IdentityMap()
       ```
 
-   1. 设置 `IdentityItem` 电子邮件和CRM ID的对象。
+   1. 设置 `IdentityItem` 电子邮件和CRM ID的对象。 Adobe建议将代表人员的身份（如Luma CRM Id）作为主要身份。 如果身份映射包含人员标识符（例如Luma CRM Id），则人员标识符将成为主身份。 否则，ECID将成为主标识。 将人员ID设置为主ID有助于在后续API调用中更有效地查找用户档案。
 
       ```swift
       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+      let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
       ```
+
+
 
    1. 添加这些 `IdentityItem` 对象到 `IdentityMap` 对象。
 

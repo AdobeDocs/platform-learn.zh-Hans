@@ -4,9 +4,9 @@ description: 了解如何在移动应用程序中实施Assurance扩展。
 feature: Mobile SDK,Assurance
 hide: true
 exl-id: 49d608e7-e9c4-4bc8-8a8a-5195f8e2ba42
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '987'
 ht-degree: 6%
 
 ---
@@ -86,14 +86,14 @@ To update the signing for the lessons that require that you sign the application
 1. 选择 **[!DNL Luma]** 在项目导航器中。
 1. 选择 **[!DNL Luma]** 目标。
 1. 选择 **信息** 选项卡。
-1. 要添加基本URL，请向下滚动到 **URL类型** 并选择 **+** 按钮。
+1. 向下滚动到 **URL类型(1)** 如果没有打开，则使用V形(>)打开部分。
 1. 设置 **标识符** 至所选的捆绑标识符，并设置 **URL方案** 中。
 
    ![保证url](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >确保使用 _独特_ 捆绑标识符并替换 `com.adobe.luma.tutorial.swiftui` 捆绑标识符，因为每个捆绑标识符都必须是唯一的。 通常，会对捆绑ID字符串使用反向DNS格式，如 `com.organization.brand.uniqueidentifier`.<br/>同样，使用唯一的URL方案，并替换已经提供的 `lumatutorialswiftui` 使用您的唯一URL方案。
+   >确保使用 _独特_ 捆绑标识符，因此请替换 `com.adobe.luma.tutorial.swiftui` 捆绑标识符，因为每个捆绑标识符都必须是唯一的。 通常，会对捆绑ID字符串使用反向DNS格式，如 `com.organization.brand.uniqueidentifier`.<br/>同样，使用唯一的URL方案，因此请替换已经提供的 `lumatutorialswiftui` 使用您的唯一URL方案。
 
 要了解有关iOS中URL方案的更多信息，请查看 [Apple的文档](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 

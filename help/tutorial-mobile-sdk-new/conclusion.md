@@ -4,9 +4,9 @@ description: 完成本教程后的后续操作
 recommendations: display,noCatalog
 hide: true
 exl-id: be256529-fd4f-428b-b023-409b7a35c204
-source-git-commit: f2d64236d7d5a0b56ead3fd0e69818813c907b03
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
-source-wordcount: '464'
+source-wordcount: '490'
 ht-degree: 7%
 
 ---
@@ -48,6 +48,7 @@ ht-degree: 7%
 * **了解有关Experience Platform的更多信息**. 详细了解如何从其他源摄取数据并将其与您的Mobile SDK数据相结合，请参阅 [面向数据架构师和数据工程师的Adobe Experience Platform入门](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
 
 
->[!NOTE]
+>[!SUCCESS]
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>**恭喜！** 您已完成此Experience PlatformMobile SDK教程。 请定期重新访问教程，因为我们将随着时间的推移进行更新和添加更多内容。<br/><br/>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+

@@ -3,7 +3,7 @@ title: 收集配置文件数据
 description: 了解如何在移动应用程序中收集用户档案数据。
 hide: true
 exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
-source-git-commit: 8f77843aec76e49c5e774016ed6cca5df510d3a4
+source-git-commit: d1338390986a242c91051e94134f8d69e979c0b4
 workflow-type: tm+mt
 source-wordcount: '596'
 ht-degree: 0%
@@ -96,8 +96,8 @@ ht-degree: 0%
 1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
 1. 运行应用程序以登录并与产品交互。
 
-   1. 将“Assurance（保证）”图标向左移动。
    1. 选择 **[!UICONTROL 主页]** 在选项卡栏中。
+   1. 将“Assurance（保证）”图标向左移动。
    1. 要打开“登录”工作表，请选择 <img src="assets/login.png" width="15" /> 按钮。
 
       <img src="./assets/mobile-app-events-1.png" width="300">
