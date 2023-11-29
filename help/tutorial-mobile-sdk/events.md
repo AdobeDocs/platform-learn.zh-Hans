@@ -1,35 +1,31 @@
 ---
-title: 活动
-description: 了解如何在移动应用程序中收集事件数据。
+title: 使用Platform Mobile SDK跟踪移动应用程序中的事件数据
+description: 了解如何跟踪移动应用程序中的事件数据。
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 1%
+source-wordcount: '1397'
+ht-degree: 0%
 
 ---
 
-# 活动
+# 跟踪事件数据
 
 了解如何跟踪移动应用程序中的事件。
-
->[!INFO]
->
-> 2023年11月下旬，本教程将替换为使用新示例移动应用程序的新教程
 
 Edge Network扩展提供了一个用于将Experience事件发送到Platform Edge Network的API。 体验事件是一个对象，其中包含符合XDM ExperienceEvent架构定义的数据。 更简单地说，它们捕获用户在您的移动应用程序中的操作。 Platform Edge Network收到数据后，可以将其转发到数据流中配置的应用程序和服务，如Adobe Analytics和Experience Platform。 了解关于 [体验事件](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) 在产品文档中。
 
 ## 先决条件
 
-* 更新了包含所需SDK的PodFile。
-* 在AppDelegate中注册的扩展。
-* 已将MobileCore配置为使用开发AppId。
+* 所有包依赖项都已存在于您的Xcode项目中。
+* 中的已注册扩展 **[!UICONTROL AppDelegate]**.
+* 已配置MobileCore扩展以使用您的开发 `appId`.
 * 导入的SDK。
-* 通过上述更改已成功构建和运行应用程序。
+* 通过上述更改成功构建并运行应用程序。
 
 ## 学习目标
 
-在本课程中，您将执行以下操作：
+在本课程中，您将执行以下操作
 
 * 了解如何基于架构构建XDM数据。
 * 基于标准字段组发送XDM事件。
@@ -55,302 +51,332 @@ Adobe Experience Platform Edge扩展可以将遵循之前定义的XDM架构的�
 
 1. 验证.
 
-我们来看几个例子。
 
-### 示例#1 — 标准字段组
+### 标准字段组
 
-请查看以下示例，而无需尝试在示例应用程序中实施它：
+对于标准字段组，此过程如下所示：
 
-1. 在您的架构中，识别您尝试收集的事件，在本例中，我们跟踪的是产品查看。
-   ![产品视图架构](assets/mobile-datacollection-prodView-schema.png)
+* 在您的架构中，识别您尝试收集的事件。 在此示例中，您跟踪的是商业体验事件，例如产品视图(**[!UICONTROL 产品视图]**)事件。
 
-1. 开始构建对象：
+  ![产品视图架构](assets/datacollection-prodView-schema.png)
+
+* 要在应用程序中构建包含体验事件数据的对象，您可以使用以下代码：
+
+  ```swift
+  var xdmData: [String: Any] = [
+      "eventType": "commerce.productViews",
+      "commerce": [
+          "productViews": [
+            "value": 1
+          ]
+      ]
+  ]
+  ```
+
+   * `eventType`：描述发生的事件，使用 [已知值](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) 如果可能。
+   * `commerce.productViews.value`：事件的数值或布尔值。 如果它是一个布尔值(在Adobe Analytics中为“计数器”)，则该值始终设置为1。 如果是数值或货币事件，该值可以大于1。
+
+* 在您的架构中，标识与商业产品查看事件关联的任何其他数据。 在此示例中，包括 **[!UICONTROL productListItems]** 这是与任何商业相关事件一起使用的一组标准字段：
+
+  ![产品列表项架构](assets/datacollection-prodListItems-schema.png)
+   * 请注意 **[!UICONTROL productListItems]** 是一个数组，因此可以提供多个产品。
+
+* 要添加此数据，请展开 `xdmData` 要包含补充数据的对象：
+
+  ```swift
+  var xdmData: [String: Any] = [
+      "eventType": "commerce.productViews",
+          "commerce": [
+          "productViews": [
+              "value": 1
+          ]
+      ],
+      "productListItems": [
+          [
+              "name":  productName,
+              "SKU": sku,
+              "priceTotal": priceString,
+              "quantity": 1
+          ]
+      ]
+  ]
+  ```
+
+* 现在，您可以使用此数据结构创建 `ExperienceEvent`：
+
+  ```swift
+  let productViewEvent = ExperienceEvent(xdm: xdmData)
+  ```
+
+* 使用将事件和数据发送到Platform Edge Network `sendEvent` API：
+
+  ```swift
+  Edge.sendEvent(experienceEvent: productViewEvent)
+  ```
+
+此 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API是AEP Mobile SDK的等效项 [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) 和 [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API调用。 请参阅 [从Analytics移动扩展迁移到Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) 以了解更多信息。
+
+现在，您即将在您的Xcode项目中实际实施此代码。
+您的应用程序中有不同的商业产品相关操作，并且您要根据用户执行的以下操作发送事件：
+
+* 视图：在用户查看特定产品时发生，
+* 添加到购物车：用户点击时 <img src="assets/addtocart.png" width="20" /> 在产品详细信息屏幕中，
+* 暂存：用户点击时 <img src="assets/saveforlater.png" width="15" /> 在产品详细信息屏幕中，
+* 购买：用户点击时 <img src="assets/purchase.png" width="20" /> 在产品详细信息屏幕中。
+
+要以可重用方式实施与商业相关的体验事件的发送，请使用专用函数：
+
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中，将以下内容添加到 `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` 函数。
 
    ```swift
-   var xdmData: [String: Any] = [
-       "eventType": "commerce.productViews",
+   // Set up a data dictionary, create an experience event and send the event.
+   let xdmData: [String: Any] = [
+       "eventType": "commerce." + commerceEventType,
        "commerce": [
-           "productViews": [
-           "value": 1
-           ]
-       ]
-   ]
-   ```
-
-   * eventType：描述发生的事件，使用 [已知值](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) 如果可能。
-   * commerce.productViews.value：提供事件的数字值。 如果它是一个布尔值(在Adobe Analytics中为“计数器”)，则该值将始终为1。 如果是数值或货币事件，该值可以大于1。
-
-1. 在您的架构中，识别与事件关联的任何其他数据。 在此示例中，包括 `productListItems` 这是一组用于商业相关事件的标准字段：
-   ![产品列表项架构](assets/mobile-datacollection-prodListItems-schema.png)
-   * 请注意 `productListItems` 是一个数组，因此可以提供多个产品。
-
-1. 展开xdmData对象以包含补充数据：
-
-   ```swift
-   var xdmData: [String: Any] = [
-       "eventType": "commerce.productViews",
-           "commerce": [
-           "productViews": [
+           commerceEventType: [
                "value": 1
            ]
        ],
        "productListItems": [
            [
-               "name":  productName,
-               "SKU": sku,
-               "priceTotal": priceString,
-               "quantity": 1
+               "name": product.name,
+               "priceTotal": product.price,
+               "SKU": product.sku
            ]
        ]
    ]
+   
+   let commerceExperienceEvent = ExperienceEvent(xdm: xdmData)
+   Edge.sendEvent(experienceEvent: commerceExperienceEvent)
    ```
 
-1. 使用数据结构创建 `ExperienceEvent`：
+   此函数将商务体验事件类型和产品作为参数和
 
-   ```swift
-   let productViewEvent = ExperienceEvent(xdm: xdmData)
-   ```
+   * 将XDM有效负载设置为词典，使用函数中的参数，
+   * 使用词典设置体验事件，
+   * 使用发送体验事件 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API。
 
-1. 将事件和数据发送到Platform Edge Network：
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL 产品视图]** 在Xcode项目导航器中，将各种调用添加到 `sendCommerceExperienceEvent` 函数：
 
-   ```swift
-   Edge.sendEvent(experienceEvent: productViewEvent)
-   ```
+   1. 在 `.task` 修饰符，在 `ATTrackingManager.trackingAuthorizationStatus` 结束。 此 `.task` 在初始化和显示产品视图时，将调用修饰符，这样您就要在特定时刻发送产品视图事件。
 
-### 示例#2 — 自定义字段组
+      ```swift
+      // Send productViews commerce experience event
+      MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
+      ```
 
-请查看以下示例，而无需尝试在示例应用程序中实施它：
+   1. 对于每个按钮(<img src="assets/saveforlater.png" width="15" />， <img src="assets/addtocart.png" width="20" /> 和 <img src="assets/purchase.png" width="20" />)中，将相关的调用添加到 `ATTrackingManager.trackingAuthorizationStatus == .authorized` 关闭：
 
-1. 在您的架构中，识别您尝试收集的事件。 在此示例中，跟踪由应用程序操作事件和名称组成的“应用程序交互”。
-   ![应用程序交互模式](assets/mobile-datacollection-appInteraction-schema.png)
+      1. 对象 <img src="assets/saveforlater.png" width="15" />：
 
-1. 开始构建对象。
+         ```swift
+         // Send saveForLater commerce experience event
+         MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
+         ```
 
-   >[!NOTE]
-   >
-   >  标准字段组始终以对象根开头。
-   >
-   >  自定义字段组始终以Experience Cloud组织特有的对象“_techmarketingdemos”开头（在本例中）。
+      1. 对象 <img src="assets/addtocart.png" width="20" />：
 
-   ```swift
-   var xdmData: [String: Any] = [
-   "_techmarketingdemos": [
-       "appInformation": [
-           "appInteraction": [
-               "name": actionName,
-               "appAction": [
-                   "value": 1
-                   ]
-               ]
-           ]
-       ]
-   ]
-   ```
+         ```swift
+         // Send productListAdds commerce experience event
+         MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
+         ```
 
-   或者……
+      1. 对象 <img src="assets/purchase.png" width="20" />：
 
-   ```swift
-   var xdmData: [String: Any] = [:]
-   xdmData["_techmarketingdemos"] = [
-       "appInformation": [
-           "appInteraction": [
-               "name": actionName,
-               "appAction": [
-                   "value": 1
-               ]
-           ]
-       ]
-   ]
-   ```
-
-1. 使用数据结构创建 `ExperienceEvent`.
-
-   ```swift
-   let appInteractionEvent = ExperienceEvent(xdm: xdmData)
-   ```
-
-1. 将事件和数据发送到Platform Edge Network。
-
-   ```swift
-   Edge.sendEvent(experienceEvent: appInteractionEvent)
-   ```
-
-### 向Luma应用程序添加屏幕视图跟踪
-
-以上示例有望解释在构建XDM数据对象时的思维过程。 接下来，我们将在Luma应用程序中添加屏幕视图跟踪。
-
-1. 导航到 `Home.swift`。
-1. 将以下代码添加到 `viewDidAppear(...)`.
-
-   ```swift
-           let stateName = "luma: content: ios: us: en: home"
-           var xdmData: [String: Any] = [:]
-           //Page View
-           xdmData["_techmarketingdemos"] = [
-               "appInformation": [
-                   "appStateDetails": [
-                       "screenType": "App",
-                       "screenName": stateName,
-                       "screenView": [
-                           "value": 1
-                       ]
-                   ]
-               ]
-           ]
-           let experienceEvent = ExperienceEvent(xdm: xdmData)
-           Edge.sendEvent(experienceEvent: experienceEvent)
-   ```
-
-1. 对应用程序中的每个屏幕重复执行上述操作，正在更新 `stateName` 随你去。
-
-
-
-### 验证
-
-1. 查看 [设置说明](assurance.md) 并将模拟器或设备连接到Assurance。
-1. 执行该操作并查找 `hitReceived` 来自的事件 `com.adobe.edge.konductor` 供应商。
-1. 选择事件并在以下位置查看XDM数据： `messages` 对象。
-   ![数据收集验证](assets/mobile-datacollection-validation.png)
-
-### 示例#3 — 购买
-
-在此示例中，假设用户成功进行了以下购买：
-
-* 产品#1 — 瑜伽垫。
-   * 49.99美元x1
-   * SKU：5829
-* 产品#2 — 水瓶。
-   * 10.00美元x3
-   * SKU： 9841
-* 订单合计：79.99美元
-* 唯一订单Id：298234720
-* 付款类型：Visa信用卡
-* 唯一付款交易记录ID：847361
-
-#### 架构
-
-以下是要使用的相关架构字段：
-
-* eventType： &quot;commerce.purchases&quot;
-* commerce.purchases
-* commerce.order
-* productsListItems
-* _techmarketingdemos.appStateDetails（自定义）
+         ```swift
+         // Send purchase commerce experience event
+         MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
+         ```
 
 >[!TIP]
 >
->自定义字段组始终位于您的Experience Cloud组织标识符下。
->
->“_techmarketingdemos”被替换为您的组织的唯一值。
-
-![购买模式](assets/mobile-datacollection-purchase-schema.png)
+>如果您正在针对Android™进行开发，请使用Map (`java.util.Map`)作为构建XDM有效负载的基本接口。
 
 
-#### 代码
+### 自定义字段组
 
-下面是如何在应用程序中构建和发送XDM对象的。
+假设您想跟踪应用程序本身中的屏幕查看次数和交互次数。 请记住，您已为此类型事件定义了自定义字段组。
 
-```swift
-let stateName = "luma: content: ios: us: en: orderconfirmation"
-let currencyCode = "USD"
-let orderTotal = "79.99"
-let paymentType = "Visa Credit Card"
-let orderId = "298234720"
-let paymentTransactionId = "847361"
-var xdmData: [String: Any] = [
-  "eventType": "commerce.purchases",
-  "commerce": [
-    "purchases": [
-      "value": 1
-    ],
-    "order": [
-      "currencyCode": currencyCode,
-      "priceTotal": orderTotal,
-      "purchaseID": orderId,
-      "purchaseOrderNumber": orderId,
-      "payments": [ //Assuming only 1 payment type is used
-        [
-          "currencyCode": currencyCode,
-          "paymentAmount": orderTotal,
-          "paymentType": paymentType,
-          "transactionID": paymentTransactionId
+* 在您的架构中，识别您尝试收集的事件。
+  ![应用程序交互模式](assets/datacollection-appInteraction-schema.png)
+
+* 开始构建对象。
+
+  >[!NOTE]
+  >
+  * 标准字段组始终以对象根开头。
+  >
+  * 自定义字段组始终以Experience Cloud组织特有的对象开头， `_techmarketingdemos` 在此示例中。
+
+  对于应用程序交互事件，您可以构建如下对象：
+
+  ```swift
+  let xdmData: [String: Any] = [
+    "eventType": "application.interaction",
+    "_techmarketingdemos": [
+      "appInformation": [
+          "appInteraction": [
+              "name": "login",
+              "appAction": [
+                  "value": 1
+                  ]
+              ]
+          ]
+      ]
+  ]
+  ```
+
+  对于屏幕跟踪事件，您可以构建如下对象：
+
+  ```swift
+  var xdmData: [String: Any] = [
+    "eventType": "application.scene",
+    "_techmarketingdemos": [
+        "appInformation": [
+            "appStateDetails": [
+                "screenType": "App",
+                    "screenName": "luma: content: ios: us: en: login",
+                    "screenView": [
+                        "value": 1
+                    ]
+                ]
+            ] 
         ]
-      ]
-    ]
-  ],
-  "productListItems": [
-      [
-          "name":  "Yoga Mat",
-          "SKU": "5829",
-          "priceTotal": "49.99",
-          "quantity": 1
-      ],
-      [
-        "name":  "Water Bottle",
-        "SKU": "9841",
-        "priceTotal": "30.00",
-        "quantity": 3
-      ]
   ]
-]
+  ```
 
-//Custom field group
-xdmData["_techmarketingdemos"] = [
-  "appInformation": [
-    "appStateDetails": [
-      "screenType": "App",
-      "screenName": stateName,
-      "screenView": [
-        "value": 1
+
+* 现在，您可以使用此数据结构创建 `ExperienceEvent`.
+
+  ```swift
+  let event = ExperienceEvent(xdm: xdmData)
+  ```
+
+* 将事件和数据发送到Platform Edge Network。
+
+  ```swift
+  Edge.sendEvent(experienceEvent: event)
+  ```
+
+
+再次重申，让我们在您的Xcode项目中实际实施此代码。
+
+1. 为方便起见，您在中定义了两个函数 **[!UICONTROL MobileSDK]**. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中。
+
+   1. 一个用于应用程序交互。 将此代码添加到 `func sendAppInteractionEvent(actionName: String)` 函数：
+
+      ```swift
+      // Set up a data dictionary, create an experience event and send the event.
+      let xdmData: [String: Any] = [
+          "eventType": "application.interaction",
+          tenant : [
+              "appInformation": [
+                  "appInteraction": [
+                      "name": actionName,
+                      "appAction": [
+                          "value": 1
+                      ]
+                  ]
+              ]
+          ]
       ]
-    ]
-  ]
-]
-let experienceEvent = ExperienceEvent(xdm: xdmData)
-Edge.sendEvent(experienceEvent: experienceEvent)
-```
+      let appInteractionEvent = ExperienceEvent(xdm: xdmData)
+      Edge.sendEvent(experienceEvent: appInteractionEvent)
+      ```
 
->[!NOTE]
->
->为清楚起见，所有值都进行了硬编码。 在现实世界中，这些值会动态填充。
+      此函数使用操作名称作为参数，并且
+
+      * 将XDM有效负载设置为词典，使用函数中的参数，
+      * 使用词典设置体验事件，
+      * 使用发送体验事件 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API。
 
 
-### 在Luma应用程序中实施
+   1. 还有一个用于屏幕跟踪。 将此代码添加到 `func sendTrackScreenEvent(stateName: String) ` 函数：
 
-您应该拥有所有工具，以便开始将数据收集添加到Luma示例应用程序。 以下是您可以遵循的假设性跟踪要求列表。
+      ```swift
+      // Set up a data dictionary, create an experience event and send the event.
+      let xdmData: [String: Any] = [
+          "eventType": "application.scene",
+          tenant : [
+              "appInformation": [
+                  "appStateDetails": [
+                      "screenType": "App",
+                      "screenName": stateName,
+                      "screenView": [
+                          "value": 1
+                      ]
+                  ]
+              ]
+          ]
+      ]
+      let trackScreenEvent = ExperienceEvent(xdm: xdmData)
+      Edge.sendEvent(experienceEvent: trackScreenEvent)
+      ```
 
-* 跟踪每个屏幕视图。
-   * 架构字段： screenType、screenName、screenView
-* 跟踪非商业操作。
-   * 架构字段： appInteraction.name、appAction
-* 商务操作：
-   * 产品页面：产品查看次数
-   * 添加到购物车： productListAdds
-   * 从购物车中删除： productListRemovals
-   * 开始结帐：结帐
-   * 查看购物车： productListViews
-   * 添加到愿望清单： saveForLaters
-   * 采购：采购、订单
+      此函数使用状态名称作为参数并
+
+      * 将XDM有效负载设置为词典，使用函数中的参数，
+      * 使用词典设置体验事件，
+      * 使用发送体验事件 [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API。
+
+1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登录表]**.
+
+   1. 在“登录”按钮结尾处添加以下高亮显示的代码：
+
+      ```swift
+      // Send app interaction event
+      MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
+      ```
+
+   1. 将以下高亮显示的代码添加到 `onAppear` 修饰符：
+
+      ```swift
+      // Send track screen event
+      MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: login")
+      ```
+
+## 验证
+
+1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备与Assurance连接。
+
+   1. 将“Assurance（保证）”图标向左移动。
+   1. 选择 **[!UICONTROL 主页]** 选项卡栏中验证您是否看到了 **[!UICONTROL ECID]**， **[!UICONTROL 电子邮件]**、和 **[!UICONTROL CRM ID]** 在主屏幕中。
+   1. 选择 **[!DNL Products]** 在选项卡栏中。
+   1. 选择产品。
+   1. 选择 <img src="assets/saveforlater.png" width="15" />。
+   1. 选择 <img src="assets/addtocart.png" width="20" />。
+   1. 选择 <img src="assets/purchase.png" width="15" />。
+
+      <img src="./assets/mobile-app-events-3.png" width="300">
+
+
+1. 在Assurance UI中，查找 **[!UICONTROL hitReceived]** 来自的事件 **[!UICONTROL com.adobe.edge.konductor]** 供应商。
+1. 选择事件并在以下位置查看XDM数据： **[!UICONTROL 消息]** 对象。 或者，您可以使用 ![复制](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL 复制原始事件]** 并使用首选项的文本或代码编辑器粘贴和检查事件。
+
+   ![数据收集验证](assets/datacollection-validation.png)
+
+
+## 后续步骤
+
+您现在应该拥有所有工具，能够开始向应用程序添加数据收集。 您可以为用户在应用程序中与产品的交互方式添加更多智能，并为应用程序添加更多应用程序交互和屏幕跟踪调用：
+
+* 在应用程序中实施订单、结帐、空购物篮和其他功能，并将相关的商务体验事件添加到此功能。
+* 重复呼叫 `sendAppInteractionEvent` ，以便通过相应的参数跟踪用户进行的其他应用程序交互。
+* 重复呼叫 `sendTrackScreenEvent` ，以便在应用程序中跟踪用户查看的屏幕。
 
 >[!TIP]
 >
->查看 [完全实施的应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 以了解更多示例。
+查看 [已完成的应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) 以了解更多示例。
 
-### 验证
-
-1. 查看 [设置说明](assurance.md) 并将模拟器或设备连接到Assurance。
-
-1. 执行该操作并查找 `hitReceived` 来自的事件 `com.adobe.edge.konductor` 供应商。
-
-1. 选择事件并在以下位置查看XDM数据： `messages` 对象。
-   ![数据收集验证](assets/mobile-datacollection-validation.png)
 
 ## 将事件发送到Analytics和Platform
 
-现在您已收集事件并将它们发送到Platform Edge Network，将它们发送到中配置的应用程序和服务。 [数据流](create-datastream.md). 在后面的课程中，您会将此数据映射到 [Adobe Analytics](analytics.md) 和 [Adobe Experience Platform](platform.md).
+现在，您已收集事件并将它们发送到Platform Edge Network，将它们发送到在中配置的应用程序和服务。 [数据流](create-datastream.md). 在后续课程中，您可以将此数据映射到 [Adobe Analytics](analytics.md)， [Adobe Experience Platform](platform.md)和其他Adobe Experience Cloud解决方案，如 [Adobe Target](target.md) 和Adobe Journey Optimizer。
 
-下一步： **[WebViews](web-views.md)**
-
->[!NOTE]
+>[!SUCCESS]
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+现在，您已设置应用程序，以跟踪与Adobe Experience Platform Edge Network以及您在数据流中定义的所有服务的商务、应用程序交互和屏幕跟踪事件。
+>
+感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+
+下一步： **[处理Web视图](web-views.md)**

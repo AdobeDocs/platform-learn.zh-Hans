@@ -2,10 +2,10 @@
 title: 安装Adobe Experience Platform Mobile SDK
 description: 了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: bc53cb5926f708408a42aa98a1d364c5125cb36d
+source-git-commit: deea910040382142fe0b26893b9b20a949cb0974
 workflow-type: tm+mt
-source-wordcount: '590'
-ht-degree: 2%
+source-wordcount: '940'
+ht-degree: 1%
 
 ---
 
@@ -13,147 +13,133 @@ ht-degree: 2%
 
 了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。
 
->[!INFO]
->
-> 2023年11月下旬，本教程将替换为使用新示例移动应用程序的新教程
-
 ## 先决条件
 
-* 使用中所述的扩展成功构建了标记库 [上一课程](configure-tags.md).
+* 使用中所述的扩展成功构建标记库 [上一课程](configure-tags.md).
 * 来自的开发环境文件ID [移动设备安装说明](configure-tags.md#generate-sdk-install-instructions).
-* 已下载，为空 [示例应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
-* 体验 [XCode](https://developer.apple.com/xcode/){target="_blank"}.
-* 基本 [命令行](https://en.wikipedia.org/wiki/Command-line_interface){target="_blank"} 知识。
+* 已下载空的 [示例应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* 体验 [Xcode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## 学习目标
 
 在本课程中，您将执行以下操作：
 
-* 更新您的CocoaPod文件。
-* 导入所需的SDK。
+* 使用Swift包管理器将所需的SDK添加到您的项目中。
 * 注册扩展。
 
 >[!NOTE]
 >
 >在移动应用程序实施中，“扩展”和“SDK”这两个术语几乎可以互换。
 
+## Swift包管理器
 
-## 更新PodFile
+不要使用CocoaPods和Pod文件（如中所述） [生成SDK安装说明](./configure-tags.md#generate-sdk-install-instructions))，您可使用Xcode的本机Swift包管理器添加单个包。 Xcode项目已经为您添加了所有包依赖项。 Xcode **[!UICONTROL 程序包依赖项]** 屏幕应如下所示：
 
->[!NOTE]
->
-> 如果您不熟悉CocoaPods，请查阅 [快速入门指南](https://guides.cocoapods.org/using/getting-started.html).
+![Xcode包依赖项](assets/xcode-package-dependencies.png){zoomable=&quot;yes&quot;}
 
-安装通常是简单的sudo命令：
 
-```console
-sudo gem install cocoapods
-```
+在Xcode中，您可以使用 **[!UICONTROL 文件]** > **[!UICONTROL 添加包……]** 以添加包。 下表提供了用于添加包的URL的链接。 这些链接还将引导您了解有关每个特定包的更多信息。
 
-安装CocoaPods后，打开Podfile。
+| 包 | 描述 |
+|---|---|
+| [AEP核心](https://github.com/adobe/aepsdk-core-ios) | 此 `AEPCore`， `AEPServices`、和 `AEPIdentity` 扩展是Adobe Experience Platform SDK的基础 — 使用SDK的每个应用程序都必须包含这些扩展。 这些模块包含所有SDK扩展所需的一组通用功能和服务。<br/><ul><li>`AEPCore` 包含事件中心的实施。 事件中心是在应用程序和SDK之间交付事件的机制。 事件中心还用于在扩展之间共享数据。</li><li>`AEPServices` 提供平台支持所需的多种可重用的实现，包括网络、磁盘访问和数据库管理。</li><li>`AEPIdentity` 实施与Adobe Experience Platform Identity服务的集成。</li><li>`AEPSignal` 表示Adobe Experience Platform SDK Signal扩展，该扩展允许营销人员向其应用程序发送“信号”，以将数据发送到外部目标或打开URL。</li><li>`AEPLifecycle` 表示Adobe Experience Platform SDK生命周期扩展，该扩展可帮助收集应用程序生命周期量度，例如应用程序安装或升级信息、应用程序启动和会话信息、设备信息以及应用程序开发人员提供的任何其他上下文数据。</li></ul> |
+| [AEP Edge](https://github.com/adobe/aepsdk-edge-ios) | Adobe Experience Platform Edge Network移动扩展(`AEPEdge`)允许您从移动应用程序向Adobe Edge Network发送数据。 通过此扩展，您可以更稳健地实施Adobe Experience Cloud功能，通过一个网络调用提供多个Adobe解决方案，并同时将此信息转发到Adobe Experience Platform。<br/>Edge Network移动扩展是Adobe Experience Platform SDK的扩展，它需要 `AEPCore` 和 `AEPServices` 事件处理的扩展，以及 `AEPEdgeIdentity` 用于检索身份（如ECID）的扩展。 |
+| [AEP Edge标识](https://github.com/adobe/aepsdk-edgeidentity-ios) | AEP Edge Identity Mobile扩展(`AEPEdgeIdentity`)在使用Adobe Experience Platform SDK和Edge Network扩展时，支持处理来自移动应用程序的用户身份数据。 |
+| [AEP Edge同意](https://github.com/adobe/aepsdk-edgeconsent-ios) | AEP同意收集移动扩展(`AEPConsent`)在使用Adobe Experience Platform SDK和Edge Network扩展时，支持从移动应用程序收集同意首选项。 |
+| [AEP用户配置文件](https://github.com/adobe/aepsdk-userprofile-ios) | Adobe Experience Platform用户配置文件移动扩展(`AEPUserProfile`)是一个扩展，用于管理Adobe Experience Platform SDK的用户配置文件。 |
+| [AEP Places](https://github.com/adobe/aepsdk-places-ios) | AEP Places扩展(`AEPPlaces`)允许您跟踪Adobe位置界面和Adobe数据收集标记规则中定义的地理位置事件。 |
+| [AEP消息](https://github.com/adobe/aepsdk-messaging-ios) | AEP消息传送扩展(`AEPMessaging`)允许您将推送通知令牌和推送通知点进反馈发送到Adobe Experience Platform。 |
+| [AEP优化](https://github.com/adobe/aepsdk-optimize-ios) | AEP优化扩展(`AEPOptimize`)提供一些API，以便使用Adobe Target或Adobe Journey OptimizerOffer decisioning在Adobe Experience Platform Mobile SDK中启用实时个性化工作流。 它需要 `AEPCore` 和 `AEPEdge` 用于将个性化查询事件发送到Experience Edge网络的扩展。 |
+| [AEP保证](https://github.com/adobe/aepsdk-assurance-ios) | Assurance（又称Griffon项目）是一种新颖的扩展(`AEPAssurance`)，以帮助您检查、验证、模拟和验证在移动设备应用程序中收集数据或提供体验的方式。 此扩展可为您的应用程序启用保证。 |
 
-![初始podfile](assets/mobile-install-initial-podfile.png)
-
-更新文件以包含以下pod：
-
-```swift
-pod 'AEPCore', '~> 3'
-pod 'AEPEdge', '~> 1'
-pod 'AEPUserProfile', '~> 3'
-pod 'AEPAssurance', '~> 3'
-pod 'AEPServices', '~> 3'
-pod 'AEPEdgeConsent', '~> 1'
-pod 'AEPLifecycle', '~>3'
-pod 'AEPMessaging', '~>1'
-pod 'AEPEdgeIdentity', '~>1'
-pod 'AEPSignal', '~>3'
-```
-
->[!NOTE]
->
-> `AEPMessaging` 仅当您计划使用Adobe Journey Optimizer实施推送消息时，才需要使用。 请阅读以下教程： [使用Adobe Journey Optimizer实施推送消息](journey-optimizer-push.md) 以了解更多信息。
-
-保存对Podfile所做的更改后，导航到包含您的项目的文件夹，然后运行 `pod install` 命令以安装更改。
-
-![pod install](assets/mobile-install-podfile-install.png)
-
->[!NOTE]
->
-> 如果您收到“在项目目录中找不到Podfile”。 错误，您的终端位于错误的文件夹中。 导航到包含您更新的Podfile的文件夹，然后重试。
-
-如果要升级到最新版本，请运行 `pod update` 命令。
-
->[!INFO]
->
->如果您无法在自己的应用程序中使用CocoaPods，则可以了解其他应用程序 [支持的实施](https://github.com/adobe/aepsdk-core-ios#binaries) 在GitHub项目中。
-
-## 构建CocoaPods
-
-要构建CocoaPods，请打开 `Luma.xcworkspace`，并选择 **产品**，后接 **清理生成文件夹**.
-
->[!NOTE]
->
-> 您可能需要设置 **仅构建活动架构** 到 **否**. 要执行此操作，请从项目导航器中选择Pods项目，然后选择 **内部版本设置**，并设置 **构建活动架构** 到 **否**.
-
-您现在可以构建和运行项目。
-
-![内部版本设置](assets/mobile-install-build-settings.png)
-
->[!NOTE]
->
->Luma项目是在M1芯片组上使用Xcode v12.5构建的，并在iOS模拟器中运行。 如果您使用的是其他设置，则可能需要更改生成设置以反映您的架构。
->
->如果生成失败，请尝试还原 **构建活动架构** > **调试** 设置回 **是**.
->
->创作本教程时使用模拟器配置“iPod touch（第7代）”。
 
 ## 导入扩展
 
-在每个 `.swift` 文件，添加以下导入。 首先，将添加到 `AppDelegate.swift`.
+在Xcode中，导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** 并确保以下导入是此源文件的一部分。
 
 ```swift
-import AEPUserProfile
-import AEPAssurance
-import AEPEdge
+// import AEP MobileSDK libraries
 import AEPCore
+import AEPServices
+import AEPIdentity
+import AEPSignal
+import AEPLifecycle
+import AEPEdge
 import AEPEdgeIdentity
 import AEPEdgeConsent
-import AEPLifecycle
-import AEPMessaging //Optional, used for AJO push messaging
-import AEPSignal
-import AEPServices
+import AEPUserProfile
+import AEPPlaces
+import AEPMessaging
+import AEPOptimize
+import AEPAssurance
 ```
+
+对执行相同操作 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**.
 
 ## 更新AppDelegate
 
-在 `AppDelegate.swift` 文件，添加以下代码到 `didFinishLaunchingWithOptions`. 将currentAppId替换为您从中的标记检索到的开发环境文件ID值 [上一课程](configure-tags.md).
+导航到 **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** 在Xcode项目导航器中。
 
-```swift
-let currentAppId = "b5cbd1a1220e/bae66382cce8/launch-88492c6dcb6e-development"
+1. 替换 `@AppStorage` 值 `YOUR_ENVIRONMENT_ID_GOES_HERE` 对象 `environmentFileId` 到从中的标记检索到的开发环境文件ID值 [生成SDK安装说明](configure-tags.md#generate-sdk-install-instructions).
 
-let extensions = [Edge.self, Assurance.self, Lifecycle.self, UserProfile.self, Consent.self, AEPEdgeIdentity.Identity.self, Messaging.self]
+   ```swift
+   @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
+   ```
 
-MobileCore.setLogLevel(.trace)
+1. 将以下代码添加到 `application(_, didFinishLaunchingWithOptions)` 函数。
 
-MobileCore.registerExtensions(extensions, {
-    MobileCore.configureWith(appId: currentAppId)
-})
-```
-
-`Messaging.self` 仅当您计划通过Adobe Journey Optimizer实施推送消息时，才需要使用此字段，如所述 [此处](journey-optimizer-push.md).
+   ```swift
+   // Define extensions
+   let extensions = [
+       AEPIdentity.Identity.self,
+       Lifecycle.self,
+       Signal.self,
+       Edge.self,
+       AEPEdgeIdentity.Identity.self,
+       Consent.self,
+       UserProfile.self,
+       Places.self,
+       Messaging.self,
+       Optimize.self,
+       Assurance.self
+   ]
+   
+   // Register extensions
+   MobileCore.registerExtensions(extensions, {
+       // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
+       Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
+       MobileCore.configureWith(appId: self.environmentFileId)
+   
+       // set this to false or comment it when deploying to TestFlight (default is false),
+       // set this to true when testing on your device.
+       MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])
+       if appState != .background {
+           // only start lifecycle if the application is not in the background
+           MobileCore.lifecycleStart(additionalContextData: nil)
+       }
+   
+       // assume unknown, adapt to your needs.
+       MobileCore.setPrivacyStatus(.unknown)
+   })
+   ```
 
 上述代码执行以下操作：
 
-* 注册所需的扩展。
-* 配置MobileCore和其他扩展以使用标记属性配置。
-* 启用调试日志记录。 欲知更多详情和选项，请参见 [移动SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+1. 注册所需的扩展。
+1. 配置MobileCore和其他扩展以使用标记属性配置。
+1. 启用调试日志记录。 欲知更多详情和选项，请参见 [Adobe Experience Platform移动SDK文档](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+1. 启动生命周期监控。 请参阅 [生命周期](lifecycle-data.md) 有关更多详细信息，请参阅教程中的步骤。
+1. 将默认同意设置为“未知”。 请参阅 [同意](consent.md) 有关更多详细信息，请参阅教程中的步骤。
 
 >[!IMPORTANT]
->在生产应用程序中，您必须根据当前环境(dev/stag/prod)切换AppId。
+>
+>确保更新 `MobileCore.configureWith(appId: self.environmentFileId)` 使用 `appId` 基于 `environmentFileId` 从您为（开发、暂存或生产）构建的标记环境中。
 >
 
-下一步： **[设置保证](assurance.md)**
-
->[!NOTE]
+>[!SUCCESS]
+>
+>您现在已安装必要的包并更新了项目，以正确注册您将在本教程的其余部分使用的所需Adobe Experience Platform Mobile SDK扩展。
 >
 >感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+下一步： **[设置保证](assurance.md)**
