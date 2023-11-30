@@ -2,7 +2,7 @@
 title: 通过Platform Mobile SDK使用Places
 description: 了解如何在移动应用程序中使用Places地理位置服务。
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
 workflow-type: tm+mt
 source-wordcount: '1696'
 ht-degree: 3%
@@ -182,7 +182,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
 1. 在 **[!UICONTROL 创建规则]** 屏幕中，输入规则的名称，例如 `POI - Exit`.
 1. 选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 下 **[!UICONTROL 活动]**.
-   1. 选择 **[!UICONTROL 地标]** 从 **[!UICONTROL 扩展名]** 列出并选择 **[!UICONTROL 输入POI]** 从 **[!UICONTROL 事件类型]** 列表。
+   1. 选择 **[!UICONTROL 地标]** 从 **[!UICONTROL 扩展名]** 列出并选择 **[!UICONTROL 退出POI]** 从 **[!UICONTROL 事件类型]** 列表。
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
 1. 选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 下 **[!UICONTROL 操作]**.
    1. 选择 **[!UICONTROL 移动核心]** 从 **[!UICONTROL 扩展名]** 列表，选择 **[!UICONTROL 附加数据]** 从 **[!UICONTROL 操作类型]** 列表。
