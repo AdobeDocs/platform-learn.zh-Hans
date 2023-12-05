@@ -2,11 +2,12 @@
 title: 将使用Platform Mobile SDK收集的数据映射到Adobe Analytics
 description: 了解如何在移动应用程序中收集和映射Adobe Analytics的数据。
 solution: Data Collection,Experience Platform,Analytics
+jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 1025e7a7f0e8f994ecc05ddb5362a66c8d89a978
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 3%
+source-wordcount: '878'
+ht-degree: 1%
 
 ---
 
@@ -57,7 +58,7 @@ ht-degree: 3%
 
 ### 示例#1 - s.products
 
-一个很好的示例是 [products变量](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=zh-Hans) 无法使用处理规则填充的部分。 对于XDM实施，您会将所有必需的数据传入 `productListItems` 和 `s.products` 通过Analytics映射自动填充。
+一个很好的示例是 [products变量](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) 无法使用处理规则填充的部分。 对于XDM实施，您会将所有必需的数据传入 `productListItems` 和 `s.products` 通过Analytics映射自动填充。
 
 此对象：
 
@@ -86,7 +87,7 @@ s.products = ";5829,1,49.99;9841,3,30.00"
 
 >[!NOTE]
 >
->如果 `productListItems[].SKU` 和 `productListItems[].name` 都包含数据，则使用 `productListItems[].SKU` 中的值。请参阅 [Analytics Experience Edge中的Adobe变量映射](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) 以了解更多信息。
+>如果 `productListItems[].SKU` 和 `productListItems[].name` 两者都包含数据，值位于 `productListItems[].SKU` 已使用。 请参阅 [Analytics Experience Edge中的Adobe变量映射](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) 以了解更多信息。
 
 
 ### 示例#2 - scAdd

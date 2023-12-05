@@ -1,10 +1,11 @@
 ---
 title: 使用Platform Mobile SDK跟踪移动应用程序中的事件数据
 description: 了解如何跟踪移动应用程序中的事件数据。
+jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1328'
 ht-degree: 0%
 
 ---
@@ -49,7 +50,7 @@ Adobe Experience Platform Edge扩展可以将遵循之前定义的XDM架构的�
 
 1. 创建并发送事件。
 
-1. 验证.
+1. 验证。
 
 
 ### 标准字段组

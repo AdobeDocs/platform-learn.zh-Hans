@@ -4,11 +4,12 @@ description: 了解如何使用Platform Mobile SDK和Adobe Journey Optimizer创�
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
+jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 2%
+source-wordcount: '2556'
+ht-degree: 1%
 
 ---
 
@@ -31,9 +32,9 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 * 为Adobe Experience Platform设置应用程序。
 * 对Journey Optimizer的访问权限和足够的权限，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). 此外，您需要具有足够的权限才能使用以下Journey Optimizer功能。
    * 创建应用程序表面。
-   * 创建历程.
-   * 创建消息.
-   * 创建消息预设.
+   * 创建旅程。
+   * 创建消息。
+   * 创建消息预设。
 * **付费Apple开发人员帐户** 具有创建证书、标识符和密钥的足够访问权限。
 * 用于测试的物理iOS设备或模拟器。
 
@@ -70,7 +71,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 
 1. 提供 **[!UICONTROL 密钥名称]**.
 1. 选择 **[!UICONTROL Apple推送通知服务] (APNs)** 复选框。
-1. 选择 **[!UICONTROL 继续]**.
+1. 选择&#x200B;**[!UICONTROL 继续]**。
    ![配置新密钥](assets/mobile-push-apple-dev-config-key.png)
 1. 查看配置并选择 **[!UICONTROL 注册]**.
 1. 下载 `.p8` 私钥。 在本课程的后面部分，它将在“应用程序表面”配置中使用。
@@ -87,7 +88,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
    ![应用程序表面主页](assets/push-app-surface.png)
 1. 输入 **[!UICONTROL 名称]** 例如，对于配置 `Luma App Tutorial`  .
 1. 从 **[!UICONTROL 移动应用程序配置]**，选择 **[!UICONTROL Apple iOS]**.
-1. 在中输入移动应用程序捆绑包ID **[!UICONTROL 应用程序ID(iOS捆绑包ID)]** 字段。 例如：`com.adobe.luma.tutorial.swiftui`。
+1. 在中输入移动应用程序捆绑包ID **[!UICONTROL 应用程序ID(iOS捆绑包ID)]** 字段。 例如，  `com.adobe.luma.tutorial.swiftui`.
 1. 打开 **[!UICONTROL 推送凭据]** 切换以添加您的凭据。
 1. 拖放 `.p8` **Apple推送通知身份验证密钥** 文件。
 1. 提供 **[!UICONTROL 密钥ID]**，在创建期间分配的10个字符的字符串 `p8` 身份验证密钥。 它可以在以下位置找到 **[!UICONTROL 键]** 选项卡 **证书、标识符和配置文件** Apple开发人员门户页面的页面。 另请参阅 [创建私钥](#create-a-private-key).

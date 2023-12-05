@@ -4,10 +4,11 @@ description: 了解如何使用Platform Mobile SDK和Adobe Journey Optimizer Dec
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
+jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '2676'
+source-wordcount: '2470'
 ht-degree: 2%
 
 ---
@@ -251,7 +252,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
    1. 选择 **[!UICONTROL 移动设备JSON]** 从 **[!UICONTROL 投放]** 列表。
    1. 在 **[!UICONTROL 评估标准]** 图块，选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加]**.
       1. 在 **[!UICONTROL 添加优惠收藏集]** 对话框中，选择您的选件收藏集。 例如：**[!DNL Luma - Mobile App Collection]**。
-      1. 选择 **[!UICONTROL 添加]**.
+      1. 选择&#x200B;**[!UICONTROL 添加]**。
          ![决策 — 选择收藏集](assets/ajo-decision-selectcollection.png)
    1. 确保 **[!UICONTROL 无]** 已选定用于 **[!UICONTROL 资格]**、和 **[!UICONTROL 优惠优先级]** 已选为 **[!UICONTROL 排名方法]**.
    1. 选择&#x200B;**[!UICONTROL 下一步]**。

@@ -2,11 +2,12 @@
 title: 为Platform Mobile SDK实施创建XDM架构
 description: 了解如何为移动应用程序事件创建XDM架构。
 feature: Mobile SDK,Schemas
+jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 8%
+source-wordcount: '1414'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 8%
 
 XDM是一个公开记录的规范，旨在提高数字体验的强大功能。 它提供了通用结构和定义，允许任何应用程序与Platform服务进行通信。 通过遵守XDM标准，所有客户体验数据都可以纳入到通用表示中，从而以更快、更集成的方式提供见解。 您可以从客户操作中获得有价值的见解，通过区段定义客户受众，并将客户属性用于个性化目的。
 
-Experience Platform 会使用架构，以便以可重用的一致方式描述数据结构。通过在整个系统中以一致的方式定义数据，更容易保留含义并因此从数据中获取价值。
+Experience Platform 会使用架构，以便以可重用的一致方式描述数据结构。通过在系统中以一致的方式定义数据，更容易保留含义并因此从数据中获取价值。
 
 在将数据引入Platform之前，必须组合模式以描述数据的结构并对每个字段中可以包含的数据类型提供约束。 架构由一个基类以及零个或多个架构字段组组成。
 
@@ -106,7 +107,7 @@ Experience Platform 会使用架构，以便以可重用的一致方式描述数
 
    >[!NOTE]
    >
-   >如果您正在学习本教程，将多个人员放在一个沙盒中，或者您使用的是共享帐户，请考虑在命名约定中附加或附加标识作为命名约定的一部分。 例如，使用 `Luma Mobile App Event Schema - Joe Smith`，而不是 `Luma Mobile App Event Schema`。另请参阅中的注释 [概述](overview.md).
+   >如果您正在学习本教程，将多个人员放在一个沙盒中，或者您使用的是共享帐户，请考虑在命名约定中附加或附加标识作为命名约定的一部分。 例如，而不是 `Luma Mobile App Event Schema`，使用 `Luma Mobile App Event Schema - Joe Smith`. 另请参阅中的注释 [概述](overview.md).
 
 1. 选择 **[!UICONTROL 完成]** 完成向导。
 

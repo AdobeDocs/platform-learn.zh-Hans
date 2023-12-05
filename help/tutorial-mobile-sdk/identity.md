@@ -2,11 +2,12 @@
 title: 使用Mobile SDK在移动应用程序中收集身份数据
 description: 了解如何在移动应用程序中收集身份数据。
 feature: Mobile SDK,Identities
+jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '863'
-ht-degree: 4%
+source-wordcount: '815'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +35,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 ## 设置自定义身份命名空间
 
-身份命名空间是的组件 [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans) 作为与身份相关的上下文指示器。 例如，它们会将`name@email.com`的值区别于电子邮件地址或将`443522`区别于数字 CRM ID。
+身份命名空间是的组件 [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans) 作为与身份相关的上下文指示器。 例如，它们区分值 `name@email.com` 作为电子邮件地址或 `443522` 作为数字CRM ID。
 
 >[!NOTE]
 >

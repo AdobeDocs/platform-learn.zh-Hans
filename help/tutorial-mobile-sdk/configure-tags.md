@@ -2,11 +2,12 @@
 title: 为Platform Mobile SDK实施配置标记属性
 description: 了解如何在中配置标记属性 [!UICONTROL 数据收集] 界面。
 feature: Mobile SDK,Tags
+jira: KT-14626
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1095'
-ht-degree: 7%
+source-wordcount: '1005'
+ht-degree: 3%
 
 ---
 
@@ -39,7 +40,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
       ![创建标记属性](assets/tags-new-property.png).
    1. 对于 **[!UICONTROL 名称]**，输入 `Luma Mobile App Tutorial`.
    1. 对于 **[!UICONTROL 平台]**，选择 **[!UICONTROL 移动设备]**.
-   1. 选择&#x200B;**[!UICONTROL 保存]**。
+   1. 选择  **[!UICONTROL 保存]**.
 
       ![配置标记属性](assets/tags-property-config.png)
 
@@ -49,7 +50,7 @@ Adobe Experience Platform 中的标记是 Adobe 推出的新一代标记管理�
 
 
 1. 打开新资产。
-1. 创建库:
+1. 创建库：
 
    1. 转到 **[!UICONTROL 发布流]** 在左侧导航中。
    1. 选择 **[!UICONTROL 添加库]**.

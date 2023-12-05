@@ -1,10 +1,11 @@
 ---
 title: 通过Platform Mobile SDK使用Places
 description: 了解如何在移动应用程序中使用Places地理位置服务。
+jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 87477cce0f0c5c0bb140927bed22dbc6e11f2af9
+source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
 workflow-type: tm+mt
-source-wordcount: '1696'
+source-wordcount: '1588'
 ht-degree: 3%
 
 ---
@@ -60,7 +61,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 下载 [Luma POI ZIP文件](assets/luma_pois.csv.zip) 然后将其提取到您计算机上的某个位置。
 1. 在 **[!UICONTROL 导入位置]** 对话框，拖放提取的 `luma_pois.csv` 文件到 **[!UICONTROL 选择CSV文件 — 拖放文件]**. 您应该看到 **[!UICONTROL 验证成功]** - **[!UICONTROL 已成功验证CSV文件]**.
 1. 选择 **[!UICONTROL 开始导入]**. 您应该看到 **[!UICONTROL 成功]** - **[!UICONTROL 已成功添加6个新POI]**.
-1. 选择 **[!UICONTROL 完成]**.
+1. 选择&#x200B;**[!UICONTROL 完成]**。
 1. 在 **[!UICONTROL POI管理]**，您应该会看到六个新的Luma商店已添加到列表中。 您可以在以下内容之间切换： ![列表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) 列表和 ![地图](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MapView_18_N.svg) 映射视图。
    ![地标列表](assets/places-list.png).
 

@@ -4,11 +4,12 @@ description: 了解如何在移动应用程序中通过Platform Mobile SDK和Ado
 solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
+jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1918'
-ht-degree: 3%
+source-wordcount: '1745'
+ht-degree: 2%
 
 ---
 
@@ -162,14 +163,14 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 1. 在 **[!DNL Targeting]** 步骤，查看A/B测试的设置。 默认情况下，这两个选件会平均分配到所有访客。 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以继续。
 
-   ![设定目标](assets/taget-targeting.png)
+   ![定位](assets/taget-targeting.png)
 
 1. 在 **[!UICONTROL 目标和设置]** 步骤：
 
    1. 将无标题活动重命名，例如 `Luma Mobile SDK Tutorial - A/B Test Example`.
    1. 输入 **[!UICONTROL 目标]** 例如，用于您的A/B测试 `A/B Test for Luma mobile app tutorial`.
    1. 选择 **[!UICONTROL 转化]**， **[!UICONTROL 已查看mbox]** 在 **[!UICONTROL 目标量度]** > **[!UICONTROL 我的主要目标]** 并输入您的位置(mbox)名称，例如 `luma-mobileapp-abtest`.
-   1. 选择 **[!UICONTROL 保存并关闭]**.
+   1. 选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
       ![目标设置](assets/target-goals.png)
 

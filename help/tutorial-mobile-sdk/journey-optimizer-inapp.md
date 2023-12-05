@@ -4,11 +4,12 @@ description: 了解如何使用Platform Mobile SDK和Adobe Journey Optimizer创�
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
+jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 5%
+source-wordcount: '1434'
+ht-degree: 1%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 5%
 
 了解如何使用Experience PlatformMobile SDK和Journey Optimizer为移动应用程序创建应用程序内消息。
 
-Journey Optimizer允许您创建营销活动，以将应用程序内消息发送给目标受众。 Journey Optimizer中的营销活动用于通过各种渠道向特定受众投放一次性内容。 借助营销活动，可同时执行诸多操作：立即执行或根据指定计划执行。使用历程时(请参阅 [Journey Optimizer推送通知](journey-optimizer-push.md) 课程)，操作将按顺序执行。
+Journey Optimizer允许您创建营销活动，以将应用程序内消息发送给目标受众。 Journey Optimizer中的营销活动用于通过各种渠道向特定受众投放一次性内容。 借助营销策划，可同时执行各种操作，可以立即执行，也可以根据指定的计划执行。 使用历程时(请参阅 [Journey Optimizer推送通知](journey-optimizer-push.md) 课程)，操作将按顺序执行。
 
 ![架构](assets/architecture-ajo.png)
 
@@ -32,7 +33,7 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 * 在安装和配置SDK的情况下成功构建和运行应用程序。
 * 为Adobe Experience Platform设置应用程序。
 * 对Journey Optimizer的访问权限和足够的权限，如所述 [此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). 此外，您需要具有足够的权限才能使用以下Journey Optimizer功能。
-   * 管理活动.
+   * 管理营销活动。
 * 用于测试的物理iOS设备或模拟器。
 
 
@@ -61,7 +62,7 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
    ![应用程序表面主页](assets/push-app-surface.png)
 1. 输入 **[!UICONTROL 名称]** 例如，对于配置 `Luma App Tutorial`  .
 1. 从 **[!UICONTROL 移动应用程序配置]**，选择 **[!UICONTROL Apple iOS]**.
-1. 在中输入移动应用程序捆绑包ID **[!UICONTROL 应用程序ID(iOS捆绑包ID)]** 字段。 例如：`com.adobe.luma.tutorial.swiftui`。
+1. 在中输入移动应用程序捆绑包ID **[!UICONTROL 应用程序ID(iOS捆绑包ID)]** 字段。 例如，  `com.adobe.luma.tutorial.swiftui`.
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
    ![应用程序表面配置](assets/push-app-surface-config-inapp.png)

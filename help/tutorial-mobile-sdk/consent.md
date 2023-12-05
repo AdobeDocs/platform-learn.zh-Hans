@@ -2,11 +2,12 @@
 title: 为Platform Mobile SDK实施实施同意
 description: 了解如何在移动应用程序中实施同意。
 feature: Mobile SDK,Consent
+jira: KT-14629
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
-source-git-commit: d353de71d8ad26d2f4d9bdb4582a62d0047fd6b1
+source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
 workflow-type: tm+mt
-source-wordcount: '544'
-ht-degree: 1%
+source-wordcount: '529'
+ht-degree: 0%
 
 ---
 
