@@ -5,17 +5,17 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 650ae527c640ec62b21e4e0e9b66a6efc1c580a1
+source-git-commit: cb97521c7906bcb16c7352f6c2447e07abb828c7
 workflow-type: tm+mt
-source-wordcount: '1000'
-ht-degree: 35%
+source-wordcount: '847'
+ht-degree: 16%
 
 ---
 
 
 # Adobe Experience Platform 教程 {#tutorials}
 
-+ [Platform 教程](/help/platform/overview.md)
++ [平台Tutorials](/help/platform/overview.md)
 + Platform简介 {#intro-to-platform}
    + [由Experience Platform提供支持的客户体验](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [幕后：由Experience Platform提供支持的客户体验](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
@@ -35,14 +35,14 @@ ht-degree: 35%
    + [使用Marketo Engage编排活动](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [快速入门：数据架构师和数据工程师](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [对Experience PlatformAPI进行身份验证](/help/platform/authentication/platform-api-authentication.md)
-+ [将示例数据导入到 Experience Platform](/help/platform/data-generator/import-sample-data.md)
++ [将示例数据导入Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [使用警报](/help/platform/admin/use-alerts.md)
    + [使用沙盒](/help/platform/admin/use-sandboxes.md)
    + [在沙盒之间复制对象](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [添加用户](/help/platform/admin/add-users.md)
+   + [添加产品管理员](/help/platform/admin/add-product-administrators.md)
    + [配置基于属性的访问控制](/help/platform/admin/configure-attribute-based-access-control.md)
-   + [Admin Console](/help/platform/admin/admin-console.md)
-   + [管理产品配置文件](/help/platform/admin/managing-product-profiles.md)
 + 受众和分段 {#audiences}
    + [受众门户和构成简介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上传受众](audiences/upload-audiences.md)
@@ -61,13 +61,13 @@ ht-degree: 35%
    + [区段匹配连接设置](/help/platform/segments/segment-match-connection-setup.md)
    + [区段匹配数据管理](/help/platform/segments/segment-match-data-governance.md)
    + [区段匹配配置流程](/help/platform/segments/segment-match-configuration-flow.md)
-   + [区段匹配预共享 Insights](/help/platform/segments/segment-match-pre-share-insights.md)
+   + [区段匹配预共享见解](/help/platform/segments/segment-match-pre-share-insights.md)
    + [区段匹配接收数据](/help/platform/segments/segment-match-receiving-data.md)
 + [审核日志](/help/platform/governance/audit-logs.md)
 + [数据收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + 仪表板 {#dashboards}
    + [创建功能板](/help/platform/dashboards/create-a-dashboard.md)
-+ 数据治理 {#data-governance}
++ 数据管理 {#data-governance}
    + [概述](/help/platform/governance/understanding-data-governance.md)
    + [端到端演示](/help/platform/governance/introduction-to-data-governance.md)
    + [使用标签对数据进行分类](/help/platform/governance/classify-data-using-labels.md)
@@ -75,7 +75,7 @@ ht-degree: 35%
    + [强制执行数据使用策略](/help/platform/governance/enforce-data-usage-policies.md)
    + [强制同意](/help/platform/governance/enforce-consent.md)
    + [与IAB透明度和同意框架2.0集成](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
-+ 数据安全机制 {#data-hygiene}
++ 数据保健 {#data-hygiene}
    + [删除数据集](/help/platform/data-hygiene/delete-datasets.md)
 + 数据引入 {#data-ingestion}
    + [概述](/help/platform/data-ingestion/understanding-data-ingestion.md)
@@ -97,7 +97,7 @@ ht-degree: 35%
    + [概述](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [架构](data-science-workspace/architecture-overview.md)
    + [创建课程模式和数据集](data-science-workspace/create-the-course-schema-and-dataset.md)
-   + [在 JupyterLab 笔记本中加载数据](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
+   + [在JupyterLab笔记本中加载数据](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
    + [在JupyterLab笔记本中查询和发现数据](data-science-workspace/dsw-query-service.md)
    + [探索性数据分析](data-science-workspace/eda.md)
    + [配方、模型和服务概述](data-science-workspace/recipes-models-services-overview.md)
@@ -111,9 +111,9 @@ ht-degree: 35%
    + [导入打包的方法(API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + 目标 {#destinations}
    + [目标概述](/help/platform/destinations/understanding-destinations.md)
-   + [连接目标](/help/platform/destinations/connecting-to-destinations.md)
+   + [连接到目标](/help/platform/destinations/connecting-to-destinations.md)
    + [创建目标和激活数据](/help/platform/destinations/create-destinations-and-activate-data.md)
-   + [将个人资料和区段激活到目标](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [将配置文件和区段激活到目标](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
    + [配置数据集导出目标](/help/platform/destinations/configure-dataset-export-destination.md)
    + [与Google Customer Match集成](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [配置Azure Blob目标](/help/platform/destinations/configure-the-azure-blob-destination.md)
@@ -142,8 +142,8 @@ ht-degree: 35%
    + [客户人工智能价值](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [配置客户人工智能](/help/platform/intelligent-services/configure-customer-ai.md)
    + [使用客户人工智能评分和分析](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ 监控 {#monitoring}
-   + [监测数据提取](/help/platform/monitoring/monitoring-dashboard.md)
++ 监测{#monitoring}
+   + [监测数据摄取](/help/platform/monitoring/monitoring-dashboard.md)
    + [监测区段激活](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [监测数据流](/help/platform/monitoring/data-monitoring.md)
 + 合作伙伴数据支持 {#partner-data-support}
@@ -159,18 +159,19 @@ ht-degree: 35%
    + [查看帐户配置文件](/help/platform/profiles/view-account-profiles.md)
    + [创建合并策略](/help/platform/profiles/create-merge-policies.md)
    + [合并模式概述](/help/platform/profiles/union-schemas-overview.md)
+   + [创建计算属性](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
    + [使用upsert更新特定属性](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + 隐私和安全性 {#privacy}
-   + [Privacy Service 简介](/help/platform/privacy/introduction-to-privacy-services.md)
+   + [Privacy Service简介](/help/platform/privacy/introduction-to-privacy-services.md)
    + [隐私请求中的身份数据](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [隐私JavaScript库](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analytics中的隐私标签](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
    + [Privacy ServiceAPI快速入门](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [Privacy Service UI](/help/platform/privacy/using-privacy-services-ui.md)
-   + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [PRIVACY SERVICEUI](/help/platform/privacy/using-privacy-services-ui.md)
+   + [PRIVACY SERVICEAPI](/help/platform/privacy/using-the-privacy-service-api.md)
    + [订阅隐私活动](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [设置客户管理的密钥](/help/platform/privacy/set-up-customer-managed-keys.md)
-   + [负责任的客户数据管理的 10 个注意事项](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
+   + [负责任的客户数据管理的10个注意事项](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [提升营销人员作为数据管理者的角色](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
 + 查询 {#queries}
    + [概述](/help/platform/queries/understanding-query-service.md)
@@ -182,7 +183,7 @@ ht-degree: 35%
    + [数据使用模式](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [运行查询](/help/platform/queries/run-queries.md)
    + [从查询结果生成数据集](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
-   + [Tableau](/help/platform/queries/psql-client-tableau.md)
+   + [表格](/help/platform/queries/psql-client-tableau.md)
    + [分析和可视化数据](/help/platform/queries/analyze-and-visualize.md)
    + [使用BI工具构建仪表板](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [为您的客户数据充电](/help/platform/queries/recharge-your-customer-data.md)
@@ -191,7 +192,7 @@ ht-degree: 35%
 + 架构 {#schemas}
    + [概述](/help/platform/schemas/schemas-and-experience-data-model.md)
    + [构建基块](/help/platform/schemas/schema-building-blocks.md)
-   + [计划您的数据模型](/help/platform/schemas/plan-your-data-model.md)
+   + [规划您的数据模型](/help/platform/schemas/plan-your-data-model.md)
    + [将您的数据模型转换为XDM](/help/platform/schemas/convert-your-data-model-to-xdm.md)
    + [创建架构](/help/platform/schemas/create-schemas.md)
    + [为B2B数据创建架构](/help/platform/schemas/create-schemas-for-b2b-data.md)
@@ -211,18 +212,18 @@ ht-degree: 35%
    + [从云存储中摄取数据](/help/platform/sources/ingest-data-from-cloud-storage.md)
    + [从CRM引入数据](/help/platform/sources/ingest-data-from-crm.md)
    + [从数据库引入数据](/help/platform/sources/ingest-data-from-databases.md)
-   + [使用 HTTP API 流式传输数据](/help/platform/sources/streaming-ingestion-http-api.md)
+   + [使用HTTP API流式传输数据](/help/platform/sources/streaming-ingestion-http-api.md)
    + [使用源连接器流式传输数据](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [疑难解答：SFTP连接器](/help/platform/sources/troubleshoot-sftp-connector.md)
-+ Experience Cloud 集成 {#experience-cloud}
++ Experience Cloud集成 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
    + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + 行业趋势 {#industry}
-   + [数据管理的未来和复杂多变的环境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
-   + [一个故事，两种看法 - 品牌对消费者](/help/platform/industry/brands-vs-consumers.md)
+   + [数据管理的未来和不断变化的环境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
+   + [一个故事，两种看法 — 品牌与消费者](/help/platform/industry/brands-vs-consumers.md)
    + [发展您的卓越受众中心](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
    + [利用客户配置文件构建更好的体验](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
    + [第一方数据上下文中的数据协作](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
