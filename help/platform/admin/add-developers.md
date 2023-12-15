@@ -6,7 +6,7 @@ role: Admin, Developer
 level: Beginner
 jira: KT-14689
 last-substantial-update: 2023-12-15T00:00:00Z
-source-git-commit: d60e457874f1f05a4a86a6b37b8aee58d4b3f067
+source-git-commit: 4d1a0ff598b822e2228d8719488b9dbb91c9870d
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 了解如何将开发人员添加到基于Adobe Experience Platform的应用程序，如Real-time Customer Data Platform和Journey Optimizer。 首先在Admin Console中添加开发人员。 在开发人员控制台中创建了Platform项目后，会在Platform或Journey Optimizer界面中为他们的API凭据分配权限。 欲知更多信息，请访问 [访问控制文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans).
 
->[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on)
 
 >[!ADMIN]
 >
