@@ -1,24 +1,20 @@
 ---
-title: 标记概述并创建资产（以前称为Launch）
-description: 快速大致了解数据收集中的标记，并了解如何创建属性以存放网站的代码。
-original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/launch-web/launch-overview-and-creating-properties.html
+title: 创建标记属性
+description: 了解如何创建标记属性以管理您网站上的营销标记。
 feature: Tags
 level: Beginner
 jira: KT-3524
+last-substantial-update: 2023-12-15T00:00:00Z
 exl-id: db2e1818-81bb-4d4c-b6ee-b537b48d3b21
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 65a1b8a042fa4330a1aed8bdcf319312c76eac22
 workflow-type: tm+mt
-source-wordcount: '61'
-ht-degree: 72%
+source-wordcount: '36'
+ht-degree: 0%
 
 ---
 
-# 标记概述和创建资产
+# 创建标记属性
 
-快速大致了解数据收集中的标记，并了解如何创建属性以存放网站的代码。
-
->[!NOTE]
->
-> Launch现在为 **[!DNL tags]**
+了解如何创建标记属性以管理您网站上的营销标记。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on)
