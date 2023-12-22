@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
 workflow-type: tm+mt
-source-wordcount: '2556'
+source-wordcount: '2584'
 ht-degree: 1%
 
 ---
@@ -333,6 +333,7 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
       在 **[!UICONTROL 推送通知]** 编辑者：
 
       1. 输入 **[!UICONTROL 标题]**&#x200B;例如 `Luma Test Push Notification` 并输入 **[!UICONTROL 正文]**&#x200B;例如 `Test push notification for Luma mobile app`.
+      1. 或者，您也可以在中输入指向图像(.png或.jpg)的链接 **[!UICONTROL 添加媒体]**. 如果这样做，图像将成为推送通知的一部分。
       1. 要保存并退出编辑器，请选择 ![左侧V形](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
          ![推送编辑器](assets/ajo-push-editor.png)
 
