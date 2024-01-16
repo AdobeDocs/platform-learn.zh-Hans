@@ -2,7 +2,7 @@
 title: 使用Platform Web SDK设置Audience Manager
 description: 了解如何使用Platform Web SDK设置Adobe Audience Manager，并使用Cookie目标验证实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Audience Manager
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 1%
@@ -85,7 +85,7 @@ ht-degree: 1%
 1. 选择 **[!UICONTROL 数据源]** 您在上一节中创建了。
 1. **[!UICONTROL 选择文件夹]** 将您的特征保存在右侧的窗格中。 您可以通过以下方式创建文件夹 **选择+图标** 位于现有父文件夹旁边。 您可以命名此新文件夹 `Platform Web SDK tutorial`.
 1. 展开 **[!UICONTROL 特征表达式]** 插入符号并选择 **[!UICONTROL 表达式生成器]** 您必须提供一个表示访问主页的键值对。
-1. 打开 [Luma主页](https://luma.enablementadobe.com/content/luma/us/en.html) （映射到您的标记属性）和 **Platform Web SDK调试器** 并刷新页面。
+1. 打开 [Luma主页](https://luma.enablementadobe.com/content/luma/us/en.html) （映射到您的标记属性）和 **Adobe Experience Platform Debugger** 并刷新页面。
 1. 查看Platform Web SDK的网络请求和事件详细信息，找到主页的键和名称值。
    ![Adobe Experience PlatformAudience ManagerXDM数据](assets/xdm-keyvalue.jpg)
 1. 返回到Audience ManagerUI中的表达式生成器，并输入键为 **`web.webPageDetails.name`** 和的值 **`content:luma:us:en`**. 此步骤可确保每次加载主页时都会触发一个特征。
@@ -100,7 +100,8 @@ ht-degree: 1%
 1. 选择 **[!UICONTROL 新增]** 以打开区段生成器
 1. 为您的区段提供友好的名称和描述，例如 `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL 选择文件夹]** 您的区段将保存在右侧的窗格中。 您可以通过以下方式创建文件夹 **选择+图标** 位于现有父文件夹旁边。 您可以命名此新文件夹 `Platform Web SDK tutorial`.
-1. 添加一个集成代码，在本例中为一组随机数字。 1.在 **[!UICONTROL 数据源]** 部分，选择 **[!UICONTROL Audience Manager]** 以及您之前创建的数据源
+1. 添加一个集成代码，在本例中为一组随机数字。
+1. 在 **[!UICONTROL 数据源]** 部分，选择 **[!UICONTROL Audience Manager]** 以及您之前创建的数据源
 1. 展开 **[!UICONTROL 特征]** 部分并搜索您创建的特征
 1. 选择 **[!UICONTROL 添加特征]**.
 1. 选择 **[!UICONTROL 保存]** 在页面底部

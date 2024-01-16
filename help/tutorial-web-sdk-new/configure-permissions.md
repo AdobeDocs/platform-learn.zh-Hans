@@ -2,9 +2,9 @@
 title: 配置教程的权限
 description: 了解如何请求访问Experience PlatformWeb SDK并配置完成“使用Web SDK实施Adobe Experience Cloud”教程所需的权限。
 feature: Web SDK,Tags,Access Control
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 3%
 这些功能应该可供所有Experience Cloud客户使用，即使您不是基于平台的应用程序(如Real-Time CDP)的客户。
 
 * 访问 **默认生产**， **&quot;Prod&quot;** 沙盒。
-* 访问 **[!UICONTROL 管理架构]** 和 **[!UICONTROL 查看架构]** 下 **[!UICONTROL 数据建模]**
-* 访问 **[!UICONTROL 管理身份命名空间]** 和 **[!UICONTROL 查看身份命名空间]** 下 **[!UICONTROL Identity Management]**
-* 访问 **[!UICONTROL 管理数据流]** 和 **[!UICONTROL 查看数据流]** 下 **[!UICONTROL 数据收集]**
+* 访问 **[!UICONTROL 管理架构]** 和 **[!UICONTROL 查看架构]** 下 **[!UICONTROL 数据建模]**.
+* 访问 **[!UICONTROL 管理身份命名空间]** 和 **[!UICONTROL 查看身份命名空间]** 下 **[!UICONTROL Identity Management]**.
+* 访问 **[!UICONTROL 管理数据流]** 和 **[!UICONTROL 查看数据流]** 下 **[!UICONTROL 数据收集]**.
 * 如果您是某个基于平台的应用程序的客户，并且将要完成 [设置Experience Platform](setup-experience-platform.md) 课程中，您还应具有：
    * 访问 **开发** 沙盒。
    * 下的所有权限项 **[!UICONTROL 数据管理]**、和 **[!UICONTROL 用户档案管理]**：

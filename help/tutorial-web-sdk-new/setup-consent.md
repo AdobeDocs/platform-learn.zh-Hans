@@ -2,9 +2,9 @@
 title: 使用Platform Web SDK设置同意
 description: 了解如何配置Experience PlatformWeb SDK标记扩展的隐私设置。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Consent
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1603'
 ht-degree: 0%
 
 ---

@@ -2,9 +2,9 @@
 title: 设置事件转发属性
 description: 了解如何使用Experience PlatformWeb SDK数据来使用event-forwarding属性。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '1855'
+source-wordcount: '1858'
 ht-degree: 2%
 
 ---
@@ -59,6 +59,7 @@ ht-degree: 2%
 
       * [安装 Web SDK 扩展](install-web-sdk.md)
       * [创建数据元素](create-data-elements.md)
+      * [创建身份](create-identities.md)
       * [创建标记规则](create-tag-rule.md)
       * [使用Adobe Experience Platform Debugger进行验证](validate-with-debugger.md)
 

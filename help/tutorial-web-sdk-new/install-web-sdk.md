@@ -2,16 +2,16 @@
 title: 安装和配置Adobe Experience Platform Web SDK标记扩展
 description: 了解如何在数据收集界面中安装和配置Platform Web SDK标记扩展。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '604'
 ht-degree: 12%
 
 ---
 
 # 安装Adobe Experience Platform Web SDK标记扩展
 
-了解如何在数据收集界面中安装和配置Platform Web SDK标记扩展。 此标记扩展是 _仅标记扩展_ 需要将数据发送到 _所有Adobe Experience Cloud应用程序_，包括 [分析](setup-analytics.md)， [Target](setup-target.md)， [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform和Journey Optimizer！
+了解如何安装和配置Platform Web SDK标记扩展。 实施Web SDK的最简单方法是使用Adobe的标签管理器（以前称为Launch）。 Platform Web SDK标记扩展是 _仅标记扩展_ 需要将数据发送到 _所有Adobe Experience Cloud应用程序_，包括 [分析](setup-analytics.md)， [Target](setup-target.md)， [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform和Journey Optimizer！
 
 ## 学习目标
 
@@ -25,9 +25,6 @@ ht-degree: 12%
 
 您必须完成本教程中之前的课程：
 
-* [配置权限](configure-permissions.md)
-* [配置XDM架构](configure-schemas.md)
-* [配置身份命名空间](configure-identities.md)
 * [配置数据流](configure-datastream.md)
 
 ## 安装Experience PlatformWeb SDK扩展
@@ -66,6 +63,7 @@ ht-degree: 12%
 1. 下 **[!UICONTROL 数据流]**，选择 **[!UICONTROL 从列表选择]** 输入法
 1. 选择您之前创建的数据流， `Luma Web SDK`
 1. 选择 **[!UICONTROL 保存]**
+
    >[!NOTE]
    >
    > 如果找不到数据流，请转到 [配置数据流](configure-datastream.md) 课程并按照步骤创建一个
@@ -76,9 +74,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->在本教程中，您只需配置一个数据流，并将其与所有标记环境（开发、暂存和生产）关联。 在您自己的网站上实施Platform Web SDK时，您应该为每个环境配置单独的数据流，并使用将它们映射到您的标记环境 **[!UICONTROL 输入法]** > **[!UICONTROL 输入值]**
->
->![数据流选择](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+>在本教程中，您只需配置一个数据流，并将其与所有标记环境（开发、暂存和生产）关联。 在您自己的网站上实施Platform Web SDK时，您应该为每个环境配置单独的数据流，并将它们映射到您的标记环境。
 
 >[!NOTE]
 >

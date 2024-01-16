@@ -1,17 +1,17 @@
 ---
 title: 配置数据流
 description: 了解如何启用数据流并配置Experience Cloud解决方案。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
-feature: Web SDK,Tags,Datastreams
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+feature: Web SDK,Datastreams
+source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 4%
+source-wordcount: '550'
+ht-degree: 3%
 
 ---
 
 # 配置数据流
 
-了解如何启用数据流并配置Experience Cloud解决方案。
+了解如何启用数据流并配置Experience Cloud应用程序。
 
 数据流告知Adobe Experience Platform Edge Network将通过Platform Web SDK收集的数据发送到何处。 在数据流配置中，您可以启用Experience Cloud应用程序、Experience Platform帐户和事件转发。 请参阅 [配置数据流的基础知识](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans) 以了解更多详细信息。
 
@@ -20,14 +20,12 @@ ht-degree: 4%
 在本课程结束后，您将能够：
 
 * 创建数据流
-* 启用您的Experience Cloud应用程序
-* 启用Experience Platform
+* 数据流覆盖入门
 
 ## 先决条件
 
 在配置数据流之前，您必须已完成以下课程：
 
-* [配置权限](configure-permissions.md)
 * [配置架构](configure-schemas.md)
 * [配置身份命名空间](configure-identities.md)
 
@@ -46,11 +44,11 @@ ht-degree: 4%
 
 1. 转到 **[!UICONTROL 数据流]** 在左侧导航中
 1. 选择 **[!UICONTROL 新建数据流]** 在屏幕的右侧。
-1. 输入 `Luma Web SDK` 作为 **[!UICONTROL 名称]**. 当您稍后在标记属性中配置Web SDK扩展时，将会引用此名称。
+1. 输入 `Luma Web SDK: Development Environment` 作为 **[!UICONTROL 名称]**. 当您稍后在标记属性中配置Web SDK扩展时，将会引用此名称。
 1. 选择您的 `Luma Web Event Data` 作为 **[!UICONTROL 事件架构]**
 1. 选择 **[!UICONTROL 保存]**
 
-   ![创建数据流](assets/datastream-create-datastream.png)
+   ![创建数据流](assets/datastream-create-new-datastream.png)
 
    >[!AVAILABILITY]
    >
@@ -64,6 +62,20 @@ ht-degree: 4%
 >[!NOTE]
 >
 >在您自己的网站上实施Platform Web SDK时，您应该创建三个数据流以映射到三个标记环境（开发、暂存和生产）。 如果您将Platform Web SDK与基于Platform的应用程序(如Adobe Real-time Customer Data Platform或Adobe Journey Optimizer)一起使用，则应确保在适当的Platform沙盒中创建这些数据流。
+
+## 覆盖数据流
+
+数据流覆盖允许您为数据流定义其他配置，然后在实施的某些条件下覆盖默认配置。
+
+
+数据流配置覆盖分为两步：
+
+1. 首先，在数据流配置中定义数据流覆盖。 必须为每个要覆盖的Adobe应用程序执行此操作。
+1. 然后，可通过Web SDK发送事件操作或Web SDK标记扩展中的配置将覆盖发送到Edge Network。
+
+请参阅 [数据流配置覆盖文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) 以获取有关如何覆盖数据流配置的详细说明。
+
+在设置Adobe Analytics课程中，您 [使用Platform Web SDK发送事件操作覆盖页面的报表包](setup-analytics.md).
 
 现在，您可以在标记资产中安装Platform Web SDK扩展了！
 

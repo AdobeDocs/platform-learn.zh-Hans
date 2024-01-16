@@ -2,9 +2,9 @@
 title: 使用Platform Web SDK设置Adobe Target
 description: 了解如何使用Platform Web SDK实施Adobe Target。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Target
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
 workflow-type: tm+mt
-source-wordcount: '3582'
+source-wordcount: '4183'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,7 @@ ht-degree: 0%
 * 将XDM数据传递给Target并了解到Target参数的映射
 * 将自定义数据（如配置文件和实体参数）传递到Target
 * 使用Platform Web SDK验证Target实施
+* 将Target建议请求与Adobe Analytics请求分开发送，并稍后解决其显示事件
 
 >[!TIP]
 >
@@ -37,7 +38,7 @@ ht-degree: 0%
 要完成此部分中的课程，您必须首先：
 
 * 完成有关Platform Web SDK初始配置的所有课程，包括设置数据元素和规则。
-* 确保您拥有 [编辑者或审批者角色](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80).
+* 确保您拥有 [编辑者或审批者角色](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) 在Adobe Target中。
 * 安装 [可视化体验编辑器助手扩展](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html) 如果您使用的是Google Chrome浏览器。
 * 了解如何在Target中设置活动。 如果您需要复习者，以下教程和指南对本课程很有帮助：
    * [使用可视化体验编辑器(VEC)助手扩展](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html)
@@ -167,6 +168,15 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 通过这个可选设置，您可以指定要用于Target第三方ID的标识符号。 Target仅支持在单个身份符号或命名空间上同步配置文件。 欲了解更多信息，请参见 [mbox3rdPartyId的实时配置文件同步](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) 部分。
 
 标识符号位于下的标识列表中 **数据收集** > **[!UICONTROL 客户]** > **[!UICONTROL 身份]**.
+<a id="advanced-pto"></a>
+
+### 高级属性令牌覆盖
+
+高级部分包含用于属性令牌覆盖的字段，该字段允许您指定哪些属性令牌可以替换您在配置中定义的主属性令牌。
+
+![身份列表](assets/advanced-property-token.png)
+
+标识符号位于下的标识列表中 **数据收集** > **[!UICONTROL 客户]** > **[!UICONTROL 身份]**.
 
 ![身份列表](assets/target-identities.png)
 
@@ -194,6 +204,10 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
    ![启用呈现可视化个性化决策](assets/target-rule-enable-visual-decisions.png)
 
+1. 在**中[!UICONTROL 数据流配置覆盖**] 该 **[!UICONTROL 目标资产令牌]** 可以作为静态值或使用数据元素覆盖。 仅在中定义的属性令牌 [**高级属性令牌覆盖**](#advanced-pto) 中的部分 **数据流配置** 将返回结果。
+
+   ![覆盖属性令牌](assets/target-property-token-ovrrides.png)
+
 1. 保存所做更改，然后将其生成到库
 
 渲染可视化个性化决策设置使Platform Web SDK自动应用使用Target可视化体验编辑器或“全局mbox”指定的任何修改。
@@ -203,6 +217,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 >通常， [!UICONTROL 呈现可视化个性化决策] 每次全页加载时只应启用一次“发送事件”操作的设置。 如果多个发送事件操作启用了此设置，则会忽略后续渲染请求。
 
 如果您希望使用自定义代码自行呈现或处理这些决策，则可以保留 [!UICONTROL 呈现可视化个性化决策] 设置已禁用。 Platform Web SDK非常灵活，它提供了可让您完全控制的功能。 您可以参阅指南以了解有关 [手动渲染个性化内容](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html).
+
 
 ### 使用可视化体验编辑器设置Target活动
 
@@ -217,11 +232,17 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
    ![创建新的XT活动](assets/target-xt-create-activity.png)
 
-1. 修改页面，例如更改主页横幅上的文本
+1. 修改页面，例如更改主页主页主页横幅上的文本。  完成后，选择 **[!UICONTROL 保存]** 则 **[!UICONTROL 下一个]**.
 
    ![Target VEC修改](assets/target-xt-vec-modification.png)
 
+1. 更新事件名称，然后选择 **[!UICONTROL 下一个]**.
+
+   ![Target VEC更新事件](assets/target-xt-vec-updateevent.png)
+
 1. 选择Adobe Analytics作为报表源，并将相应的报表包和订单量度作为目标
+
+   ![目标VEC报表源](assets/target-xt-vec-reportingsource.png)
 
    >[!NOTE]
    >
@@ -236,7 +257,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 ### 使用调试器进行验证
 
-如果设置活动，您应会在页面上看到内容渲染。 但是，即使没有实时活动，您也可以查看“发送事件”网络调用，以确认Target配置正确。
+如果设置活动，则应该会看到内容在页面上呈现。 但是，即使没有实时活动，您也可以查看“发送事件”网络调用，以确认Target配置正确。
 
 >[!CAUTION]
 >
@@ -253,7 +274,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 1. 请注意，下有键 `query` > `personalization` 和  `decisionScopes` 具有值 `__view__`. 此范围等同于Target的“全局mbox”。 此Platform Web SDK调用从Target请求决策。
 
-   ![__视图__ decisionScope请求](assets/target-debugger-view-scope.png)
+   ![`__view__` decisionScope请求](assets/target-debugger-view-scope.png)
 
 1. 关闭叠加并选择第二次网络调用的事件详细信息。 此调用仅在Target返回活动时存在。
 1. 请注意，其中包含有关从Target返回的活动和体验的详细信息。 此Platform Web SDK调用会向用户发送一条通知，告知用户已渲染Target活动，并会增加展示次数。
@@ -287,7 +308,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 1. 创建名为的规则 `homepage - send event complete - render homepage-hero`.
 1. 向规则添加事件。 使用 **Adobe Experience Platform Web SDK** 扩展和 **[!UICONTROL 发送事件完成]** 事件类型。
 1. 添加条件以将规则限制在Luma主页（不含查询字符串的路径等于） `/content/luma/us/en.html`)。
-1. 向规则添加操作。 使用 **核心** 扩展和 **自定义代码** 操作类型。
+1. 向规则添加操作。 使用 **Adobe Experience Platform Web SDK** 扩展和 **应用建议** 操作类型。
 
    ![渲染主页主页主页规则](assets/target-rule-render-hero.png)
 
@@ -295,63 +316,13 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
    >
    >为规则事件、条件和操作指定描述性名称，而不是使用默认名称。 强大的规则组件名称使搜索结果更有用。
 
-1. 输入自定义代码，以读取并处理从Platform Web SDK响应返回的建议。 此示例中的自定义代码使用指南中概述的方法用于 [手动渲染个性化内容](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=en#manually-rendering-content). 该代码是根据 `homepage-hero` 使用标记规则操作的示例范围。
+1. 输入 `%event.propositions%` 放入建议字段，因为我们正在使用“发送事件完成”事件作为此规则的触发器。
+1. 在“建议元数据”部分中，选择 **[!UICONTROL 使用表单]**
+1. 对于Scope字段输入 `homepage-hero`
+1. 对于Selector字段输入 `div.heroimage`
+1. 将操作类型保留为 `Set HTML`
 
-   ```javascript
-   var propositions = event.propositions;
-   
-   var heroProposition;
-   if (propositions) {
-      // Find the hero proposition, if it exists.
-      for (var i = 0; i < propositions.length; i++) {
-         var proposition = propositions[i];
-         if (proposition.scope === "homepage-hero") {
-            heroProposition = proposition;
-            break;
-         }
-      }
-   }
-   
-   var heroHtml;
-   if (heroProposition) {
-      // Find the item from proposition that should be rendered.
-      // Rather than assuming there a single item that has HTML
-      // content, find the first item whose schema indicates
-      // it contains HTML content.
-      for (var j = 0; j < heroProposition.items.length; j++) {
-         var heroPropositionItem = heroProposition.items[j];
-         if (heroPropositionItem.schema === "https://ns.adobe.com/personalization/html-content-item") {
-            heroHtml = heroPropositionItem.data.content;
-            break;
-         }
-      }
-   }
-   
-   if (heroHtml) {
-      // Hero HTML exists. Time to render it.
-      var heroElement = document.querySelector(".heroimage");
-      heroElement.innerHTML = heroHtml;
-      // For this example, we assume there is only a signle place to update in the HTML.
-   }
-   
-   // Send a "display" event 
-   alloy("sendEvent", {
-      xdm: {
-         eventType: "propositionDisplay",
-         _experience: {
-            decisioning: {
-               propositions: [
-                  {
-                     id: heroProposition.id,
-                     scope: heroProposition.scope,
-                     scopeDetails: heroProposition.scopeDetails
-                  }
-               ]
-            }
-         }
-      }
-   });
-   ```
+![渲染主页主页主页操作](assets/target-action-render-hero.png)
 
 1. 保存更改并将内部版本生成到库
 1. 加载Luma主页几次，这应该足以制作新的 `homepage-hero` 决策范围在Target界面中注册。
@@ -402,7 +373,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 1. 打开Adobe Experience Platform Debugger浏览器扩展
 1. 转到 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 并使用调试器 [将网站上的tag属性切换到您自己的开发资产](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. 重新加载页面
-1. 选择 **[!UICONTROL 网络]** debugger中的工具
+1. 选择 **[!UICONTROL 网络]** 调试器中的工具
 1. 过滤方式 **[!UICONTROL Adobe Experience Platform Web SDK]**
 1. 在事件行中为第一次调用选择值
 
@@ -410,7 +381,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 1. 请注意，下有键 `query` > `personalization` 和  `decisionScopes` 具有值 `__view__` 和以前一样，但现在还有 `homepage-hero` 范围已包括。 此Platform Web SDK调用请求从Target就使用VEC和特定的页面所做的更改做出决策。 `homepage-hero` 位置。
 
-   ![__视图__ decisionScope请求](assets/target-debugger-view-scope.png)
+   ![`__view__` decisionScope请求](assets/target-debugger-view-scope.png)
 
 1. 关闭叠加并选择第二次网络调用的事件详细信息。 此调用仅在Target返回活动时存在。
 1. 请注意，其中包含有关从Target返回的活动和体验的详细信息。 此Platform Web SDK调用会向用户发送一条通知，告知用户已渲染Target活动，并会增加展示次数。
@@ -478,7 +449,30 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 >
 >上面的示例使用 `data` 未在所有页面类型上完全填充的对象。 标记可正确处理此情况并忽略具有未定义值的键。 例如， `entity.id` 和 `entity.name` 将不会在除产品详细信息之外的任何页面上传递。
 
-### 使用调试器验证
+
+## 拆分个性化决策和Analytics收藏集事件
+
+您可以单独发送决策建议请求和Analytics数据收集请求。 通过这种方式拆分事件规则，可以尽早触发Target决策事件。 Analytics事件可以等待，直到填充数据层对象。
+
+1. 创建名为的规则 `all pages - page top - request decisions`.
+2. 向规则添加事件。 使用 **核心** 扩展和 **[!UICONTROL Library Loaded (Page Top)]** 事件类型。
+3. 向规则添加操作。 使用 **Adobe Experience Platform Web SDK** 扩展和 **发送事件** 操作类型。
+4. 在 **引导式事件样式** 部分，选择 **[!UICONTROL 页面顶部事件 — 请求个性化决策]** 单选按钮
+5. 这样会锁定 **类型** 作为 **[!UICONTROL 决策建议提取]**
+
+![send_decision_request_alone](assets/target-decision-request.png)
+
+1. 创建时 `Adobe Analytics Send Event rule` 使用 **引导式事件样式** 部分选择 **[!UICONTROL 页面底部事件 — 收集分析]** 单选按钮
+1. 这样会锁定 **[!UICONTROL 包括挂起的显示通知]** 选中复选框，以便发送来自决策请求的已排队显示通知。
+
+![send_decision_request_alone](assets/target-aa-request-guided.png)
+
+>[!TIP]
+>
+>如果您要为其获取决策建议的事件之后没有Adobe Analytics事件，请使用 **引导式事件样式** **[!UICONTROL 未引导 — 显示所有字段]**. 您需要手动选择所有选项，但它会将选项解锁， **[!UICONTROL 自动发送显示通知]** 以及获取请求。
+
+
+### 使用调试器进行验证
 
 现在规则已更新，您可以使用Adobe Debugger验证数据是否正确传递。
 
@@ -490,7 +484,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 1. 在事件行中为第一次调用选择值
 1. 请注意，下有键 `data` > `__adobe` > `target` 其中填充了有关产品、类别和登录状态的信息。
 
-   ![__视图__ decisionScope请求](assets/target-debugger-data.png)
+   ![`__view__` decisionScope请求](assets/target-debugger-data.png)
 
 ### 在Target界面中验证
 
@@ -501,16 +495,51 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 1. 创建受众并选择 **[!UICONTROL 自定义]** 属性类型
 1. 搜索 **[!UICONTROL 参数]** 字段 `web`. 下拉菜单应填充与网页详细信息相关的所有XDM字段。
 
+   ![在Target自定义属性中验证](assets/validate-in-target-customattribute.png)
+
 接下来，验证是否已成功传递登录状态配置文件属性。
 
 1. 选择 **[!UICONTROL 访客资料]** 属性类型
-1. 搜索 `loggedIn`. 如果该属性在下拉菜单中可用，则该属性已正确传递到Target。 新属性可能需要几分钟才能在Target UI中可用。
+2. 搜索 `loggedIn`. 如果该属性在下拉菜单中可用，则该属性已正确传递到Target。 新属性可能需要几分钟才能在Target UI中可用。
+
+   ![在Target配置文件中验证](assets/validate-in-target-profile.png)
 
 如果您具有Target Premium，则还可以验证实体数据是否正确传递，以及产品数据是否已写入Recommendations产品目录。
 
 1. 导航至 **[!UICONTROL Recommendations]** 部分
 1. 选择 **[!UICONTROL 目录搜索]** 在左侧导航中
 1. 搜索您之前在Luma网站上访问过的产品SKU或产品名称。 产品应显示在产品目录中。 新产品可能需要几分钟才能在Recommendations产品目录中搜索。
+
+   ![在Target目录搜索中验证](assets/validate-in-target-catalogsearch.png)
+
+### 使用保障进行验证
+
+此外，您可以酌情使用Assource ，以确认Target决策请求获得了正确的数据并且任何服务器端转换均正确发生。 您还可以确认营销活动和体验信息包含在Adobe Analytics调用中，即使Target决策调用和Adobe Analytics调用是单独发送也是如此。
+
+1. 打开 [Assurance](https://experience.adobe.com/assurance)
+1. 启动新的保证会话，输入 **[!UICONTROL 会话名称]** 并输入 **[!UICONTROL 基本url]** 用于您的网站或您正在测试的任何其他页面
+1. 单击 **[!UICONTROL 下一个]**
+
+   ![在保障新会话中进行验证](assets/validate-in-assurance-newsession.png)
+
+1. 选择您的连接方法，在本例中，我们将使用 **[!UICONTROL 复制链接]**
+1. 复制链接并将其粘贴到新的浏览器选项卡中
+1. 单击 **[!UICONTROL 完成]**
+
+   ![通过复制链接在保证连接中验证](assets/validate-in-assurance-copylink.png)
+
+1. 一旦启动保障会话，您就会看到事件选项卡中填充的事件
+1. 按“tnta”筛选
+1. 选择最近的调用并展开消息以确保正确填充并记下“tnta”值
+
+   ![在保障目标点击中进行验证](assets/validate-in-assurance-targetevent.png)
+
+1. 接下来，保留“tnta”过滤器，并选择在我们刚刚查看的目标事件之后发生的analytics.mapping事件。
+1. 检查“context.mappedQueryParams”。\&lt;yourschemaname>“ value”，用于确认它包含“tnta”属性，该属性具有匹配在先前目标事件中找到的“tnta”值的连接字符串。
+
+   ![在Assurance Analytics点击中进行验证](assets/validate-in-assurance-analyticsevent.png)
+
+这可以确认，当我们在页面上稍后触发分析跟踪调用时，已正确发送在进行Target决策调用时排队等候稍后传输的A4T信息。
 
 现在，您已完成本课程，应该可以使用Platform Web SDK有效实施Adobe Target。
 

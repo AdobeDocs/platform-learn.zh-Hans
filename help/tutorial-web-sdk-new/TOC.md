@@ -9,10 +9,10 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: 695c12ab66df33af00baacabc3b69eaac7ada231
+source-git-commit: 1b6fa039a255de8cdd1889136039e6f23b183578
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 28%
+source-wordcount: '96'
+ht-degree: 23%
 
 ---
 
@@ -29,6 +29,7 @@ ht-degree: 28%
 + 标记配置 {#tags-configuration}
    + [安装 Web SDK 扩展](install-web-sdk.md)
    + [创建数据元素](create-data-elements.md)
+   + [创建身份](create-identities.md)
    + [创建标记规则](create-tag-rule.md)
    + [使用Debugger进行验证](validate-with-debugger.md)
 
@@ -37,6 +38,9 @@ ht-degree: 28%
    + [设置Adobe Analytics](setup-analytics.md)
    + [设置Audience Manager](setup-audience-manager.md)
    + [设置Target](setup-target.md)
+   + 设置Journey Optimizer功能 {#journey-optimizer}
+      + [设置Web渠道](journey-optimizer/setup-web-channel.md)
+      + [设置决策管理](journey-optimizer/setup-decision-management.md)
 
 + 同意管理 {#consent-management}
    + [设置同意](setup-consent.md)
