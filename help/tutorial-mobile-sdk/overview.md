@@ -4,14 +4,14 @@ description: 了解如何实施Adobe Experience Cloud移动应用程序。 本�
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 4bd8d0cdcf9c5d29434de4968a048fd46e163b54
+source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
 workflow-type: tm+mt
-source-wordcount: '844'
-ht-degree: 6%
+source-wordcount: '826'
+ht-degree: 3%
 
 ---
 
-# 在移动应用程序中实施 Adobe Experience Cloud 指南
+# 在移动应用程序中实施Adobe Experience Cloud教程
 
 了解如何用 Adobe Experience Platform 移动 SDK 在移动应用程序中实施 Adobe Experience Cloud 应用程序。
 
@@ -27,7 +27,7 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
 完成本教程后，您将能够：
 
 * 使用标准和自定义字段组创建架构。
-* 设置数据流.
+* 设置数据流。
 * 配置移动标记属性。
 * 设置Experience Platform数据集（可选）。
 * 在应用程序中安装并实施标记扩展。
@@ -95,10 +95,14 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
 1. [开始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：对于大多数Experience PlatformMobile SDK代码，您都需要使用此类项目来完成本教程中的动手练习，但该项目没有代码，也没有占位符代码。
 1. [完成](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：具有完整实施的版本以供参考。
 
-
 >[!NOTE]
 >
 >您使用iOS作为平台， [!DNL Swift] 作为编程语言， [!DNL SwiftUI] 作为UI框架和 [!DNL Xcode] 作为集成开发环境(IDE)。 但是，解释的许多实施概念与其他开发平台类似。 许多人已经成功完成了本教程，之前的iOS/Swift(UI)体验很少甚至没有。 您无需成为专家即可完成课程，但如果您能够轻松阅读和理解代码，将可从课程中学到更多知识。
+
+
+您可以从App Store下载应用程序的最终产品化版本。
+
+[![下载](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 
 让我们开始吧！
