@@ -3,9 +3,9 @@ title: 使用Platform Web SDK设置同意
 description: 了解如何配置Experience PlatformWeb SDK标记扩展的隐私设置。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: a8c7b94bafcde421d5f95ea53c7ecebb648319ab
 workflow-type: tm+mt
-source-wordcount: '1623'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 > 
->出于演示目的，本教程使用 [克拉罗](https://heyklaro.com/) 作为一名CMP。 欢迎您使用Klaro或您在网站中使用的CMP来遵循。
+>出于演示目的，本教程使用 [克拉罗](https://heyklaro.com/){target="_blank"} 作为一名CMP。 欢迎您使用Klaro或您在网站中使用的CMP来遵循。
 
 
 ## 学习目标
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 现在，完成Klaro的配置后，请使用以下配置创建标记规则：
 
-* [!UICONTROL 名称]: `all pages - library load - Klaro`
+* [!UICONTROL 名称]：`all pages - library load - Klaro`
 * [!UICONTROL 事件]： [!UICONTROL Library Loaded (Page Top)] 替换为 [!UICONTROL 高级选项] > [!UICONTROL 订购] 设置为1
 * [!UICONTROL 操作]： [!UICONTROL 自定义代码]， [!UICONTROL 语言]：用于加载CMP脚本的HTML。
 
