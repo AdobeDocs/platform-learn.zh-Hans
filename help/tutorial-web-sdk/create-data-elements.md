@@ -3,10 +3,10 @@ title: 创建数据元素
 description: 了解如何在标记中创建XDM对象并将数据元素映射到该对象。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: aea1b1a88361f2ae0082772b5e7eeb6b25cec4c6
 workflow-type: tm+mt
-source-wordcount: '1201'
-ht-degree: 4%
+source-wordcount: '1174'
+ht-degree: 1%
 
 ---
 
@@ -70,7 +70,7 @@ ht-degree: 4%
 1. 将数据元素命名为 `page.pageInfo.pageName`
 1. 使用 **[!UICONTROL JavaScript变量]** **[!UICONTROL 数据元素类型]** 指向Luma数据层中的值： `digitalData.page.pageInfo.pageName`
 
-1. 选中 **[!UICONTROL Force lowercase value]** 和 **[!UICONTROL Clean text]** 复选框，以使大小写标准化，并删除无关空格
+1. 选中复选框 **[!UICONTROL 强制使用小写值]** 和 **[!UICONTROL 清除文本]** 标准化大小写并删除无关空格
 
 1. 离开 `None` 作为 **[!UICONTROL 存储持续时间]** 设置，因为该值在每个页面上都不相同
 
@@ -166,13 +166,13 @@ ht-degree: 4%
 
 您创建的所有数据元素必须映射到XDM对象。 此对象应符合您在以下期间创建的XDM架构： [配置架构](configure-schemas.md) 上课。
 
-有不同的方法可以将数据元素映射到XDM对象字段。 您可以将单个数据元素映射到单个XDM字段，也可以将数据元素映射到整个XDM对象，前提是数据元素与XDM对象中存在的精确键值对架构匹配。 在本课程中，您捕获的内容数据将通过映射到各个字段来捕获。 您将学习如何 [将数据元素映射到整个XDM对象](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) 在 [设置Analytics](setup-analytics.md) 上课。
+有不同的方法可以将数据元素映射到XDM对象字段。 您可以将单个数据元素映射到单个XDM字段，也可以将数据元素映射到整个XDM对象，前提是数据元素与XDM对象中存在的精确键值对架构匹配。 在本课程中，您将通过映射到各个字段来捕获内容数据。 您将学习如何 [将数据元素映射到整个XDM对象](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) 在 [设置Analytics](setup-analytics.md) 上课。
 
 创建XDM对象以捕获内容数据：
 
 1. 在左侧导航中，选择 **[!UICONTROL 数据元素]**
 1. 选择 **[!UICONTROL 添加数据元素]**
-1. ****&#x200B;将数据元素命名为 **`xdm.content`**
+1. **[!UICONTROL 名称]** 数据元素 **`xdm.content`**
 1. 作为 **[!UICONTROL 扩展名]** 选择 `Adobe Experience Platform Web SDK`
 1. 作为 **[!UICONTROL 数据元素类型]** 选择 `XDM object`
 1. 选择平台 **[!UICONTROL 沙盒]** ，您在此期间在中创建了XDM架构： [配置XDM架构](configure-schemas.md) 课程，在本例中 `DEVELOPMENT Mobile and Web SDK Courses`
