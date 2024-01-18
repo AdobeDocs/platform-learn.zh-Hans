@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
+source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 42%
+source-wordcount: '185'
+ht-degree: 27%
 
 ---
 
@@ -17,6 +17,7 @@ ht-degree: 42%
 # 数据收集教程{#data-collection}
 
 + [数据收集教程](overview.md)
++ [用户和权限](admin/users-and-permissions.md)
 + 标记{#tags}
    + [概述和创建资产](tags/create-a-property.md)
    + [选择托管选项](tags/choose-a-hosting-option.md)
@@ -25,7 +26,6 @@ ht-degree: 42%
    + [创建数据元素](tags/create-data-elements.md)
    + [生成规则](tags/build-rules.md)
    + [构建和发布库](tags/build-and-publish-a-library.md)
-   + [用户和权限](tags/users-and-permissions.md)
    + [使用Web SDK在网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans){target="_blank"}
    + [使用解决方案SDK在网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
    + [在移动应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans){target="_blank"}
@@ -40,7 +40,7 @@ ht-degree: 42%
       + [使用IAB TCF 2.0标准设置同意值](web-sdk/consent/set-consent-iab.md)
       + [Inspect和验证同意数据](web-sdk/consent/inspect.md)
       + [同意处理端到端教程](web-sdk/consent/tutorial.md)
-+ Mobile SDK{#mobile-sdk}
++ 移动 SDK{#mobile-sdk}
    + [概述](mobile-sdk/overview.md)
    + [创建移动资产](mobile-sdk/create-mobile-properties.md)
    + [使用依赖关系管理器](mobile-sdk/use-dependency-managers.md)
@@ -64,5 +64,5 @@ ht-degree: 42%
    + [数据准备](edge/data-prep.md)
    + [管理敏感数据](edge/manage-sensitive-data-in-datastreams.md)
    + [第一方设备Id](edge/generate-first-party-device-ids.md)
-+ Debugger{#debugger}
++ 调试程序{#debugger}
    + [概述](debugger/overview.md)
