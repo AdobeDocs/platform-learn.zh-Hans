@@ -4,9 +4,9 @@ description: 了解如何使用Platform Web SDK实施Web渠道。 本课程是�
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '2463'
+source-wordcount: '2444'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 要完成此部分中的课程，您必须首先：
 
-* 确保您的AEP Web SDK版本为2.16或更高版本。
+* 确保您的Adobe Experience Platform Web SDK标记扩展版本为2.16或更高版本。
 * 如果您使用Journey Optimizer Web设计器创作您的Web渠道体验，请确保您使用的是Google Chrome或Microsoft® Edge浏览器。
 * 另外，请确保已下载Adobe Experience Cloud可视化编辑帮助程序浏览器扩展。 在创建Web渠道体验之前，在浏览器工具栏中启用可视化编辑帮助程序浏览器扩展。
    * 在Journey Optimizer Web设计器中，由于以下原因之一，某些网站可能无法可靠地打开：
@@ -46,7 +46,7 @@ ht-degree: 0%
 * 如果使用内容试验功能，请确保您的Web数据集也包含在报表配置中。
 * 目前，支持两种类型的实施，以便能够在Web资产上创作和交付Web渠道营销活动：
    * 仅限客户端：要修改您的网站，必须实施Adobe Experience Platform Web SDK。
-   * 混合模式：您可以利用AEP Edge Network服务器API来请求个性化服务器端。 来自API的响应随后会提供给Adobe Experience Platform Web SDK，以便在客户端进行修改。 有关更多信息，请参阅Adobe Experience Platform Edge Network服务器API文档。 可以在这篇博客文章中找到混合模式的其他详细信息和实施示例。
+   * 混合模式：您可以利用Platform Edge Network服务器API来请求个性化服务器端。 来自API的响应随后会提供给Adobe Experience Platform Web SDK，以便在客户端进行修改。 有关更多信息，请参阅Adobe Experience Platform Edge Network服务器API文档。 可以在这篇博客文章中找到混合模式的其他详细信息和实施示例。
 
 >[!NOTE]
 >
@@ -76,39 +76,39 @@ ht-degree: 0%
 
 要在数据流中配置Adobe Journey Optimizer，请执行以下操作：
 
-1. 转到数据收集界面。
-1. 在左侧导航中，选择 **数据流**.
+1. 转到 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面。
+1. 在左侧导航中，选择 **[!UICONTROL 数据流]**.
 1. 选择之前创建的Luma Web SDK数据流。
 
    ![选择数据流](../assets/web-channel-select-datastream.png)
 
-1. 选择 **编辑** 在Adobe Experience Platform服务中。
+1. 选择 **[!UICONTROL 编辑]** 在Adobe Experience Platform服务中。
 
    ![编辑数据流](../assets/web-channel-edit-datastream.png)
 
-1. 查看 **Adobe Journey Optimizer** 盒子。
+1. 查看 **[!UICONTROL Adobe Journey Optimizer]** 盒子。
 
    ![选中AJO框](../assets/web-channel-check-ajo-box.png)
 
-1. 选择&#x200B;**保存**。
+1. 选择&#x200B;**[!UICONTROL 保存]**。
 
 这可确保Adobe Experience Platform Edge正确处理Journey Optimizer的入站事件。
 
 ## 配置合并策略
 
-确保使用定义了合并策略 **Active-On-Edge合并策略** 选项已启用。 Journey Optimizer集客渠道可使用此合并策略选项，以确保在边缘准确地激活和发布集客营销活动。
+确保使用定义了合并策略 **[!UICONTROL Active-On-Edge合并策略]** 选项已启用。 Journey Optimizer集客渠道可使用此合并策略选项，以确保在边缘准确地激活和发布集客营销活动。
 
 要在合并策略中配置选项，请执行以下操作：
 
-1. 转到 **客户>用户档案** 界面。
-1. 在导航中，选择 **合并策略**.
-1. 选择您的策略，然后切换 **Active-On-Edge合并策略** 内的选项 **配置** 步骤。
+1. 转到 **[!UICONTROL 客户]** > **[!UICONTROL 配置文件]** Experience Platform Journey Optimizer页面。
+1. 选择 **[!UICONTROL 合并策略]** 选项卡。
+1. 选择您的策略，然后切换 **[!UICONTROL Active-On-Edge合并策略]** 内的选项 **[!UICONTROL 配置]** 步骤。
 
    ![切换合并策略](..//assets/web-channel-active-on-edge-merge-policy.png)
 
 ## 为内容试验配置Web数据集
 
-要在Web渠道营销活动中使用内容实验，必须确保使用的Web数据集也包含在报表配置中。 Journey Optimizer报表系统以只读方式使用数据集来填充OOTB内容试验报表。
+要在Web渠道营销活动中使用内容实验，必须确保使用的Web数据集也包含在报表配置中。 Journey Optimizer报表系统以只读方式使用数据集来填充现成的内容试验报表。
 
 [有关为内容试验报告添加数据集的详情，请参阅此部分](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=en#add-datasets).
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->由于本教程面向实施者，因此需要注意的是，本课程涉及AJO中的大量UI工作。 虽然此类UI任务通常由营销人员处理，但对于实施者而言，深入了解该流程可能会很有用，即使他们最终不负责Web渠道营销活动创建也是如此。
+>由于本教程面向实施者，因此需要注意的是，本课程涉及Journey Optimizer中的大量界面工作。 虽然此类界面任务通常由营销人员处理，但对于实施者而言，深入了解该流程可能会有所帮助，即使他们最终不负责Web渠道营销活动创建也是如此。
 
 ### 创建忠诚度奖励营销活动
 
@@ -128,73 +128,73 @@ ht-degree: 0%
 
 要创建示例营销活动，请执行以下操作：
 
-1. 在左侧导航中导航到历程管理>促销活动
-1. 单击 **创建营销活动** 在右上角。
-1. 在 **属性** 部分，指定您希望如何执行活动。 对于“忠诚度奖励”用例，请选择 **已计划**.
+1. 导航到 **[!UICONTROL 历程管理]** > **[!UICONTROL 营销活动]** 在左侧导航中
+1. 单击 **[!UICONTROL 创建营销活动]** 在右上角。
+1. 在 **[!UICONTROL 属性]** 部分，指定您希望如何执行活动。 对于“忠诚度奖励”用例，请选择 **已计划**.
 
    ![计划的营销活动](../assets/web-channel-campaign-properties-scheduled.png)
 
-1. 在 **操作** 部分，选择 **Web渠道**. 在这个阶段，还要选择Web界面。
+1. 在 **[!UICONTROL 操作]** 部分，选择 **[!UICONTROL Web渠道]**. 作为  **[!UICONTROL Web表面]**，选择 **[!UICONTROL 页面URL]**.
 
 >[!NOTE]
 >
 >Web表面是指由交付内容的URL标识的Web属性。 它可以对应于单个页面URL或包含多个页面，使您能够在一个或多个网页中应用修改。
 
-选择 **页面URL** Web表面选项，用于将体验部署在此营销活动的一个页面上。 输入Luma页面的URL。
+选择 **[!UICONTROL 页面URL]** Web表面选项，用于将体验部署在此营销活动的一个页面上。 输入Luma页面的URL。
 
-1. 定义Web曲面后，选择 **创建**.
+1. 定义Web曲面后，选择 **[!UICONTROL 创建]**.
 
    ![选择Web表面](../assets/web-channel-web-surface.png)
 
-1. 现在向新的Web渠道营销活动添加一些其他详细信息。 首先，命名营销活动。 调用它&#39;*Luma忠诚度奖励 — 金牌状态 — 2023年10月*’。 （可选）您可以向市场活动添加描述。 同时添加 **标记** 以改进整个营销活动分类。
+1. 现在向新的Web渠道营销活动添加一些其他详细信息。 首先，命名营销活动。 呼叫它 `Luma Loyalty Rewards – Gold Status – October 2023`. （可选）您可以向市场活动添加描述。 同时添加 **[!UICONTROL 标记]** 以改进整个营销活动分类。
 
    ![命名营销活动](../assets/web-channel-campaign-name.png)
 
-1. 默认情况下，该营销活动对所有网站访客有效。 对于此用例，只有金会员状态奖励会员才能看到体验。 要启用此功能，请单击 **选择受众** 并选择“*Luma忠诚度奖励 — 金牌状态*&#39;受众。
+1. 默认情况下，该营销活动对所有网站访客有效。 对于此用例，只有金会员状态奖励会员才能看到体验。 要启用此功能，请单击 **[!UICONTROL 选择受众]** 并选择 `Luma Loyalty Rewards – Gold Status` 受众。
 
-1. 在 **身份命名空间** 字段中，选择用于标识所选区段内个人的命名空间。 由于您要将促销活动部署在Luma网站上，因此可以选择ECID命名空间。 &#39;中的配置文件&#x200B;*Luma忠诚度奖励 — 金牌状态*&#39;各种身份中缺少ECID命名空间的受众不会成为Web渠道营销活动的目标。
+1. 在 **[!UICONTROL 身份命名空间]** 字段中，选择用于标识所选区段内个人的命名空间。 由于您要将促销活动部署在Luma网站上，因此可以选择ECID命名空间。 中的配置文件 `Luma Loyalty Rewards – Gold Status` Web渠道营销活动不会定位各种身份中缺少ECID命名空间的受众。
 
    ![选择身份类型](../assets/web-channel-indentity-type.png)
 
-1. 使用安排促销活动在12月1日开始 **营销活动开始** 期权，并于12月31日终止使用 **营销活动结束** 选项。
+1. 使用安排促销活动在12月1日开始 **[!UICONTROL 营销活动开始]** 期权，并于12月31日终止使用 **[!UICONTROL 营销活动结束]** 选项。
 
    ![Campaign计划](../assets/web-channel-campaign-schedule.png)
 
 >[!NOTE]
 >
->请记住，对于Web渠道营销活动，Web体验会在访客打开页面时显示。 因此，与Adobe Journey Optimizer中的其他类型的营销活动不同， **操作触发器** 部分不可配置。
+>请记住，对于Web渠道营销活动，Web体验会在访客打开页面时显示。 因此，与Adobe Journey Optimizer中的其他类型的营销活动不同， **[!UICONTROL 操作触发器]** 部分不可配置。
 
 ### 尝试忠诚度奖励内容
 
-在 **操作** 部分，您可以选择创建一个试验，以测试哪些内容更适合&#39;*Luma忠诚度奖励 — 金牌状态*&#39;受众。 让我们创建并测试两个处理作为Campaign配置的一部分。
+在 **[!UICONTROL 操作]** 部分中，您可以选择创建一个试验，以测试哪些内容更适合 `Luma Loyalty Rewards – Gold Status` 受众。 让我们创建并测试两个处理作为Campaign配置的一部分。
 
 要创建内容试验，请执行以下操作：
 
-1. 单击 **创建试验**.
+1. 单击 **[!UICONTROL 创建试验]**.
 
    ![创建试验](../assets/web-channel-create-content-experiment.png)
 
-1. 首先选择 **成功量度**. 这是确定内容有效性的量度。 选择 **独特入站点击次数**，以了解哪种内容处理方式在Web体验CTA上产生了更多的点击次数。
+1. 首先选择 **[!UICONTROL 成功量度]**. 这是确定内容有效性的量度。 选择 **[!UICONTROL 独特入站点击次数]**，以了解哪种内容处理方式在Web体验CTA上产生了更多的点击次数。
 
    ![选择成功量度](../assets/web-channel-content-experiment-metric.png)
 
-1. 使用Web渠道设置试验并选择 **入站点击次数**， **独特入站点击次数**， **页面查看次数**，或 **独特页面查看次数** 量度， **单击操作** 利用下拉列表，可精确跟踪和监控特定页面上的点击次数和查看次数。
+1. 使用Web渠道设置试验并选择 **[!UICONTROL 入站点击次数]**， **[!UICONTROL 独特入站点击次数]**， **[!UICONTROL 页面查看次数]**，或 **[!UICONTROL 独特页面查看次数]** 量度， **[!UICONTROL 单击操作]** 利用下拉列表，可精确跟踪和监控特定页面上的点击次数和查看次数。
 
-1. （可选）您可以指定 **保留样本** 两种疗法都没有用。 暂时取消选中此项。
+1. （可选）您可以指定 **[!UICONTROL 保留样本]** 两种疗法都没有用。 暂时取消选中此项。
 
-1. （可选）选择 **均匀分布**. 选中此选项可确保始终平均拆分处理拆分。
+1. （可选）选择 **[!UICONTROL 均匀分布]**. 选中此选项可确保始终平均拆分处理拆分。
 
 [详细了解Adobe Journey Optimizer Web Channel中的内容实验](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
 
 ### 使用可视化帮助程序编辑内容
 
-现在，让我们创作Web渠道体验。 要实现此目的，请使用Adobe Experience Cloud **可视化帮助程序**. 此工具是一个与Google Chrome和Microsoft® Edge兼容的浏览器扩展。 在尝试构建体验之前，请确保已下载该扩展。 还要确保网页包含Web SDK。
+现在，让我们创作Web渠道体验。 要实现此目的，请使用Adobe Experience Cloud **[!UICONTROL 可视化帮助程序]**. 此工具是一个与Google Chrome和Microsoft® Edge兼容的浏览器扩展。 在尝试构建体验之前，请确保已下载该扩展。 还要确保网页包含Web SDK。
 
-1. 在 **操作** 选项卡，单击 **编辑内容**. 由于您输入了单个页面URL作为表面，因此您应该可以在编辑器中开始工作。
+1. 在 **[!UICONTROL 操作]** 选项卡，单击 **[!UICONTROL 编辑内容]**. 由于您输入了单个页面URL作为表面，因此您应该可以在编辑器中开始工作。
 
    ![编辑内容](../assets/web-channel-edit-content.png)
 
-1. 现在，单击 **编辑网页** 以开始创作。
+1. 现在，单击 **[!UICONTROL 编辑网页]** 以开始创作。
 
    ![编辑网页](../assets/web-channel-edit-web-page.png)
 
@@ -202,32 +202,32 @@ ht-degree: 0%
 
    ![添加上下文编辑](../assets/web-channel-some-contextual-edit.png)
 
-1. 还可以使用将个性化内容添加到容器中 **表达式编辑器**.
+1. 还可以使用将个性化内容添加到容器中 **[!UICONTROL 表达式编辑器]**.
 
    ![添加个性化内容](../assets/web-channel-add-basic-personalization.png)
 
-1. 确保正确跟踪点击体验。 选择 **点击跟踪元素** 从上下文菜单中。
+1. 确保正确跟踪点击体验。 选择 **[!UICONTROL 点击跟踪元素]** 从上下文菜单中。
 
    ![点击跟踪](../assets/web-channel-click-tracking.png)
 
-1. 使用 **优惠决策组件** 以在网页中插入选件。 此组件使用 **决策管理** 以选择向Luma访客提供的最佳选件。
+1. 使用 **[!UICONTROL 优惠决策组件]** 以在网页中插入选件。 此组件使用 **[!UICONTROL 决策管理]** 以选择向Luma访客提供的最佳选件。
 
 
 ### HTML设计更改
 
 如果您希望将更高级的更改或自定义的更改作为忠诚度奖励促销活动的一部分，可以使用一些方法。
 
-使用 **组件** 窗格，用于将HTML或其他内容直接添加到Luma网站。
+使用 **[!UICONTROL 组件]** 窗格，用于将HTML或其他内容直接添加到Luma网站。
 
 ![浏览组件窗格](../assets/web-channel-components-pane.png)
 
-在页面顶部添加新的HTML组件。 从设计界面编辑组件中的HTML或 **上下文** 窗格。
+在页面顶部添加新的HTML组件。 从设计界面编辑组件中的HTML或 **[!UICONTROL 上下文]** 窗格。
 
 ![添加自定义HTML](../assets/web-channel-add-html-component.png)
 
-或者，从添加HTML编辑 **修改** 窗格。 此窗格允许您在页面上选择一个组件，然后从设计器界面中对其进行编辑。
+或者，从添加HTML编辑 **[!UICONTROL 修改]** 窗格。 此窗格允许您在页面上选择一个组件，然后从设计器界面中对其进行编辑。
 
-在编辑器中，添加&#39;的HTML *Luma忠诚度奖励 — 金牌状态*&#39;受众。 单击 **验证**.
+在编辑器中，添加HTML `Luma Loyalty Rewards – Gold Status` 受众。 选择 **[!UICONTROL 验证]**.
 
 ![验证HTML](../assets/web-channel-add-custom-html-validate.png)
 
@@ -235,7 +235,7 @@ ht-degree: 0%
 
 ![查看自定义HTML](../assets/web-channel-review-custom-html.png)
 
-使用编辑特定组件 **CSS选择器类型** 修改。
+使用编辑特定组件 **[!UICONTROL CSS选择器类型]** 修改。
 
 ![修改CSS](../assets/web-channel-css-selector.png)
 
@@ -243,7 +243,7 @@ ht-degree: 0%
 
 ![修改head](../assets/web-channel-page-head-modification.png)
 
-使用 **可视化帮助程序**.
+使用 **[!UICONTROL 可视化帮助程序]**.
 
 ### 模拟忠诚度奖励内容
 
@@ -251,11 +251,11 @@ ht-degree: 0%
 
 要模拟体验，请执行以下操作：
 
-1. 选择 **模拟内容** 在营销活动中。
+1. 选择 **[!UICONTROL 模拟内容]** 在营销活动中。
 
    ![模拟内容](../assets/web-channel-simulate-content.png)
 
-1. 选择要接收模拟的测试用户档案。 请记住，测试用户档案应位于“*Luma忠诚度奖励 — 金牌状态*”受众获得适当的对待。
+1. 选择要接收模拟的测试用户档案。 请记住，测试用户档案应位于 `Luma Loyalty Rewards – Gold Status` 受众获得适当的待遇。
 
 1. 将显示测试用户档案的预览。
 
@@ -265,11 +265,11 @@ ht-degree: 0%
 
 1. 选择 **审查以激活**.
 
-1. 系统会提示您最后一次确认促销活动详细信息。 选择 **激活**. 营销活动最多可能需要15分钟才能在网站上处于活动状态。
+1. 系统会提示您最后一次确认促销活动详细信息。 选择 **[!UICONTROL 激活]**. 营销活动最多可能需要15分钟才能在网站上处于活动状态。
 
 ### 忠诚度奖励QA
 
-作为最佳实践，请监控 **Web** 定位的KPI的营销活动实时报表和全局报表的选项卡。 对于此营销活动，监视体验展示次数，然后单击率。
+作为最佳实践，请监控 **[!UICONTROL Web]** 定位的KPI的营销活动实时报表和全局报表的选项卡。 对于此营销活动，监视体验展示次数，然后单击率。
 
 ![查看Web报表](../assets/web-channel-web-report.png)
 
@@ -287,27 +287,27 @@ ht-degree: 0%
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 在网页上，打开 **Adobe Experience Platform debugger**.
+1. 在网页上，打开 **[!UICONTROL Adobe Experience Platform Debugger]**.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 导航到 **摘要**. 验证 **数据流ID** 匹配 **数据流** 在 **Adobe数据收集** 您已为其启用Adobe Journey Optimizer的。
+1. 导航到 **摘要**. 验证 **[!UICONTROL 数据流ID]** 匹配 **[!UICONTROL 数据流]** 在 **[!UICONTROL Adobe数据收集]** 您已为其启用Adobe Journey Optimizer的。
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 然后，您可以使用各种Luma忠诚度帐户登录网站，并使用该调试器验证发送到Adobe Experience Platform Edge网络的请求。
+1. 然后，您可以使用各种Luma忠诚度帐户登录网站，并使用该调试器验证发送到Adobe Experience Platform Edge Network的请求。
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 下 **解决方案** 导航至 **Experience PlatformWeb SDK**.
+1. 下 **[!UICONTROL 解决方案]** 导航至 **[!UICONTROL Experience PlatformWeb SDK]**.
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 在 **配置** 选项卡，打开 **启用调试**. 这将启用会话日志记录 **Adobe Experience Platform Assurance** 会话。
+1. 在 **配置** 选项卡，打开 **[!UICONTROL 启用调试]**. 这将启用会话日志记录 **[!UICONTROL Adobe Experience Platform Assurance]** 会话。
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 使用各种Luma忠诚度帐户登录网站，然后使用调试器验证发送到 **Adobe Experience Platform Edge network**. 所有这些请求都应捕获到 **Assurance** 用于日志跟踪。
+1. 使用各种Luma忠诚度帐户登录网站，然后使用调试器验证发送到 **[!UICONTROL Adobe Experience Platform Edge network]**. 所有这些请求都应捕获到 **[!UICONTROL Assurance]** 用于日志跟踪。
 <!--
    ![ADD SCREENSHOT](#)
 -->

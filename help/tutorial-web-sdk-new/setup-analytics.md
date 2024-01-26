@@ -2,9 +2,9 @@
 title: 使用Experience PlatformWeb SDK设置Adobe Analytics
 description: 了解如何使用Experience PlatformWeb SDK设置Adobe Analytics。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Analytics
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '4649'
+source-wordcount: '4675'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 0%
    * [创建标记规则](create-tag-rule.md)
    * [使用Adobe Experience Platform Debugger进行验证](validate-with-debugger.md)
 
-您还需要 [允许用户访问Adobe Experience Platform保障](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) 以便您能够使用Adobe Experience Platform Assurance验证Adobe Analytics数据。
+您还需要 [允许用户访问Adobe Experience Platform保障](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) 以便您能够使用Adobe Experience Platform Assurance验证Adobe Analytics数据。 （如果您具有访问架构、身份命名空间和数据流，则您已经可以访问Assurance）
 
 ## XDM架构和Analytics变量
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. -->
 
-1. **与产品无关的XDM**：维护语义键值对XDM架构并使用 [Adobe Analytics处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) 以将XDM字段映射到eVar、prop等
+1. **与产品无关的XDM**：维护语义键值对XDM架构并使用 [Adobe Analytics处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) 以将XDM字段映射到eVar、prop等 在语义XDM架构中，我们是指字段名称本身具有含义。 例如，字段名称 `web.webPageDetails.pageName` 比说更有意义 `prop1` 或 `evar3`.
 
    >[!IMPORTANT]
    >
@@ -140,7 +140,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 您可能希望更改当访客出现在某些页面中时，要将哪些Adobe Analytics报表包数据发送到。 要为Adobe Analytics配置数据流覆盖设置，请执行以下操作：
 
-1. 编辑 **[!UICONTROL Adobe Analytics]** 通过打开shish-kabab菜单，然后选择 **[!UICONTROL 编辑]**
+1. 编辑 **[!UICONTROL Adobe Analytics]** 通过打开 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 菜单，然后选择 **[!UICONTROL 编辑]**
 
    ![覆盖数据流](assets/datastream-edit-analytics.png)
 
@@ -306,19 +306,16 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 ### 递增页面查看次数
 
-由于您现在将数据发送到Adobe Analytics，因此还必须映射一个额外的XDM字段，以指示应当将信标作为Analytics页面查看进行处理。
+由于您现在将数据发送到Adobe Analytics，因此我们建议您映射一个额外的XDM字段来指示页面查看。 虽然从技术上讲，Analytics不需要将信标作为页面视图进行处理，但采用标准方式为其他下游应用程序指示页面视图会很有用。
 
 1. 打开 `all pages global content variables - page bottom - AA (order 1)` 规则
+1. 打开 **[!UICONTROL 更新变量]** 操作
 1. 向下滚动并选择以打开，直到 `web.webPageDetails`
 1. 选择以打开 **[!UICONTROL 页面查看次数]** 对象
 1. 设置 **[!UICONTROL 值]** 到 `1`
 1. 选择 **[!UICONTROL 保留更改]**
 
    ![页面查看XDM对象](assets/set-up-analytics-pageviews.png)
-
-   >[!TIP]
-   >
-   >此字段等同于发送 **`s.t()`** 使用以下方式查看Analytics的页面信标 `AppMeasurement.js`. 对于链接点击信标，请设置 `webInteraction.linkClicks.value` 到 `1`
 
 
 ### 使用数据流覆盖将页面查看发送到其他报表包
@@ -381,9 +378,9 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 1. 下 **[!UICONTROL 报表包]**，选择要覆盖的报表站点。 在本例中， `tmd-websdk-course-stg`.
 
 
->[!TIP]
->
->此处显示的报表包列表由 [配置数据流报表包覆盖](configure-datastream.md###configure-a-datastream-report-suite-override) 步骤。 添加报表包相当于使用多包标记。
+   >[!TIP]
+   >
+   >此处显示的报表包列表由 [配置数据流报表包覆盖](configure-datastream.md###configure-a-datastream-report-suite-override) 步骤。 添加报表包相当于使用多包标记。
 
 1. 选择 **[!UICONTROL 保留更改]**
 
@@ -415,6 +412,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 1. 从左侧导航中，选择 **[!UICONTROL 规则]** 然后选择 **[!UICONTROL 添加规则]**
 1. 将其命名为  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
 1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
 1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Page Bottom]**
 1. 将其命名为 `Core - Page Bottom - order 20`
@@ -520,6 +518,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 现在返回到将XDM对象映射到整个数组。 重复与创建 `ecommerce - pdp page bottom - AA (order 20)` 规则：
 
 1. 将其命名为  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
 1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
 1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Page Bottom]**
 1. 将其命名为 `Core - Page Bottom - order 20`
@@ -670,16 +669,10 @@ Repeat the same for all other e-commerce events using the following parameters:
 
 ### Experience CloudID验证
 
-1. 转到 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 并使用Experience Platform调试器来 [将网站上的tag属性切换到您自己的开发资产](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. 转到 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
+1. 选择右上角的登录按钮，并使用凭据u： test@adobe.com p：测试进行身份验证
+1. 打开Experience PlatformDebugger并 [将网站上的tag属性切换到您自己的开发资产](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
-
-   >[!WARNING]
-   >
-   >在继续之前，请确保您已登录Luma网站。  如果您未登录，则Luma网站不允许您签出。
-   >
-   > 1. 在Luma上，选择右上角的登录按钮，然后使用凭据 **ù： `test@adobe.com` p：测试** 进行身份验证
-   >
-   > 1. 系统会自动将您重定向到 [Didi Sport Watch产品页](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) 在下一页面加载时
 
 1. 要启用边缘跟踪，请转到Experience Platform调试器，在左侧导航中，选择 **[!UICONTROL 日志]**，然后选择 **[!UICONTROL Edge]** 选项卡，然后选择 **[!UICONTROL 连接]**
 
@@ -689,7 +682,7 @@ Repeat the same for all other e-commerce events using the following parameters:
 
    ![连接的边缘跟踪](assets/analytics-debugger-edge-connected.png)
 
-1. 刷新 [Didi Sport Watch产品页](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02) 并再次检查Experience Platform调试器，此时您应该会看到数据已通过。 以开头的行 **[!UICONTROL Analytics自动映射]** 是Adobe Analytics信标
+1. 刷新“Luma”页面并再次检查Experience Platform调试器，您应该会看到数据通过。 以开头的行 **[!UICONTROL Analytics自动映射]** 是Adobe Analytics信标
 1. 选择以打开 `[!UICONTROL mappedQueryParams]` 下拉列表和查看Analytics变量的第二个下拉列表
 
    ![Analytics信标边缘跟踪](assets/analytics-debugger-edge-analytics.png)
@@ -700,6 +693,7 @@ Repeat the same for all other e-commerce events using the following parameters:
 
 1. 向下滚动以查找 `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. 它是一个捕获ECID的上下文数据变量
 1. 一直向下滚动直到看到Analytics `[!UICONTROL mid]` 变量。 两个ID均与设备的Experience CloudID匹配。
+1. 在Luma网站上，
 
    ![Analytics ECID](assets/analytics-debugger-ecid.png)
 
@@ -711,7 +705,7 @@ Repeat the same for all other e-commerce events using the following parameters:
 
 在上面，您为配置了数据流覆盖 [Luma主页](https://luma.enablementadobe.com/content/luma/us/en.html).  验证此配置的步骤
 
-1. 查找包含 **[!UICONTROL 应用覆盖后的数据流配置。]**&#x200B;的问题。在这里，您可以找到为报表包覆盖配置的主报表包和其他报表包。
+1. 查找包含 **[!UICONTROL 应用覆盖后的数据流配置]**. 在这里，您可以找到为报表包覆盖配置的主报表包和其他报表包。
 
    ![Analytics报表包覆盖列表验证](assets/aep-debugger-datastream-override.png)
 
@@ -721,9 +715,9 @@ Repeat the same for all other e-commerce events using the following parameters:
 
 ### 内容页面查看次数
 
-返回 [Didi Sport Watch产品页](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  这次，您将验证Analytics是否捕获了内容页面查看。
+转到产品页面，如 [Didi Sport Watch产品页](https://luma.enablementadobe.com/content/luma/us/en/products/gear/watches/didi-sport-watch.html#24-WG02).  验证Analytics是否捕获了内容页面查看。
 
-1. 查找 `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. 它告诉您一个 `s.t()` 正在将页面查看信标发送到Analytics
+1. 查找 `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`.
 1. 向下滚动以查看 `[!UICONTROL gn]` 变量。 它是的Analytics动态语法 `[!UICONTROL s.pageName]` 变量。 它从数据层捕获页面名称。
 
    ![Analytics产品字符串](assets/analytics-debugger-edge-page-view.png)
@@ -737,7 +731,7 @@ Repeat the same for all other e-commerce events using the following parameters:
 1. 查找 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. 变量会捕获您映射到 `productListItems.item1.sku` 本课程前面部分
 1. 同时查找 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL _experience.analytics.customdimensions.evars.evar1]`. 变量会捕获您映射到的数据元素值 `productListItems.item1._experience.analytics.customdimensions.evars.evar1`
 1. 向下滚动以查看 `[!UICONTROL pl]` 变量。 它是Analytics产品字符串变量的动态语法
-1. 请注意，数据层中的产品名称会同时映射到 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` 和 `[!UICONTROL product]` 生产字符串的参数。  此外，数据层中的产品标题会映射到生产字符串中的推销evar1。
+1. 请注意，数据层中的产品名称会同时映射到 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]` 和 `[!UICONTROL product]` 产品字符串的参数。  此外，数据层中的产品标题会映射到products string中的推销evar1。
 
    ![Analytics产品字符串](assets/analytics-debugger-prodstring.png)
 
@@ -840,9 +834,9 @@ Adobe Experience Platform Assurance是Adobe Experience Cloud的一个产品，�
 
 有几种方式可以访问Assurance ：
 
-1. 通过Adobe Experience Platform提供访问保证
-1. 通过Adobe Experience Platform数据收集提供访问保证
-1. 通过Adobe Experience Platform Debugger中的日志提供访问保证
+1. 通过Adobe Experience Platform界面
+1. 通过Adobe Experience Platform数据收集界面
+1. 通过Adobe Experience Platform Debugger中的日志（推荐）
 
 要通过Adobe Experience Platform访问保证，请向下滚动并选择 **[!UICONTROL Assurance]** 在左边栏导航中的 **[!UICONTROL 数据收集]**.  选择 **[!UICONTROL “Web SDK教程3”]** 会话来访问上一节中生成的事件。
 ![通过Adobe Experience Platform保证](assets/assurance-open-aep.png)
@@ -850,7 +844,7 @@ Adobe Experience Platform Assurance是Adobe Experience Cloud的一个产品，�
 要通过Adobe Experience Platform数据收集访问保证，请选择 **[!UICONTROL Assurance]** 在左边栏导航中的 **[!UICONTROL 数据收集]**.  选择 **[!UICONTROL “Web SDK教程3”]** 会话来访问上一节中生成的事件。\
 ![通过Adobe Experience Platform数据收集提供保证](assets/assurance-open-data-collection.png)
 
-要通过Adobe Experience Platform Debugger访问Assurance，请转到Experience PlatformDebugger，在左侧导航栏中选择 **[!UICONTROL 日志]**，然后选择 **[!UICONTROL Edge]** 选项卡，然后选择 **[!UICONTROL 连接]**.  建立与Edge Network的连接后，选择外部链接图标\
+要通过Adobe Experience Platform Debugger访问Assurance，请转到Experience PlatformDebugger，在左侧导航栏中选择 **[!UICONTROL 日志]**，然后选择 **[!UICONTROL Edge]** 选项卡，然后选择 **[!UICONTROL 连接]**.  建立与Edge Network的连接后，选择外部链接图标。 我们建议通过Debugger访问Assurance，因为当前需要从Debugger启动Web会话。
 ![通过Adobe Experience Platform数据收集提供保证](assets/assurance-open-aep-debugger.png)
 
 在 **[!UICONTROL “Web SDK教程3”]** 进入保证会话 **[!UICONTROL &quot;hitdebugger&quot;]** 放到事件搜索栏中，将结果筛选为AdobeAnalytics后处理数据。

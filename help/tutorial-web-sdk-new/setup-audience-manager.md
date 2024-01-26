@@ -2,7 +2,7 @@
 title: 使用Platform Web SDK设置Audience Manager
 description: 了解如何使用Platform Web SDK设置Adobe Audience Manager，并使用Cookie目标验证实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Audience Manager
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
 source-wordcount: '1330'
 ht-degree: 1%
@@ -59,7 +59,7 @@ ht-degree: 1%
 
    ![Adobe Experience PlatformAudience Manager数据源](assets/data-sources-list.jpg)
 
-1. 为数据源提供易记的名称和描述。 对于初始设置，您可以将其命名为`Platform Web SDK tutorial`.
+1. 为数据源提供易记的名称和描述。 对于初始设置，您可以将其命名为 `Platform Web SDK tutorial`.
 1. 设置 **[!UICONTROL ID类型]** 到 **[!UICONTROL Cookie]**
 1. 在 **[!UICONTROL 数据导出控制]** 部分，选择 **[!UICONTROL 无限制]**
 

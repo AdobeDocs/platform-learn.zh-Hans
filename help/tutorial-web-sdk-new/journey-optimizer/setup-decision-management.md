@@ -4,9 +4,9 @@ description: 了解如何使用Platform Web SDK实施决策管理。 本课程�
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2464'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 了解如何使用Platform Web SDK实施决策管理。 本指南介绍了基本的决策管理先决条件、配置的详细步骤，并深入研究了以忠诚度状态为中心的用例。
 
-通过遵循此文档，Journey Optimizer用户能够有效地应用offer decisioning功能，增强其客户交互的个性化和相关性。
+通过学习本教程，Journey Optimizer用户能够有效地应用offer decisioning功能，增强其客户交互的个性化和相关性。
 
 ## 学习目标
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 * 掌握Adobe Journey Optimizer中决策管理的核心概念及其与Adobe Experience Platform Web SDK的集成。
 
-* 了解配置Web SDK以进行Offer decisioning的分步流程，从而确保与AJO的无缝集成。
+* 了解配置Web SDK以进行Offer decisioning的分步流程，从而确保与Journey Optimizer的无缝集成。
 
 * 探索以忠诚度状态优惠为中心的详细用例，深入了解如何有效创建和管理优惠、决策和投放。
 
@@ -38,13 +38,11 @@ ht-degree: 0%
 
 要完成此部分中的课程，您必须首先：
 
-* 确保贵组织有权访问Adobe Journey Optimizer Ultimate(AJO和Offer Decisioning)或Adobe Experience Platform以及Offer decisioning应用程序服务加载项。
+* 确保贵组织有权访问Adobe Journey Optimizer Ultimate(Journey Optimizer和Offer Decisioning)或Adobe Experience Platform以及Offer decisioning应用程序服务加载项。
 
 * 完成有关Platform Web SDK初始配置的所有课程。
 
 * 为您的组织启用Edge Decisioning。
-
-* 发布您的数据流。
 
 * 了解如何配置投放位置，并在决策范围JSON中实例化投放位置和活动ID。
 
@@ -143,7 +141,7 @@ offer decisioning必须在 **数据流** 在Platform Web SDK可提供任何决�
 
 >[!NOTE]
 >
-> 由于本教程面向实施者，因此需要注意的是，本课程涉及AJO中的大量UI工作。 虽然此类UI任务通常由营销人员处理，但是即使实施者不负责决策管理营销活动的长期创建，了解该过程也会很有帮助。
+> 由于本教程面向实施者，因此需要注意的是，本课程涉及Journey Optimizer中的大量界面工作。 虽然此类界面任务通常由营销人员处理，但对于实施者而言，深入了解该流程可能会有所帮助，即使他们并不负责决策管理营销活动的长期创建。
 
 ## 组件
 
@@ -173,7 +171,7 @@ offer decisioning必须在 **数据流** 在Platform Web SDK可提供任何决�
 
 1. 单击&#x200B;**保存**。
 1. 创建投放位置后，该投放位置将显示在投放位置列表中。
-1. 记下版面ID，因为这对于在决策范围内进行配置可能很有必要。
+1. 选择包含新版面的行并记下版面ID，因为这对于在决策范围内进行配置可能很有必要。
 
    ![请参阅版面ID ](../assets/decisioning-placement-id.png)
 
@@ -189,7 +187,7 @@ offer decisioning必须在 **数据流** 在Platform Web SDK可提供任何决�
 
    ![创建规则](../assets/decisioning-create-rule.png)
 
-1. 让我们命名第一个规则&#39;*金会员状态规则*’。 您可以使用XDM字段定义规则。 Adobe Experience Platform **区段生成器** 是一个直观的UI，可用于构建规则条件。
+1. 让我们命名第一个规则&#39;*金会员状态规则*’。 您可以使用XDM字段定义规则。 Adobe Experience Platform **区段生成器** 是一个直观的界面，可用于构建规则条件。
 
    ![定义规则](../assets/decisioning-define-rule.png)
 
