@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: b38cd5cf681415defae1dab77ad19fd00d41fda2
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '868'
 ht-degree: 16%
 
 ---
@@ -207,7 +207,7 @@ ht-degree: 16%
    + [更新架构](/help/platform/schemas/update-schemas.md)
    + [创建临时架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + 源 {#sources}
-   + [源概述](/help/platform/sources/overview.md)
+   + [概述](/help/platform/sources/overview.md)
    + [从Adobe Analytics引入数据](/help/platform/sources/ingest-data-from-adobe-analytics.md)
    + [从Audience Manager引入数据](/help/platform/sources/ingest-data-from-aam.md)
    + [从Marketo引入数据](/help/platform/sources/ingest-data-from-marketo.md)
@@ -217,6 +217,10 @@ ht-degree: 16%
    + [使用HTTP API流式传输数据](/help/platform/sources/streaming-ingestion-http-api.md)
    + [使用源连接器流式传输数据](/help/platform/sources/streaming-ingestion-source-connector.md)
    + [疑难解答：SFTP连接器](/help/platform/sources/troubleshoot-sftp-connector.md)
++ 用例战术手册 {#use-case-playbooks}
+   + [概述](/help/platform/use-case-playbooks/overview.md)
+   + [配置行动手册沙盒](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
+   + [创建和发布行动手册实例](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Experience Cloud集成 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
