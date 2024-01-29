@@ -6,10 +6,10 @@ solution: Data Collection,Experience Platform
 doc-type: video
 auto-video-transcripts: true
 role: Developer, Data Engineer
-source-git-commit: 762fae584213b9f44ea6b97cb66f69526fc29595
+source-git-commit: 72be7f50cf52633ea5970fd5a3b5b3d7fe9ea470
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 27%
+source-wordcount: '188'
+ht-degree: 26%
 
 ---
 
@@ -21,14 +21,14 @@ ht-degree: 27%
 + 标记{#tags}
    + [概述和创建资产](tags/create-a-property.md)
    + [选择托管选项](tags/choose-a-hosting-option.md)
-   + [使用环境](tags/use-environments.md)
+   + [使用环境和嵌入代码](tags/use-environments-and-embed-codes.md)
    + [添加和配置扩展](tags/add-and-configure-extensions.md)
    + [创建数据元素](tags/create-data-elements.md)
    + [生成规则](tags/build-rules.md)
    + [构建和发布库](tags/build-and-publish-a-library.md)
    + [使用Web SDK在网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans){target="_blank"}
    + [使用解决方案SDK在网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
-   + [在移动应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans){target="_blank"}
+   + [在移动应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
 + Web SDK{#web-sdk}
    + [概述](web-sdk/overview.md)
    + [演示](web-sdk/demo.md)
@@ -44,7 +44,7 @@ ht-degree: 27%
    + [概述](mobile-sdk/overview.md)
    + [创建移动资产](mobile-sdk/create-mobile-properties.md)
    + [使用依赖关系管理器](mobile-sdk/use-dependency-managers.md)
-   + [在移动应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans){target="_blank"}
+   + [在移动应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
 + 服务器API{#server-api}
    + [概述](server-api/overview.md)
    + [API基础](server-api/introduction.md)
