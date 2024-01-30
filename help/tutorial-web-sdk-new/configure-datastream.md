@@ -2,9 +2,9 @@
 title: 配置数据流
 description: 了解如何启用数据流并配置Experience Cloud解决方案。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Datastreams
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '557'
 ht-degree: 3%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 3%
 了解如何启用数据流并配置Experience Cloud应用程序。
 
 数据流告知Adobe Experience Platform Edge Network将通过Platform Web SDK收集的数据发送到何处。 在数据流配置中，您可以启用Experience Cloud应用程序、Experience Platform帐户和事件转发。 请参阅 [配置数据流的基础知识](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans) 以了解更多详细信息。
+
+
+![Web SDK、数据流和边缘网络图](assets/dc-websdk-datastreams.png)
 
 ## 学习目标
 

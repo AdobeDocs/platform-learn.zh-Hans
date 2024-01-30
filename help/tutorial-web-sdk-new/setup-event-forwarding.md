@@ -2,9 +2,9 @@
 title: 设置事件转发属性
 description: 了解如何使用Experience PlatformWeb SDK数据来使用event-forwarding属性。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1858'
+source-wordcount: '1862'
 ht-degree: 2%
 
 ---
@@ -14,6 +14,9 @@ ht-degree: 2%
 了解如何使用Experience PlatformWeb SDK数据来使用event-forwarding属性。
 
 事件转发是数据收集中可用的一种新属性。 事件转发让您能够直接从Adobe Experience Platform Edge Network而不是传统的客户端浏览器向第三方非Adobe供应商发送数据。 在中详细了解事件转发的优势 [事件转发概述](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Web SDK和事件转发图](assets/dc-websdk-eventforwarding.png)
 
 要在Adobe Experience Platform中使用事件转发，必须首先使用以下三个选项中的一个或多个，将数据发送到Adobe Experience Platform Edge Network：
 
@@ -50,7 +53,6 @@ ht-degree: 2%
 
    * 初始配置
 
-      * [配置权限](configure-permissions.md)
       * [配置XDM架构](configure-schemas.md)
       * [配置身份命名空间](configure-identities.md)
       * [配置数据流](configure-datastream.md)

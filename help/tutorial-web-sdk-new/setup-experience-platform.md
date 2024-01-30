@@ -1,9 +1,9 @@
 ---
 title: 使用Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1608'
 ht-degree: 5%
 
 ---
@@ -13,6 +13,9 @@ ht-degree: 5%
 了解如何使用Platform Web SDK将Web数据流式传输到Adobe Experience Platform。
 
 Experience Platform是所有新Experience Cloud应用程序(如Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer)的支柱。 这些应用程序旨在使用Platform Web SDK作为它们的最佳的Web数据收集方法。
+
+
+![Web SDK和Adobe Experience Platform图](assets/dc-websdk-aep.png)
 
 Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事件数据。 当该数据被发送到Platform Edge Network时，数据流配置可以将其转发到Experience Platform。
 

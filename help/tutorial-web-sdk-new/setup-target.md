@@ -2,9 +2,9 @@
 title: 使用Platform Web SDK设置Adobe Target
 description: 了解如何使用Platform Web SDK实施Adobe Target。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Target
-source-git-commit: 324ce76ff9f6b926ca330de1a1e827f8e88dc12d
+source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
 workflow-type: tm+mt
-source-wordcount: '4282'
+source-wordcount: '4288'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 0%
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html) 是一种Adobe Experience Cloud应用程序，可为您提供定制和个性化客户体验所需的一切功能，从而最大限度地增加您的Web和移动设备网站、应用程序及其他数字渠道的收入。
 
+![Web SDK和Adobe Target图](assets/dc-websdk-at.png)
 
 ## 学习目标
 
