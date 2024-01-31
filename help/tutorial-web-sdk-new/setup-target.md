@@ -2,9 +2,9 @@
 title: 使用Platform Web SDK设置Adobe Target
 description: 了解如何使用Platform Web SDK实施Adobe Target。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Target
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '4288'
+source-wordcount: '4264'
 ht-degree: 0%
 
 ---
@@ -394,22 +394,9 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 * [Recommendations保留的参数](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * 的类别值 [类别亲和力](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### 为Target参数创建数据元素
+### 为特殊的Target参数创建数据元素
 
-首先，为配置文件属性、实体属性、类别值设置一些额外的数据元素，然后构建 `data` 用于传递非XDM数据的对象：
-
-* **`target.entity.id`** 已映射到 `digitalData.product.0.productInfo.sku`
-* **`target.entity.name`** 已映射到 `digitalData.product.0.productInfo.title`
-* **`target.user.categoryId`** 使用以下自定义代码解析顶级类别的网站URL：
-
-  ```javascript
-  var cat = location.pathname.split(/[/.]+/);
-  if (cat[5] == 'products') {
-     return (cat[6]);
-  } else if (cat[5] != 'html') { 
-     return (cat[5]);
-  }
-  ```
+首先，使用在 [创建数据元素](create-data-elements.md) 课程构建 `data` 用于传递非XDM数据的对象：
 
 * **`data.content`** 使用以下自定义代码：
 
@@ -417,10 +404,10 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
   var data = {
      __adobe: {
         target: {
-           "entity.id": _satellite.getVar("target.entity.id"),
-           "entity.name": _satellite.getVar("target.entity.name"),
+           "entity.id": _satellite.getVar("product.productInfo.sku"),
+           "entity.name": _satellite.getVar("product.productInfo.title"),
            "profile.loggedIn": _satellite.getVar("user.profile.attributes.loggedIn"),
-           "user.categoryId": _satellite.getVar("target.user.categoryId")
+           "user.categoryId": _satellite.getVar("product.category")
         }
      }
   }

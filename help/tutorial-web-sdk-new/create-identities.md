@@ -2,9 +2,9 @@
 title: 创建身份
 description: 了解如何在XDM中创建身份并使用身份映射数据元素捕获用户ID。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '858'
 ht-degree: 1%
 
 ---
@@ -13,14 +13,7 @@ ht-degree: 1%
 
 了解如何使用Experience PlatformWeb SDK捕获身份。 在上捕获未经身份验证和经过身份验证的身份数据 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html). 了解如何使用您之前创建的数据元素，通过名为身份映射的Platform Web SDK数据元素类型收集经过身份验证的数据。
 
-Platform Web SDK标记扩展引入了四种新数据元素类型：
-
-1. 事件合并Id
-1. 标识映射
-1. Variable
-1. XDM对象
-
-本课程重点介绍Identity映射数据元素。 您可以将包含经过身份验证的用户ID和身份验证状态的数据元素映射到XDM。
+本课程将重点介绍Adobe Experience Platform Web SDK标记扩展中可用的身份映射数据元素。 您可以将包含经过身份验证的用户ID和身份验证状态的数据元素映射到XDM。
 
 ## 学习目标
 
@@ -32,7 +25,7 @@ Platform Web SDK标记扩展引入了四种新数据元素类型：
 
 ## 先决条件
 
-您已了解数据层是什么，对 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 数据层，并了解如何引用标记中的数据元素。 您必须在教程中完成以下先前步骤：
+您已了解数据层是什么，对 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 数据层，并了解如何引用标记中的数据元素。 您必须在本教程中完成以下以前的课程：
 
 * [配置XDM架构](configure-schemas.md)
 * [配置身份命名空间](configure-identities.md)
@@ -40,14 +33,10 @@ Platform Web SDK标记扩展引入了四种新数据元素类型：
 * [Web SDK扩展安装在标记属性中](install-web-sdk.md)
 * [创建数据元素](create-data-elements.md)
 
->[!IMPORTANT]
->
->此 [Experience CloudID服务扩展](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) 在实施Adobe Experience Platform Web SDK时不需要使用，因为ID服务功能已内置到Platform Web SDK中。
 
 ## Experience Cloud ID
 
-此 [Experience CloudID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) 是跨Adobe Experience Platform和Adobe Experience Cloud应用程序使用的共享身份命名空间。 ECID为客户身份奠定了基础，是数字资产的默认身份。 这使ECID成为跟踪未经身份验证的用户行为的理想标识符，因为它始终存在。
-
+此 [Experience CloudID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) 是跨Adobe Experience Platform和Adobe Experience Cloud应用程序使用的共享身份命名空间。 ECID为客户身份奠定了基础，是数字资产的默认身份。 这使ECID成为跟踪未经身份验证的用户行为的理想标识符，因为它始终存在
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -59,6 +48,10 @@ Platform Web SDK标记扩展引入了四种新数据元素类型：
 详细了解如何 [使用Platform Web SDK跟踪ECID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
 ECID是使用第一方Cookie和Platform Edge Network的组合设置的。 默认情况下，第一方Cookie由Web SDK设置。 要说明浏览器对Cookie有效期的限制，您可以选择设置和管理自己的第一方Cookie。 这些称为第一方设备ID (FPID)。
+
+>[!IMPORTANT]
+>
+>此 [Experience CloudID服务扩展](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) 在实施Adobe Experience Platform Web SDK时不需要使用，因为ID服务功能已内置到Platform Web SDK中。
 
 ## 第一方设备ID (FPID)
 

@@ -2,9 +2,9 @@
 title: 创建标记规则
 description: 了解如何使用标记规则将事件与XDM对象一起发送到Platform Edge Network。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '2005'
 ht-degree: 1%
 
 ---
@@ -59,11 +59,18 @@ ht-degree: 1%
 * **[!UICONTROL 更新变量]** 将数据元素映射到XDM字段
 * **[!UICONTROL 发送事件]** 将XDM对象发送到Experience Platform边缘网络
 
-### 更新变量
+首先，我们使用 **[!UICONTROL 更新变量]** 操作，定义我们要在网站的每个页面上发送的XDM字段的“全局配置”（例如，页面名称）。
 
-创建此第一条规则作为“全局配置”，以使用Platform Web SDK的 **[!UICONTROL 更新变量]** 操作。 然后，创建第二个规则，按序列排列，以便在第一个规则之后触发，以使用将XDM对象发送到Platform Edge Network **[!UICONTROL 发送事件]** 操作。 在本教程的后面部分，您将根据访客所在的页面类型（例如产品页面上的产品SKU）发送不同的XDM字段。 您可以通过排序包含的规则来实现这一点 **[!UICONTROL 更新变量]** 操作，位于使用 **[!UICONTROL 发送事件]** 操作。
+然后，我们可以使用定义其他规则 **[!UICONTROL 更新变量]** 操作，使用仅在特定条件下可用的附加字段（例如，在产品页面上添加产品详细信息）来补充全局XDM字段。
 
-要创建标记规则，请执行以下操作：
+最后，我们将使用另一条规则和 **[!UICONTROL 发送事件]** 操作将向Adobe Experience Platform Edge Network发送完整的XDM对象。
+
+
+### 更新变量规则
+
+#### 全局字段
+
+要为全局XDM字段创建标记规则：
 
 1. 打开您在本教程中使用的标记属性
 
@@ -119,6 +126,8 @@ ht-degree: 1%
    * **`web.webPageDetials.server`** 到 `%page.pageInfo.server%`
    * **`web.webPageDetials.siteSection`** 到 `%page.pageInfo.hierarchie1%`
 
+1. 将 `web.webPageDetials.pageViews.value` 设置为 `1`
+
    ![更新变量内容](assets/create-rule-xdm-variable-content.png)
 
 1. 接下来，查找 `identityMap` 对象并将其选定
@@ -133,16 +142,202 @@ ht-degree: 1%
 
    >[!WARNING]
    >
-   > 此下拉菜单会填充 **`xdm.eventType`** 变量标识。 虽然您也可以在此字段中键入自由格式标签，但强烈建议您 **不要** 因为它对Platform有负面影响。
+   > 此下拉菜单会填充 **`xdm.eventType`** 变量标识。 虽然您也可以在此字段中键入自由格式标签，但强烈建议您 **不要** 因为它对Platform有不利影响。
 
    >[!TIP]
    >
    > 要了解在 `eventType` 字段，您必须转到架构页面并选择 `eventType` 字段以查看右边栏上的建议值。
 
+   >[!TIP]
+   >
+   > 而两者都不是 `web.webPageDetials.pageViews.value` 也不 `eventType` 设置为 `web.webpagedetails.pageViews` 要将信标作为页面视图进行处理，Adobe Analytics需要使用此变量；对于其他下游应用程序，使用标准方式指示页面视图会很有用。
+
    ![更新变量标识映射](assets/create-tag-rule-eventType.png)
 
 
 1. 选择 **[!UICONTROL 保留更改]** 然后 **[!UICONTROL 保存]** 下一个屏幕中用于完成规则创建的规则
+
+
+#### 通过更新变量操作，使用其他规则扩充XDM对象
+
+您可以使用 **[!UICONTROL 更新变量]**  在多个有序规则中扩充XDM对象，然后再将其发送至 [!UICONTROL Platform边缘网络].
+
+>[!TIP]
+>
+>规则顺序确定在触发事件时首先运行的规则。 如果两个规则具有相同的事件类型，则编号最低的规则会先运行。
+> 
+>![规则顺序](assets/set-up-analytics-sequencing.png)
+
+##### 产品页面字段
+
+首先在Luma的产品详细信息页面上跟踪产品查看：
+
+1. 选择 **[!UICONTROL 添加规则]**
+1. 将其命名为  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
+1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
+1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Page Bottom]**
+1. 将其命名为 `Core - Page Bottom - order 20`
+1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`. 这可确保规则在 `all pages global content variables - page bottom - AA (order 1)` ，用于设置全局内容变量，但在 `all pages send event - page bottom - AA (order 50)` 发送XDM事件。
+
+   ![Analytics XDM规则](assets/set-up-analytics-pdp.png)
+
+1. 下 **[!UICONTROL 条件]**，选择以 **[!UICONTROL 添加]**
+1. 离开 **[!UICONTROL 逻辑类型]** 作为 **[!UICONTROL 常规]**
+1. 离开 **[!UICONTROL 扩展]** 作为 **[!UICONTROL 核心]**
+1. 选择 **[!UICONTROL 完成情况类型]** 作为 **[!UICONTROL 不含查询字符串的路径]**
+1. 在右侧，启用 **[!UICONTROL 正则表达式]** 切换
+1. 下 **[!UICONTROL 路径等于]** 设置 `/products/`. 对于Luma演示站点，它确保规则仅在产品页面上触发
+1. 选择 **[!UICONTROL 保留更改]**
+
+   ![Analytics XDM规则](assets/set-up-analytics-product-condition.png)
+
+1. 下 **[!UICONTROL 操作]** 选择 **[!UICONTROL 添加]**
+1. 选择 **[!UICONTROL Adobe Experience Platform Web SDK]** 扩展
+1. 选择 **[!UICONTROL 操作类型]** 作为 **[!UICONTROL 更新变量]**
+1. 向下滚动到 `commerce` 对象并选择以将其打开。
+1. 打开 **[!UICONTROL 产品视图]** 对象和设置 **[!UICONTROL 值]** 到 `1`
+
+   ![设置产品视图](assets/set-up-analytics-prodView.png)
+
+   >[!TIP]
+   >
+   >在XDM中设置commerce.productViews.value=1会自动映射到 `prodView` Analytics中的事件
+
+
+1. 向下滚动到并选择 `productListItems` 数组
+1. 选择 **[!UICONTROL 提供单个项目]**
+1. 选择 **[!UICONTROL 添加项目]**
+
+   ![设置产品查看事件](assets/set-up-analytics-xdm-individual.png)
+
+   >[!CAUTION]
+   >
+   >此 **`productListItems`** 是 `array` 数据类型，以便它希望数据以元素集合的形式输入。 由于Luma演示站点的数据层结构，并且由于一次只能在Luma站点上查看一个产品，因此需要单独添加项目。 在您自己的网站上实施时，根据数据层结构，您可能能够提供整个阵列。
+
+1. 选择以打开 **[!UICONTROL 项目1]**
+1. 将 **`productListItems.item1.SKU`** 映射到 `%product.productInfo.sku%`
+
+   ![产品SKU XDM对象变量](assets/set-up-analytics-sku.png)
+
+1. 查找 `eventType` 并将其设置为 `commerce.productViews`
+
+1. 选择 **[!UICONTROL 保留更改]**
+
+1. 选择 **[!UICONTROL 保存]** 保存规则
+
+
+
+
+### 购物车字段
+
+您可以将整个数组映射到XDM对象，前提是数组与XDM架构的格式匹配。 自定义代码数据元素 `cart.productInfo` 之前创建的循环是通过 `digitalData.cart.cartEntries` Luma上的数据层对象，并将其转换为 `productListItems` XDM模式的对象。
+
+要说明此问题，请参阅Luma站点数据层（左）与转换后的数据元素（右）的以下比较：
+
+![XDM对象数组格式](assets/data-element-xdm-array.png)
+
+将数据元素与 `productListItems` 结构（提示，它应该匹配）。
+
+>[!IMPORTANT]
+>
+>请注意数值变量的转换方式，以及数据层中字符串值的转换方式，例如 `price` 和 `qty` 已重新格式化为数据元素中的数字。 这些格式要求对于Platform中的数据完整性非常重要，并且在 [配置架构](configure-schemas.md) 步骤。 在本例中， **[!UICONTROL 数量]** 使用 **[!UICONTROL 整数]** 数据类型。
+> ![XDM架构数据类型](assets/set-up-analytics-quantity-integer.png)
+
+现在，让我们将数组映射到XDM对象”
+
+
+1. 创建新规则，名为 `ecommerce - cart page bottom - AA (order 20)`
+1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
+1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
+1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Page Bottom]**
+1. 将其命名为 `Core - Page Bottom - order 20`
+1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`
+1. 选择 **[!UICONTROL 保留更改]**
+
+   ![Analytics XDM规则](assets/set-up-analytics-cart-sequence.png)
+
+1. 下 **[!UICONTROL 条件]**，选择以 **[!UICONTROL 添加]**
+1. 离开 **[!UICONTROL 逻辑类型]** 作为 **[!UICONTROL 常规]**
+1. 离开 **[!UICONTROL 扩展]** 作为 **[!UICONTROL 核心]**
+1. 选择 **[!UICONTROL 完成情况类型]** 作为 **[!UICONTROL 不含查询字符串的路径]**
+1. 在右边， **不要** 启用 **[!UICONTROL 正则表达式]** 切换
+1. 下 **[!UICONTROL 路径等于]** 设置 `/content/luma/us/en/user/cart.html`. 对于Luma演示站点，它确保规则仅在购物车页面上触发
+1. 选择 **[!UICONTROL 保留更改]**
+
+   ![Analytics XDM规则](assets/set-up-analytics-cart-condition.png)
+
+1. 下 **[!UICONTROL 操作]** 选择 **[!UICONTROL 添加]**
+1. 选择 **[!UICONTROL Adobe Experience Platform Web SDK]** 扩展
+1. 选择 **[!UICONTROL 操作类型]** 作为 **[!UICONTROL 更新变量]**
+1. 向下滚动到 `commerce` 对象并选择以将其打开。
+1. 打开 **[!UICONTROL productListView]** 对象和设置 **[!UICONTROL 值]** 到 `1`
+
+   ![设置产品视图](assets/set-up-analytics-cart-view.png)
+
+   >[!TIP]
+   >
+   >在XDM中设置commerce.productListViews.value=1会自动映射到 `scView` Analytics中的事件
+
+
+
+1. 向下滚动到并选择 **[!UICONTROL productListItems]** 数组
+
+1. 选择 **[!UICONTROL 提供整个阵列]**
+
+1. 将映射到 **`cart.productInfo`** 数据元素
+
+1. 选择 `eventType` 并设置为 `commerce.productListViews`
+
+1. 选择 **[!UICONTROL 保留更改]**
+
+1. 选择 **[!UICONTROL 保存]** 保存规则
+
+按照相同的模式为结账和购买创建其他两个规则，但存在以下差异：
+
+**规则名称**： `ecommerce - checkout page bottom - AA (order 20)`
+
+* **[!UICONTROL 条件]**： /content/luma/us/en/user/checkout.html
+* 将 `eventType` 设置为 `commerce.checkouts`
+* 设置 **XDM商务事件**： commerce.checkout.value到 `1`
+
+  >[!TIP]
+  >
+  >这相当于设置 `scCheckout` Analytics中的事件
+
+**规则名称**： `ecommerce - purchase page bottom - AA (order 20)`
+
+* **[!UICONTROL 条件]**： /content/luma/us/en/user/checkout/order/thank-you.html
+* 将 `eventType` 设置为 `commerce.purchases`
+* 设置 **XDM商务事件**： commerce.purchases.value到 `1`
+
+  >[!TIP]
+  >
+  >这相当于设置 `purchase` Analytics中的事件
+
+还有其他步骤可捕获所有必需的 `purchase` 事件变量：
+
+1. 打开 **[!UICONTROL 商务]** 对象
+1. 打开 **[!UICONTROL 订购]** 对象
+1. 地图 **[!UICONTROL purchaseID]** 到 `cart.orderId` 数据元素
+1. 设置 **[!UICONTROL currencyCode]** 到硬编码值 `USD`
+
+   ![为Analytics设置purchaseID](assets/set-up-analytics-purchase.png)
+
+   >[!TIP]
+   >
+   >这相当于设置 `s.purchaseID` 和 `s.currencyCode` Analytics中的变量
+
+
+1. 向下滚动到并选择 **[!UICONTROL productListItems]** 数组
+1. 选择 **[!UICONTROL 提供整个阵列]**
+1. 将映射到 **`cart.productInfo.purchase`** 数据元素
+1. 选择 **[!UICONTROL 保存]**
+
+完成后，您应该会看到创建了以下规则。
+
+![Analytics XDM规则](assets/set-up-analytics-rules.png)
+
 
 ### 发送事件
 

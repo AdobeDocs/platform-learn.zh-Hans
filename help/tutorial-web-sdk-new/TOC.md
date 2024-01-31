@@ -9,9 +9,9 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: 1b6fa039a255de8cdd1889136039e6f23b183578
+source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
 workflow-type: tm+mt
-source-wordcount: '96'
+source-wordcount: '97'
 ht-degree: 23%
 
 ---
@@ -21,7 +21,6 @@ ht-degree: 23%
 
 + [教程概述](overview.md)
 + 初始配置 {#initial-configuration}
-   + [配置权限](configure-permissions.md)
    + [配置XDM架构](configure-schemas.md)
    + [配置身份命名空间](configure-identities.md)
    + [配置数据流](configure-datastream.md)
@@ -32,6 +31,7 @@ ht-degree: 23%
    + [创建身份](create-identities.md)
    + [创建标记规则](create-tag-rule.md)
    + [使用Debugger进行验证](validate-with-debugger.md)
+   + [使用保障进行验证](validate-with-assurance.md)
 
 + 应用程序设置 {#applications-setup}
    + [设置Experience Platform](setup-experience-platform.md)
