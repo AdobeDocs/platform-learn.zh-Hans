@@ -2,7 +2,7 @@
 title: 使用Experience PlatformWeb SDK设置Adobe Analytics
 description: 了解如何使用Experience PlatformWeb SDK设置Adobe Analytics。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Analytics
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '4681'
 ht-degree: 0%
@@ -304,13 +304,13 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 ## 创建其他规则
 
-在 [创建标记规则](create-tag-rule.md) 课程，你设置了一个 `all pages global content variables - page bottom - AA (order 1)` 规则 [已使用创建基线XDM对象 **[!UICONTROL 更新变量]** **[!UICONTROL 操作类型]**](create-tag-rule.md#create-tag-rule). 以下练习扩充了该XDM对象以捕获特定于某些页面的其他数据。
+在 [创建标记规则](create-tag-rule.md) 课程，你设置了一个 `all pages global content variables - library loaded - AA (order 1)` 规则 [已使用创建基线XDM对象 **[!UICONTROL 更新变量]** **[!UICONTROL 操作类型]**](create-tag-rule.md#create-tag-rule). 以下练习扩充了该XDM对象以捕获特定于某些页面的其他数据。
 
 ### 递增页面查看次数
 
 由于您现在将数据发送到Adobe Analytics，因此我们建议您映射一个额外的XDM字段来指示页面查看。 虽然从技术上讲，Analytics不需要将信标作为页面视图进行处理，但采用标准方式为其他下游应用程序指示页面视图会很有用。
 
-1. 打开 `all pages global content variables - page bottom - AA (order 1)` 规则
+1. 打开 `all pages global content variables - library loaded - AA (order 1)` 规则
 1. 打开 **[!UICONTROL 更新变量]** 操作
 1. 向下滚动并选择以打开，直到 `web.webPageDetails`
 1. 选择以打开 **[!UICONTROL 页面查看次数]** 对象
@@ -324,17 +324,17 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 创建规则以向其他报表包发送额外的页面查看调用。 使用数据流覆盖功能，使用以下方式更改页面的报表包： **[!UICONTROL 发送事件]** 操作。
 
-1. 创建新规则，将其命名为 `homepage report suite override - page bottom - AA (order 51)`
+1. 创建新规则，将其命名为 `homepage report suite override - library loaded - AA (order 51)`
 
 1. 选择下的加号 **[!UICONTROL 事件]** 添加新触发器
 
 1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
 
-1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Page Bottom]**
+1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL 库已加载]**
 
-1. 将其命名为 `Core - Page Bottom - order 51`
+1. 将其命名为 `Core - library loaded - order 51`
 
-1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `51`. 这可确保规则在 `all pages global content variables - page bottom - AA (order 50)` 设置基线XDM **[!UICONTROL 更新变量]** 操作类型。
+1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `51`. 这可确保规则在 `all pages global content variables - library loaded - AA (order 50)` 设置基线XDM **[!UICONTROL 更新变量]** 操作类型。
 
    ![Analytics报表包覆盖](assets/set-up-analytics-rs-override.png)
 
@@ -392,7 +392,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 ### 使用更新变量扩充XDM对象
 
-使用 **[!UICONTROL 更新变量]** 操作类型，您可以创建其他规则以扩充“全局内容XDM”，然后再将其发送到 [!UICONTROL Platform边缘网络]. 通过在规则之前对新规则进行排序，完成此操作。 `all pages send event - page bottom - AA (order 50)` 发送事件 [!UICONTROL Platform边缘网络].
+使用 **[!UICONTROL 更新变量]** 操作类型，您可以创建其他规则以扩充“全局内容XDM”，然后再将其发送到 [!UICONTROL Platform边缘网络]. 通过在规则之前对新规则进行排序，完成此操作。 `all pages send event - library loaded - AA (order 50)` 发送事件 [!UICONTROL Platform边缘网络].
 
 >[!TIP]
 >
@@ -413,12 +413,12 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 首先，在Luma的产品详细信息页面上跟踪产品查看。
 
 1. 从左侧导航中，选择 **[!UICONTROL 规则]** 然后选择 **[!UICONTROL 添加规则]**
-1. 将其命名为  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 将其命名为  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
 1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
-1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Page Bottom]**
-1. 将其命名为 `Core - Page Bottom - order 20`
-1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`. 这可确保规则在 `all pages global content variables - page bottom - AA (order 1)` ，用于设置全局内容变量，但在 `all pages send event - page bottom - AA (order 50)` 发送XDM事件。
+1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL 库已加载]**
+1. 将其命名为 `Core - library loaded - order 20`
+1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`. 这可确保规则在 `all pages global content variables - library loaded - AA (order 1)` ，用于设置全局内容变量，但在 `all pages send event - library loaded - AA (order 50)` 发送XDM事件。
 
    ![Analytics XDM规则](assets/set-up-analytics-pdp.png)
 
@@ -517,13 +517,13 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 >请注意数值变量的转换方式，以及数据层中字符串值的转换方式，例如 `price` 和 `qty` 已重新格式化为数据元素中的数字。 这些格式要求对于Platform中的数据完整性非常重要，并且在 [配置架构](configure-schemas.md) 步骤。 在本例中， **[!UICONTROL 数量]** 使用 **[!UICONTROL 整数]** 数据类型。
 > ![XDM架构数据类型](assets/set-up-analytics-quantity-integer.png)
 
-现在返回到将XDM对象映射到整个数组。 重复与创建 `ecommerce - pdp page bottom - AA (order 20)` 规则：
+现在返回到将XDM对象映射到整个数组。 重复与创建 `ecommerce - pdp library loaded - AA (order 20)` 规则：
 
-1. 将其命名为  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. 将其命名为  [!UICONTROL `ecommerce - cart library loaded - AA (order 20)`]
 1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
 1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
-1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Page Bottom]**
-1. 将其命名为 `Core - Page Bottom - order 20`
+1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL 库已加载]**
+1. 将其命名为 `Core - library loaded - order 20`
 1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`
 1. 选择 **[!UICONTROL 保留更改]**
 
@@ -574,7 +574,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 按照相同的模式为结账和购买创建其他两个规则，但存在以下差异：
 
-**规则名称**： `ecommerce - checkout page bottom - AA (order 20)`
+**规则名称**： `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL 条件]**： /content/luma/us/en/user/checkout.html
 * 将 `eventType` 设置为 `commerce.checkouts`
@@ -584,7 +584,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
   >
   >这相当于设置 `scCheckout` Analytics中的事件
 
-**规则名称**： `ecommerce - purchase page bottom - AA (order 20)`
+**规则名称**： `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL 条件]**： /content/luma/us/en/user/checkout/order/thank-you.html
 * 将 `eventType` 设置为 `commerce.purchases`
@@ -745,7 +745,7 @@ Repeat the same for all other e-commerce events using the following parameters:
 
    >[!TIP]
    >
-   > 此 `ecommerce - pdp page bottom - AA (order 20)` 规则正在覆盖的值 `eventType` 由 `all pages global content variables - page bottom - AA (order 1)` 规则，因为该规则设置为在序列中稍后触发
+   > 此 `ecommerce - pdp library loaded - AA (order 20)` 规则正在覆盖的值 `eventType` 由 `all pages global content variables - library loaded - AA (order 1)` 规则，因为该规则设置为在序列中稍后触发
 
 
    ![Analytics产品视图](assets/analytics-debugger-prodView.png)

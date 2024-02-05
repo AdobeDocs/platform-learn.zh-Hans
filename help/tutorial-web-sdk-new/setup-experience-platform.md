@@ -1,7 +1,7 @@
 ---
 title: 使用Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1608'
 ht-degree: 5%
@@ -84,7 +84,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 1. 选择 **[!UICONTROL 数据流]** 从左侧导航
 1. 打开您在中创建的数据流 [配置数据流](configure-datastream.md) 教训， `Luma Web SDK`
 
-   ![选择Luma Web SDK数据流](assets/datastream-luma-web-sdk.png)
+   ![选择Luma Web SDK数据流](assets/datastream-luma-web-sdk-development.png)
 
 1. 选择 **[!UICONTROL 添加服务]**
    ![向数据流添加服务](assets/experience-platform-addService.png)

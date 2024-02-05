@@ -2,7 +2,7 @@
 title: 创建数据元素
 description: 了解如何在标记中创建XDM对象并将数据元素映射到该对象。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '1212'
 ht-degree: 1%
@@ -154,7 +154,7 @@ window.adobeDataLayer.push({
 
 1. 转到 **[!UICONTROL 数据元素]** 并选择 **[!UICONTROL 添加数据元素]** (或 **[!UICONTROL 创建新数据元素]** 如果标记属性中没有现有的数据元素)
 
-   ![创建数据元素](assets/data-element-create.jpg)
+   ![创建数据元素](assets/data-element-create.png)
 
 1. 将数据元素命名为 `page.pageInfo.pageName`
 1. 使用 **[!UICONTROL JavaScript变量]** **[!UICONTROL 数据元素类型]** 指向Luma数据层中的值： `digitalData.page.pageInfo.pageName`
@@ -165,7 +165,7 @@ window.adobeDataLayer.push({
 
 1. 选择 **[!UICONTROL 保存]**
 
-   ![Page Name数据元素](assets/data-element-pageName.jpg)
+   ![Page Name数据元素](assets/data-element-pageName.png)
 
 按照以下相同步骤创建这些附加数据元素：
 

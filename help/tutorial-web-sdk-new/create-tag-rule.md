@@ -2,7 +2,7 @@
 title: 创建标记规则
 description: 了解如何使用标记规则将事件与XDM对象一起发送到Platform Edge Network。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 1%
@@ -80,7 +80,7 @@ ht-degree: 1%
 
    ![创建规则](assets/rules-create.png)
 
-1. 将规则命名为 `all pages global content variables - page bottom - AA (order 1)`
+1. 将规则命名为 `all pages global content variables - library loaded - AA (order 1)`
 
 1. 在 **[!UICONTROL 活动]** 部分，选择 **[!UICONTROL 添加]**
 
@@ -173,12 +173,12 @@ ht-degree: 1%
 首先在Luma的产品详细信息页面上跟踪产品查看：
 
 1. 选择 **[!UICONTROL 添加规则]**
-1. 将其命名为  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. 将其命名为  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
 1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
 1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Page Bottom]**
 1. 将其命名为 `Core - Page Bottom - order 20`
-1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`. 这可确保规则在 `all pages global content variables - page bottom - AA (order 1)` ，用于设置全局内容变量，但在 `all pages send event - page bottom - AA (order 50)` 发送XDM事件。
+1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`. 这可确保规则在 `all pages global content variables - library loaded - AA (order 1)` ，用于设置全局内容变量，但在 `all pages send event - library loaded - AA (order 50)` 发送XDM事件。
 
    ![Analytics XDM规则](assets/set-up-analytics-pdp.png)
 
@@ -247,7 +247,7 @@ ht-degree: 1%
 现在，让我们将数组映射到XDM对象”
 
 
-1. 创建新规则，名为 `ecommerce - cart page bottom - AA (order 20)`
+1. 创建新规则，名为 `ecommerce - cart library loaded - AA (order 20)`
 1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
 1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
 1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Page Bottom]**
@@ -295,7 +295,7 @@ ht-degree: 1%
 
 按照相同的模式为结账和购买创建其他两个规则，但存在以下差异：
 
-**规则名称**： `ecommerce - checkout page bottom - AA (order 20)`
+**规则名称**： `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL 条件]**： /content/luma/us/en/user/checkout.html
 * 将 `eventType` 设置为 `commerce.checkouts`
@@ -305,7 +305,7 @@ ht-degree: 1%
   >
   >这相当于设置 `scCheckout` Analytics中的事件
 
-**规则名称**： `ecommerce - purchase page bottom - AA (order 20)`
+**规则名称**： `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL 条件]**： /content/luma/us/en/user/checkout/order/thank-you.html
 * 将 `eventType` 设置为 `commerce.purchases`
@@ -345,7 +345,7 @@ ht-degree: 1%
 
 1. 在右侧，选择 **[!UICONTROL 添加规则]** 创建其他规则
 
-1. 将规则命名为 `all pages send event - page bottom - AA (order 50)`
+1. 将规则命名为 `all pages send event - library loaded - AA (order 50)`
 
 1. 在 **[!UICONTROL 活动]** 部分，选择 **[!UICONTROL 添加]**
 
@@ -390,7 +390,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >    除了Adobe Experience Platform Web SDK扩展和 `all pages global content variables - page bottom - AA (order 50)` 规则，您将看到在前面的课程中创建的标记组件。 核心扩展包含所有Web标记属性所需的基本JavaScript。
+   >    除了Adobe Experience Platform Web SDK扩展和 `all pages global content variables - library loaded - AA (order 50)` 规则，您将看到在前面的课程中创建的标记组件。 核心扩展包含所有Web标记属性所需的基本JavaScript。
 
 1. 选择 **[!UICONTROL 保存并构建用于开发]**
 
