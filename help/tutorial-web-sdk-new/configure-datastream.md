@@ -2,9 +2,9 @@
 title: 配置数据流
 description: 了解如何启用数据流并配置Experience Cloud解决方案。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Datastreams
-source-git-commit: 58034fc649a06b4e17ffddfd0640a81a4616f688
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '557'
+source-wordcount: '547'
 ht-degree: 3%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >如果您是基于Platform的应用程序(如Real-Time CDP)的客户，我们建议您在本教程中使用开发沙盒。 如果不是，请使用 **[!UICONTROL Prod]** 沙盒。
+   >如果您是基于Platform的应用程序(如Real-Time CDP或Journey Optimizer)的客户，我们建议您在本教程中使用开发沙盒。 如果不是，请使用 **[!UICONTROL Prod]** 沙盒。
 
 1. 转到 **[!UICONTROL 数据流]** 在左侧导航中
 1. 选择 **[!UICONTROL 新建数据流]** 在屏幕的右侧。
@@ -52,13 +52,6 @@ ht-degree: 3%
 1. 选择 **[!UICONTROL 保存]**
 
    ![创建数据流](assets/datastream-create-new-datastream.png)
-
-   >[!AVAILABILITY]
-   >
-   >之后，此教程将结合使用映射功能。
-
-
-
 
 在下一个屏幕上，您可以向数据流添加Adobe应用程序等服务，但此时您不会在本教程中添加任何服务。 您将在后面的课程中这样做 [设置Experience Platform](setup-experience-platform.md)， [设置Analytics](setup-analytics.md)， [设置Audience Manager](setup-audience-manager.md)， [设置目标](setup-target.md)，或 [事件转发](setup-event-forwarding.md).
 
@@ -76,9 +69,9 @@ ht-degree: 3%
 1. 首先，在数据流配置中定义数据流覆盖。 必须为每个要覆盖的Adobe应用程序执行此操作。
 1. 然后，可通过Web SDK发送事件操作或Web SDK标记扩展中的配置将覆盖发送到Edge Network。
 
-请参阅 [数据流配置覆盖文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) 以获取有关如何覆盖数据流配置的详细说明。
+在 [设置Adobe Analytics](setup-analytics.md) 课程可使用Platform Web SDK发送事件操作覆盖页面的报表包。
 
-在设置Adobe Analytics课程中，您 [使用Platform Web SDK发送事件操作覆盖页面的报表包](setup-analytics.md).
+请参阅 [数据流配置覆盖文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) 以获取有关如何覆盖数据流配置的详细说明。
 
 现在，您可以在标记资产中安装Platform Web SDK扩展了！
 

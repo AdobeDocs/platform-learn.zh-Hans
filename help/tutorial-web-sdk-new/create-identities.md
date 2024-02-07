@@ -2,9 +2,9 @@
 title: 创建身份
 description: 了解如何在XDM中创建身份并使用身份映射数据元素捕获用户ID。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
-source-git-commit: aff41fd5ecc57c9c280845669272e15145474e50
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '894'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 1%
 
 在本课程结束时，您能够：
 
-* 了解Experience CloudID (ECID)和第一方设备ID之间的区别
+* 了解Experience CloudID (ECID)和第一方设备ID (FPID)之间的关系
 * 了解未经身份验证与经过身份验证的ID之间的区别
 * 创建身份映射数据元素
 
 ## 先决条件
 
-您已了解数据层是什么，对 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 数据层，并了解如何引用标记中的数据元素。 您必须在本教程中完成以下以前的课程：
+您已了解数据层是什么，对 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 数据层，并了解如何引用标记中的数据元素。 您必须完成本教程中之前的课程：
 
 * [配置XDM架构](configure-schemas.md)
 * [配置身份命名空间](configure-identities.md)
@@ -55,11 +55,11 @@ ECID是使用第一方Cookie和Platform Edge Network的组合设置的。 默认
 
 ## 第一方设备ID (FPID)
 
-FPID是第一方Cookie _您使用自己的Web服务器进行设置_ ，然后该Adobe会使用来设置ECID，而不是使用Web SDK设置的第一方Cookie。 当使用利用DNS A记录（对于IPv4）或AAAA记录（对于IPv6）而不是DNS CNAME或JavaScript代码的服务器设置第一方Cookie时，它们最有效。
+FPID是第一方Cookie _您使用自己的Web服务器进行设置_ ，该Adobe随后将使用来创建ECID，而不是使用Web SDK设置的第一方Cookie。 虽然浏览器支持可能有所不同，但是当第一方Cookie由利用DNS A记录（对于IPv4）或AAAA记录（对于IPv6）的服务器设置时，而不是由DNS CNAME或JavaScript代码设置时，它们往往更持久。
 
 设置FPID Cookie后，在收集事件数据时，可以获取其值并将其发送到Adobe。 收集的FPID将用作种子，以在Platform Edge Network上生成ECID，这仍将是Adobe Experience Cloud应用程序中的默认标识符。
 
-详细了解 [Platform Web SDK中的第一方设备ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=zh-Hans)
+虽然本教程中未使用FPID，但建议您在自己的网络SDK实施中使用FPID。 详细了解 [Platform Web SDK中的第一方设备ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=zh-Hans)
 
 >[!CAUTION]
 >
@@ -69,7 +69,7 @@ FPID是第一方Cookie _您使用自己的Web服务器进行设置_ ，然后该
 
 如上所述，在使用Platform Web SDK时，您数字资产的所有访客都会Adobe分配一个ECID。 这会使ECID成为跟踪未经身份验证的数字行为的默认身份。
 
-您还可以发送经过身份验证的用户ID，以便平台可以创建 [身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=zh-Hans)，Target可以设置其第三方。 这是通过使用 [!UICONTROL 标识映射] 数据元素类型。
+您还可以发送经过身份验证的用户ID，以便平台可以创建 [身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=zh-Hans) 并且Target可以设置 [第三方Id](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html). 这是通过使用 [!UICONTROL 标识映射] 数据元素类型。
 
 要创建 [!UICONTROL 标识映射] 数据元素：
 
@@ -133,12 +133,17 @@ FPID是第一方Cookie _您使用自己的Web服务器进行设置_ ，然后该
 
 在这些步骤结束时，您应该创建以下数据元素：
 
-| 核心扩展数据元素 | Platform Web SDK数据元素 |
+| 核心扩展数据元素 | Platform Web SDK扩展数据元素 |
 -----------------------------|-------------------------------
 | `cart.orderId` | `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` | `xdm.variable.content` |
+| `cart.productInfo` | `xdm.variable.content` |
+| `cart.productInfo.purchase` | |
+| `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
+| `product.productInfo.sku` | |
+| `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 

@@ -2,9 +2,9 @@
 title: 创建数据元素
 description: 了解如何在标记中创建XDM对象并将数据元素映射到该对象。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1189'
 ht-degree: 1%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 1%
 在本课程结束时，您能够：
 
 * 了解将数据层映射到XDM的不同方法
-* 创建数据元素以捕获内容数据
-* 将数据元素映射到XDM对象数据元素
+* 创建数据元素以捕获数据
+* 将数据元素映射到XDM对象
 
 
 ## 先决条件
 
-您了解数据层是什么，并且已在本教程中完成以下以前的课程：
+您已了解数据层是什么，并完成了本教程中之前的课程：
 
 * [配置XDM架构](configure-schemas.md)
 * [配置身份命名空间](configure-identities.md)
@@ -41,9 +41,9 @@ ht-degree: 1%
 
 使用Adobe Experience Platform的标记功能，可通过多种方式将数据从数据层映射到XDM。 以下是三种不同方法的一些优点和缺点：
 
-* [在数据层中实施XDM](create-data-elements.md#implement-xdm-in-the-data-layer)
-* [在数据流中映射到XDM](create-data-elements.md#map-to-xdm-in-the-datastream)
-* [在标记中映射到XDM](create-data-elements.md#map-data-layer-in-tags)
+1. 在数据层中实施XDM
+1. 在标记中映射到XDM
+1. 在数据流中映射到XDM
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 ### 在数据层中实施XDM
 
-此方法涉及使用完全定义的XDM对象作为数据层的结构。 然后，将整个数据层映射到Adobe标签中的XDM对象数据元素。 如果您的实施不使用标签管理器，则此方法可能是理想的，因为您可以使用将数据直接从应用程序发送到XDM [XDM sendEvent命令](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). 如果您使用Adobe标记，则可以创建一个自定义代码数据元素，它将整个数据层捕获为传递到XDM的JSON对象。 然后，将传递JSON映射到发送事件操作中的XDM对象字段。
+此方法涉及使用完全定义的XDM对象作为数据层的结构。 然后，将整个数据层映射到标记中的XDM对象数据元素。 如果您的实施不使用标签管理器，则此方法可能是理想的，因为您可以使用将数据直接从应用程序发送到XDM [XDM sendEvent命令](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). 如果您使用标记，则可以创建一个自定义代码数据元素，将整个数据层捕获为传递到XDM的JSON对象。 然后，将传递JSON映射到发送事件操作中的XDM对象字段。
 
 以下是使用Adobe客户端数据层格式时数据层的外观示例：
 
@@ -97,7 +97,7 @@ window.adobeDataLayer.push({
 
 优点
 
-* 跳过将单个数据层变量映射到XDM的步骤
+* 无需重新映射到数据层变量到XDM的其他步骤
 * 如果您的开发团队拥有标记数字行为，则可以更快地部署
 
 缺点
@@ -108,41 +108,44 @@ window.adobeDataLayer.push({
 * 无法将数据层用于第三方像素
 * 无法转换数据层和XDM之间的数据
 
-### 在数据流中映射到XDM
-
-此方法使用数据流配置中内置的功能，称为 [为数据收集准备数据](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) 和跳过将数据层变量映射到标记中的XDM。
-
-优点
-
-* 灵活，因为您可以将各个变量映射到XDM
-* 能够 [计算新值](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) 或 [转换数据类型](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) 从Data Layer转到XDM
-* 利用 [映射Ui](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) 使用点击UI将源数据中的字段映射到XDM
-
-缺点
-
-* 无法使用数据层变量作为客户端第三方像素的数据元素，但可以将其用于Adobe标记事件转发
-* 无法使用Adobe Experience Platform的标记功能的刮擦功能
-* 如果在标记和数据流中同时映射数据层，则维护复杂性会增加
-
 ### 在标记中映射数据层
 
 此方法包括将单独的数据层变量或数据层对象映射到标记中的数据元素，并最终映射到XDM。 这是使用标签管理系统实施的传统方法。
 
-优点
+#### 优点
 
 * 最灵活的方法，因为您可以控制单个变量并在数据进入XDM之前转换数据
 * 可以使用Adobe标记触发器和刮取功能将数据传递到XDM
 * 可以将数据元素映射到客户端的第三方像素
 
-缺点
+#### 缺点
 
-* 实施可能需要更长时间
+* 将数据层重构为数据元素需要时间
+
 
 >[!TIP]
 >
 > Google Data Layer
 > 
-> 如果您的组织已经使用Google Analytics，并且网站上具有传统的Google dataLayer对象，则可以使用 [Google数据层扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) 在Adobe标签中。 这使您能够更快地部署Adobe技术，而无需请求IT团队的支持。 将Google数据层映射到XDM将遵循与上述相同的步骤。
+> 如果您的组织已经使用Google Analytics，并且网站上具有传统的Google dataLayer对象，则可以使用 [Google数据层扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) 在标记中。 这使您能够更快地部署Adobe技术，而无需请求IT团队的支持。 将Google数据层映射到XDM将遵循与上述相同的步骤。
+
+### 在数据流中映射到XDM
+
+此方法使用数据流配置中内置的功能，称为 [为数据收集准备数据](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) 和跳过将数据层变量映射到标记中的XDM。
+
+#### 优点
+
+* 灵活，因为您可以将各个变量映射到XDM
+* 能够 [计算新值](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) 或 [转换数据类型](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) 从Data Layer转到XDM
+* 利用 [映射Ui](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) 使用点击UI将源数据中的字段映射到XDM
+
+#### 缺点
+
+* 不能将数据层变量用作客户端第三方像素的数据元素，但可以将它们用于事件转发
+* 无法使用Adobe Experience Platform的标记功能的刮擦功能
+* 如果在标记和数据流中同时映射数据层，则维护复杂性会增加
+
+
 
 >[!IMPORTANT]
 >
@@ -270,7 +273,7 @@ window.adobeDataLayer.push({
 
 在这些步骤结束时，您应该创建以下数据元素：
 
-| 核心扩展数据元素 | Platform Web SDK数据元素 |
+| 核心扩展数据元素 | Platform Web SDK扩展数据元素 |
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
 | `cart.productInfo` | |
@@ -278,6 +281,7 @@ window.adobeDataLayer.push({
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category` | |
 | `product.productInfo.sku` | |
 | `product.productInfo.title` | |
 | `user.profile.attributes.loggedIn` | |
@@ -285,7 +289,7 @@ window.adobeDataLayer.push({
 
 >[!TIP]
 >
->在未来 [创建标记规则](create-tag-rule.md) 课程，您学习如何 **[!UICONTROL 变量]** 数据元素允许您使用将多个规则栈叠在标记中 **[!UICONTROL 更新变量操作类型]**. Adobe Experience Platform然后，您可以使用单独的 **[!UICONTROL “发送事件”操作类型]**.
+>在未来 [创建标记规则](create-tag-rule.md) 课程，您学习如何 **[!UICONTROL 变量]** 数据元素允许您使用将多个规则栈叠在标记中 **[!UICONTROL 更新变量操作类型]**.
 
 设置这些数据元素后，您便可以使用标记规则开始向Platform Edge Network发送数据。 但首先，了解如何使用Web SDK收集身份。
 

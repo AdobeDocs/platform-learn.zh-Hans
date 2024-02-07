@@ -2,7 +2,7 @@
 title: “利用 Web SDK 实施 Adobe Experience Cloud”教程
 description: 了解如何使用Adobe Experience Platform Web SDK实施Experience Cloud应用程序。
 recommendations: catalog, noDisplay
-source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
 source-wordcount: '695'
 ht-degree: 4%
@@ -76,9 +76,9 @@ Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Exper
 
 ## 加载Luma网站
 
-加载 [Luma网站](https://luma.enablementadobe.com/content/luma/us/en.html) 在单独的浏览器选项卡中将它添加为书签，这样您可以在教程中根据需要轻松加载它。 除了能够加载我们的托管生产站点外，您不需要任何其他访问Luma的权限。
+加载 [Luma网站](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} 在单独的浏览器选项卡中将它添加为书签，这样您可以在教程中根据需要轻松加载它。 除了能够加载我们的托管生产站点外，您不需要任何其他访问Luma的权限。
 
-[![Luma网站](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
+[![Luma网站](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"}
 
 让我们开始吧！
 

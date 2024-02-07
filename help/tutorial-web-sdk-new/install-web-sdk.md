@@ -2,7 +2,7 @@
 title: 安装和配置Adobe Experience Platform Web SDK标记扩展
 description: 了解如何在数据收集界面中安装和配置Platform Web SDK标记扩展。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -11,7 +11,7 @@ ht-degree: 12%
 
 # 安装Adobe Experience Platform Web SDK标记扩展
 
-了解如何安装和配置Platform Web SDK标记扩展。 实施Web SDK的最简单方法是使用Adobe的标签管理器（以前称为Launch）。 Platform Web SDK标记扩展是 _仅标记扩展_ 需要将数据发送到 _所有Adobe Experience Cloud应用程序_，包括 [分析](setup-analytics.md)， [Target](setup-target.md)， [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform和Journey Optimizer！
+了解如何安装和配置Platform Web SDK标记扩展。 实施Web SDK的最简单方法是使用Adobe的标签管理器（以前称为Launch）。 Platform Web SDK标记扩展是 _仅标记扩展_ 需要将数据发送到 _所有Adobe Experience Cloud应用程序_，包括 [分析](setup-analytics.md)， [Target](setup-target.md)， [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform和 [Journey Optimizer](journey-optimizer/setup-web-channel.md)！
 
 ## 学习目标
 

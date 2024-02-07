@@ -2,9 +2,9 @@
 title: 使用Experience Platform调试器验证Web SDK实施
 description: 了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Debugger
-source-git-commit: 904581df85df5d8fc4f36a4d47a37b03ef92d76f
+source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1226'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 
 ## 先决条件
 
-您熟悉数据收集标记和 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 并已在教程中完成了以下以前的课程：
+您熟悉数据收集标记和 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 并完成了本教程中以前的课程：
 
 * [配置XDM架构](configure-schemas.md)
 * [配置身份命名空间](configure-identities.md)
@@ -49,14 +49,10 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 
 ## 使用Debugger加载备用标记库
 
-本教程使用的公共托管版本的 [Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html). 打开主页并将其加入书签。
-
-![Luma主页](assets/validate-luma-site.png)
-
 Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标记库替换现有标记库。 此技术对验证非常有用，允许我们跳过本教程中的许多实施步骤。
 
-1. 确保已打开Luma网站并选择Experience PlatformDebugger扩展图标
-1. 调试器将会打开并显示硬编码实施的一些详细信息，这些详细信息与本教程无关（在打开调试器后，您可能需要重新加载Luma网站）
+1. 确保您拥有 [Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 打开并选择Experience PlatformDebugger扩展图标
+1. 调试器将打开并显示硬编码实施的一些详细信息（您可能需要在打开调试器后重新加载Luma网站）
 1. 确认调试器为“**[!UICONTROL 已连接到Luma]**&quot;，如下图所示，然后选择&quot;**[!UICONTROL 锁定]**”图标将Debugger锁定到Luma网站。
 1. 选择 **[!UICONTROL 登录]** 按钮并使用您的AdobeID登录Adobe Experience Cloud。
 1. 现在转到 **[!UICONTROL Experience Platform标记]** 在左侧导航中
@@ -78,7 +74,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
    ![已替换标记属性](assets/validate-switch-success.png)
 
-在本教程的后面部分，您将使用此技术将Luma网站映射到您自己的标记资产，以验证您的Platform Web SDK实施。 在生产网站上开始使用标记时，您可以使用该同一技术验证所做的更改。
+在本教程的后面部分，您将使用此技术将Luma网站映射到您自己的标记资产，以验证您的Platform Web SDK实施。 在生产网站上开始使用标记时，您可以在标记的开发环境中使用同一技术来验证所做的更改。
 
 ## 使用Experience Platform调试器验证客户端网络请求
 
@@ -138,18 +134,20 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
    ![“网络”选项卡](assets/validate-dev-console-ecid.png)
 
+   >[!NOTE]
+   >
+   > ECID值在网络响应中可见。 它不包括在 `identityMap` 请求的一部分，也不会以此格式存储在Cookie中。
 
 ## 使用Experience Platform调试器验证服务器端网络请求
 
-正如您在 [配置数据流](configure-datastream.md) 课程， Platform Web SDK首先会将您的数字财产中的数据发送到Platform Edge Network。 然后，Platform Edge Network会向数据流中启用的相应服务发出其他服务器端请求。
+正如您在 [配置数据流](configure-datastream.md) 课程， Platform Web SDK首先会将您的数字财产中的数据发送到Platform Edge Network。 然后，Platform Edge Network会向数据流中启用的相应服务发出其他服务器端请求。 您可以在Debugger中使用Edge Trace验证Platform Edge Network发出的服务器端请求。
 
-您可以通过在Debugger中启用边缘跟踪来验证服务器端请求。 此外，您还可以使用在完全处理的负载到达Adobe应用程序后验证它 [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
 
-在接下来的两个练习中，您将启用“边缘跟踪”，并使用Assurance查看从Platform Edge Network生成的Experience CloudID。
 
 ### 启用边缘跟踪
 
-启用边缘跟踪
+要启用边缘跟踪，请执行以下操作：
 
 1. 在左侧导航中 **[!UICONTROL Experience Platform调试程序]** 选择 **[!UICONTROL 日志]**
 1. 选择 **[!UICONTROL Edge]** 选项卡，然后选择 **[!UICONTROL 连接]**
@@ -164,37 +162,9 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
    ![Analytics信标边缘跟踪](assets/validate-edge-trace.png)
 
-此时，您无法查看任何进入Adobe应用程序的Platform Edge Network请求，因为您未在数据流中启用任何请求。 在将来的课程中，您将使用Edge Trace来查看向Adobe应用程序发出的服务器端请求。 但是，使用保证，您仍然可以查看由Platform Edge Network生成的Experience CloudID。
+此时，您无法查看任何向Adobe应用程序发出的Platform Edge Network请求，因为您未在数据流中启用任何请求。 在将来的课程中，您将使用Edge Trace查看用于Adobe应用程序和事件转发的传出服务器端请求。 但首先，了解用于验证Platform Edge Network发出的服务器端请求的另一个工具 — Adobe Experience Platform Assurance！
 
-### 启动保证会话
-
-Adobe Experience Platform Assurance是Adobe Experience Cloud的一个产品，可帮助您检查、验证、模拟和验证数据收集或提供体验的方式。
-
-详细了解 [Adobe保证](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
-
-每次启用边缘跟踪时，都会在后台启动保证会话。
-
-要查看保证会话，
-
-1. 启用边缘跟踪后，您会在顶部看到一个传出链接图标。 选择图标以打开“保证”。 此时将在您的浏览器中打开一个新选项卡。
-
-   ![启动保证会话](assets/validate-debugger-start-assurnance.png)
-
-1. 选择带有称为“Adobe响应句柄”的事件的行。
-1. 右侧将显示一个菜单。 选择 `+` 签名到 `[!UICONTROL ACPExtensionEvent]`
-1. 通过选择 `[!UICONTROL payload > 0 > payload > 0 > namespace]`. 显示在最后一个 `0` 对应于 `ECID`. 根据以下显示的值，您知道 `namespace` 匹配 `ECID`
-
-   ![保证验证ECID](assets/validate-assurance-ecid.png)
-
-   >[!CAUTION]
-   >
-   >由于窗口宽度，您可能会看到截断的ECID值。 只需选择界面中的手柄栏并向左拖动即可查看整个ECID。
-
-在将来的课程中，您可以使用Assurance验证完全处理的负载，这些负载将到达在数据流中启用的Adobe应用程序。
-
-现在，通过在页面上触发XDM对象，并了解如何验证您的数据收集，您便可以使用Platform Web SDK设置单独的Adobe应用程序。
-
-[下一步： ](setup-experience-platform.md)
+[下一步： ](validate-with-assurance.md)
 
 >[!NOTE]
 >
