@@ -1,14 +1,14 @@
 ---
-title: 添加和配置标记扩展（以前称为Launch扩展）
+title: 添加和配置标记扩展
 description: 了解如何在标记属性中添加和配置扩展。
 feature: Tags
 level: Beginner
 jira: KT-3528
 last-substantial-update: 2024-02-23T00:00:00Z
 exl-id: c4115da3-d779-4fe8-90e5-32581fb968cb
-source-git-commit: 1c939857f362542cf88dff3d1477cd71fa5c9389
+source-git-commit: 63a92eef8ea5a3e5df43e0abe18c4e37ace7519c
 workflow-type: tm+mt
-source-wordcount: '80'
+source-wordcount: '77'
 ht-degree: 0%
 
 ---
