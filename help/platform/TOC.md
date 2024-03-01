@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 6068feccb23c8485390e64cd79e021167b1271a8
+source-git-commit: 9c4e85a75f640ec9c2eaae6874e2331bf54c3ca7
 workflow-type: tm+mt
-source-wordcount: '868'
+source-wordcount: '869'
 ht-degree: 16%
 
 ---
@@ -56,7 +56,7 @@ ht-degree: 16%
    + [创建顺序受众](audiences/create-sequential-audiences.md)
    + [创建动态受众](audiences/create-dynamic-audiences.md)
    + [创建多实体受众](audiences/create-multi-entity-audiences.md)
-   + [使用B2B数据创建受众](audiences/create-audiences-with-b2b-data.md)
+   + [创建和激活帐户受众(B2B)](audiences/create-audiences-with-b2b-data.md)
    + [流式客户细分演示](/help/platform/audiences/streaming-segmentation-demo.md)
    + [评估受众规则](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [创建数据集以导出数据](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
