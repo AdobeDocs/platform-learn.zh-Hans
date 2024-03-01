@@ -1,21 +1,20 @@
 ---
-title: 将示例数据导入到 Adobe Experience Platform
+title: 将示例数据导入Adobe Experience Platform
 description: 了解如何使用一些示例数据设置Experience Platform沙盒环境。
 feature: API
 role: Developer
 level: Experienced
 jira: KT-7349
-thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
 workflow-type: tm+mt
-source-wordcount: '1831'
-ht-degree: 6%
+source-wordcount: '1776'
+ht-degree: 3%
 
 ---
 
-# 将示例数据导入到 Adobe Experience Platform
+# 将示例数据导入Adobe Experience Platform
 
 了解如何使用示例数据设置 Experience Platform 沙盒环境。使用 Postman 集合，您可以创建字段组、架构和数据集，然后将示例数据导入 Experience Platform。
 
@@ -194,7 +193,7 @@ Experience Platform业务用户通常必须完成一系列步骤，包括识别�
 [使用Web SDK实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans). 在Web SDK教程中设置了“初始配置”、“标记配置”和“设置Experience Platform”课程后，使用中的前十个电子邮件地址登录Luma网站 `luma-crm.json` 使用密码的文件 `test` 查看配置文件片段与本教程中上传的数据合并的情况。
 
 如果要构建一个链接到此沙盒的示例Mobile SDK实施，请查看
-[在移动应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans). 在设置Web SDK教程的“初始配置”、“应用程序实施”和“Experience Platform”课程后，使用中的第一个电子邮件地址登录Luma网站 `luma-crm.json` 文件，用于查看配置文件片段与本教程中上传的数据合并的情况。
+[在移动应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). 在设置Web SDK教程的“初始配置”、“应用程序实施”和“Experience Platform”课程后，使用中的第一个电子邮件地址登录Luma网站 `luma-crm.json` 文件，用于查看配置文件片段与本教程中上传的数据合并的情况。
 
 ## 重置沙盒环境 {#reset-sandbox}
 
