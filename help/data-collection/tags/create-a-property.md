@@ -3,10 +3,11 @@ title: 创建标记属性
 description: 了解如何创建标记属性以管理网站上的营销标记。
 feature: Tags
 level: Beginner
-jira: KT-3524
+duration: 321
 last-substantial-update: 2023-12-15T00:00:00Z
+jira: KT-3524
 exl-id: db2e1818-81bb-4d4c-b6ee-b537b48d3b21
-source-git-commit: 63a92eef8ea5a3e5df43e0abe18c4e37ace7519c
+source-git-commit: f1e71afb159af1a99ce574e3e9de451e0d703800
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 31%
