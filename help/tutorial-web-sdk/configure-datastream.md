@@ -3,14 +3,19 @@ title: 配置数据流
 description: 了解如何启用数据流并配置Experience Cloud解决方案。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Datastreams
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '447'
-ht-degree: 7%
+source-wordcount: '471'
+ht-degree: 4%
 
 ---
 
 # 配置数据流
+
+
+>[!CAUTION]
+>
+>我们预计于2024年3月15日星期五发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
 
 了解如何启用数据流并配置Experience Cloud解决方案。
 
@@ -47,7 +52,7 @@ ht-degree: 7%
 
 1. 转到 **[!UICONTROL 数据流]** 在左侧导航中
 1. 选择 **[!UICONTROL 新建数据流]** 在屏幕的右侧。
-1. 输入 `Luma Web SDK` 作为 **[!UICONTROL Name]**. 当您稍后在标记属性中配置Web SDK扩展时，将会引用此名称。
+1. 输入 `Luma Web SDK` 作为 **[!UICONTROL 名称]**. 当您稍后在标记属性中配置Web SDK扩展时，将会引用此名称。
 1. 选择您的 `Luma Web Event Data` 作为 **[!UICONTROL 事件架构]**
 1. 选择 **[!UICONTROL 保存]**
 

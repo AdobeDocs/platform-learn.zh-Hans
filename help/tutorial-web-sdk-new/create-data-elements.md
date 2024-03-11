@@ -2,22 +2,16 @@
 title: 创建数据元素
 description: 了解如何在标记中创建XDM对象并将数据元素映射到该对象。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1199'
 ht-degree: 1%
 
 ---
 
 # 创建数据元素
 
-了解如何在标记中创建数据元素，以在上的内容、商业和身份数据 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html). 然后，使用Variable数据元素类型填充XDM架构中的字段。
-
-
->[!IMPORTANT]
->
->本课程的数据来自 `[!UICONTROL digitalData]` Luma网站的数据层。 要查看数据层，请打开您的开发人员控制台并键入 `[!UICONTROL digitalData]` 以查看完整的数据层。![digitalData数据层](assets/data-element-data-layer.png)
-
+了解如何在标记中创建数据元素，以在上的内容、商业和身份数据 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html). 然后，使用Platform Web SDK扩展变量数据元素类型填充XDM架构中的字段。
 
 ## 学习目标
 
@@ -37,9 +31,15 @@ ht-degree: 1%
 * [配置数据流](configure-datastream.md)
 * [Web SDK扩展安装在标记属性中](install-web-sdk.md)
 
+
+>[!IMPORTANT]
+>
+>本课程的数据来自 `[!UICONTROL digitalData]` Luma网站的数据层。 要查看数据层，请打开您的开发人员控制台并键入 `[!UICONTROL digitalData]` 以查看完整的数据层。![digitalData数据层](assets/data-element-data-layer.png)
+
+
 ## 数据层方法
 
-使用Adobe Experience Platform的标记功能，可通过多种方式将数据从数据层映射到XDM。 以下是三种不同方法的一些优点和缺点：
+使用Adobe Experience Platform的标记功能，可通过多种方式将数据从数据层映射到XDM。 以下是三种不同方法的一些优点和缺点。 如果需要，可以合并方法：
 
 1. 在数据层中实施XDM
 1. 在标记中映射到XDM
@@ -104,7 +104,7 @@ window.adobeDataLayer.push({
 
 * 完全依靠开发团队和开发周期来更新要传输到XDM的数据
 * XDM从数据层接收确切的有效负载时灵活性有限
-* 无法使用标记的内置功能，例如刮擦功能、持久性功能和快速部署功能
+* 无法使用内置标记功能（例如刮擦功能、持久性功能和快速部署功能）
 * 无法将数据层用于第三方像素
 * 无法转换数据层和XDM之间的数据
 

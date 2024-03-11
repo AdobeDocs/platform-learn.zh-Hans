@@ -3,14 +3,19 @@ title: 设置事件转发属性
 description: 了解如何使用Experience PlatformWeb SDK数据来使用event-forwarding属性。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1886'
-ht-degree: 4%
+source-wordcount: '1893'
+ht-degree: 2%
 
 ---
 
 # 设置事件转发属性
+
+
+>[!CAUTION]
+>
+>我们预计于2024年3月15日星期五发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
 
 了解如何使用Experience PlatformWeb SDK数据来使用event-forwarding属性。
 
@@ -73,7 +78,7 @@ ht-degree: 4%
 1. 选择&#x200B;**[!UICONTROL 新属性]**。
    ![事件转发属性](assets/event-forwarding-new.png)
 
-1. 命名资产。在本例中 `Server-Side - Web SDK Course`
+1. 命名资产。 在本例中 `Server-Side - Web SDK Course`
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
    ![事件转发属性保存](assets/event-forwarding-save.png)
@@ -149,7 +154,7 @@ ht-degree: 4%
 
    ![事件转发新数据元素](assets/event-forwarding-new-dataelement.png)
 
-1. ****&#x200B;将数据元素命名为 `environment.browserDetails.viewportHeight`
+1. **[!UICONTROL 名称]** 数据元素 `environment.browserDetails.viewportHeight`
 
 1. 下 **[!UICONTROL 扩展名]**，离开 `CORE`
 
@@ -183,8 +188,8 @@ ht-degree: 4%
 
    >[!TIP]
    >
-   使用您自己的网站时，您可以使用Web浏览器网络工具找到XDM对象路径，并过滤 `/ee` 请求，打开信标 [!UICONTROL **有效负荷**] 并向下钻取到要查找的变量。 然后，使用鼠标右键单击并选择“复制属性路径”。 以下是浏览器视区高度的示例：
-   ![事件转发XDM路径](assets/event-forwarding-xdm-path.png)
+   >使用您自己的网站时，您可以使用Web浏览器网络工具找到XDM对象路径，并过滤 `/ee` 请求，打开信标 [!UICONTROL **有效负荷**] 并向下钻取到要查找的变量。 然后，使用鼠标右键单击并选择“复制属性路径”。 以下是浏览器视区高度的示例：
+   > ![事件转发XDM路径](assets/event-forwarding-xdm-path.png)
 
 ### 安装Adobe云连接器扩展
 
@@ -209,13 +214,13 @@ ht-degree: 4%
    * **标记**：所有规则均由必须在规则中指定的事件触发，例如 `Library Loaded - Page Top`. 条件为可选。
    * **事件转发**：我们假定发送到Platform Edge Network的每个事件都是转发数据的触发器。 因此，不存在 [!UICONTROL 活动] 在事件转发规则中必须选择的属性。 要管理哪些事件会触发事件转发规则，您必须配置条件。
 
-* **数据元素标记化**:
+* **数据元素标记化**：
 
    * **标记**：数据元素名称使用 `%` （在规则中使用时，位于数据元素名称的开始和结尾）。 例如：`%viewportHeight%`。
 
    * **事件转发**：数据元素名称使用进行标记 `{{` 于开头及于年终 `}}` 在数据元素名称的末尾。 例如：`{{viewportHeight}}`。
 
-* **规则的操作顺序**:
+* **规则操作顺序**：
 
    * 事件转发规则的“操作”部分始终按顺序执行。 您在保存规则时，应确保操作顺序正确。无法像对标记执行操作一样异步执行此执行序列。
 
@@ -278,7 +283,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-如果尚未将暂存和生产事件转发属性链接到数据流，则您将看到开发环境作为生成库的唯一选项。
+>如果尚未将暂存和生产事件转发属性链接到数据流，则您将看到开发环境作为生成库的唯一选项。
 
 ![保存事件转发规则](assets/event-forwarding-initial-build.png)
 
@@ -321,4 +326,4 @@ ht-degree: 4%
 
 >[!NOTE]
 >
-感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

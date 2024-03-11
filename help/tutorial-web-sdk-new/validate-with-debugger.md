@@ -2,9 +2,9 @@
 title: 使用Experience Platform调试器验证Web SDK实施
 description: 了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Debugger
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1206'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,6 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 * 加载备用标记库
 * 验证客户端XDM事件是否按预期捕获数据并发送到Platform Edge Network
 * 启用边缘跟踪以查看由平台边缘网络发送的服务器端请求
-* 启动Adobe Experience Platform保障会话以查看平台边缘网络生成的Experience CloudID
 
 ## 先决条件
 

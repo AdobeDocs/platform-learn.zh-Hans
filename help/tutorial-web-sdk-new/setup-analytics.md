@@ -2,9 +2,9 @@
 title: 使用Experience PlatformWeb SDK设置Adobe Analytics
 description: 了解如何使用Experience PlatformWeb SDK设置Adobe Analytics。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Analytics
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '4681'
+source-wordcount: '3078'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 了解如何使用设置Adobe Analytics [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)，创建标记规则以将数据发送到Adobe Analytics，并验证Analytics是否按预期捕获数据。
 
-[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) 是一款行业领先的应用程序，可帮助您充分了解客户的行为和需求，并根据客户情报掌控业务发展方向。
+[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=zh-Hans) 是一款行业领先的应用程序，可帮助您充分了解客户的行为和需求，并根据客户情报掌控业务发展方向。
 
 ![Web SDK到Adobe Analytics的示意图](assets/dc-websdk-aa.png)
 
@@ -37,84 +37,17 @@ ht-degree: 0%
 
 ## 先决条件
 
-您熟悉标记、Adobe Analytics和 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 登录和购物功能。
+要完成本课程，您必须首先：
 
-您至少需要一个测试/开发报表包ID。 如果您没有可在本教程中使用的测试/开发报表包， [请创建一个](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
+* 熟悉并访问Adobe Analytics。
 
-您必须已完成本教程前面各节中的所有步骤：
+* 至少具有一个测试/开发报表包ID。 如果您没有可在本教程中使用的测试/开发报表包， [请创建一个](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
 
-* 初始配置
-   * [配置XDM架构](configure-schemas.md)
-   * [配置身份命名空间](configure-identities.md)
-   * [配置数据流](configure-datastream.md)
-* 标记配置
-   * [安装 Web SDK 扩展](install-web-sdk.md)
-   * [创建数据元素](create-data-elements.md)
-   * [创建身份](create-identities.md)
-   * [创建标记规则](create-tag-rule.md)
-   * [使用Adobe Experience Platform Debugger进行验证](validate-with-debugger.md)
-
-您还需要 [允许用户访问Adobe Experience Platform保障](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html) 以便您能够使用Adobe Experience Platform Assurance验证Adobe Analytics数据。 （如果您具有访问架构、身份命名空间和数据流，则您已经可以访问Assurance）
-
-## XDM架构和Analytics变量
-
-恭喜！您已在中配置了与Adobe Analytics兼容的架构 [配置架构](configure-schemas.md) 上课！ 但是，对于Adobe Analytics，可通过两种常规方法为Adobe Analytics定义XDM。
-
-<!-- Implementing Platform Web SDK should be as product-agnostic as possible. For Adobe Analytics, mapping eVars, props, and events doesn't occur during schema creation, nor during the tag rules configuration as it has been done traditionally. Instead, every XDM key-value pair becomes a Context Data Variable that maps to an Analytics variable in one of two ways: 
-
-1. Automatically mapped variables using reserved XDM fields
-1. Manually mapped variables using Analytics Processing Rules
-
-To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. -->
-
-1. **与产品无关的XDM**：维护语义键值对XDM架构并使用 [Adobe Analytics处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) 以将XDM字段映射到eVar、prop等 在语义XDM架构中，我们是指字段名称本身具有含义。 例如，字段名称 `web.webPageDetails.pageName` 比说更有意义 `prop1` 或 `evar3`.
-
-   >[!IMPORTANT]
-   >
-   > XDM架构中的所有字段均可用作具有以下前缀的上下文数据变量Adobe Analytics `a.x.`. 例如：`a.x.web.webinteraction.region`
-
-1. **特定于Analytics的XDM**：在XDM架构中使用专门构建的Adobe Analytics字段组，称为 `Adobe Analytics ExperienceEvent Template`
-
-Adobe发现，客户更喜欢的方法是 **特定于Analytics的XDM**，因为它会跳过“Adobe Analytics处理规则”界面中的映射步骤。 本课程中的步骤使用 **特定于Analytics的XDM** 方针。
-
-## 将XDM映射到Adobe Analytics
-
-许多XDM字段会自动映射到Analytics变量。
-
-在中创建的架构 [配置架构](configure-schemas.md) 课程中包含一些自动映射到Analytics变量的变量，如下表所示：
-
-| XDM到Analytics的自动映射变量 | Adobe Analytics变量 |
-|-------|---------|
-| `identitymap.ecid.[0].id` | mid |
-| `web.webPageDetails.name` | s.pageName |
-| `web.webPageDetails.server` | s.server |
-| `web.webPageDetails.siteSection` | s.channel |
-| `commerce.productViews.value` | prodView |
-| `commerce.productListViews.value` | scView |
-| `commerce.checkouts.value` | scCheckout |
-| `commerce.purchases.value` | 购买 |
-| `commerce.order.currencyCode` | s.currencyCode |
-| `commerce.order.purchaseID` | s.purchaseID |
-| `productListItems[].SKU` | s.products=；产品名称；；；；；（主要 — 请参阅下面的注释） |
-| `productListItems[].name` | s.products=；产品名称；；；；；（回退 — 请参阅下面的注释） |
-| `productListItems[].quantity` | s.products=；；product quantity；；； |
-| `productListItems[].priceTotal` | s.product=；；；产品价格；； |
-
->[!NOTE]
->
->Analytics产品字符串的各个部分通过下的不同XDM变量进行设置。 `productListItems` 对象。
->截至2022年8月18日， `productListItems[].SKU` 具有映射到s.products变量中的产品名称的优先级。
->值设置为 `productListItems[].name` 仅在以下情况下映射到产品名称： `productListItems[].SKU` 不存在。 否则，它将被取消映射，并可用于上下文数据。
->请勿将空字符串或null设置为  `productListItems[].SKU`. 这会产生不需要的效果，即映射到s.products变量中的产品名称。
-
-有关最新的映射列表，请参阅 [Analytics Experience Edge中的Adobe变量映射](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html).
-
-对于未自动映射的XDM变量，请使用 `Adobe Analytics ExperienceEvent Template` 字段组，详情见下面即将推出的部分。
-
+* 完成本教程的初始配置和标记配置部分中之前的课程。
 
 ## 配置数据流
 
-Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后，您的数据流会告知Platform Edge Network将相关数据转发到您的Adobe Analytics报表包中的哪个报表包。
+Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后，您的数据流会告知Platform Edge Network，您的数据应转发到哪个Adobe Analytics报表包。
 
 1. 转到 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面
 1. 在左侧导航中，选择 **[!UICONTROL 数据流]**
@@ -138,10 +71,132 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 >
 >在本教程中，您将仅为开发环境配置Adobe Analytics报表包。 在为您自己的网站创建数据流时，您将为暂存环境和生产环境创建其他数据流和报表包。
 
-### 配置数据流报表包覆盖
+## XDM架构和Analytics变量
 
-您可能希望更改当访客出现在某些页面中时，要将哪些Adobe Analytics报表包数据发送到。 要为Adobe Analytics配置数据流覆盖设置，请执行以下操作：
+恭喜！您已在中配置了与Adobe Analytics兼容的架构 [配置架构](configure-schemas.md) 上课！
 
+但您可能会想，我该如何设置所有的prop、evar和事件？
+
+有多种方法可同时使用：
+
+1. 设置标准XDM字段，某些字段会自动映射到Analytics变量。
+1. 在Analytics处理规则中将其他XDM字段映射到Analytics变量。
+1. 直接在XDM架构中映射到Analytics变量。
+
+<!-- Implementing Platform Web SDK should be as product-agnostic as possible. For Adobe Analytics, mapping eVars, props, and events doesn't occur during schema creation, nor during the tag rules configuration as it has been done traditionally. Instead, every XDM key-value pair becomes a Context Data Variable that maps to an Analytics variable in one of two ways: 
+
+1. Automatically mapped variables using reserved XDM fields
+1. Manually mapped variables using Analytics Processing Rules
+
+To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. 
+
+ 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
+
+
+ 1. **Analytics-specific XDM**: Use a purpose-built Adobe Analytics field group in the XDM schema called `Adobe Analytics ExperienceEvent Template`
+ 
+The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, because it skips the mapping step in the Adobe Analytics Processing Rules interface. The steps in this lesson use the **Analytics-specific XDM** approach.
+-->
+
+### 自动映射的字段
+
+许多XDM字段会自动映射到Analytics变量。
+
+在中创建的架构 [配置架构](configure-schemas.md) 课程中包含一些自动映射到Analytics变量的变量，如下表所示：
+
+| XDM到Analytics的自动映射变量 | Adobe Analytics变量 |
+|-------|---------|
+| `identitymap.ecid.[0].id` | mid |
+| `web.webPageDetails.name` | s.pageName |
+| `web.webPageDetails.server` | s.server |
+| `web.webPageDetails.siteSection` | s.channel |
+| `commerce.productViews.value` | prodView |
+| `commerce.productListViews.value` | scView |
+| `commerce.checkouts.value` | scCheckout |
+| `commerce.purchases.value` | 购买 |
+| `commerce.order.currencyCode` | s.currencyCode |
+| `commerce.order.purchaseID` | s.purchaseID |
+| `productListItems[].SKU` | s.products=；产品名称；；；；；（主要 — 请参阅下面的注释） |
+| `productListItems[].name` | s.products=；产品名称；；；；；（回退 — 请参阅下面的注释） |
+| `productListItems[].quantity` | s.products=；；product quantity；；； |
+| `productListItems[].priceTotal` | s.product=；；；产品价格；； |
+
+Analytics产品字符串的各个部分通过下的不同XDM变量进行设置。 `productListItems` 对象。
+>截至2022年8月18日， `productListItems[].SKU` 具有映射到s.products变量中的产品名称的优先级。
+>值设置为 `productListItems[].name` 仅在以下情况下映射到产品名称： `productListItems[].SKU` 不存在。 否则，它将被取消映射，并可用于上下文数据。
+>请勿将空字符串或null设置为  `productListItems[].SKU`. 这会产生不需要的效果，即映射到s.products变量中的产品名称。
+
+有关最新的映射列表，请参阅 [Analytics Experience Edge中的Adobe变量映射](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html).
+
+
+### 使用Analytics处理规则进行映射
+
+XDM架构中的所有字段均可用作具有以下前缀的上下文数据变量Adobe Analytics `a.x.`. 例如：`a.x.web.webinteraction.region`
+
+在本练习中，您将一个XDM变量映射到prop。 对于任何自定义映射，请按照以下相同步骤执行操作 `eVar`， `prop`， `event`或变量访问，可通过处理规则访问。
+
+1. 转到Analytics界面
+1. 转到 [!UICONTROL 管理员] > [!UICONTROL 管理工具] > [!UICONTROL 报表包]
+1. 选择您将在教程中使用的开发/测试报表包> [!UICONTROL 编辑设置] > [!UICONTROL 常规] > [!UICONTROL 处理规则]
+
+   ![Analytics购买](assets/analytics-process-rules.png)
+
+1. 创建规则以 **[!UICONTROL 覆盖值]** `[!UICONTROL Product SKU (prop1)]` 到 `a.x.productlistitems.0.sku`. 请记住添加注释，说明创建规则的原因并命名规则标题。 选择 **[!UICONTROL 保存]**
+
+   ![Analytics购买](assets/analytics-set-processing-rule.png)
+
+   >[!IMPORTANT]
+   >
+   >首次映射到处理规则时，UI不会显示XDM对象中的上下文数据变量。 要修复该错误，请选择任意值，请保存并返回进行编辑。 此时应会显示所有XDM变量。
+
+### 映射到XDM架构中的Analytics变量
+
+处理规则的替代方法是使用 `Adobe Analytics ExperienceEvent Template` 字段组。 这种方法之所以受到欢迎，是因为许多用户发现它比配置处理规则更简单，但是，通过增加XDM有效负载的大小，它反过来可以增加其他应用程序(如Real-Time CDP)中的配置文件大小。
+
+添加 `Adobe Analytics ExperienceEvent Template` 字段组到您的架构：
+
+1. 打开 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面
+1. 选择 **[!UICONTROL 架构]** 从左侧导航
+1. 确保您在教程中使用的沙盒中
+1. 打开您的 `Luma Web Event Data` 架构
+1. 在 **[!UICONTROL 字段组]** 部分，选择 **[!UICONTROL 添加]**
+1. 查找 `Adobe Analytics ExperienceEvent Template` 字段组并将其添加到您的架构中
+
+
+现在，在产品字符串中设置推销eVar。 使用 `Adobe Analytics ExperienceEvent Template` 字段组，则能够将变量映射到产品字符串中的促销eVar或事件。 这也称为设置 **产品语法促销**.
+
+1. 返回标记属性
+
+1. 打开规则 `ecommerce - library loaded - set product details variables - 20`
+
+1. 打开 **[!UICONTROL 设置变量]** 操作
+
+1. 选择以打开 `_experience > analytics > customDimensions > eVars > eVar1`
+
+1. 设置 **[!UICONTROL 值]** 到 `%product.productInfo.title%`
+
+1. 选择 **[!UICONTROL 保留更改]**
+
+   ![产品SKU XDM对象变量](assets/set-up-analytics-product-merchandising.png)
+
+1. 选择 **[!UICONTROL 保存]** 保存规则
+
+如您所见，基本上所有Analytics变量都可以在以下位置设置： `Adobe Analytics ExperienceEvent Template` 字段组。
+
+>[!NOTE]
+>
+> 请注意 `_experience` 对象位于 `productListItems` > `Item 1`. 在此下设置任何变量 [!UICONTROL 对象] 设置产品语法eVar或事件。
+
+
+### 将数据发送到其他报表包
+
+您可能希望更改当访客出现在某些页面中时，要将哪些Adobe Analytics报表包数据发送到。 这需要数据流和规则中的配置。
+
+#### 配置数据流报表包覆盖
+
+要在数据流中配置Adobe Analytics报表包覆盖设置，请执行以下操作：
+
+1. 打开您的数据流
 1. 编辑 **[!UICONTROL Adobe Analytics]** 通过打开 ![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) 菜单，然后选择 **[!UICONTROL 编辑]**
 
    ![覆盖数据流](assets/datastream-edit-analytics.png)
@@ -154,177 +209,12 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
    ![覆盖数据流](assets/analytics-datastreams-edit-adobe-analytics-configurations-report-suites.png)
 
-在本课程的后面部分 [创建规则以通过数据流覆盖将页面查看发送到其他报表包](setup-analytics.md###send-a-page-view-to-a-different-report-suite-with-datastream-override).
 
-## 创建其他电子商务数据元素
+#### 使用数据流覆盖将页面查看发送到其他报表包
 
-接下来，从Luma数据层捕获其他数据并将其发送到Platform Edge Network。 虽然本课程重点关注常见的Adobe Analytics要求，但可以根据您的数据流配置将所有捕获的数据轻松发送到其他目标。 例如，如果您完成了Adobe Experience Platform课程，则您在本课程中捕获的其他数据也将发送到Platform。
+让我们创建一个规则以向其他报表包发送额外的页面查看调用。 使用数据流覆盖功能，使用以下方式更改页面的报表包： **[!UICONTROL 发送事件]** 操作。
 
-在创建数据元素课程中，您可以 [已创建JavaScript数据元素](create-data-elements.md#create-data-elements-to-capture-the-data-layer) 用于捕获内容和身份详细信息。 现在，您可以创建其他数据元素来捕获电子商务数据。 因为 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 对于购物车中的产品详细信息页面和产品使用不同的数据层结构，您必须为每个方案创建单独的数据元素。 使用自定义代码数据元素从Luma数据层获取您所需的内容，在您自己的网站上实施时，无论是否需要，这样做。 在这种情况下，您必须循环访问一系列购物车项目以获取每个产品的特定详细信息。 使用以下提供的代码片段：
-
-1. 打开您在本教程中使用的标记属性
-
-1. 转到 **[!UICONTROL 数据元素]**
-
-1. 选择 **[!UICONTROL 添加数据元素]**
-
-1. 将其命名为 **`product.productInfo.sku`**
-
-1. 使用 **[!UICONTROL 自定义代码]** **[!UICONTROL 数据元素类型]**
-
-1. 保留复选框 **[!UICONTROL 强制使用小写值]** 和 **[!UICONTROL 清除文本]** 未选中
-
-1. 离开 `None` 作为 **[!UICONTROL 存储持续时间]** 设置，因为该值在每个页面上都不相同
-
-1. 选择 **[!UICONTROL 打开编辑器]**
-
-   ![自定义代码数据元素](assets/analytics-create-custom-data-element.png)
-
-1. 复制并粘贴以下代码
-
-
-   ```javascript
-   var cart = digitalData.product;
-   var cartItem;
-   cart.forEach(function(item){
-   cartItem = item.productInfo.sku;
-   });
-   return cartItem;
-   ```
-
-1. 选择 **[!UICONTROL 保存]** 保存自定义代码
-
-1. 选择 **[!UICONTROL 保存]** 保存数据元素
-
-请按照相同的步骤创建这些附加数据元素：
-
-* **`product.productInfo.title`**
-
-  ```javascript
-  var cart = digitalData.product;
-  var cartItem;
-  cart.forEach(function(item){
-  cartItem = item.productInfo.title;
-  });
-  return cartItem;
-  ```
-
-<!--* **`product.productInfo.name`**
-
-    ```javascript
-    var cart = digitalData.product;
-    var cartItem;
-    cart.forEach(function(item){
-    cartItem = item.productInfo.name;
-    });
-    return cartItem;
-    ```-->
-
-<!--* **`cart.productInfo`**
-
-    ```javascript
-    var cart = digitalData.cart.cartEntries; 
-    var cartItem = [];
-    cart.forEach(function(item, index, array){
-    var qty;
-    if(window.location.pathname.includes("thank-you.html")){
-    qty = parseInt(item.qty);
-    }else{
-    qty = "";
-    }
-    var price = parseInt(item.price);
-    cartItem.push({
-    "SKU": item.sku,
-    "quantity": qty,
-    "priceTotal": price
-    });
-    });
-    return cartItem; 
-    ```-->
-
-* **`cart.productInfo`**
-
-  ```javascript
-  var cart = digitalData.cart.cartEntries; 
-  var cartItem = [];
-  cart.forEach(function(item, index, array){
-  cartItem.push({
-  "SKU": item.sku
-  });
-  });
-  return cartItem; 
-  ```
-
-* **`cart.productInfo.purchase`**
-
-  ```javascript
-  var cart = digitalData.cart.cartEntries; 
-  var cartItem = [];
-  cart.forEach(function(item, index, array){
-  var qty = parseInt(item.qty);
-  var price = parseInt(item.price);
-  cartItem.push({
-  "SKU": item.sku,
-  "quantity": qty,
-  "priceTotal": price
-  });
-  });
-  return cartItem; 
-  ```
-
-  >[!TIP]
-  >
-  > 此代码片段包含在产品促销eVar课程中使用的自定义eVar1设置
-
-添加这些数据元素并在中创建了以前的数据元素之后 [创建数据元素](create-data-elements.md) 课程，您应该拥有以下数据元素：
-
-| 数据元素 |
------------------------------|
-| `cart.orderId` |
-| `cart.productInfo` |
-| `cart.productInfo.purchase` |
-| `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` |
-| `page.pageInfo.pageName` |
-| `page.pageInfo.server` |
-| `product.productInfo.sku` |
-| `product.productInfo.title` |
-| `user.profile.attributes.loggedIn` |
-| `user.profile.attributes.username` |
-| `xdm.variable.content` |
-
-<!-- 
->[!IMPORTANT]
->
->In this tutorial, you will create a different XDM object for each event. That means you must remap variables that would be considered to be "globally" available on every hit, such as page name and identityMap. However, you may [Merge Objects](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html#merged-objects) or use [Mapping Tables](https://exchange.adobe.com/experiencecloud.details.103136.mapping-table.html) to manage your XDM objects more efficiently in a real-life situation. For this lesson, the global variables are considered as:
->
->* **[!UICONTROL identityMap]** to capture the authenticated ID as per the [Create Identity Map Data Element](create-data-elements.md#create-identity-map-data-element) exercise in the [Create Data Elements](create-data-elements.md) lesson.
->* **[!UICONTROL web]** object to capture content as per the [content XDM object](create-data-elements.md#map-content-data-elements-to-XDM-Schema-individually) exercise in the [Create Data Elements](create-data-elements.md) lesson on every data element above. 
--->
-
-## 创建其他规则
-
-在 [创建标记规则](create-tag-rule.md) 课程，你设置了一个 `all pages global content variables - library loaded - AA (order 1)` 规则 [已使用创建基线XDM对象 **[!UICONTROL 更新变量]** **[!UICONTROL 操作类型]**](create-tag-rule.md#create-tag-rule). 以下练习扩充了该XDM对象以捕获特定于某些页面的其他数据。
-
-### 递增页面查看次数
-
-由于您现在将数据发送到Adobe Analytics，因此我们建议您映射一个额外的XDM字段来指示页面查看。 虽然从技术上讲，Analytics不需要将信标作为页面视图进行处理，但采用标准方式为其他下游应用程序指示页面视图会很有用。
-
-1. 打开 `all pages global content variables - library loaded - AA (order 1)` 规则
-1. 打开 **[!UICONTROL 更新变量]** 操作
-1. 向下滚动并选择以打开，直到 `web.webPageDetails`
-1. 选择以打开 **[!UICONTROL 页面查看次数]** 对象
-1. 设置 **[!UICONTROL 值]** 到 `1`
-1. 选择 **[!UICONTROL 保留更改]**
-
-   ![页面查看XDM对象](assets/set-up-analytics-pageviews.png)
-
-
-### 使用数据流覆盖将页面查看发送到其他报表包
-
-创建规则以向其他报表包发送额外的页面查看调用。 使用数据流覆盖功能，使用以下方式更改页面的报表包： **[!UICONTROL 发送事件]** 操作。
-
-1. 创建新规则，将其命名为 `homepage report suite override - library loaded - AA (order 51)`
+1. 创建新规则，将其命名为 `homepage - library loaded - AA report suite override - 51`
 
 1. 选择下的加号 **[!UICONTROL 事件]** 添加新触发器
 
@@ -332,9 +222,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL 库已加载]**
 
-1. 将其命名为 `Core - library loaded - order 51`
-
-1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `51`. 这可确保规则在 `all pages global content variables - library loaded - AA (order 50)` 设置基线XDM **[!UICONTROL 更新变量]** 操作类型。
+1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `51`. 这可确保规则在 `all pages - library loaded - send event - 50` 设置基线XDM **[!UICONTROL 更新变量]** 操作类型。
 
    ![Analytics报表包覆盖](assets/set-up-analytics-rs-override.png)
 
@@ -379,274 +267,12 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 1. 下 **[!UICONTROL 报表包]**，选择要覆盖的报表站点。 在本例中， `tmd-websdk-course-stg`.
 
-
-   >[!TIP]
-   >
-   >此处显示的报表包列表由 [配置数据流报表包覆盖](configure-datastream.md###configure-a-datastream-report-suite-override) 步骤。 添加报表包相当于使用多包标记。
-
 1. 选择 **[!UICONTROL 保留更改]**
 
 1. 和 **[!UICONTROL 保存]** 您的规则
 
    ![Analytics数据流覆盖](assets/analytics-tags-report-suite-override.png)
 
-### 使用更新变量扩充XDM对象
-
-使用 **[!UICONTROL 更新变量]** 操作类型，您可以创建其他规则以扩充“全局内容XDM”，然后再将其发送到 [!UICONTROL Platform边缘网络]. 通过在规则之前对新规则进行排序，完成此操作。 `all pages send event - library loaded - AA (order 50)` 发送事件 [!UICONTROL Platform边缘网络].
-
->[!TIP]
->
->规则顺序确定在触发事件时首先运行的规则。 如果两个规则具有相同的事件类型，则编号最低的规则会先运行。
-> 
->![规则顺序](assets/set-up-analytics-sequencing.png)
-
-## 设置产品字符串
-
-在映射到产品字符串之前，请务必了解XDM架构中有两个主要对象，它们用于捕获与Adobe Analytics具有特殊关系的电子商务数据：
-
-1. 此 `commerce` 对象设置Analytics事件，例如 `prodView`， `scView`、和 `purchase`
-1. 此 `productListItems` 对象设置Analytics维度，例如 `productID`.
-
-请参阅 [收集商业和产品数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) 以了解更多详细信息。
-
-
-首先，在Luma的产品详细信息页面上跟踪产品查看。
-
-1. 从左侧导航中，选择 **[!UICONTROL 规则]** 然后选择 **[!UICONTROL 添加规则]**
-1. 将其命名为  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
-1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
-1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
-1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL 库已加载]**
-1. 将其命名为 `Core - library loaded - order 20`
-1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`. 这可确保规则在 `all pages global content variables - library loaded - AA (order 1)` ，用于设置全局内容变量，但在 `all pages send event - library loaded - AA (order 50)` 发送XDM事件。
-
-   ![Analytics XDM规则](assets/set-up-analytics-pdp.png)
-
-1. 下 **[!UICONTROL 条件]**，选择以 **[!UICONTROL 添加]**
-1. 离开 **[!UICONTROL 逻辑类型]** 作为 **[!UICONTROL 常规]**
-1. 离开 **[!UICONTROL 扩展]** 作为 **[!UICONTROL 核心]**
-1. 选择 **[!UICONTROL 完成情况类型]** 作为 **[!UICONTROL 不含查询字符串的路径]**
-1. 在右侧，启用 **[!UICONTROL 正则表达式]** 切换
-1. 下 **[!UICONTROL 路径等于]** 设置 `/products/`. 对于Luma演示站点，它确保规则仅在产品页面上触发
-1. 选择 **[!UICONTROL 保留更改]**
-
-   ![Analytics XDM规则](assets/set-up-analytics-product-condition.png)
-
-1. 下 **[!UICONTROL 操作]** 选择 **[!UICONTROL 添加]**
-1. 选择 **[!UICONTROL Adobe Experience Platform Web SDK]** 扩展
-1. 选择 **[!UICONTROL 操作类型]** 作为 **[!UICONTROL 更新变量]**
-1. 向下滚动到 `commerce` 对象并选择以将其打开。
-1. 打开 **[!UICONTROL 产品视图]** 对象和设置 **[!UICONTROL 值]** 到 `1`
-
-   ![设置产品视图](assets/set-up-analytics-prodView.png)
-
-   >[!TIP]
-   >
-   >在XDM中设置commerce.productViews.value=1会自动映射到 `prodView` Analytics中的事件
-
-此外，了解您可以 **[!UICONTROL 提供单个属性]** 至各个XDM字段或 **[!UICONTROL 提供整个阵列]** 到XDM对象。
-
-![页面查看XDM对象](assets/set-up-analytics-xdm-population-strategy.png)
-
-### 将单个属性映射到XDM对象
-
-由于Luma上的数据层结构，您可以映射到单个变量以捕获Luma演示网站的产品详细信息页面上的数据。
-
-1. 向下滚动到并选择 `productListItems` 数组
-1. 选择 **[!UICONTROL 提供单个项目]**
-1. 选择 **[!UICONTROL 添加项目]**
-
-   ![设置产品查看事件](assets/set-up-analytics-xdm-individual.png)
-
-   >[!CAUTION]
-   >
-   >此 **`productListItems`** 是 `array` 数据类型，以便它希望数据以元素集合的形式输入。 由于Luma演示站点的数据层结构，并且由于一次只能在Luma站点上查看一个产品，因此需要单独添加项目。 在您自己的网站上实施时，根据数据层结构，您可能能够提供整个阵列。
-
-1. 选择以打开 **[!UICONTROL 项目1]**
-1. 将 **`productListItems.item1.SKU`** 映射到 `%product.productInfo.sku%`
-
-   ![产品SKU XDM对象变量](assets/set-up-analytics-sku.png)
-
-1. 查找 `eventType` 并将其设置为 `commerce.productViews`
-
-1. 不要选择“保留更改”
-
-### 在产品字符串中设置推销eVar
-
-通过使用 `Adobe Analytics ExperienceEvent Template` 字段组要定义XDM架构，您可以将变量映射到产品字符串中的促销eVar或事件。 这也称为设置 **产品语法促销**. 请注意 `_experience` 对象位于 `productListItems` > `Item 1`. 在此下设置任何变量 [!UICONTROL 对象] 设置产品语法eVar或事件。
-
-1. 选择以打开 `_experience > analytics > customDimensions > eVars > eVar1`
-
-1. 设置 **[!UICONTROL 值]** 到 `%product.productInfo.title%`
-
-1. 选择 **[!UICONTROL 保留更改]**
-
-   ![产品SKU XDM对象变量](assets/set-up-analytics-product-merchandising.png)
-
-1. 选择 **[!UICONTROL 保存]** 保存规则
-
-<!--
-1. The **[!UICONTROL Type]** field has a drop-down list of values to choose from. Select `[!UICONTROL commerce.productViews]`
-
-    [!TIP]
-    >
-    >The value selected here has no effect on how data is mapped to Analytics, however it is recommended to thoughtfully apply this variable, as it is used in Adobe Experience Platform's segment builder interface. The value selected is available to use in the `[!UICONTROL c.a.x.eventtype]` context data variable downstream.
-
-1. Under **[!UICONTROL XDM Data]**, select the `[!UICONTROL xdm.commerce.prodView]` XDM object data element
-1. Select **[!UICONTROL Keep Changes]**
-
-    ![Analytics XDM rules](assets/analytics-rule-commerce-productViews.png)
-
-1. Your rule should look similar to the below. Select **[!UICONTROL Save]**
-
-    ![Analytics XDM rules](assets/analytics-rule-product-view.png) -->
-
-
-### 将整个数组映射到XDM对象
-
-如前所述，Luma演示站点为购物车中的产品使用不同的数据层结构。 自定义代码数据元素 `cart.productInfo` 之前创建的循环是通过 `digitalData.cart.cartEntries` 数据层对象并将其转换为所需的XDM对象模式。 新格式 **必须完全匹配** 由定义的架构 `productListItems` XDM模式的对象。
-
-要说明此问题，请参阅Luma站点数据层（左）与转换后的数据元素（右）的以下比较：
-
-![XDM对象数组格式](assets/data-element-xdm-array.png)
-
-将数据元素与 `productListItems` 结构（提示，它应该匹配）。
-
->[!IMPORTANT]
->
->请注意数值变量的转换方式，以及数据层中字符串值的转换方式，例如 `price` 和 `qty` 已重新格式化为数据元素中的数字。 这些格式要求对于Platform中的数据完整性非常重要，并且在 [配置架构](configure-schemas.md) 步骤。 在本例中， **[!UICONTROL 数量]** 使用 **[!UICONTROL 整数]** 数据类型。
-> ![XDM架构数据类型](assets/set-up-analytics-quantity-integer.png)
-
-现在返回到将XDM对象映射到整个数组。 重复与创建 `ecommerce - pdp library loaded - AA (order 20)` 规则：
-
-1. 将其命名为  [!UICONTROL `ecommerce - cart library loaded - AA (order 20)`]
-1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
-1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
-1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL 库已加载]**
-1. 将其命名为 `Core - library loaded - order 20`
-1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`
-1. 选择 **[!UICONTROL 保留更改]**
-
-   ![Analytics XDM规则](assets/set-up-analytics-cart-sequence.png)
-
-1. 下 **[!UICONTROL 条件]**，选择以 **[!UICONTROL 添加]**
-1. 离开 **[!UICONTROL 逻辑类型]** 作为 **[!UICONTROL 常规]**
-1. 离开 **[!UICONTROL 扩展]** 作为 **[!UICONTROL 核心]**
-1. 选择 **[!UICONTROL 完成情况类型]** 作为 **[!UICONTROL 不含查询字符串的路径]**
-1. 在右边， **不要** 启用 **[!UICONTROL 正则表达式]** 切换
-1. 下 **[!UICONTROL 路径等于]** 设置 `/content/luma/us/en/user/cart.html`. 对于Luma演示站点，它确保规则仅在购物车页面上触发
-1. 选择 **[!UICONTROL 保留更改]**
-
-   ![Analytics XDM规则](assets/set-up-analytics-cart-condition.png)
-
-1. 下 **[!UICONTROL 操作]** 选择 **[!UICONTROL 添加]**
-1. 选择 **[!UICONTROL Adobe Experience Platform Web SDK]** 扩展
-1. 选择 **[!UICONTROL 操作类型]** 作为 **[!UICONTROL 更新变量]**
-1. 向下滚动到 `commerce` 对象并选择以将其打开。
-1. 打开 **[!UICONTROL productListView]** 对象和设置 **[!UICONTROL 值]** 到 `1`
-
-   ![设置产品视图](assets/set-up-analytics-cart-view.png)
-
-   >[!TIP]
-   >
-   >在XDM中设置commerce.productListViews.value=1会自动映射到 `scView` Analytics中的事件
-
-<!--1. Create an **[!UICONTROL XDM object]** **[!UICONTROL Data Element Type]** named **`xdm.commerce.cartView`**
-1. Select the same Platform sandbox and XDM schema you are using for this tutorial
-1. Open the **[!UICONTROL commerce]** object
-1. Open the **[!UICONTROL productListViews]** object and set `value` to `1`
-
-    >[!TIP]
-    >
-    >This step is equivalent to setting `scView` event in Analytics -->
-
-1. 向下滚动到并选择 **[!UICONTROL productListItems]** 数组
-
-1. 选择 **[!UICONTROL 提供整个阵列]**
-
-1. 将映射到 **`cart.productInfo`** 数据元素
-
-1. 选择 `eventType` 并设置为 `commerce.productListViews`
-
-1. 选择 **[!UICONTROL 保留更改]**
-
-1. 选择 **[!UICONTROL 保存]** 保存规则
-
-按照相同的模式为结账和购买创建其他两个规则，但存在以下差异：
-
-**规则名称**： `ecommerce - checkout library loaded - AA (order 20)`
-
-* **[!UICONTROL 条件]**： /content/luma/us/en/user/checkout.html
-* 将 `eventType` 设置为 `commerce.checkouts`
-* 设置 **XDM商务事件**： commerce.checkout.value到 `1`
-
-  >[!TIP]
-  >
-  >这相当于设置 `scCheckout` Analytics中的事件
-
-**规则名称**： `ecommerce - purchase library loaded - AA (order 20)`
-
-* **[!UICONTROL 条件]**： /content/luma/us/en/user/checkout/order/thank-you.html
-* 将 `eventType` 设置为 `commerce.purchases`
-* 设置 **XDM商务事件**： commerce.purchases.value到 `1`
-
-  >[!TIP]
-  >
-  >这相当于设置 `purchase` Analytics中的事件
-
-还有其他步骤可捕获所有必需的 `purchase` 事件变量：
-
-1. 打开 **[!UICONTROL 商务]** 对象
-1. 打开 **[!UICONTROL 订购]** 对象
-1. 地图 **[!UICONTROL purchaseID]** 到 `cart.orderId` 数据元素
-1. 设置 **[!UICONTROL currencyCode]** 到硬编码值 `USD`
-
-   ![为Analytics设置purchaseID](assets/set-up-analytics-purchase.png)
-
-   >[!TIP]
-   >
-   >这相当于设置 `s.purchaseID` 和 `s.currencyCode` Analytics中的变量
-
-
-1. 向下滚动到并选择 **[!UICONTROL productListItems]** 数组
-1. 选择 **[!UICONTROL 提供整个阵列]**
-1. 将映射到 **`cart.productInfo.purchase`** 数据元素
-1. 选择 **[!UICONTROL 保存]**
-
-完成后，您应该会看到创建了以下规则。
-
-![Analytics XDM规则](assets/set-up-analytics-rules.png)
-
-<!--
-## Create additional rules for Platform Web SDK
-
-With the **[!UICONTROL Update variabl]**e and **[!UICONTROL Send Event]** Action Types of Platform Web SDK, its possible to sequence the **[!UICONTROL Send Event]** action to trigger after all **[!UICONTROL Update variable]** action types run. This is called Rule Stacking, and you use it to customize the baseline XDM created depending on the type of page you are on.  
-
-In this exercise, you create individual rules per e-commerce event and use conditions so the rules fire on the right pages. 
-
-Repeat the same for all other e-commerce events using the following parameters:
-
-**Rule name**: cart view - library load - AA
-
-* **[!UICONTROL Event Type]**: Library Loaded (Page Top)
-* **[!UICONTROL Condition]**: /content/luma/us/en/user/cart.html
-* **Type value under Web SDK - Send Action**: commerce.productListViews
-* **XDM data for Web SDK - Send Action:** `%xdm.commerce.cartView%`
-
-**Rule name**: checkout - library load - AA
-
-* **[!UICONTROL Event Type]**: Library Loaded (Page Top)
-* **[!UICONTROL Condition]** /content/luma/us/en/user/checkout.html
-* **Type for Web SDK - Send Action**: commerce.checkouts
-* **XDM data for Web SDK - Send Action:** `%xdm.commerce.checkout%`
-
-**Rule name**: purchase - library load - AA
-
-* **[!UICONTROL Event Type]**: Library Loaded (Page Top)
-* **[!UICONTROL Condition]** /content/luma/us/en/user/checkout/order/thank-you.html
-* **Type for Web SDK - Send Action**: commerce.purchases
-* **XDM data for Web SDK - Send Action:** `%xdm.commerce.purchase%`
--->
 
 
 ## 构建开发环境
@@ -780,47 +406,7 @@ Repeat the same for all other e-commerce events using the following parameters:
 
    ![Analytics购买](assets/analytics-debugger-purchase.png)
 
-## 处理规则和实时报表
 
-现在，您已通过边缘跟踪验证Analytics信标，接下来还可以使用实时报表验证Analytics是否对数据进行了处理。 在检查实时报表之前，必须配置Analytics的处理规则 `props` 根据需要。
-
-### 自定义Analytics映射的处理规则
-
-在本练习中，您将一个XDM变量映射到一个prop，以便在实时报表中查看。 对于任何自定义映射，请按照以下相同步骤执行操作 `eVar`， `prop`， `event`或变量访问，可通过处理规则访问。
-
-1. 在Analytics UI中，转到 [!UICONTROL 管理员] > [!UICONTROL 管理工具] > [!UICONTROL 报表包]
-1. 选择您将在教程中使用的开发/测试报表包> [!UICONTROL 编辑设置] > [!UICONTROL 常规] > [!UICONTROL 处理规则]
-
-   ![Analytics购买](assets/analytics-process-rules.png)
-
-1. 创建规则以 **[!UICONTROL 覆盖值]** `[!UICONTROL Product SKU (prop1)]` 到 `a.x.productlistitems.0.sku`. 请记住添加您创建规则的原因并命名规则标题。 选择 **[!UICONTROL 保存]**
-
-   ![Analytics购买](assets/analytics-set-processing-rule.png)
-
-   >[!IMPORTANT]
-   >
-   >首次映射到处理规则时，UI不会显示XDM对象中的上下文数据变量。 要修复该错误，请选择任意值，请保存并返回进行编辑。 此时应会显示所有XDM变量。
-
-1. 转到 [!UICONTROL 编辑设置] >  [!UICONTROL 实时]. 使用下面显示的以下参数配置所有这三个参数，以便您可以验证内容页面查看次数、产品查看次数和购买次数
-
-   ![Analytics购买](assets/analytics-debugger-real-time.png)
-
-1. 重复验证步骤，您应该会看到实时报表相应地填充数据。
-
-   **页面查看次数**
-   ![实时内容](assets/analytics-real-time-content.png)
-
-   **产品查看次数**
-   ![实时产品查看次数](assets/analytics-real-time-prodView.png)
-
-   **购买**
-   ![实时购买](assets/analytics-real-time-purchase.png)
-
-1. 在工作区UI中，创建一个表以查看您所购买产品的完整电子商务流程
-
-   ![完整电子商务流程](assets/analytics-workspace-ecommerce.png)
-
-要了解有关将XDM字段映射到Analytics变量的更多信息，请观看视频 [将Web SDK变量映射到Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-use-cases/internal-site-search/map-web-sdk-variables-into-adobe-analytics.html).
 
 ## 使用Adobe Experience Platform Assurance验证Adobe Analytics
 

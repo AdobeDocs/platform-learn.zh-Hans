@@ -2,9 +2,9 @@
 title: 创建标记规则
 description: 了解如何使用标记规则将事件与XDM对象一起发送到Platform Edge Network。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '2006'
+source-wordcount: '2009'
 ht-degree: 1%
 
 ---
@@ -40,15 +40,16 @@ ht-degree: 1%
 
 ## 命名约定
 
-为了更好地管理标记中的规则，建议遵循标准命名约定。 本教程使用三部分命名约定：
+为了更好地管理标记中的规则，建议遵循标准命名约定。 本教程使用由五部分组成的命名约定：
 
-* [**位置**] - [**事件**] - [**工具**] (**序列**)
+* [**位置**] - [**事件**] - [**用途**] - [**工具**] - [**订购**]
 
 其中；
 
 1. **位置** 是规则触发的网站上的一个或多个页面
 1. **事件** 是规则的触发器
-1. **工具** 是在该规则的操作步骤中使用的一个或多个特定应用程序
+1. **用途** 是规则执行的主要操作
+1. **工具** 是在该规则的操作步骤中使用的特定应用程序或多个应用程序，Web SDK很少使用这种方法
 1. **序列** 是规则相对于其他规则应触发的顺序
 <!-- minor update -->
 
@@ -59,13 +60,19 @@ ht-degree: 1%
 * **[!UICONTROL 更新变量]** 将数据元素映射到XDM字段
 * **[!UICONTROL 发送事件]** 将XDM对象发送到Experience Platform边缘网络
 
-首先，我们定义XDM字段的“全局配置”，我们要在网站的每个页面（例如，页面名称）上发送这些字段， **[!UICONTROL 更新变量]** 操作。
+在本课程的其余部分中，我们将：
 
-然后，我们定义其他规则，其中包含 **[!UICONTROL 更新变量]** 以使用附加XDM字段补充“全局配置”，这些字段仅在特定条件下可用（例如，在产品页面上添加产品详细信息）。
+1. 创建规则以定义XDM字段的“全局配置”(使用 [!UICONTROL 更新变量] ，我们想在网站的每个页面上（例如，页面名称）使用 **[!UICONTROL 更新变量]** 操作。
 
-最后，我们将使用另一条规则和 **[!UICONTROL 发送事件]** 操作将向Adobe Experience Platform Edge Network发送完整的XDM对象。
+1. 创建可覆盖我们的“全局配置”的其他规则或贡献其他XDM字段(使用 [!UICONTROL 更新变量] 再次重申)，这些规则仅在某些条件下（例如，在产品页面上添加产品详细信息）相关。
+
+1. 使用创建另一个规则 **[!UICONTROL 发送事件]** 操作将向Adobe Experience Platform Edge Network发送完整的XDM对象。
 
 所有这些规则将使用&quot;[!UICONTROL 订购]”选项。
+
+此视频概述了此过程：
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
 ### 更新变量规则
 
@@ -81,24 +88,22 @@ ht-degree: 1%
 
    ![创建规则](assets/rules-create.png)
 
-1. 将规则命名为 `all pages global content variables - library loaded - AA (order 1)`
+1. 将规则命名为 `all pages - library loaded - set global variables - 1`
 
 1. 在 **[!UICONTROL 活动]** 部分，选择 **[!UICONTROL 添加]**
 
    ![命名规则并添加事件](assets/rule-name-new.png)
 
-1. 使用 **[!UICONTROL 核心扩展]** 并选择 `Page Bottom` 作为 **[!UICONTROL 事件类型]**
+1. 使用 **[!UICONTROL 核心扩展]** 并选择 **[!UICONTROL Library Loaded (Page Top)]** 作为 **[!UICONTROL 事件类型]**
 
-1. 在 **[!UICONTROL 名称]** 字段，将其命名为 `Core - Page Bottom - order 1`. 这有助于您以有意义的名称描述触发器。
-
-1. 选择 **[!UICONTROL 高级]** 下拉菜单并输入 `1` 在 **[!UICONTROL 订购]**
+1. 选择 **[!UICONTROL 高级]** 下拉菜单并输入 `1` 作为 **[!UICONTROL 订购]**
 
    >[!NOTE]
    >
    > 订单编号越低，执行的时间就越早。 因此，我们给予“全球配置”一个较低的订单编号。
 
 1. 选择 **[!UICONTROL 保留更改]** 以返回到主规则屏幕
-   ![选择页面底部触发器](assets/create-tag-rule-trigger-bottom.png)
+   ![选择Library Loaded触发器](assets/create-tag-rule-trigger-bottom.png)
 
 1. 在 **[!UICONTROL 操作]** 部分，选择 **[!UICONTROL 添加]**
 
@@ -122,7 +127,7 @@ ht-degree: 1%
 
    >[!TIP]
    >
-   > 要了解在 `eventType` 字段，您必须转到架构页面并选择 `eventType` 字段以查看右边栏上的建议值。
+   > 要了解在 `eventType` 字段，您必须转到架构页面并选择 `eventType` 字段以查看右边栏上的建议值。 如果需要，您还可以输入新值。
    > ![“架构”页上的eventType建议值](assets/create-tag-rule-eventType.png)
 
 1. 接下来，查找 `identityMap` 对象并将其选定
@@ -160,7 +165,7 @@ ht-degree: 1%
 
 #### 产品页面字段
 
-现在，开始使用 **[!UICONTROL 更新变量]** 在多个有序规则中扩充XDM对象，然后再将其发送至 [!UICONTROL Platform边缘网络].
+现在，开始使用 **[!UICONTROL 更新变量]** 此外，在将XDM对象发送到之前对其进行扩充的顺序化规则 [!UICONTROL Platform边缘网络].
 
 >[!TIP]
 >
@@ -171,12 +176,11 @@ ht-degree: 1%
 首先在Luma的产品详细信息页面上跟踪产品查看：
 
 1. 选择 **[!UICONTROL 添加规则]**
-1. 将其命名为  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
+1. 将其命名为  [!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
 1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
 1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
-1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Page Bottom]**
-1. 将其命名为 `Core - Page Bottom - order 20`
-1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`. 这可确保规则在 `all pages global content variables - library loaded - AA (order 1)` 用于设置全局内容变量。
+1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Library Loaded (Page Top)]**
+1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`. 这可确保规则在 `all pages - library loaded - set global variables - 1` 设置全局配置。
 
    ![Analytics XDM规则](assets/set-up-analytics-pdp.png)
 
@@ -246,11 +250,10 @@ ht-degree: 1%
 现在，让我们将数组映射到XDM对象：
 
 
-1. 创建新规则，名为 `ecommerce - cart library loaded - AA (order 20)`
+1. 创建新规则，名为 `ecommerce - library loaded - set shopping cart variables - 20`
 1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
 1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
-1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Page Bottom]**
-1. 将其命名为 `Core - Page Bottom - order 20`
+1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Library Loaded (Page Top)]**
 1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`
 1. 选择 **[!UICONTROL 保留更改]**
 
@@ -292,7 +295,7 @@ ht-degree: 1%
 
 按照相同的模式为结账和购买创建其他两个规则，但存在以下差异：
 
-**规则名称**： `ecommerce - checkout library loaded - AA (order 20)`
+**规则名称**： `ecommerce  - library loaded - set checkout variables - 20`
 
 1. **[!UICONTROL 条件]**： /content/luma/us/en/user/checkout.html
 1. 将 `eventType` 设置为 `commerce.checkouts`
@@ -303,7 +306,7 @@ ht-degree: 1%
    >这相当于设置 `scCheckout` Analytics中的事件
 
 
-**规则名称**： `ecommerce - purchase library loaded - AA (order 20)`
+**规则名称**： `ecommerce - library loaded - set purchase variables -  20`
 
 1. **[!UICONTROL 条件]**： /content/luma/us/en/user/checkout/order/thank-you.html
 1. 将 `eventType` 设置为 `commerce.purchases`
@@ -338,18 +341,16 @@ ht-degree: 1%
 
 1. 在右侧，选择 **[!UICONTROL 添加规则]** 创建其他规则
 
-1. 将规则命名为 `all pages send event - library loaded - AA (order 50)`
+1. 将规则命名为 `all pages - library loaded - set send event - 50`
 
 1. 在 **[!UICONTROL 活动]** 部分，选择 **[!UICONTROL 添加]**
 
-1. 使用 **[!UICONTROL 核心扩展]** 并选择 `Page Bottom` 作为 **[!UICONTROL 事件类型]**
-
-1. 在 **[!UICONTROL 名称]** 字段，将其命名为 `Core - Page Bottom - order 50`. 这有助于您以有意义的名称描述触发器。
+1. 使用 **[!UICONTROL 核心扩展]** 并选择 `Library Loaded (Page Top)` 作为 **[!UICONTROL 事件类型]**
 
 1. 选择 **[!UICONTROL 高级]** 下拉菜单并输入 `50` 在 **[!UICONTROL 订购]**. 这将确保第二个规则在您设置为触发的第一个规则之后触发 `1`.
 
 1. 选择 **[!UICONTROL 保留更改]** 以返回到主规则屏幕
-   ![选择页面底部触发器](assets/create-tag-rule-trigger-bottom-send.png)
+   ![选择Library Loaded触发器](assets/create-tag-rule-trigger-bottom-send.png)
 
 1. 在 **[!UICONTROL 操作]** 部分，选择 **[!UICONTROL 添加]**
 
@@ -383,7 +384,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >    除了Adobe Experience Platform Web SDK扩展和 `all pages global content variables - library loaded - AA (order 50)` 规则，您将看到在前面的课程中创建的标记组件。 核心扩展包含所有Web标记属性所需的基本JavaScript。
+   >    您应会看到在前面的课程中创建的所有标记组件。 核心扩展包含所有Web标记属性所需的基本JavaScript。
 
 1. 选择 **[!UICONTROL 保存并构建用于开发]**
 

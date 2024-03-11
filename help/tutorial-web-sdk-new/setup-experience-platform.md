@@ -1,10 +1,10 @@
 ---
 title: 使用Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1608'
-ht-degree: 5%
+source-wordcount: '1587'
+ht-degree: 4%
 
 ---
 
@@ -13,7 +13,6 @@ ht-degree: 5%
 了解如何使用Platform Web SDK将Web数据流式传输到Adobe Experience Platform。
 
 Experience Platform是所有新Experience Cloud应用程序(如Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer)的支柱。 这些应用程序旨在使用Platform Web SDK作为它们的最佳的Web数据收集方法。
-
 
 ![Web SDK和Adobe Experience Platform图](assets/dc-websdk-aep.png)
 
@@ -30,29 +29,17 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 ## 先决条件
 
-您应该已经完成了以下课程：
+要完成本课程，您必须首先：
 
-* 此 **初始配置** 课程：
-   * [配置XDM架构](configure-schemas.md)
-   * [配置数据流](configure-datastream.md)
-   * [配置身份命名空间](configure-identities.md)
-
-* 此 **标记配置** 课程：
-   * [安装 Web SDK 扩展](install-web-sdk.md)
-   * [创建数据元素](create-data-elements.md)
-   * [创建身份](create-identities.md)
-   * [创建标记规则](create-tag-rule.md)
+* 有权访问Adobe Experience Platform应用程序，如Real-time Customer Data Platform、Journey Optimizer或Customer Journey Analytics
+* 完成本教程的初始配置和标记配置部分中之前的课程。
 
 
 ## 创建数据集
 
 所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 A [数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) 是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。 数据集还包含描述其存储的数据的各个方面的元数据。
 
-在本练习中，您将创建一个数据集以跟踪的内容和电子商务详细信息 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->您必须已创建 `Luma Web Event Data` 如上一课中所述， [配置XDM架构](configure-schemas.md).
+让我们为您的Luma Web事件数据设置一个数据集：
 
 
 1. 转到 [Experience Platform界面](https://experience.adobe.com/platform/)
@@ -211,7 +198,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 > * 首先，将一些数据摄取到数据集中。
 > * 解决在数据摄取过程中出现的任何问题（例如，数据验证或映射问题）。
 > * 为配置文件启用数据集和架构
-> * 重新摄取数据
+> * 如果需要，重新摄取数据
 
 
 ### 验证用户档案

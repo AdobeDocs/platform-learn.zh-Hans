@@ -3,14 +3,19 @@ title: 配置身份命名空间
 description: 了解如何配置要与Adobe Experience Platform Web SDK一起使用的身份命名空间。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 11%
+source-wordcount: '694'
+ht-degree: 7%
 
 ---
 
 # 配置身份命名空间
+
+
+>[!CAUTION]
+>
+>我们预计于2024年3月15日星期五发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
 
 了解如何配置要与Adobe Experience Platform Web SDK一起使用的身份命名空间。
 
@@ -93,7 +98,7 @@ ht-degree: 11%
 
 ## 其他资源
 
-* [Identity Service 文档](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans)
+* [Identity Service文档](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans)
 * [标识服务API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
 现在，标识已准备就绪，可以配置数据流。

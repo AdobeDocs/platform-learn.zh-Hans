@@ -1,24 +1,29 @@
 ---
 title: “利用 Web SDK 实施 Adobe Experience Cloud”教程
-description: 了解如何使用 Adobe Experience Platform Web SDK 实施 Experience Cloud 应用程序。
+description: 了解如何使用Adobe Experience Platform Web SDK实施Experience Cloud应用程序。
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 25%
+source-wordcount: '434'
+ht-degree: 11%
 
 ---
 
 # “利用 Web SDK 实施 Adobe Experience Cloud”教程
 
-了解如何使用 Adobe Experience Platform Web SDK 实施 Experience Cloud 应用程序。
+>[!CAUTION]
+>
+>我们预计于2024年3月15日星期五发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
+
+
+了解如何使用Adobe Experience Platform Web SDK实施Experience Cloud应用程序。
 
 Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Experience Cloud的客户通过Adobe Experience Platform Edge Network与Adobe应用程序和第三方服务进行交互。 请参阅 [Adobe Experience Platform Web SDK概述](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans) 以了解更多详细信息。
 
-本教程将指导您在名为Luma的示例零售网站上实施Platform Web SDK。 [](https://luma.enablementadobe.com/content/luma/us/en.html)Luma 站点具有丰富的数据层和功能，可让您构建现实的实施。完成本教程后，您应该可以在自己的网站上开始通过Platform Web SDK实施所有营销解决方案。
+本教程将指导您在名为Luma的示例零售网站上实施Platform Web SDK。 此 [Luma网站](https://luma.enablementadobe.com/content/luma/us/en.html) 具有丰富的数据层和功能，可让您构建现实的实施。 完成本教程后，您应该可以在自己的网站上开始通过Platform Web SDK实施所有营销解决方案。
 
-[![Luma 网站](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
+[![Luma网站](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 
 ## 学习目标

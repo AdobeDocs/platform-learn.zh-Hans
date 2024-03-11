@@ -2,9 +2,9 @@
 title: 设置事件转发属性
 description: 了解如何使用Experience PlatformWeb SDK数据来使用event-forwarding属性。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Event Forwarding
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1861'
 ht-degree: 2%
 
 ---
@@ -185,8 +185,8 @@ ht-degree: 2%
 
    >[!TIP]
    >
-   使用您自己的网站时，您可以使用Web浏览器网络工具找到XDM对象路径，并过滤 `/ee` 请求，打开信标 [!UICONTROL **有效负荷**] 并向下钻取到要查找的变量。 然后，使用鼠标右键单击并选择“复制属性路径”。 以下是浏览器视区高度的示例：
-   ![事件转发XDM路径](assets/event-forwarding-xdm-path.png)
+   >使用您自己的网站时，您可以使用Web浏览器网络工具找到XDM对象路径，并过滤 `/ee` 请求，打开信标 [!UICONTROL **有效负荷**] 并向下钻取到要查找的变量。 然后，使用鼠标右键单击并选择“复制属性路径”。 以下是浏览器视区高度的示例：
+   > ![事件转发XDM路径](assets/event-forwarding-xdm-path.png)
 
 ### 安装Adobe云连接器扩展
 
@@ -280,7 +280,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-如果尚未将暂存和生产事件转发属性链接到数据流，则您将看到开发环境作为生成库的唯一选项。
+>如果尚未将暂存和生产事件转发属性链接到数据流，则您将看到开发环境作为生成库的唯一选项。
 
 ![保存事件转发规则](assets/event-forwarding-initial-build.png)
 
@@ -323,4 +323,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

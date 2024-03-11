@@ -2,14 +2,19 @@
 title: 使用Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 4a12f8261cf1fb071bc70b6a04c34f6c16bcce64
+source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
 workflow-type: tm+mt
-source-wordcount: '1605'
-ht-degree: 7%
+source-wordcount: '1600'
+ht-degree: 5%
 
 ---
 
 # 使用Web SDK流式传输数据以Experience Platform
+
+
+>[!CAUTION]
+>
+>我们预计于2024年3月15日星期五发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
 
 了解如何使用Platform Web SDK将Web数据流式传输到Adobe Experience Platform。
 
@@ -44,7 +49,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 ## 创建数据集
 
-所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 A [数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) 是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。 数据集还包含描述其存储的数据的各方面特性的元数据。
+所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 A [数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) 是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。 数据集还包含描述其存储的数据的各个方面的元数据。
 
 在本练习中，您将创建一个数据集以跟踪的内容和电子商务详细信息 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html).
 
@@ -223,11 +228,11 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 1. 作为 **[!UICONTROL 身份命名空间]** 使用 `lumaCRMId`
 1. 复制并粘贴的值 `lumaCRMId` 传入您在Experience Platform调试器中检查的调用(可能 `112ca06ed53d3db37e4cea49cc45b71e`)。
 
-   ![配置文件](assets/experience-platform-validate-dataset-profile.png)
+   ![用户档案](assets/experience-platform-validate-dataset-profile.png)
 
 1. 如果配置文件中存在有效的值， `lumaCRMId`，控制台中会填充配置文件ID：
 
-   ![配置文件](assets/experience-platform-validate-dataset-profile-set.png)
+   ![用户档案](assets/experience-platform-validate-dataset-profile-set.png)
 
 1. 单击 [!UICONTROL 配置文件ID] 和 [!UICONTROL 客户配置文件] 控制台将填充。 在这里，您可以看到链接到 `lumaCRMId`，例如 `ECID`：
 
