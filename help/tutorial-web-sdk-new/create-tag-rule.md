@@ -2,9 +2,9 @@
 title: 创建标记规则
 description: 了解如何使用标记规则将事件与XDM对象一起发送到Platform Edge Network。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2025'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,9 @@ ht-degree: 1%
 在本课程结束时，您能够：
 
 * 使用命名惯例来管理标记中的规则
-* 在标记规则中使用更新变量和发送事件操作类型发送XDM事件
+* 使用“更新变量”和“发送事件”操作，发送包含XDM字段的事件
+* 跨多个规则栈叠多组XDM字段
+* 将单个或整个数组数据元素映射到XDM对象
 * 将标记规则发布到开发库
 
 

@@ -2,9 +2,9 @@
 title: 使用Experience PlatformWeb SDK设置Adobe Analytics
 description: 了解如何使用Experience PlatformWeb SDK设置Adobe Analytics。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Analytics
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3024'
 ht-degree: 0%
 
 ---
@@ -21,16 +21,12 @@ ht-degree: 0%
 
 在本课程结束后，您将能够：
 
-* 为Adobe Analytics配置XDM架构
-* 了解自动映射和手动映射的XDM变量与Analytics的区别
 * 配置数据流以启用Adobe Analytics
-* 覆盖数据流以将数据发送到另一个Adobe Analytics报表包
-* 将单个或整个数组数据元素映射到XDM对象
-* 使用更新变量规则操作类型将多个规则栈叠到一个XDM事件中
-* 使用XDM对象在Adobe Analytics中捕获页面查看
-* 使用Adobe Analytics产品字符串的XDM对象捕获电子商务数据
+* 了解自动映射和手动映射的XDM变量与Analytics的区别
+* 为特定于Adobe Analytics的变量配置XDM架构
 * 使用XDM设置产品语法促销eVar
-* 验证是否使用Experience Platform调试器通过XDM对象设置了Adobe Analytics变量
+* 覆盖数据流以将数据发送到另一个Adobe Analytics报表包
+* 使用Experience Platform调试器验证Adobe Analytics变量
 * 使用Adobe Analytics处理规则设置自定义变量
 * 验证Adobe Analytics使用Adobe Experience Platform Assurance捕获的数据
 * 验证Adobe Analytics使用实时报表捕获的数据
