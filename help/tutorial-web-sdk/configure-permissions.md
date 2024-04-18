@@ -3,7 +3,7 @@ title: 配置教程的权限
 description: 了解如何请求访问Experience PlatformWeb SDK并配置完成“使用Web SDK实施Adobe Experience Cloud”教程所需的权限。
 feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->我们预计于2024年3月15日星期五发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
+>我们预计将于2024年4月23日星期二发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
 
 了解如何请求访问Experience PlatformWeb SDK并配置完成本教程所需的权限。 要使用数据收集界面中的标记实施Platform Web SDK，您必须具有在中配置的适当用户权限 [Admin Console](https://adminconsole.adobe.com).
 

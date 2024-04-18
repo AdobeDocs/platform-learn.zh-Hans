@@ -3,7 +3,7 @@ title: 结论和后续步骤
 description: 完成本教程后的后续操作
 recommendations: display,noCatalog
 exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->我们预计于2024年3月15日星期五发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
+>我们预计将于2024年4月23日星期二发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
 
 恭喜！您已完成“使用Web SDK实施Adobe Experience Cloud”教程！
 
@@ -24,14 +24,14 @@ ht-degree: 3%
 * 使用标准和自定义字段组创建了架构。
 * 已配置数据流。
 * 生成标记属性。
-* 从数据层捕获了字段，将其转换为XDM并将其发送到Platform Edge Network。
+* 从数据层捕获了字段，将其转换为XDM并将它们发送到PlatformEdge Network。
 * 捕获的同意和身份验证身份。
 * 已将Web SDK实施连接到以下Experience Cloud应用程序：
    * Adobe Experience Platform
    * Adobe Analytics
    * Adobe Audience Manager
    * Adobe Target
-* 使用事件转发将数据从Platform Edge Network发送到Web挂接。
+* 使用事件转发将数据从PlatformEdge Network发送到Web挂接。
 * 已使用Adobe Experience Platform Debugger验证实施。
 
 您已准备好开始历程的下一阶段 — 在自己的网站上实施Adobe Experience Cloud！

@@ -3,7 +3,7 @@ title: 使用Platform Web SDK设置Audience Manager
 description: 了解如何使用Platform Web SDK设置Adobe Audience Manager，并使用Cookie目标验证实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1368'
 ht-degree: 1%
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->我们预计于2024年3月15日星期五发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
+>我们预计将于2024年4月23日星期二发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
 
 了解如何使用Platform Web SDK设置Adobe Audience Manager，并使用Cookie目标验证实施。
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html) 是一种Adobe Experience Cloud解决方案，它提供了收集与网站访客有关的商业相关信息、创建可销售的区段以及向合适的受众提供定向广告和内容所需的一切。
+[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=zh-Hans) 是一种Adobe Experience Cloud解决方案，它提供了收集与网站访客有关的商业相关信息、创建可销售的区段以及向合适的受众提供定向广告和内容所需的一切。
 
 
 ## 学习目标
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ## 配置数据流
 
-使用Platform Web SDK实现的Audience Manager与使用 [服务器端转发(SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hans). 服务器端转发将Adobe Analytics请求数据传递给Audience Manager。 Platform Web SDK实现将发送到Platform Edge Network的XDM数据传递给Audience Manager。 数据流中启用了Audience Manager：
+使用Platform Web SDK实现的Audience Manager与使用 [服务器端转发(SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hans). 服务器端转发将Adobe Analytics请求数据传递给Audience Manager。 Platform Web SDK实现将发送到平台Edge Network的XDM数据传递给Audience Manager。 数据流中启用了Audience Manager：
 
 1. 转到 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面
 1. 在左侧导航中，选择 **[!UICONTROL 数据流]**

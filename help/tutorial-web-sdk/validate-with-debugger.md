@@ -3,7 +3,7 @@ title: 使用Experience Platform调试器验证Web SDK实施
 description: 了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->我们预计于2024年3月15日星期五发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
+>我们预计将于2024年4月23日星期二发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
 
 了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。
 
@@ -37,7 +37,7 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 在本课程结束时，您将能够使用调试器执行以下操作：
 
 * 加载备用标记库
-* 验证XDM对象是否正在按预期捕获和发送边缘网络数据
+* 验证XDM对象是否按预期Edge Network捕获和发送数据
 
 ## 先决条件
 
@@ -87,7 +87,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
 ## 在Experience Platform调试器中验证您的实施
 
-您可以使用Debugger验证Platform Web SDK实施，并查看发送到Platform Edge Network的数据：
+您可以使用Debugger验证Platform Web SDK的实施并查看发送到PlatformEdge Network的数据：
 
 1. 转到 **[!UICONTROL 摘要]** 在左侧导航中，查看标记属性的详细信息
 

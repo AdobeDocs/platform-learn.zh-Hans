@@ -2,7 +2,7 @@
 title: 使用Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '1600'
 ht-degree: 5%
@@ -14,13 +14,13 @@ ht-degree: 5%
 
 >[!CAUTION]
 >
->我们预计于2024年3月15日星期五发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
+>我们预计将于2024年4月23日星期二发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
 
 了解如何使用Platform Web SDK将Web数据流式传输到Adobe Experience Platform。
 
 Experience Platform是所有新Experience Cloud应用程序(如Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer)的支柱。 这些应用程序旨在使用Platform Web SDK作为它们的最佳的Web数据收集方法。
 
-Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事件数据。 当该数据被发送到Platform Edge Network时，数据流配置可以将其转发到Experience Platform。
+Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事件数据。 当该数据被发送到PlatformEdge Network时，数据流配置可以将其转发到Experience Platform。
 
 ## 学习目标
 
@@ -81,7 +81,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 ## 配置数据流
 
-现在，您可以配置 [!UICONTROL 数据流] 以将数据发送到 [!UICONTROL Adobe Experience Platform]. 数据流是标记属性、Platform Edge Network和Experience Platform数据集之间的链接。
+现在，您可以配置 [!UICONTROL 数据流] 以将数据发送到 [!UICONTROL Adobe Experience Platform]. 数据流是标记属性、PlatformEdge Network和Experience Platform数据集之间的链接。
 
 1. 打开 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面
 1. 选择 **[!UICONTROL 数据流]** 从左侧导航

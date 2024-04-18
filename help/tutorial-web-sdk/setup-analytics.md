@@ -3,7 +3,7 @@ title: 使用Experience PlatformWeb SDK设置Adobe Analytics
 description: 了解如何使用Experience PlatformWeb SDK设置Adobe Analytics。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 9f75ef042342e1ff9db6039e722159ad96ce5e5b
+source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
 workflow-type: tm+mt
 source-wordcount: '3473'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->我们预计于2024年3月15日星期五发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
+>我们预计将于2024年4月23日星期二发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
 
 了解如何使用设置Adobe Analytics [Experience PlatformWeb SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html)，创建标记规则以将数据发送到Adobe Analytics，并验证Analytics是否按预期捕获数据。
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 ## 配置数据流
 
-Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后，您的数据流会告知Platform Edge Network在何处转发该数据，在本例中是转发哪些Adobe Analytics报表包。
+Platform Web SDK将数据从您的网站发送到PlatformEdge Network。 然后，您的数据流会告知PlatformEdge Network在何处转发该数据，在本例中，转发的是您的Adobe Analytics报表包中的哪些数据。
 
 1. 转到 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面
 1. 在左侧导航中，选择 **[!UICONTROL 数据流]**
@@ -121,7 +121,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 ## 创建其他数据元素
 
-接下来，从Luma数据层捕获其他数据并将其发送到Platform Edge Network。 虽然本课程重点关注常见的Adobe Analytics要求，但可以根据您的数据流配置将所有捕获的数据轻松发送到其他目标。 例如，如果您完成了Adobe Experience Platform课程，则您在本课程中捕获的其他数据也将发送到Platform。
+接下来，从Luma数据层捕获其他数据并将其发送到平台Edge Network。 虽然本课程重点关注常见的Adobe Analytics要求，但可以根据您的数据流配置将所有捕获的数据轻松发送到其他目标。 例如，如果您完成了Adobe Experience Platform课程，则您在本课程中捕获的其他数据也将发送到Platform。
 
 ### 创建电子商务数据元素
 
@@ -233,7 +233,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 1. 此 `commerce` 对象设置Analytics事件，例如 `prodView`， `scView`、和 `purchase`
 1. 此 `productListItems` 对象设置Analytics维度，例如 `productID`.
 
-请参阅 [收集商业和产品数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) 以了解更多详细信息。
+请参阅 [收集Commerce和产品数据](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en) 以了解更多详细信息。
 
 此外，了解您可以 **[!UICONTROL 提供单个属性]** 至各个XDM字段或 **[!UICONTROL 提供整个阵列]** 到XDM对象。
 
@@ -439,7 +439,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 在 [调试程序](validate-with-debugger.md) 在本课程中，您已了解如何使用Platform Debugger和浏览器开发人员控制台检查客户端XDM对象信标，这与您调试 `AppMeasurement.js` Analytics实施。 要验证Analytics是否通过Platform Web SDK正确捕获数据，您必须进一步执行两个步骤：
 
-1. 使用Experience Platform调试器的边缘跟踪功能，验证平台边缘网络上的XDM对象如何处理数据
+1. 使用Experience PlatformDebugger的边缘跟踪功能，验证平台Edge Network上XDM对象如何处理数据
 1. 验证Analytics如何使用处理规则和实时报表来处理数据。
 
 ### 使用边缘跟踪
@@ -496,7 +496,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 ### 产品字符串和电子商务事件
 
-由于您已在产品页面上，因此本练习将继续使用相同的边缘跟踪来验证Analytics捕获的产品数据。 产品字符串和电子商务事件都会自动将XDM变量映射到Analytics。 只要您已映射到适当的 `productListItem` XDM变量，而 [为Adobe Analytics配置XDM架构](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)，Platform Edge Network负责将数据映射到适当的Analytics变量。
+由于您已在产品页面上，因此本练习将继续使用相同的边缘跟踪来验证Analytics捕获的产品数据。 产品字符串和电子商务事件都会自动将XDM变量映射到Analytics。 只要您已映射到适当的 `productListItem` XDM变量，而 [为Adobe Analytics配置XDM架构](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)，PlatformEdge Network负责将数据映射到适当的Analytics变量。
 
 1. 首先验证 `Product String` 已设置
 1. 查找 `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. 变量会捕获您映射到 `productListItems.item1.sku` 本课程前面部分
@@ -505,7 +505,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
    ![Analytics产品字符串](assets/analytics-debugger-prodstring.png)
 
-边缘跟踪处理 `commerce` 事件与略有不同 `productList` 维度。 您不会看到上下文数据变量以与查看产品名称映射到的方式相同的方式进行映射 `[!UICONTROL c.a.x.productlistitem.[0].name]` 以上。 取而代之的是，边缘描摹显示Analytics中的最终事件自动映射 `event` 变量。 只要映射到适当的XDM，Platform Edge Network就会相应地映射它 `commerce` 变量while [为Adobe Analytics配置架构](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)；在这种情况下， `commerce.productViews.value=1`.
+边缘跟踪处理 `commerce` 事件与略有不同 `productList` 维度。 您不会看到上下文数据变量以与查看产品名称映射到的方式相同的方式进行映射 `[!UICONTROL c.a.x.productlistitem.[0].name]` 以上。 取而代之的是，边缘描摹显示Analytics中的最终事件自动映射 `event` 变量。 只要您映射到适当的XDM，平台Edge Network就会相应地映射它 `commerce` 变量while [为Adobe Analytics配置架构](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)；在这种情况下， `commerce.productViews.value=1`.
 
 1. 返回Experience Platform调试器窗口，向下滚动到 `[!UICONTROL event]` 变量中，它被设置为 `[!UICONTROL prodView]`
 
