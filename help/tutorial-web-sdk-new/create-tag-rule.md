@@ -1,8 +1,9 @@
 ---
 title: 创建标记规则
-description: 了解如何使用标记规则将事件与XDM对象一起发送到Platform Edge Network。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
+description: 了解如何使用标记规则将事件与XDM对象一起发送到PlatformEdge Network。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
-source-git-commit: 26545b660b70daf4296ec2afbc067065f77def01
+exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 1%
@@ -11,7 +12,7 @@ ht-degree: 1%
 
 # 创建标记规则
 
-了解如何使用标记规则将事件与XDM对象一起发送到Platform Edge Network。 标记规则是事件、条件和操作的组合，用于告知标记属性执行一些操作。 使用Platform Web SDK时，规则用于将事件发送到具有正确XDM字段的Platform Edge Network。
+了解如何使用标记规则将事件与XDM对象一起发送到PlatformEdge Network。 标记规则是事件、条件和操作的组合，用于告知标记属性执行一些操作。 使用Platform Web SDK时，可以使用规则将事件发送到具有正确XDM字段的PlatformEdge Network。
 
 >[!NOTE]
 >
@@ -60,7 +61,7 @@ ht-degree: 1%
 在标记中，规则用于在各种条件下执行操作（触发调用）。 Platform Web SDK标记扩展包含两个将在本课程中使用的操作：
 
 * **[!UICONTROL 更新变量]** 将数据元素映射到XDM字段
-* **[!UICONTROL 发送事件]** 将XDM对象发送到Experience Platform边缘网络
+* **[!UICONTROL 发送事件]** 将XDM对象发送到Experience PlatformEdge Network
 
 在本课程的其余部分中，我们将：
 
@@ -68,7 +69,7 @@ ht-degree: 1%
 
 1. 创建可覆盖我们的“全局配置”的其他规则或贡献其他XDM字段(使用 [!UICONTROL 更新变量] 再次重申)，这些规则仅在某些条件下（例如，在产品页面上添加产品详细信息）相关。
 
-1. 使用创建另一个规则 **[!UICONTROL 发送事件]** 操作将向Adobe Experience Platform Edge Network发送完整的XDM对象。
+1. 使用创建另一个规则 **[!UICONTROL 发送事件]** 操作将向Adobe Experience PlatformEdge Network发送完整的XDM对象。
 
 所有这些规则将使用&quot;[!UICONTROL 订购]”选项。
 
@@ -105,7 +106,7 @@ ht-degree: 1%
    > 订单编号越低，执行的时间就越早。 因此，我们给予“全球配置”一个较低的订单编号。
 
 1. 选择 **[!UICONTROL 保留更改]** 以返回到主规则屏幕
-   ![选择Library Loaded触发器](assets/create-tag-rule-trigger-bottom.png)
+   ![选择Library Loaded触发器](assets/create-tag-rule-trigger-loaded.png)
 
 1. 在 **[!UICONTROL 操作]** 部分，选择 **[!UICONTROL 添加]**
 
@@ -167,7 +168,7 @@ ht-degree: 1%
 
 #### 产品页面字段
 
-现在，开始使用 **[!UICONTROL 更新变量]** 此外，在将XDM对象发送到之前对其进行扩充的顺序化规则 [!UICONTROL Platform边缘网络].
+现在，开始使用 **[!UICONTROL 更新变量]** 此外，在将XDM对象发送到之前对其进行扩充的顺序化规则 [!UICONTROL 平台Edge Network].
 
 >[!TIP]
 >
@@ -339,7 +340,7 @@ ht-degree: 1%
 
 ### 发送事件规则
 
-现在，您已设置变量，接下来可以创建规则以使用将完整XDM对象发送到Platform Edge Network **[!UICONTROL 发送事件]** 操作。
+现在，您已设置变量，接下来可以创建规则，以使用将完整XDM对象发送到PlatformEdge Network **[!UICONTROL 发送事件]** 操作。
 
 1. 在右侧，选择 **[!UICONTROL 添加规则]** 创建其他规则
 
@@ -352,7 +353,7 @@ ht-degree: 1%
 1. 选择 **[!UICONTROL 高级]** 下拉菜单并输入 `50` 在 **[!UICONTROL 订购]**. 这将确保第二个规则在您设置为触发的第一个规则之后触发 `1`.
 
 1. 选择 **[!UICONTROL 保留更改]** 以返回到主规则屏幕
-   ![选择Library Loaded触发器](assets/create-tag-rule-trigger-bottom-send.png)
+   ![选择Library Loaded触发器](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. 在 **[!UICONTROL 操作]** 部分，选择 **[!UICONTROL 添加]**
 

@@ -2,7 +2,8 @@
 title: 安装和配置Adobe Experience Platform Web SDK标记扩展
 description: 了解如何在数据收集界面中安装和配置Platform Web SDK标记扩展。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK
-source-git-commit: ef3d374f800905c49cefba539c1ac16ee88c688b
+exl-id: 7dedf9ea-eeda-4738-9633-b5a5a5f5f9ae
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '604'
 ht-degree: 12%
@@ -53,7 +54,7 @@ ht-degree: 12%
 1. 搜索 `Adobe Experience Platform Web SDK`
 1. 选择 **[!UICONTROL 安装]**
 
-   ![安装Web SDK扩展](assets/extension-platform-web-sdk.jpg)
+   ![安装Web SDK扩展](assets/extension-platform-web-sdk.png)
 
 
 ## 将Platform Web SDK链接到数据流

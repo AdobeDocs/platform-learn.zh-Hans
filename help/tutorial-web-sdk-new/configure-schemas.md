@@ -2,7 +2,8 @@
 title: 为Web数据创建XDM架构
 description: 了解如何在数据收集界面中为Web数据创建XDM架构。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Schemas
-source-git-commit: f08866de1bd6ede50bda1e5f8db6dbd2951aa872
+exl-id: 159f914a-43d4-4808-b6af-01136386e25c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -15,7 +16,7 @@ ht-degree: 1%
 
 体验数据模型(XDM)架构是在Adobe Experience Platform中收集数据的构建块、原则和最佳实践。
 
-Platform Web SDK使用您的架构来标准化Web事件数据，将其发送到Platform Edge Network，并最终将数据转发到数据流中配置的任何Experience Cloud应用程序。 此步骤至关重要，因为它定义了将客户体验数据提取到Experience Platform中所需的标准数据模型，并支持基于这些标准构建的下游服务和应用程序。
+Platform Web SDK使用您的架构来标准化Web事件数据，将其发送到PlatformEdge Network，并最终将数据转发到数据流中配置的任何Experience Cloud应用程序。 此步骤至关重要，因为它定义了将客户体验数据提取到Experience Platform中所需的标准数据模型，并支持基于这些标准构建的下游服务和应用程序。
 
 ## 为什么要为数据建模？
 
@@ -122,7 +123,7 @@ XDM架构是描述Experience Platform数据的标准方式，允许与架构匹�
 1. 选中框
 1. 选择 **[!UICONTROL 添加字段组]**
 
-   ![添加字段组](assets/schema-add-field-group.jpg)
+   ![添加字段组](assets/schema-add-field-group.png)
 
 对于这两个字段组，请注意，您有权访问Web上数据收集所需的最常用键值对。 此 [!UICONTROL 显示名称] 的区段生成器界面中向营销人员显示的每个字段的显示名称，您可以根据自己的需求更改标准字段的显示名称。 您还可以删除不需要的字段。 单击任一字段组名称时，界面会突出显示属于它的键值对分组。 在下面的示例中，您可以看到哪些组属于 **[!UICONTROL 使用者体验事件]**.
 

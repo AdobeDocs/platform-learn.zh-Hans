@@ -3,9 +3,9 @@ title: 通过Experience Platform保证验证Web SDK实施
 description: 了解如何使用Adobe Experience Platform Assurance验证您的Platform Web SDK实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 5e778dde1698110fade7163ed2585f059c27274c
+source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '607'
 ht-degree: 2%
 
 ---
@@ -61,13 +61,16 @@ Adobe Experience Platform Assurance是Adobe Experience Cloud的一个产品，�
 1. 打开 [数据收集界面](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. 在左侧导航中选择Assurance
 1. 选择创建会话
+   ![创建保证会话](assets/assurance-create-session.png)
 1. 选择开始
 1. 为会话命名，例如， `Luma Web SDK validation`
 1. 作为 **[!UICONTROL 基本URL]** 进入 `https://luma.enablementadobe.com/`
+   ![命名保障会话](assets/assurance-name-session.png)
 1. 在下一个屏幕上，选择 **[!UICONTROL 复制链接]**
 1. 选择图标以将链接复制到剪贴板
 1. 将URL粘贴到浏览器中，这会使用特殊的URL参数打开Luma网站 `adb_validation_sessionid` 并启动会话
 1. 在Assurance界面中，您应该会看到一条消息，指示您已成功连接到会话，并且您应该会看到Assurance界面中捕获的事件。
+   ![保证会话已连接](assets/assurance-success.png)
 
 ## 验证Web SDK实施的当前状态
 
