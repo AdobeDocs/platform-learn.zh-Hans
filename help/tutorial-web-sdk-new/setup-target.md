@@ -2,9 +2,9 @@
 title: 使用Platform Web SDK设置Adobe Target
 description: 了解如何使用Platform Web SDK实施Adobe Target。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Target
-source-git-commit: 367789cfb0800fee7d020303629f57112e52464f
+source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
 workflow-type: tm+mt
-source-wordcount: '4264'
+source-wordcount: '4308'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,8 @@ ht-degree: 0%
 
 * 了解如何添加Platform Web SDK预隐藏代码片段，以防止在将Target与异步标记嵌入代码结合使用时闪烁
 * 配置数据流以启用Target功能
-* 在页面加载时呈现可视化个性化决策（以前称为“全局mbox”）
+* 渲染可视化体验编辑器活动
+* 呈现表单编辑器活动
 * 将XDM数据传递给Target并了解到Target参数的映射
 * 将自定义数据（如配置文件和实体参数）传递到Target
 * 使用Platform Web SDK验证Target实施
@@ -188,20 +189,22 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 * **个性化决策**：应用服务器确定的操作。 这些决策可以基于受众标准和Target活动优先级。
 * **建议**：服务器做出的决策在Platform Web SDK响应中传递的结果。 例如，交换横幅图像就是一个建议。
 
-### 更新页面加载规则
+### 更新 [!UICONTROL 发送事件] 操作
 
-如果数据流中启用了Target，则Platform Web SDK会交付来自Target的可视个性化决策。 但是， _它们不会自动呈现_. 您必须修改全局页面加载规则以启用自动渲染。
+如果数据流中启用了Target，则Platform Web SDK会交付来自Target的可视个性化决策。 但是， _它们不会自动呈现_. 您必须更新 [!UICONTROL 发送事件] 用于启用自动渲染的操作。
 
 1. 在 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面中，打开您在本教程中使用的标记属性
-1. 打开 `all pages - library load - AA & AT` 规则
+1. 打开 `all pages - library loaded - send event - 50` 规则
 1. 选择 `Adobe Experience Platform Web SDK - Send event` 操作
 1. 启用 **[!UICONTROL 呈现可视化个性化决策]** 带有复选框
 
    ![启用呈现可视化个性化决策](assets/target-rule-enable-visual-decisions.png)
 
-1. 在**中[!UICONTROL 数据流配置覆盖**] 该 **[!UICONTROL 目标资产令牌]** 可以作为静态值或使用数据元素覆盖。 仅在中定义的属性令牌 [**高级属性令牌覆盖**](#advanced-pto) 中的部分 **数据流配置** 将返回结果。
-
-   ![覆盖属性令牌](assets/target-property-token-ovrrides.png)
+<!--
+1. In the **[!UICONTROL Datastream configuration overrides**] the **[!UICONTROL Target Property Token]** can be overridden either as a static value or with a data element. Only property tokens defined in the [**Advanced Property Token Overrides**](#advanced-pto) section in **Datastream Configuration** will return results.
+   
+   ![Override the Property Token](assets/target-property-token-ovrrides.png)
+   -->
 
 1. 保存所做更改，然后将其生成到库
 
@@ -211,7 +214,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 >
 >通常， [!UICONTROL 呈现可视化个性化决策] 每次全页加载时只应启用一次“发送事件”操作的设置。 如果多个发送事件操作启用了此设置，则会忽略后续渲染请求。
 
-如果您希望使用自定义代码自行呈现或处理这些决策，则可以保留 [!UICONTROL 呈现可视化个性化决策] 设置已禁用。 Platform Web SDK非常灵活，它提供了可让您完全控制的功能。 您可以参阅指南以了解有关 [手动渲染个性化内容](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html).
+如果您希望使用自定义代码自行呈现或处理这些决策，则可以保留 [!UICONTROL 呈现可视化个性化决策] 设置已禁用。 Platform Web SDK非常灵活，它提供了这项功能让您能够完全控制。 您可以参阅指南以了解有关 [手动渲染个性化内容](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html).
 
 
 ### 使用可视化体验编辑器设置Target活动
@@ -222,7 +225,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 >
 >如果您使用Google Chrome作为浏览器，则 [可视化体验编辑器(VEC)助手扩展](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=en) 需要正确加载站点以在VEC中进行编辑。
 
-1. 导航到目标
+1. 导航到Adobe Target界面
 1. 使用活动URL的Luma主页创建体验定位(XT)活动
 
    ![创建新的XT活动](assets/target-xt-create-activity.png)
@@ -267,7 +270,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
    ![Adobe Experience Platform Debugger中的网络调用](assets/target-debugger-network.png)
 
-1. 请注意，下有键 `query` > `personalization` 和  `decisionScopes` 具有值 `__view__`. 此范围等同于Target的“全局mbox”。 此Platform Web SDK调用从Target请求决策。
+1. 请注意，下有键 `query` > `personalization` 和  `decisionScopes` 具有值 `__view__`. 此范围等同于 `target-global-mbox`. 此Platform Web SDK调用从Target请求决策。
 
    ![`__view__` decisionScope请求](assets/target-debugger-view-scope.png)
 
@@ -278,13 +281,13 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 ## 设置和呈现自定义决策范围
 
-自定义决策范围（以前称为“mbox”）可用于通过基于Target表单的HTML编辑器以结构化方式交付体验或JSON内容。 交付给其中一个自定义范围的内容不会由Platform Web SDK自动呈现。
+自定义决策范围（以前称为“mbox”）可用于通过基于Target表单的HTML编辑器以结构化方式交付体验或JSON内容。 交付给其中一个自定义范围的内容不会由Platform Web SDK自动呈现。 可以使用Tags中的操作渲染。
 
-### 向页面加载规则添加范围
+### 将范围添加到 [!UICONTROL 发送事件操作]
 
 修改页面加载规则以添加自定义决策范围：
 
-1. 打开 `all pages - library load - AA & AT` 规则
+1. 打开 `all pages - library loaded - send event - 50` 规则
 1. 选择 `Adobe Experience Platform Web SDK - Send Event` 操作
 1. 添加一个或多个要使用的范围。 在本例中，使用 `homepage-hero`.
 
@@ -383,9 +386,17 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
    ![Target活动展示](assets/target-debugger-activity-impression.png)
 
-## 将其他数据传递到Target
+## 将参数发送到Target
 
 在本节中，您将传递特定于Target的数据，并深入了解XDM数据如何映射到Target参数。
+
+### 页面(mbox)参数和XDM
+
+所有XDM字段均自动作为 [页面参数](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) 或mbox参数。
+
+其中一些XDM字段将映射到Target后端中的特殊对象。 例如， `web.webPageDetails.URL` 将自动可用于构建基于URL的定位条件，或作为 `page.url` 创建配置文件脚本时的对象。
+
+### 特殊参数和数据对象
 
 有些数据点对于没有从XDM对象映射的Target可能很有用。 这些特殊的Target参数包括：
 
@@ -394,9 +405,9 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 * [Recommendations保留的参数](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * 的类别值 [类别亲和力](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### 为特殊的Target参数创建数据元素
+这些参数必须在 `data` 对象而不是中的 `xdm` 对象。 此外，页面（或mbox）参数也可包含在 `data` 对象。
 
-首先，使用在 [创建数据元素](create-data-elements.md) 课程构建 `data` 用于传递非XDM数据的对象：
+要填充数据对象，请创建以下数据元素，并重用在中创建的数据元素 [创建数据元素](create-data-elements.md) 教训：
 
 * **`data.content`** 使用以下自定义代码：
 
@@ -414,38 +425,47 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
   return data;
   ```
 
+
+
 ### 更新页面加载规则
 
 在XDM对象之外传递Target的其他数据需要更新任何适用的规则。 对于此示例，您唯一必须做的修改是包括新的 **data.content** 数据元素到常规页面加载规则和产品页面查看规则。
 
-1. 打开 `all pages - library load - AA & AT` 规则
+1. 打开 `all pages - library loaded - send event - 50` 规则
 1. 选择 `Adobe Experience Platform Web SDK - Send event` 操作
 1. 添加 `data.content` Data元素到Data字段
 
    ![将Target数据添加到规则](assets/target-rule-data.png)
 
 1. 保存更改并将内部版本生成到库
-1. 对重复步骤1至4 **产品视图 — 库加载 — AA** 规则
+1. 对重复步骤1至4 **电子商务 — 已加载库 — 设置产品详细信息变量 — 20** 规则
 
 >[!NOTE]
 >
 >上面的示例使用 `data` 未在所有页面类型上完全填充的对象。 标记可正确处理此情况并忽略具有未定义值的键。 例如， `entity.id` 和 `entity.name` 将不会在除产品详细信息之外的任何页面上传递。
 
 
-## 拆分个性化决策和Analytics收藏集事件
+## 拆分个性化和Analytics请求
 
-Luma网站上的数据层是在tags嵌入代码之前完全定义的。 这样，我们就可以使用单次调用来获取个性化内容(例如从Adobe Target)并发送分析数据(例如发送到Adobe Analytics)。 在许多网站上，数据层的加载时间不够早，或者速度不够快，不适合与个性化应用程序一起使用。 在这些情况下，您可以生成两个 `sendEvent` 在单个页面加载时调用，并将第一个用于个性化，将第二个用于分析。 通过这种方式拆分事件规则，可以尽早触发Target决策事件。 Analytics事件可以等待，直到填充数据层对象。 这与Web SDK之前的实施类似，Adobe Target会触发 `target-global-mbox` 之后，Adobe Analytics会触发 `s.t()` 在页面底部调用
+Luma网站上的数据层是在tags嵌入代码之前完全定义的。 这样，我们就可以使用单次调用来获取个性化内容(例如从Adobe Target)并发送分析数据(例如发送到Adobe Analytics)。
 
+但是，在许多网站上，数据层的加载时间不够早，或者速度不够快，无法同时为两个应用程序使用一个调用。 在这些情况下，您可以使用两个 [!UICONTROL 发送事件] 单个页面加载上的操作，并将第一个操作用于个性化，将第二个操作用于analytics。 通过这种方式拆分事件，可以尽早触发个性化事件，同时等待数据层完全加载后再发送Analytics事件。 这类似于许多Web SDK之前的实施，在这些实施中，Adobe Target会触发 `target-global-mbox` 之后，Adobe Analytics会触发 `s.t()` 在页面底部调用
 
-1. 创建名为的规则 `all pages - page top - request decisions`
-1. 向规则添加事件。 使用 **核心** 扩展和 **[!UICONTROL Library Loaded (Page Top)]** 事件类型
-1. 向规则添加操作。 使用 **Adobe Experience Platform Web SDK** 扩展和 **发送事件** 操作类型
+要创建置顶个性化请求，请执行以下操作：
+
+1. 打开 `all pages - library loaded - send event - 50` 规则
+1. 打开 **发送事件** 操作
 1. 选择 **[!UICONTROL 使用引导式事件]** 然后选择 **[!UICONTROL 请求个性化]**
 1. 这样会锁定 **类型** 作为 **[!UICONTROL 决策建议提取]**
 
    ![send_decision_request_alone](assets/target-decision-request.png)
 
-1. 创建时 `Adobe Analytics Send Event rule` 使用 **引导式事件样式** 部分选择 **[!UICONTROL 页面底部事件 — 收集分析]** 单选按钮
+要创建analytics-on-bottom请求：
+
+1. 创建一个名为的新规则 `all pages - page bottom - send event - 50`
+1. 向规则添加事件。 使用 **核心** 扩展和 **[!UICONTROL Page Bottom]** 事件类型
+1. 向规则添加操作。 使用 **Adobe Experience Platform Web SDK** 扩展和 **发送事件** 操作类型
+1. 选择 **[!UICONTROL 使用引导式事件]** 然后选择 **[!UICONTROL 收集分析]**
 1. 这样会锁定 **[!UICONTROL 包括挂起的显示通知]** 选中复选框，以便发送来自决策请求的已排队显示通知。
 
 ![send_decision_request_alone](assets/target-aa-request-guided.png)

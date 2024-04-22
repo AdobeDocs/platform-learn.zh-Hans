@@ -1,20 +1,21 @@
 ---
-title: 使用Platform Web SDK设置Web渠道
-description: 了解如何使用Platform Web SDK实施Web渠道。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
+title: 使用Platform Web SDK设置Journey Optimizer Web渠道
+description: 了解如何使用Platform Web SDK实施Journey Optimizer Web渠道。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
-source-git-commit: 12e6e9d06ae0d6945c165032d89fd0f801d94ff2
+exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
+source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
 workflow-type: tm+mt
-source-wordcount: '2450'
+source-wordcount: '2587'
 ht-degree: 0%
 
 ---
 
 
-# 使用Platform Web SDK设置Web渠道
+# 设置Journey Optimizer Web渠道
 
-了解如何使用Platform Web SDK实施Web渠道。 本指南介绍了基本Web渠道先决条件、配置的详细步骤，并深入研究了以忠诚度状态为中心的用例。
+了解如何使用Platform Web SDK实施Journey Optimizer Web渠道。 本指南介绍了基本Web渠道先决条件、配置的详细步骤，并深入研究了以忠诚度状态为中心的用例。
 
 通过遵循本指南，Journey Optimizer用户能够使用Journey Optimizer Web Designer有效地将Web渠道应用于高级在线个性化。
 
@@ -48,7 +49,7 @@ ht-degree: 0%
 * 如果使用内容试验功能，请确保您的Web数据集也包含在报表配置中。
 * 目前，支持两种类型的实施，以便能够在Web资产上创作和交付Web渠道营销活动：
    * 仅限客户端：要修改您的网站，必须实施Adobe Experience Platform Web SDK。
-   * 混合模式：您可以利用Platform Edge Network服务器API来请求个性化服务器端。 来自API的响应随后会提供给Adobe Experience Platform Web SDK，以便在客户端进行修改。 有关更多信息，请参阅Adobe Experience Platform Edge Network服务器API文档。 可以在这篇博客文章中找到混合模式的其他详细信息和实施示例。
+   * 混合模式：您可以利用平台Edge Network服务器API来请求个性化服务器端。 来自API的响应随后会提供给Adobe Experience Platform Web SDK，以便在客户端进行修改。 有关更多信息，请参阅Adobe Experience PlatformEdge Network服务器API文档。 可以在这篇博客文章中找到混合模式的其他详细信息和实施示例。
 
 >[!NOTE]
 >
@@ -124,9 +125,16 @@ ht-degree: 0%
 >
 >由于本教程面向实施者，因此需要注意的是，本课程涉及Journey Optimizer中的大量界面工作。 虽然此类界面任务通常由营销人员处理，但对于实施者而言，深入了解该流程可能会有所帮助，即使他们最终不负责Web渠道营销活动创建也是如此。
 
+### 创建忠诚度模式并摄取示例数据
+
+将Web SDK数据摄取到Adobe Experience Platform中后，可以通过您已摄取的所有其他数据来扩充该数据。 当用户在Luma网站进行身份验证时，经过身份验证的身份将发送到Platform，表示Luma CRM系统中的身份。 在Experience Platform中构建一个身份图，并且所有其他启用了配置文件的数据集也包含具有的身份 `lumaCrmId` 可以将命名空间连接在一起以构建实时客户配置文件。 我们将在Adobe Experience Platform中快速创建一个包含一些忠诚度数据示例的其他数据集，以便我们能够演示如何在Journey Optimizer Web营销活动中使用实时客户个人资料。 由于您已经进行了类似的练习，因此说明将非常简短。
+
+
+
+
 ### 创建忠诚度奖励营销活动
 
-让我们从Adobe Journey Optimizer中创建忠诚度奖励网络渠道营销活动开始。
+现在，我们已经摄取了忠诚度数据示例，接下来可以在Adobe Journey Optimizer中创建忠诚度奖励网络渠道营销活动。
 
 要创建示例营销活动，请执行以下操作：
 
@@ -297,7 +305,7 @@ ht-degree: 0%
    <!--
     ![ADD SCREENSHOT](#)
     -->
-1. 然后，您可以使用各种Luma忠诚度帐户登录网站，并使用该调试器验证发送到Adobe Experience Platform Edge Network的请求。
+1. 然后，您可以使用各种Luma忠诚度帐户登录网站，并使用该调试器验证发送到Adobe Experience PlatformEdge Network的请求。
    <!--
     ![ADD SCREENSHOT](#)
     -->

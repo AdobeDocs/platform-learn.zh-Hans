@@ -3,7 +3,7 @@ title: 创建标记规则
 description: 了解如何使用标记规则将事件与XDM对象一起发送到PlatformEdge Network。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
 exl-id: c77ab8a1-922b-481e-b3cb-d2c5ca7bb8cb
-source-git-commit: fe8b92c560c9676a44935005cc558388244d6aea
+source-git-commit: 0220f5dbe8e34e92cf584380629ecc29a549dabd
 workflow-type: tm+mt
 source-wordcount: '2025'
 ht-degree: 1%
@@ -344,7 +344,7 @@ ht-degree: 1%
 
 1. 在右侧，选择 **[!UICONTROL 添加规则]** 创建其他规则
 
-1. 将规则命名为 `all pages - library loaded - set send event - 50`
+1. 将规则命名为 `all pages - library loaded - send event - 50`
 
 1. 在 **[!UICONTROL 活动]** 部分，选择 **[!UICONTROL 添加]**
 
