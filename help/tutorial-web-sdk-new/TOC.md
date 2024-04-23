@@ -9,10 +9,10 @@ jira: KT-6953
 recommendations: noDisplay,noCatalog
 index: false
 hide: true
-source-git-commit: fd366a4848c2dd9e01b727782e2f26005a440725
+source-git-commit: e9e5e1dec8a0595bb789f0324c3263cf914dec31
 workflow-type: tm+mt
-source-wordcount: '96'
-ht-degree: 23%
+source-wordcount: '95'
+ht-degree: 24%
 
 ---
 
@@ -38,9 +38,8 @@ ht-degree: 23%
    + [设置Adobe Analytics](setup-analytics.md)
    + [设置Audience Manager](setup-audience-manager.md)
    + [设置Target](setup-target.md)
-   + 设置Journey Optimizer功能 {#journey-optimizer}
-      + [设置Web渠道](journey-optimizer/setup-web-channel.md)
-      + [设置决策管理](journey-optimizer/setup-decision-management.md)
+   + [设置Journey Optimizer Web渠道](setup-web-channel.md)
+   + [设置Journey Optimizer决策管理](setup-decision-management.md)
 
 + 同意管理 {#consent-management}
    + [设置同意](setup-consent.md)
