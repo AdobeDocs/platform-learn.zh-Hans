@@ -2,9 +2,10 @@
 title: 使用Platform Web SDK设置Adobe Target
 description: 了解如何使用Platform Web SDK实施Adobe Target。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Target
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
+source-git-commit: 6a741604cd2eb026600c2d4cb8c0ddcb15f64e3f
 workflow-type: tm+mt
-source-wordcount: '4308'
+source-wordcount: '4307'
 ht-degree: 0%
 
 ---
@@ -19,16 +20,16 @@ ht-degree: 0%
 
 ## 学习目标
 
-在本课程结束后，您将能够：
+在本课程结束时，您将能够对Target的Web SDK实施执行以下操作：
 
-* 了解如何添加Platform Web SDK预隐藏代码片段，以防止在将Target与异步标记嵌入代码结合使用时闪烁
+* 添加预隐藏代码片段以防止闪烁
 * 配置数据流以启用Target功能
 * 渲染可视化体验编辑器活动
 * 呈现表单编辑器活动
 * 将XDM数据传递给Target并了解到Target参数的映射
 * 将自定义数据（如配置文件和实体参数）传递到Target
-* 使用Platform Web SDK验证Target实施
-* 将Target建议请求与Adobe Analytics请求分开发送，并稍后解决其显示事件
+* 验证 Target 实施
+* 将个性化请求与Analytics请求分开
 
 >[!TIP]
 >
@@ -48,7 +49,7 @@ ht-degree: 0%
    * [使用基于表单的体验编辑器](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
    * [创建体验定位活动](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-## 添加闪烁缓解功能
+## 添加闪烁处理
 
 在开始之前，请根据标记库的加载方式，确定是否需要额外的闪烁处理解决方案。
 
@@ -59,7 +60,7 @@ ht-degree: 0%
 
 ### 异步实施
 
-异步加载标记库时，页面可能会在Target执行内容交换之前完成渲染。 这种行为可能会导致所谓的“闪烁”，在这种情况下，会先短暂显示默认内容，然后再将该内容替换为Target指定的个性化内容。 如果要避免出现这种闪烁情况，Adobe建议在紧靠异步标签嵌入代码之前的位置添加一个特殊的预隐藏代码片段。
+异步加载标记库时，页面可能会在Target将默认内容替换为个性化内容之前完成渲染。 这种行为可能会导致所谓的“闪烁”，在这种情况下，会先短暂显示默认内容，然后再将该内容替换为Target指定的个性化内容。 如果要避免出现这种闪烁情况，Adobe建议在紧靠异步标签嵌入代码之前的位置添加一个特殊的预隐藏代码片段。
 
 此代码片段已存在于Luma网站上，但让我们仔细了解一下此代码的用途：
 
@@ -181,7 +182,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 ## 呈现可视化个性化决策
 
-首先，您应该了解Target和标记界面中使用的术语。
+可视化个性化决策是指在Adobe Target的可视化体验编辑器中创建的体验。 首先，您应该了解Target和标记界面中使用的术语：
 
 * **活动**：一组定位到一个或多个受众的体验。 例如，一个简单的A/B测试可以是具有两个体验的活动。
 * **体验**：一组针对一个或多个位置或决策范围的操作。

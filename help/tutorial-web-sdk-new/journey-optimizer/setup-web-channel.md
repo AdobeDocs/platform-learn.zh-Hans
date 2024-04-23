@@ -5,9 +5,9 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: c57ad58f8ca145a01689a5d32b4ecb94cf169b2c
+source-git-commit: 43eb66edecb9dce59dbb4995230181c9f2cbce5b
 workflow-type: tm+mt
-source-wordcount: '2587'
+source-wordcount: '2675'
 ht-degree: 0%
 
 ---
@@ -127,10 +127,29 @@ ht-degree: 0%
 
 ### 创建忠诚度模式并摄取示例数据
 
-将Web SDK数据摄取到Adobe Experience Platform中后，可以通过您已摄取的所有其他数据来扩充该数据。 当用户在Luma网站进行身份验证时，经过身份验证的身份将发送到Platform，表示Luma CRM系统中的身份。 在Experience Platform中构建一个身份图，并且所有其他启用了配置文件的数据集也包含具有的身份 `lumaCrmId` 可以将命名空间连接在一起以构建实时客户配置文件。 我们将在Adobe Experience Platform中快速创建一个包含一些忠诚度数据示例的其他数据集，以便我们能够演示如何在Journey Optimizer Web营销活动中使用实时客户个人资料。 由于您已经进行了类似的练习，因此说明将非常简短。
+将Web SDK数据摄取到Adobe Experience Platform中后，可以通过已摄取到Platform中的其他数据源来扩充这些数据。 例如，当用户登录到Luma网站时， `lumaCrmId` 发送到Platform，表示Luma CRM系统中的身份。 在Experience Platform中构建身份图，并且所有其他启用配置文件的数据集可以潜在地连接在一起，以构建实时客户配置文件。 我们将在Adobe Experience Platform中快速创建一个包含一些忠诚度数据示例的其他数据集，以便我们能够演示如何在Journey Optimizer Web营销活动中使用实时客户个人资料。 由于您已经进行了类似的练习，因此说明将非常简短。
 
+要创建架构，请执行以下操作：
 
+1. 创建新架构
+1. 选择 **[!UICONTROL 个人资料]** 作为 [!UICONTROL 基类]
+1. 命名架构 `Luma Loyalty Schema`
+1. 选择 `personID` 字段并标记为 [!UICONTROL 标识] 和 [!UICONTROL 主要身份] 使用 `Luma CRM Id` [!UICONTROL 身份命名空间].
+1. 添加 [!UICONTROL 忠诚度详细信息] 字段组
+1. 为以下对象启用架构 [!UICONTROL 个人资料]
 
+架构的屏幕截图
+
+要创建数据集并摄取示例数据，请执行以下操作：
+
+1. 从创建新数据集 `Luma Loyalty Schema`
+1. 命名数据集 `Luma Loyalty Dataset`
+1. 为以下项启用数据集 [!UICONTROL 个人资料]
+1. 下载示例LoyaltyWebSDK.json文件
+1. 将文件拖放到数据集中
+1. 确认已成功摄取数据
+
+数据集和确认的屏幕截图
 
 ### 创建忠诚度奖励营销活动
 
