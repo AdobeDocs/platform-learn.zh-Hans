@@ -2,7 +2,7 @@
 title: 使用Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1587'
 ht-degree: 4%
@@ -38,7 +38,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 ## 创建数据集
 
-所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 A [数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) 是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。 数据集还包含描述其存储的数据的各个方面的元数据。
+所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 A [数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) 是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。 数据集还包含描述其存储的数据的各个方面的元数据。
 
 让我们为您的Luma Web事件数据设置一个数据集：
 
@@ -140,7 +140,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 >[!INFO]
 >
->Adobe Experience Platform的查询服务是用于验证湖中数据的更可靠方法，但超出了本教程的范围。 有关更多详细信息，请参阅 [浏览数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=zh-CN) 在平台教程部分中。
+>Adobe Experience Platform的查询服务是用于验证湖中数据的更可靠方法，但超出了本教程的范围。 有关更多详细信息，请参阅 [浏览数据](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) 在平台教程部分中。
 
 
 ## 为实时客户个人资料启用数据集和架构

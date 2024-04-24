@@ -2,7 +2,7 @@
 title: 配置教程的权限
 description: 了解如何请求访问Experience PlatformWeb SDK并配置完成“使用Web SDK实施Adobe Experience Cloud”教程所需的权限。
 feature: Web SDK,Tags,Access Control
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 3%
@@ -15,7 +15,7 @@ ht-degree: 3%
 
 ## 数据收集
 
-* 拥有以下权限 **[!UICONTROL 开发]**， **[!UICONTROL 编辑]**， **[!UICONTROL 批准]**， **[!UICONTROL Publish]**， **[!UICONTROL 管理扩展]**， **[!UICONTROL 管理环境]**、和 **[!UICONTROL 管理资产]**. 有关标记权限的更多信息，请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* 拥有以下权限 **[!UICONTROL 开发]**， **[!UICONTROL 编辑]**， **[!UICONTROL 批准]**， **[!UICONTROL Publish]**， **[!UICONTROL 管理扩展]**， **[!UICONTROL 管理环境]**、和 **[!UICONTROL 管理资产]**. 有关标记权限的更多信息，请参阅 [文档](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 * 如果要完成可选的事件转发课程，请拥有产品许可证，其中包括边缘转发和权限项 **[!UICONTROL 平台]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
@@ -31,11 +31,11 @@ ht-degree: 3%
    * 下的所有权限项 **[!UICONTROL 数据管理]**、和 **[!UICONTROL 用户档案管理]**：
 
 
-有关Platform访问控制的更多信息，请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans).
+有关Platform访问控制的更多信息，请参阅 [文档](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
 ## Adobe Analytics
 
-对于可选的Adobe Analytics课程，您必须拥有 [管理员对报表包设置、处理规则和Analysis Workspace的访问权限](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=zh-Hans)
+对于可选的Adobe Analytics课程，您必须拥有 [管理员对报表包设置、处理规则和Analysis Workspace的访问权限](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
 ## Adobe Target
 
@@ -43,7 +43,7 @@ ht-degree: 3%
 
 ## Adobe Audience Manager
 
-* 对于可选的Audience Manager课程，您必须有权创建、读取和写入特征、区段和目标。 有关更多信息，请参阅以下教程： [Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* 对于可选的Audience Manager课程，您必须有权创建、读取和写入特征、区段和目标。 有关更多信息，请参阅以下教程： [Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 现在，您已准备好开始初始配置步骤。
 

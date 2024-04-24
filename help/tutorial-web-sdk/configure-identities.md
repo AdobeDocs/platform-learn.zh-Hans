@@ -3,10 +3,10 @@ title: 配置身份命名空间
 description: 了解如何配置要与Adobe Experience Platform Web SDK一起使用的身份命名空间。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Identities
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '640'
-ht-degree: 8%
+ht-degree: 7%
 
 ---
 
@@ -14,9 +14,9 @@ ht-degree: 8%
 
 了解如何配置要与Adobe Experience Platform Web SDK一起使用的身份命名空间。
 
-此 [Adobe Experience Cloud Identity服务](https://experienceleague.adobe.com/docs/id-service/using/home.html) 在基于SDK的Adobe应用程序中设置一个通用访客ID (ECID)，以便增强Experience Cloud功能（如应用程序之间的受众共享）。 您还可以将自己的客户ID发送到该服务，以启用跨设备定位以及与其他系统(例如客户关系管理(CRM)系统)的集成。
+此 [Adobe Experience Cloud Identity服务](https://experienceleague.adobe.com/en/docs/id-service/using/home) 在基于SDK的Adobe应用程序中设置一个通用访客ID (ECID)，以便增强Experience Cloud功能（如应用程序之间的受众共享）。 您还可以将自己的客户ID发送到该服务，以启用跨设备定位以及与其他系统(例如客户关系管理(CRM)系统)的集成。
 
-此 [Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans) （是的，有两个！） 使用ECID和客户ID生成身份图，允许您将属性和行为合并到实时客户配置文件中。
+此 [Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) （是的，有两个！） 使用ECID和客户ID生成身份图，允许您将属性和行为合并到实时客户配置文件中。
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ ht-degree: 8%
 >
 >此 [Experience CloudID扩展](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) 在实施Adobe Experience Platform Web SDK时不需要使用，因为Web SDK JavaScript库包含访客ID服务功能。
 >
-> 如果您的网站已经在您的网站上通过访客API或Experience CloudID服务标签扩展使用Experience CloudID服务，并且您希望在迁移到Adobe Experience Platform Web SDK时继续使用该服务，则必须使用最新版本的访客API或Experience CloudID服务标签扩展。 请参阅 [ID迁移](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) 以了解更多信息。
+> 如果您的网站已经在您的网站上通过访客API或Experience CloudID服务标签扩展使用Experience CloudID服务，并且您希望在迁移到Adobe Experience Platform Web SDK时继续使用该服务，则必须使用最新版本的访客API或Experience CloudID服务标签扩展。 请参阅 [ID迁移](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) 以了解更多信息。
 
 ## 创建身份命名空间
 

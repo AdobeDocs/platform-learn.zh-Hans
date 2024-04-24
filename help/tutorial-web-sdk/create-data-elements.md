@@ -3,7 +3,7 @@ title: 创建数据元素
 description: 了解如何在标记中创建XDM对象并将数据元素映射到该对象。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1199'
 ht-degree: 1%
@@ -53,7 +53,7 @@ ht-degree: 1%
 
 ### 在数据层中实施XDM
 
-此方法涉及使用完全定义的XDM对象作为数据层的结构。 然后，将整个数据层映射到标记中的XDM对象数据元素。 如果您的实施不使用标签管理器，则此方法可能是理想的，因为您可以使用将数据直接从应用程序发送到XDM [XDM sendEvent命令](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). 如果您使用标记，则可以创建一个自定义代码数据元素，将整个数据层捕获为传递到XDM的JSON对象。 然后，将传递JSON映射到发送事件操作中的XDM对象字段。
+此方法涉及使用完全定义的XDM对象作为数据层的结构。 然后，将整个数据层映射到标记中的XDM对象数据元素。 如果您的实施不使用标签管理器，则此方法可能是理想的，因为您可以使用将数据直接从应用程序发送到XDM [XDM sendEvent命令](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). 如果您使用标记，则可以创建一个自定义代码数据元素，将整个数据层捕获为传递到XDM的JSON对象。 然后，将传递JSON映射到发送事件操作中的XDM对象字段。
 
 以下是使用Adobe客户端数据层格式时数据层的外观示例：
 
@@ -128,16 +128,16 @@ window.adobeDataLayer.push({
 >
 > Google Data Layer
 > 
-> 如果您的组织已经使用Google Analytics，并且网站上具有传统的Google dataLayer对象，则可以使用 [Google数据层扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) 在标记中。 这使您能够更快地部署Adobe技术，而无需请求IT团队的支持。 将Google数据层映射到XDM将遵循与上述相同的步骤。
+> 如果您的组织已经使用Google Analytics，并且网站上具有传统的Google dataLayer对象，则可以使用 [Google数据层扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) 在标记中。 这使您能够更快地部署Adobe技术，而无需请求IT团队的支持。 将Google数据层映射到XDM将遵循与上述相同的步骤。
 
 ### 在数据流中映射到XDM
 
-此方法使用数据流配置中内置的功能，称为 [为数据收集准备数据](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) 和跳过将数据层变量映射到标记中的XDM。
+此方法使用数据流配置中内置的功能，称为 [为数据收集准备数据](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) 和跳过将数据层变量映射到标记中的XDM。
 
 #### 优点
 
 * 灵活，因为您可以将各个变量映射到XDM
-* 能够 [计算新值](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) 或 [转换数据类型](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) 从Data Layer转到XDM
+* 能够 [计算新值](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) 或 [转换数据类型](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) 从Data Layer转到XDM
 * 利用 [映射Ui](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) 使用点击UI将源数据中的字段映射到XDM
 
 #### 缺点

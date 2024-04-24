@@ -3,7 +3,7 @@ title: 配置数据流
 description: 了解如何启用数据流并配置Experience Cloud解决方案。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Datastreams
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 3%
@@ -14,7 +14,7 @@ ht-degree: 3%
 
 了解如何启用数据流并配置Experience Cloud应用程序。
 
-数据流会告知Adobe Experience PlatformEdge Network将通过Platform Web SDK收集的数据发送到何处。 在数据流配置中，您可以启用Experience Cloud应用程序、Experience Platform帐户和事件转发。 请参阅 [配置数据流的基础知识](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans) 以了解更多详细信息。
+数据流会告知Adobe Experience PlatformEdge Network将通过Platform Web SDK收集的数据发送到何处。 在数据流配置中，您可以启用Experience Cloud应用程序、Experience Platform帐户和事件转发。 请参阅 [配置数据流的基础知识](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) 以了解更多详细信息。
 
 
 ![Web SDK、数据流和Edge Network图](assets/dc-websdk-datastreams.png)
@@ -72,7 +72,7 @@ ht-degree: 3%
 
 在 [设置Adobe Analytics](setup-analytics.md) 课程可使用Platform Web SDK发送事件操作覆盖页面的报表包。
 
-请参阅 [数据流配置覆盖文档](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) 以获取有关如何覆盖数据流配置的详细说明。
+请参阅 [数据流配置覆盖文档](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) 以获取有关如何覆盖数据流配置的详细说明。
 
 现在，您可以在标记资产中安装Platform Web SDK扩展了！
 

@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2885'
 ht-degree: 0%
@@ -249,7 +249,7 @@ ht-degree: 0%
 
 1. （可选）选择 **[!UICONTROL 均匀分布]**. 选中此选项可确保始终平均拆分处理拆分。
 
-[详细了解Adobe Journey Optimizer Web渠道中的内容实验](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
+[详细了解Adobe Journey Optimizer Web渠道中的内容实验](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment).
 
 ### 使用可视化帮助程序编辑内容
 
@@ -350,7 +350,7 @@ ht-degree: 0%
 
 您可以使用Luma网站上的调试器来验证生产环境中的Web渠道体验。 在忠诚度奖励用例启动并运行后，这是一种最佳实践，可确保正确配置所有内容。
 
-[使用此处指南了解如何在浏览器中配置调试器](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[使用此处指南了解如何在浏览器中配置调试器](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 要使用调试器开始验证，请执行以下操作：
 

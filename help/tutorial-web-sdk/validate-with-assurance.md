@@ -3,7 +3,7 @@ title: 通过Experience Platform保证验证Web SDK实施
 description: 了解如何使用Adobe Experience Platform Assurance验证您的Platform Web SDK实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 2%
@@ -12,7 +12,7 @@ ht-degree: 2%
 
 # 通过Experience Platform保证验证Web SDK实施
 
-Adobe Experience Platform Assurance是Adobe Experience Cloud的一个产品，可帮助您检查、验证、模拟和验证数据收集或提供体验的方式。 详细了解 [Adobe保证](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en).
+Adobe Experience Platform Assurance是Adobe Experience Cloud的一个产品，可帮助您检查、验证、模拟和验证数据收集或提供体验的方式。 详细了解 [Adobe保证](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## 学习目标

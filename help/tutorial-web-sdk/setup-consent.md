@@ -3,7 +3,7 @@ title: 使用Platform Web SDK设置同意
 description: 了解如何配置Experience PlatformWeb SDK标记扩展的隐私设置。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1602'
 ht-degree: 0%
@@ -215,10 +215,10 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 ![同意帖子访客选项](assets/consent-post-user-optin.png)
 
 
-有关Web SDK中同意的更多信息，请参阅 [支持客户同意首选项](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en).
+有关Web SDK中同意的更多信息，请参阅 [支持客户同意首选项](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-欲知关于 [!UICONTROL 设置同意] 操作，请参见 [设置同意](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
+欲知关于 [!UICONTROL 设置同意] 操作，请参见 [设置同意](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
 
 [下一步： ](setup-event-forwarding.md)
 

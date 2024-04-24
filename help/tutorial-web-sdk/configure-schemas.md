@@ -3,7 +3,7 @@ title: 为Web数据创建XDM架构
 description: 了解如何在数据收集界面中为Web数据创建XDM架构。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1493'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Platform Web SDK使用您的架构来标准化Web事件数据，将其发送到P
 >
 > 出于演示目的，本课程中的练习构建了一个示例架构，用于捕获客户在中查看的内容和购买的产品。 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html). 虽然您可以使用这些步骤创建不同的架构以满足您自己的目的，但建议您首先在创建示例架构的同时学习架构编辑器的功能。
 
-要了解有关XDM架构的更多信息，请参加课程 [使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) 或查看 [XDM系统概述](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en).
+要了解有关XDM架构的更多信息，请参加课程 [使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) 或查看 [XDM系统概述](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
 ## 学习目标
 
@@ -69,7 +69,7 @@ Platform Web SDK使用您的架构来标准化Web事件数据，将其发送到P
 
 ## 创建 XDM 架构
 
-XDM架构是描述Experience Platform数据的标准方式，允许与架构匹配的所有数据在组织内重复使用，而不会产生冲突，甚至可以在多个组织之间共享。 要了解更多信息，请参阅 [架构组合基础](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans).
+XDM架构是描述Experience Platform数据的标准方式，允许与架构匹配的所有数据在组织内重复使用，而不会产生冲突，甚至可以在多个组织之间共享。 要了解更多信息，请参阅 [架构组合基础](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition).
 
 在本练习中，您将使用建议的基线字段组创建一个XDM架构，以便捕获 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}：
 
@@ -102,9 +102,9 @@ XDM架构是描述Experience Platform数据的标准方式，允许与架构匹�
 
 ## 添加字段组
 
-如前所述，XDM是通过提供在下游Adobe Experience Platform服务中使用的通用结构和定义来标准化客户体验数据的核心框架。 通过遵守XDM标准， _所有客户体验数据_ 可以并入共同表示法中。 通过这种方法，您可以从客户操作中获得有价值的见解，通过区段定义客户受众，并使用来自多个来源的数据表示客户属性以进行个性化。 请参阅 [数据建模的最佳实践](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) 以了解更多信息。
+如前所述，XDM是通过提供在下游Adobe Experience Platform服务中使用的通用结构和定义来标准化客户体验数据的核心框架。 通过遵守XDM标准， _所有客户体验数据_ 可以并入共同表示法中。 通过这种方法，您可以从客户操作中获得有价值的见解，通过区段定义客户受众，并使用来自多个来源的数据表示客户属性以进行个性化。 请参阅 [数据建模的最佳实践](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices) 以了解更多信息。
 
-如果可能，建议使用现有字段组并遵守与产品无关的模型和命名约定。 对于特定于您的组织、不适合上述预定义字段组的任何数据，您可以创建自定义字段组。 请参阅 [使用架构编辑器创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#create) 有关自定义架构的更多详细步骤。
+如果可能，建议使用现有字段组并遵守与产品无关的模型和命名约定。 对于特定于您的组织、不适合上述预定义字段组的任何数据，您可以创建自定义字段组。 请参阅 [使用架构编辑器创建架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create) 有关自定义架构的更多详细步骤。
 
 >[!TIP]
 > 
@@ -129,7 +129,7 @@ XDM架构是描述Experience Platform数据的标准方式，允许与架构匹�
 
 ![架构字段组](assets/schema-consumer-experience-event.png)
 
-这个课程只是一个起点。 在构建您自己的Web事件架构时，您必须探索并记录您的业务要求。 此过程与创建 [业务要求文档](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html) 和 [解决方案设计参考](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html) 适用于Adobe Analytics实施，但应包括以下要求 _所有下游数据收件人_ 例如，平台、Target和事件转发目标。
+这个课程只是一个起点。 在构建您自己的Web事件架构时，您必须探索并记录您的业务要求。 此过程与创建 [业务要求文档](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) 和 [解决方案设计参考](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) 适用于Adobe Analytics实施，但应包括以下要求 _所有下游数据收件人_ 例如，平台、Target和事件转发目标。
 
 
 ### identityMap对象
@@ -143,7 +143,7 @@ XDM架构是描述Experience Platform数据的标准方式，允许与架构匹�
 
 >[!IMPORTANT]
 >
-> 可以启用 **[!UICONTROL 个人资料]** ，然后再保存架构。 **不要** 此时启用它。 为配置文件启用架构后，无法禁用或删除该架构。 此时也无法从架构中删除字段，但可以 [弃用用户界面中的字段](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/field-deprecation-ui.html?lang=en#deprecate). 在生产环境中使用您自己的数据时，请务必牢记这些含义。
+> 可以启用 **[!UICONTROL 个人资料]** ，然后再保存架构。 **不要** 此时启用它。 为配置文件启用架构后，无法禁用或删除该架构。 此时也无法从架构中删除字段，但可以 [弃用用户界面中的字段](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). 在生产环境中使用您自己的数据时，请务必牢记这些含义。
 >
 >
 >此设置将在以下过程中详细讨论 [设置Experience Platform](setup-experience-platform.md) 上课。

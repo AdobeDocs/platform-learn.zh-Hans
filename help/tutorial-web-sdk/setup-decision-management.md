@@ -5,7 +5,7 @@ solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '2511'
 ht-degree: 0%
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 ## 授予对决策管理的访问权限
 
-要授予对决策管理功能的访问权限，您必须创建 **产品配置文件** 并为用户分配相应的权限。 [在本节中了解有关管理Journey Optimizer用户和权限的更多信息](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+要授予对决策管理功能的访问权限，您必须创建 **产品配置文件** 并为用户分配相应的权限。 [在本节中了解有关管理Journey Optimizer用户和权限的更多信息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## 配置数据流
 
@@ -340,7 +340,7 @@ offer decisioning必须在 **数据流** 在Platform Web SDK可提供任何决�
 
 ### 测试忠诚度优惠
 
-1. 选择要用于模拟的测试用户档案。 单击 **管理配置文件**. [要创建或指定新的测试配置文件以进行选件测试，请遵循本指南](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles.html?lang=en#create-test-profiles-csv).
+1. 选择要用于模拟的测试用户档案。 单击 **管理配置文件**. [要创建或指定新的测试配置文件以进行选件测试，请遵循本指南](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -372,7 +372,7 @@ offer decisioning必须在 **数据流** 在Platform Web SDK可提供任何决�
 
 您可以使用Luma网站上的调试器来验证生产中的决策逻辑。 在忠诚度奖励用例启动并运行后，这是一种很好的做法，可确保正确配置所有内容。
 
-[使用此处指南了解如何在浏览器中配置调试器](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[使用此处指南了解如何在浏览器中配置调试器](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 要使用调试器开始验证，请执行以下操作：
 

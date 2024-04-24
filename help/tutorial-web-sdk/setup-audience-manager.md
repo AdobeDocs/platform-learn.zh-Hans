@@ -3,7 +3,7 @@ title: 使用Platform Web SDK设置Audience Manager
 description: 了解如何使用Platform Web SDK设置Adobe Audience Manager，并使用Cookie目标验证实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Audience Manager
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1337'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 了解如何使用Platform Web SDK设置Adobe Audience Manager，并使用Cookie目标验证实施。
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html?lang=zh-Hans) 是一种Adobe Experience Cloud解决方案，它提供了收集与网站访客有关的商业相关信息、创建可销售的区段以及向合适的受众提供定向广告和内容所需的一切。
+[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) 是一种Adobe Experience Cloud解决方案，它提供了收集与网站访客有关的商业相关信息、创建可销售的区段以及向合适的受众提供定向广告和内容所需的一切。
 
 ![Web SDK和Adobe Audience Manager图](assets/dc-websdk-aam.png)
 
@@ -31,11 +31,11 @@ ht-degree: 1%
 要完成本课程，您必须首先：
 
 * 完成本教程的初始配置和标记配置部分中之前的课程。
-* 有权访问Adobe Audience Manager以及创建、读取和写入特征、区段和目标的相应权限。 有关详细信息，请查阅 [Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* 有权访问Adobe Audience Manager以及创建、读取和写入特征、区段和目标的相应权限。 有关详细信息，请查阅 [Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 ## 配置数据流
 
-使用Platform Web SDK实现的Audience Manager与使用 [服务器端转发(SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html?lang=zh-Hans). 服务器端转发将Adobe Analytics请求数据传递给Audience Manager。 Platform Web SDK实现将发送到平台Edge Network的XDM数据传递给Audience Manager。 数据流中启用了Audience Manager：
+使用Platform Web SDK实现的Audience Manager与使用 [服务器端转发(SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). 服务器端转发将Adobe Analytics请求数据传递给Audience Manager。 Platform Web SDK实现将发送到平台Edge Network的XDM数据传递给Audience Manager。 数据流中启用了Audience Manager：
 
 1. 转到 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面
 1. 在左侧导航中，选择 **[!UICONTROL 数据流]**
@@ -52,7 +52,7 @@ ht-degree: 1%
 
 ## 创建数据源
 
-接下来，创建 [数据源](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings.html?lang=en)，用于在Audience Manager中整理数据的基本工具：
+接下来，创建 [数据源](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings)，用于在Audience Manager中整理数据的基本工具：
 
 1. 转到 [Audience Manager](https://experience.adobe.com/#/audience-manager/) 界面
 1. 选择 **[!UICONTROL 受众数据]** 从顶部导航
@@ -72,7 +72,7 @@ ht-degree: 1%
 
 ## 创建特征
 
-保存数据源后，设置 [特征](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/traits-overview.html?lang=zh-Hans). 特征是Audience Manager中一个或多个信号的组合。 为主页访客创建特征。
+保存数据源后，设置 [特征](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview). 特征是Audience Manager中一个或多个信号的组合。 为主页访客创建特征。
 
 >[!NOTE]
 >

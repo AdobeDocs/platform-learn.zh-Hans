@@ -3,7 +3,7 @@ title: 使用Experience Platform调试器验证Web SDK实施
 description: 了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 1%
@@ -142,7 +142,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
 正如您在 [配置数据流](configure-datastream.md) 课程， Platform Web SDK首先会将您的数字财产中的数据发送到PlatformEdge Network。 然后，平台Edge Network会向数据流中启用的相应服务发出其他服务器端请求。 您可以在Debugger中使用Edge Trace验证PlatformEdge Network发出的服务器端请求。
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### 启用边缘跟踪

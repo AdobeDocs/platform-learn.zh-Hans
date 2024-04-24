@@ -3,7 +3,7 @@ title: “利用 Web SDK 实施 Adobe Experience Cloud”教程
 description: 了解如何使用Adobe Experience Platform Web SDK实施Experience Cloud应用程序。
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 4%
@@ -14,7 +14,7 @@ ht-degree: 4%
 
 了解如何使用Adobe Experience Platform Web SDK实施Experience Cloud应用程序。
 
-Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Experience Cloud的客户通过Adobe Experience PlatformEdge Network与Adobe应用程序和第三方服务进行交互。 请参阅 [Adobe Experience Platform Web SDK概述](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans) 以了解更多详细信息。
+Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Experience Cloud的客户通过Adobe Experience PlatformEdge Network与Adobe应用程序和第三方服务进行交互。 请参阅 [Adobe Experience Platform Web SDK概述](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home) 以了解更多详细信息。
 
 ![Experience PlatformWeb SDK架构](assets/dc-websdk.png)
 
@@ -48,7 +48,7 @@ Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Exper
    * **[!UICONTROL 资产权限]** — 权限 **[!UICONTROL 批准]**， **[!UICONTROL 开发]**， **[!UICONTROL 编辑属性]**， **[!UICONTROL 管理环境]**， **[!UICONTROL 管理扩展]**、和 **[!UICONTROL Publish]**，
    * **[!UICONTROL 公司权限]** — 权限 **[!UICONTROL 管理资产]**
 
-     有关标记权限的更多信息，请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+     有关标记权限的更多信息，请参阅 [文档](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 
 * 对象 **Experience Platform**，您必须具有：
 
@@ -62,13 +62,13 @@ Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Exper
 
      所需的功能应该可供所有Experience Cloud客户使用，即使您不是基于平台的应用程序(如Real-Time CDP)的客户。
 
-     有关Platform访问控制的更多信息，请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans).
+     有关Platform访问控制的更多信息，请参阅 [文档](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
 
-* 对于可选 **Adobe Analytics** 课程，你一定有 [管理员对报表包设置、处理规则和Analysis Workspace的访问权限](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html?lang=zh-Hans)
+* 对于可选 **Adobe Analytics** 课程，你一定有 [管理员对报表包设置、处理规则和Analysis Workspace的访问权限](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
 * 对于可选 **Adobe Target** 课程，你一定有 [编辑者或审批者](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) 访问权限。
 
-* 对于可选 **Audience Manager** 课程中，您必须有权创建、读取和写入特征、区段和目标。 有关更多信息，请参阅以下教程： [Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* 对于可选 **Audience Manager** 课程中，您必须有权创建、读取和写入特征、区段和目标。 有关更多信息，请参阅以下教程： [Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 
 >[!NOTE]
