@@ -7,10 +7,12 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+index: false
+hide: true
+source-git-commit: a56a63c79417fc98f2c3ec4a9613e39c46ac098a
 workflow-type: tm+mt
-source-wordcount: '81'
-ht-degree: 25%
+source-wordcount: '95'
+ht-degree: 24%
 
 ---
 
@@ -19,22 +21,25 @@ ht-degree: 25%
 
 + [教程概述](overview.md)
 + 初始配置 {#initial-configuration}
-   + [配置权限](configure-permissions.md)
    + [配置XDM架构](configure-schemas.md)
    + [配置身份命名空间](configure-identities.md)
    + [配置数据流](configure-datastream.md)
 
 + 标记配置 {#tags-configuration}
-   + [安装Web SDK扩展](install-web-sdk.md)
+   + [安装 Web SDK 扩展](install-web-sdk.md)
    + [创建数据元素](create-data-elements.md)
+   + [创建身份](create-identities.md)
    + [创建标记规则](create-tag-rule.md)
    + [使用Debugger进行验证](validate-with-debugger.md)
+   + [使用保障进行验证](validate-with-assurance.md)
 
 + 应用程序设置 {#applications-setup}
    + [设置Experience Platform](setup-experience-platform.md)
    + [设置Adobe Analytics](setup-analytics.md)
    + [设置Audience Manager](setup-audience-manager.md)
    + [设置Target](setup-target.md)
+   + [设置Journey Optimizer Web渠道](setup-web-channel.md)
+   + [设置Journey Optimizer决策管理](setup-decision-management.md)
 
 + 同意管理 {#consent-management}
    + [设置同意](setup-consent.md)
