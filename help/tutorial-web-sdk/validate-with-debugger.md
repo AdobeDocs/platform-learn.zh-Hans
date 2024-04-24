@@ -3,19 +3,14 @@ title: 使用Experience Platform调试器验证Web SDK实施
 description: 了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1070'
-ht-degree: 2%
+source-wordcount: '1206'
+ht-degree: 1%
 
 ---
 
 # 使用Experience Platform调试器验证Web SDK实施
-
-
->[!CAUTION]
->
->我们预计将于2024年4月23日星期二发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
 
 了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。
 
@@ -28,7 +23,7 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-在本课程中，您将使用 [Adobe Experience Platform Debugger扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 替换 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 拥有自己的财产。
+在本课程中，您将使用 [Adobe Experience Cloud Debugger扩展](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 替换 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 拥有自己的财产。
 
 此技术称为环境切换，当您以后在自己的网站上使用标记时，此技术将非常有用。 您可以在浏览器中加载生产网站，但需使用 *开发* 标记环境。 此功能使您能够放心地做出并验证标记更改，而不依赖于常规代码发布。 毕竟，将营销标记发布与常规代码发布分开是客户最初使用标记的主要原因之一！
 
@@ -37,31 +32,27 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 在本课程结束时，您将能够使用调试器执行以下操作：
 
 * 加载备用标记库
-* 验证XDM对象是否按预期Edge Network捕获和发送数据
+* 验证客户端XDM事件是否按预期捕获数据并将数据发送到PlatformEdge Network
+* 启用边缘跟踪以查看由平台Edge Network发送的服务器端请求
 
 ## 先决条件
 
-您熟悉数据收集标记和 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 并已在教程中完成了以下以前的课程：
+您熟悉数据收集标记和 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 并完成了本教程中以前的课程：
 
-* [配置权限](configure-permissions.md)
 * [配置XDM架构](configure-schemas.md)
 * [配置身份命名空间](configure-identities.md)
 * [配置数据流](configure-datastream.md)
 * [Web SDK扩展安装在标记属性中](install-web-sdk.md)
 * [创建数据元素](create-data-elements.md)
+* [创建身份](create-identities.md)
 * [创建标记规则](create-tag-rule.md)
-
 
 ## 使用Debugger加载备用标记库
 
-本教程使用的公共托管版本的 [Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html). 打开主页并将其加入书签。
-
-![Luma主页](assets/validate-luma-site.png)
-
 Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标记库替换现有标记库。 此技术对验证非常有用，允许我们跳过本教程中的许多实施步骤。
 
-1. 确保已打开Luma网站并选择Experience PlatformDebugger扩展图标
-1. 调试器将会打开并显示硬编码实施的一些详细信息，这些详细信息与本教程无关（在打开调试器后，您可能需要重新加载Luma网站）
+1. 确保您拥有 [Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 打开并选择Experience PlatformDebugger扩展图标
+1. 调试器将打开并显示硬编码实施的一些详细信息（您可能需要在打开调试器后重新加载Luma网站）
 1. 确认调试器为“**[!UICONTROL 已连接到Luma]**&quot;，如下图所示，然后选择&quot;**[!UICONTROL 锁定]**”图标将Debugger锁定到Luma网站。
 1. 选择 **[!UICONTROL 登录]** 按钮并使用您的AdobeID登录Adobe Experience Cloud。
 1. 现在转到 **[!UICONTROL Experience Platform标记]** 在左侧导航中
@@ -73,42 +64,50 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
    ![选择操作>替换](assets/validate-switch-environment.png)
 
-1. 由于您已经过身份验证，调试器将会拉入您的可用标记属性和环境。 选择您的 `Web SDK Course` 属性
+1. 由于您已经过身份验证，调试器将会拉入您的可用标记属性和环境。 选择您的资产；在这种情况下 `Web SDK Course 3`
 1. 选择您的 `Development` 环境
 1. 选择 **[!UICONTROL 应用]** 按钮
 
    ![选择备用标记属性](assets/validate-switch-selection.png)
 
-1. Luma网站现在将重新加载 _标记属性_.
+1. Luma网站现在将重新加载 _使用您自己的标记属性_.
 
    ![已替换标记属性](assets/validate-switch-success.png)
 
-在本教程的后面部分，您将使用此技术将Luma网站映射到您自己的标记资产，以验证您的Platform Web SDK实施。 在生产网站上开始使用标记时，您可以使用该同一技术验证所做的更改。
+在本教程的后面部分，您将使用此技术将Luma网站映射到您自己的标记资产，以验证您的Platform Web SDK实施。 在生产网站上开始使用标记时，您可以在标记的开发环境中使用同一技术来验证所做的更改。
 
-## 在Experience Platform调试器中验证您的实施
+## 使用Experience Platform调试器验证客户端网络请求
 
-您可以使用Debugger验证Platform Web SDK的实施并查看发送到PlatformEdge Network的数据：
+您可以使用Debugger验证从Platform Web SDK实施触发的客户端信标，以查看发送到PlatformEdge Network的数据：
 
 1. 转到 **[!UICONTROL 摘要]** 在左侧导航中，查看标记属性的详细信息
 
    ![“摘要”选项卡](assets/validate-summary.png)
 
 1. 现在转到 **[!UICONTROL Experience PlatformWeb SDK]** 在左侧导航中查看 **[!UICONTROL 网络请求]**
-1. 打开 **[!UICONTROL 事件]** 行（如果此屏幕快照显示的请求数多于您的请求，请不要担心，其中包含来自未来课程的请求，您现在可以忽略）
+1. 打开 **[!UICONTROL 事件]** 行
 
    ![Adobe Experience Platform Web SDK请求](assets/validate-aep-screen.png)
 
-1. 请注意我们的查看方式 `web.webpagedetails.pageView` 我们在 [!UICONTROL 发送事件] 操作以及其他遵循的开箱即用变量 `AEP Web SDK ExperienceEvent Mixin` 格式
+1. 请注意您能看到的 `web.webpagedetails.pageView` 您指定的事件类型 [!UICONTROL 更新变量] 操作以及其他遵循的开箱即用变量 `AEP Web SDK ExperienceEvent` 字段组
 
    ![事件详细信息](assets/validate-event-pageViews.png)
 
-1. 向下滚动到 `web` 对象，选择以将其打开并检查 `webPageDetails.name`， `webPageDetails.server`、和 `webPageDetails.siteSection`. 它们应该与主页上的相应digitalData数据层变量匹配
+1. 向下滚动到 `web` 对象，选择以将其打开并检查 `webPageDetails.name`， `webPageDetails.server`、和 `webPageDetails.siteSection`. 它们应该与对应的 `digitalData` 主页上的数据层变量
 
-   ![“网络”选项卡](assets/validate-xdm-content.png)
+>[!TIP]
+>
+> 要查看和比较 `digitalData` 数据层：
+>
+> 1. 在Luma主页上，打开浏览器开发人员工具。 对于Chrome，选择button `F12` 在键盘上
+> 1. 选择 **[!UICONTROL 控制台]** 选项卡
+> 1. 输入 `digitalData` 并选择 `Enter` 以调出数据层值
+
+![“网络”选项卡](assets/validate-xdm-content.png)
 
 您还可以验证身份映射详细信息：
 
-1. 使用凭据 `test@adobe.com`/`test` 登录 Luma 网站
+1. 使用凭据登录Luma网站 `test@adobe.com`/`test`
 
 1. 返回 [Luma 主页](https://luma.enablementadobe.com/content/luma/us/en.html)
 
@@ -123,8 +122,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 1. 搜索 **identityMap** 在弹出窗口中。 您应该看到 `lumaCrmId` 包含authenticatedState、id和primary的三个键：
    ![Debugger中的Web SDK](assets/identity-deugger-websdk-event-lumaCrmId-dark.png)
 
-
-## 使用浏览器开发工具进行验证
+### 使用浏览器开发工具验证客户端请求
 
 这些类型的请求详细信息还可在浏览器的Web开发人员工具中查看 **网络** 选项卡（假设网站正在加载您的标记库）。
 
@@ -138,11 +136,35 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
    >[!NOTE]
    >
-   >    您可能会看到与上述屏幕快照中相同的有效负载请求量。 这种差异是因为未来的教训 [设置Target](setup-target.md) 在拍摄屏幕快照时完成。 你可以暂时忽略这个区别。
+   > ECID值在网络响应中可见。 它不包括在 `identityMap` 请求的一部分，也不会以此格式存储在Cookie中。
 
-现在，通过在页面上触发XDM对象，并了解如何验证您的数据收集，您便可以使用Platform Web SDK设置单独的Adobe应用程序。
+## 使用Experience Platform调试器验证服务器端网络请求
 
-[下一步： ](setup-experience-platform.md)
+正如您在 [配置数据流](configure-datastream.md) 课程， Platform Web SDK首先会将您的数字财产中的数据发送到PlatformEdge Network。 然后，平台Edge Network会向数据流中启用的相应服务发出其他服务器端请求。 您可以在Debugger中使用Edge Trace验证PlatformEdge Network发出的服务器端请求。
+
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
+
+
+### 启用边缘跟踪
+
+要启用边缘跟踪，请执行以下操作：
+
+1. 在左侧导航中 **[!UICONTROL Experience Platform调试程序]** 选择 **[!UICONTROL 日志]**
+1. 选择 **[!UICONTROL Edge]** 选项卡，然后选择 **[!UICONTROL 连接]**
+
+   ![连接边缘跟踪](assets/analytics-debugger-edgeTrace.png)
+
+1. 目前为空
+
+   ![连接的边缘跟踪](assets/analytics-debugger-edge-connected.png)
+
+1. 刷新 [Luma主页](https://luma.enablementadobe.com/) 并选中 **[!UICONTROL Experience Platform调试程序]** 同样，查看数据输入。
+
+   ![Analytics信标边缘跟踪](assets/validate-edge-trace.png)
+
+此时，您无法查看任何发送到Adobe应用程序的平台Edge Network请求，因为您未在数据流中启用任何请求。 在将来的课程中，您将使用Edge Trace查看用于Adobe应用程序和事件转发的传出服务器端请求。 但首先，了解用于验证平台Edge Network发出的服务器端请求的另一个工具 — Adobe Experience Platform Assurance！
+
+[下一步： ](validate-with-assurance.md)
 
 >[!NOTE]
 >

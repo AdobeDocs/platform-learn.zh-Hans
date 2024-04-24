@@ -3,23 +3,21 @@ title: 设置事件转发属性
 description: 了解如何使用Experience PlatformWeb SDK数据来使用event-forwarding属性。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Event Forwarding
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1893'
+source-wordcount: '1861'
 ht-degree: 2%
 
 ---
 
 # 设置事件转发属性
 
-
->[!CAUTION]
->
->我们预计将于2024年4月23日星期二发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
-
 了解如何使用Experience PlatformWeb SDK数据来使用event-forwarding属性。
 
 事件转发是数据收集中可用的一种新属性。 事件转发让您能够直接从Adobe Experience PlatformEdge Network而不是传统的客户端浏览器向第三方非Adobe供应商发送数据。 在中详细了解事件转发的优势 [事件转发概述](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Web SDK和事件转发图](assets/dc-websdk-eventforwarding.png)
 
 要在Adobe Experience Platform中使用事件转发，必须首先使用以下三个选项中的一个或多个将数据发送到Adobe Experience PlatformEdge Network：
 
@@ -56,7 +54,6 @@ ht-degree: 2%
 
    * 初始配置
 
-      * [配置权限](configure-permissions.md)
       * [配置XDM架构](configure-schemas.md)
       * [配置身份命名空间](configure-identities.md)
       * [配置数据流](configure-datastream.md)
@@ -65,6 +62,7 @@ ht-degree: 2%
 
       * [安装 Web SDK 扩展](install-web-sdk.md)
       * [创建数据元素](create-data-elements.md)
+      * [创建身份](create-identities.md)
       * [创建标记规则](create-tag-rule.md)
       * [使用Adobe Experience Platform Debugger进行验证](validate-with-debugger.md)
 
@@ -91,9 +89,9 @@ ht-degree: 2%
 
 1. 转到 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面
 1. 在左侧导航中，选择 **[!UICONTROL 数据流]**
-1. 选择之前创建的 `Luma Web SDK` 数据流
+1. 选择之前创建的 `Luma Web SDK: Development Environment` 数据流
 
-   ![选择Luma Web SDK数据流](assets/datastream-luma-web-sdk.png)
+   ![选择Luma Web SDK数据流](assets/datastream-luma-web-sdk-development.png)
 
 1. 选择 **[!UICONTROL 添加服务]**
    ![向数据流添加服务](assets/event-forwarding-datastream-addService.png)

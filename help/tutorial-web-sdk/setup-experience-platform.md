@@ -2,23 +2,20 @@
 title: 使用Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '1600'
-ht-degree: 5%
+source-wordcount: '1587'
+ht-degree: 4%
 
 ---
 
 # 使用Web SDK流式传输数据以Experience Platform
 
-
->[!CAUTION]
->
->我们预计将于2024年4月23日星期二发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
-
 了解如何使用Platform Web SDK将Web数据流式传输到Adobe Experience Platform。
 
 Experience Platform是所有新Experience Cloud应用程序(如Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer)的支柱。 这些应用程序旨在使用Platform Web SDK作为它们的最佳的Web数据收集方法。
+
+![Web SDK和Adobe Experience Platform图](assets/dc-websdk-aep.png)
 
 Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事件数据。 当该数据被发送到PlatformEdge Network时，数据流配置可以将其转发到Experience Platform。
 
@@ -33,34 +30,22 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 ## 先决条件
 
-您应该已经完成了以下课程：
+要完成本课程，您必须首先：
 
-* 此 **初始配置** 课程：
-   * [配置权限](configure-permissions.md)
-   * [配置XDM架构](configure-schemas.md)
-   * [配置数据流](configure-datastream.md)
-   * [配置身份命名空间](configure-identities.md)
-
-* 此 **标记配置** 课程：
-   * [安装 Web SDK 扩展](install-web-sdk.md)
-   * [创建数据元素](create-data-elements.md)
-   * [创建标记规则](create-tag-rule.md)
+* 有权访问Adobe Experience Platform应用程序，如Real-time Customer Data Platform、Journey Optimizer或Customer Journey Analytics
+* 完成本教程的初始配置和标记配置部分中之前的课程。
 
 
 ## 创建数据集
 
 所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 A [数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) 是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。 数据集还包含描述其存储的数据的各个方面的元数据。
 
-在本练习中，您将创建一个数据集以跟踪的内容和电子商务详细信息 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->您必须已创建 `Luma Web Event Data` 如上一课中所述， [配置XDM架构](configure-schemas.md).
+让我们为您的Luma Web事件数据设置一个数据集：
 
 
 1. 转到 [Experience Platform界面](https://experience.adobe.com/platform/)
 1. 确认您使用的是本教程所用的开发沙盒
-1. 打开 **[!UICONTROL 数据集]** 从左侧导航
+1. 打开 **[!UICONTROL 数据管理>数据集]** 从左侧导航
 1. 选择 **[!UICONTROL 创建数据集]**
 
    ![创建架构](assets/experience-platform-create-dataset.png)
@@ -87,7 +72,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 1. 选择 **[!UICONTROL 数据流]** 从左侧导航
 1. 打开您在中创建的数据流 [配置数据流](configure-datastream.md) 教训， `Luma Web SDK`
 
-   ![选择Luma Web SDK数据流](assets/datastream-luma-web-sdk.png)
+   ![选择Luma Web SDK数据流](assets/datastream-luma-web-sdk-development.png)
 
 1. 选择 **[!UICONTROL 添加服务]**
    ![向数据流添加服务](assets/experience-platform-addService.png)
@@ -98,7 +83,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
    ![数据流配置](assets/experience-platform-datastream-config.png)
 
-当您在中生成流量 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 映射到您的标记属性时，数据将在Experience Platform中填充数据集！
+当您在 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 映射到您的标记属性时，数据将在Experience Platform中填充数据集！
 
 ## 验证数据集
 
@@ -135,7 +120,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 要确认数据已抵达Platform的数据湖，一个快速选项是使用 **[!UICONTROL 预览数据集]** 功能。 将Web SDK数据微批次发送到数据湖，并定期在Platform界面中刷新。 查看生成的数据可能需要10-15分钟。
 
-1. 在 [Experience Platform](https://experience.adobe.com/platform/) 界面，选择 **[!UICONTROL 数据集]** 在左侧导航栏中打开 **[!UICONTROL 数据集]** 仪表板。
+1. 在 [Experience Platform](https://experience.adobe.com/platform/) 界面，选择 **[!UICONTROL 数据管理>数据集]** 在左侧导航栏中打开 **[!UICONTROL 数据集]** 仪表板。
 
    仪表板列出您组织的所有可用数据集。 会显示每个列出数据集的详细信息，包括其名称、数据集所遵循的架构以及最近摄取运行的状态。
 
@@ -214,7 +199,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 > * 首先，将一些数据摄取到数据集中。
 > * 解决在数据摄取过程中出现的任何问题（例如，数据验证或映射问题）。
 > * 为配置文件启用数据集和架构
-> * 重新摄取数据
+> * 如果需要，重新摄取数据
 
 
 ### 验证用户档案
@@ -226,7 +211,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 1. 在 [Experience Platform](https://experience.adobe.com/platform/) 界面，选择 **[!UICONTROL 配置文件]** 在左侧导航中
 
 1. 作为 **[!UICONTROL 身份命名空间]** 使用 `lumaCRMId`
-1. 复制并粘贴的值 `lumaCRMId` 传入您在Experience Platform调试器中检查的调用(可能 `112ca06ed53d3db37e4cea49cc45b71e`)。
+1. 复制并粘贴的值 `lumaCRMId` 在Experience Platform调试器中检查的调用中传递，在本例中 `112ca06ed53d3db37e4cea49cc45b71e`.
 
    ![用户档案](assets/experience-platform-validate-dataset-profile.png)
 
@@ -234,11 +219,18 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
    ![用户档案](assets/experience-platform-validate-dataset-profile-set.png)
 
-1. 单击 [!UICONTROL 配置文件ID] 和 [!UICONTROL 客户配置文件] 控制台将填充。 在这里，您可以看到链接到 `lumaCRMId`，例如 `ECID`：
+1. 查看完整的 **[!UICONTROL 客户配置文件]** 对于每个ID，选择 **[!UICONTROL 配置文件ID]** 在主窗口中。
+
+   >[!NOTE]
+   >
+   >请注意，您可以选择“配置文件ID”的超链接，或者如果您选择了行，则会打开一个右菜单，您可以在其中选择“配置文件ID”超链接
+   > ![客户配置文件](assets/experience-platform-select-profileId.png)
+
+   在这里，您可以看到链接到 `lumaCRMId`，例如 `ECID`.
 
    ![客户配置文件](assets/experience-platform-validate-dataset-custProfile.png)
 
-您现在已为Experience Platform启用了Platform Web SDK(和Real-Time CDP！ 还有Customer Journey Analytics！ 还有Journey Optimizer！)！
+您现在已为Experience Platform启用了Platform Web SDK(和Real-Time CDP！ 还有Journey Optimizer！)！
 
 
 [下一步： ](setup-analytics.md)

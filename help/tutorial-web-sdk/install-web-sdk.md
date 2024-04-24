@@ -3,21 +3,16 @@ title: 安装和配置Adobe Experience Platform Web SDK标记扩展
 description: 了解如何在数据收集界面中安装和配置Platform Web SDK标记扩展。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 11%
+source-wordcount: '604'
+ht-degree: 12%
 
 ---
 
 # 安装Adobe Experience Platform Web SDK标记扩展
 
-
->[!CAUTION]
->
->我们预计将于2024年4月23日星期二发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
-
-了解如何在数据收集界面中安装和配置Platform Web SDK标记扩展。 此标记扩展是 _仅标记扩展_ 需要将数据发送到 _所有Adobe Experience Cloud应用程序_，包括 [分析](setup-analytics.md)， [Target](setup-target.md)， [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform和Journey Optimizer！
+了解如何安装和配置Platform Web SDK标记扩展。 实施Web SDK的最简单方法是使用Adobe的标签管理器（以前称为Launch）。 Platform Web SDK标记扩展是 _仅标记扩展_ 需要将数据发送到 _所有Adobe Experience Cloud应用程序_，包括 [分析](setup-analytics.md)， [Target](setup-target.md)， [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform和 [Journey Optimizer](setup-web-channel.md)！
 
 ## 学习目标
 
@@ -31,9 +26,6 @@ ht-degree: 11%
 
 您必须完成本教程中之前的课程：
 
-* [配置权限](configure-permissions.md)
-* [配置XDM架构](configure-schemas.md)
-* [配置身份命名空间](configure-identities.md)
 * [配置数据流](configure-datastream.md)
 
 ## 安装Experience PlatformWeb SDK扩展
@@ -62,7 +54,7 @@ ht-degree: 11%
 1. 搜索 `Adobe Experience Platform Web SDK`
 1. 选择 **[!UICONTROL 安装]**
 
-   ![安装Web SDK扩展](assets/extension-platform-web-sdk.jpg)
+   ![安装Web SDK扩展](assets/extension-platform-web-sdk.png)
 
 
 ## 将Platform Web SDK链接到数据流
@@ -72,6 +64,7 @@ ht-degree: 11%
 1. 下 **[!UICONTROL 数据流]**，选择 **[!UICONTROL 从列表选择]** 输入法
 1. 选择您之前创建的数据流， `Luma Web SDK`
 1. 选择 **[!UICONTROL 保存]**
+
    >[!NOTE]
    >
    > 如果找不到数据流，请转到 [配置数据流](configure-datastream.md) 课程并按照步骤创建一个
@@ -82,9 +75,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->在本教程中，您只需配置一个数据流，并将其与所有标记环境（开发、暂存和生产）关联。 在您自己的网站上实施Platform Web SDK时，您应该为每个环境配置单独的数据流，并使用将它们映射到您的标记环境 **[!UICONTROL 输入法]** > **[!UICONTROL 输入值]**
->
->![数据流选择](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+>在本教程中，您只需配置一个数据流，并将其与所有标记环境（开发、暂存和生产）关联。 在您自己的网站上实施Platform Web SDK时，您应该为每个环境配置单独的数据流，并将它们映射到您的标记环境。
 
 >[!NOTE]
 >

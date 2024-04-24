@@ -2,20 +2,14 @@
 title: 配置教程的权限
 description: 了解如何请求访问Experience PlatformWeb SDK并配置完成“使用Web SDK实施Adobe Experience Cloud”教程所需的权限。
 feature: Web SDK,Tags,Access Control
-exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
-source-git-commit: 15bc08bdbdcb19f5b086267a6d94615cbfe1bac7
+source-git-commit: d81e7df36807778967bc0350735aec008fb1a55e
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '367'
 ht-degree: 3%
 
 ---
 
 # 配置教程的权限
-
-
->[!CAUTION]
->
->我们预计将于2024年4月23日星期二发布对本教程的主要更改。 之后，许多练习都将发生更改，您可能需要从头开始重新启动教程才能完成所有课程。
 
 了解如何请求访问Experience PlatformWeb SDK并配置完成本教程所需的权限。 要使用数据收集界面中的标记实施Platform Web SDK，您必须具有在中配置的适当用户权限 [Admin Console](https://adminconsole.adobe.com).
 
@@ -29,9 +23,9 @@ ht-degree: 3%
 这些功能应该可供所有Experience Cloud客户使用，即使您不是基于平台的应用程序(如Real-Time CDP)的客户。
 
 * 访问 **默认生产**， **&quot;Prod&quot;** 沙盒。
-* 访问 **[!UICONTROL 管理架构]** 和 **[!UICONTROL 查看架构]** 下 **[!UICONTROL 数据建模]**
-* 访问 **[!UICONTROL 管理身份命名空间]** 和 **[!UICONTROL 查看身份命名空间]** 下 **[!UICONTROL Identity Management]**
-* 访问 **[!UICONTROL 管理数据流]** 和 **[!UICONTROL 查看数据流]** 下 **[!UICONTROL 数据收集]**
+* 访问 **[!UICONTROL 管理架构]** 和 **[!UICONTROL 查看架构]** 下 **[!UICONTROL 数据建模]**.
+* 访问 **[!UICONTROL 管理身份命名空间]** 和 **[!UICONTROL 查看身份命名空间]** 下 **[!UICONTROL Identity Management]**.
+* 访问 **[!UICONTROL 管理数据流]** 和 **[!UICONTROL 查看数据流]** 下 **[!UICONTROL 数据收集]**.
 * 如果您是某个基于平台的应用程序的客户，并且将要完成 [设置Experience Platform](setup-experience-platform.md) 课程中，您还应具有：
    * 访问 **开发** 沙盒。
    * 下的所有权限项 **[!UICONTROL 数据管理]**、和 **[!UICONTROL 用户档案管理]**：
