@@ -2,9 +2,9 @@
 title: 使用Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '1587'
+source-wordcount: '1591'
 ht-degree: 4%
 
 ---
@@ -230,7 +230,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
    ![客户配置文件](assets/experience-platform-validate-dataset-custProfile.png)
 
-您现在已为Experience Platform启用了Platform Web SDK(和Real-Time CDP！ 还有Journey Optimizer！)！
+您现在已为Experience Platform启用了Platform Web SDK(和Real-Time CDP！ 还有Journey Optimizer！ 还有Customer Journey Analytics！)。
 
 
 [下一步： ](setup-analytics.md)

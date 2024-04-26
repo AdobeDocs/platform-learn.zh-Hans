@@ -3,16 +3,16 @@ title: 通过Experience Platform保证验证Web SDK实施
 description: 了解如何使用Adobe Experience Platform Assurance验证您的Platform Web SDK实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Assurance
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '609'
 ht-degree: 2%
 
 ---
 
 # 通过Experience Platform保证验证Web SDK实施
 
-Adobe Experience Platform Assurance是Adobe Experience Cloud的一个产品，可帮助您检查、验证、模拟和验证数据收集或提供体验的方式。 详细了解 [Adobe保证](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
+Adobe Experience Platform Assurance是一项功能，可帮助您检查、证明、模拟和验证数据收集或提供体验的方式。 详细了解 [Adobe保证](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home).
 
 
 ## 学习目标
@@ -51,10 +51,11 @@ Adobe Experience Platform Assurance是Adobe Experience Cloud的一个产品，�
 1. 选择 **[!UICONTROL Edge]** 选项卡，然后选择 **[!UICONTROL 连接]**
 
    ![连接边缘跟踪](assets/analytics-debugger-edgeTrace.png)
-1. 启用边缘跟踪后，您会在顶部看到一个传出链接图标。 选择图标以打开“保证”。 此时将在您的浏览器中打开一个新选项卡。
+1. 启用边缘跟踪后，您会在顶部看到一个传出链接图标。 选择图标以打开“保证”。
 
    ![启动保证会话](assets/validate-debugger-start-assurnance.png)
 
+1. 此时将打开一个新的浏览器选项卡，其中包含Assurance界面。
 
 ### 从Assurance界面启动Assurance会话
 
@@ -68,7 +69,7 @@ Adobe Experience Platform Assurance是Adobe Experience Cloud的一个产品，�
    ![命名保障会话](assets/assurance-name-session.png)
 1. 在下一个屏幕上，选择 **[!UICONTROL 复制链接]**
 1. 选择图标以将链接复制到剪贴板
-1. 将URL粘贴到浏览器中，这会使用特殊的URL参数打开Luma网站 `adb_validation_sessionid` 并启动会话
+1. 将URL粘贴到浏览器中，这将打开带特殊URL参数的Luma网站 `adb_validation_sessionid` 并启动会话
 1. 在Assurance界面中，您应该会看到一条消息，指示您已成功连接到会话，并且您应该会看到Assurance界面中捕获的事件。
    ![保证会话已连接](assets/assurance-success.png)
 
@@ -88,7 +89,7 @@ Adobe Experience Platform Assurance是Adobe Experience Cloud的一个产品，�
 
 在将来的课程中，您可以使用Assurance验证完全处理的负载，这些负载将到达在数据流中启用的Adobe应用程序。
 
-现在，通过在页面上触发XDM对象，并了解如何验证您的数据收集，您便可以使用Platform Web SDK设置单独的Adobe应用程序。
+现在，通过在页面上触发XDM对象，并了解如何验证您的数据收集，您便可以使用Platform Web SDK设置Experience Platform和单个Adobe应用程序。
 
 [下一步： ](setup-experience-platform.md)
 

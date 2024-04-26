@@ -3,9 +3,9 @@ title: 使用Experience Platform调试器验证Web SDK实施
 description: 了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Debugger
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '1206'
+source-wordcount: '1194'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 * [Firefox扩展](https://addons.mozilla.org/zh-CN/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome扩展](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-如果您以前从未使用过该调试器，并且此调试器不同于之前的Adobe Experience Cloud Debugger，则可能需要观看以下时长为五分钟的概述视频：
+如果您以前从未使用过该调试器，则可能需要观看以下时长为5分钟的概述视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 在本课程中，您将使用 [Adobe Experience Cloud Debugger扩展](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 替换 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 拥有自己的财产。
 
-此技术称为环境切换，当您以后在自己的网站上使用标记时，此技术将非常有用。 您可以在浏览器中加载生产网站，但需使用 *开发* 标记环境。 此功能使您能够放心地做出并验证标记更改，而不依赖于常规代码发布。 毕竟，将营销标记发布与常规代码发布分开是客户最初使用标记的主要原因之一！
+此技术称为环境切换，当您以后在自己的网站上使用标记时，此技术将非常有用。 它允许您在浏览器中加载生产网站，但需使用 *开发* 标记库。 此功能使您能够放心地做出并验证标记更改，而不依赖于常规代码发布。 毕竟，将营销标记发布与常规代码发布分开是客户最初使用标记的主要原因之一！
 
 ## 学习目标
 
@@ -64,7 +64,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
    ![选择操作>替换](assets/validate-switch-environment.png)
 
-1. 由于您已经过身份验证，调试器将会拉入您的可用标记属性和环境。 选择您的资产；在这种情况下 `Web SDK Course 3`
+1. 由于您已经过身份验证，调试器将会拉入您的可用标记属性和环境。 选择您的资产
 1. 选择您的 `Development` 环境
 1. 选择 **[!UICONTROL 应用]** 按钮
 

@@ -3,21 +3,16 @@ title: 创建标记规则
 description: 了解如何使用标记规则将事件与XDM对象一起发送到PlatformEdge Network。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 100a6a9ac8d580b68beb7811f99abcdc0ddefd1a
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '2025'
+source-wordcount: '1957'
 ht-degree: 1%
 
 ---
 
 # 创建标记规则
 
-了解如何使用标记规则将事件与XDM对象一起发送到PlatformEdge Network。 标记规则是事件、条件和操作的组合，用于告知标记属性执行一些操作。 使用Platform Web SDK时，可以使用规则将事件发送到具有正确XDM字段的PlatformEdge Network。
-
->[!NOTE]
->
-> 出于演示目的，本课程中的练习以之前的课程为基础，将事件从用户发送到 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
-
+了解如何使用标记规则将事件与XDM对象一起发送到PlatformEdge Network。 标记规则是事件、条件和操作的组合，用于告知标记属性执行一些操作。 在Platform Web SDK中，规则用于将包含正确数据的事件发送到PlatformEdge Network。
 
 ## 学习目标
 
@@ -45,29 +40,28 @@ ht-degree: 1%
 
 为了更好地管理标记中的规则，建议遵循标准命名约定。 本教程使用由五部分组成的命名约定：
 
-* [**位置**] - [**事件**] - [**用途**] - [**工具**] - [**订购**]
+* [**位置**] - [**事件**] - [**用途**] - [**订购**]
 
 其中；
 
 1. **位置** 是规则触发的网站上的一个或多个页面
 1. **事件** 是规则的触发器
 1. **用途** 是规则执行的主要操作
-1. **工具** 是在该规则的操作步骤中使用的特定应用程序或多个应用程序，Web SDK很少使用这种方法
-1. **序列** 是规则相对于其他规则应触发的顺序
+1. **订购** 是规则相对于其他规则应触发的顺序
 <!-- minor update -->
 
 ## 创建标记规则
 
 在标记中，规则用于在各种条件下执行操作（触发调用）。 Platform Web SDK标记扩展包含两个将在本课程中使用的操作：
 
-* **[!UICONTROL 更新变量]** 将数据元素映射到XDM字段
+* **[!UICONTROL 更新变量]** 将数据元素映射到XDM对象中的属性
 * **[!UICONTROL 发送事件]** 将XDM对象发送到Experience PlatformEdge Network
 
 在本课程的其余部分中，我们将：
 
-1. 创建规则以定义XDM字段的“全局配置”(使用 [!UICONTROL 更新变量] ，我们想在网站的每个页面上（例如，页面名称）使用 **[!UICONTROL 更新变量]** 操作。
+1. 使用以下方式创建规则 **[!UICONTROL 更新变量]** 用于定义XDM字段的“全局配置”的操作。
 
-1. 创建可覆盖我们的“全局配置”的其他规则或贡献其他XDM字段(使用 [!UICONTROL 更新变量] 再次重申)，这些规则仅在某些条件下（例如，在产品页面上添加产品详细信息）相关。
+1. 使用创建其他规则 **[!UICONTROL 更新变量]** 覆盖我们的“全局配置”并在某些条件下（例如，在产品页面上添加产品详细信息）提供其他XDM字段的操作。
 
 1. 使用创建另一个规则 **[!UICONTROL 发送事件]** 操作将向Adobe Experience PlatformEdge Network发送完整的XDM对象。
 
@@ -77,9 +71,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
-### 更新变量规则
-
-#### 全局配置
+### 全局配置字段
 
 要为全局XDM字段创建标记规则：
 
@@ -118,11 +110,7 @@ ht-degree: 1%
 
    ![更新变量架构](assets/create-rule-update-variable.png)
 
-现在映射您的 [!UICONTROL 数据元素] 到 [!UICONTROL 架构] 由XDM对象使用。
-
->[!NOTE]
-> 
-> 您可以映射到单个属性或整个对象。 在本例中，您将映射到各个属性。
+现在映射您的 [!UICONTROL 数据元素] 到 [!UICONTROL 架构] 由XDM对象使用。 您可以映射到单个属性或整个对象。 在本例中，您将映射到各个属性：
 
 1. 找到eventType字段并将其选定
 
@@ -160,13 +148,13 @@ ht-degree: 1%
 
    >[!TIP]
    >
-   > 而两者都不是 `eventType` 设置为 `web.webpagedetails.pageViews` 也不 `web.webPageDetials.pageViews.value` 要将信标作为页面视图进行处理，Adobe Analytics需要使用此变量；对于其他下游应用程序，使用标准方式指示页面视图会很有用。
+   > 而两者都不是 `eventType` 设置为 `web.webpagedetails.pageViews` 也不 `web.webPageDetails.pageViews.value` 要将信标作为页面视图进行处理，Adobe Analytics需要使用此变量；对于其他下游应用程序，使用标准方式指示页面视图会很有用。
 
 
 1. 选择 **[!UICONTROL 保留更改]** 然后 **[!UICONTROL 保存]** 下一个屏幕中用于完成规则创建的规则
 
 
-#### 产品页面字段
+### 产品页面字段
 
 现在，开始使用 **[!UICONTROL 更新变量]** 此外，在将XDM对象发送到之前对其进行扩充的顺序化规则 [!UICONTROL 平台Edge Network].
 
@@ -235,7 +223,7 @@ ht-degree: 1%
 1. 选择 **[!UICONTROL 保存]** 保存规则
 
 
-#### 购物车字段
+### 购物车字段
 
 您可以将整个数组映射到XDM对象，前提是数组与XDM架构的格式匹配。 自定义代码数据元素 `cart.productInfo` 之前创建的循环是通过 `digitalData.cart.cartEntries` Luma上的数据层对象，并将其转换为 `productListItems` XDM模式的对象。
 

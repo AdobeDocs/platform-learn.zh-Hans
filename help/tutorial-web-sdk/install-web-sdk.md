@@ -3,9 +3,9 @@ title: 安装和配置Adobe Experience Platform Web SDK标记扩展
 description: 了解如何在数据收集界面中安装和配置Platform Web SDK标记扩展。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '589'
 ht-degree: 12%
 
 ---
@@ -28,9 +28,7 @@ ht-degree: 12%
 
 * [配置数据流](configure-datastream.md)
 
-## 安装Experience PlatformWeb SDK扩展
-
-### 添加属性
+### 添加标记属性
 
 首先，您必须具有标记属性。 资产是一个容器，其中包含从网页收集详细信息并将其发送到不同位置所需的所有JavaScript、规则和其他功能。
 
@@ -57,7 +55,7 @@ ht-degree: 12%
    ![安装Web SDK扩展](assets/extension-platform-web-sdk.png)
 
 
-## 将Platform Web SDK链接到数据流
+## 将扩展链接到数据流
 
 保留大部分默认设置，以后根据需要进行更新。 您现在必须执行的唯一操作是将扩展链接到数据流：
 
@@ -71,19 +69,17 @@ ht-degree: 12%
 
    ![数据流选择](assets/extension-luma-web-sdk-datastream-extension.png)
 
-现在，您已安装Platform Web SDK并将其关联到数据流，接下来就可以开始使用您创建的架构将数据元素映射到XDM对象了。
-
->[!NOTE]
->
->在本教程中，您只需配置一个数据流，并将其与所有标记环境（开发、暂存和生产）关联。 在您自己的网站上实施Platform Web SDK时，您应该为每个环境配置单独的数据流，并将它们映射到您的标记环境。
+有关扩展每个部分的更多信息，请参阅 [配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
 >虽然您未在配置CNAME， [!UICONTROL 边缘域] 在本课程中的设置中，Adobe建议在您自己的网站上实施Platform Web SDK时使用CNAME。 虽然 CNAME 实施未提供 Cookie 生命周期方面的好处，但可能会带来其他一些好处。这些好处包括广告拦截器和不太常见的浏览器，可防止数据被发送到它们归类为跟踪器的域。在这些情况下，使用 CNAME 可以在对使用这些工具的用户进行数据收集时防止中断。
 
-有关扩展每个部分的更多信息，请参阅 [配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration)
+>[!NOTE]
+>
+>在本教程中，您只需配置一个数据流，并将其与所有标记环境（开发、暂存和生产）关联。 在您自己的网站上实施Platform Web SDK时，您应该为每个环境配置单独的数据流，并在扩展配置中相应地映射它们。
 
-
+现在，您已安装Platform Web SDK并将其关联到数据流，接下来可以开始收集数据了。
 
 [下一步： ](create-data-elements.md)
 

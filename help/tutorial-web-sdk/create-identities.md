@@ -3,9 +3,9 @@ title: 创建身份
 description: 了解如何在XDM中创建身份并使用身份映射数据元素捕获用户ID。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '890'
 ht-degree: 1%
 
 ---
@@ -148,7 +148,7 @@ FPID是第一方Cookie _您使用自己的Web服务器进行设置_ ，该Adobe�
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-有了这些数据元素，您就可以开始通过在标记中创建规则，通过XDM对象向PlatformEdge Network发送数据了。
+设置这些数据元素后，您可以通过在Tags中创建规则来开始向PlatformEdge Network发送数据。
 
 [下一步： ](create-tag-rule.md)
 
