@@ -1,10 +1,11 @@
 ---
-title: 使用Web SDK将数据流式传输到Adobe Experience Platform
+title: 使用Platform Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
+jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1591'
+source-wordcount: '1592'
 ht-degree: 4%
 
 ---
@@ -38,7 +39,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 ## 创建数据集
 
-所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 A [数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) 是用于数据集合的存储和管理结构，通常是表格，其中包含架构（列）和字段（行）。 数据集还包含描述其存储的数据的各个方面的元数据。
+所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 A [数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) 是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。
 
 让我们为您的Luma Web事件数据设置一个数据集：
 
@@ -83,7 +84,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
    ![数据流配置](assets/experience-platform-datastream-config.png)
 
-当您在 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 映射到您的标记属性时，数据将在Experience Platform中填充数据集！
+当您在 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 映射到您的标记属性时，数据会在Experience Platform中填充数据集！
 
 ## 验证数据集
 
@@ -211,7 +212,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 1. 在 [Experience Platform](https://experience.adobe.com/platform/) 界面，选择 **[!UICONTROL 配置文件]** 在左侧导航中
 
 1. 作为 **[!UICONTROL 身份命名空间]** 使用 `lumaCRMId`
-1. 复制并粘贴的值 `lumaCRMId` 在Experience Platform调试器中检查的调用中传递，在本例中 `112ca06ed53d3db37e4cea49cc45b71e`.
+1. 复制并粘贴的值 `lumaCRMId` 传入了您在Experience Platform调试器中检查的调用，在本例中 `112ca06ed53d3db37e4cea49cc45b71e`.
 
    ![用户档案](assets/experience-platform-validate-dataset-profile.png)
 
@@ -237,4 +238,4 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

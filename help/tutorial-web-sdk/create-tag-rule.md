@@ -1,18 +1,19 @@
 ---
-title: 创建标记规则
+title: 为Platform Web SDK创建标记规则
 description: 了解如何使用标记规则将事件与XDM对象一起发送到PlatformEdge Network。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
+jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1963'
 ht-degree: 1%
 
 ---
 
 # 创建标记规则
 
-了解如何使用标记规则将事件与XDM对象一起发送到PlatformEdge Network。 标记规则是事件、条件和操作的组合，用于告知标记属性执行一些操作。 在Platform Web SDK中，规则用于将包含正确数据的事件发送到PlatformEdge Network。
+了解如何使用标记规则将事件与XDM对象一起发送到Adobe Experience PlatformEdge Network。 标记规则是事件、条件和操作的组合，用于告知标记属性执行一些操作。 在Platform Web SDK中，规则用于将包含正确数据的事件发送到PlatformEdge Network。
 
 ## 学习目标
 
@@ -38,7 +39,7 @@ ht-degree: 1%
 
 ## 命名约定
 
-为了更好地管理标记中的规则，建议遵循标准命名约定。 本教程使用由五部分组成的命名约定：
+要管理标记中的规则，建议遵循标准命名约定。 本教程使用由五部分组成的命名约定：
 
 * [**位置**] - [**事件**] - [**用途**] - [**订购**]
 
@@ -52,7 +53,7 @@ ht-degree: 1%
 
 ## 创建标记规则
 
-在标记中，规则用于在各种条件下执行操作（触发调用）。 Platform Web SDK标记扩展包含两个将在本课程中使用的操作：
+在标记中，规则用于在各种条件下执行操作（触发调用）。 Platform Web SDK标记扩展包含本课程中使用的两个操作：
 
 * **[!UICONTROL 更新变量]** 将数据元素映射到XDM对象中的属性
 * **[!UICONTROL 发送事件]** 将XDM对象发送到Experience PlatformEdge Network
@@ -63,7 +64,7 @@ ht-degree: 1%
 
 1. 使用创建其他规则 **[!UICONTROL 更新变量]** 覆盖我们的“全局配置”并在某些条件下（例如，在产品页面上添加产品详细信息）提供其他XDM字段的操作。
 
-1. 使用创建另一个规则 **[!UICONTROL 发送事件]** 操作将向Adobe Experience PlatformEdge Network发送完整的XDM对象。
+1. 使用创建另一个规则 **[!UICONTROL 发送事件]** 操作，此操作会将完整的XDM对象发送到Adobe Experience PlatformEdge Network。
 
 所有这些规则将使用&quot;[!UICONTROL 订购]”选项。
 
@@ -110,7 +111,7 @@ ht-degree: 1%
 
    ![更新变量架构](assets/create-rule-update-variable.png)
 
-现在映射您的 [!UICONTROL 数据元素] 到 [!UICONTROL 架构] 由XDM对象使用。 您可以映射到单个属性或整个对象。 在本例中，您将映射到各个属性：
+现在，将您的 [!UICONTROL 数据元素] 到 [!UICONTROL 架构] 由XDM对象使用。 您可以映射到单个属性或整个对象。 在本例中，您将映射到各个属性：
 
 1. 找到eventType字段并将其选定
 
@@ -171,7 +172,7 @@ ht-degree: 1%
 1. 选择 ![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 在“事件”下添加新的触发器
 1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
 1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Library Loaded (Page Top)]**
-1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`. 这可确保规则在 `all pages - library loaded - set global variables - 1` 设置全局配置。
+1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `20`. 此顺序值可确保规则在 `all pages - library loaded - set global variables - 1` 设置全局配置。
 
    ![Analytics XDM规则](assets/set-up-analytics-pdp.png)
 
@@ -345,9 +346,9 @@ ht-degree: 1%
 
 1. 在 **[!UICONTROL 操作]** 部分，选择 **[!UICONTROL 添加]**
 
-1. 作为 **[!UICONTROL 扩展名]**，选择  **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. 作为 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL Adobe Experience Platform Web SDK]**
 
-1. 作为  **[!UICONTROL 操作类型]**，选择  **[!UICONTROL 发送事件]**
+1. 作为  **[!UICONTROL 操作类型]**，选择 **[!UICONTROL 发送事件]**
 
 1. 作为 **[!UICONTROL XDM]**，选择 `xdm.variable.content` 在上一课程中创建的数据元素
 
@@ -385,7 +386,7 @@ ht-degree: 1%
 
 ![生成完成](assets/create-rule-development-success.png)
 
-如您所见， [!UICONTROL 发布流] 屏幕，发布流程还有许多其他内容超出了本教程的范围。 本教程仅在开发环境中使用单个库。
+如您所见， [!UICONTROL 发布流] 屏幕，则发布流程还有许多其他内容，这不在本教程的涵盖范围内。 本教程仅在开发环境中使用单个库。
 
 现在，您可以使用Adobe Experience Platform Debugger来验证请求中的数据。
 
@@ -393,4 +394,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

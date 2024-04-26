@@ -1,18 +1,19 @@
 ---
-title: 设置事件转发属性
+title: 使用Platform Web SDK数据设置事件转发
 description: 了解如何使用Experience PlatformWeb SDK数据来使用event-forwarding属性。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Event Forwarding
+jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1861'
+source-wordcount: '1873'
 ht-degree: 2%
 
 ---
 
-# 设置事件转发属性
+# 使用Platform Web SDK数据设置事件转发
 
-了解如何使用Experience PlatformWeb SDK数据来使用event-forwarding属性。
+了解如何将事件转发与Adobe Experience Platform Web SDK数据结合使用。
 
 事件转发是数据收集中可用的一种新属性。 事件转发让您能够直接从Adobe Experience PlatformEdge Network而不是传统的客户端浏览器向第三方非Adobe供应商发送数据。 在中详细了解事件转发的优势 [事件转发概述](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 
@@ -22,7 +23,7 @@ ht-degree: 2%
 要在Adobe Experience Platform中使用事件转发，必须首先使用以下三个选项中的一个或多个将数据发送到Adobe Experience PlatformEdge Network：
 
 * [Adobe Experience Platform Web SDK](overview.md)
-* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
+* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
   <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -45,12 +46,12 @@ ht-degree: 2%
 
 ## 先决条件
 
-* 包括事件转发的软件许可证。 事件转发是数据收集的一项付费功能。 有关更多详细信息，请联系您的Adobe客户团队。
-* 在您的Experience Cloud组织中启用了事件转发。
+* 包含事件转发的软件许可证。 事件转发是数据收集的一项付费功能。 有关更多详细信息，请联系您的Adobe客户团队。
+* 已在您的Experience Cloud组织中启用事件转发。
 * 用于事件转发的用户权限。 (位于 [Admin Console](https://adminconsole.adobe.com/)，在Adobe Experience Platform Launch产品下，权限项[!UICONTROL 平台] > [!UICONTROL Edge] 和所有 [!UICONTROL 资产权限])。 授予权限后，您应会看到 [!UICONTROL 事件转发] 在数据收集界面的左侧导航中：
   ![事件转发属性](assets/event-forwarding-menu.png)
 
-* 配置为将数据发送到Edge Network的Adobe Experience Platform Web或Mobile SDK。 您必须完成本教程中的以下课程：
+* Adobe Experience Platform Web或Mobile SDK配置为将数据发送到Edge Network。 您必须完成本教程中的以下课程：
 
    * 初始配置
 
@@ -76,14 +77,14 @@ ht-degree: 2%
 1. 选择&#x200B;**[!UICONTROL 新属性]**。
    ![事件转发属性](assets/event-forwarding-new.png)
 
-1. 命名资产。 在本例中 `Server-Side - Web SDK Course`
+1. 命名资产。 在本例中， `Server-Side - Web SDK Course`
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
    ![事件转发属性保存](assets/event-forwarding-save.png)
 
 ## 配置数据流
 
-要使事件转发使用您发送到Edge Network的数据，必须将新创建的事件转发属性链接到用于将数据发送到Adobe解决方案的相同数据流。
+要使事件转发使用您发送到PlatformEdge Network的数据，您必须将新创建的事件转发属性链接到用于将数据发送到Adobe解决方案的相同数据流。
 
 要在数据流中配置Target，请执行以下操作：
 
@@ -220,7 +221,7 @@ ht-degree: 2%
 
 * **规则操作顺序**：
 
-   * 事件转发规则的“操作”部分始终按顺序执行。 您在保存规则时，应确保操作顺序正确。无法像对标记执行操作一样异步执行此执行序列。
+   * 事件转发规则的“操作”部分始终按顺序执行。 保存规则时，请确保操作顺序正确。 无法像对标记执行操作一样异步执行此执行序列。
 
 <!--
   * **Tags**: Rule actions can easily be reordered using drag-and-drop functionality.
@@ -231,7 +232,7 @@ ht-degree: 2%
 
 1. 转到 [Webhook.site](https://webhook.site)
 
-1. 查找 **您的唯一URL**，则会在事件转发规则中将其用作URL请求
+1. 查找 **您的唯一URL**，可将其用作URL请求
 
 1. 选择 **[!UICONTROL 复制到剪贴板]**
 
@@ -324,4 +325,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,17 +2,18 @@
 title: 使用Platform Web SDK设置Adobe Target
 description: 了解如何使用Platform Web SDK实施Adobe Target。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Target
+jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
 workflow-type: tm+mt
-source-wordcount: '4307'
+source-wordcount: '4305'
 ht-degree: 0%
 
 ---
 
 # 使用Platform Web SDK设置Adobe Target
 
-了解如何使用Platform Web SDK实施Adobe Target。 了解如何交付体验以及如何将其他参数传递到Target。
+了解如何使用Adobe Experience Platform Web SDK实施Adobe Target。 了解如何交付体验以及如何将其他参数传递到Target。
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) 是一种Adobe Experience Cloud应用程序，可为您提供定制和个性化客户体验所需的一切功能，从而最大限度地增加您的Web和移动设备网站、应用程序及其他数字渠道的收入。
 
@@ -20,11 +21,11 @@ ht-degree: 0%
 
 ## 学习目标
 
-在本课程结束时，您将能够对Target的Web SDK实施执行以下操作：
+在本课程结束时，您可以通过Target的Web SDK实施执行以下操作：
 
 * 添加预隐藏代码片段以防止闪烁
 * 配置数据流以启用Target功能
-* 渲染可视化体验编辑器活动
+* 呈现可视化体验编辑器活动
 * 呈现表单编辑器活动
 * 将XDM数据传递给Target并了解到Target参数的映射
 * 将自定义数据（如配置文件和实体参数）传递到Target
@@ -41,7 +42,7 @@ ht-degree: 0%
 要完成此部分中的课程，您必须首先：
 
 * 完成有关Platform Web SDK初始配置的所有课程，包括设置数据元素和规则。
-* 确保您拥有 [编辑者或审批者角色](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) 在Adobe Target中。
+* 确保您拥有 [编辑者或审批者角色](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) 在Adobe Target中。
 * 安装 [可视化体验编辑器助手扩展](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) 如果您使用的是Google Chrome浏览器。
 * 了解如何在Target中设置活动。 如果您需要复习者，以下教程和指南对本课程很有帮助：
    * [使用可视化体验编辑器(VEC)助手扩展](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
@@ -55,12 +56,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本教程使用 [Luma网站](https://luma.enablementadobe.com/content/luma/us/en.html) 异步实施标记并消除闪烁。 此部分旨在了解闪烁缓解如何与Platform Web SDK配合使用，以供参考。
+>本教程使用 [Luma网站](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}，异步实施标记并实施了闪烁抑制。 此部分旨在了解闪烁缓解如何与Platform Web SDK配合使用，以供参考。
 
 
 ### 异步实施
 
-异步加载标记库时，页面可能会在Target将默认内容替换为个性化内容之前完成渲染。 这种行为可能会导致所谓的“闪烁”，在这种情况下，会先短暂显示默认内容，然后再将该内容替换为Target指定的个性化内容。 如果要避免出现这种闪烁情况，Adobe建议在紧靠异步标签嵌入代码之前的位置添加一个特殊的预隐藏代码片段。
+异步加载标记库时，页面可能会在Target将默认内容替换为个性化内容之前完成渲染。 这种行为可能会导致所谓的“闪烁”，在这种情况下，会先短暂显示默认内容，然后再将该内容替换为个性化内容。 如果要避免出现这种闪烁情况，Adobe建议在紧靠异步标签嵌入代码之前的位置添加一个特殊的预隐藏代码片段。
 
 此代码片段已存在于Luma网站上，但让我们仔细了解一下此代码的用途：
 
@@ -188,7 +189,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 * **体验**：一组针对一个或多个位置或决策范围的操作。
 * **决策范围**：交付Target体验的位置。 如果您熟悉使用旧版Target，则决策范围等同于“mbox”。
 * **个性化决策**：应用服务器确定的操作。 这些决策可以基于受众标准和Target活动优先级。
-* **建议**：服务器做出的决策在Platform Web SDK响应中传递的结果。 例如，交换横幅图像就是一个建议。
+* **建议**：服务器所做决策的结果，该结果将在Platform Web SDK响应中交付。 例如，交换横幅图像就是一个建议。
 
 ### 更新 [!UICONTROL 发送事件] 操作
 
@@ -231,7 +232,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
    ![创建新的XT活动](assets/target-xt-create-activity.png)
 
-1. 修改页面，例如更改主页主页主页横幅上的文本。  完成后，选择 **[!UICONTROL 保存]** 则 **[!UICONTROL 下一个]**.
+1. 修改页面，例如，更改主页主页主页横幅上的文本。  完成后，选择 **[!UICONTROL 保存]** 则 **[!UICONTROL 下一个]**.
 
    ![Target VEC修改](assets/target-xt-vec-modification.png)
 
@@ -393,7 +394,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 ### 页面(mbox)参数和XDM
 
-所有XDM字段均自动作为 [页面参数](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) 或mbox参数。
+所有XDM字段均自动作为 [页面参数](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) 或mbox参数。
 
 其中一些XDM字段将映射到Target后端中的特殊对象。 例如， `web.webPageDetails.URL` 将自动可用于构建基于URL的定位条件，或作为 `page.url` 创建配置文件脚本时的对象。
 
@@ -401,7 +402,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 有些数据点对于没有从XDM对象映射的Target可能很有用。 这些特殊的Target参数包括：
 
-* [用户档案属性](https://experienceleague.adobe.com/en/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes)
+* [用户档案属性](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
 * [Recommendations实体属性](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
 * [Recommendations保留的参数](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
 * 的类别值 [类别亲和力](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
@@ -543,7 +544,7 @@ Luma网站上的数据层是在tags嵌入代码之前完全定义的。 这样�
 
    ![在Assurance Analytics点击中进行验证](assets/validate-in-assurance-analyticsevent.png)
 
-这可以确认，当我们在页面上稍后触发分析跟踪调用时，已正确发送在进行Target Decisioning调用时排队等候稍后传输的A4T信息。
+这可以确认，当我们在页面上稍后触发分析跟踪调用时，已正确发送在我们进行Target决策调用时排队等候稍后传输的A4T信息。
 
 现在，您已完成本课程，应该可以使用Platform Web SDK有效实施Adobe Target。
 
@@ -551,4 +552,4 @@ Luma网站上的数据层是在tags嵌入代码之前完全定义的。 这样�
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

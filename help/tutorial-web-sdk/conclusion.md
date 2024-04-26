@@ -1,12 +1,12 @@
 ---
-title: 结论和后续步骤
-description: 完成本教程后的后续操作
+title: Web SDK教程的结论和后续步骤
+description: 完成Web SDK教程后的后续操作
 recommendations: display,noCatalog
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 2%
+source-wordcount: '382'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,8 @@ ht-degree: 2%
    * Adobe Analytics
    * Adobe Audience Manager
    * Adobe Target
-* 使用事件转发将数据从PlatformEdge Network发送到Web挂接。
+   * Adobe Journey Optimizer
+* 通过事件转发将数据从PlatformEdge Network转发到Web挂接。
 * 已使用Adobe Experience Platform Debugger验证实施。
 
 您已准备好开始历程的下一阶段 — 在自己的网站上实施Adobe Experience Cloud！
@@ -35,12 +36,12 @@ ht-degree: 2%
 
 
 * **在Journey Optimizer中触发旅程**. 您在Luma网站中实施的事件可用于触发历程。 在本节中了解详情 [视频教程](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey).
-* **连接Customer Journey Analytics**. 如果您创建 [Platform数据集](setup-experience-platform.md)，您可以将数据集连接到Customer Journey Analytics。 在本节中了解详情 [视频教程](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform)
-* **在Platform中构建区段**. 如果您已启用 [实时客户个人资料的架构和数据集](setup-experience-platform.md)，则您可以基于Web事件构建区段，将其与其他源中的数据相结合，然后将这些区段发送到Real-time Customer Data Platform中的目标。 要了解有关区段生成器的更多信息，请参阅 [视频教程](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/segments/create-segments).
+* **连接Customer Journey Analytics**. 如果您创建 [Platform数据集](setup-experience-platform.md)，您可以将数据集连接到Customer Journey Analytics。 在本节中了解详情 [视频教程](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform)
+* **在Platform中构建区段**. 如果您已启用 [实时客户个人资料的架构和数据集](setup-experience-platform.md)，您可以基于Web事件构建区段，然后将这些区段发送到Real-time Customer Data Platform中的目标。 要了解有关区段生成器的更多信息，请参阅 [视频教程](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/audiences/create-audiences).
 * **实施Platform Mobile SDK**. 您现在已经掌握了一个SDK，请学习另一个！ Adobe Experience Platform Mobile SDK用于为移动设备应用程序上的Experience Cloud和第三方服务提供支持。 这里有一个类似的 [Mobile SDK实践教程](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview). 完成这两个操作后，即可看到配置文件跨设备合并！
-* **了解有关Experience Platform的更多信息**. 详细了解如何从其他源摄取数据并将其与您的Web SDK数据相结合，请参阅 [面向数据架构师和数据工程师的Adobe Experience Platform入门](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)
+* **了解有关Experience Platform的更多信息**. 了解如何从中的其他源摄取数据 [面向数据架构师和数据工程师的Adobe Experience Platform入门](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)
 
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

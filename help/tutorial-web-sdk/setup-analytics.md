@@ -2,17 +2,18 @@
 title: 使用Experience PlatformWeb SDK设置Adobe Analytics
 description: 了解如何使用Experience PlatformWeb SDK设置Adobe Analytics。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Analytics
+jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2810'
 ht-degree: 0%
 
 ---
 
-# 使用Platform Web SDK设置Adobe Analytics
+# 使用Adobe Experience Platform Web SDK设置Adobe Analytics
 
-了解如何使用设置Adobe Analytics [Experience PlatformWeb SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)，创建标记规则以将数据发送到Adobe Analytics，并验证Analytics是否按预期捕获数据。
+了解如何使用设置Adobe Analytics [Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)，创建标记规则以将数据发送到Adobe Analytics，并验证Analytics是否按预期捕获数据。
 
 [Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) 是一款行业领先的应用程序，可帮助您充分了解客户的行为和需求，并根据客户情报掌控业务发展方向。
 
@@ -23,7 +24,7 @@ ht-degree: 0%
 在本课程结束后，您将能够：
 
 * 配置数据流以启用Adobe Analytics
-* 了解哪些标准XDM字段将自动映射到Analytics变量
+* 了解哪些标准XDM字段自动映射到Analytics变量
 * 使用Adobe Analytics ExperienceEvent模板字段组或处理规则设置自定义Analytics变量
 * 通过覆盖数据流将数据发送到其他报表包
 * 使用Debugger和Assurance验证Adobe Analytics变量
@@ -34,13 +35,13 @@ ht-degree: 0%
 
 * 熟悉并访问Adobe Analytics。
 
-* 至少具有一个测试/开发报表包ID。 如果您没有可在本教程中使用的测试/开发报表包， [请创建一个](https://experienceleague.adobe.com/en/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite).
+* 至少具有一个测试/开发报表包ID。 如果您没有可在本教程中使用的测试/开发报表包， [请创建一个](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * 完成本教程的初始配置和标记配置部分中之前的课程。
 
 ## 配置数据流
 
-Platform Web SDK将数据从您的网站发送到PlatformEdge Network。 然后，您的数据流会告知PlatformEdge Network，您的数据应转发到哪些Adobe Analytics报表包。
+Platform Web SDK将数据从您的网站发送到PlatformEdge Network。 然后，您的数据流会告知PlatformEdge Network，您的数据应该发送到哪个Adobe Analytics报表包。
 
 1. 转到 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面
 1. 在左侧导航中，选择 **[!UICONTROL 数据流]**
@@ -51,7 +52,7 @@ Platform Web SDK将数据从您的网站发送到PlatformEdge Network。 然后�
 1. 选择 **[!UICONTROL 添加服务]**
    ![向数据流添加服务](assets/datastream-analytics-addService.png)
 1. 选择 **[!UICONTROL Adobe Analytics]** 作为 **[!UICONTROL 服务]**
-1. 输入  **[!UICONTROL 报表包ID]** 开发报表包的
+1. 输入 **[!UICONTROL 报表包ID]** 开发报表包的
 1. 选择 **[!UICONTROL 保存]**
 
    ![数据流保存分析](assets/datastream-add-analytics.png)
@@ -62,7 +63,7 @@ Platform Web SDK将数据从您的网站发送到PlatformEdge Network。 然后�
 
 >[!WARNING]
 >
->在本教程中，您将仅为开发环境配置Adobe Analytics报表包。 在为您自己的网站创建数据流时，您将为暂存环境和生产环境创建其他数据流和报表包。
+>在本教程中，您将仅为开发环境配置Adobe Analytics报表包。 在为您自己的网站创建数据流时，您应该为暂存环境和生产环境创建其他数据流和报表包。
 
 ## XDM架构和Analytics变量
 
@@ -117,7 +118,7 @@ The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, 
 Analytics产品字符串的各个部分通过下的不同XDM变量进行设置。 `productListItems` 对象。
 >截至2022年8月18日， `productListItems[].SKU` 具有映射到s.products变量中的产品名称的优先级。
 >值设置为 `productListItems[].name` 仅在以下情况下映射到产品名称： `productListItems[].SKU` 不存在。 否则，它将被取消映射，并可用于上下文数据。
->请勿将空字符串或null设置为  `productListItems[].SKU`. 这会产生不需要的效果，即映射到s.products变量中的产品名称。
+>请勿将空字符串或null设置为 `productListItems[].SKU`. 这会产生不需要的效果，即映射到s.products变量中的产品名称。
 
 有关最新的映射列表，请参阅 [Analytics Experience Edge中的Adobe变量映射](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
@@ -243,7 +244,7 @@ XDM架构中的所有字段均可用作具有以下前缀的上下文数据变�
 
 1. 作为 **[!UICONTROL 类型]**，选择 `web.webpagedetails.pageViews`
 
-1. 作为 **[!UICONTROL XDM数据]**，选择 `xdm.variable.content` 您已在 [创建数据元素](create-data-elements.md) 课程
+1. 作为 **[!UICONTROL XDM数据]**，选择 `xdm.variable.content` 您在中创建的数据元素 [创建数据元素](create-data-elements.md) 课程
 
    ![Analytics数据流覆盖](assets/set-up-analytics-datastream-override-1.png)
 
@@ -406,7 +407,7 @@ Adobe Experience Platform Assurance可帮助您检查、验证、模拟和验证
 正如您在 [Assurance](validate-with-assurance.md) 课程，有几种方法可启动保证会话。 由于您已经使用上一个练习中启动的边缘跟踪会话打开了Adobe Experience Platform Debugger，因此我们建议您通过Debugger访问Assurance：
 ![通过Adobe Experience Platform数据收集提供保证](assets/assurance-open-aep-debugger.png)
 
-在 **[!UICONTROL “Web SDK教程3”]** 进入保证会话 **[!UICONTROL &quot;hitdebugger&quot;]** 放到事件搜索栏中，将结果筛选为AdobeAnalytics后处理数据。
+在 **[!UICONTROL “Web SDK教程3”]** 进入保证会话 **[!UICONTROL &quot;hitdebugger&quot;]** 放到事件搜索栏中，将结果筛选为Adobe Analytics后处理数据。
 ![保证Adobe分析后处理数据](assets/assurance-hitdebugger.png)
 
 ### Experience CloudID验证
@@ -452,4 +453,4 @@ Adobe Experience Platform Assurance可帮助您检查、验证、模拟和验证
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

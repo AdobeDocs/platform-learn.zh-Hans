@@ -1,18 +1,19 @@
 ---
-title: 创建数据元素
+title: 为Platform Web SDK创建数据元素
 description: 了解如何在标记中创建XDM对象并将数据元素映射到该对象。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Tags
+jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1199'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
 
 # 创建数据元素
 
-了解如何在标记中创建数据元素，以在上的内容、商业和身份数据 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html). 然后，使用Platform Web SDK扩展变量数据元素类型填充XDM架构中的字段。
+了解如何在标记中创建数据元素，以在上的内容、商业和身份数据 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html). 然后，使用Adobe Experience Platform Web SDK扩展变量数据元素类型填充XDM架构中的字段。
 
 ## 学习目标
 
@@ -53,7 +54,7 @@ ht-degree: 1%
 
 ### 在数据层中实施XDM
 
-此方法涉及使用完全定义的XDM对象作为数据层的结构。 然后，将整个数据层映射到标记中的XDM对象数据元素。 如果您的实施不使用标签管理器，则此方法可能是理想的，因为您可以使用将数据直接从应用程序发送到XDM [XDM sendEvent命令](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). 如果您使用标记，则可以创建一个自定义代码数据元素，将整个数据层捕获为传递到XDM的JSON对象。 然后，将传递JSON映射到发送事件操作中的XDM对象字段。
+此方法涉及使用完全定义的XDM对象作为数据层的结构。 然后，将整个数据层映射到标记中的XDM对象数据元素。 如果您的实施不使用标签管理器，则此方法可能是理想的，因为您可以使用将数据直接从应用程序发送到XDM [XDM sendEvent命令](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). 如果您确实使用标记，则可以创建一个自定义代码数据元素，它将整个数据层作为传递到XDM的JSON对象进行捕获。 然后，将传递JSON映射到发送事件操作中的XDM对象字段。
 
 以下是使用Adobe客户端数据层格式时数据层的外观示例：
 
@@ -99,7 +100,7 @@ window.adobeDataLayer.push({
 优点
 
 * 无需重新映射到数据层变量到XDM的其他步骤
-* 如果您的开发团队拥有标记数字行为，则可以更快地部署
+* 如果您的开发团队拥有标记数字行为，部署可能会更快
 
 缺点
 
@@ -138,7 +139,7 @@ window.adobeDataLayer.push({
 
 * 灵活，因为您可以将各个变量映射到XDM
 * 能够 [计算新值](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) 或 [转换数据类型](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) 从Data Layer转到XDM
-* 利用 [映射Ui](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) 使用点击UI将源数据中的字段映射到XDM
+* 利用 [映射Ui](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) 使用点击UI将源数据中的字段映射到XDM
 
 #### 缺点
 
@@ -298,4 +299,4 @@ window.adobeDataLayer.push({
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

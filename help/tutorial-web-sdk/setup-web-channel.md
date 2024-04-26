@@ -4,20 +4,21 @@ description: 了解如何使用Platform Web SDK实施Journey Optimizer Web渠道
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
+jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2885'
+source-wordcount: '2892'
 ht-degree: 0%
 
 ---
 
 
-# 设置Journey Optimizer Web渠道
+# 使用Web SDK设置Journey Optimizer Web渠道
 
-了解如何实施Journey Optimizer [Web渠道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) 使用Platform Web SDK。 本课程包括基本Web渠道先决条件、配置的详细步骤以及围绕忠诚度状态的用例的深入探讨。
+了解如何实施Adobe Journey Optimizer [Web渠道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) 使用Adobe Experience Platform Web SDK. 本课程包括基本Web渠道先决条件、配置的详细步骤以及围绕忠诚度状态的用例的深入探讨。
 
-通过学习本课程，Journey Optimizer用户能够使用Journey Optimizer Web Designer有效地将Web渠道应用于高级在线个性化。
+通过学习本课程，Journey Optimizer用户将能够使用Journey Optimizer Web Designer的Web渠道来实现高级在线个性化。
 
 ![Web SDK和Adobe Analytics图](assets/dc-websdk-ajo.png)
 
@@ -51,7 +52,7 @@ ht-degree: 0%
   > 1. 网站嵌入在iframe中。
   > 1. 无法从外部访问客户的QA或暂存站点（它是一个内部站点）。
 
-* 在创建Web体验并包含Adobe Experience Manager Assets Essentials库中的内容时，必须 [配置用于发布此内容的子域](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
+* 在创建Web体验并包含Adobe Experience Manager Assets Essentials库中的内容时，必须 [配置用于发布此内容的子域](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * 如果使用内容试验功能，请确保您的Web数据集也包含在报表配置中。
 * 目前，支持两种类型的实施，以便能够在Web资产上创作和交付Web渠道营销活动：
    * 仅限客户端：要修改您的网站，必须实施Adobe Experience Platform Web SDK。
@@ -296,7 +297,7 @@ ht-degree: 0%
 
 ![验证HTML](assets/web-channel-add-custom-html-validate.png)
 
-现在，查看新的自定义HTML组件以了解其适用情况。
+现在，查看新的自定义HTML组件以了解其适合和风格。
 
 ![查看自定义HTML](assets/web-channel-review-custom-html.png)
 
@@ -387,4 +388,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

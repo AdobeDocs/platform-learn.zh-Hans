@@ -1,22 +1,23 @@
 ---
-title: 使用Platform Web SDK设置决策管理
+title: 使用Platform Web SDK设置Journey Optimizer决策管理
 description: 了解如何使用Platform Web SDK实施决策管理。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
+jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '2511'
+source-wordcount: '2515'
 ht-degree: 0%
 
 ---
 
 # 使用Platform Web SDK设置决策管理
 
-了解如何使用Platform Web SDK实施决策管理。 本指南介绍了基本的决策管理先决条件、配置的详细步骤，并深入研究了以忠诚度状态为中心的用例。
+了解如何使用Platform Web SDK实施Adobe Journey Optimizer的决策管理功能。 本指南介绍了基本的决策管理先决条件、配置的详细步骤，并深入研究了以忠诚度状态为中心的用例。
 
-通过学习本教程，Journey Optimizer用户能够有效地应用offer decisioning功能，增强其客户交互的个性化和相关性。
+通过学习本教程，Journey Optimizer用户能够使用决策管理功能，增强其客户交互的个性化和相关性。
 
 
 ![Web SDK和Adobe Analytics图](assets/dc-websdk-ajo.png)
@@ -51,9 +52,7 @@ ht-degree: 0%
 
 ## 限制
 
-请注意以下限制：
-
-* Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于事件创建决策规则，则无法在优惠中应用它。
+Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于事件创建决策规则，则无法在优惠中应用它。
 
 ## 授予对决策管理的访问权限
 
@@ -140,7 +139,7 @@ offer decisioning必须在 **数据流** 在Platform Web SDK可提供任何决�
 
 在本课程中，您将实施一个忠诚度奖励示例用例，以了解使用Web SDK的决策管理。
 
-此用例使您能够更好地了解Journey Optimizer如何利用集中式优惠库和优惠决策引擎来帮助为客户提供最佳优惠。
+此用例使您能够更好地了解Journey Optimizer如何利用集中式优惠库和决策管理决策引擎来帮助为客户提供最佳优惠。
 
 >[!NOTE]
 >
@@ -311,7 +310,7 @@ offer decisioning必须在 **数据流** 在Platform Web SDK可提供任何决�
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 接下来，您必须添加 **评估标准** 决策范围。 单击 **添加** 并选择之前创建的&#39;*忠诚度奖励*’ **收藏集** 包含要考虑的所有忠诚度优惠。
+1. 接下来，您必须添加 **评估标准** 决策范围。 单击 **添加** 并选择之前创建的&#39;*忠诚度奖励*&#39;**收藏集，其中包含要考虑的所有忠诚度优惠。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -334,7 +333,7 @@ offer decisioning必须在 **数据流** 在Platform Web SDK可提供任何决�
 
 ## 模拟
 
-作为最佳实践，您应该验证Luma忠诚度决策逻辑，以确保将正确的选件交付给正确的忠诚度受众。 为此，您可以使用以下代码 **测试用户档案**. 在将新选件版本推送到生产环境之前，最好通过测试用户档案测试对选件所做的更改。
+作为最佳实践，您应该验证Luma忠诚度决策逻辑，以确保将正确的选件交付给正确的忠诚度受众。 可以通过以下方式执行此验证 **测试用户档案**. 在将新选件版本推送到生产环境之前，最好通过测试用户档案测试对选件所做的更改。
 
 要开始测试，请选择 **模拟** 选项卡 **选件** 菜单。
 
@@ -370,7 +369,7 @@ offer decisioning必须在 **数据流** 在Platform Web SDK可提供任何决�
 
 此 **Adobe Experience Platform Debugger** 适用于Chrome和Firefox的扩展可分析您的网页，以识别Adobe Experience Cloud解决方案实施中的问题。
 
-您可以使用Luma网站上的调试器来验证生产中的决策逻辑。 在忠诚度奖励用例启动并运行后，这是一种很好的做法，可确保正确配置所有内容。
+您可以使用Luma网站上的调试器来验证生产中的决策逻辑。 忠诚度奖励用例启动并运行后，此验证是一种很好的做法，可确保一切配置正确。
 
 [使用此处指南了解如何在浏览器中配置调试器](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -405,4 +404,4 @@ offer decisioning必须在 **数据流** 在Platform Web SDK可提供任何决�
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

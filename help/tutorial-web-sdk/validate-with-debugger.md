@@ -2,28 +2,29 @@
 title: 使用Experience Platform调试器验证Web SDK实施
 description: 了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Debugger
+jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1195'
 ht-degree: 1%
 
 ---
 
 # 使用Experience Platform调试器验证Web SDK实施
 
-了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。
+了解如何使用Adobe Experience Platform Debugger验证Adobe Experience Platform Web SDK实施。
 
 Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展，可帮助您查看在网页中实现的Adobe技术。 下载首选浏览器的版本：
 
 * [Firefox扩展](https://addons.mozilla.org/zh-CN/firefox/addon/adobe-experience-platform-dbg/)
-* [Chrome扩展](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Chrome扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 如果您以前从未使用过该调试器，则可能需要观看以下时长为5分钟的概述视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-在本课程中，您将使用 [Adobe Experience Cloud Debugger扩展](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) 替换 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 拥有自己的财产。
+在本课程中，您将使用 [Adobe Experience Platform Debugger扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 替换 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 拥有自己的财产。
 
 此技术称为环境切换，当您以后在自己的网站上使用标记时，此技术将非常有用。 它允许您在浏览器中加载生产网站，但需使用 *开发* 标记库。 此功能使您能够放心地做出并验证标记更改，而不依赖于常规代码发布。 毕竟，将营销标记发布与常规代码发布分开是客户最初使用标记的主要原因之一！
 
@@ -55,7 +56,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 1. 调试器将打开并显示硬编码实施的一些详细信息（您可能需要在打开调试器后重新加载Luma网站）
 1. 确认调试器为“**[!UICONTROL 已连接到Luma]**&quot;，如下图所示，然后选择&quot;**[!UICONTROL 锁定]**”图标将Debugger锁定到Luma网站。
 1. 选择 **[!UICONTROL 登录]** 按钮并使用您的AdobeID登录Adobe Experience Cloud。
-1. 现在转到 **[!UICONTROL Experience Platform标记]** 在左侧导航中
+1. 现在，转到 **[!UICONTROL Experience Platform标记]** 在左侧导航中
 
    ![Debugger标记屏幕](assets/validate-launch-screen.png)
 
@@ -84,7 +85,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
    ![“摘要”选项卡](assets/validate-summary.png)
 
-1. 现在转到 **[!UICONTROL Experience PlatformWeb SDK]** 在左侧导航中查看 **[!UICONTROL 网络请求]**
+1. 现在，转到 **[!UICONTROL Experience PlatformWeb SDK]** 在左侧导航中查看 **[!UICONTROL 网络请求]**
 1. 打开 **[!UICONTROL 事件]** 行
 
    ![Adobe Experience Platform Web SDK请求](assets/validate-aep-screen.png)
@@ -162,10 +163,10 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
    ![Analytics信标边缘跟踪](assets/validate-edge-trace.png)
 
-此时，您无法查看任何发送到Adobe应用程序的平台Edge Network请求，因为您未在数据流中启用任何请求。 在将来的课程中，您将使用Edge Trace查看用于Adobe应用程序和事件转发的传出服务器端请求。 但首先，了解用于验证平台Edge Network发出的服务器端请求的另一个工具 — Adobe Experience Platform Assurance！
+此时，您无法查看任何将转至Adobe应用程序的平台Edge Network请求，因为您未在数据流中启用任何请求。 在将来的课程中，您将使用Edge Trace查看用于Adobe应用程序和事件转发的传出服务器端请求。 但首先，了解用于验证平台Edge Network发出的服务器端请求的另一个工具 — Adobe Experience Platform Assurance！
 
 [下一步： ](validate-with-assurance.md)
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,18 +1,19 @@
 ---
 title: 安装和配置Adobe Experience Platform Web SDK标记扩展
 description: 了解如何在数据收集界面中安装和配置Platform Web SDK标记扩展。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
-feature: Web SDK
+feature: Web SDK, Tags
+jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 78df0fb4e2f2b56b829c54c08a16f860192592d1
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 12%
+source-wordcount: '594'
+ht-degree: 9%
 
 ---
 
 # 安装Adobe Experience Platform Web SDK标记扩展
 
-了解如何安装和配置Platform Web SDK标记扩展。 实施Web SDK的最简单方法是使用Adobe的标签管理器（以前称为Launch）。 Platform Web SDK标记扩展是 _仅标记扩展_ 需要将数据发送到 _所有Adobe Experience Cloud应用程序_，包括 [分析](setup-analytics.md)， [Target](setup-target.md)， [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform和 [Journey Optimizer](setup-web-channel.md)！
+了解如何安装和配置Adobe Experience Platform Web SDK标记扩展。 实施Web SDK的最简单方法是使用Adobe的标签管理器（以前称为Launch）。 Platform Web SDK标记扩展是 _仅标记扩展_ 需要将数据发送到 _所有Adobe Experience Cloud应用程序_，包括 [分析](setup-analytics.md)， [Target](setup-target.md)， [Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform和 [Journey Optimizer](setup-web-channel.md)！
 
 ## 学习目标
 
@@ -69,20 +70,20 @@ ht-degree: 12%
 
    ![数据流选择](assets/extension-luma-web-sdk-datastream-extension.png)
 
-有关扩展每个部分的更多信息，请参阅 [配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration).
+有关扩展每个部分的更多信息，请参阅 [配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
->虽然您未在配置CNAME， [!UICONTROL 边缘域] 在本课程中的设置中，Adobe建议在您自己的网站上实施Platform Web SDK时使用CNAME。 虽然 CNAME 实施未提供 Cookie 生命周期方面的好处，但可能会带来其他一些好处。这些好处包括广告拦截器和不太常见的浏览器，可防止数据被发送到它们归类为跟踪器的域。在这些情况下，使用 CNAME 可以在对使用这些工具的用户进行数据收集时防止中断。
+>虽然您未在配置CNAME， [!UICONTROL 边缘域] 在本课程中的设置中，Adobe建议在您自己的网站上实施Platform Web SDK时使用CNAME。 虽然 CNAME 实施未提供 Cookie 生命周期方面的好处，但可能会带来其他一些好处。这些好处包括广告拦截器和不太常见的浏览器，可防止数据被发送到它们归类为跟踪器的域。 在这些情况下，使用 CNAME 可以在对使用这些工具的用户进行数据收集时防止中断。
 
 >[!NOTE]
 >
 >在本教程中，您只需配置一个数据流，并将其与所有标记环境（开发、暂存和生产）关联。 在您自己的网站上实施Platform Web SDK时，您应该为每个环境配置单独的数据流，并在扩展配置中相应地映射它们。
 
-现在，您已安装Platform Web SDK并将其关联到数据流，接下来可以开始收集数据了。
+现在您已安装Platform Web SDK并将其与数据流关联，您可以开始收集数据了。
 
 [下一步： ](create-data-elements.md)
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

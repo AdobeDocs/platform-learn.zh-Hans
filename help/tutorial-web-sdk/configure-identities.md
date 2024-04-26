@@ -2,11 +2,12 @@
 title: 配置身份命名空间
 description: 了解如何配置要与Adobe Experience Platform Web SDK一起使用的身份命名空间。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Identities
+jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '640'
-ht-degree: 7%
+source-wordcount: '576'
+ht-degree: 8%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 7%
 
 了解如何配置要与Adobe Experience Platform Web SDK一起使用的身份命名空间。
 
-此 [Adobe Experience Cloud Identity服务](https://experienceleague.adobe.com/en/docs/id-service/using/home) 在基于SDK的Adobe应用程序中设置一个通用访客ID (ECID)，以便增强Experience Cloud功能（如应用程序之间的受众共享）。 您还可以将自己的客户ID发送到该服务，以启用跨设备定位以及与其他系统(例如客户关系管理(CRM)系统)的集成。
+此 [Adobe Experience Cloud Identity服务](https://experienceleague.adobe.com/en/docs/id-service/using/home) 在基于SDK的Adobe应用程序中设置一个通用访客ID (ECID)，以增强Experience Cloud功能，例如应用程序之间的受众共享。 您还可以将自己的客户ID发送到该服务，以启用跨设备定位以及与其他系统(例如客户关系管理(CRM)系统)的集成。
 
 此 [Adobe Experience Platform Identity服务](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) （是的，有两个！） 使用ECID和客户ID生成身份图，允许您将属性和行为合并到实时客户配置文件中。
 
@@ -38,7 +39,7 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
->此 [Experience CloudID扩展](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) 在实施Adobe Experience Platform Web SDK时不需要使用，因为Web SDK JavaScript库包含访客ID服务功能。
+>此 [Experience CloudID扩展](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) 在实施Adobe Experience Platform Web SDK时不需要使用，因为Web SDK JavaScript库包含访客ID服务功能。
 >
 > 如果您的网站已经在您的网站上通过访客API或Experience CloudID服务标签扩展使用Experience CloudID服务，并且您希望在迁移到Adobe Experience Platform Web SDK时继续使用该服务，则必须使用最新版本的访客API或Experience CloudID服务标签扩展。 请参阅 [ID迁移](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) 以了解更多信息。
 
@@ -68,7 +69,7 @@ ht-degree: 7%
 
    ![查看身份](assets/configure-identities-screen.png)
 
-1. 提供以下详细信息，然后选择 **[!UICONTROL 创建]**.
+1. 提供如下详细信息，然后选择 **[!UICONTROL 创建]**.
 
    | 字段 | 值 |
    |---------------|-----------|
@@ -89,14 +90,10 @@ ht-degree: 7%
 >
 > 在 [创建身份](create-identities.md) 课程，您将学习如何在向Platform Edge Network发送身份信息时使用此命名空间。
 
-## 在生产沙盒中创建身份命名空间
-
-由于Web SDK扩展中的当前限制，还必须在生产沙盒中创建身份命名空间，才能使用命名空间将数据发送到开发沙盒。 因此，如果您在本教程中使用了开发沙盒，则还应创建 `Luma CRM ID` 生产沙盒中的命名空间。
-
 现在，标识已准备就绪，可以配置数据流。
 
 [下一步： ](configure-datastream.md)
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

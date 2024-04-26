@@ -2,17 +2,18 @@
 title: 使用Platform Web SDK设置Audience Manager
 description: 了解如何使用Platform Web SDK设置Adobe Audience Manager，并使用Cookie目标验证实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 solution: Data Collection, Audience Manager
+jira: KT-15409
 exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1340'
 ht-degree: 1%
 
 ---
 
 # 使用Platform Web SDK设置Audience Manager
 
-了解如何使用Platform Web SDK设置Adobe Audience Manager，并使用Cookie目标验证实施。
+了解如何使用Adobe Experience Platform Web SDK设置Adobe Audience Manager，并使用Cookie目标验证实施。
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) 是一种Adobe Experience Cloud解决方案，它提供了收集与网站访客有关的商业相关信息、创建可销售的区段以及向合适的受众提供定向广告和内容所需的一切。
 
@@ -35,7 +36,7 @@ ht-degree: 1%
 
 ## 配置数据流
 
-使用Platform Web SDK实现的Audience Manager与使用 [服务器端转发(SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). 服务器端转发将Adobe Analytics请求数据传递给Audience Manager。 Platform Web SDK实现将发送到平台Edge Network的XDM数据传递给Audience Manager。 数据流中启用了Audience Manager：
+使用Platform Web SDK实现的Audience Manager与使用 [服务器端转发(SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). 服务器端转发将Adobe Analytics请求数据传递给Audience Manager。 Platform Web SDK实现将发送到平台Edge Network的XDM数据传递给Audience Manager。 数据流中启用了Audience Manager：
 
 1. 转到 [数据收集](https://experience.adobe.com/#/data-collection){target="blank"} 界面
 1. 在左侧导航中，选择 **[!UICONTROL 数据流]**
@@ -96,12 +97,12 @@ ht-degree: 1%
 
 ## 创建区段
 
-下一步是创建 **区段**，并将新定义的特性分配给此区段。
+接下来的步骤是创建 **区段** 并将新定义的特性分配给此区段。
 
 1. 选择 **[!UICONTROL 受众数据]** 在顶部导航中选择 **[!UICONTROL 区段]**
 1. 选择 **[!UICONTROL 新增]** 以打开区段生成器
 1. 为您的区段提供友好的名称和描述，例如 `Platform Web SDK - Homepage visitors`
-1. **[!UICONTROL 选择文件夹]** 您的区段将保存在右侧的窗格中。 您可以通过以下方式创建文件夹 **选择+图标** 位于现有父文件夹旁边。 您可以命名此新文件夹 `Platform Web SDK tutorial`.
+1. **[!UICONTROL 选择文件夹]** 将区段保存在右侧的窗格中。 您可以通过以下方式创建文件夹 **选择+图标** 位于现有父文件夹旁边。 您可以命名此新文件夹 `Platform Web SDK tutorial`.
 1. 添加一个集成代码，在本例中为一组随机数字。
 1. 在 **[!UICONTROL 数据源]** 部分，选择 **[!UICONTROL Audience Manager]** 以及您之前创建的数据源
 1. 展开 **[!UICONTROL 特征]** 部分并搜索您创建的特征
@@ -184,4 +185,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

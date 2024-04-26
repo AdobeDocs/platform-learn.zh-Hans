@@ -2,21 +2,22 @@
 title: 使用Platform Web SDK设置同意
 description: 了解如何配置Experience PlatformWeb SDK标记扩展的隐私设置。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
 feature: Web SDK,Tags,Consent
+jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: aeff30f808fd65370b58eba69d24e658474a92d7
+source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
-source-wordcount: '1602'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
 
 # 使用Platform Web SDK设置同意
 
-了解如何配置Experience PlatformWeb SDK标记扩展的隐私设置。 根据访客与同意管理平台(CMP)中的横幅的交互来设置同意。
+了解如何配置Adobe Experience Platform Web SDK标记扩展的隐私设置。 根据访客与同意管理平台(CMP)中的横幅的交互来设置同意。
 
 >[!NOTE]
 > 
->出于演示目的，本教程使用 [克拉罗](https://heyklaro.com/) 作为一名CMP。 欢迎您使用Klaro或您在网站中使用的CMP来遵循。
+>出于演示目的，本教程使用 [克拉罗](https://klaro.org/) 作为一名CMP。 欢迎您使用Klaro或您在网站中使用的CMP来遵循。
 
 
 ## 学习目标
@@ -32,20 +33,21 @@ ht-degree: 0%
 您应该熟悉标记以及使用Debugger创建规则、数据元素、生成库到Experience Platform和切换标记库的步骤。
 
 在开始配置隐私设置并创建用于设置同意的规则之前，请确保已将同意管理平台脚本插入网站并正常运行。 CMP可以在站点开发人员的帮助下直接加载到源代码中，也可以通过标记本身进行加载。 这一课表明了后一种方法。
+
 >[!NOTE]
 > 
 >1. 同意管理平台（或CMP）由组织用来在收集、共享或销售来自在线源（如网站和应用程序）的访客数据之前，合法记录和管理访客的同意选择。
 >
->2. 插入CMP的推荐方法是直接通过源代码在标签管理器脚本之前插入。
+>2. 插入CMP的推荐方法是，直接通过源代码在标记管理器脚本之前插入。
 
 ### 配置Klaro
 
 在跳转到标记配置之前，请详细了解本教程Klaro中使用的同意管理平台。
 
-1. 访问 [克拉罗](https://heyklaro.com/) 并建立一个帐户。
+1. 访问 [克拉罗](https://klaro.org/) 并建立一个帐户。
 1. 转到 **隐私管理器** 并根据说明创建实例。
 1. 使用 **集成代码** 将Klaro插入到您的标记属性中（下面的练习将介绍相关说明）。
-1. 跳过 **扫描** 部分，因为它将检测Luma演示网站上经过硬编码的标记属性，而不是您为本教程构建的标记属性。
+1. 跳过 **扫描** 部分，因为它检测到Luma演示网站上硬编码的标记属性，而不是您为本教程构建的标记属性。
 1. 添加名为的服务 `aep web sdk` 并打开 **服务默认状态**. 打开时，默认同意值为 `true`，否则为 `false`. 当您想要确定您的Web应用程序的默认同意状态（在访客同意之前）时，此配置会很方便。 例如：
    * 对于CCPA，默认同意通常设置为 `true`. 您即将引用此方案为 **隐含的选择加入** 在本教程中
    * 对于GDPR，默认同意通常设置为 `false`. 您即将引用此方案为 **隐含的选择退出** 在本教程中。
@@ -183,7 +185,7 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 
    使用此配置时，Experience PlatformWeb SDK可确保不会触发任何请求，除非同意权限更改为 **[!UICONTROL 在]**. 访客通过选择加入手动接受Cookie可能会导致这种情况。
 
-1. 在Debugger中，确保Luma网站已映射到您的标记属性并且标记控制台日志记录已打开。
+1. 在Debugger中，确保Luma网站已映射到您的标记属性，并且标记控制台日志记录已打开。
 1. 使用浏览器的开发人员控制台 **清除站点数据** 在 **应用程序** > **存储**
 
 1. 重新加载Luma网站，您应该会看到 `defaultConsent` 设置为 **[!UICONTROL 去话]** 并且尚未发出任何Web SDK请求
@@ -218,10 +220,10 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 有关Web SDK中同意的更多信息，请参阅 [支持客户同意首选项](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-欲知关于 [!UICONTROL 设置同意] 操作，请参见 [设置同意](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
+欲知关于 [!UICONTROL 设置同意] 操作，请参见 [设置同意](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 [下一步： ](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
