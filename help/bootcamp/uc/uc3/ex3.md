@@ -1,6 +1,6 @@
 ---
-title: Bootcamp — 混合物理和数字 — Journey Optimizer创建历程和推送通知
-description: Bootcamp — 混合物理和数字 — Journey Optimizer创建历程和推送通知
+title: Bootcamp — 将物理和数字相结合 — Journey Optimizer创建您的历程和推送通知
+description: Bootcamp — 将物理和数字相结合 — Journey Optimizer创建您的历程和推送通知
 jira: KT-5342
 audience: developer
 doc-type: tutorial
@@ -9,10 +9,10 @@ solution: Journey Optimizer
 feature-set: Journey Optimizer
 feature: Events
 exl-id: be8c23ec-c5f8-4abc-849f-994446072a84
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: cd59a41f4533f18a54d80298ee9faf3a8ba3c6e7
 workflow-type: tm+mt
-source-wordcount: '831'
-ht-degree: 2%
+source-wordcount: '839'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 2%
 
 ![ACOP](./images/acophome.png)
 
-您将被重定向到 **主页**  在Journey Optimizer中查看。 首先，确保使用正确的沙盒。 调用要使用的沙盒 `Bootcamp`. 要从一个沙盒更改到另一个沙盒，请单击 **Prod** 并从列表中选择沙盒。 在此示例中，将沙盒命名为 **Bootcamp**. 然后，您将位于 **主页** 沙盒视图 `Bootcamp`.
+您将被重定向到 **主页**  在Journey Optimizer中查看。 首先，确保使用正确的沙盒。 调用要使用的沙盒 `Bootcamp`. 要从一个沙盒更改为另一个沙盒，请单击 **Prod** 并从列表中选择沙盒。 在此示例中，沙盒将命名为 **Bootcamp**. 然后你将进入 **主页** 沙盒视图 `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 ![ACOP](./images/journeyempty.png)
 
-在上一个练习中，您创建了一个 **事件**. 你给它起名是这样的 `yourLastNameBeaconEntryEvent` 和已替换 `yourLastName` 加上你的姓氏。 这是事件创建的结果：
+在上一个练习中，您创建了一个 **事件**. 你给它起名就象这样 `yourLastNameBeaconEntryEvent` 和已替换 `yourLastName` 你的姓氏。 这是创建事件的结果：
 
 ![ACOP](./images/eventdone.png)
 
@@ -50,13 +50,13 @@ ht-degree: 2%
 
 ![ACOP](./images/journeyevent.png)
 
-作为历程的第二步，您需要添加 **推送** 操作。 转到屏幕左侧，以访问 **操作**，选择 **推送** 操作，然后将其拖放到历程的第二个节点上。
+作为历程的第二步，您需要添加 **推送** 操作。 转到屏幕左侧： **操作**，选择 **推送** 操作，然后将其拖放到历程的第二个节点上。
 
 ![ACOP](./images/journeyactions.png)
 
 在屏幕右侧，您现在需要创建推送通知。
 
-设置 **类别** 到 **营销** 并选择一个允许您发送推送通知的推送表面。 在这种情况下，要选择的推送表面为 **mmeeewis-app-mobile-bootcamp**.
+设置 **类别** 到 **营销** 并选择一个允许您发送推送通知的推送表面。 在这种情况下，要选择的推送表面为 **mmeewis-app-mobile-bootcamp**.
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -84,7 +84,7 @@ ht-degree: 2%
 
 ![Journey Optimizer](./images/msg7.png)
 
-然后你就回来。 单击字段旁边的个性化图标 **正文**.
+你以后会回到这里的。 单击字段旁边的个性化图标 **正文**.
 
 ![Journey Optimizer](./images/msg11.png)
 
@@ -96,11 +96,11 @@ ht-degree: 2%
 
 ![ACOP](./images/jomsg3.png)
 
-单击 **事件**.
+单击 **活动**.
 
 ![ACOP](./images/jomsg4.png)
 
-单击事件的名称，其外观应如下所示： **yourLastNameBeaconEntryEvent**.
+单击事件的名称，它应如下所示： **yourLastNameBeaconEntryEvent**.
 
 ![ACOP](./images/jomsg5.png)
 
@@ -117,7 +117,7 @@ ht-degree: 2%
 ![ACOP](./images/jomsg8.png)
 
 单击 **+** 图标 **POI名称**.
-你就能看到这个了。 单击**保存**。
+你会看到这个。 单击**保存**。
 
 ![ACOP](./images/jomsg9.png)
 
@@ -131,24 +131,24 @@ ht-degree: 2%
 
 ## 3.3.2向屏幕发送消息
 
-作为历程的第三步，您需要添加 **sendMessageToScreen** 操作。 转到屏幕左侧，以访问 **操作**，选择 **sendMessageToScreen** 操作，然后将其拖放到历程中的第三个节点上。 你就能看到这个了。
+作为历程的第三步，您需要添加 **sendMessageToScreen** 操作。 转到屏幕左侧： **操作**，选择 **sendMessageToScreen** 操作，然后将其拖放到历程中的第三个节点。 你会看到这个。
 
 ![ACOP](./images/jomsg15.png)
 
-此 **sendMessageToScreen** action是一个自定义操作，它将向存储内显示使用的端点发布消息。 此 **sendMessageToScreen** 操作需要定义多个变量。 您可以向下滚动直到看到，以查看这些变量 **操作参数**.
+此 **sendMessageToScreen** 操作是一个自定义操作，用于将消息发布到店内显示使用的端点。 此 **sendMessageToScreen** 操作需要定义多个变量。 您可以通过向下滚动直到看到来查看这些变量 **操作参数**.
 
 ![ACOP](./images/jomsg16.png)
 
 现在，您需要设置每个操作参数的值。 请参阅此表以了解在何处需要哪些值。
 
-| 参数 | 值 |
+| 参数 | value |
 |:-------------:| :---------------:|
 | 投放 | `'image'` |
 | ECID | `@{yourLastNameBeaconEntryEvent._experienceplatform.identification.core.ecid}` |
 | 名字 | `#{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName}` |
 | 事件主题 | `#{ExperiencePlatform.ProductListItems.experienceevent.first(currentDataPackField.eventType == "commerce.productViews").productListItems.first().name}` |
 | EVENTSUBJECTURL | `#{ExperiencePlatform.ProductListItems.experienceevent.first(currentDataPackField.eventType == "commerce.productViews").productListItems.first()._experienceplatform.core.imageURL}` |
-| 沙盒 | `'bootcamp'` |
+| SANDBOX | `'bootcamp'` |
 | CONTAINERID | `''` |
 | ACTIVITYID | `''` |
 | PLACEMENTID | `''` |
@@ -167,11 +167,11 @@ ht-degree: 2%
 
 ![ACOP](./images/jomsg19.png)
 
-重复此过程以添加每个字段的值。
+重复此过程为每个字段添加值。
 
 >[!IMPORTANT]
 >
->对于字段ECID，有一个对事件的引用 `yourLastNameBeaconEntryEvent`. 请确保替换 `yourLastName` 用你的姓氏。
+>对于字段ECID，有对事件的引用 `yourLastNameBeaconEntryEvent`. 请确保替换 `yourLastName` 用你的姓氏。
 
 最终结果应如下所示：
 
@@ -181,7 +181,7 @@ ht-degree: 2%
 
 ![ACOP](./images/jomsg21.png)
 
-您仍需要为历程命名。 要执行此操作，请单击 **属性** 图标。
+您仍需要为历程命名。 为此，您可以单击 **铅笔** 图标。
 
 ![ACOP](./images/journeyname.png)
 
@@ -201,7 +201,7 @@ ht-degree: 2%
 
 ![ACOP](./images/published.png)
 
-您的历程现在处于实时状态，可以触发。
+您的历程现在处于实时状态，并且可以触发。
 
 您现在已经完成了此练习。
 
