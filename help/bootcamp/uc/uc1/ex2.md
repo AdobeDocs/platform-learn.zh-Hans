@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: develop
 feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
-source-git-commit: 47b9c3553bd0dae39f8271446dd15ee2f6df4d41
+source-git-commit: 5876de5015e4c8c337c235c24cc28b0a32e274dd
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '491'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Story
 
-在实时客户个人资料中，所有个人资料数据都与事件数据以及现有区段成员资格一起显示。 所显示的数据可以来自任何地方，包括Adobe应用程序和外部解决方案。 这是Adobe Experience Platform中最强大的视图，真正的体验记录体系。
+在实时客户个人资料中，所有个人资料数据都与事件数据以及现有受众成员资格一起显示。 所显示的数据可以来自任何地方，包括Adobe应用程序和外部解决方案。 这是Adobe Experience Platform中最强大的视图，真正的体验记录体系。
 
 ## 1.2.1使用Adobe Experience Platform中的“客户配置文件”视图
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 在继续之前，您需要选择 **沙盒**. 要选择的沙盒已命名 ``Bootcamp``. 您可以通过单击文本来执行此操作 **[!UICONTROL 生产生产]** 在屏幕顶部的蓝线上。 选择适当的 [!UICONTROL 沙盒]，您将会看到屏幕更改，现在您已进入专用页面 [!UICONTROL 沙盒].
 
-![数据获取](./images/sb1.png)
+
 
 在左侧菜单中，转到 **配置文件** 和 **浏览**.
 
@@ -39,6 +39,9 @@ ht-degree: 0%
 在网站上的“配置文件查看器”面板上，您可以找到身份概述。 每个身份都与命名空间关联。
 
 ![客户配置文件](./images/identities.png)
+
+
+
 
 使用Adobe Experience Platform时，所有ID都同等重要。 以前，ECID是Adobe上下文中最重要的ID，所有其他ID都以分层关系链接到ECID。 在Adobe Experience Platform中，情况已发生了变化，每个ID都可以被视为主标识符。
 
@@ -56,13 +59,13 @@ ht-degree: 0%
 
 ![客户配置文件](./images/profileee.png)
 
-最后，转到菜单选项 **区段成员资格**. 现在，您将看到所有符合此用户档案条件的区段。
+最后，转到菜单选项 **受众会员资格**. 您现在将看到符合此配置文件条件的所有受众。
 
 ![客户配置文件](./images/profileseg.png)
 
-现在，让我们创建一个新区段，以便您能够为匿名客户或已知客户打造个性化的客户体验。
+现在，让我们创建一个新受众，以便您为匿名客户或已知客户打造个性化的客户体验。
 
-下一步： [1.3创建区段 — UI](./ex3.md)
+下一步： [1.3创建受众 — UI](./ex3.md)
 
 [返回用户流程1](./uc1.md)
 
