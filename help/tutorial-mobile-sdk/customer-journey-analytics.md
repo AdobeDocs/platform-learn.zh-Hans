@@ -4,9 +4,9 @@ description: 了解如何使用Customer Journey Analytics报告和分析与移�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 9607ec77a891a85a8bae2a2622e74d59588e1dbf
+source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3410'
 ht-degree: 1%
 
 ---
@@ -85,9 +85,9 @@ Customer Journey Analytics中的连接从要用于报表和分析的Experience P
          | ODE DecisionEvents - *沙盒名称* 决策 | identityMap | 时间戳 | 移动应用程序数据 | 启用 | 启用 |
          | AJO推送跟踪体验事件数据集 | identityMap | 时间戳 | 移动应用程序数据 | 启用 | 启用 |
 
-         ![CJA连接3](assets/cja-connections-3.png)
-
       1. 选择 **[!UICONTROL 添加数据集]**.
+
+         ![CJA连接3](assets/cja-connections-3.png)
 
 1. 返回 **[!UICONTROL 连接]** > **[!UICONTROL Luma应用程序 — AEP Mobile SDK教程连接]**，选择 **[!UICONTROL 保存]** 以保存您的连接。
 
@@ -156,8 +156,6 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
       ![cja数据视图组件设置](assets/cja-dataview-component-settings.png)
 
    1. 现在，您已了解如何向数据视图添加字段并配置生成的组件，请使用下表列出要作为量度或维度添加的架构字段。 使用 **架构路径** 列值，以搜索或遍历特定架构字段。 拖放后，检查 **组件设置** 表中的列值，表示组件是否需要特定设置，如修改组件 **[!UICONTROL 组件名称]** 或定义 **[!UICONTROL 包括/排除值]**.
-
-      ![cja数据视图组件设置](assets/cja-dataview-component-settings.png)
 
       **量度**
 
@@ -232,9 +230,9 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
    1. 选择 **[!UICONTROL 空白工作区项目]** 弹出对话框中。
 
-      ![CJA项目 — 1](assets/cja-projects-1.png)
-
    1. 选择&#x200B;**[!UICONTROL 创建]**。
+
+      ![CJA项目 — 1](assets/cja-projects-1.png)
 
 1. 您将会看到 **[!UICONTROL 新建项目]** 界面。 在此界面中，您可以构建报告和可视化图表。
 
@@ -357,8 +355,10 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
    ![CJA项目18](assets/cja-projects-18.png)
 或者，您可以拖放 **[!UICONTROL 产品视图]** 下的维度 **[!UICONTROL 所有人员]** 中的维度 **[!UICONTROL 流失]** 可视化。
 
-1. 对重复上述步骤 **[!UICONTROL 产品添加到列表]** 和 **[!UICONTROL 购买]** 维度。 您的 **[!UICONTROL 流失]** 可视化图表现在以可视化形式显示产品的转化漏斗。
-   ![CJA项目19](assets/cja-projects-19.png)
+1. 对重复上述步骤 **[!UICONTROL 产品添加到列表]** 和 **[!UICONTROL 购买]** 维度。
+
+您的 **[!UICONTROL 流失]** 可视化图表现在以可视化形式显示产品的转化漏斗。
+![CJA项目19](assets/cja-projects-19.png)
 
 不要忘记保存您的项目！
 
