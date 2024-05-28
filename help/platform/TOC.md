@@ -1,14 +1,14 @@
 ---
 user-guide-title: Adobe Experience Platform 教程
 breadcrumb-title: 教程
-user-guide-description: 了解 Experience Platform 的多个组成部分。
+user-guide-description: 了解Experience Platform的众多组件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: fd571fccc93e8d99beb9dafbe432961488a4d94d
+source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
 workflow-type: tm+mt
-source-wordcount: '874'
-ht-degree: 16%
+source-wordcount: '876'
+ht-degree: 15%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 16%
 
 + [平台Tutorials](/help/platform/overview.md)
 + Platform简介 {#intro-to-platform}
-   + [由Experience Platform提供支持的客户体验](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+   + [以 Experience Platform 为动力的客户体验](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [幕后：由Experience Platform提供支持的客户体验](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience Platform 概述](/help/platform/intro-to-platform/overview.md)
    + [主要功能](/help/platform/intro-to-platform/key-capabilities.md)
@@ -78,9 +78,8 @@ ht-degree: 16%
    + [强制同意](/help/platform/governance/enforce-consent.md)
    + [与IAB透明度和同意框架2.0集成](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 数据保健 {#data-hygiene}
-   + [删除数据集](/help/platform/data-hygiene/delete-datasets.md)
    + [假名配置文件和事件过期](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
-+ 数据引入 {#data-ingestion}
++ 数据摄取 {#data-ingestion}
    + [概述](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批量摄取概述](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [创建和填充数据集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
@@ -91,11 +90,13 @@ ht-degree: 16%
    + [从云存储中摄取数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=zh-Hans)
    + [从CRM引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=zh-Hans)
    + [从数据库引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
-   + [流式摄取概述](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
+   + [流摄取概述](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
    + [使用 HTTP API 流式传输数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
    + [使用源连接器流式传输数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=zh-Hans)
    + [Web SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Mobile SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
++ 数据生命周期 {#data-lifecycle}
+   + [使数据集过期](/help/platform/data-lifecycle/expire-datasets.md)
 + 数据科学工作区 {#data-science-workspace}
    + [概述](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
    + [架构](data-science-workspace/architecture-overview.md)
@@ -145,7 +146,7 @@ ht-degree: 16%
    + [客户人工智能价值](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [配置客户人工智能](/help/platform/intelligent-services/configure-customer-ai.md)
    + [使用客户人工智能评分和分析](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ 监测{#monitoring}
++ 监控 {#monitoring}
    + [监测数据摄取](/help/platform/monitoring/monitoring-dashboard.md)
    + [监测区段激活](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [监测数据流](/help/platform/monitoring/data-monitoring.md)
