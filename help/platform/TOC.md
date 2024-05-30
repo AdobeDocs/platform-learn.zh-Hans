@@ -5,10 +5,10 @@ user-guide-description: 了解Experience Platform的众多组件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 39a2297c90162bde5ae9c99d5a2061a801434215
+source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
 workflow-type: tm+mt
-source-wordcount: '876'
-ht-degree: 15%
+source-wordcount: '890'
+ht-degree: 14%
 
 ---
 
@@ -78,7 +78,10 @@ ht-degree: 15%
    + [强制同意](/help/platform/governance/enforce-consent.md)
    + [与IAB透明度和同意框架2.0集成](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 数据保健 {#data-hygiene}
-   + [假名配置文件和事件过期](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [假名配置文件和事件过期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [数据卫生数据准备](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [使数据集过期](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [更新配置文件属性](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 数据摄取 {#data-ingestion}
    + [概述](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批量摄取概述](/help/platform/data-ingestion/batch-ingestion-overview.md)
