@@ -1,14 +1,14 @@
 ---
 title: 使用Platform Web SDK设置Journey Optimizer Web渠道
-description: 了解如何使用Platform Web SDK实施Journey Optimizer Web渠道。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
+description: 了解如何使用Platform Web SDK实施Journey Optimizer Web渠道。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '2892'
+source-wordcount: '2563'
 ht-degree: 0%
 
 ---
@@ -133,55 +133,6 @@ ht-degree: 0%
 
 由于本教程面向实施者，因此需要注意的是，本课程涉及Journey Optimizer中的大量界面工作。 虽然此类界面任务通常由营销人员处理，但对于实施者而言，深入了解该流程可能会有所帮助，即使他们通常不负责Web渠道营销活动创建。
 
-### 创建忠诚度模式并摄取示例数据
-
-将Web SDK数据摄取到Adobe Experience Platform中后，可以通过已摄取到Platform中的其他数据源来扩充这些数据。 例如，当用户登录到Luma网站时，将在Experience Platform中构建身份图，并且所有其他启用配置文件的数据集可能会连接在一起，以构建实时客户配置文件。 要查看其实际效果，请快速在Adobe Experience Platform中创建另一个包含一些忠诚度数据示例的数据集，以便您可以在Journey Optimizer Web营销活动中使用实时客户个人资料。 由于您已经进行了类似的练习，因此说明将非常简短。
-
-创建忠诚度模式：
-
-1. 创建新架构
-1. 选择 **[!UICONTROL 个人资料]** 作为 [!UICONTROL 基类]
-1. 命名架构 `Luma Loyalty Schema`
-1. 添加 [!UICONTROL 忠诚度详细信息] 字段组
-1. 添加 [!UICONTROL 人口统计详细信息] 字段组
-1. 选择 `Person ID` 字段并将其标记为 [!UICONTROL 标识] 和 [!UICONTROL 主要身份] 使用 `Luma CRM Id` [!UICONTROL 身份命名空间].
-1. 为以下对象启用架构 [!UICONTROL 个人资料]
-
-   ![忠诚度模式](assets/web-channel-loyalty-schema.png)
-
-要创建数据集并摄取示例数据，请执行以下操作：
-
-1. 从创建新数据集 `Luma Loyalty Schema`
-1. 命名数据集 `Luma Loyalty Dataset`
-1. 为以下项启用数据集 [!UICONTROL 个人资料]
-1. 下载样例文件 [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
-1. 将文件拖放到数据集中
-1. 确认已成功摄取数据
-
-   ![忠诚度模式](assets/web-channel-loyalty-dataset.png)
-
-### 创建受众
-
-受众会根据常见特征将用户档案分组在一起。 构建可在Web营销活动中使用的快速受众：
-
-1. 在Experience Platform界面中，转到 **[!UICONTROL 受众]** 在左侧导航中
-1. 选择 **[!UICONTROL 创建受众]**
-1. 选择 **[!UICONTROL 生成规则]**
-1. 选择 **[!UICONTROL 创建]**
-
-   ![创建受众](assets/web-campaign-create-audience.png)
-
-1. 选择 **[!UICONTROL 属性]**
-1. 查找 **[!UICONTROL 忠诚度]** > **[!UICONTROL 层]** 字段并将其拖动到 **[!UICONTROL 属性]** 部分
-1. 将受众定义为用户，其 `tier` 是 `gold`
-1. 为受众命名 `Luma Loyalty Rewards – Gold Status`
-1. 选择 **[!UICONTROL Edge]** 作为 **[!UICONTROL 评估方法]**
-1. 选择 **[!UICONTROL 保存]**
-
-   ![定义受众](assets/web-campaign-define-audience.png)
-
-由于这是一个非常简单的受众，因此我们可以使用边缘评估方法。 Edge受众会在边缘进行评估，因此在Web SDK向PlatformEdge Network发出的相同请求中，我们可以评估受众定义并立即确认用户是否符合条件。
-
 ### 创建忠诚度奖励营销活动
 
 现在，您已摄取我们的示例忠诚度数据并创建我们的区段，请在Adobe Journey Optimizer中创建忠诚度奖励网络渠道营销活动。
@@ -270,7 +221,7 @@ ht-degree: 0%
 
 1. 还可以使用将个性化内容添加到容器中 **[!UICONTROL 表达式编辑器]**.
 
-   ![添加个性化内容](assets/web-channel-add-basic-personalization.png)
+   ![添加个性化](assets/web-channel-add-basic-personalization.png)
 
 1. 确保正确跟踪点击体验。 选择 **[!UICONTROL 点击跟踪元素]** 从上下文菜单中。
 

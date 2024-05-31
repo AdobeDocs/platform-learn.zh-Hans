@@ -1,13 +1,13 @@
 ---
 title: 为Platform Web SDK创建数据元素
-description: 了解如何在标记中创建XDM对象并将数据元素映射到该对象。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
+description: 了解如何在标记中创建XDM对象并将数据元素映射到该对象。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 1%
+source-wordcount: '1306'
+ht-degree: 2%
 
 ---
 
@@ -256,29 +256,41 @@ window.adobeDataLayer.push({
 >
 >此 [!UICONTROL JavaScript变量] 数据元素类型将数组引用视为圆点而不是方括号，因此引用username数据元素为 `digitalData.user[0].profile[0].attributes.username` **不起作用**.
 
-## 创建变量数据元素
+## 为XDM和数据对象创建变量数据元素
 
-创建数据元素后，使用 **[!UICONTROL 变量]** 定义用于XDM对象的架构的数据元素。 此对象应符合您在以下期间创建的XDM架构： [配置架构](configure-schemas.md) 上课。
+您刚刚创建的数据元素将用于构建XDM对象（适用于Platform应用程序）和数据对象(适用于Analytics、Target和Audience Manager)。 这些对象具有属于自己的特殊数据元素，称为 **[!UICONTROL 变量]** 很容易创建的数据元素。
 
-要创建Variable数据元素：
+要为XDM创建Variable数据元素，请将其绑定到您在 [配置架构](configure-schemas.md) 教训：
 
 1. 选择 **[!UICONTROL 添加数据元素]**
 1. 命名数据元素 `xdm.variable.content`. 建议您为特定于XDM的数据元素添加“xdm”前缀，以便更好地组织标记属性
 1. 选择 **[!UICONTROL Adobe Experience Platform Web SDK]** 作为 **[!UICONTROL 扩展名]**
 1. 选择 **[!UICONTROL 变量]** 作为 **[!UICONTROL 数据元素类型]**
+1. 选择 **[!UICONTROL XDM]** 作为 **[!UICONTROL 属性]**
 1. 选择适当的Experience Platform **[!UICONTROL 沙盒]**
 1. 选择适当的 **[!UICONTROL 架构]**，在本例中 `Luma Web Event Data`
 1. 选择 **[!UICONTROL 保存]**
 
-   ![变量数据元素](assets/analytics-tags-data-element-xdm-variable.png)
+   ![XDM的变量数据元素](assets/analytics-tags-data-element-xdm-variable.png)
+
+接下来，为数据对象创建变量数据元素：
+
+1. 选择 **[!UICONTROL 添加数据元素]**
+1. 命名数据元素 `data.variable`. 建议您在数据对象的特定数据元素中添加“data”作为前缀，以更好地组织标记属性
+1. 选择 **[!UICONTROL Adobe Experience Platform Web SDK]** 作为 **[!UICONTROL 扩展名]**
+1. 选择 **[!UICONTROL 变量]** 作为 **[!UICONTROL 数据元素类型]**
+1. 选择 **[!UICONTROL 数据]** 作为 **[!UICONTROL 属性]**
+1. 选择 **[!UICONTROL 保存]**
+
+   ![数据对象的变量数据元素](assets/data-element-data-variable.png.png)
 
 
 在这些步骤结束时，您应该创建以下数据元素：
 
 | 核心扩展数据元素 | Platform Web SDK扩展数据元素 |
 -----------------------------|-------------------------------
-| `cart.orderId` | `xdm.variable.content` |
-| `cart.productInfo` | |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `xdm.variable.content` |
 | `cart.productInfo.purchase` | |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
@@ -291,7 +303,7 @@ window.adobeDataLayer.push({
 
 >[!TIP]
 >
->在未来 [创建标记规则](create-tag-rule.md) 课程，您学习如何 **[!UICONTROL 变量]** 数据元素允许您使用将多个规则栈叠在标记中 **[!UICONTROL 更新变量操作类型]**.
+>在未来 [创建标记规则](create-tag-rule.md) 课程，您学习如何 **[!UICONTROL 变量]** 数据元素允许您使用 **[!UICONTROL 更新变量操作类型]**.
 
 设置这些数据元素后，您就可以开始使用标记规则将数据发送到PlatformEdge Network。 但首先，了解如何使用Web SDK收集身份。
 

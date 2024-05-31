@@ -1,23 +1,27 @@
 ---
 title: 为Web数据创建XDM架构
-description: 了解如何在数据收集界面中为Web数据创建XDM架构。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
+description: 了解如何在数据收集界面中为Web数据创建XDM架构。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
 workflow-type: tm+mt
-source-wordcount: '1498'
-ht-degree: 1%
+source-wordcount: '1542'
+ht-degree: 3%
 
 ---
 
 # 为Web数据创建XDM架构
 
-了解如何在Adobe Experience Platform数据收集界面中为Web数据创建XDM架构。
+了解如何在 Adobe Experience Platform 数据收集界面中为 Web 数据创建 XDM 架构。
 
 体验数据模型(XDM)架构是在Adobe Experience Platform中收集数据的构建块、原则和最佳实践。
 
 Platform Web SDK使用您的架构来标准化Web事件数据，将其发送到PlatformEdge Network，并最终将数据转发到数据流中配置的任何Experience Cloud应用程序。 此步骤至关重要，因为它定义了将客户体验数据提取到Experience Platform中所需的标准数据模型，并支持基于这些标准构建的下游服务和应用程序。
+
+>[!NOTE]
+>
+>XDM架构是 _非必填_ 使用Web SDK实施Adobe Analytics、Adobe Target或Adobe Audience Manager(数据可在 `data` 对象而不是 `xdm` 对象)。 对于平台原生应用程序(如Journey Optimizer、Real-time Customer Data Platform、Customer Journey Analytics)的最高性能实施，需要XDM架构。 虽然您可以决定不在自己的实施中使用XDM架构，但您应在本教程中这样做。
 
 ## 为什么要为数据建模？
 
@@ -111,8 +115,7 @@ XDM架构是描述Experience Platform数据的标准方式，允许与架构匹�
 > 
 >在本练习中，您将为Web数据收集添加推荐的预定义字段组： _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ 和 _**[!UICONTROL 使用者体验事件]**_.
 >
->
-> 如果您仅实施 **Adobe Analytics** 使用Web SDK，并且不向发送任何数据 **Experience Platform**，使用 [!UICONTROL Adobe Analytics ExperienceEvent模板] 字段组以定义XDM架构。 此函数用于 [设置Analytics](setup-analytics.md) 上课。
+
 
 1. 在 **[!UICONTROL 字段组]** 部分，选择 **[!UICONTROL 添加]**
 

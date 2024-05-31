@@ -1,18 +1,18 @@
 ---
 title: 使用Platform Web SDK将数据流式传输到Adobe Experience Platform
-description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
+description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
 workflow-type: tm+mt
-source-wordcount: '1592'
-ht-degree: 4%
+source-wordcount: '1940'
+ht-degree: 5%
 
 ---
 
 # 使用Web SDK流式传输数据以Experience Platform
 
-了解如何使用Platform Web SDK将Web数据流式传输到Adobe Experience Platform。
+了解如何使用 Platform Web SDK 将 Web 数据传输到 Adobe Experience Platform。
 
 Experience Platform是所有新Experience Cloud应用程序(如Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer)的支柱。 这些应用程序旨在使用Platform Web SDK作为它们的最佳的Web数据收集方法。
 
@@ -53,7 +53,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 1. 选择 **[!UICONTROL 从架构创建数据集]** option
 
-   ![使用模式创建数据集](assets/experience-platform-create-dataset-schema.png)。
+   ![从架构创建数据集](assets/experience-platform-create-dataset-schema.png)
 
 1. 选择 `Luma Web Event Data` 在中创建的模式 [早先的教训](configure-schemas.md) 然后选择 **[!UICONTROL 下一个]**
 
@@ -214,11 +214,11 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 1. 作为 **[!UICONTROL 身份命名空间]** 使用 `lumaCRMId`
 1. 复制并粘贴的值 `lumaCRMId` 传入了您在Experience Platform调试器中检查的调用，在本例中 `112ca06ed53d3db37e4cea49cc45b71e`.
 
-   ![用户档案](assets/experience-platform-validate-dataset-profile.png)
+   ![个人资料](assets/experience-platform-validate-dataset-profile.png)
 
 1. 如果配置文件中存在有效的值， `lumaCRMId`，控制台中会填充配置文件ID：
 
-   ![用户档案](assets/experience-platform-validate-dataset-profile-set.png)
+   ![个人资料](assets/experience-platform-validate-dataset-profile-set.png)
 
 1. 查看完整的 **[!UICONTROL 客户配置文件]** 对于每个ID，选择 **[!UICONTROL 配置文件ID]** 在主窗口中。
 
@@ -232,6 +232,57 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
    ![客户配置文件](assets/experience-platform-validate-dataset-custProfile.png)
 
 您现在已为Experience Platform启用了Platform Web SDK(和Real-Time CDP！ 还有Journey Optimizer！ 还有Customer Journey Analytics！)。
+
+### 创建忠诚度模式并摄取示例数据
+
+Real-time Customer Data Platform和Journey Optimizer的客户可望完成本练习。
+
+将Web SDK数据摄取到Adobe Experience Platform中后，可以通过已摄取到Platform中的其他数据源来扩充这些数据。 例如，当用户登录到Luma网站时，将在Experience Platform中构建身份图，并且所有其他启用配置文件的数据集可能会连接在一起，以构建实时客户配置文件。 要查看其实际效果，请快速在Adobe Experience Platform中创建另一个包含一些忠诚度数据示例的数据集，以便您可以将实时客户配置文件与Real-time Customer Data Platform和Journey Optimizer结合使用。 由于您已经进行了类似的练习，因此会提供简短的说明。
+
+创建忠诚度模式：
+
+1. 创建新架构
+1. 选择 **[!UICONTROL 个人资料]** 作为 [!UICONTROL 基类]
+1. 命名架构 `Luma Loyalty Schema`
+1. 添加 [!UICONTROL 忠诚度详细信息] 字段组
+1. 添加 [!UICONTROL 人口统计详细信息] 字段组
+1. 选择 `Person ID` 字段并将其标记为 [!UICONTROL 标识] 和 [!UICONTROL 主要身份] 使用 `Luma CRM Id` [!UICONTROL 身份命名空间].
+1. 为以下对象启用架构 [!UICONTROL 个人资料]
+
+   ![忠诚度模式](assets/web-channel-loyalty-schema.png)
+
+要创建数据集并摄取示例数据，请执行以下操作：
+
+1. 从创建新数据集 `Luma Loyalty Schema`
+1. 命名数据集 `Luma Loyalty Dataset`
+1. 为以下项启用数据集 [!UICONTROL 个人资料]
+1. 下载样例文件 [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
+1. 将文件拖放到数据集中
+1. 确认已成功摄取数据
+
+   ![忠诚度模式](assets/web-channel-loyalty-dataset.png)
+
+### 创建受众
+
+受众会根据常见特征将用户档案分组在一起。 构建可在Web营销活动中使用的快速受众：
+
+1. 在Experience Platform界面中，转到 **[!UICONTROL 受众]** 在左侧导航中
+1. 选择 **[!UICONTROL 创建受众]**
+1. 选择 **[!UICONTROL 生成规则]**
+1. 选择 **[!UICONTROL 创建]**
+
+   ![创建受众](assets/web-campaign-create-audience.png)
+
+1. 选择 **[!UICONTROL 属性]**
+1. 查找 **[!UICONTROL 忠诚度]** > **[!UICONTROL 层]** 字段并将其拖动到 **[!UICONTROL 属性]** 部分
+1. 将受众定义为用户，其 `tier` 是 `gold`
+1. 为受众命名 `Luma Loyalty Rewards – Gold Status`
+1. 选择 **[!UICONTROL Edge]** 作为 **[!UICONTROL 评估方法]**
+1. 选择 **[!UICONTROL 保存]**
+
+   ![定义受众](assets/web-campaign-define-audience.png)
+
+由于这是一个非常简单的受众，因此我们可以使用边缘评估方法。 Edge受众会在边缘进行评估，因此在Web SDK向PlatformEdge Network发出的相同请求中，我们可以评估受众定义并立即确认用户是否符合条件。
 
 
 [下一步： ](setup-analytics.md)
