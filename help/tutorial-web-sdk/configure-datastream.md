@@ -1,19 +1,19 @@
 ---
 title: 为Platform Web SDK配置数据源
-description: 了解如何启用数据流并配置Experience Cloud解决方案。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
+description: 了解如何启用数据流并配置Experience Cloud解决方案。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 3%
+source-wordcount: '536'
+ht-degree: 7%
 
 ---
 
 # 配置数据流
 
-了解如何为Adobe Experience Platform Web SDK配置数据流。
+了解如何为 Adobe Experience Platform Web SDK 配置数据流。
 
 [数据流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) 告诉Adobe Experience PlatformEdge Network要将通过Platform Web SDK收集的数据发送到何处。 在数据流配置中，您可以启用Experience Cloud应用程序、Experience Platform帐户和事件转发。
 
@@ -55,9 +55,9 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >仅当使用时才需要选择架构 [为数据收集准备数据](/help/data-collection/edge/data-prep.md) 功能。
+   >您无需选择架构。 仅当使用 [为数据收集准备数据](/help/data-collection/edge/data-prep.md) 功能。
 
-在下一个屏幕上，您可以向数据流添加Adobe应用程序等服务，但此时您不会在本教程中添加任何服务。 您将在后面的课程中这样做 [设置Experience Platform](setup-experience-platform.md)， [设置Analytics](setup-analytics.md)， [设置Audience Manager](setup-audience-manager.md)， [设置目标](setup-target.md)，或 [事件转发](setup-event-forwarding.md).
+在下一个屏幕上，您可以向数据流添加Adobe应用程序等服务，但此时不会添加任何服务。 您将在后面的课程中这样做 [设置Experience Platform](setup-experience-platform.md)， [设置Analytics](setup-analytics.md)， [设置Audience Manager](setup-audience-manager.md)， [设置目标](setup-target.md)，或 [事件转发](setup-event-forwarding.md).
 
 >[!NOTE]
 >

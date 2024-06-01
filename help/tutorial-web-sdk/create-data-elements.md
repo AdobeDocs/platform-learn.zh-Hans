@@ -4,9 +4,9 @@ description: 了解如何在标记中创建XDM对象并将数据元素映射到�
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1337'
 ht-degree: 2%
 
 ---
@@ -100,14 +100,14 @@ window.adobeDataLayer.push({
 优点
 
 * 无需重新映射到数据层变量到XDM的其他步骤
-* 如果您的开发团队拥有标记数字行为，部署可能会更快
+* 如果您的Web开发团队也拥有标记数字行为，则部署可能会更快
 
 缺点
 
 * 完全依靠开发团队和开发周期来更新要传输到XDM的数据
 * XDM从数据层接收确切的有效负载时灵活性有限
 * 无法使用内置标记功能（例如刮擦功能、持久性功能和快速部署功能）
-* 无法将数据层用于第三方像素
+* 将数据层用于第三方像素比较困难(但您可能希望将这些像素移动到 [事件转发](setup-event-forwarding.md)！
 * 无法转换数据层和XDM之间的数据
 
 ### 在标记中映射数据层
@@ -267,7 +267,7 @@ window.adobeDataLayer.push({
 1. 选择 **[!UICONTROL Adobe Experience Platform Web SDK]** 作为 **[!UICONTROL 扩展名]**
 1. 选择 **[!UICONTROL 变量]** 作为 **[!UICONTROL 数据元素类型]**
 1. 选择 **[!UICONTROL XDM]** 作为 **[!UICONTROL 属性]**
-1. 选择适当的Experience Platform **[!UICONTROL 沙盒]**
+1. 选择 **[!UICONTROL 沙盒]** 在其中创建了架构
 1. 选择适当的 **[!UICONTROL 架构]**，在本例中 `Luma Web Event Data`
 1. 选择 **[!UICONTROL 保存]**
 
@@ -280,6 +280,7 @@ window.adobeDataLayer.push({
 1. 选择 **[!UICONTROL Adobe Experience Platform Web SDK]** 作为 **[!UICONTROL 扩展名]**
 1. 选择 **[!UICONTROL 变量]** 作为 **[!UICONTROL 数据元素类型]**
 1. 选择 **[!UICONTROL 数据]** 作为 **[!UICONTROL 属性]**
+1. 在本教程中，选择要实施的Experience Cloud解决方案
 1. 选择 **[!UICONTROL 保存]**
 
    ![数据对象的变量数据元素](assets/data-element-data-variable.png.png)

@@ -1,13 +1,13 @@
 ---
 title: 安装和配置Adobe Experience Platform Web SDK标记扩展
-description: 了解如何在数据收集界面中安装和配置Platform Web SDK标记扩展。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
+description: 了解如何在数据收集界面中安装和配置Platform Web SDK标记扩展。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 9%
+source-wordcount: '607'
+ht-degree: 11%
 
 ---
 
@@ -61,6 +61,7 @@ ht-degree: 9%
 保留大部分默认设置，以后根据需要进行更新。 您现在必须执行的唯一操作是将扩展链接到数据流：
 
 1. 下 **[!UICONTROL 数据流]**，选择 **[!UICONTROL 从列表选择]** 输入法
+1. 选择您在其中创建架构、身份命名空间和数据流的沙盒
 1. 选择您之前创建的数据流， `Luma Web SDK`
 1. 选择 **[!UICONTROL 保存]**
 

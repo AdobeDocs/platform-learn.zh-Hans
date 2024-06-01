@@ -4,9 +4,9 @@ description: 了解如何使用Experience PlatformWeb SDK设置Adobe Analytics�
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '2735'
+source-wordcount: '2865'
 ht-degree: 1%
 
 ---
@@ -74,15 +74,15 @@ Platform Web SDK将数据从您的网站发送到PlatformEdge Network。 然后�
 1. 在Analytics处理规则中将XDM字段映射到Analytics变量（不再推荐）。
 1. 直接在XDM架构中映射到Analytics变量（不再推荐）。
 
-自2024年5月起，您不再需要创建XDM模式来使用Platform Web SDK实施Adobe Analytics。 此 `data` 对象(以及 `data.variable` 您在本教程中创建的数据元素)可用于设置所有自定义Analytics变量。 现有Analytics客户将会很熟悉在数据对象中设置这些变量，并且比使用处理规则界面更有效，还可以防止不必要的数据占用实时客户配置文件中的空间(如果您有Real-time Customer Data Platform或Journey Optimizer，这一点很重要)。
+自2024年5月起，您不再需要创建XDM模式来使用Platform Web SDK实施Adobe Analytics。 此 `data` 对象(以及 `data.variable` 您在中创建的数据元素 [创建数据元素](create-data-elements.md) 课程)可用于设置所有自定义Analytics变量。 现有Analytics客户将会很熟悉在数据对象中设置这些变量，并且比使用处理规则界面更有效，还可以防止不必要的数据占用实时客户配置文件中的空间(如果您有Real-time Customer Data Platform或Journey Optimizer，这一点很重要)。
 
 ### 自动映射的字段
 
 许多XDM字段会自动映射到Analytics变量。 有关最新的映射列表，请参阅 [Analytics Experience Edge中的Adobe变量映射](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-出现以下情况时，会发生这种情况 _即使您尚未定义自定义架构_. Experience PlatformWeb SDK会自动收集一些数据，并将这些数据作为XDM字段发送到PlatformEdge Network。 例如，Web SDK读取当前页面URL并将其发送为 `web.webPageDetails.URL`. 此字段将转发到Adobe Analytics，并自动在Adobe Analytics中填充页面URL报表。
+出现以下情况时，会发生这种情况 _即使您尚未定义自定义架构_. Experience PlatformWeb SDK会自动收集一些数据，并将其作为XDM字段发送到PlatformEdge Network。 例如，Web SDK读取当前页面URL并将其作为XDM字段发送 `web.webPageDetails.URL`. 此字段将转发到Adobe Analytics，并且它会自动在Adobe Analytics中填充页面URL报表。
 
-当您实施适用于Analytics和基于平台的应用程序的Web SDK时，您将创建一个自定义XDM架构，就像您在本教程中的 [配置架构](configure-schemas.md) 上课。 您已实施自动映射到Analytics变量的某些XDM字段，如下表中所述：
+如果您使用XDM架构实施适用于Adobe Analytics的Web SDK，如本教程中所述，则您已经自定义实施了一些自动映射到Analytics变量的XDM字段，如下表所述：
 
 | XDM到Analytics的自动映射变量 | Adobe Analytics变量 |
 |-------|---------|
@@ -103,15 +103,18 @@ Platform Web SDK将数据从您的网站发送到PlatformEdge Network。 然后�
 
 Analytics产品字符串的各个部分通过下的不同XDM变量进行设置。 `productListItems` 对象。
 
+>[!NOTE]
+>
 >截至2022年8月18日， `productListItems[].SKU` 具有映射到s.products变量中的产品名称的优先级。
 >值设置为 `productListItems[].name` 仅在以下情况下映射到产品名称： `productListItems[].SKU` 不存在。 否则，它将被取消映射，并可用于上下文数据。
 >请勿将空字符串或null设置为 `productListItems[].SKU`. 这会产生不需要的效果，即映射到s.products变量中的产品名称。
 
+
 ### 在数据对象中设置变量
 
-在中设置变量 `data` 推荐使用对象来通过Web SDK设置Analytics变量。 在数据对象中设置变量还可以覆盖任何自动映射的变量。
+但evar、prop和事件呢？ 在中设置变量 `data` 推荐使用Web SDK来设置这些Analytics变量。 在数据对象中设置变量还可以覆盖任何自动映射的变量。
 
-首先，什么是 `data` 对象？ 在任何Web SDK事件中，您可以使用自定义数据发送两个对象，即 `data` 对象和 `xdm` 对象。 两者都会发送到PlatformEdge Network，但仅限 `xdm` 对象将发送到Experience Platform数据集。 中的属性 `data` 对象可以在Edge上映射到 `xdm` 字段使用为数据收集准备数据功能，否则不会发送到Experience Platform。 这使其成为将数据发送到Analytics等并非基于Experience Platform构建的原生应用程序的理想方式。
+首先，什么是 `data` 对象？ 在任何Web SDK事件中，您可以使用自定义数据发送两个对象，即 `xdm` 对象和 `data` 对象。 两者都会发送到PlatformEdge Network，但仅限 `xdm` 对象将发送到Experience Platform数据集。 中的属性 `data` 对象可以在Edge上映射到 `xdm` 字段使用为数据收集准备数据功能，否则不会发送到Experience Platform。 这使其成为将数据发送到Analytics等并非基于Experience Platform构建的原生应用程序的理想方式。
 
 以下是通用Web SDK调用中的两个对象：
 
@@ -119,9 +122,28 @@ Analytics产品字符串的各个部分通过下的不同XDM变量进行设置�
 
 Adobe Analytics配置为在 `data.__adobe.analytics` 对象，并将其用于Analytics变量。
 
-现在，让我们开始吧。
+现在，让我们看看这是如何运行的。 让我们设置 `eVar1` 和 `prop1` 页面名称，并了解如何覆盖XDM映射的值
 
-我们使用 `data.variable` 数据元素t
+1. 打开标记规则 `all pages - library loaded - set global variables - 1`
+1. 添加新 **[!UICONTROL 操作]**
+1. 选择 **[!UICONTROL Adobe Experience Platform Web SDK]** 扩展
+1. 选择 **[!UICONTROL 操作类型]** 作为 **[!UICONTROL 更新变量]**
+1. 选择 `data.variable` 作为 **[!UICONTROL 数据元素]**
+1. 选择 **[!UICONTROL 分析]** 对象
+1. 设置 `eVar1` 作为 `page.pageInfo.pageName` 数据元素
+1. 设置 `prop1` 以复制 `eVar1`
+1. 要测试XDM映射值的覆盖，请在 **[!UICONTROL 其他属性]** 部分将页面名称设置为静态值 `test`
+1. 保存规则
+
+
+现在，我们需要在发送事件规则中包含数据对象。
+
+1. 打开标记规则 `all pages - library loaded - send event - 50`
+1. 打开 **[!UICONTROL 发送事件]** 操作
+1. 选择 `data.variable` 作为 **[!UICONTROL 数据]**
+1. 选择 **[!UICONTROL 保留更改]**
+1. 选择 **[!UICONTROL 保存]**
+
 
 
 <!--
@@ -219,9 +241,10 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 下 **[!UICONTROL 扩展名]**，选择 **[!UICONTROL 核心]**
 
-1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL 库已加载]**
+1. 下 **[!UICONTROL 事件类型]**，选择 **[!UICONTROL Library Loaded (Page Top)]**
 
 1. 选择以打开 **[!UICONTROL 高级选项]**，键入 `51`. 这可确保规则在 `all pages - library loaded - send event - 50` 设置基线XDM **[!UICONTROL 更新变量]** 操作类型。
+1. 选择 **[!UICONTROL 保留更改]**
 
    ![Analytics报表包覆盖](assets/set-up-analytics-rs-override.png)
 
@@ -247,9 +270,9 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 作为 **[!UICONTROL 操作类型]**，选择 **[!UICONTROL 发送事件]**
 
-1. 作为 **[!UICONTROL 类型]**，选择 `web.webpagedetails.pageViews`
-
 1. 作为 **[!UICONTROL XDM数据]**，选择 `xdm.variable.content` 您在中创建的数据元素 [创建数据元素](create-data-elements.md) 课程
+
+1. 作为 **[!UICONTROL 数据]**，选择 `data.variable` 您在中创建的数据元素 [创建数据元素](create-data-elements.md) 课程
 
    ![Analytics数据流覆盖](assets/set-up-analytics-datastream-override-1.png)
 
@@ -261,7 +284,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
    >
    >    此选项卡确定覆盖发生在哪个标记环境中。 对于此练习，您只指定了开发环境，但在将此体验部署到生产环境时，请记得也在 **[!UICONTROL 生产]** 环境。
 
-
+1. 选择 **[!UICONTROL 沙盒]** 在本教程中，您将使用
 1. 选择 **[!UICONTROL 数据流]**，在本例中 `Luma Web SDK: Development Environment`
 
 1. 下 **[!UICONTROL 报表包]**，选择要覆盖的报表站点。 在本例中， `tmd-websdk-course-stg`.
@@ -275,7 +298,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 ## 构建开发环境
 
-将新的数据元素和规则添加到 `Luma Web SDK Tutorial` 标记库并重新构建开发环境。
+将更新后的规则添加到 `Luma Web SDK Tutorial` 标记库并重新构建开发环境。
 
 恭喜！下一步是通过Experience PlatformWeb SDK验证Adobe Analytics实施。
 

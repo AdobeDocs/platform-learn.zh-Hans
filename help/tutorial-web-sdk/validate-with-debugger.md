@@ -1,19 +1,19 @@
 ---
 title: 使用Experience Platform调试器验证Web SDK实施
-description: 了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
+description: 了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1195'
-ht-degree: 1%
+source-wordcount: '1172'
+ht-degree: 3%
 
 ---
 
 # 使用Experience Platform调试器验证Web SDK实施
 
-了解如何使用Adobe Experience Platform Debugger验证Adobe Experience Platform Web SDK实施。
+了解如何使用 Adobe Experience Platform Debugger 验证您的 Adobe Experience Platform Web SDK 实施。
 
 Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展，可帮助您查看在网页中实现的Adobe技术。 下载首选浏览器的版本：
 
@@ -75,7 +75,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
    ![已替换标记属性](assets/validate-switch-success.png)
 
-在本教程的后面部分，您将使用此技术将Luma网站映射到您自己的标记资产，以验证您的Platform Web SDK实施。 在生产网站上开始使用标记时，您可以在标记的开发环境中使用同一技术来验证所做的更改。
+在本教程的后面部分，您将使用此技术将Luma网站映射到您自己的标记资产，以验证您的Platform Web SDK实施。 在您自己的网站上使用标记时，您可以使用该同一技术验证生产网站上的开发标记库。
 
 ## 使用Experience Platform调试器验证客户端网络请求
 
@@ -131,7 +131,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
    ![“网络”选项卡](assets/validate-dev-console.png)
 
-1. 转到 **响应** 选项卡，并记下ECID值在响应中的包含方式。 复制此值，因为您将在下一个练习中使用它来验证用户档案信息
+1. 转到 **响应** 选项卡，并记下ECID值在响应中的包含方式。
 
    ![“网络”选项卡](assets/validate-dev-console-ecid.png)
 

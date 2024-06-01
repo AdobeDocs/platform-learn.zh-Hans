@@ -3,10 +3,10 @@ title: 使用Platform Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '1940'
-ht-degree: 5%
+source-wordcount: '2107'
+ht-degree: 4%
 
 ---
 
@@ -28,6 +28,8 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 * 配置数据流以将Web SDK数据发送到Adobe Experience Platform
 * 为实时客户个人资料启用流Web数据
 * 验证数据是否已抵达Platform数据集和实时客户资料中
+* 将样本忠诚度计划数据摄取到Platform
+* 构建简单的平台受众
 
 ## 先决条件
 
@@ -36,6 +38,9 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 * 有权访问Adobe Experience Platform应用程序，如Real-time Customer Data Platform、Journey Optimizer或Customer Journey Analytics
 * 完成本教程的初始配置和标记配置部分中之前的课程。
 
+>[!NOTE]
+>
+>如果您没有任何Platform应用程序，则可以跳过本课程或阅读。
 
 ## 创建数据集
 
@@ -44,7 +49,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 让我们为您的Luma Web事件数据设置一个数据集：
 
 
-1. 转到 [Experience Platform界面](https://experience.adobe.com/platform/)
+1. 转到 [Experience Platform](https://experience.adobe.com/platform/) 或 [Journey Optimizer](https://experience.adobe.com/journey-optimizer/) 界面
 1. 确认您使用的是本教程所用的开发沙盒
 1. 打开 **[!UICONTROL 数据管理>数据集]** 从左侧导航
 1. 选择 **[!UICONTROL 创建数据集]**
@@ -139,14 +144,28 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
    ![数据集预览1](assets/experience-platform-dataset-preview-1.png)
 
+
+### 查询数据
+
+1. 在 [Experience Platform](https://experience.adobe.com/platform/) 界面，选择 **[!UICONTROL 数据管理>查询]** 在左侧导航栏中打开 **[!UICONTROL 查询]** 屏幕。
+1. 选择 **[!UICONTROL 创建查询]**
+1. 首先，运行查询以查看数据湖中表的所有名称。 输入 `SHOW TABLES` 在查询编辑器中，单击播放图标以运行查询。
+1. 在结果中，请注意表的名称类似于 `luma_web_event_data`
+1. 现在，使用引用表的简单查询来查询表（请注意，默认查询将限制为100个结果）： `SELECT * FROM "luma_web_event_data"`
+1. 片刻后，您应该会看到Web数据的示例记录。
+
+>[!ERROR]
+>
+>如果您收到“未配置表”错误，请仔细检查表的名称。 也有可能是微量的数据尚未进入数据湖。 请在10-15分钟后重试。
+
 >[!INFO]
 >
->Adobe Experience Platform的查询服务是用于验证湖中数据的更可靠方法，但超出了本教程的范围。 有关更多详细信息，请参阅 [浏览数据](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) 在平台教程部分中。
+>  有关Adobe Experience Platform查询服务的更多详细信息，请参阅 [浏览数据](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) 在平台教程部分中。
 
 
 ## 为实时客户个人资料启用数据集和架构
 
-下一步是为实时客户档案启用数据集和架构。 来自Web SDK的数据流将是流入Platform的众多数据源之一，您希望将Web数据与其他数据源连接以构建360度客户档案。 要了解有关Real-time Customer Profile的更多信息，请观看此短视频：
+对于Real-time Customer Data Platform和Journey Optimizer的客户，下一步是为实时客户个人资料启用数据集和架构。 来自Web SDK的数据流将是流入Platform的众多数据源之一，您希望将Web数据与其他数据源连接以构建360度客户档案。 要了解有关Real-time Customer Profile的更多信息，请观看此短视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
@@ -179,7 +198,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
    >[!IMPORTANT]
    >
-   >    发送到Real-Time Customer Profile的每个记录都需要主身份。 通常，架构中会标记身份字段。 但是，在使用身份映射时，身份字段在架构中不可见。 此对话框用于确认您有一个主要身份，并且您将在发送数据时在身份映射中指定该身份。 如您所知，Web SDK使用标识映射，而Experience CloudID (ECID)是默认的主要标识。
+   >    发送到Real-Time Customer Profile的每个记录都需要主身份。 通常，架构中会标记身份字段。 但是，在使用身份映射时，身份字段在架构中不可见。 此对话框用于确认您有一个主要身份，并且您将在发送数据时在身份映射中指定该身份。 如您所知，Web SDK使用将Experience CloudID (ECID)作为默认主标识且经过身份验证的ID作为主标识（如果可用）的标识映射。
 
 
 1. 选择 **[!UICONTROL 启用]**
@@ -192,7 +211,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 >[!IMPORTANT]
 >
->    为配置文件启用架构后，无法禁用或删除该架构。 此外，此后无法从架构中删除字段。 在生产环境中使用您自己的数据时，请务必牢记这些含义。 在本教程中，您应该使用开发沙盒，您可以随时删除这个沙盒。
+>    为配置文件启用架构后，如果不重置或删除整个沙盒，则无法禁用或删除该架构。 此外，此后无法从架构中删除字段。
 >
 >   
 > 在处理您自己的数据时，我们建议您按照以下顺序执行操作：
@@ -209,7 +228,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 首先，必须生成更多示例数据。 重复本课程中前面介绍的步骤，在网站被映射到您的标记资产时登录到Luma网站。 Inspect Platform Web SDK请求，以确保其发送数据的同时 `lumaCRMId`.
 
-1. 在 [Experience Platform](https://experience.adobe.com/platform/) 界面，选择 **[!UICONTROL 配置文件]** 在左侧导航中
+1. 在 [Experience Platform](https://experience.adobe.com/platform/) 界面，选择 **[!UICONTROL 客户]** > **[!UICONTROL 配置文件]** 在左侧导航中
 
 1. 作为 **[!UICONTROL 身份命名空间]** 使用 `lumaCRMId`
 1. 复制并粘贴的值 `lumaCRMId` 传入了您在Experience Platform调试器中检查的调用，在本例中 `112ca06ed53d3db37e4cea49cc45b71e`.
@@ -247,7 +266,8 @@ Real-time Customer Data Platform和Journey Optimizer的客户可望完成本练�
 1. 添加 [!UICONTROL 忠诚度详细信息] 字段组
 1. 添加 [!UICONTROL 人口统计详细信息] 字段组
 1. 选择 `Person ID` 字段并将其标记为 [!UICONTROL 标识] 和 [!UICONTROL 主要身份] 使用 `Luma CRM Id` [!UICONTROL 身份命名空间].
-1. 为以下对象启用架构 [!UICONTROL 个人资料]
+1. 为以下对象启用架构 [!UICONTROL 个人资料]. 如果找不到配置文件切换开关，请尝试单击左上角的架构名称。
+1. 保存架构
 
    ![忠诚度模式](assets/web-channel-loyalty-schema.png)
 
@@ -266,7 +286,7 @@ Real-time Customer Data Platform和Journey Optimizer的客户可望完成本练�
 
 受众会根据常见特征将用户档案分组在一起。 构建可在Web营销活动中使用的快速受众：
 
-1. 在Experience Platform界面中，转到 **[!UICONTROL 受众]** 在左侧导航中
+1. 在Experience Platform或Journey Optimizer界面中，转到 **[!UICONTROL 客户]** > **[!UICONTROL 受众]** 在左侧导航中
 1. 选择 **[!UICONTROL 创建受众]**
 1. 选择 **[!UICONTROL 生成规则]**
 1. 选择 **[!UICONTROL 创建]**

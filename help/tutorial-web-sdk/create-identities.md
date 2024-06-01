@@ -4,9 +4,9 @@ description: 了解如何在XDM中创建身份并使用身份映射数据元素�
 feature: Web SDK, Tags, Identities
 jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
-source-git-commit: c5318809bfd475463bac3c05d4f35138fb2d7f28
+source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '876'
 ht-degree: 3%
 
 ---
@@ -69,7 +69,7 @@ FPID是第一方Cookie _您使用自己的Web服务器进行设置_ ，该Adobe�
 
 ## 经过身份验证的Id
 
-如上所述，在使用Platform Web SDK时，您数字资产的所有访客都会Adobe分配一个ECID。 ECID用于跟踪未经身份验证的数字行为的默认身份。
+如上所述，在使用Platform Web SDK时，您数字资产的所有访客都会Adobe分配一个ECID。 ECID是用于跟踪未经身份验证的数字行为的默认身份。
 
 您还可以发送经过身份验证的用户ID，以便平台可以创建 [身份图](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) 并且Target可以设置 [第三方Id](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). 通过使用来设置经过身份验证的ID [!UICONTROL 标识映射] 数据元素类型。
 
