@@ -4,9 +4,9 @@ description: 了解如何使用Customer Journey Analytics报告和分析与移�
 solution: Data Collection,Experience Platform,Analytics
 hide: true
 hidefromtoc: true
-source-git-commit: 7237bc0e6fabd74157022b99e6edee47ef83f1c9
+source-git-commit: 686cb15eceb8faa375280f5d5ee8c925b841a601
 workflow-type: tm+mt
-source-wordcount: '3410'
+source-wordcount: '3291'
 ht-degree: 1%
 
 ---
@@ -15,16 +15,16 @@ ht-degree: 1%
 
 了解如何报告和分析您的移动应用程序与Customer Journey Analytics的交互。
 
-您在前面的课程中收集并发送到PlatformEdge Network的移动应用程序事件数据将转发到您在数据流中配置的服务。 如果您遵循 [将数据发送到Experience Platform](platform.md) 课程，该数据现在作为数据集存储在Experience Platform的数据湖中。 然后，这些数据便可用于Customer Journey Analytics，以供报表和分析。
+您在前面的课程中收集并发送到PlatformEdge Network的移动应用程序事件数据将转发到您在数据流中配置的服务。 如果您遵循 [将数据发送到Experience Platform](platform.md) 课程，该数据现在作为数据集存储在Experience Platform的数据湖中。 此时，数据可用于Customer Journey Analytics，以供报表和分析。
 
-与Adobe Analytics相反，Customer Journey Analytics是一种应用程序，它可以 *用途* 来自您在Experience Platform中创建且应用程序正在向其发送数据的数据集的数据。 使用Adobe Experience Platform Mobile SDK，您不会直接向Customer Journey Analytics发送数据。 Customer Journey Analytics而是使用Experience Platform中数据集的数据。
+与Adobe Analytics相反，Customer Journey Analytics *用途* 来自在Experience Platform中创建的数据集的数据。 使用Adobe Experience Platform Mobile SDK时，数据不会直接发送到Customer Journey Analytics，而是会发送到数据集。 然后，在Customer Journey Analytics中配置连接以选择您将在报表和分析项目中使用的数据集。
 
-本教程中的本课程侧重于报告和分析从Luma教程应用程序捕获的数据。 Customer Journey Analytics的独特功能之一是将来自多个来源（CRM、销售点、忠诚度应用程序、呼叫中心）和渠道（Web、移动、离线）的数据结合起来，以深入了解客户历程。 该功能不在本课程的讨论范围内。 请参阅 [Customer Journey Analytics概述](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) 以了解更多信息。
+本教程中的本课程侧重于报告和分析从Luma教程应用程序捕获的数据。 Customer Journey Analytics的独特功能之一是将来自多个来源（CRM、销售点、忠诚度应用程序、呼叫中心）和渠道（Web、移动、离线）的数据整合在一起，以便深入了解客户历程。 该功能不在本课程的讨论范围内。 请参阅 [Customer Journey Analytics概述](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) 以了解更多信息。
 
 
 ## 先决条件
 
-必须配置您的组织并授予Customer Journey Analytics权限。 您必须具有Customer Journey Analytics的管理访问权限。
+必须配置您的组织并授予Customer Journey Analytics权限。 您必须具有管理员访问权限才能进行Customer Journey Analytics。
 
 
 ## 学习目标
@@ -35,7 +35,7 @@ ht-degree: 1%
 - 创建数据视图，从数据集准备数据以用于报告和分析
 - 创建一个项目以生成报告和可视化图表，以便您能够分析来自移动设备应用程序的数据。
 
-这是故意的。 在Customer Journey Analytics中，Analysis Workspace中的报表依赖于数据视图。 数据视图依赖于一个连接。
+这个顺序是有意为之。 连接使用数据集，数据视图使用连接。
 
 
 ## 创建连接
@@ -112,7 +112,7 @@ Customer Journey Analytics中的连接从要用于报表和分析的Experience P
 
 将记录从数据集添加到Customer Journey Analytics后，您可以创建一个数据视图，以定义要报告的数据的哪些组件。
 
-数据视图是Customer Journey Analytics专属的容器，通过它，可决定如何解释来自连接的数据。 您可以从连接中定义的任何数据集将标准字段和架构字段配置为Analysis Workspace中的组件（维度、量度）。
+数据视图是Customer Journey Analytics专属的容器，通过它，可决定如何解释来自连接的数据。 您可以从任何在连接中定义为Analysis Workspace中的组件（维度、量度）的数据集中配置标准和架构字段。
 
 Customer Journey Analytics中的数据视图提供了极大的灵活性，可以正确设置和定义来自连接的数据。 在本教程中，您将仅使用报告和分析所需的功能。 请参阅 [数据视图](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) 以了解更多信息。
 
@@ -131,7 +131,7 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
       ![CJA数据视图1](assets/cja-dataview-1.png)
 
-1. 在 **[!UICONTROL 组件]** 选项卡 **[!UICONTROL Luma应用程序 — AEP Mobile SDK教程数据视图]**&#x200B;中，您可以定义要在移动设备应用程序上生成报表时使用的量度和维度。 默认情况下，已为您的数据视图配置了多个标准量度和维度（统称为组件）。 但您的数据视图需要更多组件。 <br/>要添加架构字段，可使用您之前定义的架构或现成的架构(请参阅 [创建架构](create-schema.md) 课程)，作为组件（维度或量度）：
+1. 在 **[!UICONTROL 组件]** 选项卡 **[!UICONTROL Luma应用程序 — AEP Mobile SDK教程数据视图]**&#x200B;中，您可以定义要在移动设备应用程序上生成报表时使用的量度和维度。 默认情况下，已为您的数据视图配置了多个标准量度和维度（统称为组件）。 但您的数据视图需要更多组件。 <br/>从之前定义的架构或现成的架构添加架构字段(请参阅 [创建架构](create-schema.md) 课程)，作为组件（维度或量度）：
 
    1. 查找架构字段：
 
@@ -155,7 +155,7 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
       ![cja数据视图组件设置](assets/cja-dataview-component-settings.png)
 
-   1. 现在，您已了解如何向数据视图添加字段并配置生成的组件，请使用下表列出要作为量度或维度添加的架构字段。 使用 **架构路径** 列值，以搜索或遍历特定架构字段。 拖放后，检查 **组件设置** 表中的列值，表示组件是否需要特定设置，如修改组件 **[!UICONTROL 组件名称]** 或定义 **[!UICONTROL 包括/排除值]**.
+   1. 现在，您已了解如何向数据视图添加字段并配置生成的组件，请使用下表列出要作为量度或维度添加的架构字段。 使用 **架构路径** 列值，以搜索或遍历特定架构字段。 添加量度和维度后，请检查 **组件设置** 表中的列值组件是否需要特定设置，如组件 **[!UICONTROL 组件名称]** 或定义 **[!UICONTROL 包括/排除值]**.
 
       **量度**
 
@@ -177,9 +177,12 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
       {style="table-layout:auto"}
 
-      请注意“位置事件”量度的架构字段如何使用 **[!UICONTROL 包括/排除值]** 计数包含的事件类型 `location`.
+      >[!NOTE]
+      >
+      >请注意“位置事件”量度的架构字段如何使用 **[!UICONTROL 包括/排除值]** 计数包含的事件类型 `location`.
 
-      将上表中的所有架构字段添加为量度组件后，您的数据视图配置将用于 **[!UICONTROL 量度]** 应当如下所示：
+
+      您的数据视图配置 **[!UICONTROL 量度]** 将上表中的所有架构字段添加为量度组件后，应该匹配以下内容：
 
       ![CJA数据视图4](assets/cja-dataview-4.png)
 
@@ -197,7 +200,7 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
       {style="table-layout:auto"}
 
-      将上表中的所有架构字段添加为维度组件后，您的数据视图配置 **[!UICONTROL Dimension]** 应当如下所示：
+      您的数据视图配置 **[!UICONTROL Dimension]** 将上表中的所有架构字段添加为维度组件后，应该匹配以下内容：
 
       ![CJA数据视图4](assets/cja-dataview-5.png)
 
@@ -211,7 +214,7 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
 ## 创建项目
 
-您可以使用Customer Journey Analytics中的工作区项目来构建报告和可视化图表。 构建全面报告和引人入胜的可视化图表有许多可能性，但所有这些可能性都不在本教程的涵盖范围内。 请参阅 [工作区概述](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) 和 [构建新项目](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) 以了解更多信息。
+Workspace项目在Customer Journey Analytics中用于构建报告和可视化图表。 构建全面报告和引人入胜的可视化图表有许多可能性，但这不在本教程的涵盖范围内。 请参阅 [工作区概述](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) 和 [构建新项目](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) 以了解更多信息。
 
 在本课程的此部分中，您将创建一个项目，其中显示有关以下各项的报告和可视化图表：
 
@@ -250,23 +253,22 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 >
 >   请记住定期保存您的项目，否则您的更改将丢失。 您可以使用快速保存项目 **[!UICONTROL ctrl + s]** (Windows)或 **[!UICONTROL ⌘ (cmd) + s]** (macOS)。
 
-您现在已设置项目。 您的主画布上已经有一个自由格式面板，其中包含一个自由格式表。 您很快就会向此表中添加组件，但您必须首先确保自由格式面板使用了正确的数据视图和正确的时间段。
-
+您现在已设置项目。 默认情况下，会提供一个自由格式表。 在添加组件之前，请确保您的自由格式面板使用了正确的数据视图和时间段。
 
 1. 从下拉列表中选择数据视图。 例如， **[!UICONTROL Luma应用程序 — AEP Mobile SDK教程数据视图]**. 如果在列表中看不到数据视图，请选择 **[!UICONTROL 显示全部]** ，位于下拉列表的底部。
    ![CJA项目5](assets/cja-projects-5.png)
 
-1. 要定义面板的适当时间段，请选择默认值 **[!UICONTROL 本月]** 并在弹出面板中定义开始日期和结束日期。 或者使用 **[!UICONTROL 预设]**，点赞 **[!UICONTROL 过去6个月]** 并选择 **[!UICONTROL 应用]**.
+1. 要定义面板的适当时间段，请选择默认预设 **[!UICONTROL 本月]** 输入自定义开始和结束日期，或使用 **[!UICONTROL 预设]** (点赞 **[!UICONTROL 过去6个月]**)并选择 **[!UICONTROL 应用]**.
    ![CJA项目6](assets/cja-projects-6.png)
 
 
 ### 应用程序使用情况
 
-您希望报告应用程序的使用方式。 您已在应用程序中添加了必要的代码来注册应用程序交互以及在应用程序中使用的屏幕(请参阅 [跟踪事件](events.md) 课程)，并且您现在要报告此数据。
+现在，您已准备好报告应用程序的使用方式。 您已在应用程序中添加了必要的代码来注册应用程序交互以及在应用程序中使用的屏幕(请参阅 [跟踪事件](events.md) 课程)，并且您现在要报告此数据。
 
 #### 屏幕名称
 
-您首先要报告应用程序中查看了哪些屏幕。
+要报告应用程序中查看的屏幕，请执行以下操作：
 
 1. 重命名您的 **[!UICONTROL 自由格式]** 面板到 `App Usage`.
 
@@ -276,7 +278,7 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
 1. 拖放 **[!UICONTROL 屏幕查看]** 组件位于 [!UICONTROL _放置&#x200B;**量度**此处（或任何其他组件）_)].
    ![CJA项目7](assets/cja-projects-7.png)
-现在，您的自由格式表会显示选定时间段内天数的屏幕视图。 但是，您希望显示应用程序中使用的不同屏幕的屏幕视图。
+现在，您的自由格式表会显示所选时间段的每日屏幕查看次数。 但是，您希望显示应用程序中使用的每个不同屏幕的屏幕查看次数。
 
 1. 要显示 **[!UICONTROL Dimension]** 组件列表，选择 ![交叉](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) 以删除 ![事件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL 量度]** 从组件边栏中筛选。
    ![CJA项目8](assets/cja-projects-8.png)
@@ -286,15 +288,18 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 1. 拖放 **[!UICONTROL 屏幕名称]** 上的组件 **[!UICONTROL 天]** 标题。 该操作显示 ![切换](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL 替换]** 指示尺寸的替换。
    ![CJA项目9](assets/cja-projects-9.png)
 
-您的第一个报告已准备就绪；可显示您在应用程序中定义的各种屏幕名称的屏幕视图。
+报表中的第一个自由格式表已完成。
 
 ![CJA项目10](assets/cja-projects-10.png)
 
-不要忘记保存您的项目！
+>[!NOTE]
+>
+>请先保存您的项目，然后再继续。
+
 
 #### 应用程序交互
 
-您还需要报告用户与应用程序的交互方式。
+接下来，您将构建一个自由格式表以报告用户如何与应用程序进行交互。
 
 1. 选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 和弹出窗口 ![自由格式表](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) 以添加新的自由格式表。
    ![CJA项目11](assets/cja-projects-11.png)
@@ -310,7 +315,9 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
 信息有限，主要是因为您实施了 `MobileSDK.shared.sendAppInteractionEvent(actionName: "<actionName>")` API调用仅在登录屏幕上。 如果将此API调用添加到应用程序的更多屏幕中，此报表将提供更多信息。
 
-不要忘记保存您的项目！
+>[!NOTE]
+>
+>请先保存您的项目，然后再继续。
 
 
 ### Commerce
@@ -340,14 +347,17 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
 1. 拖放 **[!UICONTROL 月]** 维度位于 **[!UICONTROL 天]** 用于将报表从每日更改为每月的dimension。
 
-您的 **[!UICONTROL Commerce事件]** 报告现已准备就绪，可显示用户查看产品、将产品添加到其愿望列表、保存产品以供将来使用甚至购买您的产品的方式。
+Commerce事件报表已完成。
+
 ![CJA项目16](assets/cja-projects-16.png)
 
-不要忘记保存您的项目！
+>[!NOTE]
+>
+>请先保存您的项目，然后再继续。
 
 #### 流失
 
-根据上一个报告，您希望将商业漏斗中的流失可视化：有多少查看过产品的用户同时将产品添加到购物车。 还有有多少用户在购物车中添加了产品后也保存了这些产品以供将来使用。 诸如此类。
+接下来，您将为商业漏斗构建一个流失可视化图表，其中显示查看这些产品的用户将产品添加到购物车的数量，以及从购物车中保存这些产品的用户数量，以备将来使用。
 
 1. 选择 ![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) 内部 **[!UICONTROL 商务]** 面板中，然后从弹出菜单中选择 ![流失](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) （表示“流失”可视化图表）。
 
@@ -357,10 +367,12 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
 1. 对重复上述步骤 **[!UICONTROL 产品添加到列表]** 和 **[!UICONTROL 购买]** 维度。
 
-您的 **[!UICONTROL 流失]** 可视化图表现在以可视化形式显示产品的转化漏斗。
+流失可视化报表已完成。
 ![CJA项目19](assets/cja-projects-19.png)
 
-不要忘记保存您的项目！
+>[!NOTE]
+>
+>请先保存您的项目，然后再继续。
 
 
 ### 选件
@@ -383,10 +395,13 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
 1. 拖放 **[!UICONTROL 月]** 上的维度 **[!UICONTROL 天]** 列替换维度。
 
-现在，您有一个报表，其中显示了应用程序中向用户显示的每月选件。
+您已完成每月一次的选件概述。
+
 ![CJA项目20](assets/cja-projects-20.png)
 
-不要忘记保存您的项目！
+>[!NOTE]
+>
+>请先保存您的项目，然后再继续。
 
 
 #### 提供给人员的选件
@@ -406,10 +421,13 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 1. 从上下文菜单中，选择 **[!UICONTROL 细分]** > **[!UICONTROL Dimension]** > **[!UICONTROL 选件名称]**. 此选择会将“活动名称”维度划分为“选件名称”。
    ![CJA项目20b](assets/cja-projects-20b.png)
 
-现在，您有一个报表，向您应用程序的用户显示选定时间段内针对此优惠决策显示的各个优惠。
+您的面向人员的优惠报表已完成。
+
 ![CJA项目21](assets/cja-projects-21.png)
 
-不要忘记保存您的项目！
+>[!NOTE]
+>
+>请先保存您的项目，然后再继续。
 
 
 ### 商店访问次数
@@ -438,7 +456,7 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
 1. 选择表格中的所有行，单击鼠标右键，然后从上下文菜单中选择划分>Dimension>事件类型。
 
-现在，您有一个报告，显示用户进入和离开商店位置附近（您在以下位置中定义了这些位置） [地标](places.md) 课程)。
+您的商店访问报表已完成。 现在，您有一个报告，显示用户进入和离开商店位置附近（您在以下位置中定义了这些位置） [地标](places.md) 课程)。
 
 ![CJA项目23](assets/cja-projects-23.png)
 
