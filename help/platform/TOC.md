@@ -5,9 +5,9 @@ user-guide-description: 了解Experience Platform的众多组件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bad48d8b5845aa2812630a07cada2d465b729325
+source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '896'
 ht-degree: 14%
 
 ---
@@ -80,6 +80,7 @@ ht-degree: 14%
 + 数据保健 {#data-hygiene}
    + [假名配置文件和事件过期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [数据卫生数据准备](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+   + [删除数据集和批次](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [使数据集过期](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [更新配置文件属性](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 数据摄取 {#data-ingestion}
@@ -161,12 +162,13 @@ ht-degree: 14%
 + 配置文件 {#profiles}
    + [了解Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [配置文件概述图](/help/platform/profiles/overview-diagram.md)
-   + [将数据引入配置文件](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
+   + [将数据引入轮廓](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
    + [自定义配置文件视图详细信息](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
    + [查看帐户配置文件](/help/platform/profiles/view-account-profiles.md)
    + [创建合并策略](/help/platform/profiles/create-merge-policies.md)
    + [合并模式概述](/help/platform/profiles/union-schemas-overview.md)
    + [创建计算属性](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [删除配置文件](/help/platform/profiles/delete-profiles.md)
    + [使用upsert更新特定属性](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + 隐私和安全性 {#privacy}
    + [Privacy Service简介](/help/platform/privacy/introduction-to-privacy-services.md)
