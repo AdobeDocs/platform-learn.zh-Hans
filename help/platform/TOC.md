@@ -5,9 +5,9 @@ user-guide-description: 了解Experience Platform的众多组件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 66165c7b55a6c7483b58ce4d6da7eda11baee08a
+source-git-commit: e3aeab8a3627b9fd962f4169957a7af2f856259e
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '899'
 ht-degree: 14%
 
 ---
@@ -37,6 +37,7 @@ ht-degree: 14%
 + [对Experience PlatformAPI进行身份验证](/help/platform/authentication/platform-api-authentication.md)
 + [将示例数据导入Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
+   + [使用AI助手](/help/platform/admin/ai-assistant.md)
    + [使用警报](/help/platform/admin/use-alerts.md)
    + [使用沙盒](/help/platform/admin/use-sandboxes.md)
    + [在沙盒之间复制对象](/help/platform/admin/copy-objects-between-sandboxes.md)
