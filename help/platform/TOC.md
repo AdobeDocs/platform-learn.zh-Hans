@@ -5,9 +5,9 @@ user-guide-description: 了解Experience Platform的众多组件。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e3aeab8a3627b9fd962f4169957a7af2f856259e
+source-git-commit: f7811c363435b14eed28c4c2d674ace14832977a
 workflow-type: tm+mt
-source-wordcount: '899'
+source-wordcount: '912'
 ht-degree: 14%
 
 ---
@@ -79,15 +79,17 @@ ht-degree: 14%
    + [强制同意](/help/platform/governance/enforce-consent.md)
    + [与IAB透明度和同意框架2.0集成](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 数据保健 {#data-hygiene}
-   + [假名配置文件和事件过期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [数据卫生数据准备](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [删除数据集和批次](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [使数据集过期](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [假名配置文件和事件过期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+   + [删除配置文件](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [更新配置文件属性](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 数据摄取 {#data-ingestion}
    + [概述](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批量摄取概述](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [创建和填充数据集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
+   + [删除数据集和批次](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
    + [将CSV文件映射到XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
    + [源概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
    + [从Adobe Analytics引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
@@ -169,6 +171,7 @@ ht-degree: 14%
    + [创建合并策略](/help/platform/profiles/create-merge-policies.md)
    + [合并模式概述](/help/platform/profiles/union-schemas-overview.md)
    + [创建计算属性](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+   + [假名配置文件过期时间(TTL)](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [删除配置文件](/help/platform/profiles/delete-profiles.md)
    + [使用upsert更新特定属性](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + 隐私和安全性 {#privacy}
