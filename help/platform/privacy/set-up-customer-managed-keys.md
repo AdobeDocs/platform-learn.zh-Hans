@@ -6,18 +6,18 @@ role: Admin, Data Architect, Data Engineer, Developer
 level: Experienced
 jira: KT-11382
 thumbnail: 3410673.jpeg
-last-substantial-update: 2022-11-01T00:00:00Z
+last-substantial-update: 2024-06-28T00:00:00Z
 exl-id: 04cb1aeb-3260-4259-bb02-8392d9d787a2
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: b5b64728f5f2a7c917ddd431115a7cf65b0085f3
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 7%
+source-wordcount: '94'
+ht-degree: 0%
 
 ---
 
 # 设置客户管理的密钥(CMK)
 
-使用您自己的加密密钥管理静态数据加密。 欲知更多信息，请访问 [客户管理的密钥文档](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html?lang=zh-Hans).
+使用您自己的加密密钥管理静态数据加密。 欲知更多信息，请访问 [客户管理的密钥文档](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on)
 
