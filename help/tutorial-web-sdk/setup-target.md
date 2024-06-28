@@ -1,19 +1,19 @@
 ---
 title: 使用Platform Web SDK设置Adobe Target
-description: 了解如何使用Platform Web SDK实施Adobe Target。 本课程是“使用Web SDK实施Adobe Experience Cloud”教程的一部分。
+description: 了解如何使用Platform Web SDK实施Adobe Target。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 solution: Data Collection, Target
 jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: dc23b39e4311d618022fb1c70c2a106c0e901c8e
+source-git-commit: e7bb1a7856d04c30da63cc013c2d5a5fea3d718e
 workflow-type: tm+mt
-source-wordcount: '4305'
-ht-degree: 0%
+source-wordcount: '4363'
+ht-degree: 1%
 
 ---
 
 # 使用Platform Web SDK设置Adobe Target
 
-了解如何使用Adobe Experience Platform Web SDK实施Adobe Target。 了解如何交付体验以及如何将其他参数传递到Target。
+了解如何使用 Adobe Experience Platform Web SDK 实施 Adobe Target。了解如何投放体验，以及如何将其他参数传递给 Target。
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) 是一种Adobe Experience Cloud应用程序，可为您提供定制和个性化客户体验所需的一切功能，从而最大限度地增加您的Web和移动设备网站、应用程序及其他数字渠道的收入。
 
@@ -188,7 +188,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 * **活动**：一组定位到一个或多个受众的体验。 例如，一个简单的A/B测试可以是具有两个体验的活动。
 * **体验**：一组针对一个或多个位置或决策范围的操作。
 * **决策范围**：交付Target体验的位置。 如果您熟悉使用旧版Target，则决策范围等同于“mbox”。
-* **个性化决策**：应用服务器确定的操作。 这些决策可以基于受众标准和Target活动优先级。
+* **Personalization决策**：应用服务器确定的操作。 这些决策可以基于受众标准和Target活动优先级。
 * **建议**：服务器所做决策的结果，该结果将在Platform Web SDK响应中交付。 例如，交换横幅图像就是一个建议。
 
 ### 更新 [!UICONTROL 发送事件] 操作
@@ -267,7 +267,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 1. 转到 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html) 并使用调试器 [将网站上的tag属性切换到您自己的开发资产](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. 重新加载页面
 1. 选择 **[!UICONTROL 网络]** debugger中的工具
-1. 过滤方式 **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. 过滤方式 **[!UICONTROL Experience PlatformWeb SDK]**
 1. 在事件行中为第一次调用选择值
 
    ![Adobe Experience Platform Debugger中的网络调用](assets/target-debugger-network.png)
@@ -321,11 +321,57 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 1. 对于 **[!UICONTROL 范围]** 字段输入 `homepage-hero`
 1. 对于 **[!UICONTROL 选择器]** 字段输入 `div.heroimage`
 1. 对象 **[!UICONTROL 操作类型]** 选择 **[!UICONTROL 设置HTML]**
+1. 选择 **[!UICONTROL 保留更改]**
 
    ![渲染主页主页主页操作](assets/target-action-render-hero.png)
 
+   除了呈现活动之外，还必须额外调用Target以指示已呈现基于表单的活动：
+
+1. 向规则中添加其他操作。 使用 **核心** 扩展和 **[!UICONTROL 自定义代码]** 操作类型：
+1. 粘贴以下JavaScript代码：
+
+   ```javascript
+   var propositions = event.propositions;
+   var heroProposition;
+   if (propositions) {
+      // Find the hero proposition, if it exists.
+      for (var i = 0; i < propositions.length; i++) {
+         var proposition = propositions[i];
+         if (proposition.scope === "homepage-hero") {
+            heroProposition = proposition;
+            break;
+         }xw
+      }
+   }
+   // Send a "display" event
+   if (heroProposition !== undefined){
+      alloy("sendEvent", {
+         xdm: {
+            eventType: "display",
+            _experience: {
+               decisioning: {
+                  propositions: [{
+                     id: heroProposition.id,
+                     scope: heroProposition.scope,
+                     scopeDetails: heroProposition.scopeDetails
+                  }]
+               }
+            }
+         }
+      });
+   }
+   ```
+
+   ![渲染主页主页主页操作](assets/target-action-fire-display.png)
+
+1. 选择 **[!UICONTROL 保留更改]**
+
 1. 保存更改并将内部版本生成到库
 1. 加载Luma主页几次，这应该足以制作新的 `homepage-hero` 决策范围在Target界面中注册。
+
+
+
+
 
 ### 使用基于表单的体验编辑器设置Target活动
 
@@ -381,10 +427,10 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 1. 请注意，下有键 `query` > `personalization` 和  `decisionScopes` 具有值 `__view__` 和以前一样，但现在还有 `homepage-hero` 范围已包括。 此Platform Web SDK调用请求从Target就使用VEC和特定的页面所做的更改做出决策。 `homepage-hero` 位置。
 
-   ![`__view__` decisionScope请求](assets/target-debugger-view-scope.png)
+   ![`__view__` decisionScope请求](assets/target-debugger-view-custom-scope.png)
 
 1. 关闭叠加并选择第二次网络调用的事件详细信息。 此调用仅在Target返回活动时存在。
-1. 请注意，其中包含有关从Target返回的活动和体验的详细信息。 此Platform Web SDK调用会向用户发送一条通知，告知用户已渲染Target活动，并会增加展示次数。
+1. 请注意，其中包含有关从Target返回的活动和体验的详细信息。 此Platform Web SDK调用会向用户发送一条通知，告知用户已渲染Target活动，并会增加展示次数。 它由您之前添加的自定义代码操作启动。
 
    ![Target活动展示](assets/target-debugger-activity-impression.png)
 
@@ -397,6 +443,8 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 所有XDM字段均自动作为 [页面参数](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) 或mbox参数。
 
 其中一些XDM字段将映射到Target后端中的特殊对象。 例如， `web.webPageDetails.URL` 将自动可用于构建基于URL的定位条件，或作为 `page.url` 创建配置文件脚本时的对象。
+
+您还可以使用数据对象添加页面参数。
 
 ### 特殊参数和数据对象
 
@@ -440,14 +488,13 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
    ![将Target数据添加到规则](assets/target-rule-data.png)
 
 1. 保存更改并将内部版本生成到库
-1. 对重复步骤1至4 **电子商务 — 已加载库 — 设置产品详细信息变量 — 20** 规则
 
 >[!NOTE]
 >
 >上面的示例使用 `data` 未在所有页面类型上完全填充的对象。 标记可正确处理此情况并忽略具有未定义值的键。 例如， `entity.id` 和 `entity.name` 将不会在除产品详细信息之外的任何页面上传递。
 
 
-## 拆分个性化和Analytics请求
+## 拆分Personalization和Analytics请求
 
 Luma网站上的数据层是在tags嵌入代码之前完全定义的。 这样，我们就可以使用单次调用来获取个性化内容(例如从Adobe Target)并发送分析数据(例如发送到Adobe Analytics)。
 
@@ -517,7 +564,7 @@ Luma网站上的数据层是在tags嵌入代码之前完全定义的。 这样�
 
    ![在Target目录搜索中验证](assets/validate-in-target-catalogsearch.png)
 
-### 使用保障进行验证
+### 使用保证功能进行验证
 
 此外，您可以酌情使用Assurance ，以确认Target决策请求获得了正确的数据并且任何服务器端转换均正确发生。 您还可以确认营销活动和体验信息包含在Adobe Analytics调用中，即使Target决策调用和Adobe Analytics调用是单独发送也是如此。
 
