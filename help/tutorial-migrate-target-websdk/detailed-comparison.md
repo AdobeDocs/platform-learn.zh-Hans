@@ -1,11 +1,11 @@
 ---
-title: at.js 2.x与Web SDK的比较 |将Target从at.js 2.x迁移到Web SDK
+title: at.js 2.x与Web SDK的比较 | 将Target从at.js 2.x迁移到Web SDK
 description: 了解at.js 2.x与Platform Web SDK之间的差异，包括特性、功能、设置和数据流。
 exl-id: b6f0ac2b-0d8e-46ce-8e9f-7bbc61eb20ec
-source-git-commit: 78f0dcc0aa4674eb071c5fd091b5df04eb971326
+source-git-commit: 299b9586fb5c8e9c9ef3427e08035806af1d9a6b
 workflow-type: tm+mt
-source-wordcount: '2152'
-ht-degree: 8%
+source-wordcount: '2007'
+ht-degree: 1%
 
 ---
 
@@ -26,28 +26,28 @@ ht-degree: 8%
 
 | | Target at.js 2.x | 平台Web SDK |
 |---|---|---|
-| 更新Target配置文件 | 受支持 | 受支持 |
-| SPA的触发器视图 | 受支持 | 受支持 |
-| 定位Recommendations | 受支持 | 受支持 |
-| 获取基于表单的选件 | 受支持 | 受支持 |
-| 跟踪事件 | 受支持 | 受支持 |
-| A4T：单页应用程序 | 受支持 | 受支持 |
-| A4T：点击跟踪 | 受支持 | 受支持 |
-| A4T：客户端日志记录 | 受支持 | 受支持 |
-| A4T：服务器端日志记录 | 受支持 | 受支持 |
-| 应用优惠 | 受支持 | 受支持 |
-| 在SPA中重新呈现视图，而不发送通知 | 受支持 | 受支持 |
-| 混合应用程序 | 受支持 | 受支持 |
-| QA URL | 受支持 | 受支持 |
-| Mbox第三方ID | 受支持 | 受支持 |
-| 客户属性 | 受支持 | 支持 |
-| 远程选件 | 受支持 | 受支持 |
-| 重定向选件 | 受支持 | 受支持. 但是，不支持从具有Platform Web SDK的页面重定向到具有at.js的页面（并且是朝着相反的方向）。 |
-| 设备上决策 | 受支持 | 当前不支持 |
-| 预取Mbox | 支持自定义范围和SPA VEC | 当前不支持常规VEC |
-| 自定义事件 | 受支持 | 不支持。请参阅 [公共路线图](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 了解当前状态。 |
-| 响应令牌 | 受支持 | 受支持. 请参阅 [专用响应令牌文档](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) 有关代码示例和at.js与Platform Web SDK之间的差异 |
-| 数据提供程序 | 受支持 | 不支持。自定义代码可用于触发Platform Web SDK `sendEvent` 从其他提供程序检索数据后的命令。 |
+| 更新Target配置文件 | 支持 | 支持 |
+| SPA的触发器视图 | 支持 | 支持 |
+| 定位Recommendations | 支持 | 支持 |
+| 获取基于表单的选件 | 支持 | 支持 |
+| 跟踪事件 | 支持 | 支持 |
+| A4T：单页应用程序 | 支持 | 支持 |
+| A4T：点击跟踪 | 支持 | 支持 |
+| A4T：客户端日志记录 | 支持 | 支持 |
+| A4T：服务器端日志记录 | 支持 | 支持 |
+| 应用优惠 | 支持 | 支持 |
+| 在SPA中重新呈现视图，而不发送通知 | 支持 | 支持 |
+| 混合应用程序 | 支持 | 支持 |
+| QA URL | 支持 | 支持 |
+| Mbox第三方ID | 支持 | 支持 |
+| 客户属性 | 支持 | 支持 |
+| 远程选件 | 支持 | 支持 |
+| 重定向选件 | 支持 | 支持。 但是，不支持从具有Platform Web SDK的页面重定向到具有at.js的页面（并且是朝着相反的方向）。 |
+| 设备上决策 | 支持 | 当前不支持 |
+| 预取Mbox | 支持自定义范围和SPA VEC | 预取是Web SDK的默认模式 |
+| 自定义事件 | 支持 | 不支持。 请参阅 [公共路线图](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 了解当前状态。 |
+| 响应令牌 | 支持 | 支持。 请参阅 [专用响应令牌文档](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) 有关代码示例和at.js与Platform Web SDK之间的差异 |
+| 数据提供程序 | 支持 | 不支持。 自定义代码可用于触发Platform Web SDK `sendEvent` 从其他提供程序检索数据后的命令。 |
 
 
 ## 值得注意的标注
@@ -58,7 +58,7 @@ ht-degree: 8%
 | 在页面加载时自动呈现内容 | 使用Target全局设置进行控制。 启用时间 `pageLoadEnabled` 设置为 `true`. | 在平台Web SDK中指定 `sendEvent` 命令。 通过设置 `renderDecisions` 选项至 `true`. |
 | 手动呈现内容 | 此 `applyOffer()` 和 `applyOffers()` 函数仅支持设置HTML | 此 `applyPropositions` 命令支持设置、替换或附加HTML以增加灵活性 |
 | 跟踪自定义事件 | 支持 `trackEvent()` 和 `sendNotifications()` 函数。 这些函数特定于Target，不会影响Adobe Analytics指标。 | 来自Platform Web SDK的所有数据 `sendEvent` 呼叫将转发到Target。 Target特别需要的补充数据应包含在 `sendEvent` 具有eventType的命令 `decisioning.propositionDisplay` 或 `decisioning.propositionInteract` 以确保Adobe Analytics指标不受影响。 |
-| 目标CNAME | 受支持. 这与用于Analytics和Experience CloudID服务的CNAME不同。 | 不再相关。 单个CNAME可用于所有Platform Web SDK调用。 |
+| 目标CNAME | 支持。 这与用于Analytics和Experience CloudID服务的CNAME不同。 | 不再相关。 单个CNAME可用于所有Platform Web SDK调用。 |
 | 调试 | 此 `mboxDisable`， `mboxDebug`、和 `mboxTrace` URL参数可用于使用浏览器的开发人员工具进行调试。<br><br>该Adobe Experience Platform Debugger也是一种受支持的调试工具。 | 此 `mboxDisable`， `mboxDebug`、和 `mboxTrace` 不支持URL参数。<br><br>您可以通过添加 `alloy_debug=true` 到您的查询字符串或正在执行 `alloy("setDebug", { "enabled": true });` 在开发人员控制台中。<br><br>Adobe Experience Platform Debugger浏览器扩展可用于启动边缘跟踪以进行调试。<br><br>请参阅 [调试Platform Web SDK](debugging.md) 文档，以了解更多信息。 |
 | Analytics for Target (A4T) | 使用SDID值拼合Target和Analytics调用 | 本机支持，无需拼接 |
 
@@ -80,7 +80,7 @@ ht-degree: 8%
 | `trackEvent()` 和 `sendNotifications()` | 使用 `sendEvent` 命令和 [特定 `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) 设置：<br><br>`decisioning.propositionDisplay` 表示活动的呈现<br><br>`decisioning.propositionInteract` 表示用户与活动（如鼠标单击）的交互。 |
 | `targetGlobalSettings()` | 没有直接等效项。 请参阅 [Target设置比较](detailed-comparison.md) 以了解更多详细信息。 |
 | `targetPageParams()` 和 `targetPageParamsAll()` | 所有传入数据 `xdm` 的选项 `sendEvent` 命令映射到Target mbox参数。 由于mbox参数使用序列化的点表示法命名，迁移到Platform Web SDK可能需要您更新现有受众和活动以使用新的mbox参数名称。 <br><br>作为的一部分传递的数据 `data.__adobe.target` 的 `sendEvent` 命令已映射到 [Target配置文件和Recommendations特定参数](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update). |
-| at.js 自定义事件 | 不支持。请参阅 [公共路线图](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 了解当前状态。 [响应令牌](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) 作为的一部分 `propositions` 作为回应 `sendEvent` 呼叫。 |
+| at.js自定义事件 | 不支持。 请参阅 [公共路线图](https://github.com/orgs/adobe/projects/18/views/1?pane=item&amp;itemId=17372355{target="_blank"}) 了解当前状态。 [响应令牌](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) 作为的一部分 `propositions` 作为回应 `sendEvent` 呼叫。 |
 
 ## at.js设置和平台Web SDK等效项
 
@@ -97,19 +97,19 @@ ht-degree: 8%
 | `dataProviders` | 不支持 |
 | `decisioningMethod` | 所有Platform Web SDK `sendEvent` 命令使用服务器端决策。 不支持混合决策和设备上决策。 |
 | `defaultContentHiddenStyle` 和 `defaultContentVisibleStyle` | 仅适用于at.js 1.x。与at.js 2.x类似，可以使用自定义代码缓解基于表单的体验出现的任何闪烁。 |
-| `deviceIdLifetime` | 不支持。如果 `targetMigrationEnabled` 设置为 `true` 使用 `configure` 命令， `mbox` Cookie在设备生命周期设置为2年的情况下进行设置。 此值不可配置。 |
+| `deviceIdLifetime` | 不支持。 如果 `targetMigrationEnabled` 设置为 `true` 使用 `configure` 命令， `mbox` Cookie在设备生命周期设置为2年的情况下进行设置。 此值不可配置。 |
 | `enabled` | 通过数据流配置启用或禁用目标功能 |
 | `globalMboxAutoCreate` | 设置 `renderDecisions` 选项至 `true` 使用 `sendEvent` 用于自动获取和渲染基于VEC的体验的命令。<br><br>请求 `decisionScope` 对象 `__view__` 如果您希望手动渲染基于VEC的体验。 |
 | `imsOrgId` | 设置 `orgId` 使用 `configure` 命令 |
 | `optinEnabled` 和 `optoutEnabled` | 请参阅平台Web SDK [隐私选项](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html). 此 `defaultConsent` 选项适用于Platform Web SDK支持的所有Adobe解决方案。 |
-| `overrideMboxEdgeServer` 和 `overrideMboxEdgeServerTimeout` | 不适用. 所有Platform Web SDK请求都使用Adobe Experience Platform Edge Network。 |
+| `overrideMboxEdgeServer` 和 `overrideMboxEdgeServerTimeout` | 不适用。 所有Platform Web SDK请求都使用Adobe Experience Platform Edge网络。 |
 | `pageLoadEnabled` | 设置 `renderDecisions` 选项至 `true` 使用 `sendEvent` 命令 |
-| `secureOnly` | 不支持。Platform Web SDK使用设置所有Cookie `secure` 和 `sameSite="none"` 属性。 |
-| `selectorsPollingTimeout` | 不支持。Platform Web SDK使用的值为5秒。 如果需要，可以使用自定义代码手动渲染内容。 |
+| `secureOnly` | 不支持。 Platform Web SDK使用设置所有Cookie `secure` 和 `sameSite="none"` 属性。 |
+| `selectorsPollingTimeout` | 不支持。 Platform Web SDK使用的值为5秒。 如果需要，可以使用自定义代码手动渲染内容。 |
 | `serverDomain` | 使用 `edgeDomain` 使用设置 `configure` 命令 |
 | `telemetryEnabled` | 不适用 |
-| `timeout` | 不支持。建议您确保任何闪烁缓解代码都包含适当的超时。 |
-| `viewsEnabled` | 不支持。始终在第一次访问时获取Target视图的内容 `sendEvent()` 调用if `renderDecisions` 设置为 `true` 或 `__view__` decisionScope包含在请求中。 |
+| `timeout` | 不支持。 建议您确保任何闪烁缓解代码都包含适当的超时。 |
+| `viewsEnabled` | 不支持。 始终在第一次访问时获取Target视图的内容 `sendEvent()` 调用if `renderDecisions` 设置为 `true` 或 `__view__` decisionScope包含在请求中。 |
 | `visitorApiTimeout` | 不适用 |
 
 
@@ -119,7 +119,7 @@ ht-degree: 8%
 
 ### at.js 2.x系统图
 
-![at.js 2.0页面加载行为](assets/target-at-js-2x-diagram.png){zoomable=&quot;yes&quot;}
+![at.js 2.0页面加载行为](assets/target-at-js-2x-diagram.png){zoomable="yes"}
 
 | 调用 | 详细信息 |
 | --- | --- |
@@ -130,11 +130,11 @@ ht-degree: 8%
 | 5 | Target会根据URL、请求参数和配置文件数据，决定可为访客返回哪些当前页面和未来视图的活动和体验。 |
 | 6 | 目标内容会发送回页面，其中可能包含其他个性化的配置文件值。<br><br>当前页面上的目标内容会在默认内容不发生闪烁的情况下尽快显示。<br><br>单页应用程序的未来视图的目标内容将缓存在浏览器中，因此当视图触发时，可以立即应用它而无需额外的服务器调用。 |
 | 7 | 从页面发送到数据收集服务器的Analytics数据。 |
-| 8 | Target 数据会通过 SDID 匹配到 Analytics 数据，并且会进行相应处理以保存到 Analytics 报表存储中。之后，便可以在 Analytics 和 Target 中通过 A4T 报表查看 Analytics 数据。 |
+| 8 | Target数据会通过SDID匹配到Analytics数据，并且会进行相应处理以保存到Analytics报表存储中。 之后，便可以在Analytics和Target中通过A4T报表查看Analytics数据。 |
 
 请参阅开发人员指南，了解如何 [使用at.js为单页应用程序实施Target](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/target-atjs-single-page-application/).
 
-### Platform Web SDK 系统图
+### Platform Web SDK系统图
 
 ![使用Platform Web SDK的Adobe Target Edge Decisioning示意图](assets/target-platform-web-sdk.png)
 
