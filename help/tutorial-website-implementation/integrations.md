@@ -1,11 +1,11 @@
 ---
-title: 使用标记实施Experience Cloud集成
+title: 实施Experience Cloud与标记的集成
 description: 了解如何验证 Adobe Experience Cloud 实施中的受众、A4T 和客户属性集成。本课程是“在网站中实施Experience Cloud”教程的一部分。
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '1272'
-ht-degree: 91%
+source-wordcount: '1213'
+ht-degree: 86%
 
 ---
 
@@ -26,12 +26,11 @@ ht-degree: 91%
 
 >[!NOTE]
 >
-> 要充分使用这些集成，需要满足许多用户权限要求并完成相应的帐户配置和置备步骤，而这些内容都不在本教程的涵盖范围内。如果您尚未在当前的 Experience Cloud 实施中使用这些集成，则应考虑以下事项：
+>要充分使用这些集成，需要满足许多用户权限要求并完成相应的帐户配置和置备步骤，而这些内容都不在本教程的涵盖范围内。 如果您尚未在当前的 Experience Cloud 实施中使用这些集成，则应考虑以下事项：
 >
 >* 查看[核心服务集成](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=zh-Hans)的完整要求
 >* 查看 [Analytics for Target 集成](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)的完整要求
 >* 让您的 Experience Cloud 组织管理员[请求配置这些集成](https://www.adobe.com/go/audiences_cn)
-
 
 ## 受众
 
@@ -51,13 +50,13 @@ ht-degree: 91%
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 确保Debugger将标记属性映射到 *您的* 开发环境，如 [前课](switch-environments.md)
+1. 如[前面的课程](switch-environments.md)中所述，确保Debugger将标记属性映射到&#x200B;*您的*&#x200B;开发环境
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. 转到 Debugger 的“网络”选项卡
 
-1. 单击&#x200B;**[!UICONTROL 清除所有请求]**，这只是为了清理一下内容
+1. 单击&#x200B;**[!UICONTROL 清除所有请求]**&#x200B;只进行清除
 
 1. 重新加载 Luma 页面，从而确保您在 Debugger 中看到 Target 请求和 Analytics 请求
 
@@ -90,13 +89,13 @@ A4T 的工作方式是将从 Target 向 Analytics 发出的服务器端请求与
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 确保Debugger将标记属性映射到 *您的* 开发环境，如 [前课](switch-environments.md)
+1. 如[前面的课程](switch-environments.md)中所述，确保Debugger将标记属性映射到&#x200B;*您的*&#x200B;开发环境
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. 转到 Debugger 的“网络”选项卡
 
-1. 单击&#x200B;**[!UICONTROL 清除所有请求]**，这只是为了清理一下内容
+1. 单击&#x200B;**[!UICONTROL 清除所有请求]**&#x200B;只进行清除
 
 1. 重新加载 Luma 页面，从而确保您在 Debugger 中看到 Target 请求和 Analytics 请求
 
@@ -112,12 +111,12 @@ A4T 的工作方式是将从 Target 向 Analytics 发出的服务器端请求与
 
 ## 客户属性
 
-[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans)是人员核心服务的一部分，允许您上传客户关系管理 (CRM) 数据库中的数据，并在 Adobe Analytics 和 Adobe Target 中利用这些数据。
+[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html)是人员核心服务的一部分，允许您上传客户关系管理 (CRM) 数据库中的数据，并在 Adobe Analytics 和 Adobe Target 中利用这些数据。
 
 实施客户属性（您已经完成）的主要要求包括：
 
 1. 实施 Adobe Experience Platform Identity Service
-1. 通过Id服务设置客户Id *之前* Target和Analytics会触发其请求（您可以使用标记中的规则排序功能完成该操作）
+1. 在&#x200B;*之前，通过ID服务*&#x200B;设置客户ID。Target和Analytics会触发其请求（您已使用标记中的规则排序功能完成此操作）
 
 ### 验证客户属性实施
 
@@ -132,11 +131,11 @@ A4T 的工作方式是将从 Target 向 Analytics 发出的服务器端请求与
 
 1. 单击网站右上角的&#x200B;**[!UICONTROL 登录]**&#x200B;链接
 
-   ![单击右上方的登录](images/idservice-loginNav.png)
+   ![单击右上角的“登录”](images/idservice-loginNav.png)
 
 1. 输入 `test@adobe.com` 作为用户名
 1. 输入 `test` 作为密码
-1. 单击 **[!UICONTROL LOGIN]** 按钮
+1. 单击&#x200B;**[!UICONTROL 登录]**&#x200B;按钮
 
    ![输入凭据并单击登录](images/idservice-login.png)
 
@@ -150,4 +149,4 @@ A4T 的工作方式是将从 Target 向 Analytics 发出的服务器端请求与
 
    ![Analytics 客户 ID 验证](images/integrations-analyticsCustomerIDValidation.png)
 
-[下一课程“发布您的资产”>](publish.md)
+[下一课程“Publish您的资产”>](publish.md)

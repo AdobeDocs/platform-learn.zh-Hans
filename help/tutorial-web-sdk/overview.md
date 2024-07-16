@@ -1,29 +1,29 @@
 ---
 title: “利用 Web SDK 实施 Adobe Experience Cloud”教程
-description: 了解如何使用Adobe Experience Platform Web SDK实施Experience Cloud应用程序。
+description: 了解如何使用 Adobe Experience Platform Web SDK 实施 Experience Cloud 应用程序。
 recommendations: catalog, noDisplay
 exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
 source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
 workflow-type: tm+mt
 source-wordcount: '717'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
 # “利用 Web SDK 实施 Adobe Experience Cloud”教程
 
-了解如何使用Adobe Experience Platform Web SDK实施Experience Cloud应用程序。
+了解如何使用 Adobe Experience Platform Web SDK 实施 Experience Cloud 应用程序。
 
-Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Experience Cloud的客户通过Adobe Experience PlatformEdge Network与Adobe应用程序和第三方服务进行交互。 请参阅 [Adobe Experience Platform Web SDK概述](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home) 以了解更多详细信息。
+Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Experience Cloud的客户通过Adobe Experience PlatformEdge Network与Adobe应用程序和第三方服务进行交互。 有关更多详细信息，请参阅[Adobe Experience Platform Web SDK概述](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home)。
 
-![Experience PlatformWeb SDK架构](assets/dc-websdk.png)
+![Experience Platform的Web SDK架构](assets/dc-websdk.png)
 
-本教程将指导您在名为Luma的示例零售网站上实施Platform Web SDK。 此 [Luma网站](https://luma.enablementadobe.com/content/luma/us/en.html) 具有丰富的数据层和功能，可让您构建现实的实施。 在本教程中，您需要：
+本教程将指导您在名为Luma的示例零售网站上实施Platform Web SDK。 [Luma网站](https://luma.enablementadobe.com/content/luma/us/en.html)具有丰富的数据层和功能，可让您构建现实的实施。 在本教程中，您需要：
 
 * 使用适用于Luma网站的Platform Web SDK实施，在您自己的帐户中创建自己的标记资产。
 * 为Web SDK实施配置所有数据收集功能，例如数据流、架构和身份命名空间。
 * 添加以下Adobe Experience Cloud应用程序：
-   * **[Adobe Experience Platform](setup-experience-platform.md)** (以及基于Platform构建的应用程序，例如Adobe Real-time Customer Data Platform、Adobe Journey Optimizer和Adobe Customer Journey Analytics)
+   * **[Adobe Experience Platform](setup-experience-platform.md)**(以及在Adobe Real-time Customer Data Platform、Adobe Journey Optimizer和Adobe Customer Journey Analytics等平台上构建的应用程序)
    * **[Adobe Analytics](setup-analytics.md)**
    * **[Adobe Audience Manager](setup-audience-manager.md)**
    * **[Adobe Target](setup-target.md)**
@@ -35,7 +35,7 @@ Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Exper
 
 >[!NOTE]
 >
->类似的多解决方案教程可用于 [移动SDK](../tutorial-mobile-sdk/overview.md).
+>[Mobile SDK](../tutorial-mobile-sdk/overview.md)也提供了类似的多解决方案教程。
 
 ## 先决条件
 
@@ -43,32 +43,32 @@ Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Exper
 
 在这些课程中，我们假定您拥有Adobe帐户和完成课程所需的权限。 如果没有，则必须联系贵公司的Experience Cloud管理员以获取访问权限。
 
-* 对象 **数据收集**，您必须具有：
-   * **[!UICONTROL 平台]** — 权限 **[!UICONTROL Web]** 如果获得许可， **[!UICONTROL Edge]**
-   * **[!UICONTROL 资产权限]** — 权限 **[!UICONTROL 批准]**， **[!UICONTROL 开发]**， **[!UICONTROL 编辑属性]**， **[!UICONTROL 管理环境]**， **[!UICONTROL 管理扩展]**、和 **[!UICONTROL Publish]**，
-   * **[!UICONTROL 公司权限]** — 权限 **[!UICONTROL 管理资产]**
+* 对于&#x200B;**数据收集**，您必须具有：
+   * **[!UICONTROL 平台]** — **[!UICONTROL Web]**&#x200B;的权限，如果获得许可，还有&#x200B;**[!UICONTROL Edge]**
+   * **[!UICONTROL 属性权限]** — 权限&#x200B;**[!UICONTROL 批准]**、**[!UICONTROL 开发]**、**[!UICONTROL 编辑属性]**、**[!UICONTROL 管理环境]**、**[!UICONTROL 管理扩展]**&#x200B;和&#x200B;**[!UICONTROL Publish]**，
+   * **[!UICONTROL 公司权限]** — 权限&#x200B;**[!UICONTROL 管理资产]**
 
-     有关标记权限的更多信息，请参阅 [文档](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
+     有关标记权限的详细信息，请参阅[文档](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions)。
 
-* 对象 **Experience Platform**，您必须具有：
+* 对于&#x200B;**Experience Platform**，您必须具有：
 
-   * 访问 **默认生产**， **&quot;Prod&quot;** 沙盒。
-   * 访问 **[!UICONTROL 管理架构]** 和 **[!UICONTROL 查看架构]** 下 **[!UICONTROL 数据建模]**.
-   * 访问 **[!UICONTROL 管理身份命名空间]** 和 **[!UICONTROL 查看身份命名空间]** 下 **[!UICONTROL Identity Management]**.
-   * 访问 **[!UICONTROL 管理数据流]** 和 **[!UICONTROL 查看数据流]** 下 **[!UICONTROL 数据收集]**.
-   * 如果您是某个基于平台的应用程序的客户，并且将要完成 [设置Experience Platform](setup-experience-platform.md) 课程中，您还应具有：
-      * 访问 **开发** 沙盒。
-      * 下的所有权限项 **[!UICONTROL 数据管理]**、和 **[!UICONTROL 用户档案管理]**：
+   * 访问&#x200B;**默认生产**，**“生产”**&#x200B;沙盒。
+   * 访问&#x200B;**[!UICONTROL 数据建模]**&#x200B;下的&#x200B;**[!UICONTROL 管理架构]**&#x200B;和&#x200B;**[!UICONTROL 查看架构]**。
+   * 访问&#x200B;**[!UICONTROL Identity Management]**&#x200B;下的&#x200B;**[!UICONTROL 管理身份命名空间]**&#x200B;和&#x200B;**[!UICONTROL 查看身份命名空间]**。
+   * 访问&#x200B;**[!UICONTROL 数据收集]**&#x200B;下的&#x200B;**[!UICONTROL 管理数据流]**&#x200B;和&#x200B;**[!UICONTROL 查看数据流]**。
+   * 如果您是某个基于平台的应用程序的客户，并且即将完成[设置Experience Platform](setup-experience-platform.md)课程，则您还应：
+      * 访问&#x200B;**开发**&#x200B;沙盒。
+      * **[!UICONTROL 数据管理]**&#x200B;和&#x200B;**[!UICONTROL 配置文件管理]**&#x200B;下的所有权限项：
 
      所需的功能应该可供所有Experience Cloud客户使用，即使您不是基于平台的应用程序(如Real-Time CDP)的客户。
 
-     有关Platform访问控制的更多信息，请参阅 [文档](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).
+     有关Platform访问控制的详细信息，请参阅[文档](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)。
 
-* 对于可选 **Adobe Analytics** 课程，你一定有 [管理员对报表包设置、处理规则和Analysis Workspace的访问权限](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
+* 对于可选&#x200B;**Adobe Analytics**&#x200B;课程，您必须拥有[对报表包设置、处理规则和Analysis Workspace的管理员访问权限](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* 对于可选 **Adobe Target** 课程，你一定有 [编辑者或审批者](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) 访问权限。
+* 对于可选&#x200B;**Adobe Target**&#x200B;课程，您必须具有[编辑者或审批者](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)访问权限。
 
-* 对于可选 **Audience Manager** 课程中，您必须有权创建、读取和写入特征、区段和目标。 有关更多信息，请参阅以下教程： [Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
+* 对于可选的&#x200B;**Audience Manager**&#x200B;课程，您必须具有创建、读取和写入特征、区段和目标的权限。 有关详细信息，请参阅有关[Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)的教程。
 
 
 >[!NOTE]
@@ -81,7 +81,7 @@ Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Exper
 
 ## 加载Luma网站
 
-加载 [Luma网站](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} 在单独的浏览器选项卡中将它添加为书签，这样您可以在教程中根据需要轻松加载它。 除了能够加载我们的托管生产站点外，您不需要任何其他访问Luma的权限。
+在单独的浏览器选项卡中加载[Luma网站](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"}，并将其加入书签，以便在教程中根据需要轻松加载。 除了能够加载我们的托管生产站点外，您不需要任何其他访问Luma的权限。
 
 [![Luma网站](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"}
 
@@ -91,4 +91,4 @@ Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Exper
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容

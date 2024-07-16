@@ -1,15 +1,15 @@
 ---
-title: 发布您的标记属性
+title: Publish您的标记资产
 description: 了解如何将标记资产从开发环境发布到暂存环境和生产环境。 本课程是“在网站中实施Experience Cloud”教程的一部分。
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
 source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 64%
+source-wordcount: '571'
+ht-degree: 54%
 
 ---
 
-# 发布您的标记属性
+# Publish您的标记资产
 
 现在，您已在开发环境中实施 Adobe Experience Cloud 的一些关键解决方案，接下来该学习发布工作流程。
 
@@ -17,9 +17,9 @@ ht-degree: 64%
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * platform launch服务器端现在为 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Edge配置现在为 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 学习目标
 
@@ -33,19 +33,19 @@ ht-degree: 64%
 
 现在，您已在开发环境中创建并验证库，接下来该将其发布到暂存环境。
 
-1. 转到 **[!UICONTROL 发布流]** 页面
+1. 转到&#x200B;**[!UICONTROL 发布流]**&#x200B;页面
 
-1. 打开库旁边的下拉菜单，然后选择 **[!UICONTROL Submit for Approval]**
+1. 打开库旁边的下拉菜单，然后选择&#x200B;**[!UICONTROL 提交以供审批]**
 
    ![Submit for Approval](images/publishing-submitForApproval.png)
 
-1. 单击对话框中的 **[!UICONTROL Submit]** 按钮：
+1. 单击对话框中的&#x200B;**[!UICONTROL Submit]**&#x200B;按钮：
 
    ![单击模式窗口中的 Submit](images/publishing-submit.png)
 
 1. 此时库将以未构建状态显示在 [!UICONTROL Submitted] 列中：
 
-1. 打开下拉菜单，然后选择 **[!UICONTROL Build for Staging]**：
+1. 打开下拉列表，然后选择&#x200B;**[!UICONTROL Build for Staging]**：
 
    ![Build for Staging](images/publishing-buildForStaging.png)
 
@@ -55,7 +55,7 @@ ht-degree: 64%
 
 **验证暂存库中所做的更改**
 
-1. 在标记属性中，打开 [!UICONTROL 环境] 页面
+1. 在标记属性中，打开[!UICONTROL 环境]页面
 
 1. 在 [!UICONTROL Staging] 行中，单击安装图标 ![安装图标](images/launch-installIcon.png) 以打开模式窗口
 
@@ -63,28 +63,28 @@ ht-degree: 64%
 
 1. 单击复制图标 ![复制图标](images/launch-copyIcon.png) 以将嵌入代码复制到剪贴板
 
-1. 单击 **[!UICONTROL Close]** 以关闭该模式窗口
+1. 单击&#x200B;**[!UICONTROL 关闭]**&#x200B;以关闭该模式窗口
 
    ![安装图标](images/publishing-copyStagingCode.png)
 
 1. 在您的 Chrome 浏览器中打开 [Luma 演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 打开 [Experience Platform调试器扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) 通过单击 ![Debugger图标](images/icon-debugger.png) 图标
+1. 通过单击![Experience Platform器图标](images/icon-debugger.png)图标，打开[调试器扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
    ![单击调试器图标](images/switchEnvironments-openDebugger.png)
 
 1. 转到“工具”选项卡
 
-1. 在 **[!UICONTROL AdobeLaunch >替换Launch嵌入代码]** 部分粘贴剪贴板中的暂存嵌入代码
-1. 打开 **[!UICONTROL 跨luma.enablementadobe.com应用]** 切换
+1. 在&#x200B;**[!UICONTROL AdobeLaunch >替换Launch嵌入代码]**&#x200B;部分中，粘贴剪贴板中的暂存嵌入代码
+1. 打开&#x200B;**[!UICONTROL Apply across luma.enablementadobe.com]**&#x200B;开关
 
 1. 单击磁盘图标以进行保存
 
-   ![Debugger中显示的标记环境](images/switchEnvironments-debugger-save.png)
+   Debugger](images/switchEnvironments-debugger-save.png)中显示的![标记环境
 
 1. 重新加载并查看调试器的“概要”选项卡。在Launch部分下，您现在应该看到已实施暂存资产，并显示资产名称（例如，“tags Tutorial”或您命名的任何资产名称）！
 
-   ![Debugger中显示的标记环境](images/publishing-debugger-staging.png)
+   Debugger](images/publishing-debugger-staging.png)中显示的![标记环境
 
 在实际工作中，当您的 QA 团队通过审核暂存环境中的更改进行签核后，便可以将其发布到生产环境。
 
@@ -92,21 +92,21 @@ ht-degree: 64%
 
 1. 转到 [!UICONTROL Publishing] 页面
 
-1. 从下拉菜单中，单击 **[!UICONTROL Approve for Publishing]**：
+1. 从下拉列表中，单击&#x200B;**[!UICONTROL 批准发布]**：
 
    ![Approve for Publishing](images/publishing-approveForPublishing.png)
 
-1. 单击对话框中的 **[!UICONTROL Approve]** 按钮：
+1. 单击对话框中的&#x200B;**[!UICONTROL 批准]**&#x200B;按钮：
 
    ![单击 Approve](images/publishing-approve.png)
 
 1. 此时库将以未构建状态（黄色圆点）显示在 [!UICONTROL Approved] 列中：
 
-1. 打开下拉菜单，然后选择 **[!UICONTROL Build &amp; Publish to Production]**：
+1. 打开下拉列表，然后选择&#x200B;**[!UICONTROL Build and Publish to Production]**：
 
    ![单击 Build &amp; Publish to Production](images/publishing-buildAndPublishToProduction.png)
 
-1. 单击对话框中的 **[!UICONTROL Publish]** 按钮：
+1. 单击对话框中的&#x200B;**[!UICONTROL Publish]**：
 
    ![单击 Publish](images/publishing-publish.png)
 

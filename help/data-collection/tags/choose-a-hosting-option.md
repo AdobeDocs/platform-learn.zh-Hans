@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 选择托管选项
 
-了解如何为您的标记库选择最佳托管选项。 欲了解更多信息，请参见 [主机](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html) 文档。
+了解如何为您的标记库选择最佳托管选项。 有关详细信息，请参阅[主机](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/hosts/hosts-overview.html)文档。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on)

@@ -12,7 +12,7 @@ topic: Integrations
 exl-id: 9607e641-b0d5-49c1-b319-32ed0720e715
 source-git-commit: ac07d62cf4bfb6a9a8b383bbfae093304d008b5f
 workflow-type: tm+mt
-source-wordcount: '2087'
+source-wordcount: '2086'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ API是解决软件业务挑战的一种方法。 在大多数企业中，这是�
 
 在此屏幕快照中，鼠标光标悬停在Adobe Experience Platform链接上。 底部是Web浏览器状态栏，其中显示了浏览器将获取的页面的“地址”。 换言之，单击Adobe Experience Platform链接可告知浏览器“为我获取该页面，以便我能够在屏幕上看到它”。
 
-单击链接时，浏览器会向服务器发出获取页面的请求。 这是 `GET` 请求，通常用于Web API的请求方法之一。 浏览器需要满足一个请求的是页面“地址” — 它在Web上的什么位置？
+单击链接时，浏览器会向服务器发出获取页面的请求。 这是`GET`请求，通常用于Web API的请求方法之一。 浏览器需要满足一个请求的是页面“地址” — 它在Web上的什么位置？
 
 ### URL的各个部分
 
@@ -47,33 +47,33 @@ API是解决软件业务挑战的一种方法。 在大多数企业中，这是�
 
 大多数浏览器都有一个“地址栏”，显示某个网页的部分或全部“地址”。 当浏览器“获取”我们单击的链接的页面时，它会在地址栏中显示该页面的“地址”。 那么，网页的“地址”是什么呢？
 
-该 `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html` 上面是Web上页面的地址，它称为URL或统一资源定位器。 URL可以引用此类页面、图像文件、视频或其他文件类型。
+上面的`https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`是Web上某个页面的地址，它称为URL或统一资源定位器。 URL可以引用此类页面、图像文件、视频或其他文件类型。
 
-![URL的各个部分](../assets/api101-url-parts.jpg)
+URL的![部分](../assets/api101-url-parts.jpg)
 
 此地址（即URL）包含与Web和浏览器API非常相关的特定部分。
 
 **方案**
 
-此 `scheme` 以上也称为 `protocol` 使用Web API，通常可以 `http` 或 `https`. HTTP或HyperText传输协议是将网页等资源从Web服务器传输到Web浏览器的方式。 HTTPS是安全版本，其中传输在Internet上进行，使用旨在防止对正在传输的资源造成干扰的安全版本。 通过HTTPS查看页面时，经常会在浏览器地址栏中看到一个小锁图标。
+上述`scheme`也称为具有Web API的`protocol`，它通常为`http`或`https`。 HTTP或HyperText传输协议是将网页等资源从Web服务器传输到Web浏览器的方式。 HTTPS是安全版本，其中传输在Internet上进行，使用旨在防止对正在传输的资源造成干扰的安全版本。 通过HTTPS查看页面时，经常会在浏览器地址栏中看到一个小锁图标。
 
 对于Web API，这些资源的传输通过HTTP请求进行，换句话说，就是通过HTTP请求。
 
 **主机和域**
 
-此 `business.adobe.com` 是所请求的资源的主机。 单击我们的示例链接时，浏览器将使用URL的此部分来查找托管页面的服务器。 它并不总是与Web服务器完全相同，但在基本层面上，我们可以将其视为浏览器将获取我们请求的页面的服务器。
+`business.adobe.com`是所请求资源的主机。 单击我们的示例链接时，浏览器将使用URL的此部分来查找托管页面的服务器。 它并不总是与Web服务器完全相同，但在基本层面上，我们可以将其视为浏览器将获取我们请求的页面的服务器。
 
-域名是域名系统（通常称为DNS）的一部分。 大多数人认为 `adobe.com` 或 `example.com` 作为“域名”，但有些部分与API相关。 `www.adobe.com` 和 `business.adobe.com` 可以称为域名，但 `www.` 和 `business.` 部分称为子域。 API通常会与包含子域（如）的URL进行交互 `api.example.com` 或 `sub.www.example.com`.
+域名是域名系统（通常称为DNS）的一部分。 大多数人将`adobe.com`或`example.com`视为“域名”，但存在与API相关的部分。 `www.adobe.com`和`business.adobe.com`可以称为域名，但`www.`和`business.`部分称为子域。 API经常与包含子域（如`api.example.com`或`sub.www.example.com`）的URL交互。
 
-这个词很常见 _主机_ 请参阅完整的域名，包括任何子域，如 `business.adobe.com`. 经常会看到术语 _域_ 或 _域名_ 在引用不带子域的主机时，例如 `adobe.com`. 记住主机的每个部分和变体的特定术语在此处并不重要。 但是，了解这些术语的常用之处很重要，这样您就可以阐明业务和讨论的任何相关细节。
+经常会看到术语&#x200B;_主机_&#x200B;是指包括任何子域（如`business.adobe.com`）的完整域名。 在引用不带子域（如`adobe.com`）的主机时，经常会看到术语&#x200B;_域_&#x200B;或&#x200B;_域名_。 记住主机的每个部分和变体的特定术语在此处并不重要。 但是，了解这些术语的常用之处很重要，这样您就可以阐明业务和讨论的任何相关细节。
 
 **Origin**
 
-Origin是另一个要注意的术语，它与URL的部分密切相关。 在基本上，起源大致为 `scheme` 加上 `host` 加上 `domain` 点赞 `https://business.adobe.com`. 不同的值通常表示不同的来源，例如 `https://business.adobe.com` 和 `http://business.adobe.com` 不是同一来源，因为它们具有不同的计划。 `https://www.adobe.com` 和 `https://business.adobe.com` 由于子域不同，因此在许多使用中来源也不相同。
+Origin是另一个要注意的术语，它与URL的部分密切相关。 在基本级别上，原点大致为`scheme`加`host`加`domain`，如`https://business.adobe.com`。 不同的值通常表示不同的源，如`https://business.adobe.com`和`http://business.adobe.com`不是同一源，因为它们具有不同的方案。 由于不同的子域，`https://www.adobe.com`和`https://business.adobe.com`在许多使用中也不是同一来源。
 
 **路径**
 
-上述URL示例中的最后一位是 `path` 到资源 — 示例中的页面。 此 `/products/experience-platform/` 部分通常表示Web服务器上的文件夹或目录。 就像我们在计算机上为文档和照片提供了文件夹或目录一样，我们在Web服务器上也提供了用于整理内容的文件夹。 最后， `/adobe-experience-platform.html` 部分是文件的名称 — 网页。
+上述URL示例中的最后一位是资源的`path`，即我们示例中的页面。 `/products/experience-platform/`部分通常表示Web服务器上的文件夹或目录。 就像我们在计算机上为文档和照片提供了文件夹或目录一样，我们在Web服务器上也提供了用于整理内容的文件夹。 最后，`/adobe-experience-platform.html`部分是文件的名称 — 网页。
 
 URL还有其他更详细的部分，将在本系列的下一部分重点介绍。
 
@@ -85,7 +85,7 @@ Web API有时称为第三方API。 这就像交易中的当事人一样。 在�
 
 ## Web API的常见用法
 
-除了时间、天气或个性化内容之外，Web API还有许多用途。 twitter、TikTok、Facebook、LinkedIn、Snapchat、Pinterest等社交媒体平台具有多种程序员可以在其应用程序中使用的API。 当然，Adobe也有 [各种API](https://developer.adobe.com/apis) 程序员使用，以便他们的软件能够与Adobe产品和服务交互。 软件产品和服务通过这些API访问其他软件产品和服务。
+除了时间、天气或个性化内容之外，Web API还有许多用途。 twitter、TikTok、Facebook、LinkedIn、Snapchat、Pinterest等社交媒体平台具有多种程序员可以在其应用程序中使用的API。 当然，Adobe还有[多种程序员使用的API](https://developer.adobe.com/apis)，以便他们的软件可以与Adobe产品和服务交互。 软件产品和服务通过这些API访问其他软件产品和服务。
 
 ## 示例API
 
@@ -95,9 +95,9 @@ Adobe Experience Platform数据访问API是一个Web API，它允许程序员从
 
 ## API端点
 
-当程序员在程序中“使用”浏览器或Web API时，他们通常会请求发送或接收资源，例如我们的示例浏览器请求网页。 API文档通常会列出这些请求的“端点”，例如： `https://platform.adobe.io/data/foundation/export/files/{dataSetFileId}`. 这是程序员将用于获取数据集文件的Platform数据访问API的特定模式或“端点”。
+当程序员在程序中“使用”浏览器或Web API时，他们通常会请求发送或接收资源，例如我们的示例浏览器请求网页。 API文档通常会列出这些请求的“端点”，例如： `https://platform.adobe.io/data/foundation/export/files/{dataSetFileId}`。 这是程序员将用于获取数据集文件的Platform数据访问API的特定模式或“端点”。
 
-此 `{dataSetFileId}` 由这些大括号括起来表示程序员在请求中需要发送的值。 因此，实际API请求中的URL如下所示 `https://platform.adobe.io/data/foundation/export/files/xyz123brb` 其中 `xyz123brb` 必须为程序员希望接收的数据集文件的有效ID。
+由这些大括号括起来的`{dataSetFileId}`表示程序员在请求中需要发送的值。 因此，实际API请求中的URL类似于`https://platform.adobe.io/data/foundation/export/files/xyz123brb`，其中`xyz123brb`必须是程序员希望接收的数据集文件的有效ID。
 
 换言之，就像浏览器通过特定URL获取页面、API请求从特定端点获取资源或向特定端点发送资源一样，此数据集示例如下。
 
@@ -109,23 +109,23 @@ Adobe Experience Platform数据访问API是一个Web API，它允许程序员从
 
 **`GET`**
 
-此 `GET` 请求方法在请求提供资源的响应时使用，例如我们的网页和数据集示例。 当我们单击浏览器中的链接或点按移动设备上的链接时，我们正在制作 `GET` 在幕后请求。
+在请求提供资源的响应（如我们的网页和数据集示例）时使用`GET`请求方法。 当我们单击浏览器中的链接或点按移动设备上的链接时，我们正在后台发出`GET`请求。
 
 **`POST`**
 
-此 `POST` 方法随请求发送数据。 “请求”发送数据听起来可能很奇怪，但想法是，发出API请求需要端点（接收软件）接受请求，对于 `POST`，以也接受正在发送的数据。 发送的数据通常会像数据库或文件一样写入数据存储，以便进行保存。
+`POST`方法随请求发送数据。 “请求”发送数据听起来可能很奇怪，但想法是，发出API请求需要端点（接收软件）接受请求，如果是`POST`，还要接受正在发送的数据。 发送的数据通常会像数据库或文件一样写入数据存储，以便进行保存。
 
 **`PUT`**
 
-此 `PUT` 请求方法类似于 `POST` 因为它发送数据，但如果正在发送的数据在端点已存在， `PUT` 将通过替换现有数据来更新现有数据。 A `POST` 不更新，只是发送，因此多个 `POST` 请求可以创建已发送数据的多个记录，而不是更新任何现有记录。
+`PUT`请求方法类似于`POST`，因为它发送数据，但如果正在发送的数据在端点已存在，则`PUT`将通过替换现有数据来更新现有数据。 `POST`不更新，只是发送，因此多个`POST`请求可以创建已发送数据的多个记录，而不是更新任何现有记录。
 
 **`PATCH`**
 
-此 `PATCH` request方法用于发送更新部分现有记录的数据，例如，当我们通过更新帐户配置文件来更改地址时。 带有 `POST` 请求可创建一个额外的配置文件，并使用 `PUT`，则可以替换现有配置文件，但使用 `PATCH` 方法我们只是更新现有记录的相关部分，如地址。
+`PATCH`请求方法用于发送更新部分现有记录的数据，例如，当我们通过更新帐户配置文件来更改地址时。 通过`POST`请求可以创建其他配置文件，通过`PUT`，可以替换现有配置文件，但通过使用`PATCH`方法，我们只需更新现有记录的相关部分，如我们的地址。
 
 **`DELETE`**
 
-此 `DELETE` 请求方法会删除请求中指定的资源，例如，如果我们单击链接以完全删除帐户配置文件。
+`DELETE`请求方法会删除在请求中指定的资源，例如，如果我们单击链接以完全删除帐户配置文件。
 
 还有其他几种方法，但以下是使用API时最常用方法的列表。
 
@@ -133,7 +133,7 @@ Adobe Experience Platform数据访问API是一个Web API，它允许程序员从
 
 现在，您已了解与API相关的基本术语、概念和步骤，我们可以查看实际的API请求示例。
 
-我们浏览器示例中的页面的URL为 `https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`. 单击Adobe Experience Platform链接后，浏览器会发出 `GET` 请求此页面。 由于我们有浏览器来为我们工作，因此我们只需单击，但如果程序员希望在软件应用程序中发生该请求，他们必须提供成功完成API请求所需的所有详细信息。
+浏览器示例中的页面的URL为`https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`。 单击Adobe Experience Platform链接后，浏览器会对此页面发出`GET`请求。 由于我们有浏览器来为我们工作，因此我们只需单击，但如果程序员希望在软件应用程序中发生该请求，他们必须提供成功完成API请求所需的所有详细信息。
 
 下面是代码中可能出现的形式：
 
@@ -162,7 +162,10 @@ fetch(
 );
 ```
 
-在上面的代码中，您可以看到 `URL` 浏览器正在请求，底部附近是 `method: "GET"` 请求方法。 其他几行代码也是请求的一部分，但超出了本文的范围。
+在上面的代码中，您可以看到浏览器正在请求的`URL`，在底部附近向下是`method: "GET"`请求方法。 其他几行代码也是请求的一部分，但超出了本文的范围。
 
 
-*[API]：应用程序编程接口*[URL]：统一资源定位器*[HTTP]：超文本传输协议*[DNS]：域名系统
+*[API]：应用程序编程接口
+*[URL]：统一资源定位器
+*[HTTP]：超文本传输协议
+*[DNS]：域名系统

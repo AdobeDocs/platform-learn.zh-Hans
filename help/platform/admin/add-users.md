@@ -17,6 +17,6 @@ ht-degree: 1%
 
 # 添加用户和管理权限
 
-了解如何在基于Adobe Experience Platform的应用程序(如Real-time Customer Data Platform和Journey Optimizer)中添加用户和管理权限。 首先在Admin Console中添加用户，然后在Platform或Journey Optimizer界面中授予用户权限。 欲知更多信息，请访问 [访问控制文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans).
+了解如何在基于Adobe Experience Platform的应用程序(如Real-time Customer Data Platform和Journey Optimizer)中添加用户和管理权限。 首先在Admin Console中添加用户，然后在Platform或Journey Optimizer界面中授予用户权限。 有关详细信息，请访问[访问控制文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on)

@@ -16,7 +16,7 @@ ht-degree: 9%
 
 # 创建数据集并摄取数据
 
-本视频说明如何在Adobe Experience Platform界面中创建数据集和摄取数据。 有关更详细的产品文档，请参阅 [使用UI引入批量数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=zh-Hans) 和 [使用API创建数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html). 欲知更多信息，请访问 [数据引入文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans).
+本视频说明如何在Adobe Experience Platform界面中创建数据集和摄取数据。 有关更详细的产品文档，请参阅[使用UI摄取批次数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html?lang=zh-Hans)和[使用API创建数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html)。 有关详细信息，请访问[数据摄取文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
 

@@ -1,6 +1,6 @@
 ---
-title: 将合作伙伴属性添加到中的第一方配置文件 [!DNL Real-Time CDP]
-description: 了解如何向您的第一方配置文件添加合作伙伴属性，以通过中的其他渠道扩大影响力 [!DNL Real-Time CDP].
+title: 将合作伙伴属性添加到 [!DNL Real-Time CDP]中的第一方配置文件
+description: 了解如何将合作伙伴属性添加到您的第一方配置文件中，以通过 [!DNL Real-Time CDP]中的其他渠道扩大范围。
 feature: Integrations
 topic: Integrations
 solution: Real-Time Customer Data Platform
@@ -17,8 +17,8 @@ ht-degree: 0%
 
 ---
 
-# 将合作伙伴属性添加到中的第一方配置文件 [!DNL Real-Time CDP]
+# 在[!DNL Real-Time CDP]中将合作伙伴属性添加到第一方配置文件
 
-了解如何向您的第一方配置文件添加合作伙伴属性，以通过中的其他渠道扩大影响力 [!DNL Real-Time CDP]. 欲知更多信息，请访问 [使用合作伙伴提供的属性补充第一方用户档案](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html) 文档。
+了解如何向您的第一方配置文件添加合作伙伴属性，以通过[!DNL Real-Time CDP]中的其他渠道扩展范围。 有关详细信息，请访问[使用合作伙伴提供的属性补充第一方配置文件](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html)文档。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on)

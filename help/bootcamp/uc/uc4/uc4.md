@@ -26,7 +26,7 @@ Customer Journey Analytics为商业智能和数据科学团队提供了一个工
 
 >[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
-可以找到有关Customer Journey Analytics的更多信息 [此处](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+可在[此处](https://spark.adobe.com/page/t62eiRu9l6iWJ/)找到有关Customer Journey Analytics的更多信息。
 
 ## 学习目标
 
@@ -39,7 +39,7 @@ Customer Journey Analytics为商业智能和数据科学团队提供了一个工
 ## 先决条件
 
 - 最好最好还是有一定的了解Analysis Workspace的知识，但并不一定需要
-- 对Adobe Experience Platform的访问权限： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- 访问Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - 访问Customer Journey Analytics应用程序
 
 >[!IMPORTANT]

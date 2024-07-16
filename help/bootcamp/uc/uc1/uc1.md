@@ -20,7 +20,7 @@ ht-degree: 2%
 
 ## 先决条件
 
-- 对Adobe Experience Platform的访问权限： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- 访问Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - 访问Adobe Experience Platform数据收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - 访问演示网站
 

@@ -5,44 +5,44 @@ doc-type: multipage-overview
 exl-id: 7745e3ae-6e13-4cc2-9017-8bfb9d4ae1b4
 source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1588'
 ht-degree: 0%
 
 ---
 
 # 内容供应链分4个阶段
 
-如今，世界已数字化至上。 这是企业被迫接受的事实，而且这种状况不会很快消失。 在这个数字化的世界里，我们面临着 [内容激增](https://www.prnewswire.com/news-releases/content-marketing-market-size-to-grow-by-usd-487-24-billion--by-objective-platform-end-user-and-geography---forecast-and-analysis-2022-2026--301562808.html) 更多人浏览社交媒体、在数字空间消磨时间以及远程工作。
+如今，世界已数字化至上。 这是企业被迫接受的事实，而且这种状况不会很快消失。 在这个数字世界中，我们正面临着[内容激增](https://www.prnewswire.com/news-releases/content-marketing-market-size-to-grow-by-usd-487-24-billion--by-objective-platform-end-user-and-geography---forecast-and-analysis-2022-2026--301562808.html)，这是由更多人浏览社交媒体、在数字空间花费时间以及远程工作所推动的。
 
 这意味着有更多的渠道、市场和格式来交付内容，而且您更需要动态和优化该内容。
 
 ![85%的营销人员表示他们面临着更快创建和交付内容的压力。](./images/pressure-to-create-content.png)
 
-_来源：_ [_德勤数字_](https://www2.deloitte.com/content/dam/Deloitte/uk/Documents/consultancy/deloitte-uk-future-of-experience-time-to-market.pdf)
+_Source：_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/uk/Documents/consultancy/deloitte-uk-future-of-experience-time-to-market.pdf)
 
-好消息是，尽管跟上对内容的需求可能具有挑战性，但有一个方法可以更快速、更轻松地规划、制作和交付内容。 这叫做  **内容供应链**. 如果您能够让一个解决方案启动并运行流畅的流程、强大的战略和可靠的做法，则可以简化整个内容生命周期。
+好消息是，尽管跟上对内容的需求可能具有挑战性，但有一个方法可以更快速、更轻松地规划、制作和交付内容。 它称为&#x200B;**内容供应链**。 如果您能够让一个解决方案启动并运行流畅的流程、强大的战略和可靠的做法，则可以简化整个内容生命周期。
 
-## 协作是顺畅的内容供应链的关键
+## Collaboration是内容供应链顺畅的关键
 
 内容供应链是一个将人员、工具和工作流相结合以有效地规划、创建、管理和交付内容的过程。 随着客户以越来越快的速度要求更多更好的体验，您需要在此刻获得正确的内容，而不是稍后获得。 这样做可以打破孤立环境并统一工作流，从而避免给所有团队带来压力。 您还将从技术投资中获得更多价值，帮助您提高效率和价值。
 
-![内容供应链中涉及的阶段和团队的概述。](./images/csc-overview.png)
+![内容供应链涉及哪些阶段和团队的概述。](./images/csc-overview.png)
 
 从理论上讲，这一过程应该有助于世界各地的企业更快地发布其内容。 但在实践中，大部分供应链都因为跨职能内容生命周期的自然而然而崩溃。 不幸的是，当这些连锁店倒闭时，它们可能导致内部失调、预算耗尽、员工精疲力竭，并拖慢向市场传递关键信息的速度。
 
 ### 什么破坏了您的内容供应链？
 
-- [**70%**](https://business.adobe.com/resources/reports/future-creative-experiences.html) 时间花在非核心工作上，在不同角色的不同系统中管理手动任务。
-- [**21%**](https://business.adobe.com/resources/reports/future-creative-experiences.html) 许多创意人员发现，在整个内容流程中，瓶颈是创建有效体验的一个挑战。
-- [**31%**](https://www.fotoware.com/blog/dam-industry-trends-by-fotoware) 许多创意工作者和营销人员都表示，他们面临的最大挑战是无法与多个利益相关者共享资产。
+- [**70%**](https://business.adobe.com/resources/reports/future-creative-experiences.html)的时间花在非核心工作上，在不同角色的不同系统中管理手动任务。
+- [**21%**](https://business.adobe.com/resources/reports/future-creative-experiences.html)的创意人员将整个内容流程中的瓶颈视为创建有效体验的挑战。
+- [**31%**](https://www.fotoware.com/blog/dam-industry-trends-by-fotoware)的创意人员和营销人员表示，他们面临的最大挑战是无法与多个利益相关者共享资产。
 
 为了更好地了解内容供应链断裂背后的共同罪魁祸首，不妨看看三个高层阶段中的每一个阶段：
 
-1. 在  **规划**  阶段，缺乏统一的项目流程或跟踪资源的中央方式会导致多次修订、成本过高、价格高昂的延迟，以及无法平衡工作。 此外，团队成员之间的断开连接会导致浪费的周期和缓慢的优先级更改。
-2. 时段  **生产** 、孤立的系统和断开的工作流限制了实时协作、资产查找能力、延迟和倦怠。 而且，由于创意人员必须手动跟踪任务和资产以及手动执行重复任务，因此最终将会导致更高的成本和更多的错误。
-3. 时间到  **投放** ，没有中央资产管理系统 — 以及扩展内容的自动化程度有限 — 降低了团队跨渠道启动有凝聚力的个性化体验的能力。 此外，零散的投放工具和数据限制了资产性能的准确测量。
+1. 在&#x200B;**规划**&#x200B;阶段，缺少统一的项目流程或跟踪资源的中央方式会导致多次修订、成本过高、昂贵延迟，以及无法平衡工作。 此外，团队成员之间的断开连接会导致浪费的周期和缓慢的优先级更改。
+2. 在&#x200B;**生产**&#x200B;期间，孤立的系统和断开的工作流限制了实时协作、资产查找能力、延迟和燃尽。 而且，由于创意人员必须手动跟踪任务和资产以及手动执行重复任务，因此最终将会导致更高的成本和更多的错误。
+3. 在该&#x200B;**投放**&#x200B;时，由于没有中央资产管理系统，并且扩展内容的自动化程度有限，因此降低了团队跨渠道启动有凝聚力的个性化体验的能力。 此外，零散的投放工具和数据限制了资产性能的准确测量。
 
-![在断裂的供应链中，支离破碎的系统制造了混乱。](./images/fragmented-supply-chain.png)
+![在中断的供应链中，分散的系统会造成混乱。](./images/fragmented-supply-chain.png)
 
 ## 是时候与您的内容供应链打交道了
 
@@ -52,7 +52,7 @@ _来源：_ [_德勤数字_](https://www2.deloitte.com/content/dam/Deloitte/uk/D
 
 理想情况下，您的营销团队应使用工作管理解决方案，该解决方案允许跨职能协作，并将项目与规划的、数据驱动的结果相关联。 它还应使营销团队从战略角度确定工作的优先级，并向您的创意团队宣布这些优先级。 从那里，创意摘要、内容版本和反馈应在每个项目中捆绑在一起，以便您的团队不必搜索旧电子邮件来查找他们要查找的内容。
 
-您的创意团队应使用 [出色的数字资产管理](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[系统](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) 集成了您的创意和工作管理工具。 这样，他们就可以轻松地查找、使用、更新相关资产或重新设定其用途。 通过执行所有这些操作，您可以提高上市速度并简化内部操作和流程。
+您的创意团队应使用[出色的数字资产管理](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[系统](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)进行设置，该系统已与您的创意和工作管理工具集成。 这样，他们就可以轻松地查找、使用、更新相关资产或重新设定其用途。 通过执行所有这些操作，您可以提高上市速度并简化内部操作和流程。
 
 ### 通过无缝工作流提高生产效率
 
@@ -70,30 +70,30 @@ _来源：_ [_德勤数字_](https://www2.deloitte.com/content/dam/Deloitte/uk/D
 
 ## 在Adobe，我们正在构建一流的内容供应链
 
-我们自己的 [Adobe Experience Cloud业务](https://business.adobe.com/) 重点遵循之前概述的步骤，让我们的营销活动重现生动并支持多个区段。 我们的愿景一直是，根据我们的营销活动框架和消息传递在全球范围内提供引人注目的内容。
+我们自己的[Adobe Experience Cloud业务](https://business.adobe.com/)专注于执行之前概述的步骤，以使我们的营销活动得以实施并支持多个区段。 我们的愿景一直是，根据我们的营销活动框架和消息传递在全球范围内提供引人注目的内容。
 
-在端到端内容创建过程中，关键是配对 [Adobe Workfront](https://business.adobe.com/products/workfront/main.html) 和 [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). 让我们看一下我们如何通过这三个高级别阶段来处理我们的流程。
+我们的端到端内容创建过程的关键是[Adobe Workfront](https://business.adobe.com/products/workfront/main.html)与[Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html)的配对。 让我们看一下我们如何通过这三个高级别阶段来处理我们的流程。
 
-我们先从  **规划** ，接收来自整个业务的数百个内容请求，然后根据季度优先级安排这些请求的优先级。 然后，我们使用Workfront中的内容计划仪表板来提供透明度，以便我们能够与利益相关者保持一致，并快速获得营销、创意、Web和销售团队的认可。 这样，我们就可以创建季度承诺投入的资源的记录，同时还可以让创意和Web团队了解总请求量，以便他们能够规划资源配置。 此外，管理人员可以轻松监控团队的工作负载。
+我们从&#x200B;**规划**&#x200B;开始，在此过程中，我们从整个业务中接收了数百个内容请求，然后根据季度优先级对它们进行优先级排序。 然后，我们使用Workfront中的内容计划仪表板来提供透明度，以便我们能够与利益相关者保持一致，并快速获得营销、创意、Web和销售团队的认可。 这样，我们就可以创建季度承诺投入的资源的记录，同时还可以让创意和Web团队了解总请求量，以便他们能够规划资源配置。 此外，管理人员可以轻松监控团队的工作负载。
 
-当我们进入  **生产** ，批准的请求转化为项目，为我们的创意团队提供更多详细信息 — 如创意简报、Web登陆位置、促销要求等。 然后，我们的内容策略师与Workfront中的利益相关者和创意人员协作，审查内容并遵守最后期限。 因为我们在Workfront中完成了所有这些工作，我们消除了重复步骤、不必要的电子邮件和多种表单填充，我们甚至开始按资产类型跟踪生产周期。 这使我们能够通过深入了解项目数据来平衡员工资源并在需要时重新确定优先级。
+当我们进入&#x200B;**生产**&#x200B;时，批准的请求将转化为项目，为我们的创意团队提供更详细的信息 — 如创意简报、Web登陆位置、促销要求等。 然后，我们的内容策略师与Workfront中的利益相关者和创意人员协作，审查内容并遵守最后期限。 因为我们在Workfront中完成了所有这些工作，我们消除了重复步骤、不必要的电子邮件和多种表单填充，我们甚至开始按资产类型跟踪生产周期。 这使我们能够通过深入了解项目数据来平衡员工资源并在需要时重新确定优先级。
 
-当我们的内容准备就绪时  **投放** ， we [发布我们的优惠、资源和促销内容](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html) Experience Manager Assets。 具体来说，所有内容都进入我们的内部营销中心，公司中的任何人都可以在需要时快速找到所需的确切内容。
+当我们的内容准备好&#x200B;**交付**&#x200B;时，我们[将优惠、资源和促销内容](https://business.adobe.com/customer-success-stories/adobe-content-hub-case-study.html)发布到Experience Manager Assets。 具体来说，所有内容都进入我们的内部营销中心，公司中的任何人都可以在需要时快速找到所需的确切内容。
 
 我们看到，构建一个有效的内容供应链会带来一些重大收益。 具体来说，我们通过迁移到单一工作管理系统，将重复的数据输入减少了一半。 而且，尽管始终存在改进的空间，但我们知道，我们正在向着能够帮助我们保持领先客户期望的流程迈进。
 
 >[!NOTE]
 >
-> 本文最初发表于 [_Adobe Experience Cloud博客_](https://business.adobe.com/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time).
+> 本文最初发表于&#x200B;[_Adobe Experience Cloud博客_](https://business.adobe.com/blog/how-to/create-a-content-supply-chain-that-will-stand-the-test-of-time)。
 
 ## 第四阶段：洞察
 
 内容供应链并不是解决所有问题的神奇方法。 这是一种工作方式，使您能够更高效地管理希望为客户带来的所有体验。 你需要爬行，然后才能走路和最终跑路。
 
-![爬网行走运行](./images/crawl-walk-run.png)
+![爬网游走](./images/crawl-walk-run.png)
 
 一旦您最终投入使用，您就可以从端到端内容供应链中获取另外一点信息：洞察。 事实上，一段时间后，您就可以开始探索某些行动如何影响时间、预算……我们也会在训练营的末尾报道这个。
 
-下一步： [Creative Brief](./creative-brief.md)
+下一步：[创意简介](./creative-brief.md)
 
 [返回所有模块](./overview.md)

@@ -10,8 +10,8 @@ thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 2%
+source-wordcount: '621'
+ht-degree: 1%
 
 ---
 
@@ -47,24 +47,24 @@ Luma向其忠诚度计划的成员承诺，忠诚度数据不会与任何第三�
 
 数据管理流程的第一步是将管理标签应用于您的数据。 在执行此操作之前，让我们快速了解一下哪些标签可用：
 
-1. 在平台用户界面中，选择 **[!UICONTROL 策略]** 在左侧导航中
-1. 转到 **[!UICONTROL 标签]** 选项卡，以查看帐户中的所有标签。
+1. 在Platform用户界面中，从左侧导航中选择&#x200B;**[!UICONTROL 策略]**
+1. 转到&#x200B;**[!UICONTROL 标签]**&#x200B;选项卡以查看帐户中的所有标签。
 
-现在提供了许多现成的标签，此外，您还可以通过 [!UICONTROL 创建标签] 按钮。 有三种主要类型： [!UICONTROL 合同标签]， [!UICONTROL 身份标签]、和 [!UICONTROL 敏感标签] 对应于可能限制数据常见原因。 每个标签都有一个 [!UICONTROL 友好名称] 和短整数 [!UICONTROL 名称] 这只是类型和数字的缩写。 例如， [!DNL C1] 标签用于“无第三方导出”，这正是我们的忠诚度政策所需的内容。
+有许多现成的标签，而且您可以通过[!UICONTROL 创建标签]按钮创建自己的标签。 有三种主要类型： [!UICONTROL 合同标签]、[!UICONTROL 身份标签]和[!UICONTROL 敏感标签]，它们对应于数据可能受限制的常见原因。 每个标签都有一个[!UICONTROL 友好名称]和一个简短的[!UICONTROL 名称]，它只是类型和数字的缩写。 例如，[!DNL C1]标签用于“无第三方导出”，这正是我们的忠诚度策略需要的。
 
-![“数据管理”标签](assets/governance-policies.png)
+![数据管理标签](assets/governance-policies.png)
 
 现在该标记要限制其使用的数据了：
 
-1. 在平台用户界面中，选择 **[!UICONTROL 数据集]** 在左侧导航中
-1. 打开 `Luma Loyalty Dataset`
-1. 转到 **[!UICONTROL 数据管理]** 选项卡
+1. 在Platform用户界面中，在左侧导航中选择&#x200B;**[!UICONTROL 数据集]**
+1. 打开`Luma Loyalty Dataset`
+1. 转到&#x200B;**[!UICONTROL 数据管理]**&#x200B;选项卡
 1. 您可以将标签应用于单个字段或将其应用于整个数据集。 我们会将标签应用于整个数据集。 单击铅笔图标。 如果未看到图标，请尝试使浏览器变宽或向右滚动中间面板。
    ![数据管理](assets/governance-dataset.png)
-1. 在该模式中，展开 **[!UICONTROL 合同标签]** 部分并检查 **[!UICONTROL C2]** 标签
-1. 选择 **[!UICONTROL 保存更改]** 按钮
+1. 在该模式窗口中，展开&#x200B;**[!UICONTROL 合同标签]**&#x200B;部分并检查&#x200B;**[!UICONTROL C2]**&#x200B;标签
+1. 选择&#x200B;**[!UICONTROL 保存更改]**按钮
    ![数据管理](assets/governance-applyLabel.png)
-1. 返回主页面 [!UICONTROL 数据管理] 屏幕，带有 **[!UICONTROL 显示继承的标签]** 启用切换后，您可以看到标签已应用于数据集中的所有字段的方式。
+1. 返回主[!UICONTROL 数据管理]屏幕，打开&#x200B;**[!UICONTROL 显示继承的标签]**切换开关，您可以看到标签如何应用于数据集中的所有字段。
    ![数据管理](assets/governance-labelsAdded.png)
 
 
@@ -75,12 +75,12 @@ Luma向其忠诚度计划的成员承诺，忠诚度数据不会与任何第三�
 
 现在，我们的数据已标记，我们可以创建一个策略。
 
-1. 在平台用户界面中，选择 **[!UICONTROL 策略]** 在左侧导航中
-1. 在“浏览”选项卡上，已经有名为“第三方导出限制”的开箱即用策略，该策略将C2标签与营销操作相关联 [!UICONTROL 导出到第三方]正是我们需要的！
-1. 选择策略，然后通过 **[!UICONTROL 策略状态]** 切换
+1. 在Platform用户界面中，从左侧导航中选择&#x200B;**[!UICONTROL 策略]**
+1. 在“浏览”选项卡上，已经有一个名为“第三方导出限制”的开箱即用策略，该策略将C2标签与营销操作[!UICONTROL 导出到第三方]相关联 — 这正是我们需要的！
+1. 选择策略，然后通过&#x200B;**[!UICONTROL 策略状态]**切换启用该策略
    ![数据管理](assets/governance-enablePolicy.png)
 
-您可以通过选择 **[!UICONTROL 创建策略]** 按钮。 这将打开一个向导，通过该向导可组合多个标签和营销操作限制。
+您可以通过选择&#x200B;**[!UICONTROL 创建策略]**&#x200B;按钮来创建自己的策略。 这将打开一个向导，通过该向导可组合多个标签和营销操作限制。
 
 ## 强制实施治理策略
 
@@ -91,8 +91,8 @@ Luma向其忠诚度计划的成员承诺，忠诚度数据不会与任何第三�
 
 ## 其他资源
 
-* [“数据管理”文档](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hans)
-* [数据集服务API参考](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
-* [治理策略服务API参考](https://www.adobe.io/experience-platform-apis/references/policy-service/)
+* [数据管理文档](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hans)
+* [数据集服务API引用](https://www.adobe.io/experience-platform-apis/references/dataset-service/)
+* [治理策略服务API引用](https://www.adobe.io/experience-platform-apis/references/policy-service/)
 
-现在，让我们转到 [查询服务](run-queries.md).
+现在我们转到[查询服务](run-queries.md)。

@@ -13,7 +13,7 @@ ht-degree: 3%
 
 # 创建身份
 
-了解如何使用 Adobe Experience Platform Web SDK 捕获标识。在上捕获未经身份验证和经过身份验证的身份数据 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html). 了解如何使用您之前创建的数据元素，通过名为身份映射的Platform Web SDK数据元素类型收集经过身份验证的数据。
+了解如何使用 Adobe Experience Platform Web SDK 捕获标识。捕获[Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html)上未经身份验证和经过身份验证的标识数据。 了解如何使用您之前创建的数据元素，通过名为身份映射的Platform Web SDK数据元素类型收集经过身份验证的数据。
 
 本课程将重点介绍Adobe Experience Platform Web SDK标记扩展中可用的身份映射数据元素。 您可以将包含经过身份验证的用户ID和身份验证状态的数据元素映射到XDM。
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 ## 先决条件
 
-您已了解数据层是什么，对 [Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} 数据层，并了解如何引用标记中的数据元素。 您必须完成本教程中之前的课程：
+您了解数据层是什么，熟悉[Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}数据层，并了解如何引用标记中的数据元素。 您必须完成本教程中之前的课程：
 
 * [配置XDM架构](configure-schemas.md)
 * [配置身份命名空间](configure-identities.md)
@@ -38,7 +38,7 @@ ht-degree: 3%
 
 ## Experience Cloud ID
 
-此 [Experience CloudID (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) 是跨Adobe Experience Platform和Adobe Experience Cloud应用程序使用的共享身份命名空间。 ECID为客户身份奠定了基础，是数字资产的默认身份。 ECID是跟踪未经身份验证的用户行为的理想标识符，因为它始终存在。
+[Experience CloudID (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid)是跨Adobe Experience Platform和Adobe Experience Cloud应用程序使用的共享身份命名空间。 ECID为客户身份奠定了基础，是数字资产的默认身份。 ECID是跟踪未经身份验证的用户行为的理想标识符，因为它始终存在。
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -47,21 +47,21 @@ ht-degree: 3%
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-详细了解如何 [使用Platform Web SDK跟踪ECID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
+详细了解如何使用Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview)跟踪[ECID。
 
 ECID是使用第一方Cookie和平台Edge Network的组合设置的。 默认情况下，第一方身份Cookie由Web SDK在客户端设置。 要说明浏览器对Cookie生命周期的限制，您可以选择改为在服务器端设置您自己的第一方身份Cookie。 这些身份Cookie称为第一方设备ID (FPID)。
 
 >[!IMPORTANT]
 >
->此 [Experience CloudID服务扩展](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) 在实施Adobe Experience Platform Web SDK时不需要使用，因为ID服务功能已内置到Platform Web SDK中。
+>实施Adobe Experience Platform Web SDK时不需要[Experience CloudID服务扩展](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension)，因为ID服务功能已内置到Platform Web SDK中。
 
 ## 第一方设备ID (FPID)
 
-FPID是第一方Cookie _您使用自己的Web服务器进行设置_ ，该Adobe随后将使用来创建ECID，而不是使用Web SDK设置的第一方Cookie。 虽然浏览器支持可能有所不同，但由利用DNS A记录（对于IPv4）或AAAA记录（对于IPv6）的服务器设置的第一方Cookie往往比由DNS CNAME或JavaScript代码设置时更持久。
+FPID是使用您自己的Web服务器&#x200B;_设置的第一方Cookie_，Adobe随后会使用它来创建ECID，而不是使用Web SDK设置的第一方Cookie。 虽然浏览器支持可能有所不同，但由利用DNS A记录（对于IPv4）或AAAA记录（对于IPv6）的服务器设置的第一方Cookie往往比由DNS CNAME或JavaScript代码设置时更持久。
 
 设置FPID Cookie后，在收集事件数据时，可以获取其值并将其发送到Adobe。 收集的FPID将用作种子，以在PlatformEdge Network上生成ECID，这仍将是Adobe Experience Cloud应用程序中的默认标识符。
 
-虽然本教程中未使用FPID，但建议您在自己的网络SDK实施中使用FPID。 详细了解 [Platform Web SDK中的第一方设备ID](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
+虽然本教程中未使用FPID，但建议您在自己的网络SDK实施中使用FPID。 阅读有关Platform Web SDK中的[第一方设备ID的更多信息](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -71,25 +71,25 @@ FPID是第一方Cookie _您使用自己的Web服务器进行设置_ ，该Adobe�
 
 如上所述，在使用Platform Web SDK时，您数字资产的所有访客都会Adobe分配一个ECID。 ECID是用于跟踪未经身份验证的数字行为的默认身份。
 
-您还可以发送经过身份验证的用户ID，以便平台可以创建 [身份图](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) 并且Target可以设置 [第三方Id](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). 通过使用来设置经过身份验证的ID [!UICONTROL 标识映射] 数据元素类型。
+您还可以发送经过身份验证的用户ID，以便平台可以创建[身份图](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs)，并且Target可以设置其[第三方ID](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id)。 通过使用[!UICONTROL 标识映射]数据元素类型来设置经过身份验证的ID。
 
-要创建 [!UICONTROL 标识映射] 数据元素：
+要创建[!UICONTROL 标识映射]数据元素：
 
-1. 转到 **[!UICONTROL 数据元素]** 并选择 **[!UICONTROL 添加数据元素]**
+1. 转到&#x200B;**[!UICONTROL 数据元素]**&#x200B;并选择&#x200B;**[!UICONTROL 添加数据元素]**
 
-1. **[!UICONTROL 名称]** 数据元素 `identityMap.loginID`
+1. **[!UICONTROL Name]**&#x200B;数据元素`identityMap.loginID`
 
-1. 作为 **[!UICONTROL 扩展名]**，选择 `Adobe Experience Platform Web SDK`
+1. 对于&#x200B;**[!UICONTROL 扩展]**，请选择`Adobe Experience Platform Web SDK`
 
-1. 作为 **[!UICONTROL 数据元素类型]**，选择 `Identity map`
+1. 作为&#x200B;**[!UICONTROL 数据元素类型]**，请选择`Identity map`
 
-1. 这会提示右侧的 **[!UICONTROL 数据收集界面]** 用于配置标识：
+1. 这会在&#x200B;**[!UICONTROL 数据收集界面]**&#x200B;的右侧提示屏幕区域，以便您配置标识：
 
-   ![数据收集界面](assets/identity-identityMap-setup.png)
+   ![数据收集接口](assets/identity-identityMap-setup.png)
 
-1. 作为  **[!UICONTROL 命名空间]**，选择 `lumaCrmId` 您之前在中创建的命名空间 [配置身份](configure-identities.md) 上课。 如果下拉列表中未显示该变量，请键入该变量。
+1. 作为&#x200B;**[!UICONTROL 命名空间]**，请选择您之前在[配置身份](configure-identities.md)课程中创建的`lumaCrmId`命名空间。 如果下拉列表中未显示该变量，请键入该变量。
 
-1. 在 **[!UICONTROL 命名空间]** ，则必须设置ID。 选择 `user.profile.attributes.username` 之前在中创建的数据元素 [创建数据元素](create-data-elements.md#create-data-elements-to-capture-the-data-layer) 课程，用于在用户登录Luma网站时捕获ID。
+1. 选择&#x200B;**[!UICONTROL 命名空间]**&#x200B;后，必须设置ID。 选择之前在[创建数据元素](create-data-elements.md#create-data-elements-to-capture-the-data-layer)课程中创建的`user.profile.attributes.username`数据元素，该数据元素可在用户登录Luma网站时捕获ID。
 
    <!--  >[!TIP]
     >
@@ -98,18 +98,18 @@ FPID是第一方Cookie _您使用自己的Web服务器进行设置_ ，该Adobe�
     >   ![Data Element  ID ](assets/identity-data-element-customer-id.png)
     -->
 
-1. 作为 **[!UICONTROL 已验证状态]**，选择 **[!UICONTROL 已验证]**
-1. 选择 **[!UICONTROL 主要]**
+1. 作为&#x200B;**[!UICONTROL Authenticated状态]**，请选择&#x200B;**[!UICONTROL Authenticated]**
+1. 选择&#x200B;**[!UICONTROL 主要]**
 
-1. 选择 **[!UICONTROL 保存]**
+1. 选择&#x200B;**[!UICONTROL 保存]**
 
-   ![数据收集界面](assets/identity-id-namespace.png)
+   ![数据收集接口](assets/identity-id-namespace.png)
 
 >[!TIP]
 >
-> Adobe建议发送代表个人的身份，例如 `Luma CRM Id`，作为 [!UICONTROL 主要] 身份。
+> Adobe建议将代表人员（如`Luma CRM Id`）的标识作为[!UICONTROL primary]标识发送。
 >
-> 如果身份映射包含人员标识符(例如， `Luma CRM Id`)，则人员标识符将变为 [!UICONTROL 主要] 身份。 否则， `ECID` 变为 [!UICONTROL 主要] 身份。
+> 如果身份映射包含人员标识符（例如，`Luma CRM Id`），则人员标识符将变为[!UICONTROL 主]身份。 否则，`ECID`将成为[!UICONTROL 主]标识。
 
 
 
@@ -151,4 +151,4 @@ FPID是第一方Cookie _您使用自己的Web服务器进行设置_ ，该Adobe�
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容

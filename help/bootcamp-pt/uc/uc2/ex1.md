@@ -11,28 +11,28 @@ feature: Events, Journeys, Profiles, Identities
 exl-id: c71f6789-25cd-4fac-b026-e981744dbe95
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '369'
 ht-degree: 2%
 
 ---
 
-# 2.1访问网站关键内容
+# 2.1访问站点关键内容（续）
 
 ## Contexto
 
-作为马卡斯·图阿尔梅特、assim como a jornada do cliente、da aquisição à retencao等人。
+作为马卡斯·阿图阿尔门特，阿西姆·科莫·德·克里恩特，达·阿奎西科·阿·雷滕考。
 
-一张Adobe Experience Platform德塞姆彭尼亚纸的重要纸张，涅萨·乔纳达。 在科穆尼卡索岛建一个平台， **体验记录系统**.
+一张Adobe Experience Platform的纸牌很重要那份乔纳达。 在&#x200B;**体验记录系统**&#x200B;上建立的Plataforma é é cérebro da comunicacao。
 
-Plataforma é um ambiente em que a palavra cliente engloba mais do que clientes conhecidos. Um visitante desconhecido no site também é um cliente do ponto de vista da Plataforma e， como tal， todo o comportamento de um visitante desconhecido também é enviado à Plataforma. Gracas a essa abordagem， quando esse visitante eventualmente se torna um cliente conhecido， uma marca também pode visualizar o que aconteceu antes daquele momento. Isso ajuda a partitir de uma perspectiva de otimização de atribuicao e experiencia.
+Plataforma é um ambiente em que a palavra cliente engloba mais do que clientes conhecidos. Um visitante desconhecido no site também é um cliente do ponto de vista da Plataforma e， como tal， todo o comportamento de um visitante desconhecido também é enviado à Plataforma. Gracas a essa abordagem， quando esse visitante eventualmente se torna um cliente conhecido， uma marca também pode visualizar o que aconteceu antes daquele momento. Isso ajuda是uma perspectiva de otimização de atribuicao e experiencia的一个部分。
 
-## Fluxo da jornada do cliente
+## 客户贷款
 
-访问 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). 小团体 **全部允许**. Com base no seu comportamento de navegação no fluxo de usuário anterior， voce verá a personalização acontecer na página inicial do site.
+访问[https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)。 单击em **允许全部**。 Com base no seu comportamento de navegação no fluxo de usuário anterior， voce verá a personalização acontecer na página inicial do site.
 
 ![DSN](./images/web8.png)
 
-这个小圈子没有可以上级esquerdo da tela para abrir或Visualizador de perfil的Adobe。 Verifique o painel do Visualizador de perfil no Perfil do cliente em tempo real com o **EXPERIENCE CLOUDID** 确定客户身份的主要primário。
+这个小圈子不会被Adobe上级esquerdo da tela para abrir或visualizador de perfil。 验证Painel do Visualizador de perfil e no Perfil do cliente em tempo real com o **Experience CloudID** como o identificador primário para este cliente que ainda é desconhecido。
 
 ![演示](./images/pv1.png)
 
@@ -40,23 +40,23 @@ Voce também pode ver todos os Eventos de experiencia coletados com base no comp
 
 ![演示](./images/pv3.png)
 
-小圈子 **个人资料** 没有上级的迪雷伊托·达·泰拉。
+Clique no ícone **Profile**&#x200B;无法向上级direito da tela。
 
 ![演示](./images/pv4.png)
 
-小团体 **创建帐户**.
+单击&#x200B;**创建帐户**。
 
 ![演示](./images/pv5.png)
 
-Preencha todos os campos do formulário. 使用um valor real para endereco de email e número de telefone， pois será usado em exercícios posteriores para envio de email e SMS.
+我们来做些什么吧，来做些什么吧。 使用um valor real para endereco de email e número de telefone， pois será usado em exercícios posteriores para envio de email e SMS.
 
 ![演示](./images/pv7.png)
 
-在社区中发挥作用 **注册**.
+角色para baixo e clique em **注册**。
 
 ![演示](./images/pv8.png)
 
-我终于能说清楚了。
+塞吉达，再说一遍。
 
 ![演示](./images/pv9.png)
 
@@ -70,8 +70,8 @@ E alguns minutos depois， voce também receberá o seguinte电子邮件：
 
 Vamos conferir a seguir como essa jornada de onboarding foi configurada.
 
-甲壳虫 [2.2 Crie seu evento](./ex2.md)
+Próxima etapa [2.2 Crie seu evento](./ex2.md)
 
-[Retornar para Fluxo de Usuário 2](./uc2.md)
+[乌苏亚里奥二号酒庄酒庄酒庄酒庄酒庄酒庄](./uc2.md)
 
-[莫杜洛斯·托多斯·托诺纳尔](../../overview.md)
+[莫杜洛斯·托多斯·雷托纳尔](../../overview.md)

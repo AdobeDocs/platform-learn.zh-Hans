@@ -1,30 +1,31 @@
 ---
 title: 将Target从at.js 2.x迁移到Web SDK
 description: 了解如何将Adobe Target实施从at.js 2.x迁移到Adobe Experience Platform Web SDK。 主题包括库概述、实施差异和其他值得注意的标注。
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+exl-id: 43b9ae91-4524-4071-9eb4-12a0a8aec242
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 2%
+source-wordcount: '400'
+ht-degree: 1%
 
 ---
 
-# 使用基于表单的编辑器渲染Target活动
+# 呈现使用基于表单的编辑器的Target活动
 
-某些Target实施可能使用区域mbox（现在称为“范围”）来交付使用基于表单的体验编辑器的活动中的内容。 如果您的at.js Target实施使用mbox，则您需要执行以下操作：
+某些Target实施可能使用区域mbox（现在称为“范围”）来交付使用基于表单的体验编辑器的活动中的内容。 如果您的at.js Target实施使用mbox，则需要执行以下操作：
 
-* 更新来自您的at.js实施的任何引用，这些引用使用 `getOffer()` 或 `getOffers()` 到等效的Platform Web SDK方法。
-* 添加代码以触发 `propositionDisplay` 事件，以便计算一次展示。
+* 将来自使用`getOffer()`或`getOffers()`的at.js实现的任何引用更新为等效的Platform Web SDK方法。
+* 添加代码以触发`propositionDisplay`事件，从而计入展示次数。
 
 ## 按需请求和应用内容
 
-使用Target基于表单的编辑器创建并交付到区域mbox的活动，无法由Platform Web SDK自动呈现。 与at.js类似，交付到特定Target位置的选件需要根据需要进行渲染。
+使用Target基于表单的编辑器创建并交付到区域mbox的活动无法由Platform Web SDK自动呈现。 与at.js类似，交付给特定Target位置的选件需要按需渲染。
 
 
-+++at.js示例使用 `getOffer()` 和 `applyOffer()`:
++++at.js使用`getOffer()`和`applyOffer()`的示例：
 
-1. 执行 `getOffer()` 请求选件
-1. 执行 `applyOffer()` 将选件渲染到指定的选择器
-1. 活动展示次数会在 `getOffer()` 请求
+1. 执行`getOffer()`以请求位置的选件
+1. 执行`applyOffer()`以将选件呈现给指定的选择器
+1. 活动展示次数在`getOffer()`请求时自动递增
 
 ```JavaScript
 // Retrieve an offer for the homepage-hero location
@@ -48,11 +49,11 @@ adobe.target.getOffer({
 
 +++
 
-+++平台Web SDK等效函数使用 `applyPropositions` 命令：
+使用`applyPropositions`命令的+++Platform Web SDK等效项：
 
-1. 执行 `sendEvent` 命令请求一个或多个位置（范围）的选件（建议）
-1. 执行 `applyPropositions` 元数据对象的命令，该对象提供有关如何将内容应用到每个范围的页面的说明
-1. 执行 `sendEvent` 命令，事件类型为 `decisioning.propositionDisplay` 跟踪展示
+1. 执行`sendEvent`命令以请求一个或多个位置（范围）的选件（建议）
+1. 使用元数据对象执行`applyPropositions`命令，元数据对象提供有关如何将内容应用于每个作用域的页面的说明
+1. 执行事件类型为`decisioning.propositionDisplay`的`sendEvent`命令以跟踪展示
 
 ```JavaScript
 // Retrieve propositions for homepage_hero location (scope)
@@ -91,21 +92,21 @@ alloy("sendEvent", {
 
 +++
 
-平台Web SDK可更好地控制如何使用 `applyPropositions` 命令 `actionType` 指定：
+Platform Web SDK为使用指定了`actionType`的`applyPropositions`命令将基于表单的活动应用到页面提供了更好的控制：
 
 | `actionType` | 描述 | at.js `applyOffer()` | 平台Web SDK `applyPropositions` |
 | --- | --- | --- | --- |
 | `setHtml` | 清除容器的内容，然后将选件添加到容器 | 是（始终使用） | 是 |
-| `replaceHtml` | 删除容器并将其替换为选件 | 否 | 是 |
-| `appendHtml` | 在指定的选择器之后附加选件 | 否 | 是 |
+| `replaceHtml` | 移除容器并将其替换为选件 | 否 | 是 |
+| `appendHtml` | 在指定的选择器后附加选件 | 否 | 是 |
 
-请参阅 [专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html) 关于使用Platform Web SDK渲染内容以了解其他渲染选项和示例。
+请参阅有关使用Platform Web SDK渲染内容的[专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)，以获取其他渲染选项和示例。
 
 ## 实施示例
 
-以下示例页面基于上一节中概述的实施，只是它向 `sendEvent` 命令。
+下面的示例页面基于上一节中概述的实现，只是它向`sendEvent`命令添加了其他范围。
 
-+++具有多个作用域的Platform Web SDK示例
+具有多个范围的+++Platform Web SDK示例
 
 ```HTML
 <!doctype html>
@@ -196,8 +197,8 @@ alloy("sendEvent", {
 </html>
 ```
 
-接下来，了解如何 [使用Platform Web SDK传递Target参数](send-parameters.md).
+接下来，了解如何使用Platform Web SDK[传递Target参数](send-parameters.md)。
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>我们致力于帮助您成功完成从at.js到Web SDK的Target迁移。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。

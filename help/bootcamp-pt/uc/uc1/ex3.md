@@ -9,72 +9,72 @@ feature: Segments
 exl-id: 9b8d93b5-5bed-4600-8602-b438a0893612
 source-git-commit: ee5c0af17c12f1d90774a3a4150c9788e2368e39
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '517'
 ht-degree: 2%
 
 ---
 
-# 1.3 Crie um segmento - UI
+# 1.3核心区段 — UI
 
-Neste exercício， voce irá criar um segmento usando o o Construtor de Segmentos da Adobe Experience Platform.
+Neste excício， voce irá criar um segmento usando o o Construtor de Segmentos da Adobe Experience Platform.
 
 ## 史托里亚
 
-访问 [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer登录，voce irá访问página inicial da Adobe Experience Platform。
+访问[Adobe Experience Platform](https://experience.adobe.com/platform)。 德波伊斯·德·法泽尔登入后，我去Adobe Experience Platform的帕吉娜。
 
 ![数据获取](./images/home.png)
 
-永恒的万年期，先有先兆 **沙盒**. 做沙箱什么的 ``Bootcamp``. 你这小嘴真不赖啊 **[!UICONTROL 生产产品]** 娜丽莎·阿苏尔·娜帕特·苏必利尔·达·泰拉。 Depois de selecionar o sandbox apriado， voce verá a tela mudando e agora voce está em seu [!UICONTROL 沙盒] 奉献精神。
+Antes de continuar， voce precisa selectionar um **沙盒**。 你不要做沙盒，你选择的是``Bootcamp``。 É posssível fazer isso clicando no texto **[!UICONTROL Production Prod]** na linha azul na parte superior da tela。 Depois de selecionar o sandbox apriado， voce verá a tela mudando e agora voce está em seu [!UICONTROL 沙盒] dedicado。
 
 ![数据获取](./images/sb1.png)
 
-无菜单，访问 **区段**. Nesta página， voce tem uma visão geral de todos os segmentos exists. 小团体no botao + Criar segmento para comecar a criar um novo segmento。
+无针对调查问卷的菜单，访问&#x200B;**区段**。 Nesta página， voce tem uma visao geral de todos os segmentos exists. 小集团无波涛和克里尔区段将新克里尔区段分开。
 
 ![区段](./images/menuseg.png)
 
-Quando estiver no novo constructor de segmentos， voce irá perceber imente a opcao de menu **属性** 我们来做个参考 **XDM个人资料**.
+Quando estiver no novo construtor de segmentos， voce irá perceber imediatamente a opcao de menu **属性** e a referencia do **XDM个人资料**。
 
 ![区段](./images/segmentationui.png)
 
-XDM是一种语言，是一种经验性的语言，XDM术语是一种构造分段的基础。 Todos os dados ingeridos na platforma devem ser mapeados em relacao XDM e， portanto， todos os dados se tornam parte do mesmo modelo de dados， independentemente da origem desies dados. Isso oferece uma grande vantagem ao criar segmentos， pois a partir dessa interface do usuário do constructor de segmento， é posível combinar dados de qualquer origem no mesmo fluxo de trabalho. Os segmentos criados no Construtor de segmentos podem ser envirados para solucoes como Adobe Target， Adobe Campaign e Adobe Audience Manager para ativacao.
+XDM是一种语言或体验工具，XDM团队是构建分段的基础工具。 Todos os dados ingeridos na platforma devem ser mapeados em relação XDM e， portanto， todos os dados se tornam parte do mesmo modelo de dados， independentemente da origem desies dados. Isso oferece uma grande vantagem ao criar segmentos， pois a partitir dessa interface do usuário do construtor de segmento， é possível combinar dados de qualquer origem no mesmo fluxo de trabalho. Os segmentos crados no Construtor de segmentos podem ser envirados para solutions como Adobe Target， Adobe Campaign e Adobe Audience Manager para ativacao.
 
-Agora voce precisa criar um segmento de todos os clientes que visualizaram o produto **Real-Time CDP**.
+Agora voce precisa criar um segmento de todos os clientes que visualizaram o producto **Real-Time CDP**。
 
-建筑工程分段，装饰装饰物前的装饰物。 Voce pode contrados os Eventos de experiencia clicando no ícone **事件** na barra de menu **字段**.
+建筑物的节段，节日前的节奏。 Voce pode encontracr todos os Eventos de experiencia clicando no ícone **事件** na barra de menu **字段**。
 
 ![区段](./images/findee.png)
 
-埃姆塞吉达，敬请上台 **XDM ExperienceEvents** 别太上流了。 小团体 **XDM ExperienceEvent**.
+Em seguida， voce verá o nó **XDM ExperienceEvents** do nível superior. 单击em **XDM ExperienceEvent**。
 
 ![区段](./images/see.png)
 
-访问 **产品列表项**.
+访问&#x200B;**产品列表项**。
 
 ![区段](./images/plitems.png)
 
-选择器 **名称** 我绝对要做个目标 **名称** 做菜单à esquerda na tela do constructor de segmentos na secao **事件**. Em seguida， o seguinte será exibido：
+选择一个&#x200B;**名称** e arraste e solte o objeto **名称** do menu à esquerda na tela do construtor de segmentos na secao **活动**。 塞吉达：
 
 ![区段](./images/eewebpdtlname.png)
 
-用于比较的参数的装置 **等于** E，意大利安西拉没有坎波 **Real-time CDP**.
+O parametro de comparação deve ser **等于** e，无campo de entrada，insira **实时CDP**。
 
 ![区段](./images/pv.png)
 
-Sempre que adicionar um elemento ao constructor de segmentos， voce pode clicar no botao **刷新估计** para obter uma nova estimativa da população em seu segmento.
+Sempre que adicionar um elemento ao construtor de segmentos， voce pode clicar no botao **刷新估计** para obter uma nova estimativa da populaçao em seu segmento。
 
 ![区段](./images/refreshest.png)
 
-段落 **评估方法**，选择器 **Edge**.
+Para **评估方法**，选择&#x200B;**Edge**。
 
 ![区段](./images/evedge.png)
 
-我愿意，你愿意，愿意。
+我愿意，你愿意。
 
 Como modelo de nomenclatura，使用：
 
 - `seuSobrenome - Interest in Real-Time CDP`
 
-塞吉达，小圈子 **保存并关闭** para salvar seu segmento.
+Em seguida， clique no botao **保存并关闭**&#x200B;段为已保存的会话。
 
 ![区段](./images/segmentname.png)
 
@@ -84,8 +84,8 @@ Agora voce irá retornar à página de visão geral do segmento， onde verá um
 
 Agora voce pode continuar no próximo exercício e usar seu segmento com o Adobe Target.
 
-埃塔帕： [1.4 Açao：Adobe Target环境工作分类法](./ex4.md)
+Próxima etapa： [1.4 Acao： envie seu segmento para o Adobe Target](./ex4.md)
 
-[Retornar para Fluxo de Usuário 1](./uc1.md)
+[乌苏亚里奥酒庄酒庄酒庄酒庄1号](./uc1.md)
 
-[莫杜洛斯·托多斯·托诺纳尔](../../overview.md)
+[莫杜洛斯·托多斯·雷托纳尔](../../overview.md)

@@ -16,6 +16,6 @@ ht-degree: 34%
 
 # 使用标记环境和嵌入代码
 
-了解如何使用开发、暂存和生产环境以及嵌入代码来开发和验证标记资产。 欲了解更多信息，请参见 [环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=zh-Hans) 文档。
+了解如何使用开发、暂存和生产环境以及嵌入代码来开发和验证标记资产。 有关详细信息，请参阅[环境](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/environments/environments.html?lang=zh-Hans)文档。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on)

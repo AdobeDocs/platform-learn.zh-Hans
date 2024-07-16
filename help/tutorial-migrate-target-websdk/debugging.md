@@ -1,183 +1,184 @@
 ---
-title: 调试 |将Target从at.js 2.x迁移到Web SDK
-description: 了解如何使用Adobe Experience Platform Web SDK调试Adobe Target实施。 主题包括调试选项、浏览器扩展，以及at.js和Platform Web SDK之间的差异。
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: 调试 | 将Target从at.js 2.x迁移到Web SDK
+description: 了解如何使用Adobe Experience Platform Web SDK调试Adobe Target实施。 主题包括调试选项、浏览器扩展以及at.js与Platform Web SDK之间的差异。
+exl-id: 20699551-a708-469a-8980-67586db82787
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '1535'
-ht-degree: 3%
+source-wordcount: '1492'
+ht-degree: 2%
 
 ---
 
-# 使用平台Web SDK调试Target
+# 使用Platform Web SDK调试Target
 
-验证Target活动并调试Web SDK以解决实施、内容交付或受众鉴别问题。 迁移指南的本页介绍了使用at.js进行调试与使用Platform Web SDK进行调试之间的差异。
+验证Target活动并调试Web SDK，以排查实施、内容交付或受众资格问题。 迁移指南的此页面说明了使用at.js调试与使用Platform Web SDK调试之间的区别。
 
-下表概述了测试和调试方法的功能和支持。
+下表总结了各种功能和对测试和调试方法的支持。
 
-| 功能或工具 | at.js支持 | 平台Web SDK支持 |
+| 特征或工具 | at.js支持 | 平台Web SDK支持 |
 | --- | --- | --- |
 | 活动QA URL | 是 | 是 |
-| `mboxDisable` URL parameter | 是 | 请参阅下面的信息以 [禁用Target功能](#disable-target-functionality) |
-| `mboxDebug` URL parameter | 是 | 使用 `alloy_debug` 类似调试信息的参数 |
-| `mboxTrace` URL parameter | 是 | 使用Experience Platform调试器浏览器扩展 |
+| `mboxDisable` URL参数 | 是 | 请参阅以下信息以了解[禁用Target功能](#disable-target-functionality) |
+| `mboxDebug` URL参数 | 是 | 将`alloy_debug`参数用于类似的调试信息 |
+| `mboxTrace` URL参数 | 是 | 使用Experience PlatformDebugger浏览器扩展 |
 | Adobe Experience Platform Debugger扩展 | 是 | 是 |
-| `alloy_debug` URL parameter | 不适用 | 是 |
-| Adobe Experience Platform保障 | 不适用 | 是 |
+| `alloy_debug` URL参数 | 不适用 | 是 |
+| Adobe Experience Platform Assurance | 不适用 | 是 |
 
 ## Adobe Experience Platform Debugger浏览器扩展
 
 适用于Chrome和Firefox的Adobe Experience Platform Debugger扩展可检查您的网页，并帮助您验证Adobe Experience Cloud实施。
 
-您可以在任何网页上运行Platform Debugger，并且该扩展有权访问公共数据。 要使用扩展（如Target跟踪信息）访问非公共数据，您必须通过验证以Experience Cloud **[!UICONTROL 登录]** 链接。
+您可以在任何网页上运行Platform Debugger，并且该扩展可以访问公共数据。 若要使用扩展访问非公共数据（如Target跟踪信息），必须通过&#x200B;**[!UICONTROL 登录]**&#x200B;链接向Experience Cloud进行身份验证。
 
 ### 获取并安装Adobe Experience Platform Debugger
 
-可以在Google Chrome或Mozilla Firefox浏览器中安装Adobe Experience Platform Debugger。 请按照以下相应链接在首选浏览器上安装扩展：
+Adobe Experience Platform Debugger可以安装在Google Chrome或Mozilla Firefox浏览器中。 请按照下面的相应链接在您的首选浏览器上安装扩展：
 
 - [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 - [Firefox](https://addons.mozilla.org/zh-CN/firefox/addon/adobe-experience-platform-dbg/)
 
-安装Chrome扩展程序或Firefox加载项后，会显示一个图标(![](assets/start-icon.jpg))。 选择此图标以打开扩展。
+安装Chrome扩展或Firefox加载项后，会在扩展栏中添加一个图标(![](assets/start-icon.jpg))。 选择此图标以打开扩展。
 
-有关 [Adobe Experience Platform Debugger扩展](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) 以及如何调试所有AdobeWeb应用程序。
+有关[Adobe Experience Platform Debugger扩展](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html)以及如何调试所有AdobeWeb应用程序的详细信息，请参阅专用指南。
 
 ## 使用QA URL预览Target活动
 
-at.js和Platform Web SDK都允许您使用Target QA URL预览Target活动，并且两种实施方法都支持相同的QA功能。
+at.js和Platform Web SDK都允许您使用Target QA URL预览Target活动，并且这两种实施方法都支持相同的QA功能。
 
-Target QA URL的工作方式是指示at.js或Platform Web SDK向名为 `at_qa_mode`. 此Cookie用于强制对特定活动和体验进行鉴别。
+通过指示at.js或Platform Web SDK将特定Cookie写入名为`at_qa_mode`的浏览器，Target QA URL可正常工作。 此Cookie用于强制对特定活动和体验进行鉴别。
 
 >[!CAUTION]
 >
->Platform Web SDK版本2.13.0或更高版本支持Target QA模式功能。 Target QA模式基于 `xdm.web.webPageDetails.URL` 传递的值 `sendEvent` 呼叫。 对此值所做的任何修改（如将所有字符都小写）都可能会阻止Target QA模式正常工作。
+>Platform Web SDK版本2.13.0或更高版本支持Target QA模式功能。 已根据`sendEvent`调用中传递的`xdm.web.webPageDetails.URL`值启用目标QA模式。 对此值所做的任何修改（例如将所有字符变为小写），都可能会妨碍Target QA模式正常工作。
 
-有关 [Target活动QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html).
+有关[Target活动QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html)的详细信息，请参阅专用指南。
 
 ## 调试Target实施
 
-下表概述了at.js和Platform Web SDK调试策略之间的差异：
+下表概述了at.js与Platform Web SDK调试策略之间的差异：
 
-| at.js功能 | 平台Web SDK等效项 |
+| at.js功能 | Platform Web SDK等效项 |
 | --- | --- |
-| **Mbox禁用**  — 禁用Target的获取和渲染功能，以检查在没有Target交互的情况下页面是否已损坏<br><br>加载包含URL参数的页面： `mboxDisable=true` | 没有直接对等项。 您可以使用浏览器的开发人员工具阻止所有平台Web SDK请求。 |
-| **Mbox调试**  — 在浏览器控制台中记录每个at.js操作，以帮助解决渲染问题<br><br>加载包含URL参数的页面： `mboxDebug=true` | **Alloy调试**  — 记录SDK的详细操作，包括但不限于Target个性化操作。<br><br>加载包含URL参数的页面： `alloy_debug=true`  <br /><br />或执行 `alloy("setDebug", { "enabled": true });` 在开发人员控制台中 |
-| **目标跟踪**  — 通过在Target UI中生成的mbox跟踪令牌，可在 `window.___target_trace` 对象。<br><br>加载包含URL参数的页面： `mboxTrace=window&authorization={TOKEN}` | 使用Adobe Experience Platform Debugger扩展或平台保证。 |
+| **Mbox禁用** — 禁用Target的提取和渲染功能，以检查页面是否损坏，而不进行Target交互<br><br>使用URL参数加载页面： `mboxDisable=true` | 没有直接等效项。 您可以使用浏览器的开发人员工具阻止所有Platform Web SDK请求。 |
+| **Mbox调试** — 记录浏览器控制台中的每个at.js操作，以帮助解决渲染问题<br><br>使用URL参数`mboxDebug=true`加载页面 | **Alloy Debug** — 记录SDK的详细操作，包括但不限于Target个性化操作。<br><br>加载包含URL参数的页面： `alloy_debug=true` <br /><br />或在开发人员控制台中执行`alloy("setDebug", { "enabled": true });` |
+| **目标跟踪** — 在Target UI中生成mbox跟踪令牌后，`window.___target_trace`对象下提供了包含参与决策过程的详细信息的跟踪对象。<br><br>加载包含URL参数的页面： `mboxTrace=window&authorization={TOKEN}` | 使用Adobe Experience Platform Debugger扩展或Platform Assurance。 |
 
 >[!NOTE]
 >
->上面列出的所有at.js调试功能均可在Adobe Experience Platform Debugger中通过增强功能使用。
+>上面列出的所有at.jsAdobe Experience Platform Debugger功能都可以通过Debugging中的增强功能使用。
 
 ### 禁用Target功能
 
-Platform Web SDK当前没有可选择性禁止Target响应的功能。 但是，您可以使用浏览器的开发人员工具、各种浏览器扩展或第三方应用程序来禁止Platform Web SDK请求。 例如，要使用Google Chrome阻止Platform Web SDK，请执行以下操作：
+Platform Web SDK当前没有选择性地禁止Target响应的功能。 但是，可以使用浏览器的开发人员工具、各种浏览器扩展或第三方应用程序阻止Platform Web SDK请求。 例如，要使用Google Chrome阻止Platform Web SDK，请执行以下操作：
 
-1. 右键单击页面上的任意位置，然后选择 **Inspect**
-1. 选择 **网络** 选项卡
-1. 按字符串过滤 `//ee//` 以仅查看平台Web SDK调用
+1. 右键单击页面上的任意位置，然后选择&#x200B;**Inspect**
+1. 选择&#x200B;**网络**&#x200B;选项卡
+1. 按字符串`//ee//`筛选，以仅查看Platform Web SDK调用
 1. 重新加载页面
-1. 右键单击其中一个过滤的网络请求，然后选择 **阻止请求域**
-1. 重新加载页面，并注意到网络请求被阻止
-1. 调试完成后，右键单击被阻止的网络请求并选择 **取消阻止**，或关闭“开发人员工具”面板
+1. 右键单击其中一个过滤的网络请求，然后选择&#x200B;**阻止请求域**
+1. 重新加载页面，并注意网络请求已被阻止
+1. 完成调试后，右键单击被阻止的网络请求并选择&#x200B;**取消阻止**，或关闭“开发人员工具”面板
 
 ### 查看调试日志记录
 
-使用 `mboxDebug=true` URL参数显示有关每个Target请求、响应和尝试向页面渲染内容的详细信息。 Platform Web SDK具有类似的调试日志记录(使用 `alloy_debug=true` URL参数。
+使用`mboxDebug=true` URL参数调试at.js日志记录可显示有关每个Target请求、响应以及尝试将内容呈现到页面的详细信息。 Platform Web SDK具有类似的使用`alloy_debug=true` URL参数的调试日志记录。
 
-| 已记录的信息 | at.js (`mboxDebug=true`) | 平台Web SDK(`alloy_debug=true`) |
+| 信息已记录 | at.js (`mboxDebug=true`) | 平台Web SDK (`alloy_debug=true`) |
 | --- | --- | --- |
 | 用于筛选的日志记录前缀 | `AT:` | `[alloy]` |
 | 页面加载请求详细信息 | 是 | 是 |
 | Mbox或范围请求详细信息 | 是 | 是 |
 | 请求状态 | 是 | 是 |
 | 响应详细信息 | 是 | 是 |
-| 呈现状态 | 成功和错误 | 仅错误 |
-| 渲染详细信息 | 是 | 是 |
+| 渲染状态 | 成功和错误 | 仅错误 |
+| 呈现详细信息 | 是 | 是 |
 
 >[!NOTE]
 >
->at.js和Platform Web SDK的调试日志提供类似级别的详细信息，但有一个显着的例外是，Web SDK仅会通知由于无效选择器而出现渲染错误。 调试日志记录当前不确认渲染成功。
+>at.js和Platform Web SDK的调试日志提供了类似级别的详细信息，但存在一个显着例外，即Web SDK仅通知由于选择器无效而出现的渲染错误。 调试日志记录当前未确认渲染成功。
 
 ### 查看Target跟踪
 
-Target跟踪提供有关活动资格和访客Target配置文件的详细信息。 由于Target跟踪包含的信息不是公开的，因此查看这些跟踪需要授权令牌或在Adobe Experience Platform Debugger浏览器扩展窗口中进行身份验证。
+Target跟踪可提供有关活动资格和访客的Target配置文件的详细信息。 由于Target跟踪包含不公开的信息，因此查看这些跟踪需要授权令牌或在Adobe Experience Platform Debugger浏览器扩展窗口中进行身份验证。
 
 | 目标跟踪方法 | at.js | 平台Web SDK |
 | --- | --- | --- |
-| `mboxTrace` URL parameter | 是 | 否 |
+| `mboxTrace` URL参数 | 是 | 否 |
 | Adobe Experience Platform Debugger浏览器扩展 | 是 | 是 |
-| Adobe Experience Platform保障 | 否 | 是 |
+| Adobe Experience Platform Assurance | 否 | 是 |
 
 
 要使用Adobe Experience Platform Debugger查看Platform Web SDK Target跟踪，请执行以下操作：
 
-1. 导航到您网站上已通过Platform Web SDK实施Target的页面
-1. 选择图标(![](assets/start-icon.jpg))
-1. 选择 **[!UICONTROL 登录]** 链接
+1. 导航到网站上已使用Platform Web SDK实施Target的页面
+1. 选择浏览器导航栏中的图标(![](assets/start-icon.jpg))以打开Adobe Experience Platform Debugger扩展
+1. 选择&#x200B;**[!UICONTROL 登录]**&#x200B;链接
 1. 使用Adobe Experience Cloud登录名进行身份验证
-1. 选择 **[!UICONTROL 日志]** 选项卡
-1. 选择 **[!UICONTROL Edge]** 选项卡
-1. （可选）为调试会话提供一个名称并单击 **[!UICONTROL 连接]** 按钮
+1. 选择左侧的&#x200B;**[!UICONTROL 日志]**&#x200B;选项卡
+1. 选择顶部的&#x200B;**[!UICONTROL Edge]**&#x200B;选项卡
+1. （可选）为您的调试会话提供一个名称，然后单击&#x200B;**[!UICONTROL 连接]**&#x200B;按钮
 1. 重新加载页面，日志中应填充有关边缘网络交互的详细信息
-1. 在描述中重点关注以“目标跟踪”开头的日志条目，然后选择 **[!UICONTROL 查看]** 查看Target跟踪详细信息
+1. 关注描述中以“目标跟踪”开头的日志条目，并选择&#x200B;**[!UICONTROL 查看]**&#x200B;以查看Target跟踪详细信息
 
-![如何使用Adobe Experience Platform Debugger查看Target跟踪](assets/target-trace-debugger.png){zoomable=&quot;yes&quot;}
+![如何使用Adobe Experience Platform Debugger查看Target跟踪](assets/target-trace-debugger.png){zoomable="yes"}
 
-选择后 **[!UICONTROL 查看]**，将显示一个叠加图，允许您查看与请求相关的以下信息：
+选择&#x200B;**[!UICONTROL 视图]**&#x200B;后，将显示一个叠加图，允许您查看与请求相关的以下信息：
 
 - 匹配的活动
-- 无与伦比的活动
+- 不匹配的活动
 - 请求详细信息
 - 配置文件快照
 
-请参阅有关 [调试Target内容交付](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html) 以了解有关Target跟踪的更多信息。
+有关Target跟踪的详细信息，请参阅有关[调试Target内容投放](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html)的专用指南。
 
-### 疑难解答和保证
+### 使用保障进行故障排除
 
-可以在Adobe Experience Platform Debugger浏览器扩展和Assurance应用程序（以前称为Project Griffon）中查看Target跟踪信息。 要在“保证”中查看Target跟踪，请执行以下操作：
+可以在Adobe Experience Platform Debugger浏览器扩展和Assurance应用程序（以前称为Project Griffon）中查看Target跟踪信息。 要在Assurance中查看Target跟踪，请执行以下操作：
 
 1. 如上所述，打开Adobe Experience Platform Debugger浏览器扩展并连接远程调试会话
-1. 在调试日志上方选择会话名称的链接
-1. 平台保障加载并显示在您的实施的数据流中配置的所有Adobe应用程序的详细日志记录
-1. 日志过滤依据 `adobe.target`
-1. 选择类型为的日志条目 `com.adobe.target.trace`
-1. 展开有效负载的详细信息，并查看 `context > targetTrace`
+1. 选择带有您的会话名称的链接，该链接位于调试日志上方
+1. 平台保证会加载并在数据流中为您的实施配置的所有Adobe应用程序显示详细的日志记录
+1. 按`adobe.target`筛选日志
+1. 选择类型为`com.adobe.target.trace`的日志条目
+1. 展开有效负载的详细信息并查看`context > targetTrace`下的信息
 
-![如何确保查看Target跟踪](assets/target-trace-assurance.png){zoomable=&quot;yes&quot;}
+![如何使用保证查看Target跟踪](assets/target-trace-assurance.png){zoomable="yes"}
 
 ## 检查网络请求和响应
 
-Platform Web SDK的请求负载和响应 `sendEvent` 调用与at.js有所不同。 以下大纲应有助于您在使用浏览器的开发人员工具检查网络调用时了解请求和响应的结构。
+Platform Web SDK `sendEvent`调用的请求有效负载和响应与at.js不同。 使用浏览器的开发人员工具检查网络调用时，以下概要应该帮助您了解请求和响应的结构。
 
-### 内容请求负载
+### 内容请求有效负荷
 
-![定位平台Web SDK有效负载的特定元素](assets/target-payload.png){zoomable=&quot;yes&quot;}
+![Platform Web SDK有效负载的特定目标元素](assets/target-payload.png){zoomable="yes"}
 
-- 配置文件、实体和其他非mbox参数将在事件数组中的 `data.__adobe.target`
-- 决策范围位于事件数组下 `query.personalization.decisionScopes`
-- 映射到下游mbox参数的XDM数据位于事件数组中的 `xdm`
+- 配置文件、实体和其他非mbox参数在`data.__adobe.target`下的事件数组中传递
+- 决策范围位于`query.personalization.decisionScopes`下的事件数组中
+- 映射到下游mbox参数的XDM数据位于`xdm`下的事件数组中
 
 ### 内容响应正文
 
-![定位平台Web SDK响应正文的特定元素](assets/target-response.png){zoomable=&quot;yes&quot;}
+![Platform Web SDK响应正文的目标特定元素](assets/target-response.png){zoomable="yes"}
 
-- Platform Web SDK会返回 `handle` 对象
-- 的 `personalization:decisions` 操作表示来自Target或offer decisioning的响应
-- 目标命题以数组形式呈现，每个命题ID带有前缀的唯一命题ID `AT:`
-- 决策范围和活动详细信息位于命题数组内
-- 选件详细信息位于 `items` 数组 `data`
-- 响应令牌位于 `items` 数组 `meta`
+- Platform Web SDK返回`handle`对象下所有Adobe应用程序的操作
+- `personalization:decisions`操作表示来自Target或offer decisioning的响应
+- 目标建议以数组形式呈现，每个建议都具有以`AT:`为前缀的唯一建议ID
+- 决策范围和活动详细信息位于建议数组中
+- 选件详细信息位于`data`下的`items`数组中
+- 响应令牌位于`meta`下的`items`数组中
 
 ### 建议事件有效负载
 
-![Target建议事件示例](assets/target-proposition-event.png){zoomable=&quot;yes&quot;}
+![Target建议事件示例](assets/target-proposition-event.png){zoomable="yes"}
 
-- Target特定SDK事件包括 `decisioning.propositionDisplay` 展示或 `decisioning.propositionInteract` ，例如点击
-- 建议事件的详细信息位于 `xdm._experience.decisioning`
-- 展示或交互事件的命题ID应与从Target返回的内容的命题ID匹配
+- Target特定的SDK事件为展示的`decisioning.propositionDisplay`或交互的`decisioning.propositionInteract`，例如点击
+- 建议事件的详细信息位于`xdm._experience.decisioning`下的事件数组中
+- 显示或交互事件的建议ID应当与从Target返回的内容的建议ID匹配
 
 
-恭喜，您已到教程的结尾！ 祝您将Adobe Target实施迁移到Web SDK!
+恭喜，您已到达本教程的结尾！ 祝您顺利将Adobe Target实施迁移到Web SDK！
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>我们致力于帮助您成功完成从at.js到Web SDK的Target迁移。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。

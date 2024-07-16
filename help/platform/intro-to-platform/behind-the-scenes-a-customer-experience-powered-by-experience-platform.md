@@ -1,5 +1,5 @@
 ---
-title: 幕后：由Adobe Experience Platform提供支持的客户体验
+title: 幕后&#58；由Adobe Experience Platform提供支持的客户体验
 description: 在上一个视频中，我们看到了示例品牌Luma如何能够创建丰富、有价值且相关的客户体验。 本视频说明如何使用Adobe Experience Platform完成此历程。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner

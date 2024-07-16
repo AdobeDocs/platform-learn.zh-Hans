@@ -11,7 +11,7 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
 source-wordcount: '86'
-ht-degree: 61%
+ht-degree: 51%
 
 ---
 
@@ -25,10 +25,10 @@ ht-degree: 61%
    + [添加数据元素、规则和库](add-data-elements-rules.md)
    + [使用调试器切换环境](switch-environments.md)
 + 实施解决方案{#implement-solutions}
-   + [添加 Identity Service](id-service.md)
+   + [添加Id服务](id-service.md)
    + [添加 Adobe Target](target.md)
    + [添加 Adobe Analytics](analytics.md)
    + [添加 Adobe Audience Manager](audience-manager.md)
    + [Experience Cloud 集成](integrations.md)
-+ 发布您的资产{#publish}
-   + [发布您的资产](publish.md)
++ Publish您的资产{#publish}
+   + [Publish您的资产](publish.md)

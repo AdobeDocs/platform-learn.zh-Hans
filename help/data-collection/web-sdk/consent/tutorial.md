@@ -7,8 +7,8 @@ doc-type: tutorial
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
 source-git-commit: e2594d3b30897001ce6cb2f6908d75d0154015eb
 workflow-type: tm+mt
-source-wordcount: '3320'
-ht-degree: 1%
+source-wordcount: '3178'
+ht-degree: 0%
 
 ---
 
@@ -20,31 +20,31 @@ ht-degree: 1%
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * platform launch服务器端现在为 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Edge配置现在为 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 本教程演示了如何使用数据收集中的Platform Web SDK扩展实施和激活从同意管理平台(CMP)获取的同意数据。 我们将使用Adobe标准和IAB TCF 2.0同意标准来执行此操作，以OneTrust或Sourcepoint作为CMP示例。
 
-本教程使用Platform Web SDK扩展将同意数据发送到Platform。 有关Web SDK的概述，请参阅 [此页面](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans).
+本教程使用Platform Web SDK扩展将同意数据发送到Platform。 有关Web SDK的概述，请参阅[此页面](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)。
 
 ## 先决条件
 
-列出了使用Web SDK的先决条件 [此处](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html#fundamentals).
+[此处](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html#fundamentals)列出了使用Web SDK的先决条件。
 
-在该页面上，需要一个“事件数据集”，正如所听到的那样，这是一个用于保存体验事件数据的数据集。 要通过事件发送同意信息，请 [IAB TCF 2.0同意详细信息](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/dataset.html) 字段组需要添加到您的体验事件架构：
+在该页面上，需要一个“事件数据集”，正如所听到的那样，这是一个用于保存体验事件数据的数据集。 若要通过事件发送同意信息，需要将[IAB TCF 2.0同意详细信息](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/iab/dataset.html)字段组添加到您的体验事件架构中：
 
 ![](./images/event-schema.png)
 
-对于Platform consent standard v2.0，我们还需要访问Adobe Experience Platform以创建XDM个人资料架构和数据集。 有关架构创建的教程，请参阅 [使用架构编辑器创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#tutorials) 有关所需的同意和偏好设置详细信息字段组，请参阅 [配置数据集以捕获同意和偏好设置数据](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html).
+对于Platform consent standard v2.0，我们还需要访问Adobe Experience Platform以创建XDM个人资料架构和数据集。 有关架构创建的教程，请参阅[使用架构编辑器创建架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html#tutorials)；有关所需的“同意和偏好设置详细信息”字段组，请参阅[配置数据集以捕获同意和偏好设置数据](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html)。
 
 本教程假定您有权访问数据收集，并且已经创建了客户端标记属性，其中安装了Web SDK扩展，并且创建并构建了用于开发的工作库。 以下文档详细说明了这些主题：
 
-* [创建或配置资产](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
+* [创建或配置属性](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
 * [库概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html)
 * [发布概述](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)
 
-我们还将使用 [Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome扩展可检查并验证我们的实施。
+我们还将使用[Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome扩展来检查和验证我们的实施。
 
 要在您自己的网站上使用CMP实施IAB TCF示例，您需要访问OneTrust或Sourcepoint等CMP以生成它们提供的数据，或者您只需遵循此处并查看以下结果。
 
@@ -52,9 +52,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->1.0标准正在逐步淘汰，取而代之的是v2.0。2.0标准允许您添加其他可用于手动强制实施同意首选项的同意数据。 Platform Web SDK扩展下方的屏幕截图来自版本 [2.4.0](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html#version-2.4.0) 与Adobe同意标准v1.0或v2.0兼容的扩展的扩展。
+>1.0标准正在逐步淘汰，取而代之的是v2.0。2.0标准允许您添加其他可用于手动强制实施同意首选项的同意数据。 Platform Web SDK扩展以下屏幕截图来自该扩展的[2.4.0](https://experienceleague.adobe.com/docs/experience-platform/edge/release-notes.html#version-2.4.0)版本，该版本与Adobe同意标准v1.0或v2.0兼容。
 
-有关这些标准的更多信息，请参阅 [支持客户同意首选项](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html).
+有关这些标准的详细信息，请参阅[支持客户同意首选项](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html)。
 
 ### 步骤1：在Web SDK扩展中配置同意
 
@@ -83,13 +83,13 @@ ht-degree: 1%
 
 请注意：此SDK配置设置不会保留到用户的配置文件中，它专门用于在访客提供明确同意首选项之前设置SDK的行为。
 
-要了解有关配置Web SDK扩展的更多信息，请参阅 [Platform Web SDK扩展概述](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=en#configure-the-extension) 和 [支持客户同意首选项](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html).
+要了解有关配置Web SDK扩展的更多信息，请参阅[Platform Web SDK扩展概述](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=en#configure-the-extension)和[支持客户同意首选项](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html)。
 
-在本例中，我们选择“待处理”选项，然后选择 **保存** 以保存我们的配置设置。
+对于此示例，让我们选择“待处理”选项，然后选择&#x200B;**保存**&#x200B;以保存我们的配置设置。
 
 ### 步骤2：传达同意首选项
 
-现在，我们已设置SDK的默认行为，接下来可以使用标记将访客的明确同意首选项发送到Platform。 通过使用，可以轻松实现使用Adobe1.0或2.0标准发送同意数据 `setConsent` 标记规则中Web SDK的操作。
+现在，我们已设置SDK的默认行为，接下来可以使用标记将访客的明确同意首选项发送到Platform。 通过使用Adobe规则中Web SDK的`setConsent`操作，可以使用Web SDK 1.0或2.0标准轻松发送同意数据。
 
 #### 使用Platform Consent Standard 1.0设置Consent
 
@@ -105,17 +105,17 @@ ht-degree: 1%
 
 注意：一旦网站访客选择退出，SDK将不允许您将用户同意设置为使用。
 
-您的标记规则可以由多种内置或自定义方式触发 [事件](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html) ，可用于在访客会话期间的适当时间传递此同意数据。 在上例中，我们使用window loaded事件来触发规则。 在后面的部分中，我们将使用CMP中的同意偏好设置事件来触发“设置同意”操作。 在由您喜欢的任何指示选择加入首选项设置的事件触发的规则中，您可以使用设置同意操作。
+您的标记规则可以由各种内置或自定义[事件](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html)触发，这些事件可用于在访客会话期间的适当时间传递此同意数据。 在上例中，我们使用window loaded事件来触发规则。 在后面的部分中，我们将使用CMP中的同意偏好设置事件来触发“设置同意”操作。 在由您喜欢的任何指示选择加入首选项设置的事件触发的规则中，您可以使用设置同意操作。
 
 #### 使用Platform Consent Standard 2.0设置Consent
 
-版本2.0的Platform同意标准适用于 [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html?lang=zh-Hans) 数据。 它还要求将同意和偏好设置详细信息字段组添加到您在Platform中的配置文件架构。 请参阅 [Platform中的同意处理](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html) 有关Adobe标准版本2.0以及此字段组的详细信息。
+Platform同意标准版本2.0可处理[XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html)数据。 它还要求将同意和偏好设置详细信息字段组添加到您在Platform中的配置文件架构。 有关Adobe标准版本2.0和此字段组的详细信息，请参阅[Platform中的同意处理](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html)。
 
 我们将创建一个自定义代码数据元素，以将数据传递到下面架构中显示的同意对象的收集属性和元数据属性：
 
 ![](./images/collect-metadata.png)
 
-此同意和偏好设置详细信息字段组包含 [同意和偏好设置XDM数据类型](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#prerequisites) 其中将包含我们在规则操作中通过Platform Web SDK扩展发送到Platform的同意偏好设置数据。 目前，实施Platform Consent Standard 2.0所需的唯一属性是收集值(val)和元数据时间值（上面以红色突出显示）。
+此同意和偏好设置详细信息字段组包含[同意和偏好设置XDM数据类型](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html#prerequisites)的字段，这些字段将包含我们在规则操作中通过Platform Web SDK扩展发送到Platform的同意偏好设置数据。 目前，实施Platform Consent Standard 2.0所需的唯一属性是收集值(val)和元数据时间值（上面以红色突出显示）。
 
 让我们为此数据创建一个数据元素。 选择数据元素和蓝色的Add Data Element按钮。 我们将其称为“xdm-consent 2.0”，并使用核心扩展，我们将选择“自定义代码”类型。 您可以在自定义代码编辑器窗口中输入或复制并粘贴以下数据：
 
@@ -132,7 +132,7 @@ return {
 }
 ```
 
-时间字段应指定用户上次更新其同意首选项的时间。 我们在这里使用标准方法在JavaScript Date对象上创建时间戳作为示例。 选择“保存”以保存自定义代码，然后再次选择“保存”以保存数据元素。
+时间字段应指定用户上次更新其同意首选项的时间。 我们在这里使用标准方法在JavaScript Date对象中创建时间戳作为示例。 选择“保存”以保存自定义代码，然后再次选择“保存”以保存数据元素。
 
 接下来，让我们选择Rules ，然后选择蓝色的Add Rule按钮，并输入名称“setConsent onLoad - Consent 2.0”。 让我们选择Window Loaded事件作为规则触发器，然后选择Actions下的Add 。 选择Platform Web SDK扩展，对于“操作类型”，请选择“设置同意”。 标准应为Adobe，版本应为2.0。对于Value，我们将使用刚刚创建的数据元素，其中包含我们需要发送到Platform的收集和时间值：
 
@@ -146,13 +146,13 @@ return {
 
 ## 将Web SDK与IAB TCF 2.0同意标准结合使用
 
-要了解有关IAB透明度和同意框架版本2.0的更多信息，请访问 [IAB欧洲网站](https://iabeurope.eu/transparency-consent-framework/).
+您可以在[IAB Europe网站](https://iabeurope.eu/transparency-consent-framework/)上了解有关IAB透明度和同意框架版本2.0的更多信息。
 
 要使用此标准设置同意偏好设置数据，我们需要将IAB TCF 2.0同意详细信息架构字段组添加到Platform中的Experience Event架构：
 
 ![](./images/consentStrings.png)
 
-此字段组包含IAB TCF 2.0标准所需的同意首选项字段。 有关架构和字段组的更多信息，请参见 [XDM系统概述](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+此字段组包含IAB TCF 2.0标准所需的同意首选项字段。 有关架构和字段组的详细信息，请参阅[XDM系统概述](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)。
 
 ### 步骤1：创建同意数据元素
 
@@ -166,19 +166,19 @@ return {
 
 我们将按如下方式设置每个consentStrings：
 
-* **`consentStandard`**：  `IAB TCF`
-* **`consentStandardVersion`**:  `2.0`
-* **`consentStringValue`**:  `%IAB TCF Consent String%`
-* **`containsPersonalData`**：  `False` （从“选择值”按钮中选择）
-* **`gdprApplies`**:  `%IAB TCF Consent GDPR%`
+* **`consentStandard`**： `IAB TCF`
+* **`consentStandardVersion`**： `2.0`
+* **`consentStringValue`**： `%IAB TCF Consent String%`
+* **`containsPersonalData`**： `False` （从“选择值”按钮中选择）
+* **`gdprApplies`**： `%IAB TCF Consent GDPR%`
 
-此 `consentStandard` 和 `consentStandardVersion` 字段都是我们使用的标准（IAB TCF版本2.0）的文本字符串。此 `consentStringValue` 引用名为“IAB TCF同意字符串”的数据元素。 文本周围的百分比符号表示数据元素的名称，我们稍后会讨论它。 此 `containsPersonalData` 字段指示IAB TCF 2.0同意字符串是否包含具有“True”或“False”的任何个人数据。 此 `gdprApplies` 字段指示“true”（适用于GDPR）、“false”（适用于GDPR不适用）或“undefined”（未知）是否适用GDPR。 目前，Web SDK将“undefined”视为“true”，因此使用“gdprApplices： undefined”发送的同意数据将被视为访客位于GDPR确实适用的区域。
+`consentStandard`和`consentStandardVersion`字段都只是我们使用的标准（IAB TCF版本2.0）的文本字符串。`consentStringValue`引用了一个名为“IAB TCF同意字符串”的数据元素。 文本周围的百分比符号表示数据元素的名称，我们稍后会讨论它。 `containsPersonalData`字段指示IAB TCF 2.0同意字符串是否包含任何带有“True”或“False”的个人数据。 `gdprApplies`字段指示GDPR是否适用为“true”，GDPR是否适用为“false”，GDPR是否适用为“undefined”。 目前，Web SDK将“undefined”视为“true”，因此使用“gdprApplices： undefined”发送的同意数据将被视为访客位于GDPR确实适用的区域。
 
-请参阅 [同意文档](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html#getting-started) 有关这些属性以及标记中IAB TCF 2.0的更多信息。
+有关这些属性以及标记中IAB TCF 2.0的更多信息，请参阅[同意文档](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html#getting-started)。
 
 ### 步骤2：创建规则以使用IAB TCF 2.0标准设置同意
 
-接下来，我们创建一个规则，以在网站访客设置或更改此标准的同意数据时通过Web SDK设置同意。 在此规则中，我们还将了解如何从CMP中捕获同意更改信号，例如 [OneTrust](https://www.onetrust.com/products/cookie-consent/) 或 [Sourcepoint](https://www.sourcepoint.com/cmp/).
+接下来，我们创建一个规则，以在网站访客设置或更改此标准的同意数据时通过Web SDK设置同意。 在此规则中，我们还将了解如何从[OneTrust](https://www.onetrust.com/products/cookie-consent/)或[Sourcepoint](https://www.sourcepoint.com/cmp/)等CMP捕获这些同意更改信号。
 
 #### 添加规则事件
 
@@ -206,9 +206,9 @@ function addEventListener() {
 addEventListener();
 ```
 
-此代码只会创建和执行一个函数，名为 `addEventListener`. 此函数检查 `window.__tcfapi` 对象存在，如果存在，则根据API的规范添加事件侦听器。 有关这些规格的更多信息，请参阅 [IAB存储库](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) 在GitHub上。 如果成功添加了此事件侦听器，并且网站访客已完成其同意和偏好设置选择，则代码会为设置标记自定义变量 `tcData.tcString`和GDPR区域的指示器。 要再次了解有关IAB TCF的更多信息，请参阅IAB [网站](https://iabeurope.eu/transparency-consent-framework/) 和 [GitHub存储库](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) 了解技术详细信息。 设置这些值后，代码将执行触发器函数，触发运行此规则。
+此代码仅创建和执行名为`addEventListener`的函数。 该函数检查是否存在`window.__tcfapi`对象，如果存在，则根据API的规范添加事件侦听器。 您可以在GitHub上的[IAB存储库](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework)中阅读有关这些规范的详细信息。 如果成功添加此事件侦听器，并且网站访客已完成其同意和偏好设置选择，则代码将为`tcData.tcString`设置标记自定义变量，并为GDPR区域设置指示器。 若要再次了解有关IAB TCF的更多信息，请参阅IAB [网站](https://iabeurope.eu/transparency-consent-framework/)和[GitHub存储库](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework)以了解技术详细信息。 设置这些值后，代码将执行触发器函数，触发运行此规则。
 
-如果 `window.__tcfapi` 首次执行此函数时对象不存在，此函数将每100毫秒再次检查一次，以便添加事件侦听器。 最后一行代码只执行 `addEventListener` 在上面的代码行中定义的函数。
+如果首次执行此函数时不存在`window.__tcfapi`对象，则函数将每100毫秒再次检查一次，以便添加事件侦听器。 最后一行代码只执行上面代码行中定义的`addEventListener`函数。
 
 总之，我们创建了一个函数来检查网站访客使用CMP（或自定义）同意横幅设置的同意状态。 设置同意首选项后，此代码将创建两个自定义变量（自定义代码数据元素），我们可在规则操作中使用它们。 将以上代码粘贴到事件的自定义代码编辑器窗口后，选择蓝色的Save按钮以保存规则事件。
 
@@ -218,9 +218,9 @@ addEventListener();
 
 在“操作”部分中选择“添加” 。 在扩展下，从下拉列表中选择Platform Web SDK 。 在Action Type下，选择Set Consent。 让我们将此操作命名为setConsent。
 
-在同意信息下的操作配置中，选择填写表单。 对于“标准”，请选择“IAB TCF”；对于“版本”，请输入2.0。对于值，我们将使用事件中的自定义变量并输入 `%IAB TCF Consent String%` 来自 [tcData](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata) 我们在上面的规则事件自定义函数中捕获。
+在同意信息下的操作配置中，选择填写表单。 对于“标准”，请选择“IAB TCF”；对于“版本”，请输入2.0。对于值，我们将使用事件中的自定义变量，并输入来自我们在上述规则事件自定义函数中捕获的[tcData](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework/blob/master/TCFv2/IAB%20Tech%20Lab%20-%20CMP%20API%20v2.md#tcdata)的`%IAB TCF Consent String%`。
 
-在GDPR应用下，我们将使用事件中的其他自定义变量并输入 `%IAB TCF Consent GDPR%` 也来自 `tcData` 我们在上面的规则事件自定义函数中捕获。 如果您知道GDPR肯定会或不会应用于此网站的访客，则可以选择“是”或“否”（如果适用），而不使用自定义变量（数据元素）选项。 您还可以在数据元素中使用条件逻辑来检查GDPR是否适用并返回相应的值。
+在GDPR应用下，我们将使用事件中的其他自定义变量并输入`%IAB TCF Consent GDPR%`，该变量也来自我们在上述规则事件自定义函数中捕获的`tcData`。 如果您知道GDPR肯定会或不会应用于此网站的访客，则可以选择“是”或“否”（如果适用），而不使用自定义变量（数据元素）选项。 您还可以在数据元素中使用条件逻辑来检查GDPR是否适用并返回相应的值。
 
 在GDPR包含个人数据下，选择选项以指示此用户的数据是否包含个人数据。 此处的数据元素应解析为true或false。
 
@@ -230,17 +230,17 @@ addEventListener();
 
 ### 步骤3：保存到库并生成
 
-如果您使用 [工作库](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html#use-the-working-library-feature) 前提条件，您已保存这些更改并构建开发库：
+如果您使用的是[工作库](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-data-elements-rules.html#use-the-working-library-feature)先决条件，则表示您已保存这些更改并构建开发库：
 
 ![](./images/save-library.png)
 
 ### 步骤4：Inspect并验证数据收集
 
-在我们的网站上，我们刷新页面并在中确认库内部版本 [调试程序](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome扩展，在标记菜单部分：
+在我们的网站上，我们在[Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome扩展的“标记”菜单部分中刷新页面并确认库版本：
 
 ![](./images/build-date.png)
 
-我们还可以通过在Debugger Platform Web SDK部分中Adobe的“正文”行上选择（您会看到），检查POST1.0或2.0标准的setConsent调用 `{"consent":[{"value":{"general":"in"},"version…`：
+我们还可以通过在AdobeDebugger Platform Web SDK部分中（您看到`{"consent":[{"value":{"general":"in"},"version…`）的POST正文行上选择，来检查Debugger 1.0或2.0标准的setConsent调用。
 
 ![](./images/inspect-consent-call.png)
 
@@ -248,7 +248,7 @@ addEventListener();
 
 ![](./images/banner.png)
 
-选择“我接受”后，通过在Debugger Platform Web SDK部分中您看到的网络请求的POST正文行上选择，我们可以检查IAB TCF 2.0标准的setConsent调用 `{"consent":[{"value":"someAlphaNumericCharacters…`.
+选择“我接受”后，通过在Debugger Platform Web SDK部分中您看到`{"consent":[{"value":"someAlphaNumericCharacters…`的网络请求的POST正文行上选择，我们可以检查IAB TCF 2.0标准的setConsent调用。
 
 ![](./images/inspect-2-0.png)
 

@@ -8,8 +8,8 @@ doc-type: multipage
 recommendations: noDisplay,noCatalog
 source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 46%
+source-wordcount: '104'
+ht-degree: 40%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 46%
 + [数据架构师和工程师教程](overview.md)
 + [1.配置权限](configure-permissions.md)
 + [2.创建沙盒](create-a-sandbox.md)
-+ [3.设置开发人员控制台和Postman](set-up-developer-console-and-postman.md)
++ [3.设置Developer Console和Postman](set-up-developer-console-and-postman.md)
 + [4.架构中的模型数据](model-data-in-schemas.md)
 + [5.映射身份](map-identities.md)
 + [6.创建数据集](create-datasets.md)

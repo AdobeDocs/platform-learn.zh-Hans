@@ -1,5 +1,5 @@
 ---
-title: 使用源连接器流式传输数据
+title: 使用Source连接器流式传输数据
 description: 了解如何实时地将数据从云存储源流入Platform以及实时地使用数据吸引客户参与。
 feature: Sources
 role: Data Engineer, Data Architect, Developer
@@ -9,12 +9,12 @@ thumbnail: 331943.jpg
 exl-id: bd788a1e-123f-488f-8df7-23336aae88fd
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 10%
+source-wordcount: '90'
+ht-degree: 2%
 
 ---
 
-# 使用源连接器流式传输数据
+# 使用Source连接器流式传输数据
 
 了解如何实时地将数据从云存储源流入Platform以及实时地使用数据吸引客户参与。
 

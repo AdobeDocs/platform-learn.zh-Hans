@@ -5,8 +5,8 @@ solution: Data Collection, Audience Manager
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 83%
+source-wordcount: '1749'
+ht-degree: 72%
 
 ---
 
@@ -18,12 +18,11 @@ ht-degree: 83%
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch将作为一套数据收集技术集成到Adobe Experience Platform中。 界面中已推出一些术语更改，在使用此内容时，您应该注意这些更改：
+>Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
-> * platform launch服务器端现在为 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * 现在已提供边缘配置 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
+> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 学习目标
 
@@ -37,7 +36,7 @@ ht-degree: 83%
 
 要完成本课程，您将需要：
 
-1. 完成 [配置标记](create-a-property.md), [添加Adobe Analytics](analytics.md)和 [添加Identity服务](id-service.md).
+1. 已完成[配置标记](create-a-property.md)、[添加Adobe Analytics](analytics.md)和[添加Identity Service](id-service.md)中的课程。
 
 1. 拥有 Adobe Analytics 的管理员访问权限，以便能够为将在本教程中使用的报表包启用服务器端转发。或者，也可以按照下面的说明，请求贵组织的现有管理员为您执行此操作。
 
@@ -62,7 +61,7 @@ ht-degree: 83%
 实施 SSF 有两个主要步骤：
 
 1. 在 Analytics Admin Console 中打开用于“按报表包”**&#x200B;将数据从 Analytics 转发到 Audience Manager 的“选项开关”。
-1. 将代码放置到适当位置，这可通过标记完成。 为了使其正常工作，您需要安装 Adobe Experience Platform Identity Service 扩展以及 Analytics 扩展（实际上，您“不”**&#x200B;需要 AAM 扩展，理由如下所述)。
+1. 将代码放置到适当位置，这是通过标记完成的。 为了使其正常工作，您需要安装 Adobe Experience Platform Identity Service 扩展以及 Analytics 扩展（实际上，您“不”**&#x200B;需要 AAM 扩展，理由如下所述)。
 
 ### 在 Analytics Admin Console 中启用服务器端转发
 
@@ -74,19 +73,19 @@ ht-degree: 83%
 
    ![登录 Adobe Analytics](images/aam-logIntoAnalytics.png)
 
-1. 在 Analytics 的顶部导航中，选择&#x200B;**[!UICONTROL 管理员 > 报表包]**，然后从列表中选择（或多选）要转发到 Audience Manager 的报表包。
+1. 在Analytics的顶部导航中，选择&#x200B;**[!UICONTROL 管理员>报表包]**，然后从列表中选择（或多选）要转发到Audience Manager的报表包。
 
    ![单击 Admin Console](images/aam-analyticsAdminConsoleReportSuites.png)
 
-1. 在“报表包”屏幕中已选定报表包的情况下，选择&#x200B;**[!UICONTROL 编辑设置 > 常规 > 服务器端转发]**。
+1. 从“报表包”屏幕中选择报表包，然后选择&#x200B;**[!UICONTROL 编辑设置>常规>服务器端转发]**。
 
    ![选择 SSF 菜单](images/aam-selectSSFmenu.png)
 
    >[!WARNING]
    >
-   > 如上所述，您需要拥有管理员权限，才能查看此菜单项。
+   >如上所述，您需要具有管理员权限才能查看此菜单项。
 
-1. 在“服务器端转发”页面上，阅读相应信息并为报表包选中&#x200B;**[!UICONTROL 启用服务器端转发]**&#x200B;框。
+1. 在“服务器端转发”页面上，阅读相应信息并选中&#x200B;**[!UICONTROL 为报表包启用服务器端转发]**&#x200B;框。
 
 1. 单击&#x200B;**[!UICONTROL 保存]**
 
@@ -94,33 +93,33 @@ ht-degree: 83%
 
 >[!NOTE]
 >
-> 由于需要按报表包启用 SSF，因此，当您在实际网站的报表包中部署 SSF 时，请不要忘记为每个实际的报表包重复此步骤。
+>由于需要按报表包启用SSF，因此，当您在实际网站的报表包中部署SSF时，请不要忘记为每个实际的报表包重复此步骤。
 >
 >此外，如果 SSF 选项为灰色，您需要将报表包映射到 Experience Cloud 组织，才能启用此选项。[此文档](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)对此进行了说明。
 
-完成此步骤后，如果您启用了 Adobe Experience Platform Identity Service，则数据将从 Analytics 转发到 AAM。但是，要完成此过程，以便响应从AAM正确返回到页面(并通过Audience Analytics功能返回到Analytics)，您还必须在标记中完成以下步骤。 别担心，这超级简单。
+完成此步骤后，如果您启用了 Adobe Experience Platform Identity Service，则数据将从 Analytics 转发到 AAM。但是，要完成此过程，以便响应从AAM正常返回到页面(并通过Audience Analytics功能返回到Analytics)，您还必须在标记中完成以下步骤。 别担心，这超级简单。
 
 ### 在标记中启用服务器端转发
 
-这是启用 SSF 的两个步骤中的第二个步骤。您已在AnalyticsAdmin Console中打开开关，现在只需添加代码，如果您选中了正确的复选框，将为您执行哪些标记。
+这是启用 SSF 的两个步骤中的第二个步骤。您已在AnalyticsAdmin Console中打开相应选项开关，现在只需添加代码，如果您选中了正确的复选框，那么这些标记将为您发挥作用。
 
 >[!NOTE]
 >
->要实施将Analytics数据转发到AAM的服务器端转发，我们实际上将在标记中编辑/配置Analytics扩展， **not** AAM扩展。 AAM 扩展专门用于客户端 DIL 实施，适用于没有 Adobe Analytics 的用户。因此，当以下步骤引导您转到 Analytics 扩展进行设置时，这些步骤是正确的。
+>为实施Analytics数据到AAM的服务器端转发，我们实际上将在标记中编辑/配置Analytics扩展，**而不是** AAM扩展。 AAM 扩展专门用于客户端 DIL 实施，适用于没有 Adobe Analytics 的用户。因此，当以下步骤引导您转到 Analytics 扩展进行设置时，这些步骤是正确的。
 
 #### 在标记中启用SSF
 
-1. 转到 **[!UICONTROL Extensions > Installed]**，然后单击以配置 Analytics 扩展。
+1. 转到&#x200B;**[!UICONTROL Extensions > Installed]**，然后单击以配置Analytics扩展。
 
    ![配置 Analytics 扩展](images/aam-configAnalyticsExtension.png)
 
 1. 展开 `Adobe Audience Manager` 部分
 
-1. 选中 **[!UICONTROL Automatically share Analytics Data with Audience Manager]** 复选框。这会将 Audience Manager“模块”（代码）添加到 Analytics `AppMeasurement.js` 实施中。
+1. 选中&#x200B;**[!UICONTROL 自动与Audience Manager]**&#x200B;共享Analytics数据的框。 这会将 Audience Manager“模块”（代码）添加到 Analytics `AppMeasurement.js` 实施中。
 
 1. 添加您的“Audience Manager 子域”（也称为“合作伙伴名称”、“合作伙伴 ID”或“合作伙伴子域”）。按照[获取 Audience Manager 子域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)中提供的说明进行操作。
 
-1. 单击 **[!UICONTROL Save to Library and Build]**
+1. 单击&#x200B;**[!UICONTROL 保存到库并生成]**
 
    ![配置 SSF](images/aam-configLaunchSSF.png)
 
@@ -132,7 +131,8 @@ ht-degree: 83%
 
 #### 验证代码是否正确加载
 
-安装标记以处理转发(尤其是从AAM到页面的响应)的代码，称为Audience Manager“模块”。 我们可以使用 Experience Cloud Debugger 来确保该代码已加载。
+Tags安装的用于处理转发(尤其是从AAM到页面的响应)的代码称为Audience Manager
+“模块。” 我们可以使用 Experience Cloud Debugger 来确保该代码已加载。
 
 1. 打开 Luma 网站
 1. 单击浏览器中的调试器图标以打开 Experience Cloud Debugger
@@ -152,7 +152,7 @@ ht-degree: 83%
 
 >[!WARNING]
 >
-> 您可能会注意到，Debugger 的 Audience Manager 部分引用了“DIL”，即“数据集成库”，“DIL”通常指客户端实施，而不是我们在此处实施的服务器端方法。事实上，AAM“模块”（用在此 SSF 方法中）会使用很多与客户端 DIL 库相同的代码，因此 Debugger 当前正按照此方式进行报告。如果您已执行本教程中的步骤，且此验证部分中的其余项目均正确无误，则可以确认服务器端转发运行正常。
+>您可能会注意到，Debugger的“Audience Manager”部分引用了“DIL”，即“Data Integration Library”，通常指客户端实施，而不是我们在此处实施的服务器端方法。 事实上，AAM“模块”（用在此 SSF 方法中）会使用很多与客户端 DIL 库相同的代码，因此 Debugger 当前正按照此方式进行报告。如果您已执行本教程中的步骤，且此验证部分中的其余项目均正确无误，则可以确认服务器端转发运行正常。
 
 #### 验证 Analytics 请求和响应
 
@@ -174,8 +174,8 @@ ht-degree: 83%
 
 >[!WARNING]
 >
-> 请注意误报的“成功”- 如果存在响应，并且一切似乎都运行正常，请&#x200B;**确保**&#x200B;具有“stuff”对象。如果没有该对象，您可能会在响应中看到一条显示 &quot;status&quot;:&quot;SUCCESS&quot; 的消息。尽管这听起来很不可思议，但实际上却证明 SSF **没有**&#x200B;正常运行。如果您看到此消息，则表示您已完成此部分的第二个步骤（标记中的代码），但尚未完成AnalyticsAdmin Console中的转发（此部分的第一个步骤）。 在这种情况下，您需要验证是否已在 Analytics Admin Console 中启用 SSF。如果您已启用，但尚未满 4 个小时，请耐心等待。
+>请注意误报的“成功” — 如果存在响应，并且一切似乎都运行正常，请&#x200B;**确保**&#x200B;您具有该“stuff”对象。 如果没有该对象，您可能会在响应中看到一条显示 &quot;status&quot;:&quot;SUCCESS&quot; 的消息。尽管这听起来很不可思议，但实际上却证明 SSF **没有**&#x200B;正常运行。如果您看到此消息，则表示您已经完成此部分的第二个步骤（标记中的代码），但尚未完成AnalyticsAdmin Console中的转发（此部分的第一个步骤）。 在这种情况下，您需要验证是否已在 Analytics Admin Console 中启用 SSF。如果您已启用，但尚未满 4 个小时，请耐心等待。
 
 ![AA 响应 - 误报的成功](images/aam-responseFalseSuccess.png)
 
-[下一课程“Experience Cloud 集成”>](integrations.md)
+[下一课程“Experience Cloud集成”>](integrations.md)

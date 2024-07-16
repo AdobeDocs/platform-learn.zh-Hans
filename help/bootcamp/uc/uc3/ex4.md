@@ -11,8 +11,8 @@ feature: Events
 exl-id: 45c77177-9ea9-4c3d-a40e-c04a747938eb
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '193'
+ht-degree: 0%
 
 ---
 
@@ -22,14 +22,14 @@ ht-degree: 1%
 
 ![ACOP](./images/payloadeventID.png)
 
-事件ID是需要发送到Adobe Experience Platform才能触发旅程的。 在此示例中，eventID是：
-`e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
+事件ID是需要发送到Adobe Experience Platform才能触发旅程的。 在此示例中，eventID为：
+`e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`。
 
 打开移动设备应用程序，然后转到主页。 单击&#x200B;**设置**&#x200B;图标。
 
 ![DSN](./images/appsett.png)
 
-将您的eventID粘贴到字段中 **信标事件ID** 并单击 **保存**.
+将您的eventID粘贴到字段&#x200B;**Beacon EventID**&#x200B;中，然后单击&#x200B;**保存**。
 
 ![DSN](./images/beacon1.png)
 
@@ -39,15 +39,15 @@ ht-degree: 1%
 
 ![DSN](./images/screen1.png)
 
-接下来，返回主页。 单击 **beacon** 图标。
+接下来，返回主页。 单击&#x200B;**信标**&#x200B;图标。
 
 ![DSN](./images/app23.png)
 
-你就能看到这个了。 首先，选择 **Bootcamp屏幕信标** 然后单击 **条目** 按钮。 这将允许您模拟信标条目。
+你会看到这个。 首先，选择&#x200B;**Bootcamp屏幕信标**，然后单击&#x200B;**条目**&#x200B;按钮。 这将允许您模拟信标条目。
 
 ![DSN](./images/app21.png)
 
-现在，查看店内屏幕。 您将在5秒内看到您查看的最后一个产品。
+现在，看看店内屏幕。 5秒内，您将看到您查看的最后一个产品显示在该处。
 
 ![DSN](./images/beacon3.png)
 

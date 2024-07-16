@@ -9,7 +9,7 @@ role: Developer, Data Engineer
 source-git-commit: 0df82796a5885954102f7496fa043c0f3ef4b89e
 workflow-type: tm+mt
 source-wordcount: '190'
-ht-degree: 26%
+ht-degree: 23%
 
 ---
 
@@ -28,12 +28,12 @@ ht-degree: 26%
    + [栈叠规则](tags/stack-rules.md)
    + [构建和发布库](tags/build-and-publish-a-library.md)
    + [使用Web SDK在网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans){target="_blank"}
-   + [使用解决方案SDK在网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+   + [在具有解决方案SDK的网站中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
    + [在移动应用程序中实施](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
 + Web SDK{#web-sdk}
    + [概述](web-sdk/overview.md)
    + [演示](web-sdk/demo.md)
-   + [实施教程（包含标记）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans){target="_blank"}
+   + [实施教程（含标记）](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans){target="_blank"}
    + [迁移Target教程](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
    + 同意{#consent}
       + [概述](web-sdk/consent/overview.md)
@@ -60,10 +60,10 @@ ht-degree: 26%
    + [移动客户端标记](event-forwarding/consider-moving-tags.md)
    + [设置Google Ads增强型转化](event-forwarding/set-up-google-ads-enhanced-conversions.md)
    + [适用于Mailchimp的Adobe扩展](event-forwarding/adobe-extension-for-mailchimp.md)
-+ 数据流和边缘网络{#edge-network}
++ 数据流和Edge Network{#edge-network}
    + [配置数据流](edge/configure-datastreams.md)
    + [数据准备](edge/data-prep.md)
    + [管理敏感数据](edge/manage-sensitive-data-in-datastreams.md)
    + [第一方设备Id](edge/generate-first-party-device-ids.md)
-+ 调试程序{#debugger}
++ 调试器{#debugger}
    + [概述](debugger/overview.md)

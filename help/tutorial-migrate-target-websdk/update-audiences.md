@@ -1,38 +1,39 @@
 ---
-title: 更新受众和配置文件脚本 |将Target从at.js 2.x迁移到Web SDK
-description: 了解如何更新Adobe Target受众和配置文件脚本，以与Experience PlatformWeb SDK兼容。
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: 更新受众和个人资料脚本 | 将Target从at.js 2.x迁移到Web SDK
+description: 了解如何更新Adobe Target受众和配置文件脚本，以便与Experience PlatformWeb SDK兼容。
+exl-id: 2c0f85f7-6e8c-4d0b-8ed5-53897d06e563
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
 
-# 为兼容Platform Web SDK更新Target受众和配置文件脚本
+# 更新Target受众和配置文件脚本以确保Platform Web SDK兼容性
 
-完成技术更新以将Target迁移到Platform Web SDK后，您可能需要更新部分受众、配置文件脚本和活动以确保顺利过渡。
+完成将Target迁移到Platform Web SDK的技术更新后，您可能需要更新某些受众、配置文件脚本和活动以确保顺利过渡。
 
-所有Target mbox参数都必须通过平台Web SDK实施以XDM格式传递。 在将更改发布到生产环境之前，您应：
+必须在Platform Web SDK实施中以XDM格式传递所有Target mbox参数。 在将更改发布到生产环境之前，您应：
 
 * 更新使用mbox参数的受众
 * 更新使用mbox参数的配置文件脚本
-* 更新任何选件和活动时都会使用mbox参数令牌替换(例如， `${mbox.parameter_name}`)
+* 更新任何选件和活动可使用mbox参数令牌替换（例如，`${mbox.parameter_name}`）
 
 ## 调整受众
 
-任何使用自定义mbox参数的受众都应进行更新，以使用新的XDM参数名称。 例如，的自定义参数 `page_name` 可能会被映射到 `web.webpagedetails.pageName`.
+应更新任何使用自定义mbox参数的受众，以使用新的XDM参数名称。 例如，`page_name`的自定义参数可能会映射到`web.webpagedetails.pageName`。
 
-确保与at.js和Platform Web SDK兼容的一种方法是更新任何相关受众，以便 `OR` 条件，如下所示：
+一种确保与at.js和Platform Web SDK兼容的方法是更新任何相关的受众，以便使用`OR`条件，如下所示：
 
-![如何查看更新Target受众以实现平台Web SDK兼容性](assets/target-audience-update.png){zoomable=&quot;yes&quot;}
+![如何查看更新Platform Web SDK兼容性的目标受众](assets/target-audience-update.png){zoomable="yes"}
 
 ## 编辑配置文件脚本
 
-应更新配置文件脚本以引用新的XDM参数名称，与受众类似。 除了更改mbox参数名称之外，配置文件脚本在at.js和Platform Web SDK实施之间的工作方式也没有差异。
+应更新配置文件脚本以引用新的XDM参数名称，与受众类似。 除了mbox参数名称发生更改之外，at.js与Platform Web SDK实施之间配置文件脚本的工作方式也没有区别。
 
-确保兼容性的一种方法是 `OR` 配置文件脚本代码中的条件。
+一种确保兼容性的方法是在配置文件脚本代码中使用`OR`条件。
 
-配置文件脚本示例：
+示例配置文件脚本：
 
 ```Javascript
 if(mbox.param('pageName') == 'Product Details'){
@@ -40,7 +41,7 @@ if(mbox.param('pageName') == 'Product Details'){
 }
 ```
 
-为兼容Platform Web SDK更新了配置文件脚本：
+更新了用于Platform Web SDK兼容性的配置文件脚本：
 
 ```Javascript
 if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDetails.pageName') =='Product Details')){
@@ -48,13 +49,13 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-有关更多信息和最佳实践，请参阅关于 [配置文件脚本](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html).
+有关更多信息和最佳实践，请参阅有关[配置文件脚本](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/profile-parameters.html)的专用文档。
 
 ## 更新动态内容的参数令牌
 
-如果您有任何选件、推荐设计或活动使用 [动态内容替换](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html)，则可能需要相应地更新它们，以考虑新的XDM参数名称。
+如果您有任何使用[动态内容替换](https://experienceleague.adobe.com/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer.html)的选件、推荐设计或活动，则可能需要对其进行相应更新以考虑新的XDM参数名称。
 
-根据您对mbox参数使用令牌替换的方式，您可能能够增强现有设置以考虑旧参数和新参数名称。 但是，在自定义JavaScript代码不可能的情况下（例如在JSON选件中），您应当在迁移完成并在生产网站上实时后创建副本并进行更新。
+根据您使用令牌替换mbox参数的方式，您可以增强现有设置以考虑旧参数名和新参数名。 但是，在无法自定义JavaScript代码的情况下（例如在JSON选件中），您应在迁移完成并在生产网站上处于活动状态之后创建副本并进行更新。
 
 JSON选件示例：
 
@@ -74,10 +75,10 @@ JSON选件示例：
 }
 ```
 
-如果您在迁移后选择进行调整以考虑新的XDM mbox参数名称，请确保在迁移事件期间暂停任何受影响的活动，以防止向访客显示活动错误。
+如果您选择在迁移后进行调整以考虑新的XDM mbox参数名称，请确保在迁移事件期间暂停任何受影响的活动，以防止活动向访客显示错误。
 
-接下来，了解如何 [验证Target实施](validate.md).
+接下来，了解如何[验证Target实施](validate.md)。
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>我们致力于帮助您成功完成从at.js到Web SDK的Target迁移。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。

@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Adobe Experience Platform Identity Service通过跨设备和系统桥接身份，允许您实时提供有影响力的个人数字体验，从而帮助您更好地了解客户及其行为。 身份字段和命名空间是将不同数据源连接在一起的粘合剂，可构建360度实时客户档案。
 
-了解关于 [身份扩展](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) 和 [身份服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans) 在文档中。
+在文档中了解有关[Identity扩展](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/)和[Identity服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans)的更多信息。
 
 ## 先决条件
 
@@ -35,7 +35,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 ## 设置自定义身份命名空间
 
-身份命名空间是的组件 [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans) 作为与身份相关的上下文指示器。 例如，它们区分值 `name@email.com` 作为电子邮件地址或 `443522` 作为数字CRM ID。
+身份命名空间是[身份服务](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-hans)的组件，充当与身份相关的上下文的指示器。 例如，它们将`name@email.com`的值区分为电子邮件地址或`443522`区分为数字CRM ID。
 
 >[!NOTE]
 >
@@ -44,10 +44,10 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 要创建新的身份命名空间，请执行以下操作：
 
-1. 在数据收集界面中，选择 **[!UICONTROL 身份]** 从左边栏导航中。
+1. 在数据收集界面中，从左边栏导航中选择&#x200B;**[!UICONTROL 标识]**。
 1. 选择&#x200B;**[!UICONTROL 创建身份命名空间]**。
-1. 提供 **[!UICONTROL 显示名称]** 之 `Luma CRM ID` 和 **[!UICONTROL 身份符号]** 值 `lumaCRMId`.
-1. 选择 **[!UICONTROL 跨设备ID]**.
+1. 提供`Luma CRM ID`的&#x200B;**[!UICONTROL 显示名称]**&#x200B;和`lumaCRMId`的&#x200B;**[!UICONTROL 标识符号]**&#x200B;值。
+1. 选择&#x200B;**[!UICONTROL 跨设备ID]**。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 
    ![创建身份命名空间](assets/identity-create.png)
@@ -59,7 +59,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 当用户登录应用程序时，您希望同时更新标准身份（电子邮件）和自定义身份(Luma CRM ID)。
 
-1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中查找 `func updateIdentities(emailAddress: String, crmId: String)` 函数实现。 将以下代码添加到函数中。
+1. 在Xcode项目导航器中导航到&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**，并查找`func updateIdentities(emailAddress: String, crmId: String)`函数的实现。 将以下代码添加到函数中。
 
    ```swift
    // Set up identity map, add identities to map and update identities
@@ -75,33 +75,33 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
    此代码：
 
-   1. 创建空的 `IdentityMap` 对象。
+   1. 创建空的`IdentityMap`对象。
 
       ```swift
       let identityMap: IdentityMap = IdentityMap()
       ```
 
-   1. 设置 `IdentityItem` 电子邮件和CRM ID的对象。
+   1. 为电子邮件和CRM ID设置`IdentityItem`对象。
 
       ```swift
       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
       let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
       ```
 
-   1. 添加这些 `IdentityItem` 对象到 `IdentityMap` 对象。
+   1. 将这些`IdentityItem`对象添加到`IdentityMap`对象。
 
       ```swift
       identityMap.add(item:emailIdentity, withNamespace: "Email")
       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
       ```
 
-   1. 发送 `IdentityItem` 对象，作为 `Identity.updateIdentities` 对Edge Network的API调用。
+   1. 将`IdentityItem`对象作为对Edge Network的`Identity.updateIdentities` API调用的一部分发送。
 
       ```swift
       Identity.updateIdentities(with: identityMap) 
       ```
 
-1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登录表]** 在Xcode项目导航器中，找到要在选择 **[!UICONTROL 登录]** 按钮。 添加以下代码：
+1. 在Xcode项目导航器中导航到&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登录工作表]**，并找到要在选择&#x200B;**[!UICONTROL 登录]**&#x200B;按钮时执行的代码。 添加以下代码：
 
    ```swift
    // Update identities
@@ -111,14 +111,14 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 >[!NOTE]
 >
->您可以在单个中发送多个身份 `updateIdentities` 呼叫。 您还可以修改以前发送的身份。
+>您可以在单个`updateIdentities`调用中发送多个身份。 您还可以修改以前发送的身份。
 
 
 ## 删除身份
 
-您可以使用 [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) 用于从存储的客户端身份映射中删除身份的API。 Identity扩展停止向Edge Network发送标识符。 使用此API不会从服务器端标识图中删除标识符。 请参阅 [查看身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) 以了解有关身份图的详细信息。
+您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API从存储的客户端标识映射中删除标识。 Identity扩展停止向Edge Network发送标识符。 使用此API不会从服务器端标识图中删除标识符。 有关身份图的详细信息，请参阅[查看身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en)。
 
-1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** 在Xcode项目导航器中，将以下代码添加到 `func removeIdentities(emailAddress: String, crmId: String)` 函数：
+1. 在Xcode项目导航器中导航到&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**，并将以下代码添加到`func removeIdentities(emailAddress: String, crmId: String)`函数：
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -128,7 +128,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. 导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登录表]** 在Xcode项目导航器中，找到要在选择 **[!UICONTROL 注销]** 按钮。 添加以下代码：
+1. 在Xcode项目导航器中导航到&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登录工作表]**，并找到要在选择&#x200B;**[!UICONTROL 注销]**&#x200B;按钮时执行的代码。 添加以下代码：
 
    ```swift
    // Remove identities
@@ -136,46 +136,46 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
    ```
 
 
-## 使用保障进行验证
+## 使用保证功能进行验证
 
-1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
+1. 查看[设置说明](assurance.md#connecting-to-a-session)部分以将模拟器或设备连接到Assurance。
 1. 在Luma应用程序中
-   1. 选择 **[!UICONTROL 主页]** 选项卡，并将“保证”图标向左移动。
-   1. 选择 <img src="assets/login.png" width="15" /> 图标。
+   1. 选择&#x200B;**[!UICONTROL 主页]**&#x200B;选项卡，并将“保证”图标向左移动。
+   1. 选择 右上角的<img src="assets/login.png" width="15" />图标。
 
       <img src="./assets/identity1.png" width="300">
 
    1. 提供电子邮件地址和CRM ID，或者
-   1. 选择 <img src="assets/insert.png" width="15" /> 随机生成 **[!UICONTROL 电子邮件]** 和 **[!UICONTROL CRM ID]**.
-   1. 选择 **[!UICONTROL 登录]**.
+   1. 选择 <img src="assets/insert.png" width="15" />以随机生成&#x200B;**[!UICONTROL 电子邮件]**&#x200B;和&#x200B;**[!UICONTROL CRM ID]**。
+   1. 选择&#x200B;**[!UICONTROL 登录]**。
 
       <img src="./assets/identity2.png" width="300">
 
 
-1. 在Assurance Web界面中查看 **[!UICONTROL Edge Identity更新身份]** 来自的事件 **[!UICONTROL com.adobe.griffon.mobile]** 供应商。
-1. 选择事件并查看 **[!UICONTROL ACPExtensionEventData]** 对象。 您应该会看到已更新的身份。
-   ![验证身份更新](assets/identity-validate-assurance.png)
+1. 在Assurance Web界面中查找来自&#x200B;**[!UICONTROL com.adobe.griffon.mobile]**&#x200B;供应商的&#x200B;**[!UICONTROL Edge标识更新标识]**&#x200B;事件。
+1. 选择事件并查看&#x200B;**[!UICONTROL ACPExtensionEventData]**对象中的数据。 您应该会看到已更新的身份。
+   ![验证标识更新](assets/identity-validate-assurance.png)
 
 ## 使用身份图进行验证
 
-一旦您完成 [Experience Platform课程](platform.md)，您便能够在Platforms身份图查看器中确认身份捕获：
+完成[Experience Platform课程](platform.md)中的步骤后，便可以在Platforms身份图查看器中确认身份捕获：
 
-1. 选择 **[!UICONTROL 身份]** 在数据收集UI中。
-1. 选择 **[!UICONTROL 身份图]** 从顶部栏中。
-1. 输入 `Luma CRM ID` 作为 **[!UICONTROL 身份命名空间]** 和您的CRM ID(例如， `24e620e255734d8489820e74f357b5c8`)作为 **[!UICONTROL 标识值]**.
-1. 您会看到 **[!UICONTROL 身份]** 已列出。
+1. 在数据收集UI中选择&#x200B;**[!UICONTROL 标识]**。
+1. 从顶部栏中选择&#x200B;**[!UICONTROL 标识图]**。
+1. 输入`Luma CRM ID`作为&#x200B;**[!UICONTROL 身份命名空间]**，输入CRM ID （例如`24e620e255734d8489820e74f357b5c8`）作为&#x200B;**[!UICONTROL 身份值]**。
+1. 您看到列出了&#x200B;**[!UICONTROL 标识]**。
 
    ![验证身份图](assets/identity-validate-graph.png)
 
 >[!INFO]
 >
->应用程序中没有用于重置ECID的代码，这意味着您只能通过卸载和重新安装应用程序来重置ECID（并有效使用新的ECID创建新配置文件）。 要实施标识符重置，请参见 [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) 和 [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API调用。 但是，在使用推送通知标识符时，请注意(请参阅 [发送推送通知](journey-optimizer-push.md))，则该标识符将成为设备上的另一个“粘性”配置文件标识符。
+>应用程序中没有用于重置ECID的代码，这意味着您只能通过卸载和重新安装应用程序来重置ECID（并有效使用新的ECID创建新配置文件）。 要实施标识符的重置，请参阅[`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities)和[`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API调用。 但是，请注意，在使用推送通知标识符时（请参阅[发送推送通知](journey-optimizer-push.md)），该标识符将成为设备上的另一个“粘性”配置文件标识符。
 
 
 >[!SUCCESS]
 >
->现在，您已设置应用程序以在Edge Network中和（设置后）使用Adobe Experience Platform更新身份。
+>现在，您已设置应用程序以更新Edge Network中的身份和（设置后）Adobe Experience Platform。
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享这些内容
 
 下一步： **[收集配置文件数据](profile.md)**

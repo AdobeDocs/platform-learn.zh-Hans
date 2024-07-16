@@ -4,8 +4,8 @@ description: 了解如何获取标记资产的嵌入代码并在您的网站中�
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
 source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 45%
+source-wordcount: '1037'
+ht-degree: 43%
 
 ---
 
@@ -17,9 +17,9 @@ ht-degree: 45%
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * platform launch服务器端现在为 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Edge配置现在为 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 学习目标
 
@@ -28,13 +28,13 @@ ht-degree: 45%
 * 获取标记属性的嵌入代码
 * 了解开发、暂存和生产环境之间的差异
 * 将标记嵌入代码添加到HTML文档
-* 解释标签嵌入代码相对于中其他代码的最佳位置 `<head>` html文档的
+* 解释在html文档的`<head>`中标记嵌入代码相对于其他代码的最佳位置
 
 ## 复制嵌入代码
 
-嵌入代码是 `<script>` 您放置在网页上的标记，用于加载和执行您在标记中构建的逻辑。 如果异步加载库，则浏览器将继续加载页面，检索标记库，然后并行执行该库。 在这种情况下，将只有一个嵌入代码，即放置在 `<head>` 中的代码。(如果同步部署标记，则将有两个嵌入代码，一个是放置在 `<head>` 还有你放在 `</body>`)。
+嵌入代码是您放置在网页上的`<script>`标记，用于加载和执行您在标记中构建的逻辑。 如果异步加载库，则浏览器将继续加载页面，检索标记库，然后并行执行该库。 在这种情况下，将只有一个嵌入代码，即放置在 `<head>` 中的代码。（如果同步部署标记，则将有两个嵌入代码，一个是放置在`<head>`中的代码，另一个是放置在`</body>`之前的代码）。
 
-在资产Overview屏幕中，单击 **[!UICONTROL 环境]** 在左侧导航中，转到环境页面。 请注意，已经为您预先创建了开发、暂存和生产环境。
+在属性Overview屏幕中，单击左侧导航栏中的&#x200B;**[!UICONTROL Environments]**&#x200B;以转到环境页面。 请注意，已经为您预先创建了开发、暂存和生产环境。
 
 ![单击顶部导航中的 Environments](images/launch-environments.png)
 
@@ -46,19 +46,19 @@ ht-degree: 45%
 
 现在，让我们复制嵌入代码：
 
-1. 在 **[!UICONTROL Development]** 行中，单击安装图标 ![安装图标](images/launch-installIcon.png) 以打开模式窗口.
+1. 在&#x200B;**[!UICONTROL Development]**&#x200B;行中，单击“安装”图标![安装图标](images/launch-installIcon.png)以打开模式窗口。
 
 1. 请注意，标记将默认使用异步嵌入代码
 
 1. 单击复制图标 ![复制图标](images/launch-copyIcon.png) 以将嵌入代码复制到剪贴板。
 
-1. 单击 **[!UICONTROL Close]** 以关闭该模式窗口.
+1. 单击&#x200B;**[!UICONTROL 关闭]**&#x200B;以关闭该模式窗口。
 
    ![安装图标](images/launch-copyInstallCode.png)
 
 ## 在示例 HTML 页面的 `<head>` 中实施嵌入代码
 
-嵌入代码应在将共享资产的所有 HTML 页面的 `<head>` 元素中实施。您可能有一个或多个模板文件控制 `<head>` 可在整个网站全局范围内使用，从而简化添加标记的过程。
+嵌入代码应在将共享资产的所有 HTML 页面的 `<head>` 元素中实施。您可能有一个或多个可在网站全局范围内控制`<head>`的模板文件，以便简化添加标记的过程。
 
 如果没有模板文件，请复制示例的html页面代码并将其粘贴到代码编辑器中。 [Brackets](https://brackets.io/) 是一个免费的开源编辑器（如果需要）。
 
@@ -130,17 +130,17 @@ ht-degree: 45%
 
 * **数据层**：
 
-   * 三 *强烈* 建议在您的网站上创建一个数据层，该数据层包含在Analytics、Target和其他营销解决方案中填充变量所需的全部属性。 此示例页面仅包含一个非常简单的数据层，但实际的数据层可能包含更多与页面、访客、访客购物车详情及其他内容相关的详细信息。有关数据层的更多信息，请参阅[客户体验数字数据层 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
+   * 我们&#x200B;*强烈*&#x200B;建议在您的网站上创建一个数据层，该数据层包含在Analytics、Target和其他营销解决方案中填充变量所需的全部属性。 此示例页面仅包含一个非常简单的数据层，但实际的数据层可能包含更多与页面、访客、访客购物车详情及其他内容相关的详细信息。有关数据层的更多信息，请参阅[客户体验数字数据层 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
 
    * 先定义数据层，然后再定义标签嵌入代码，以便最大化您可使用Experience Cloud解决方案执行的操作。
 
-* **JavaScript帮助程序库**：如果您已在中实施诸如JQuery之类的库， `<head>` ，请在标记之前加载它，以便在标记和Target中使用该页面的语法
+* **JavaScript帮助程序库**：如果您已在页面的`<head>`中实施诸如JQuery之类的库，请在标记之前加载该库，以便在标记和Target中使用该库的语法
 
 * **HTML5 doctype**：Target 要求使用 HTML5 doctype
 
 * **preconnect 和 dns-prefetch**：可使用 preconnect 和 dns-prefetch 缩短页面加载时间。另请参阅：[https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-* **用于异步Target实施的预隐藏代码片段**：您将在Target课程中了解更多相关信息，但是当通过异步标记嵌入代码部署Target时，您应在页面上的标记嵌入代码之前对预隐藏代码片段进行硬编码，以便管理内容闪烁
+* **异步Target实施的预隐藏代码片段**：您将在Target课程中了解更多相关信息，但是当通过异步标记嵌入代码部署Target时，您应在页面上的标记嵌入代码之前对预隐藏代码片段进行硬编码，以便管理内容闪烁
 
 下面按建议顺序总结了上述最佳实践。请注意，对于特定于帐户的详细信息，使用了一些占位符：
 

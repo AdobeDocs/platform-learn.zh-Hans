@@ -1,7 +1,7 @@
 ---
-user-guide-title: 在移动应用程序中实施Experience Cloud教程
+user-guide-title: 在移动应用程序中实施 Experience Cloud 指南
 breadcrumb-title: 移动应用程序教程
-user-guide-description: 了解如何使用Experience Platform Mobile SDK在移动应用程序中实施Adobe Experience Cloud应用程序。
+user-guide-description: 了解如何用 Experience Platform Mobile SDK 在移动应用程序中实施 Adobe Experience Cloud 应用程序。
 solution: Data Collection
 feature: Mobile SDK
 role: Developer
@@ -11,7 +11,7 @@ recommendations: noDisplay,noCatalog
 source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
 workflow-type: tm+mt
 source-wordcount: '78'
-ht-degree: 30%
+ht-degree: 67%
 
 ---
 

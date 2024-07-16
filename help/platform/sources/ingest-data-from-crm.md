@@ -1,5 +1,5 @@
 ---
-title: 使用CRM源连接器摄取数据
+title: 使用CRM Source连接器摄取数据
 description: 了解如何轻松地将数据从CRM源无缝地批量引入Adobe Experience Platform的Real-time Customer Profile和数据湖。
 feature: Sources
 role: Data Engineer, Data Architect, Developer
@@ -10,14 +10,14 @@ last-substantial-update: 2023-05-24T00:00:00Z
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 2%
+source-wordcount: '186'
+ht-degree: 0%
 
 ---
 
-# 使用 CRM 源连接器引入数据
+# 使用CRM源连接器摄取数据
 
-了解如何轻松地将数据从CRM源无缝地批量引入Adobe Experience Platform的Real-time Customer Profile和数据湖。 有关更详细的产品文档，请参阅 [客户关系管理(CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion) 在源连接器概述页面上。
+了解如何轻松地将数据从CRM源无缝地批量引入Adobe Experience Platform的Real-time Customer Profile和数据湖。 有关更详细的产品文档，请参阅Source Connectors概述页面上的[客户关系管理(CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion)。
 
 ## 标准工作流
 
@@ -32,6 +32,6 @@ ht-degree: 2%
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on)
 
 有关更多信息，请参阅以下文档：
-* [Salesforce创建连接文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).
-* [在UI中使用模板创建源数据流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#).
+* [Salesforce创建连接文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html)。
+* [使用UI中的模板创建源数据流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)。
 

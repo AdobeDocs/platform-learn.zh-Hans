@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 设置客户管理的密钥(CMK)
 
-使用您自己的加密密钥管理静态数据加密。 欲知更多信息，请访问 [客户管理的密钥文档](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
+使用您自己的加密密钥管理静态数据加密。 有关详细信息，请访问[客户管理的密钥文档](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on)
 

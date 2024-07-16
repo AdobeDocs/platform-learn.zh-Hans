@@ -10,7 +10,7 @@ thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '1103'
+source-wordcount: '1089'
 ht-degree: 0%
 
 ---
@@ -20,24 +20,24 @@ ht-degree: 0%
 <!-- 15min-->
 在本课程中，您将为Real-time Customer Profile启用架构和数据集。
 
-好的，当我说数据集课程是本教程中最短的课程时，我撒了谎 — 这个课程应该用更少的时间！ 实际上，你所要做的就是翻动一栈开关。 但是当你翻动这些开关时 _真的_ 很重要所以我想写一整页。
+好的，当我说数据集课程是本教程中最短的课程时，我撒了谎 — 这个课程应该用更少的时间！ 实际上，你所要做的就是翻动一栈开关。 但是，当您翻转这些开关时，会出现什么情况&#x200B;_真的很_&#x200B;重要，因此我想为它专注一整页。
 
 利用实时客户档案，您可以查看合并了来自多个渠道（包括在线、离线、CRM和第三方数据）的数据的每个单个客户的整体视图。 用户档案允许您将不同的客户数据整合到一个统一的视图中，并提供每个客户交互的带时间戳的可操作帐户。
 
-尽管听起来很神奇，但您无需激活 *您的所有数据* 用于配置文件。 事实上，您应该只启用激活用例所需的数据。 启用要用于营销用例、呼叫中心集成等的数据，在这些用例中，您需要快速访问强大的客户档案。 如果您只上传数据进行分析，则可能不应为配置文件启用此功能。
+尽管听起来很神奇，但您无需为配置文件激活&#x200B;*所有数据*。 事实上，您应该只启用激活用例所需的数据。 启用要用于营销用例、呼叫中心集成等的数据，在这些用例中，您需要快速访问强大的客户档案。 如果您只上传数据进行分析，则可能不应为配置文件启用此功能。
 
-这里有些重要的 [Real-time Customer Profile数据的护栏](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) 在决定您自己的哪些数据应为配置文件启用时，您应该查看这些数据。
+在决定您自己的哪些数据应为配置文件启用时，您应该查看实时客户配置文件数据](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)的重要[护栏。
 
 <!--is this accurate. Are there other considerations to point out? -->
 
-**数据架构师** 需要在本教程之外启用Real-time Customer Profile。
+**数据架构师**&#x200B;需要在本教程之外启用Real-Time Customer Profile。
 
 在开始练习之前，请观看此简短视频，了解有关Real-Time Customer Profile的更多信息：
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
 
 ## 所需的权限
 
-在 [配置权限](configure-permissions.md) 课程：您已设置完成本课程所需的所有访问控制。
+在[配置权限](configure-permissions.md)课程中，您已设置完成本课程所需的所有访问控制。
 
 
 <!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
@@ -51,16 +51,16 @@ ht-degree: 0%
 
 让我们从启用架构的简单任务开始：
 
-1. 在Platform用户界面中打开 **Luma忠诚度模式**
-1. 在 **[!UICONTROL 架构属性]**，切换 **个人资料** 切换
-1. 在确认模式中，按 **[!UICONTROL 启用]** 按钮确认
-1. 选择 **[!UICONTROL 保存]** 按钮以保存更改
+1. 在Platform用户界面中，打开&#x200B;**Luma忠诚度架构**
+1. 在&#x200B;**[!UICONTROL 架构属性]**&#x200B;中，切换&#x200B;**配置文件**&#x200B;开关
+1. 在确认模式中，按&#x200B;**[!UICONTROL 启用]**&#x200B;按钮进行确认
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;按钮以保存更改
 
    >[!IMPORTANT]
    >
    >为配置文件启用架构后，无法禁用或删除该架构。 此外，此后无法从架构中删除字段。 在生产环境中使用您自己的数据时，请务必牢记这些含义。 在本教程中，您应该使用开发沙盒，您可以随时删除这个沙盒。
    >
-   >在本教程的受控环境中，您将为用户档案启用架构和数据集， _提取任何数据之前_. 在处理您自己的数据时，我们建议您按照以下顺序执行操作：
+   >在本教程的受控环境中，您将在引入任何数据&#x200B;_之前，为配置文件_&#x200B;启用架构和数据集。 在处理您自己的数据时，我们建议您按照以下顺序执行操作：
    >
    > 1. 首先，将一些数据摄取到数据集中。
    > 1. 解决在数据摄取过程中出现的任何问题（例如，数据验证或映射问题）。
@@ -78,27 +78,27 @@ ht-degree: 0%
 
 ## 使用平台API为Real-time Customer Profile启用架构
 
-现在，是时候启用 `Luma CRM Schema` 使用API。 如果要跳过此练习并在用户界面中启用它，请直接进行下一步。
+现在该使用API启用`Luma CRM Schema`。 如果要跳过此练习并在用户界面中启用它，请直接进行下一步。
 
 ### 获取架构的meta：altId
 
-首先，我们获取 `meta:altId` 的 `Luma CRM Schema`：
+首先，让我们获取`Luma CRM Schema`的`meta:altId`：
 
-1. Open [!DNL Postman]
-1. 如果您没有访问令牌，请打开请求 **[!DNL OAuth: Request Access Token]** 并选择 **发送** 来请求新的访问令牌，就像在 [!DNL Postman] 上课。
-1. 打开请求 **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
-1. 选择 **发送** 按钮
+1. 打开[!DNL Postman]
+1. 如果您没有访问令牌，请打开请求&#x200B;**[!DNL OAuth: Request Access Token]**，然后选择&#x200B;**发送**&#x200B;以请求新的访问令牌，就像在[!DNL Postman]课程中一样。
+1. 打开请求&#x200B;**[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
+1. 选择&#x200B;**发送**&#x200B;按钮
 1. 您应该收到200响应
-1. 在响应中查看 `Luma CRM Schema` 并复制 `meta:altId` 值
-   ![复制meta：altId](assets/profile-crm-getMetaAltId.png)
+1. 查看`Luma CRM Schema`项的响应并复制`meta:altId`值
+   ![复制meta：altIid](assets/profile-crm-getMetaAltId.png)
 
 ### 启用架构
 
 现在我们有了架构的meta：altId，可以为配置文件启用它：
 
-1. 打开请求 **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]**
-1. 在 **参数** 粘贴您的 `meta:altId` 值作为 `SCHEMA_ID` 参数值
-1. 在 **正文** 选项卡，粘贴以下代码
+1. 打开请求&#x200B;**[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]**
+1. 在&#x200B;**参数**&#x200B;中，将您的`meta:altId`值粘贴为`SCHEMA_ID`参数值
+1. 在&#x200B;**正文**&#x200B;选项卡中，粘贴以下代码
 
    ```json
    [{
@@ -108,12 +108,12 @@ ht-degree: 0%
    }]
    ```
 
-1. 选择 **发送** 按钮
+1. 选择&#x200B;**发送**&#x200B;按钮
 1. 您应该收到200响应
 
-   ![使用作为SCHEMA_ID参数的自定义meta：altId为配置文件启用CRM架构](assets/profile-crm-enableProfile.png)
+   ![使用作为SCHEMA_ID参数的自定义meta：altIid为配置文件启用CRM架构](assets/profile-crm-enableProfile.png)
 
-您应该能够在用户界面中看到已为配置文件启用所有五个架构（您可能需要按SHIFT重新加载才能看到这一点） `Luma CRM Schema` 已启用)：
+您应该能够在用户界面中看到已为配置文件启用所有五个架构（您可能需要按SHIFT重新加载才能看到`Luma CRM Schema`已启用）：
 ![所有架构已启用](assets/profile-allSchemasEnabled.png)
 
 
@@ -121,11 +121,11 @@ ht-degree: 0%
 
 还必须为配置文件启用数据集，此过程更加简单：
 
-1. 在Platform用户界面中打开 `Luma Loyalty Dataset`
-1. 切换 **[!UICONTROL 个人资料]** 切换
-1. 在确认模式中，按 **[!UICONTROL 启用]** 按钮确认
+1. 在Platform用户界面中，打开`Luma Loyalty Dataset`
+1. 切换&#x200B;**[!UICONTROL 配置文件]**&#x200B;开关
+1. 在确认模式中，按&#x200B;**[!UICONTROL 启用]**&#x200B;按钮进行确认
 
-   ![ 配置文件切换](assets/profile-loyalty-enableDataset.png)
+   ![配置文件切换](assets/profile-loyalty-enableDataset.png)
 
 对这些其他数据集重复上述步骤：
 
@@ -143,23 +143,23 @@ ht-degree: 0%
 
 ### 获取数据集的id
 
-首先，我们需要获取 `id` 的 `Luma CRM Dataset`：
+首先，我们需要获取`Luma CRM Dataset`的`id`：
 
-1. Open [!DNL Postman]
-1. 如果您没有访问令牌，请打开请求 **[!DNL OAuth: Request Access Token]** 并选择 **发送** 来请求新的访问令牌，就像在 [!DNL Postman] 上课。
-1. 打开请求 **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
-1. 选择 **发送** 按钮
+1. 打开[!DNL Postman]
+1. 如果您没有访问令牌，请打开请求&#x200B;**[!DNL OAuth: Request Access Token]**，然后选择&#x200B;**发送**&#x200B;以请求新的访问令牌，就像在[!DNL Postman]课程中一样。
+1. 打开请求&#x200B;**[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
+1. 选择&#x200B;**发送**&#x200B;按钮
 1. 您应该收到200响应
-1. 在响应中查看 `Luma CRM Dataset` 并复制id：
-   ![复制id](assets/profile-crm-copyDatasetId.png)
+1. 查看`Luma CRM Dataset`项目的响应并复制ID：
+   ![复制ID](assets/profile-crm-copyDatasetId.png)
 
 ### 启用数据集
 
 现在我们有了数据集的ID，可以为配置文件启用它：
 
-1. 打开请求 **[!DNL Catalog Service API > Datasets > Update one or more attributes of a dataset specified by ID.]**
-1. 在 **参数** 更新 `DATASET_ID` 对您自己的价值
-1. 在 **正文** 选项卡，粘贴以下代码。 请注意，前两个值是预先存在的标记，在前一个响应中可见。 除了我们即将添加的两个新标记之外，还需要将它们包含在正文中：
+1. 打开请求&#x200B;**[!DNL Catalog Service API > Datasets > Update one or more attributes of a dataset specified by ID.]**
+1. 在&#x200B;**参数**&#x200B;中，将`DATASET_ID`值更新为您自己的值
+1. 在&#x200B;**正文**&#x200B;选项卡中，粘贴以下代码。 请注意，前两个值是预先存在的标记，在前一个响应中可见。 除了我们即将添加的两个新标记之外，还需要将它们包含在正文中：
 
    ```json
    {
@@ -172,10 +172,10 @@ ht-degree: 0%
    }
    ```
 
-1. 选择 **发送** 按钮
+1. 选择&#x200B;**发送**&#x200B;按钮
 1. 您应该收到200响应
 
-   ![为用户档案启用CRM数据集，确保将自定义数据集ID用作DATASET_ID参数](assets/profile-crm-enableDataset.png)
+   ![为配置文件启用CRM数据集，确保将自定义数据集ID用作DATASET_ID参数](assets/profile-crm-enableDataset.png)
 
 您还可以确认用户界面显示数据集已启用：
 ![确认](assets/profile-crm-confirmEnabled.png)
@@ -186,9 +186,9 @@ ht-degree: 0%
 
 ## 其他资源
 
-* [Real-time Customer Profile文档](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)
+* [实时客户资料文档](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)
 * [实时客户个人资料API参考](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
-**数据工程师** 应继续到 [订阅数据摄取事件](subscribe-to-data-ingestion-events.md) 上课。
-**数据架构师** _可跳过前面_ 然后转到 [批量摄取课程](ingest-batch-data.md).
+**数据工程师**&#x200B;应继续参加[订阅数据摄取事件](subscribe-to-data-ingestion-events.md)课程。
+**数据架构师** _可以跳过前面_&#x200B;并转到[批量摄取课程](ingest-batch-data.md)。

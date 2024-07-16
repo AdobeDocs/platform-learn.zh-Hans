@@ -1,46 +1,47 @@
 ---
-title: 启用跨域支持 |将Target从at.js 2.x迁移到Web SDK
-description: 了解如何使用Web SDK将Adobe Target配置为跨域和移动设备应用程序到Web浏览器方案。
-source-git-commit: 287ebcb275c4fca574dbd6cdf7e07ba4268bddb5
+title: 启用跨域支持 | 将Target从at.js 2.x迁移到Web SDK
+description: 了解如何使用Experience PlatformWeb SDK为跨域和移动应用程序到Web浏览器方案配置Adobe Target。
+exl-id: 6ec24ddc-8f6d-4331-a3ae-bd0f3a7d6e78
+source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
 
 # 启用跨域访客配置文件
 
-Platform Web SDK支持访客ID共享功能，这些功能使客户能够在您的域中更准确地提供个性化体验。 此功能允许您跨域提供一致的个性化，并增强访客活动报表的准确性，而无需依赖第三方Cookie。
+Platform Web SDK支持访客ID共享功能，使客户能够在您的域中更准确地提供个性化体验。 此功能允许您跨域提供一致的个性化，并提高访客活动报告的准确性，而无需依赖第三方Cookie。
 
 ## 先决条件
 
 要使用跨域ID共享，您必须使用Platform Web SDK版本2.11.0或更高版本。 此功能还与VisitorAPI.js版本1.7.0或更高版本兼容。
 
-跨域ID共享通过附加一个特殊的 `adobe_mc` 查询字符串参数。 此参数用于指定访客ID，而不是生成新ID或使用现有ID。
+跨域ID共享的工作方式是将特殊的`adobe_mc`查询字符串参数附加到目标域的URL。 此参数用于指定访客ID，而不是生成新ID或使用现有ID。
 
-目标域必须使用其中任一库进行跨域ID共享，才能处理 `adobe_mc` 参数并正确共享访客ID。
+目标域必须使用任一跨域ID共享库来处理`adobe_mc`参数并正确共享访客ID。
 
 ## 方法比较
 
-在实施之前，请首先确定您的现有实施是否使用 `visitor.appendVisitorIDsTo()` 函数。 使用此函数的任何自定义代码都应更新，以使用新 `appendIdentityToUrl` Web SDK命令。
+在实施之前，请先确定现有实施是否使用`visitor.appendVisitorIDsTo()`函数。 应更新使用此函数的任何自定义代码，以使用新的`appendIdentityToUrl` Web SDK命令。
 
 | VisitorAPI.js | 平台Web SDK |
 | --- | --- |
 | `visitor.appendVisitorIDsTo(*url*)` | `alloy("appendIdentityToUrl", { url: *url* })` |
 
-## 使用 `appendIdentityToURL` 命令
+## 使用`appendIdentityToURL`命令
 
-对于跨域ID共享，Web SDK版本2.11.0增加了对 `appendIdentityToUrl` 命令。 使用时，此命令会生成 `adobe_mc` 查询字符串参数。
+对于跨域ID共享，Web SDK版本2.11.0添加了对`appendIdentityToUrl`命令的支持。 使用此命令时，会生成`adobe_mc`查询字符串参数。
 
-该命令接受具有一个属性的对象， `url`，并返回具有属性url的对象。
+该命令接受具有一个属性`url`的对象，并返回具有属性URL的对象。
 
-此命令不会等待任何同意更新。 如果未提供同意，则返回的URL将保持不变。
+此命令不等待任何同意更新。 如果未提供同意，则返回的URL将保持不变。
 
-如果未提供ECID，则 `/acquire` 端点被调用以生成ECID。
+如果未提供ECID，则调用`/acquire`端点以生成ECID。
 
 以下是如何实施跨域ID共享的示例。
 
-此代码会为页面上的所有点击添加事件侦听器。 如果点击指向匹配域的链接，则在此示例中为adobe.com或behance.com，它会将标识添加到URL并将用户重定向到该URL。
+此代码会为页面上的所有点击添加一个事件侦听器。 如果单击位于匹配域的链接上(在本例中为adobe.com或behance.com)，则会将标识添加到URL并将用户重定向到该处。
 
 ```Javascript
 document.addEventListener("click", event => {
@@ -61,14 +62,14 @@ document.addEventListener("click", event => {
 
 >[!TIP]
 >
->使用标记功能（以前称为Launch）实施Web SDK时，无需自定义代码，即可实现跨域ID共享。 请参阅 [专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension) 以了解更多详细信息。
+>使用标记功能（以前称为Launch）实施Web SDK时，无需自定义代码即可实现跨域ID共享。 有关详细信息，请参阅[专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension)。
 
 >[!NOTE]
 >
->Platform Web SDK还支持在本机移动设备应用程序用例中进行移动到Web ID共享。 有关更多信息，请参阅关于 [移动到Web和跨域ID共享](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html).
+>Platform Web SDK还支持在本机移动设备应用程序用例中进行移动设备到Web ID共享。 有关详细信息，请参阅有关[移动到Web和跨域ID共享](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html)的专用文档。
 
-接下来，了解如何 [更新受众和配置文件脚本](update-audiences.md) 以确保与平台Web SDK兼容。
+接下来，了解如何[更新受众和配置文件脚本](update-audiences.md)以确保与Platform Web SDK兼容。
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍，或感觉本指南中缺少关键信息，请在中发布以告知我们 [此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>我们致力于帮助您成功完成从at.js到Web SDK的Target迁移。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。

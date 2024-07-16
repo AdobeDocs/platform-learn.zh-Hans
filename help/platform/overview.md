@@ -6,14 +6,14 @@ mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
 source-git-commit: 14ec4ea743d1f323d29f9ab84506355d25c91452
 workflow-type: tm+mt
-source-wordcount: '164'
-ht-degree: 33%
+source-wordcount: '154'
+ht-degree: 7%
 
 ---
 
 # Adobe Experience Platform 教程
 
-Adobe Experience Platform是市场上功能最强大、最灵活、最开放的系统，用于构建和管理可改善客户体验的完整解决方案。  Experience Platform 让组织可以实现源自任何系统的客户数据和内容的集中化和标准化，并应用数据科学和机器学习来显著改进丰富的个性化体验的设计和交付。通过这些视频和教程，您可以了解Experience Platform的众多组成部分。
+Adobe Experience Platform是市场上功能最强大、最灵活、最开放的系统，用于构建和管理可改善客户体验的完整解决方案。 Experience Platform使组织能够集中和标准化来自任何系统的客户数据和内容，并应用数据科学和机器学习来显着改进丰富个性化体验的设计和交付。 通过这些视频和教程，您可以了解Experience Platform的众多组成部分。
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -51,7 +51,7 @@ Adobe Experience Platform是市场上功能最强大、最灵活、最开放的�
     </a>
     </div>
     <p>
-    <em>动手练习入门</em>
+    <em>动手练习以开始</em>
     <p>
   </td>
   <td>
@@ -64,7 +64,7 @@ Adobe Experience Platform是市场上功能最强大、最灵活、最开放的�
     </a>
     </div>
     <p>
-    <em>轻松摄取数据</em>
+    <em>轻松摄取您的数据</em>
     <p>
   </td>
    <!--

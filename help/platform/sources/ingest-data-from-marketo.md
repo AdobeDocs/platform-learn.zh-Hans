@@ -13,14 +13,14 @@ thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 0%
+source-wordcount: '148'
+ht-degree: 18%
 
 ---
 
 # 从Marketo Engage引入数据
 
-了解如何使用两个工作流的source connector将数据从Marketo Engage轻松地摄取到Real-time Customer Data Platform、B2B Edition和Adobe Experience Platform中。
+了解如何使用源连接器通过两个工作流，轻松地将 Marketo Engage 中的数据摄取到 Real-Time Customer Data Platform B2B 版本和 Adobe Experience Platform 中。
 
 ## 模板工作流
 
@@ -35,5 +35,5 @@ ht-degree: 0%
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on)
 
 有关更多信息，请参阅以下文档：
-* [Marketo Engage源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
+* [源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html)Marketo Engage。
 * [在UI中使用模板创建源数据流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 潜在的跟踪问题
 
-如果您从应用程序的本机部分和应用程序内的WebView发送数据，则每个部分都会生成自己的Experience CloudID (ECID)，这会导致断开连接的点击量和夸大的访问/访客数据。 有关ECID的更多信息，请参阅 [ECID概述](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+如果您从应用程序的本机部分和应用程序内的WebView发送数据，则每个部分都会生成自己的Experience CloudID (ECID)，这会导致断开连接的点击量和夸大的访问/访客数据。 有关ECID的详细信息，请参阅[ECID概述](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en)。
 
 要解决该不良情况，请务必将用户的ECID从应用程序的本机部分传递到您可能想要在应用程序中使用的WebView。
 
@@ -35,7 +35,7 @@ WebView中使用的AEP Edge Identity扩展可收集当前ECID并将其添加到U
 
 ## 实施
 
-导航到 **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**，然后找到 `func loadUrl()` 中的函数 `final class SwiftUIWebViewModel: ObservableObject` 类。 添加以下调用以处理Web视图：
+导航到&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**，并在`final class SwiftUIWebViewModel: ObservableObject`类中找到`func loadUrl()`函数。 添加以下调用以处理Web视图：
 
 ```swift
 // Handle web view
@@ -58,26 +58,26 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 }
 ```
 
-此 [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API为URL设置变量以包含所有相关信息，如ECID等。 在本例中，您使用的是本地文件，但相同的概念也适用于远程页面。
+[`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API为URL设置变量以包含所有相关信息，如ECID等。 在本例中，您使用的是本地文件，但相同的概念也适用于远程页面。
 
-您可了解有关 `Identity.getUrlVariables` 中的API [Edge Network身份扩展API参考指南](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
+您可以在[Edge Network身份扩展API参考指南](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables)中了解有关`Identity.getUrlVariables` API的更多信息。
 
 ## 验证
 
 要执行代码，请执行以下操作：
 
-1. 查看 [设置说明](assurance.md#connecting-to-a-session) 部分以将模拟器或设备连接到Assurance。
-1. 转到 **[!UICONTROL 设置]** 在应用程序中
-1. 点按 **[!DNL View...]** 按钮以显示 **[!DNL Terms of Use]**.
+1. 查看[设置说明](assurance.md#connecting-to-a-session)部分以将模拟器或设备连接到Assurance。
+1. 转到应用程序中的&#x200B;**[!UICONTROL 设置]**
+1. 点按&#x200B;**[!DNL View...]**&#x200B;按钮以显示&#x200B;**[!DNL Terms of Use]**。
 
    <img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
 
-1. 在Assurance UI中，查找 **[!UICONTROL Edge Identity响应URL变量]** 来自的事件 **[!UICONTROL com.adobe.griffon.mobile]** 供应商。
-1. 选择事件并查看 **[!UICONTROL url变量]** 中的字段 **[!UICONTROL ACPExtensionEventData]** 对象，确认URL中存在以下参数： `adobe_mc`， `mcmid`、和 `mcorgid`.
+1. 在Assurance UI中，查找来自&#x200B;**[!UICONTROL com.adobe.griffon.mobile]**&#x200B;供应商的&#x200B;**[!UICONTROL Edge标识响应URL变量]**&#x200B;事件。
+1. 选择事件并查看&#x200B;**[!UICONTROL ACPExtensionEventData]**&#x200B;对象中的&#x200B;**[!UICONTROL urlvariable]**&#x200B;字段，确认URL中存在以下参数： `adobe_mc`、`mcmid`和`mcorgid`。
 
    ![webview验证](assets/webview-validation.png)
 
-   示例 `urvariables` 字段如下所示：
+   `urvariables`字段示例如下所示：
 
    * 原始（带转义字符）
 
@@ -95,13 +95,13 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 
 >[!NOTE]
 >
->Platform Web SDK（版本2.11.0或更高版本）中以及使用 `VisitorAPI.js`.
+>Platform Web SDK（版本2.11.0或更高版本）以及使用`VisitorAPI.js`时，支持通过这些URL参数拼接访客。
 
 
 >[!SUCCESS]
 >
 >现在，您已经将应用程序设置为在Webview中根据URL显示内容，该URL使用与Adobe Experience Platform Mobile SDK已颁发的ECID相同的ECID。
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此共享它们 [Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享这些内容
 
-下一步： **[标识](identity.md)**
+下一个： **[标识](identity.md)**

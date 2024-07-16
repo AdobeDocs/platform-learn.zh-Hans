@@ -24,31 +24,31 @@ ht-degree: 1%
 
 ### 第1天
 
-9:30: 步入式
+9:30:步进
 
-10:00: 启动/介绍和训练营挑战
+10:00:启动/介绍和训练营挑战
 
 11:00: 1-1个性化、摩擦捕捉、筒仓、AdobePOV（白板）
 
-12:00: 中断
+12:00:中断
 
-12:15: 解决方案架构划分（白板）
+12:15:解决方案架构细分（白板）
 
-13:00: 午餐
+13:00:午餐
 
-14:00: 用户流程1 — “客户获取”演练和动手深入探讨
+14:00:用户流1 — “客户获取”演练和动手深入探讨
 
-15:30: 中断
+15:30:中断
 
 16:00: Userflow 2注册和入门
 
-17:30: Golfclinic和Borrel
+17:30:高尔夫诊所和博雷尔
 
-19:30: 晚餐
+19:30:晚餐
 
 ### 第2天
 
-08:30: 早餐会议：基于用户历程的交付简介、团队结构、交付积压
+08:30:早餐会话：介绍基于用户历程的投放、团队结构、投放积压
 
 09.45：通过实际情景了解AEP数据流
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 10.45：中断
 
-12:00: 用户流3“物理与数字混合”
+12:00:用户流3“混合物理和数字”
 
 12:30：午餐
 
@@ -71,9 +71,9 @@ ht-degree: 1%
 
 ## 先决条件
 
-- 对Adobe Experience Platform的访问权限： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- 访问Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - 访问Adobe Experience Platform数据收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 访问bootcamp网站 [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- 访问[https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)上的bootcamp网站
 
 >[!IMPORTANT]
 >
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 在开始实践练习之前，请查看本教程背后的架构。 此引导营将深入探讨Adobe Experience Platform的一系列特性和功能，还将讨论跨各种源和目标的多种集成。 为了让您正确了解本教程背后的架构以及Adobe Experience Platform在您的企业生态系统中的整体定位，请首先查看架构视频和图表。
 
-转到 [架构](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+转到[架构](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en)。
 
 ## 视频
 
@@ -93,15 +93,15 @@ ht-degree: 1%
 
 已创建的其他多个视频展示了bootcamp的元素以及Adobe Experience Platform和非Adobe应用程序之间的强大集成。 单击以下链接可查找这些视频的概述。
 
-转到 [视频](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+转到[视频](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en)。
 
 ## YouTube
 
-您还可以找到其他有趣的视频 [在我们的YouTube频道上](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+你可以在我们的YouTube频道](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw)上找到其他有趣的视频[。
 
 ## 用户流
 
-[1. 客户获取](./uc/uc1/uc1.md)
+[1。 客户获取](./uc/uc1/uc1.md)
 
 在此用户流程中，您将了解为未知且未经身份验证的用户以及使用Real-Time CDP的已知且经过身份验证的用户实施以客户获取为中心的用例所需的所有元素。
 
@@ -109,11 +109,11 @@ ht-degree: 1%
 
 在此用户流程中，您将了解使用Real-Time CDP和Adobe Journey Optimizer实施注册和载入用例所需的所有元素。
 
-[3. 物理与数字相结合](./uc/uc3/uc3.md)
+[3. 混合物理和数字](./uc/uc3/uc3.md)
 
 在此用户流程中，您将使用Real-Time CDP和Adobe Journey Optimizer，以一致的方式跨在线和离线渠道个性化客户体验。
 
-[4. 客户历程分析](./uc/uc4/uc4.md)
+[4。 客户历程分析](./uc/uc4/uc4.md)
 
 在此用户流程中，您将熟悉Customer Journey Analytics，并深入了解客户如何从一个渠道发展到另一个渠道（从在线发展到离线，再到呼叫中心等等）。
 

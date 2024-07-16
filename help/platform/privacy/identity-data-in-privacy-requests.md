@@ -9,13 +9,13 @@ thumbnail: 336076.png
 exl-id: c5533831-5bba-45c6-8ff8-eb38accf0d42
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '65'
-ht-degree: 9%
+source-wordcount: '60'
+ht-degree: 1%
 
 ---
 
 # 审核存储的个人数据
 
-了解与审核个人数据相关的关键概念和决策，以及根据业务的隐私需求进行准备。 欲知更多信息，请访问 [Privacy Service文档](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans).
+了解与审核个人数据相关的关键概念和决策，以及根据业务的隐私需求进行准备。 有关详细信息，请访问[Privacy Service文档](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on)

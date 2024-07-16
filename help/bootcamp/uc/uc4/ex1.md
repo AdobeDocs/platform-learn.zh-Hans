@@ -68,17 +68,17 @@ CJA的目标是向营销和业务团队提供分析能力，使其成为这些�
 
 在开始执行上述步骤之前，请不要忘记第0步，即了解Adobe Experience Platform中可用的数据。
 
-**垃圾进，垃圾出。** 还记得吗？ 您必须清楚地了解哪些数据可用，以及如何配置Adobe Experience Platform中的架构。 了解Adobe Experience Platform中的数据将使事情变得更轻松，不仅在数据连接部分，而且在构建可视化图表和分析时也是如此。
+**垃圾输入，垃圾输出。**&#x200B;还记得吗？ 您必须清楚地了解哪些数据可用，以及如何配置Adobe Experience Platform中的架构。 了解Adobe Experience Platform中的数据将使事情变得更轻松，不仅在数据连接部分，而且在构建可视化图表和分析时也是如此。
 
 ## 4.1.5步骤0：了解Adobe Experience Platform架构和数据集
 
-通过转到以下URL登录Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+通过转到以下URL登录Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 
 登录后，您将登录到Adobe Experience Platform的主页。
 
 ![数据获取](../uc1/images/home.png)
 
-在继续之前，您需要选择 **沙盒**. 要选择的沙盒已命名 ``Bootcamp``. 您可以通过单击文本来执行此操作 **[!UICONTROL Prod]** 屏幕右上角的。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``Bootcamp``。 您可以通过单击屏幕右上角的文本&#x200B;**[!UICONTROL Prod]**&#x200B;来执行此操作。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
 
 ![数据获取](../uc1/images/sb1.png)
 
@@ -93,19 +93,19 @@ CJA的目标是向营销和业务团队提供分析能力，使其成为这些�
 确保至少检查了以下内容：
 
 - 身份：CRMID、电话号码、ECID、电子邮件。 哪些标识是主标识符，哪些标识是辅助标识符？
-您可以通过打开模式并查看对象来查找标识符 `_experienceplatform.identification.core`. 查看架构 [演示系统 — 网站的事件架构(Global v1.1)](https://experience.adobe.com/platform/schema).
+您可以通过打开架构并查看对象`_experienceplatform.identification.core`来查找标识符。 请查看[Demo System - Website (Global v1.1)](https://experience.adobe.com/platform/schema)的架构。
 
 ![演示](./images/identity.png)
 
-- 浏览架构中的商务对象 [演示系统 — 网站的事件架构(Global v1.1)](https://experience.adobe.com/platform/schema).
+- 在架构[演示系统 — 网站的事件架构（全局v1.1）](https://experience.adobe.com/platform/schema)中探索商务对象。
 
 ![演示](./images/commerce.png)
 
-- 预览所有 [数据集](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created) 并查看数据
+- 预览所有[数据集](https://experience.adobe.com/platform/dataset/browse?limit=50&amp;page=1&amp;sortDescending=1&amp;sortField=created)并查看数据
 
 您现在可以开始使用Customer Journey AnalyticsUI了。
 
-下一步： [4.2在Customer Journey Analytics中连接Adobe Experience Platform数据集](./ex2.md)
+下一步： [4.2连接Customer Journey Analytics](./ex2.md)中的Adobe Experience Platform数据集
 
 [返回用户流程4](./uc4.md)
 

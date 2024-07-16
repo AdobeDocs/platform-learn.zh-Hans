@@ -11,17 +11,17 @@ level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03T00:00:00Z
 jira: KT-13140
-exl-id: 10d19094-0fc3-4075-b52e-684805c85213
-source-git-commit: 7c471d9da851c594c33e00473a04996fd247bb84
+exl-id: df0e12ee-e15a-457e-a091-68ec264f3da2
+source-git-commit: 143da6340b932563a3309bb46c1c7091e0ab2ee2
 workflow-type: tm+mt
-source-wordcount: '104'
-ht-degree: 5%
+source-wordcount: '97'
+ht-degree: 1%
 
 ---
 
 # 激活区段和配置文件属性
 
-了解如何从Adobe Real-time Customer Data Platform向Adobe Target激活区段和配置文件属性，以在您的网站、移动应用程序和其他数字资产中显示实时个性化内容。 欲了解更多信息，请参见 [将受众数据激活到配置文件请求目标文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-profile-request-destinations.html).
+了解如何从Adobe Real-time Customer Data Platform向Adobe Target激活区段和配置文件属性，以在您的网站、移动应用程序和其他数字资产中显示实时个性化内容。 有关详细信息，请参阅[将受众数据激活到配置文件请求目标文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-profile-request-destinations.html)。
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419036/?learn=on)

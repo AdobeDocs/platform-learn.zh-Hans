@@ -9,87 +9,87 @@ feature: Mobile SDK
 exl-id: e3b920b1-e5e6-4fcc-b707-29c5943acec8
 source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
 
-# 2.5安装使用Applicativo Móvel
+# 2.5安装Applicativo Móvel的使用
 
 
-## 应用程序安装móvel
+## 安装Applicativo Movel
 
-Antes de instalar o aplicativo， é necsário habilitar Rastreamento no seu dispositivo iOS. para isso，访问Configuracoes > Privacidade e seguranca > Rastreamento e confirm a opcao Permitir que os applicativos solicitem o rastreamento。
+Antes de instalar o applicativo， é necsário habilitar Rastreamento no seu dispossitivo iOS. para isso，访问Configuracoes > Privacidade e seguranca > Rastreamento e confirm a opcao Permitir que os applicativos solicitem o rastreamento。
 
 ![DSN](./../uc3/images/app4.png)
 
-访问App Store da Apple e pesquise `aepmobile-bootcamp`.\
-小团体 **安装** ou **下载**.
+访问App Store da Apple e预览`aepmobile-bootcamp`。\
+单击em **安装** ou **下载**。
 
 ![DSN](./../uc3/images/app1.png)
 
-小团体们，他们要用行动来解决 **Abrir**.
+Depois que o aplicativo estiver instalado，小团体&#x200B;**Abrir**。
 
 ![DSN](./../uc3/images/app2.png)
 
-小团体 **确定**.
+单击&#x200B;**确定**。
 
 ![DSN](./../uc3/images/app9.png)
 
-小团体 **权限**.
+单击&#x200B;**权限**。
 
 ![DSN](./../uc3/images/app3.png)
 
-小团体 **Concordo**.
+单击&#x200B;**Concordo**。
 
 ![DSN](./../uc3/images/app7.png)
 
-小团体 **允许使用应用程序**.
+单击em **Permitir enquanto uso应用程序**。
 
 ![DSN](./../uc3/images/app8.png)
 
-小团体 **权限**.
+单击&#x200B;**权限**。
 
 ![DSN](./../uc3/images/app5.png)
 
-我们来验证一下他们的客户。
+我愿意，不爱你，不爱你，爱你。
 
 ![DSN](./../uc3/images/app12.png)
 
-## Fluxo da jornada do cliente
+## 客户贷款
 
-要登入就得有法泽。 小团体 **登录**.
+要登录，必须具备法泽尔。 单击&#x200B;**登录**。
 
 ![DSN](./../uc3/images/app13.png)
 
-前方有种运动设施，没有场地。 Agora é necessário reutilizar o endereco de email da contra que voce crious no applicativo para fazer or login.
+前方为凹凸不平的凹凸不平的凹凸不平的凹凸不平的凹凸不平。 要重新使用电子邮件或电子邮件时无法登录的问题。
 
 ![演示](./../uc3/images/pv1.png)
 
-Digite o endereco de email que voce usou not site e clike em **登录**.
+使用无站点群集来发送电子邮件&#x200B;**登录**。
 
 ![DSN](./../uc3/images/app14.png)
 
-Voce receberá uma concetaño de que está conectado e receberá uma notificação push.
+Voce receberá uma confirmacao de está conectado e receberá uma notificação push.
 
 ![DSN](./../uc3/images/app15.png)
 
-在脑部有了一个小小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的小的
+在伊拉奥的复仇者中，可以看见自己曾经的复仇者。
 
 ![DSN](./../uc3/images/app17.png)
 
-访问 **产品**. 小团体优等产品，举个例子： **咖啡待用**.
+访问&#x200B;**产品**。 单击em qualquer produto，嵌套示例： **要播放的咖啡**。
 
 ![DSN](./images/app19.png)
 
-把一个小品当做产品 **咖啡待用** 没有应用程序。 小团体 **购买**.
+要喝的咖啡&#x200B;**没有咖啡**。 单击&#x200B;**购买**。
 
 ![DSN](./images/app20.png)
 
-Agora voce terminou esteriste exercício e está pronto para as próximas atividades.
+Agora voce terminou este exercício e estas pronto para as próximas atividades.
 
-埃塔帕： [ 2.6 Personalizaçao无呼叫中心](./ex6.md)
+Próxima etapa： [ 2.6 Personalização无呼叫中心](./ex6.md)
 
-[Retornar para Fluxo de Usuário 2](./uc2.md)
+[乌苏亚里奥二号酒庄酒庄酒庄酒庄酒庄酒庄](./uc2.md)
 
-[莫杜洛斯·托多斯·托诺纳尔](../../overview.md)
+[莫杜洛斯·托多斯·雷托纳尔](../../overview.md)

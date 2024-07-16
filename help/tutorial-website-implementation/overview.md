@@ -5,20 +5,20 @@ recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
 source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 37%
+source-wordcount: '851'
+ht-degree: 36%
 
 ---
 
 # 概述
 
-_在网站中使用标记实施Experience Cloud_ 对于希望了解如何在其网站上实施Adobe Experience Cloud解决方案的前端开发人员或技术营销人员来说，这是一个完美的起点。
+_使用标记在网站中实施Experience Cloud_&#x200B;是想要了解如何在其网站上实施Adobe Experience Cloud解决方案的前端开发人员或技术营销人员的完美起点。
 
 每个课程均包含操作练习和基础信息，可帮助您实施 Experience Cloud 并了解其价值。我们为您提供了演示网站来完成教程，这样您就可以在安全的环境中学习基础技术。完成本教程后，您应该可以通过自己网站上的标记开始实施所有营销解决方案。
 
 >[!INFO]
 >
->本教程使用特定于应用程序的扩展和库(适用于Adobe Analytics的AppMeasurement.js，适用于Adobe Target的at.js)。 如果您打算实施Adobe Experience Platform Web SDK，请参阅 [利用Web SDK实施Adobe Experience Cloud](/help/tutorial-web-sdk/overview.md) 教程。
+>本教程使用特定于应用程序的扩展和库(适用于Adobe Analytics的AppMeasurement.js，适用于Adobe Target的at.js)。 如果您要实施Adobe Experience Platform Web SDK，请参阅[使用Web SDK实施Adobe Experience Cloud](/help/tutorial-web-sdk/overview.md)教程。
 
 
 完成本教程后，您将能够：
@@ -28,7 +28,7 @@ _在网站中使用标记实施Experience Cloud_ 对于希望了解如何在其�
 * 在网站上安装标记属性
 
 * 添加以下 Adobe Experience Cloud 解决方案：
-   * **[Adobe Experience Platform Identity Service](id-service.md)**
+   * **[Adobe Experience Platform Identity服务](id-service.md)**
    * **[Adobe Target](target.md)**
    * **[Adobe Analytics](analytics.md)**
    * **[Adobe Audience Manager](audience-manager.md)**
@@ -37,25 +37,25 @@ _在网站中使用标记实施Experience Cloud_ 对于希望了解如何在其�
 
 * 使用 Adobe Experience Cloud Debugger 验证实施
 
-* 通过开发、暂存和生产环境发布更改
+* Publish通过开发、暂存和生产环境进行更改
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * platform launch服务器端现在为 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Edge配置现在为 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 >[!NOTE]
 >
->类似的多解决方案教程也可用于 [Web SDK](../tutorial-web-sdk/overview.md) 和 [移动SDK](../tutorial-mobile-sdk/overview.md).
+>[Web SDK](../tutorial-web-sdk/overview.md)和[Mobile SDK](../tutorial-mobile-sdk/overview.md)也提供了类似的多解决方案教程。
 
 ## 先决条件
 
 在这些课程中，我们假定您拥有 Adobe ID 和完成练习所需的权限。如果没有，您可能需要联系 Experience Cloud 管理员以请求获取访问权限。
 
-* 对于标记，您必须拥有“开发”、“批准”、“发布”、“管理扩展”和“管理环境”权限。 有关标记用户权限的更多信息，请参阅 [文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* 对于标记，您必须拥有“开发”、“批准”、“Publish”、“管理扩展”和“管理环境”权限。 有关标记用户权限的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)。
 * 对于 Adobe Analytics，您必须知晓跟踪服务器以及用于完成本教程的报表包
 * 对于Audience Manager，您必须知晓Audience Manager子域（也称为“合作伙伴名称”、“合作伙伴ID”或“合作伙伴子域”）
 
@@ -75,12 +75,12 @@ Adobe Experience Platform的标记功能是Adobe推出的新一代网站标记�
 
 在这些课程中，您将在名为 Luma 的虚拟零售网站中实施 Adobe Experience Cloud。[Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)具有丰富的数据层和功能，可让您构建实际可行的实施。您将在自己的Experience Cloud组织中构建自己的标记资产，并使用Experience Cloud Debugger将其映射到我们托管的Luma网站。
 
-[![Luma 网站](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
+[![Luma网站](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 ## 获取工具
 
 1. 由于您将使用某些特定于浏览器的扩展，因此我们建议您使用 [Chrome Web 浏览器](https://www.google.com/chrome/)来完成教程
-1. 添加 [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome浏览器的扩展
+1. 将[Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)扩展添加到您的Chrome浏览器
 1. 复制示例html页面代码
 
    +++示例HTML页面代码

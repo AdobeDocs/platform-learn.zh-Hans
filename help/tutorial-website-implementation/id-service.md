@@ -1,29 +1,28 @@
 ---
-title: 使用标记添加Adobe Experience Platform Identity Service
+title: 添加包含标记的Adobe Experience Platform Identity服务
 description: 了解如何添加 Adobe Experience Platform Identity Service 扩展，以及如何使用“Set Customer IDs”操作收集客户 ID。本课程是“在网站中实施Experience Cloud”教程的一部分。
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
 source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 80%
+source-wordcount: '1945'
+ht-degree: 64%
 
 ---
 
 # 添加 Adobe Experience Platform Identity Service
 
-本课程将指导您完成实施 [Adobe Experience Platform Identity Service 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hans)以及发送客户 ID 所需的步骤。
+本课程将指导您完成实施 [Adobe Experience Platform Identity Service 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)以及发送客户 ID 所需的步骤。
 
-[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans) 会在所有 Adobe 解决方案中设置一个通用访客 ID，以便增强 Experience Cloud 功能（如解决方案之间的受众共享）。您还可以将自己的客户 ID 发送到该服务，以启用跨设备定位以及与客户关系管理 (CRM) 系统的集成。
+[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)在所有Adobe解决方案中设置了一个通用访客ID，以便增强Experience Cloud功能，如解决方案之间的受众共享。 您还可以将自己的客户 ID 发送到该服务，以启用跨设备定位以及与客户关系管理 (CRM) 系统的集成。
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch将作为一套数据收集技术集成到Adobe Experience Platform中。 界面中已推出一些术语更改，在使用此内容时，您应该注意这些更改：
+>Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为 **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
-> * platform launch服务器端现在为 **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * 现在已提供边缘配置 **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
-
+> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 学习目标
 
@@ -36,35 +35,35 @@ ht-degree: 80%
 
 ## 先决条件
 
-您应该已经完成 [配置标记](create-a-property.md) 中。
+您应该已经完成[配置标记](create-a-property.md)部分中的课程。
 
 ## 添加 Identity Service 扩展
 
-由于这是您添加的第一个扩展，这里先简要概述一下扩展。扩展是标记的核心功能之一。 扩展是由 Adobe、Adobe 合作伙伴或任何 Adobe 客户构建的集成，可为您部署到网站的标记添加无限数量的新选项。如果将标记视为操作系统，则扩展是您安装的应用程序，因此标记可以执行您所需的各种操作。
+由于这是您添加的第一个扩展，这里先简要概述一下扩展。扩展是标记的核心功能之一。 扩展是由 Adobe、Adobe 合作伙伴或任何 Adobe 客户构建的集成，可为您部署到网站的标记添加无限数量的新选项。如果将标记看作一种操作系统，那么扩展就是您安装的应用程序，因此标记可以执行您所需的各种操作。
 
 **添加 Identity Service 扩展**
 
-1. 在左侧导航中，单击 **[!UICONTROL 扩展]**
+1. 在左侧导航中，单击&#x200B;**[!UICONTROL 扩展]**
 
-1. 单击 **[!UICONTROL Catalog]** 以转到扩展目录页面
+1. 单击&#x200B;**[!UICONTROL 目录]**&#x200B;以转到扩展目录页面
 
 1. 查看 Catalog 中提供的各种扩展
 
 1. 在顶部的筛选器中，键入“id”以筛选目录
 
-1. 在 Adobe Experience Platform Identity Service 的卡片上，单击 **[!UICONTROL Install]**
+1. 在Adobe Experience Platform Identity Service的卡片上，单击&#x200B;**[!UICONTROL 安装]**
 
    ![安装 Identity Service 扩展](images/idservice-install.png)
 
 1. 请注意，已自动为您检测 Experience Cloud 组织 ID。
 
-1. 保留所有默认设置，然后单击 **[!UICONTROL Save to Library and Build]**
+1. 保留所有默认设置，然后单击&#x200B;**[!UICONTROL 保存到库并生成]**
 
    ![保存扩展](images/idservice-save.png)
 
 >[!NOTE]
 >
-> Identity Service 扩展的每个版本均附带一个特定版本的 VisitorAPI.js，扩展描述中对其进行了说明。您可以通过更新 Identity Service 扩展来更新 VisitorAPI.js 版本。
+>Identity Service扩展的每个版本均附带一个特定版本的VisitorAPI.js，扩展描述中对其进行了说明。 您可以通过更新 Identity Service 扩展来更新 VisitorAPI.js 版本。
 
 ### 验证该扩展
 
@@ -74,11 +73,11 @@ Identity Service扩展是少数标记扩展之一，该扩展无需使用规则�
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 确保Debugger将标记属性映射到 *您的* 开发环境，如 [前课](switch-environments.md).
+1. 如[前面的课程](switch-environments.md)中所述，确保Debugger将标记属性映射到&#x200B;*您的*&#x200B;开发环境。
 
 1. 在Debugger的“摘要”选项卡上，标记部分应指示已实施Adobe Experience Platform Identity Service扩展。
 
-1. 此外，在“摘要”选项卡上，Identity Service部分还应使用数据收集界面中扩展配置屏幕上显示的相同组织ID进行填充：
+1. 此外，在“摘要”选项卡上，Identity Service部分还应使用数据收集界面的扩展配置屏幕上显示的相同组织ID进行填充：
 
    ![检查是否已实施 Adobe Experience Platform Identity Service 扩展](images/idservice-debugger-summary.png)
 
@@ -90,14 +89,14 @@ Identity Service扩展是少数标记扩展之一，该扩展无需使用规则�
    1. 转到 `Application` 选项卡
    1. 展开左侧的 `Cookies`
    1. 单击域 `https://luma.enablementadobe.com`
-   1. 在右侧查找 AMCV_ Cookie。由于已使用硬编码标记属性加载Luma网站并将其映射到您自己的资产，因此您可能会看到多个网站。
+   1. 在右侧查找 AMCV_ Cookie。您可能会看到自那时以来已使用硬编码标记属性以及您自己的属性加载Luma网站的多个。
       ![验证 AMCV_ Cookie](images/idservice-AMCVCookie.png)
 
 操作完成！您已添加第一个扩展！有关 Identity Service 配置选项的更多详细信息，请参阅[此文档](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html)。
 
 ## 发送客户 ID
 
-接下来，您将向 Identity Service 发送[客户 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hans)。这样您就能够[集成 CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans) 与 Experience Cloud，并跨多个设备跟踪访客。
+接下来，您将向 Identity Service 发送[客户 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)。这样您就能够[集成 CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) 与 Experience Cloud，并跨多个设备跟踪访客。
 
 在之前的[添加数据元素、规则和库](add-data-elements-rules.md)课程中，您已创建一个数据元素并将其用在规则中。现在，您将使用这些相同的技术在访客进行身份验证后发送客户 ID。
 
@@ -110,14 +109,14 @@ Identity Service扩展是少数标记扩展之一，该扩展无需使用规则�
 
 **为身份验证状态创建数据元素**
 
-1. 单击 **[!UICONTROL 数据元素]** 在左侧导航中
-1. 单击 **[!UICONTROL Add Data Element]** 按钮
+1. 在左侧导航中单击&#x200B;**[!UICONTROL 数据元素]**
+1. 单击&#x200B;**[!UICONTROL 添加数据元素]**&#x200B;按钮
 
    ![单击“Add Data Element”](images/idservice-addDataElement1.png)
 
 1. 将数据元素命名为 `Authentication State`
-1. 对于 **[!UICONTROL Data Element Type]**，选择 **[!UICONTROL Custom Code]**
-1. 单击 **[!UICONTROL Open Editor]** 按钮
+1. 对于&#x200B;**[!UICONTROL 数据元素类型]**，请选择&#x200B;**[!UICONTROL 自定义代码]**
+1. 单击&#x200B;**[!UICONTROL 打开编辑器]**&#x200B;按钮
 
    ![打开编辑器以添加数据元素的自定义代码](images/idservice-authenticationState.png)
 
@@ -130,12 +129,12 @@ Identity Service扩展是少数标记扩展之一，该扩展无需使用规则�
        return "logged out"
    ```
 
-1. 单击 **[!UICONTROL Save]** 以保存自定义代码
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存自定义代码
 
    ![保存自定义代码](images/idservice-authenticationCode.png)
 
 1. 将所有其他设置保留为其默认值
-1. 单击 **[!UICONTROL Save to Library]** 以保存数据元素并返回到数据元素页面. 在完成所有更改并准备好进行验证之前，我们无需执行“生成”操作。
+1. 单击&#x200B;**[!UICONTROL 保存到库]**&#x200B;以保存数据元素并返回到数据元素页面。 在做出所有更改并准备好验证之前，我们不需要执行“生成”。
 
    ![保存数据元素](images/idservice-authenticationStateFinalSave.png)
 
@@ -143,15 +142,15 @@ Identity Service扩展是少数标记扩展之一，该扩展无需使用规则�
 
 **为经过哈希处理的电子邮件添加数据元素**
 
-1. 单击 **[!UICONTROL Add Data Element]** 按钮
+1. 单击&#x200B;**[!UICONTROL 添加数据元素]**&#x200B;按钮
 
    ![添加数据元素](images/idservice-addDataElement2.png)
 
 1. 将数据元素命名为 `Email (Hashed)`
-1. 对于 **[!UICONTROL Data Element Type]**，选择 **[!UICONTROL JavaScript Variable]**
-1. 对于 **[!UICONTROL JavaScript variable name]**，使用以下指向 Luma 网站数据层中变量的指针：`digitalData.user.0.profile.0.attributes.username`
+1. 对于&#x200B;**[!UICONTROL 数据元素类型]**，请选择&#x200B;**[!UICONTROL JavaScript变量]**
+1. 作为&#x200B;**[!UICONTROL JavaScript变量名称]**，使用以下指向Luma网站数据层中变量的指针： `digitalData.user.0.profile.0.attributes.username`
 1. 将所有其他设置保留为其默认值
-1. 单击 **[!UICONTROL 保存到库]** 保存数据元素
+1. 单击&#x200B;**[!UICONTROL 保存到库]**&#x200B;以保存数据元素
 
    ![保存数据元素](images/idservice-emailHashed.png)
 
@@ -161,8 +160,8 @@ Adobe Experience Platform Identity Service 使用名为“Set Customer IDs”的
 
 **创建用于发送客户 ID 的规则**
 
-1. 在左侧导航中，单击 **[!UICONTROL 规则]**
-1. 单击 **[!UICONTROL Add Rule]** 以打开规则构建器
+1. 在左侧导航中，单击&#x200B;**[!UICONTROL 规则]**
+1. 单击&#x200B;**[!UICONTROL 添加规则]**&#x200B;以打开规则生成器
 
    ![添加规则](images/idservice-addRule.png)
 
@@ -170,52 +169,52 @@ Adobe Experience Platform Identity Service 使用名为“Set Customer IDs”的
 
    >[!TIP]
    >
-   > 此命名约定表示，您将在用户进行身份验证后，在所有页面的顶部触发此规则，并且此规则的顺序为“10”。使用此类命名约定（而不是针对操作中触发的解决方案进行命名），可以最大限度地减少实施所需的规则总数。
+   >此命名约定表示，您将在用户进行身份验证后，在所有页面的顶部触发此规则，并且此规则的顺序为“10”。 使用此类命名约定（而不是针对操作中触发的解决方案进行命名），可以最大限度地减少实施所需的规则总数。
 
-1. 在 **[!UICONTROL Events]** 下，单击 **[!UICONTROL Add]**
+1. 在&#x200B;**[!UICONTROL 事件]**&#x200B;下，单击&#x200B;**[!UICONTROL 添加]**
 
    ![添加事件](images/idservice-customerId-addEvent.png)
 
-   1. 对于 **[!UICONTROL Event Type]**，选择 **[!UICONTROL Library Loaded (Page Top)]**
-   1. 展开 **[!UICONTROL 高级选项]** 和  **[!UICONTROL 订购]** enter `10`. 顺序控制由同一事件触发的规则序列。顺序靠前的规则会在顺序靠后的规则之前触发。在此例中，您需要先设置客户 ID，然后再触发 Target 请求，您将在下一课程中使用顺序为 `50` 的规则来实现此操作。
-   1. 单击 **[!UICONTROL Keep Changes]** 按钮以返回到规则构建器
+   1. 对于&#x200B;**[!UICONTROL 事件类型]**，选择&#x200B;**[!UICONTROL 已加载的库（页面顶部）]**
+   1. 展开&#x200B;**[!UICONTROL 高级选项]**&#x200B;部分，对于&#x200B;**[!UICONTROL 订单]**，输入`10`。 顺序控制由同一事件触发的规则序列。顺序靠前的规则会在顺序靠后的规则之前触发。在此例中，您需要先设置客户 ID，然后再触发 Target 请求，您将在下一课程中使用顺序为 `50` 的规则来实现此操作。
+   1. 单击&#x200B;**[!UICONTROL Keep Changes]**&#x200B;按钮以返回规则生成器
 
    ![保存事件](images/idservice-customerId-saveEvent.png)
 
-1. 在 **[!UICONTROL Conditions]** 下，单击 **[!UICONTROL Add]**
+1. 在&#x200B;**[!UICONTROL 条件]**&#x200B;下，单击&#x200B;**[!UICONTROL 添加]**
 
    ![向规则添加条件](images/idservice-customerId-addCondition.png)
 
-   1. 对于 **[!UICONTROL Condition Type]**，选择 **[!UICONTROL Value Comparison]**
+   1. 对于&#x200B;**[!UICONTROL 条件类型]**，选择&#x200B;**[!UICONTROL 值比较]**
    1. 单击 ![数据元素图标](images/icon-dataElement.png) 图标以打开数据元素模式窗口。
 
       ![打开数据元素模式窗口](images/idservice-customerId-valueComparison.png)
 
-   1. 在数据元素模式窗口中，单击 **[!UICONTROL Authentication State]**，然后单击 **[!UICONTROL Select]**
+   1. 在数据元素模式窗口中，单击&#x200B;**[!UICONTROL 身份验证状态]**，然后单击&#x200B;**[!UICONTROL 选择]**
 
       ![设置身份验证状态](images/idservice-customerId-authStateCondition.png)
 
 1. 确保运算符为 `Equals`
 1. 在文本字段中键入“logged in”，这会导致规则在数据元素“Authentication State”具有“logged in”值时触发。
 
-1. 单击 **[!UICONTROL Keep Changes]**
+1. 单击&#x200B;**[!UICONTROL 保留更改]**
 
    ![保存条件](images/idservice-customerId-loggedIn.png)
 
-1. 在 **[!UICONTROL Actions]** 下，单击 **[!UICONTROL Add]**
+1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;下，单击&#x200B;**[!UICONTROL 添加]**
 
    ![添加新操作](images/idservice-customerId-addAction.png)
 
-   1. 对于 **[!UICONTROL 扩展]** 选择 **[!UICONTROL Experience CloudID服务]**
-   1. 对于 **[!UICONTROL Action Type]**，选择 **[!UICONTROL Set Customer ID]**
-   1. 对于 **[!UICONTROL Integration Code]**，输入 `crm_id`
-   1. 对于 **[!UICONTROL Value]**，打开数据元素选择器模式窗口，然后选择 `Email (Hashed)`
-   1. 对于 **[!UICONTROL Auth State]**，选择 **[!UICONTROL Authenticated]**
-   1. 单击 **[!UICONTROL Keep Changes]** 按钮以保存操作并返回到规则构建器
+   1. 对于&#x200B;**[!UICONTROL 扩展]**，选择&#x200B;**[!UICONTROL Experience CloudID服务]**
+   1. 对于&#x200B;**[!UICONTROL 操作类型]**，选择&#x200B;**[!UICONTROL 设置客户ID]**
+   1. 对于&#x200B;**[!UICONTROL 集成代码]**，输入`crm_id`
+   1. 对于&#x200B;**[!UICONTROL Value]**，打开数据元素选择器模式并选择`Email (Hashed)`
+   1. 对于&#x200B;**[!UICONTROL 身份验证状态]**，选择&#x200B;**[!UICONTROL 已验证]**
+   1. 单击&#x200B;**[!UICONTROL Keep Changes]**&#x200B;按钮以保存操作并返回规则生成器
 
       ![配置操作并保存更改](images/idservice-customerId-action.png)
 
-1. 单击 **[!UICONTROL Save to Library and Build]** 按钮以保存规则
+1. 单击&#x200B;**[!UICONTROL 保存到库并生成]**&#x200B;按钮以保存规则
 
    ![保存规则](images/idservice-customerId-saveRule.png)
 
@@ -229,17 +228,17 @@ Adobe Experience Platform Identity Service 使用名为“Set Customer IDs”的
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 确保Debugger将标记属性映射到 *您的* 开发环境，如 [前课](switch-environments.md)
+1. 如[前面的课程](switch-environments.md)中所述，确保Debugger将标记属性映射到&#x200B;*您的*&#x200B;开发环境
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
-1. 单击 Luma 网站右上角的 **[!UICONTROL LOGIN]** 链接
+1. 单击Luma网站右上角的&#x200B;**[!UICONTROL LOGIN]**&#x200B;链接
 
    ![在顶部导航中单击 LOGIN](images/idservice-loginNav.png)
 
 1. 输入 `test@adobe.com` 作为用户名
 1. 输入 `test` 作为密码
-1. 单击 **[!UICONTROL LOGIN]** 按钮
+1. 单击&#x200B;**[!UICONTROL 登录]**&#x200B;按钮
 
    ![输入凭据并单击 LOGIN](images/idservice-login.png)
 
@@ -263,7 +262,7 @@ Adobe Experience Platform Identity Service 使用名为“Set Customer IDs”的
 
 ### 其他验证提示
 
-标记还具有丰富的控制台日志记录功能。 要打开它们，请转到 **[!UICONTROL 工具]** ，然后打开 **[!UICONTROL 标记控制台日志记录]** 切换。
+标记还具有丰富的控制台日志记录功能。 要开启这些功能，请转到Debugger中的&#x200B;**[!UICONTROL 工具]**&#x200B;选项卡，然后打开&#x200B;**[!UICONTROL 标记控制台日志记录]**&#x200B;切换开关。
 
 ![打开标记的控制台日志记录](images/idservice-debugger-logging.png)
 
@@ -271,4 +270,4 @@ Adobe Experience Platform Identity Service 使用名为“Set Customer IDs”的
 
 ![Debugger 的“日志”选项卡](images/idservice-debugger-loggingStatements.png)
 
-[下一课程“添加 Adobe Target”>](target.md)
+[下一课程“添加Adobe Target”>](target.md)
