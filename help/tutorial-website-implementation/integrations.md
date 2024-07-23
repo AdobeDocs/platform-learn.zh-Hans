@@ -2,10 +2,10 @@
 title: 实施Experience Cloud与标记的集成
 description: 了解如何验证 Adobe Experience Cloud 实施中的受众、A4T 和客户属性集成。本课程是“在网站中实施Experience Cloud”教程的一部分。
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 2182441d992aec0602d0955d78aa85407bd770c9
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 86%
+source-wordcount: '1199'
+ht-degree: 85%
 
 ---
 
@@ -28,13 +28,12 @@ ht-degree: 86%
 >
 >要充分使用这些集成，需要满足许多用户权限要求并完成相应的帐户配置和置备步骤，而这些内容都不在本教程的涵盖范围内。 如果您尚未在当前的 Experience Cloud 实施中使用这些集成，则应考虑以下事项：
 >
->* 查看[核心服务集成](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html?lang=zh-Hans)的完整要求
->* 查看 [Analytics for Target 集成](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)的完整要求
->* 让您的 Experience Cloud 组织管理员[请求配置这些集成](https://www.adobe.com/go/audiences_cn)
+>* 查看[核心服务集成](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)的完整要求
+>* 查看 [Analytics for Target 集成](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)的完整要求
 
 ## 受众
 
-[受众](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html)是人员核心服务的一部分，允许您在解决方案之间共享受众。例如，您可以在 Audience Manager 中创建受众，然后使用它通过 Target 来提供个性化内容。
+[受众](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview)是人员核心服务的一部分，允许您在解决方案之间共享受众。例如，您可以在 Audience Manager 中创建受众，然后使用它通过 Target 来提供个性化内容。
 
 实施 A4T（您已经完成）的主要要求包括：
 
