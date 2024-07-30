@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: cd1f166eac926688313812a67c1b5664608cb9cf
+source-git-commit: 1a3b89f7be838aeff389e7f404114ed3fef370d7
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '920'
 ht-degree: 16%
 
 ---
@@ -52,6 +52,7 @@ ht-degree: 16%
    + [联合受众构成概述](audiences/overview-of-federated-audience-composition.md)
    + [受众规则生成器概述](audiences/audience-rule-builder-overview.md)
    + [创建受众](audiences/create-audiences.md)
+   + [使用时间限制](audiences/time-constraints.md)
    + [创建基于内容的受众](audiences/create-content-based-audiences.md)
    + [创建转化受众](audiences/create-conversion-audiences.md)
    + [从现有受众创建受众](audiences/create-audiences-from-existing-audiences.md)
