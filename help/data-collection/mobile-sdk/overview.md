@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Platform Mobile SDK概述
-description: 了解 Adobe Experience Platform Mobile SDK 如何支持您的移动应用程序中的端到端参与。Platform Mobile SDK 可帮助您进行获取、分析、参与和优化。高性能、模块化、可扩展并与数据收集相集成。数据收集的复杂规则引擎、许可和发布工作流程可帮助您在移动应用程序中高效实施 Adobe Analytics、Campaign、Audience Manager、Target 和第三方解决方案。
+description: 了解 Adobe Experience Platform Mobile SDK 如何支持您的移动设备应用程序中的端到端参与。Platform Mobile SDK 可帮助您进行获取、分析、参与和优化。高性能、模块化、可扩展并与数据收集相集成。数据收集的复杂规则引擎、许可和发布工作流程可帮助您在移动设备应用程序中高效实施 Adobe Analytics、Campaign、Audience Manager、Target 和第三方解决方案。
 feature: Mobile SDK
 level: Beginner
 jira: KT-3698
@@ -14,7 +14,7 @@ ht-degree: 64%
 
 # Adobe Experience Platform Mobile SDK概述
 
-了解 Adobe Experience Platform Mobile SDK 如何支持您的移动应用程序中的端到端参与。Platform Mobile SDK 可帮助您进行获取、分析、参与和优化。高性能、模块化、可扩展并与数据收集相集成。数据收集的复杂规则引擎、权限和发布工作流程可帮助您在移动应用程序中高效实施Adobe Analytics、Campaign、Audience Manager、Target和第三方解决方案。 有关详细信息，请访问[Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/)。
+了解 Adobe Experience Platform Mobile SDK 如何支持您的移动设备应用程序中的端到端参与。Platform Mobile SDK 可帮助您进行获取、分析、参与和优化。高性能、模块化、可扩展并与数据收集相集成。数据收集的复杂规则引擎、权限和发布工作流程可帮助您在移动应用程序中高效实施Adobe Analytics、Campaign、Audience Manager、Target和第三方解决方案。 有关详细信息，请访问[Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/documentation/)。
 
 >[!NOTE]
 >
