@@ -1,8 +1,8 @@
 ---
-title: 发送参数 | 将Target从at.js 2.x迁移到Web SDK
+title: 发送参数 — 将Target从at.js 2.x迁移到Web SDK
 description: 了解如何使用Experience PlatformWeb SDK将mbox、配置文件和实体参数发送到Adobe Target。
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1539'
 ht-degree: 0%

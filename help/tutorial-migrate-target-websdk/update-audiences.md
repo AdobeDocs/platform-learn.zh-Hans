@@ -1,8 +1,8 @@
 ---
-title: 更新受众和个人资料脚本 | 将Target从at.js 2.x迁移到Web SDK
+title: 更新受众和配置文件脚本 — 将Target从at.js 2.x迁移到Web SDK
 description: 了解如何更新Adobe Target受众和配置文件脚本，以便与Experience PlatformWeb SDK兼容。
 exl-id: 2c0f85f7-6e8c-4d0b-8ed5-53897d06e563
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 0%

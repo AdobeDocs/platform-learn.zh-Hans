@@ -1,8 +1,8 @@
 ---
-title: 迁移概述 | 将Target从at.js 2.x迁移到Web SDK
+title: 迁移概述 — 将Target从at.js 2.x迁移到Web SDK
 description: 了解at.js与Platform Web SDK之间的主要差异以及如何规划迁移工作。
 exl-id: a8ed78e4-c8c2-4505-b4b5-e5d508f5ed87
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%

@@ -1,8 +1,8 @@
 ---
-title: 替换库 | 将Target从at.js 2.x迁移到Web SDK
+title: 替换库 — 将Target从at.js 2.x迁移到Web SDK
 description: 了解如何将Adobe Target实施从at.js 2.x迁移到Adobe Experience Platform Web SDK。 主题包括库概述、实施差异和其他值得注意的标注。
 exl-id: dfafa132-376a-475d-a467-9bc2f0a414cf
-source-git-commit: 07c3c5b3f45eeb02e94a25dbd164b7397cb7869d
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '1594'
 ht-degree: 1%

@@ -1,8 +1,8 @@
 ---
-title: 渲染VEC活动 | 将Target从at.js 2.x迁移到Web SDK
+title: 渲染VEC活动 — 将Target从at.js 2.x迁移到Web SDK
 description: 了解如何通过Adobe Target的Web SDK实施检索和应用可视化体验编辑器活动。
 exl-id: bbbbfada-e236-44de-a7bf-5c63ff840db4
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
 workflow-type: tm+mt
 source-wordcount: '767'
 ht-degree: 0%
