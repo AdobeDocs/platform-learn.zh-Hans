@@ -4,7 +4,7 @@ description: 了解如何为移动应用程序事件创建XDM架构。
 feature: Mobile SDK,Schemas
 jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '1414'
 ht-degree: 2%
@@ -25,7 +25,7 @@ Experience Platform使用架构以一致且可重用的方式描述数据结构�
 
 在将数据引入Platform之前，必须组合模式以描述数据的结构并对每个字段中可以包含的数据类型提供约束。 架构由一个基类以及零个或多个架构字段组组成。
 
-有关架构组合模型的更多信息，包括设计原则和最佳实践，请参阅架构组合的[基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en)或课程[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)。
+有关架构组合模型的更多信息，包括设计原则和最佳实践，请参阅架构组合的[基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en)或播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)。
 
 >[!TIP]
 >

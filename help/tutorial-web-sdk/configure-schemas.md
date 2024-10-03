@@ -4,7 +4,7 @@ description: 了解如何在数据收集界面中为Web数据创建XDM架构。 
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 1a4f2e3813a6db4bef77753525c8a7d40692a4b2
+source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
 workflow-type: tm+mt
 source-wordcount: '1542'
 ht-degree: 3%
@@ -58,7 +58,7 @@ Platform Web SDK使用您的架构来标准化Web事件数据，将其发送到P
 >
 > 出于演示目的，本课程中的练习构建了一个示例架构，用于捕获客户在[Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html)中查看的内容和购买的产品。 虽然您可以使用这些步骤创建不同的架构以满足您自己的目的，但建议您首先在创建示例架构的同时学习架构编辑器的功能。
 
-要了解有关XDM架构的更多信息，请参加课程[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm)，或查看[XDM系统概述](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)。
+要了解有关XDM架构的更多信息，请观看播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，或查看[XDM系统概述](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)。
 
 ## 学习目标
 
