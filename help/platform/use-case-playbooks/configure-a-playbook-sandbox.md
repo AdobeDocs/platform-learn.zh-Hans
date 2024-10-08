@@ -9,9 +9,9 @@ duration: 355
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14074
 exl-id: 4b231a49-5df8-4bad-800f-e58807b69aaa
-source-git-commit: eae0910e2475ce20f7afd289005b6a8869eaa210
+source-git-commit: 050bfd05f39ee0736d188d7bcb5cc6ed6c5e320e
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '74'
 ht-degree: 1%
 
 ---
@@ -24,6 +24,6 @@ ht-degree: 1%
 1. 将权限和用户添加到沙盒
 1. 为电子邮件、推送和短信配置渠道平面
 
-有关详细信息，请参阅[开始使用](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=zh-Hans)。
+有关详细信息，请参阅[用例行动手册入门](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
