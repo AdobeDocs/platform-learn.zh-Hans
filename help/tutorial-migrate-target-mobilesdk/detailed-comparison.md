@@ -1,41 +1,41 @@
 ---
 title: Target扩展与Decisioning扩展的比较
-description: 了解at.js 2.x与Platform Web SDK之间的差异，包括特性、功能、设置和数据流。
-source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
+description: 了解Target扩展与Decisioning扩展之间的差异，包括功能、功能、设置和数据流。
+source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 1%
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
 # Target扩展与Decisioning扩展的比较
 
-独立的Adobe Target at.js库与Platform Web SDK有显着差异。 下表可供参考，以帮助您评估在迁移过程中可能需要重点实施的各个方面。
+Adobe Journey Optimizer - Decisioning扩展不同于适用于移动应用程序的Adobe Target扩展。 下表可供参考，以帮助您评估在迁移过程中可能需要重点实施的各个方面。
 
-在查看以下信息并评估您当前的技术at.js实施后，您应该能够了解以下内容：
+在查看以下信息并评估您当前的技术性Target扩展实施情况后，您应该能够了解以下内容：
 
-- Platform Web SDK支持哪些目标功能
-- 哪些at.js函数具有Platform Web SDK等效项
-- 如何将Target设置与Platform Web SDK一起使用
-- at.js和Platform Web SDK的数据流有何不同
+- Adobe Journey Optimizer支持哪些Target功能 — Decisioning
+- 哪些Adobe Target扩展函数具有Adobe Journey Optimizer — 决策等效项
+- 如何将Target设置应用于Adobe Journey Optimizer - Decisioning
+- Adobe Target扩展和Adobe Journey Optimizer - Decisioning扩展的数据流有何不同
 
 如果您不熟悉Platform Web SDK，请不要担心 — 本教程将更详细地介绍以下项目。
 
 ## 功能比较
 
-| | 目标扩展 | Decisioning扩展(通过Edge的Target) | AJO基于代码的体验（消息传送SDK） |
+| | 目标扩展 | Decisioning扩展(通过Edge的Target) |
 |---|---|---|---|
-| 预取模式 | 支持 | 支持 | 支持 |
-| 执行模式 | 支持 | 不支持 | 不支持 |
-| 自定义参数 | 支持 | 不支持每个mbox参数 | 不支持 |
-| 登录受众 | 支持 | 支持 | 通过Campaign受众和试验保留设置支持 |
-| 使用移动生命周期量度的受众分段 | 支持 | 通过数据收集规则支持 | 当前不支持体验定位 |
-| thirdPartyId (mbox3rdPartyId) | 通过数据流中的身份映射和命名空间配置支持 | 不支持 |
-| 通知（显示、点击） | 支持 | 支持 | 支持 |
-| 响应令牌 | 支持 | 支持 | 没有等效项可用于返回内容以外的Campaign特定元数据 |
-| 动态选件 | 支持 | 支持 | 支持在内容中呈现配置文件和决策项相关的令牌 |
-| Analytics for Target (A4T) | 仅客户端 | 客户端和服务器端 | 不支持 |
-| 移动设备预览（QA模式） | 支持 | 有限支持 | 进行中 |
+| 预取模式 | 支持 | 支持 |
+| 执行模式 | 支持 | 不支持 |
+| 自定义参数 | 支持 | 不支持每个mbox参数 |
+| 登录受众 | 支持 | 支持 |
+| 使用移动生命周期量度的受众分段 | 支持 | 通过数据收集规则支持 |
+| thirdPartyId (mbox3rdPartyId) | 通过数据流中的身份映射和命名空间配置支持 |
+| 通知（显示、点击） | 支持 | 支持 |
+| 响应令牌 | 支持 | 支持 |
+| 动态选件 | 支持 | 支持 |
+| Analytics for Target (A4T) | 仅客户端 | 客户端和服务器端 |
+| 移动设备预览（QA模式） | 支持 | 有限支持 |
 
 
 
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 ## 系统图比较
 
-下图应该有助于您了解使用at.js的Target实施与使用Platform Web SDK的实施之间的数据流差异。
+下图应该有助于您了解使用Adobe Journey Optimizer - Decisioning扩展的Target实施与使用Adobe Target扩展的实施之间的数据流差异。
 
 ### Target扩展系统图
 
