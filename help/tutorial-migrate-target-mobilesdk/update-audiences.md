@@ -1,14 +1,14 @@
 ---
-title: 更新受众和配置文件脚本 — 将Target从at.js 2.x迁移到Web SDK
+title: 更新受众和配置文件脚本 — 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
 description: 了解如何更新Adobe Target受众和配置文件脚本，以便与Experience PlatformWeb SDK兼容。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---
 
-# 更新Target受众和配置文件脚本以确保Platform Web SDK兼容性
+# 更新Target受众和配置文件脚本，以确保Adobe Journey Optimizer - Decisioning Mobile扩展兼容性
 
 
 ## 调整受众
@@ -26,4 +26,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target移动设备从Target扩展迁移到Optimize扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。
+>我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Decisioning扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。

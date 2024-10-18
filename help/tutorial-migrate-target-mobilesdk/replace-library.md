@@ -1,14 +1,14 @@
 ---
-title: 替换库 — 将Target从at.js 2.x迁移到Web SDK
-description: 了解如何将Adobe Target实施从at.js 2.x迁移到Adobe Experience Platform Web SDK。 主题包括库概述、实施差异和其他值得注意的标注。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+title: 替换SDK — 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
+description: 了解在从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展时如何替换SDK。
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '1560'
+source-wordcount: '1558'
 ht-degree: 1%
 
 ---
 
-# 将at.js库替换为Platform Web SDK
+# 将Target SDK替换为优化SDK
 
 了解如何替换页面上的Adobe Target实施，以便从at.js迁移到Platform Web SDK。 基本替换包含以下步骤：
 
@@ -399,4 +399,4 @@ alloy("configure", {
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target移动设备从Target扩展迁移到Optimize扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。
+>我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Decisioning扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。

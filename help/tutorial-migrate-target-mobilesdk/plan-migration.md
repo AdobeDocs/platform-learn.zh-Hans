@@ -1,16 +1,16 @@
 ---
-title: 规划 — 在移动应用程序中将Target从Target扩展迁移到优化扩展
+title: 规划 — 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
 description: 了解如何从at.js 2.x到Adobe Experience Platform Web SDK的Adobe Target实施规划。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
-# 规划Target到Optimize扩展的迁移
+# 规划Target到Decisioning扩展的迁移
 
-在移动应用程序中将Target从Target扩展升级到Optimize扩展之前，您应该评估当前的实施。
+在移动应用程序中将Target从Target扩展升级到Decisioning扩展之前，您应该评估当前的实施。
 
 ## 评估当前的Target扩展实施
 
@@ -50,8 +50,8 @@ As you migrate, you should plan on following your company's process for testing 
 -->
 
 
-接下来，查看Target扩展与Optimize扩展](detailed-comparison.md)的详细[比较，以更好地了解技术差异，并确定需要额外关注的领域。
+接下来，查看Target扩展与Decisioning扩展的[详细比较](detailed-comparison.md)，以更好地了解技术差异，并确定需要额外关注的领域。
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target移动设备从Target扩展迁移到Optimize扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。
+>我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Decisioning扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。

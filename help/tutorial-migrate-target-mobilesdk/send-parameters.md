@@ -1,14 +1,14 @@
 ---
-title: 发送参数 — 将Target从at.js 2.x迁移到Web SDK
+title: 发送参数 — 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
 description: 了解如何使用Experience PlatformWeb SDK将mbox、配置文件和实体参数发送到Adobe Target。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
 
-# 使用Platform Web SDK将参数发送到Target
+# 使用Adobe Journey Optimizer - Decisioning移动扩展将参数发送到Target
 
 由于站点架构、业务要求和使用的功能，Target实施在各个网站之间有所不同。 大多数Target实施都包括传递上下文信息、受众和内容推荐的各种参数。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ## 购买参数
 
-成功完成订单后，采购参数会在订单确认页面上传递，并用于Target转化和优化目标。 通过使用优化扩展的Platform Mobile SDK实施，这些参数和会自动从作为`commerce`字段组的一部分传递的XDM数据进行映射。
+成功完成订单后，采购参数会在订单确认页面上传递，并用于Target转化和优化目标。 通过使用Decisioning扩展的Platform Mobile SDK实施，这些参数和会自动从作为`commerce`字段组的一部分传递的XDM数据进行映射。
 
 
 当`commerce`字段组的`purchases.value`设置为`1`时，购买信息将传递到Target。 订单ID和订单总计自动从`order`对象映射。 如果`productListItems`数组存在，则`SKU`值将用于`productPurchasedId`。
@@ -69,4 +69,4 @@ Target允许使用单个客户ID跨设备和系统同步配置文件。
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target移动设备从Target扩展迁移到Optimize扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。
+>我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Decisioning扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。

@@ -1,16 +1,16 @@
 ---
-title: 使用Web SDK验证Target实施 — 将Target从at.js 2.x迁移到Web SDK
-description: 了解如何使用Adobe Experience Platform Web SDK验证活动并调试Adobe Target实施。
-source-git-commit: 009548969b88d1bfa6eac23f65b1ca2144f27c34
+title: 验证Adobe Journey Optimizer - Decisioning Mobile扩展的Target实施
+description: 了解如何使用Adobe Journey Optimizer - Decisioning Mobile扩展验证活动并调试Adobe Target实施。
+source-git-commit: afbc8248ad81a5d9080a4fdba1167e09bbf3b33d
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 1%
 
 ---
 
-# 验证平台Web SDK实施
+# 验证Adobe Journey Optimizer - Decisioning Mobile扩展实施
 
-将Target实施从Target扩展迁移到Optimize扩展后，请务必先验证所有功能是否正常运行，然后再将任何更改发布到生产应用程序。 Adobe建议采取以下措施，本页将详细介绍这些措施：
+将Target实施从Target扩展迁移到Decisioning扩展后，请务必先验证所有功能是否正常运行，然后再将任何更改发布到生产应用程序。 Adobe建议采取以下措施，本页将详细介绍这些措施：
 
 * 执行技术验证，以确保基本实施以及Platform Mobile SDK请求和响应看起来正确
 * 确保Target活动已正确交付和呈现
@@ -54,10 +54,10 @@ ht-degree: 1%
 |---|---|
 | | |
 
-执行上述验证步骤后，您可以放心，带有优化扩展的Platform Mobile SDK实施已准备好投入生产。
+执行上述验证步骤后，您可以放心，带有Decisioning扩展的Platform Mobile SDK实施已准备好投入生产。
 
 接下来，了解如何[使用Platform Web SDK](debugging.md)对Target实施进行故障排除。
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target移动设备从Target扩展迁移到Optimize扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。
+>我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Decisioning扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。
