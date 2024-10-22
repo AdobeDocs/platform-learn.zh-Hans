@@ -1,10 +1,10 @@
 ---
 title: Target扩展与Decisioning扩展的比较
 description: 了解Target扩展与Decisioning扩展之间的差异，包括功能、功能、设置和数据流。
-source-git-commit: e727fbfc82dea9ab6244b669b2f06c47987db1b1
+source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 0%
+source-wordcount: '469'
+ht-degree: 1%
 
 ---
 
@@ -23,8 +23,8 @@ Adobe Journey Optimizer - Decisioning扩展不同于适用于移动应用程序�
 
 ## 功能比较
 
-| | 目标扩展 | Decisioning扩展(通过Edge的Target) |
-|---|---|---|---|
+| 功能 | 目标扩展 | Decisioning扩展(通过Edge的Target) |
+|---|---|---|
 | 预取模式 | 支持 | 支持 |
 | 执行模式 | 支持 | 不支持 |
 | 自定义参数 | 支持 | 不支持每个mbox参数 |
