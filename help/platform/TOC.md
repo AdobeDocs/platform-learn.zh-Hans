@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 8f7e2699e0158bc36459bbe61a5aa8e70e8e775b
+source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 16%
+source-wordcount: '934'
+ht-degree: 17%
 
 ---
 
@@ -31,13 +31,12 @@ ht-degree: 16%
    + [概述](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [端到端演示](/help/platform/rtcdp/demo.md)
    + [工作流](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-   + [B2B版本概述](/help/platform/rtcdp/b2b-overview.md)
+   + [B2B edition概述](/help/platform/rtcdp/b2b-overview.md)
    + [使用Marketo Engage编排活动](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [入门：数据架构师和数据工程师](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [对Experience PlatformAPI进行身份验证](/help/platform/authentication/platform-api-authentication.md)
 + [将示例数据导入Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
-   + [使用AI助手](/help/platform/admin/ai-assistant.md)
    + [使用警报](/help/platform/admin/use-alerts.md)
    + [使用沙盒](/help/platform/admin/use-sandboxes.md)
    + [在沙盒之间复制对象](/help/platform/admin/copy-objects-between-sandboxes.md)
@@ -46,6 +45,9 @@ ht-degree: 16%
    + [添加开发人员](/help/platform/admin/add-developers.md)
    + [添加产品管理员](/help/platform/admin/add-product-administrators.md)
    + [配置基于属性的访问控制](/help/platform/admin/configure-attribute-based-access-control.md)
++ AI 助手 {#ai-assistant}
+   + [概述](/help/platform/ai-assistant/overview.md)
+   + [清理受众](/help/platform/ai-assistant/find-unused-audiences.md)
 + 受众和分段{#audiences}
    + [受众门户和构成简介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上传受众](audiences/upload-audiences.md)
@@ -72,7 +74,7 @@ ht-degree: 16%
    + [区段匹配接收数据](/help/platform/segments/segment-match-receiving-data.md)
 + [审核日志](/help/platform/governance/audit-logs.md)
 + [数据收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
-+ 仪表板{#dashboards}
++ 仪表板 {#dashboards}
    + [创建功能板](/help/platform/dashboards/create-a-dashboard.md)
 + 数据管理{#data-governance}
    + [概述](/help/platform/governance/understanding-data-governance.md)

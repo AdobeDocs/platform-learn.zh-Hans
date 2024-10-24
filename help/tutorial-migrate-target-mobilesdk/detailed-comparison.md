@@ -1,9 +1,9 @@
 ---
 title: Target扩展与Decisioning扩展的比较
 description: 了解Target扩展与Decisioning扩展之间的差异，包括功能、功能、设置和数据流。
-source-git-commit: 78d04d625aa55ce5eb76615c220b49aefd958431
+source-git-commit: c907ccb9163ace8272f6881638a41362090bf3e5
 workflow-type: tm+mt
-source-wordcount: '469'
+source-wordcount: '470'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ Adobe Journey Optimizer - Decisioning扩展不同于适用于移动应用程序�
 | 自定义参数 | 支持 | 不支持每个mbox参数 |
 | 登录受众 | 支持 | 支持 |
 | 使用移动生命周期量度的受众分段 | 支持 | 通过数据收集规则支持 |
-| thirdPartyId (mbox3rdPartyId) | 通过数据流中的身份映射和命名空间配置支持 |
+| thirdPartyId (mbox3rdPartyId) | 支持 | 通过数据流中的身份映射和命名空间配置支持 |
 | 通知（显示、点击） | 支持 | 支持 |
 | 响应令牌 | 支持 | 支持 |
 | 动态选件 | 支持 | 支持 |
