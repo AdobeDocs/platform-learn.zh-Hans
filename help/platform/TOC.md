@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 988e0bfbcf43d8148aac86e2b85cdaec82f19650
+source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '939'
 ht-degree: 17%
 
 ---
@@ -39,7 +39,8 @@ ht-degree: 17%
 + 管理 {#admin}
    + [使用警报](/help/platform/admin/use-alerts.md)
    + [使用沙盒](/help/platform/admin/use-sandboxes.md)
-   + [在沙盒之间复制对象](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [在沙盒之间复制包](/help/platform/admin/copy-objects-between-sandboxes.md)
+   + [跨IMS组织共享包](/help/platform/admin/share-packages-across-orgs.md)
    + [添加用户](/help/platform/admin/add-users.md)
    + [将用户添加到数据集合](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
    + [添加开发人员](/help/platform/admin/add-developers.md)
