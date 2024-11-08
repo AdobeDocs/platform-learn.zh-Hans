@@ -1,0 +1,83 @@
+---
+title: 快速入门 — 使用移动应用程序
+description: 快速入门 — 使用移动应用程序
+kt: 5342
+doc-type: tutorial
+source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+workflow-type: tm+mt
+source-wordcount: '396'
+ht-degree: 0%
+
+---
+
+# 0.5使用移动设备应用程序
+
+## 0.5.1下载应用程序
+
+转到计算机上的[https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app)。 你会看到这个。
+
+![DSN](./images/mobileapp.png)
+
+使用智能手机上的&#x200B;**摄像头**&#x200B;应用为你的设备操作系统安装移动应用。 对于此支持，您需要安装使用Adobe Experience Platform Mobile SDK的&#x200B;**版本2.x**。
+
+>[!NOTE]
+>
+>在iOS设备上首次安装应用程序后，在尝试打开应用程序时可能会收到一条错误消息，显示：**不受信任的企业开发人员**。 要解决此问题，您需要转到&#x200B;**设置>常规>设备管理> Adobe Systems Inc.**，然后单击&#x200B;**信任Adobe Systems Inc.**。
+
+安装应用程序后，您将在设备的主屏幕上找到该应用程序。 单击图标以打开应用程序。
+
+![DSN](./images/mobileappn1.png)
+
+首次使用应用程序时，系统会要求您使用Adobe ID登录。 完成登录过程。
+
+![DSN](./images/mobileappn2.png)
+
+登录后，您将看到一条通知，请求您发送通知的权限。 我们将在本教程中发送通知，因此请单击&#x200B;**允许**。
+
+![DSN](./images/mobileappn3.png)
+
+然后，您将看到该应用程序的主页。 转到&#x200B;**设置**。
+
+![DSN](./images/mobileappn4.png)
+
+在设置中，您会看到当前应用程序中已加载&#x200B;**公共项目**。 单击&#x200B;**自定义项目**。
+
+![DSN](./images/mobileappn5.png)
+
+您现在可以加载自定义项目。 单击二维码可轻松加载项目。
+
+![DSN](./images/mobileappn6.png)
+
+0.1练习后得到了这个结果。 单击以打开为您创建的&#x200B;**移动零售项目**。
+
+![DSN](./images/dsn5b.png)
+
+如果您意外关闭了浏览器窗口，或者为了将来演示或支持会议，还可以转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)访问您的网站项目。 使用Adobe ID登录后，您将看到此内容。 单击您的移动应用程序项目以将其打开。
+
+![DSN](./images/web8a.png)
+
+你会看到这个。 单击&#x200B;**集成**。
+
+![DSN](./images/web8aa.png)
+
+您需要选择在练习0.1中创建的移动设备的数据收集属性。接下来，单击&#x200B;**运行**。
+
+![DSN](./images/web8b.png)
+
+随后您将看到一个弹出窗口，其中包含二维码。 在移动设备应用程序中扫描此二维码。
+
+![DSN](./images/web8c.png)
+
+然后，您将在应用程序中看到项目ID，随后可单击&#x200B;**保存**。
+
+![DSN](./images/mobileappn7.png)
+
+现在，返回应用程序中的&#x200B;**主页**。 您的应用程序现已准备就绪，可供使用。
+
+![DSN](./images/mobileappn8.png)
+
+您现在已完成模块0。
+
+[返回模块0](./getting-started.md)
+
+[返回所有模块](./../../../overview.md)
