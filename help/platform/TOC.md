@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
+source-git-commit: b52630da0ff68b8784ebd70afd3472c39e984844
 workflow-type: tm+mt
-source-wordcount: '939'
-ht-degree: 17%
+source-wordcount: '942'
+ht-degree: 16%
 
 ---
 
@@ -48,6 +48,7 @@ ht-degree: 17%
    + [配置基于属性的访问控制](/help/platform/admin/configure-attribute-based-access-control.md)
 + AI 助手 {#ai-assistant}
    + [概述](/help/platform/ai-assistant/overview.md)
+   + [设置访问权限](/help/platform/ai-assistant/access.md)
    + [清理受众](/help/platform/ai-assistant/find-unused-audiences.md)
 + 受众和分段{#audiences}
    + [受众门户和构成简介](audiences/introduction-to-audience-portal-and-composition.md)
