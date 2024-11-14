@@ -4,14 +4,14 @@ description: 快速入门 — 为Experience League文档安装Chrome扩展
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 57d12036519ab066b713496669ffdc895d3b4825
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
 
-# 0.1.1安装适用于Experience League文档的Chrome扩展
+# 安装适用于Experience League文档的Chrome扩展
 
 ## 关于Chrome扩展
 
@@ -35,7 +35,7 @@ ht-degree: 0%
 
 ![DSN](./images/mod7.png)
 
-## 0.1.1.1安装Chrome扩展
+## 安装Chrome扩展
 
 要安装该Chrome扩展，请打开Chrome浏览器，然后转到： [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi)。 你会看到这个。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ![DSN](./images/c6.png)
 
-## 0.1.1.2配置Chrome扩展
+## 配置Chrome扩展
 
 转到[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview)，然后单击扩展图标以将其打开。
 
@@ -133,7 +133,7 @@ LDAP用于确保您即将执行的配置将链接到您，并且不会与您正�
 
 ![DSN](./images/c10.png)
 
-## 0.1.1.3验证教程内容
+## 验证教程内容
 
 作为测试，请转到[此页面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3)。
 
@@ -141,10 +141,10 @@ LDAP用于确保您即将执行的配置将链接到您，并且不会与您正�
 
 您现在应具有类似于下面的视图，其中环境变量`aepTenantId`已被您的实际AEP租户ID替换，在本例中为&#x200B;**_experienceplatform**。
 
-![DSN](./images/c12.png)
+![DSN](./images/mod7.png)
 
-下一步： [0.2使用演示系统设置Adobe Experience Platform数据收集客户端属性](./ex2.md)
+下一步：[使用演示系统下一步设置您的Adobe Experience Platform数据收集客户端属性](./ex2.md)
 
-[返回模块0](./getting-started.md)
+[返回快速入门](./getting-started.md)
 
 [返回所有模块](./../../../overview.md)

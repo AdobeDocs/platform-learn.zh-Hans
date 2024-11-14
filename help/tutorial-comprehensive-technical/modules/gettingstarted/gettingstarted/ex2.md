@@ -3,40 +3,37 @@ title: 快速入门 — 使用演示系统设置您的Launch资产
 description: 快速入门 — 使用演示系统设置您的Launch资产
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
+source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-# 0.2使用Demo System Next设置您的Adobe Experience Platform数据收集客户端资产
+# 使用Demo System Next设置您的Adobe Experience Platform数据收集客户端资产
 
-注册Adobe Experience Platform全面技术教程后，系统将自动为您提供对演示系统的访问权限，以便您访问和运行以下配置。
+为了在本教程中直观地了解所学到的知识并使您能够在安全的环境中测试您的配置，本教程正在使用Adobe的Demo System Next工具。 为了充分利用本教程，需要将AEP实例配置为与演示系统下一步集成。
 
-访问演示系统后，请继续执行以下步骤。
+获得演示系统访问权限后，请继续执行以下步骤。
 
-转到[https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)。 选择您的沙盒，然后单击&#x200B;**快速设置**。
+转到[https://dsn.adobe.com/](https://dsn.adobe.com/)并导航到&#x200B;**安装程序**。
+
+![DSN](./images/dsnsetup.png)
+
+在&#x200B;**环境**&#x200B;下拉列表中，选择您的AEP实例和沙盒。
 
 ![DSN](./images/dsnh1.png)
 
-您将看到以下内容：
+接下来，选择预设&#x200B;**AEP教程用户**。
 
 ![DSN](./images/dsnhome.png)
 
-在&#x200B;**常规** - **环境**&#x200B;下，选择您的Adobe Experience Platform实例和沙盒，在本例中：
-
-- **Experience Platform国际**
-- **aepenablementfy22**
-- 配置：请选择&#x200B;**Global v2.0**
-
-![DSN](./images/dsn1.png)
-
-接下来，选择预设&#x200B;**启用用户**，然后单击&#x200B;**开始**。
+接下来，单击&#x200B;**开始**。
 
 ![DSN](./images/dsn2.png)
 
-在弹出窗口中，输入数据收集属性的名称。 请使用此命名约定：**演示系统(DD/MM/YYYY)**。 仅供参考：您的LDAP将自动附加，您无需自行添加。
+在弹出窗口中，输入数据收集属性和Experience Builder项目的名称。 请使用此命名约定：**演示系统(DD/MM/YYYY)**。 仅供参考：您的LDAP将自动附加，您无需自行添加。
 
 单击&#x200B;**开始**。
 
@@ -48,9 +45,9 @@ ht-degree: 0%
 
 完成快速设置过程后，您将拥有：
 
-- 1个Web零售项目，这使得能够使用Luma演示品牌的演示网站成为可能
-- 1个移动零售项目，该项目允许将演示移动应用程序与Luma演示品牌结合使用
-- 1 CX App Retail项目，这使得通过Luma演示品牌使用呼叫中心和客户代理应用程序成为可能
+- 1个web项目，因此可以使用带有telco演示品牌的演示网站
+- 1个移动应用程序项目，因此可以将演示移动应用程序与电信演示品牌结合使用
+- 1个CX App项目，因此可以使用带有telco演示品牌的呼叫中心应用程序
 - 1个用于Web的数据收集属性，您将使用该属性从网站收集数据
 - 1个用于移动设备的数据收集属性，您将使用该属性从移动设备应用程序中收集数据
 
@@ -58,8 +55,8 @@ ht-degree: 0%
 
 在后续步骤中根据需要保持此屏幕打开。
 
-下一步： [0.3创建您的数据流](./ex3.md)
+下一步：[创建您的数据流](./ex3.md)
 
-[返回模块0](./getting-started.md)
+[返回快速入门](./getting-started.md)
 
 [返回所有模块](./../../../overview.md)
