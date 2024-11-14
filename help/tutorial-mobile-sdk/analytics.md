@@ -4,9 +4,9 @@ description: 了解如何在移动应用程序中收集和映射Adobe Analytics�
 solution: Data Collection,Experience Platform,Analytics
 jira: KT-14636
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
-source-git-commit: 30dd0142f1f5220f30c45d58665b710a06c827a8
+source-git-commit: 7dfa14081e87489f908084e93722f67643fd5984
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '1023'
 ht-degree: 1%
 
 ---
@@ -129,7 +129,7 @@ s.events = "scAdd:321435"
 
 ## 使用保证功能进行验证
 
-使用[保证](assurance.md)，您可以确认正在发送体验事件，XDM数据正确，并且Analytics映射按预期发生。
+使用[Assurance](assurance.md)，您可以确认正在发送体验事件，XDM数据正确，并且Analytics映射按预期进行。
 
 1. 查看[设置说明](assurance.md#connecting-to-a-session)部分以将模拟器或设备连接到Assurance。
 
@@ -306,6 +306,17 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >[!TIP]
 >
 >与以前的移动应用程序实施不同，页面/屏幕查看次数与其他事件之间没有区别。 相反，您可以通过在处理规则中设置&#x200B;**[!UICONTROL 页面名称]**&#x200B;维度来递增&#x200B;**[!UICONTROL 页面查看]**&#x200B;量度。 由于您正在教程中收集自定义`screenName`字段，因此强烈建议在处理规则中将屏幕名称映射到&#x200B;**[!UICONTROL 页面名称]**。
+
+## 从Analytics移动扩展迁移
+
+如果您使用[Adobe Analytics移动扩展](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application)开发移动应用程序，则很可能使用了[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction)和[`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API调用。
+
+如果决定迁移以使用推荐的Edge Network，您有以下选项：
+
+* 实施[Edge Network扩展](configure-tags.md#extension-configuration)并使用[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent) API，如如何[跟踪事件数据](events.md)课程中所述。 本教程重点介绍此实施。
+* 实施[Edge Bridge扩展](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension)，并继续使用您的[`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction)和[`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API调用。 有关更多详细信息和单独的教程，请参阅[实施Edge Bridge扩展](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension)。
+
+
 
 
 >[!SUCCESS]

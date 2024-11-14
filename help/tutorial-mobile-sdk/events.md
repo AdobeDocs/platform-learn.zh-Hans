@@ -3,7 +3,7 @@ title: 使用Platform Mobile SDK跟踪移动应用程序中的事件数据
 description: 了解如何跟踪移动应用程序中的事件数据。
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: afb15c561179386e7846e8cd8963f67820af09f1
 workflow-type: tm+mt
 source-wordcount: '1328'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Edge Network扩展提供了一个将Experience事件发送到PlatformEdge Networ
 * 基于标准字段组发送XDM事件。
 * 基于自定义字段组发送XDM事件。
 * 发送XDM购买事件。
-* 使用保障进行验证。
+* 使用Assurance进行验证。
 
 ## 构建体验事件
 
@@ -121,9 +121,9 @@ Adobe Experience Platform Edge扩展可以将遵循之前定义的XDM架构的�
 您的应用程序中有不同的商业产品相关操作，并且您要根据用户执行的以下操作发送事件：
 
 * 视图：在用户查看特定产品时发生，
-* 添加到购物车：用户点击时 产品详细信息屏幕中的<img src="assets/addtocart.png" width="20" />，
-* 暂存：用户点击时 产品详细信息屏幕中的<img src="assets/saveforlater.png" width="15" />，
-* 购买：用户点击时 产品详细信息屏幕中的<img src="assets/purchase.png" width="20" />。
+* 添加到购物车：用户点击时 产品详细信息屏幕中的<img src="assets/addtocart.png" width="20"/>，
+* 暂存：用户点击时 产品详细信息屏幕中的<img src="assets/saveforlater.png" width="15"/>，
+* 购买：用户点击时 产品详细信息屏幕中的<img src="assets/purchase.png" width="20"/>。
 
 要以可重用方式实施与商业相关的体验事件的发送，请使用专用函数：
 
@@ -166,23 +166,23 @@ Adobe Experience Platform Edge扩展可以将遵循之前定义的XDM架构的�
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. 对于每个按钮(<img src="assets/saveforlater.png" width="15" />， <img src="assets/addtocart.png" width="20" />和 <img src="assets/purchase.png" width="20" />)，在`ATTrackingManager.trackingAuthorizationStatus == .authorized`结束位置内添加相关调用：
+   1. 对于每个按钮(<img src="assets/saveforlater.png" width="15"/>， <img src="assets/addtocart.png" width="20"/>和 <img src="assets/purchase.png" width="20"/>)，在`ATTrackingManager.trackingAuthorizationStatus == .authorized`结束位置内添加相关调用：
 
-      1. 对象 <img src="assets/saveforlater.png" width="15" />：
+      1. 对象 <img src="assets/saveforlater.png" width="15"/>：
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. 对象 <img src="assets/addtocart.png" width="20" />：
+      1. 对象 <img src="assets/addtocart.png" width="20"/>：
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. 对象 <img src="assets/purchase.png" width="20" />：
+      1. 对象 <img src="assets/purchase.png" width="20"/>：
 
          ```swift
          // Send purchase commerce experience event
@@ -338,15 +338,15 @@ Adobe Experience Platform Edge扩展可以将遵循之前定义的XDM架构的�
 
 ## 验证
 
-1. 查看[设置说明](assurance.md#connecting-to-a-session)部分，将模拟器或设备与Assurance连接。
+1. 查看[设置说明](assurance.md#connecting-to-a-session)部分，将您的模拟器或设备连接到Assurance。
 
-   1. 将“Assurance（保证）”图标向左移动。
+   1. 将Assurance图标向左移动。
    1. 在选项卡栏中选择&#x200B;**[!UICONTROL Home]**，并验证您是否在Home屏幕中看到&#x200B;**[!UICONTROL ECID]**、**[!UICONTROL 电子邮件]**&#x200B;和&#x200B;**[!UICONTROL CRM ID]**。
    1. 在选项卡栏中选择&#x200B;**[!DNL Products]**。
    1. 选择产品。
-   1. 选择 <img src="assets/saveforlater.png" width="15" />。
-   1. 选择 <img src="assets/addtocart.png" width="20" />。
-   1. 选择 <img src="assets/purchase.png" width="15" />。
+   1. 选择 <img src="assets/saveforlater.png" width="15"/>。
+   1. 选择 <img src="assets/addtocart.png" width="20"/>。
+   1. 选择 <img src="assets/purchase.png" width="15"/>。
 
       <img src="./assets/mobile-app-events-3.png" width="300">
 
