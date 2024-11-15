@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer
 description: 在本模块中，您将学习关于Journey Optimizer的所有须知内容，这有助于企业为其客户设计和提供互联、情境式和个性化的体验。
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '349'
 ht-degree: 2%
 
 ---
@@ -31,7 +32,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->请按照[0.1 — 为Experience League文档](../../gettingstarted/gettingstarted/ex1.md)安装ChromeChrome扩展
+>请按照[为Experience League文档安装Chrome扩展](../../gettingstarted/gettingstarted/ex1.md)中所述，安装、配置并使用Chrome扩展
 
 ## 练习
 

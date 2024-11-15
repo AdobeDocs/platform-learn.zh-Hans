@@ -3,9 +3,10 @@ title: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置
 description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置 — 客户端Web数据收集
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ### 安装Adobe Experience Platform Debugger
 
-Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展，可帮助您查看在网页中实施的Adobe技术。 下载首选浏览器的版本：
+Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展，可帮助您查看在网页中实施的Adobe技术。 为您的首选浏览器安装此版本：
 
 - [Firefox扩展](https://addons.mozilla.org/zh-CN/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -37,13 +38,9 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 
 ### 打开演示网站
 
-转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
+转到[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**运行**&#x200B;以将其打开。
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-在&#x200B;**Screens**&#x200B;页面上，单击&#x200B;**运行**。
-
-![DSN](./images/web2.png)
+![DSN](.//images/web8.png)
 
 随后您将看到您的演示网站已打开。 选择URL并将其复制到剪贴板。
 
@@ -77,15 +74,19 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 
 ![AEP调试器](./images/validate2.png)
 
+然后，您将登录到Debugger。
+
+![AEP调试器](./images/validate2ab.png)
+
 单击演示网站上的“重新加载”按钮，将调试器连接到该特定选项卡。
 
 ![AEP调试器](./images/validate2a.png)
 
-确认Debugger已&#x200B;**[!UICONTROL 连接到主页]**（如上图所示），然后单击&#x200B;**[!UICONTROL 锁定]**&#x200B;图标将Debugger锁定到演示网站。 如果不这样做，Debugger将不断切换以显示任何焦点浏览器选项卡的实施详细信息，这可能会造成混淆。
+确认Debugger已&#x200B;**[!UICONTROL 连接到主页]**（如上图所示），然后单击&#x200B;**[!UICONTROL 锁定]**&#x200B;图标将Debugger锁定到演示网站。 如果不这样做，Debugger将不断切换以显示任何焦点浏览器选项卡的实施详细信息，这可能会造成混淆。 锁定调试器后，图标将更改为&#x200B;**解锁**。
 
 ![AEP调试器](./images/validate3.png)
 
-接下来，转到演示网站上的任何页面，例如&#x200B;**Men**&#x200B;类别页面。
+接下来，转到演示网站上的任何页面，例如&#x200B;**计划**&#x200B;类别页面。
 
 ![AEP调试器AEP Web SDK扩展](./images/validate4.png)
 
@@ -99,7 +100,7 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 
 ![事件值](./images/validate8.png)
 
-这些类型的请求详细信息也会显示在“网络”选项卡中。 筛选与&#x200B;**interact**&#x200B;的请求，以查找Web SDK发送的请求。 您可以在请求有效负载标头中找到XDM有效负载的所有详细信息：
+这些类型的请求详细信息也会显示在“网络”选项卡中。 筛选与&#x200B;**interact**&#x200B;的请求，以查找Web SDK发送的请求。 您可以在有效负载部分中找到有关XDM有效负载的所有详细信息：
 
 ![网络选项卡](./images/validate9.png)
 

@@ -3,9 +3,10 @@ title: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩展 �
 description: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩展 — 实施Adobe Analytics和Adobe Audience Manager
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
@@ -14,19 +15,19 @@ ht-degree: 0%
 
 ## 上下文
 
-您现在知道XDM数据正在流入平台。 您将详细了解[模块2](./../module1.2/data-ingestion.md)中的XDM是什么，以及如何构建您自己的架构以跟踪自定义变量。 现在，您将看到设置数据流以将数据转发到Analytics和Audience Manager时发生的情况。
+您现在知道XDM数据正在流入平台。 您将详细了解[模块1.2](./../module1.2/data-ingestion.md)中的XDM是什么，以及如何构建您自己的架构以跟踪自定义变量。 现在，您将看到设置数据流以将数据转发到Analytics和Audience Manager时发生的情况。
 
 ## 1.1.5.1 Analytics中的映射变量
 
 Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽快通过Web SDK快速完成新的Analytics实施。 自动映射的变量在[此处](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)列出。
 
-对于未自动映射到[!DNL Adobe Analytics]的XDM数据，您可以使用[上下文数据](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=zh-Hans)来匹配您的[架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)。 然后，可以使用[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)将其映射到[!DNL Analytics]以填充[!DNL Analytics]变量。 上下文数据和处理规则将是以前与Analytics一起使用的概念所熟悉的概念，但如果它们是新概念，则现在无需担心详细信息。
+对于未自动映射到Adobe Analytics的XDM数据，您可以使用[上下文数据](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=zh-Hans)来匹配您的[架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)。 然后，可以使用[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)将其映射到Analytics中以填充Analytics变量。 上下文数据和处理规则将是以前与Analytics一起使用的概念所熟悉的概念，但如果它们是新概念，则现在无需担心详细信息。
 
-您还可以使用一组默认的操作和产品列表来通过AEP [!DNL Web SDK]发送或检索数据。 为此，请参阅[产品](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection)。
+您还可以使用一组默认的操作和产品列表，通过AEP Web SDK发送或检索数据。 为此，请参阅[产品](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection)。
 
 ### 上下文数据
 
-为了供[!DNL Analytics]使用，XDM数据使用点表示法扁平化并作为`contextData`提供。 以下值对列表显示了`context data`的示例：
+为了供Analytics使用，XDM数据使用点表示法扁平化并作为`contextData`提供。 以下值对列表显示了`context data`的示例：
 
 ```javascript
 {
@@ -53,7 +54,7 @@ Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽�
 
 ### 处理规则
 
-可以通过[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)访问边缘网络收集的所有数据。 在[!DNL Analytics]中，您可以使用处理规则将上下文数据纳入[!DNL Analytics]变量。
+可以通过[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)访问边缘网络收集的所有数据。 在Analytics中，您可以使用处理规则将上下文数据纳入Analytics变量。
 
 ## 1.1.5.2Experience PlatformEdge Network上的Audience Manager
 

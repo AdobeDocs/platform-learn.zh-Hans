@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: a7218d65-422b-48e5-89fa-864c5af8d1c6
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '365'
 ht-degree: 2%
 
 ---
@@ -38,7 +38,7 @@ Adobe Journey Optimizer允许创建个性化优惠，并以协调的方式将其
 
 >[!NOTE]
 >
->请按照[0.1 — 为Experience League文档](../../gettingstarted/gettingstarted/ex1.md)安装ChromeChrome扩展
+>请按照[为Experience League文档安装Chrome扩展](../../gettingstarted/gettingstarted/ex1.md)中所述，安装、配置并使用Chrome扩展
 
 ## 练习
 

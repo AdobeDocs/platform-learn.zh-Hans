@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer — 配置基于触发器的历程 — 订单确�
 description: 在此部分中，您将配置基于触发器的历程 — 订单确认
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1998'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -404,10 +405,6 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-在&#x200B;**Screens**&#x200B;页面上，单击&#x200B;**运行**。
-
-![DSN](./../../../modules/datacollection/module1.1/images/web2.png)
 
 随后您将看到您的演示网站已打开。 选择URL并将其复制到剪贴板。
 

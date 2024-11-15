@@ -3,9 +3,10 @@ title: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置
 description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置 — 说明Adobe Experience Platform数据收集
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '504'
 ht-degree: 2%
 
 ---
@@ -42,7 +43,12 @@ Adobe Experience Platform数据收集由品牌商用于许多用例。 它是新
 - **[!UICONTROL 标记]**&#x200B;概述了所有客户端属性
 - **[!UICONTROL 应用程序表面]**&#x200B;概述了用于启用推送通知（与Sierra项目结合使用/启用）的所有应用程序配置
 - **[!UICONTROL 数据流]**&#x200B;将在[下一个练习](./ex2.md)中探讨
-- **[!UICONTROL 事件转发]**&#x200B;概述了[模块14 - Real-Time CDP连接：事件转发](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)中探索的所有服务器端属性
+- **[!UICONTROL 事件转发]**&#x200B;概述了[模块2.5 - Real-Time CDP连接：事件转发](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)中探索的所有服务器端属性
+- **[!UICONTROL 监控]**&#x200B;概述通过事件转发的传入和传出事件流量
+- **[!UICONTROL Assurance]**&#x200B;提供使用Adobe Debugger调试实现的访问权限
+- **[!UICONTROL 位置]**&#x200B;提供用于管理POI的访问权限，在移动应用程序中基于位置的个性化可访问这些POI
+- **[!UICONTROL 架构]**&#x200B;提供对Adobe Experience Platform架构编辑器的访问权限
+- **[!UICONTROL 身份]**&#x200B;提供对Adobe Experience Platform身份图设置的访问权限
 
 ## 更多信息
 

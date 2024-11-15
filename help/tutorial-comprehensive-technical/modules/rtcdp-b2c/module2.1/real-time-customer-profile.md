@@ -4,9 +4,10 @@ description: Foundation — 实时客户档案
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '423'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->请按照[0.1 — 为Experience League文档](../../gettingstarted/gettingstarted/ex1.md)安装ChromeChrome扩展
+>请按照[为Experience League文档安装Chrome扩展](../../gettingstarted/gettingstarted/ex1.md)中所述，安装、配置并使用Chrome扩展
 
 ## 练习
 

@@ -3,10 +3,11 @@ title: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩展 �
 description: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩展 — 实施Adobe Target
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 0%
+source-wordcount: '169'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +27,7 @@ ht-degree: 0%
 
 ![AEP调试器](./images/aa2.png)
 
-你会看到这个。 选择服务&#x200B;**Adobe Target**，您可以在此之后选择提供其他信息。 此时无需保存此内容，因此请单击&#x200B;**取消**。
+你会看到这个。 选择服务&#x200B;**Adobe Target**，您可以在此之后选择提供其他信息。 单击&#x200B;**保存**。
 
 ![AEP调试器](./images/at1.png)
 

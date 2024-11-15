@@ -3,16 +3,15 @@ title: 1.1设置Adobe Experience Platform数据收集和Web SDK扩展
 description: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩展
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: b69ebe41-ff28-4dde-b639-198201120742
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
 
 # 1.1基础 — 设置Adobe Experience Platform数据收集和Web SDK扩展
-
-**作者：[Matthew Joseph Woolley](https://www.linkedin.com/in/matthewjwoolley/)，[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 此基础模块向您介绍Adobe的数据收集愿景，并介绍如何通过Adobe Experience Platform数据收集、Adobe Experience Platform SDK和Adobe Experience PlatformEdge Network将数据从网站和移动应用程序获取到Adobe Experience Platform和其他应用程序中。 本模块介绍的一些概念和技术所产生的影响超出Adobe Experience Platform技术教程的范围。 您应该清楚，这些练习的哪些部分是本全面教程其余部分的基础(这些部分将向您提供更多有关Experience Edge及其功能的信息)，以及在何处可查看更多信息和教程。
 
@@ -35,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->请按照[0.1 — 为Experience League文档](../../gettingstarted/gettingstarted/ex1.md)安装ChromeChrome扩展
+>请按照[为Experience League文档安装Chrome扩展](../../gettingstarted/gettingstarted/ex1.md)中所述，安装、配置并使用Chrome扩展
 
 ## 练习
 

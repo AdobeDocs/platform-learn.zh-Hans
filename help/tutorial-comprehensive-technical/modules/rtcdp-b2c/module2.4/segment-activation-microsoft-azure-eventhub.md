@@ -3,9 +3,10 @@ title: 区段激活到Microsoft Azure事件中心
 description: 区段激活到Microsoft Azure事件中心
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 23713cb4-2055-43e8-9380-0ca8845a75e8
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ Microsoft Azure事件中心是一项完全托管的实时数据摄取服务，�
 
 >[!NOTE]
 >
->请按照[0.1 — 为Experience League文档](../../gettingstarted/gettingstarted/ex1.md)安装ChromeChrome扩展
+>请按照[为Experience League文档安装Chrome扩展](../../gettingstarted/gettingstarted/ex1.md)中所述，安装、配置并使用Chrome扩展
 
 ## 练习
 

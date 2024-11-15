@@ -3,9 +3,10 @@ title: Adobe Experience Platform数据收集和实时服务器端转发
 description: 在本模块中，您将使用之前配置的数据集、架构和Adobe Experience Platform数据收集服务器属性来收集数据，然后将该数据服务器端转发到所选的端点。
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->请按照[0.1 — 为Experience League文档](../../gettingstarted/gettingstarted/ex1.md)安装ChromeChrome扩展
+>请按照[为Experience League文档安装Chrome扩展](../../gettingstarted/gettingstarted/ex1.md)中所述，安装、配置并使用Chrome扩展
 
 ## 练习
 

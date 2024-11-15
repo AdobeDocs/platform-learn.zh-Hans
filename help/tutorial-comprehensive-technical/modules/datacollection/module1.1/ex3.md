@@ -3,9 +3,10 @@ title: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置
 description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置 — Adobe Experience Platform数据收集简介
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1273'
 ht-degree: 9%
 
 ---
@@ -26,31 +27,30 @@ ht-degree: 9%
 
 ![属性页](./images/launch1.png)
 
-在模块0中，演示系统为您创建了两个客户端属性：一个用于网站，另一个用于移动应用程序。 通过在&#x200B;**[!UICONTROL 搜索]**&#x200B;框中搜索`--aepUserLdap--`来查找它们。
+在&#x200B;**快速入门**&#x200B;中，演示系统为您创建了两个客户端属性：一个用于网站，另一个用于移动应用程序。 通过在&#x200B;**[!UICONTROL 搜索]**&#x200B;框中搜索`--aepUserLdap--`来查找它们。
+单击以打开**Web**&#x200B;属性。
 
 ![搜索框](./images/property6.png)
 
-打开&#x200B;**Web**&#x200B;属性。
 
-然后，您将看到资产概述页面。 单击左边栏中的&#x200B;**[!UICONTROL 扩展]**。 单击Adobe Experience Platform Web SDK扩展下的&#x200B;**[!UICONTROL 配置]**&#x200B;按钮。
+
+然后，您将看到资产概述页面。 单击左边栏中的&#x200B;**[!UICONTROL 扩展]**，单击&#x200B;**Adobe Experience Platform Web SDK**，然后单击&#x200B;**[!UICONTROL 配置]**。
 
 ![属性概述页面](./images/property7.png)
 
-欢迎使用Adobe Experience Platform Web SDK！ 在这里，您可以使用在[练习0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)中创建的数据流以及某些更高级的配置来配置该扩展。 您只需为此练习配置两个设置。
+欢迎使用Adobe Experience Platform Web SDK！ 在这里，您可以使用在[快速入门](./../../../modules/gettingstarted/gettingstarted/ex2.md)中创建的数据流以及某些更高级的配置来配置该扩展。
 
-默认Edge域始终为&#x200B;**edge.adobedc.net**。 如果您已在Adobe Experience Cloud或Adobe Experience Platform环境中实施CNAME配置，则需要更新&#x200B;**[!UICONTROL Edge域]**。 您的Adobe Experience Platform实例正在使用此Edge域： `--webSdkEdgeDomain--`。
+默认边缘域始终为&#x200B;**edge.adobedc.net**。 如果您已在Adobe Experience Cloud或Adobe Experience Platform环境中实施CNAME配置，则需要更新&#x200B;**[!UICONTROL Edge域]**。
 
-如果您实例的Edge域与默认域不同，请更新Edge域。 通过Edge域，可以配置第一方跟踪服务器，然后在后端使用CNAME配置以确保将数据收集到Adobe中。
+如果实例的边缘域不同于默认域，请在此处更新边缘域。 如果您不确定，请使用默认域。 利用边缘域，可以配置第一方跟踪服务器，然后在后端使用CNAME配置以确保将数据收集到Adobe中。
 
 ![扩展主页](./images/property9edgedomain.png)
 
-现在，确保在&#x200B;**[!UICONTROL 数据流]**&#x200B;标题下选择了&#x200B;**[!UICONTROL 从列表选择]**&#x200B;单选按钮，并从&#x200B;**[!UICONTROL 数据流]**&#x200B;框的列表中选择名为`--aepUserLdap-- - Demo System Datastream`的数据流。
-
-![扩展主页](./images/property9edge.png)
+在&#x200B;**[!UICONTROL 数据流]**&#x200B;下，您已在&#x200B;**快速入门**&#x200B;部分中选择了数据流。 您从每个环境的&#x200B;**[!UICONTROL 数据流]**&#x200B;框中的列表中选择了此数据流`--aepUserLdap-- - Demo System Datastream`。
 
 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以返回扩展视图。
 
-![Adobe Experience Platform Web SDK主页](./images/save.png)
+![扩展主页](./images/property9edge.png)
 
 ## 1.1.3.2数据元素
 
@@ -104,11 +104,13 @@ Adobe Experience Platform数据收集是一个基于规则的系统。 它可查
 
 ![媒体 — 文章页面规则搜索](./images/rule1.png)
 
-让我们看一下构成此规则的各个元素。 对于所有规则如果发生指定的&#x200B;**[!UICONTROL Event]**，则计算&#x200B;**[!UICONTROL Conditions]**，然后根据需要执行指定的&#x200B;**[!UICONTROL 操作]**。
+让我们看一下构成此规则的各个元素。
+
+对于所有规则：如果发生指定的&#x200B;**[!UICONTROL Event]**，则计算&#x200B;**[!UICONTROL Conditions]**，然后根据需要执行指定的&#x200B;**[!UICONTROL 操作]**。
 
 ![媒体 — 文章页面规则](./images/rule2.png)
 
-单击事件&#x200B;**自定义事件 — 产品视图**。 这是加载的视图。
+单击事件&#x200B;**核心 — 自定义事件**。 这是加载的视图。
 
 单击&#x200B;**事件类型**&#x200B;下拉列表。
 
@@ -118,9 +120,11 @@ Adobe Experience Platform数据收集是一个基于规则的系统。 它可查
 
 单击&#x200B;**[!UICONTROL 取消]**&#x200B;以返回规则。
 
-单击操作&#x200B;**将“产品查看”事件发送到AEP**。
+单击操作&#x200B;**发送“产品视图”体验事件**。
 
-在这里，您可以看到由Adobe Experience Platform Web SDK发送到Adobe Edge的数据。 更具体地说，它使用的是Web SDK的&#x200B;**alloy** **[!UICONTROL Instance]**。 设置另一个&#x200B;**[!UICONTROL 实例]**&#x200B;将允许使用不同的数据流，等等。 您已将&#x200B;**[!UICONTROL Type]**&#x200B;事件指定为&#x200B;**commerce.productViews**，并且您正在发送的XDM数据是您之前更改的&#x200B;**XDM — 产品视图**&#x200B;数据元素。
+![发送事件操作](./images/rule5a.png)
+
+在这里，您可以看到由Adobe Experience Platform Web SDK发送到边缘的数据。 更具体地说，它使用的是Web SDK的&#x200B;**alloy** **[!UICONTROL Instance]**。 事件&#x200B;**[!UICONTROL 类型]**&#x200B;设置为&#x200B;**Commerce产品（购物车）视图**，而您发送的XDM数据是您之前更改的&#x200B;**XDM — 产品视图**&#x200B;数据元素。
 
 ![发送事件操作](./images/rule5.png)
 
@@ -136,17 +140,14 @@ Adobe Experience Platform数据收集是一个基于规则的系统。 它可查
 
 ![库访问权限](./images/publish1.png)
 
-单击&#x200B;**添加所有已更改资源**&#x200B;按钮。
+单击&#x200B;**添加所有已更改资源**按钮。 下一步，
+单击**保存并生成以进行开发**&#x200B;按钮。
 
 ![库访问权限](./images/publish1a.png)
 
-向下滚动以查看大多数资源将保留为&#x200B;**修订版1（最新）**，但我们更改的两个资源 — **数据元素： ruleArticlePages**&#x200B;和&#x200B;**扩展： Adobe Experience Platform Web SDK**&#x200B;将仅标记为&#x200B;**最新**。
-
-单击&#x200B;**保存并生成以进行开发**&#x200B;按钮。
+库可能需要几分钟才能构建，完成后，库名称左侧将显示一个绿色圆点。
 
 ![内容库](./images/publish2.png)
-
-库可能需要几分钟才能构建，完成后，库名称左侧将显示一个绿色圆点。
 
 正如您可在发布流屏幕上看到的，Adobe Experience Platform数据收集中的发布流程还有许多其他内容，这些内容超出了本教程的范围。 我们将在开发环境中使用单个库。
 

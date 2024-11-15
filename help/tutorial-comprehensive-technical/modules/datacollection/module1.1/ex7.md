@@ -3,9 +3,10 @@ title: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩展 �
 description: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩展 — Adobe Experience Platform中的XDM架构要求
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ ht-degree: 0%
 
 ![AEP调试器](./images/exp3.png)
 
-在该架构上，您会看到已添加字段组&#x200B;**AEP Web SDK ExperienceEvent Mixin**。 此字段组将所有最低要求字段添加到架构中。 Web SDK将使用的Adobe Experience Platform中的每个Experience Event架构始终要求将该字段组作为架构的一部分。
+在该架构中，您会看到已添加字段组&#x200B;**AEP Web SDK ExperienceEvent**&#x200B;字段组。 此字段组将所有最低要求字段添加到架构中。 Web SDK将使用的Adobe Experience Platform中的每个Experience Event架构始终要求将该字段组作为架构的一部分。
 
 ![AEP调试器](./images/exp4.png)
 

@@ -3,9 +3,10 @@ title: 基础 — 数据摄取 — 从未知到在网站上已知
 description: 基础 — 数据摄取 — 从未知到在网站上已知
 kt: 5342
 doc-type: tutorial
-source-git-commit: c6ba1f751f18afe39fb6b746a62bc848fa8ec9bf
+exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '729'
 ht-degree: 1%
 
 ---
@@ -29,10 +30,6 @@ Platform是一个环境，其中单词&#x200B;**customer**&#x200B;比&#x200B;**k
 转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-在&#x200B;**Screens**&#x200B;页面上，单击&#x200B;**运行**。
-
-![DSN](../module1.1/images/web2.png)
 
 随后您将看到您的演示网站已打开。 选择URL并将其复制到剪贴板。
 

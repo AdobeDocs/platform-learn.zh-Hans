@@ -3,9 +3,10 @@ title: 使用BigQuery Source Connector在Adobe Experience Platform中摄取和�
 description: 使用BigQuery Source Connector在Adobe Experience Platform中摄取和分析Google Analytics数据
 kt: 5342
 doc-type: tutorial
-source-git-commit: f19f6b4a44a34af3c9545eb7f8735ef6ccf5d6c7
+exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
+source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ Adobe Experience Platform中的Source连接器可简化将数据导入Adobe Expe
 
 >[!NOTE]
 >
->请按照[0.1 — 为Experience League文档](../../gettingstarted/gettingstarted/ex1.md)安装ChromeChrome扩展
+>请按照[为Experience League文档安装Chrome扩展](../../gettingstarted/gettingstarted/ex1.md)中所述，安装、配置并使用Chrome扩展
 
 ## 练习
 
