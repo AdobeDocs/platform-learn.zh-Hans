@@ -1,5 +1,5 @@
 ---
-user-guide-title: “利用 Web SDK 实施 Adobe Experience Cloud”教程
+user-guide-title: 利用 Web SDK 实施 Adobe Experience Cloud 教程
 breadcrumb-title: Web SDK 教程
 solution: Data Collection
 feature: Web SDK,Tags
