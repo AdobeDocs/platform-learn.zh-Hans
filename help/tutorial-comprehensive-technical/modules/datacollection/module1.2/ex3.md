@@ -3,22 +3,23 @@ title: 基础 — 数据摄取 — 配置数据集
 description: 基础 — 数据摄取 — 配置数据集
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 94ef3e17-af28-4549-8a08-91b129ff4c93
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '571'
 ht-degree: 7%
 
 ---
 
 # 1.2.3配置数据集
 
-在本练习中，您将配置所需的数据集以捕获和存储用户档案信息和客户行为。 您在此项中创建的每个数据集都将使用您在上一步中构建的架构之一。
+在本练习中，您将配置数据集以捕获和存储用户档案信息和客户行为。 您在此项中创建的每个数据集都将使用您在上一步中构建的架构之一。
 
-## Story
+## 上下文
 
 在定义问题的答案后，**此客户是谁？**&#x200B;和&#x200B;**此客户做什么？**&#x200B;应该如下所示，您现在需要创建一个使用该信息的存储段，以接收并验证发送到Adobe Experience Platform的数据。
 
-## 1.2.3.1 — 创建数据集
+## 创建数据集
 
 您现在需要创建2个数据集：
 
@@ -45,39 +46,25 @@ ht-degree: 7%
 
 ![数据获取](./images/createdataset.png)
 
-单击&#x200B;**[!UICONTROL +创建数据集]**&#x200B;按钮后，您将看到以下屏幕。
-
-![数据获取](./images/datasetsetup.png)
-
 您必须使用上一步中定义的架构定义数据集。 单击&#x200B;**[!UICONTROL 从架构创建数据集]** — 选项。
 
 ![数据获取](./images/datasetfromschema.png)
 
 在下一个屏幕中，您必须选择在1， `--aepUserLdap-- - Demo System - Profile Schema for Website`中创建的架构。
 
+单击&#x200B;**下一步**。
+
 ![数据获取](./images/schemaselection.png)
-
-选择架构后，单击&#x200B;**[!UICONTROL 下一步]**&#x200B;继续。
-
-![数据获取](./images/next.png)
 
 让我们为您的数据集提供一个名称。
 
-将用作我们数据集的名称时，请使用以下代码：
+将用作数据集的名称时，请使用以下代码：
 
 `--aepUserLdap-- - Demo System - Profile Dataset for Website`
 
-例如，对于ldap **[!UICONTROL vangeluw]**，这应该是架构的名称：
-
-**[!UICONTROL vangeluw — 演示系统 — 网站的配置文件数据集]**
-
-这应该会给你这样的东西：
+单击&#x200B;**完成**。
 
 ![数据获取](./images/datasetname.png)
-
-单击&#x200B;**[!UICONTROL 完成]**&#x200B;以完成数据集配置。
-
-![数据获取](./images/finish.png)
 
 您现在将看到以下内容：
 
@@ -89,47 +76,34 @@ ht-degree: 7%
 
 接下来，您将配置第二个数据集以捕获网站交互。
 
-您应该创建一个新数据集。 要创建新数据集，请单击按钮&#x200B;**[!UICONTROL +创建数据集]**。
+单击&#x200B;**[!UICONTROL +创建数据集]**。
 
 ![数据获取](./images/createdataset.png)
 
-单击&#x200B;**[!UICONTROL +创建数据集]**&#x200B;按钮后，您将看到以下屏幕。
-
-![数据获取](./images/datasetsetup.png)
 
 您必须使用上一步中定义的架构定义数据集。 单击&#x200B;**[!UICONTROL 从架构创建数据集]** — 选项。
 
 ![数据获取](./images/datasetfromschema.png)
 
-在下一个屏幕中，您必须选择在2.2 `--aepUserLdap-- - Demo System - Event Schema for Website`中创建的架构。
+在下一个屏幕中，您必须选择您创建的架构`--aepUserLdap-- - Demo System - Event Schema for Website`。
+
+单击&#x200B;**下一步**。
 
 ![数据获取](./images/schemaselectionee.png)
 
-选择架构后，单击&#x200B;**[!UICONTROL 下一步]**&#x200B;继续。
-
-![数据获取](./images/next.png)
-
 让我们为您的数据集提供一个名称。
 
-作为我们的数据集的名称，我们将使用它：
+将用作我们数据集的名称时，请使用以下代码：
 
 `--aepUserLdap-- - Demo System - Event Dataset for Website`
 
-例如，对于ldap **[!UICONTROL vangeluw]**，这应该是架构的名称：
-
-**[!UICONTROL vangeluw — 演示系统 — 网站的事件数据集]**
-
-这应该会给你这样的东西：
+单击&#x200B;**完成**。
 
 ![数据获取](./images/datasetnameee.png)
 
-单击&#x200B;**[!UICONTROL 完成]**&#x200B;以完成数据集配置。
-
-![数据获取](./images/finish.png)
-
 您随后将看到以下内容：
 
-![数据获取](./images/finish1.png)
+![数据获取](./images/finish1ee.png)
 
 返回[!UICONTROL 数据集]概述屏幕。
 
@@ -137,15 +111,12 @@ ht-degree: 7%
 
 现在，您必须使数据集成为Adobe Experience Platform Real-time Customer Profile的一部分。
 
-单击以打开您的网站数据集`--aepUserLdap--` — 演示系统 — 个人资料数据集。
+单击数据集以将其打开`--aepUserLdap-- - Demo System - Profile Dataset for Website`。
 
 在屏幕右侧找到[!UICONTROL 配置文件]切换图标。
-
-![数据获取](./images/ds1.png)
-
 单击[!UICONTROL 配置文件]切换开关为[!UICONTROL 配置文件]启用此数据集。
 
-![数据获取](./images/ds2.png)
+![数据获取](./images/ds1.png)
 
 单击&#x200B;**[!UICONTROL 启用]**。
 
@@ -155,13 +126,9 @@ ht-degree: 7%
 
 返回数据集概述，并通过单击为网站打开您的数据集`--aepUserLdap-- - Demo System - Event Dataset`。
 
-在屏幕右侧找到[!UICONTROL 配置文件]切换图标。
+在屏幕右侧找到[!UICONTROL 配置文件]切换图标。 单击[!UICONTROL 配置文件]切换可启用[!UICONTROL 配置文件]。
 
 ![数据获取](./images/ds4.png)
-
-单击[!UICONTROL 配置文件]切换可启用[!UICONTROL 配置文件]。
-
-![数据获取](./images/ds2.png)
 
 单击&#x200B;**[!UICONTROL 启用]**。
 

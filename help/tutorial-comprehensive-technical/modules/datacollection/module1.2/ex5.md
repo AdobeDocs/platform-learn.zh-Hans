@@ -3,10 +3,11 @@ title: 基础 — 数据摄取 — 从离线源摄取数据
 description: 基础 — 数据摄取 — 从离线源摄取数据
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 1%
+source-wordcount: '771'
+ht-degree: 2%
 
 ---
 
@@ -21,11 +22,11 @@ ht-degree: 1%
 > Adobe Experience Platform **对上传到Data Landing Zone容器的所有文件强制实施严格的七天生存时间(TTL)**。 所有文件都会在七天后删除。
 
 
-## 1.2.5.1先决条件
+## 先决条件
 
-要将blob或文件复制到Adobe Experience Platform数据登陆区，您将使用命令行实用程序AzCopy 。 您可以通过[https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)下载操作系统的版本。
+要将blob或文件复制到Adobe Experience Platform数据登陆区，您将使用命令行实用程序AzCopy 。 您可以通过[https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10)下载操作系统的版本，在该页面上向下滚动到&#x200B;**下载AzCopy可移植二进制文件**&#x200B;并选择适合您的操作系统的版本。
 
-![dlz-install-az-copy.png](./images/dlz-install-az-copy.png)
+![dlz-install-az-copy.png](./images/dlzinstallazcopy.png)
 
 - 解压缩下载文件
 
@@ -37,7 +38,7 @@ ht-degree: 1%
 
 - 打开终端窗口并导航到桌面上的文件夹，您应会看到以下内容（azcopy和global-context-websiteinteractions.csv），例如OSX上的内容：
 
-![dlz-unzip-azcopy.png](./images/dlz-unzip-azcopy.png)
+![dlz-unzip-azcopy.png](./images/dlzunzipazcopy.png)
 
 ## 1.2.5.2将数据登陆区连接到Adobe Experience Platform
 
@@ -47,19 +48,23 @@ ht-degree: 1%
 
 ![数据获取](./images/home.png)
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--module2sandbox--``。 您可以通过单击屏幕顶部蓝线中的文本&#x200B;**[!UICONTROL Production Prod]**&#x200B;来执行此操作。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。  选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
 
 ![数据获取](./images/sb1.png)
 
-在左侧菜单中，转到&#x200B;**源**。 在源目录中，搜索&#x200B;**数据登录**。 在&#x200B;**数据登陆区域**&#x200B;信息卡上，单击&#x200B;**...**&#x200B;并选择&#x200B;**查看凭据**。
+在左侧菜单中，转到&#x200B;**源**。 在源目录中，搜索&#x200B;**数据登录**。
 
-![dlz-view-credentials.png](./images/dlz-view-credentials.png)
+![数据获取](./images/sourcesdlz.png)
 
-单击tp copy **SASUri**。
+单击&#x200B;**数据登陆区**&#x200B;卡，您将在右侧选项卡上看到凭据。
 
-![dlz-copy-sas-uri.png](./images/dlz-copy-sas-uri.png)
+![dlz-view-credentials.png](./images/dlzviewcredentials.png)
 
-## 1.2.5.3将csv文件复制到AEP数据登陆区
+单击指示的图标以复制&#x200B;**SASUri**。
+
+![dlz-copy-sas-uri.png](./images/dlzcopysasuri.png)
+
+## 将csv文件复制到AEP数据登陆区
 
 现在，您将使用AZCopy通过Azure命令行工具将数据摄取到Adobe Experience Platform。
 
@@ -75,41 +80,41 @@ ht-degree: 1%
 
 在终端中执行上述命令后，您会看到以下内容：
 
-![dlz-exec-copy-command.png](./images/dlz-exec-copy-command.png)
+![dlz-exec-copy-command.png](./images/dlzexeccopycommand.png)
 
-## 1.2.5.4在Data Landing Zone中查找文件
+## 在数据登录区中查找文件
 
 转到Adobe Experience Platform中的数据登陆区。
 
 选择&#x200B;**源**，搜索&#x200B;**数据登录**，然后单击&#x200B;**设置**&#x200B;按钮。
 
-![dlz-inspect-datalanding-zone.png](./images/dlz-inspect-datalanding-zone.png)
+![dlz-inspect-datalanding-zone.png](./images/dlzinspectdatalandingzone.png)
 
 这将打开数据登陆区。 您将在数据登陆区域的&#x200B;**选择数据**&#x200B;面板中看到您刚刚上传的文件。
 
-![dlz-datalanding-zone-open.png](./images/dlz-datalanding-zone-open.png)
+![dlz-datalanding-zone-open.png](./images/dlzdatalandingzoneopen.png)
 
-## 1.2.5.5处理文件
+## 处理您的文件
 
 选择您的文件，然后选择&#x200B;**分隔符**&#x200B;作为数据格式。 然后，您将看到数据的预览。 单击&#x200B;**下一步**。
 
-![dlz-datalanding-select-file.png](./images/dlz-datalanding-select-file.png)
+![dlz-datalanding-select-file.png](./images/dlzdatalandingselectfile.png)
 
 您现在可以开始映射上传的数据以匹配数据集的XDM架构。
 
 选择&#x200B;**现有数据集**，然后选择数据集&#x200B;**演示系统 — 网站(Global v1.1)**&#x200B;的事件数据集。 单击&#x200B;**下一步**。
 
-![dlz-target-dataset.png](./images/dlz-target-dataset.png)
+![dlz-target-dataset.png](./images/dlztargetdataset.png)
 
 现在，您可以将csv文件中的传入源数据映射到数据集XDM架构的目标字段。
 
-![dlz-start-mapping.png](./images/dlz-start-mapping.png)
+![dlz-start-mapping.png](./images/dlzstartmapping.png)
 
 >[!NOTE]
 >
 > 不要介意映射的潜在错误。 您将在下一步中更正映射。
 
-## 1.2.5.6映射字段
+## 映射字段
 
 首先，单击&#x200B;**清除所有映射**&#x200B;按钮。 然后，您可以从干净映射开始。
 
@@ -117,19 +122,19 @@ ht-degree: 1%
 
 接下来，单击&#x200B;**新建字段类型**，然后选择&#x200B;**添加新字段**。
 
-![dlz-clear-mappings.png](./images/dlz-clear-mappings.png)
+![dlz-clear-mappings.png](./images/dlzclearmappings.png)
 
 要映射&#x200B;**ecid**&#x200B;源字段，请选择字段&#x200B;**identities.ecid**，然后单击&#x200B;**选择**。
 
-![dlz-map-identity.png](./images/dlz-map-identity.png)
+![dlz-map-identity.png](./images/dlzmapidentity.png)
 
 接下来，单击&#x200B;**映射目标字段**。
 
-![dlz-map-select-target-field.png](./images/dlz-map-select-target-field.png)
+![dlz-map-select-target-field.png](./images/dlzmapselecttargetfield.png)
 
 选择架构结构中的字段``--aepTenantId--``.identification.core.ecid。
 
-![dlz-map-target-field.png](./images/dlz-map-target-field.png)
+![dlz-map-target-field.png](./images/dlzmaptargetfield.png)
 
 您需要映射几个其他字段，请单击&#x200B;**+新建字段类型**，然后单击&#x200B;**添加新字段**&#x200B;并为此映射添加字段
 
@@ -139,29 +144,29 @@ ht-degree: 1%
 | 时间戳 | 时间戳 |
 | 时间戳 | _id |
 
-![dlz-add-other-mapping.png](./images/dlz-add-other-mapping.png)
+![dlz-add-other-mapping.png](./images/dlzaddothermapping.png)
 
 完成后，屏幕应如下所示。 单击&#x200B;**下一步**。
 
-![dlz-mapping-result.png](./images/dlz-mapping-result.png)
+![dlz-mapping-result.png](./images/dlzmappingresult.png)
 
 单击&#x200B;**下一步**。
 
-![dlz-default-scheduling.png](./images/dlz-default-scheduling.png)
+![dlz-default-scheduling.png](./images/dlzdefaultscheduling.png)
 
 单击&#x200B;**完成**。
 
-![dlz-import-finish.png](./images/dlz-import-finish.png)
+![dlz-import-finish.png](./images/dlzimportfinish.png)
 
-## 1.2.5.7监视数据流
+## 监测数据流
 
 要监视数据流，请转到&#x200B;**源**、**数据流**，然后单击您的数据流：
 
-![dlz-monitor-dataflow.png](./images/dlz-monitor-dataflow.png)
+![dlz-monitor-dataflow.png](./images/dlzmonitordataflow.png)
 
 加载数据可能需要几分钟的时间，如果加载成功，您将看到&#x200B;**成功**&#x200B;的状态：
 
-![dlz-monitor-dataflow-result.png](./images/dlz-monitor-dataflow-result.png)
+![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
 下一步：[摘要和优点](./summary.md)
 

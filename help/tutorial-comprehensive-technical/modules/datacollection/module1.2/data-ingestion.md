@@ -3,16 +3,15 @@ title: 基础 — 数据摄取
 description: 基础 — 数据摄取
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 976d801a-3dcb-4cd9-8b9f-b1c964fe7c25
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '397'
 ht-degree: 1%
 
 ---
 
 # 1.2 Foundation — 数据摄取
-
-**作者：[Wouter Van Galuwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 在本模块中，目标是全面了解数据摄取。 您将了解流和批处理中的数据摄取。 您将使用Launch实施流式数据摄取，以便将实验操作网站上的客户行为实时流式传输到Adobe Experience Platform。 您将了解如何使用Adobe Experience Platform工作流批量摄取数据，以便获取CSV文件，将其映射到XDM架构，然后将其摄取到Adobe Experience Platform。
 

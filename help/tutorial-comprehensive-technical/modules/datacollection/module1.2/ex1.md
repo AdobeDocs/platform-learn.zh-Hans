@@ -4,14 +4,14 @@ description: 基础 — 数据摄取 — 从未知到在网站上已知
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '746'
 ht-degree: 1%
 
 ---
 
-# 1.2.1 — 从未知到网站上已知
+# 1.2.1从未知到网站上已知
 
 ## 上下文
 
@@ -27,7 +27,7 @@ Platform是一个环境，其中单词&#x200B;**customer**&#x200B;比&#x200B;**k
 
 ### 客户历程流程
 
-转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
+转到[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**编辑**。
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
 
@@ -41,12 +41,9 @@ Platform是一个环境，其中单词&#x200B;**customer**&#x200B;比&#x200B;**k
 
 粘贴您在上一步中复制的演示网站的URL。 然后，系统将要求您使用Adobe ID登录。
 
-
 选择您的帐户类型并完成登录过程。
 
-
 然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个演示，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
-
 
 单击屏幕左上角的Adobe徽标图标以打开配置文件查看器。
 
@@ -58,43 +55,45 @@ Platform是一个环境，其中单词&#x200B;**customer**&#x200B;比&#x200B;**k
 
 您还可以查看根据客户行为收集的所有体验事件。 该列表当前为空，但这种情况很快就会改变。
 
-![演示](../module1.2/images/pv3.png)
+![演示](./images/pv3.png)
 
-转到&#x200B;**Men**&#x200B;产品类别。 接下来，单击产品&#x200B;**Montana防风夹克**。
+转到&#x200B;**电话和设备**&#x200B;产品类别。 接下来，单击产品&#x200B;**iPhone 15 Pro**。
 
-![演示](../module1.2/images/pv4.png)
+![演示](./images/pv4.png)
 
-然后，您将看到产品详细信息页面。 使用您在模块1中审查的Web SDK实现，现已将&#x200B;**产品视图**&#x200B;类型的Experience Event发送到Adobe Experience Platform。
+然后，您将看到产品详细信息页面。 **产品视图**&#x200B;类型的Experience Event现已使用您在上一个模块中审查的Web SDK实现发送到Adobe Experience Platform。
 
-![演示](../module1.2/images/pv5.png)
+![演示](./images/pv5.png)
 
 打开“配置文件查看器”面板，并查看您的&#x200B;**体验事件**。
 
-![演示](../module1.2/images/pv6.png)
+![演示](./images/pv6.png)
 
-返回&#x200B;**女性**&#x200B;类别页面，然后单击其他产品。 另一个Experience Event已发送到Adobe Experience Platform。
+返回&#x200B;**电话和设备**&#x200B;类别页面，然后单击其他产品。 另一个Experience Event已发送到Adobe Experience Platform。
 
-![演示](../module1.2/images/pv7.png)
+打开配置文件查看器面板。 您现在将看到2个&#x200B;**产品视图**&#x200B;类型的体验事件。 虽然此类行为是匿名的，但经过适当的同意后，我们便能够跟踪每次点击并将其存储在Adobe Experience Platform中。 一旦匿名客户被识别，我们便能够将所有匿名行为自动合并到已知配置文件中。
 
-打开配置文件查看器面板。 您现在将看到2个&#x200B;**产品视图**&#x200B;类型的体验事件。 虽然行为是匿名的，但我们能够跟踪每次点击并将其存储在Adobe Experience Platform中。 一旦匿名客户被识别，我们便能够将所有匿名行为自动合并到已知配置文件中。
+![演示](./images/pv7.png)
 
-![演示](../module1.2/images/pv8.png)
+单击&#x200B;**登录**&#x200B;以转到注册/登录页面。
 
-转到“注册/登录”页面。 单击&#x200B;**创建帐户**。
+![演示](./images/pv8.png)
 
-![演示](../module1.2/images/pv9.png)
+单击&#x200B;**创建帐户**。
+
+![演示](./images/pv9.png)
 
 填写您的详细信息，然后单击&#x200B;**注册**，之后您将被重定向到上一页。
 
-![演示](../module1.2/images/pv10.png)
+![演示](./images/pv10.png)
 
 打开配置文件查看器面板，然后转到Real-time Customer Profile。 在“配置文件查看器”面板上，您应该会看到所有显示的个人数据，如新添加的电子邮件和电话标识符。
 
-![演示](../module1.2/images/pv11.png)
+![演示](./images/pv11.png)
 
 在配置文件查看器面板上，转到体验事件。 您将会在配置文件查看器面板上看到之前查看的2个产品。 这两个事件现在也关联到您的“已知”配置文件。
 
-![演示](../module1.2/images/pv12.png)
+![演示](./images/pv12.png)
 
 现在，您已将数据摄取到Adobe Experience Platform，并且已将该数据关联到ECID和电子邮件地址等标识符。 这样做的目的是为了了解您打算做什么的业务环境。 在下一个练习中，您将开始配置所需的一切配置，以便能够进行所有的数据摄取。
 
