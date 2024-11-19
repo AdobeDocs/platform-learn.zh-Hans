@@ -4,16 +4,16 @@ description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的
 kt: 5342
 doc-type: tutorial
 exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
 
 # 1.1.4客户端Web数据采集
 
-## 1.1.4.1验证请求中的数据
+## 验证请求中的数据
 
 ### 安装Adobe Experience Platform Debugger
 
@@ -40,7 +40,7 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 
 转到[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**运行**&#x200B;以将其打开。
 
-![DSN](.//images/web8.png)
+![DSN](./images/web8.png)
 
 随后您将看到您的演示网站已打开。 选择URL并将其复制到剪贴板。
 

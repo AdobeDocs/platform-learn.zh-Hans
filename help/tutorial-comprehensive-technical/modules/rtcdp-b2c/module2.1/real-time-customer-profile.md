@@ -5,24 +5,21 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 79ae9722-bf38-47f7-acbc-aa5bd1289411
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '423'
-ht-degree: 0%
+source-wordcount: '361'
+ht-degree: 1%
 
 ---
 
 # 2.1 Foundation — 实时客户资料
 
-**作者：[Wouter Van Galuwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-在本模块中，我们将深入探讨Adobe Experience Platform的实时客户配置文件和身份功能。 您将了解如何定义受众、Identity Service和Experience CloudID的角色，以及如何定义区段生成器查询来定义您自己的区段。
+在本模块中，您将深入探讨Adobe Experience Platform的实时客户配置文件和身份功能。 您将了解如何定义受众、Identity Service和Experience CloudID的角色，以及如何定义区段生成器查询来定义您自己的区段。
 
 ## 学习目标
 
 - 了解如何通过Adobe Experience Platform UI可视化客户的实时客户个人资料
 - 了解如何使用Adobe Experience Platform的区段生成器创建区段
-- 了解如何使用Adobe Experience Platform API创建区段并将区段结果存储在数据集中
 - 了解在离线环境中访问完整客户个人资料的影响，包括实时行为
 
 ## 先决条件
@@ -54,11 +51,7 @@ ht-degree: 0%
 
 在本练习中，您将使用Adobe Experience Platform的区段生成器创建一个区段。
 
-[2.1.5创建区段 — API](./ex5.md)
-
-在本练习中，您将使用Postman和Adobe I/O创建区段，并将该区段的结果存储为数据集，具体方法是使用Adobe Experience Platform的API。
-
-[2.1.6在呼叫中心查看您的实时客户资料](./ex6.md)
+[2.1.5在呼叫中心查看您的实时客户资料](./ex5.md)
 
 在本练习中，您将模拟一个接到客户呼叫的呼叫中心员工。 为了真正影响客户的体验，您需要实时访问所有可用的信息。
 

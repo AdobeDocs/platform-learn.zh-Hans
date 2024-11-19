@@ -3,9 +3,10 @@ title: Foundation - Real-time Customer Profile — 可视化您自己的实时�
 description: Foundation - Real-time Customer Profile — 可视化您自己的实时客户个人资料 — UI
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 5a43b67e-574a-4bf5-b5bf-064c6dec7be8
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '567'
 ht-degree: 1%
 
 ---
@@ -14,17 +15,17 @@ ht-degree: 1%
 
 在本练习中，您将登录到Adobe Experience Platform，并在UI中查看自己的实时客户个人资料。
 
-## Story
+## 上下文
 
 在实时客户个人资料中，所有个人资料数据都与事件数据以及现有区段成员资格一起显示。 所显示的数据可以来自任何地方，包括Adobe应用程序和外部解决方案。 这是Adobe Experience Platform中最强大的视图，真正的体验记录体系。
 
-## 2.1.2.1使用Adobe Experience Platform中的客户配置文件视图
+## 在Adobe Experience Platform中使用“客户个人资料视图”
 
 转到[Adobe Experience Platform](https://experience.adobe.com/platform)。 登录后，您将登录到Adobe Experience Platform的主页。
 
 ![数据获取](../../datacollection/module1.2/images/home.png)
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 您可以通过单击屏幕顶部蓝线中的文本&#x200B;**[!UICONTROL Production Prod]**&#x200B;来执行此操作。 选择适当的[!UICONTROL 沙盒]后，您将看到屏幕更改，现在您已经进入专用的[!UICONTROL 沙盒]。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 选择适当的[!UICONTROL 沙盒]后，您将看到屏幕更改，现在您已经进入专用的[!UICONTROL 沙盒]。
 
 ![数据获取](../../datacollection/module1.2/images/sb1.png)
 
@@ -40,9 +41,10 @@ ht-degree: 1%
 
 | 标识 | 命名空间 |
 |:-------------:| :---------------:|
-| Experience CloudID (ECID) | 12507560687324495704459439363261812234 |
-| 电子邮件ID | woutervangeluwe+06022022-01@gmail.com |
-| 手机号码ID | +32473622044+06022022-01 |
+| Experience CloudID (ECID) | 79943948563923140522865572770524243489 |
+| Experience CloudID (ECID) | 70559351147248820114888181867542007989 |
+| 电子邮件ID | woutervangeluwe+18112024-01@gmail.com |
+| 手机号码ID | +32473622044+18112024-01 |
 
 使用Adobe Experience Platform时，所有ID都同等重要。 以前，ECID是Adobe上下文中最重要的ID，所有其他ID都以分层关系链接到ECID。 在Adobe Experience Platform中，情况已发生了变化，每个ID都可以被视为主标识符。
 
@@ -52,11 +54,11 @@ ht-degree: 1%
 
 ![客户个人资料](./images/popupecid.png)
 
-您现在可以看到客户个人资料的几个重要&#x200B;**个人资料属性**&#x200B;的概述。
+您现在可以看到客户个人资料的几个重要&#x200B;**个人资料属性**&#x200B;的概述。 要查看配置文件的所有可用配置文件属性，请单击&#x200B;**属性**。
 
 ![客户个人资料](./images/profile.png)
 
-如果要查看配置文件的所有可用配置文件属性，请转到&#x200B;**属性**。
+然后，您将看到所有属性的完整列表。
 
 ![客户个人资料](./images/profilattr.png)
 
@@ -64,7 +66,7 @@ ht-degree: 1%
 
 ![客户个人资料](./images/profileee.png)
 
-最后，转到菜单选项&#x200B;**区段成员资格**。 现在，您将看到所有符合此用户档案条件的区段。
+最后，转到菜单选项&#x200B;**受众成员资格**。 在这里，您可以找到该客户的所有符合条件的受众。 该列表当前可能为空，但在后续模块中将发生更改。
 
 ![客户个人资料](./images/profileseg.png)
 

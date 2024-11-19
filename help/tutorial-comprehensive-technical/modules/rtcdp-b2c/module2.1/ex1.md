@@ -3,9 +3,10 @@ title: Foundation - Real-time Customer Profile — 从未知到网站上已知
 description: Foundation - Real-time Customer Profile — 从未知到网站上已知
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '968'
 ht-degree: 2%
 
 ---
@@ -22,13 +23,9 @@ Platform是一个环境，在该环境中，客户一词不仅限于已知客户
 
 ## 客户历程流程
 
-转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
+转到[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**运行**&#x200B;以将其打开。
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-在&#x200B;**Screens**&#x200B;页面上，单击&#x200B;**运行**。
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 随后您将看到您的演示网站已打开。 选择URL并将其复制到剪贴板。
 
@@ -62,7 +59,7 @@ Platform是一个环境，在该环境中，客户一词不仅限于已知客户
 
 ![演示](../../datacollection/module1.2/images/pv3.png)
 
-转到&#x200B;**Men**&#x200B;产品类别。 接下来，单击产品&#x200B;**Montana防风夹克**。
+转到&#x200B;**电话和设备**&#x200B;产品类别。 接下来，单击产品&#x200B;**iPhone 15 Pro**。
 
 ![演示](../../datacollection/module1.2/images/pv4.png)
 
@@ -74,15 +71,15 @@ Platform是一个环境，在该环境中，客户一词不仅限于已知客户
 
 ![演示](../../datacollection/module1.2/images/pv6.png)
 
-返回&#x200B;**女性**&#x200B;类别页面，然后单击其他产品。 另一个Experience Event已发送到Adobe Experience Platform。
+返回&#x200B;**电话和设备**&#x200B;类别页面，然后单击其他产品。 另一个Experience Event已发送到Adobe Experience Platform。 打开配置文件查看器面板。 您现在将看到2个&#x200B;**产品视图**&#x200B;类型的体验事件。 虽然行为是匿名的，但经过适当同意后，您能够跟踪每次点击并将其存储在Adobe Experience Platform中。 一旦匿名客户被识别，我们便能够将所有匿名行为自动合并到已知配置文件中。
 
 ![演示](../../datacollection/module1.2/images/pv7.png)
 
-打开配置文件查看器面板。 您现在将看到2个&#x200B;**产品视图**&#x200B;类型的体验事件。 虽然行为是匿名的，但我们能够跟踪每次点击并将其存储在Adobe Experience Platform中。 一旦匿名客户被识别，我们便能够将所有匿名行为自动合并到已知配置文件中。
+转到“注册/登录”页面。 单击&#x200B;**登录**。
 
 ![演示](../../datacollection/module1.2/images/pv8.png)
 
-转到“注册/登录”页面。 单击&#x200B;**创建帐户**。
+单击&#x200B;**创建帐户**。
 
 ![演示](../../datacollection/module1.2/images/pv9.png)
 
@@ -104,11 +101,11 @@ Platform是一个环境，在该环境中，客户一词不仅限于已知客户
 
 在成为已知客户后，该开始使用移动设备应用程序了。 在iPhone上打开移动设备应用程序，然后登录该应用程序。
 
-如果您不再安装该应用，或者忘记如何安装，请在此处查看： [0.5使用移动应用](../../gettingstarted/gettingstarted/ex5.md)
+如果您不再安装该应用程序，或者忘记了如何安装该应用程序，请在此处查看：[使用移动应用程序](../../gettingstarted/gettingstarted/ex5.md)
 
-按照说明安装应用程序后，您将看到已加载Luma品牌的应用程序的登陆页面。 单击屏幕左上方的帐户图标。
+按照说明安装应用程序后，您会看到已加载Citi Signal品牌的应用程序登陆页面。 单击屏幕左上方的帐户图标。
 
-![演示](./images/app_hp.png)
+![演示](./images/app_hp1.png)
 
 在“登录”屏幕上，使用您在桌面网站上使用的电子邮件地址登录。 单击&#x200B;**登录**。
 
@@ -120,15 +117,23 @@ Platform是一个环境，在该环境中，客户一词不仅限于已知客户
 
 然后，您将看到产品详细信息页面。
 
-![演示](./images/app_carst.png)
+![演示](./images/app_galaxy.png)
 
 转到应用程序的主屏幕，并向左轻扫屏幕以查看“配置文件查看器”面板。 然后，您将在&#x200B;**体验事件**&#x200B;部分中看到您刚才查看的产品，以及之前网站会话中的所有产品查看。
 
-![演示](./images/app_after_carst.png)
+>[!NOTE]
+>
+>您可能需要几分钟才能在应用程序和网站上看到合并视图。
+
+![演示](./images/app_after_galaxy.png)
 
 现在，返回桌面计算机并刷新主页，之后您也会看到该产品。
 
-![演示](./images/lb_x_aftermobile.png)
+>[!NOTE]
+>
+>您可能需要几分钟才能在应用程序和网站上看到合并视图。
+
+![演示](./images/web_x_aftermobile.png)
 
 现在，您已将数据摄取到Adobe Experience Platform，并且已将该数据关联到ECID和电子邮件地址等标识符。 本练习的目标是了解您即将执行的操作的业务环境。 现在，您已经有效地构建了一个实时、跨设备的客户档案。 在下一个练习中，您将继续在Adobe Experience Platform中可视化您的个人资料。
 

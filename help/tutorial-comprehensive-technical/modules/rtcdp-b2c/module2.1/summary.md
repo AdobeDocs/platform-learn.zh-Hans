@@ -3,9 +3,10 @@ title: Foundation — 实时客户档案 — 摘要
 description: Foundation — 实时客户档案 — 摘要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 6d5519b0-494d-4cfd-aebe-078317d753ac
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,6 @@ ht-degree: 0%
 - Real-time Customer Profile构建在灵活的实时身份图上，这使得基于标识符在多个数据集间动态合并配置文件片段成为可能。
 - 一旦通过身份图合并了配置文件片段，任何可用的标识符都可用于检索客户的配置文件
 - 现在，使用XDM作为区段后的语言来完成分段，这使得区段易于重用和理解
-- 现在，还可以通过API创建区段，这使您能够以编程方式在外部定义区段，然后通过API插入区段定义成为可能。
 
 ## 看看这个
 

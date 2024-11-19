@@ -4,9 +4,9 @@ description: 基础 — 数据摄取 — 从未知到在网站上已知
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '749'
 ht-degree: 1%
 
 ---
@@ -27,9 +27,9 @@ Platform是一个环境，其中单词&#x200B;**customer**&#x200B;比&#x200B;**k
 
 ### 客户历程流程
 
-转到[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**编辑**。
+转到[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**运行**&#x200B;以将其打开。
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 随后您将看到您的演示网站已打开。 选择URL并将其复制到剪贴板。
 

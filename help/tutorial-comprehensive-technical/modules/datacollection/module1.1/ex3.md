@@ -4,20 +4,20 @@ description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 9%
+source-wordcount: '1269'
+ht-degree: 10%
 
 ---
 
-# 1.1.3 - Adobe Experience Platform数据收集简介
+# 1.1.3 Adobe Experience Platform数据收集简介
 
 ## 上下文
 
 现在，让我们更深入地了解Adobe Experience Platform数据收集的构建基块，以了解您的演示网站上安装的内容。 您将详细了解Adobe Experience Platform Web SDK扩展，它将配置数据元素和规则，并且您将了解如何发布库。
 
-## 1.1.3.1 - Adobe Experience Platform Web SDK扩展
+## Adobe Experience Platform Web SDK 扩展
 
 扩展是一组打包的代码，用于扩展Adobe Experience Platform数据收集界面和库功能。 Adobe Experience Platform数据收集是一个平台，而扩展就像在该平台上运行的应用程序。 本教程中使用的所有扩展均由Adobe创建和管理，但第三方可以创建自己的扩展，以限制Adobe Experience Platform数据收集用户必须管理的自定义代码量。
 
@@ -52,7 +52,7 @@ ht-degree: 9%
 
 ![扩展主页](./images/property9edge.png)
 
-## 1.1.3.2数据元素
+## 数据元素
 
 数据元素是数据字典（或数据映射）的构建块。使用数据元素可跨市场营销和广告技术收集、组织和交付数据。
 
@@ -88,7 +88,7 @@ ht-degree: 9%
 
 此时，已安装Adobe Experience Platform Web SDK扩展，并且您已更新一个数据元素以根据XDM结构收集数据。 接下来，让我们检查将在正确时间发送数据的规则。
 
-## 1.1.3.3规则
+## 规则
 
 Adobe Experience Platform数据收集是一个基于规则的系统。 它可查找用户交互及关联数据。如果满足您的规则中所列的标准，则规则会触发您已识别的扩展、脚本或客户端代码。
 
@@ -130,7 +130,7 @@ Adobe Experience Platform数据收集是一个基于规则的系统。 它可查
 
 现在您已查看规则，可以在Adobe Experience Platform数据收集中发布所有更改。
 
-## 1.1.3.4 Publish在库中
+## 库中的Publish
 
 最后，为了验证您刚刚更新的规则和数据元素，您需要发布一个库，其中包含我们资产中编辑过的项目。 在Adobe Experience Platform数据收集的&#x200B;**[!UICONTROL 发布]**&#x200B;部分中，您需要执行一些快速步骤。
 

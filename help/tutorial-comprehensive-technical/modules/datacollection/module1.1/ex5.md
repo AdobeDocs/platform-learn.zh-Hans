@@ -4,20 +4,20 @@ description: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
-# 1.1.5 — 实施Adobe Analytics和Adobe Audience Manager
+# 1.1.5实施Adobe Analytics和Adobe Audience Manager
 
 ## 上下文
 
 您现在知道XDM数据正在流入平台。 您将详细了解[模块1.2](./../module1.2/data-ingestion.md)中的XDM是什么，以及如何构建您自己的架构以跟踪自定义变量。 现在，您将看到设置数据流以将数据转发到Analytics和Audience Manager时发生的情况。
 
-## 1.1.5.1 Analytics中的映射变量
+## 在Analytics中映射变量
 
 Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽快通过Web SDK快速完成新的Analytics实施。 自动映射的变量在[此处](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)列出。
 
@@ -56,11 +56,11 @@ Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽�
 
 可以通过[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)访问边缘网络收集的所有数据。 在Analytics中，您可以使用处理规则将上下文数据纳入Analytics变量。
 
-## 1.1.5.2Experience PlatformEdge Network上的Audience Manager
+## Experience PlatformEdge Network上的Audience Manager
 
 服务器端转发不是新的Audience Manager概念，与之前的过程相同。 您还可以同步身份。
 
-## 1.1.5.3查看您的数据流以将数据发送到Adobe Analytics
+## 审查您的数据流以将数据发送到Adobe Analytics
 
 如果要将Web SDK收集的数据发送到Adobe Analytics和Adobe Audience Manager，请执行以下步骤。
 
@@ -78,7 +78,7 @@ Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽�
 
 ![AEP调试器](./images/aa3.png)
 
-## 1.1.5.4查看您的数据流以将数据发送到Adobe Audience Manager
+## 审查您的数据流以将数据发送到Adobe Audience Manager
 
 你会看到这个。 要启用Adobe Audience Manager，请单击&#x200B;**+添加服务**。
 

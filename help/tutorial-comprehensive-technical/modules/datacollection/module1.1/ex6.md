@@ -4,16 +4,16 @@ description: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩
 kt: 5342
 doc-type: tutorial
 exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '169'
+source-wordcount: '168'
 ht-degree: 1%
 
 ---
 
 # 1.1.6实施Adobe Target
 
-## 1.1.6.1更新您的数据流以使用Adobe Target
+## 更新您的数据流以使用Adobe Target
 
 如果您希望将Web SDK收集的数据发送到Adobe Target，并从Adobe Target中获取响应，从而为每个客户提供个性化体验，请按照以下步骤操作。
 

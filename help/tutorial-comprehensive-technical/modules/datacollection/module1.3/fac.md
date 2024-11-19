@@ -3,10 +3,11 @@ title: 数据收集 — 联合受众构成
 description: 数据收集 — 联合受众构成
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
+source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 3%
+source-wordcount: '631'
+ht-degree: 0%
 
 ---
 
@@ -14,11 +15,21 @@ ht-degree: 3%
 
 **作者：[Ludovic Latapie](https://www.linkedin.com/in/ludoviclatapie/)，[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-在本模块中，目标是了解有关使用联合受众组合进行数据摄取的所有信息
+在本模块中，目标是了解有关使用联合受众组合创建受众的所有信息。
+
+Experience Platform中的联合受众构成(FAC)允许您通过企业数据仓库中的相应高价值属性访问和创建受众，这些属性丰富和补充了Experience Platform中的实时客户配置文件和受众，从而改进了分段、定位、激活和交付有影响力的客户体验。 使用联合受众合成，可通过元数据链接远程数据库来创建虚拟数据库。 此方法简化了访问，减少了重复，并增强了最终用户体验。 在为参与工作流组合受众时，团队可以灵活地将数据集直接摄取到Experience Platform中或访问数据仓库中的数据集。 此方法利用Data Warehouse投资和资产来补充Real-Time CDP和Journey Optimizer。 联合受众构成使客户能够跨关键的新用例模式利用和组合批量功能和实时功能：
+
+- 联合受众分段：团队可以使用Real-Time CDP和Journey Optimizer中对营销人员友好的拖放受众合成UI创作受众，但将查询推送到Data Warehouse，从而将敏感的基础数据保留在仓库中而不会出现重复，并且提供对基本数据集的灵活访问。
+- 受众扩充：在Real-Time CDP和Journey Optimizer中构建的受众可以使用其他企业数据进行扩充，以使用不会在Adobe Experience Platform中持久保留的更多基于配置文件和不基于配置文件的数据集来改进定位和个性化。 例如，零售品牌可用一系列“顶级实体店面”来补充最近在线购买者的受众，以构建跨渠道在线和店内促销的受众。
+- 配置文件扩充：团队可以从数据仓库中选择配置文件属性，这些配置文件属性对于将即刻体验保留在Real-Time CDP中并通过Journey Optimizer访问的可操作客户配置文件中至关重要。 然后，这些附加数据点可用于下游分段和由事件行为触发的个性化，具体取决于用户操作和客户用例。 这将允许随联合受众一起提供的属性与保留在客户配置文件中的其他属性和行为信号一起用于即时分段和个性化。
+
+联合受众组合为Real-Time CDP和Journey Optimizer客户提供了灵活性，让他们可以决定什么时候要使用哪些数据，并帮助避免不必要的数据集或集成模式重复。 这是联合方法的独特组合，联合方法使用企业数据策划受众和高价值属性，并且系统针对当下跨渠道参与进行了优化。 这减少了数据移动，但也带来了利用高价值受众和属性实现跨渠道一致的低延迟激活的新机会。
 
 ## 学习目标
 
-- 了解如何……
+- 了解如何将Snowflake与Adobe Experience Platform连接
+- 了解如何在Adobe Experience Platform中为联合数据创建数据模型
+- 了解如何在Adobe Experience Platform中创建联合受众合成
 
 ## 先决条件
 
@@ -27,9 +38,17 @@ ht-degree: 3%
 
 ## 练习
 
-[1.3.1 FAC简介](./ex1.md)
+[1.3.1设置您的Snowflake帐户](./ex1.md)
 
-在本练习中， ...
+在本练习中，您将设置Snowflake试用帐户，并将其连接到Adobe Experience Platform
+
+[1.3.2创建架构、数据模型和链接](./ex2.md)
+
+在本练习中，您将在AEP中为联合数据配置数据模型。
+
+[1.3.3创建联合组合](./ex3.md)
+
+在本练习中，您将在AEP中为联合数据配置数据模型。
 
 [摘要和优点](./summary.md)
 
