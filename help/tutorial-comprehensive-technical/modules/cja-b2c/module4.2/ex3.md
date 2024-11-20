@@ -3,9 +3,10 @@ title: 使用BigQuery Source Connector在Adobe Experience Platform中摄取和�
 description: 使用BigQuery Source Connector在Adobe Experience Platform中摄取和分析Google Analytics数据 — 将GCP和BigQuery连接到Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 86b04b4e-0439-4491-b700-5b0591c493b7
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1757'
 ht-degree: 1%
 
 ---
@@ -305,7 +306,7 @@ Google现在将向您显示八个不同的&#x200B;**权限**&#x200B;提示。 �
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/home.png)
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 您可以通过单击屏幕顶部蓝线中的文本&#x200B;**[!UICONTROL Production Prod]**&#x200B;来执行此操作。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/sb1.png)
 

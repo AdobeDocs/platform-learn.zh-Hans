@@ -3,9 +3,10 @@ title: 智能服务 — 客户人工智能数据准备（引入）
 description: 客户人工智能 — 数据准备（引入）
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '753'
 ht-degree: 1%
 
 ---
@@ -15,7 +16,7 @@ ht-degree: 1%
 为了使智能服务从营销事件数据中发掘洞察信息，必须在语义上丰富并维护标准结构中的数据。 智能服务利用Adobe的体验数据模型(XDM)架构来实现这一点。
 具体而言，在智能服务中使用的所有数据集都必须符合**使用者体验事件** XDM架构。
 
-## 2.2.1.1创建架构
+## 创建架构
 
 在本练习中，您将创建一个包含&#x200B;**消费者体验事件mixin**&#x200B;的架构，它是&#x200B;**客户人工智能**&#x200B;智能服务所必需的。
 
@@ -25,37 +26,40 @@ ht-degree: 1%
 
 ![数据获取](../../datacollection/module1.2/images/home.png)
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--module10sandbox--``。 您可以通过单击屏幕顶部蓝线中的文本&#x200B;**[!UICONTROL Production Prod]**&#x200B;来执行此操作。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
 
 ![数据获取](../../datacollection/module1.2/images/sb1.png)
 
 从左侧菜单中，单击&#x200B;**架构**&#x200B;并转到&#x200B;**浏览**。 单击&#x200B;**创建架构**。
 
-![创建新架构](./images/create-schema-button.png)
+![创建新架构](./images/createschemabutton.png)
 
-在弹出窗口中，选择&#x200B;**XDM ExperienceEvent**。
+在弹出窗口中，选择&#x200B;**手动**&#x200B;并单击&#x200B;**选择**。
+
+![创建新架构](./images/schmanual.png)
+
+接下来，选择&#x200B;**体验事件**，然后单击&#x200B;**下一步**。
 
 ![创建新架构](./images/xdmee.png)
 
-你会看到这个。
+您需要立即为架构提供一个名称。 作为架构的名称，请使用以下名称： `--aepUserLdap-- - Demo System - Customer Experience Event`并单击&#x200B;**完成**。
+
+![创建新架构](./images/schname.png)
+
+你会看到这个。 单击“字段组”下的&#x200B;**+添加**。
 
 ![创建新架构](./images/xdmee1.png)
 
-搜索并选择以下&#x200B;**Mixin**&#x200B;以添加到此架构：
+搜索并选择以下&#x200B;**字段组**&#x200B;以添加到此架构：
 
 - 使用者体验事件
-
-  ![新CEE架构](./images/cee.png)
-
 - 最终用户 ID 详细信息
-
-  ![新CEE架构](./images/identitymap.png)
 
 单击&#x200B;**添加字段组**。
 
-![标识键defn](./images/addmixin.png)
+![新CEE架构](./images/cee.png)
 
-你会看到这个。 选择Mixin **最终用户ID详细信息**。
+你会看到这个。 单击字段组&#x200B;**最终用户ID详细信息**。
 
 ![创建新架构](./images/eui1.png)
 
@@ -63,7 +67,7 @@ ht-degree: 1%
 
 ![创建新架构](./images/eui2.png)
 
-在字段&#x200B;**endUserIDs的右菜单中。_experience.emailid.id**，向下滚动并选中&#x200B;**标识**&#x200B;的复选框，选中&#x200B;**主要标识**&#x200B;的复选框，并选择&#x200B;**电子邮件**&#x200B;的&#x200B;**标识命名空间**。
+在字段&#x200B;**endUserIDs的右菜单中。_experience.emailid.id**，向下滚动并选中&#x200B;**标识**&#x200B;的复选框，选中&#x200B;**主要标识**&#x200B;的复选框，并选择&#x200B;**电子邮件**&#x200B;的&#x200B;**标识命名空间**。 单击&#x200B;**应用**。
 
 ![创建新架构](./images/eui3.png)
 
@@ -71,21 +75,7 @@ ht-degree: 1%
 
 ![创建新架构](./images/eui4.png)
 
-立即为您的架构命名。
-
-作为架构的名称，您将使用：
-
-- `--aepUserLdap-- - Demo System - Customer Experience Event`
-
-例如，对于ldap **vangeluw**，这应该是架构的名称：
-
-- **vangeluw — 演示系统 — 客户体验活动**
-
-这应该能给你这样的东西。 单击“**+ Add**”按钮以添加新的&#x200B;**Mixin**。
-
-![创建新架构](./images/xdmee2.png)
-
-选择架构的名称。 您现在应通过单击&#x200B;**配置文件**&#x200B;切换来启用&#x200B;**配置文件**&#x200B;的架构。
+你就能拥有这个了。 接下来，选择架构的名称。 您现在应通过单击&#x200B;**配置文件**&#x200B;切换来启用&#x200B;**配置文件**&#x200B;的架构。
 
 ![创建新架构](./images/xdmee3.png)
 
@@ -97,7 +87,7 @@ ht-degree: 1%
 
 ![创建新架构](./images/xdmee5.png)
 
-## 2.2.1.2创建数据集
+## 创建数据集
 
 从左侧菜单中，单击&#x200B;**数据集**&#x200B;并转到&#x200B;**浏览**。 单击&#x200B;**创建数据集**。
 
@@ -129,7 +119,7 @@ ht-degree: 1%
 
 您现在可以开始摄取消费者体验事件数据并开始使用客户人工智能服务。
 
-## 2.2.1.3下载体验事件测试数据
+## 下载体验事件测试数据
 
 在配置&#x200B;**架构**&#x200B;和&#x200B;**数据集**&#x200B;后，您现在可以摄取体验事件数据了。 由于客户人工智能至少需要&#x200B;**2个季度中的**&#x200B;的数据，因此您将需要摄取外部准备的数据。
 
@@ -145,7 +135,7 @@ ht-degree: 1%
 
 ![数据集](./images/ingest.png)
 
-## 2.2.1.4摄取Experience Event测试数据
+## 摄取体验事件测试数据
 
 在Adobe Experience Platform中，转到&#x200B;**数据集**&#x200B;并打开名为&#x200B;**[!UICONTROL ldap - Demo System - Customer Experience Event数据集]**&#x200B;的数据集。
 

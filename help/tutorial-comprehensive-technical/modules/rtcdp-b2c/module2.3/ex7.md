@@ -4,9 +4,9 @@ description: Real-time CDP — 目标SDK
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1049'
+source-wordcount: '1098'
 ht-degree: 5%
 
 ---
@@ -23,11 +23,13 @@ ht-degree: 5%
 
 ## 定义端点和格式
 
-在本练习中，您需要配置一个端点，以便在区段符合条件时，资格事件可以流式传输到该端点。 在本练习中，您将使用[https://webhook.site/](https://webhook.site/)的示例终结点。 转到[https://webhook.site/](https://webhook.site/)，您将在其中看到与此类似的内容。 单击&#x200B;**复制到剪贴板**&#x200B;以复制URL。 您需要在下一个练习中指定此URL。 此示例中的URL是`https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a`。
+在本练习中，您将需要端点来配置，以便在受众符合条件时，资格事件可以流式传输到该端点。 在本练习中，您将使用[https://pipedream.com/requestbin](https://pipedream.com/requestbin)的示例终结点。 转到[https://pipedream.com/requestbin](https://pipedream.com/requestbin)，创建一个帐户，然后创建一个工作区。 创建工作区后，您将看到类似以下的内容。
+
+单击&#x200B;**复制**&#x200B;复制URL。 您需要在下一个练习中指定此URL。 此示例中的URL是`https://eodts05snjmjz67.m.pipedream.net`。
 
 ![数据获取](./images/webhook1.png)
 
-至于格式，我们将使用标准模板，该模板将流区段资格或取消资格与客户标识符等元数据一起。 可以自定义模板以满足特定端点的期望，但在本练习中，我们将重用标准模板，这将产生类似于这样的有效负荷，并将其流式传输到端点。
+至于格式，我们将使用标准模板，该模板将流传输受众资格或取消资格与客户标识符等元数据。 可以自定义模板以满足特定端点的期望，但在本练习中，我们将重用标准模板，这将产生类似于这样的有效负荷，并将其流式传输到端点。
 
 ```json
 {
@@ -52,9 +54,15 @@ ht-degree: 5%
 
 ## 创建服务器和模板配置
 
-在Adobe Experience Platform中创建自己的目标的第一步是创建服务器和模板配置。
+在Adobe Experience Platform中创建自己的目标的第一步是使用Postman创建服务器和模板配置。
 
-为此，请转到&#x200B;**目标创作API**、**目标服务器和模板**，然后单击以打开请求&#x200B;**POST — 创建目标服务器配置**。 你会看到这个。 在&#x200B;**Headers**&#x200B;下，您需要手动更新键&#x200B;**x-sandbox-name**&#x200B;的值并将其设置为`--aepSandboxName--`。 选择值&#x200B;**{{SANDBOX_NAME}}**。
+为此，请打开您的Postman应用程序，然后转到&#x200B;**目标创作API**、**目标服务器和模板**，然后单击以打开请求&#x200B;**POST — 创建目标服务器配置**。
+
+>[!NOTE]
+>
+>如果您没有该Postman收藏集，请返回模块2.1](../module2.1/ex3.md)中的[练习3，并按照其中的说明设置Postman和提供的Postman收藏集。
+
+你会看到这个。 在&#x200B;**Headers**&#x200B;下，您需要手动更新键&#x200B;**x-sandbox-name**&#x200B;的值并将其设置为`--aepSandboxName--`。 选择值&#x200B;**{{SANDBOX_NAME}}**。
 
 ![数据获取](./images/sdkpm1.png)
 
@@ -89,7 +97,7 @@ ht-degree: 5%
 }
 ```
 
-粘贴上述代码后，您需要手动更新字段&#x200B;**urlBasedDestination.url.value**，并且需要将其设置为您在上一步中创建的webhook的URL，在本例中为`https://webhook.site/e0eb530c-15b4-4a29-8b50-e40877d5490a`。
+粘贴上述代码后，您需要手动更新字段&#x200B;**urlBasedDestination.url.value**，并且需要将其设置为您在上一步中创建的webhook的URL，在本例中为`https://eodts05snjmjz67.m.pipedream.net`。
 
 ![数据获取](./images/sdkpm4.png)
 
@@ -97,20 +105,20 @@ ht-degree: 5%
 
 ![数据获取](./images/sdkpm5.png)
 
+>[!NOTE]
+>
+>请不要忘记，在向Adobe I/O发送请求之前，您需要具有有效的`access_token`。 要获得有效的`access_token`，请运行&#x200B;**AdobeIO - OAuth** POST中的&#x200B;**请求 — 获取访问令牌**。
+
 单击&#x200B;**发送**&#x200B;后，将创建您的服务器模板，作为响应的一部分，您将看到名为&#x200B;**instanceId**&#x200B;的字段。 请记下它，因为您将在下一步中需要它。 在此示例中，**instanceId**为
-`eb0f436f-dcf5-4993-a82d-0fcc09a6b36c`。
+`52482c90-8a1e-42fc-b729-7f0252e5cebd`。
 
 ![数据获取](./images/sdkpm6.png)
 
 ## 创建目标配置
 
-在Postman中的&#x200B;**目标创作API**&#x200B;下，转到&#x200B;**目标配置**&#x200B;并单击以打开POST **请求 — 创建目标配置**。 你会看到这个。 在&#x200B;**Headers**&#x200B;下，您需要手动更新键&#x200B;**x-sandbox-name**&#x200B;的值并将其设置为`--aepSandboxName--`。 选择值&#x200B;**{{SANDBOX_NAME}}**。
+在Postman中的&#x200B;**目标创作API**&#x200B;下，转到&#x200B;**目标配置**&#x200B;并单击以打开POST **请求 — 创建目标配置**。 你会看到这个。 在&#x200B;**Headers**&#x200B;下，您需要手动更新键&#x200B;**x-sandbox-name**&#x200B;的值并将其设置为`--aepSandboxName--`。 选择值&#x200B;**{{SANDBOX_NAME}}**&#x200B;并将其替换为`--aepSandboxName--`。
 
 ![数据获取](./images/sdkpm7.png)
-
-用`--aepSandboxName--`替换它。
-
-![数据获取](./images/sdkpm8.png)
 
 接下来，转到&#x200B;**正文**。 选择占位符&#x200B;**{{body}}**。
 
@@ -183,7 +191,7 @@ ht-degree: 5%
 
 ![数据获取](./images/sdkpm11.png)
 
-粘贴上述代码后，您需要手动更新&#x200B;**destinationDelivery字段。 destinationServerId**，并且需要将其设置为在上一步中创建的目标服务器模板的&#x200B;**instanceId**，在本例中为`eb0f436f-dcf5-4993-a82d-0fcc09a6b36c`。 接下来，单击&#x200B;**发送**。
+粘贴上述代码后，您需要手动更新&#x200B;**destinationDelivery字段。 destinationServerId**，并且需要将其设置为在上一步中创建的目标服务器模板的&#x200B;**instanceId**，在本例中为`52482c90-8a1e-42fc-b729-7f0252e5cebd`。 接下来，单击&#x200B;**发送**。
 
 ![数据获取](./images/sdkpm10.png)
 
@@ -197,7 +205,7 @@ ht-degree: 5%
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/home.png)
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 您可以通过单击屏幕顶部蓝线中的文本&#x200B;**[!UICONTROL Production Prod]**&#x200B;来执行此操作。 选择适当的[!UICONTROL 沙盒]后，您将看到屏幕更改，现在您已经进入专用的[!UICONTROL 沙盒]。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 选择适当的[!UICONTROL 沙盒]后，您将看到屏幕更改，现在您已经进入专用的[!UICONTROL 沙盒]。
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -205,13 +213,13 @@ ht-degree: 5%
 
 ![数据获取](./images/destsdk1.png)
 
-## 将您的区段链接到目标
+## 将受众链接到目标
 
-在&#x200B;**目标** > **目录**&#x200B;中，单击目标上的&#x200B;**设置**&#x200B;以开始向新目标添加区段。
+在&#x200B;**目标** > **目录**&#x200B;中，单击目标上的&#x200B;**设置**&#x200B;以开始将受众添加到新目标。
 
 ![数据获取](./images/destsdk2.png)
 
-输入虚拟持有者令牌，如&#x200B;**1234**。 单击&#x200B;**连接到目标**。
+为&#x200B;**持有者令牌**&#x200B;输入一个随机值，如&#x200B;**1234**。 单击&#x200B;**连接到目标**。
 
 ![数据获取](./images/destsdk3.png)
 
@@ -223,7 +231,7 @@ ht-degree: 5%
 
 ![数据获取](./images/destsdk5.png)
 
-选择您之前创建的名为`--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`的区段。 单击&#x200B;**下一步**。
+选择您之前创建的名为`--aepUserLdap-- - Interest in Galaxy S24`的受众。 单击&#x200B;**下一步**。
 
 ![数据获取](./images/destsdk6.png)
 
@@ -235,23 +243,15 @@ ht-degree: 5%
 
 ![数据获取](./images/destsdk8.png)
 
-您的目标现已上线，新的区段资格将立即流式传输到您的自定义webhook。
+您的目标现已上线，新的受众资格将立即流式传输到您的自定义webhook。
 
 ![数据获取](./images/destsdk9.png)
 
-## 测试区段激活
+## 测试受众激活
 
-转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
+转到[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**运行**&#x200B;以将其打开。
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-您现在可以按照以下流程访问该网站。 单击&#x200B;**集成**。
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-在&#x200B;**集成**&#x200B;页面上，您需要选择在练习0.1中创建的数据收集属性。
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 随后您将看到您的演示网站已打开。 选择URL并将其复制到剪贴板。
 
@@ -269,23 +269,24 @@ ht-degree: 5%
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个演示，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
+然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个练习，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-从&#x200B;**Luma**&#x200B;主页，转到&#x200B;**Men**，然后单击产品&#x200B;**PROTEUS FITNESS JACKSHIRT**。
+在本例中，您希望对查看特定产品的特定客户做出响应。
+从**Citi Signal**&#x200B;主页，转到&#x200B;**手机和设备**，然后单击产品&#x200B;**Galaxy S24**。
 
-![数据获取](./images/homenadia.png)
+![数据获取](./images/homegalaxy.png)
 
-您现在已访问&#x200B;**PROTEUS FITNESS JACKSHIRT**&#x200B;的产品页面，这意味着您现在有资格参加在此练习中之前创建的区段。
+Galaxy S24的产品页面现已查看，因此您的受众将在随后几分钟内符合您的个人资料的资格。
 
-![数据获取](./images/homenadiapp.png)
+![数据获取](./images/homegalaxy1.png)
 
-当您打开配置文件查看器并转到&#x200B;**区段**&#x200B;时，您将看到该区段符合条件。
+当您打开配置文件查看器并转到&#x200B;**受众**&#x200B;时，您将看到受众符合条件。
 
-![数据获取](./images/homenadiapppb.png)
+![数据获取](./images/homegalaxydsdk.png)
 
-现在，返回到[https://webhook.site/](https://webhook.site/)上打开的webhook，您应会看到一个新的传入请求，该请求源自Adobe Experience Platform并且包含区段鉴别事件。
+现在，返回到[https://eodts05snjmjz67.m.pipedream.net](https://eodts05snjmjz67.m.pipedream.net)上打开的webhook，您应会看到一个新的传入请求，该请求源自Adobe Experience Platform并且包含受众资格事件。
 
 ![数据获取](./images/destsdk10.png)
 

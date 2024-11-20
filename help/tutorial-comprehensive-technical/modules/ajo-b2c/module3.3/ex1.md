@@ -4,7 +4,8 @@ description: offer decisioning-Offer decisioning101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '985'
 ht-degree: 2%
@@ -92,9 +93,9 @@ ht-degree: 2%
 
 ## 3.3.1.4决定规则
 
-规则（也称为合格规则）等同于&#x200B;**区段**。 实际上，规则本身就是区段，唯一区别在于规则可以与选件一起使用来向Adobe Experience Platform中的配置文件提供最佳选件。
+规则（也称为资格规则）等同于&#x200B;**受众**。 规则实际上是受众本身，两者之间唯一的区别是，规则可以与选件一起使用，以便在Adobe Experience Platform中为配置文件提供最佳选件。
 
-由于您已经知道如何根据以前的启用模块定义区段，因此让我们快速重新访问分段环境：
+由于您已经知道如何根据以前的启用模块定义受众，因此让我们快速重新访问分段环境：
 
 转到&#x200B;**规则**。 单击&#x200B;**+创建规则**。
 
@@ -106,7 +107,7 @@ ht-degree: 2%
 
 您现在可以访问实时客户个人资料的合并架构中的所有字段，并且可以构建任何规则。
 
-您现在还可以转到&#x200B;**受众** > ``--aepTenantId--``，以在Adobe Experience Platform中重复使用已定义的区段，这一点也很有趣。
+您现在还可以转到&#x200B;**受众** > ``--aepTenantId--``，以在Adobe Experience Platform中重复使用已定义的受众。
 
 ![决策规则](./images/decisionruleaud.png)
 

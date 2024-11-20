@@ -3,9 +3,10 @@ title: 区段激活到Microsoft Azure事件中心 — 创建流区段
 description: 区段激活到Microsoft Azure事件中心 — 创建流区段
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 86bc3afa-16a9-4834-9119-ce02445cd524
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '344'
 ht-degree: 1%
 
 ---
@@ -44,7 +45,7 @@ Adobe Experience Platform中的区段资格始终具有&#x200B;**状态** — �
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/home.png)
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 您可以通过单击屏幕顶部蓝线中的文本&#x200B;**[!UICONTROL Production Prod]**&#x200B;来执行此操作。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/sb1.png)
 

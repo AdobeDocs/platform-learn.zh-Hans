@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer — 商业活动
 description: 本节介绍如何使用业务事件功能来执行“有现货的商品”用例
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 8519e17f-e050-4a06-9651-29bf67f27276
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1187'
 ht-degree: 1%
 
 ---
@@ -98,14 +99,14 @@ ht-degree: 1%
 
 ![Journey Optimizer](./images/bej12.png)
 
-如您所见，**读取区段**&#x200B;活动已自动添加到画布中。 这是因为业务事件仅发送触发程序让历程读取特定区段，然后该历程检索用户档案列表。
+如您所见，**读取受众**&#x200B;活动已自动添加到画布中。 这是因为业务事件仅发送触发程序让历程读取特定受众，然后该受众将检索该历程的用户档案列表。
 
-单击&#x200B;**读取区段**活动。
-**读取区段**&#x200B;配置要求您选择要通知刚刚发生的业务事件的区段。 单击&#x200B;**选择区段**&#x200B;字段。
+单击&#x200B;**读取受众**活动。
+**读取受众**&#x200B;配置要求您选择要通知刚刚发生的业务事件的受众。 单击&#x200B;**选择受众**&#x200B;字段。
 
 ![Journey Optimizer](./images/bej13.png)
 
-在&#x200B;**选择区段**&#x200B;弹出窗口中，搜索您的LDAP并选择您在[模块2.3 - Real-time CDP — 生成区段并执行名为`--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`的操作](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)中创建的区段。 例如： vangeluw — 关注PROTEUS FITNESS JACKSHIRT。 单击&#x200B;**保存**。
+在&#x200B;**选择受众**&#x200B;弹出窗口中，搜索您的ldap并选择您在[模块2.3 - Real-time CDP — 构建受众并执行名为`--aepUserLdap-- - Interest in Galaxy S24`的操作](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)中创建的受众。 单击&#x200B;**保存**。
 
 ![Journey Optimizer](./images/bej14.png)
 

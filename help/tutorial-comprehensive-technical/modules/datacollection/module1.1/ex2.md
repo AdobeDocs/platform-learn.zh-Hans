@@ -4,7 +4,7 @@ description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的
 kt: 5342
 doc-type: tutorial
 exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Satastream会告知Adobe Edge服务器，在Web SDK收集数据后将发送到�
 - 默认情况下，所有体验事件数据都会收集到数据集&#x200B;**演示系统 — 网站的事件数据集中(Global v1.1)**
 - 默认情况下，所有配置文件数据都将收集到数据集&#x200B;**演示系统 — 网站的配置文件数据集(Global v1.1)**&#x200B;中（Web SDK当前尚不支持通过Web SDK本机摄取配置文件数据）
 - 如果要对此数据流使用&#x200B;**Offer decisioning**&#x200B;应用程序服务，则需要选中用于Offer decisioning的框。 （这将是[模块3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md)的一部分）
-- **默认启用Edge分段**，这意味着在摄取传入流量时，将在边缘评估符合条件的区段
+- **Edge分段**&#x200B;默认启用，这意味着在摄取传入流量时，将在边缘评估符合条件的受众
 - 如果要使用&#x200B;**Personalization目标**，您需要选中Personalization目标复选框。
 - 
    - 如果要在此数据流中使用&#x200B;**Adobe Journey Optimizer**&#x200B;的功能，则需要选中Adobe Journey Optimizer的框。

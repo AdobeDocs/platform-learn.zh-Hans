@@ -4,10 +4,10 @@ description: 在呼叫中心查看您的实时客户资料的实际操作情况
 kt: 5342
 doc-type: tutorial
 exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 2%
+source-wordcount: '317'
+ht-degree: 3%
 
 ---
 
@@ -50,11 +50,9 @@ ht-degree: 2%
 | 电子邮件ID | woutervangeluwe+18112024-01@gmail.com |
 | 手机号码ID | +32473622044+18112024-01 |
 
-当客户致电您的呼叫中心时，可以使用电话号码来识别客户。 因此，在本练习中，您将使用该电话号码在CX应用程序中检索客户的配置文件。
-
 ![演示](./images/19.png)
 
-现在，您会看到最好显示在呼叫中心中的信息，以便呼叫中心员工在与客户交谈时能够立即获得所有相关信息。
+现在，您会看到最好显示在呼叫中心中的信息，以便呼叫中心工程师在与客户交谈时能够立即获得所有相关信息。
 
 ![演示](./images/20.png)
 

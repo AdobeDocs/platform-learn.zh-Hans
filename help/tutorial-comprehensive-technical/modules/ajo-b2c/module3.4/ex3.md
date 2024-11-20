@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer — 在电子邮件中应用个性化
 description: 此练习介绍了如何在电子邮件内容中使用区段个性化
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepTenantId--``。 您可以通过单击屏幕顶部蓝线中的文本&#x200B;**[!UICONTROL Production Prod]**&#x200B;来执行此操作。
+您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepTenantId--``。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 

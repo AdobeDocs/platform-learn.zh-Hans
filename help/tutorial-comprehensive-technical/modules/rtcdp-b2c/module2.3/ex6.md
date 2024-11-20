@@ -3,27 +3,28 @@ title: Real-time CDP — 外部受众
 description: Real-time CDP — 外部受众
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
 
 # 2.3.6外部受众
 
-在许多情况下，您的公司可能会希望使用其他应用程序中的现有区段来扩充Adobe Experience Platform中的客户配置文件。
+在许多情况下，您的公司可能会希望使用其他应用程序中的现有受众来扩充Adobe Experience Platform中的客户配置文件。
 这些外部受众可能已根据数据科学模型或使用外部数据平台而定义。
 
-通过Adobe Experience Platform的外部受众功能，您可以专注于外部受众的摄取及其激活，而无需在Adobe Experience Platform中重新详细定义相应的区段定义。
+通过Adobe Experience Platform的外部受众功能，您可以专注于外部受众的摄取及其激活，而无需在Adobe Experience Platform中重新详细定义相应的受众定义。
 
 整个过程分为三个主要步骤：
 
 - 导入外部受众元数据：此步骤旨在将外部受众元数据（如受众名称）纳入Adobe Experience Platform。
-- 将外部受众成员资格分配给客户配置文件：此步骤旨在使用外部区段成员资格属性扩充客户配置文件。
-- 在Adobe Experience Platform中创建区段：此步骤旨在根据外部受众成员资格创建可操作区段。
+- 将外部受众成员资格分配给客户配置文件：此步骤旨在使用外部受众成员资格属性扩充客户配置文件。
+- 在Adobe Experience Platform中创建受众：此步骤旨在根据外部受众成员资格创建切实可行的受众。
 
-## 2.3.6.1元数据
+## 元数据
 
 转到[Adobe Experience Platform](https://experience.adobe.com/platform)。 登录后，您将登录到Adobe Experience Platform的主页。
 
@@ -31,13 +32,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->用于此练习的沙盒是``--module2sandbox--``！
+>用于此练习的沙盒是``--aepSandboxName--``！
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--module2sandbox--``。 您可以通过单击屏幕顶部蓝线中的文本&#x200B;**[!UICONTROL Production Prod]**&#x200B;来执行此操作。 选择适当的[!UICONTROL 沙盒]后，您将看到屏幕更改，现在您已经进入专用的[!UICONTROL 沙盒]。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 选择适当的[!UICONTROL 沙盒]后，您将看到屏幕更改，现在您已经进入专用的[!UICONTROL 沙盒]。
 
 ![数据获取](./images/sb1.png)
 
-区段数据定义用户档案成为区段一部分的条件，而区段元数据是有关区段的信息，例如区段名称、描述和状态。 由于外部受众元数据将存储在Adobe Experience Platform中，因此您需要使用身份命名空间在Adobe Experience Platform中摄取元数据。
+虽然受众数据定义了用户档案成为受众的条件，但受众元数据是有关受众的信息，如受众的名称、描述和状态。 由于外部受众元数据将存储在Adobe Experience Platform中，因此您需要使用身份命名空间在Adobe Experience Platform中摄取元数据。
 
 ## 2.3.6.1.1外部受众的身份命名空间
 
@@ -47,19 +48,19 @@ ht-degree: 0%
 请注意：
 
 - 标识符号&#x200B;**externalaudiences**&#x200B;将在后续步骤中用于引用外部受众标识。
-- **非人员标识符**&#x200B;类型用于此身份命名空间，因为此命名空间不用于识别客户配置文件，而是用于识别区段。
+- **非人员标识符**&#x200B;类型用于此身份命名空间，因为此命名空间不用于识别客户配置文件，而是用于识别受众。
 
 ![外部受众标识](images/extAudIdNS.png)
 
 ## 2.3.6.1.2创建外部受众元数据架构
 
-外部受众元数据基于&#x200B;**区段定义架构**。 您可以在[XDM Github存储库](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md)中找到更多详细信息。
+外部受众元数据基于&#x200B;**受众定义架构**。 您可以在[XDM Github存储库](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md)中找到更多详细信息。
 
 在左侧菜单中，转到架构。 单击&#x200B;**+创建架构**，然后单击&#x200B;**浏览**。
 
 ![外部受众元数据架构1](images/extAudMDXDM1.png)
 
-要分配类，请搜索&#x200B;**区段定义**。 选择&#x200B;**区段定义**&#x200B;类并单击&#x200B;**分配类**。
+要分配类，请搜索&#x200B;**受众定义**。 选择&#x200B;**受众定义**&#x200B;类并单击&#x200B;**分配类**。
 
 ![外部受众元数据架构2](images/extAudMDXDM2.png)
 
@@ -203,13 +204,13 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![外部受众元数据str 5](images/extAudMDstr5.png)
 
-## 2.3.6.2区段会员资格
+## 受众成员资格
 
-借助外部受众元数据，您现在可以摄取特定客户个人资料的区段成员资格。
+借助外部受众元数据，您现在可以摄取特定客户配置文件的受众成员资格。
 
-现在，您需要准备一个配置文件数据集，以扩充区段成员资格架构。 您可以在[XDM Github存储库](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md)中找到更多详细信息。
+您现在需要准备一个配置文件数据集，以根据受众成员资格模式进行扩充。 您可以在[XDM Github存储库](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md)中找到更多详细信息。
 
-## 2.3.6.2.1创建外部受众成员资格架构
+### 创建外部受众成员资格架构
 
 在右菜单中，转到&#x200B;**架构**。 单击&#x200B;**创建架构**，然后单击&#x200B;**XDM个人配置文件**。
 
@@ -237,7 +238,7 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![外部受众配置文件架构5](images/extAudPrXDM5.png)
 
-## 2.3.6.2.2创建外部受众成员资格数据集
+### 创建外部受众成员资格数据集
 
 在&#x200B;**架构**&#x200B;中，转到&#x200B;**浏览**。 搜索并单击您在上一步中创建的`--aepUserLdap-- - External Audiences Membership`架构。 接下来，单击&#x200B;**从架构**&#x200B;创建数据集。
 
@@ -251,7 +252,7 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![外部受众元数据DS 3](images/extAudPrDS3.png)
 
-## 2.3.6.2.3创建HTTP API Source连接
+### 创建HTTP API Source连接
 
 
 接下来，您需要配置HTTP API Source连接器，以便将其用于将元数据摄取到数据集中。
@@ -294,7 +295,7 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![外部受众元数据http 4](images/extAudPrhttp4a.png)
 
-## 2.3.6.2.4外部受众会员资格数据的摄取
+### 摄取外部受众成员资格数据
 
 在Source连接器概述选项卡上，单击&#x200B;**...**，然后单击&#x200B;**复制架构有效负载**。
 
@@ -346,7 +347,7 @@ select * from --aepUserLdap--_external_audience_metadata
 
 ![外部受众元数据str 2](images/extAudPrstr2.png)
 
-## 2.3.6.2.5验证外部受众成员资格摄取
+### 验证外部受众成员资格摄取
 
 处理完成后，您可以使用查询服务检查数据集中的数据可用性。
 
@@ -368,7 +369,7 @@ select * from --aepUserLdap--_external_audiences_membership
 
 ![外部受众元数据str 5](images/extAudPrstr5.png)
 
-## 2.3.6.3创建区段
+## 创建区段
 
 现在，您已准备好对外部受众执行操作。
 在Adobe Experience Platform中，采取相应措施可通过创建区段、填充相应受众并将这些受众共享到目标来实现。
@@ -396,7 +397,7 @@ select * from --aepUserLdap--_external_audiences_membership
 
 您的区段现已准备就绪，可发送至目标进行激活。
 
-## 2.3.6.4可视化您的客户档案
+## 可视化您的客户配置文件
 
 您现在还可以在客户配置文件中可视化区段鉴别。 转到&#x200B;**配置文件**，使用标识命名空间&#x200B;**演示系统 — CRMID**&#x200B;并提供您在练习6.6.2.4中使用的标识`--aepUserLdap---profile-test-01`，然后单击&#x200B;**查看**。 接下来，单击&#x200B;**配置文件ID**&#x200B;以打开配置文件。
 

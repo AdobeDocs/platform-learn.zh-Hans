@@ -4,7 +4,7 @@ description: Foundation - Real-time Customer Profile — 从未知到网站上�
 kt: 5342
 doc-type: tutorial
 exl-id: ddbf97c2-8105-42b6-b9bf-209b1df6a3b5
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 2%
@@ -43,7 +43,7 @@ Platform是一个环境，在该环境中，客户一词不仅限于已知客户
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个演示，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
+然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个练习，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 

@@ -1,11 +1,12 @@
 ---
-title: Real-time CDP — 构建区段并执行操作 — 配置Advertising目标，如Google DV360
-description: Real-time CDP — 构建区段并执行操作 — 配置Advertising目标，如Google DV360
+title: Real-time CDP — 构建受众并采取行动 — 配置Advertising目标，如Google DV360
+description: Real-time CDP — 构建受众并采取行动 — 配置Advertising目标，如Google DV360
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: fdc590d5-b986-422c-97ef-b5a439644439
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '331'
 ht-degree: 1%
 
 ---
@@ -14,13 +15,13 @@ ht-degree: 1%
 
 >[!IMPORTANT]
 >
->以下内容仅供参考 — 您&#x200B;**不需要**&#x200B;为DV360配置新的目标。 已创建目标，您可以在下一个练习中使用它。
+>以下内容仅供参考 — 如果您的实例中已存在此类目标，则&#x200B;**不**&#x200B;必须配置DV360的新目标。 在该情况下已创建目标，您可以在下一个练习中使用它。
 
 转到[Adobe Experience Platform](https://experience.adobe.com/platform)。 登录后，您将登录到Adobe Experience Platform的主页。
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/home.png)
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 您可以通过单击屏幕顶部蓝线中的文本&#x200B;**[!UICONTROL Production Prod]**&#x200B;来执行此操作。 选择适当的[!UICONTROL 沙盒]后，您将看到屏幕更改，现在您已经进入专用的[!UICONTROL 沙盒]。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 选择适当的[!UICONTROL 沙盒]后，您将看到屏幕更改，现在您已经进入专用的[!UICONTROL 沙盒]。
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -61,9 +62,9 @@ ht-degree: 1%
 ![RTCDP](./images/rtcdpcreatedest1.png)
 
 然后，您将看到可用目标的列表。
-在下一个练习中，您会将在上一个练习中构建的区段连接到Google DV360目标。
+在下一个练习中，您会将在上一个练习中构建的受众连接到Google DV360目标。
 
-下一步： [2.3.3执行操作：将区段发送到DV360](./ex3.md)
+下一步： [2.3.3执行操作：将受众发送到DV360](./ex3.md)
 
 [返回模块2.3](./real-time-cdp-build-a-segment-take-action.md)
 

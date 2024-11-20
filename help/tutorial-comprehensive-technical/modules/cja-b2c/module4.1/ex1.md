@@ -3,9 +3,10 @@ title: Customer Journey Analytics-Customer Journey Analytics101
 description: Customer Journey Analytics-Customer Journey Analytics101
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b298de4a-023b-4373-b365-2c0622b5a551
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -74,7 +75,7 @@ CJA的目标是向营销和业务团队提供分析能力，使其成为这些�
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/home.png)
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 您可以通过单击屏幕顶部蓝线中的文本&#x200B;**[!UICONTROL Production Prod]**&#x200B;来执行此操作。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/sb1.png)
 

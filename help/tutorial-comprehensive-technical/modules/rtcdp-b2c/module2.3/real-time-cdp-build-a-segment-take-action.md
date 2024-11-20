@@ -6,16 +6,14 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '336'
 ht-degree: 1%
 
 ---
 
 # 2.3 Real-time CDP — 构建区段并采取行动
-
-**作者：[Wouter Van Galuwe](https://www.linkedin.com/in/woutervangeluwe/)，[Alberto De Caro](https://www.linkedin.com/in/albertodecaro/)，[Benedikt Wedenik](https://www.linkedin.com/in/benedikt-wedenik/)**
 
 在本模块中，您将配置一个流区段并将该区段激活到多个目标。
 
@@ -38,25 +36,25 @@ ht-degree: 1%
 
 ## 练习
 
-[2.3.1创建区段](./ex1.md)
+[2.3.1创建受众](./ex1.md)
 
-了解如何创建区段。
+了解如何创建受众。
 
 [2.3.2查看如何使用目标配置DV360目标](./ex2.md)
 
 了解如何使用Real-Time CDP UI配置广告目标。
 
-[2.3.3采取行动：将您的区段发送到DV360](./ex3.md)
+[2.3.3采取行动：将您的受众发送至DV360](./ex3.md)
 
-将练习6.1中构建的区段连接到目标DV360。
+将您构建的受众连接到目标DV360。
 
-[2.3.4采取行动：将您的区段发送到S3目标](./ex4.md)
+[2.3.4操作：将受众发送到S3目标](./ex4.md)
 
-使用您在练习6.1中构建的区段，并将其发送到S3目标（通常用于电子邮件营销目标）。
+使用您创建的受众并将其发送到S3目标，通常用于电子邮件营销目标。
 
-[2.3.5采取行动：将您的区段发送到Adobe Target](./ex5.md)
+[2.3.5采取行动：将受众发送至Adobe Target](./ex5.md)
 
-使用您在练习6.1中构建的区段在Adobe Target中配置体验定位活动。
+使用您创建的受众在Adobe Target中配置体验定位活动。
 
 [2.3.6外部受众](./ex6.md)
 

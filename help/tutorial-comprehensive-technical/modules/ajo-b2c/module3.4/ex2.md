@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer — 配置基于批次的历程
 description: 在此部分中，您将配置批量电子邮件历程以发送新闻稿
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 52b2e019-e408-4160-87b7-2aabd0f3c68f
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ## 3.4.2.1创建新闻稿历程
 
-现在，您将创建一个基于批次的历程。 与上一个练习中基于事件的历程（依赖传入体验事件或区段登录或退出来触发1个特定客户的历程）不同，基于批次的历程一次以具有唯一内容（如新闻稿、一次性促销或通用信息）的整个区段为目标，或者定期发送具有类似内容的历程（如实例生日活动和提醒）。
+现在，您将创建一个基于批次的历程。 与上一个练习中依赖于传入体验事件或受众进入或退出以触发1个特定客户的历程的基于事件的历程不同，基于批次的历程一次以具有唯一内容（如新闻稿、一次性促销或通用信息）的整个受众为目标，或者定期发送具有类似内容的历程（如实例生日活动和提醒）。
 
 在菜单中，转到&#x200B;**历程**&#x200B;并单击&#x200B;**创建历程**。
 
@@ -37,11 +38,11 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/batchj2.png)
 
-在&#x200B;**业务流程**&#x200B;下，将&#x200B;**读取区段**&#x200B;拖放到画布上。 这意味着，发布后，历程将通过检索整个区段受众开始，然后成为历程和消息的目标受众。 单击&#x200B;**选择区段**。
+在&#x200B;**编排**&#x200B;下，将&#x200B;**读取受众**&#x200B;拖放到画布上。 这意味着，发布后，历程将首先检索整个受众受众，然后成为历程和消息的目标受众。 单击&#x200B;**选择受众**。
 
 ![Journey Optimizer](./images/batchj3.png)
 
-在&#x200B;**选择区段**&#x200B;弹出窗口中，搜索您的LDAP并选择您在[模块2.3 - Real-time CDP — 生成区段并执行名为`--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`的操作](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)中创建的区段。 例如： vangeluw — 关注PROTEUS FITNESS JACKSHIRT。 单击&#x200B;**保存**。
+在&#x200B;**选择受众**&#x200B;弹出窗口中，搜索您的ldap并选择您在[模块2.3 - Real-time CDP — 构建受众并执行名为`--aepUserLdap-- - Interest in Galaxy S24`的操作](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)中创建的受众。 单击&#x200B;**保存**。
 
 ![Journey Optimizer](./images/batchj5.png)
 

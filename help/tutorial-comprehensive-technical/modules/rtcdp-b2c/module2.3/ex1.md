@@ -1,87 +1,84 @@
 ---
-title: Real-time CDP — 构建区段并采取行动 — 构建区段
-description: Real-time CDP — 构建区段并采取行动 — 构建区段
+title: Real-time CDP — 构建受众并采取行动 — 构建受众
+description: Real-time CDP — 构建受众并采取行动 — 构建受众
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a46b1640-769d-4fb3-97e6-beaf9706efbf
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '611'
 ht-degree: 2%
 
 ---
 
-# 2.3.1创建区段
+# 2.3.1创建受众
 
-在本练习中，您将使用Adobe Experience Platform的区段生成器创建一个区段。
+在本练习中，您将使用Adobe Experience Platform的受众生成器来创建受众。
 
-## 2.3.1.1上下文
+## 上下文
 
-在当今世界，对客户行为的响应必须是实时的。 实时响应客户行为的方法之一是在区段符合实时条件的情况下使用区段。 在本练习中，您需要构建区段，同时考虑到我们一直在使用的网站上的实际活动。
+对客户兴趣的响应需要实时进行。 实时响应客户行为的一种方法是，在受众具有实时资格的情况下，使用受众。 在本练习中，您需要构建受众，同时考虑到我们一直在使用的网站上的实际活动。
 
-## 2.3.1.2确定您要对其做出反应的行为
+## 确定您要回应的行为
 
-转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
+转到[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**运行**&#x200B;以将其打开。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-您现在可以按照以下流程访问该网站。 单击&#x200B;**集成**。
-
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web1.png)
-
-在&#x200B;**集成**&#x200B;页面上，您需要选择在练习0.1中创建的数据收集属性。
-
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 随后您将看到您的演示网站已打开。 选择URL并将其复制到剪贴板。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
 打开一个新的无痕浏览器窗口。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
 粘贴您在上一步中复制的演示网站的URL。 然后，系统将要求您使用Adobe ID登录。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
 选择您的帐户类型并完成登录过程。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个演示，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
+然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个练习，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
 在本例中，您希望对查看特定产品的特定客户做出响应。
-从**Luma**&#x200B;主页，转到&#x200B;**Men**，然后单击产品&#x200B;**PROTEUS FITNESS JACKSHIRT**。
+从**Citi Signal**&#x200B;主页，转到&#x200B;**手机和设备**，然后单击产品&#x200B;**Galaxy S24**。
 
-![数据获取](./images/homenadia.png)
+![数据获取](./images/homegalaxy.png)
 
-因此，当有人访问&#x200B;**PROTEUS FITNESS JACKSHIRT**&#x200B;的产品页面时，您希望能够采取行动。 要采取相应措施，首先要定义区段。
+因此，当有人访问&#x200B;**Galaxy S24**&#x200B;的产品页面时，您希望能够采取行动。 要采取行动，首先要定义受众。
 
-![数据获取](./images/homenadiapp.png)
+![数据获取](./images/homegalaxy1.png)
 
-## 2.3.1.3创建区段
+## 创建受众
 
 转到[Adobe Experience Platform](https://experience.adobe.com/platform)。 登录后，您将登录到Adobe Experience Platform的主页。
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/home.png)
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 您可以通过单击屏幕顶部蓝线中的文本&#x200B;**[!UICONTROL Production Prod]**&#x200B;来执行此操作。 选择适当的[!UICONTROL 沙盒]后，您将看到屏幕更改，现在您已经进入专用的[!UICONTROL 沙盒]。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 选择适当的[!UICONTROL 沙盒]后，您将看到屏幕更改，现在您已经进入专用的[!UICONTROL 沙盒]。
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-在左侧的菜单中，转到&#x200B;**区段**，然后转到&#x200B;**浏览**，您可以在其中查看所有现有区段的概述。 单击&#x200B;**创建区段**&#x200B;按钮开始创建新区段。
+在左侧的菜单中，转到&#x200B;**受众**，然后转到&#x200B;**浏览**，您可以在其中查看所有现有受众的概述。 单击&#x200B;**创建受众**&#x200B;按钮开始创建新受众。
 
 ![区段](./images/menuseg.png)
 
-如上所述，您需要从查看了产品&#x200B;**PROTEUS FITNESS JACKSHIRT**&#x200B;的所有客户中构建一个区段。
+选择&#x200B;**生成规则**&#x200B;并单击&#x200B;**创建**。
 
-要构建此区段，您需要添加一个事件。 单击&#x200B;**区段**&#x200B;菜单栏中的&#x200B;**事件**&#x200B;图标可找到所有事件。
+![区段](./images/menuseg1.png)
+
+如上所述，您需要从已查看产品&#x200B;**Galaxy S24**&#x200B;的所有客户中构建受众。
+
+要构建此受众，您需要添加一个事件。 通过单击&#x200B;**受众**&#x200B;菜单栏中的&#x200B;**事件**&#x200B;图标，您可以找到所有事件。
 
 接下来，您将看到顶级&#x200B;**XDM ExperienceEvent**&#x200B;节点。
 
-若要查找已访问&#x200B;**PROTEUS FITNESS JACKSHIRT**&#x200B;产品的客户，请单击&#x200B;**XDM ExperienceEvent**。
+要查找访问过&#x200B;**Galaxy S24**&#x200B;产品的客户，请单击&#x200B;**XDM ExperienceEvent**。
 
 ![区段](./images/findee.png)
 
@@ -89,32 +86,29 @@ ht-degree: 2%
 
 ![区段](./images/see.png)
 
-选择&#x200B;**Name**&#x200B;并从左侧的&#x200B;**产品列表项**&#x200B;菜单将&#x200B;**Name**&#x200B;对象拖放到区段生成器画布中的&#x200B;**事件**&#x200B;部分。
+选择&#x200B;**Name**&#x200B;并将左侧&#x200B;**产品列表项**&#x200B;菜单中的&#x200B;**Name**&#x200B;对象拖放到受众生成器画布中的&#x200B;**事件**&#x200B;部分。
 
 ![区段](./images/eewebpdtlname1.png)
 
-比较参数应为&#x200B;**等于**，并在输入字段中输入`PROTEUS FITNESS JACKSHIRT`。
+比较参数应为&#x200B;**等于**，并在输入字段中输入`Galaxy S24`。
 
 ![区段](./images/pv.png)
 
-您的&#x200B;**事件规则**&#x200B;现在应如下所示。 每次将元素添加到区段生成器时，都可以单击&#x200B;**刷新估算**&#x200B;按钮以获取区段中的群体新估算。
+您的&#x200B;**事件规则**&#x200B;现在应如下所示。 每次将元素添加到受众生成器时，都可以单击&#x200B;**刷新估算**&#x200B;按钮以获取受众中群体的最新估算。
 
 ![区段](./images/ldap4.png)
 
-最后，让我们为您的区段命名并保存它。
+为受众提供一个名称并将&#x200B;**评估方法**&#x200B;设置为&#x200B;**Edge**。
 
 作为命名约定，请使用：
 
-- `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`
+- `--aepUserLdap-- - Interest in Galaxy S24`
 
-区段名称应如下所示：
-`vangeluw - Interest in PROTEUS FITNESS JACKSHIRT`
-
-接下来，单击&#x200B;**保存并关闭**&#x200B;按钮以保存您的区段。
+接下来，单击&#x200B;**Publish**&#x200B;按钮以保存受众。
 
 ![区段](./images/segmentname.png)
 
-此时您将返回到区段概述页面。
+此时您将返回到受众概述页面。
 
 ![区段](./images/savedsegment.png)
 

@@ -1,19 +1,19 @@
 ---
-title: Foundation - Real-time Customer Profile — 创建区段 — UI
-description: Foundation - Real-time Customer Profile — 创建区段 — UI
+title: 基础 — 实时客户个人资料 — 创建受众 — UI
+description: 基础 — 实时客户个人资料 — 创建受众 — UI
 kt: 5342
 doc-type: tutorial
 exl-id: db1d744d-c4ff-4131-b104-98bb70269140
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 3%
 
 ---
 
-# 2.1.4创建区段 — UI
+# 2.1.4创建受众 — UI
 
-在本练习中，您将使用Adobe Experience Platform的区段生成器创建一个区段。
+在本练习中，您将使用Adobe Experience Platform的Audience Builder创建一个受众。
 
 转到[Adobe Experience Platform](https://experience.adobe.com/platform)。 登录后，您将登录到Adobe Experience Platform的主页。
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-在左侧的菜单中，转到&#x200B;**受众**。 在此页面上，您可以看到所有现有区段的概述。 单击&#x200B;**+创建受众**&#x200B;按钮开始创建新区段。
+在左侧的菜单中，转到&#x200B;**受众**。 在此页面上，您可以看到所有现有受众的概述。 单击&#x200B;**+创建受众**&#x200B;按钮开始创建新受众。
 
 ![区段](./images/menuseg.png)
 
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ![区段](./images/menusegbr.png)
 
-进入新的区段生成器后，您会立即注意到&#x200B;**Attributes**&#x200B;菜单选项和&#x200B;**XDM个人资料**&#x200B;引用。
+进入新的受众生成器后，您会立即注意到&#x200B;**属性**&#x200B;菜单选项和&#x200B;**XDM个人资料**&#x200B;引用。
 
 ![区段](./images/segmentationui.png)
 

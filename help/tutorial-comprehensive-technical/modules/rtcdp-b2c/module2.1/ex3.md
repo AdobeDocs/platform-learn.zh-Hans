@@ -4,9 +4,9 @@ description: Foundation - Real-time Customer Profile — 可视化您自己的�
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2287'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ## 上下文
 
-在实时客户个人资料中，所有个人资料数据都与事件数据以及现有区段成员资格一起显示。 所显示的数据可以来自任何地方，包括Adobe应用程序和外部解决方案。 这是Adobe Experience Platform中最强大的视图，体验记录体系。
+在实时客户个人资料中，所有个人资料数据都与事件数据以及现有受众成员资格一起显示。 所显示的数据可以来自任何地方，包括Adobe应用程序和外部解决方案。 这是Adobe Experience Platform中最强大的视图，体验记录体系。
 
 实时客户配置文件可供所有Adobe应用程序使用，也可以供呼叫中心或店内客户通信应用程序等外部解决方案使用。 要执行此操作，您需要将这些外部解决方案连接到Adobe Experience Platform的API。
 
@@ -58,9 +58,6 @@ ht-degree: 1%
 
 ![Adobe I/O新集成](./images/api1.png)
 
-单击&#x200B;**Adobe Experience Platform**图标。
-/images/api2.png)
-
 选择&#x200B;**Experience PlatformAPI**&#x200B;并单击&#x200B;**下一步**。
 
 ![Adobe I/O新集成](./images/api3.png)
@@ -75,7 +72,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 产品配置文件名称在您的Adobe Experience Platform实例中将有所不同，因为它们是实例specifici。 您需要至少选择一个具有适当访问权限的产品配置文件，这些权限是在Adobe Admin Console和AEP权限UI中设置的。
+> 由于产品配置文件名称因实例而异，因此在您的Adobe Experience Platform实例中将有所不同。 您需要至少选择一个具有适当访问权限的产品配置文件，这些权限是在Adobe Admin Console和AEP权限UI中设置的。
 
 单击&#x200B;**保存配置的API**。
 
@@ -119,7 +116,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 产品配置文件名称在您的Adobe Experience Platform实例中将有所不同，因为它们是实例specifici。 您需要至少选择一个具有适当访问权限的产品配置文件，这些权限是在Adobe Admin Console和AEP权限UI中设置的。
+> 由于产品配置文件名称因实例而异，因此在您的Adobe Experience Platform实例中将有所不同。 您需要至少选择一个具有适当访问权限的产品配置文件，这些权限是在Adobe Admin Console和AEP权限UI中设置的。
 
 ![权限](./images/perm1.png)
 
@@ -150,7 +147,7 @@ ht-degree: 1%
 - 环境包含所有比较一致或不太一致的环境变量。 在该环境中，您可以找到我们的Platform环境的IMSOrg等内容，以及您的私钥和其他安全凭据。 环境文件是您在上一个练习的Adobe I/O设置过程中下载的文件，其名称如下： **`oauth_server_to_server.postman_environment.json`**。
 
 - 收藏集包含大量您可以使用的API请求。 我们将使用2个收藏集
-   - 1个用于AdobeI/0的身份验证的集合
+   - 1个集合用于Adobe I/O的身份验证
    - 1本模块中的练习的集合
    - 用于Real-Time CDP模块中练习的1个集合，用于目标创作
 
@@ -632,7 +629,7 @@ Adobe I/O为您提供了&#x200B;**持有者** — 令牌，该令牌具有特定
 
 您无需使用ECID从Adobe Experience Platform的实时配置文件中请求ExperienceEvent数据，您可以使用任何命名空间中的任何ID来请求此数据。
 
-下一步： [2.1.4创建区段 — UI](./ex4.md)
+下一步：[2.1.4创建受众 — UI](./ex4.md)
 
 [返回模块2.1](./real-time-customer-profile.md)
 

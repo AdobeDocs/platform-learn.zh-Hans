@@ -4,7 +4,7 @@ description: 面向数据工程师、数据分析师、数据架构师、数据�
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
 workflow-type: tm+mt
 source-wordcount: '1524'
 ht-degree: 2%
@@ -84,7 +84,7 @@ ht-degree: 2%
 - **描述：**&#x200B;在此基础模块中，您将从网站中摄取数据到Platform
 - **时间投资：** 120分钟
 
-[1.3联合受众组合](./modules/datacollection/module1.3/fac.md)
+[1.3联合受众构成](./modules/datacollection/module1.3/fac.md)
 
 - **受众：**&#x200B;数据分析师、数据工程师、数据架构师
 - **先决条件：**&#x200B;访问Adobe Experience Platform

@@ -4,7 +4,7 @@ description: 快速入门 — 使用网站
 kt: 5342
 doc-type: tutorial
 exl-id: 6c63a63e-551f-4568-bba5-9d61d7e6a7d1
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ![DSN](./images/web2.png)
 
-在上一步中创建的数据收集属性（名为`--aepUserLdap - Demo System (DD/MM/YYYY) (web)`）上单击&#x200B;**选择**。
+在上一步中创建的数据收集属性（名为`--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`）上单击&#x200B;**选择**。
 
 ![DSN](./images/web2a.png)
 
