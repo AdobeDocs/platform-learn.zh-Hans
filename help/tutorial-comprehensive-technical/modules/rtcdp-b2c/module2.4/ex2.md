@@ -1,119 +1,126 @@
 ---
-title: 区段激活到Microsoft Azure事件中心 — 在Adobe Experience Platform中设置事件中心RTCDP目标
-description: 区段激活到Microsoft Azure事件中心 — 在Adobe Experience Platform中设置事件中心RTCDP目标
+title: 区段激活到Microsoft Azure事件中心 — Azure中的设置事件中心
+description: 区段激活到Microsoft Azure事件中心 — Azure中的设置事件中心
 kt: 5342
 doc-type: tutorial
 exl-id: 0c2e94ec-00e8-4f47-add7-ca3a08151225
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '579'
 ht-degree: 1%
 
 ---
 
-# 2.4.2在Adobe Experience Platform中配置Azure事件中心目标
+# 2.4.2配置Microsoft Azure EventHub环境
 
-## 2.4.2.1标识所需的Azure连接参数
+Azure事件中心是一种高度可扩展的发布 — 订阅服务，每秒可以摄取数百万个事件并将它们流式传输到多个应用程序中。 这使您能够处理和分析由连接的设备和应用程序产生的大量数据。
 
-要在Adobe Experience Platform中定义事件中心目标，您需要执行以下操作：
+## 什么是Azure事件中心？
 
-- 事件中心命名空间
-- 事件中心
-- Azure SAS密钥名称
-- Azure SAS密钥
+Azure事件中心是一个大数据流式传输平台和事件摄取服务。 它每秒可以接收和处理数百万个事件。 发送到事件中心的数据可以使用任何实时分析提供程序或批处理/存储适配器进行转换和存储。
 
-在上一个练习中已定义事件中心和EventHub命名空间： [练习1 - Azure中的设置事件中心](./ex1.md)
+事件中心代表事件管道的&#x200B;**前门**，在解决方案体系结构中通常称为事件引入器。 事件摄取器是位于事件发布者(如Adobe Experience Platform RTCDP)和事件使用者之间的组件或服务，用于将事件流的生产与事件的消费分离。 事件中心提供了一个具有时间保留缓冲的统一流平台，将事件生成器与事件使用者分离。
 
-### 事件中心命名空间
+## 创建事件中心命名空间
 
-要在Azure Portal中查找上述信息，请导航到[https://portal.azure.com/#home](https://portal.azure.com/#home)。 确保使用正确的Azure帐户。
+转到[https://portal.azure.com/#home](https://portal.azure.com/#home)并选择&#x200B;**创建资源**。
 
-选择Azure Portal中的&#x200B;**所有资源**：
+![1-01-open-azure-portal.png](./images/101openazureportal.png)
 
-![2-01-azure-all-resources.png](./images/2-01-azure-all-resources.png)
+在资源屏幕中，在搜索栏中输入&#x200B;**事件**。 找到&#x200B;**事件中心**&#x200B;卡，单击&#x200B;**创建**，然后单击&#x200B;**事件中心**。
 
-### 事件中心
+![1-02-search-event-hubs.png](./images/102searcheventhubs.png)
 
-查找资源类型为&#x200B;**事件中心命名空间**&#x200B;的资源，如果您遵循上一个练习中使用的命名约定，则事件中心命名空间将为`--aepUserLdap---aep-enablement`。 记下它，您将在下一个练习中需要它。
+如果这是您第一次在Azure中创建资源，则需要创建新的&#x200B;**资源组**。 如果您已经有一个资源组，则可以选择该资源组（或创建一个新资源组）。
 
-![2-02-select-event-hubs-namespace.png](./images/2-02-select-event-hubs-namespace.png)
+单击&#x200B;**新建**&#x200B;并将您的群组命名为`--aepUserLdap---aep-enablement`，单击&#x200B;**确定**。
 
-单击事件中心命名空间名称以获取详细信息：
+![1-04-create-resource-group.png](./images/104createresourcegroup.png)
 
-![2-03-select-event-hub.png](./images/2-03-select-event-hub.png)
+按照指示填写其余字段：
 
-选择&#x200B;**事件中心**&#x200B;以获取在事件中心命名空间中定义的事件中心列表，如果遵循上个练习中使用的命名约定，您将找到名为`--aepUserLdap---aep-enablement-event-hub`的事件中心。 记下它，您将在下一个练习中需要它。
+- 命名空间：定义您的命名空间，命名空间必须是唯一的，请使用以下模式`--aepUserLdap---aep-enablement`
+- 位置：选择任意位置
+- 定价层： **基本**
+- 吞吐量单位： **1**
 
-![2-04-event-hub-selected.png](./images/2-04-event-hub-selected.png)
+单击&#x200B;**审阅+创建**。
 
-### SAS密钥名称
+![1-05-create-namespace.png](./images/105createnamespace.png)
 
-为您的&#x200B;**事件中心命名空间**&#x200B;选择&#x200B;**共享访问策略**
+单击&#x200B;**创建**。
 
-![2-05-select-sas.png](./images/2-05-select-sas.png)
+![1-07-namespace-create.png](./images/107namespacecreate.png)
 
-您将看到共享访问策略的列表。 我们正在查找的SAS密钥是&#x200B;**RootManageSharedAccessKey**。 这是SAS密钥名称。 写下来。
+资源组的部署可能需要1-2分钟，如果部署成功，您将看到以下屏幕：
 
-![2-06-sas-overview.png](./images/2-06-sas-overview.png)
+![1-08-namespace-deploy.png](./images/108namespacedeploy.png)
 
-### SAS密钥值
+## 在Azure中设置事件中心
 
-单击&#x200B;**RootManageSharedAccessKey**&#x200B;以获取SAS密钥值。 按&#x200B;**复制到剪贴板**&#x200B;图标复制&#x200B;**主键**：
+转到[https://portal.azure.com/#home](https://portal.azure.com/#home)并选择&#x200B;**所有资源**。
 
-![2-07-sas-key-value.png](./images/2-07-sas-key-value.png)
+![1-09-all-resources.png](./images/109allresources.png)
 
-### 目标值摘要
+从资源列表中，单击您的`--aepUserLdap---aep-enablement`事件中心命名空间：
 
-此时，您应该已经确定了在Adobe Experience Platform Real-time CDP中定义Azure事件中心目标所需的所有值。
+![1-10-list-resources.png](./images/110listresources.png)
 
-| 目标属性名称 | 目标属性值 | 示例值 |
-|---|---|---|
-| sasKeyName | SAS密钥名称 | RootManageSharedAccessKey |
-| sasKey | SAS密钥值 | srREx9ShJG1Rv7f/... |
-| 命名空间 | 事件中心命名空间 | `--aepUserLdap---aep-enablement` |
-| eventHubName | 事件中心 | `--aepUserLdap---aep-enablement-event-hub` |
+在`--aepUserLdap---aep-enablement`详细信息屏幕中，转到&#x200B;**实体**&#x200B;并单击&#x200B;**事件中心**：
 
-## 2.4.2.2在Adobe Experience Platform中创建Azure事件中心目标
+![1-11-eventhub-namespace.png](./images/111eventhubnamespace.png)
 
-通过转到以下URL登录Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
+单击&#x200B;**+事件中心**。
 
-登录后，您将登录到Adobe Experience Platform的主页。
+![1-12-add-event-hub.png](./images/112addeventhub.png)
 
-![数据获取](./../../../modules/datacollection/module1.2/images/home.png)
+使用`--aepUserLdap---aep-enablement-event-hub`作为名称，然后单击&#x200B;**审阅+创建**。
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
+![1-13-create-event-hub.png](./images/113createeventhub.png)
 
-![数据获取](./../../../modules/datacollection/module1.2/images/sb1.png)
+单击&#x200B;**创建**。
 
-转到&#x200B;**目标**，然后转到&#x200B;**目录**。
+![1-13-create-event-hub.png](./images/113createeventhub1.png)
 
-![数据获取](./images/sb2a.png)
+在事件中心命名空间下的&#x200B;**事件中心**&#x200B;中，您现在将看到&#x200B;**事件中心**&#x200B;已列出。
 
-选择&#x200B;**云存储**&#x200B;并转到&#x200B;**Azure事件中心**&#x200B;并单击&#x200B;**设置**&#x200B;或&#x200B;**配置**：
+![1-14-event-hub-list.png](./images/114eventhublist.png)
 
-![2-08-list-destinations.png](./images/2-08-list-destinations.png)
+## 设置您的Azure存储帐户
 
-填写您在上一个练习中收集的目标值。 接下来，单击&#x200B;**连接到目标**。
+要在以后的练习中调试您的Azure事件中心函数，您需要在Visual Studio代码项目设置中提供Azure存储帐户。 您现在将创建该Azure存储帐户。
 
-![2-09-destination-values.png](./images/2-09-destination-values.png)
+转到[https://portal.azure.com/#home](https://portal.azure.com/#home)并选择&#x200B;**创建资源**。
 
-如果凭据正确，您将看到确认：**已连接**。
+![1-15-event-hub-storage.png](./images/115eventhubstorage.png)
 
-![2-09-destination-values.png](./images/2-09-destination-valuesa.png)
+在搜索中输入&#x200B;**存储帐户**，找到&#x200B;**存储帐户**&#x200B;的卡，然后单击&#x200B;**存储帐户**。
 
-您现在需要以`--aepUserLdap---aep-enablement`格式输入名称和描述。 输入&#x200B;**eventHubName**（参阅上一个练习，它看起来像这样： `--aepUserLdap---aep-enablement-event-hub`），然后单击&#x200B;**下一步**。
+![1-16-event-hub-search-storage.png](./images/116eventhubsearchstorage.png)
 
-![2-10-create-destination.png](./images/2-10-create-destination.png)
+指定您的&#x200B;**资源组**（在本练习开始时创建），使用`--aepUserLdap--aepstorage`作为存储帐户名称并选择&#x200B;**本地冗余存储(LRS)**，然后单击&#x200B;**查看+创建**。
 
-单击&#x200B;**保存并退出**。
+![1-18-event-hub-create-review-storage.png](./images/118eventhubcreatereviewstorage.png)
 
-![2-11-save-exit-activation.png](./images/2-11-save-exit-activation.png)
+单击&#x200B;**创建**。
 
-您的目标现已创建并可在Adobe Experience Platform中使用。
+![1-19-event-hub-submit-storage.png](./images/119eventhubsubmitstorage.png)
 
-![2-12-destination-created.png](./images/2-12-destination-created.png)
+创建存储帐户将需要几秒钟的时间：
 
-下一步： [2.4.3创建区段](./ex3.md)
+![1-20-event-hub-deploy-storage.png](./images/120eventhubdeploystorage.png)
+
+完成后，屏幕将显示&#x200B;**转到资源**&#x200B;按钮。
+
+单击&#x200B;**主页**。
+
+![1-21-event-hub-deploy-ready-storage.png](./images/121eventhubdeployreadystorage.png)
+
+您的存储帐户现在显示在&#x200B;**最近的资源**&#x200B;下。
+
+![1-22-event-hub-deploy-resources-list.png](./images/122eventhubdeployresourceslist.png)
+
+下一步： [2.4.3在Adobe Experience Platform中配置Azure事件中心目标](./ex3.md)
 
 [返回模块2.4](./segment-activation-microsoft-azure-eventhub.md)
 

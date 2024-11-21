@@ -4,9 +4,9 @@ description: 面向数据工程师、数据分析师、数据架构师、数据�
 doc-type: multipage-overview
 hide: false
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
+source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1511'
 ht-degree: 2%
 
 ---
@@ -42,22 +42,22 @@ ht-degree: 2%
 - 使用Adobe Experience Platform数据收集将数据实时流式传输到Adobe Experience Platform
 - 使用工作流或使用提取、转换、加载(ETL)应用程序将数据批量摄取到Adobe Experience Platform中
 - 在Adobe Experience Platform中可视化并使用实时客户个人资料
-- 创建区段
+- 创建受众
 - 使用多个Adobe Experience Platform API
 - 使用SQL在Adobe Experience Platform中查询数据
 - 配置和运行基于触发器的实时历程
-- 使用Real-time CDP激活到各种目的地的区段以采取行动
+- 使用Real-time CDP激活受众到各种目标以采取行动
 - 使用Customer Journey Analytics报告来自各种来源(包括Google BigQuery)的全渠道客户数据
 
 ## 先决条件
 
 - 访问Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - 访问Adobe Experience Platform数据收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- 访问演示系统： [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
+- 访问演示系统： [https://dsn.adobe.com/](https://dsn.adobe.com/)
 
 ## 视频
 
-您可在我们的[Experience Makers Community YouTube频道](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw)上从我们的技术学院活动、Bootcamp及其他视频中找到许多有趣的视频。
+您可在我们的[Experience Makers社区YouTube频道](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw)的Tech Academy网络研讨会、训练营等视频中找到许多有趣的视频。
 
 ## 内容
 
@@ -109,19 +109,19 @@ ht-degree: 2%
 - **描述：**&#x200B;在本模块中，您将学习如何设置、配置和使用Adobe Experience Platform Intelligent Services。
 - **时间投资：** 60分钟
 
-[2.3 Real-Time CDP — 构建区段并采取行动](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
+[2.3 Real-Time CDP — 构建受众并采取行动](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
 
 - **受众：**&#x200B;数据架构师、编排工程师、营销人员
 - **先决条件：**&#x200B;访问Adobe Experience Platform、Real-time CDP、Adobe Audience Manager、Adobe Target、AWS S3
-- **描述：**&#x200B;在本模块中，您将配置区段，启用该区段进行流式分段，并将区段激活到多个目标，包括Google DV360、Google AdWords、Adobe Audience Manager、Adobe Target和SalesforceMarketing Cloud等S3目标。
+- **描述：**&#x200B;在本模块中，您将配置受众并将受众激活到多个目标，包括Google DV360、Adobe Target和AWS S3。
 - **时间投资：** 90分钟
 
-[2.4 Real-Time CDP：将区段激活激活到Microsoft Azure事件中心](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
+[2.4 Real-Time CDP：Audience Activation到Microsoft Azure事件中心](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
 
 - **受众：**&#x200B;数据工程师、数据架构师、数据分析师
 - **先决条件：**&#x200B;访问Adobe Experience Platform、Real-time CDP和Microsoft Azure
-- **描述：**在本模块中，您将设置Microsoft Azure EventHub目标作为Adobe Experience Platform Real-time CDP的实时目标。 您还将设置和部署一个Azure函数，每当Adobe Experience Platform将区段有效负载交付到Azure EventHub目标时，该函数都将实时触发。 您将触发的Azure函数将显示Adobe Experience Platform Real-time CDP激活功能的机制。
-在本模块中，您还将了解什么会触发Real-time CDP将有效负载实际传送到指定目标。 我们还将讨论区段鉴定的状态以及它与激活的关系。
+- **描述：**在本模块中，您将设置Microsoft Azure EventHub目标作为Adobe Experience Platform Real-time CDP的实时目标。 您还将设置和部署一个Azure函数，每当Adobe Experience Platform将受众有效负载交付到Azure EventHub目标时，该函数都将实时触发。 您将触发的Azure函数将显示Adobe Experience Platform Real-time CDP激活功能的机制。
+在本模块中，您还将了解什么会触发Real-time CDP将有效负载实际传送到指定目标。 我们还将讨论受众资格的状态以及它与激活的关系。
 - **时间投资：** 90分钟
 
 [2.5 Real-Time CDP连接：事件转发](./modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)

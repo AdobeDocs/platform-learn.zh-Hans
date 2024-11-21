@@ -1,131 +1,132 @@
 ---
-title: 区段激活到Microsoft Azure事件中心 — Azure中的设置事件中心
-description: 区段激活到Microsoft Azure事件中心 — Azure中的设置事件中心
+title: 区段激活到Microsoft Azure事件中心 — 配置Microsoft Azure环境
+description: 区段激活到Microsoft Azure事件中心 — 配置Microsoft Azure环境
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 772b4d2b-144a-4f29-a855-8fd3493a85d2
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 1%
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
-# 2.4.1配置Microsoft Azure EventHub环境
+# 2.4.1配置环境
 
-Azure事件中心是一种高度可扩展的发布 — 订阅服务，每秒可以摄取数百万个事件并将它们流式传输到多个应用程序中。 这使您能够处理和分析由连接的设备和应用程序产生的大量数据。
+## 创建Azure订阅
 
-## 2.4.1.1什么是Azure事件中心？
+>[!NOTE]
+>
+>如果您已经拥有Azure订阅，则可以跳过此步骤。 请继续该案例中的下一个练习。
 
-Azure事件中心是一个大数据流式传输平台和事件摄取服务。 它每秒可以接收和处理数百万个事件。 发送到事件中心的数据可以使用任何实时分析提供程序或批处理/存储适配器进行转换和存储。
+转到[https://portal.azure.com](https://portal.azure.com)并使用您的Azure帐户登录。 如果您没有个人电子邮件地址，请使用个人电子邮件地址创建您的Azure帐户。
 
-事件中心代表事件管道的&#x200B;**前门**，在解决方案体系结构中通常称为事件引入器。 事件摄取器是位于事件发布者(如Adobe Experience Platform RTCDP)和事件使用者之间的组件或服务，用于将事件流的生产与事件的消费分离。 事件中心提供了一个具有时间保留缓冲的统一流平台，将事件生成器与事件使用者分离。
+![02-azure-portal-email.png](./images/02azureportalemail.png)
 
-## 2.4.1.2创建事件中心命名空间
+成功登录后，您将看到以下屏幕：
 
-转到[https://portal.azure.com/#home](https://portal.azure.com/#home)并选择&#x200B;**创建资源**。
+![03-azure-logged-in.png](./images/03azureloggedin.png)
 
-![1-01-open-azure-portal.png](./images/1-01-open-azure-portal.png)
+单击左侧的菜单并选择&#x200B;**所有资源**，如果您尚未订阅，将显示Azure订阅屏幕。 在这种情况下，请选择&#x200B;**开始使用Azure免费试用**。
 
-在资源屏幕中，在搜索栏中输入&#x200B;**事件**，然后从下拉列表中选择&#x200B;**事件中心**：
+![04-azure-start-subscribe.png](./images/04azurestartsubscribe.png)
 
-![1-02-search-event-hubs.png](./images/1-02-search-event-hubs.png)
+填写Azure订阅表单，提供用于激活的移动电话和信用卡（您将拥有30天的免费套餐，除非您升级，否则不会向您收费）。
 
-单击&#x200B;**创建**：
+订阅过程完成后，您可以：
 
-![1-03-event-hub-create.png](./images/1-03-event-hub-create.png)
+![06-azure-subscription-ok.png](./images/06azuresubscriptionok.png)
 
-如果这是您第一次在Azure中创建资源，则需要创建新的&#x200B;**资源组**。 如果您已经有一个资源组，则可以选择该资源组（或创建一个新资源组）。
+## 安装Visual Code Studio
 
-选择&#x200B;**新建**，为您的组命名`--aepUserLdap---aep-enablement`。
+您将使用Microsoft Visual Code Studio来管理您的Azure项目。 您可以通过[此链接](https://code.visualstudio.com/download)下载它。 按照同一网站上特定操作系统的安装说明进行操作。
 
-![1-04-create-resource-group.png](./images/1-04-create-resource-group.png)
+## 安装可视化代码扩展
 
-完成字段的测试，如下所示：
+从[https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)安装Visual Studio代码的Azure函数。 单击安装按钮：
 
-- 命名空间：定义您的命名空间，命名空间必须是唯一的，请使用以下模式`--aepUserLdap---aep-enablement`
-- 位置： **西欧**&#x200B;是指位于阿姆斯特丹的Azure数据中心
-- 定价层： **基本**
-- 吞吐量单位： **1**
+![07-azure-code-extension-install.png](./images/07azurecodeextensioninstall.png)
 
-![1-05-create-namespace.png](./images/1-05-create-namespace.png)
+安装Azure帐户并从[https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)登录Visual Studio Code。 单击安装按钮：
 
-单击&#x200B;**审阅+创建**。
+![08-azure-account-extension-install.png](./images/08azureaccountextensioninstall.png)
 
-![1-06-namespace-review-create.png](./images/1-06-namespace-review-create.png)
+## 安装节点.js
 
-单击&#x200B;**创建**。
+>[!NOTE]
+>
+>如果已安装node.js，则可以跳过此步骤。 请继续该案例中的下一个练习。
 
-![1-07-namespace-create.png](./images/1-07-namespace-create.png)
+### macOS
 
-资源组的部署可能需要1-2分钟，如果部署成功，您将看到以下屏幕：
+确保先安装[Homebrew](https://brew.sh/)。 按[此处](https://brew.sh/)的说明操作。
 
-![1-08-namespace-deploy.png](./images/1-08-namespace-deploy.png)
+![节点](./images/brew.png)
 
-## 2.4.1.3在Azure中设置事件中心
+安装Homebrew后，请运行此命令：
 
-转到[https://portal.azure.com/#home](https://portal.azure.com/#home)并选择&#x200B;**所有资源**。
+```javascript
+brew install node
+```
 
-![1-09-all-resources.png](./images/1-09-all-resources.png)
+### Windows
 
-从资源列表中，选择您的`--aepUserLdap---aep-enablement`命名空间：
+直接从[nodejs.org](https://nodejs.org/en/)网站下载[Windows安装程序](https://nodejs.org/en/#home-downloadhead)。
 
-![1-10-list-resources.png](./images/1-10-list-resources.png)
+## 验证node.js版本
 
-在`--aepUserLdap---aep-enablement`详细信息屏幕中，选择&#x200B;**事件中心**：
+对于此模块，您需要安装node.js版本18。 node.js的任何其他版本都可能会导致本练习中出现问题。
 
-![1-11-eventhub-namespace.png](./images/1-11-eventhub-namespace.png)
+在继续之前，请立即验证您的node.js版本。
 
-单击&#x200B;**+事件中心**。
+运行此命令以验证您的node.js版本：
 
-![1-12-add-event-hub.png](./images/1-12-add-event-hub.png)
+```javascript
+node -v
+```
 
-使用`--aepUserLdap---aep-enablement-event-hub`作为名称，然后单击&#x200B;**创建**。
+如果您的版本低于18或高于18，则需要升级或降级。
 
-![1-13-create-event-hub.png](./images/1-13-create-event-hub.png)
+### 在macOS上升级/降级node.js版本
 
-单击事件中心命名空间中的&#x200B;**事件中心**。 您现在应该会看到列出您的&#x200B;**事件中心**。 如果是这种情况，您可以继续进行下一个练习。
+确保您已安装包&#x200B;**n**。
 
-![1-14-event-hub-list.png](./images/1-14-event-hub-list.png)
+要安装包&#x200B;**n**，请运行此命令：
 
-## 2.4.1.4设置您的Azure存储帐户
+```javascript
+sudo npm install -g n
+```
 
-要在以后的练习中调试您的Azure事件中心函数，您需要在Visual Studio代码项目设置中提供Azure存储帐户。 您现在将创建该Azure存储帐户。
+如果版本低于或高于版本12，请运行此命令升级或降级：
 
-转到[https://portal.azure.com/#home](https://portal.azure.com/#home)并选择&#x200B;**创建资源**。
+```javascript
+sudo n 18
+```
 
-![1-15-event-hub-storage.png](./images/1-15-event-hub-storage.png)
+### 在Windows上升级/降级node.js版本
 
-在搜索中输入&#x200B;**存储**，然后从列表中选择&#x200B;**存储帐户**。
+从“Windows”>“控制面板”>“添加或删除程序”中卸载node.js。
 
-![1-16-event-hub-search-storage.png](./images/1-16-event-hub-search-storage.png)
+正在从[nodejs.org](https://nodejs.org/en/)网站安装所需版本。
 
-选择&#x200B;**创建**。
+## 安装NPM包：请求
 
-![1-17-event-hub-create-storage.png](./images/1-17-event-hub-create-storage.png)
+您需要在node.js安装程序中安装包&#x200B;**请求**。
 
-指定您的&#x200B;**资源组**（在本练习开始时创建），使用`--aepUserLdap--aepstorage`作为存储帐户名称，并选择&#x200B;**本地冗余存储(LRS)**，然后单击&#x200B;**查看+创建**。
+要安装包&#x200B;**请求**，请运行此命令：
 
-![1-18-event-hub-create-review-storage.png](./images/1-18-event-hub-create-review-storage.png)
+```javascript
+npm install request
+```
 
-单击&#x200B;**创建**。
+## 安装Azure Functions核心工具：
 
-![1-19-event-hub-submit-storage.png](./images/1-19-event-hub-submit-storage.png)
+```
+brew tap azure/functions
+brew install azure-functions-core-tools@4
+```
 
-您的存储帐户创建将需要几秒钟的时间：
-
-![1-20-event-hub-deploy-storage.png](./images/1-20-event-hub-deploy-storage.png)
-
-完成后，屏幕将显示&#x200B;**转到资源**&#x200B;按钮。
-
-单击&#x200B;**Microsoft Azure**。
-
-![1-21-event-hub-deploy-ready-storage.png](./images/1-21-event-hub-deploy-ready-storage.png)
-
-您的存储帐户现在显示在&#x200B;**最近的资源**&#x200B;下。
-
-![1-22-event-hub-deploy-resources-list.png](./images/1-22-event-hub-deploy-resources-list.png)
-
-下一步： [2.4.2在Adobe Experience Platform中配置Azure事件中心目标](./ex2.md)
+下一步： [2.4.2配置您的Microsoft Azure EventHub环境](./ex2.md)
 
 [返回模块2.4](./segment-activation-microsoft-azure-eventhub.md)
 

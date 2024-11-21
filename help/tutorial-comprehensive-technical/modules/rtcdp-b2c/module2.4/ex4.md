@@ -1,21 +1,38 @@
 ---
-title: 区段激活到Microsoft Azure事件中心 — 激活区段
-description: 区段激活到Microsoft Azure事件中心 — 激活区段
+title: Audience ActivationMicrosoft Azure事件中心 — 创建受众
+description: Audience ActivationMicrosoft Azure事件中心 — 创建受众
 kt: 5342
 doc-type: tutorial
 exl-id: 56f6a6dc-82aa-4b64-a3f6-b6f59c484ccb
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '328'
-ht-degree: 1%
+source-wordcount: '338'
+ht-degree: 2%
 
 ---
 
-# 2.4.4激活区段
+# 2.4.4创建受众
 
-## 2.4.4.1将区段添加到Azure事件中心目标
+## 简介
 
-在本练习中，您要将区段`--aepUserLdap-- - Interest in Equipment`添加到`--aepUserLdap---aep-enablement` Azure事件中心目标。
+您将创建一个简单的受众：
+
+- **客户在访问CitiSignal演示网站的**&#x200B;计划&#x200B;**页面时将有资格参与的计划**。
+
+### 很高兴知道
+
+当您符合某个受众的资格（该受众属于该目标的激活列表）时，Real-time CDP将触发对该目标的激活。 在这种情况下，将发送到该目标的受众资格有效负载将包含&#x200B;**您的客户配置文件符合条件的所有受众**。
+
+本模块的目标是显示近乎实时地将“客户个人资料”的受众资格发送到“事件中心”目标。
+
+### 受众状态
+
+Adobe Experience Platform中的受众资格始终具有&#x200B;**状态** — 属性，可以是以下任一属性：
+
+- **已实现**：这表示有新的受众资格
+- **已退出**：这表示配置文件不再符合受众条件
+
+## 构建受众
 
 通过转到以下URL登录Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 
@@ -27,39 +44,29 @@ ht-degree: 1%
 
 ![数据获取](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-转到&#x200B;**目标**，然后单击&#x200B;**浏览**。 然后，您将看到所有可用的目标。 找到您的目标，然后单击&#x200B;**+**&#x200B;图标，如下所示。
+转到&#x200B;**受众**。 单击&#x200B;**+创建受众**&#x200B;按钮。
 
-![5-01-select-destination.png](./images/5-01-select-destination.png)
+![数据获取](./images/seg.png)
 
-你会看到这个。 使用您的ldap搜索您的区段，并从区段列表中选择`--aepUserLdap-- - Interest in Equipment`。
+选择&#x200B;**生成规则**&#x200B;并单击&#x200B;**创建**。
 
-单击&#x200B;**下一步**。
+![数据获取](./images/seg1.png)
 
-![5-04-select-segment.png](./images/5-04-select-segment.png)
+命名您的受众`--aepUserLdap-- - Interest in Plans`，将评估方法设置为&#x200B;**Edge**，并从体验事件中添加页面名称。
 
-Adobe Experience Platform Real-time CDP可以将有效负载交付给两种类型的目标：区段目标和配置文件目标。
+单击&#x200B;**事件**，然后拖放&#x200B;**XDM ExperienceEvent > Web >网页详细信息>名称**。 输入&#x200B;**计划**&#x200B;作为值：
 
-区段目标将收到预定义的区段资格有效负载，该有效负载将在后面讨论。 此类有效负载包含&#x200B;**所有**&#x200B;特定配置文件的区段资格。 即使区段不在目标的激活列表中。 此类区段目标的一个示例是&#x200B;**Azure事件中心**&#x200B;和&#x200B;**AWS Kinesis**。
+![4-05-create-ee-2.png](./images/405createee2.png)
 
-基于配置文件的目标允许您从XDM配置文件合并架构中选择任何属性(firstName、lastName、...)，并将其包含在激活有效负载中。 **电子邮件营销**&#x200B;就是此类目标的示例。
+拖放&#x200B;**XDM ExperienceEvent > `--aepTenantId--` > demoEnvironment > brandName**。 输入`--aepUserLdap--`作为值，将比较参数设置为&#x200B;**包含**，然后单击&#x200B;**Publish**：
 
-由于您的Azure事件中心目标是&#x200B;**区段**&#x200B;目标，因此请选择字段`--aepTenantId--.identification.core.ecid`作为示例。
+![4-05-create-ee-2-brand.png](./images/405createee2brand.png)
 
-单击&#x200B;**添加新字段**，单击浏览架构并选择字段`--aepTenantId--identification.core.ecid`（删除将自动显示的任何其他字段）。
+您的受众现已发布。
 
-单击&#x200B;**下一步**。
+![4-05-create-ee-2-brand.png](./images/405createee2brand1.png)
 
-![5-05-select-attributes.png](./images/5-05-select-attributes.png)
-
-单击&#x200B;**完成**。
-
-![5-06-destination-finish.png](./images/5-06-destination-finish.png)
-
-现在，您的区段将会朝着您的Microsoft事件中心目标激活。
-
-![5-07-destination-segment-added.png](./images/5-07-destination-segment-added.png)
-
-下一步：[2.4.5创建您的Microsoft Azure项目](./ex5.md)
+下一步：[2.4.5激活您的受众](./ex5.md)
 
 [返回模块2.4](./segment-activation-microsoft-azure-eventhub.md)
 

@@ -1,111 +1,193 @@
 ---
-title: 区段激活到Microsoft Azure事件中心 — 操作
-description: 区段激活到Microsoft Azure事件中心 — 操作
+title: Audience Activation到Microsoft Azure事件中心 — 定义Azure函数
+description: Audience Activation到Microsoft Azure事件中心 — 定义Azure函数
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
+source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '723'
 ht-degree: 0%
 
 ---
 
-# 2.4.6端到端方案
+# 2.4.6创建您的Microsoft Azure项目
 
-## 2.4.6.1启动Azure事件中心触发器
+## 熟悉Azure事件中心功能
 
-要显示Adobe Experience Platform Real-time CDP在区段鉴别后发送到我们的Azure事件中心的有效负载，我们需要启动简单的Azure事件中心触发函数。 此函数将简单地将有效负载“转储”到Visual Studio Code中的控制台。 但请记住，此函数可以通过任何方式扩展到使用专用API和协议与各种环境进行接口。
+Azure Functions允许您运行一小段代码（称为&#x200B;**函数**），而无需担心应用程序基础架构。 利用Azure Functions，云基础架构可提供保持应用程序大规模运行所需的所有最新服务器。
 
-### 启动Visual Studio代码并启动项目
+函数是由特定类型的事件触发的&#x200B;****。 支持的触发器包括响应数据更改、响应消息（例如事件中心）、按计划运行或作为HTTP请求的结果。
 
-确保已打开并运行您的Visual Studio代码项目
+Azure Functions是一种无服务器计算服务，可让您运行事件触发的代码，而无需明确配置或管理基础架构。
 
-要在Visual Studio Code中启动/停止/重新启动Azure函数，请参阅以下练习：
+Azure事件中心与Azure Functions集成以实现无服务器架构。
 
-- [练习13.5.4 — 启动Azure项目](./ex5.md)
-- [练习13.5.5 — 停止Azure项目](./ex5.md)
+## 打开Visual Studio代码并登录到Azure
 
-您的Visual Studio代码的&#x200B;**终端**&#x200B;应提及类似以下的内容：
+Visual Studio Code可以轻松地……
 
-```code
-[2022-02-23T05:03:41.429Z] Worker process started and initialized.
-[2022-02-23T05:03:41.484Z] Debugger attached.
-[2022-02-23T05:03:46.401Z] Host lock lease acquired by instance ID '000000000000000000000000D90C881B'.
+- 定义Azure函数并将其绑定到事件中心
+- 本地测试
+- 部署到Azure
+- 远程日志函数执行
+
+### 打开Visual Studio Code
+
+### 登录到Azure
+
+使用您在上一个练习中注册的Azure帐户登录时，Visual Studio Code将允许您查找并绑定所有事件中心资源。
+
+打开Visual Studio Code并单击&#x200B;**Azure**&#x200B;图标。
+
+接下来，选择&#x200B;**登录到Azure**：
+
+![3-01-vsc-open.png](./images/301vscopen.png)
+
+系统会将您重定向到浏览器以登录。 请记住选择用于注册的Azure帐户。
+
+当您在浏览器中看到以下屏幕时，您是使用Visual Code Studio登录的：
+
+![3-03-vsc-login-ok.png](./images/303vscloginok.png)
+
+返回到Visual Code Studio（您将看到Azure订阅的名称，例如&#x200B;**Azure订阅1**）：
+
+![3-04-vsc-logged-in.png](./images/304vscloggedin.png)
+
+## 创建Azure项目
+
+单击&#x200B;**创建函数项目……**：
+
+![3-05-vsc-create-project.png](./images/vsc2.png)
+
+选择您选择的本地文件夹以保存项目，然后单击&#x200B;**选择**：
+
+![3-06-vsc-select-folder.png](./images/vsc3.png)
+
+现在，您将进入项目创建向导。 单击&#x200B;**Javascript**&#x200B;作为项目的语言：
+
+![3-07-vsc-select-language.png](./images/vsc4.png)
+
+然后选择&#x200B;**模型v4**。
+
+![3-07-vsc-select-language.png](./images/vsc4a.png)
+
+选择&#x200B;**Azure事件中心触发器**&#x200B;作为项目的第一个函数模板：
+
+![3-08-vsc-function-template.png](./images/vsc5.png)
+
+输入函数的名称，使用以下格式`--aepUserLdap---aep-event-hub-trigger`并按Enter键：
+
+![3-09-vsc-function-name.png](./images/vsc6.png)
+
+选择&#x200B;**新建本地应用设置**：
+
+![3-10-vsc-function-local-app-setting.png](./images/vsc7.png)
+
+单击以选择您之前创建的名为`--aepUserLdap---aep-enablement`的事件中心命名空间。
+
+![3-11-vsc-function-select-namespace.png](./images/vsc8.png)
+
+接下来，单击以选择您之前创建的名为`--aepUserLdap---aep-enablement-event-hub`的事件中心。
+
+![3-12-vsc-function-select-eventhub.png](./images/vsc9.png)
+
+单击以选择&#x200B;**RootManageSharedAccessKey**&#x200B;作为事件中心策略：
+
+![3-13-vsc-function-select-eventhub-policy.png](./images/vsc10.png)
+
+选择&#x200B;**添加到工作区**，了解如何打开项目：
+
+![3-15-vsc-project-add-to-workspace.png](./images/vsc12.png)
+
+您随后可能会收到这样的消息。 在这种情况下，请单击&#x200B;**是，我信任作者**。
+
+![3-15-vsc-project-add-to-workspace.png](./images/vsc12a.png)
+
+创建项目后，单击&#x200B;**index.js**&#x200B;以在编辑器中打开文件：
+
+![3-16-vsc-open-index-js.png](./images/vsc13.png)
+
+Adobe Experience Platform发送到事件中心的有效负载将包含受众ID：
+
+```json
+[{
+"segmentMembership": {
+"ups": {
+"ca114007-4122-4ef6-a730-4d98e56dce45": {
+"lastQualificationTime": "2020-08-31T10:59:43Z",
+"status": "realized"
+},
+"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+},
+"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+}
+}
+},
+"identityMap": {
+"ecid": [{
+"id": "08130494355355215032117568021714632048"
+}]
+}
+}]
 ```
 
-![6-01-vsc-ready.png](./images/vsc31.png)
+将Visual Studio代码的index.js中的代码替换为以下代码。 每次Real-time CDP将受众资格发送到事件中心目标时，都将执行此代码。 在我们的示例中，代码只是用于显示和增强接收的有效负载。 但是你可以想象任何一种功能可以实时处理受众资格。
 
-## 2.4.6.2加载您的Luma网站
+```javascript
+// Marc Meewis - Solution Consultant Adobe - 2020
+// Adobe Experience Platform Enablement - Module 2.4
 
-转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
+// Main function
+// -------------
+// This azure function is fired for each audience activated to the Adobe Exeperience Platform Real-time CDP Azure 
+// Eventhub destination
+// This function enriched the received audience payload with the name of the audience. 
+// You can replace this function with any logic that is require to process and deliver
+// Adobe Experience Platform audiences in real-time to any application or platform that 
+// would need to act upon an AEP audience qualification.
+// 
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+module.exports = async function (context, eventHubMessages) {
 
-您现在可以按照以下流程访问该网站。 单击&#x200B;**集成**。
+    return new Promise (function (resolve, reject) {
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web1.png)
+        context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
 
-在&#x200B;**集成**&#x200B;页面上，您需要选择在练习0.1中创建的数据收集属性。
+        resolve();
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web2.png)
+    });    
 
-随后您将看到您的演示网站已打开。 选择URL并将其复制到剪贴板。
+};
+```
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+结果应如下所示：
 
-打开一个新的无痕浏览器窗口。
+![3-16b-vsc-edit-index-js.png](./images/vsc1.png)
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+## 运行Azure项目
 
-粘贴您在上一步中复制的演示网站的URL。 然后，系统将要求您使用Adobe ID登录。
+现在该运行您的项目了。 在此阶段，我们不会将该项目部署到Azure。 我们将在调试模式下在本地运行该程序。 选择运行图标，单击绿色箭头。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![3-17-vsc-run-project.png](./images/vsc14.png)
 
-选择您的帐户类型并完成登录过程。
+首次在调试模式下运行项目时，需要附加Azure存储帐户，单击&#x200B;**选择存储帐户**，然后选择之前创建的名为`--aepUserLdap--aepstorage`的存储帐户。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+您的项目现已启动并正在运行，并将列出事件中心中的事件。 在下一个练习中，您将在CitiSignal演示网站上演示符合受众条件的行为。 因此，您将在事件中心触发函数的终端中接收受众资格有效负载。
 
-然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个演示，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
+![3-24-vsc-application-stop.png](./images/vsc18.png)
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+## 停止Azure项目
 
-## 2.4.6.3符合您在设备领域的兴趣条件
+要停止项目，请转到VSC中的列&#x200B;**调用栈栈**，单击正在运行的项目上的箭头，然后单击&#x200B;**停止**。
 
-导航到&#x200B;**设备**&#x200B;页面一次，并且&#x200B;**不重新加载或刷新它**。 此操作应该会使您符合`--aepUserLdap-- - Interest in Equipment`区段的条件。
+![3-24-vsc-application-stop.png](./images/vsc17.png)
 
-![6-04-luma-telco-nav-sports.png](./images/luma1.png)
-
-要进行验证，请打开“配置文件查看器”面板。 您现在应该是`--aepUserLdap-- - Interest in Equipment`的成员。 如果配置文件查看器面板中尚未更新区段成员资格，请单击重新加载按钮。
-
-![6-05-luma-telco-nav-broadband.png](./images/luma2.png)
-
-切换回Visual Studio代码并查看&#x200B;**终端**&#x200B;选项卡，您应该会看到特定&#x200B;**ECID**&#x200B;的区段列表。 此激活有效负载会在您符合`--aepUserLdap-- - Interest in Equipment`区段的资格后立即交付到您的事件中心。
-
-当您更仔细地查看区段有效负载时，可以看到`--aepUserLdap-- - Interest in Equipment`处于&#x200B;**已实现**&#x200B;状态。
-
-区段状态为&#x200B;**已实现**，这意味着我们的用户档案刚刚进入该区段。 而&#x200B;**existing**&#x200B;状态意味着我们的配置文件继续位于区段中。
-
-![6-06-vsc-activation-realized.png](./images/luma3.png)
-
-## 2.4.6.4再次访问“设备”页面
-
-对&#x200B;**设备**&#x200B;页面进行硬刷新。
-
-![6-07-back-to-sports.png](./images/luma1.png)
-
-现在，切换回Visual Studio Code并验证您的&#x200B;**终端**&#x200B;选项卡。 您将看到我们仍然保留您的区段，但现在处于&#x200B;**existing**&#x200B;状态，这意味着我们的配置文件继续保留在区段中。
-
-![6-08-vsc-activation-existing.png](./images/luma4.png)
-
-## 2.4.6.5第三次访问“体育”页面
-
-如果您第三次重新访问&#x200B;**Sports**&#x200B;页面，将不会进行激活，因为从区段角度来看，状态不会发生更改。
-
-区段激活仅在区段的状态发生变化时发生：
-
-![6-09-segment-state-change.png](./images/6-09-segment-state-change.png)
-
-下一步：[摘要和优点](./summary.md)
+下一步：[2.4.7端到端方案](./ex7.md)
 
 [返回模块2.4](./segment-activation-microsoft-azure-eventhub.md)
 

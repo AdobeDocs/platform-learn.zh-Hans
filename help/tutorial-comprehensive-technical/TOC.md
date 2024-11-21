@@ -5,7 +5,7 @@ user-guide-description: 一个实践教程，涵盖Adobe Experience Platform的�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b46c753a8d854b5a448d10d30c7a5701900a35b8
+source-git-commit: b6c98ca773ba46205c467321a7796c29b614e75c
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 4%
@@ -79,13 +79,13 @@ ht-degree: 4%
       + [摘要和优点](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
    + 2.4 Real-Time CDP：Audience Activation到Microsoft Azure事件中心{#module24}
       + [概述](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
-      + [2.4.0配置环境](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex0.md)
-      + [2.4.1配置Microsoft Azure EventHub环境](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex1.md)
-      + [2.4.2在Adobe Experience Platform中配置Azure事件中心目标](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex2.md)
-      + [2.4.3创建受众](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
-      + [2.4.4激活受众](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
-      + [2.4.5创建您的Microsoft Azure项目](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex5.md)
-      + [2.4.6端到端方案](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex6.md)
+      + [2.4.1配置环境](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex1.md)
+      + [2.4.2配置Microsoft Azure EventHub环境](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex2.md)
+      + [2.4.3在Adobe Experience Platform中配置Azure事件中心目标](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex3.md)
+      + [2.4.4创建受众](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex4.md)
+      + [2.4.5激活受众](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex5.md)
+      + [2.4.6创建您的Microsoft Azure项目](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex6.md)
+      + [2.4.7端到端方案](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/ex7.md)
       + [摘要和优点](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/summary.md)
    + 2.5 Real-Time CDP连接：事件转发{#module25}
       + [概述](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
