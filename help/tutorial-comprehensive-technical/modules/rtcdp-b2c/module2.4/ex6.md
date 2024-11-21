@@ -4,9 +4,9 @@ description: Audience Activation到Microsoft Azure事件中心 — 定义Azure�
 kt: 5342
 doc-type: tutorial
 exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Visual Studio Code可以轻松地……
 
 ![3-05-vsc-create-project.png](./images/vsc2.png)
 
-选择您选择的本地文件夹以保存项目，然后单击&#x200B;**选择**：
+选择或创建您选择的本地文件夹以保存项目，然后单击&#x200B;**选择**：
 
 ![3-06-vsc-select-folder.png](./images/vsc3.png)
 
@@ -104,66 +104,73 @@ Visual Studio Code可以轻松地……
 
 ![3-15-vsc-project-add-to-workspace.png](./images/vsc12a.png)
 
-创建项目后，单击&#x200B;**index.js**&#x200B;以在编辑器中打开文件：
+创建项目后，在编辑器中打开文件`--aepUserLdap---aep-event-hub-trigger.js`：
 
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 
-Adobe Experience Platform发送到事件中心的有效负载将包含受众ID：
+Adobe Experience Platform发送到事件中心的有效负载将如下所示：
 
 ```json
-[{
-"segmentMembership": {
-"ups": {
-"ca114007-4122-4ef6-a730-4d98e56dce45": {
-"lastQualificationTime": "2020-08-31T10:59:43Z",
-"status": "realized"
-},
-"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
-},
-"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
-"lastQualificationTime": "2020-08-31T10:59:56Z",
-"status": "realized"
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
 }
-}
-},
-"identityMap": {
-"ecid": [{
-"id": "08130494355355215032117568021714632048"
-}]
-}
-}]
 ```
 
-将Visual Studio代码的index.js中的代码替换为以下代码。 每次Real-time CDP将受众资格发送到事件中心目标时，都将执行此代码。 在我们的示例中，代码只是用于显示和增强接收的有效负载。 但是你可以想象任何一种功能可以实时处理受众资格。
+使用以下代码更新Visual Studio代码的`--aepUserLdap---aep-event-hub-trigger.js`中的代码。 每次Real-time CDP将受众资格发送到事件中心目标时，都将执行此代码。 在此示例中，代码仅用于显示传入有效负载，但您可以想象任何类型的附加功能，以便实时处理受众资格并使用进一步的数据管道生态系统。
+
+文件`--aepUserLdap---aep-event-hub-trigger.js`中的第11行当前显示以下内容：
 
 ```javascript
-// Marc Meewis - Solution Consultant Adobe - 2020
-// Adobe Experience Platform Enablement - Module 2.4
-
-// Main function
-// -------------
-// This azure function is fired for each audience activated to the Adobe Exeperience Platform Real-time CDP Azure 
-// Eventhub destination
-// This function enriched the received audience payload with the name of the audience. 
-// You can replace this function with any logic that is require to process and deliver
-// Adobe Experience Platform audiences in real-time to any application or platform that 
-// would need to act upon an AEP audience qualification.
-// 
-
-module.exports = async function (context, eventHubMessages) {
-
-    return new Promise (function (resolve, reject) {
-
-        context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
-
-        resolve();
-
-    });    
-
-};
+context.log('Event hub message:', message);
 ```
+
+将`--aepUserLdap---aep-event-hub-trigger.js`中的第11行更改为：
+
+```javascript
+context.log('Event hub message:', JSON.stringify(message));
+```
+
+总有效负载应如下所示：
+
+```javascript
+const { app } = require('@azure/functions');
+
+app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
+    connection: '--aepUserLdap--aepenablement_RootManageSharedAccessKey_EVENTHUB',
+    eventHubName: '--aepUserLdap---aep-enablement-event-hub',
+    cardinality: 'many',
+    handler: (messages, context) => {
+        if (Array.isArray(messages)) {
+            context.log(`Event hub function processed ${messages.length} messages`);
+            for (const message of messages) {
+                context.log('Event hub message:', message);
+            }
+        } else {
+            context.log('Event hub function processed message:', messages);
+        }
+    }
+});
+```
+
 
 结果应如下所示：
 
@@ -175,7 +182,13 @@ module.exports = async function (context, eventHubMessages) {
 
 ![3-17-vsc-run-project.png](./images/vsc14.png)
 
-首次在调试模式下运行项目时，需要附加Azure存储帐户，单击&#x200B;**选择存储帐户**，然后选择之前创建的名为`--aepUserLdap--aepstorage`的存储帐户。
+首次在调试模式下运行项目时，需要附加Azure存储帐户，请单击&#x200B;**选择存储帐户**。
+
+![3-17-vsc-run-project.png](./images/vsc14a.png)
+
+然后选择您之前创建的名为`--aepUserLdap--aepstorage`的存储帐户。
+
+![3-17-vsc-run-project.png](./images/vsc14b.png)
 
 您的项目现已启动并正在运行，并将列出事件中心中的事件。 在下一个练习中，您将在CitiSignal演示网站上演示符合受众条件的行为。 因此，您将在事件中心触发函数的终端中接收受众资格有效负载。
 

@@ -4,16 +4,14 @@ description: 在本模块中，您将使用之前配置的数据集、架构和A
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '459'
 ht-degree: 0%
 
 ---
 
 # 2.5 Real-Time CDP连接：事件转发
-
-**作者：[Wouter Van Galuwe](https://www.linkedin.com/in/woutervangeluwe/)，[Clement Delalande](https://www.linkedin.com/in/clement-delalande/)**
 
 在本模块中，您将使用之前配置的数据集、架构和Adobe Experience Platform数据收集客户端属性来收集数据，然后将该数据服务器端转发到所选的端点。
 
@@ -23,10 +21,6 @@ ht-degree: 0%
 - 在Adobe Experience Platform数据收集中安装并使用Adobe云连接器扩展
 - 创建Google函数端点并向其流式传输数据
 - 创建AWS端点并向其流式传输数据
-
-观看此视频，了解价值、客户历程和配置过程：
-
->[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
 
 ## 学习目标
 

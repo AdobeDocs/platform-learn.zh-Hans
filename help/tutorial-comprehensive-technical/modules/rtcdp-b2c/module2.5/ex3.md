@@ -3,26 +3,29 @@ title: Adobe Experience Platform数据收集和实时服务器端转发 — 创�
 description: 创建和配置自定义webhook
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1107'
 ht-degree: 1%
 
 ---
 
 # 2.5.3创建和配置自定义webhook
 
-## 2.5.3.1创建自定义webhook
+## 创建您的自定义webhook
 
-转到[https://webhook.site/](https://webhook.site/)。 您会看到如下所示的内容：
+转到[https://pipedream.com/requestbin](https://pipedream.com/requestbin)。 您已在[练习2.3.7 Destinations SDK](./../../../modules/rtcdp-b2c/module2.3/ex7.md)中使用此应用程序
+
+如果您尚未使用该服务，请创建一个帐户，然后创建一个工作区。 创建工作区后，您将看到类似以下的内容。
+
+单击&#x200B;**复制**&#x200B;复制URL。 您需要在下一个练习中指定此URL。 此示例中的URL是`https://eodts05snjmjz67.m.pipedream.net`。
 
 ![演示](./images/webhook1.png)
 
-您会看到唯一URL，它类似于： `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`。
-
 此网站现在已为您创建此webhook，您将能够在您的&#x200B;**[!DNL Event Forwarding property]**&#x200B;中配置此webhook以开始测试事件转发。
 
-## 2.5.3.2更新事件转发属性：创建数据元素
+## 更新事件转发属性：创建数据元素
 
 转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)并转到&#x200B;**事件转发**。 搜索您的事件转发属性，然后单击该属性以将其打开。
 
@@ -41,11 +44,13 @@ ht-degree: 1%
 - 作为&#x200B;**Name**，输入&#x200B;**XDM事件**。
 - 对于&#x200B;**扩展**，请选择&#x200B;**核心**。
 - 对于&#x200B;**数据元素类型**，请选择&#x200B;**路径**。
-- 作为&#x200B;**Path**，输入&#x200B;**arc.event.xdm**。 通过输入此路径，您将从网站或移动设备应用程序发送到Adobe Edge的事件有效负载中过滤掉&#x200B;**XDM**&#x200B;部分。
+- 作为&#x200B;**路径**，选择&#x200B;**从XDM (arc.event.xdm)**&#x200B;读取数据。 选择此路径后，您将从网站或移动设备应用程序发送至Adobe Edge的事件有效负载中过滤掉&#x200B;**XDM**&#x200B;部分。
+
+![Adobe Experience Platform数据收集SSF](./images/de3.png)
 
 现在你就可以拥有这个了。 单击&#x200B;**保存**。
 
-![Adobe Experience Platform数据收集SSF](./images/de3.png)
+![Adobe Experience Platform数据收集SSF](./images/de3a.png)
 
 >[!NOTE]
 >
@@ -53,7 +58,7 @@ ht-degree: 1%
 >
 >在上述路径中，引用了&#x200B;**事件**。 **event**&#x200B;表示一个独特事件，Adobe Experience Platform数据收集服务器将始终单独评估每个事件。 有时，您可能会在Web SDK客户端发送的有效负载中看到对&#x200B;**events**&#x200B;的引用，但在Adobe Experience Platform数据收集服务器中，将单独评估每个事件。
 
-## 2.5.3.3更新您的Adobe Experience Platform数据收集服务器属性：创建规则
+## 更新您的Adobe Experience Platform数据收集服务器属性：创建规则
 
 在左侧菜单中，转到&#x200B;**规则**。 单击&#x200B;**创建新规则**。
 
@@ -75,7 +80,7 @@ ht-degree: 1%
 接下来，配置以下内容：
 
 - 将请求方法从GET更改为&#x200B;**POST**
-- 在[https://webhook.site/](https://webhook.site/)网站上输入您在前面的步骤之一中创建的自定义webhook的URL，它类似于： `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`
+- 输入您在前面的步骤之一中创建的自定义webhook的URL，它如下所示： `https://eodts05snjmjz67.m.pipedream.net`
 
 您现在应该拥有此项。 接下来，转到&#x200B;**正文**。
 
@@ -110,19 +115,11 @@ ht-degree: 1%
 
 ![Adobe Experience Platform数据收集SSF](./images/rl14.png)
 
-## 2.5.3.4测试您的配置
+## 测试您的配置
 
-转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
+转到[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**运行**&#x200B;以将其打开。
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-您现在可以按照以下流程访问该网站。 单击&#x200B;**集成**。
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-在&#x200B;**集成**&#x200B;页面上，您需要选择在练习0.1中创建的数据收集属性。
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 随后您将看到您的演示网站已打开。 选择URL并将其复制到剪贴板。
 
@@ -140,7 +137,7 @@ ht-degree: 1%
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个演示，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
+然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个练习，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
@@ -148,15 +145,15 @@ ht-degree: 1%
 
 ![Adobe Experience Platform数据收集设置](./images/hook1.png)
 
-如果选择原始有效负载，请转到[https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print)并粘贴有效负载。 单击&#x200B;**美化**。 然后，您将看到JSON有效负载、**事件**&#x200B;对象和&#x200B;**xdm**&#x200B;对象。 在前面的步骤之一中，当您定义数据元素时，使用了引用&#x200B;**arc.event.xdm**，这将导致您解析出此有效负载的&#x200B;**xdm**&#x200B;对象。
+如果选择原始有效负载，请转到[https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print)并粘贴有效负载。 单击&#x200B;**缩小/美化**。 然后，您将看到JSON有效负载、**事件**&#x200B;对象和&#x200B;**xdm**&#x200B;对象。 在前面的步骤之一中，当您定义数据元素时，使用了引用&#x200B;**arc.event.xdm**，这将导致您解析出此有效负载的&#x200B;**xdm**&#x200B;对象。
 
 ![Adobe Experience Platform数据收集设置](./images/hook2.png)
 
-将视图切换到您在前面的步骤之一中使用的网站[https://webhook.site/](https://webhook.site/)。 现在，您应该有一个与此类似、网络请求显示在左侧菜单中的视图。 您看到的&#x200B;**xdm**&#x200B;有效负载过滤出了如上所示的网络请求。
+将视图切换到您在前面的步骤之一中使用的自定义webhook [https://webhook.site/](https://webhook.site/)。 现在，您应该有一个与此类似、网络请求显示在左侧菜单中的视图。 您看到的&#x200B;**xdm**&#x200B;有效负载过滤出了如上所示的网络请求。
 
 ![Adobe Experience Platform数据收集设置](./images/hook3.png)
 
-在有效负载中向下滚动一点以查找页面名称，在本例中为&#x200B;**vangeluw-OCUC**（演示网站的项目名称）。
+在有效负载中向下滚动一点以查找页面名称，在本例中为&#x200B;**home**。
 
 ![Adobe Experience Platform数据收集设置](./images/hook4.png)
 
@@ -164,7 +161,7 @@ ht-degree: 1%
 
 ![Adobe Experience Platform数据收集设置](./images/hook5.png)
 
-您现在已将Web SDK/XDM负载的服务器端转发配置为外部自定义webhook。 在接下来的练习中，您将配置类似的方法，并将向Google和AWS环境发送相同的数据。
+您现在已将Web SDK/XDM负载的服务器端事件转发配置为外部自定义webhook。 在接下来的练习中，您将配置类似的方法，并将向Google和AWS环境发送相同的数据。
 
 下一步： [2.5.4创建和配置Google Cloud函数](./ex4.md)
 

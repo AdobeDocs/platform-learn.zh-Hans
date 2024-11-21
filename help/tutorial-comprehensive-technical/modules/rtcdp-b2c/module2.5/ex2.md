@@ -3,9 +3,10 @@ title: Adobe Experience Platform数据收集和实时服务器端转发 — 更�
 description: 更新您的数据流以使数据可用于您的Adobe Experience Platform数据收集服务器资产
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '232'
 ht-degree: 1%
 
 ---
@@ -14,9 +15,9 @@ ht-degree: 1%
 
 ## 2.5.2.1更新您的数据流
 
-在[练习0.2](./../../gettingstarted/gettingstarted/ex2.md)中，您创建了自己的&#x200B;**[!UICONTROL 数据流]**。 您随后使用了名称`--aepUserLdap-- - Demo System Datastream`。
+在[快速入门](./../../gettingstarted/gettingstarted/ex2.md)中，您创建了自己的&#x200B;**[!UICONTROL 数据流]**。 您随后使用了名称`--aepUserLdap-- - Demo System Datastream`。
 
-在本练习中，您需要配置该&#x200B;**[!UICONTROL 数据流]**&#x200B;以便与您的&#x200B;**[!DNL Data Collection Server property]**&#x200B;配合使用。
+在本练习中，您需要配置该&#x200B;**[!UICONTROL 数据流]**&#x200B;以使用您的&#x200B;**数据收集服务器属性**。
 
 为此，请转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 你会看到这个。 在左侧菜单中，单击&#x200B;**[!UICONTROL 数据流]**。
 

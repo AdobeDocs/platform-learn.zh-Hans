@@ -4,7 +4,7 @@ description: Audience ActivationMicrosoft Azure事件中心 — 激活受众
 kt: 5342
 doc-type: tutorial
 exl-id: 89cfda0e-6c5e-45ab-9506-f0f0f6211e7f
-source-git-commit: 216914c9d97827afaef90e21ed7d4f35eaef0cd3
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 2%
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 ## 将受众添加到Azure事件中心目标
 
-在本练习中，您要将受众`--aepUserLdap-- - Interest in Equipment`添加到`--aepUserLdap---aep-enablement` Azure事件中心目标。
+在本练习中，您要将受众`--aepUserLdap-- - Interest in Plans`添加到`--aepUserLdap---aep-enablement` Azure事件中心目标。
 
 通过转到以下URL登录Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 

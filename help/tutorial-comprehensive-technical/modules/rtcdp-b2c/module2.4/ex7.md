@@ -3,7 +3,8 @@ title: Audience Activation到Microsoft Azure事件中心 — 操作
 description: Audience Activation到Microsoft Azure事件中心 — 操作
 kt: 5342
 doc-type: tutorial
-source-git-commit: cefebfe0336952f0e3099fd2dd9f4395d453f713
+exl-id: f5b224bf-60b9-46e0-abdb-9d96a7e8c59f
+source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
 workflow-type: tm+mt
 source-wordcount: '418'
 ht-degree: 0%
@@ -76,11 +77,36 @@ For detailed output, run func with --verbose flag.
 
 切换回Visual Studio代码并查看&#x200B;**终端**&#x200B;选项卡，您应该会看到特定&#x200B;**ECID**&#x200B;的受众列表。 此激活有效负载会在您符合`--aepUserLdap-- - Interest in Plans`受众资格后立即交付到您的事件中心。
 
+![6-06-vsc-activation-realized.png](./images/cs3.png)
+
 当您更仔细地查看受众有效负载时，可以看到`--aepUserLdap-- - Interest in Plans`处于&#x200B;**已实现**&#x200B;状态。
 
-受众状态&#x200B;**已实现**&#x200B;表示您的个人资料是受众的一部分，而&#x200B;**已退出**&#x200B;状态表示我们的个人资料已从受众中删除。
+```json
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
+}
+```
 
-![6-06-vsc-activation-realized.png](./images/cs3.png)
+受众状态&#x200B;**已实现**&#x200B;表示您的个人资料是受众的一部分，而&#x200B;**已退出**&#x200B;状态表示我们的个人资料已从受众中删除。
 
 下一步：[摘要和优点](./summary.md)
 
