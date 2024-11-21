@@ -3,215 +3,89 @@ title: 数据收集和实时服务器端转发 — 创建和配置Google云功�
 description: 创建和配置Google Cloud功能
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: ee73ce3a-baaa-432a-9626-249be9aaeff2
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '1593'
-ht-degree: 0%
+source-wordcount: '1184'
+ht-degree: 1%
 
 ---
 
-# 2.5.4创建和配置Google Cloud功能
+# 2.5.4将事件转发到GCP Pub/Sub
 
-## 2.5.4.1创建您的Google Cloud函数
+>[!NOTE]
+>
+>在本练习中，您需要具有对Google Cloud Platform环境的访问权限。 如果您尚无法访问GCP，请使用您的个人电子邮件地址创建一个新帐户。
 
-转到[https://console.cloud.google.com/](https://console.cloud.google.com/)。 转到&#x200B;**云函数**。
+## 创建您的Google Cloud Pub/Sub主题
+
+转到[https://console.cloud.google.com/](https://console.cloud.google.com/)。 在搜索栏中输入`pub/sub`。 单击搜索结果&#x200B;**Pub/Sub - Global real-time messaging**。
 
 ![GCP](./images/gcp1.png)
 
-你会看到这个。 单击&#x200B;**创建函数**。
+你会看到这个。 单击&#x200B;**创建主题**。
 
 ![GCP](./images/gcp2.png)
 
-你会看到这个。
+你会看到这个。 对于您的主题ID，请使用`--aepUserLdap---event-forwarding`。 单击&#x200B;**创建**。
 
 ![GCP](./images/gcp6.png)
 
-进行以下选择：
-
-- **函数名称**： `--aepUserLdap---event-forwarding`
-- **地区**：选择任意地区
-- **触发器类型**：选择&#x200B;**HTTP**
-- **身份验证**：选择&#x200B;**允许未经身份验证的调用**
-
-您现在应该拥有此项。 单击&#x200B;**保存**。
+您的主题现已创建。 单击主题的&#x200B;**订阅ID**。
 
 ![GCP](./images/gcp7.png)
 
-单击&#x200B;**下一步**。
+你会看到这个。 将&#x200B;**主题名称**&#x200B;复制到剪贴板并将其存储，因为您将在下一个练习中需要它。
 
 ![GCP](./images/gcp8.png)
 
-您随后将看到以下内容：
+现在转到Adobe Experience Platform数据收集事件转发，以更新您的事件转发属性并开始将事件转发到Pub/Sub。
 
-![GCP](./images/gcp9.png)
 
-进行以下选择：
+## 更新事件转发属性：密钥
 
-- **运行时**：选择&#x200B;**Node.js 16**（或更高版本）
-- **入口点**：输入&#x200B;**helloAEP**
+事件转发属性中的&#x200B;**密钥**&#x200B;用于存储用于针对外部API进行身份验证的凭据。在此示例中，您需要配置一个密钥来存储Google Cloud Platform OAuth令牌，当使用Pub/Sub将数据流式传输到GCP时，将使用该令牌进行身份验证。
 
-单击&#x200B;**启用API**&#x200B;以启用&#x200B;**云构建API**。 然后您会看到一个新窗口。 在该新窗口中，再次单击&#x200B;**启用**。
+转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)并转到&#x200B;**密钥**。 单击&#x200B;**新建密钥**。
 
-![GCP](./images/gcp10.png)
+![Adobe Experience Platform数据收集SSF](./images/secret1.png)
 
-你会看到这个。 单击&#x200B;**启用**。
+你会看到这个。 请按照以下说明操作：
 
-![GCP](./images/gcp11.png)
+- 名称：使用`--aepUserLdap---gcp-secret`
+- 目标环境：选择&#x200B;**开发**
+- 类型：**Google OAuth 2**
+- 选中&#x200B;**Pub/Sub**&#x200B;的复选框
 
-启用&#x200B;**Cloud Build API**&#x200B;后，您将会看到此内容。
+单击&#x200B;**创建密钥**。
 
-![GCP](./images/gcp12.png)
+![Adobe Experience Platform数据收集SSF](./images/secret2.png)
 
-返回到&#x200B;**云函数**。
-在云函数内联编辑器中，确保您具有以下代码：
+单击&#x200B;**创建密钥**&#x200B;后，您将看到一个弹出窗口，用于设置事件转发属性的密钥与Google之间的身份验证。 单击&#x200B;**使用Google创建和授权密钥`--aepUserLdap---gcp-secret`**。
 
-```javascript
-/**
- * Responds to any HTTP request.
- *
- * @param {!express:Request} req HTTP request context.
- * @param {!express:Response} res HTTP response context.
- */
-exports.helloAEP = (req, res) => {
-  let message = req.query.message || req.body.message || 'Hello World!';
-  res.status(200).send(message);
-};
-```
+![Adobe Experience Platform数据收集SSF](./images/secret3.png)
 
-接下来，单击&#x200B;**部署**。
+单击以选择您的Google帐户。
 
-![GCP](./images/gcp13.png)
+![Adobe Experience Platform数据收集SSF](./images/secret4.png)
 
-你会看到这个。 正在创建您的云功能。 这可能需要几分钟的时间。
+单击&#x200B;**继续**。
 
-![GCP](./images/gcp14.png)
+>[!NOTE]
+>
+>您的弹出消息可能有所不同。 请授权/允许请求的访问，以继续练习。
 
-创建并运行您的函数后，您将会看到此内容。 单击函数的名称以将其打开。
+![Adobe Experience Platform数据收集SSF](./images/secret5.png)
 
-![GCP](./images/gcp15.png)
+在成功进行身份验证后，您将看到此内容。
 
-你会看到这个。 转到&#x200B;**触发器**。 您随后将看到&#x200B;**触发器URL**，您将使用该链接在Launch服务器端定义终结点。
+![Adobe Experience Platform数据收集SSF](./images/secret6.png)
 
-![GCP](./images/gcp16.png)
+您的密钥现在已成功配置，并可在数据元素中使用。
 
-复制触发器URL，它类似于： **https://europe-west1-dazzling-pillar-273812.cloudfunctions.net/vangeluw-event-forwarding**。
+## 更新事件转发属性：数据元素
 
-在接下来的步骤中，您将配置Adobe Experience Platform数据收集服务器以将有关&#x200B;**页面查看次数**&#x200B;的特定信息流式传输到您的Google Cloud函数。 您不会仅按原样转发完整有效负载，而只会将&#x200B;**ECID**、**时间戳**&#x200B;和&#x200B;**页面名称**&#x200B;之类的内容发送到您的Google Cloud Function。
-
-以下是您需要解析的有效负载示例，以过滤掉上述变量：
-
-```json
-{
-  "events": [
-    {
-      "xdm": {
-        "eventType": "web.webpagedetails.pageViews",
-        "web": {
-          "webPageDetails": {
-            "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC",
-            "name": "vangeluw-OCUC",
-            "viewName": "vangeluw-OCUC",
-            "pageViews": {
-              "value": 1
-            }
-          },
-          "webReferrer": {
-            "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/equipment"
-          }
-        },
-        "device": {
-          "screenHeight": 1080,
-          "screenWidth": 1920,
-          "screenOrientation": "landscape"
-        },
-        "environment": {
-          "type": "browser",
-          "browserDetails": {
-            "viewportWidth": 1920,
-            "viewportHeight": 451
-          }
-        },
-        "placeContext": {
-          "localTime": "2022-02-23T06:51:07.140+01:00",
-          "localTimezoneOffset": -60
-        },
-        "timestamp": "2022-02-23T05:51:07.140Z",
-        "implementationDetails": {
-          "name": "https://ns.adobe.com/experience/alloy/reactor",
-          "version": "2.8.0+2.9.0",
-          "environment": "browser"
-        },
-        "_experienceplatform": {
-          "identification": {
-            "core": {
-              "ecid": "08346969856929444850590365495949561249"
-            }
-          },
-          "demoEnvironment": {
-            "brandName": "vangeluw-OCUC"
-          },
-          "interactionDetails": {
-            "core": {
-              "channel": "web"
-            }
-          }
-        }
-      },
-      "query": {
-        "personalization": {
-          "schemas": [
-            "https://ns.adobe.com/personalization/html-content-item",
-            "https://ns.adobe.com/personalization/json-content-item",
-            "https://ns.adobe.com/personalization/redirect-item",
-            "https://ns.adobe.com/personalization/dom-action"
-          ],
-          "decisionScopes": [
-            "eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0YzA1MjM4MmUxYjY1MDUiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTRiZjA5ZGM0MTkwZWJiYSJ9",
-            "__view__"
-          ]
-        }
-      }
-    }
-  ],
-  "query": {
-    "identity": {
-      "fetch": [
-        "ECID"
-      ]
-    }
-  },
-  "meta": {
-    "state": {
-      "domain": "adobedemo.com",
-      "cookiesEnabled": true,
-      "entries": [
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_identity",
-          "value": "CiYwODM0Njk2OTg1NjkyOTQ0NDg1MDU5MDM2NTQ5NTk0OTU2MTI0OVIPCPn66KfyLxgBKgRJUkwx8AH5-uin8i8="
-        },
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_consent_check",
-          "value": "1"
-        },
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_consent",
-          "value": "general=in"
-        }
-      ]
-    }
-  }
-}
-```
-
-这些字段包含需要解析的信息：
-
-- ECID： **events.xdm。_experienceplatform.identification.core.ecid**
-- 时间戳：**时间戳**
-- 页面名称： **events.xdm.web.webPageDetails.name**
-
-现在，让我们转到Adobe Experience Platform数据收集服务器，配置数据元素以实现这一点。
-
-## 2.5.4.2更新事件转发属性：数据元素
+要在Event Forwarding属性中使用密钥，您需要创建一个数据元素，用于存储密钥的值。
 
 转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)并转到&#x200B;**事件转发**。 搜索您的事件转发属性，然后单击该属性以将其打开。
 
@@ -221,70 +95,44 @@ exports.helloAEP = (req, res) => {
 
 ![Adobe Experience Platform数据收集SSF](./images/de1gcp.png)
 
-然后，您将看到要配置的新数据元素。
+按如下方式配置数据元素：
 
-![Adobe Experience Platform数据收集SSF](./images/de2gcp.png)
+- 名称： **GCP密码**
+- 扩展： **核心**
+- 数据元素类型： **密码**
+- 开发密码：选择您创建的名为`--aepUserLdap---gcp-secret`的密码
 
-进行以下选择：
+单击&#x200B;**保存**
 
-- 作为&#x200B;**Name**，输入&#x200B;**customerECID**。
-- 对于&#x200B;**扩展**，请选择&#x200B;**核心**。
-- 对于&#x200B;**数据元素类型**，请选择&#x200B;**路径**。
-- 作为&#x200B;**路径**，输入`arc.event.xdm.--aepTenantId--.identification.core.ecid`。 输入此路径后，您将从网站或移动设备应用程序发送到Adobe Edge的事件有效负载中过滤掉字段&#x200B;**ecid**。
+![Adobe Experience Platform数据收集SSF](./images/secret7.png)
 
->[!NOTE]
->
->在上方路径和下方路径中，引用了&#x200B;**arc**。 **arc**&#x200B;表示Adobe资源上下文，**arc**&#x200B;始终表示服务器端上下文中可用的最高对象。 可以使用Adobe Experience Platform数据收集服务器功能将增强和转换添加到该&#x200B;**arc**&#x200B;对象。
->
->在上方路径和下方路径中，引用了&#x200B;**事件**。 **event**&#x200B;表示一个独特事件，Adobe Experience Platform数据收集服务器将始终单独评估每个事件。 有时，您可能会在Web SDK客户端发送的有效负载中看到对&#x200B;**events**&#x200B;的引用，但在Adobe Experience Platform数据收集服务器中，将单独评估每个事件。
+## 更新事件转发属性：扩展
 
-现在你就可以拥有这个了。 单击&#x200B;**保存**。
+配置好密钥和数据元素后，您现在可以在事件转发属性中为Google Cloud Platform设置扩展。
 
-![Adobe Experience Platform数据收集SSF](./images/gcdpde1.png)
+转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)，转到&#x200B;**事件转发**&#x200B;并打开您的事件转发属性。
 
-单击&#x200B;**添加数据元素**。
+![Adobe Experience Platform数据收集SSF](./images/prop1.png)
 
-![Adobe Experience Platform数据收集SSF](./images/addde.png)
+接下来，转到&#x200B;**扩展**，转到&#x200B;**目录**。 单击&#x200B;**Google Cloud Platform**&#x200B;扩展，然后单击&#x200B;**安装**。
 
-然后，您将看到要配置的新数据元素。
+![Adobe Experience Platform数据收集SSF](./images/gext2.png)
 
-![Adobe Experience Platform数据收集SSF](./images/de2gcp.png)
+你会看到这个。 单击数据元素图标。
 
-进行以下选择：
+![Adobe Experience Platform数据收集SSF](./images/gext3.png)
 
-- 作为&#x200B;**Name**，输入&#x200B;**eventTimestamp**。
-- 对于&#x200B;**扩展**，请选择&#x200B;**核心**。
-- 对于&#x200B;**数据元素类型**，请选择&#x200B;**路径**。
-- 作为&#x200B;**Path**，输入&#x200B;**arc.event.xdm.timestamp**。 输入此路径后，您将过滤掉网站或移动设备应用程序发送到Adobe Edge的事件有效负载中的字段&#x200B;**timestamp**。
+选择在上一个练习中创建的数据元素，其名称为&#x200B;**GCP密码**。 单击&#x200B;**选择**。
 
-现在你就可以拥有这个了。 单击&#x200B;**保存**。
+![Adobe Experience Platform数据收集SSF](./images/gext4.png)
 
-![Adobe Experience Platform数据收集SSF](./images/gcdpde2.png)
+你会看到这个。 单击&#x200B;**保存**。
 
-单击&#x200B;**添加数据元素**。
+![Adobe Experience Platform数据收集SSF](./images/gext5.png)
 
-![Adobe Experience Platform数据收集SSF](./images/addde.png)
+## 更新事件转发属性：更新规则
 
-然后，您将看到要配置的新数据元素。
-
-![Adobe Experience Platform数据收集SSF](./images/de2gcp.png)
-
-进行以下选择：
-
-- 作为&#x200B;**Name**，输入&#x200B;**pageName**。
-- 对于&#x200B;**扩展**，请选择&#x200B;**核心**。
-- 对于&#x200B;**数据元素类型**，请选择&#x200B;**路径**。
-- 作为&#x200B;**路径**，输入&#x200B;**arc.event.xdm.web.webPageDetails.name**。 输入此路径后，您将过滤掉网站或移动设备应用程序发送到Adobe Edge的事件有效负载中的字段&#x200B;**name**。
-
-现在你就可以拥有这个了。 单击&#x200B;**保存**。
-
-![Adobe Experience Platform数据收集SSF](./images/gcdpde3.png)
-
-现在，您已创建以下数据元素：
-
-![Adobe Experience Platform数据收集SSF](./images/de3gcp.png)
-
-## 2.5.4.3更新事件转发属性：更新规则
+现在，您的Google Cloud Platform扩展已配置，您可以定义一个规则以开始将事件数据转发到您的Pub/Sub主题。 为此，您需要更新您在上一个练习中创建的&#x200B;**所有页面**&#x200B;规则。
 
 在左侧菜单中，转到&#x200B;**规则**。 在上一个练习中，您创建了规则&#x200B;**所有页面**。 单击该规则以将其打开。
 
@@ -294,49 +142,44 @@ exports.helloAEP = (req, res) => {
 
 ![Adobe Experience Platform数据收集SSF](./images/rl2gcp.png)
 
-你会看到这个。
+你会看到这个。 进行以下选择：
 
-![Adobe Experience Platform数据收集SSF](./images/rl4gcp.png)
+- 选择&#x200B;**扩展**： **Google Cloud Platform**。
+- 选择&#x200B;**操作类型**： **将数据发送到Cloud Pub/Sub**。
 
-进行以下选择：
-
-- 选择&#x200B;**扩展**： **Adobe云连接器**。
-- 选择&#x200B;**操作类型**： **发出获取调用**。
-
-这应该为您提供此&#x200B;**名称**： **Adobe云连接器 — 进行获取调用**。 您现在应该会看到以下内容：
+这应该为您提供以下&#x200B;**名称**： **Google Cloud Platform — 将数据发送到Cloud Pub/Sub**。 您现在应该会看到以下内容：
 
 ![Adobe Experience Platform数据收集SSF](./images/rl5gcp.png)
 
-接下来，配置以下内容：
+现在，您需要配置之前创建的Pub/Sub主题。
 
-- 将GET协议更改为&#x200B;**POST**
-- 输入您在前面的步骤之一中创建的Google Cloud函数的URL，如下所示： **https://europe-west1-dazzling-pillar-273812.cloudfunctions.net/vangeluw-event-forwarding**
+您可以在此处找到&#x200B;**主题名称**，复制它。
 
-您现在应该拥有此项。 接下来，转到&#x200B;**正文**。
+![GCP](./images/gcp8.png)
+
+将&#x200B;**主题名称**&#x200B;粘贴到规则配置中。 接下来，单击&#x200B;**数据（必需）**&#x200B;字段旁边的“数据元素”图标。
 
 ![Adobe Experience Platform数据收集SSF](./images/rl6gcp.png)
 
-你会看到这个。 单击&#x200B;**JSON**&#x200B;的单选按钮。
+选择&#x200B;**XDM事件**&#x200B;并单击&#x200B;**选择**。
 
 ![Adobe Experience Platform数据收集SSF](./images/rl7gcp.png)
 
-按如下方式配置&#x200B;**Body**：
-
-| 键 | 值 |
-|--- |--- |
-| customerECID | {{customerECID}} |
-| pageName | {{pageName}} |
-| eventTimestamp | {{eventTimestamp}} |
-
 你会看到这个。 单击&#x200B;**保留更改**。
+
+![Adobe Experience Platform数据收集SSF](./images/rl8gcp.png)
+
+单击&#x200B;**保存**。
 
 ![Adobe Experience Platform数据收集SSF](./images/rl9gcp.png)
 
-你会看到这个。 单击&#x200B;**保存**。
+你会看到这个。
 
 ![Adobe Experience Platform数据收集SSF](./images/rl10gcp.png)
 
-您现在更新了Adobe Experience Platform数据收集服务器资产中的现有规则。 转到&#x200B;**发布流**&#x200B;以发布您的更改。 按指示单击&#x200B;**编辑**&#x200B;以打开开发库&#x200B;**Main**。
+## Publish您的更改
+
+您的配置现已完成。 转到&#x200B;**发布流**&#x200B;以发布您的更改。 按指示单击&#x200B;**编辑**&#x200B;以打开开发库&#x200B;**Main**。
 
 ![Adobe Experience Platform数据收集SSF](./images/rl12gcp.png)
 
@@ -348,19 +191,11 @@ exports.helloAEP = (req, res) => {
 
 ![Adobe Experience Platform数据收集SSF](./images/rl14.png)
 
-## 2.5.3.4测试您的配置
+## 测试您的配置
 
-转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
+转到[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**运行**&#x200B;以将其打开。
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-您现在可以按照以下流程访问该网站。 单击&#x200B;**集成**。
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-在&#x200B;**集成**&#x200B;页面上，您需要选择在练习0.1中创建的数据收集属性。
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 随后您将看到您的演示网站已打开。 选择URL并将其复制到剪贴板。
 
@@ -378,65 +213,19 @@ exports.helloAEP = (req, res) => {
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个演示，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
+然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个练习，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-打开浏览器开发人员视图时，您可以按照以下指示检查网络请求。 使用过滤器&#x200B;**interact**&#x200B;时，您将看到Adobe Experience Platform数据收集客户端发送到Adobe Edge的网络请求。
-
-![Adobe Experience Platform数据收集设置](./images/hook1.png)
-
-将视图切换到Google Cloud Function并转到&#x200B;**日志**。 现在，您应该有一个类似于此视图的视图，其中显示了许多日志条目。 每次看到&#x200B;**函数执行开始**&#x200B;时，都表示您的Google Cloud函数中接收了传入流量。
+将视图切换到Google Cloud Pub/Sub，然后转到&#x200B;**消息**。 单击“**提取**”，几秒钟后您将在列表中看到一些消息。 单击消息可将其内容可视化。
 
 ![Adobe Experience Platform数据收集设置](./images/hook3gcp.png)
 
-让我们稍微更新一下您的函数，以便处理传入数据，并显示从Adobe Experience Platform数据收集服务器收到的信息。 转到&#x200B;**SOURCE**&#x200B;并单击&#x200B;**编辑**。
+您现在可以在Google Pub/Sub中查看事件的XDM有效负荷。 您现在已成功将Adobe Experience Platform数据收集收集的数据实时发送到Google Cloud Pub/Sub端点。 从那里，这些数据可供任何Google Cloud Platform应用程序使用，例如用于存储和报告或机器学习用例的BigQuery。
 
 ![Adobe Experience Platform数据收集设置](./images/hook4gcp.png)
 
-在下一个屏幕中，单击&#x200B;**下一步**。
-
-![Adobe Experience Platform数据收集设置](./images/gcf1.png)
-
-更新您的代码，如下所示：
-
-```javascript
-/**
- * Responds to any HTTP request.
- *
- * @param {!express:Request} req HTTP request context.
- * @param {!express:Response} res HTTP response context.
- */
-exports.helloAEP = (req, res) => {
-  console.log('>>>>> Function has started. The following information was received from Event Forwarding:');
-  console.log(req.body);
-
-  let message = req.query.message || req.body.message || 'Hello World!';
-  res.status(200).send(message);
-};
-```
-
-你就能拥有这个了。 单击&#x200B;**部署**。
-
-![Adobe Experience Platform数据收集设置](./images/gcf2.png)
-
-几分钟后，将再次部署您的函数。 单击函数名称以将其打开。
-
-![Adobe Experience Platform数据收集设置](./images/gcf3.png)
-
-在您的演示网站上，导航到产品，例如&#x200B;**DEIRDRE RELAXED-FIT CAPRI**。
-
-![Adobe Experience Platform数据收集设置](./images/gcf3a.png)
-
-将视图切换到Google Cloud Function并转到&#x200B;**日志**。 现在，您应该有一个类似于此视图的视图，其中显示了许多日志条目。
-
-现在，对于演示网站上的每个页面查看，您应该会在Google Cloud函数的日志中看到一个新的日志条目弹出窗口，其中显示接收的信息。
-
-![Adobe Experience Platform数据收集设置](./images/gcf4.png)
-
-现在，您已成功将Adobe Experience Platform数据收集收集的数据实时发送到Google Cloud函数端点。 从那里，这些数据可供任何Google Cloud Platform应用程序使用，例如用于存储和报告或机器学习用例的BigQuery。
-
-下一步： [2.5.5向AWS生态系统转发活动](./ex5.md)
+下一步：[2.5.5将事件转发到AWS Kinesis和AWS S3](./ex5.md)
 
 [返回模块2.5](./aep-data-collection-ssf.md)
 

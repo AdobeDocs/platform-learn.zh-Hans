@@ -4,7 +4,7 @@ description: 创建和配置自定义webhook
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -149,7 +149,7 @@ ht-degree: 1%
 
 ![Adobe Experience Platform数据收集设置](./images/hook2.png)
 
-将视图切换到您在前面的步骤之一中使用的自定义webhook [https://webhook.site/](https://webhook.site/)。 现在，您应该有一个与此类似、网络请求显示在左侧菜单中的视图。 您看到的&#x200B;**xdm**&#x200B;有效负载过滤出了如上所示的网络请求。
+将视图切换到您在前面的步骤之一中使用的自定义webhook [https://pipedream.com/requestbin](https://pipedream.com/requestbin)。 现在，您应该有一个与此类似、网络请求显示在左侧菜单中的视图。 您看到的&#x200B;**xdm**&#x200B;有效负载过滤出了如上所示的网络请求。
 
 ![Adobe Experience Platform数据收集设置](./images/hook3.png)
 
@@ -161,9 +161,9 @@ ht-degree: 1%
 
 ![Adobe Experience Platform数据收集设置](./images/hook5.png)
 
-您现在已将Web SDK/XDM负载的服务器端事件转发配置为外部自定义webhook。 在接下来的练习中，您将配置类似的方法，并将向Google和AWS环境发送相同的数据。
+您现在已将Web SDK/XDM负载的服务器端事件转发配置为外部自定义webhook。 在接下来的练习中，您将配置类似的方法，并将相同的数据发送到Google Cloud Platform和AWS。
 
-下一步： [2.5.4创建和配置Google Cloud函数](./ex4.md)
+下一步： [2.5.4将事件转发到GCP Pub/Sub](./ex4.md)
 
 [返回模块2.5](./aep-data-collection-ssf.md)
 

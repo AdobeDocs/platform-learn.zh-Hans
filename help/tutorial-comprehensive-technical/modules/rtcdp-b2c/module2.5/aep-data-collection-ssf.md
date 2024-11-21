@@ -4,9 +4,9 @@ description: 在本模块中，您将使用之前配置的数据集、架构和A
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '458'
 ht-degree: 0%
 
 ---
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 在本练习中，您将创建和配置自定义webhook，并开始将Web SDK收集的数据转发到该自定义webhook。
 
-[2.5.4创建和配置Google Cloud功能](./ex4.md)
+[2.5.4将事件转发到GCP Pub/Sub](./ex4.md)
 
 在本练习中，您将创建和配置Google云功能，并开始将Web SDK收集的数据转发到Google。
 
-[2.5.5面向AWS生态系统的未来活动](./ex5.md)
+[2.5.5将活动转发到AWS Kinesis和AWS S3](./ex5.md)
 
-在本练习中，您将使用AWS API Gateway、AWS Kinesis、AWS Firehose和AWS S3配置您的AWS环境，之后您将开始转发Web SDK收集的事件数据。
+在本练习中，您将使用AWS IAM、AWS Kinesis、AWS Firehose和AWS S3配置您的AWS环境，之后您将开始转发Web SDK收集的事件数据。
 
 [摘要和优点](./summary.md)
 
