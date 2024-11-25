@@ -6,24 +6,20 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: adffeead-9bcb-4632-9a2c-c6da1c40b7f2
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+source-git-commit: be5a7dec47a83a14d74024015a15a9c24d04cd95
 workflow-type: tm+mt
-source-wordcount: '784'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
 
 # 2.6.2安装和配置Kafka群集
 
-## 2.6.2.1下载Apache Kafka
+## 下载Apache Kafka
 
-转到[https://kafka.apache.org/downloads](https://kafka.apache.org/downloads)并下载最新发布的版本。 选择最新的二进制版本，在本例中为&#x200B;**Scala 2.13**。
+转到[https://kafka.apache.org/downloads](https://kafka.apache.org/downloads)并下载最新发布的版本。 选择最新的二进制版本，在本例中为&#x200B;**3.9.0**。 将会开始下载。
 
 ![Kafka](./images/kafka1.png)
-
-然后你被带到镜像站点。 单击建议的链接以下载Kafka。
-
-![Kafka](./images/kafka2.png)
 
 在桌面上创建名为&#x200B;**Kafka_AEP**&#x200B;的文件夹，并将下载的文件放置在该目录中。
 
@@ -35,7 +31,7 @@ ht-degree: 0%
 
 在“终端”窗口中运行此命令以解压缩下载的文件：
 
-`tar -xvf kafka_2.13-3.1.0.tgz`
+`tar -xvf kafka_2.13-3.9.0.tgz`
 
 >[!NOTE]
 >
@@ -57,7 +53,7 @@ ht-degree: 0%
 
 返回到“终端”窗口。 输入以下命令：
 
-`cd kafka_2.13-3.1.0`
+`cd kafka_2.13-3.9.0`
 
 >[!NOTE]
 >
@@ -69,15 +65,15 @@ ht-degree: 0%
 
 ![Kafka](./images/kafka10a.png)
 
-然后，您应该会看到此响应。 这意味着Kafka已正确安装，并且Java工作正常。 (提醒：您需要安装Java 8 JDK或Java 11 JDK才能使此功能正常工作！。 您可以使用命令`java -version`查看已安装的Java版本。)
+然后，您应该会看到此响应。 这意味着Kafka已正确安装，并且Java工作正常。 (提醒：您需要安装Java 23 JDK才能使此功能正常工作！。 您可以使用命令`java -version`查看已安装的Java版本。)
 
 ![Kafka](./images/kafka10.png)
 
-## 2.6.2.2启动Kafka
+## 启动Kafka
 
 要启动Kafka，您需要按此顺序启动Kafka Zookeeper和Kafka。
 
-打开&#x200B;**终端**&#x200B;窗口，方法是右键单击您的文件夹&#x200B;**kafka_2.13-3.1.0**，然后单击&#x200B;**在文件夹新建终端**。
+打开&#x200B;**终端**&#x200B;窗口，方法是右键单击您的文件夹&#x200B;**kafka_2.13-3.9.0**，然后单击&#x200B;**在文件夹新建终端**。
 
 ![Kafka](./images/kafka11.png)
 
@@ -93,7 +89,7 @@ ht-degree: 0%
 
 在进行这些练习时，请保持此窗口打开！
 
-打开另一个新&#x200B;**终端**&#x200B;窗口，方法是右键单击您的文件夹&#x200B;**kafka_2.13-3.1.0**，然后单击&#x200B;**文件夹上的新终端**。
+打开另一个新&#x200B;**终端**&#x200B;窗口，方法是右键单击您的文件夹&#x200B;**kafka_2.13-3.9.0**，然后单击&#x200B;**文件夹上的新终端**。
 
 ![Kafka](./images/kafka11.png)
 
@@ -109,9 +105,9 @@ ht-degree: 0%
 
 在进行这些练习时，请保持此窗口打开！
 
-## 2.6.2.3创建Kafka主题
+## 创建Kafka主题
 
-打开&#x200B;**终端**&#x200B;窗口，方法是右键单击您的文件夹&#x200B;**kafka_2.13-3.1.0**，然后单击&#x200B;**在文件夹新建终端**。
+打开&#x200B;**终端**&#x200B;窗口，方法是右键单击您的文件夹&#x200B;**kafka_2.13-3.9.0**，然后单击&#x200B;**在文件夹新建终端**。
 
 ![Kafka](./images/kafka11.png)
 
@@ -119,9 +115,7 @@ ht-degree: 0%
 
 `bin/kafka-topics.sh --create --topic aeptest --bootstrap-server localhost:9092`
 
-![Kafka](./images/kafka16a.png)
-
-随后您将看到类似的确认：
+然后，您将看到一个确认消息：
 
 ![Kafka](./images/kafka17a.png)
 
@@ -129,13 +123,11 @@ ht-degree: 0%
 
 `bin/kafka-topics.sh --create --topic aep --bootstrap-server localhost:9092`
 
-![Kafka](./images/kafka16.png)
-
 随后您将看到类似的确认：
 
 ![Kafka](./images/kafka17.png)
 
-## 2.6.2.4生成事件
+## 生成事件
 
 返回创建第一个Kafka主题的“终端”窗口，然后输入以下命令：
 
@@ -163,7 +155,7 @@ ht-degree: 0%
 
 ![Kafka](./images/kafka22.png)
 
-## 2.6.2.4使用事件
+## 使用事件
 
 在用于生成事件的同一“终端”窗口中，输入以下命令：
 

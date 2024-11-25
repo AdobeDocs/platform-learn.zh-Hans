@@ -4,16 +4,16 @@ description: 更新您的数据流以使数据可用于您的Adobe Experience Pl
 kt: 5342
 doc-type: tutorial
 exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 1%
 
 ---
 
 # 2.5.2更新您的数据流以使数据可用于您的Adobe Experience Platform数据收集服务器资产
 
-## 2.5.2.1更新您的数据流
+## 更新您的数据流
 
 在[快速入门](./../../gettingstarted/gettingstarted/ex2.md)中，您创建了自己的&#x200B;**[!UICONTROL 数据流]**。 您随后使用了名称`--aepUserLdap-- - Demo System Datastream`。
 

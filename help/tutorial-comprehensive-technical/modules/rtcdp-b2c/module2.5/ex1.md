@@ -4,9 +4,9 @@ description: 创建Adobe Experience Platform数据收集事件转发属性
 kt: 5342
 doc-type: tutorial
 exl-id: 9c64e57d-c91c-4d4c-923f-91a02edeb2ac
-source-git-commit: b4a7144217a68bc0b1bc70b19afcbc52e226500f
+source-git-commit: 6485bfa1c75c43bb569f77c478a273ace24a61d4
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '736'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 ![Adobe Experience Platform数据收集SSF](./images/ssf5.png)
 
-## 2.5.1.3部署您的Adobe Experience Platform数据收集事件转发资产
+## 部署您的Adobe Experience Platform数据收集事件转发资产
 
 在左侧菜单中，转到&#x200B;**发布流**。 单击&#x200B;**添加库**。
 
