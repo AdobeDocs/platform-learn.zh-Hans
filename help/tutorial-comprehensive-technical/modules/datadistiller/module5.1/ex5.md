@@ -1,76 +1,85 @@
 ---
-title: 查询服务 — 使用Power BI浏览数据集
-description: 查询服务 — 使用Power BI浏览数据集
+title: 查询服务 — Power BI/表格
+description: 查询服务 — Power BI/表格
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
-# 5.1.5查询服务和Power BI
+# 5.1.5从查询生成数据集
 
-打开MicrosoftPower BI桌面。
+## 目标
 
-![start-power-bi.png](./images/start-power-bi.png)
+了解如何从查询结果生成数据集
+将MicrosoftPower BI桌面/Tableau直接连接到查询服务
+在MicrosoftPower BI桌面/Tableau桌面中创建报告
 
-单击&#x200B;**获取数据**。
+## 课程上下文
 
-![power-bi-get-data.png](./images/power-bi-get-data.png)
+用于查询数据的命令行界面令人兴奋，但它并不表现良好。 在本课程中，我们将指导您完成一个推荐的工作流，介绍如何直接使用MicrosoftPower BIDesktop/Tableau和查询服务为利益相关者创建可视化报表。
 
-搜索&#x200B;**Postgres** (1)，从列表中选择&#x200B;**Postgres** (2)和&#x200B;**连接** (3)。
+## 从SQL查询创建数据集
 
-![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
+查询的复杂性将影响查询服务返回结果所需的时间。 直接从命令行或其他解决方案(如MicrosoftPower BI/Tableau)进行查询时，查询服务配置了5分钟超时（600秒）。 在某些情况下，这些解决方案将配置较短的超时。 为了运行较大的查询并提前加载返回结果所需的时间，我们提供了从查询结果生成数据集的功能。 此功能利用标准SQL功能，即“以选取方式创建表”(CTAS)。 查询列表在Platform UI中提供，也可以通过PSQL直接从命令行运行。
 
-转到Adobe Experience Platform、**查询**&#x200B;和&#x200B;**凭据**。
+在上一个示例中，在PSQL中执行&#x200B;**之前，您已经使用自己的LDAP输入您的名称**。
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+```sql
+select /* enter your name */
+       e.--aepTenantId--.identification.core.ecid as ecid,
+       e.placeContext.geo.city as city,
+       e.placeContext.geo._schema.latitude latitude,
+       e.placeContext.geo._schema.longitude longitude,
+       e.placeContext.geo.countryCode as countrycode,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling as callFeeling,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic as callTopic,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
+       l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
+       l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
+       l.--aepTenantId--.identification.core.loyaltyId as crmid
+from   demo_system_event_dataset_for_website_global_v1_1 e
+      ,demo_system_event_dataset_for_call_center_global_v1_1 c
+      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
+and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
+and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
+```
 
-从Adobe Experience Platform的&#x200B;**凭据**&#x200B;页中，复制&#x200B;**主机**&#x200B;并将其粘贴到&#x200B;**服务器**&#x200B;字段中，复制&#x200B;**数据库**&#x200B;并将其粘贴到PowerBI中的&#x200B;**数据库**&#x200B;字段中，然后单击“确定”(2)。
+导航到Adobe Experience Platform UI - [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
->[!IMPORTANT]
->
->确保在Server值末尾包含端口&#x200B;**：80**，因为查询服务当前未使用默认的PostgreSQL端口5432。
+您将在搜索字段中输入ldap，以便在Adobe Experience Platform查询UI中搜索已执行的语句：
 
-![power-bi-connect-server.png](./images/power-bi-connect-server.png)
+选择&#x200B;**查询**，转到&#x200B;**日志**&#x200B;并在搜索字段中输入您的ldap。
 
-在下一个对话框中，使用在Adobe Experience Platform的&#x200B;**凭据**&#x200B;中找到的用户名和密码填充用户名和密码。
+![search-query-for-ctas.png](./images/search-query-for-ctas.png)
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+选择您的查询并单击&#x200B;**输出数据集**。
 
-在“导航器”对话框中，将&#x200B;**LDAP**&#x200B;放入搜索字段(1)以查找CTAS数据集，并选中每个(2)旁边的框。 然后单击“加载(3)”。
+![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
+输入`--aepUserLdap-- Callcenter Interaction Analysis`作为数据集的名称和描述，然后按&#x200B;**运行查询**&#x200B;按钮
 
-确保选择&#x200B;**报告**&#x200B;选项卡(1)。
+![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 
-![power-bi-report-tab.png](./images/power-bi-report-tab.png)
+因此，您将看到状态为&#x200B;**已提交**&#x200B;的新查询。
 
-选择映射(1)，将其添加到报告画布后，放大映射(2)。
+![ctas-query-submitted.png](./images/ctas-query-submitted.png)
 
-![power-bi-select-map.png](./images/power-bi-select-map.png)
+完成后，您将看到&#x200B;**已创建数据集**&#x200B;的新条目（您可能需要刷新页面）。
 
-接下来，我们需要定义度量和维度，您可以通过将&#x200B;**字段**&#x200B;分区中的字段拖到对应的占位符（位于&#x200B;**可视化图表**&#x200B;下）上来执行此操作，如下所示：
+![ctas-dataset-created.png](./images/ctas-dataset-created.png)
 
-![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
+创建数据集（可能需要5-10分钟）后，您可以继续此练习。
 
-作为度量值，我们将使用&#x200B;**customerId**&#x200B;的计数。 将&#x200B;**crmid**&#x200B;字段从&#x200B;**字段**&#x200B;分区拖入&#x200B;**大小**&#x200B;占位符：
+下一步 — 选项A：[5.1.6查询服务和Power BI](./ex6.md)
 
-![power-bi-drag-crmid.png](./images/power-bi-drag-crmid.png)
-
-最后，要执行一些&#x200B;**callTopic**&#x200B;分析，请将&#x200B;**callTopic**&#x200B;字段拖到&#x200B;**页面级别筛选器**&#x200B;占位符上（您可能必须滚动&#x200B;**可视化图表**&#x200B;部分）；
-
-![power-bi-drag-calltopic.png](./images/power-bi-drag-calltopic.png)
-
-选择/取消选择要调查的&#x200B;**呼叫主题**：
-
-![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
-
-您现在已经完成了此练习。
-
-下一步： [5.1.7查询服务API](./ex7.md)
+下一步 — 选项B：[5.1.7查询服务和Tableau](./ex7.md)
 
 [返回模块5.1](./query-service.md)
 

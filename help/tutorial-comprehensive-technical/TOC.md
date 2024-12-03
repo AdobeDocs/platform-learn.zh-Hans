@@ -5,9 +5,9 @@ user-guide-description: 一个实践教程，涵盖Adobe Experience Platform的�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: f40ed48cdf9f6f05d5a5cc28d152a67448ed8a16
+source-git-commit: ca6370660b676cef48890d23652258015aa2b9ed
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '913'
 ht-degree: 4%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 4%
 # Adobe Experience Platform 综合技术教程 {#tutorial-comprehensive-technical}
 
 + [教程概述](/help/tutorial-comprehensive-technical/overview.md)
++ [完成](/help/tutorial-comprehensive-technical/completion.md)
 
 + 快速入门{#gettingstarted}
    + 快速入门{#gettingstarted}
@@ -27,7 +28,7 @@ ht-degree: 4%
       + [使用移动应用程序](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1数据收集{#datacollection}
-   + 1.1 Adobe Experience Platform数据收集和Web SDK扩展{#module11}
+   + 1.1 Adobe Experience Platform数据收集和Web SDK {#module11}
       + [概述](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
       + [1.1.1了解Adobe Experience Platform数据收集](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex1.md)
       + [1.1.2Edge Network、数据流和服务器端数据收集](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex2.md)
@@ -37,7 +38,7 @@ ht-degree: 4%
       + [1.1.6实施Adobe Target](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex6.md)
       + [1.1.7 Adobe Experience Platform中的XDM架构要求](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex7.md)
       + [摘要和优点](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/summary.md)
-   + 1.2 — 数据摄取{#module12}
+   + 1.2数据摄取{#module12}
       + [概述](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/data-ingestion.md)
       + [1.2.1浏览网站](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex1.md)
       + [1.2.2配置架构并设置标识符](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex2.md)
@@ -45,7 +46,7 @@ ht-degree: 4%
       + [1.2.4从脱机源摄取数据](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex4.md)
       + [1.2.5数据登陆区](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex5.md)
       + [摘要和优点](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
-   + 1.3 — 联合受众组合{#module13}
+   + 1.3联合受众构成{#module13}
       + [概述](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
       + [1.3.1设置您的Snowflake帐户](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
       + [1.3.2创建架构、数据模型和链接](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
@@ -137,7 +138,7 @@ ht-degree: 4%
       + [摘要和优点](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
 
 + 4Customer Journey AnalyticsB2C {#cjab2c}
-   + 4.1Customer Journey Analytics：在Adobe Experience Platform {#module41}之上使用Analysis Workspace构建功能板
+   + 4.1Customer Journey Analytics：使用Analysis Workspace {#module41}生成仪表板
       + [概述](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)
       + [4.1.1Customer Journey Analytics101](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex1.md)
       + [4.1.2在Customer Journey Analytics中连接Adobe Experience Platform数据集](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex2.md)
@@ -157,16 +158,16 @@ ht-degree: 4%
 + 5数据Distiller {#datadistiller}
    + 5.1查询服务{#module51}
       + [概述](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/query-service.md)
-      + [5.1.0先决条件](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex0.md)
-      + [5.1.1快速入门](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
-      + [5.1.2使用查询服务](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
-      + [5.1.3查询、查询、查询……和流失分析](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
-      + [5.1.4从查询生成数据集](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
-      + [5.1.5查询服务和Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
-      + [5.1.6查询服务和Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
-      + [5.1.7查询服务API](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+      + [5.1.1先决条件](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
+      + [5.1.2快速入门](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
+      + [5.1.3使用查询服务](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
+      + [5.1.4查询、查询、查询……和流失分析](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
+      + [5.1.5从查询生成数据集](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
+      + [5.1.6查询服务和Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
+      + [5.1.7查询服务和Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+      + [5.1.8查询服务API](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex8.md)
       + [摘要和优点](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/summary.md)
 
-
++ [设置](/help/tutorial-comprehensive-technical/setup.md)
 
 

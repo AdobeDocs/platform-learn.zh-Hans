@@ -1,419 +1,63 @@
 ---
-title: 查询服务 — 查询服务API
-description: 查询服务 — 查询服务API
+title: 查询服务 — 使用Tableau浏览数据集
+description: 查询服务 — 使用Tableau浏览数据集
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7d2f5f842559b2d6d9f115f3993268a4b36a0fe0
+exl-id: 29525740-fe1f-4770-bcc9-f2ad499a2cb5
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '1004'
-ht-degree: 2%
+source-wordcount: '336'
+ht-degree: 0%
 
 ---
 
-# 5.1.7查询服务API
+# 5.1.7查询服务和Tableau
 
-## 目标
+打开Tableau。
 
-- 使用查询服务API管理查询模板和查询计划
+![start-tableau.png](./images/start-tableau.png)
 
-## 上下文
+在&#x200B;**连接到服务器**&#x200B;中，选择&#x200B;**PostgreSQL**：
 
-在本练习中，您将执行API调用以使用Postman收藏集管理查询模板和查询计划。 您将定义查询模板，执行常规查询和CTAS查询。 **CTAS**&#x200B;查询（创建表作为选择查询）将其结果集存储在显式数据集中。 虽然常规查询存储在隐式（或系统生成的）数据集中，但通常以parquet文件格式导出。
+![tableau-connect-postgress.png](./images/tableau-connect-postgress.png)
 
-## 文档
+转到Adobe Experience Platform、**查询**&#x200B;和&#x200B;**凭据**。
 
-- [Adobe Experience Platform查询服务帮助](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
-- [查询服务API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
+![query-service-credentials.png](./images/query-service-credentials.png)
 
-## 5.1.7.1查询服务API
+从Adobe Experience Platform的&#x200B;**凭据**&#x200B;页中，复制&#x200B;**主机**&#x200B;并将其粘贴到&#x200B;**服务器**&#x200B;字段中，复制&#x200B;**数据库**&#x200B;并将其粘贴到Tableau中的&#x200B;**数据库**&#x200B;字段中，复制&#x200B;**端口**&#x200B;并将其粘贴到Tableau中的&#x200B;**端口**&#x200B;字段中，对&#x200B;**用户名**&#x200B;和&#x200B;**密码**&#x200B;执行相同的操作。 接下来，单击&#x200B;**登录**。
 
-查询服务API允许您对Adobe Experience Platform数据湖管理非交互式查询。
+登录：
 
-非交互是指执行查询的请求不会导致立即响应。 将处理查询，其结果集将存储在隐式或显式（CTAS：创建表作为选择）数据集中。
+![tableau-connection-dialog.png](./images/tableau-connection-dialog.png)
 
-## 5.1.7.2示例查询
+单击搜索(1)并在搜索字段中输入您的&#x200B;**ldap**，从结果集中识别您的表并将其拖到名为&#x200B;**将表拖到此处**&#x200B;的位置。 完成后，单击&#x200B;**表1** (3)。
 
-作为示例查询，您将使用[4.3中列出的第一个查询 — 查询、查询、查询……和流失分析](./ex3.md)：
+![tableau-drag-table.png](./images/tableau-drag-table.png)
 
-我们每天查看多少次产品？
+要在地图上可视化我们的数据，我们需要将经度和纬度转换为维度。 在&#x200B;**度量**&#x200B;中，选择&#x200B;**纬度** (1)，然后打开该字段的下拉列表，并选择&#x200B;**转换为Dimension** (2)。 对&#x200B;**经度**&#x200B;度量值执行相同操作。
 
-**SQL**
+![tableau-convert-dimension.png](./images/tableau-convert-dimension.png)
 
-```sql
-select date_format( timestamp , 'yyyy-MM-dd') AS Day,
-       count(*) AS productViews
-from   demo_system_event_dataset_for_website_global_v1_1
-where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-and eventType = 'commerce.productViews'
-group by Day
-limit 10;
-```
+将&#x200B;**Longitude**&#x200B;度量值拖动到&#x200B;**列**，将&#x200B;**纬度**&#x200B;度量值拖动到&#x200B;**行**。 **Belgium**&#x200B;的地图将自动显示，其中带有代表数据集中的城市的小点。
 
-## 5.1.7.3查询
+![tableau-drag-lon-lat.png](./images/tableau-drag-lon-lat.png)
 
-在计算机上打开Postman。 在模块3中，您创建了一个Postman环境并导入了一个Postman收藏集。 请按照[练习2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md)中的说明进行操作，以防您尚未执行该操作。
+选择&#x200B;**度量值名称** (1)，打开下拉菜单并选择&#x200B;**添加到工作表** (2)：
 
-在您导入的Postman集合中，您将看到一个文件夹&#x200B;**3。 查询服务**。 如果未看到此文件夹，请按照[练习2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md)中的说明重新下载[Postman收藏集](./../../../assets/postman/postman_profile.zip)并在Postman中重新导入该收藏集。
+![tableau-select-measure-names.png](./images/tableau-select-measure-names.png)
 
-![QS](./images/pm3.png)
+您现在将拥有包含各种大小点的地图。 该大小表示特定城市的呼叫中心互动次数。 若要改变点的大小，请导航到右侧面板并打开&#x200B;**度量值**（使用下拉图标）。 从下拉列表中选择&#x200B;**编辑大小**。 玩不同大小的游戏。
 
->[!NOTE]
->
->此时，仅文件夹&#x200B;**1。 查询**&#x200B;包含请求。 其他请求将在图层阶段添加。
+![tableau-vary-size-dots.png](./images/tableau-vary-size-dots.png)
 
-打开该文件夹并了解要执行、监控和下载查询结果集的查询服务API调用。
+若要进一步显示每个&#x200B;**调用主题**&#x200B;的数据，请将(1) **调用主题**&#x200B;维度拖到&#x200B;**页**&#x200B;上。 使用屏幕右侧的&#x200B;**呼叫主题** (2)浏览不同的&#x200B;**呼叫主题**：
 
-使用以下有效负载对[/query/queries]的POST调用将触发我们查询的执行；
+![tableau-call-topic-navigation.png](./images/tableau-call-topic-navigation.png)
 
-### 5.1.7.3.1创建查询
+您现在已经完成了此练习。
 
-单击名为&#x200B;**1.1 QS — 创建查询**&#x200B;的请求，然后转到&#x200B;**标头**。 您随后将看到以下内容：
-
-![区段](./images/s1_call.png)
-
-让我们关注此标题字段：
-
-| 键 | 值 |
-| ----------- | ----------- |
-| x-sandbox-name | `--module7sandbox--` |
-
->[!NOTE]
->
->您需要指定正在使用的Adobe Experience Platform沙盒的名称。 标头字段&#x200B;**x-sandbox-name**&#x200B;应为`--module7sandbox--`。
-
-转到此请求的&#x200B;**Body**&#x200B;部分。 在此请求的&#x200B;**正文**&#x200B;中，您将看到以下内容：
-
-![区段](./images/s1_bodydtl.png)
-
-```sql
-{
-    "name" : "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "module7:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
-}
-```
-
-注意：请更新以下请求中的变量&#x200B;**name**，方法是将&#x200B;**ldap**&#x200B;替换为您的特定&#x200B;**ldap**。
-
-添加特定的&#x200B;**ldap**&#x200B;后，正文应类似于以下内容：
-
-```json
-{
-    "name" : "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "module7:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
-}
-```
-
->[!NOTE]
->
->上述JSON正文中的键&#x200B;**dbName**&#x200B;引用Adobe Experience Platform实例中使用的沙盒。 如果您使用的是PROD沙盒，则dbName应为&#x200B;**prod：all**；如果您使用其他类似实例&#x200B;**module7**&#x200B;的沙盒，则dbName应等于&#x200B;**module7：all**。
-
-接下来，单击蓝色的&#x200B;**发送**&#x200B;按钮以创建该区段并查看其结果。
-
-![区段](./images/s1_bodydtl_results.png)
-
-成功后，POST请求将返回以下响应：
-
-```json
-{
-    "isInsertInto": false,
-    "request": {
-        "dbName": "module7:all",
-        "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10",
-        "name": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-        "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day"
-    },
-    "clientId": "5a143b5ae4aa4631a1f3b09cd051333f",
-    "state": "SUBMITTED",
-    "rowCount": 0,
-    "errors": [],
-    "isCTAS": false,
-    "version": 1,
-    "id": "8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-    "elapsedTime": 0,
-    "updated": "2021-01-20T13:23:13.951Z",
-    "client": "API",
-    "userId": "A3392DB95FFF08EE0A495E87@techacct.adobe.com",
-    "created": "2021-01-20T13:23:13.951Z",
-    "_links": {
-        "self": {
-            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-            "method": "GET"
-        },
-        "soft_delete": {
-            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-            "method": "PATCH",
-            "body": "{ \"op\": \"soft_delete\"}"
-        },
-        "cancel": {
-            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-            "method": "PATCH",
-            "body": "{ \"op\": \"cancel\"}"
-        }
-    }
-}
-```
-
-查询的当前&#x200B;**状态**&#x200B;是&#x200B;**SUBMITTED**，一旦执行，其状态将变为&#x200B;**SUCCESS**。
-
-您还可以通过Adobe Experience Platform UI查找已提交的查询，打开[Adobe Experience Platform](https://experience.adobe.com/#/@experienceplatform/platform/home)，导航到&#x200B;**查询**，导航到&#x200B;**日志**，并选择您的查询：
-
-![区段](./images/s1_bodydtl_results_qs.png)
-
-### 5.1.7.3.2获取查询
-
-单击名为&#x200B;**1.2 QS - Get Queries**&#x200B;的请求，然后转到&#x200B;**Headers**。 您随后将看到以下内容：
-
-![区段](./images/s2_call.png)
-
-让我们关注此标题字段：
-
-| 键 | 值 |
-| ----------- | ----------- |
-| x-sandbox-name | `--module7sandbox--` |
-
->[!NOTE]
->
->您需要指定正在使用的Adobe Experience Platform沙盒的名称。 标头字段&#x200B;**x-sandbox-name**&#x200B;应为`--module7sandbox--`。
-
-转到&#x200B;**参数**。 您随后将看到以下内容：
-
-![区段](./images/s2_call_p.png)
-
-**orderby**&#x200B;参数允许您根据&#x200B;**created**&#x200B;属性指定排序顺序。 请注意&#x200B;**&#39;-&#39;**&#x200B;登录已创建之前，这意味着返回查询列表的顺序将使用其创建日期，顺序为&#x200B;**降序**。 您的查询应位于列表顶部。
-
-接下来，单击蓝色的&#x200B;**发送**&#x200B;按钮以创建该区段并查看其结果。
-
-![区段](./images/s2_bodydtl_results.png)
-
-成功后，请求将返回与以下响应类似的响应。 响应的&#x200B;**状态**&#x200B;可以是&#x200B;**SUBMITTED**、**IN_PROGRESS**&#x200B;或&#x200B;**SUCCESS**。 可能需要几分钟时间，查询才会具有&#x200B;**SUCCESS**&#x200B;状态。 您可以多次重复发送此请求，直到看到&#x200B;**SUCCESS**&#x200B;状态为止。
-
-```json
-{
-    "queries": [
-        {
-            "isInsertInto": false,
-            "request": {
-                "dbName": "module7:all",
-                "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10",
-                "name": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-                "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day"
-            },
-            "clientId": "5a143b5ae4aa4631a1f3b09cd051333f",
-            "state": "SUCCESS",
-            "rowCount": 1,
-            "errors": [],
-            "isCTAS": false,
-            "version": 1,
-            "id": "8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-            "elapsedTime": 217481,
-            "updated": "2021-01-20T13:26:51.432Z",
-            "client": "API",
-            "userId": "A3392DB95FFF08EE0A495E87@techacct.adobe.com",
-            "created": "2021-01-20T13:23:13.951Z",
-            "_links": {
-                "self": {
-                    "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-                    "method": "GET"
-                },
-                "soft_delete": {
-                    "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-                    "method": "PATCH",
-                    "body": "{ \"op\": \"soft_delete\"}"
-                },
-                "referenced_datasets": [
-                    {
-                        "id": "60080ace62c49a19490c5870",
-                        "href": "https://platform-va7.adobe.io/data/foundation/catalog/dataSets/60080ace62c49a19490c5870"
-                    }
-                ]
-            }
-        }
-     ]
-    },
-    "version": 1
-}
-```
-
-当状态为&#x200B;**SUCCESS**&#x200B;时，请继续下一个请求。
-
-### 5.1.7.3.3获取查询状态
-
-单击名为&#x200B;**1.3 QS — 获取查询状态**&#x200B;的请求，然后转到&#x200B;**标头**。 您随后将看到以下内容：
-
-![区段](./images/s3_call.png)
-
-让我们关注此标题字段：
-
-| 键 | 值 |
-| ----------- | ----------- |
-| x-sandbox-name | `--module7sandbox--` |
-
->[!NOTE]
->
->您需要指定正在使用的Adobe Experience Platform沙盒的名称。 标头字段&#x200B;**x-sandbox-name**&#x200B;应为`--module7sandbox--`。
-
-接下来，单击蓝色的&#x200B;**发送**&#x200B;按钮以创建该区段并查看其结果。
-
-![区段](./images/s3_bodydtl_results.png)
-
-成功后，请求将返回与以下响应类似的响应。
-
-```json
-{
-    "isInsertInto": false,
-    "request": {
-        "dbName": "module7:all",
-        "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10",
-        "name": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-        "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day"
-    },
-    "clientId": "5a143b5ae4aa4631a1f3b09cd051333f",
-    "state": "SUCCESS",
-    "rowCount": 1,
-    "errors": [],
-    "isCTAS": false,
-    "version": 1,
-    "id": "8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-    "elapsedTime": 217481,
-    "updated": "2021-01-20T13:26:51.432Z",
-    "client": "API",
-    "userId": "A3392DB95FFF08EE0A495E87@techacct.adobe.com",
-    "created": "2021-01-20T13:23:13.951Z",
-    "_links": {
-        "self": {
-            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-            "method": "GET"
-        },
-        "soft_delete": {
-            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-            "method": "PATCH",
-            "body": "{ \"op\": \"soft_delete\"}"
-        },
-        "referenced_datasets": [
-            {
-                "id": "60080ace62c49a19490c5870",
-                "href": "https://platform-va7.adobe.io/data/foundation/catalog/dataSets/60080ace62c49a19490c5870"
-            }
-        ]
-    }
-}
-```
-
-当查询达到&#x200B;**SUCCESS**&#x200B;的状态时，响应还将指示查询通过&#x200B;**rowCount**&#x200B;属性检索的行数。 在我们的示例中，查询返回10行。 让我们在下一节中查看如何检索10行。
-
-### 5.1.7.3.4检索查询结果
-
-上述&#x200B;**SUCCESS**&#x200B;响应包含&#x200B;**referenced_datasets**&#x200B;属性，该属性指向存储查询结果的隐式数据集。 要访问结果，我们使用其&#x200B;**href**&#x200B;或&#x200B;**id**&#x200B;属性。
-
-单击名为&#x200B;**1.4 QS — 获取查询结果**&#x200B;的请求，然后转到&#x200B;**标头**。 您随后将看到以下内容：
-
-![区段](./images/s4_call.png)
-
-让我们关注此标题字段：
-
-| 键 | 值 |
-| ----------- | ----------- |
-| x-sandbox-name | `--module7sandbox--` |
-
->[!NOTE]
->
->您需要指定正在使用的Adobe Experience Platform沙盒的名称。 标头字段&#x200B;**x-sandbox-name**&#x200B;应为`--module7sandbox--`。
-
-接下来，单击蓝色的&#x200B;**发送**&#x200B;按钮以创建该区段并查看其结果。
-
-![区段](./images/s4_bodydtl_results.png)
-
-此请求的响应将指向数据集文件：
-
-```json
-{
-    "60080ace62c49a19490c5870": {
-        "name": "Demo System - Event Dataset for Website (Global v1.1)",
-        "description": "Demo System - Event Dataset for Website (Global v1.1)",
-        "enableErrorDiagnostics": false,
-        "tags": {
-            "adobe/siphon/partition/definition": [
-                "day(timestamp, _ACP_DATE)",
-                "identity(_ACP_BATCHID)"
-            ],
-            "aep/siphon/partitions": [
-                "_ACP_DATE",
-                "_ACP_BATCHID"
-            ],
-            "acp_granular_plugin_validation_flags": [
-                "identity:enabled",
-                "profile:enabled"
-            ],
-            "adobe/siphon/buffered-promotion-recency": [
-                "live"
-            ],
-            "adobe/siphon/use-buffered-promotion": [
-                "true"
-            ],
-            "adobe/pqs/table": [
-                "demo_system_event_dataset_for_website_global_v1_1"
-            ],
-            "aep/siphon/expire-snapshot-timestamp": [
-                "1611141272703"
-            ],
-            "acp_granular_validation_flags": [
-                "requiredFieldCheck:enabled"
-            ],
-            "acp_validationContext": [
-                "enabled"
-            ],
-            "adobe/siphon/table/format": [
-                "iceberg"
-            ],
-            "unifiedProfile": [
-                "enabled:true",
-                "enabledAt:2021-01-20 10:49:51"
-            ],
-            "unifiedIdentity": [
-                "enabled:true"
-            ]
-        },
-        "namespace": "ACP",
-        "state": "DRAFT",
-        "imsOrg": "907075E95BF479EC0A495C73@AdobeOrg",
-        "sandboxId": "62cd9f38-8529-4b05-8d9f-388529db0540",
-        "lastBatchId": "01EWFQZ15XRNNB1FPKPW5ETRVP",
-        "lastBatchStatus": "success",
-        "lastSuccessfulBatch": "01EWFQZ15XRNNB1FPKPW5ETRVP",
-        "version": "1.0.6",
-        "created": 1611139790698,
-        "updated": 1611149266031,
-        "createdClient": "750e24ee855b4ac18ccc4f4817f96ee1",
-        "createdUser": "3A260B485E909A170A495E76@techacct.adobe.com",
-        "updatedUser": "acp_foundation_dataTracker@AdobeID",
-        "viewId": "60080ace62c49a19490c5871",
-        "fileDescription": {
-            "persisted": true,
-            "containerFormat": "parquet",
-            "format": "parquet"
-        },
-        "files": "@/dataSets/60080ace62c49a19490c5870/views/60080ace62c49a19490c5871/files",
-        "schemaMetadata": {
-            "delta": [],
-            "gdpr": []
-        },
-        "schemaRef": {
-            "id": "https://ns.adobe.com/experienceplatform/schemas/d9b88a044ad96154637965a97ed63c7b20bdf2ab3b4f642e",
-            "contentType": "application/vnd.adobe.xed-full+json;version=1"
-        }
-    }
-}
-```
-
->[!NOTE]
->
->不久将添加更多练习，以帮助您与查询服务API交互。
-
-下一步：[摘要和优点](./summary.md)
+下一步： [5.1.8查询服务API](./ex8.md)
 
 [返回模块5.1](./query-service.md)
 

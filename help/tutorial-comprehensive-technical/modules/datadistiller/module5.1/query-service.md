@@ -4,16 +4,14 @@ description: 查询服务
 kt: 5342
 doc-type: tutorial
 exl-id: 6eb65de3-d0e8-49d4-a702-5c9d6a1952b7
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '547'
 ht-degree: 1%
 
 ---
 
 # 5.1查询服务
-
-**作者：[Marc Meewis](https://www.linkedin.com/in/marcmeewis/)，[Wouter Van Galuwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 在本模块中，您将获得Adobe Experience Platform查询服务的实际操作预览。 查询服务允许您跨所有Adobe Experience Cloud应用程序数据执行全渠道查询，联接和分析跨Adobe Campaign、Analytics、Audience Manager、Target和Advertising Cloud的数据，以及加载/插入Adobe Experience Platform的其他客户数据。
 
@@ -45,35 +43,35 @@ ht-degree: 1%
 
 ## 练习
 
-[5.1.0先决条件](./ex0.md)
+[5.1.1先决条件](./ex1.md)
 
 您需要安装PSQL才能执行此启用练习中的查询。 根据您的操作系统，您必须安装MicrosoftPower BI或Tableau。 Windows用户可以选择Power BI或Tableau。 Mac用户应该安装Tableau。
 
-[5.1.1快速入门](./ex1.md)
+[5.1.2快速入门](./ex2.md)
 
 在本练习中，您将探索Adobe Experience Platform查询服务用户界面，了解数据集，找到您的查询，并最终设置来自PSQL的连接。
 
-[5.1.2使用查询服务](./ex2.md)
+[5.1.3使用查询服务](./ex3.md)
 
 在本练习中，您将了解基本查询服务语法，并可以在查询中识别XDM架构的属性。
 
-[5.1.3查询、查询、查询……和流失分析](./ex3.md)
+[5.1.4查询、查询、查询……和流失分析](./ex4.md)
 
 在本练习中，您将进行查询，并在进行流失Adobe时了解用户定义函数。 最后，您将编写一个查询来准备数据集，以供在MicrosoftPower BI中使用。
 
-[5.1.4从查询生成数据集](./ex4.md)
+[5.1.5从查询生成数据集](./ex5.md)
 
 在本练习中，您将通过在之前执行的查询来生成数据集，并在下一个练习中使用此数据集。
 
-[5.1.5查询服务和Power BI](./ex5.md)
+[5.1.6查询服务和Power BI](./ex6.md)
 
 在本练习中，您会将Power BI连接到Adobe Experience Platform和查询服务以执行Callcenter交互分析。
 
-[5.1.6查询服务和Tableau](./ex6.md)
+[5.1.7查询服务和Tableau](./ex7.md)
 
 在本练习中，您会将Tableau连接到Adobe Experience Platform和查询服务以执行Callcenter交互分析。
 
-[5.1.7查询服务API](./ex7.md)
+[5.1.8查询服务API](./ex8.md)
 
 在本练习中，您将使用查询服务API来管理查询模板和查询计划。
 
