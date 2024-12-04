@@ -4,9 +4,9 @@ description: 查询服务 — Power BI/表格
 kt: 5342
 doc-type: tutorial
 exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 将MicrosoftPower BI桌面/Tableau直接连接到查询服务
 在MicrosoftPower BI桌面/Tableau桌面中创建报告
 
-## 课程上下文
+## 上下文
 
 用于查询数据的命令行界面令人兴奋，但它并不表现良好。 在本课程中，我们将指导您完成一个推荐的工作流，介绍如何直接使用MicrosoftPower BIDesktop/Tableau和查询服务为利益相关者创建可视化报表。
 
@@ -41,11 +41,11 @@ select /* enter your name */
        c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
        l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
        l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
-       l.--aepTenantId--.identification.core.loyaltyId as crmid
+       l.--aepTenantId--.identification.core.crmId as crmid
 from   demo_system_event_dataset_for_website_global_v1_1 e
       ,demo_system_event_dataset_for_call_center_global_v1_1 c
-      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
-where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+      ,demo_system_profile_dataset_for_crm_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Citi Signal')
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
 and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
 and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
@@ -57,23 +57,23 @@ and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identifica
 
 选择&#x200B;**查询**，转到&#x200B;**日志**&#x200B;并在搜索字段中输入您的ldap。
 
-![search-query-for-ctas.png](./images/search-query-for-ctas.png)
+![search-query-for-ctas.png](./images/searchqueryforctas.png)
 
-选择您的查询并单击&#x200B;**输出数据集**。
+选择您的查询，然后单击&#x200B;**以CTAS身份运行**。
 
-![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
+![search-query-for-ctas.png](./images/searchqueryforctasa.png)
 
-输入`--aepUserLdap-- Callcenter Interaction Analysis`作为数据集的名称和描述，然后按&#x200B;**运行查询**&#x200B;按钮
+输入`--aepUserLdap-- Callcenter Interaction Analysis`作为数据集的名称和描述，然后单击&#x200B;**以CTAS**&#x200B;运行。
 
-![create-ctas-dataset.png](./images/create-ctas-dataset.png)
+![create-ctas-dataset.png](./images/createctasdataset.png)
 
 因此，您将看到状态为&#x200B;**已提交**&#x200B;的新查询。
 
-![ctas-query-submitted.png](./images/ctas-query-submitted.png)
+![ctas-query-submitted.png](./images/ctasquerysubmitted.png)
 
 完成后，您将看到&#x200B;**已创建数据集**&#x200B;的新条目（您可能需要刷新页面）。
 
-![ctas-dataset-created.png](./images/ctas-dataset-created.png)
+![ctas-dataset-created.png](./images/ctasdatasetcreated.png)
 
 创建数据集（可能需要5-10分钟）后，您可以继续此练习。
 

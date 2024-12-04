@@ -3,9 +3,10 @@ title: 查询服务 — 查询服务API
 description: 查询服务 — 查询服务API
 kt: 5342
 doc-type: tutorial
-source-git-commit: 87089d6c9e1096f12193c73ef63d64a498dbc8dd
+exl-id: d356f7e2-523b-41a2-9cc6-1ea2a028c3a7
+source-git-commit: d9d9a38c1e160950ae755e352a54667c8a7b30f7
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '982'
 ht-degree: 2%
 
 ---
@@ -43,7 +44,7 @@ ht-degree: 2%
 select date_format( timestamp , 'yyyy-MM-dd') AS Day,
        count(*) AS productViews
 from   demo_system_event_dataset_for_website_global_v1_1
-where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+where  --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal')
 and eventType = 'commerce.productViews'
 group by Day
 limit 10;
@@ -51,7 +52,7 @@ limit 10;
 
 ## 查询
 
-在计算机上打开Postman。 在模块3中，您创建了一个Postman环境并导入了一个Postman收藏集。 请按照[练习2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md)中的说明进行操作，以防您尚未执行该操作。
+在计算机上打开Postman。 在模块2.1中，您创建了一个Postman环境并导入了一个Postman收藏集。 请按照[练习2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md)中的说明进行操作，以防您尚未执行该操作。
 
 在您导入的Postman集合中，您将看到一个文件夹&#x200B;**3。 查询服务**。 如果未看到此文件夹，请按照[练习2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md)中的说明重新下载[Postman收藏集](./../../../assets/postman/postman_profile.zip)并在Postman中重新导入该收藏集。
 
@@ -75,11 +76,11 @@ limit 10;
 
 | 键 | 值 |
 | ----------- | ----------- |
-| x-sandbox-name | `--module7sandbox--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->您需要指定正在使用的Adobe Experience Platform沙盒的名称。 标头字段&#x200B;**x-sandbox-name**&#x200B;应为`--module7sandbox--`。
+>您需要指定正在使用的Adobe Experience Platform沙盒的名称。 标头字段&#x200B;**x-sandbox-name**&#x200B;应为`--aepSandboxName--`。
 
 转到此请求的&#x200B;**Body**&#x200B;部分。 在此请求的&#x200B;**正文**&#x200B;中，您将看到以下内容：
 
@@ -89,12 +90,12 @@ limit 10;
 {
     "name" : "ldap - QS API demo - Citi Signal - Product Views Per Day",
 	"description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "module7:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+	"dbName": "--aepSandboxName--:all",
+	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
-注意：请更新以下请求中的变量&#x200B;**name**，方法是将&#x200B;**ldap**&#x200B;替换为您的特定&#x200B;**ldap**。
+注意：请通过以下请求更新变量&#x200B;**name**，将&#x200B;**ldap**&#x200B;替换为您的特定&#x200B;**—aepUserLdap—**。
 
 添加特定的&#x200B;**ldap**&#x200B;后，正文应类似于以下内容：
 
@@ -102,14 +103,14 @@ limit 10;
 {
     "name" : "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
 	"description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "module7:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+	"dbName": "tech-insiders:all",
+	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
 >[!NOTE]
 >
->上述JSON正文中的键&#x200B;**dbName**&#x200B;引用Adobe Experience Platform实例中使用的沙盒。 如果您使用的是PROD沙盒，则dbName应为&#x200B;**prod：all**；如果您使用其他类似实例&#x200B;**module7**&#x200B;的沙盒，则dbName应等于&#x200B;**module7：all**。
+>上述JSON正文中的键&#x200B;**dbName**&#x200B;引用Adobe Experience Platform实例中使用的沙盒。 如果您使用的是PROD沙盒，则dbName应为&#x200B;**prod：all**；如果您使用其他沙盒（如实例&#x200B;**tech-insiders**），则dbName应等于&#x200B;**tech-insiders：all**。
 
 接下来，单击蓝色的&#x200B;**发送**&#x200B;按钮以创建该区段并查看其结果。
 
@@ -173,11 +174,11 @@ limit 10;
 
 | 键 | 值 |
 | ----------- | ----------- |
-| x-sandbox-name | `--module7sandbox--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->您需要指定正在使用的Adobe Experience Platform沙盒的名称。 标头字段&#x200B;**x-sandbox-name**&#x200B;应为`--module7sandbox--`。
+>您需要指定正在使用的Adobe Experience Platform沙盒的名称。 标头字段&#x200B;**x-sandbox-name**&#x200B;应为`--aepSandboxName--`。
 
 转到&#x200B;**参数**。 您随后将看到以下内容：
 
@@ -196,45 +197,38 @@ limit 10;
     "queries": [
         {
             "isInsertInto": false,
+            "sessionType": "HTTP_SESSION",
             "request": {
-                "dbName": "module7:all",
-                "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10",
+                "dbName": "tech-insiders:all",
+                "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10",
                 "name": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
                 "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day"
             },
-            "clientId": "5a143b5ae4aa4631a1f3b09cd051333f",
-            "state": "SUCCESS",
-            "rowCount": 1,
+            "computeMetrics": null,
+            "clientId": "b7d8a1fc396242889bb31dc83644e91d",
+            "state": "IN_PROGRESS",
+            "rowCount": 0,
+            "isService": false,
             "errors": [],
             "isCTAS": false,
             "version": 1,
-            "id": "8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-            "elapsedTime": 217481,
-            "updated": "2021-01-20T13:26:51.432Z",
+            "id": "a535234e-dc0c-42ea-bcad-eb09c5997d76",
+            "elapsedTime": 8088,
+            "updated": "2024-12-04T14:17:10.627Z",
             "client": "API",
-            "userId": "A3392DB95FFF08EE0A495E87@techacct.adobe.com",
-            "created": "2021-01-20T13:23:13.951Z",
-            "_links": {
-                "self": {
-                    "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-                    "method": "GET"
-                },
-                "soft_delete": {
-                    "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-                    "method": "PATCH",
-                    "body": "{ \"op\": \"soft_delete\"}"
-                },
-                "referenced_datasets": [
-                    {
-                        "id": "60080ace62c49a19490c5870",
-                        "href": "https://platform-va7.adobe.io/data/foundation/catalog/dataSets/60080ace62c49a19490c5870"
-                    }
-                ]
-            }
+            "effectiveSQL": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10",
+            "userId": "8CD31E54673C49EE0A495E05@techacct.adobe.com",
+            "isParentLevel": true,
+            "created": "2024-12-04T14:14:22.637Z",
+                "version": 1,
+    "_links": {
+        "next": {
+            "href": "https://platform-va7.adobe.io/data/foundation/query/queries?orderby=-created&start=2024-11-22T00:32:04.505Z"
+        },
+        "prev": {
+            "href": "https://platform-va7.adobe.io/data/foundation/query/queries?orderby=-created&start=2024-12-04T14:14:22.637Z&isPrevLink=true"
         }
-     ]
-    },
-    "version": 1
+    }
 }
 ```
 
@@ -250,11 +244,11 @@ limit 10;
 
 | 键 | 值 |
 | ----------- | ----------- |
-| x-sandbox-name | `--module7sandbox--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->您需要指定正在使用的Adobe Experience Platform沙盒的名称。 标头字段&#x200B;**x-sandbox-name**&#x200B;应为`--module7sandbox--`。
+>您需要指定正在使用的Adobe Experience Platform沙盒的名称。 标头字段&#x200B;**x-sandbox-name**&#x200B;应为`--aepSandboxName--`。
 
 接下来，单击蓝色的&#x200B;**发送**&#x200B;按钮以创建该区段并查看其结果。
 
@@ -265,38 +259,49 @@ limit 10;
 ```json
 {
     "isInsertInto": false,
+    "sessionType": "HTTP_SESSION",
     "request": {
-        "dbName": "module7:all",
-        "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10",
+        "dbName": "tech-insiders:all",
+        "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10",
         "name": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
         "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day"
     },
-    "clientId": "5a143b5ae4aa4631a1f3b09cd051333f",
+    "computeMetrics": {
+        "executorVMSeconds": 138,
+        "clusterCpuSeconds": 3312,
+        "clusterVMHours": 0.07666666805744171,
+        "driverVMSeconds": 138,
+        "clusterVMSeconds": 276
+    },
+    "clientId": "b7d8a1fc396242889bb31dc83644e91d",
     "state": "SUCCESS",
     "rowCount": 1,
+    "isService": false,
     "errors": [],
     "isCTAS": false,
     "version": 1,
-    "id": "8f0d7f25-f7aa-493b-9792-290f884a7e5b",
-    "elapsedTime": 217481,
-    "updated": "2021-01-20T13:26:51.432Z",
+    "id": "a535234e-dc0c-42ea-bcad-eb09c5997d76",
+    "elapsedTime": 199219,
+    "updated": "2024-12-04T14:17:41.856Z",
     "client": "API",
-    "userId": "A3392DB95FFF08EE0A495E87@techacct.adobe.com",
-    "created": "2021-01-20T13:23:13.951Z",
+    "effectiveSQL": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10",
+    "userId": "8CD31E54673C49EE0A495E05@techacct.adobe.com",
+    "isParentLevel": true,
+    "created": "2024-12-04T14:14:22.637Z",
     "_links": {
         "self": {
-            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
+            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/a535234e-dc0c-42ea-bcad-eb09c5997d76",
             "method": "GET"
         },
         "soft_delete": {
-            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
+            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/a535234e-dc0c-42ea-bcad-eb09c5997d76",
             "method": "PATCH",
             "body": "{ \"op\": \"soft_delete\"}"
         },
         "referenced_datasets": [
             {
-                "id": "60080ace62c49a19490c5870",
-                "href": "https://platform-va7.adobe.io/data/foundation/catalog/dataSets/60080ace62c49a19490c5870"
+                "id": "672a10b1074ceb2af0aa7034",
+                "href": "https://platform-va7.adobe.io/data/foundation/catalog/dataSets/672a10b1074ceb2af0aa7034"
             }
         ]
     }
@@ -317,11 +322,11 @@ limit 10;
 
 | 键 | 值 |
 | ----------- | ----------- |
-| x-sandbox-name | `--module7sandbox--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->您需要指定正在使用的Adobe Experience Platform沙盒的名称。 标头字段&#x200B;**x-sandbox-name**&#x200B;应为`--module7sandbox--`。
+>您需要指定正在使用的Adobe Experience Platform沙盒的名称。 标头字段&#x200B;**x-sandbox-name**&#x200B;应为`--aepSandboxName--`。
 
 接下来，单击蓝色的&#x200B;**发送**&#x200B;按钮以创建该区段并查看其结果。
 
@@ -331,7 +336,7 @@ limit 10;
 
 ```json
 {
-    "60080ace62c49a19490c5870": {
+    "672a10b1074ceb2af0aa7034": {
         "name": "Demo System - Event Dataset for Website (Global v1.1)",
         "description": "Demo System - Event Dataset for Website (Global v1.1)",
         "enableErrorDiagnostics": false,
@@ -340,67 +345,71 @@ limit 10;
                 "day(timestamp, _ACP_DATE)",
                 "identity(_ACP_BATCHID)"
             ],
+            "adobe/siphon/meta": [
+                "acpBufferedFlag::false"
+            ],
             "aep/siphon/partitions": [
                 "_ACP_DATE",
                 "_ACP_BATCHID"
             ],
             "acp_granular_plugin_validation_flags": [
                 "identity:enabled",
-                "profile:enabled"
-            ],
-            "adobe/siphon/buffered-promotion-recency": [
-                "live"
-            ],
-            "adobe/siphon/use-buffered-promotion": [
-                "true"
+                "profile:disabled"
             ],
             "adobe/pqs/table": [
                 "demo_system_event_dataset_for_website_global_v1_1"
             ],
-            "aep/siphon/expire-snapshot-timestamp": [
-                "1611141272703"
-            ],
             "acp_granular_validation_flags": [
                 "requiredFieldCheck:enabled"
+            ],
+            "aep/siphon/cleanup/trash/timestamp": [
+                "1733302532212"
             ],
             "acp_validationContext": [
                 "enabled"
             ],
             "adobe/siphon/table/format": [
-                "iceberg"
+                "delta"
             ],
             "unifiedProfile": [
                 "enabled:true",
-                "enabledAt:2021-01-20 10:49:51"
+                "enabledAt:2024-11-05 12:33:59"
+            ],
+            "aep/siphon/cleanup/meta/timestamp": [
+                "1733302532287"
             ],
             "unifiedIdentity": [
                 "enabled:true"
             ]
         },
-        "namespace": "ACP",
-        "state": "DRAFT",
+        "state": "ACTIVE",
         "imsOrg": "907075E95BF479EC0A495C73@AdobeOrg",
-        "sandboxId": "62cd9f38-8529-4b05-8d9f-388529db0540",
-        "lastBatchId": "01EWFQZ15XRNNB1FPKPW5ETRVP",
-        "lastBatchStatus": "success",
-        "lastSuccessfulBatch": "01EWFQZ15XRNNB1FPKPW5ETRVP",
-        "version": "1.0.6",
-        "created": 1611139790698,
-        "updated": 1611149266031,
-        "createdClient": "750e24ee855b4ac18ccc4f4817f96ee1",
-        "createdUser": "3A260B485E909A170A495E76@techacct.adobe.com",
+        "sandboxId": "79e3c8b2-0609-4564-a3c8-b20609a5648c",
+        "extensions": {
+            "adobe_lakeHouse": {
+                "metrics": {
+                    "storageSize": 810709,
+                    "rowCount": 1141,
+                    "asOf": 1732494676514
+                }
+            },
+            "adobe_unifiedProfile": {}
+        },
+        "version": "1.0.21",
+        "created": 1730810034023,
+        "updated": 1733302532348,
+        "createdClient": "d75039d36ca543c78612f7aac18e6c2b",
+        "createdUser": "53FB1E5E66CDC87D0A495FC0@techacct.adobe.com",
         "updatedUser": "acp_foundation_dataTracker@AdobeID",
-        "viewId": "60080ace62c49a19490c5871",
+        "classification": {
+            "dataBehavior": "time-series",
+            "managedBy": "CUSTOMER"
+        },
+        "viewId": "672a10b2074ceb2af0aa7035",
         "fileDescription": {
-            "persisted": true,
-            "containerFormat": "parquet",
             "format": "parquet"
         },
-        "files": "@/dataSets/60080ace62c49a19490c5870/views/60080ace62c49a19490c5871/files",
-        "schemaMetadata": {
-            "delta": [],
-            "gdpr": []
-        },
+        "files": "@/dataSetFiles?dataSetId=672a10b1074ceb2af0aa7034",
         "schemaRef": {
             "id": "https://ns.adobe.com/experienceplatform/schemas/d9b88a044ad96154637965a97ed63c7b20bdf2ab3b4f642e",
             "contentType": "application/vnd.adobe.xed-full+json;version=1"
@@ -408,10 +417,6 @@ limit 10;
     }
 }
 ```
-
->[!NOTE]
->
->不久将添加更多练习，以帮助您与查询服务API交互。
 
 下一步：[摘要和优点](./summary.md)
 
