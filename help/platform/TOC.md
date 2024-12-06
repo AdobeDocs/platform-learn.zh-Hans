@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: b52630da0ff68b8784ebd70afd3472c39e984844
+source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
 workflow-type: tm+mt
-source-wordcount: '942'
-ht-degree: 16%
+source-wordcount: '947'
+ht-degree: 17%
 
 ---
 
@@ -50,6 +50,7 @@ ht-degree: 16%
    + [概述](/help/platform/ai-assistant/overview.md)
    + [设置访问权限](/help/platform/ai-assistant/access.md)
    + [清理受众](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [随新产品一起入门](/help/platform/ai-assistant/onboard.md)
 + 受众和分段{#audiences}
    + [受众门户和构成简介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上传受众](audiences/upload-audiences.md)
@@ -91,7 +92,7 @@ ht-degree: 16%
    + [删除数据集和批次](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [使数据集过期](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [假名配置文件和事件过期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
-   + [删除配置文件](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/profiles/delete-profiles)
+   + [删除轮廓](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [更新配置文件属性](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 数据摄取{#data-ingestion}
    + [概述](/help/platform/data-ingestion/understanding-data-ingestion.md)
@@ -170,7 +171,7 @@ ht-degree: 16%
    + [支持异地勘探](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
    + [将合作伙伴属性添加到配置文件](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
    + [为未知访客在现场进行个性化](/help/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
-+ 配置文件 {#profiles}
++ 轮廓 {#profiles}
    + [了解Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [配置文件概述图](/help/platform/profiles/overview-diagram.md)
    + [将数据引入轮廓](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)

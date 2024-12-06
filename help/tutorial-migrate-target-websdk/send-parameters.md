@@ -2,9 +2,9 @@
 title: 发送参数 — 将Target从at.js 2.x迁移到Web SDK
 description: 了解如何使用Experience PlatformWeb SDK将mbox、配置文件和实体参数发送到Adobe Target。
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: d4308b68d6974fe47eca668dd16555d15a8247c9
+source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -181,7 +181,7 @@ alloy("sendEvent", {
 >由于自定义mbox参数是`xdm`对象的一部分，因此您需要更新任何受众、活动或使用新名称引用这些mbox参数的配置文件脚本。 有关更多信息，请参阅本教程的[更新Target受众和配置文件脚本以了解Platform Web SDK兼容性](update-audiences.md)页面。
 
 
-## 配置文件参数
+## 轮廓参数
 
 必须在Platform Web SDK `sendEvent`命令有效负载中的`data.__adobe.target`对象下传递目标配置文件参数。
 
@@ -306,7 +306,7 @@ targetPageParams = function() {
 
 当`commerce`字段组的`purchases.value`设置为`1`时，购买信息将传递到Target。 订单ID和订单总计自动从`order`对象映射。 如果`productListItems`数组存在，则`SKU`值将用于`productPurchasedId`。
 
-使用`sendEvent`命令的Platform Web SDK示例：
+使用`sendEvent`的Platform Web SDK示例：
 
 >[!BEGINTABS]
 
@@ -328,14 +328,24 @@ alloy("sendEvent", {
       "SKU": "SKU-00002"
     }, {
       "SKU": "SKU-00003"
-    }]
+    }],
+      "_experience": {
+          "decisioning": {
+              "propositions": [{
+                  "scope": "<your_mbox>"
+              }],
+              "propositionEventType": {
+                  "display": 1
+              }
+          }
+      }
   }
 });
 ```
 
 >[!TAB 标记]
 
-在标记中，首先使用[!UICONTROL XDM对象]数据元素映射到XDM字段：
+在标记中，首先使用[!UICONTROL XDM对象]数据元素映射到必需的XDM字段(请参阅JavaScript示例)和可选的自定义范围：
 
 ![映射到XDM对象数据元素中的XDM字段](assets/params-tags-purchase.png){zoomable="yes"}
 
@@ -345,6 +355,13 @@ alloy("sendEvent", {
 
 >[!ENDTABS]
 
+>[!IMPORTANT]
+>
+> 必须使用`display: 1`设置`_experience.decisioning.propositionEventType`，才能使用调用递增Target量度。
+
+>[!NOTE]
+>
+> 如果您希望在Target量度定义中使用自定义位置/mbox名称，例如`orderConfirmPage`，请使用如上示例中的自定义范围填充`_experience.decisioning.propositions`数组。
 
 >[!NOTE]
 >
@@ -384,7 +401,8 @@ alloy("sendEvent", {
     "identityMap": {
       "GLOBAL_CUSTOMER_ID": [{
         "id": "TT8675309",
-        "authenticatedState": "authenticated"
+        "authenticatedState": "authenticated",
+        "primary": true
       }]
     }
   }
@@ -407,6 +425,12 @@ alloy("sendEvent", {
 ![在数据流中设置目标第三方ID命名空间](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+>[!NOTE]
+>
+> Adobe建议将代表个人的命名空间（例如经过身份验证的身份）作为主要身份。
+
+
 
 ## 平台Web SDK示例
 
@@ -458,7 +482,8 @@ alloy("sendEvent", {
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "web": {
@@ -534,7 +559,8 @@ alloy("sendEvent", {
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "commerce": {
@@ -550,7 +576,17 @@ alloy("sendEvent", {
           "SKU": "SKU-00002"
         }, {
           "SKU": "SKU-00003"
-        }]
+        }],
+        "_experience": {
+            "decisioning": {
+                "propositions": [{
+                    "scope": "<your_mbox>"
+                }],
+                "propositionEventType": {
+                    "display": 1
+                }
+            }
+        }
       }
     });
   </script>
