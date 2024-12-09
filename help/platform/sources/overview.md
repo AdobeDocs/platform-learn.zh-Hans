@@ -1,6 +1,6 @@
 ---
 title: 源概述
-description: 了解如何轻松地将数据从 Adobe、第一方和第三方应用程序引入到 Platform 的实时客户配置文件和数据湖。
+description: 了解如何轻松地将数据从 Adobe、第一方和第三方应用程序引入到 Platform 的实时客户轮廓和数据湖。
 feature: Sources
 role: Data Engineer, Data Architect, Developer
 level: Beginner
@@ -9,8 +9,8 @@ thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
 source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 34%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
