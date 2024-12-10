@@ -3,9 +3,9 @@ title: 将Target从at.js 2.x迁移到Web SDK
 description: 了解如何将Adobe Target实施从at.js 2.x迁移到Adobe Experience Platform Web SDK。 主题包括加载JavaScript库、发送参数、渲染活动以及其他值得注意的标注。
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
-source-git-commit: eebe598e55228d038dfc2adb97df0f8ff03748ac
+source-git-commit: 485e79e3569052184475fbc49ab5f43cebcac9a6
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '533'
 ht-degree: 4%
 
 ---
@@ -23,12 +23,10 @@ Adobe Experience Platform Web SDK是客户端JavaScript库，它允许Adobe Expe
 * 更快地从[Real-time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html?lang=zh-Hans)共享受众
 * 将Target与Journey Optimizer集成以支持[Offer decisioning交付](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
 * 能够使用[第一方ID](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html?lang=zh-Hans)生成ECID以延长访客识别持续时间
-* 跨Adobe应用程序整合网络调用
 * 占用更小的空间以改进页面速度量度
-* 与Adobe Analytics更紧密集成，后者不依赖拼接来自单独网络调用的信息
 * 为开发人员增加实施灵活性
 
-可以说，迁移给Target客户带来的最大好处是与Real-time Customer Data Platform集成。 Real-Time CDP基于摄取到Experience Platform的所有数据及其实时客户档案功能提供了巨大的受众构建功能。 一个内置的数据管理框架，可自动负责任地使用该数据。 通过客户人工智能，可轻松使用机器学习模型构建倾向性和流失模型，模型的输出可共享回Adobe Target。 最后，可选的Healthcare和Privacy &amp; Security Shield加载项的客户可以使用同意强制执行功能轻松地强制执行个别客户的同意首选项。 要在您的Web渠道中使用这些RTCDP功能，需要使用Platform Web SDK。
+可以说，迁移给Target客户带来的最大好处是与Real-time Customer Data Platform集成。 Real-Time CDP基于摄取到Experience Platform的所有数据及其实时客户档案功能提供了巨大的受众构建功能。 一个内置的数据管理框架，可自动负责任地使用该数据。 通过客户人工智能，可轻松使用机器学习模型构建倾向性和流失模型，模型的输出可共享回Adobe Target。 最后，可选的Healthcare和Privacy &amp; Security Shield加载项的客户可以使用同意强制执行功能轻松地强制执行个别客户的同意首选项。 要在您的Web渠道中使用这些Real-Time CDP功能，需要使用Platform Web SDK。
 
 ## 学习目标
 
