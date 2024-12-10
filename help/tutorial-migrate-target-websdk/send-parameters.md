@@ -2,9 +2,9 @@
 title: 发送参数 — 将Target从at.js 2.x迁移到Web SDK
 description: 了解如何使用Experience PlatformWeb SDK将mbox、配置文件和实体参数发送到Adobe Target。
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
-source-git-commit: f30d6434be69e87406326955b3821d07bd2e66c1
+source-git-commit: 0697c6d13272182432e11fdb9d84a752d39527b6
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1608'
 ht-degree: 0%
 
 ---
@@ -372,7 +372,7 @@ alloy("sendEvent", {
 
 Target允许使用单个客户ID跨设备和系统同步配置文件。 使用at.js时，可以将其设置为Target请求中的`mbox3rdPartyId`，或设置为发送到Experience CloudIdentity服务的第一个客户ID。 与at.js不同，Platform Web SDK实施允许您指定在存在多个客户ID时用作`mbox3rdPartyId`的客户ID。 例如，如果贵企业有一个全局客户ID，并且不同业务线的客户ID各不相同，则可以配置Target应使用哪个ID。
 
-要为Target跨设备和客户属性用例设置ID同步，需要执行几个步骤：
+为跨设备和客户属性用例设置ID同步需要执行几个步骤：
 
 1. 在Data Collection或Platform的&#x200B;**[!UICONTROL 标识]**&#x200B;屏幕中为客户ID创建&#x200B;**[!UICONTROL 标识命名空间]**
 1. 确保客户属性中的&#x200B;**[!UICONTROL 别名]**&#x200B;与命名空间中的&#x200B;**[!UICONTROL 身份符号]**&#x200B;匹配
