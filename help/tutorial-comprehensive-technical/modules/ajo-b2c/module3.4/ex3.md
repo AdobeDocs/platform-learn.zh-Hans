@@ -4,7 +4,7 @@ description: 此练习介绍了如何在电子邮件内容中使用区段个性�
 kt: 5342
 doc-type: tutorial
 exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
 source-wordcount: '483'
 ht-degree: 0%
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 通过转到[Adobe Experience Cloud](https://experience.adobe.com)登录Adobe Experience Cloud。 单击&#x200B;**Adobe Journey Optimizer**。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepTenantId--``。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.3.1基于区段的个性化
 

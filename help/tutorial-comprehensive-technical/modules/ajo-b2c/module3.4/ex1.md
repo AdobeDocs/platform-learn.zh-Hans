@@ -4,9 +4,9 @@ description: 在此部分中，您将配置基于触发器的历程 — 订单�
 kt: 5342
 doc-type: tutorial
 exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '1921'
 ht-degree: 0%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 0%
 
 通过转到[Adobe Experience Cloud](https://experience.adobe.com)登录Adobe Journey Optimizer。 单击&#x200B;**Journey Optimizer**。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 若要从一个沙盒更改到另一个沙盒，请单击&#x200B;**PRODUCTION Prod (VA7)**，然后从列表中选择该沙盒。 在此示例中，沙盒名为&#x200B;**AEP Enablement FY22**。 然后，您将进入沙盒`--aepSandboxName--`的&#x200B;**主页**&#x200B;视图。
+您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 然后，您将进入沙盒`--aepSandboxName--`的&#x200B;**主页**&#x200B;视图。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.1.1创建事件
 
@@ -33,23 +33,14 @@ ht-degree: 0%
 
 然后，您将看到空的事件配置。
 
-![Journey Optimizer](./images/oc32.png)
-
 首先，为您的事件提供如下名称： `--aepUserLdap--PurchaseEvent`，然后添加如下描述： `Purchase Event`。
 
-![Journey Optimizer](./images/oc34.png)
-
-下一个是&#x200B;**事件类型**&#x200B;选择。 选择&#x200B;**单一**。
-
-![Journey Optimizer](./images/eventidtype1.png)
-
-下一个是&#x200B;**事件ID类型**&#x200B;选择。 选择&#x200B;**系统生成**
+对于&#x200B;**类型**，请选择&#x200B;**单一**。
+对于**事件ID类型**，选择&#x200B;**系统生成的**。
 
 ![Journey Optimizer](./images/eventidtype.png)
 
 接下来是架构选择。 为本练习准备了一个方案。 请使用架构`Demo System - Event Schema for Website (Global v1.1) v.1`。
-
-![Journey Optimizer](./images/oc35.png)
 
 选择架构后，您将在&#x200B;**有效负载**&#x200B;部分看到许多字段正在被选择。 单击&#x200B;**编辑/铅笔**&#x200B;图标以向此事件添加其他字段。
 
@@ -63,21 +54,19 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/oc38.png)
 
-接下来，向下滚动并选中第`productListItems`行上的复选框。
-
-![Journey Optimizer](./images/oc39.png)
-
 接下来，向下滚动并选中第`commerce`行上的复选框。
 
 ![Journey Optimizer](./images/oc391.png)
 
-接下来，单击&#x200B;**确定**。
+接下来，向下滚动并选中第`productListItems`行上的复选框。 单击&#x200B;**确定**。
+
+![Journey Optimizer](./images/oc39.png)
 
 然后，您将看到其他字段已添加到该事件。 单击&#x200B;**保存**。
 
 ![Journey Optimizer](./images/oc40.png)
 
-随后将共享您的新事件，您现在将在可用事件列表中看到您的事件。
+随后将保存您的新事件，您现在将在可用事件列表中看到您的事件。
 
 再次单击您的事件以再次打开&#x200B;**编辑事件**屏幕。
 再次将鼠标悬停在**有效负载**&#x200B;字段上可再次查看这3个图标。 单击&#x200B;**查看有效负载**&#x200B;图标。
@@ -89,7 +78,7 @@ ht-degree: 0%
 ![Journey Optimizer](./images/oc42.png)
 
 事件ID是需要发送到Adobe Journey Optimizer以触发您将在下一步中构建的旅程的内容。 记下此eventID，因为您将在后续步骤之一中需要它。
-`"eventID": "ef6dd943c94fe1b4763c098ccd1772344662f2a9f614513106cb5ada8be36857"`
+`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
 
 单击&#x200B;**确定**，然后单击&#x200B;**取消**。
 
@@ -101,11 +90,11 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/oc43.png)
 
-你会看到这个。 为您的历程命名。 使用`--aepUserLdap-- - Order Confirmation journey`。 单击&#x200B;**确定**。
+你会看到这个。 为您的历程命名。 使用`--aepUserLdap-- - Order Confirmation journey`。 单击&#x200B;**保存**。
 
 ![Journey Optimizer](./images/oc45.png)
 
-首先，您需要添加事件作为历程的起点。 搜索您的事件`--aepUserLdap--PurchaseEvent`并将其拖放到画布上。 单击&#x200B;**确定**。
+首先，您需要添加事件作为历程的起点。 搜索您的事件`--aepUserLdap--PurchaseEvent`并将其拖放到画布上。 单击&#x200B;**保存**。
 
 ![Journey Optimizer](./images/oc46.png)
 
@@ -125,7 +114,7 @@ ht-degree: 0%
 
 ![ACOP](./images/journeyactions3.png)
 
-在文本区域中，开始写入&#x200B;**感谢您的订购，**
+在文本区域中，开始写入&#x200B;**感谢您的订购，**&#x200B;然后单击&#x200B;**Personalization**&#x200B;图标。
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -133,7 +122,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/oc6.png)
 
-你以后会回到这里的。 单击&#x200B;**向Designer发送电子邮件**&#x200B;以创建电子邮件的内容。
+你以后会回到这里的。 单击&#x200B;**编辑电子邮件正文**&#x200B;以创建电子邮件的内容。
 
 ![Journey Optimizer](./images/oc7.png)
 
@@ -147,35 +136,27 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/oc9.png)
 
-转到&#x200B;**内容组件**。
+在左侧菜单中，转到&#x200B;**片段**。 将您之前在练习3.2.2中创建的标题拖到画布中的第一个组件上。 将您之前在练习3.2.2中创建的页脚拖到画布中的最后一个组件上。
+
+![Journey Optimizer](./images/fragm1.png)
+
+单击左侧菜单中的&#x200B;**+**&#x200B;图标。 转到&#x200B;**Contents**&#x200B;以开始将内容添加到画布上。
 
 ![Journey Optimizer](./images/oc10.png)
 
-将&#x200B;**Image**&#x200B;组件拖放到第一行。 单击&#x200B;**浏览**。
-
-![Journey Optimizer](./images/oc11.png)
-
-转到文件夹&#x200B;**enablement-assets**，选择文件&#x200B;**luma-logo.png**，然后单击&#x200B;**选择**。
-
-![Journey Optimizer](./images/oc12.png)
-
-你现在回来了。 单击图像以将其选中，然后使用&#x200B;**大小**&#x200B;滑块使徽标图像变小一点。
-
-![Journey Optimizer](./images/oc13.png)
-
-转到&#x200B;**内容组件**&#x200B;并将&#x200B;**图像**&#x200B;组件拖放到第二行。 选择&#x200B;**图像组件**，但不单击“浏览”。
+转到&#x200B;**Contents**&#x200B;并将&#x200B;**Image**&#x200B;组件拖放到第二行。 单击&#x200B;**浏览**。
 
 ![Journey Optimizer](./images/oc15.png)
 
-将此图像URL粘贴到字段&#x200B;**Source**&#x200B;中： `https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/29043bedcde632a9cbe8a02a164189c9_preparing.png`。 此图像在Adobe之外托管。
+打开文件夹&#x200B;**citi-signal-images**，单击以选择图像&#x200B;**citisignal-preparing.png**，然后单击&#x200B;**选择**。
 
 ![Journey Optimizer](./images/oc14.png)
 
-当您将范围更改为其他字段时，将渲染图像，您将看到以下内容：
+在&#x200B;**样式**&#x200B;下，将宽度更改为&#x200B;**40%**。
 
-![Journey Optimizer](./images/oc16.png)
+![Journey Optimizer](./images/oc14a.png)
 
-接下来，转到&#x200B;**内容组件**&#x200B;并将&#x200B;**文本**&#x200B;组件拖放到第三行。
+接下来，转到&#x200B;**Contents**&#x200B;并将&#x200B;**Text**&#x200B;组件拖放到第三行。
 
 ![Journey Optimizer](./images/oc17.png)
 
@@ -207,7 +188,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc21.png)
 
-接下来，转到&#x200B;**内容组件**&#x200B;并将&#x200B;**文本**&#x200B;组件拖放到第四行。
+接下来，转到&#x200B;**Contents**&#x200B;并将&#x200B;**Text**&#x200B;组件拖放到第四行。
 
 ![Journey Optimizer](./images/oc22.png)
 
@@ -219,7 +200,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc23.png)
 
-接下来，转到&#x200B;**内容组件**&#x200B;并将&#x200B;**HTML**&#x200B;组件拖放到第五行上。 单击HTML组件，然后单击&#x200B;**显示源代码**。
+接下来，转到&#x200B;**目录**&#x200B;并将&#x200B;**HTML**&#x200B;组件拖放到第五行上。 单击HTML组件，然后单击&#x200B;**显示源代码**。
 
 ![Journey Optimizer](./images/oc24.png)
 
@@ -235,7 +216,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc26.png)
 
-转到&#x200B;**内容组件**&#x200B;并将&#x200B;**HTML**&#x200B;组件拖放到第六行。 单击HTML组件，然后单击&#x200B;**显示源代码**。
+转到&#x200B;**内容**&#x200B;并将&#x200B;**HTML**&#x200B;组件拖放到第六行。 单击HTML组件，然后单击&#x200B;**显示源代码**。
 
 ![Journey Optimizer](./images/oc57.png)
 
@@ -257,11 +238,9 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 在左侧菜单中，单击&#x200B;**上下文属性**。 此上下文将传递到历程中的消息。
 
-![Journey Optimizer](./images/oc601.png)
-
 你会看到这个。 单击&#x200B;**Journey Orchestration**&#x200B;旁边的箭头可更深入地钻研。
 
-![Journey Optimizer](./images/oc61.png)
+![Journey Optimizer](./images/oc601.png)
 
 单击&#x200B;**事件**&#x200B;旁边的箭头可更深入地探讨。
 
@@ -287,7 +266,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc67.png)
 
-接下来，转到&#x200B;**内容组件**&#x200B;并将&#x200B;**HTML**&#x200B;组件拖放到第七行。 单击HTML组件，然后单击&#x200B;**显示源代码**。
+接下来，转到&#x200B;**目录**&#x200B;并将&#x200B;**HTML**&#x200B;组件拖放到第七行。 单击HTML组件，然后单击&#x200B;**显示源代码**。
 
 ![Journey Optimizer](./images/oc68.png)
 
@@ -304,10 +283,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 ![Journey Optimizer](./images/oc71.png)
 
 在左侧菜单中，单击&#x200B;**上下文属性**。
-
-![Journey Optimizer](./images/oc711.png)
-
-单击&#x200B;**Journey Orchestration**&#x200B;旁边的箭头可更深入地钻研。
+单击**Journey Orchestration**&#x200B;旁边的箭头可更深入地钻研。
 
 ![Journey Optimizer](./images/oc72.png)
 
@@ -335,14 +311,11 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc76.png)
 
-再次单击&#x200B;**总价**&#x200B;旁边的&#x200B;**+**&#x200B;图标以将其添加到画布中。
-
-![Journey Optimizer](./images/oc77.png)
-
-您还可以将&#x200B;**Order**&#x200B;对象中的字段&#x200B;**Currency**添加到画布上，如此处所示。
+再次单击&#x200B;**总价**&#x200B;旁边的&#x200B;**+**图标以将其添加到画布中。
+您还可以将**Order**&#x200B;对象中的字段&#x200B;**Currency**添加到画布上，如此处所示。
 完成后，单击**保存**&#x200B;以保存更改。
 
-![Journey Optimizer](./images/oc771.png)
+![Journey Optimizer](./images/oc77.png)
 
 然后，您将返回到Designer电子邮件。 再次单击&#x200B;**保存**。
 
@@ -356,7 +329,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc79a.png)
 
-单击&#x200B;**确定**&#x200B;以关闭您的电子邮件操作。
+单击&#x200B;**保存**&#x200B;以关闭您的电子邮件操作。
 
 ![Journey Optimizer](./images/oc79b.png)
 
@@ -380,7 +353,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![属性页](./../../../modules/datacollection/module1.1/images/launch1.png)
 
-在模块0中，演示系统为您创建了两个客户端属性：一个用于网站，另一个用于移动应用程序。 通过在&#x200B;**[!UICONTROL 搜索]**&#x200B;框中搜索`--aepUserLdap--`来查找它们。 单击以打开&#x200B;**Web**&#x200B;属性。
+在&#x200B;**快速入门**&#x200B;中，演示系统为您创建了两个客户端属性：一个用于网站，另一个用于移动应用程序。 通过在&#x200B;**[!UICONTROL 搜索]**&#x200B;框中搜索`--aepUserLdap--`来查找它们。 单击以打开&#x200B;**Web**&#x200B;属性。
 
 ![搜索框](./../../../modules/datacollection/module1.1/images/property6.png)
 
@@ -388,11 +361,11 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc91.png)
 
-你会看到这个。 导航到字段&#x200B;**_experience.campaign.orchestration.eventID**，并在此处填写您的eventID。 此处要填写的eventID是您在练习10.1.2中创建的eventID。单击&#x200B;**保存**&#x200B;或&#x200B;**保存到库**。
+你会看到这个。 导航到字段&#x200B;**_experience.campaign.orchestration.eventID**，并在此处填写您的eventID。 此处要填写的eventID是您在练习3.4.1.1中创建的eventID。1单击&#x200B;**保存**&#x200B;或&#x200B;**保存到库**。
 
 ![Journey Optimizer](./images/oc92.png)
 
-将更改保存在客户端资产中，然后通过更新开发库来发布更改。
+将更改保存在资产中，然后通过更新开发库发布更改。
 
 ![Journey Optimizer](./images/oc93.png)
 
@@ -402,33 +375,29 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 让我们通过在演示网站上购买产品来测试更新的历程。
 
-转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
+转到[https://dsn.adobe.com](https://dsn.adobe.com)。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**运行**&#x200B;以将其打开。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 随后您将看到您的演示网站已打开。 选择URL并将其复制到剪贴板。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
 打开一个新的无痕浏览器窗口。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
 粘贴您在上一步中复制的演示网站的URL。 然后，系统将要求您使用Adobe ID登录。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
 选择您的帐户类型并完成登录过程。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个演示，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
+然后，您会看到您的网站已加载到无痕浏览器窗口中。 对于每个练习，您将需要使用新的无痕浏览器窗口来加载演示网站URL。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
-
-单击屏幕左上角的Adobe徽标图标以打开配置文件查看器。
-
-![演示](./../../../modules/datacollection/module1.2/images/pv1.png)
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
 请查看配置文件查看器面板和实时客户配置文件，将&#x200B;**Experience CloudID**&#x200B;作为当前未知客户的主要标识符。
 
@@ -442,13 +411,25 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![演示](./../../../modules/datacollection/module1.2/images/pv10.png)
 
-将任何产品添加到购物车，然后转到&#x200B;**购物车**&#x200B;页面。 单击&#x200B;**继续结帐**。
+将任何产品添加到购物车
+
+![Journey Optimizer](./images/cart1a.png)
+
+转到&#x200B;**购物车**&#x200B;页面。 单击&#x200B;**签出**。
 
 ![Journey Optimizer](./images/cart1.png)
 
-接下来，验证签出页面上的字段，然后单击&#x200B;**签出**。
+接下来，验证这些字段并在必要时填写。 单击&#x200B;**继续**。
 
 ![Journey Optimizer](./images/cart2.png)
+
+单击&#x200B;**确认订单**。
+
+![Journey Optimizer](./images/cart2a.png)
+
+您的订单现已确认。
+
+![Journey Optimizer](./images/cart2b.png)
 
 然后，您将在几秒钟内收到订单确认电子邮件。
 

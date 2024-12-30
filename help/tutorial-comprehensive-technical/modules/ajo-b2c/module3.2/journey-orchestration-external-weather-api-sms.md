@@ -6,16 +6,14 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 7f3d6dcb-845d-4ff1-97c3-8e93b8d2c624
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: 07153124eb3cd4c07bbabb6f7b137f525fa1a27f
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
 
 # 3.2 Adobe Journey Optimizer：外部数据源和自定义操作
-
-**作者：[Wouter Van Galuwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 在本模块中，您将使用Adobe Journey Optimizer在线和离线倾听客户行为，并以智能、情境式和实时方式对其进行响应。 您已在模块6中初步体验了Adobe Journey Optimizer。 在本练习中，您将深入了解并探索更高级的用例，其中外部数据源用作历程的一部分。
 

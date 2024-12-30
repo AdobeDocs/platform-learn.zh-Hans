@@ -3,9 +3,10 @@ title: offer decisioning — 测试您的决策
 description: offer decisioning — 测试您的决策
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: a03ec0bd-d48f-45bc-8097-ab263331b7bb
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1234'
 ht-degree: 0%
 
 ---
@@ -77,11 +78,11 @@ ht-degree: 0%
 
 若要查找[!UICONTROL Web — 图像]的[!UICONTROL 版面ID]，请转到[Adobe Experience Cloud](https://experience.adobe.com)以转到Adobe Journey Optimizer。 单击&#x200B;**Journey Optimizer**。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 若要从一个沙盒更改到另一个沙盒，请单击&#x200B;**PRODUCTION Prod (VA7)**，然后从列表中选择该沙盒。 在此示例中，沙盒名为&#x200B;**AEP Enablement FY22**。 然后，您将进入沙盒`--aepSandboxName--`的&#x200B;**主页**&#x200B;视图。
+您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 然后，您将进入沙盒`--aepSandboxName--`的&#x200B;**主页**&#x200B;视图。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 接下来，转到[!UICONTROL 组件]，然后转到[!UICONTROL 位置]。 单击[!UICONTROL Web — 图像]位置查看其详细信息。
 
@@ -225,7 +226,7 @@ event.decisions.forEach(function(payload) {
 
 ![WebSDK](./images/decrec9.png)
 
-进行此更改后，Adobe Experience Platform数据收集中的此规则现在将侦听Offer decisioning的响应，该响应是Web SDK响应的一部分，收到响应后，将在主页上显示选件的图像。
+在执行此更改后，Adobe Experience Platform数据收集中的此规则现在将侦听来自Offer Decisioning的响应(属于Web SDK响应的一部分)，并在收到响应时，将在主页上显示选件的图像。
 
 查看演示网站，您会看到此图像将被立即替换：
 

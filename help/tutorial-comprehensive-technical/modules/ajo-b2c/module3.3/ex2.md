@@ -3,7 +3,8 @@ title: offer decisioning — 配置优惠和决策ID
 description: offer decisioning — 配置优惠和决策ID
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 1418398b-d192-4d0b-b372-4be73fc153ed
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 2%
@@ -27,11 +28,11 @@ ht-degree: 2%
 
 通过转到[Adobe Experience Cloud](https://experience.adobe.com)登录Adobe Journey Optimizer。 单击&#x200B;**Journey Optimizer**。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 若要从一个沙盒更改到另一个沙盒，请单击&#x200B;**PRODUCTION Prod (VA7)**，然后从列表中选择该沙盒。 在此示例中，沙盒名为&#x200B;**AEP Enablement FY22**。 然后，您将进入沙盒`--aepSandboxName--`的&#x200B;**主页**&#x200B;视图。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 在左侧菜单中，单击&#x200B;**选件**，然后转到&#x200B;**选件**。 单击&#x200B;**+创建选件**。
 
@@ -356,7 +357,7 @@ ht-degree: 2%
 
 您现在已成功配置决策。 您的决策现已上线，并可用于实时为客户提供优化和个性化的优惠。
 
-下一步： [3.3.3为Offer decisioning](./ex3.md)准备数据收集客户端属性和Web SDK设置
+下一步： [3.3.3为Offer decisioning准备数据收集客户端属性和Web SDK设置](./ex3.md)
 
 [返回模块3.3](./offer-decisioning.md)
 

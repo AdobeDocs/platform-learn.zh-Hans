@@ -3,10 +3,11 @@ title: Adobe Journey Optimizer — 外部天气API、SMS操作等 — 定义外�
 description: Adobe Journey Optimizer — 外部天气API、SMS操作等 — 定义外部数据源
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: aeafa053-16f1-4fd3-944e-91401daeeced
+source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
 workflow-type: tm+mt
-source-wordcount: '602'
-ht-degree: 3%
+source-wordcount: '568'
+ht-degree: 4%
 
 ---
 
@@ -16,11 +17,11 @@ ht-degree: 3%
 
 通过转到[Adobe Experience Cloud](https://experience.adobe.com)登录Adobe Journey Optimizer。 单击&#x200B;**Journey Optimizer**。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 若要从一个沙盒更改到另一个沙盒，请单击&#x200B;**PRODUCTION Prod (VA7)**，然后从列表中选择该沙盒。 在此示例中，沙盒名为&#x200B;**AEP Enablement FY22**。 然后，您将进入沙盒`--aepSandboxName--`的&#x200B;**主页**&#x200B;视图。
+您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 然后，您将进入沙盒`--aepSandboxName--`的&#x200B;**主页**&#x200B;视图。
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 在左侧菜单中，向下滚动并单击&#x200B;**配置**。 接下来，单击&#x200B;**数据源**&#x200B;下的&#x200B;**管理**&#x200B;按钮。
 
@@ -45,13 +46,9 @@ ht-degree: 3%
 
 ![天气图](./images/owm1.png)
 
-请填写详细信息。
+请填写详细信息。 单击&#x200B;**创建帐户**。
 
 ![天气图](./images/owm2.png)
-
-单击&#x200B;**创建帐户**。
-
-![天气图](./images/owm3.png)
 
 然后，您将被重定向到帐户页面。
 
@@ -65,7 +62,7 @@ ht-degree: 3%
 
 您可以在[此处](https://openweathermap.org/current)找到&#x200B;**当前天气**&#x200B;的&#x200B;**API文档**。
 
-在我们的用例中，我们将根据客户所在的城市实施与开放天气图的连接。
+对于此用例，您将使用按城市名称&#x200B;**的**&#x200B;内置API请求，根据客户所在的城市实施与开放天气图的连接。
 
 ![天气图](./images/owm6.png)
 
@@ -73,7 +70,7 @@ ht-degree: 3%
 
 ![演示](./images/emptyds.png)
 
-作为数据源的名称，请使用`--aepUserLdap--WeatherApi`。 在此示例中，数据源名称为`vangeluwWeatherApi `。
+作为数据源的名称，请使用`--aepUserLdap--WeatherApi`。
 
 将描述设置为： `Access to the Open Weather Map`。
 
@@ -98,7 +95,7 @@ ht-degree: 3%
 
 ![演示](./images/fg.png)
 
-根据天气API文档，我们需要发送参数`q=City`。
+根据天气API文档，您需要发送参数`q=City`。
 
 ![演示](./images/owmapi.png)
 
@@ -106,58 +103,68 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->字段组名称必须是唯一的，请使用此命名约定： `--aepUserLdap--WeatherByCity`，因此在这种情况下，名称应为`vangeluwWeatherByCity`
+>字段组名称必须是唯一的，请使用此命名约定： `--aepUserLdap--WeatherByCity`
 
 ![演示](./images/fg1.png)
 
 对于响应有效负载，您需要粘贴天气API将发送的响应示例。
 
-您可以在API文档页面[此处](https://openweathermap.org/current)找到预期的API JSON响应。
+您可以在API文档页面[此处](https://openweathermap.org/current)的&#x200B;**JSON**&#x200B;主题下找到预期的API JSON响应。
 
 ![演示](./images/owmapi1.png)
 
 或者，您可以从此处复制JSON响应：
 
 ```json
-{"coord": { "lon": 139,"lat": 35},
-  "weather": [
-    {
-      "id": 800,
-      "main": "Clear",
-      "description": "clear sky",
-      "icon": "01n"
-    }
-  ],
-  "base": "stations",
-  "main": {
-    "temp": 281.52,
-    "feels_like": 278.99,
-    "temp_min": 280.15,
-    "temp_max": 283.71,
-    "pressure": 1016,
-    "humidity": 93
-  },
-  "wind": {
-    "speed": 0.47,
-    "deg": 107.538
-  },
-  "clouds": {
-    "all": 2
-  },
-  "dt": 1560350192,
-  "sys": {
-    "type": 3,
-    "id": 2019346,
-    "message": 0.0065,
-    "country": "JP",
-    "sunrise": 1560281377,
-    "sunset": 1560333478
-  },
-  "timezone": 32400,
-  "id": 1851632,
-  "name": "Shuzenji",
-  "cod": 200
-}
+{
+   "coord": {
+      "lon": 7.367,
+      "lat": 45.133
+   },
+   "weather": [
+      {
+         "id": 501,
+         "main": "Rain",
+         "description": "moderate rain",
+         "icon": "10d"
+      }
+   ],
+   "base": "stations",
+   "main": {
+      "temp": 284.2,
+      "feels_like": 282.93,
+      "temp_min": 283.06,
+      "temp_max": 286.82,
+      "pressure": 1021,
+      "humidity": 60,
+      "sea_level": 1021,
+      "grnd_level": 910
+   },
+   "visibility": 10000,
+   "wind": {
+      "speed": 4.09,
+      "deg": 121,
+      "gust": 3.47
+   },
+   "rain": {
+      "1h": 2.73
+   },
+   "clouds": {
+      "all": 83
+   },
+   "dt": 1726660758,
+   "sys": {
+      "type": 1,
+      "id": 6736,
+      "country": "IT",
+      "sunrise": 1726636384,
+      "sunset": 1726680975
+   },
+   "timezone": 7200,
+   "id": 3165523,
+   "name": "Province of Turin",
+   "cod": 200
+}    
 ```
 
 将上述JSON响应复制到剪贴板，然后转到自定义数据源配置屏幕。
