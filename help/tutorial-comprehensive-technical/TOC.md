@@ -5,9 +5,9 @@ user-guide-description: 一个实践教程，涵盖Adobe Experience Platform的�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ca6370660b676cef48890d23652258015aa2b9ed
+source-git-commit: cf8b97f06bbe6741fc6dfa70c207c6a748f5fe85
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '923'
 ht-degree: 4%
 
 ---
@@ -108,8 +108,9 @@ ht-degree: 4%
    + 3.1 Adobe Journey Optimizer：编排{#module31}
       + [概述](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/journey-orchestration-create-account.md)
       + [3.1.1创建事件](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex1.md)
-      + [3.1.2创建历程和电子邮件](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
-      + [3.1.3更新您的数据收集资产并测试您的历程](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+      + [3.1.2创建要在消息中使用的片段](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
+      + [3.1.3创建历程和电子邮件](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+      + [3.1.4更新您的数据收集资产并测试您的历程](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex4.md)
       + [摘要和优点](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/summary.md)
    + 3.2 Adobe Journey Optimizer：外部数据源和自定义操作{#module32}
       + [概述](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md)

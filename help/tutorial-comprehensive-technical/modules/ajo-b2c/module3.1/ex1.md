@@ -3,9 +3,10 @@ title: Journey Optimizer创建您的活动
 description: Journey Optimizer创建您的活动
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: b132ad78-aaa3-458d-9895-0935f8ba88bb
+source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 0%
 
 ![ACOP](./images/acophome.png)
 
-您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 若要从一个沙盒更改到另一个沙盒，请单击&#x200B;**PRODUCTION Prod (VA7)**，然后从列表中选择该沙盒。 在此示例中，沙盒名为&#x200B;**AEP Enablement FY22**。 然后，您将进入沙盒`--aepSandboxName--`的&#x200B;**主页**&#x200B;视图。
+您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -33,18 +34,11 @@ ht-degree: 0%
 ![ACOP](./images/emptyevent1.png)
 
 首先，为您的事件提供一个名称，如下所示： `--aepUserLdap--AccountCreationEvent`。
-
-![ACOP](./images/eventname.png)
-
-接下来，添加类似于此`Account Creation Event`的说明。
+将描述设置为`Account Creation Event`，确保&#x200B;**类型**&#x200B;设置为&#x200B;**单一**，对于&#x200B;**事件ID类型**&#x200B;选择，请选择&#x200B;**系统生成的**。
 
 ![ACOP](./images/eventdescription.png)
 
-接下来，确保&#x200B;**类型**&#x200B;设置为&#x200B;**单一**，对于&#x200B;**事件ID类型**&#x200B;选择，请选择&#x200B;**系统生成的**。
-
-![ACOP](./images/eventidtype.png)
-
-接下来是架构选择。 为本练习准备了一个方案。 请使用架构`Demo System - Event Schema for Website (Global v1.1) v.1`。
+接下来是架构选择。 请使用架构`Demo System - Event Schema for Website (Global v1.1) v.1`。
 
 ![ACOP](./images/eventschema.png)
 
@@ -60,21 +54,13 @@ ht-degree: 0%
 
 ![ACOP](./images/eventpayloadbr.png)
 
-在对象`--aepTenantId--.identification.core`中，请确保选择字段&#x200B;**电子邮件**。
+在对象`--aepTenantId--.identification.core`中，请确保选择字段&#x200B;**电子邮件**。 单击&#x200B;**确定**&#x200B;以保存更改。
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-单击&#x200B;**确定**&#x200B;以保存更改。
-
-![ACOP](./images/saveok.png)
-
-您应该会看到以下内容：
+您应该会看到此内容。 将&#x200B;**Namespace**&#x200B;设置为&#x200B;**ECID (ECID)**。 单击&#x200B;**保存**。
 
 ![ACOP](./images/eventsave.png)
-
-再次单击&#x200B;**保存**&#x200B;以保存更改。
-
-![ACOP](./images/save1.png)
 
 您的事件现已配置并保存。
 
@@ -90,16 +76,20 @@ ht-degree: 0%
 
 您的事件具有独特的编排eventID，您可以通过在该有效负荷中向下滚动直至看到`_experience.campaign.orchestration.eventID`来查找该事件。
 
+事件ID是需要发送到Adobe Experience Platform以触发您下一步将构建的历程的事件。 请记住此eventID，因为在下个练习中将需要它。
+`"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`
+
+单击&#x200B;**确定**。
+
 ![ACOP](./images/payloadeventID.png)
 
-事件ID是需要发送到Adobe Experience Platform以触发您将在练习7.2中构建的历程的内容。请记住此eventID，因为在练习7.3中您将需要它。
-`"eventID": "227402c540eb8f8855c6b2333adf6d54d7153d9d7d56fa475a6866081c574736"`
+单击&#x200B;**取消**。
 
-单击&#x200B;**确定**，然后单击&#x200B;**取消**。
+![ACOP](./images/payloadeventID1.png)
 
 您现在已经完成了此练习。
 
-下一步： [3.1.2 Journey Optimizer：创建您的历程和电子邮件](./ex2.md)
+下一步： [3.1.2创建要在消息中使用的片段](./ex2.md)
 
 [返回模块3.1](./journey-orchestration-create-account.md)
 
