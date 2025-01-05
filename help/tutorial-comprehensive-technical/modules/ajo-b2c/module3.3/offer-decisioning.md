@@ -6,26 +6,20 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: a7218d65-422b-48e5-89fa-864c5af8d1c6
-source-git-commit: f4b3463ce9464c96378790bf8070504fc90cb2ff
+source-git-commit: 5d7b790830a46385ca019bcb23b0032478794591
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '344'
 ht-degree: 2%
 
 ---
 
 # 3.3Offer decisioning
 
-**作者：[Rob In der Maur](https://www.linkedin.com/in/ridmaur/)，[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 在本模块中，您将获得有关Adobe Journey OptimizerOffer decisioning功能的实践演练。
 
 Adobe Journey Optimizer允许创建个性化优惠，并以协调的方式将其交付到链接到Adobe Journey Optimizer的所有目标。
 
 使用Offer decisioning，您可以从一组可用选项中确定最佳选项。 这些选项包括选件、产品推荐、用于Web体验的内容组件、对话脚本以及要执行的操作。
-
-请观看此视频，以了解价值和客户历程：
-
->[!VIDEO](https://video.tv.adobe.com/v/328829?quality=12&learn=on)
 
 ## 学习目标
 

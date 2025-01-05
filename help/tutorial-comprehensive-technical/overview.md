@@ -2,9 +2,10 @@
 title: 概述
 description: 面向数据工程师、数据分析师、数据架构师、数据科学家、编排工程师和营销人员的起点，全面了解Adobe Experience Platform及其所有应用程序服务的业务价值。
 doc-type: multipage-overview
-source-git-commit: 8270f69dd04714e217ddbb4d125157799cba2940
+exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1221'
 ht-degree: 2%
 
 ---
@@ -36,7 +37,7 @@ ht-degree: 2%
 完成本教程中的练习后，您将能够：
 
 - 配置架构、字段组、数据集和标识
-- 配置Adobe Experience Platform数据收集属性，并在Adobe Experience Platform数据收集中设置新的Web SDK扩展
+- 在Adobe Experience Platform数据收集中配置Adobe Experience Platform数据收集属性，并设置新的Web SDK扩展
 - 使用Adobe Experience Platform数据收集将数据实时流式传输到Adobe Experience Platform
 - 使用工作流或使用提取、转换、加载(ETL)应用程序将数据批量摄取到Adobe Experience Platform中
 - 在Adobe Experience Platform中可视化并使用实时客户个人资料
@@ -66,6 +67,8 @@ ht-degree: 2%
 对于您使用以下教程完成的每个模块，您需要按照[此处](./completion.md)的指示提交完成证明。
 
 ## 内容
+
+要检查以下内容的状态，请转到[状态页面](./status.md)。
 
 [0.快速入门](./modules/gettingstarted/gettingstarted/getting-started.md)
 

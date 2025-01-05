@@ -5,9 +5,9 @@ user-guide-description: 一个实践教程，涵盖Adobe Experience Platform的�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c8f9d5258d530ef12905113dd2aea4e179d0cca9
+source-git-commit: b753a930bd2d81a14a97ef59c9ffc42991f0f3f6
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '917'
 ht-degree: 4%
 
 ---
@@ -17,6 +17,7 @@ ht-degree: 4%
 
 + [教程概述](/help/tutorial-comprehensive-technical/overview.md)
 + [完成](/help/tutorial-comprehensive-technical/completion.md)
++ [内容状态](/help/tutorial-comprehensive-technical/status.md)
 
 + 快速入门{#gettingstarted}
    + 快速入门{#gettingstarted}

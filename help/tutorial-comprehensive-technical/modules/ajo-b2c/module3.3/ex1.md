@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '948'
 ht-degree: 2%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 ![投放位置](./images/homedec.png)
 
-单击&#x200B;**组件**。 现在，您将看到“选件”菜单，其中包含投放位置、标记、规则和排名等内容。
+单击&#x200B;**组件**。 您现在可以看到投放位置、收藏集限定符、规则和排名等内容。
 
 ![投放位置](./images/components.png)
 
@@ -61,7 +61,7 @@ ht-degree: 2%
 
 在&#x200B;**版面**&#x200B;选项卡中，您可以为优惠定义版面。 定义决策时，投放位置将定义结果优惠的显示位置（渠道类型）以及形式或形式（内容类型）。
 
-如果您在Adobe Experience Platform实例中未看到任何投放位置，请按照下面和屏幕快照中的指示创建它们。
+如果您在环境中看不到任何投放位置，请按照下面和屏幕快照中的指示创建它们。
 
 | 名称 | 渠道类型 | 内容类型 |
 | ---------------------- | ------------ | ------------ |
@@ -101,19 +101,17 @@ ht-degree: 2%
 
 ![决策规则](./images/rules.png)
 
-然后，您将看到Adobe Experience Platform的分段环境。
+然后，您将看到Adobe Experience Platform的受众创建界面。
 
 ![决策规则](./images/createrule1.png)
 
 您现在可以访问实时客户个人资料的合并架构中的所有字段，并且可以构建任何规则。
 
-您现在还可以转到&#x200B;**受众** > ``--aepTenantId--``，以在Adobe Experience Platform中重复使用已定义的受众。
-
-![决策规则](./images/decisionruleaud.png)
+另外，您只需转到&#x200B;**受众** > ``--aepTenantId--``，即可在Adobe Experience Platform中重复使用已定义的受众。
 
 您随后将看到以下内容：
 
-![决策规则](./images/decisionruleaud1.png)
+![决策规则](./images/decisionruleaud.png)
 
 如果需要，您现在可以配置自己的规则。 在本练习中，您将需要两个规则：
 
