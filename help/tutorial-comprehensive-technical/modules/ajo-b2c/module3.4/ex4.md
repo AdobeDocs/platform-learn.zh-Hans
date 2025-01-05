@@ -4,10 +4,10 @@ description: 为iOS设置和使用推送通知
 kt: 5342
 doc-type: tutorial
 exl-id: a49fa91c-5235-4814-94c1-8dcdec6358c5
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: 9865b5697abe2d344fb530636a1afc3f152a9e8f
 workflow-type: tm+mt
-source-wordcount: '1802'
-ht-degree: 0%
+source-wordcount: '1845'
+ht-degree: 1%
 
 ---
 
@@ -39,8 +39,6 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 您可以通过转到屏幕左侧菜单中的&#x200B;**[!UICONTROL 数据集]**&#x200B;来查找这些数据集。 要显示系统数据集，请单击过滤器图标。
 
-![数据获取](./images/menudsjo.png)
-
 启用选项&#x200B;**显示系统数据集**&#x200B;并搜索&#x200B;**AJO**。 然后，您将看到用于推送通知的数据集。
 
 ![数据获取](./images/menudsjo1.png)
@@ -49,7 +47,7 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
 
-在左侧菜单中，转到&#x200B;**[!UICONTROL 数据流]**&#x200B;并搜索您在[练习0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)中创建的、名为`--aepUserLdap-- - Demo System Datastream (Mobile)`的数据流。 单击以将其打开。
+在左侧菜单中，转到&#x200B;**[!UICONTROL 数据流]**&#x200B;并搜索您在[快速入门](./../../../modules/gettingstarted/gettingstarted/ex2.md)中创建的、名为`--aepUserLdap-- - Demo System Datastream (Mobile)`的数据流。 单击以将其打开。
 
 ![单击左侧导航中的“数据流”图标](./images/edgeconfig1a.png)
 
@@ -59,13 +57,19 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 然后，您将看到定义的数据流设置，以及要将数据集事件和配置文件属性存储到哪些中。
 
-![命名数据流并保存](./images/edgeconfig2.png)
+如果尚未启用以下选项，则也应启用它们：
 
-无需更改，您的数据流现已准备就绪，可用于移动设备的数据收集客户端资产。
+- **Offer Decisioning**
+- **个性化目标**
+- **Adobe Journey Optimizer**
+
+单击&#x200B;**保存**。
+
+![命名数据流并保存](./images/edgeconfig2.png)
 
 ## 3.4.4.3查看您的移动设备数据收集属性
 
-转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 作为[练习0.1](./../../../modules/gettingstarted/gettingstarted/ex1.md)的一部分，创建了2个数据收集属性。
+转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 作为[快速入门](./../../../modules/gettingstarted/gettingstarted/ex1.md)的一部分，创建了2个数据收集属性。
 您已在以前的模块中使用了这些数据收集客户端属性。
 
 单击以打开移动设备的数据收集属性。
@@ -96,7 +100,7 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ## 3.4.4.4检查您的应用程序表面设置
 
-转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 在左侧菜单中，转到&#x200B;**应用程序表面**&#x200B;并打开&#x200B;**DX演示应用程序APNS**&#x200B;的应用程序表面。
+转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 在左侧菜单中，转到&#x200B;**应用程序表面**，然后打开&#x200B;**DX演示应用程序APNS**&#x200B;的应用程序表面。
 
 ![Adobe Experience Platform数据收集](./images/appsf.png)
 
@@ -130,21 +134,17 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/mobileappn6.png)
 
-0.1练习后得到了这个结果。 单击以打开为您创建的&#x200B;**移动零售项目**。
+在完成&#x200B;**快速入门**&#x200B;部分后，您得到了此结果。 单击以打开为您创建的&#x200B;**移动零售项目**。
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/dsn5b.png)
 
-如果您意外关闭了浏览器窗口，或者为了将来演示或支持会议，还可以转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)访问您的网站项目。 使用Adobe ID登录后，您将看到此内容。 单击您的移动应用程序项目以将其打开。
+如果您意外关闭了浏览器窗口，或者为了将来演示或支持会议，还可以转到[https://dsn.adobe.com/projects](https://dsn.adobe.com/projects)访问您的网站项目。 使用Adobe ID登录后，您将看到此内容。 单击您的移动应用程序项目以将其打开。
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8a.png)
 
-你会看到这个。 单击&#x200B;**集成**。
+接下来，单击&#x200B;**运行**。
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8aa.png)
-
-您需要选择在练习0.1中创建的移动设备的数据收集属性。接下来，单击&#x200B;**运行**。
-
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8b.png)
+![DSN](./images/web8b.png)
 
 随后您将看到一个弹出窗口，其中包含二维码。 在移动设备应用程序中扫描此二维码。
 
@@ -160,7 +160,7 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 现在，您需要扫描二维码以将移动设备连接到AEP Assurance会话。
 
-要启动AEP Assurance会话，请转到[https://experience.adobe.com/#/@experienceplatform/griffon](https://experience.adobe.com/#/@experienceplatform/griffon)。 单击&#x200B;**创建会话**。
+要启动AEP Assurance会话，请转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 单击左侧菜单中的&#x200B;**Assurance**。 然后单击&#x200B;**创建会话**。
 
 ![Adobe Experience Platform数据收集](./images/griffon3.png)
 
@@ -171,7 +171,7 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 填写值：
 
 - 会话名称：使用`--aepUserLdap-- - push debugging`并将ldap替换为ldap
-- 基本URL：使用&#x200B;**dxdemo://default**
+- 基本URL：使用`dxdemo://default`
 
 单击&#x200B;**下一步**。
 
@@ -193,21 +193,27 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ![Adobe Experience Platform数据收集](./images/ipadPushTest11.png)
 
-在AEP Assurance中，您现在可以看到某个设备正在访问AEP Assurance会话。
+在Assurance中，您现在会看到一台设备正在访问Assurance会话。 单击&#x200B;**完成**。
 
 ![Adobe Experience Platform数据收集](./images/griffon7.png)
 
-转到&#x200B;**推送调试**。 你会看到这样的东西。
+转到&#x200B;**推送调试**。
+
+>[!NOTE]
+>
+>如果在左侧菜单中找不到&#x200B;**推送调试**，请单击屏幕左下角的&#x200B;**配置**，然后将&#x200B;**推送调试**&#x200B;添加到菜单中。
+
+你会看到这样的东西。
 
 ![Adobe Experience Platform数据收集](./images/griffon10.png)
 
 部分原因在于：
 
 - 第一列&#x200B;**Client**&#x200B;显示iOS设备上的可用标识符。 您将看到ECID和推送令牌。
+- 第2列显示了&#x200B;**App Store凭据和配置**，该凭据和配置是作为练习&#x200B;**3.4.5.4在Launch中创建应用程序配置**&#x200B;的一部分设置的
 - 第二列显示&#x200B;**配置文件**&#x200B;信息，以及有关推送令牌所在的平台（APNS或APNSSandbox）的其他信息。 如果单击&#x200B;**Inspect配置文件**&#x200B;按钮，您将转到Adobe Experience Platform，并看到完整的实时客户配置文件。
-- 第3列显示了&#x200B;**应用程序配置**，该配置是在启动项&#x200B;**中的练习** 3.4.5.4创建应用程序配置中设置的
 
-要测试推送配置设置，请单击&#x200B;**发送推送通知**&#x200B;按钮。
+要测试推送配置设置，请转到&#x200B;**发送测试推送设置**&#x200B;按钮。 单击&#x200B;**发送测试推送通知**
 
 ![Adobe Experience Platform数据收集](./images/griffon11.png)
 
@@ -217,11 +223,11 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ![Adobe Experience Platform数据收集](./images/ipadPush2.png)
 
-如果您已收到推送通知，则表示您的设置正确且运行正常。
+如果您已收到推送通知，则意味着您的设置正确且运行正常，您现在可以创建真正的历程，从而从Journey Optimizer发送推送消息。
 
 ## 3.4.4.6创建新事件
 
-在菜单中，转到&#x200B;**历程管理**，然后单击&#x200B;**事件**&#x200B;下的&#x200B;**管理**。
+转到&#x200B;**Journey Optimizer**。 在左侧菜单中，转到&#x200B;**配置**，然后单击&#x200B;**事件**&#x200B;下的&#x200B;**管理**。
 
 ![ACOP](./images/acopmenu.png)
 
@@ -230,32 +236,19 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 ![ACOP](./images/add.png)
 
 然后，您将看到空的事件配置。
-
-![ACOP](./images/emptyevent.png)
-
 首先，为您的事件提供如下名称： `--aepUserLdap--StoreEntryEvent`并将描述设置为`Store Entry Event`。
+下一个是**事件类型**&#x200B;选择。 选择&#x200B;**单一**。
+下一个是**事件ID类型**&#x200B;选择。 选择&#x200B;**系统生成的**。
 
 ![ACOP](./images/eventname.png)
 
-下一个是&#x200B;**事件类型**&#x200B;选择。 选择&#x200B;**单一**。
-
-![ACOP](./images/eventidtype1.png)
-
-下一个是&#x200B;**事件ID类型**&#x200B;选择。 选择&#x200B;**系统生成**
-
-![ACOP](./images/eventidtype.png)
-
 接下来是架构选择。 为本练习准备了一个方案。 请使用架构`Demo System - Event Schema for Mobile App (Global v1.1) v.1`。
-
-![ACOP](./images/eventschema.png)
 
 选择架构后，您将在&#x200B;**有效负载**&#x200B;部分看到许多字段正在被选择。 您的事件现已完全配置。
 
-![ACOP](./images/eventpayload.png)
+单击&#x200B;**保存**。
 
-您应该会看到此内容。 单击&#x200B;**保存**。
-
-![ACOP](./images/eventsave.png)
+![ACOP](./images/eventschema.png)
 
 您的事件现已配置并保存。 再次单击您的事件以再次打开&#x200B;**编辑事件**&#x200B;屏幕。
 
@@ -267,14 +260,12 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 您现在将看到预期有效负载的示例。
 
-![ACOP](./images/fullpayload.png)
-
 您的事件具有独特的编排eventID，您可以通过在该有效负荷中向下滚动直至看到`_experience.campaign.orchestration.eventID`来查找该事件。
 
 ![ACOP](./images/payloadeventID.png)
 
 事件ID需要发送到Adobe Experience Platform以触发您将在下一步中构建的历程。 记下此eventID，因为您将在下一步中需要它。
-`"eventID": "e3a8f0bdc0b609667cd96a72a6b1e5aafa0ddaf6ccf121c574e6a2030860a633"`
+`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
 
 单击&#x200B;**确定**，然后单击&#x200B;**取消**。
 
@@ -284,20 +275,21 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ![DSN](./images/sjourney1.png)
 
-你会看到这个。 为您的历程命名。 使用`--aepUserLdap-- - Store Entry journey`。 单击&#x200B;**确定**。
+你会看到这个。 为您的历程命名。 使用`--aepUserLdap-- - Store Entry journey`。 单击&#x200B;**保存**。
 
 ![DSN](./images/sjourney3.png)
 
-首先，您需要添加事件作为历程的起点。 搜索您的事件`--aepUserLdap--StoreEntryEvent`并将其拖放到画布上。 单击&#x200B;**确定**。
+首先，您需要添加事件作为历程的起点。 搜索您的事件`--aepUserLdap--StoreEntryEvent`并将其拖放到画布上。 单击&#x200B;**保存**。
 
 ![DSN](./images/sjourney4.png)
 
-接下来，在&#x200B;**操作**&#x200B;下，搜索&#x200B;**推送**操作。
-将**推送**&#x200B;操作拖放到画布上。
-
-![DSN](./images/sjourney5.png)
+接下来，在&#x200B;**操作**&#x200B;下，搜索&#x200B;**推送**&#x200B;操作。 将&#x200B;**推送**&#x200B;操作拖放到画布上。
 
 将&#x200B;**类别**&#x200B;设置为&#x200B;**营销**，并选择一个允许您发送推送通知的推送表面。 在这种情况下，要选择的电子邮件表面为&#x200B;**Push-iOS-Android**。
+
+>[!NOTE]
+>
+>Journey Optimizer中需要存在使用以前审阅过的&#x200B;**应用程序表面**&#x200B;的渠道。
 
 ![ACOP](./images/journeyactions1push.png)
 
@@ -310,8 +302,6 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 ![推送](./images/bp5.png)
 
 你会看到这个。 您现在可以直接从Real-time Customer Profile中选择任何Profile属性。
-
-![推送](./images/bp6.png)
 
 搜索字段&#x200B;**名字**，然后单击字段&#x200B;**名字**&#x200B;旁边的&#x200B;**+**&#x200B;图标。 随后您将看到添加的名字的个性化令牌： **{{profile.person.name.firstName}}**。
 
@@ -335,7 +325,7 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ![Journey Optimizer](./images/bp12a.png)
 
-单击&#x200B;**确定**&#x200B;以关闭您的推送操作。
+单击&#x200B;**保存**&#x200B;以关闭您的推送操作。
 
 ![DSN](./images/sjourney8.png)
 
@@ -363,15 +353,13 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 确保在单击&#x200B;**商店条目**&#x200B;图标后立即关闭应用程序，否则将不会显示推送消息。
 
-![DSN](./images/demo2.png)
-
 几秒钟后，您将看到此消息。
 
-![DSN](./images/demo3.png)
+![DSN](./images/demo2.png)
 
 您已完成此练习。
 
-下一步：[3.4.5创建业务事件历程](./ex5.md)
+下一步：[摘要和优点](./summary.md)
 
 [返回模块3.4](./journeyoptimizer.md)
 
