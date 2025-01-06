@@ -3,9 +3,10 @@ title: offer decisioning — 使用演示网站测试您的决策
 description: 使用演示网站测试您的决策
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 5cc9f134-1434-4e76-9d26-9d73dbf6c0be
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '377'
 ht-degree: 1%
 
 ---
@@ -16,21 +17,21 @@ ht-degree: 1%
 
 要在Adobe Target中加载演示网站项目，您首先需要收集一个特殊链接，以便Adobe Target加载您的演示网站项目。
 
-为此，请转到[https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
+为此，请转到[https://dsn.adobe.com/projects](https://builder.adobedemo.com/projects)。 使用Adobe ID登录后，您将看到此内容。 单击您的网站项目以将其打开。
 
 ![RTCDP](./images/builder1.png)
 
-您现在将看到此内容。 单击&#x200B;**共享**。
+您现在将看到此内容。 转到&#x200B;**共享**。 单击&#x200B;**生成链接**，然后将链接复制到剪贴板。
 
 ![RTCDP](./images/builder2.png)
 
-单击&#x200B;**生成链接**，然后将链接复制到剪贴板。
-
-![RTCDP](./images/builder3.png)
-
-转到[https://bitly.com](https://bitly.com)，粘贴您复制的链接，然后单击&#x200B;**缩短**。 您现在将获得缩短的链接，如下所示： `https://bit.ly/3JxN7aG`。 在下一个练习中，您将需要该链接。
+转到[https://bitly.com](https://bitly.com)，粘贴您复制的链接，然后单击&#x200B;**创建您的链接**。
 
 ![RTCDP](./images/builder4.png)
+
+您现在将获得缩短的链接，如下所示： `https://adobe.ly/3PpGcFk`。 在下一个练习中，您将需要该链接。
+
+![RTCDP](./images/builder5.png)
 
 ## 3.3.4.2收集
 
@@ -38,31 +39,23 @@ ht-degree: 1%
 
 ![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/excl.png)
 
-在&#x200B;**Adobe Target**&#x200B;主页上，您将看到所有现有活动。
+在&#x200B;**Adobe Target**&#x200B;主页上，您将看到所有现有活动。 单击&#x200B;**创建活动**，然后单击&#x200B;**体验定位**。
 
 ![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/exclatov.png)
 
-单击&#x200B;**+创建活动**&#x200B;以创建新活动。
-
-![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/exclatcr.png)
-
-选择&#x200B;**体验定位**。
-
-![RTCDP](./images/exclatcrxt.png)
-
-现在，选择&#x200B;**Visual**&#x200B;并将缩短的链接粘贴到&#x200B;**输入活动URL**&#x200B;字段中。 单击&#x200B;**下一步**。
+现在，选择&#x200B;**Visual**&#x200B;并将缩短的链接粘贴到&#x200B;**输入活动URL**&#x200B;字段中。 单击&#x200B;**创建**。
 
 ![RTCDP](./images/exclatcrxt1.png)
 
 然后，您会看到您的演示网站项目正在可视化体验编辑器中加载。
 
+>[!NOTE]
+>
+>如果您的网站加载不正确，请从Chrome网上应用商店安装并启用此Chrome扩展：**Adobe Target VEC助手**，然后重试。
+
 ![RTCDP](./images/vec1.png)
 
-转到&#x200B;**浏览**&#x200B;模式，在Cookie同意弹出窗口中单击&#x200B;**全部允许**。
-
-![RTCDP](./images/vec2.png)
-
-单击包含文本&#x200B;**特色类别**&#x200B;的区域。 单击&#x200B;**此项前插入**，然后选择&#x200B;**优惠决策**。
+单击提供迪士尼+优惠的地区。 确保选择完整的&#x200B;**容器**。 单击&#x200B;**此项前插入**，然后选择&#x200B;**优惠决策**。
 
 ![RTCDP](./images/vec3.png)
 
@@ -70,11 +63,15 @@ ht-degree: 1%
 
 ![RTCDP](./images/vec4.png)
 
-接下来，选择您的决策`--aepUserLdap-- - Luma Decision`。 单击&#x200B;**保存**。
+接下来，选择您的决策`--aepUserLdap-- - CitiSignal Decision`。 单击&#x200B;**保存**。
 
 ![RTCDP](./images/vec5.png)
 
-你会看到这个。 确保添加额外的模板规则&#x200B;**URL** **包含** **your-project-name**。 单击&#x200B;**保存**。
+你会看到这个。 单击&#x200B;**查看规则**。
+
+![RTCDP](./images/vec5a.png)
+
+确保添加额外的模板规则&#x200B;**URL** **包含** **your-project-name**。 单击&#x200B;**保存**。
 
 ![RTCDP](./images/vec6.png)
 
@@ -90,11 +87,9 @@ ht-degree: 1%
 
 ![RTCDP](./images/vec9.png)
 
-您的选件现已创建并即将发布。
+您的选件现已创建并即将发布。 发布选件后，即可将其激活。
 
-![RTCDP](./images/vec10.png)
-
-发布选件后，即可启用该选件。
+![RTCDP](./images/vec11.png)
 
 下一步： [3.3.5在电子邮件和短信中使用您的决定](./ex5.md)
 

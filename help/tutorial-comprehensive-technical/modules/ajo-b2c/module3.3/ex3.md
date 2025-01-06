@@ -4,9 +4,9 @@ description: offer decisioning — 测试您的决策
 kt: 5342
 doc-type: tutorial
 exl-id: a03ec0bd-d48f-45bc-8097-ab263331b7bb
-source-git-commit: c531412a2c0a5c216f49560e01fb26b9b7e71869
+source-git-commit: fc24f3c9fb1683db35026dc53d0aaa055aa87e34
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1134'
 ht-degree: 0%
 
 ---
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 ## 3.3.3.1更新您的数据流
 
-在[练习0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md)中，您创建了自己的&#x200B;**[!UICONTROL 数据流]**。 您随后使用了名称`--aepUserLdap-- - Demo System Datastream`。
+在[快速入门](./../../../modules/gettingstarted/gettingstarted/ex2.md)中，您创建了自己的&#x200B;**数据流**。 您随后使用了名称`--aepUserLdap-- - Demo System Datastream`。
 
-在本练习中，您需要配置该&#x200B;**[!UICONTROL 数据流]**&#x200B;以与&#x200B;**[!DNL Offer Decisioning]**&#x200B;配合使用。
+在本练习中，您需要将该&#x200B;**数据流**&#x200B;配置为与&#x200B;**Offer decisioning**&#x200B;一起使用。
 
-为此，请转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 你会看到这个。 单击&#x200B;**[!UICONTROL 数据流]**&#x200B;或&#x200B;**[!UICONTROL 数据流(Beta)]**。
+为此，请转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 你会看到这个。 单击&#x200B;**数据流**。
 
 在屏幕右上角，选择沙盒名称，应为`--aepSandboxName--`。
 
 ![单击左侧导航栏中的“Edge配置”图标](./images/edgeconfig1b.png)
 
-搜索名为`--aepUserLdap-- - Demo System Datastream`的&#x200B;**[!UICONTROL 数据流]**。 单击您的&#x200B;**[!UICONTROL 数据流]**&#x200B;以将其打开。
+搜索名为`--aepUserLdap-- - Demo System Datastream`的&#x200B;**数据流**。 单击您的&#x200B;**数据流**&#x200B;以将其打开。
 
 ![WebSDK](./images/websdk1.png)
 
@@ -33,50 +33,50 @@ ht-degree: 0%
 
 ![WebSDK](./images/websdk3.png)
 
-要启用&#x200B;**[!DNL Offer Decisioning]**，请选中&#x200B;**[!DNL Offer Decisioning]**&#x200B;的框。 单击&#x200B;**保存**。
+要启用&#x200B;**Offer decisioning**，请选中&#x200B;**Offer decisioning**&#x200B;的框。 单击&#x200B;**保存**。
 
 ![WebSDK](./images/websdk5.png)
 
-您的&#x200B;**[!UICONTROL 数据流]**&#x200B;现已准备就绪，可与&#x200B;**[!DNL Offer Decisioning]**&#x200B;一起使用。
+您的&#x200B;**数据流**&#x200B;现在已准备好与&#x200B;**Offer decisioning**&#x200B;一起使用。
 
 ![WebSDK](./images/websdk4.png)
 
 ## 3.3.3.2配置您的Adobe Experience Platform数据收集客户端资产以请求个性化优惠
 
-转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)，转到&#x200B;**[!UICONTROL 客户端]**。 搜索名为`--aepUserLdap-- - Demo System (DD/MM/YYYY)`的数据收集属性。 打开Web的数据收集客户端属性。
+转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)，转到&#x200B;**标记**。 搜索名为`--aepUserLdap-- - Demo System (DD/MM/YYYY)`的数据收集属性。 打开Web的数据收集客户端属性。
 
 ![WebSDK](./images/launch1.png)
 
-在属性中，转到&#x200B;**[!UICONTROL 规则]**&#x200B;并打开规则&#x200B;**[!UICONTROL 页面视图]**。
+在属性中，转到&#x200B;**规则**&#x200B;并打开规则&#x200B;**页面视图**。
 
 ![WebSDK](./images/launch2.png)
 
-单击以打开[!UICONTROL 操作] **[!UICONTROL AEP Web SDK — 发送事件]**。
+单击以打开操作&#x200B;**发送“页面查看”体验事件**。
 
 ![WebSDK](./images/launch3.png)
 
-你会看到这个。 您会注意到&#x200B;**[!UICONTROL 决策范围]**&#x200B;的菜单选项。
+你会看到这个。 在&#x200B;**Personalization**&#x200B;下，您会注意到&#x200B;**范围**&#x200B;的选项。
 
 ![WebSDK](./images/launch4.png)
 
-对于发送到边缘和Adobe Experience Platform的每个请求，可以提供一个或多个&#x200B;**[!UICONTROL 决策范围]**。 **[!UICONTROL 决策范围]**&#x200B;是两个元素的组合：
+对于发送到边缘和Adobe Experience Platform的每个请求，可以提供一个或多个&#x200B;**决策范围**。 **决策范围**&#x200B;是两个元素的组合：
 
-- [!UICONTROL 决策ID]
-- [!UICONTROL 版面ID]
+- 决策ID
+- 投放 ID
 
 我们先来看看你们在哪里可以找到这两个元素。
 
-### 3.3.3.2.1检索您的[!UICONTROL 版面ID]
+### 3.3.3.2.1检索您的版面ID
 
-[!UICONTROL 版面ID]标识所需的资源的位置和类型。 例如，Luma网站主页上的主页图像与[!UICONTROL Web — 图像]的[!UICONTROL 版面ID]相对应。
+版面ID标识所需的资源的位置和类型。 例如，CitiSignal网站主页上的主页图像对应于Web — 图像的版面ID。
 
 >[!NOTE]
 >
->在模块6中，您已配置Adobe Target体验定位活动，该活动将更改主页中主页位置的图像，如屏幕快照中所示。 为了进行此练习，您现在可以将选件显示在主页图像下方的图像中，如屏幕快照中所示。
+>在练习2.3.5中，您已配置Adobe Target体验定位活动，该活动将更改主页中主页位置的图像，如屏幕快照中所示。 在本练习中，您现在会使选件显示在主页图像下方的图像中，如屏幕快照中所示。
 
 ![WebSDK](./images/launch5.png)
 
-若要查找[!UICONTROL Web — 图像]的[!UICONTROL 版面ID]，请转到[Adobe Experience Cloud](https://experience.adobe.com)以转到Adobe Journey Optimizer。 单击&#x200B;**Journey Optimizer**。
+要查找Web版面ID，请转到[Adobe Experience Cloud](https://experience.adobe.com)，将图像转到Adobe Journey Optimizer。 单击&#x200B;**Journey Optimizer**。
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
@@ -84,64 +84,52 @@ ht-degree: 0%
 
 ![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
-接下来，转到[!UICONTROL 组件]，然后转到[!UICONTROL 位置]。 单击[!UICONTROL Web — 图像]位置查看其详细信息。
+接下来，转到组件，再转到版面。 单击&#x200B;**Web — 图像**&#x200B;位置查看其详细信息。
 
 ![WebSDK](./images/launch6.png)
 
-如上图所示，在此示例中，[!UICONTROL 版面ID]为`xcore:offer-placement:14bf09dc4190ebba`。 记下您的[!UICONTROL Web — 图像]版面的[!UICONTROL 版面ID]，因为下一个练习需要它。
+如上图所示，在本例中，版面ID为`dps:offer-placement:1a08a14ccfe533b6`。 记下您的Web版面ID — 在下个练习中根据需要创建图像。
 
-### 3.3.3.2.2检索您的[!UICONTROL 决策ID]
+### 3.3.3.2.2检索您的优惠决策ID
 
-[!UICONTROL 决策ID]标识您要使用的个性化优惠和备用优惠组合。 在上一个练习中，您创建了自己的[!UICONTROL 决策]并将其命名为`--aepUserLdap-- - Luma Decision`。
+**优惠决策ID**&#x200B;标识您要使用的个性化优惠和备用优惠组合。 在上一个练习中，您创建了自己的决策并将其命名为`--aepUserLdap-- - CitiSignal Decision`。
 
-要查找您`--aepUserLdap-- - Luma Decision`的[!UICONTROL 决策ID]，请转到[https://platform.adobe.com](https://platform.adobe.com)。
-
-接下来，转到[!UICONTROL 优惠]，然后转到[!UICONTROL 决策]。 单击以选择名为`--aepUserLdap-- - Luma Decision`的[!UICONTROL 决策]。
+要查找您`--aepUserLdap-- - CitiSignal Decision`的优惠决策ID，请转到“优惠”，然后转到“决策”。 单击以选择名为`--aepUserLdap-- - CitiSignal Decision`的决策。
 
 ![WebSDK](./images/launch7.png)
 
-如上图所示，在此示例中，[!UICONTROL 决策ID]为`xcore:offer-activity:14c052382e1b6505`。 记下您的决策`--aepUserLdap-- - Luma Decision`的[!UICONTROL 决策ID]，因为您将在下一个练习中需要它。
+如上图所示，在此示例中，决策ID为`dps:offer-activity:1a08ba4b529b2fb2`。 记下您决定`--aepUserLdap-- - CitiSignal Decision`的优惠决定ID，因为您将在下一个练习中需要它。
 
-现在，您已检索到创建&#x200B;**[!UICONTROL 决策范围]**&#x200B;所需的两个元素，您可以继续下一步骤，其中涉及编码决策范围。
+现在，您已检索到创建&#x200B;**决策范围**&#x200B;所需的两个元素，您可以继续下一步骤，其中涉及编码决策范围。
 
 ### 3.3.3.2.3基本编码64
 
-您需要输入的&#x200B;**[!UICONTROL 决策范围]**&#x200B;是BASE64编码的字符串。 此BASE64编码字符串是[!UICONTROL 位置ID]和[!UICONTROL 决策ID]的组合，如下图所示。
+您需要输入的&#x200B;**决策范围**&#x200B;是BASE64编码的字符串。 此BASE64编码字符串是版面ID和决策ID的组合，如下所示：
 
 ```json
 {
-  "activityId":"xcore:offer-activity:14c052382e1b6505",
-  "placementId":"xcore:offer-placement:14bf09dc4190ebba"
+  "xdm:activityId": "dps:offer-activity:1a08ba4b529b2fb2",
+  "xdm:placementId": "dps:offer-placement:1a08a14ccfe533b6"
 }
 ```
 
-可通过两种方式生成&#x200B;**[!UICONTROL 决策范围]**：
+您可以从Adobe Experience Platform中检索BASE64编码的字符串。 转到Decisions并单击以打开名为`--aepUserLdap-- - CitiSignal Decision`的Decisions。
 
-- 使用公共服务，如[https://www.base64encode.org/](https://www.base64encode.org/)。 如上所述，输入JSON代码，单击&#x200B;**[!UICONTROL 编码]**，您将在下面获取BASE64编码字符串。
+![WebSDK](./images/launch9.png)
 
-  ![WebSDK](./images/launch8.png)
+打开`--aepUserLdap-- - CitiSignal Decision`后，您将看到此内容。 找到版面Web — 图像，然后单击&#x200B;**复制**&#x200B;按钮。 接下来，单击&#x200B;**编码决策范围**。 **决策范围**&#x200B;现已复制到剪贴板。
 
-- 从Adobe Experience Platform中检索BASE64编码字符串。 转到[!UICONTROL 决策]并单击以打开名为`--aepUserLdap-- - Luma Decision`的[!UICONTROL 决策]。
+![WebSDK](./images/launch10.png)
 
-  ![WebSDK](./images/launch9.png)
-
-  打开`--aepUserLdap-- - Luma Decision`后，您将看到此内容。 找到版面[!UICONTROL Web — 图像]，然后单击&#x200B;**[!UICONTROL 复制]**&#x200B;按钮。 接下来，单击&#x200B;**[!UICONTROL 编码决策范围]**。 **[!UICONTROL 决策范围]**&#x200B;现已复制到剪贴板。
-
-  ![WebSDK](./images/launch10.png)
-
-接下来，返回到Launch，进入您的操作&#x200B;**[!UICONTROL AEP Web SDK — 发送事件]**。
+接下来，返回到Launch，进入您的操作&#x200B;**AEP Web SDK — 发送事件**。
 
 ![WebSDK](./images/launch4.png)
 
-将编码的决策范围粘贴到输入字段中。
+将编码的决策范围粘贴到输入字段中。 单击&#x200B;**[!UICONTROL 保留更改]**，保存操作&#x200B;**AEP Web SDK — 发送事件**&#x200B;中所做的更改。
 
 ![WebSDK](./images/launch11.png)
 
-单击&#x200B;**[!UICONTROL 保留更改]**，保存操作&#x200B;**[!UICONTROL AEP Web SDK — 发送事件]**&#x200B;中所做的更改。
-
-![WebSDK](./images/keepchanges.png)
-
-接下来，单击&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 保存到库]**
+接下来，单击&#x200B;**[!UICONTROL 保存]**。
 
 ![WebSDK](./images/launch12.png)
 
@@ -157,15 +145,11 @@ ht-degree: 0%
 
 ![WebSDK](./images/launch1.png)
 
-在属性中，转到&#x200B;**[!UICONTROL 规则]**。
-
-![WebSDK](./images/decrec1.png)
-
-搜索并打开规则&#x200B;**接收的决定**。
+在属性中，转到&#x200B;**规则**。 搜索并打开规则&#x200B;**显示选件(Offer decisioning)**。
 
 ![WebSDK](./images/decrec2.png)
 
-你会看到这个。 打开操作&#x200B;**将选件放在页面**&#x200B;上。
+你会看到这个。 打开操作&#x200B;**在页面**&#x200B;上显示选件。
 
 ![WebSDK](./images/decrec6a.png)
 
@@ -176,41 +160,31 @@ ht-degree: 0%
 通过在编辑器中粘贴以下代码来覆盖代码。
 
 ```javascript
-if(!Array.isArray(event.decisions)) {
-  console.log('No decisions returned')
+if (!Array.isArray(event.decisions)) {
+  console.log("No personalization decisions");
   return;
 }
-console.log("decision",event.decisions)
 
-event.decisions.forEach(function(payload) {
-  payload.items.forEach(function(item){
-    console.log("Response from Offer Decisioning ", item.data.content);
-   
-    var element = document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div");
-    if(!element){
-      console.log("Offer Placement Area Selector not found")
+console.log("Received response from Offer Decisioning", event.decisions);
+
+event.decisions.forEach(function (payload) {
+  payload.items.forEach(function (item) {
+    console.log("Offer", item.data.deliveryURL);
+
+    if (!item.data || item.data?.deliveryURL==null) {
       return;
     }
-    if(!item.data){
-      return
-    }
-    //check if offer already exists
-    var offer = document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div");
-    if(!offer){ 
-      element.insertAdjacentHTML('afterbegin', item.data.content) 
-    }
-    else { 
-      console.log("item.data.deliveryURL: " + item.data.deliveryURL)
-      document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div").style.background="url('"+item.data.deliveryURL+"')";
-      document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div").style.backgroundRepeat="no-repeat";
-      document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div").style.backgroundPosition="center center";
-      document.querySelector("#root > div > div > div.app-content > div > section.feature_part.padding_top > div > div.row.align-items-center.justify-content-between > div.col-lg-7.col-sm-6.\\30  > div").style.backgroundSize = "contain";
-    }  
-  })
+    console.log("item.data.deliveryURL", item.data.deliveryURL)
+    //document.querySelector(".TopRibbon").innerHTML = item.data.content;
+    document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div:nth-child(2)").innerHTML = "<img style='max-width:100%;' src='"+item.data.deliveryURL+"'/>";
+    document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div:nth-child(2) > img").style.backgroundRepeat="no-repeat";
+    document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div:nth-child(2) > img").style.backgroundPosition="center center";
+    document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div:nth-child(2) > img").style.backgroundSize = "contain";
+  });
 });
 ```
 
-行26-27-28-29将应用Offer decisioning返回的图像到网站。 单击&#x200B;**[!UICONTROL 保存]**。
+第17行将Offer decisioning返回的映像应用到网站。 单击&#x200B;**[!UICONTROL 保存]**。
 
 ![WebSDK](./images/decrec7.png)
 
@@ -218,7 +192,7 @@ event.decisions.forEach(function(payload) {
 
 ![WebSDK](./images/keepchanges1dd.png)
 
-接下来，单击&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 保存到库]**
+接下来，单击&#x200B;**[!UICONTROL 保存]**。
 
 ![WebSDK](./images/decrec8.png)
 
@@ -228,21 +202,13 @@ event.decisions.forEach(function(payload) {
 
 在执行此更改后，Adobe Experience Platform数据收集中的此规则现在将侦听来自Offer Decisioning的响应(属于Web SDK响应的一部分)，并在收到响应时，将在主页上显示选件的图像。
 
-查看演示网站，您会看到此图像将被立即替换：
-
->[!NOTE]
->
->在模块6中，您已配置Adobe Target体验定位活动，该活动将更改主页中主页位置的图像，如屏幕快照中所示。 为了进行此练习，您现在可以将选件显示在主页图像下方的图像中，如屏幕快照中所示。
-
-![WebSDK](./images/launch5.png)
-
-现在，您将看到类似于此类的选件，而不是默认的Luma网站图像。 在这种情况下，将显示后备优惠。
+查看演示网站，您会看到此图像将被立即替换。 现在，您将看到类似这样的选件，而不是默认的CitiSignal网站图像。 在这种情况下，将显示后备优惠。
 
 ![WebSDK](./images/decrec10.png)
 
 您现在配置了2种类型的个性化：
 
-- 在模块6中使用Adobe Target的“1体验定位”活动
+- 在练习2.3.5中使用Adobe Target的“1体验定位”活动
 - 使用“数据收集”资产实现1个Offer decisioning
 
 在下一个练习中，您将了解如何将在Adobe Journey Optimizer中创建的优惠和决策与Adobe Target体验定位活动相结合。
