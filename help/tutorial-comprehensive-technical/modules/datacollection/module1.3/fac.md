@@ -4,16 +4,14 @@ description: 数据收集 — 联合受众构成
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
 # 1.3联合受众构成
-
-**作者：[Ludovic Latapie](https://www.linkedin.com/in/ludoviclatapie/)，[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 在本模块中，目标是了解有关使用联合受众组合创建受众的所有信息。
 
@@ -38,7 +36,7 @@ Experience Platform中的联合受众构成(FAC)允许您通过企业数据仓�
 
 ## 练习
 
-[1.3.1设置您的Snowflake帐户](./ex1.md)
+[1.3.1设置您的Snowflake环境](./ex1.md)
 
 在本练习中，您将设置Snowflake试用帐户，并将其连接到Adobe Experience Platform
 

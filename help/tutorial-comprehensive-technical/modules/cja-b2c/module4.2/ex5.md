@@ -4,9 +4,9 @@ description: 使用BigQuery Source Connector在Adobe Experience Platform中摄�
 kt: 5342
 doc-type: tutorial
 exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '3184'
+source-wordcount: '3100'
 ht-degree: 2%
 
 ---
@@ -119,69 +119,44 @@ ht-degree: 2%
 
 ![演示](./images/22.png)
 
+单击&#x200B;**保存**。
+
+![演示](./images/22a.png)
+
 您现在可以将组件添加到数据视图。 如您所见，某些量度和维度会自动添加。
 
 ![演示](./images/24.png)
 
-将以下组件添加到数据视图：
+将以下组件添加到数据视图。 另请确保将字段名称更新为友好名称。 为此，请选择量度或维度，然后更新右侧菜单中的&#x200B;**组件名称**&#x200B;字段。
 
-| 组件名称 | 组件类型 | 组件路径 |
-| -----------------|-----------------|-----------------|
-| 级别 | 维度 | _experienceplatform.loyaltyDetails.level |
-| 点 | 量度 | _experienceplatform.loyaltyDetails.points |
-| commerce.checkouts.value | 量度 | commerce.checkouts.value |
-| commerce.productListRemovals.value | 量度 | commerce.productListRemovals.value |
-| commerce.productListAdds | 量度 | commerce.productListAdds |
-| commerce.productViews.value | 量度 | commerce.productViews.value |
-| commerce.purchases.value | 量度 | commerce.purchases.value |
-| web.webPageDetails.pageViews | 量度 | web.webPageDetails.pageViews |
-| Transaction ID | 维度 | commerce.order.payments.transactionID |
-| channel.mediaType | 维度 | channel.mediaType |
-| channel.typeAtSource | 维度 | channel.typeAtSource |
-| 跟踪代码 | 维度 | marketing.trackingCode |
-| gaid | 维度 | _experienceplatform.identification.core.gaid |
-| web.webPageDetails.name | 维度 | web.webPageDetails.name |
-| 事件类型 | 维度 | 事件类型 |
-| 供应商 | 维度 | environment.browserDetails.vendor |
-| 标识符 | 维度 | _id |
-| 时间戳 | 维度 | 时间戳 |
-| 类型 | 维度 | device.type |
-| loyaltyId | 维度 | _experienceplatform.identification.core.loyaltyId |
-
-然后，您将拥有以下权限：
-
-![演示](./images/25.png)
-
-接下来，您需要更改上面某些量度和维度的友好名称，以便在构建分析时可以轻松使用它们。 为此，请选择量度或维度，然后更新&#x200B;**名称**&#x200B;字段，如下图所示。
-
-![演示](./images/25a.png)
-
-| 组件原始名称 | 显示名称 |
-| -----------------|-----------------|
-| 级别 | 忠诚度级别 |
-| 点 | 忠诚度积分 |
-| commerce.checkouts.value | 结账次数 |
-| commerce.productListRemovals.value | 购物车减货 |
-| commerce.productListAdds | 购物车添加次数 |
-| commerce.productViews.value | 产品查看次数 |
-| commerce.purchases.value | 购买次数 |
-| web.webPageDetails.pageViews | Page Views |
-| channel.mediaType | 流量Medium |
-| channel.typeAtSource | 流量源 |
-| 跟踪代码 | 营销渠道 |
-| gaid | GOOGLE ANALYTICSID |
-| 名称 | 页面标题 |
-| 供应商 | 浏览器 |
-| 类型 | Device Type |
-| loyaltyId | 忠诚度 ID |
+| 组件类型 | 组件原始名称 | 显示名称 | 组件路径 |
+| -----------------| -----------------|-----------------|-----------------|
+| 量度 | commerce.checkouts.value | 结账次数 | `commerce.checkouts.value` |
+| 量度 | commerce.productListRemovals.value | 购物车减货 | `commerce.productListRemovals.value` |
+| 量度 | commerce.productListAdds | 购物车添加次数 | `commerce.productListAdds` |
+| 量度 | commerce.productViews.value | 产品查看次数 | `commerce.productViews.value` |
+| 量度 | commerce.purchases.value | 购买次数 | `commerce.purchases.value` |
+| 量度 | web.webPageDetails.pageViews | Page Views | `web.webPageDetails.pageViews` |
+| 量度 | 点 | 忠诚度积分 | `_experienceplatform.loyaltyDetails.points` |
+| 维度 | 级别 | 忠诚度级别 | `_experienceplatform.loyaltyDetails.level` |
+| 维度 | channel.mediaType | 流量Medium | `channel.mediaType` |
+| 维度 | channel.typeAtSource | 流量源 | `channel.typeAtSource` |
+| 维度 | 跟踪代码 | 营销渠道 | `marketing.trackingCode` |
+| 维度 | gaid | GOOGLE ANALYTICSID | `_experienceplatform.identification.core.gaid` |
+| 维度 | web.webPageDetails.name | 页面标题 | `web.webPageDetails.name` |
+| 维度 | 供应商 | 浏览器 | `environment.browserDetails.vendor` |
+| 维度 | 类型 | Device Type | `device.type` |
+| 维度 | loyaltyId | 忠诚度 ID | `_experienceplatform.identification.core.loyaltyId` |
+| 维度 | commerce.order.payments.transactionID | Transaction ID | `commerce.order.payments.transactionID` |
+| 维度 | 事件类型 | 事件类型 | `eventType` |
+| 维度 | 时间戳 | 时间戳 | `timestamp` |
+| 维度 | `_id` | 标识符 | `_id` |
 
 然后，您将会看到如下内容：
 
 ![演示](./images/25b.png)
 
-接下来，您需要通过更改&#x200B;**归因设置**，对其中一些组件的人员和会话上下文进行一些更改。
-
-![演示](./images/25c.png)
+接下来，您需要通过更改&#x200B;**归因或持久性设置**，对其中一些组件的人员和会话上下文进行一些更改。
 
 请更改以下组件的&#x200B;**归因设置**：
 
@@ -193,39 +168,32 @@ ht-degree: 2%
 | 流量Medium |
 | Device Type |
 | GOOGLE ANALYTICSID |
-| 忠诚度 ID |
-| 忠诚度级别 |
-| 忠诚度积分 |
 
-为此，请选择该组件，单击&#x200B;**使用自定义归因模型**&#x200B;并将&#x200B;**模型**&#x200B;设置为&#x200B;**最近联系**，将&#x200B;**到期**&#x200B;设置为&#x200B;**人员（报告窗口）**。 对上述所有组件重复此操作。
+为此，请选择该组件，单击&#x200B;**使用自定义归因模型**&#x200B;并将&#x200B;**模型**&#x200B;设置为&#x200B;**最近**，并将&#x200B;**到期**&#x200B;设置为&#x200B;**人员报告窗口**。 对上述所有组件重复此操作。
 
 ![演示](./images/27a.png)
 
-在更改上述所有组件的归因设置后，您应具有此视图：
+在更改所有上述组件的归因设置后，您应该拥有此视图。 单击&#x200B;**保存并继续**。
 
 ![演示](./images/27.png)
 
-您的数据视图现已配置完成。 单击&#x200B;**保存**。
+在&#x200B;**设置**&#x200B;屏幕上，无需进行更改。 单击&#x200B;**保存并完成**。
 
-![演示](./images/30.png)
+![演示](./images/27b.png)
 
 现在，您可以在Adobe Analytics Analysis Workspace中分析Google Analytics数据了。 让我们转到下一个练习。
 
 ## 4.2.5.3创建项目
 
-在Customer Journey Analytics中，转到&#x200B;**项目**。
+在Customer Journey Analytics中，转到&#x200B;**Workspace**。 单击&#x200B;**创建项目**
 
 ![演示](./images/pro1.png)
 
-您随后将看到以下内容：
+选择&#x200B;**空白Workspace项目**，然后单击&#x200B;**创建**。
 
 ![演示](./images/pro2.png)
 
-通过单击&#x200B;**新建项目**&#x200B;创建项目。
-
-![演示](./images/pro3.png)
-
-您现在有一个空白项目：
+现在，您有一个空白项目：
 
 ![演示](./images/pro4.png)
 
@@ -236,27 +204,21 @@ ht-degree: 2%
 | Windows | Control + S |
 | Mac | Command + S |
 
-您将会看到此弹出窗口：
-
-![演示](./images/prsave.png)
-
-请使用此命名约定：
+你会看到这个弹出窗口。 请使用此命名约定：
 
 | 名称 | 描述 |
 | ----------------- |-------------| 
-| ldap - GA +忠诚度Workspace | ldap - GA +忠诚度Workspace |
+| `--aepUserLdap-- – GA + Loyalty Workspace` | `--aepUserLdap-- – GA + Loyalty Workspace` |
 
-接下来，单击&#x200B;**保存项目**。
+接下来，单击&#x200B;**保存**。
 
-![演示](./images/prsave2.png)
+![演示](./images/prsave.png)
 
-接下来，确保选择屏幕右上角的正确数据视图。 这是您在上一个练习中创建的数据视图，使用命名约定`ldap - GA + Loyalty Data View`。 在此示例中，要选择的数据视图为`ldap - GA + Loyalty Data View`。
+接下来，确保选择屏幕右上角的正确数据视图。 这是您在上一个练习中创建的数据视图，使用命名约定`--aepUserLdap-- - GA + Loyalty Data View`。
 
 ![演示](./images/prdvlist.png)
 
-![演示](./images/prdv.png)
-
-### 12.5.3.1自由格式表
+### 4.2.5.3.1自由格式表
 
 自由格式表或多或少地用作Excel中的透视表。 从左栏中选取一些内容，然后将其拖放到自由格式中，您会获得一个表格报表。
 
@@ -270,13 +232,9 @@ ht-degree: 2%
 
 让我们在CJA中通过Analysis Workspace回答这些问题以及其他一些问题。
 
-首先，在面板右侧选择正确的日期范围（**最近53周整**）。
+首先，在面板右侧选择正确的日期范围(**Today**)。 单击&#x200B;**应用**。
 
 ![演示](./images/pro11.png)
-
-然后单击&#x200B;**应用**&#x200B;以应用日期范围。 请记住此步骤以进行后续练习。
-
-![演示](./images/apply.png)
 
 >[!NOTE]
 >
@@ -296,9 +254,13 @@ ht-degree: 2%
 
 ![演示](./images/procalc1.png)
 
-作为计算量度的名称，请使用&#x200B;**转化率**。 然后将指标&#x200B;**purchase**&#x200B;和&#x200B;**Sessions**&#x200B;拖到画布上。 将&#x200B;**Format**&#x200B;设置为&#x200B;**Percent**&#x200B;并将&#x200B;**小数位**&#x200B;设置为&#x200B;**2**。 最后，单击&#x200B;**保存**。
+作为计算量度的名称，请使用&#x200B;**转化率**&#x200B;并为&#x200B;**外部ID**&#x200B;使用&#x200B;**转化率**。 然后将指标&#x200B;**purchase**&#x200B;和&#x200B;**Sessions**&#x200B;拖到画布上。 将&#x200B;**Format**&#x200B;设置为&#x200B;**Percent**&#x200B;并将&#x200B;**小数位**&#x200B;设置为&#x200B;**2**。 最后，单击&#x200B;**保存**。
 
 ![演示](./images/procalc2.png)
+
+单击&#x200B;**保存**。
+
+![演示](./images/procalc2a.png)
 
 接下来，要在&#x200B;**自由格式表**&#x200B;中使用所有这些量度，请逐个将其拖放到&#x200B;**自由格式表**&#x200B;上。 请参阅以下示例。
 

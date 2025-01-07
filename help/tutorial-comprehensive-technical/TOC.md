@@ -5,7 +5,7 @@ user-guide-description: 一个实践教程，涵盖Adobe Experience Platform的�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: ac55aa9e588655c5d68abf62bff62e748c13aaa1
+source-git-commit: 7532eed1074062451d6ac171629742dbdc9c3fdc
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 4%
@@ -49,7 +49,7 @@ ht-degree: 4%
       + [摘要和优点](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
    + 1.3联合受众构成{#module13}
       + [概述](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
-      + [1.3.1设置您的Snowflake帐户](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+      + [1.3.1设置您的Snowflake环境](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
       + [1.3.2创建架构、数据模型和链接](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
       + [1.3.3创建联合组合](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex3.md)
       + [摘要和优点](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/summary.md)

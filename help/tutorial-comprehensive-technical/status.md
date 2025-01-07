@@ -3,10 +3,10 @@ title: 内容状态
 description: 内容状态
 doc-type: multipage-overview
 exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
-source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
+source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
 workflow-type: tm+mt
-source-wordcount: '214'
-ht-degree: 10%
+source-wordcount: '231'
+ht-degree: 9%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 10%
 | [3.3 Adobe Journey Optimizer：Offer decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md) | 06/01/2025 | 是 | - |
 | [3.4 Adobe Journey Optimizer：基于事件的历程](./modules/ajo-b2c/module3.4/journeyoptimizer.md) | 05/01/2025 | 是 | - |
 | [4.1Customer Journey Analytics：使用Analysis Workspace在Adobe Experience Platform之上构建仪表板](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md) | 06/01/2025 | 是 | - |
-| [4.2Customer Journey Analytics：使用BigQuery Source Connector在Adobe Experience Platform中摄取和分析Google Analytics数据](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | 07/01/2025 | 是 | - |
+| [4.2Customer Journey Analytics：使用BigQuery Source Connector在Adobe Experience Platform中摄取和分析Google Analytics数据](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md) | 07/01/2025 | 否 | 源数据的数据准备建模存在问题。 此问题正在等待修复。 |
 | [5.1查询服务](./modules/datadistiller/module5.1/query-service.md) | 04/12/2024 | 是 | - |
 
 {style="table-layout:auto"}
