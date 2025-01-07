@@ -5,9 +5,9 @@ user-guide-description: 一个实践教程，涵盖Adobe Experience Platform的�
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b753a930bd2d81a14a97ef59c9ffc42991f0f3f6
+source-git-commit: ac55aa9e588655c5d68abf62bff62e748c13aaa1
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '916'
 ht-degree: 4%
 
 ---
@@ -149,7 +149,7 @@ ht-degree: 4%
       + [摘要和优点](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/summary.md)
    + 4.2Customer Journey Analytics：使用BigQuery Source Connector {#module42}在Adobe Experience Platform中摄取和分析Google Analytics数据
       + [概述](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)
-      + [4.2.1创建您的Google Cloud Platform帐户](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex1.md)
+      + [4.2.1开始使用Google Cloud平台](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex1.md)
       + [4.2.2在BigQuery中创建第一个查询](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex2.md)
       + [4.2.3将GCP和BigQuery连接到Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex3.md)
       + [4.2.4将数据从BigQuery加载到Adobe Experience Platform中](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex4.md)

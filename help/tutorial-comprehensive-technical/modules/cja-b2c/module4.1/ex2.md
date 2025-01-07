@@ -3,9 +3,10 @@ title: Customer Journey Analytics — 连接Customer Journey Analytics中的Adob
 description: Customer Journey Analytics — 连接Customer Journey Analytics中的Adobe Experience Platform数据集
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 96e7a5b2-9833-430a-8eab-27651a113675
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -41,23 +42,21 @@ ht-degree: 1%
 
 请使用此命名约定： `--aepUserLdap-- – Omnichannel Data Connection`。
 
-示例：`vangeluw - Omnichannel Data Connection`
-
-您还需要选择要使用的正确沙盒。 在沙盒菜单中，选择您的沙盒，应为`Bootcamp`。 在此示例中，要使用的沙盒是&#x200B;**Bootcamp**。 您还需要将&#x200B;**平均每日事件数**&#x200B;设置为&#x200B;**小于100万**。
+您还需要选择要使用的正确沙盒。 在沙盒菜单中，选择您的沙盒，应为`--aepSandboxName--`。 在此示例中，沙盒是&#x200B;**技术内幕**。 您还需要将&#x200B;**平均每日事件数**&#x200B;设置为&#x200B;**小于100万**。
 
 ![演示](./images/cjasb.png)
 
-选择沙盒后，可用的数据集将更新。
+选择沙盒后，您可以开始添加数据集。 单击&#x200B;**添加数据集**。
 
 ![演示](./images/cjasb1.png)
 
 ## 4.1.2.2选择Adobe Experience Platform数据集
 
-搜索数据集`Demo System - Event Dataset for Website (Global v1.1)`。 单击&#x200B;**+**&#x200B;将数据集添加到此连接。
+搜索数据集`Demo System - Event Dataset for Website (Global v1.1)`。 启用此数据集的框以将其添加到此连接。
 
 ![演示](./images/cja7.png)
 
-现在搜索并选中`Demo System - Event Dataset for Voice Assistants (Global v1.1)`和`Demo System - Event Dataset for Call Center (Global v1.1)`的复选框。
+停留在同一屏幕中，现在搜索并选中`Demo System - Event Dataset for Call Center (Global v1.1)`的复选框。
 
 你就能拥有这个了。 单击&#x200B;**下一步**。
 
@@ -71,7 +70,7 @@ ht-degree: 1%
 
 ![演示](./images/cja11.png)
 
-如您所见，其中大多数都会自动选择人员ID。 这是因为在Adobe Experience Platform的每个架构中都选择了主标识符。 例如，这是`Demo System - Event Schema for Call Center (Global v1.1)`的架构，您可以看到主标识符设置为`phoneNumber`。
+如您所见，其中大多数都会自动选择人员ID。 这是因为在Adobe Experience Platform的每个架构中都选择了主身份。 例如，这是`Demo System - Event Schema for Website (Global v1.1)`的架构，您可以看到主标识设置为`ecid`。
 
 ![演示](./images/cja13.png)
 
@@ -83,7 +82,7 @@ ht-degree: 1%
 
 人员ID字段的名称并不重要，只要人员ID字段中的值相对应。 假设我们在一个数据集中有`email`，在另一个定义为“人员ID”的数据集中有`emailAddress`。 如果两个数据集上的人员ID字段的`delaigle@adobe.com`值相同，则CJA将能够拼合数据。
 
-目前，还存在其他一些限制，例如将匿名行为与已知行为拼合。 请在此处查看常见问题解答：[常见问题解答](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html)。
+请在此处查看CJA常见问题解答以了解身份拼接的细微差别：[常见问题解答](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html)。
 
 ### 使用人员ID拼合数据
 
@@ -91,33 +90,39 @@ ht-degree: 1%
 
 ![演示](./images/cja15.png)
 
-转到每个数据集以更新人员ID。
+转到每个数据集以更新人员ID。 现在，在下拉列表中选择`email`以填写人员ID字段。
 
 ![演示](./images/cja12a.png)
 
-现在，在下拉列表中选择`email`以填写人员ID字段。
-
-![演示](./images/cja17.png)
-
-在拼合三个数据集后，我们便可继续操作。
+拼合两个数据集后，即可继续。
 
 | 数据集 | 人员 ID |
 | ----------------- |-------------| 
 | 演示系统 — 网站的事件数据集(Global v1.1) | 电子邮件 |
-| 演示系统 — 语音助手的事件数据集(Global v1.1) | 电子邮件 |
 | 演示系统 — 呼叫中心的事件数据集(Global v1.1) | 电子邮件 |
 
-您还需要确保为每个数据集启用以下选项：
+您还需要确保为这两个数据集启用以下选项：
 
 - 导入所有新数据
 - 回填所有现有数据
+
+（请不要忘记为第二个数据集启用这两个选项）
+
+您还需要为每个数据集选择&#x200B;**数据源类型**。
+
+这些是数据集&#x200B;**演示系统 — 网站(Global v1.1)**&#x200B;的事件数据集的设置。
+
+![演示](./images/cja16a.png)
+
+这些是数据集&#x200B;**演示系统 — 网站(Global v1.1)**&#x200B;的事件数据集的设置。
 
 单击&#x200B;**添加数据集**。
 
 ![演示](./images/cja16.png)
 
 单击&#x200B;**保存**，然后转到下一个练习。
-创建**Connection**&#x200B;后，可能需要几个小时才能在CJA中使用您的数据。
+
+创建&#x200B;**Connection**&#x200B;后，可能需要几个小时才能在CJA中使用您的数据。
 
 ![演示](./images/cja20.png)
 

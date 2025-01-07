@@ -3,9 +3,10 @@ title: 使用BigQuery Source Connector在Adobe Experience Platform中摄取和�
 description: 使用BigQuery Source Connector在Adobe Experience Platform中摄取和分析Google Analytics数据 — 将BigQuery中的数据加载到Adobe Experience Platform中
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 793b35c6-761f-4b0a-b0bc-3eab93c82162
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '710'
 ht-degree: 2%
 
 ---
@@ -20,45 +21,33 @@ ht-degree: 2%
 
 ## 开始之前
 
-在练习12.3之后，您应该在Adobe Experience Platform中打开以下页面：
+在上一个练习后，您应该在Adobe Experience Platform中打开以下页面：
 
 ![演示](./images/datasets.png)
 
-**如果您打开了它，请继续进行练习12.4.1。**
+**如果您打开了它，请继续进行下一个练习。**
 
 **如果您尚未打开它，请转到[Adobe Experience Platform](https://experience.adobe.com/platform/home)。**
 
-在左侧菜单中，转到“源”。 您随后将看到&#x200B;**源**&#x200B;主页。 在&#x200B;**源**&#x200B;菜单中，单击&#x200B;**数据库**。
+在左侧菜单中，转到“源”。 您随后将看到&#x200B;**源**&#x200B;主页。 在&#x200B;**源**&#x200B;菜单中，转到&#x200B;**Google BigQuery**&#x200B;源连接器，然后单击&#x200B;**设置**。
 
 ![演示](./images/sourceshome.png)
 
-选择&#x200B;**Google BigQuery** Source连接器，然后单击&#x200B;**+配置**。
+然后，您会看到Google BigQuery帐户选择屏幕。 选择您的帐户，然后单击&#x200B;**下一步**。
 
-![演示](./images/bq.png)
+![演示](./images/0c.png)
 
-然后，您会看到Google BigQuery帐户选择屏幕。
-
-![演示](./images/0-c.png)
-
-选择您的帐户，然后单击&#x200B;**下一步**。
-
-![演示](./images/ex4/0-d.png)
-
-您随后将看到&#x200B;**添加数据**&#x200B;视图。
+然后您会看到&#x200B;**选择数据**&#x200B;屏幕。
 
 ![演示](./images/datasets.png)
 
 ## 4.2.4.1 BigQuery表选择
 
-在&#x200B;**添加数据**&#x200B;视图中，选择您的BigQuery数据集。
-
-![演示](./images/datasets.png)
-
-您现在可以在BigQuery中看到Google Analytics数据的示例数据预览。
+在&#x200B;**选择数据**&#x200B;屏幕中，选择您的BigQuery数据集。 您现在可以在BigQuery中看到Google Analytics数据的示例数据预览。
 
 单击&#x200B;**下一步**。
 
-![演示](./images/ex4/3.png)
+![演示](./images/datasets1.png)
 
 ## 4.2.4.2 XDM映射
 
@@ -72,7 +61,7 @@ ht-degree: 2%
 
 ![演示](./images/xdm6.png)
 
-向下滚动。 您现在需要从Google Analytics/BigQuery将每&#x200B;**个Source字段**&#x200B;映射到一个XDM **目标字段**，按字段映射。
+向下滚动。 您现在需要从Google Analytics/BigQuery将每&#x200B;**个Source字段**&#x200B;映射到一个XDM **目标字段**，按字段映射。 您可能会看到一些错误，以下映射练习将解决这些错误。
 
 ![演示](./images/xdm8.png)
 
@@ -80,43 +69,51 @@ ht-degree: 2%
 
 | 源字段 | 目标字段 |
 | ----------------- |-------------| 
-| **_id** | _id |
-| **_id** | 渠道。_id |
-| 时间戳 | 时间戳 |
-| GA_ID | ``--aepTenantId--``.identification.core.gaid |
-| 客户ID | ``--aepTenantId--``.identification.core.loyaltyId |
-| 页面 | web.webPageDetails.name |
-| 设备 | device.type |
-| 浏览器 | environment.browserDetails.vendor |
-| 营销渠道 | marketing.trackingCode |
-| TrafficSource | channel.typeAtSource |
-| 流量媒介 | channel.mediaType |
-| 交易ID | commerce.order.payments.transactionID |
-| E-commerce_Action_Type | 事件类型 |
-| 页面查看次数 | web.webPageDetails.pageViews.value |
-| 独特购买次数 | commerce.purchases.value |
-| Product_Detail_View | commerce.productViews.value |
-| Adds_To_Cart | commerce.productListAdds.value |
-| Product_Removes_From_Cart | commerce.productListRemovals.value |
-| Product_Checkout | commerce.checkouts.value |
+| `_id` | `_id` |
+| `_id` | 渠道。_id |
+| `timeStamp` | 时间戳 |
+| `GA_ID` | ``--aepTenantId--``.identification.core.gaid |
+| `customerID` | ``--aepTenantId--``的问题。identification.core.crmId |
+| `Page` | web.webPageDetails.name |
+| `Device` | device.type |
+| `Browser` | environment.browserDetails.vendor |
+| `MarketingChannel` | marketing.trackingCode |
+| `TrafficSource` | channel.typeAtSource |
+| `TrafficMedium` | channel.mediaType |
+| `TransactionID` | commerce.order.payments.transactionID |
+| `Ecommerce_Action_Type` | 事件类型 |
+| `Pageviews` | web.webPageDetails.pageViews.value |
 
-将上述映射复制并粘贴到Adobe Experience Platform UI后，请验证您是否未看到由于拼写错误或前导/尾随空格导致的任何错误。
 
-您现在有了&#x200B;**映射**，如下所示：
+对于某些字段，您需要删除原始映射并为&#x200B;**计算字段**&#x200B;创建新映射。
 
-![演示](./images/xdm34.png)
+| 计算字段 | 目标字段 |
+| ----------------- |-------------| 
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Refunds"), 1, 0)` | commerce.purchases.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Detail_Views"), 1, 0)` | commerce.productViews.value |
+| `iif("Adds_To_Cart".equalsIgnoreCase("Adds_To_Cart"), 1, 0)` | commerce.productListAdds.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Removes_From_Cart"), 1, 0)` | commerce.productListRemovals.value |
+| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Checkouts"), 1, 0)` | commerce.checkouts.value |
+
+要创建&#x200B;**计算字段**，请单击&#x200B;**+新建字段类型**，然后单击&#x200B;**计算字段**。
+
+![演示](./images/xdm8a.png)
+
+粘贴上述规则，并对上表中的每个字段单击&#x200B;**保存**。
+
+![演示](./images/xdm8b.png)
+
+您现在有了&#x200B;**映射**，类似于此。
 
 源字段&#x200B;**GA_ID**&#x200B;和&#x200B;**customerID**&#x200B;映射到此XDM架构中的标识符。 这将允许您使用其他数据集（如忠诚度或呼叫中心数据）扩充Google Analytics数据（Web/应用程序行为数据）。
 
 单击&#x200B;**下一步**。
 
-![演示](./images/ex4/38.png)
+![演示](./images/xdm34.png)
 
 ## 4.2.4.3连接和数据摄取调度
 
 您现在将看到&#x200B;**计划**&#x200B;选项卡：
-
-![演示](./images/xdm38a.png)
 
 在&#x200B;**计划**&#x200B;选项卡中，您可以为此&#x200B;**映射**&#x200B;和数据定义数据摄取过程的频率。
 
@@ -124,59 +121,26 @@ ht-degree: 2%
 
 - 频率： **周**
 - 间隔： **200**
-
-![演示](./images/ex4/39.png)
+- 开始时间：**下一小时内的任何时间**
 
 **重要信息**：请务必激活&#x200B;**回填**&#x200B;开关。
 
-![演示](./images/ex4/39a.png)
-
 最后但并非最不重要的一点是，您必须定义&#x200B;**delta**&#x200B;字段。
-
-![演示](./images/ex4/36.png)
 
 **delta**&#x200B;字段用于计划连接并仅上传进入BigQuery数据集的新行。 增量字段通常始终为时间戳列。 因此，对于未来的计划数据摄取，将仅摄取具有新的、更新的时间戳的行。
 
-选择&#x200B;**时间戳**&#x200B;作为增量字段。
+选择&#x200B;**时间戳**作为增量字段。
+单击**下一步**。
 
-![演示](./images/ex4/37.png)
-
-您现在拥有了此功能。
-
-![演示](./images/xdm37a.png)
-
-单击&#x200B;**下一步**。
-
-![演示](./images/ex4/42.png)
+![演示](./images/ex437.png)
 
 ## 4.2.4.4查看并启动连接
 
-在&#x200B;**数据集流详细信息**&#x200B;视图中。 您需要命名连接，以便稍后查找。
-
-请使用此命名约定：
-
-| 字段 | 命名 | 示例 |
-| ----------------- |-------------| -------------|
-| 数据集流名称 | DataFlow - ldap - BigQuery网站交互 | DataFlow - vangeluw - BigQuery网站交互 |
-| 描述 | DataFlow - ldap - BigQuery网站交互 | DataFlow - vangeluw - BigQuery网站交互 |
-
-![演示](./images/xdm44.png)
-
-单击&#x200B;**下一步**。
-
-![演示](./images/ex4/45.png)
-
 您现在可以看到连接的详细概述。 在继续之前，请确保所有内容均正确，因为某些设置此后不能再更改，例如XDM映射。
-
-![演示](./images/xdm46.png)
 
 单击&#x200B;**完成**。
 
-![演示](./images/ex4/finish.png)
-
-设置连接可能需要一些时间，因此，如果您看到以下内容，请不要担心：
-
-![演示](./images/ex4/47.png)
+![演示](./images/xdm46.png)
 
 创建连接后，您将看到以下内容：
 

@@ -3,9 +3,10 @@ title: 使用BigQuery Source Connector在Adobe Experience Platform中摄取和�
 description: 使用BigQuery Source Connector在Adobe Experience Platform中摄取和分析Google Analytics数据 — 使用Customer Journey Analytics分析Google Analytics数据
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: bd42d049-e2f6-45a3-82fe-e2ee530a76d7
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '3338'
+source-wordcount: '3184'
 ht-degree: 2%
 
 ---
@@ -26,11 +27,7 @@ ht-degree: 2%
 
 在Customer Journey Analytics主页上，转到&#x200B;**连接**。
 
-![演示](./images/conn1.png)
-
 在这里，您可以看到CJA和Platform之间建立的各种连接。 这些连接与Adobe Analytics中的报表包具有相同的目标。 然而，数据的收集是完全不同的。 所有数据都来自Adobe Experience Platform数据集。
-
-![演示](./images/2.png)
 
 单击&#x200B;**新建连接**。
 
@@ -40,71 +37,45 @@ ht-degree: 2%
 
 ![演示](./images/5.png)
 
-首先，您需要选择要使用的正确沙盒。 在沙盒菜单中，选择您的沙盒，应为`--aepSandboxName--`。 在此示例中，要使用的沙盒是&#x200B;**AEP启用FY21**。
+对于名称，使用此： `--aepUserLdap-- - GA + Loyalty Data Connection`。
 
-![演示](./images/cjasb.png)
+您需要选择要使用的正确沙盒。 在沙盒菜单中，选择您的沙盒，应为`--aepSandboxName--`。 在此示例中，要使用的沙盒是&#x200B;**技术内部人员**。
 
-选择沙盒后，可用的数据集将更新。
+将&#x200B;**平均每日事件数**&#x200B;设置为&#x200B;**小于100万**。
 
-![演示](./images/cjasb1.png)
-
-在左侧菜单中，您可以查看所有可用的Adobe Experience Platform数据集。 搜索数据集`Demo System - Event Dataset for BigQuery (Global v1.1)`。 单击&#x200B;**+**&#x200B;将数据集添加到此连接。
+在数据集菜单中，您现在可以开始添加数据集。 单击&#x200B;**添加数据集**。
 
 ![演示](./images/6.png)
 
-添加后，您将在连接中看到数据集。
+要添加的数据集包括：
+- `Demo System - Profile Dataset for CRM (Global v1.1)`
+- `Demo System - Event Dataset for BigQuery (Global v1.1)`
 
-您现在必须选择&#x200B;**人员ID**。 请确保选择&#x200B;**loyaltyId**&#x200B;作为人员ID。
+搜索这两个数据集，选中其复选框，然后单击&#x200B;**下一步**。
+
+![演示](./images/d1.png)
+
+您随后将看到以下内容：
 
 ![演示](./images/8.png)
 
-现在，您将使用其他Adobe Experience Platform数据集扩充Google Analytics网站交互数据。
+对于数据集`Demo System - Event Dataset for BigQuery (Global v1.1)`，将&#x200B;**人员ID**&#x200B;更改为&#x200B;**忠诚度ID**，并将&#x200B;**数据源类型**&#x200B;设置为&#x200B;**Web数据**。 为&#x200B;**导入所有新数据**&#x200B;和&#x200B;**回填所有现有数据**&#x200B;启用这两个选项。
 
-搜索数据集`Demo System - Profile Dataset for Loyalty (Global v1.1)`数据集并将其添加到此连接。
+![演示](./images/d2.png)
 
-![演示](./images/10.png)
+对于数据集`Demo System - Event Dataset for BigQuery (Global v1.1)`，验证&#x200B;**人员ID**&#x200B;是否设置为&#x200B;**crmId**，并将&#x200B;**数据源类型**&#x200B;设置为&#x200B;**Web数据**。 为&#x200B;**导入所有新数据**&#x200B;和&#x200B;**回填所有现有数据**&#x200B;启用这两个选项。 单击&#x200B;**添加数据集**。
 
-您随后将看到以下内容：
+![演示](./images/d3.png)
 
-![演示](./images/10a.png)
+到时候你就在这里。 单击&#x200B;**保存**。
 
-要合并两个数据集，您需要选择包含相同类型ID的&#x200B;**人员ID**。 数据集`Demo System - Profile Dataset for Loyalty (Global v1.1)`使用&#x200B;**loyaltyId**&#x200B;作为人员ID，其中包含与`Demo System - Event Dataset for BigQuery (Global v1.1)`相同类型的ID，还使用&#x200B;**loyaltyId**&#x200B;作为人员ID。
-
-![演示](./images/12.png)
-
-单击&#x200B;**下一步**。
-
-![演示](./images/14.png)
-
-您随后将看到以下内容：
-
-![演示](./images/15.png)
-
-在此，您需要为连接提供一个名称。
-
-请使用此命名约定： `ldap - GA + Loyalty Data Connection`。
-
-示例：`vangeluw - GA + Loyalty Data Connection`
-
-完成之前，请同时激活&#x200B;**从今天开始自动导入此连接中所有数据集的所有新数据。**，如下图所示。
-
-![演示](./images/16.png)
-
-这将每60分钟启动一次从Adobe Experience Platform到CJA的数据流，但是对于大量数据，最多可能需要24小时。
-
-您还需要回填历史数据，因此请选中&#x200B;**导入所有现有数据**&#x200B;复选框，并在&#x200B;**平均每日事件数**&#x200B;下选择&#x200B;**小于100万**。
-
-![演示](./images/17.png)
+![演示](./images/d4.png)
 
 创建&#x200B;**Connection**&#x200B;后，可能需要几个小时才能在CJA中使用您的数据。
 
-单击&#x200B;**保存**，然后转到下一个练习。
-
-![演示](./images/cjasave.png)
-
 然后，您将在可用连接列表中看到您的连接。
 
-![演示](./images/18.png)
+![演示](./images/d5.png)
 
 ## 4.2.5.2创建数据视图
 
@@ -120,13 +91,9 @@ ht-degree: 2%
 - 为Google Analytics的KPI和量度使用与Customer Journey Analytics相同的名称，以便数字分析团队只能说1种语言。
 - 数据视图经过筛选，仅显示1个市场、1个品牌或移动设备的实例数据。
 
-在&#x200B;**连接**&#x200B;屏幕上，选中您刚刚创建的连接前面的复选框。
+在&#x200B;**连接**&#x200B;屏幕上，选中您刚刚创建的连接前面的复选框。 单击&#x200B;**创建数据视图**。
 
 ![演示](./images/exta.png)
-
-现在单击&#x200B;**创建数据视图**。
-
-![演示](./images/extb.png)
 
 您将被重定向到&#x200B;**创建数据视图**&#x200B;工作流。
 
@@ -134,26 +101,23 @@ ht-degree: 2%
 
 您现在可以配置数据视图的基本定义。 时区、会话超时或数据视图筛选等内容(分段部分类似于Adobe Analytics中的虚拟报表包)。
 
-您在上一个练习中创建的&#x200B;**连接**&#x200B;已选定。 您的连接名为`ldap - GA + Loyalty Data Connection`。
+您在上一个练习中创建的&#x200B;**连接**&#x200B;已选定。 您的连接名为`--aepUserLdap-- - GA + Loyalty Data Connection`。
 
-![演示](./images/ext5.png)
+接下来，按照以下命名惯例为数据视图命名： `--aepUserLdap-- - GA + Loyalty Data View`。
 
-接下来，按照以下命名惯例为数据视图命名： `ldap - GA + Loyalty Data View`。
-
-为描述输入相同的值： `ldap - GA + Loyalty Data View`。
+为描述输入相同的值： `--aepUserLdap-- - GA + Loyalty Data View`。
 
 在执行任何分析或可视化之前，我们需要创建一个数据视图，其中包含所有字段、维度和量度及其归因设置。
 
-| 字段 | 命名约定 | 示例 |
-| ----------------- |-------------|-------------|  
-| 名称连接 | ldap - GA +忠诚度数据视图 | vangeluw - GA +忠诚度数据视图 |
-| 描述 | ldap - GA +忠诚度数据视图 | vangeluw - GA +忠诚度数据视图 |
-
-![演示](./images/22.png)
+| 字段 | 命名约定 |
+| ----------------- |-------------|  
+| 名称连接 | `--aepUserLdap-- - GA + Loyalty Data View` | vangeluw - GA +忠诚度数据视图 |
+| 描述 | `--aepUserLdap-- - GA + Loyalty Data View` |
+| 外部 ID | `--aepUserLdap--GA` |
 
 单击&#x200B;**保存并继续**。
 
-![演示](./images/23.png)
+![演示](./images/22.png)
 
 您现在可以将组件添加到数据视图。 如您所见，某些量度和维度会自动添加。
 

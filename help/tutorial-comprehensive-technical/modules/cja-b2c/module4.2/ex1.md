@@ -3,20 +3,19 @@ title: 使用BigQuery Source Connector在Adobe Experience Platform中摄取和�
 description: 使用BigQuery Source Connector在Adobe Experience Platform中摄取和分析Google Analytics数据 — 创建您的Google Cloud Platform帐户
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 6dbfb5a3-adc2-4818-8f79-bbb00e56fbdf
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
 
-# 4.2.1创建您的Google Cloud Platform帐户
+# 4.2.1开始使用Google Cloud平台
 
-## 目标
-
-- 创建您的Google Cloud Platform帐户
-- 熟悉Google Cloud平台控制台
-- 创建和准备BigQuery项目
+>[!NOTE]
+>
+>在本练习中，您需要具有对Google Cloud Platform环境的访问权限。 如果您尚无法访问GCP，请使用您的个人电子邮件地址创建一个新帐户。
 
 ## 4.2.1.1为何将Google BigQuery连接到Adobe Experience Platform以获取Google Analytics数据
 
@@ -33,98 +32,86 @@ GCP/BigQuery Source连接器应该用于……
 - 跟踪网站上的所有客户行为，并将这些数据加载到Adobe Experience Platform中，以便进行无需实时激活的分析、数据科学和个性化用例。
 - 将Google Analytics历史数据加载到Adobe Experience Platform中，同样用于分析和数据科学用例
 
-## 4.2.1.2创建您的Google帐户
+## 4.2.1.2您的Google帐户
 
-要获取Google Cloud Platform帐户，您需要一个Google帐户。
+>[!NOTE]
+>
+>在本练习中，您需要具有对Google Cloud Platform环境的访问权限。 如果您尚无法访问GCP，请使用您的个人电子邮件地址创建一个新帐户。
 
-## 4.2.1.3激活您的Google Cloud Platform帐户
+## 4.2.1.3选择或创建项目
 
-现在您已拥有Google帐户，接下来可以创建Google Cloud Platform环境了。 为此，请转到[https://console.cloud.google.com/](https://console.cloud.google.com/)。
+转到[https://console.cloud.google.com/](https://console.cloud.google.com/)。
 
-在下一页，接受条款和条件。
+接下来，单击&#x200B;**选择项目**&#x200B;或单击现有项目。
 
-![演示](./images/ex1/1.png)
+![演示](./images/ex12.png)
 
-接下来，单击&#x200B;**选择项目**。
+如果您还没有项目，请单击&#x200B;**新建项目**。 如果您已经有一个项目，则可以选择选择该项目，然后继续下一步。
 
-![演示](./images/ex1/2.png)
+![演示](./images/ex1createproject.png)
 
-单击&#x200B;**新建项目**。
+按照此命名约定命名您的项目。 单击&#x200B;**创建**。
 
-![演示](./images/ex1/createproject.png)
+| 公约 |
+| ----------------- |
+| `--aepUserLdap---googlecloud` |
 
-按照以下命名约定命名项目：
+![演示](./images/ex13.png)
 
-| 公约 | 示例 |
-| ----------------- |-------------| 
-| `--aepUserLdap---googlecloud` | delaigle-googlecloud |
+等到屏幕右上方的通知告知您创建已完成。 然后，单击&#x200B;**选择项目**。
 
-![演示](./images/ex1/3.png)
-
-单击&#x200B;**创建**。
-
-![演示](./images/ex1/3-1.png)
-
-等到屏幕右上方的通知告知您创建已完成。 然后，单击&#x200B;**查看项目**。
-
-![演示](./images/ex1/4.png)
+![演示](./images/ex14.png)
 
 接下来，转到屏幕顶部的搜索栏并键入&#x200B;**BigQuery**。 选择第一个结果。
 
-![演示](./images/ex1/7.png)
+![演示](./images/ex17.png)
 
-然后，您将被重定向到BigQuery控制台，并且您将看到一条弹出消息。
+本模块的目标是将Google Analytics数据导入Adobe Experience Platform。 要实现这一点，首先需要使用Google Analytics数据集中的虚拟数据。
 
-**单击完成**。
+单击“**+添加”**，然后在右菜单中单击“**公共数据集**”。
 
-![演示](./images/ex1/5.png)
-
-本模块的目标是将Google Analytics数据导入Adobe Experience Platform。 为此，首先需要一个Google Analytics数据集中的虚拟数据。
-
-单击左侧菜单中的&#x200B;**添加数据**，然后单击&#x200B;**浏览公共数据集**。
-
-![演示](./images/ex1/18.png)
+![演示](./images/ex118.png)
 
 随后您将看到此窗口：
 
-![演示](./images/ex1/19.png)
+![演示](./images/ex119.png)
 
-在搜索栏中输入搜索词&#x200B;**Google Analytics样本**&#x200B;并选择第一个结果。
+在搜索栏中输入搜索词&#x200B;**Google Analytics示例**，然后单击第一个搜索结果。
 
-![演示](./images/ex1/20.png)
+![演示](./images/ex120.png)
 
 您将看到以下屏幕以及数据集的描述。 单击&#x200B;**查看数据集**。
 
-![演示](./images/ex1/21.png)
+![演示](./images/ex121.png)
 
 然后，您将被重定向到BigQuery，在&#x200B;**资源管理器**&#x200B;下将看到此&#x200B;**bigquery-public-data**&#x200B;数据集。
 
-![演示](./images/ex1/22a.png)
+![演示](./images/ex122a.png)
 
 在&#x200B;**资源管理器**&#x200B;中，您现在应该会看到一些表。 欢迎您尽情探索。 转到`google_analytics_sample`。
 
-![演示](./images/ex1/22.png)
+![演示](./images/ex122.png)
 
 单击以打开表`ga_sessions`。
 
-![演示](./images/ex1/23.png)
+![演示](./images/ex123.png)
 
 在继续进行下一个练习之前，请在您计算机上的单独文本文件中写下以下内容：
 
 | 凭据 | 命名 | 示例 |
 | ----------------- |-------------| -------------|
 | 项目名称 | `--aepUserLdap---googlecloud` | 旺格卢 — 古格吕德 |
-| 项目编号 | random | composed-task-306413 |
+| 项目编号 | random | possible-bee-447102-h3 |
 
 通过单击顶部菜单栏中的&#x200B;**项目名称**，可以找到您的项目名称和项目ID：
 
-![演示](./images/ex1/projectMenu.png)
+![演示](./images/ex1projectMenu.png)
 
 然后，您将在右侧看到项目ID：
 
-![演示](./images/ex1/projetcselection.png)
+![演示](./images/ex1projetcselection.png)
 
-您现在可以转到练习12.2 ，通过查询Google Analytics数据会弄脏你的手。
+现在，您可以进入下一个练习，即通过查询Google Analytics数据来弄脏你的手。
 
 下一步： [4.2.2在BigQuery](./ex2.md)中创建您的第一个查询
 

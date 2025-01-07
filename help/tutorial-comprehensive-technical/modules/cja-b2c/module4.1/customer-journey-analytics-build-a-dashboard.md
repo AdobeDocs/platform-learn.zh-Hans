@@ -4,27 +4,18 @@ description: Customer Journey Analytics — 使用Analysis Workspace在Adobe Exp
 kt: 5342
 doc-type: tutorial
 exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 1%
 
 ---
 
 # 4.1Customer Journey Analytics — 使用Analysis Workspace在Adobe Experience Platform之上构建功能板
 
-**作者：[Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/)，[Wouter Van Greuwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 在本模块中，您将获得Customer Journey Analytics应用服务的实践经验。
 
 Customer Journey Analytics为商业智能和数据科学团队提供了一个工具包，用于拼合和分析跨渠道数据（在线和离线）。 Customer Journey Analytics中的功能为复杂的多渠道客户历程提供了背景和清晰度。 所提供的上下文可产生可操作洞察，以了解如何从客户转化过程中消除棘手问题，并在最重要的时刻提供积极体验。
-
-
-请观看此视频，以了解价值、客户历程和配置过程：
-
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
-
-可在[此处](https://spark.adobe.com/page/t62eiRu9l6iWJ/)找到有关Customer Journey Analytics的更多信息。
 
 ## 学习目标
 

@@ -3,9 +3,10 @@ title: Customer Journey Analytics — 使用Customer Journey Analytics实现可�
 description: Customer Journey Analytics — 使用Customer Journey Analytics实现可视化
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6962a0d37d375e751a05ae99b4f433b0283835d0
+exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
+source-git-commit: d6f6423adbc8f0ce8e20e686ea9ffd9e80ebb147
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1500'
 ht-degree: 0%
 
 ---
@@ -24,11 +25,11 @@ ht-degree: 0%
 
 我们将介绍在“模块7 — 查询服务”中完成的一些查询，这样您就可以了解运行相同的查询以及更多查询有多么容易，但是请不要使用SQL并且只依赖于Analysis Workspace的拖放原则。
 
-让我们使用您在Analysis Workspace](./ex4.md)中的[11.4数据准备中创建的项目，转到[https://analytics.adobe.com](https://analytics.adobe.com)。
+让我们使用您在Analysis Workspace](./ex4.md)中的[4.1.4数据准备中创建的项目，转到[https://analytics.adobe.com](https://analytics.adobe.com)。
+
+单击以打开您的项目`--aepUserLdap-- - Omnichannel Analysis`。
 
 ![演示](./images/prohome.png)
-
-打开您的项目`--aepUserLdap-- - Omnichannel Analysis`。
 
 打开您的项目并选择数据视图`--aepUserLdap-- - Omnichannel Analysis`后，您就可以开始构建第一个可视化图表了。
 
@@ -36,7 +37,7 @@ ht-degree: 0%
 
 ## 我们每天查看了多少项产品
 
-首先，我们需要选择合适的日期来分析数据。 转到画布右侧的日历下拉菜单。 单击该日期范围并选择适用的日期范围。
+首先，您需要选择正确的日期来分析数据。 转到画布右侧的日历下拉菜单。 单击该日期范围并选择适用的日期范围。
 
 ![演示](./images/pro1.png)
 
