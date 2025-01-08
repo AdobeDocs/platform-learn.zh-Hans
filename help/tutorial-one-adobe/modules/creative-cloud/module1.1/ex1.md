@@ -4,9 +4,9 @@ description: Firefly服务快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 608fc570f9aa172db3578664e793f35fb3f1bf50
+source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -176,7 +176,7 @@ Adobe I/O为您提供了&#x200B;**持有者** — 令牌，该令牌具有特定
 
 在继续下一个练习之前，请随时尝试使用API请求。
 
-下一步： [1.1.2请求具有规范的图像](./ex2.md)
+下一步： [1.1.2使用Microsoft Azure和预签名URL优化Firefly过程](./ex2.md)
 
 [返回模块1.1](./firefly-services.md)
 
