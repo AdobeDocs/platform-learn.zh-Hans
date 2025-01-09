@@ -4,10 +4,10 @@ breadcrumb-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7066ef48f613cb2c593b065f8c81b0d49f19968b
+source-git-commit: d658ebcecea1cb98f6c7176a9238fcb740fb03e3
 workflow-type: tm+mt
-source-wordcount: '102'
-ht-degree: 4%
+source-wordcount: '122'
+ht-degree: 8%
 
 ---
 
@@ -16,6 +16,8 @@ ht-degree: 4%
 
 + [教程概述](/help/tutorial-one-adobe/overview.md)
 
++ 快速入门{#gettingstarted}
+   + [快速入门](/help/tutorial-one-adobe/modules/getting-started/getting-started.md)
 + 1 Adobe Creative Cloud {#creativecloud}
    + 1.1Adobe Firefly服务{#module11}
       + [概述](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
@@ -29,6 +31,11 @@ ht-degree: 4%
       + [概述](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
       + [2.1.1 AEM CS快速入门](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
+   + 2.2 Workfront {#module22}
+      + [概述](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
+      + [2.2.1 Workfront快速入门](/help/tutorial-one-adobe/modules/csc/module2.2/ex1.md)
+      + [2.2.5 Workfront + Photoshop集成](/help/tutorial-one-adobe/modules/csc/module2.2/ex5.md)
+      + [摘要和优点](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
 + 3个统一的客户体验{#uce}
    + 3.1 Adobe Real-Time CDP {#module31}

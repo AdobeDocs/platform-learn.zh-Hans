@@ -4,10 +4,10 @@ description: Firefly服务快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
 workflow-type: tm+mt
-source-wordcount: '1017'
-ht-degree: 0%
+source-wordcount: '1114'
+ht-degree: 1%
 
 ---
 
@@ -119,13 +119,13 @@ ht-degree: 0%
 
 ![Azure存储](./images/az18.png)
 
-## 1.1.2.4手动文件上载并使用渐变文件作为样式引用
+## 1.1.2.4手动文件上传和使用图像文件作为样式参考
 
-现在，您应该将所选的渐变文件上传到容器中。 您可以使用所选的任何渐变文件，也可以通过下载到计算机来使用[此文件](./images/gradient.jpg)。
+现在，您应该将选择的图像文件上传到容器中。 您可以使用所选的任何图像文件，也可以通过计算机下载[此文件](./images/gradient.jpg)来使用。
 
 ![Azure存储](./images/gradient.jpg)
 
-将渐变文件放入Azure存储资源管理器中的容器。
+将图像文件放入Azure存储资源管理器中的容器。
 
 上传后，您将在容器中看到该包：
 
@@ -147,7 +147,7 @@ ht-degree: 0%
 
 ![Azure存储](./images/az23.png)
 
-使用从Azure存储资源管理器复制的渐变文件的预签名URL替换占位符URL。 你就能拥有这个了。 单击&#x200B;**发送**。
+将占位符URL替换为您从Azure存储资源管理器复制的图像文件的预签名URL。 你就能拥有这个了。 单击&#x200B;**发送**。
 
 ![Azure存储](./images/az24.png)
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 ![Azure存储](./images/az25.png)
 
-您随后将看到另一个具有`horses in a field`的图像，但此时样式将与您作为样式引用提供的渐变文件类似。
+您随后将看到另一个包含`horses in a field`的图像，但这次的样式将与您作为样式引用提供的图像文件类似。
 
 ![Azure存储](./images/az26.png)
 
@@ -195,7 +195,7 @@ ht-degree: 0%
 
 ![Azure存储](./images/az31.png)
 
-现在，您需要从本地计算机中选择一个文件。 您可以使用选择的新图像文件，也可以使用其他可以在[此处](./images/gradient2-p.jpg)找到的渐变文件。
+现在，您需要从本地计算机中选择一个文件。 您可以使用选择的新图像文件，也可以使用可在[此处](./images/gradient2-p.jpg)找到的其他图像文件。
 
 ![渐变文件](./images/gradient2-p.jpg)
 
@@ -223,7 +223,10 @@ ht-degree: 0%
 
 接下来，转到&#x200B;**标头**，您需要在该处手动添加新标头。 使用此：
 
-x-ms-blob-type BlockBlob
+| 键 | 值 |
+|:-------------:| :---------------:| 
+| `x-ms-blob-type` | `BlockBlob` |
+
 
 ![Azure存储](./images/az35.png)
 
@@ -238,6 +241,27 @@ x-ms-blob-type BlockBlob
 如果您随后返回Azure存储资源管理器并刷新文件夹的内容，您现在将在该文件夹中找到新上传的文件。
 
 ![Azure存储](./images/az38.png)
+
+## 1.1.2.5程序化文件使用
+
+若要以编程方式从Azure存储帐户中读取文件，您需要创建一个新的&#x200B;**共享访问签名(SAS)**&#x200B;令牌，该令牌具有允许您读取文件的权限。 从技术上讲，您可以使用在上一个练习中创建的SAS令牌，但最佳实践是单独使用只有&#x200B;**读取**&#x200B;权限的令牌。
+
+为此，请返回Azure存储资源管理器。 右键单击容器，然后单击&#x200B;**获取共享访问签名**。
+
+![Azure存储](./images/az27.png)
+
+在&#x200B;**权限**&#x200B;下，需要以下权限：
+
+- **读取**
+- **添加**
+- **创建**
+- **写入**
+- **列表**
+
+单击&#x200B;**创建**。
+
+![Azure存储](./images/az28.png)
+
 
 下一步： [1.1.3 ...](./ex3.md)
 
