@@ -3,10 +3,11 @@ title: 2.1 Adobe Experience ManagerCloud Service
 description: Adobe Experience ManagerCloud Service
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
+source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 3%
+source-wordcount: '151'
+ht-degree: 2%
 
 ---
 
@@ -24,7 +25,11 @@ ht-degree: 3%
 
 [2.1.1创建您的Cloud Manager项目](./ex1.md)
 
-在本练习中， ...
+在本练习中，您将创建您的Cloud Manager项目，该项目将为您创建站点、Assets和Edge Delivery Services产品。
+
+[2.1.2设置您的AEM CS环境](./ex2.md)
+
+在本练习中，您将设置AEM CS环境并访问CitiSignal网站。
 
 [摘要和优点](./summary.md)
 
