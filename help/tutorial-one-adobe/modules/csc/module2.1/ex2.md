@@ -3,9 +3,9 @@ title: 创建Cloud Manager项目
 description: 创建Cloud Manager项目
 kt: 5342
 doc-type: tutorial
-source-git-commit: 89611537cad42082af1b9aa753752d5450f103a5
+source-git-commit: cd7601002c7d18232fdd2e8e68cbc4315e118948
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '992'
 ht-degree: 1%
 
 ---
@@ -307,9 +307,38 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup45.png)
 
-您现在还可以通过转到`main--citisignal--woutervangeluwe.aem.live/us/en`来导航到您的网站
+现在，在将XXX替换为您的GitHub用户帐户（本例中为`woutervangeluwe`）之后，您可以通过转到`main--citisignal--XXX.aem.page/us/en`和/或`main--citisignal--XXX.aem.live/us/en`来访问您的网站。
 
+在此示例中，完整URL将变为：
+`https://main--citisignal--woutervangeluwe.aem.page/us/en`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en`。
 
+可能需要一些时间才能正确显示所有资源，因为它们需要先发布。
+
+您随后将看到以下内容：
+
+![AEMCS](./images/aemcssetup46.png)
+
+几分钟后，资源将全部正确加载。
+
+![AEMCS](./images/aemcssetup47.png)
+
+## 2.1.2.7测试页面性能
+
+转到[https://pagespeed.web.dev/](https://pagespeed.web.dev/)。 输入URL并单击&#x200B;**分析**。
+
+![AEMCS](./images/aemcssetup48.png)
+
+然后，您会看到您的网站在移动和桌面可视化图表中均获得了高分：
+
+**移动设备**：
+
+![AEMCS](./images/aemcssetup49.png)
+
+**桌面**：
+
+![AEMCS](./images/aemcssetup50.png)
+
+下一步： [2.1.3配置自定义块](./ex3.md)
 
 [返回模块2.1](./aemcs.md)
 
