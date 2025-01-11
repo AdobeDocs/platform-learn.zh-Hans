@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: c49c3d4cdfd4fcfc930332a25b9fd5d5356e1004
+source-git-commit: f64623255c045396799d0d627f199ce59c794d70
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '958'
 ht-degree: 17%
 
 ---
@@ -49,8 +49,13 @@ ht-degree: 17%
 + AI 助手 {#ai-assistant}
    + [概述](/help/platform/ai-assistant/overview.md)
    + [设置访问权限](/help/platform/ai-assistant/access.md)
-   + [清理受众](/help/platform/ai-assistant/find-unused-audiences.md)
    + [随新产品一起入门](/help/platform/ai-assistant/onboard.md)
+   + [了解产品](/help/platform/ai-assistant/product-knowledge.md)
+   + [验证响应](/help/platform/ai-assistant/validate-responses.md)
+   + [可发现性面板](/help/platform/ai-assistant/discoverability-panel.md)
+   + [查找未使用的受众](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [影响分析](/help/platform/ai-assistant/impact-analysis.md)
+   + [安全性概述](/help/platform/ai-assistant/security-overview.md)
 + 受众和分段{#audiences}
    + [受众门户和构成简介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上传受众](audiences/upload-audiences.md)
@@ -148,7 +153,7 @@ ht-degree: 17%
       + [在Target中使用Real-Time CDP区段](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
       + [在Target中使用Real-Time CDP配置文件属性](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
    + [向非Adobe应用程序激活数据网络研讨会](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
-+ 标识 {#identities}
++ 身份标识 {#identities}
    + [身份和身份图概述](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [标记、引入并验证身份数据](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [查看身份图](/help/platform/identities/view-identity-graphs.md)
