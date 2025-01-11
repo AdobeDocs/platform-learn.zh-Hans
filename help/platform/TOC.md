@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: f64623255c045396799d0d627f199ce59c794d70
+source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '957'
 ht-degree: 17%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 17%
    + [配置基于属性的访问控制](/help/platform/admin/configure-attribute-based-access-control.md)
 + AI 助手 {#ai-assistant}
    + [概述](/help/platform/ai-assistant/overview.md)
-   + [设置访问权限](/help/platform/ai-assistant/access.md)
+   + [获取访问权限](/help/platform/ai-assistant/access.md)
    + [随新产品一起入门](/help/platform/ai-assistant/onboard.md)
    + [了解产品](/help/platform/ai-assistant/product-knowledge.md)
    + [验证响应](/help/platform/ai-assistant/validate-responses.md)
