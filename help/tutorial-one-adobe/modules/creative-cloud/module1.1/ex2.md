@@ -4,7 +4,7 @@ description: Firefly服务快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
 source-wordcount: '1500'
 ht-degree: 1%
@@ -242,7 +242,7 @@ ht-degree: 1%
 
 ![Azure存储](./images/az38.png)
 
-## 1.1.2.5程序化文件使用
+## 1.1.2.6编程文件使用
 
 为了长期以编程方式从Azure存储帐户中读取文件，您需要创建一个新的&#x200B;**共享访问签名(SAS)**&#x200B;令牌，该令牌具有允许您读取文件的权限。 从技术上讲，您可以使用在上一个练习中创建的SAS令牌，但最佳实践是让单独的令牌仅具有&#x200B;**读取**&#x200B;权限，而单独的令牌仅具有&#x200B;**写入**&#x200B;权限。
 
@@ -359,7 +359,7 @@ ht-degree: 1%
 
 打开图像URL以验证您的图像。
 
-![Azure存储](./images/az108.png)
+![Azure存储](./images/az108.jpg)
 
 下一步：[1.1.3Adobe Firefly和Adobe Photoshop](./ex3.md)
 

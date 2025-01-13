@@ -2,9 +2,10 @@
 title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
-source-git-commit: b1bb17bfe451c67903424bd8da6716d0ad1c2cd3
+exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
+source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '302'
 ht-degree: 4%
 
 ---
@@ -62,8 +63,12 @@ ht-degree: 4%
 
 在此基础模块中，您将设置Adobe Experience ManagerCloud Service项目、站点和Assets存储库。
 
+[2.2Adobe Workfront](./modules/csc/module2.2/workfront.md)
+
+在此基础模块中，您将设置Adobe Experience ManagerCloud Service项目、站点和Assets存储库。
+
 ### 3.统一的客户体验
 
-[3.1Adobe Real-Time CDP](./modules/uce/module3.1/rtcdp.md)
+[3.1联合受众构成](./modules/uce/module3.1/fac.md)
 
 在此基础模块中，您将了解Adobe Experience Platform数据收集和新的Web SDK扩展。
