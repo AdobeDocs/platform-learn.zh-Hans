@@ -4,9 +4,9 @@ description: 创建Cloud Manager项目
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 183def00c705cdc8b8e48e197c63629e803290a2
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '223'
 ht-degree: 4%
 
 ---
@@ -31,11 +31,13 @@ ht-degree: 4%
 
 ![AEMCS](./images/aemcs3.png)
 
-创建环境将需要一些时间。
+创建环境将需要一些时间，10-20分钟。
 
 ![AEMCS](./images/aemcs4.png)
 
-创建环境并准备使用后，您将收到一封电子邮件确认。
+等待时，您可以开始练习[2.1.2创建基于文档的网站](./ex2.md)。
+
+创建环境并准备使用后，您将收到一封电子邮件确认，之后您可以返回此处。
 
 ![AEMCS](./images/aemcs5.png)
 
@@ -61,7 +63,7 @@ ht-degree: 4%
 
 管道运行完成后，您可以继续下一个练习。
 
-下一步： [2.1.2设置您的AEM CS环境](./ex2.md)
+下一步： [2.1.2创建基于文档的网站](./ex2.md)
 
 [返回模块2.1](./aemcs.md)
 

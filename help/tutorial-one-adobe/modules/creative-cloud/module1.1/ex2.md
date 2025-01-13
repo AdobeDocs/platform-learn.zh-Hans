@@ -4,9 +4,9 @@ description: Firefly服务快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 6c344db00b8296c8ea6d31c83cefd8edcddb51b1
+source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1500'
 ht-degree: 1%
 
 ---
@@ -244,7 +244,9 @@ ht-degree: 1%
 
 ## 1.1.2.5程序化文件使用
 
-若要以编程方式从Azure存储帐户中读取文件，您需要创建一个新的&#x200B;**共享访问签名(SAS)**&#x200B;令牌，该令牌具有允许您读取文件的权限。 从技术上讲，您可以使用在上一个练习中创建的SAS令牌，但最佳实践是单独使用只有&#x200B;**读取**&#x200B;权限的令牌。
+为了长期以编程方式从Azure存储帐户中读取文件，您需要创建一个新的&#x200B;**共享访问签名(SAS)**&#x200B;令牌，该令牌具有允许您读取文件的权限。 从技术上讲，您可以使用在上一个练习中创建的SAS令牌，但最佳实践是让单独的令牌仅具有&#x200B;**读取**&#x200B;权限，而单独的令牌仅具有&#x200B;**写入**&#x200B;权限。
+
+### 长期读取SAS令牌
 
 为此，请返回Azure存储资源管理器。 右键单击容器，然后单击&#x200B;**获取共享访问签名**。
 
@@ -253,17 +255,113 @@ ht-degree: 1%
 在&#x200B;**权限**&#x200B;下，需要以下权限：
 
 - **读取**
-- **添加**
-- **创建**
-- **写入**
 - **列表**
+
+将&#x200B;**过期时间**&#x200B;设置为从现在起的1年。
 
 单击&#x200B;**创建**。
 
-![Azure存储](./images/az28.png)
+![Azure存储](./images/az100.png)
 
+然后，您将获得具有读取权限的长期SAS令牌。 复制URL并将其写入计算机上的文件中。
 
-下一步： [1.1.3 ...](./ex3.md)
+![Azure存储](./images/az101.png)
+
+您的URL将如下所示：
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+您可以从上述URL派生出几个值：
+
+- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`： `vangeluw`
+- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+### 长期写入SAS令牌
+
+为此，请返回Azure存储资源管理器。 右键单击容器，然后单击&#x200B;**获取共享访问签名**。
+
+![Azure存储](./images/az27.png)
+
+在&#x200B;**权限**&#x200B;下，需要以下权限：
+
+- **添加**
+- **创建**
+- **写入**
+
+将&#x200B;**过期时间**&#x200B;设置为从现在起的1年。
+
+单击&#x200B;**创建**。
+
+![Azure存储](./images/az102.png)
+
+然后，您将获得具有读取权限的长期SAS令牌。 复制URL并将其写入计算机上的文件中。
+
+![Azure存储](./images/az103.png)
+
+您的URL将如下所示：
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+您可以再次从上述URL中派生出几个值：
+
+- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`： `vangeluw`
+- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+### Postman中的变量
+
+如上节所示，读取和写入令牌中都有一些常见的变量。
+
+您现在需要在Postman中创建用于存储上述SAS令牌的各种元素的变量。
+这两个URL中的一些值是相同的：
+
+- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`： `vangeluw`
+- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+对于将来进行的API交互，主要的变化是资源名称，而上述变量将保持不变。 在这种情况下，最好在Postman中创建变量，这样您就无需每次都手动指定它们。
+
+为此，请打开Postman。 单击&#x200B;**环境**&#x200B;图标，打开&#x200B;**所有变量**&#x200B;菜单，然后单击&#x200B;**环境**。
+
+![Azure存储](./images/az104.png)
+
+然后您会看到此内容。 在显示的表中创建这4个变量，对于&#x200B;**初始值**&#x200B;和&#x200B;**当前值**&#x200B;列，请输入特定的个人值。
+
+- `AZURE_STORAGE_URL`：您的url
+- `AZURE_STORAGE_CONTAINER`：您的容器名称
+- `AZURE_STORAGE_SAS_READ`：您的SAS读取令牌
+- `AZURE_STORAGE_SAS_WRITE`：您的SAS写入令牌
+
+单击&#x200B;**保存**。
+
+![Azure存储](./images/az105.png)
+
+在前面的练习中，请求&#x200B;**Firefly- T2I (styleref) V3**&#x200B;的&#x200B;**Body**&#x200B;如下所示：
+
+`"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+
+![Azure存储](./images/az24.png)
+
+您现在可以将URL更改为：
+
+`"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+
+单击&#x200B;**发送**&#x200B;以测试您所做的更改。
+
+![Azure存储](./images/az106.png)
+
+如果变量配置正确，您将看到返回的图像URL。
+
+![Azure存储](./images/az107.png)
+
+打开图像URL以验证您的图像。
+
+![Azure存储](./images/az108.png)
+
+下一步：[1.1.3Adobe Firefly和Adobe Photoshop](./ex3.md)
 
 [返回模块1.1](./firefly-services.md)
 
