@@ -3,9 +3,10 @@ title: Firefly服务快速入门
 description: Firefly服务快速入门
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1229a57730076c49adcbc168b5d73f92ad7581c9
+exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
+source-git-commit: a0c16a47372d322a7931578adca30a246b537183
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '703'
 ht-degree: 2%
 
 ---
@@ -191,7 +192,7 @@ ht-degree: 2%
 
 ![WF Fusion](./images/wffusion38.png)
 
-再次单击&#x200B;*运行一次**。
+再次单击&#x200B;**运行一次**。
 
 ![WF Fusion](./images/wffusion39.png)
 
@@ -227,7 +228,7 @@ ht-degree: 2%
 
 ![WF Fusion](./images/wffusion47.png)
 
-下一步： [1.2.2使用Workfront Fusion的Firefly文本到图像](./ex2.md)
+下一步： [1.2.2在Workfront Fusion中使用AdobeAPI](./ex2.md)
 
 [返回模块1.2](./automation.md)
 
