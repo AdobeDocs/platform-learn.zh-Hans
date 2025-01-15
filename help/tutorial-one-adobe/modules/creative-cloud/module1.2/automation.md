@@ -4,9 +4,9 @@ description: Adobe Firefly服务
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: a0c16a47372d322a7931578adca30a246b537183
+source-git-commit: c5d015fee3650d9c5a154f0b1374d27b20d2ea42
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '175'
 ht-degree: 2%
 
 ---
@@ -30,11 +30,11 @@ ht-degree: 2%
 
 [1.2.2在Workfront Fusion中使用AdobeAPI](./ex2.md)
 
-在本练习中，您将配置并使用Workfront Fusion中的Firefly服务API和Photoshop API。
+在本练习中，您将在Workfront Fusion中配置和使用Firefly服务API和Photoshop API，同时探索Workfront Fusion的功能。
 
-[1.2.3 ...](./ex3.md)
+[1.2.3使用Workfront Fusion实现流程自动化](./ex3.md)
 
-在本练习中， ... 。
+在此练习中，您可以继续优化历程以自动化图像创建过程。
 
 [摘要和优点](./summary.md)
 

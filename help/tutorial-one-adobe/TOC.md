@@ -4,9 +4,9 @@ breadcrumb-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 4e8e8cbd58b88de43bb7e662f81572a3a1a2e1e2
+source-git-commit: 7b88a325bcf827f951f400f310dec4fcb394fb42
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '191'
 ht-degree: 5%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 5%
       + [概述](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
       + [1.2.1 Workfront Fusion快速入门](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
       + [1.2.2在Workfront Fusion中使用AdobeAPI](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
-      + [1.2.3 ...](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
+      + [1.2.3使用Workfront Fusion实现流程自动化](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/summary.md)
 
 + 2内容供应链{#csc}
