@@ -1,12 +1,12 @@
 ---
-title: Firefly服务快速入门
-description: Firefly服务快速入门
+title: 使用Workfront Fusion实现流程自动化
+description: 使用Workfront Fusion实现流程自动化
 kt: 5342
 doc-type: tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
@@ -162,10 +162,9 @@ split函数需要分号前有一个值数组，并需要您在分号后指定分
 
 ![WF Fusion](./images/wffusion232.png)
 
-在继续之前，请将Postman请求的名称更改为`POST - Send Request to Workfront Fusion Webhook`。
+最后，将Postman请求的名称更改为`POST - Send Request to Workfront Fusion Webhook`。
 
 ![WF Fusion](./images/wffusion233.png)
-
 
 下一步：[摘要和优点](./summary.md)
 

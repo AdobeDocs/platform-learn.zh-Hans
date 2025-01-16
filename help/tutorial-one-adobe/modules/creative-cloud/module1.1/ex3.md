@@ -1,17 +1,17 @@
 ---
-title: Firefly服务快速入门
-description: Firefly服务快速入门
+title: 使用Photoshop API
+description: 使用Photoshop API
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '992'
+source-wordcount: '1010'
 ht-degree: 0%
 
 ---
 
-# 1.1.3Adobe Firefly和Adobe Photoshop
+# 1.1.3使用Photoshop API
 
 ## 1.1.3.1更新您的Adobe I/O集成
 
@@ -73,6 +73,8 @@ ht-degree: 0%
 
 ![Azure存储](./images/ps9.png)
 
+### 1.1.3.2.1 Photoshop API - Hello World
+
 接下来，让我们向Photoshop API问好，以测试是否正确设置了所有权限和访问权限。 在集合&#x200B;**Photoshop**&#x200B;中，打开名称为&#x200B;**Photoshop Hello（测试身份验证）的请求**&#x200B;的问题。单击&#x200B;**发送**。
 
 ![Azure存储](./images/ps10.png)
@@ -82,6 +84,8 @@ ht-degree: 0%
 ![Azure存储](./images/ps11.png)
 
 接下来，为了以编程方式与PSD文件&#x200B;**citisignal-fibre.psd**&#x200B;交互，您需要将其上传到您的存储帐户。 可以通过使用Azure存储资源管理器将其拖放到容器中来手动执行此操作，但此时您应通过API执行此操作。
+
+### 1.1.3.2.2将PSD上传到Azure
 
 在Postman中，打开请求&#x200B;**将PSD上载到Azure Storage帐户**。 在上一个练习中，您已在Postman中配置这些环境变量，您现在将使用该变量：
 
@@ -109,6 +113,8 @@ ht-degree: 0%
 如果你使用Azure存储资源管理器查看，你将在刷新文件夹后看到文件。
 
 ![Azure存储](./images/ps16.png)
+
+### 1.1.3.2.3 Photoshop API — 获取清单
 
 接下来，您需要获取PSD文件的清单文件。 在Postman中，打开请求&#x200B;**Photoshop — 获取PSD清单**。 转到&#x200B;**正文**。
 
@@ -155,6 +161,8 @@ ht-degree: 0%
 例如，搜索文本`2048x2048-cta`。 您应该会看到此内容。
 
 ![Azure存储](./images/ps21.png)
+
+### 1.1.3.2.4 Photoshop API — 更改文本
 
 接下来，您现在需要使用API更改行动号召的文本。 在Postman中，打开请求&#x200B;**Photoshop — 更改文本**，然后转到&#x200B;**正文**。
 

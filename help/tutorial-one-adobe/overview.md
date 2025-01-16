@@ -2,10 +2,9 @@
 title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
-exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: 3461f494c12ee020dbea9ec3c474fe68da7357cf
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '483'
 ht-degree: 4%
 
 ---
@@ -19,8 +18,9 @@ ht-degree: 4%
 本教程的内容非常多样，提供了对以下应用程序的清晰洞察：
 
 - Adobe Firefly服务
+- Adobe Photoshop
 - Adobe Workfront和Adobe Workfront Fusion
-- Adobe Experience ManagerCloud Service、站点和Assets
+- Adobe Experience ManagerCloud Service、站点、Assets和Edge Delivery Services
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
@@ -35,22 +35,27 @@ ht-degree: 4%
 - Snowflake
 - ...
 
-完成本教程中的练习后，您将能够：
-
-- ...
-
 ## 先决条件
 
 如果您希望使用自己的Adobe Experience Cloud实例来参加本教程，则需要在您的实例中配置以下应用程序，并且您需要能够访问：
 
 - Adobe Firefly[https://firefly.adobe.com/](https://firefly.adobe.com/)
-- Adobe Express[https://new.express.adobe.com/](https://new.express.adobe.com/)
+- Adobe Photoshop
+- Adobe Workfront
 - Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/)
 - Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- 访问Adobe Experience Platform数据收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Adobe Experience Platform数据收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - 访问演示系统： [https://dsn.adobe.com/](https://dsn.adobe.com/)
 
 ## 内容
+
+要检查以下内容的状态，请转到[状态页面](./status.md)。
+
+### 入门指南
+
+[入门指南](./modules/getting-started/gettingstarted/getting-started.md)
+
+在此基础模块中，您将设置所有内容，以便能够访问和使用演示环境。
 
 ### 1.Adobe Creative Cloud
 
@@ -64,16 +69,28 @@ ht-degree: 4%
 
 ### 2.内容供应链
 
-[2.1 Adobe Experience ManagerCloud Service](./modules/csc/module2.1/aemcs.md)
+[2.1 Adobe Experience ManagerCloud Service和Edge Delivery Services](./modules/csc/module2.1/aemcs.md)
 
 在此基础模块中，您将设置Adobe Experience ManagerCloud Service项目、站点和Assets存储库。
 
-[2.2Adobe Workfront](./modules/csc/module2.2/workfront.md)
+[2.2使用Adobe Workfront进行工作流管理](./modules/csc/module2.2/workfront.md)
 
-在此基础模块中，您将设置Adobe Experience ManagerCloud Service项目、站点和Assets存储库。
+在本基本模块中，您将配置和使用Adobe Workfront来管理审批流程，并将使用与Adobe Experience Manager Assets、通用编辑器、Photoshop等的集成。
 
 ### 3.统一的客户体验
 
 [3.1联合受众构成](./modules/uce/module3.1/fac.md)
 
 在此基础模块中，您将了解Adobe Experience Platform数据收集和新的Web SDK扩展。
+
+[3.2 Adobe Journey Optimizer：翻译服务](./modules/uce/module3.2/ajotranslationsvcs.md)
+
+在本模块中，您将使用Adobe Journey Optimizer来设置和使用翻译服务。
+
+[3.3 Adobe Journey Optimizer：Offer decisioning](./modules/uce/module3.3/offer-decisioning.md)
+
+在本模块中，您将通过实践方式将Adobe Journey Optimizer与offer decisioning服务结合使用，以配置个性化优惠和您自己的决策。
+
+>[!NOTE]
+>
+>感谢您花时间学习Adobe Experience Platform及其应用程序的所有知识。 如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。

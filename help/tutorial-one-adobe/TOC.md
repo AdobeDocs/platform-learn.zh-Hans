@@ -4,10 +4,10 @@ breadcrumb-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 0c89770961c1f0c46685233b5446223c9ff2bc13
+source-git-commit: ad36efe6c3a590ddc79c39f6d7511e31b51f9dcb
 workflow-type: tm+mt
-source-wordcount: '193'
-ht-degree: 5%
+source-wordcount: '305'
+ht-degree: 4%
 
 ---
 
@@ -15,9 +15,17 @@ ht-degree: 5%
 # 全面的技术教程 — 一个Adobe {#tutorial-one-adobe}
 
 + [教程概述](/help/tutorial-one-adobe/overview.md)
++ [内容状态](/help/tutorial-one-adobe/status.md)
 
 + 快速入门{#gettingstarted}
-   + [快速入门](/help/tutorial-one-adobe/modules/getting-started/getting-started.md)
+   + 快速入门{#gettingstarted}
+      + [概述](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
+      + [安装适用于Experience League文档的Chrome扩展](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
+      + [使用Demo System Next设置您的Adobe Experience Platform数据收集客户端资产](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
+      + [创建数据流](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
+      + [使用网站](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
+      + [使用移动应用程序](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+
 + 1 Adobe Creative Cloud {#creativecloud}
    + 1.1Adobe Firefly服务{#module11}
       + [概述](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
@@ -53,4 +61,17 @@ ht-degree: 5%
       + [3.1.2创建架构、数据模型和链接](/help/tutorial-one-adobe/modules/uce/module3.1/ex2.md)
       + [3.1.3创建联合组合](/help/tutorial-one-adobe/modules/uce/module3.1/ex3.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
+   + 3.2 Adobe Journey Optimizer：翻译服务{#module32}
+      + [概述](/help/tutorial-one-adobe/modules/uce/module3.2/ajotranslationsvcs.md)
+      + [3.2.1 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [摘要和优点](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
+   + 3.3 Adobe Journey Optimizer：Offer decisioning{#module33}
+      + [概述](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)
+      + [3.3.1Offer decisioning101](/help/tutorial-one-adobe/modules/uce/module3.3/ex1.md)
+      + [3.3.2配置优惠和决策](/help/tutorial-one-adobe/modules/uce/module3.3/ex2.md)
+      + [3.3.3准备您的Adobe Experience Platform数据收集客户端资产和Web SDK设置以进行Offer decisioning](/help/tutorial-one-adobe/modules/uce/module3.3/ex3.md)
+      + [3.3.4将Adobe Target与Offer Decisioning结合使用](/help/tutorial-one-adobe/modules/uce/module3.3/ex4.md)
+      + [3.3.5在电子邮件中使用您的决定](/help/tutorial-one-adobe/modules/uce/module3.3/ex5.md)
+      + [3.3.6使用API测试您的决策](/help/tutorial-one-adobe/modules/uce/module3.3/ex6.md)
+      + [摘要和优点](/help/tutorial-one-adobe/modules/uce/module3.3/summary.md)
 

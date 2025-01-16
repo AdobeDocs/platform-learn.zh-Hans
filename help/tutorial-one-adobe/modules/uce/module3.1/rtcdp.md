@@ -1,37 +1,29 @@
 ---
-title: 3.1Adobe Real-Time CDP
-description: Adobe Real-Time CDP
+title: 基础 — 常见问题解答 — 摘要
+description: 基础 — 常见问题解答 — 摘要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 1077ada5423cde76d1dd337e8a4f8f83324a8853
+exl-id: cab61d74-9e16-4eda-b704-e103ab5350e2
+source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 4%
+source-wordcount: '53'
+ht-degree: 1%
 
 ---
 
-# 3.1Adobe Real-Time CDP
+# 摘要和优点
 
-## 学习目标
+恭喜并感谢您投入时间学习Adobe Experience Platform！
 
-- 了解如何以各种方式使用Adobe Real-Time CDP。
+## 优点
 
-## 先决条件
+让我们重点介绍Adobe Experience Platform中联合受众组合的数据摄取功能的好处：
 
-- 对Adobe Real-Time CDP的访问权限
 
-## 练习
 
-[3.1.1Real-Time CDP](./ex1.md)
+## 看看这个
 
-在本练习中， ...
 
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
-
->[!NOTE]
->
->感谢您花时间学习Adobe Experience Platform及其应用程序的所有知识。 如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
+[返回模块3.1](./fac.md)
 
 [返回所有模块](../../../overview.md)
