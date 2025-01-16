@@ -3,9 +3,9 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: d26d4735c92498d56beb7859ec67a0c3e174fc25
+source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
 workflow-type: tm+mt
-source-wordcount: '302'
+source-wordcount: '342'
 ht-degree: 4%
 
 ---
@@ -32,6 +32,7 @@ ht-degree: 4%
 - Google Cloud Platform
 - Microsoft Azure
 - Postman
+- Snowflake
 - ...
 
 完成本教程中的练习后，您将能够：
@@ -55,7 +56,11 @@ ht-degree: 4%
 
 [1.1Adobe Firefly服务](./modules/creative-cloud/module1.1/firefly-services.md)
 
-在此基础模块中，您将使用Adobe Firefly来……
+在本模块中，您将使用Adobe Firefly服务API、Photoshop API和Microsoft Azure Storage Services来生成图像并以编程方式存储图像。
+
+[1.2使用Workfront Fusion实现创作工作流自动化](./modules/creative-cloud/module1.2/automation.md)
+
+在此基础模块中，您将使用Adobe Workfront Fusion来自动化和扩展内容创建工作流。
 
 ### 2.内容供应链
 

@@ -4,7 +4,7 @@ description: Adobe Firefly服务
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 2%
@@ -27,7 +27,7 @@ ht-degree: 2%
 
 在本练习中，您可以探索Firefly服务并了解其功能。
 
-[1.1.2使用Microsoft Azure和预签名URL优化您的Firefly过程](./ex2.md)
+[1.1.2使用Microsoft Azure和预签名URL优化您的Firefly流程](./ex2.md)
 
 在本练习中，您可以探索Firefly服务并了解其功能。
 

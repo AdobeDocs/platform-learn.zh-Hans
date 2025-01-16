@@ -4,9 +4,9 @@ breadcrumb-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7b88a325bcf827f951f400f310dec4fcb394fb42
+source-git-commit: 0c89770961c1f0c46685233b5446223c9ff2bc13
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '193'
 ht-degree: 5%
 
 ---
@@ -22,10 +22,10 @@ ht-degree: 5%
    + 1.1Adobe Firefly服务{#module11}
       + [概述](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1Firefly服务快速入门](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
-      + [1.1.2使用Microsoft Azure和预签名URL优化您的Firefly过程](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
+      + [1.1.2使用Microsoft Azure和预签名URL优化您的Firefly流程](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3Adobe Firefly和Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
-   + 1.2自动化Adobe Firefly服务{#module21}
+   + 1.2使用Workfront Fusion实现创作工作流自动化{#module21}
       + [概述](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
       + [1.2.1 Workfront Fusion快速入门](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
       + [1.2.2在Workfront Fusion中使用AdobeAPI](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
