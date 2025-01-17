@@ -4,7 +4,7 @@ description: 使用Adobe Workfront进行工作流管理
 kt: 5342
 doc-type: tutorial
 exl-id: 96685851-b446-4bae-890e-4f96a59cedba
-source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '112'
 ht-degree: 3%
@@ -37,7 +37,8 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
 
 [返回所有模块](../../../overview.md){target="_blank"}

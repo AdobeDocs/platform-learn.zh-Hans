@@ -4,7 +4,7 @@ description: Adobe Firefly服务
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
+source-git-commit: 18fee60ed4c92af84b6866e1b2cce6eb496b912e
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 2%
@@ -45,7 +45,8 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
 
 [返回所有模块](../../../overview.md){target="_blank"}

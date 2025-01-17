@@ -6,7 +6,7 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: d52ec3c8-8628-4a52-9107-471342118a53
-source-git-commit: 432ccc96f4bc80085e7bd9cd51c3878d9090dc9d
+source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 2%
@@ -66,7 +66,8 @@ Adobe Journey Optimizer允许创建个性化优惠，并以协调的方式将其
 
 >[!NOTE]
 >
->![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+>
 >如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
 
 [返回所有模块](../../../overview.md)
