@@ -4,9 +4,9 @@ description: Adobe Firefly服务
 kt: 5342
 doc-type: tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '154'
 ht-degree: 2%
 
 ---
@@ -19,32 +19,33 @@ ht-degree: 2%
 
 ## 先决条件
 
-- 访问Adobe Firefly[https://firefly.adobe.com/](https://firefly.adobe.com/)
+- 访问Adobe Firefly[https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
 
 ## 练习
 
-[1.1.1Firefly服务快速入门](./ex1.md)
+[1.1.1Firefly服务入门](./ex1.md){target="_blank"}
 
 在本练习中，您可以探索Firefly服务并了解其功能。
 
-[1.1.2使用Microsoft Azure和预签名URL优化您的Firefly流程](./ex2.md)
+[1.1.2使用Microsoft Azure和预签名URL优化您的Firefly流程](./ex2.md){target="_blank"}
 
 在本练习中，您可以探索Firefly服务并了解其功能。
 
-[1.1.3Adobe Firefly和Adobe Photoshop](./ex3.md)
+[1.1.3Adobe Firefly和Adobe Photoshop](./ex3.md){target="_blank"}
 
 在本练习中，您将将Firefly服务与Adobe Photoshop结合使用。
 
-[1.1.4Firefly自定义模型](./ex4.md)
+[1.1.4Firefly自定义模型](./ex4.md){target="_blank"}
 
 在本练习中，您将将Firefly服务与Adobe Photoshop结合使用。
 
-[摘要和优点](./summary.md)
+[摘要和优点](./summary.md){target="_blank"}
 
 本模块的摘要和优势概述。
 
 >[!NOTE]
 >
->感谢您花时间学习Adobe Experience Platform及其应用程序的所有知识。 如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
+>![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
 
-[返回所有模块](../../../overview.md)
+[返回所有模块](../../../overview.md){target="_blank"}

@@ -4,7 +4,7 @@ description: 创建Cloud Manager项目
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 2.1.3.1设置您的GitHub存储库
 
-转到[https://github.com](https://github.com)。 单击&#x200B;**登录**。
+转到[https://github.com](https://github.com){target="_blank"}。 单击&#x200B;**登录**。
 
 ![AEMCS](./images/aemcssetup1.png)
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup3.png)
 
-转到[https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one)。 你会看到这个。 单击&#x200B;**使用此模板**，然后单击&#x200B;**新建存储库**。
+转到[https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one){target="_blank"}。 你会看到这个。 单击&#x200B;**使用此模板**，然后单击&#x200B;**新建存储库**。
 
 ![AEMCS](./images/aemcssetup4.png)
 
@@ -39,7 +39,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup6.png)
 
-接下来，转到[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync)。 单击&#x200B;**配置**。
+接下来，转到[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}。 单击&#x200B;**配置**。
 
 ![AEMCS](./images/aemcssetup7.png)
 
@@ -83,7 +83,7 @@ XXX应替换为您的AEM CS创作环境的URL。
 
 ZZZ应该被替换为您在上一个练习中使用的GitHub存储库的名称。
 
-您可以通过转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)来查找AEM CS创作环境的URL。 单击您的&#x200B;**程序**&#x200B;以将其打开。
+您可以通过转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}来查找AEM CS创作环境的URL。 单击您的&#x200B;**程序**&#x200B;以将其打开。
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -125,7 +125,7 @@ ZZZ = `citisignal`
 
 ## 2.1.3.3上传CitiSignal资产
 
-转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)。 单击您的&#x200B;**程序**&#x200B;以将其打开。
+转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 单击您的&#x200B;**程序**&#x200B;以将其打开。
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -155,7 +155,7 @@ ZZZ = `citisignal`
 
 单击&#x200B;**浏览**&#x200B;以查找要上载的包。
 
-要上传的包名为&#x200B;**citisignal-assets.zip**，可从此处下载： [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip)。
+要上传的包名为&#x200B;**citisignal-assets.zip**，可从此处下载： [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}。
 
 ![AEMCS](./images/aemcssetup23.png)
 
@@ -188,7 +188,7 @@ ZZZ = `citisignal`
 
 ## 2.1.3.4Publish花旗信号资产
 
-转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)。 单击您的&#x200B;**程序**&#x200B;以将其打开。
+转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 单击您的&#x200B;**程序**&#x200B;以将其打开。
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -224,7 +224,7 @@ ZZZ = `citisignal`
 
 ## 2.1.3.5创建CitiSignal网站
 
-转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)。 单击您的&#x200B;**程序**&#x200B;以将其打开。
+转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 单击您的&#x200B;**程序**&#x200B;以将其打开。
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -248,7 +248,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup32.png)
 
-您现在需要为站点导入预配置的模板。 您可以在[此处](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip)下载模板。 将文件保存到桌面。
+您现在需要为站点导入预配置的模板。 您可以在[此处](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip){target="_blank"}下载模板。 将文件保存到桌面。
 
 接下来，选择文件`citisignal-edge-delivery-services-template-0.0.4.zip`并单击&#x200B;**打开**。
 
@@ -325,7 +325,7 @@ ZZZ = `citisignal`
 
 ## 2.1.3.7测试页面性能
 
-转到[https://pagespeed.web.dev/](https://pagespeed.web.dev/)。 输入URL并单击&#x200B;**分析**。
+转到[https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}。 输入URL并单击&#x200B;**分析**。
 
 ![AEMCS](./images/aemcssetup48.png)
 
@@ -339,8 +339,8 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup50.png)
 
-下一步： [2.1.4配置自定义块](./ex4.md)
+下一步： [2.1.4配置自定义块](./ex4.md){target="_blank"}
 
-[返回模块2.1](./aemcs.md)
+[返回模块2.1](./aemcs.md){target="_blank"}
 
-[返回所有模块](./../../../overview.md)
+[返回所有模块](./../../../overview.md){target="_blank"}

@@ -3,7 +3,8 @@ title: 创建Cloud Manager项目
 description: 创建Cloud Manager项目
 kt: 5342
 doc-type: tutorial
-source-git-commit: 608fb56797336fe17f99c1c2bf940de01612a45c
+exl-id: 75abb23f-c19f-4b8a-97dd-58a015949c1e
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 1%
@@ -80,6 +81,6 @@ ht-degree: 1%
 
 ![WF](./images/wf16.png)
 
-[返回模块2.2](./workfront.md)
+[返回模块2.2](./workfront.md){target="_blank"}
 
-[返回所有模块](./../../../overview.md)
+[返回所有模块](./../../../overview.md){target="_blank"}

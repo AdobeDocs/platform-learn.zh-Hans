@@ -4,7 +4,7 @@ description: 使用Photoshop API
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 1.1.3.1更新您的Adobe I/O集成
 
-转到[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)。
+转到[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}。
 
 ![Adobe I/O新集成](./images/iohome.png)
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 ## 1.1.3.2以编程方式与PSD文件交互
 
-将文件下载到[citisignal-fibre.psd](./../../../assets/ff/citisignal-fiber.psd)到您的桌面。
+将文件下载到[citisignal-fibre.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}到您的桌面。
 
 在Photoshop中打开文件&#x200B;**citisignal-fibre.psd**。 然后您应该拥有此项。
 
@@ -229,8 +229,8 @@ ht-degree: 0%
 
 您现在已经完成了此练习。
 
-下一步：[1.1.4Firefly自定义模型](./ex4.md)
+下一步：[1.1.4Firefly自定义模型](./ex4.md){target="_blank"}
 
-[返回模块1.1](./firefly-services.md)
+[返回模块1.1](./firefly-services.md){target="_blank"}
 
-[返回所有模块](./../../../overview.md)
+[返回所有模块](./../../../overview.md){target="_blank"}

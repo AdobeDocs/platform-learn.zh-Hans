@@ -4,7 +4,7 @@ description: 使用Microsoft Azure和预签名URL优化您的Firefly过程
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '1527'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 >
 >如果您已有现有的Azure订阅，则可以跳过此步骤。 请继续该案例中的下一个练习。
 
-转到[https://portal.azure.com](https://portal.azure.com)并使用您的Azure帐户登录。 如果您没有个人电子邮件地址，请使用个人电子邮件地址创建您的Azure帐户。
+转到[https://portal.azure.com](https://portal.azure.com){target="_blank"}并使用您的Azure帐户登录。 如果您没有个人电子邮件地址，请使用个人电子邮件地址创建您的Azure帐户。
 
 ![Azure存储](./images/02azureportalemail.png)
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 ## 1.1.2.3安装Azure存储资源管理器
 
-您将使用Microsoft Azure Storage Explorer来管理文件。 您可以通过[此链接](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4)下载它。 为您的特定操作系统选择正确的版本，下载并安装它。
+您将使用Microsoft Azure Storage Explorer来管理文件。 您可以通过[此链接](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}下载它。 为您的特定操作系统选择正确的版本，下载并安装它。
 
 ![Azure存储](./images/az10.png)
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 ## 1.1.2.4手动文件上传和使用图像文件作为样式参考
 
-现在，您应该将选择的图像文件上传到容器中。 您可以使用所选的任何图像文件，也可以通过计算机下载[此文件](./images/gradient.jpg)来使用。
+现在，您应该将选择的图像文件上传到容器中。 您可以使用所选的任何图像文件，也可以通过计算机下载[此文件](./images/gradient.jpg){target="_blank"}来使用。
 
 ![Azure存储](./images/gradient.jpg)
 
@@ -199,7 +199,7 @@ ht-degree: 1%
 
 ![Azure存储](./images/az31.png)
 
-现在，您需要从本地计算机中选择一个文件。 您可以使用选择的新图像文件，也可以使用可在[此处](./images/gradient2-p.jpg)找到的其他图像文件。
+现在，您需要从本地计算机中选择一个文件。 您可以使用选择的新图像文件，也可以使用可在[此处](./images/gradient2-p.jpg){target="_blank"}找到的其他图像文件。
 
 ![渐变文件](./images/gradient2-p.jpg)
 
@@ -365,8 +365,8 @@ ht-degree: 1%
 
 ![Azure存储](./images/az108.jpg)
 
-下一步：[1.1.3Adobe Firefly和Adobe Photoshop](./ex3.md)
+下一步：[1.1.3Adobe Firefly和Adobe Photoshop](./ex3.md){target="_blank"}
 
-[返回模块1.1](./firefly-services.md)
+[返回模块1.1](./firefly-services.md){target="_blank"}
 
-[返回所有模块](./../../../overview.md)
+[返回所有模块](./../../../overview.md){target="_blank"}

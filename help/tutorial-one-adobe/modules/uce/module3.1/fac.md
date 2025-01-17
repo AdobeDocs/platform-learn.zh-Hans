@@ -3,9 +3,10 @@ title: 数据收集 — 联合受众构成
 description: 数据收集 — 联合受众构成
 kt: 5342
 doc-type: tutorial
-source-git-commit: dc86e52b659d7b428aca03fdb041e7410901e1fd
+exl-id: cc2ac85e-e902-4bb7-ab54-aa39980f97aa
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -53,6 +54,7 @@ Experience Platform中的联合受众构成(FAC)允许您通过企业数据仓�
 
 >[!NOTE]
 >
->感谢您花时间学习Adobe Experience Platform及其应用程序的所有知识。 如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
+>![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
 
 [返回所有模块](../../../overview.md)

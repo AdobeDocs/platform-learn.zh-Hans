@@ -3,7 +3,7 @@ title: 使用Photoshop API
 description: 使用Photoshop API
 kt: 5342
 doc-type: tutorial
-source-git-commit: b7ee794e9611afc7bee35a0f471ec50caad10f85
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '124'
 ht-degree: 3%
@@ -12,7 +12,7 @@ ht-degree: 3%
 
 # 1.1.4Firefly自定义模型
 
-转到[https://firefly.adobe.com](https://firefly.adobe.com)。 转到&#x200B;**自定义模型**。
+转到[https://firefly.adobe.com](https://firefly.adobe.com){target="_blank"}。 转到&#x200B;**自定义模型**。
 
 ![Firefly](./images/ffcm1.png)
 
@@ -54,8 +54,8 @@ ht-degree: 3%
 
 您现在已经完成了此练习。
 
-下一步：[摘要和优点](./summary.md)
+下一步：[摘要和优点](./summary.md){target="_blank"}
 
-[返回模块1.1](./firefly-services.md)
+[返回模块1.1](./firefly-services.md){target="_blank"}
 
-[返回所有模块](./../../../overview.md)
+[返回所有模块](./../../../overview.md){target="_blank"}

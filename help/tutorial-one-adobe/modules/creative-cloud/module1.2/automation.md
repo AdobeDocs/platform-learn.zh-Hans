@@ -4,9 +4,9 @@ description: 使用Workfront Fusion实现创意工作流程自动化
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 0fe4bbf6bcc80d4fa88bc30718a1de6621f93f17
+source-git-commit: 760271a0f1bedef7db079748776da36feef230cd
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '164'
 ht-degree: 2%
 
 ---
@@ -42,6 +42,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->感谢您花时间学习Adobe Experience Platform及其应用程序的所有知识。 如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
+>![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="center"}
+>如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
 
 [返回所有模块](../../../overview.md)

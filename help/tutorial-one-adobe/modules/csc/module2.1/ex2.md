@@ -4,7 +4,7 @@ description: 创建Cloud Manager项目
 kt: 5342
 doc-type: tutorial
 exl-id: db366111-3873-4504-95f1-b240836c833f
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 1%
@@ -13,11 +13,11 @@ ht-degree: 1%
 
 # 2.1.2创建基于文档的网站
 
-在等待创建Cloud Manager项目的过程中，您有足够的时间来设置您的第一个基于文档的创作网站。 以下练习基于[aem.live开发人员教程](https://www.aem.live/developer/tutorial)。 请按照以下步骤开始。
+在等待创建Cloud Manager项目的过程中，您有足够的时间来设置您的第一个基于文档的创作网站。 以下练习基于[aem.live开发人员教程](https://www.aem.live/developer/tutorial){target="_blank"}。 请按照以下步骤开始。
 
 ## 2.1.2.1设置Google驱动器
 
-转到[https://drive.google.com](https://drive.google.com)。 单击&#x200B;**+新建**，然后单击&#x200B;**新建文件夹**。
+转到[https://drive.google.com](https://drive.google.com){target="_blank"}。 单击&#x200B;**+新建**，然后单击&#x200B;**新建文件夹**。
 
 ![AEMCS](./images/googledrive1.png)
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/googledrive2.png)
 
-下载文件[aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip)并在计算机上解压缩。
+下载文件[aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip){target="_blank"}并在计算机上解压缩。
 
 ![AEMCS](./images/googledrive3.png)
 
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 ## 2.1.2.2设置您的GitHub存储库
 
-转到[https://github.com](https://github.com)。 单击&#x200B;**登录**。
+转到[https://github.com](https://github.com){target="_blank"}。 单击&#x200B;**登录**。
 
 ![AEMCS](./images/aemcssetup1.png)
 
@@ -77,7 +77,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemcssetup3.png)
 
-转到[https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate)。 你会看到这个。 单击&#x200B;**使用此模板**，然后单击&#x200B;**新建存储库**。
+转到[https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate){target="_blank"}。 你会看到这个。 单击&#x200B;**使用此模板**，然后单击&#x200B;**新建存储库**。
 
 ![AEMCS](./images/aemdocbcssetup4.png)
 
@@ -89,7 +89,7 @@ ht-degree: 1%
 
 ![AEMCS](./images/aemdocbcssetup6.png)
 
-接下来，转到[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync)。 单击&#x200B;**配置**。
+接下来，转到[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}。 单击&#x200B;**配置**。
 
 ![AEMCS](./images/aemcssetup7.png)
 
@@ -133,7 +133,7 @@ ht-degree: 1%
 
 ## 2.1.2.4安装AEM Sidekick扩展
 
-转到[https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo)。 单击&#x200B;**添加到Chrome**。
+转到[https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo){target="_blank"}。 单击&#x200B;**添加到Chrome**。
 
 ![AEMCS](./images/aemdocbcssetup16.png)
 
@@ -205,8 +205,8 @@ ht-degree: 1%
 
 以上练习是您自己开始并体验基于文档的创作的有效方法。 您现在可以继续下一个练习，在那里您将使用CitiSignal作为演示品牌来设置自己的演示网站。
 
-下一步： [2.1.3设置您的AEM CS环境](./ex3.md)
+下一步： [2.1.3设置您的AEM CS环境](./ex3.md){target="_blank"}
 
-[返回模块2.1](./aemcs.md)
+[返回模块2.1](./aemcs.md){target="_blank"}
 
-[返回所有模块](./../../../overview.md)
+[返回所有模块](./../../../overview.md){target="_blank"}

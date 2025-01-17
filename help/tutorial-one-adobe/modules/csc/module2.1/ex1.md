@@ -4,7 +4,7 @@ description: 创建Cloud Manager项目
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 6d627312073bb2cecd724226f1730aed7133700c
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 4%
@@ -13,7 +13,7 @@ ht-degree: 4%
 
 # 2.1.1创建您的Cloud Manager项目
 
-转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)。 您应选择的组织是`--aepImsOrgName--`。 然后你将看到类似这样的内容。 单击&#x200B;**添加程序**。
+转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 您应选择的组织是`--aepImsOrgName--`。 然后你将看到类似这样的内容。 单击&#x200B;**添加程序**。
 
 ![AEMCS](./images/aemcs1.png)
 
@@ -35,13 +35,13 @@ ht-degree: 4%
 
 ![AEMCS](./images/aemcs4.png)
 
-等待时，您可以开始练习[2.1.2创建基于文档的网站](./ex2.md)。
+等待时，您可以开始练习[2.1.2创建基于文档的网站](./ex2.md){target="_blank"}。
 
 创建环境并准备使用后，您将收到一封电子邮件确认，之后您可以返回此处。
 
 ![AEMCS](./images/aemcs5.png)
 
-收到电子邮件确认后，请返回[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com)。 然后，您会看到项目的状态已更改为&#x200B;**就绪**。 单击您的项目以将其打开。
+收到电子邮件确认后，请返回[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 然后，您会看到项目的状态已更改为&#x200B;**就绪**。 单击您的项目以将其打开。
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -63,8 +63,8 @@ ht-degree: 4%
 
 管道运行完成后，您可以继续下一个练习。
 
-下一步： [2.1.2创建基于文档的网站](./ex2.md)
+下一步： [2.1.2创建基于文档的网站](./ex2.md){target="_blank"}
 
-[返回模块2.1](./aemcs.md)
+[返回模块2.1](./aemcs.md){target="_blank"}
 
-[返回所有模块](./../../../overview.md)
+[返回所有模块](./../../../overview.md){target="_blank"}

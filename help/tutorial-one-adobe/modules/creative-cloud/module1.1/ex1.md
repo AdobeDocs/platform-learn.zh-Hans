@@ -4,7 +4,7 @@ description: Firefly服务快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
+source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
 workflow-type: tm+mt
 source-wordcount: '938'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 在本练习中，您将集中使用Adobe I/O来根据Firefly服务API进行查询。 请按照以下步骤设置Adobe I/O。
 
-转到[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)
+转到[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}
 
 ![Adobe I/O新集成](./images/iohome.png)
 
@@ -79,7 +79,7 @@ Adobe I/O集成的设置现已完成。
 
 ## 对Adobe I/O进行Postman身份验证
 
-转到[https://www.postman.com/downloads/](https://www.postman.com/downloads/)。
+转到[https://www.postman.com/downloads/](https://www.postman.com/downloads/){target="_blank"}。
 
 下载并安装适用于您的操作系统的Postman的相关版本。
 
@@ -178,8 +178,8 @@ Adobe I/O为您提供了&#x200B;**持有者** — 令牌，该令牌具有特定
 
 在继续下一个练习之前，请随时尝试使用API请求。
 
-下一步： [1.1.2使用Microsoft Azure和预签名URL优化Firefly过程](./ex2.md)
+下一步： [1.1.2使用Microsoft Azure和预签名URL优化Firefly过程](./ex2.md){target="_blank"}
 
-[返回模块1.1](./firefly-services.md)
+[返回模块1.1](./firefly-services.md){target="_blank"}
 
-[返回所有模块](./../../../overview.md)
+[返回所有模块](./../../../overview.md){target="_blank"}
