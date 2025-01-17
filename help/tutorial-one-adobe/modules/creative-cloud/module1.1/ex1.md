@@ -4,9 +4,9 @@ description: Firefly服务快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: ea06ca2d05195efa57643d45d7e50d3d914081d3
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -130,13 +130,15 @@ Adobe I/O集成的设置现已完成。
 
 在执行任何请求之前，请确保选择了正确的环境。 您可以通过验证右上角的环境下拉列表来检查当前选定的环境。
 
+![Postman](./images/envselemea1.png)
+
 所选环境的名称应与此名称类似，`--aepUserLdap-- Firefly Services OAuth Credential`。
 
 ![Postman](./images/envselemea.png)
 
 您的Postman环境和收藏集现已配置完毕，可正常使用。 您现在可以从Postman向Adobe I/O进行身份验证。
 
-在&#x200B;**AdobeIO - OAuth**&#x200B;集合中，选择名为&#x200B;**POST — 获取访问令牌**&#x200B;的请求。 您将在&#x200B;**参数**&#x200B;下引用2个变量： `API_KEY`和`CLIENT_SECRET`。 这些变量取自选定的环境`--aepUserLdap-- Firefly Services OAuth Credential`。
+在&#x200B;**AdobeIO - OAuth**&#x200B;集合中，选择名为&#x200B;**POST — 获取访问令牌**&#x200B;的请求。 然后，您会看到在&#x200B;**Params**&#x200B;下，有2个变量被引用，`API_KEY`和`CLIENT_SECRET`。 这些变量取自选定的环境`--aepUserLdap-- Firefly Services OAuth Credential`。
 
 单击&#x200B;**发送**。
 

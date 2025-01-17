@@ -4,9 +4,9 @@ description: 使用Photoshop API
 kt: 5342
 doc-type: tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '1010'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -229,7 +229,7 @@ ht-degree: 0%
 
 您现在已经完成了此练习。
 
-下一步：[摘要和优点](./summary.md)
+下一步：[1.1.4Firefly自定义模型](./ex4.md)
 
 [返回模块1.1](./firefly-services.md)
 

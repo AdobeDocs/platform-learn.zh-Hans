@@ -4,9 +4,9 @@ description: 使用Microsoft Azure和预签名URL优化您的Firefly过程
 kt: 5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1527'
 ht-degree: 1%
 
 ---
@@ -108,6 +108,10 @@ ht-degree: 1%
 ![Azure存储](./images/az15.png)
 
 切换回Microsoft Azure Storage Explorer应用程序。 选择您的订阅，然后单击&#x200B;**打开资源管理器**。
+
+>[!NOTE]
+>
+>如果未显示您的帐户，请单击电子邮件地址旁边的&#x200B;**齿轮**&#x200B;图标，然后选择&#x200B;**取消筛选**。
 
 ![Azure存储](./images/az16.png)
 

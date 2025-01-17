@@ -4,10 +4,10 @@ description: Workfront Fusion快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '703'
-ht-degree: 2%
+source-wordcount: '727'
+ht-degree: 3%
 
 ---
 
@@ -25,7 +25,15 @@ ht-degree: 2%
 
 ![WF Fusion](./images/wffusion2.png)
 
-单击&#x200B;**创建新方案**。
+单击&#x200B;**+**&#x200B;图标以创建新文件夹。
+
+![WF Fusion](./images/wffusion2a.png)
+
+对于文件夹名称，使用： `--aepUserLdap--`。 单击&#x200B;**保存**。
+
+![WF Fusion](./images/wffusion2b.png)
+
+选择您的文件夹，然后单击&#x200B;**创建新方案**。
 
 ![WF Fusion](./images/wffusion3.png)
 

@@ -4,9 +4,9 @@ description: 使用Workfront Fusion实现流程自动化
 kt: 5342
 doc-type: tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: a4933bd49988cd16c4382ad4327d01ae58b52bbb
+source-git-commit: f1f70a0e4ea3f59b5b121275e7db633caf953df9
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '989'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ split函数需要分号前有一个值数组，并需要您在分号后指定分
 
 ![WF Fusion](./images/wffusion209.png)
 
-您还需要更新用于在Azure存储帐户中写入文件的文件名。 如果文件名是静态的，则每个新小版本都将只覆盖上一个文件，因此您将丢失自定义的文件。 当前的静态文件名为&#x200B;**sevoi-psd-changed-text.psd**，现在您需要对其进行更新。 将光标置于单词`text`之后。
+您还需要更新用于在Azure存储帐户中写入文件的文件名。 如果文件名是静态的，则每个新小版本都将只覆盖上一个文件，因此您将丢失自定义的文件。 当前的静态文件名为&#x200B;**citisignal-fiber-changed-text.psd**，现在您需要对其进行更新。 将光标置于单词`text`之后。
 
 ![WF Fusion](./images/wffusion210.png)
 
@@ -77,11 +77,11 @@ split函数需要分号前有一个值数组，并需要您在分号后指定分
 
 ![WF Fusion](./images/wffusion213.png)
 
-下载并打开每个文件。 然后，您应该会在按钮上看到各种文本。 这是文件`sevoi-psd-changed-text-1.psd`。
+下载并打开每个文件。 然后，您应该会在按钮上看到各种文本。 这是文件`citisignal-fiber-changed-text-1.psd`。
 
 ![WF Fusion](./images/wffusion214.png)
 
-这是文件`sevoi-psd-changed-text-2.psd`。
+这是文件`citisignal-fiber-changed-text-2.psd`。
 
 ![WF Fusion](./images/wffusion215.png)
 
@@ -162,9 +162,31 @@ split函数需要分号前有一个值数组，并需要您在分号后指定分
 
 ![WF Fusion](./images/wffusion232.png)
 
-最后，将Postman请求的名称更改为`POST - Send Request to Workfront Fusion Webhook`。
+将Postman请求的名称更改为`POST - Send Request to Workfront Fusion Webhook`。
 
 ![WF Fusion](./images/wffusion233.png)
+
+您现在需要开始使用变量&#x200B;**psdTemplate**。 现在，您将使用Postman请求中的传入变量，而不是对输入文件在&#x200B;**Photoshop更改文本**&#x200B;节点中的位置进行硬编码。
+
+打开&#x200B;**Photoshop更改文本**&#x200B;节点并转到&#x200B;**请求内容**。 在&#x200B;**inputs**&#x200B;下选择硬编码文件名&#x200B;**citisignal-fibre.psd**&#x200B;并将其删除。
+
+![WF Fusion](./images/wffusion234.png)
+
+选择变量&#x200B;**psdTemplate**。 单击&#x200B;**确定**，然后保存您的方案。
+
+![WF Fusion](./images/wffusion235.png)
+
+单击&#x200B;**打开**&#x200B;以打开您的方案。 您的方案现在将一直运行。
+
+![WF Fusion](./images/wffusion236.png)
+
+返回Postman。 输入文件名`citisignal-fiber.psd`作为变量&#x200B;**psdTemplate**&#x200B;的值，然后再次单击&#x200B;**发送**&#x200B;以再次运行方案。
+
+![WF Fusion](./images/wffusion237.png)
+
+通过将PSD模板指定为外部系统提供的变量，您现在构建了一个可重复使用的方案。
+
+您现在已经完成了此练习。
 
 下一步：[摘要和优点](./summary.md)
 
