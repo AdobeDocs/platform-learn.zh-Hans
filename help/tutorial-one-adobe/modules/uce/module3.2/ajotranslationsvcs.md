@@ -4,7 +4,7 @@ description: Adobe Journey Optimizer翻译服务
 kt: 5342
 doc-type: tutorial
 exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '86'
 ht-degree: 4%
@@ -31,9 +31,9 @@ ht-degree: 4%
 
 本模块的摘要和优势概述。
 
+![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 >
 >如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
 

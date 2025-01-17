@@ -3,7 +3,7 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 71fe7b82e09aa9bc26b03dd2358d008265f54629
+source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 4%
@@ -94,8 +94,8 @@ ht-degree: 4%
 
 在本模块中，您将通过实践方式将Adobe Journey Optimizer与offer decisioning服务结合使用，以配置个性化优惠和您自己的决策。
 
+![技术内部人士](./assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
->
->![技术内部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 >
 >如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
