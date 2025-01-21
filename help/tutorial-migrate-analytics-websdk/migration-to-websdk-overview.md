@@ -1,17 +1,18 @@
 ---
-title: 从Adobe Analytics标记扩展迁移到Web SDK标记扩展
+title: 使用标记将Adobe Analytics迁移到Web SDK
 description: 了解在迁移到Web SDK过程中您将采取的步骤，以及在此过程中需要做出的决策。
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
-source-git-commit: d360ed9f8c0378625c6b885d71d892362d3a6d69
+exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
 
-# 从Adobe Analytics标记扩展迁移到Web SDK标记扩展
+# 使用标记将Adobe Analytics迁移到Web SDK
 
 了解使用Tags中的Analytics扩展（以前称为Launch）将Adobe Analytics实施迁移到Web SDK的步骤，还可使用Experience Platform中的Web SDK扩展。 在Tags中使用Adobe Analytics扩展时，幕后使用的是“AppMeasurement.js”代码。 因此，您可以将此视为一个将AppMeasurement迁移到Web SDK的教程，但本教程将完全包含在Tags中，并且不包含从JavaScript实施迁移或迁移的过程(在Tags UI中使用的JavaScript代码除外)。 有关迁移JavaScript实施的信息，请参阅[文档](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)。
 
@@ -69,4 +70,3 @@ ht-degree: 0%
 
 
 ### DOUG注释 — 测试教程后，在此处放置指向社区帖子的链接，客户可以在其中询问有关教程和迁移到Web SDK的问题。
-

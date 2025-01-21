@@ -4,13 +4,13 @@ description: 了解如何将其他基于页面的规则迁移到Web SDK扩展。
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16764
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: d1345da7-018d-4c0c-ba9b-d4ff7b35df03
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '736'
+source-wordcount: '732'
 ht-degree: 0%
 
 ---
-
 
 # 迁移其他页面规则
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 让我们做些备份，然后讨论Analytics实施与Adobe Analytics标记扩展的关系(也称为“AppMeasurement”实施，因为这是JavaScript文件的名称)。
 
-我不会假设您确切了解自己的实施方式，但在许多使用Experience Platform标记（以前称为“Launch”）的实施中，许多规则会根据页面或URL中的内容有条件地触发。 例如：
+我不会假设您确切了解自己的实施方式，但在许多使用Experience Platform标签的实施中，有许多规则仅会根据页面或URL中的内容有条件地触发。 例如：
 
 * 搜索结果规则，仅在执行内部搜索且出现搜索结果页面时触发
 * 营销活动登陆页面规则，仅在URL中存在跟踪代码时触发
@@ -68,6 +68,3 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >与默认页面加载规则一样，我们在规则中保留了Analytics扩展的&#x200B;**设置变量**&#x200B;操作，以便在验证迁移时我们可以比较数据。 在执行最终清理时，不要忘记稍后返回并删除Analytics扩展的操作。
-
-
-

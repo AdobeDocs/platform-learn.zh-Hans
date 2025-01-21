@@ -1,7 +1,7 @@
 ---
-user-guide-title: 从Adobe Analytics标记扩展迁移到Web SDK标记扩展
-breadcrumb-title: 从Adobe Analytics标记扩展迁移到Web SDK标记扩展
-user-guide-description: 面向Analytics客户的实践教程，其中涵盖如何成功从Adobe Analytics Tags扩展迁移到Web SDK Tags扩展
+user-guide-title: 使用标记的Adobe Analytics到Web SDK
+breadcrumb-title: 使用标记的Adobe Analytics到Web SDK
+user-guide-description: 面向Analytics客户的实践教程，其中涵盖如何使用Adobe Experience Platform标记成功将Adobe Analytics迁移到Web SDK
 solution: Analytics,Data Collection,Experience Platform
 feature-set: Analytics,Experience Platform
 feature: Web SDK
@@ -11,15 +11,15 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
 index: false
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '116'
 ht-degree: 1%
 
 ---
 
 
-# 从Adobe Analytics标记扩展迁移到Web SDK标记扩展 {#migrate-analytics-to-websdk}
+# 使用标记将Adobe Analytics迁移到Web SDK {#migrate-analytics-to-websdk}
 
 + [迁移概述](migration-to-websdk-overview.md)
 

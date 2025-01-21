@@ -4,13 +4,13 @@ description: 了解在迁移到Web SDK时如何调试和验证数据
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16763
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 68f87266-4b87-4953-8de4-6a9a62bac9e6
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
 source-wordcount: '1253'
 ht-degree: 0%
 
 ---
-
 
 # 调试和验证Web SDK迁移
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 1. 在Analysis Workspace中创建新项目并添加两个面板
 1. 将面板1中的报表包设置为您当前的Adobe Analytics生产报表包
 1. 将面板2中的报表包设置为新的Web SDK开发报表包
-1. 使用日历中的一个时段（数据通过两个扩展流入Analytics时），将同一报表放入两个面板中
+1. 将同一报表放入两个面板中，使用的时段包括仅将数据发送到两个报表包的全天时间
 1. 比较数据
 
 这可能与以下内容类似（了解这些空的演示报表包中没有任何数据）：

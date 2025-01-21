@@ -4,13 +4,13 @@ description: 在本练习中，您将了解如何将Adobe Experience Cloud Tags�
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
-source-git-commit: 7ae56d997884cf1558e72c0ad553df1c5d43c081
+exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
+source-git-commit: 7c0a6c769d56b3e56a5667d5aeff47b55ab6dc33
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1260'
 ht-degree: 0%
 
 ---
-
 
 # 迁移默认页面加载规则
 
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## 概述
 
-让我们往后退一点。 标记中很可能有一个规则，该规则会在每个页面上触发，即设置一个或多个默认变量，然后向Adobe Analytics触发信标或点击的规则。 此规则当前使用Adobe Analytics扩展中的“actions”来执行这些操作。 在将实施迁移到Web SDK时，我们需要能够删除对Analytics扩展的任何引用（如操作），并将其替换为属于Web SDK的操作。 在下面的步骤中，我们将假定您具备上述条件，即您有一个默认页面加载规则，该规则会设置变量并在跟踪信标中将变量发送至Analytics。
+让我们往后退一点。 Tags中可能有一个规则，该规则会在每个页面上触发，即设置一个或多个默认变量，然后向Adobe Analytics触发信标或点击的规则。 此规则当前使用Adobe Analytics扩展中的“actions”来执行这些操作。 在将实施迁移到Web SDK时，我们需要能够删除对Analytics扩展的任何引用（如操作），并将其替换为属于Web SDK的操作。 在下面的步骤中，我们将假定您具备上述条件，即您有一个默认页面加载规则，该规则会设置变量并在跟踪信标中将变量发送至Analytics。
 
 ## 迁移Set Variables操作
 
