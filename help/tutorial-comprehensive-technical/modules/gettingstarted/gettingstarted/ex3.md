@@ -4,9 +4,9 @@ description: 快速入门 — 创建数据流
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '844'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 ![DSN](./images/launchprop.png)
 
-在左侧菜单中，单击&#x200B;**[!UICONTROL 标记]**。 在上一个练习之后，您现在拥有两个数据收集属性：一个用于Web，一个用于移动设备。
+在左侧菜单中，单击&#x200B;**[!UICONTROL 标记]**。 在上一个练习之后，您现在拥有3个数据收集属性：一个用于Web、一个用于移动设备，一个用于CX应用程序。
 
 ![DSN](./images/launchprop1.png)
 
@@ -61,7 +61,7 @@ ht-degree: 1%
 
 在左侧菜单中，单击&#x200B;**[!UICONTROL 标记]**。
 
-筛选搜索结果以查看您的两个数据收集属性。 通过单击&#x200B;**Web**&#x200B;的属性将其打开。
+筛选搜索结果以查看您的数据收集属性。 通过单击&#x200B;**Web**&#x200B;的属性将其打开。
 
 ![命名Edge配置并保存](./images/edgeconfig10a.png)
 
@@ -139,7 +139,7 @@ ht-degree: 1%
 
 您的数据流现已准备就绪，可用于移动设备的Adobe Experience Platform数据收集客户端资产。
 
-转到&#x200B;**标记**&#x200B;并筛选搜索结果以查看您的两个数据收集属性。 通过单击&#x200B;**移动设备**&#x200B;的属性将其打开。
+转到&#x200B;**标记**&#x200B;并筛选搜索结果以查看您的数据收集属性。 通过单击&#x200B;**移动设备**&#x200B;的属性将其打开。
 
 ![命名Edge配置并保存](./images/edgeconfig10am.png)
 

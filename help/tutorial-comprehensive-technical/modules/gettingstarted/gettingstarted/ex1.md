@@ -4,9 +4,9 @@ description: 快速入门 — 为Experience League文档安装Chrome扩展
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '920'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ IMS组织ID是Adobe Experience Cloud实例的唯一标识符，在本教程中�
 
 可以通过多种方式查找IMS组织ID。 如果您不确定，请咨询您实例的其中一位系统管理员来查找该ID。
 
-您可以通过转到[Admin Console](https://https://adminconsole.adobe.com/)找到它，您可以在其中找到它作为URL的一部分。
+您可以通过转到[Admin Console](https://adminconsole.adobe.com/)找到它，您可以在其中找到它作为URL的一部分。
 
 ![DSN](./images/aepid1.png)
 
@@ -100,7 +100,7 @@ IMS组织ID是Adobe Experience Cloud实例的唯一标识符，在本教程中�
 
 ![DSN](./images/aeptenantid.png)
 
-当您在Chrome扩展中输入它时，应确保添加下划线作为前缀，因此在此示例中&#x200B;**experienceplatform**&#x200B;变为&#x200B;**_experienceplatform**。
+当您在Chrome扩展中输入它时，应确保添加下划线作为前缀，因此在此示例中&#x200B;**experienceplatform**&#x200B;变为&#x200B;**_experienceplatform**。 此外，请确保在从URL复制时移除&#x200B;**@**&#x200B;符号。
 
 **AEP沙盒名称**
 

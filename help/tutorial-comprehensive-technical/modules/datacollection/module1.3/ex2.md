@@ -4,16 +4,16 @@ description: 基础 — 常见问题解答 — 创建架构、数据模型和链
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
+source-git-commit: 075af9deddeeaf398603f65003781ea75fe0923b
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
 
 # 1.3.2创建架构、数据模型和链接
 
-您现在可以在AEP中配置联合数据库。
+您现在可以在Adobe Experience Platform中配置联合数据库。
 
 通过转到以下URL登录Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 

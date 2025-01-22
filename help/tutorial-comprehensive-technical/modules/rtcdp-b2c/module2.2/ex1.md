@@ -4,9 +4,9 @@ description: 客户人工智能 — 数据准备（引入）
 kt: 5342
 doc-type: tutorial
 exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
-source-wordcount: '698'
+source-wordcount: '692'
 ht-degree: 1%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 ![数据集](./images/createdatasetfromschema.png)
 
-在下一个屏幕中，选择您在上一个练习中创建的数据集，其名称为&#x200B;**[!UICONTROL ldap - Demo System - Customer Experience Event]**。 单击&#x200B;**下一步**。
+在下一个屏幕中，选择您在上一个练习中创建的数据集，其名称为`--aepUserLdap-- - Demo System - Customer Experience Event`。 单击&#x200B;**下一步**。
 
 ![数据集](./images/createds1.png)
 

@@ -4,7 +4,7 @@ description: 客户人工智能 — 创建新实例（配置）
 kt: 5342
 doc-type: tutorial
 exl-id: 067f3fa2-5c1e-4861-b26a-4315cad73a85
-source-git-commit: b53ee64ae8438b8f48f842ed1f44ee7ef3e813fc
+source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
 workflow-type: tm+mt
 source-wordcount: '368'
 ht-degree: 0%
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 ![设置页面1](./images/setuppage1.png)
 
-你会看到这个。 选择您在上一个练习中创建的、名为`--demoProfileLdap - Demo System - Customer Experience Event Dataset`的数据集。 单击&#x200B;**添加**。
+你会看到这个。 选择您在上一个练习中创建的、名为`--aepUserLdap-- - Demo System - Customer Experience Event Dataset`的数据集。 单击&#x200B;**添加**。
 
 ![设置页面1](./images/custai2.png)
 
