@@ -4,9 +4,9 @@ description: 快速入门 — 为Experience League文档安装Chrome扩展
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '908'
 ht-degree: 0%
 
 ---
@@ -20,12 +20,13 @@ ht-degree: 0%
 
 此类值的示例如下所示。 目前，这些值尚无法使用，但一旦您安装和激活Chrome扩展，就会看到这些变量变为可供复制和重用的普通文本。
 
-| 名称 | 键 |
-|:-------------:| :---------------:|
-| AEP IMS组织ID | `--aepImsOrgId--` |
-| AEP租户ID | `--aepTenantId--` |
-| AEP沙盒名称 | `--aepSandboxName--` |
-| 学习者配置文件LDAP | `--aepUserLdap--` |
+| 名称 | 键 | 示例 |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS组织ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| AEP IMS组织名称 | `--aepImsOrgName--` | `Experience Platform International` |
+| AEP租户ID | `--aepTenantId--` | `_experienceplatform` |
+| AEP沙盒名称 | `--aepSandboxName--` | `tech-insiders` |
+| 学习者配置文件LDAP | `--aepUserLdap--` | `vangeluw` |
 
 例如，在以下屏幕截图中，您可以看到对`aepTenantId`的引用。
 

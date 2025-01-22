@@ -3,9 +3,10 @@ title: 快速入门 — 创建数据流
 description: 快速入门 — 创建数据流
 kt: 5342
 doc-type: tutorial
-source-git-commit: a1cba79313a651c929d76008943c1c5f8a64a9f7
+exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '825'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 ![DSN](./images/launchprop.png)
 
-在左侧菜单中，单击&#x200B;**[!UICONTROL 标记]**。 在上一个练习之后，您现在拥有两个数据收集属性：一个用于Web，一个用于移动设备。
+在左侧菜单中，单击&#x200B;**[!UICONTROL 标记]**。 在上一个练习之后，您现在拥有3个数据收集属性：一个用于Web、一个用于移动设备，一个用于CX应用程序。
 
 ![DSN](./images/launchprop1.png)
 
@@ -38,7 +39,7 @@ ht-degree: 1%
 
 ![单击左侧导航栏中的“Edge配置”图标](./images/edgeconfig1.png)
 
-对于&#x200B;**[!UICONTROL Name]**，对于可选描述，请输入`--aepUserLdap-- - Demo System Datastream`。 对于&#x200B;**映射架构**，请选择&#x200B;**演示系统 — 网站(Global v1.1)**&#x200B;的事件架构。 单击&#x200B;**保存**。
+对于&#x200B;**[!UICONTROL Name]**，对于可选描述，请输入`--aepUserLdap-- - One Adobe Datastream`。 对于&#x200B;**映射架构**，请选择&#x200B;**演示系统 — 网站(Global v1.1)**&#x200B;的事件架构。 单击&#x200B;**保存**。
 
 ![命名Edge配置并保存](./images/edgeconfig2.png)
 
@@ -58,7 +59,7 @@ ht-degree: 1%
 
 在左侧菜单中，单击&#x200B;**[!UICONTROL 标记]**。
 
-筛选搜索结果以查看您的两个数据收集属性。 通过单击&#x200B;**Web**&#x200B;的属性将其打开。
+筛选搜索结果以查看您的数据收集属性。 通过单击&#x200B;**Web**&#x200B;的属性将其打开。
 
 ![命名Edge配置并保存](./images/edgeconfig10a.png)
 
@@ -70,7 +71,7 @@ ht-degree: 1%
 
 ![命名Edge配置并保存](./images/edgeconfig12.png)
 
-你会看到这个。 在&#x200B;**数据流**&#x200B;菜单处有一个图标，并确保选择了正确的沙盒，在这种情况下，该沙盒应为`--aepSandboxName--`。
+你会看到这个。 请查看&#x200B;**数据流**&#x200B;菜单并确保选择了正确的沙盒，在这种情况下，应选择`--aepSandboxName--`。
 
 ![命名Edge配置并保存](./images/edgeconfig12a.png)
 
@@ -114,7 +115,7 @@ ht-degree: 1%
 
 ![单击左侧导航中的“数据流”图标](./images/edgeconfig1.png)
 
-对于&#x200B;**[!UICONTROL 友好名称]**&#x200B;和可选描述，请输入`--aepUserLdap-- - Demo System Datastream (Mobile)`。 对于&#x200B;**映射架构**，请选择&#x200B;**演示系统 — 移动应用程序的事件架构(Global v1.1)**。 单击&#x200B;**保存**。
+对于&#x200B;**[!UICONTROL 友好名称]**&#x200B;和可选描述，请输入`--aepUserLdap-- - One Adobe Datastream (Mobile)`。 对于&#x200B;**映射架构**，请选择&#x200B;**演示系统 — 移动应用程序的事件架构(Global v1.1)**。 单击&#x200B;**保存**。
 
 单击&#x200B;**[!UICONTROL 保存]**。
 

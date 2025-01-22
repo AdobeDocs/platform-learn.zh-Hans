@@ -4,9 +4,9 @@ description: Foundation - FAC — 创建联合组合
 kt: 5342
 doc-type: tutorial
 exl-id: 293bf825-d0d6-48cf-9cbf-69f622597678
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: d0469a38e2bef6031f796ed0946caba52c424e8c
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 3%
 
 ---
@@ -140,6 +140,8 @@ ht-degree: 3%
 现在，查询将被推送到Snowflake中，从而在该处查询源数据。 结果将推送回AEP，但源数据仍保留在Snowflake中。
 
 受众现已填充，可在AEP生态系统中定位受众。
+
+![FAC](./images/fedcomp22.png)
 
 下一步：[摘要和优点](./summary.md)
 

@@ -4,9 +4,9 @@ description: 基础 — 常见问题解答 — 创建架构、数据模型和链
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '636'
 ht-degree: 2%
 
 ---
@@ -152,7 +152,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb20.png)
 
-接下来，让我们定义表`CK_MONTHLY_DATA_USAGE`和`CK_USERS`之间的链接。
+接下来，让我们定义表`CK_USERS`和`CK_MONTHLY_DATA_USAGE`之间的链接。
 
 ![FAC](./images/fdb21.png)
 
@@ -164,8 +164,17 @@ ht-degree: 2%
 
 ![FAC](./images/fdb23.png)
 
-你以后会回到这里的。 单击&#x200B;**保存**。
+你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
+
 ![FAC](./images/fdb24.png)
+
+接下来，让我们定义表`CK_USERS`和`CK_MOBILE_DATA_USAGE`之间的链接。
+
+![FAC](./images/fdb25.png)
+
+您应该会看到此内容。 单击&#x200B;**保存**。
+
+![FAC](./images/fdb26.png)
 
 AEP中的设置现已完成。 您现在可以开始在联合受众组合中使用联合数据。
 

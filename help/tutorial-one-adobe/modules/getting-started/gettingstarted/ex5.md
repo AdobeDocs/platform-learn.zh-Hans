@@ -3,7 +3,8 @@ title: 快速入门 — 使用移动应用程序
 description: 快速入门 — 使用移动应用程序
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '440'
 ht-degree: 0%
@@ -60,7 +61,7 @@ ht-degree: 0%
 
 ![DSN](./images/web8aa.png)
 
-在上一步中创建的数据收集属性（名为`--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`）上单击&#x200B;**选择**。 然后，单击&#x200B;**保存**。
+在上一步中创建的数据收集属性（名为`--aepUserLdap - One Adobe (DD/MM/YYYY) (mobile)`）上单击&#x200B;**选择**。 然后，单击&#x200B;**保存**。
 
 ![DSN](./images/web8b.png)
 

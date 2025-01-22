@@ -3,7 +3,8 @@ title: 快速入门 — 使用演示系统设置您的Launch资产
 description: 快速入门 — 使用演示系统设置您的Launch资产
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -32,7 +33,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsn2.png)
 
-在弹出窗口中，输入数据收集属性和Experience Builder项目的名称。 请使用此命名约定：**演示系统(DD/MM/YYYY)**。 仅供参考：您的LDAP将自动附加，您无需自行添加。
+在弹出窗口中，输入数据收集属性和Experience Builder项目的名称。 请使用此命名约定：**一个Adobe(DD/MM/YYYY)**。 仅供参考：您的LDAP将自动附加，您无需自行添加。
 
 单击&#x200B;**开始**。
 

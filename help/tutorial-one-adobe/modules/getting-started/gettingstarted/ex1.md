@@ -3,9 +3,10 @@ title: 快速入门 — 为Experience League文档安装Chrome扩展
 description: 快速入门 — 为Experience League文档安装Chrome扩展
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6758301f639394f0d85b685a115461a63e5d760b
+exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
+source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -19,14 +20,15 @@ ht-degree: 0%
 
 此类值的示例如下所示。 目前，这些值尚无法使用，但一旦您安装和激活Chrome扩展，就会看到这些变量变为可供复制和重用的普通文本。
 
-| 名称 | 键 |
-|:-------------:| :---------------:|
-| AEP IMS组织ID | `--aepImsOrgId--` |
-| AEP租户ID | `--aepTenantId--` |
-| AEP沙盒名称 | `--aepSandboxName--` |
-| 学习者配置文件LDAP | `--aepUserLdap--` |
+| 名称 | 键 | 示例 |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS组织ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| AEP IMS组织名称 | `--aepImsOrgName--` | `Experience Platform International` |
+| AEP租户ID | `--aepTenantId--` | `_experienceplatform` |
+| AEP沙盒名称 | `--aepSandboxName--` | `one-adobe` |
+| 学习者配置文件LDAP | `--aepUserLdap--` | `vangeluw` |
 
-例如，在以下屏幕截图中，您可以看到对`aepTenantId`的引用。
+例如，在以下屏幕截图中，您可以看到对`aepSandboxName`的引用。
 
 ![DSN](./images/mod7before.png)
 
@@ -108,7 +110,7 @@ IMS组织ID是Adobe Experience Cloud实例的唯一标识符，在本教程中�
 
 ![DSN](./images/aepsandboxsw.png)
 
-在此示例中，AEP沙盒名称为&#x200B;**技术内幕**。
+在此示例中，AEP沙盒名称为&#x200B;**one-adobe**。
 
 ![DSN](./images/aepsname.png)
 
@@ -118,11 +120,10 @@ IMS组织ID是Adobe Experience Cloud实例的唯一标识符，在本教程中�
 
 LDAP用于确保您即将执行的配置将链接到您，并且不会与您正在使用的同一实例和沙盒的其他用户发生冲突。
 
-您的值应类似于这些值。
+您的值应当类似于以下内容。
 最后，单击**新建**。
 
 ![DSN](./images/c8a.png)
-
 
 在扩展的左侧菜单中，您现在将看到一个包含环境缩写的新图标。 单击它。 然后，您将看到&#x200B;**环境变量**&#x200B;与您的特定Adobe Experience Platform实例值之间的映射。 单击&#x200B;**激活配置**。
 
@@ -134,11 +135,11 @@ LDAP用于确保您即将执行的配置将链接到您，并且不会与您正�
 
 ## 验证教程内容
 
-作为测试，请转到[此页面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3)。
+作为测试，请转到[此页面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2)。
 
-现在，您应该看到，根据Chrome扩展中激活的环境，所有&#x200B;**环境变量**&#x200B;都已替换为其真值。
+您现在应该会看到，根据Chrome扩展中激活的环境，此页面上的所有&#x200B;**环境变量**&#x200B;都已替换为其真值。
 
-您现在应具有类似于下面的视图，其中环境变量`aepTenantId`已被您的实际AEP租户ID替换，在本例中为&#x200B;**_experienceplatform**。
+您现在应具有类似于下面的视图，其中环境变量`aepSandboxName`已被替换为真正的AEP沙盒名称，在本例中为&#x200B;**one-adobe**。
 
 ![DSN](./images/mod7.png)
 
