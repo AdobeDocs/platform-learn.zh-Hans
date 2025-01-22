@@ -4,7 +4,7 @@ description: 快速入门 — 为Experience League文档安装Chrome扩展
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: f80f9aa6d736bf07235ef52e96b027b5e5ae742e
 workflow-type: tm+mt
 source-wordcount: '908'
 ht-degree: 0%
@@ -136,7 +136,7 @@ LDAP用于确保您即将执行的配置将链接到您，并且不会与您正�
 
 ## 验证教程内容
 
-作为测试，请转到[此页面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3)。
+作为测试，请转到[此页面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex4)。
 
 现在，您应该看到，根据Chrome扩展中激活的环境，所有&#x200B;**环境变量**&#x200B;都已替换为其真值。
 

@@ -4,7 +4,7 @@ description: 基础 — 常见问题解答 — 创建架构、数据模型和链
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: a157c0874c8c21cf6481ef9f02bbf53ff7344407
+source-git-commit: bec1f7253cd2d3491f875179eff2cf511104662f
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 2%
@@ -130,6 +130,8 @@ ht-degree: 2%
 
 你会看到这个。 单击&#x200B;**保存**。
 
+### `CK_USERS` — `CK_PERSONS`
+
 您现在可以开始定义架构之间的链接。 若要开始定义链接，您需要单击&#x200B;**创建链接**。
 
 ![FAC](./images/fdb16.png)
@@ -140,6 +142,9 @@ ht-degree: 2%
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` — `CK_PERSONS`
+
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
 ![FAC](./images/fdb17.png)
@@ -147,6 +152,8 @@ ht-degree: 2%
 接下来，让我们定义表`CK_HOUSEHOLDS`和`CK_PERSONS`之间的链接。
 
 ![FAC](./images/fdb19.png)
+
+### `CK_USERS` — `CK_MONTHLY_DATA_USAGE`
 
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
@@ -156,6 +163,9 @@ ht-degree: 2%
 
 ![FAC](./images/fdb21.png)
 
+
+### `CK_USERS` — `CK_HOUSEHOLDS`
+
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
 ![FAC](./images/fdb22.png)
@@ -163,6 +173,8 @@ ht-degree: 2%
 接下来，让我们定义表`CK_USERS`和`CK_HOUSEHOLDS`之间的链接。
 
 ![FAC](./images/fdb23.png)
+
+### `CK_USERS` — `CK_MOBILE_DATA_USAGE`
 
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
