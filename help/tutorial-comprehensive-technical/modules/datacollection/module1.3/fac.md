@@ -4,9 +4,9 @@ description: 数据收集 — 联合受众构成
 kt: 5342
 doc-type: tutorial
 exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
-source-git-commit: 1c91cb2129f827fd39dc065baf5d8ea067a5731a
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '625'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,8 @@ Experience Platform中的联合受众构成(FAC)允许您通过企业数据仓�
 [摘要和优点](./summary.md)
 
 本模块的摘要和优势概述。
+
+![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

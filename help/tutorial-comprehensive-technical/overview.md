@@ -3,14 +3,16 @@ title: 概述
 description: 面向数据工程师、数据分析师、数据架构师、数据科学家、编排工程师和营销人员的起点，全面了解Adobe Experience Platform及其所有应用程序服务的业务价值。
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: 21718a7c3a4df2793ae257a9b7cbe4466f1193f5
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '1221'
+source-wordcount: '1251'
 ht-degree: 2%
 
 ---
 
 # Adobe Experience Platform 综合技术教程
+
+![技术内部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概述
 
@@ -182,3 +184,9 @@ ht-degree: 2%
 在本模块中，您将学习如何使用Adobe Experience Platform查询服务。
 
 **时间投资：** 90分钟
+
+![技术内部人士](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。

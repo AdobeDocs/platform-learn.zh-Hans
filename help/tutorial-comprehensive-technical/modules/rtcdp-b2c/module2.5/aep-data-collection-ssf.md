@@ -4,9 +4,9 @@ description: 在本模块中，您将使用之前配置的数据集、架构和A
 kt: 5342
 doc-type: tutorial
 exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '460'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 [2.5.3创建和配置自定义webhook](./ex3.md)
 
-在本练习中，您将创建和配置自定义webhook，并开始将Web SDK收集的数据转发到该自定义webhook。
+在本练习中，您将创建并配置一个自定义webhook，并开始将Web SDK收集的数据转发到该自定义webhook。
 
 [2.5.4将事件转发到GCP Pub/Sub](./ex4.md)
 
@@ -62,6 +62,8 @@ ht-degree: 0%
 [摘要和优点](./summary.md)
 
 本模块的摘要和优势概述。
+
+![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

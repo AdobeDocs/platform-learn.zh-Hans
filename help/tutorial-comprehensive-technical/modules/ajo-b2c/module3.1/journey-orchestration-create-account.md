@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: 73812caa-29a1-4931-944d-9651c6de2c19
-source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '270'
 ht-degree: 3%
 
 ---
@@ -50,6 +50,8 @@ ht-degree: 3%
 [摘要和优点](./summary.md)
 
 本模块的摘要和优势概述。
+
+![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

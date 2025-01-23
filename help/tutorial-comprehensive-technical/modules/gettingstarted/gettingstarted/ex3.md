@@ -4,7 +4,7 @@ description: 快速入门 — 创建数据流
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
 source-wordcount: '844'
 ht-degree: 1%
@@ -73,7 +73,7 @@ ht-degree: 1%
 
 ![命名Edge配置并保存](./images/edgeconfig12.png)
 
-你会看到这个。 在&#x200B;**数据流**&#x200B;菜单处有一个图标，并确保选择了正确的沙盒，在这种情况下，该沙盒应为`--aepSandboxName--`。
+你会看到这个。 请查看&#x200B;**数据流**&#x200B;菜单并确保选择了正确的沙盒，在这种情况下，应选择`--aepSandboxName--`。
 
 ![命名Edge配置并保存](./images/edgeconfig12a.png)
 

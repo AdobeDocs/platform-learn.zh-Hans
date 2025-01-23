@@ -1,12 +1,12 @@
 ---
 title: 1.1设置Adobe Experience Platform数据收集和Web SDK扩展
-description: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩展
+description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置
 kt: 5342
 doc-type: tutorial
 exl-id: b69ebe41-ff28-4dde-b639-198201120742
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '587'
 ht-degree: 0%
 
 ---
@@ -69,6 +69,8 @@ ht-degree: 0%
 [摘要和优点](./summary.md)
 
 本模块的摘要和优势概述。
+
+![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: 快速入门 — 使用移动应用程序
 kt: 5342
 doc-type: tutorial
 exl-id: 2b94f08f-c932-4287-9956-cfe368c96c12
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >在iOS设备上首次安装应用程序后，在尝试打开应用程序时可能会收到一条错误消息，显示：**不受信任的企业开发人员**。 要解决此问题，您需要转到&#x200B;**设置>常规> VPN和设备管理> Adobe Systems Inc.**，然后单击&#x200B;**信任Adobe Systems Inc.**。
+>您的iOS设备可能需要重新启动，才能完成信任开发人员的过程。
 
 安装应用程序后，您将在设备的主屏幕上找到该应用程序。 单击图标以打开应用程序。
 

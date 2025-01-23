@@ -4,9 +4,9 @@ description: 智能服务
 kt: 5342
 doc-type: tutorial
 exl-id: 3668f06b-df76-43db-be6a-36c339256a22
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '251'
 ht-degree: 3%
 
 ---
@@ -43,6 +43,8 @@ ht-degree: 3%
 [2.2.3客户人工智能 — 评分仪表板和分段（预测并采取行动）](./ex3.md)
 
 当模型完成训练和评分后，将评分回写到Platform。 您可以确定对预测执行的操作，例如定义区段、构建自定义功能板等。
+
+![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]
 >
