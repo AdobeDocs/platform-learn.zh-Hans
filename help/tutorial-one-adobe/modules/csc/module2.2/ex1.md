@@ -4,9 +4,9 @@ description: Workfront快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: ec79d3fcfe971faee584a221eb55ddcb015a1e50
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '768'
 ht-degree: 1%
 
 ---
@@ -54,9 +54,93 @@ ht-degree: 1%
 
 ![WF](./images/wfb6.png)
 
-Workfront与AEM Assets CS之间的集成现已配置完成。
+现已配置从Workfront到AEM Assets CS的集成。
 
 ![WF](./images/wfb7.png)
+
+## 2.2.1.2配置元数据与AEM Assets的集成
+
+接下来，您需要配置AEM Assets，以便与AEM共享Workfront中资源的元数据字段。
+
+为此，请转到[https://experience.adobe.com/](https://experience.adobe.com/)。 单击&#x200B;**Experience Manager Assets**。
+
+![WF](./images/wfbaem1.png)
+
+单击以选择您的AEM Assets环境，应将其命名为`--aepUserLdap-- - Citi Signal dev`。
+
+![WF](./images/wfbaem2.png)
+
+您应该会看到此内容。 在左侧菜单中，转到&#x200B;**Assets**&#x200B;并单击&#x200B;**创建文件夹**。
+
+![WF](./images/wfbaem3.png)
+
+命名您的文件夹`--aepUserLdap-- - Workfront Assets`，然后单击&#x200B;**创建**。
+
+![WF](./images/wfbaem4.png)
+
+接下来，转到左侧菜单中的&#x200B;**元数据Forms**，然后单击&#x200B;**创建**。
+
+![WF](./images/wfbaem5.png)
+
+使用名称`--aepUserLdap-- - Metadata Form`并单击&#x200B;**创建**。
+
+![WF](./images/wfbaem6.png)
+
+将3个新的&#x200B;**单行文本**&#x200B;字段添加到表单并选择第一个字段。 然后，单击&#x200B;**元数据属性**&#x200B;字段旁边的&#x200B;**架构**&#x200B;图标。
+
+![WF](./images/wfbaem7.png)
+
+在搜索字段中，输入`wm:project`，然后选择字段&#x200B;**项目说明**。 单击&#x200B;**选择**。
+
+![WF](./images/wfbaem8.png)
+
+将字段的标签更改为&#x200B;**项目描述**。
+
+![WF](./images/wfbaem9.png)
+
+接下来，选择第2个&#x200B;**单行文本**&#x200B;字段，然后再次单击&#x200B;**元数据属性**&#x200B;字段旁边的&#x200B;**架构**&#x200B;图标。
+
+![WF](./images/wfbaem10b.png)
+
+你将再次看到此弹出窗口。 在搜索字段中，输入`wm:project`，然后选择字段&#x200B;**项目ID**。 单击&#x200B;**选择**。
+
+![WF](./images/wfbaem10.png)
+
+将字段的标签更改为&#x200B;**项目ID**。
+
+![WF](./images/wfbaem10a.png)
+
+选择第3个&#x200B;**单行文本**&#x200B;字段，然后再次单击&#x200B;**元数据属性**&#x200B;字段旁边的&#x200B;**架构**&#x200B;图标。
+
+![WF](./images/wfbaem11a.png)
+
+你将再次看到此弹出窗口。 在搜索字段中，输入`wm:project`，然后选择字段&#x200B;**项目名称**。 单击&#x200B;**选择**。
+
+![WF](./images/wfbaem11.png)
+
+将字段的标签更改为&#x200B;**项目名称**。 单击&#x200B;**保存**。
+
+![WF](./images/wfbaem12.png)
+
+将表单上的&#x200B;**选项卡名称**&#x200B;更改为`--aepUserLdap-- - Workfront Metadata`。 单击&#x200B;**保存**&#x200B;和&#x200B;**关闭**。
+
+![WF](./images/wfbaem13.png)
+
+您的&#x200B;**元数据表单**&#x200B;现已配置完成。
+
+![WF](./images/wfbaem14.png)
+
+接下来，您需要将元数据表单分配给之前创建的文件夹。 选中元数据表单的复选框，然后单击&#x200B;**分配给文件夹**。
+
+![WF](./images/wfbaem15.png)
+
+选择您的文件夹，该文件夹应命名为`--aepUserLdap-- - Workfront Assets`。 单击&#x200B;**分配**。
+
+![WF](./images/wfbaem16.png)
+
+元数据表单现已成功分配到您的文件夹。
+
+![WF](./images/wfbaem17.png)
 
 ## 2.2.1.2配置您的AEM Sites集成
 
@@ -155,6 +239,8 @@ Workfront与AEM Assets CS之间的集成现已配置完成。
 然后，您应该有2个可用的自定义表单。
 
 ![WF](./images/wfb20.png)
+
+下一步：[2.2.2使用Workfront校对](./ex2.md){target="_blank"}
 
 [返回模块2.2](./workfront.md){target="_blank"}
 

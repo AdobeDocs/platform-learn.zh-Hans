@@ -3,9 +3,10 @@ title: 数据收集 — FAC — 创建联合组合
 description: Foundation - FAC — 创建联合组合
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: dc044a26-f16a-491e-a795-4cd16f211256
+source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '493'
 ht-degree: 3%
 
 ---
@@ -139,6 +140,8 @@ ht-degree: 3%
 现在，查询将被推送到Snowflake中，从而在该处查询源数据。 结果将推送回AEP，但源数据仍保留在Snowflake中。
 
 受众现已填充，可在AEP生态系统中定位受众。
+
+![FAC](./images/fedcomp22.png)
 
 下一步：[摘要和优点](./summary.md)
 

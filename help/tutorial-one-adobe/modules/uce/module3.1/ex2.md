@@ -3,16 +3,17 @@ title: 数据收集 — FAC — 创建架构、数据模型和链接
 description: 基础 — 常见问题解答 — 创建架构、数据模型和链接
 kt: 5342
 doc-type: tutorial
-source-git-commit: ab3f13389ae194519dcb9c8988ea38b89f6e5907
+exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
+source-git-commit: 246bb91496104818f357848f41b79523b7771638
 workflow-type: tm+mt
-source-wordcount: '613'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
 
 # 3.1.2创建架构、数据模型和链接
 
-您现在可以在AEP中配置联合数据库。
+您现在可以在Adobe Experience Platform中配置联合数据库。
 
 通过转到以下URL登录Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 
@@ -129,6 +130,8 @@ ht-degree: 2%
 
 你会看到这个。 单击&#x200B;**保存**。
 
+### `CK_USERS` — `CK_PERSONS`
+
 您现在可以开始定义架构之间的链接。 若要开始定义链接，您需要单击&#x200B;**创建链接**。
 
 ![FAC](./images/fdb16.png)
@@ -139,6 +142,9 @@ ht-degree: 2%
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` — `CK_PERSONS`
+
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
 ![FAC](./images/fdb17.png)
@@ -147,13 +153,18 @@ ht-degree: 2%
 
 ![FAC](./images/fdb19.png)
 
+### `CK_USERS` — `CK_MONTHLY_DATA_USAGE`
+
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
 ![FAC](./images/fdb20.png)
 
-接下来，让我们定义表`CK_MONTHLY_DATA_USAGE`和`CK_USERS`之间的链接。
+接下来，让我们定义表`CK_USERS`和`CK_MONTHLY_DATA_USAGE`之间的链接。
 
 ![FAC](./images/fdb21.png)
+
+
+### `CK_USERS` — `CK_HOUSEHOLDS`
 
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
@@ -163,8 +174,19 @@ ht-degree: 2%
 
 ![FAC](./images/fdb23.png)
 
-你以后会回到这里的。 单击&#x200B;**保存**。
+### `CK_USERS` — `CK_MOBILE_DATA_USAGE`
+
+你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
+
 ![FAC](./images/fdb24.png)
+
+接下来，让我们定义表`CK_USERS`和`CK_MOBILE_DATA_USAGE`之间的链接。
+
+![FAC](./images/fdb25.png)
+
+您应该会看到此内容。 单击&#x200B;**保存**。
+
+![FAC](./images/fdb26.png)
 
 AEP中的设置现已完成。 您现在可以开始在联合受众组合中使用联合数据。
 
