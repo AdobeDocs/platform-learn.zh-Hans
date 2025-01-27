@@ -4,9 +4,9 @@ description: 开发自定义块
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
 workflow-type: tm+mt
-source-wordcount: '89'
+source-wordcount: '106'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,21 @@ ht-degree: 0%
 
 ![块](./images/block3.png)
 
-本地fo
+现在将创建一个本地文件夹。
+
+![块](./images/block4.png)
+
+打开Visual Studio Code。 转到&#x200B;**文件** > **打开文件夹**。
+
+![块](./images/block5.png)
+
+
+
+![块](./images/block6.png)
+
+
+
+![块](./images/block7.png)
 
 
 [返回模块2.1](./aemcs.md){target="_blank"}
