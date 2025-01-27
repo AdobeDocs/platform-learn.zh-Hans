@@ -4,9 +4,9 @@ description: Adobe Experience ManagerCloud Service和Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '199'
 ht-degree: 2%
 
 ---
@@ -35,9 +35,13 @@ ht-degree: 2%
 
 在本练习中，您将设置AEM CS环境并访问CitiSignal网站。
 
-[2.1.4开发自定义块](./ex4.md){target="_blank"}
+[2.1.4基本自定义块](./ex4.md){target="_blank"}
 
-在本练习中，您将为网站开发自定义块组件。
+在本练习中，您将为网站开发一个基本的自定义块。
+
+[2.1.5高级自定义块](./ex5.md){target="_blank"}
+
+在本练习中，您将为网站开发一个高级自定义块。
 
 [摘要和优点](./summary.md){target="_blank"}
 
