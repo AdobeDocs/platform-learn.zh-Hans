@@ -1,28 +1,24 @@
 ---
-title: Firefly服务 — 摘要
-description: Firefly服务 — 摘要
-kt: 5342
-doc-type: tutorial
+title: Firefly服务的摘要和优点
+description: Firefly服务是一组全面的创作AI和创作API，可自动执行工作流
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 8bcc022d-3f2d-4a3a-9ca4-f17395293276
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
 workflow-type: tm+mt
-source-wordcount: '43'
+source-wordcount: '83'
 ht-degree: 2%
 
 ---
 
-# 摘要和优点
+# Firefly服务的摘要和优点
 
-恭喜并感谢您投入时间学习Adobe应用程序！
+Firefly服务是一组全面的创作AI和创作API，可自动执行工作流。 通过将这些功能嵌入到任何生产或体验工作流中，组织可以扩展内容生成、编辑和汇编，在保持质量和控制的同时自动化内容的生产。
 
-## 优点
+## 后续步骤
 
-让我们重点介绍使用Firefly服务的好处……
+返回[Adobe Firefly服务](./firefly-services.md){target="_blank"}
 
-
-## 看看这个
-
-
-[返回模块1](./firefly-services.md){target="_blank"}
-
-[返回所有模块](../../../overview.md){target="_blank"}
+返回[所有模块](../../../overview.md){target="_blank"}
