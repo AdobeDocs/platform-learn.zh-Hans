@@ -5,9 +5,9 @@ solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
 exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
-source-git-commit: 47b970e3659fe7ebfdf491d9c0e9356128013fb9
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1157'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,17 @@ ht-degree: 0%
 # 使用标记将Adobe Analytics迁移到Web SDK
 
 了解使用Tags中的Analytics扩展（以前称为Launch）将Adobe Analytics实施迁移到Web SDK的步骤，还可使用Experience Platform中的Web SDK扩展。 在Tags中使用Adobe Analytics扩展时，幕后使用的是“AppMeasurement.js”代码。 因此，您可以将此视为一个将AppMeasurement迁移到Web SDK的教程，但本教程将完全包含在Tags中，并且不包含从JavaScript实施迁移或迁移的过程(在Tags UI中使用的JavaScript代码除外)。 有关迁移JavaScript实施的信息，请参阅[文档](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)。
+
+>[!NOTE]
+>
+>类似的迁移教程可用于：
+>
+> * [Adobe Target](../tutorial-migrate-target-websdk/introduction.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/zh-hans/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> 由于Platform Web SDK支持多个Adobe应用程序，因此应同时迁移给定页面上的所有Adobe库。 例如，不支持在单个页面&#x200B;_上混合实现适用于Target的Web SDK和适用于Analytics的AppMeasurement_。 但是，支持跨不同页面的混合实施，例如支持在页面A上实施Web SDK，以及支持在页面B上具有AppMeasurement的at.js。
 
 ## 从本教程中学到什么
 

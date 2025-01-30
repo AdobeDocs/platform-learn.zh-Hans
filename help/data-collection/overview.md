@@ -3,16 +3,16 @@ title: 数据收集教程
 description: 让您成为数据收集高级用户的操作方法视频和教程
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: d04a9dbe0f148e7ef210f1f4472a7771db5bb511
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '165'
-ht-degree: 30%
+source-wordcount: '234'
+ht-degree: 25%
 
 ---
 
 # 数据收集教程
 
-数据收集是Adobe推出的新一代网站标记和移动SDK管理功能。 数据收集为客户提供了一种简单的方式来部署和管理用来加强相关客户体验的分析、营销和广告解决方案。 使用这些视频和教程帮助学习此关键技术。
+数据收集是Adobe推出的新一代网站标签和移动SDK管理功能。 数据收集为客户提供了一种简单的方式来部署和管理用来加强相关客户体验的分析、营销和广告解决方案。 使用这些视频和教程帮助学习此关键技术。
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -23,7 +23,50 @@ ht-degree: 30%
 
 <div id="staff-picks-section">
 
-## 员工精选
+## 迁移指南
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <img alt="将Target迁移到Web SDK" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong>将Adobe Target迁移到Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>将at.js替换为Web SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+      <img alt="利用 Web SDK 实施 Adobe Experience Cloud" src="assets/thumb_analyticsWebSdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+    <strong>在标记中将Adobe Analytics迁移到Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>将AppMeasurement.js替换为标记的Web SDK</em>
+    <p>
+  </td>
+  <td>
+      <img alt="将Target迁移到Web SDK" src="assets/thumb_aamWebSdk.png" />
+    </a>
+    <div>
+      <strong>将Adobe Audience Manager迁移到Web SDK</strong>
+    </div>
+    <p>
+    <em>替换<a href="https://experienceleague.adobe.com/zh-hans/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a>或<a href="https://experienceleague.adobe.com/zh-hans/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank">更新服务器端转发</a></em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## 实施指南
 
 <table>
 <tr>
@@ -55,15 +98,15 @@ ht-degree: 30%
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-      <img alt="将Target迁移到Web SDK" src="assets/thumb_targetWebSdk.jpg" />
+      <img alt="将Target迁移到Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-    <strong>将Adobe Target迁移到Web SDK</strong>
+    <strong>使用标记实施旧版库</strong>
     </a>
     </div>
     <p>
-    <em>从at.js迁移到Web SDK</em>
+    <em>使用标记实施旧版Analytics、Target和Audience Manager库</em>
     <p>
   </td>
 </tr>

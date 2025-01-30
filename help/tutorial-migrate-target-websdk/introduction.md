@@ -3,9 +3,9 @@ title: 将Target从at.js 2.x迁移到Web SDK
 description: 了解如何将Adobe Target实施从at.js 2.x迁移到Adobe Experience Platform Web SDK。 主题包括加载JavaScript库、发送参数、渲染活动以及其他值得注意的标注。
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: c8920fde-ad6b-4f2d-a35f-ce865b35bba0
-source-git-commit: 485e79e3569052184475fbc49ab5f43cebcac9a6
+source-git-commit: d6471c8e383e22fed4ad5870952d0d0470f593db
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '611'
 ht-degree: 4%
 
 ---
@@ -14,7 +14,21 @@ ht-degree: 4%
 
 本指南面向经验丰富的Adobe Target实施人员，帮助他们了解如何将at.js实施迁移到Adobe Experience Platform Web SDK。
 
-Adobe Experience Platform Web SDK是客户端JavaScript库，它允许Adobe Experience Cloud客户通过Adobe Experience PlatformEdge Network与Experience Cloud服务进行交互。 此新库将各个Adobe应用程序库的功能整合到一个轻量级包中，以便充分利用Adobe Experience Platform的新增功能。
+Adobe Experience Platform Web SDK是一个客户端JavaScript库，它允许Adobe Experience Cloud客户通过Adobe Experience PlatformEdge Network与Experience Cloud服务进行交互。 此新库将各个Adobe应用程序库的功能整合到一个轻量级包中，以便充分利用Adobe Experience Platform的新增功能。
+
+
+>[!NOTE]
+>
+>类似的迁移教程可用于：
+>
+> * [Adobe Analytics](../tutorial-migrate-analytics-websdk/migration-to-websdk-overview.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/zh-hans/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> 由于Platform Web SDK支持多个Adobe应用程序，因此应同时迁移给定页面上的所有Adobe库。 例如，不支持在单个页面&#x200B;_上混合实现适用于Target的Web SDK和适用于Analytics的AppMeasurement_。 但是，支持跨不同页面的混合实施，例如支持在页面A上实施Web SDK，以及支持在页面B上具有AppMeasurement的at.js。
+
+
 
 ## 主要优点
 
@@ -32,7 +46,7 @@ Adobe Experience Platform Web SDK是客户端JavaScript库，它允许Adobe Expe
 
 在本教程结束后，您将能够：
 
-* 了解at.js与Platform Web SDK之间的Target实施差异
+* 了解at.js和平台Web SDK之间的Target实施差异
 * 设置Target功能的初始配置
 * 将at.js库升级到Platform Web SDK
 * 渲染基于表单和可视化体验编辑器活动
@@ -55,8 +69,8 @@ Adobe Experience Platform Web SDK是客户端JavaScript库，它允许Adobe Expe
    * [使用基于表单的体验编辑器](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
    * [创建体验定位活动](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-准备就绪后，成功迁移的第一步是[了解迁移过程](migration-overview.md)以及at.js和Platform Web SDK之间的差异。
+准备就绪后，成功迁移的第一步是[了解迁移过程](migration-overview.md)以及at.js和平台Web SDK之间的差异。
 
 >[!NOTE]
 >
->我们致力于帮助您成功完成从at.js到Web SDK的Target迁移。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。
+>我们致力于帮助您成功从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。
