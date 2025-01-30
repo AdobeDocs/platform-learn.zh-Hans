@@ -1,19 +1,19 @@
 ---
-title: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩展 — Adobe Experience Platform中的XDM架构要求
-description: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩展 — Adobe Experience Platform中的XDM架构要求
+title: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置 — Adobe Experience Platform中的XDM架构要求
+description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置 — Adobe Experience Platform中的XDM架构要求
 kt: 5342
 doc-type: tutorial
 exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # 1.1.7 Adobe Experience Platform中的XDM架构要求
 
-为了确保Web SDK和alloy.js能够将数据摄取到Adobe Experience Platform，需要特定的XDM Mixin才能成为Adobe Experience Platform中XDM架构的一部分。
+为了确保Web SDK能够将数据摄取到Adobe Experience Platform，需要特定的XDM mixin才能成为Adobe Experience Platform中XDM架构的一部分。
 
 转到[https://experience.adobe.com/platform](https://experience.adobe.com/platform)并登录。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 ![AEP调试器](./images/exp3.png)
 
-在该架构中，您会看到已添加字段组&#x200B;**AEP Web SDK ExperienceEvent**&#x200B;字段组。 此字段组将所有最低要求字段添加到架构中。 Web SDK将使用的Adobe Experience Platform中的每个Experience Event架构始终要求将该字段组作为架构的一部分。
+在该架构中，您会看到已添加字段组&#x200B;**AEP Web SDK ExperienceEvent**&#x200B;字段组。 此字段组将所有最低要求字段添加到架构中。 Web SDK将使用Adobe Experience Platform中的每个Experience Event架构，始终要求将该字段组作为架构的一部分。
 
 ![AEP调试器](./images/exp4.png)
 

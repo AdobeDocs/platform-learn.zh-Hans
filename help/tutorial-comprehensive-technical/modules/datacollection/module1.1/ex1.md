@@ -1,10 +1,10 @@
 ---
-title: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置 — 说明Adobe Experience Platform数据收集
-description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置 — 说明Adobe Experience Platform数据收集
+title: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置 — 解释Adobe Experience Platform数据收集
+description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的设置 — 解释Adobe Experience Platform数据收集
 kt: 5342
 doc-type: tutorial
 exl-id: 098031c6-4d8b-46a5-ae86-8fd7692268d3
-source-git-commit: 0dbcda0cfc9f199a44c845c1b5caf00a8d740251
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '504'
 ht-degree: 2%
@@ -26,10 +26,10 @@ Adobe Experience Platform数据收集由品牌商用于许多用例。 它是新
 
 转到[Adobe Experience Platform数据收集](https://experience.adobe.com/#/data-collection/)。
 
-转到&#x200B;**标记**。 您现在看到&#x200B;**[!UICONTROL 属性]**&#x200B;视图。 此处列出的属性用于教程管理。 这些属性表示……
+转到&#x200B;**标记**。 您现在看到&#x200B;**[!UICONTROL 属性]**&#x200B;视图。 此处列出的属性用于教程管理。 这些属性表示：
 
 - 应用程序和Web属性
-- 不同的网站以不同的方式为客户提供服务。 例如，Luma Retail将拥有一处物业，Luma Travel将拥有另一处物业
+- 不同的网站以不同的方式为客户提供服务。 例如，Luma Retail将拥有一处房产，Luma Travel将拥有另一处房产。
 - 旧版以及当前网站
 - 适用于多个不同网站的特定Adobe Analytics设计
 - 内部Intranet页面与外部站点并存

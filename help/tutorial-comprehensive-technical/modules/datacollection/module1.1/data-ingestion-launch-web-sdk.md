@@ -4,16 +4,18 @@ description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的
 kt: 5342
 doc-type: tutorial
 exl-id: b69ebe41-ff28-4dde-b639-198201120742
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
 
-# 1.1基础 — 设置Adobe Experience Platform数据收集和Web SDK扩展
+# 1.1基础 — 设置Adobe Experience Platform数据收集和Web SDK标记扩展
 
-此基础模块向您介绍Adobe的数据收集愿景，并介绍如何通过Adobe Experience Platform数据收集、Adobe Experience Platform SDK和Adobe Experience PlatformEdge Network将数据从网站和移动应用程序获取到Adobe Experience Platform和其他应用程序中。 本模块介绍的一些概念和技术所产生的影响超出Adobe Experience Platform技术教程的范围。 您应该清楚，这些练习的哪些部分是本全面教程其余部分的基础(这些部分将向您提供更多有关Experience Edge及其功能的信息)，以及在何处可查看更多信息和教程。
+此基础模块向您介绍Adobe的数据收集愿景，并介绍如何通过Adobe Experience Platform数据收集、Adobe Experience Platform SDK和Adobe Experience PlatformEdge Network将数据从网站和移动应用程序获取到Adobe Experience Platform和其他应用程序中。
+
+本模块介绍的一些概念和技术所产生的影响超出Adobe Experience Platform技术教程的范围。 应该清楚的是，这些练习的哪些部分是全面教程其余部分的基础，这些部分将向您提供更多有关Edge Network及其功能的知识，以及可在何处获取更多信息和教程。
 
 ## 学习目标
 
@@ -21,9 +23,9 @@ ht-degree: 0%
 - 了解品牌用于将数据摄取到其Adobe产品的数据流。
 - 了解如何通过Adobe Experience PlatformEdge Network将数据发送到Adobe Experience Platform和其他产品。
 - 了解如何创建从Web和移动设备收集数据的数据元素和规则。
-- 了解Web SDK跟踪事件以及如何调试其内容。
+- 了解[Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)跟踪事件以及如何调试其内容。
 - 了解什么是数据层以及实施数据层时Adobe的建议。
-- 了解从头开始实施Web SDK的步骤是什么。
+- 了解从头开始实施[Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)的步骤是什么。
 - 了解Web实施与移动实施之间的区别。
 
 ## 先决条件
@@ -60,11 +62,11 @@ ht-degree: 0%
 
 [1.1.6实施Adobe Target](./ex6.md)
 
-在本练习中，将设置Adobe Target中的一个活动，该活动通过Web SDK实施。
+在本练习中，我们将在Adobe Target中设置一个活动，该活动可通过Web SDK实施。
 
 [1.1.7 Adobe Experience Platform中的XDM架构要求](./ex7.md)
 
-为了确保Web SDK和alloy.js能够将数据摄取到Adobe Experience Platform，需要特定的XDM Mixin才能成为Adobe Experience Platform中XDM架构的一部分。
+为了确保Web SDK能够将数据摄取到Adobe Experience Platform，需要特定的XDM mixin才能成为Adobe Experience Platform中XDM架构的一部分。
 
 [摘要和优点](./summary.md)
 

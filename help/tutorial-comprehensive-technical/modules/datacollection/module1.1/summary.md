@@ -3,7 +3,8 @@ title: 设置Adobe Experience Platform数据收集和Web SDK扩展 — 摘要
 description: 设置Adobe Experience Platform数据收集和Web SDK扩展 — 摘要
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 210b1dff-37cc-4eb1-a55a-1f49160549e9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -25,7 +26,7 @@ ht-degree: 0%
 ## 看看这个
 
 - 技术博客： [使用Adobe Experience Platform Web SDK简化客户工作流程](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
-- 技术博客： [简化客户端服务器与Adobe Experience Platform Experience Edge的集成](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
+- 技术博客： [简化客户端服务器与Adobe Experience PlatformEdge Network的集成](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
 - 技术博客： [将您的Adobe Experience Platform服务与Adobe Experience Platform Web SDK统一起来](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
 
 [返回模块1](./data-ingestion-launch-web-sdk.md)

@@ -4,9 +4,9 @@ description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的
 kt: 5342
 doc-type: tutorial
 exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1269'
+source-wordcount: '1272'
 ht-degree: 10%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 10%
 
 ## 上下文
 
-现在，让我们更深入地了解Adobe Experience Platform数据收集的构建基块，以了解您的演示网站上安装的内容。 您将详细了解Adobe Experience Platform Web SDK扩展，它将配置数据元素和规则，并且您将了解如何发布库。
+现在，让我们更深入地了解Adobe Experience Platform数据收集的构建基块，以了解您的演示网站上安装的内容。 您将更详细地了解Adobe Experience Platform Web SDK扩展，配置数据元素和规则，以及如何发布库。
 
-## Adobe Experience Platform Web SDK 扩展
+## Adobe Experience Platform Web SDK标记扩展
 
-扩展是一组打包的代码，用于扩展Adobe Experience Platform数据收集界面和库功能。 Adobe Experience Platform数据收集是一个平台，而扩展就像在该平台上运行的应用程序。 本教程中使用的所有扩展均由Adobe创建和管理，但第三方可以创建自己的扩展，以限制Adobe Experience Platform数据收集用户必须管理的自定义代码量。
+标记扩展是一组打包的代码，用于扩展Adobe Experience Platform数据收集界面和库功能。 Adobe Experience Platform数据收集是一个平台，而标记扩展类似于在该平台上运行的应用程序。 本教程中使用的所有扩展均由Adobe创建和管理，但第三方可以创建自己的扩展，以限制Adobe Experience Platform数据收集用户必须管理的自定义代码量。
 
 转到[Adobe Experience Platform数据收集](https://experience.adobe.com/launch/)并选择&#x200B;**标记**。
 
@@ -34,7 +34,7 @@ ht-degree: 10%
 
 
 
-然后，您将看到资产概述页面。 单击左边栏中的&#x200B;**[!UICONTROL 扩展]**，单击&#x200B;**Adobe Experience Platform Web SDK**，然后单击&#x200B;**[!UICONTROL 配置]**。
+然后，您将看到资产概述页面。 单击左边栏中的&#x200B;**[!UICONTROL 扩展]**，然后单击&#x200B;**Adobe Experience Platform Web SDK**，然后单击&#x200B;**[!UICONTROL 配置]**。
 
 ![属性概述页面](./images/property7.png)
 
@@ -72,7 +72,7 @@ ht-degree: 10%
 
 ![搜索ruleArticlePages](./images/dataelement2.png)
 
-此屏幕显示您将编辑的XDM对象。 Experience Data Model (XDM)这一概念将在本技术教程中深入探讨，但目前足以将其理解为Adobe Experience Platform Web SDK所需的格式。 您将向在演示网站的文章页面上收集的数据添加一些更多信息。
+此屏幕显示您将编辑的XDM对象。 Experience Data Model (XDM)这一概念将在本技术教程中深入探讨，但目前足以将它理解为Adobe Experience Platform Web SDK所需的格式。 您将向在演示网站的文章页面上收集的数据添加一些更多信息。
 
 单击树底部&#x200B;**Web**&#x200B;旁边的加号按钮。
 

@@ -4,9 +4,9 @@ description: 快速入门 — 为Experience League文档安装Chrome扩展
 kt: 5342
 doc-type: tutorial
 exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
-source-git-commit: 58e60ad8c83dcd25996e06f11c75f68eae35ef20
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -72,13 +72,13 @@ ht-degree: 0%
 
 如果您不确定要为这些字段输入什么值，请遵循以下指南。
 
-**AEP IMS组织名称**
+**Adobe Experience Platform IMS组织名称**
 
 当您在[https://platform.adobe.com/](https://platform.adobe.com/)上登录到Adobe Experience Platform实例时，您将在屏幕的右上角找到实例的名称。
 
 ![DSN](./images/aepname.png)
 
-**AEP IMS组织ID**
+**Adobe Experience Platform IMS组织ID**
 
 IMS组织ID是Adobe Experience Cloud实例的唯一标识符，在本教程中的多个位置引用了该标识符。
 
@@ -88,29 +88,29 @@ IMS组织ID是Adobe Experience Cloud实例的唯一标识符，在本教程中�
 
 ![DSN](./images/aepid1.png)
 
-您还可以通过转至AEP菜单中的&#x200B;**数据管理>查询**&#x200B;找到它，您可以在&#x200B;**用户名**&#x200B;下找到它。
+您还可以通过转到Adobe Experience Platform菜单中的&#x200B;**数据管理>查询**&#x200B;找到它，您可以在&#x200B;**用户名**&#x200B;下找到它。
 
 ![DSN](./images/aepid2.png)
 
 请确保复制并粘贴&#x200B;**@AdobeOrg**&#x200B;部分以及ID。
 
-**AEP租户ID**
+**Adobe Experience Platform租户ID**
 
-您的租户ID是组织AEP实例的唯一标识符。 当您在[https://platform.adobe.com/](https://platform.adobe.com/)上登录到Adobe Experience Platform实例时，您将在URL中找到租户ID。
+您的租户ID是组织Adobe Experience Platform实例的唯一标识符。 当您在[https://platform.adobe.com/](https://platform.adobe.com/)上登录到Adobe Experience Platform实例时，您将在URL中找到租户ID。
 
 ![DSN](./images/aeptenantid.png)
 
 当您在Chrome扩展中输入它时，应确保添加下划线作为前缀，因此在此示例中&#x200B;**experienceplatform**&#x200B;变为&#x200B;**_experienceplatform**。 此外，请确保在从URL复制时移除&#x200B;**@**&#x200B;符号。
 
-**AEP沙盒名称**
+**Adobe Experience Platform沙盒名称**
 
-您的沙盒名称是您将在AEP实例中使用的环境的名称。 当您在[https://platform.adobe.com/](https://platform.adobe.com/)上登录到Adobe Experience Platform实例时，您将在URL中找到租户ID。
+您的沙盒名称是您将在Adobe Experience Platform实例中使用的环境的名称。 当您在[https://platform.adobe.com/](https://platform.adobe.com/)上登录到Adobe Experience Platform实例时，您将在URL中找到租户ID。
 
 在从URL获取沙盒名称之前，您应确保位于应用于本教程的沙盒中。 您可以通过单击屏幕右上角的沙盒切换器菜单切换到右沙盒。
 
 ![DSN](./images/aepsandboxsw.png)
 
-在此示例中，AEP沙盒名称为&#x200B;**技术内幕**。
+在此示例中，Adobe Experience Platform沙盒名称为&#x200B;**技术内幕**。
 
 ![DSN](./images/aepsname.png)
 
@@ -140,7 +140,7 @@ LDAP用于确保您即将执行的配置将链接到您，并且不会与您正�
 
 现在，您应该看到，根据Chrome扩展中激活的环境，所有&#x200B;**环境变量**&#x200B;都已替换为其真值。
 
-您现在应具有类似于下面的视图，其中环境变量`aepTenantId`已被您的实际AEP租户ID替换，在本例中为&#x200B;**_experienceplatform**。
+您现在应具有类似于下面的视图，其中环境变量`aepTenantId`已被您的实际Adobe Experience Platform租户ID替换，在本例中为&#x200B;**_experienceplatform**。
 
 ![DSN](./images/mod7.png)
 

@@ -4,9 +4,9 @@ description: 快速入门 — 创建数据流
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '848'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 目前，请按照以下步骤操作。
 
-## 为Web创建数据流
+## 为Web数据收集创建数据流
 
 单击&#x200B;**[!UICONTROL 数据流]**。
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 ![命名Edge配置并保存](./images/edgeconfig17a.png)
 
-## 为移动设备创建数据流
+## 为移动数据收集创建数据流
 
 转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
 

@@ -1,16 +1,17 @@
 ---
 title: 设置
-description: 设置您的AEP实例
+description: 设置您的Adobe Experience Platform实例
 doc-type: multipage-overview
 hide: false
-source-git-commit: c0649aeacdce00e09c993f2130de3423efc352fa
+exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1048'
 ht-degree: 3%
 
 ---
 
-# 设置
+# 设置您的Adobe Experience Platform实例
 
 >[!IMPORTANT]
 >
@@ -31,7 +32,7 @@ ht-degree: 3%
 
 ## 创建沙盒
 
-要在您自己的AEP实例中完成教程，建议先设置新的开发沙盒。 要创建新沙盒，请转到[https://experience.adobe.com/platform](https://experience.adobe.com/platform)，转到沙盒，然后转到&#x200B;**浏览**。 单击&#x200B;**创建沙盒**。
+要在您自己的Adobe Experience Platform实例中完成本教程，建议您先设置一个新的开发沙盒。 要创建新沙盒，请转到[https://experience.adobe.com/platform](https://experience.adobe.com/platform)，转到沙盒，然后转到&#x200B;**浏览**。 单击&#x200B;**创建沙盒**。
 
 ![创建沙盒](./assets/images/sandbox1.png)
 
@@ -39,7 +40,7 @@ ht-degree: 3%
 
 - 类型： **开发**
 - 名称： **aep-tutorial**
-- 标题： **AEP教程**
+- 标题： **Adobe Experience Platform教程**
 
 单击&#x200B;**创建**。
 
@@ -57,7 +58,7 @@ ht-degree: 3%
 
 ![创建沙盒](./assets/images/perm1.png)
 
-为您的角色指定名称，如&#x200B;**AEP教程**，单击&#x200B;**确认**。
+为角色命名(如&#x200B;**Adobe Experience Platform Tutorial**)，单击&#x200B;**确认**。
 
 ![创建沙盒](./assets/images/perm2.png)
 
@@ -84,7 +85,7 @@ ht-degree: 3%
 
 ![创建沙盒](./assets/images/io1.png)
 
-单击&#x200B;**+添加到项目**，然后单击&#x200B;**API**。
+单击&#x200B;**添加到项目**，然后单击&#x200B;**API**。
 
 ![创建沙盒](./assets/images/io2.png)
 
@@ -100,7 +101,7 @@ ht-degree: 3%
 
 ![创建沙盒](./assets/images/io5.png)
 
-单击&#x200B;**+添加到项目**，然后再次单击&#x200B;**API**。
+单击&#x200B;**添加到项目**，然后再次单击&#x200B;**API**。
 
 ![创建沙盒](./assets/images/io6.png)
 
@@ -124,7 +125,7 @@ ht-degree: 3%
 
 ![创建沙盒](./assets/images/io11.png)
 
-输入新的&#x200B;**项目标题**，如&#x200B;**DSN AEP教程**。 单击&#x200B;**保存**。
+输入新的&#x200B;**项目标题**，如&#x200B;**DSN Adobe Experience Platform教程**。 单击&#x200B;**保存**。
 
 ![创建沙盒](./assets/images/io12.png)
 
@@ -237,7 +238,7 @@ ht-degree: 3%
 
 ![创建沙盒](./assets/images/dsnorg15.png)
 
-成功完成所有工作后，即表示您的AEP实例配置成功，可供学习者参加教程。
+成功完成所有工作后，即表示您的Adobe Experience Platform实例配置成功，可供学习者参加教程。
 
 >[!NOTE]
 >

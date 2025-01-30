@@ -4,7 +4,7 @@ description: 基础 — 设置Adobe Experience Platform数据收集和Web SDK扩
 kt: 5342
 doc-type: tutorial
 exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
 source-wordcount: '525'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 在Analytics中映射变量
 
-Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽快通过Web SDK快速完成新的Analytics实施。 自动映射的变量在[此处](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)列出。
+Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽快通过Web SDK实现Analytics的新实施。 自动映射的变量在[此处](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)列出。
 
 对于未自动映射到Adobe Analytics的XDM数据，您可以使用[上下文数据](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=zh-Hans)来匹配您的[架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)。 然后，可以使用[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)将其映射到Analytics中以填充Analytics变量。 上下文数据和处理规则将是以前与Analytics一起使用的概念所熟悉的概念，但如果它们是新概念，则现在无需担心详细信息。
 
@@ -62,7 +62,7 @@ Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽�
 
 ## 审查您的数据流以将数据发送到Adobe Analytics
 
-如果要将Web SDK收集的数据发送到Adobe Analytics和Adobe Audience Manager，请执行以下步骤。
+如果您要将Web SDK收集的数据发送到Adobe Analytics和Adobe Audience Manager，请执行以下步骤。
 
 转到[https://experience.adobe.com/launch/](https://experience.adobe.com/launch/)并转到&#x200B;**数据流**。
 
@@ -70,7 +70,7 @@ Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽�
 
 ![单击左侧导航栏中的“Edge配置”图标](./images/edgeconfig1b.png)
 
-你会看到这个。 要启用Adobe Analytics，请单击&#x200B;**+添加服务**。
+你会看到这个。 要启用Adobe Analytics，请单击&#x200B;**添加服务**。
 
 ![AEP调试器](./images/aa2.png)
 
@@ -80,7 +80,7 @@ Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽�
 
 ## 审查您的数据流以将数据发送到Adobe Audience Manager
 
-你会看到这个。 要启用Adobe Audience Manager，请单击&#x200B;**+添加服务**。
+你会看到这个。 要启用Adobe Audience Manager，请单击&#x200B;**添加服务**。
 
 ![AEP调试器](./images/aa2.png)
 

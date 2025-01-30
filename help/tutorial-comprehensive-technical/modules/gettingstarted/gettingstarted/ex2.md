@@ -4,16 +4,16 @@ description: 快速入门 — 使用演示系统设置您的Launch资产
 kt: 5342
 doc-type: tutorial
 exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
-source-git-commit: 7f436f77ab6d7c625181304fd41be75c627c5b46
+source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
 # 使用Demo System Next设置您的Adobe Experience Platform数据收集客户端资产
 
-为了在本教程中直观地了解所学到的知识并使您能够在安全的环境中测试您的配置，本教程正在使用Adobe的Demo System Next工具。 为了充分利用本教程，需要将AEP实例配置为与演示系统下一步集成。
+为了在本教程中直观地了解所学到的知识并使您能够在安全的环境中测试您的配置，本教程正在使用Adobe的Demo System Next工具。 为了充分利用本教程，您需要将Adobe Experience Platform实例配置为与演示系统下一步集成。
 
 获得演示系统访问权限后，请继续执行以下步骤。
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsnsetup.png)
 
-在&#x200B;**环境**&#x200B;下拉列表中，选择您的AEP实例和沙盒。
+在&#x200B;**环境**&#x200B;下拉列表中，选择您的Adobe Experience Platform实例和沙盒。
 
 ![DSN](./images/dsnh1.png)
 
