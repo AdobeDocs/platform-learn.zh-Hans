@@ -3,9 +3,10 @@ title: AEM CS — 高级自定义块
 description: AEM CS — 高级自定义块
 kt: 5342
 doc-type: tutorial
-source-git-commit: baa9b176213883559fafba9be19e0c5749623d56
+exl-id: fa299668-c902-4775-a540-7555ca461d3e
+source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '996'
 ht-degree: 0%
 
 ---
@@ -91,7 +92,7 @@ export default function decorate(block) {
 
 现在，您在项目中进行了一些需要提交回GitHub存储库的更改。 为此，请打开&#x200B;**GitHub Desktop**。
 
-然后，您应该会在&#x200B;**更改**&#x200B;下看到刚才编辑的3个文件。 查看更改。
+然后，您应该会在&#x200B;**更改**&#x200B;下看到刚才编辑的2个文件。 查看更改。
 
 输入PR的名称`js css`。 单击&#x200B;**提交到主页面**。
 
@@ -344,7 +345,7 @@ async function getOffer(ECID) {
 
 ![块](./images/blockadv20.png)
 
-下一步：[摘要和优点](./summary.md){target="_blank"}
+下一步： [2.1.6 AEMEdge Delivery ServicesMarTech插件](./ex6.md){target="_blank"}
 
 [返回模块2.1](./aemcs.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: 基础 — 数据摄取 — 从未知到在网站上已知
 kt: 5342
 doc-type: tutorial
 exl-id: 08cb7892-4e1c-4646-9e3b-8ab008dfd947
-source-git-commit: 3a19e88e820c63294eff38bb8f699a9f690afcb9
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '749'
+source-wordcount: '762'
 ht-degree: 1%
 
 ---
@@ -49,7 +49,7 @@ Platform是一个环境，其中单词&#x200B;**customer**&#x200B;比&#x200B;**k
 
 ![演示](./images/pv1.png)
 
-请查看配置文件查看器面板和实时客户配置文件，将&#x200B;**Experience CloudID**&#x200B;作为当前未知客户的主要标识符。
+请查看配置文件查看器面板和实时客户配置文件，将&#x200B;**Experience CloudID**&#x200B;作为此当前未知客户的主要标识符。
 
 ![演示](./images/pv2.png)
 
@@ -61,11 +61,15 @@ Platform是一个环境，其中单词&#x200B;**customer**&#x200B;比&#x200B;**k
 
 ![演示](./images/pv4.png)
 
-然后，您将看到产品详细信息页面。 **产品视图**&#x200B;类型的Experience Event现已使用您在上一个模块中审查的Web SDK实现发送到Adobe Experience Platform。
+然后，您将看到产品详细信息页面。 **产品视图**&#x200B;类型的Experience Event现已使用您在上一模块中审查的Web SDK实现发送到Adobe Experience Platform。
 
 ![演示](./images/pv5.png)
 
 打开“配置文件查看器”面板，并查看您的&#x200B;**体验事件**。
+
+>[!NOTE]
+>
+>如果您没有看到该事件立即显示，请刷新页面。
 
 ![演示](./images/pv6.png)
 

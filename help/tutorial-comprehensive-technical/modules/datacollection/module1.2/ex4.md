@@ -4,9 +4,9 @@ description: 基础 — 数据摄取 — 从离线源摄取数据
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '1472'
+source-wordcount: '1513'
 ht-degree: 5%
 
 ---
@@ -82,8 +82,11 @@ ht-degree: 5%
 
 ![数据获取](./images/emeacrmoverview.png)
 
-
 在概述屏幕上，您可以看到3条主要信息。
+
+>[!NOTE]
+>
+>如果过去7天内未发生任何活动，则数据集的视图可能为空。
 
 ![数据获取](./images/dashboard.png)
 
@@ -146,6 +149,10 @@ ht-degree: 5%
 现在，您需要在&#x200B;**[!UICONTROL 演示系统 — CRM]**&#x200B;的配置文件数据集中使用XDM — 属性映射CSV文件中的列标题。
 
 Adobe Experience Platform已为您提出了一些建议，方法是尝试将[!UICONTROL Source属性]与[!UICONTROL 目标架构字段]链接。
+
+>[!NOTE]
+>
+>如果您在映射屏幕上看到任何错误，请不要担心。 按照以下说明操作后，将解决这些错误。
 
 ![数据获取](./images/mapschema.png)
 
@@ -251,7 +258,7 @@ Source架构字段&#x200B;**last_name**&#x200B;应链接到目标字段&#x200B;*
 
 ![数据获取](./images/pencil.png)
 
-转到&#x200B;**[!UICONTROL 身份数据]**，您将看到已选中&#x200B;**[!UICONTROL I2]**&#x200B;选项 — 这将假定此数据集中的所有信息段至少可间接识别给人员。
+转到&#x200B;**[!UICONTROL 身份标签]**，您将看到已选中&#x200B;**[!UICONTROL I2]**&#x200B;选项 — 这将假定此数据集中的所有信息段至少可间接识别给人员。
 
 单击&#x200B;**[!UICONTROL 保存更改]**。
 

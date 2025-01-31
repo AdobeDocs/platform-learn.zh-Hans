@@ -4,9 +4,9 @@ description: Foundation — 数据摄取 — 配置架构并设置标识符
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '3127'
+source-wordcount: '3138'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ ht-degree: 4%
 ![数据获取](./images/schemastructurem.png)
 
 您的新[!UICONTROL 字段组]仍然为空，因此现在您必须将字段添加到该[!UICONTROL 字段组]。
-在[!UICONTROL 字段组]列表中，单击您的自定义[!UICONTROL 字段组]。
+在[!UICONTROL 字段组]列表中，单击您的自定义[!UICONTROL 字段组]，然后单击&#x200B;**浏览**。
 
 ![数据获取](./images/schemastructurem.png)
 
@@ -305,7 +305,7 @@ ht-degree: 4%
 
 ![数据获取](./images/sb1.png)
 
-在Adobe Experience Platform中，单击屏幕左侧菜单中的&#x200B;**[!UICONTROL 架构]**。
+在Adobe Experience Platform中，单击屏幕左侧菜单中的&#x200B;**[!UICONTROL 架构]**，然后转到&#x200B;**浏览**。
 
 ![数据获取](./images/menuschemas.png)
 
@@ -446,10 +446,10 @@ ECID字段将被定义为类型&#x200B;**[!UICONTROL 字符串]**，您将将此
 ![数据获取](./images/applyidenee.png)
 
 请务必注意，最终针对此架构摄取数据时，需要填写一些字段。
-例如，字段**[!UICONTROL _id]**&#x200B;和&#x200B;**[!UICONTROL timestamp]**&#x200B;是必填字段。
+例如，字段**[!UICONTROL _id]**&#x200B;和&#x200B;**[!UICONTROL timestamp]**&#x200B;是必填字段，这是ExperienceEvent类强制要求的条件。
 
 - _id需要包含用于特定数据摄取的唯一id
-- 时间戳需要为此点击的时间戳，格式为&#x200B;**[!UICONTROL &quot;YYYY-MM-DDTHH:MM:SSSZ&quot;]**，例如：**[!UICONTROL &quot;2024-11-18T07:20:000Z&quot;]**
+- 时间戳需要为此点击的时间戳，格式为&#x200B;**`"YYYY-MM-DDTHH:MM:SSSZ"`**，例如实例：**`"2024-11-18T07:20:000Z"`**
 
 您现在已定义架构，链接了现有和新创建的[!UICONTROL 字段组]，并定义了标识符。
 

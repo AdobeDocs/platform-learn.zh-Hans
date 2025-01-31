@@ -4,7 +4,7 @@ description: 基础 — 数据摄取 — 从离线源摄取数据
 kt: 5342
 doc-type: tutorial
 exl-id: 21b84a77-4115-4ba7-b847-b236aa14bbdd
-source-git-commit: 8bdcd03bd38a6da98b82439ad86482cad5f4e684
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
 source-wordcount: '771'
 ht-degree: 2%
@@ -28,11 +28,11 @@ ht-degree: 2%
 
 ![dlz-install-az-copy.png](./images/dlzinstallazcopy.png)
 
-- 解压缩下载文件
+- 解压缩下载的文件
 
 ![dlz-install-az-copy.png](./images/dlz1.png)
 
-- 下载包含示例网站交互的示例数据文件global-context-websiteinteractions.csv，并将其保存到解压缩&#x200B;**azcopy**&#x200B;的文件夹中。
+- 下载包含示例网站交互的示例数据文件[global-context-websiteinteractions.csv](./../../../assets/csv/data-ingestion/global-context-websiteinteractions.csv)，并将其保存到您解压缩&#x200B;**azcopy**&#x200B;的文件夹中。
 
 ![dlz-install-az-copy.png](./images/dlz2.png)
 

@@ -4,10 +4,10 @@ description: Adobe Experience ManagerCloud Service和Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
-source-git-commit: cbe8d728d779795cc90ba6b3ad1b687eca5848bf
+source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
 workflow-type: tm+mt
-source-wordcount: '199'
-ht-degree: 2%
+source-wordcount: '233'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +42,10 @@ ht-degree: 2%
 [2.1.5高级自定义块](./ex5.md){target="_blank"}
 
 在本练习中，您将为网站开发一个高级自定义块。
+
+[2.1.6 AEMEdge Delivery ServicesMarTech插件](./ex6.md){target="_blank"}
+
+在本练习中，您将实施AEM MarTech插件。 AEM MarTech插件可帮助您为AEM项目快速设置一个完整的MarTech栈栈。
 
 [摘要和优点](./summary.md){target="_blank"}
 
