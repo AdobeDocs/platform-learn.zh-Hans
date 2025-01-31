@@ -4,7 +4,7 @@ description: 创建和配置自定义webhook
 kt: 5342
 doc-type: tutorial
 exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
-source-git-commit: 7779e249b4ca03c243cf522811cd81370002d51a
+source-git-commit: ca4c53ba88bc6a256fc540091413f5efb05945ee
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 创建您的自定义webhook
 
-转到[https://pipedream.com/requestbin](https://pipedream.com/requestbin)。 您已在[练习2.3.7 Destinations SDK](./../../../modules/rtcdp-b2c/module2.3/ex7.md)中使用此应用程序
+转到[https://pipedream.com/requestbin](https://pipedream.com/requestbin)。 您已在[练习2.3.6目标SDK](./../../../modules/rtcdp-b2c/module2.3/ex6.md)中使用此应用程序
 
 如果您尚未使用该服务，请创建一个帐户，然后创建一个工作区。 创建工作区后，您将看到类似以下的内容。
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 >
 >在上述路径中，引用了&#x200B;**arc**。 **arc**&#x200B;表示Adobe资源上下文，**arc**&#x200B;始终表示服务器端上下文中可用的最高对象。 可以使用Adobe Experience Platform数据收集服务器功能将增强和转换添加到该&#x200B;**arc**&#x200B;对象。
 >
->在上述路径中，引用了&#x200B;**事件**。 **event**&#x200B;表示一个独特事件，Adobe Experience Platform数据收集服务器将始终单独评估每个事件。 有时，您可能会在Web SDK客户端发送的有效负载中看到对&#x200B;**events**&#x200B;的引用，但在Adobe Experience Platform数据收集服务器中，将单独评估每个事件。
+>在上述路径中，引用了&#x200B;**事件**。 **event**&#x200B;表示一个独特事件，Adobe Experience Platform数据收集服务器将始终单独评估每个事件。 有时，您可能会在Web SDK客户端发送的有效负载中看到对&#x200B;**events**&#x200B;的引用，但在Adobe Experience Platform数据收集服务器中，每个事件都会单独进行评估。
 
 ## 更新您的Adobe Experience Platform数据收集服务器属性：创建规则
 
