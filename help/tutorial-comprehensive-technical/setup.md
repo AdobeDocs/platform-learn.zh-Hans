@@ -4,9 +4,9 @@ description: 设置您的Adobe Experience Platform实例
 doc-type: multipage-overview
 hide: false
 exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
-source-git-commit: 1526661a80b4d551627dfca42a7e97c9498dd1f2
+source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1076'
 ht-degree: 3%
 
 ---
@@ -253,5 +253,11 @@ ht-degree: 3%
 >[!NOTE]
 >
 >感谢您花时间学习Adobe Experience Platform及其应用程序的所有知识。 如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
+
+![技术内部人士](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>如果您有任何疑问，希望分享对未来内容提出建议的一般反馈，请直接联系技术业内人士，方式是向&#x200B;**techinsiders@adobe.com**&#x200B;发送电子邮件。
 
 [返回所有模块](./overview.md)
