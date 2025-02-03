@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: e940c5c9e0a028890c6f7f68c7d32fa73515e8c3
+source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
 workflow-type: tm+mt
-source-wordcount: '957'
-ht-degree: 17%
+source-wordcount: '873'
+ht-degree: 18%
 
 ---
 
@@ -118,22 +118,6 @@ ht-degree: 17%
    + [Mobile SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + 数据生命周期{#data-lifecycle}
    + [使数据集过期](/help/platform/data-lifecycle/expire-datasets.md)
-+ 数据科学Workspace {#data-science-workspace}
-   + [概述](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
-   + [架构](data-science-workspace/architecture-overview.md)
-   + [创建课程模式和数据集](data-science-workspace/create-the-course-schema-and-dataset.md)
-   + [在JupyterLab笔记本中加载数据](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
-   + [在JupyterLab笔记本中查询和发现数据](data-science-workspace/dsw-query-service.md)
-   + [探索性数据分析](data-science-workspace/eda.md)
-   + [配方、模型和服务概述](data-science-workspace/recipes-models-services-overview.md)
-   + [使用方法生成器模板生成模型](data-science-workspace/recipe-builder-template.md)
-   + [分析模型性能](data-science-workspace/analyze-model-performance.md)
-   + [创建和发布经过训练的模型(UI)](data-science-workspace/create-model-ui.md)
-   + [安排服务的自动培训和评分](data-science-workspace/schedule-training-scoring.md)
-   + [利用机器学习见解丰富实时客户档案](data-science-workspace/dsw-profile-segmentation.md)
-   + [将源文件打包到方法中](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-   + [导入打包的方法(UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
-   + [导入打包的方法(API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + 目标 {#destinations}
    + [目标概述](/help/platform/destinations/understanding-destinations.md)
    + [连接到目标](/help/platform/destinations/connecting-to-destinations.md)
