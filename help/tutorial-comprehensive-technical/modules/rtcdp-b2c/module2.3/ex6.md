@@ -4,10 +4,10 @@ description: Real-time CDP — 目标SDK
 kt: 5342
 doc-type: tutorial
 exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '1098'
-ht-degree: 5%
+source-wordcount: '1123'
+ht-degree: 4%
 
 ---
 
@@ -17,9 +17,17 @@ ht-degree: 5%
 
 在本练习中，您将再次使用Adobe I/O来查询Adobe Experience Platform的API。如果尚未配置Adobe I/O项目，请返回模块2.1](../module2.1/ex3.md)中的[练习3，然后按照其中的说明操作。
 
-## 对Adobe I/O进行Postman身份验证
+>[!IMPORTANT]
+>
+>如果您是Adobe员工，请按照此处的说明使用[PostBuster](./../../../postbuster.md)。
+
+## Adobe I/O身份验证
 
 在本练习中，您将再次使用Postman来查询Adobe Experience Platform的API。如果尚未配置Postman应用程序，请返回模块2.1](../module2.1/ex3.md)中的[练习3，然后按照其中的说明操作。
+
+>[!IMPORTANT]
+>
+>如果您是Adobe员工，请按照此处的说明使用[PostBuster](./../../../postbuster.md)。
 
 ## 定义端点和格式
 
@@ -101,7 +109,7 @@ ht-degree: 5%
 
 ![数据获取](./images/sdkpm4.png)
 
-更新字段&#x200B;**urlBasedDestiantion.url.value**&#x200B;后，它应该如下所示。 单击&#x200B;**发送**。
+更新字段&#x200B;**urlBasedDestination.url.value**&#x200B;后，它应该如下所示。 单击&#x200B;**发送**。
 
 ![数据获取](./images/sdkpm5.png)
 

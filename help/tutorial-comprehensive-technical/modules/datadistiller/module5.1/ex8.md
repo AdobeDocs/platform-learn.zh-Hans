@@ -4,9 +4,9 @@ description: 查询服务 — 查询服务API
 kt: 5342
 doc-type: tutorial
 exl-id: d356f7e2-523b-41a2-9cc6-1ea2a028c3a7
-source-git-commit: f843c50af04d744a7d769f320b5b55a5e6d25ffd
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '982'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
@@ -51,6 +51,10 @@ limit 10;
 ```
 
 ## 查询
+
+>[!IMPORTANT]
+>
+>如果您是Adobe员工，请按照此处的说明使用[PostBuster](./../../../postbuster.md)。
 
 在计算机上打开Postman。 在模块2.1中，您创建了一个Postman环境并导入了一个Postman收藏集。 请按照[练习2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md)中的说明进行操作，以防您尚未执行该操作。
 

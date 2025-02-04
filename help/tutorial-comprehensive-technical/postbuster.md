@@ -2,9 +2,10 @@
 title: PostBuster -Adobe员工
 description: PostBuster -Adobe员工
 doc-type: multipage-overview
-source-git-commit: 7b559bc183dbabdb0100681b675cd3c3b8123ba6
+exl-id: a798e9d7-bb99-4390-885f-5fbd2ef4cee9
+source-git-commit: 9c1b30dc0fcca6b4324ec7c8158699fa273cdc90
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -14,6 +15,15 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >以下说明仅适用于Adobe员工。
+
+>[!IMPORTANT]
+>
+>按照以下说明，您将拥有将在这些练习中使用的所有必需API集合：
+>
+>- [2.1.3可视化您自己的实时客户个人资料 — API](./modules/rtcdp-b2c/module2.1/ex3.md)
+>- [2.3.6目标SDK](./modules/rtcdp-b2c/module2.3/ex6.md)
+>- [3.3.6使用API测试您的决定](./modules/ajo-b2c/module3.3/ex6.md)
+>- [5.1.8查询服务API](./modules/datadistiller/module5.1/ex8.md)
 
 ## 安装PostBuster
 
@@ -39,7 +49,7 @@ ht-degree: 0%
 
 ![PostBuster](./assets/images/pb4.png)
 
-选择文件&#x200B;**postbuster.json**。 单击&#x200B;**打开**。
+选择文件&#x200B;**aep_tutorial.json**。 单击&#x200B;**打开**。
 
 ![PostBuster](./assets/images/pb5.png)
 
@@ -77,6 +87,9 @@ ht-degree: 0%
 	"SCOPES": [
 		"openid",
 		"AdobeID",
+		"read_organizations",
+		"additional_info.projectedProductContext",
+		"session",
 		"ff_apis",
 		"firefly_api"
 	],
@@ -85,10 +98,8 @@ ht-degree: 0%
 	"IMS_ORG": "",
 	"access_token": "",
 	"IMS_TOKEN": "",
-	"AZURE_STORAGE_URL": "",
-	"AZURE_STORAGE_CONTAINER": "",
-	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": ""
+	"QS_QUERY_ID": "",
+	"SANDBOX_NAME": ""
 }
 ```
 
@@ -96,7 +107,7 @@ ht-degree: 0%
 
 ![PostBuster](./assets/images/pb12.png)
 
-完成&#x200B;**Firefly服务**&#x200B;模块后，您的环境应如下所示。 您现在不需要执行此操作，将在稍后阶段解决此问题。
+创建AdobeIO项目后，环境应如下所示。 您现在不需要执行此操作，将在稍后阶段解决此问题。
 
 ![PostBuster](./assets/images/pb13.png)
 

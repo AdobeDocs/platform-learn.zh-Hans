@@ -4,7 +4,7 @@ description: Real-time CDP — 构建受众并采取行动 — 将受众发送�
 kt: 5342
 doc-type: tutorial
 exl-id: b041897b-4ee8-4ff8-a3bc-d953e2e42a1a
-source-git-commit: 4cb6b284f675c78b22482f17c59c0d82f82a232a
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 2%
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 验证您的数据流
 
-Real-Time CDP中的Adobe Target目标已连接到用于将数据摄取到Adobe边缘网络的数据流。 如果要设置Adobe Target目标，您首先需要验证是否已为Adobe Target启用数据流。 您的数据流是在[练习0.2创建数据流](./../../../modules/gettingstarted/gettingstarted/ex2.md)中配置的，名称为`--aepUserLdap-- - Demo System Datastream`。
+Real-Time CDP中的Adobe Target目标已连接到用于将数据摄取到Adobe Edge网络的数据流。 如果要设置Adobe Target目标，您首先需要验证是否已为Adobe Target启用数据流。 您的数据流是在[练习0.2创建数据流](./../../../modules/gettingstarted/gettingstarted/ex2.md)中配置的，名称为`--aepUserLdap-- - Demo System Datastream`。
 
 在左侧菜单中，向下滚动并单击&#x200B;**数据流**。 在数据流中，搜索名为`--aepUserLdap-- - Demo System Datastream`的数据流。 单击您的数据流以将其打开。
 
@@ -159,11 +159,16 @@ document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main
 
 在单击&#x200B;**添加**&#x200B;按钮之前，请确保转到您看到`... > h1").innerHTML="Hi there ";`的行并将光标放在单词`there`后面的括号中，如下所示：
 
-`... > h1").innerHTML="Hi there ";`
+```
+... > h1").innerHTML="Hi there ";
+```
 
 然后单击&#x200B;**添加**&#x200B;按钮，该按钮随后应添加令牌，这将如下所示更新代码：
 
-`... > h1").innerHTML="Hi there ${aep.person.name.firstName}";`
+```
+... > h1").innerHTML="Hi there ${aep.person.name.firstName}";
+```
+
 
 单击&#x200B;**下一步**。
 

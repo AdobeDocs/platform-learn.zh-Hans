@@ -4,9 +4,9 @@ description: Foundation - Real-time Customer Profile — 可视化您自己的�
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: acb941e4ee668248ae0767bb9f4f42e067c181ba
+source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2299'
 ht-degree: 1%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 在X-Ray面板上，我们可以看到4种不同的ID和命名空间组合：
 
-| 标识 | 命名空间 |
+| 身份标识 | 命名空间 |
 |:-------------:| :---------------:|
 | Experience CloudID (ECID) | 79943948563923140522865572770524243489 |
 | Experience CloudID (ECID) | 70559351147248820114888181867542007989 |
@@ -132,7 +132,11 @@ ht-degree: 1%
 
 ![权限](./images/perm4.png)
 
-## 对Adobe I/O进行Postman身份验证
+## Adobe I/O身份验证
+
+>[!IMPORTANT]
+>
+>如果您是Adobe员工，请按照此处的说明使用[PostBuster](./../../../postbuster.md)。
 
 转到[https://www.postman.com/downloads/](https://www.postman.com/downloads/)。
 

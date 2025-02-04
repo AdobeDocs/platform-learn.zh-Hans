@@ -6,23 +6,22 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
-source-git-commit: 5c4fc7fb2635aec959b31664e354f66efac075fe
+source-git-commit: 5c4d00879be343e7a6cd6a773b383bad1a24e349
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '294'
 ht-degree: 1%
 
 ---
 
-# 2.3 Real-time CDP — 构建区段并采取行动
+# 2.3 Real-time CDP — 构建受众并采取行动
 
-在本模块中，您将配置一个流区段并将该区段激活到多个目标。
+在本模块中，您将配置一个流区段并将受众激活到多个目标。
 
 ## 学习目标
 
-- 了解如何构建区段并启用它以进行流式传输。
+- 了解如何构建受众并启用它以进行流式传输。
 - 了解如何使用Adobe Experience Platform UI配置广告目标。
-- 了解如何将区段连接到目标并激活它。
-- 了解如何在Adobe Audience Manager中使用Adobe Experience Platform区段，以及如何在Adobe Experience Platform中使用Adobe Audience Manager区段，这要归功于双向区段共享。
+- 了解如何将受众连接到目标并激活它。
 
 ## 先决条件
 
