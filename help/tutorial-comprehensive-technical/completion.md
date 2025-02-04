@@ -3,7 +3,7 @@ title: 完成
 description: 如何衡量完成情况？
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: bbbcb2e60c514aa0785c26f63c2b5b8a7e50a8db
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 模块&#x200B;**快速入门**&#x200B;的预期完成证明是您创建的Web演示系统项目的ID。
 
-Web格式的演示系统项目的ID如下所示： `--demoProfileLdap-- - QIMU`。
+Web格式的演示系统项目的ID如下所示： `--aepUserLdap-- - QIMU`。
 
 ![3](./assets/images/module0dtl.png)
 
@@ -52,7 +52,7 @@ Federated Data Model的ID如下所示：**DMO5110**，可从下图中所述的UR
 
 ## 2.1实时客户资料
 
-模块&#x200B;**实时客户个人资料**&#x200B;的预期完成证明是您通过UI `--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro`创建的受众的&#x200B;**受众ID**。
+模块&#x200B;**实时客户个人资料**&#x200B;的预期完成证明是您通过UI `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro`创建的受众的&#x200B;**受众ID**。
 
 受众ID如下所示： **81a9acbe-12e6-424b-b658-abba3a435c83**。
 
@@ -60,7 +60,7 @@ Federated Data Model的ID如下所示：**DMO5110**，可从下图中所述的UR
 
 ## 2.2智能服务
 
-模块&#x200B;**Intelligent Services**&#x200B;的预期完成证明是您通过UI `--demoProfileLdap-- - Customer AI High Propensity`创建的受众的&#x200B;**受众ID**。
+模块&#x200B;**Intelligent Services**&#x200B;的预期完成证明是您通过UI `--aepUserLdap-- - Customer AI High Propensity`创建的受众的&#x200B;**受众ID**。
 
 受众ID如下所示： **cb6db21d-8fa3-484a-93ac-25aa1ab48412**。
 
@@ -92,7 +92,7 @@ Webhook目标的ID如下所示：**b5b4b959-3166-40e2-8279-8223d00c3987**，可�
 
 ## 2.6将数据从Apache Kafka流式传输到Real-Time CDP
 
-模块&#x200B;**将数据从Apache Kafka流式传输到Real-Time CDP**&#x200B;的预期完成证明是源连接器`--demoProfileLdap-- - Kafka`的ID。
+模块&#x200B;**将数据从Apache Kafka流式传输到Real-Time CDP**&#x200B;的预期完成证明是源连接器`--aepUserLdap-- - Kafka`的ID。
 
 ID类似于&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以在此处找到它：
 
@@ -132,7 +132,7 @@ ID类似于&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以在此处
 
 ## 4.1Customer Journey Analytics：使用Analysis Workspace构建功能板
 
-模块&#x200B;**Customer Journey Analytics的预期完成证明：使用Analysis Workspace**&#x200B;构建功能板是项目`--demoProfileLdap-- - Omnichannel Analysis`的ID。
+模块&#x200B;**Customer Journey Analytics的预期完成证明：使用Analysis Workspace**&#x200B;构建功能板是项目`--aepUserLdap-- - Omnichannel Analysis`的ID。
 
 格式如下所示： **677bcb247064db3c7de2a0e4**，打开项目后，可以在URL中找到它。
 
@@ -148,7 +148,7 @@ ID类似于&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以在此处
 
 ## 5.1查询服务
 
-模块&#x200B;**查询服务**&#x200B;的预期完成证明是`--demoProfileLdap--_callcenter_interaction_analysis`的数据集ID — 完成模块后获得的数据集。
+模块&#x200B;**查询服务**&#x200B;的预期完成证明是`--aepUserLdap--_callcenter_interaction_analysis`的数据集ID — 完成模块后获得的数据集。
 
 ID如下所示： **675033c903fb3b2aefed8a0a**。
 

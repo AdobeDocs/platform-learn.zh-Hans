@@ -1,10 +1,10 @@
 ---
-title: 创建Cloud Manager项目
-description: 创建Cloud Manager项目
+title: 设置您的AEM CS环境
+description: 设置您的AEM CS环境
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 2fe7d2528132301f559f9d51faa9ad128f5d890f
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%

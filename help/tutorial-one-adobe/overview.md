@@ -3,10 +3,10 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 007e35504d19c332da39d90d65f34960aaa9c09b
+source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 4%
+source-wordcount: '528'
+ht-degree: 3%
 
 ---
 
@@ -53,6 +53,12 @@ ht-degree: 4%
 ## 前期工作
 
 在[此处](./prework.md){target="_blank"}验证需要在您的计算机上安装的所需应用程序。
+
+## 完成和认证
+
+本教程是Adobe认证课程的一部分。 您可以转到[https://certification.adobe.com](https://certification.adobe.com)同时注册课程和本教程。
+
+对于您使用以下教程完成的每个模块，您需要按照[此处](./completion.md)的指示提交完成证明。
 
 ## 内容
 
