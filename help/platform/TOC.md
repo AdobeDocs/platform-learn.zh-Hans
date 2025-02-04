@@ -5,9 +5,9 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 993cd46646c1f58af12c47cd5acc194d16bded76
+source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '881'
 ht-degree: 18%
 
 ---
@@ -54,6 +54,7 @@ ht-degree: 18%
    + [验证响应](/help/platform/ai-assistant/validate-responses.md)
    + [可发现性面板](/help/platform/ai-assistant/discoverability-panel.md)
    + [查找未使用的受众](/help/platform/ai-assistant/find-unused-audiences.md)
+   + [运营洞察](/help/platform/ai-assistant/operational-insights.md)
    + [影响分析](/help/platform/ai-assistant/impact-analysis.md)
    + [安全性概述](/help/platform/ai-assistant/security-overview.md)
 + 受众和分段{#audiences}
@@ -141,6 +142,8 @@ ht-degree: 18%
    + [身份和身份图概述](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [标记、引入并验证身份数据](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [查看身份图](/help/platform/identities/view-identity-graphs.md)
+   + 身份图链接规则{#graph-linking-rules}
+      + [图形模拟](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
    + [概述](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [归因人工智能概述](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
