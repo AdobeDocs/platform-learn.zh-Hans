@@ -1,24 +1,24 @@
 ---
-title: 安装Adobe Experience Platform Mobile SDK
-description: 了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。
+title: 安装 Adobe Experience Platform Mobile SDK
+description: 了解如何在移动应用程序中实施 Adobe Experience Platform Mobile SDK。
 jira: KT-14627
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
 source-git-commit: 3dd9c68203d0021e87caaa82bd962b3f9160a397
 workflow-type: tm+mt
 source-wordcount: '916'
-ht-degree: 0%
+ht-degree: 7%
 
 ---
 
-# 安装Adobe Experience Platform Mobile SDK {#tutorial_install_mobile_sdks}
+# 安装 Adobe Experience Platform Mobile SDK {#tutorial_install_mobile_sdks}
 
 >[!CONTEXTUALHELP]
 >
 >id="platform_mobile_sdk_tutorial_install"
->title="安装Adobe Experience Platform Mobile SDK"
->abstract="了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。"
+>title="安装 Adobe Experience Platform Mobile SDK"
+>abstract="了解如何在移动应用程序中实施 Adobe Experience Platform Mobile SDK。"
 
-了解如何在移动应用程序中实施Adobe Experience Platform Mobile SDK。
+了解如何在移动应用程序中实施 Adobe Experience Platform Mobile SDK。
 
 ## 先决条件
 
