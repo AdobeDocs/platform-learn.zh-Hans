@@ -2,10 +2,10 @@
 title: Target扩展与Decisioning扩展的比较
 description: 了解Target扩展与Decisioning扩展之间的差异，包括功能、功能、设置和数据流。
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 8e4e23413c842f84159891287d09e8a6cfbbbc53
+source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
 workflow-type: tm+mt
-source-wordcount: '986'
-ht-degree: 3%
+source-wordcount: '1329'
+ht-degree: 2%
 
 ---
 
@@ -19,6 +19,26 @@ Adobe Journey Optimizer - Decisioning扩展不同于适用于移动应用程序�
 - 哪些Adobe Target扩展函数具有Adobe Journey Optimizer — 决策等效项
 - 如何将Target设置应用于Adobe Journey Optimizer - Decisioning
 - 使用Adobe Journey Optimizer - Decisioning扩展时的数据流动方式
+
+## 操作差异
+
+| | 目标扩展 | Decisioning扩展 |
+|---|---|---|
+| 进程 | 对Target实施所做的更改可能会遵循与其他应用程序（如Analytics）相比节奏或QA要求不同的流程。 | 对Decisioning扩展实施的更改应考虑所有下游应用程序，并应相应地调整QA和发布流程。 |
+| 协作 | 可以在Target调用中直接传递特定于Target的数据。 如果Target报表源是Adobe Analytics (A4T)，则当在Target扩展中调用适当的跟踪方法来进行Target内容显示和交互时，特定于Target的数据也可以传递到Adobe Analytics。 | 如果Target报表源是Adobe Analytics (A4T)，并且在数据流中启用了Adobe Analytics，并且在显示Target内容并与之交互时，可以将在Decisioning扩展调用中传递的数据转发到Target和Analytics。 |
+
+## 基本差异
+
+| | 目标扩展 | Decisioning扩展 |
+|---|---|---|
+| 依赖关系 | 仅依赖于Mobile Core SDK | 依赖于Mobile Core和Edge NetworkSDK |
+| 库功能 | 仅支持从Adobe Target获取内容 | 支持从Adobe Target和Offer decisioning获取内容 |
+| 请求 | Target调用基本上独立于其他网络调用 | Target网络调用与其他基于Edge的解决方案(如Edge SDK中的消息传送)的网络调用一起排入队列，并连续执行。 |
+| Edge Network | 使用在数据收集UI中的[Target配置](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui)中指定的Target服务器值或带有客户端代码(clientcode.tt.omtrdc.net)的Adobe Experience CloudEdge Network | 在数据收集UI中使用Adobe Experience Platform [Edge Network配置](https://developer.adobe.com/client-sdks/edge/edge-network/#configure-the-edge-network-extension-in-data-collection-ui)中指定的Edge网络域。 |
+| 基本术语 | mbox， TargetParameters | DecisionScope， Map (Android)/dictionary (iOS) for Target参数 |
+| 默认内容 | 允许在TargetRequest中传递客户端默认内容，如果网络调用失败或导致错误，将返回此内容。 | 不允许传递客户端默认内容。 如果网络调用失败或导致错误，则不返回任何内容。 |
+| Target参数 | 允许为每个请求传递全局TargetParameters，并为每个mbox传递不同的TargetParameters | 仅允许每个请求传递全局TargetParameters |
+
 
 
 ## 功能比较
@@ -61,11 +81,11 @@ Adobe Journey Optimizer - Decisioning扩展不同于适用于移动应用程序�
 | 目标扩展 | Decisioning扩展 | 注释 |
 | --- | --- | --- | 
 | `prefetchContent` | `updatePropositions` |  |
-| `retrieveLocationContent` | `getPropositions` | 使用`getPropositions` API时，不会进行远程调用以获取SDK中的非缓存作用域。 |
-| `displayedLocations` | 选件 — > `displayed()` | 此外，`generateDisplayInteractionXdm`选件方法可用于为项目显示生成XDM。 随后，可以使用Edge Network SDK的sendEvent API附加其他XDM自由格式数据并将体验事件发送到远程。 |
-| `clickedLocation` | 选件 — > `tapped()` | 此外，`generateTapInteractionXdm`选件方法可用于为项目点按生成XDM。 随后，可以使用Edge Network SDK的sendEvent API附加其他XDM自由格式数据并将体验事件发送到远程。 |
+| `retrieveLocationContent` | `getPropositions` | 使用`getPropositions` API时，不会进行远程调用以获取SDK中未缓存的作用域。 |
+| `displayedLocations` | 选件 — > `displayed()` | 此外，`generateDisplayInteractionXdm`选件方法可用于为项目显示生成XDM。 随后，Edge网络SDK的sendEvent API可用于附加其他XDM自由格式数据并将体验事件发送到远程。 |
+| `clickedLocation` | 选件 — > `tapped()` | 此外，`generateTapInteractionXdm`选件方法可用于为项目点按生成XDM。 随后，Edge网络SDK的sendEvent API可用于附加其他XDM自由格式数据并将体验事件发送到远程。 |
 | `clearPrefetchCache` | `clearCachedPropositions` |  |
-| `resetExperience` | 不适用 | 使用来自SDK的Edge Network扩展身份的`removeIdentity` API停止向Edge网络发送访客标识符。 有关详细信息，请参阅[removeIdentity API文档](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity)。 <br><br>注意： Mobile Core的`resetIdentities` API将清除SDK中所有存储的身份，包括Experience CloudID (ECID)，应谨慎使用它！ |
+| `resetExperience` | 不适用 | 使用用于SDK的Edge Network扩展的标识中的`removeIdentity` API停止将访客标识符发送到Edge网络。 有关详细信息，请参阅[removeIdentity API文档](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity)。 <br><br>注意： Mobile Core的`resetIdentities` API清除了SDK中所有存储的身份，包括Experience CloudID (ECID)，应谨慎使用它！ |
 | `getSessionId` | 不适用 | `state:store`响应句柄包含与会话相关的信息。 Edge network extension可将未过期状态存储区项目附加到后续请求，从而帮助管理它。 |
 | `setSessionId` | 不适用 | `state:store`响应句柄包含与会话相关的信息。 Edge network extension可将未过期状态存储区项目附加到后续请求，从而帮助管理它。 |
 | `getThirdPartyId` | 不适用 | 使用用于Edge Network扩展的标识中的updateIdentities API提供第三方ID值。 然后，在数据流中配置第三方ID命名空间。 有关更多详细信息，请参阅[Target第三方ID移动设备文档](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id)。 |
@@ -93,7 +113,7 @@ Target扩展具有[可配置的设置](https://developer.adobe.com/client-sdks/s
 
 下图应该可以帮助您了解使用Adobe Journey Optimizer - Decisioning扩展的数据流。
 
-具有客户端Mobile SDK的![Adobe Target Edge Decisioning](assets/diagram.png)
+使用客户端Mobile SDK的![Adobe Target Edge Decisioning](assets/diagram.png)
 
 
 >[!NOTE]

@@ -10,9 +10,9 @@ doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: null
 hide: true
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
 workflow-type: tm+mt
-source-wordcount: '88'
+source-wordcount: '80'
 ht-degree: 3%
 
 ---
@@ -22,9 +22,7 @@ ht-degree: 3%
 
 + [教程简介](overview.md)
 
-+ [规划迁移](plan-migration.md)
-
-+ [比较Target扩展和Decisioning扩展](detailed-comparison.md)
++ [比较扩展](detailed-comparison.md)
 
 + [执行初始设置](initial-setup.md)
 
