@@ -4,10 +4,10 @@ description: Adobe Journey Optimizer翻译服务
 kt: 5342
 doc-type: tutorial
 exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
-source-git-commit: 9099ba1d57d59a95958f29bf226f329f057b6c0c
+source-git-commit: b68e8578f2bd535662522e752d4cbd2947a9677d
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 4%
+source-wordcount: '134'
+ht-degree: 2%
 
 ---
 
@@ -20,12 +20,17 @@ ht-degree: 4%
 ## 先决条件
 
 - 对Adobe Journey Optimizer的访问权限
+- 访问Microsoft Azure转换器
 
 ## 练习
 
-[3.2.1 ...](./ex1.md)
+[3.2.1翻译提供程序](./ex1.md)
 
-在本练习中， ...
+在本练习中，您将使用Microsoft Translator配置翻译提供商，并在Adobe Journey Optimizer中设置它。
+
+[3.2.2翻译项目](./ex2.md)
+
+在本练习中，您将使用Microsoft Translator配置翻译提供商，并在Adobe Journey Optimizer中设置它。
 
 [摘要和优点](./summary.md)
 

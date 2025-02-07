@@ -1,18 +1,20 @@
 ---
-title: 完成
+title: 完成 — Adobe Experience Platform的综合技术教程
 description: 如何衡量完成情况？
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 # 如何衡量完成情况？
 
-转到[https://certification.adobe.com](https://certification.adobe.com)并导航到课程&#x200B;**XXX**。
+转到[https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258)。
+
+![3](./assets/images/certcourse.png)
 
 要完成模块，您需要提供完成证明。
 

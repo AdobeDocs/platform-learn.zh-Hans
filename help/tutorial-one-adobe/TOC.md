@@ -4,9 +4,9 @@ breadcrumb-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '340'
 ht-degree: 4%
 
 ---
@@ -29,12 +29,12 @@ ht-degree: 4%
    + [前期工作](/help/tutorial-one-adobe/prework.md)
    + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
-+ 1 Adobe Creative Cloud {#creativecloud}
-   + 1.1Adobe Firefly服务{#module11}
++ 1创建和生产{#production}
+   + 1.1Adobe Firefly服务概述{#module11}
       + [概述](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
       + [1.1.1Firefly服务快速入门](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2使用Microsoft Azure和预签名URL优化您的Firefly流程](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
-      + [1.1.3Adobe Firefly和Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
+      + [1.1.3使用Photoshop API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
       + [1.1.4Firefly自定义模型API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
    + 1.2使用Workfront Fusion实现创作工作流自动化{#module21}
@@ -61,7 +61,7 @@ ht-degree: 4%
       + [2.2.5 Workfront + Photoshop集成](/help/tutorial-one-adobe/modules/csc/module2.2/ex5.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
-+ 3个统一的客户体验{#uce}
++ 3传递和激活{#activation}
    + 3.1联合受众构成{#module31}
       + [概述](/help/tutorial-one-adobe/modules/uce/module3.1/fac.md)
       + [3.1.1设置您的Snowflake环境](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
@@ -70,7 +70,9 @@ ht-degree: 4%
       + [摘要和优点](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
    + 3.2 Adobe Journey Optimizer：翻译服务{#module32}
       + [概述](/help/tutorial-one-adobe/modules/uce/module3.2/ajotranslationsvcs.md)
-      + [3.2.1 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [3.2.1翻译提供程序](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+      + [3.2.2创建营销活动](/help/tutorial-one-adobe/modules/uce/module3.2/ex2.md)
+      + [3.2.3 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex3.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
    + 3.3 Adobe Journey Optimizer：Offer decisioning{#module33}
       + [概述](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)

@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 53ff5158eec2693703b20e7841fffbec72288210
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '159'
 ht-degree: 1%
 
 ---
 
-# 使用Workfront Fusion实现创意工作流程自动化
+# 1.2使用Workfront Fusion实现创作工作流自动化
 
 了解如何使用Workfront Fusion自动化创意工作流。
 
@@ -23,15 +23,15 @@ ht-degree: 1%
 
 ## 练习
 
-[Workfront Fusion入门](./ex1.md){target="_blank"}
+[1.2.1 Workfront Fusion快速入门](./ex1.md){target="_blank"}
 
 在本练习中，我们将结合使用Firefly服务来探索Workfront Fusion，并了解其功能。
 
-[在Workfront Fusion中使用AdobeAPI](./ex2.md){target="_blank"}
+[1.2.2在Workfront Fusion中使用AdobeAPI](./ex2.md){target="_blank"}
 
 在本练习中，了解如何在Workfront Fusion中配置和使用Firefly服务API和Photoshop API，同时探索Workfront Fusion的功能。
 
-[使用Workfront Fusion实现流程自动化](./ex3.md){target="_blank"}
+[1.2.3使用Workfront Fusion实现流程自动化](./ex3.md){target="_blank"}
 
 在此练习中，继续优化您的历程以自动化图像创建过程。
 

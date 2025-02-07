@@ -1,10 +1,11 @@
 ---
-title: 完成
+title: 完成 — 一个Adobe教程
 description: 如何衡量完成情况？
 doc-type: multipage-overview
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
+source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 0%
 
 模块&#x200B;**快速入门**&#x200B;的预期完成证明是您创建的Web演示系统项目的ID。
 
-Web格式的演示系统项目的ID如下所示： `--demoProfileLdap-- - 8ERG`。
+Web格式的演示系统项目的ID如下所示： `--aepUserLdap-- - 8ERG`。
 
 ![3](./assets/images/module0dtl.png)
 
@@ -35,7 +36,7 @@ URL如下所示： `https://ldap.blob.core.windows.net/folder/citisignal-fiber-c
 
 ## 1.2使用Workfront Fusion实现创作工作流自动化
 
-使用Workfront Fusion的模块&#x200B;**Creative Workflow Automation**&#x200B;的预期完成证明是练习1.2.3所创建的Webhook的&#x200B;**URL**，该练习是在完成步骤&#x200B;**使用Webhook激活场景**&#x200B;之后创建的。
+使用Workfront Fusion的&#x200B;**创意工作流自动化**&#x200B;模块的预期完成证明是练习1.2.3所创建的webhook的&#x200B;**URL**，该练习是在完成步骤&#x200B;**使用webhook激活场景**&#x200B;之后创建的。
 
 URL如下所示： `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`。
 
@@ -79,7 +80,7 @@ Federated Data Model的ID如下所示：**DMO5110**，可从下图中所述的UR
 
 模块&#x200B;**Adobe Journey Optimizer：Offer decisioning**&#x200B;的预期完成证明是您创建的&#x200B;**决策**&#x200B;的ID。
 
-您可在以下位置找到与此&#x200B;**dps:offer-activity:1a08ba4b529b2fb2**&#x200B;类似的&#x200B;**决策ID**：
+您可以在此处找到与此&#x200B;**`dps:offer-activity:1a08ba4b529b2fb2`**&#x200B;类似的&#x200B;**决策ID**：
 
 ![14](./assets/images/offers.png)
 

@@ -1,11 +1,11 @@
 ---
-title: 概述
+title: 概述 — AEP和应用程序的全面技术教程
 description: 面向数据工程师、数据分析师、数据架构师、数据科学家、编排工程师和营销人员的起点，全面了解Adobe Experience Platform及其所有应用程序服务的业务价值。
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
-source-git-commit: bd46be455f88007174f7e6be9a1ce5f508edc09b
+source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
 workflow-type: tm+mt
-source-wordcount: '1251'
+source-wordcount: '1258'
 ht-degree: 2%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 ## 完成和认证
 
-本教程是Adobe认证课程的一部分。 您可以转到[https://certification.adobe.com](https://certification.adobe.com)同时注册课程和本教程。
+本教程是Adobe认证课程的一部分。 您可以转到[https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258)同时注册课程和本教程。
 
 对于您使用以下教程完成的每个模块，您需要按照[此处](./completion.md)的指示提交完成证明。
 

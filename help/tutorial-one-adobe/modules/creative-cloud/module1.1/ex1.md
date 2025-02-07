@@ -6,18 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 8e410ad378d61f23d1d880d12e57f9d5e4e523c1
+source-git-commit: e6a549441d425801f2a554da9af803dca646009e
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
 
-# Firefly服务快速入门
+# 1.1.1Firefly服务快速入门
 
 了解如何使用Postman和Adobe I/O查询Adobe Firefly服务API。
 
-## 配置Adobe I/O项目
+## 1.1.1.2配置Adobe I/O项目
 
 在本练习中，将使用Adobe I/O根据Firefly服务API进行查询。 按照以下步骤设置Adobe I/O。
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ![Adobe I/O新集成](./images/api11.png)
 
-## 下载Postman环境
+## 1.1.1.3下载Postman环境
 
 1. 选择&#x200B;**下载Postman**，然后选择&#x200B;**OAuth服务器到服务器**&#x200B;以下载Postman环境。
 
@@ -75,7 +75,11 @@ Adobe I/O集成的设置现已完成。
 
 ![Adobe I/O新集成](./images/api16.png)
 
-## 对Adobe I/O进行Postman身份验证
+## 1.1.1.4 Postman对Adobe I/O的身份验证
+
+>[!IMPORTANT]
+>
+>如果您是Adobe员工，请按照此处的说明使用[PostBuster](./../../../postbuster.md)。
 
 1. 在[Postman下载](https://www.postman.com/downloads/){target="_blank"}上下载并安装适用于您的操作系统的相关Postman版本。
 
@@ -123,7 +127,7 @@ Adobe I/O集成的设置现已完成。
 
 否，您已在Postman中获得开始通过API与Firefly服务交互所需的一切。
 
-## 请求访问令牌
+## 1.1.1.5请求访问令牌
 
 接下来，为了确保您经过正确身份验证，您需要请求访问令牌。
 
@@ -158,7 +162,7 @@ Adobe I/O集成的设置现已完成。
 
 Adobe I/O **bearer-token**&#x200B;具有特定值（非常长的access_token）和到期窗口，现在有效期为24小时。 这意味着24小时后，如果您要使用Postman对Adobe I/O进行身份验证，则必须通过再次运行此请求来生成新令牌。
 
-## Firefly服务API，文本2图像
+## 1.1.1.6Firefly服务API，文本2图像
 
 现在，您已准备好将您的第一个请求发送到Firefly服务API。
 
