@@ -4,7 +4,7 @@ description: 了解如何实施Adobe Experience Cloud移动应用程序。 本�
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: 0d5914ee0e63719c0439f02a5aa2a1e1c1d11a2f
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 3%
@@ -15,12 +15,12 @@ ht-degree: 3%
 
 了解如何用 Adobe Experience Platform 移动 SDK 在移动应用程序中实施 Adobe Experience Cloud 应用程序。
 
-Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience Cloud的客户通过Adobe Experience PlatformEdge Network与Adobe应用程序和第三方服务进行交互。 有关更多详细信息，请参阅[Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/home/)。
+Experience Platform Mobile SDK是客户端SDK，它允许Adobe Experience Cloud的客户通过Adobe Edge Network与Adobe Experience Platform应用程序和第三方服务进行交互。 有关更多详细信息，请参阅[Adobe Experience Platform Mobile SDK文档](https://developer.adobe.com/client-sdks/home/)。
 
 ![架构](assets/architecture.png)
 
 
-本教程将指导您在名为Luma的示例零售应用程序中实施Platform Mobile SDK。 [Luma应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App)具有允许您构建实际实施的功能。 完成本教程后，您应该可以在自己的移动应用程序中开始通过Experience PlatformMobile SDK实施所有营销解决方案。
+本教程将指导您在名为Luma的示例零售应用程序中实施Platform Mobile SDK。 [Luma应用程序](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App)具有允许您构建实际实施的功能。 完成本教程后，您应该可以在自己的移动应用程序中开始通过Experience Platform Mobile SDK实施所有营销解决方案。
 
 这些课程是为iOS设计的，使用Swift/SwiftUI编写，但许多概念也适用于Android™。
 
@@ -37,28 +37,28 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
    * [Adobe Experience Platform Edge (XDM)](events.md)
    * [生命周期数据收集](lifecycle-data.md)
    * [同意](consent.md)
-   * [标识](identity.md)
-   * [配置文件](profile.md)
+   * [身份标识](identity.md)
+   * [轮廓](profile.md)
    * [Places](places.md)
    * [Analytics](analytics.md)
    * [Experience Platform](platform.md)
    * [使用Journey Optimizer推送消息](journey-optimizer-push.md)
    * [Journey Optimizer的应用程序内消息传递](journey-optimizer-inapp.md)
    * [Journey Optimizer的决策管理](journey-optimizer-offers.md)
-   * [Target](target.md)
+   * [目标](target.md)
 
 
 >[!NOTE]
 >
 >[Web SDK](../tutorial-web-sdk/overview.md)也提供了类似的多解决方案教程。
 
-## 先决条件
+## 权限
 
-在这些课程中，我们假定您拥有AdobeID和完成练习所需的用户级别权限。 如果没有，您应该联系Adobe管理员以请求获取访问权限。
+在这些课程中，我们假定您拥有Adobe ID以及完成练习所需的用户级别权限。 如果没有，您应该联系Adobe管理员以请求获取访问权限。
 
 * 在数据收集中，您必须具有：
    * **[!UICONTROL 平台]** — 权限项&#x200B;**[!UICONTROL 移动设备]**
-   * **[!UICONTROL 属性权限]** — 用于&#x200B;**[!UICONTROL 开发]**、**[!UICONTROL 批准]**、**[!UICONTROL Publish]**、**[!UICONTROL 管理扩展]**&#x200B;和&#x200B;**[!UICONTROL 管理环境]**&#x200B;的权限项。
+   * **[!UICONTROL 属性权限]** — 用于&#x200B;**[!UICONTROL 开发]**、**[!UICONTROL 批准]**、**[!UICONTROL 发布]**、**[!UICONTROL 管理扩展]**&#x200B;和&#x200B;**[!UICONTROL 管理环境]**&#x200B;的权限项。
    * **[!UICONTROL 公司权限]** — 用于&#x200B;**[!UICONTROL 管理属性]**&#x200B;的权限项，如果完成可选的推送消息课程，还可以&#x200B;**[!UICONTROL 管理应用程序配置]**
 
      有关标记权限的详细信息，请参阅产品文档中的标记[用户权限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-hans){target="_blank"}。
@@ -67,7 +67,7 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
    * **[!UICONTROL Identity Management]** — 管理和查看身份命名空间的权限项。
    * **[!UICONTROL 数据收集]** — 用于管理和查看数据流的权限项。
 
-   * 如果您是基于Platform的应用程序(如Real-Time CDP、Journey Optimizer或Customer Journey Analytics)的客户，并且将参加相关课程，您还应参加：
+   * 如果您是基于Platform的应用程序(如Real-Time CDP、Journey Optimizer或Customer Journey Analytics)的客户，并且将学习相关课程，您还应：
       * **[!UICONTROL 数据管理]** — 用于管理和查看数据集的权限项。
       * 可用于本教程的开发&#x200B;**沙盒**。
 
@@ -92,7 +92,7 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
 示例应用程序有两个版本可供下载。 两个版本都可以从[Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App)下载/克隆。 您将找到两个文件夹：
 
 
-1. [开始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：对于您完成本教程中的动手练习所需的大部分Experience PlatformMobile SDK代码，项目没有代码或带有占位符代码。
+1. [开始](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：对于您完成本教程中的动手练习所需的大多数Experience Platform Mobile SDK代码，项目没有代码或带有占位符代码。
 1. [完成](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}：具有完整实现的版本以供参考。
 
 >[!NOTE]
@@ -109,6 +109,6 @@ Experience PlatformMobile SDK是一个客户端SDK，它允许Adobe Experience C
 
 >[!SUCCESS]
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望共享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上共享它们。
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享这些内容。
 
 下一步： **[创建XDM架构](create-schema.md)**

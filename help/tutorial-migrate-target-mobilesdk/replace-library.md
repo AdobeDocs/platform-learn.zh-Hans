@@ -2,26 +2,36 @@
 title: 替换SDK — 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
 description: 了解在从SDK迁移到Adobe Journey Optimizer - Decisioning Mobile扩展时如何替换Adobe Target。
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: f3fd5f45412900dcb871bc0b346ce89108fa8913
+source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
 workflow-type: tm+mt
-source-wordcount: '187'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
 
-# 将Target扩展替换为决策扩展
+# 将Target SDK替换为优化SDK
 
-了解如何替换页面上的Adobe Target实施，以便从at.js迁移到Platform Web SDK。 基本替换包含以下步骤：
+了解如何在移动实施中将Adobe Target SDK替换为优化SDK。 基本替换包含以下步骤：
 
+* 更新Podfile或`build.gradle`文件中的依赖项
+* 更新导入
+* 更新应用程序代码
 
-## 在移动应用程序中集成Decisioning扩展(优化SDK)
+>[!INFO]
+>
+>在Adobe Experience Platform Mobile SDK生态系统内，扩展由导入到您的应用程序中的SDK实施，这些SDK可能具有不同的名称：
+>
+> * **Target SDK**&#x200B;实现&#x200B;**Adobe Target扩展**
+> * **优化SDK**&#x200B;实施&#x200B;**Adobe Journey Optimizer - Decisioning扩展**
+
+## 更新依赖项
 
 
 >[!BEGINTABS]
 
->Decisioning扩展 — Android的[!TAB 应用程序依赖项]
+>优化SDK-Android的[!TAB 应用程序依赖项]
 
-`build.gradle`依赖项
+迁移后的`build.gradle`依赖项
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -36,9 +46,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->Decisioning扩展 — iOS的[!TAB 应用程序依赖项]
+>优化SDK-iOS的[!TAB 应用程序依赖项]
 
-`Podfile`依赖项
+迁移后的`Podfile`依赖项
 
 ```Swift
 use_frameworks!
@@ -51,9 +61,9 @@ pod 'AEPLifecycle', '~>5.0'
 pod 'AEPUserProfile', '~> 5.0'
 ```
 
->Target扩展Android的[!TAB 应用程序依赖项]
+>Target SDK-Android的[!TAB 应用程序依赖项]
 
-`build.gradle`依赖项
+迁移前`build.gradle`个依赖项
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -66,9 +76,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->Target扩展iOS的[!TAB 应用程序依赖项]
+>Target SDK-iOS的[!TAB 应用程序依赖项]
 
-`Podfile`依赖项
+迁移前`Podfile`个依赖项
 
 ```Swift
 use_frameworks!
@@ -84,13 +94,13 @@ pod 'AEPUserProfile', '~> 5.0'
 >[!ENDTABS]
 
 
-## 更新内容预隐藏方法
+## 更新导入和代码
 
 >[!BEGINTABS]
 
->[!TAB Decisioning扩展 — Android]
+>[!TAB 优化SDK-Android]
 
-Java初始化代码
+迁移后的Java初始化代码
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -140,9 +150,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Decisioning扩展 — iOS]
+>[!TAB 优化SDK-iOS]
 
-Swift初始化代码
+迁移后的Swift初始化代码
 
 ```Swift
 import AEPCore
@@ -182,9 +192,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
->[!TAB Target扩展 — Android]
+>[!TAB 定位SDK-Android]
 
-Java初始化代码
+迁移前的Java初始化代码
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -230,9 +240,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Target扩展 — iOS]
+>[!TAB 定位SDK-iOS]
 
-Swift初始化代码
+迁移前的Swift初始化代码
 
 ```Swift
 import AEPCore
