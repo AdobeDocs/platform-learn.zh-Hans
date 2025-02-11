@@ -4,9 +4,9 @@ description: Foundation - Real-time Customer Profile — 可视化您自己的�
 kt: 5342
 doc-type: tutorial
 exl-id: fe07d873-f4de-437e-815e-e6e6c06a691c
-source-git-commit: c49b41e1b033573dbebc9ced3a3f4071bf94d04e
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '2299'
+source-wordcount: '2343'
 ht-degree: 1%
 
 ---
@@ -109,6 +109,10 @@ ht-degree: 1%
 >还有一个额外的步骤可确保此Adobe I/O项目可以访问Adobe Experience Platform的权限设置。 项目的API凭据需要添加到Adobe Experience Platform的权限UI中，为此，需要系统管理员访问权限。 这些步骤记录如下，但如果您没有所需的访问权限，可能需要联系系统管理员为您处理这些步骤。
 
 ## API凭据的AEP权限
+
+>[!IMPORTANT]
+>
+>如果您没有系统管理员访问权限，您将无法自行执行此步骤，并且您将无权访问&#x200B;**权限** UI。 在这种情况下，请联系您的系统管理员或在贵组织的支持渠道中发布您的问题。
 
 转到[Adobe Experience Platform](https://experience.adobe.com/platform)。 登录后，您将登录到Adobe Experience Platform的主页。
 

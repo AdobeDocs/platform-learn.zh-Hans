@@ -4,9 +4,9 @@ breadcrumb-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
+source-git-commit: b2624546b221c1fd8de2b503c90e73d07ff4283b
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '345'
 ht-degree: 4%
 
 ---
@@ -72,7 +72,7 @@ ht-degree: 4%
       + [概述](/help/tutorial-one-adobe/modules/uce/module3.2/ajotranslationsvcs.md)
       + [3.2.1翻译提供程序](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
       + [3.2.2创建营销活动](/help/tutorial-one-adobe/modules/uce/module3.2/ex2.md)
-      + [3.2.3 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex3.md)
+      + [3.2.3向电子邮件添加语言](/help/tutorial-one-adobe/modules/uce/module3.2/ex3.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
    + 3.3 Adobe Journey Optimizer：Offer decisioning{#module33}
       + [概述](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)

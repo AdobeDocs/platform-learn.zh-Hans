@@ -3,15 +3,15 @@ title: 使用AJO翻译服务创建营销活动
 description: 使用AJO翻译服务创建营销活动
 kt: 5342
 doc-type: tutorial
-exl-id: a9d674f4-6f49-4d4d-a24d-84751f3a438e
-source-git-commit: cec5abe4586f5aa73065254c5de1434c52a288be
+exl-id: 441b3b6a-74e5-4294-9a30-9c44ea4bbf84
+source-git-commit: 7438a1289689c5c3fb3deb398aa9898d7ac26cf8
 workflow-type: tm+mt
-source-wordcount: '1552'
+source-wordcount: '1596'
 ht-degree: 0%
 
 ---
 
-# 3.2.2创建营销活动
+# 3.5.2创建营销活动
 
 转到[https://experience.adobe.com/](https://experience.adobe.com/)。 单击&#x200B;**Journey Optimizer**。
 
@@ -21,7 +21,11 @@ ht-degree: 0%
 
 ![ACOP](./images/ajolp2.png)
 
-## 3.2.2.1创建您的标头片段
+>[!NOTE]
+>
+>如果您已在练习[练习3.1.2.1](./../module3.1/ex2.md)和[练习3.1.2.2](./../module3.1/ex2.md)中创建了页眉和页脚片段，请跳到练习3.5.2.3创建光纤营销活动。 不再创建您的页眉和页脚片段。
+
+## 3.5.2.1创建您的标头片段
 
 在左侧菜单中，单击&#x200B;**片段**。 片段是Journey Optimizer中可重用的组件，可避免重复并便于将来进行应当影响所有消息的更改，例如对电子邮件中的页眉或页脚的更改。
 
@@ -76,7 +80,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.2.2.2创建页脚片段
+## 3.5.2.2创建页脚片段
 
 单击&#x200B;**创建片段**。
 
@@ -230,7 +234,7 @@ Unsubscribe
 
 ![Journey Optimizer](./images/fragm38.png)
 
-## 3.2.2.3创建光纤营销活动
+## 3.5.2.3创建光纤营销活动
 
 您现在将创建一个营销活动。 上一个练习基于事件的历程依赖于传入体验事件或受众进入或退出来触发1个特定客户的历程，与此不同的是，营销活动面向整个受众一次，其中包含新闻稿、一次性促销活动或通用信息等独特内容，或者定期发送类似内容，如实例生日营销活动和提醒。
 
@@ -262,7 +266,7 @@ Unsubscribe
 
 ![Journey Optimizer](./images/campaign2b.png)
 
-对于&#x200B;**受众**，请选择在上一步中创建的受众`--aepUserLdap-- - CitiSignal Eligible for Fiber`。 单击&#x200B;**保存**。
+对于&#x200B;**受众**，请选择您在[1.3.3中创建的受众，以创建名为`--aepUserLdap-- - CitiSignal Eligible for Fiber`的联合合成](./../../datacollection/module1.3/ex3.md)。 单击&#x200B;**保存**。
 
 ![Journey Optimizer](./images/campaign2a.png)
 
@@ -358,8 +362,8 @@ Stay connected.
 
 ## 后续步骤
 
-转到[3.2.3向电子邮件添加语言](./ex3.md)
+转到[3.5.3向电子邮件添加语言](./ex3.md)
 
-返回[模块3.2](./ajotranslationsvcs.md){target="_blank"}
+返回[模块3.5](./ajotranslationsvcs.md){target="_blank"}
 
 返回[所有模块](./../../../overview.md){target="_blank"}

@@ -4,9 +4,9 @@ description: Foundation — 数据摄取 — 配置架构并设置标识符
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
 workflow-type: tm+mt
-source-wordcount: '3138'
+source-wordcount: '3117'
 ht-degree: 4%
 
 ---
@@ -140,7 +140,7 @@ ht-degree: 4%
 ![数据获取](./images/schemastructurem.png)
 
 您的新[!UICONTROL 字段组]仍然为空，因此现在您必须将字段添加到该[!UICONTROL 字段组]。
-在[!UICONTROL 字段组]列表中，单击您的自定义[!UICONTROL 字段组]，然后单击&#x200B;**浏览**。
+在[!UICONTROL 字段组]列表中，单击您的自定义[!UICONTROL 字段组]。
 
 ![数据获取](./images/schemastructurem.png)
 
@@ -176,26 +176,26 @@ ht-degree: 4%
 使用以下信息在&#x200B;**[!UICONTROL 标识]**&#x200B;对象下创建这3个新字段：
 
 - ecid：
-   - 字段名：**[!UICONTROL ecid]**
-   - 显示名称： **[!UICONTROL ecid]**
+   - 字段名称：**`--aepUserLdap--_ecid`**
+   - 显示名称： **`--aepUserLdap--ecid`**
    - 类型： **[!UICONTROL 字符串]**
    - 字段组： **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - emailId
-   - 字段名：**[!UICONTROL emailId]**
-   - 显示名称： **[!UICONTROL emailId]**
+   - 字段名称：**`--aepUserLdap--_emailId`**
+   - 显示名称： **`--aepUserLdap--_emailId`**
    - 类型： **[!UICONTROL 字符串]**
    - 字段组： **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - mobilenr
-   - 字段名：**[!UICONTROL mobilenr]**
-   - 显示名称： **[!UICONTROL mobilenr]**
+   - 字段名称：**`--aepUserLdap--_mobilenr`**
+   - 显示名称： **`--aepUserLdap--_mobilenr`**
    - 类型： **[!UICONTROL 字符串]**
    - 字段组： **`--aepUserLdap-- - Profile Identification Field Group`**
 
 这是初始字段配置中每个字段的外观。
 
-- mobilenr
+- `--aepUserLdap--_mobilenr`
 
 ![数据获取](./images/mobilenrfield.png)
 
@@ -203,13 +203,13 @@ ht-degree: 4%
 
 ![数据获取](./images/apply.png)
 
-- ecid
+- `--aepUserLdap--_ecid`
 
 ![数据获取](./images/ecidfield.png)
 
 不要忘记向下滚动并单击&#x200B;**应用**。
 
-- emailId
+- `--aepUserLdap--_emailId`
 
 ![数据获取](./images/emailidfield.png)
 
@@ -223,7 +223,7 @@ ht-degree: 4%
 
 要开始将这些字段定义为&#x200B;**[!UICONTROL 标识]**&#x200B;字段，请执行以下步骤：
 
-- 选择字段&#x200B;**[!UICONTROL emailId]**。
+- 选择字段&#x200B;**`--aepUserLdap--_emailId`**。
 - 在右侧的字段属性中，向下滚动直到看到&#x200B;**[!UICONTROL 标识]**&#x200B;为止。 选中&#x200B;**[!UICONTROL 标识]**&#x200B;的复选框。
 
 ![数据获取](./images/emailidid.png)
@@ -236,15 +236,15 @@ ht-degree: 4%
 
 ![数据获取](./images/emailidprimidns.png)
 
-接下来，您必须将&#x200B;**[!UICONTROL ecid]**&#x200B;和&#x200B;**[!UICONTROL mobilenr]**&#x200B;的其他字段定义为标准标识符。
+接下来，您必须将&#x200B;**`--aepUserLdap--_ecid`**&#x200B;和&#x200B;**`--aepUserLdap--_mobilenr`**&#x200B;的其他字段定义为标准标识符。
 
-选择字段&#x200B;**[!UICONTROL ecid]**。 在右侧的字段属性中，向下滚动直到看到&#x200B;**[!UICONTROL 标识]**&#x200B;为止。 选中&#x200B;**[!UICONTROL 标识]**的复选框。
+选择字段&#x200B;**`--aepUserLdap--_ecid`**。 在右侧的字段属性中，向下滚动直到看到&#x200B;**[!UICONTROL 标识]**&#x200B;为止。 选中&#x200B;**[!UICONTROL 标识]**的复选框。
 接下来，从**[!UICONTROL 命名空间]**&#x200B;列表中选择命名空间&#x200B;**[!UICONTROL ECID]**。
 单击**[!UICONTROL 应用]**&#x200B;以保存更改。
 
 ![数据获取](./images/ecidid.png)
 
-选择字段&#x200B;**[!UICONTROL mobilenr]**。 在右侧的字段属性中，向下滚动直到看到&#x200B;**[!UICONTROL 标识]**&#x200B;为止。 选中&#x200B;**[!UICONTROL 标识]**的复选框。
+选择字段&#x200B;**`--aepUserLdap--_mobilenr`**。 在右侧的字段属性中，向下滚动直到看到&#x200B;**[!UICONTROL 标识]**&#x200B;为止。 选中&#x200B;**[!UICONTROL 标识]**的复选框。
 从**[!UICONTROL 命名空间]**&#x200B;列表中选择命名空间&#x200B;**[!UICONTROL 电话]**。
 单击**[!UICONTROL 应用]**&#x200B;以保存更改。
 
@@ -415,12 +415,12 @@ ECID字段将被定义为类型&#x200B;**[!UICONTROL 字符串]**，您将将此
 
 - ecid：
 
-   - 字段名：**[!UICONTROL ecidweb]**
-   - 显示名称： **[!UICONTROL ecidweb]**
+   - 字段名称：**`--aepUserLdap--_ecidweb`**
+   - 显示名称： **`--aepUserLdap--_ecidweb`**
    - 类型： **[!UICONTROL 字符串]**
    - 字段组： `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
-这是[!UICONTROL ecid]字段在初始字段配置之后的显示方式：
+`--aepUserLdap--_ecidweb`字段在初始字段配置之后的显示方式如下：
 
 ![数据获取](./images/ecidfieldee.png)
 
@@ -432,7 +432,7 @@ ECID字段将被定义为类型&#x200B;**[!UICONTROL 字符串]**，您将将此
 
 ![数据获取](./images/3fieldsee.png)
 
-要开始将这些字段定义为&#x200B;**[!UICONTROL 标识]**&#x200B;字段，请选择字段&#x200B;**[!UICONTROL ecid]**。
+要开始将这些字段定义为&#x200B;**[!UICONTROL 标识]**&#x200B;字段，请选择字段&#x200B;**`--aepUserLdap--_ecidweb`**。
 在右侧的字段属性中，向下滚动直到看到**[!UICONTROL 标识]**&#x200B;为止。 选中&#x200B;**[!UICONTROL 标识]**&#x200B;的复选框，并选中&#x200B;**[!UICONTROL 主标识]**的复选框。
 从**[!UICONTROL 命名空间]**&#x200B;列表中选择命名空间&#x200B;**[!UICONTROL ECID]**。
 

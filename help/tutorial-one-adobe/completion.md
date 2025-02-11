@@ -3,9 +3,9 @@ title: 完成 — 一个Adobe教程
 description: 如何衡量完成情况？
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
-source-git-commit: 5c7ab69877cbfdf10088c261c0866790b0d89552
+source-git-commit: 872ef3910f7fe41b360f80ba13a3840efbfd2172
 workflow-type: tm+mt
-source-wordcount: '425'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,8 @@ ht-degree: 0%
 
 Web格式的演示系统项目的ID如下所示： `--aepUserLdap-- - 8ERG`。
 
-![3](./assets/images/module0dtl.png)
+![3](./assets/images/module0dtl.png){zoomable="yes"}
+
 
 ## 1.1Adobe Firefly服务
 
@@ -32,7 +33,7 @@ Web格式的演示系统项目的ID如下所示： `--aepUserLdap-- - 8ERG`。
 
 URL如下所示： `https://ldap.blob.core.windows.net/folder/citisignal-fiber-changed-text.psd?sv=2023-01-03&st=2025-01-31T07%3A00%3A37Z&se=2026-02-01T07%3A00%3A00Z&sr=c&sp=racwl&sig=JmGLLEBWwkddsbOS8%2F0Fo3BQEh%2F2m2E9lL70oj1Usssg%3D`。
 
-![3](./assets/images/ps24.png)
+![3](./assets/images/ps24.png){zoomable="yes"}
 
 ## 1.2使用Workfront Fusion实现创作工作流自动化
 
@@ -40,7 +41,7 @@ URL如下所示： `https://ldap.blob.core.windows.net/folder/citisignal-fiber-c
 
 URL如下所示： `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`。
 
-![3](./assets/images/wff.png)
+![3](./assets/images/wff.png){zoomable="yes"}
 
 ## 2.1 Adobe Experience ManagerCloud Service和Edge Delivery Services
 
@@ -48,7 +49,7 @@ URL如下所示： `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0
 
 URL如下所示： `https://main--citisignal--xxx.aem.page/us/en`。
 
-![3](./assets/images/aemcsweb.png)
+![3](./assets/images/aemcsweb.png){zoomable="yes"}
 
 ## 2.2使用Adobe Workfront进行工作流管理
 
@@ -56,13 +57,13 @@ URL如下所示： `https://main--citisignal--xxx.aem.page/us/en`。
 
 要获取该URL，请在AEM Assets中上传的图像上单击&#x200B;**共享链接**。
 
-![12](./assets/images/wflink1.png)
+![12](./assets/images/wflink1.png){zoomable="yes"}
 
 通过单击&#x200B;**复制**&#x200B;图标复制URL。
 
 URL如下所示： `https://author-p148121-e1511399.adobeaemcloud.com/linkshare.html?sh=d63ec826_df79_4c73_a05c_2c2115baef78.dw7JBu2VxkNZvXE2oq9J6KwFRrt5VAffkuqC0nZIjHE`。
 
-![12](./assets/images/wflink2.png)
+![12](./assets/images/wflink2.png){zoomable="yes"}
 
 ## 3.1联合受众构成
 
@@ -70,11 +71,15 @@ URL如下所示： `https://author-p148121-e1511399.adobeaemcloud.com/linkshare.
 
 Federated Data Model的ID如下所示：**DMO5110**，可从下图中所述的URL获取。
 
-![3](./assets/images/completemodule3fac.png)
+![3](./assets/images/completemodule3fac.png){zoomable="yes"}
 
 ## 3.2 Adobe Journey Optimizer：翻译服务
 
-模块&#x200B;**Adobe Journey Optimizer：翻译服务**&#x200B;的预期完成证明是……
+模块&#x200B;**Adobe Journey Optimizer：翻译服务**&#x200B;的预期完成证明是您的CitiSignal Fibre营销活动的&#x200B;**营销活动版本ID**。
+
+Federated Data Model的Campaign版本ID如下所示：**b11c998b-a345-4f8e-afb1-6285547eb693**，并且可以从Campaign概述屏幕中复制，如下图所示。
+
+![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
 ## 3.3 Adobe Journey Optimizer：Offer decisioning
 
@@ -82,7 +87,7 @@ Federated Data Model的ID如下所示：**DMO5110**，可从下图中所述的UR
 
 您可以在此处找到与此&#x200B;**`dps:offer-activity:1a08ba4b529b2fb2`**&#x200B;类似的&#x200B;**决策ID**：
 
-![14](./assets/images/offers.png)
+![14](./assets/images/offers.png){zoomable="yes"}
 
 >[!NOTE]
 >

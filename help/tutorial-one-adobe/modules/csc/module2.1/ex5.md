@@ -4,7 +4,7 @@ description: AEM CS — 高级自定义块
 kt: 5342
 doc-type: tutorial
 exl-id: fa299668-c902-4775-a540-7555ca461d3e
-source-git-commit: 4ab2a12a71c8a89963cbd47d5df2bda97bffd318
+source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
 workflow-type: tm+mt
 source-wordcount: '996'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 您现在可以继续处理此块。
 
-![AEMCS](./images/nav7.png)
+![AEMCS](./images/nav7.png){zoomable="yes"}
 
 ## 2.1.5.1设置块样式
 
@@ -25,23 +25,23 @@ ht-degree: 0%
 
 返回Visual Studio Code并打开文件夹&#x200B;**块**。 现在，您应该会看到多个文件夹，每个文件夹都引用了一个特定块。 为了使您的&#x200B;**fiberoffer**&#x200B;块更高级，您现在需要为自定义块创建文件夹。
 
-![AEMCS](./images/blockadv1.png)
+![AEMCS](./images/blockadv1.png){zoomable="yes"}
 
 选择文件夹&#x200B;**块**，然后单击&#x200B;**新建文件夹**&#x200B;图标。
 
-![AEMCS](./images/blockadv2.png)
+![AEMCS](./images/blockadv2.png){zoomable="yes"}
 
 命名您的文件夹`fiberoffer`并按&#x200B;**Enter**。
 
-![AEMCS](./images/blockadv3.png)
+![AEMCS](./images/blockadv3.png){zoomable="yes"}
 
 选择新的&#x200B;**fiberoffer**&#x200B;文件夹，然后单击&#x200B;**新建文件**&#x200B;图标。
 
-![AEMCS](./images/blockadv4.png)
+![AEMCS](./images/blockadv4.png){zoomable="yes"}
 
 现已创建新文件。 输入名称&#x200B;**fiberoffer.js**&#x200B;并按Enter。
 
-![AEMCS](./images/blockadv5.png)
+![AEMCS](./images/blockadv5.png){zoomable="yes"}
 
 您现在可以通过将以下JavaScript添加到文件&#x200B;**fiberoffer.js**&#x200B;中来实施块修饰。
 
@@ -62,15 +62,15 @@ export default function decorate(block) {
 }
 ```
 
-![AEMCS](./images/blockadv6.png)
+![AEMCS](./images/blockadv6.png){zoomable="yes"}
 
 选择新的&#x200B;**fiberoffer**&#x200B;文件夹，然后再次单击&#x200B;**新建文件**&#x200B;图标。
 
-![AEMCS](./images/blockadv7.png)
+![AEMCS](./images/blockadv7.png){zoomable="yes"}
 
 现已创建新文件。 输入名称&#x200B;**fiberoffer.css**&#x200B;并按Enter。
 
-![AEMCS](./images/blockadv8.png)
+![AEMCS](./images/blockadv8.png){zoomable="yes"}
 
 将以下CSS代码复制并粘贴到新创建的文件中。
 
@@ -88,7 +88,7 @@ export default function decorate(block) {
 
 保存更改。
 
-![AEMCS](./images/blockadv9.png)
+![AEMCS](./images/blockadv9.png){zoomable="yes"}
 
 现在，您在项目中进行了一些需要提交回GitHub存储库的更改。 为此，请打开&#x200B;**GitHub Desktop**。
 
@@ -96,15 +96,15 @@ export default function decorate(block) {
 
 输入PR的名称`js css`。 单击&#x200B;**提交到主页面**。
 
-![块](./images/blockadv10.png)
+![块](./images/blockadv10.png){zoomable="yes"}
 
 您应该会看到此内容。 单击&#x200B;**推送来源**。
 
-![块](./images/blockadv11.png)
+![块](./images/blockadv11.png){zoomable="yes"}
 
 在浏览器中，转到您的GitHub帐户，并转到您为CitiSignal创建的存储库。 然后，您应该会看到类似这样的内容，表明您的更改已收到。
 
-![块](./images/blockadv12.png)
+![块](./images/blockadv12.png){zoomable="yes"}
 
 现在，在将XXX替换为您的GitHub用户帐户（本示例中为`woutervangeluwe`）之后，您可以通过转到`main--citisignal--XXX.aem.page/us/en`和/或`main--citisignal--XXX.aem.live/us/en`查看对您网站的更改。
 
@@ -113,7 +113,7 @@ export default function decorate(block) {
 
 然后，您应该会看到此内容，并将样式应用于页面。
 
-![块](./images/blockadv13.png)
+![块](./images/blockadv13.png){zoomable="yes"}
 
 ## 2.1.5.2添加逻辑并从外部端点加载数据
 
@@ -156,11 +156,11 @@ var script1 = document.createElement('script');
 
 此时无需更改字段&#x200B;**edgeConfigId**。 在下一个练习中，您将能够使用&#x200B;**MarTech**&#x200B;插件执行此操作。
 
-![块](./images/blockadv15.png)
+![块](./images/blockadv15.png){zoomable="yes"}
 
 您现在应该拥有此项。
 
-![块](./images/blockadv14.png)
+![块](./images/blockadv14.png){zoomable="yes"}
 
 接下来，在之前添加的代码下方添加此块。
 
@@ -185,7 +185,7 @@ var ECID = "";
 
 如上面的代码所示，在检索ECID后，将调用另一个函数。 此函数名为&#x200B;**getOffer()**，您下一步将添加该函数。
 
-![块](./images/blockadv16.png)
+![块](./images/blockadv16.png){zoomable="yes"}
 
 接下来，将以下代码添加到
 
@@ -318,7 +318,7 @@ async function getOffer(ECID) {
 
 非常重要的是，此代码块应粘贴到右括号下方，您可以在此示例的第42行中看到右括号。 您刚刚粘贴的代码是一个单独的函数，它需要在此文件中拥有自己的位置，并且不能嵌套到上述&#x200B;**默认函数**&#x200B;中。
 
-![块](./images/blockadv17.png)
+![块](./images/blockadv17.png){zoomable="yes"}
 
 您刚刚粘贴的代码块模拟了一个通常由Web SDK/alloy.js发出的请求。 在此示例中，将向&#x200B;**edge.adobedc.net**&#x200B;发出&#x200B;**fetch**&#x200B;请求。
 
@@ -330,11 +330,11 @@ async function getOffer(ECID) {
 
 保存您的更改。然后，打开&#x200B;**Github Desktop**，为您的PR提供一个名称，然后单击&#x200B;**提交到主文件**。
 
-![块](./images/blockadv18.png)
+![块](./images/blockadv18.png){zoomable="yes"}
 
 接下来，单击&#x200B;**推送来源**。
 
-![块](./images/blockadv19.png)
+![块](./images/blockadv19.png){zoomable="yes"}
 
 现在，在将XXX替换为您的GitHub用户帐户（本示例中为`woutervangeluwe`）之后，您可以通过转到`main--citisignal--XXX.aem.page/us/en`和/或`main--citisignal--XXX.aem.live/us/en`查看对您网站的更改。
 
@@ -343,7 +343,7 @@ async function getOffer(ECID) {
 
 您应该会看到此内容。
 
-![块](./images/blockadv20.png)
+![块](./images/blockadv20.png){zoomable="yes"}
 
 下一步： [2.1.6 AEMEdge Delivery ServicesMarTech插件](./ex6.md){target="_blank"}
 

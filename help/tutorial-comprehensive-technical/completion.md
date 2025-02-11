@@ -3,9 +3,9 @@ title: 完成 — Adobe Experience Platform的综合技术教程
 description: 如何衡量完成情况？
 doc-type: multipage-overview
 exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
-source-git-commit: 3b3c62499bfed86ab13a657a816424879cab4f42
+source-git-commit: a1060375d6d83a945f3d3b268e7f9fac7cffc845
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '971'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,15 @@ ht-degree: 0%
 
 转到[https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258)。
 
-![3](./assets/images/certcourse.png)
+![3](./assets/images/certcourse.png){zoomable="yes"}
 
-要完成模块，您需要提供完成证明。
+单击要提交完成的模块旁边的&#x200B;**开始**。
+
+![3](./assets/images/certcourse2.png){zoomable="yes"}
+
+要完成模块，您需要提供完成证明并提交每个模块的完成证明。
+
+![3](./assets/images/certcourse3.png){zoomable="yes"}
 
 以下是每个模块的预期完成校样。
 
@@ -26,7 +32,7 @@ ht-degree: 0%
 
 Web格式的演示系统项目的ID如下所示： `--aepUserLdap-- - QIMU`。
 
-![3](./assets/images/module0dtl.png)
+![3](./assets/images/module0dtl.png){zoomable="yes"}
 
 ## 1.1 Adobe Experience Platform数据收集和Web SDK扩展
 
@@ -34,7 +40,7 @@ Web格式的演示系统项目的ID如下所示： `--aepUserLdap-- - QIMU`。
 
 Web格式的数据收集属性的环境ID如下所示： `EN5211f7792b4442f8a45deb68f8902d3a`。
 
-![3](./assets/images/module1dtl.png)
+![3](./assets/images/module1dtl.png){zoomable="yes"}
 
 ## 1.2数据摄取
 
@@ -42,7 +48,7 @@ Web格式的数据收集属性的环境ID如下所示： `EN5211f7792b4442f8a45d
 
 数据流ID如下所示： **374c2c6d-f39a-4b0b-b568-40c41e6c4e8e**。
 
-![3](./assets/images/completemodule2seg.png)
+![3](./assets/images/completemodule2seg.png){zoomable="yes"}
 
 ## 1.3联合受众构成
 
@@ -50,7 +56,7 @@ Web格式的数据收集属性的环境ID如下所示： `EN5211f7792b4442f8a45d
 
 Federated Data Model的ID如下所示：**DMO5110**，可从下图中所述的URL获取。
 
-![3](./assets/images/completemodule3fac.png)
+![3](./assets/images/completemodule3fac.png){zoomable="yes"}
 
 ## 2.1实时客户资料
 
@@ -58,7 +64,7 @@ Federated Data Model的ID如下所示：**DMO5110**，可从下图中所述的UR
 
 受众ID如下所示： **81a9acbe-12e6-424b-b658-abba3a435c83**。
 
-![3](./assets/images/completemodule3seg.png)
+![3](./assets/images/completemodule3seg.png){zoomable="yes"}
 
 ## 2.2智能服务
 
@@ -66,7 +72,7 @@ Federated Data Model的ID如下所示：**DMO5110**，可从下图中所述的UR
 
 受众ID如下所示： **cb6db21d-8fa3-484a-93ac-25aa1ab48412**。
 
-![12](./assets/images/completemodule10.png)
+![12](./assets/images/completemodule10.png){zoomable="yes"}
 
 ## 2.3 Real-Time CDP：构建受众并采取行动！
 
@@ -74,7 +80,7 @@ Federated Data Model的ID如下所示：**DMO5110**，可从下图中所述的UR
 
 Webhook目标的ID如下所示：**b5b4b959-3166-40e2-8279-8223d00c3987**，可以从下图所示的URL中获取。
 
-![12](./assets/images/vec4.png)
+![12](./assets/images/vec4.png){zoomable="yes"}
 
 ## 2.4 Real-Time CDP：Audience Activation到Microsoft Azure事件中心
 
@@ -82,7 +88,7 @@ Webhook目标的ID如下所示：**b5b4b959-3166-40e2-8279-8223d00c3987**，可�
 
 您可以在URL中找到类似于&#x200B;**43cf85bc-3d01-49fd-80c9-a2913db45e3c**&#x200B;的&#x200B;**Microsoft Azure事件中心目标ID**，如下所示：
 
-![14](./assets/images/azuredestid.png)
+![14](./assets/images/azuredestid.png){zoomable="yes"}
 
 ## 2.5 Real-Time CDP连接：事件转发
 
@@ -90,7 +96,7 @@ Webhook目标的ID如下所示：**b5b4b959-3166-40e2-8279-8223d00c3987**，可�
 
 您可以在URL中找到&#x200B;**事件转发属性ID**，它类似于&#x200B;**PRa18819171c1241dfb16d74a49993dd5b**，如下图所示：
 
-![14](./assets/images/launchssfid.png)
+![14](./assets/images/launchssfid.png){zoomable="yes"}
 
 ## 2.6将数据从Apache Kafka流式传输到Real-Time CDP
 
@@ -98,7 +104,7 @@ Webhook目标的ID如下所示：**b5b4b959-3166-40e2-8279-8223d00c3987**，可�
 
 ID类似于&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以在此处找到它：
 
-![14](./assets/images/kafkaflowid.png)
+![14](./assets/images/kafkaflowid.png){zoomable="yes"}
 
 ## 3.1 Adobe Journey Optimizer：编排
 
@@ -106,7 +112,7 @@ ID类似于&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以在此处
 
 旅程的ID如下所示： **594fa01f-1a3b-450c-ba09-b7e3ff377c0f**，可以从下图所示的URL中获取。
 
-![12](./assets/images/ajoo.png)
+![12](./assets/images/ajoo.png){zoomable="yes"}
 
 ## 3.2 Adobe Journey Optimizer：外部数据源和自定义操作
 
@@ -114,7 +120,7 @@ ID类似于&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以在此处
 
 历程的ID如下所示： **6962d3bc-4f44-4f9c-b326-83978f245f2a**，可以从下图所示的URL中获取。
 
-![12](./assets/images/jofinal.png)
+![12](./assets/images/jofinal.png){zoomable="yes"}
 
 ## 3.3 Adobe Journey Optimizer：Offer decisioning
 
@@ -122,7 +128,7 @@ ID类似于&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以在此处
 
 您可在以下位置找到与此&#x200B;**dps:offer-activity:1a08ba4b529b2fb2**&#x200B;类似的&#x200B;**决策ID**：
 
-![14](./assets/images/offers.png)
+![14](./assets/images/offers.png){zoomable="yes"}
 
 ## 3.4 Adobe Journey Optimizer：基于事件的历程
 
@@ -130,7 +136,15 @@ ID类似于&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以在此处
 
 旅程的ID如下所示： **5f5efc7e-49f7-44c1-85df-b23482b38d32**，可以从下图所示的URL中获取。
 
-![14](./assets/images/jojourneyid.png)
+![14](./assets/images/jojourneyid.png){zoomable="yes"}
+
+## 3.5 Adobe Journey Optimizer：翻译服务
+
+模块&#x200B;**Adobe Journey Optimizer：翻译服务**&#x200B;的预期完成证明是您的CitiSignal Fibre营销活动的&#x200B;**营销活动版本ID**。
+
+Federated Data Model的Campaign版本ID如下所示：**b11c998b-a345-4f8e-afb1-6285547eb693**，并且可以从Campaign概述屏幕中复制，如下图所示。
+
+![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
 ## 4.1Customer Journey Analytics：使用Analysis Workspace构建功能板
 
@@ -138,7 +152,7 @@ ID类似于&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以在此处
 
 格式如下所示： **677bcb247064db3c7de2a0e4**，打开项目后，可以在URL中找到它。
 
-![12](./assets/images/cjacompletion.png)
+![12](./assets/images/cjacompletion.png){zoomable="yes"}
 
 ## 4.2Customer Journey Analytics：使用BigQuery Source Connector在Adobe Experience Platform中摄取和分析Google Analytics数据
 
@@ -146,7 +160,7 @@ ID类似于&#x200B;**f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**，您可以在此处
 
 您可在以下位置找到与此&#x200B;**b63a810c-a8cc-4c6b-a57e-dcb7e3368cf8**&#x200B;类似的&#x200B;**BigQuery连接ID**：
 
-![14](./assets/images/bqid.png)
+![14](./assets/images/bqid.png){zoomable="yes"}
 
 ## 5.1查询服务
 
@@ -156,7 +170,7 @@ ID如下所示： **675033c903fb3b2aefed8a0a**。
 
 ![12](./assets/images/completemodule7.png)
 
-![技术内部人士](./assets/images/techinsiders.png){width="50px" align="left"}
+![技术内部人士](./assets/images/techinsiders.png){zoomable="yes"}{width="50px" align="left"}
 
 >[!NOTE]
 >

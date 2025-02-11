@@ -4,7 +4,7 @@ description: 设置您的AEM CS环境
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 5b15d54af26d67b4193a1ac4d5d62f5c62a37362
+source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -17,57 +17,57 @@ ht-degree: 1%
 
 转到[https://github.com](https://github.com){target="_blank"}。 单击&#x200B;**登录**。
 
-![AEMCS](./images/aemcssetup1.png)
+![AEMCS](./images/aemcssetup1.png){zoomable="yes"}
 
 输入您的凭据。 单击&#x200B;**登录**。
 
-![AEMCS](./images/aemcssetup2.png)
+![AEMCS](./images/aemcssetup2.png){zoomable="yes"}
 
 登录后，您将看到您的GitHub功能板。
 
-![AEMCS](./images/aemcssetup3.png)
+![AEMCS](./images/aemcssetup3.png){zoomable="yes"}
 
 转到[https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one){target="_blank"}。 你会看到这个。 单击&#x200B;**使用此模板**，然后单击&#x200B;**新建存储库**。
 
-![AEMCS](./images/aemcssetup4.png)
+![AEMCS](./images/aemcssetup4.png){zoomable="yes"}
 
 对于&#x200B;**存储库名称**，请使用`citisignal`。 将可见性设置为&#x200B;**私有**。 单击&#x200B;**创建存储库**。
 
-![AEMCS](./images/aemcssetup5.png)
+![AEMCS](./images/aemcssetup5.png){zoomable="yes"}
 
 几秒钟后，您将创建存储库。
 
-![AEMCS](./images/aemcssetup6.png)
+![AEMCS](./images/aemcssetup6.png){zoomable="yes"}
 
 接下来，转到[https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}。 单击&#x200B;**配置**。
 
-![AEMCS](./images/aemcssetup7.png)
+![AEMCS](./images/aemcssetup7.png){zoomable="yes"}
 
 单击您的GitHub帐户。
 
-![AEMCS](./images/aemcssetup8.png)
+![AEMCS](./images/aemcssetup8.png){zoomable="yes"}
 
 单击&#x200B;**仅选择存储库**，然后添加刚刚创建的存储库。 接下来，单击&#x200B;**安装**。
 
-![AEMCS](./images/aemcssetup9.png)
+![AEMCS](./images/aemcssetup9.png){zoomable="yes"}
 
 然后您会获得此确认。
 
-![AEMCS](./images/aemcssetup10.png)
+![AEMCS](./images/aemcssetup10.png){zoomable="yes"}
 
 ## 2.1.3.2更新文件fstab.yaml
 
 在您的GitHub存储库中，单击以打开文件`fstab.yaml`。
 
-![AEMCS](./images/aemcssetup11.png)
+![AEMCS](./images/aemcssetup11.png){zoomable="yes"}
 
 单击&#x200B;**编辑**&#x200B;图标。
 
-![AEMCS](./images/aemcssetup12.png)
+![AEMCS](./images/aemcssetup12.png){zoomable="yes"}
 
 您现在需要更新第4行字段&#x200B;**url**&#x200B;的值。
 
-![AEMCS](./images/aemcssetup13.png)
+![AEMCS](./images/aemcssetup13.png){zoomable="yes"}
 
 您需要通过特定AEM CS环境的URL与GitHub存储库的设置替换当前值。
 
@@ -85,15 +85,15 @@ ZZZ应该被替换为您在上一个练习中使用的GitHub存储库的名称�
 
 您可以通过转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}来查找AEM CS创作环境的URL。 单击您的&#x200B;**程序**&#x200B;以将其打开。
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/aemcs6.png){zoomable="yes"}
 
 接下来，单击&#x200B;**环境**&#x200B;选项卡上的3个点&#x200B;**...**，然后单击&#x200B;**查看详细信息**。
 
-![AEMCS](./images/aemcs9.png)
+![AEMCS](./images/aemcs9.png){zoomable="yes"}
 
 然后，您将看到环境详细信息，包括&#x200B;**作者**&#x200B;环境的URL。 复制URL。
 
-![AEMCS](./images/aemcs10.png)
+![AEMCS](./images/aemcs10.png){zoomable="yes"}
 
 XXX = `author-p148073-e1511503.adobeaemcloud.com`
 
@@ -101,13 +101,13 @@ XXX = `author-p148073-e1511503.adobeaemcloud.com`
 
 YYYY = `woutervangeluwe`
 
-![AEMCS](./images/aemcs11.png)
+![AEMCS](./images/aemcs11.png){zoomable="yes"}
 
 对于GitHub存储库名称，您还可以在GitHub中打开的浏览器窗口中找到它。 在这种情况下，存储库名称为`citisignal`。
 
 ZZZ = `citisignal`
 
-![AEMCS](./images/aemcs12.png)
+![AEMCS](./images/aemcs12.png){zoomable="yes"}
 
 这3个值组合在一起，导致需要在文件`fstab.yaml`中配置此新URL。
 
@@ -115,11 +115,11 @@ ZZZ = `citisignal`
 
 单击&#x200B;**提交更改……**。
 
-![AEMCS](./images/aemcs13.png)
+![AEMCS](./images/aemcs13.png){zoomable="yes"}
 
 单击&#x200B;**提交更改**。
 
-![AEMCS](./images/aemcs14.png)
+![AEMCS](./images/aemcs14.png){zoomable="yes"}
 
 文件`fstab.yaml`现已更新。
 
@@ -127,19 +127,19 @@ ZZZ = `citisignal`
 
 转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 单击您的&#x200B;**程序**&#x200B;以将其打开。
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/aemcs6.png){zoomable="yes"}
 
 接下来，单击创作环境的URL。
 
-![AEMCS](./images/aemcssetup18.png)
+![AEMCS](./images/aemcssetup18.png){zoomable="yes"}
 
 单击&#x200B;**使用Adobe**&#x200B;登录。
 
-![AEMCS](./images/aemcssetup19.png)
+![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
 然后，您将看到创作环境。
 
-![AEMCS](./images/aemcssetup20.png)
+![AEMCS](./images/aemcssetup20.png){zoomable="yes"}
 
 您的URL将如下所示：`https://author-p148073-e1511503.adobeaemcloud.com/ui#/aem/aem/start.html?appId=aemshell`
 
@@ -147,41 +147,41 @@ ZZZ = `citisignal`
 `https://author-p148073-e1511503.adobeaemcloud.com/crx/packmgr`。
 按**Enter**&#x200B;以加载包管理器环境
 
-![AEMCS](./images/aemcssetup22.png)
+![AEMCS](./images/aemcssetup22.png){zoomable="yes"}
 
 接下来，单击&#x200B;**上传包**。
 
-![AEMCS](./images/aemcssetup21.png)
+![AEMCS](./images/aemcssetup21.png){zoomable="yes"}
 
 单击&#x200B;**浏览**&#x200B;以查找要上载的包。
 
 要上传的包名为&#x200B;**citisignal-assets.zip**，可从此处下载： [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}。
 
-![AEMCS](./images/aemcssetup23.png)
+![AEMCS](./images/aemcssetup23.png){zoomable="yes"}
 
 选择包并单击&#x200B;**打开**。
 
-![AEMCS](./images/aemcssetup24.png)
+![AEMCS](./images/aemcssetup24.png){zoomable="yes"}
 
 接下来，单击&#x200B;**确定**。
 
-![AEMCS](./images/aemcssetup25.png)
+![AEMCS](./images/aemcssetup25.png){zoomable="yes"}
 
 随后将上传包。
 
-![AEMCS](./images/aemcssetup26.png)
+![AEMCS](./images/aemcssetup26.png){zoomable="yes"}
 
 接下来，在刚刚上传的包上单击&#x200B;**安装**。
 
-![AEMCS](./images/aemcssetup27.png)
+![AEMCS](./images/aemcssetup27.png){zoomable="yes"}
 
 单击&#x200B;**安装**。
 
-![AEMCS](./images/aemcssetup28.png)
+![AEMCS](./images/aemcssetup28.png){zoomable="yes"}
 
 几分钟后，将安装您的包。
 
-![AEMCS](./images/aemcssetup29.png)
+![AEMCS](./images/aemcssetup29.png){zoomable="yes"}
 
 现在可以关闭此窗口。
 
@@ -190,35 +190,35 @@ ZZZ = `citisignal`
 
 转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 单击您的&#x200B;**程序**&#x200B;以将其打开。
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/aemcs6.png){zoomable="yes"}
 
 接下来，单击创作环境的URL。
 
-![AEMCS](./images/aemcssetup18.png)
+![AEMCS](./images/aemcssetup18.png){zoomable="yes"}
 
 单击&#x200B;**使用Adobe**&#x200B;登录。
 
-![AEMCS](./images/aemcssetup19.png)
+![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
 然后，您将看到创作环境。 单击&#x200B;**站点**。
 
-![AEMCS](./images/aemcsassets1.png)
+![AEMCS](./images/aemcsassets1.png){zoomable="yes"}
 
 单击&#x200B;**文件**。
 
-![AEMCS](./images/aemcsassets2.png)
+![AEMCS](./images/aemcsassets2.png){zoomable="yes"}
 
 单击以选择文件夹&#x200B;**CitiSignal**，然后单击&#x200B;**管理发布**。
 
-![AEMCS](./images/aemcsassets3.png)
+![AEMCS](./images/aemcsassets3.png){zoomable="yes"}
 
 单击&#x200B;**下一步**。
 
-![AEMCS](./images/aemcsassets4.png)
+![AEMCS](./images/aemcsassets4.png){zoomable="yes"}
 
 单击&#x200B;**Publish**。
 
-![AEMCS](./images/aemcsassets5.png)
+![AEMCS](./images/aemcsassets5.png){zoomable="yes"}
 
 您的资产现已发布。
 
@@ -226,37 +226,37 @@ ZZZ = `citisignal`
 
 转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 单击您的&#x200B;**程序**&#x200B;以将其打开。
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/aemcs6.png){zoomable="yes"}
 
 接下来，单击创作环境的URL。
 
-![AEMCS](./images/aemcssetup18.png)
+![AEMCS](./images/aemcssetup18.png){zoomable="yes"}
 
 单击&#x200B;**使用Adobe**&#x200B;登录。
 
-![AEMCS](./images/aemcssetup19.png)
+![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
 然后，您将看到创作环境。 单击&#x200B;**站点**。
 
-![AEMCS](./images/aemcssetup30.png)
+![AEMCS](./images/aemcssetup30.png){zoomable="yes"}
 
 单击&#x200B;**创建**，然后单击&#x200B;**从模板创建站点**。
 
-![AEMCS](./images/aemcssetup31.png)
+![AEMCS](./images/aemcssetup31.png){zoomable="yes"}
 
 单击&#x200B;**导入**。
 
-![AEMCS](./images/aemcssetup32.png)
+![AEMCS](./images/aemcssetup32.png){zoomable="yes"}
 
 您现在需要为站点导入预配置的模板。 您可以在[此处](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip){target="_blank"}下载模板。 将文件保存到桌面。
 
 接下来，选择文件`citisignal-edge-delivery-services-template-0.0.4.zip`并单击&#x200B;**打开**。
 
-![AEMCS](./images/aemcssetup33.png)
+![AEMCS](./images/aemcssetup33.png){zoomable="yes"}
 
 你会看到这个。 单击选择您刚刚上传的模板，然后单击&#x200B;**下一步**。
 
-![AEMCS](./images/aemcssetup34.png)
+![AEMCS](./images/aemcssetup34.png){zoomable="yes"}
 
 您现在需要填写一些详细信息。
 
@@ -264,49 +264,49 @@ ZZZ = `citisignal`
 - 站点名称：使用&#x200B;**citisignal-one**
 - GitHub URL：复制您之前使用的GitHub存储库的URL
 
-![AEMCS](./images/aemcssetup35.png)
+![AEMCS](./images/aemcssetup35.png){zoomable="yes"}
 
 你就能拥有这个了。 单击&#x200B;**创建**。
 
-![AEMCS](./images/aemcssetup36.png)
+![AEMCS](./images/aemcssetup36.png){zoomable="yes"}
 
 正在创建您的站点。 这可能需要几分钟的时间。 单击&#x200B;**确定**。
 
-![AEMCS](./images/aemcssetup37.png)
+![AEMCS](./images/aemcssetup37.png){zoomable="yes"}
 
 几分钟后刷新屏幕，您随后将看到新创建的CitiSignal网站。
 
-![AEMCS](./images/aemcssetup38.png)
+![AEMCS](./images/aemcssetup38.png){zoomable="yes"}
 
 ## 2.1.3.6Publish花旗讯号网站
 
 接下来，单击&#x200B;**CitiSignal**&#x200B;前面的复选框。 然后，单击&#x200B;**管理发布**。
 
-![AEMCS](./images/aemcssetup39.png)
+![AEMCS](./images/aemcssetup39.png){zoomable="yes"}
 
 单击&#x200B;**下一步**。
 
-![AEMCS](./images/aemcssetup40.png)
+![AEMCS](./images/aemcssetup40.png){zoomable="yes"}
 
 单击&#x200B;**包括子设置**。
 
-![AEMCS](./images/aemcssetup41.png)
+![AEMCS](./images/aemcssetup41.png){zoomable="yes"}
 
 单击选中&#x200B;**包括子项**&#x200B;复选框，然后单击取消选中其他复选框。 单击&#x200B;**确定**。
 
-![AEMCS](./images/aemcssetup42.png)
+![AEMCS](./images/aemcssetup42.png){zoomable="yes"}
 
 单击&#x200B;**Publish**。
 
-![AEMCS](./images/aemcssetup43.png)
+![AEMCS](./images/aemcssetup43.png){zoomable="yes"}
 
 然后你将被送回这里。 导航到&#x200B;**CitiSignal** > **us** > **en**。 单击&#x200B;**索引**&#x200B;前面的复选框，然后单击&#x200B;**编辑**。
 
-![AEMCS](./images/aemcssetup44.png)
+![AEMCS](./images/aemcssetup44.png){zoomable="yes"}
 
 您的网站随后将在&#x200B;**通用编辑器**&#x200B;中打开。
 
-![AEMCS](./images/aemcssetup45.png)
+![AEMCS](./images/aemcssetup45.png){zoomable="yes"}
 
 现在，在将XXX替换为您的GitHub用户帐户（本例中为`woutervangeluwe`）之后，您可以通过转到`main--citisignal--XXX.aem.page/us/en`和/或`main--citisignal--XXX.aem.live/us/en`来访问您的网站。
 
@@ -317,27 +317,27 @@ ZZZ = `citisignal`
 
 您随后将看到以下内容：
 
-![AEMCS](./images/aemcssetup46.png)
+![AEMCS](./images/aemcssetup46.png){zoomable="yes"}
 
 几分钟后，资源将全部正确加载。
 
-![AEMCS](./images/aemcssetup47.png)
+![AEMCS](./images/aemcssetup47.png){zoomable="yes"}
 
 ## 2.1.3.7测试页面性能
 
 转到[https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}。 输入URL并单击&#x200B;**分析**。
 
-![AEMCS](./images/aemcssetup48.png)
+![AEMCS](./images/aemcssetup48.png){zoomable="yes"}
 
 然后，您会看到您的网站在移动和桌面可视化图表中均获得了高分：
 
 **移动设备**：
 
-![AEMCS](./images/aemcssetup49.png)
+![AEMCS](./images/aemcssetup49.png){zoomable="yes"}
 
 **桌面**：
 
-![AEMCS](./images/aemcssetup50.png)
+![AEMCS](./images/aemcssetup50.png){zoomable="yes"}
 
 下一步： [2.1.4配置自定义块](./ex4.md){target="_blank"}
 
