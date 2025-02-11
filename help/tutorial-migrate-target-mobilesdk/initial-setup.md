@@ -2,10 +2,10 @@
 title: 初始设置 — 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
 description: 了解并设置您的Platform Web SDK实施所需的重要基本元素
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
 workflow-type: tm+mt
-source-wordcount: '285'
-ht-degree: 5%
+source-wordcount: '370'
+ht-degree: 6%
 
 ---
 
@@ -20,6 +20,8 @@ ht-degree: 5%
 - [创建数据流](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"}以启用从Edge Network转发数据
 - [配置数据流](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"}以启用将数据转发到Adobe Target
 - [为Decisioning扩展配置标记属性](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"}
+
+## 扩展配置
 
 >[!BEGINTABS]
 
@@ -50,7 +52,19 @@ ht-degree: 5%
 
 >[!ENDTABS]
 
-接下来，了解如何[替换Target SDK](replace-library.md)。
+## 数据流配置
+
+Target扩展具有[可配置的设置](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui)，使用决策扩展这些设置在数据流](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup)中配置了[。
+
+| 目标扩展 | Decisioning扩展 | 注释 |
+| --- | --- | --- | 
+| 客户端代码 | 不适用 | 边缘使用IMS组织详细信息自动设置 |
+| 环境ID | 目标环境ID | 已在数据流中配置 |
+| Target Workspace资产 | 资产令牌 | 已在数据流中配置 |
+| 超时 | 不可配置 | Decisioning扩展的超时为10秒 |
+| Server Domain | Edge Network域 | 在Adobe Experience Platform Edge Network扩展中设置 |
+
+接下来，了解如何[替换Target SDK](replace-sdk.md)。
 
 >[!NOTE]
 >
