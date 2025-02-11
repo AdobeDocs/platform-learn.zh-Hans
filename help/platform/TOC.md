@@ -5,7 +5,7 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: bc8c62e5115a2c40c54ee200df49bc88e852d7c3
+source-git-commit: ce28c48d554727ce42803400373826315f5b2153
 workflow-type: tm+mt
 source-wordcount: '881'
 ht-degree: 18%
@@ -15,14 +15,14 @@ ht-degree: 18%
 
 # Adobe Experience Platform 教程 {#tutorials}
 
-+ [平台Tutorials](/help/platform/overview.md)
++ [Platform教程](/help/platform/overview.md)
 + 平台{#intro-to-platform}简介
    + [以 Experience Platform 为动力的客户体验](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [幕后：由Experience Platform提供支持的客户体验](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience Platform 概述](/help/platform/intro-to-platform/overview.md)
    + [主要功能](/help/platform/intro-to-platform/key-capabilities.md)
    + [基于平台的应用程序](/help/platform/intro-to-platform/native-applications.md)
-   + [与Experience Cloud应用程序集成](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
+   + [与Experience Cloud应用程序的集成](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
    + [主要用例](/help/platform/intro-to-platform/key-use-cases.md)
    + [基本架构](/help/platform/intro-to-platform/basic-architecture.md)
    + [用户界面](/help/platform/intro-to-platform/interface-tour.md)
@@ -34,7 +34,7 @@ ht-degree: 18%
    + [B2B edition概述](/help/platform/rtcdp/b2b-overview.md)
    + [使用Marketo Engage编排活动](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [入门：数据架构师和数据工程师](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
-+ [对Experience PlatformAPI进行身份验证](/help/platform/authentication/platform-api-authentication.md)
++ [验证Experience Platform API](/help/platform/authentication/platform-api-authentication.md)
 + [将示例数据导入Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [使用警报](/help/platform/admin/use-alerts.md)
@@ -180,9 +180,9 @@ ht-degree: 18%
    + [隐私请求中的身份数据](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [隐私JavaScript库](/help/platform/privacy/using-privacy-javascript-library.md)
    + [Adobe Analytics中的隐私标签](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
-   + [Privacy ServiceAPI快速入门](/help/platform/privacy/getting-started-with-privacy-services-api.md)
-   + [PRIVACY SERVICEUI](/help/platform/privacy/using-privacy-services-ui.md)
-   + [PRIVACY SERVICEAPI](/help/platform/privacy/using-the-privacy-service-api.md)
+   + [Privacy Service API快速入门](/help/platform/privacy/getting-started-with-privacy-services-api.md)
+   + [PRIVACY SERVICE UI](/help/platform/privacy/using-privacy-services-ui.md)
+   + [PRIVACY SERVICE API](/help/platform/privacy/using-the-privacy-service-api.md)
    + [订阅隐私活动](/help/platform/privacy/subscribe-to-privacy-events.md)
    + [设置客户管理的密钥](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [负责任的客户数据管理的10个注意事项](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
