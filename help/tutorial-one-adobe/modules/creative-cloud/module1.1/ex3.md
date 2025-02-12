@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: d33df99e9c75e7d5feef503b68174b93860ac245
 workflow-type: tm+mt
 source-wordcount: '952'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ![Azure存储](./images/ps2.png){zoomable="yes"}
 
-1. 选择&#x200B;**Creative Cloud**&#x200B;并选择&#x200B;**Photoshop -Firefly服务**。 选择&#x200B;**下一步**。
+1. 选择&#x200B;**Creative Cloud**，然后选择&#x200B;**Photoshop - Firefly服务**。 选择&#x200B;**下一步**。
 
 ![Azure存储](./images/ps3.png){zoomable="yes"}
 
@@ -83,13 +83,13 @@ ht-degree: 0%
 
 ### Photoshop API - Hello World
 
-接下来，让我们向Photoshop API问好，以测试是否正确设置了所有权限和访问权限。
+接下来，我们来了解Photoshop API，以测试所有权限和访问权限是否设置正确。
 
-1. 在集合&#x200B;**Photoshop**&#x200B;中，打开请求&#x200B;**Photoshop Hello（测试身份验证）**&#x200B;的问题。选择&#x200B;**发送**。
+1. 在集合&#x200B;**Photoshop**&#x200B;中，打开请求&#x200B;**Photoshop Hello（测试身份验证）。**&#x200B;的问题。选择&#x200B;**发送**。
 
 ![Azure存储](./images/ps10.png){zoomable="yes"}
 
-您应会收到响应&#x200B;**欢迎使用Photoshop API！**。
+您应该会收到响应&#x200B;**欢迎使用Photoshop API！**。
 
 ![Azure存储](./images/ps11.png){zoomable="yes"}
 
@@ -97,30 +97,30 @@ ht-degree: 0%
 
 ### 将PSD上传到Azure
 
-1. 在Postman中，打开请求&#x200B;**将PSD上载到Azure Storage帐户**。 在上一个练习中，您已在Postman中配置这些环境变量，现在将使用这些变量：
+1. 在Postman中，打开请求&#x200B;**将PSD上传到Azure存储帐户**。 在上一个练习中，您已在Postman中配置这些环境变量，现在将使用这些变量：
 
 - `AZURE_STORAGE_URL`
 - `AZURE_STORAGE_CONTAINER`
 - `AZURE_STORAGE_SAS_READ`
 - `AZURE_STORAGE_SAS_WRITE`
 
-正如您在请求&#x200B;**将PSD上载到Azure Storage Account**&#x200B;中看到的，URL已配置为使用这些变量。
+正如您在请求&#x200B;**将PSD上传到Azure Storage帐户**&#x200B;中看到的，URL已配置为使用这些变量。
 
 ![Azure存储](./images/ps12.png){zoomable="yes"}
 
-1. 在&#x200B;**主体**&#x200B;中，选择文件&#x200B;**citisignal-fiber.psd**。
+1. 在&#x200B;**正文**&#x200B;中，选择文件&#x200B;**citisignal-fibre.psd**。
 
 ![Azure存储](./images/ps13.png){zoomable="yes"}
 
-1. 您的屏幕应如下所示。 选择&#x200B;**发送**。
+1. 屏幕应该如下所示。 选择&#x200B;**发送**。
 
 ![Azure存储](./images/ps14.png){zoomable="yes"}
 
-您应从Azure中获取此空响应，这意味着您的文件存储在您的Azure存储帐户的容器中。
+您应从Azure收到此空响应，这意味着您的文件将存储在您的Azure存储帐户的容器中。
 
 ![Azure存储](./images/ps15.png){zoomable="yes"}
 
-如果使用Azure存储资源管理器查看文件，请确保刷新文件夹。
+如果使用Azure存储资源管理器查看您的文件，请务必刷新您的文件夹。
 
 ![Azure存储](./images/ps16.png){zoomable="yes"}
 
@@ -229,7 +229,7 @@ ht-degree: 0%
 
 ![Azure存储](./images/ps24.png){zoomable="yes"}
 
-1. 将文件下载到计算机后，打开&#x200B;**citisignal-fibre-changed-text.psd**。 您应该会看到行动号召的占位符已被文本&#x200B;**立即获取Fiber！**&#x200B;替换。
+1. 将文件下载到您的计算机后，打开&#x200B;**citisignal-fibre-changed-text.psd**。 您应该会看到行动号召的占位符已被文本&#x200B;**立即获取Fiber！**&#x200B;替换。
 
 ![Azure存储](./images/ps25.png){zoomable="yes"}
 
