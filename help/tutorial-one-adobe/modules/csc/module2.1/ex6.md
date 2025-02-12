@@ -4,7 +4,7 @@ description: AEM CS - MarTech插件
 kt: 5342
 doc-type: tutorial
 exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
-source-git-commit: bbbe13842ac6825c6a6a933dc018fd9cdde52249
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -28,7 +28,7 @@ AEM MarTech插件可帮助您为AEM项目快速设置一个完整的MarTech栈�
 你会看到这个。 粘贴以下命令并按&#x200B;**Enter**。
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-experimentation.git main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
 ```
 
 您应该会看到此内容。
@@ -171,7 +171,7 @@ const AUDIENCES = {
 
 ![AEMCS](./images/scriptsvar4.png){zoomable="yes"}
 
-您随后将找到所需的URL，但它位于HTML`<script></script>`标记内。 您应该只复制从`https`开始直到`.min.js`的部分。
+您随后将找到所需的URL，但它位于HTML `<script></script>`标记内。 您应该只复制从`https`开始直到`.min.js`的部分。
 
 ![AEMCS](./images/scriptsvar5.png){zoomable="yes"}
 
@@ -317,13 +317,13 @@ window.setTimeout(() => {
 
 ## 2.1.6.4 Tags属性中的ACDL扩展
 
-为了使AEMEdge Delivery ServicesMarTech插件正常运行，您需要为添加扩展
+为了使AEM Edge Delivery Services MarTech插件正常运行，您需要添加扩展
 
 转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 搜索并打开Web的Tags属性（名为`--aepUserLdap-- - One Adobe (DD/MM/YYYY)`）。
 
 ![AEMCS](./images/acdl3.png){zoomable="yes"}
 
-转到&#x200B;**扩展**，转到&#x200B;**目录**。 单击扩展&#x200B;**Adobe客户端数据层**，然后单击&#x200B;**安装**。
+转到&#x200B;**扩展**，转到&#x200B;**目录**。 单击扩展&#x200B;**Adobe Client Data Layer**，然后单击&#x200B;**安装**。
 
 ![AEMCS](./images/acdl4.png){zoomable="yes"}
 
@@ -341,7 +341,7 @@ window.setTimeout(() => {
 
 您的更改现已部署。
 
-## 2.1.6.5将数据发送到Adobe Experience PlatformEdge Network
+## 2.1.6.5将数据发送到Adobe Experience Platform Edge Network
 
 现在，在将XXX替换为您的GitHub用户帐户（本示例中为`woutervangeluwe`）之后，您可以通过转到`main--citisignal--XXX.aem.page/us/en`和/或`main--citisignal--XXX.aem.live/us/en`查看对您网站的更改。
 

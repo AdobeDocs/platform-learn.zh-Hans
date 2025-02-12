@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 0e9d1b5866d789ca2693d9c1a6ef7119c25ed009
 workflow-type: tm+mt
 source-wordcount: '836'
 ht-degree: 0%
 
 ---
 
-# 1.1.4Firefly自定义模型API
+# 1.1.4 Firefly自定义模型API
 
 ## 1.1.4.1配置自定义模型
 
@@ -74,11 +74,11 @@ ht-degree: 0%
 
 ![Firefly自定义模型](./images/ffcm13.png){zoomable="yes"}
 
-20-30分钟后，您的模型将接受培训并可发布。 单击&#x200B;**Publish**。
+20-30分钟后，您的模型将接受培训并可发布。 单击&#x200B;**发布**。
 
 ![Firefly自定义模型](./images/ffcm14.png){zoomable="yes"}
 
-再次单击&#x200B;**Publish**。
+再次单击&#x200B;**发布**。
 
 ![Firefly自定义模型](./images/ffcm15.png){zoomable="yes"}
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 ![Firefly自定义模型](./images/ffcm18.png){zoomable="yes"}
 
-## 1.1.4.3为Firefly服务自定义模型API启用自定义模型
+## 1.1.4.3为Firefly Services自定义模型API启用自定义模型
 
 自定义模型一旦训练完成，也可以通过API使用。 在练习1.1.1中，您已配置Adobe I/O项目以通过API与Firefly服务交互。
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 
 ![Firefly自定义模型](./images/ffcm20.png){zoomable="yes"}
 
-要访问Firefly自定义模型，自定义模型需要共享到我们Adobe I/O项目的&#x200B;**技术帐户ID**。
+要访问Firefly自定义模型，需要将该自定义模型共享到Adobe I/O项目的&#x200B;**技术帐户ID**。
 
 要检索您的&#x200B;**技术帐户ID**，请转到[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)。 单击以打开名为`--aepUserLdap-- Firefly`的项目。
 
@@ -140,7 +140,7 @@ ht-degree: 0%
 >
 >如果您是Adobe员工，请按照此处的说明使用[PostBuster](./../../../postbuster.md)。
 
-在练习1.1.1Firefly服务快速入门中，您已将以下文件[postman-ff.zip](./../../../assets/postman/postman-ff.zip)下载到本地桌面，然后将该收藏集导入到Postman中。
+在练习1.1.1的Firefly服务快速入门中，您已将此文件[postman-ff.zip](./../../../assets/postman/postman-ff.zip)下载到本地桌面，然后将该收藏集导入Postman。
 
 打开Postman并转到文件夹&#x200B;**FF — 自定义模型API**。
 

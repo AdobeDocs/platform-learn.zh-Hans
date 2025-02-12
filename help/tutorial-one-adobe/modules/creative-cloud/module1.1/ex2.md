@@ -1,19 +1,19 @@
 ---
-title: 使用Microsoft Azure和预签名URL优化您的Firefly过程
+title: 使用Microsoft Azure和预签名URL优化您的Firefly进程
 description: 了解如何使用Microsoft Azure和预签名URL优化Firefly过程
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: bb4b760335fa41b70a1693546047b5bcdfb9f5f2
+source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
 workflow-type: tm+mt
 source-wordcount: '1347'
 ht-degree: 1%
 
 ---
 
-# 1.1.2使用Microsoft Azure和预签名URL优化您的Firefly过程
+# 1.1.2使用Microsoft Azure和预签名URL优化您的Firefly进程
 
 了解如何使用Microsoft Azure和预签名URL优化Firefly过程。
 
@@ -145,11 +145,11 @@ ht-degree: 1%
 
    ![Azure存储](./images/az21.png){zoomable="yes"}
 
-1. 复制此图像文件的预签名URL，以供下一个API请求Firefly。
+1. 将此图像文件的预签名URL复制到下一个API请求到Firefly。
 
    ![Azure存储](./images/az22.png){zoomable="yes"}
 
-1. 返回Postman以打开Firefly- **POST- T2I (styleref) V3**请求。
+1. 返回Postman打开请求&#x200B;**POST - Firefly - T2I (styleref) V3**。
 此出现在**正文**&#x200B;中。
 
    ![Azure存储](./images/az23.png){zoomable="yes"}
@@ -192,7 +192,7 @@ ht-degree: 1%
 
    使用&#x200B;**SAS-token**&#x200B;将文件上传到您的Azure存储帐户。
 
-1. 返回Postman，选择文件夹&#x200B;**FF -Firefly服务技术内部人士**，然后在&#x200B;**Firefly**&#x200B;文件夹中选择&#x200B;**...**，然后选择&#x200B;**添加请求**。
+1. 返回Postman，选择文件夹&#x200B;**FF - Firefly Services Tech Insiders**，然后在&#x200B;**Firefly**&#x200B;文件夹中选择&#x200B;**...**，然后选择&#x200B;**添加请求**。
 
    ![Azure存储](./images/az30.png){zoomable="yes"}
 
@@ -347,7 +347,7 @@ ht-degree: 1%
 
    ![Azure存储](./images/az105.png){zoomable="yes"}
 
-   在前面的练习中，请求&#x200B;**Firefly- T2I (styleref) V3**&#x200B;的&#x200B;**Body**&#x200B;如下所示：
+   在前面的练习中，请求&#x200B;**Firefly - T2I (styleref) V3**&#x200B;的&#x200B;**Body**&#x200B;如下所示：
 
    `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 
