@@ -4,7 +4,7 @@ description: AEM CS - MarTech插件
 kt: 5342
 doc-type: tutorial
 exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
-source-git-commit: c29fb7908ee9a16a265f96d8181dca93fd9256cc
+source-git-commit: b15795235d97b95ce2f81cbd747745bdb59e4067
 workflow-type: tm+mt
 source-wordcount: '1063'
 ht-degree: 1%
@@ -28,7 +28,7 @@ AEM MarTech插件可帮助您为AEM项目快速设置一个完整的MarTech栈�
 你会看到这个。 粘贴以下命令并按&#x200B;**Enter**。
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe-rnd/aem-martech.git main
 ```
 
 您应该会看到此内容。
