@@ -4,9 +4,9 @@ description: 基础 — 常见问题解答 — 创建架构、数据模型和链
 kt: 5342
 doc-type: tutorial
 exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
-source-git-commit: 075af9deddeeaf398603f65003781ea75fe0923b
+source-git-commit: e32d415d2997b43834e9fc2495c4394b13f4d49f
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb1.png)
 
-作为&#x200B;**标签**，使用`--aepUserLdap-- - CitiSignal Snowflake`，对于类型，选择&#x200B;**Snowflake**。
+作为&#x200B;**标签**，使用`--aepUserLdap-- - CitiSignal Snowflake`，对于类型，请选择&#x200B;**Snowflake**。
 
 在“详细信息”下，您需要填写凭据，凭据将如下所示：
 
@@ -73,11 +73,11 @@ ht-degree: 2%
 
 你会看到这个。 选择之前在Snowflake中创建的5个表：
 
-- `CK_HOUSEHOLDS`
-- `CK_MOBILE_DATA_USAGE`
-- `CK_MONTHLY_DATA_USAGE`
-- `CK_PERSONS`
-- `CK_USERS`
+- `--aepUserLdap--_HOUSEHOLDS`
+- `--aepUserLdap--_MOBILE_DATA_USAGE`
+- `--aepUserLdap--_MONTHLY_DATA_USAGE`
+- `--aepUserLdap--_PERSONS`
+- `--aepUserLdap--_USERS`
 
 单击&#x200B;**添加**。
 
@@ -98,7 +98,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb8.png)
 
-你会看到这个。 您可以单击任何架构并查看信息。 例如，单击&#x200B;**CK_PERSON**。
+你会看到这个。 您可以单击任何架构并查看信息。 例如，单击&#x200B;**—aepUserLdap—_PERSONS**。
 
 ![FAC](./images/fdb9.png)
 
@@ -130,57 +130,58 @@ ht-degree: 2%
 
 你会看到这个。 单击&#x200B;**保存**。
 
-### `CK_USERS` — `CK_PERSONS`
+![FAC](./images/fdb16.png)
+
+### `--aepUserLdap--_PERSONS` — `--aepUserLdap--_USERS`
 
 您现在可以开始定义架构之间的链接。 若要开始定义链接，您需要单击&#x200B;**创建链接**。
 
 ![FAC](./images/fdb16.png)
 
-首先，我们定义表`CK_USERS`和`CK_PERSONS`之间的链接。
+首先，我们定义表`--aepUserLdap--_USERS`和`--aepUserLdap--_PERSONS`之间的链接。
 
 单击&#x200B;**添加**。
 
 ![FAC](./images/fdb18.png)
 
-
-### `CK_HOUSEHOLDS` — `CK_PERSONS`
+### `--aepUserLdap--_HOUSEHOLDS` — `--aepUserLdap--_PERSONS`
 
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
 ![FAC](./images/fdb17.png)
 
-接下来，让我们定义表`CK_HOUSEHOLDS`和`CK_PERSONS`之间的链接。
+接下来，让我们定义表`--aepUserLdap--_HOUSEHOLDS`和`--aepUserLdap--_PERSONS`之间的链接。
 
 ![FAC](./images/fdb19.png)
 
-### `CK_USERS` — `CK_MONTHLY_DATA_USAGE`
+### `--aepUserLdap--_USERS` — `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
 ![FAC](./images/fdb20.png)
 
-接下来，让我们定义表`CK_USERS`和`CK_MONTHLY_DATA_USAGE`之间的链接。
+接下来，让我们定义表`--aepUserLdap--_USERS`和`--aepUserLdap--_MONTHLY_DATA_USAGE`之间的链接。
 
 ![FAC](./images/fdb21.png)
 
 
-### `CK_USERS` — `CK_HOUSEHOLDS`
+### `--aepUserLdap--_USERS` — `--aepUserLdap--_HOUSEHOLDS`
 
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
 ![FAC](./images/fdb22.png)
 
-接下来，让我们定义表`CK_USERS`和`CK_HOUSEHOLDS`之间的链接。
+接下来，让我们定义表`--aepUserLdap--_USERS`和`--aepUserLdap--_HOUSEHOLDS`之间的链接。
 
 ![FAC](./images/fdb23.png)
 
-### `CK_USERS` — `CK_MOBILE_DATA_USAGE`
+### `--aepUserLdap--_USERS` — `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
 ![FAC](./images/fdb24.png)
 
-接下来，让我们定义表`CK_USERS`和`CK_MOBILE_DATA_USAGE`之间的链接。
+接下来，让我们定义表`--aepUserLdap--_USERS`和`--aepUserLdap--_MOBILE_DATA_USAGE`之间的链接。
 
 ![FAC](./images/fdb25.png)
 

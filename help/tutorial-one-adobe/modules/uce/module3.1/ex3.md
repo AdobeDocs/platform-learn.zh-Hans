@@ -4,9 +4,9 @@ description: Foundation - FAC — 创建联合组合
 kt: 5342
 doc-type: tutorial
 exl-id: dc044a26-f16a-491e-a795-4cd16f211256
-source-git-commit: f6881cc2c993941f60e440ce0c367a139ae80b00
+source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '494'
 ht-degree: 3%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 ![FAC](./images/fedcomp5.png)
 
-选择架构&#x200B;**CK_HOMETHERS**。 单击&#x200B;**确认**。
+选择架构&#x200B;**—aepUserLdap—_HOMETHINGS**。 单击&#x200B;**确认**。
 
 ![FAC](./images/fedcomp6.png)
 
@@ -63,7 +63,7 @@ ht-degree: 3%
 
 ![FAC](./images/fedcomp9.png)
 
-你会看到这个。 将字段&#x200B;**值**&#x200B;设置为&#x200B;**True**。 单击&#x200B;**计算**&#x200B;以将查询向下推送到Snowflake并获取现在符合条件的配置文件估计。
+你会看到这个。 将字段&#x200B;**值**&#x200B;设置为&#x200B;**True**。 单击&#x200B;**计算**&#x200B;以将查询推送到Snowflake并获取现在符合条件的用户档案的估计值。
 
 ![FAC](./images/fedcomp10.png)
 
@@ -71,7 +71,7 @@ ht-degree: 3%
 
 ![FAC](./images/fedcomp11.png)
 
-要添加的第二个条件是： `Is the user an existing CitiSignal Mobile subscriber?`。 回答该问题的方法是使用家庭与家庭中主要客户之间的关系，该关系在另一个表&#x200B;**CK_PERSONES**&#x200B;中定义。 您可以使用&#x200B;**household2person**&#x200B;链接在属性菜单中向下展开。
+要添加的第二个条件是： `Is the user an existing CitiSignal Mobile subscriber?`。 回答该问题的方法是使用家庭与家庭中主要客户之间的关系，该关系在另一个表&#x200B;**—aepUserLdap—_PERSONES**&#x200B;中定义。 您可以使用&#x200B;**household2person**&#x200B;链接在属性菜单中向下展开。
 
 ![FAC](./images/fedcomp12.png)
 
@@ -137,7 +137,9 @@ ht-degree: 3%
 
 你的文章现在写完了。 单击&#x200B;**启动**&#x200B;以运行它。
 
-现在，查询将被推送到Snowflake中，从而在该处查询源数据。 结果将推送回AEP，但源数据仍保留在Snowflake中。
+![FAC](./images/fedcomp21a.png)
+
+现在，查询将被推送到Snowflake，后者将在其中查询源数据。 结果将推送回AEP，但源数据仍保留在Snowflake中。
 
 受众现已填充，可在AEP生态系统中定位受众。
 
