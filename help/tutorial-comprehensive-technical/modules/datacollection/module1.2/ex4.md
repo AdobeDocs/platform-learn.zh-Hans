@@ -4,9 +4,9 @@ description: 基础 — 数据摄取 — 从离线源摄取数据
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: 2f53c8da2cbe833120fa6555c65b8b753bfa4f8d
+source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1562'
 ht-degree: 5%
 
 ---
@@ -53,6 +53,10 @@ ht-degree: 5%
 - country_code
 - 城市
 - 国家/地区
+- crmId
+- consent.email
+- consent.commercialEmail
+- consent.any
 
 所有这些字段都是为了生成与Platform兼容的数据而定义的。
 
@@ -68,7 +72,9 @@ ht-degree: 5%
 
 ### 验证数据集
 
-打开[Adobe Experience Platform](https://experience.adobe.com/platform)并转到&#x200B;**[!UICONTROL 数据集]**。
+转到[https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
+
+![数据获取](./images/home.png)
 
 在继续之前，您需要选择一个&#x200B;**[!UICONTROL 沙盒]**。 要选择的沙盒名为``--aepSandboxName--``。
 
@@ -115,8 +121,6 @@ ht-degree: 5%
 您还可以看到我们的主要标识位于`--aepTenantId--.identification.core.crmId`中，链接到&#x200B;**[!UICONTROL 演示系统 — CRMID]**&#x200B;的[!UICONTROL 命名空间]。
 
 ![数据获取](./images/schema_descriptor.png)
-
-
 
 每个架构以及应在[!UICONTROL 实时客户个人资料]中使用的每个数据集都应有一个[!UICONTROL 主标识符]。 此[!UICONTROL 主要标识符]是该数据集中的品牌客户的标识符用户。 对于CRM数据集，它可能是电子邮件地址或CRM ID；对于呼叫中心数据集，它可能是客户的手机号码。
 
@@ -229,6 +233,24 @@ Source架构字段&#x200B;**id**&#x200B;应链接到目标字段&#x200B;**_id**�
 Source架构字段&#x200B;**last_name**&#x200B;应链接到目标字段&#x200B;**person.name.lastName**。
 
 ![数据获取](./images/tflname.png)
+
+#### consents.marketing.email.val
+
+Source架构字段&#x200B;**last_name**&#x200B;应链接到目标字段&#x200B;**consents.marketing.email.val**。
+
+![数据获取](./images/cons1.png)
+
+#### consents.marketing.commercialEmail.val
+
+Source架构字段&#x200B;**last_name**&#x200B;应链接到目标字段&#x200B;**consents.marketing.commercialEmail.val**。
+
+![数据获取](./images/cons2.png)
+
+#### consents.marketing.any.val
+
+Source架构字段&#x200B;**last_name**&#x200B;应链接到目标字段&#x200B;**consents.marketing.any.val**。
+
+![数据获取](./images/cons3.png)
 
 您现在应该拥有此项。 单击&#x200B;**完成**。
 
