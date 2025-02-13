@@ -4,7 +4,7 @@ description: 设置您的AEM CS环境
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 18151b91d18ebb53fc485151effd12a6fdc2b6b8
+source-git-commit: 0a0909b639e34d92266a326c3338d7f17db7ecc6
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 1%
@@ -133,7 +133,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup18.png){zoomable="yes"}
 
-单击&#x200B;**使用Adobe**&#x200B;登录。
+单击&#x200B;**使用Adobe登录**。
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
@@ -186,7 +186,7 @@ ZZZ = `citisignal`
 现在可以关闭此窗口。
 
 
-## 2.1.3.4Publish花旗信号资产
+## 2.1.3.4发布CitiSignal资产
 
 转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 单击您的&#x200B;**程序**&#x200B;以将其打开。
 
@@ -196,11 +196,11 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup18.png){zoomable="yes"}
 
-单击&#x200B;**使用Adobe**&#x200B;登录。
+单击&#x200B;**使用Adobe登录**。
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
-然后，您将看到创作环境。 单击&#x200B;**站点**。
+然后，您将看到创作环境。 单击&#x200B;**Assets**。
 
 ![AEMCS](./images/aemcsassets1.png){zoomable="yes"}
 
@@ -216,7 +216,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcsassets4.png){zoomable="yes"}
 
-单击&#x200B;**Publish**。
+单击&#x200B;**发布**。
 
 ![AEMCS](./images/aemcsassets5.png){zoomable="yes"}
 
@@ -232,7 +232,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup18.png){zoomable="yes"}
 
-单击&#x200B;**使用Adobe**&#x200B;登录。
+单击&#x200B;**使用Adobe登录**。
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
@@ -278,7 +278,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup38.png){zoomable="yes"}
 
-## 2.1.3.6Publish花旗讯号网站
+## 2.1.3.6发布CitiSignal网站
 
 接下来，单击&#x200B;**CitiSignal**&#x200B;前面的复选框。 然后，单击&#x200B;**管理发布**。
 
@@ -296,7 +296,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup42.png){zoomable="yes"}
 
-单击&#x200B;**Publish**。
+单击&#x200B;**发布**。
 
 ![AEMCS](./images/aemcssetup43.png){zoomable="yes"}
 
