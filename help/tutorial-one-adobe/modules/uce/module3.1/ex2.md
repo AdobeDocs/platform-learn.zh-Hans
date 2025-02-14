@@ -4,9 +4,9 @@ description: 基础 — 常见问题解答 — 创建架构、数据模型和链
 kt: 5342
 doc-type: tutorial
 exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
-source-git-commit: 50622dc6698a7e1384c4803ea40682a060a08617
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '648'
 ht-degree: 2%
 
 ---
@@ -130,7 +130,7 @@ ht-degree: 2%
 
 你会看到这个。 单击&#x200B;**保存**。
 
-### `--aepUserLdap--_USERS` — `--aepUserLdap--_PERSONS`
+### 用户 — 人员
 
 您现在可以开始定义架构之间的链接。 若要开始定义链接，您需要单击&#x200B;**创建链接**。
 
@@ -143,7 +143,7 @@ ht-degree: 2%
 ![FAC](./images/fdb18.png)
 
 
-### `--aepUserLdap--_HOUSEHOLDS` — `--aepUserLdap--_PERSONS`
+### 家庭 — 人员
 
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
@@ -153,7 +153,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb19.png)
 
-### `--aepUserLdap--_USERS` — `--aepUserLdap--_MONTHLY_DATA_USAGE`
+### 用户 — MONTHLY_DATA_USAGE
 
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
@@ -164,7 +164,7 @@ ht-degree: 2%
 ![FAC](./images/fdb21.png)
 
 
-### `--aepUserLdap--_USERS` — `--aepUserLdap--_HOUSEHOLDS`
+### 用户 — 家庭
 
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 
@@ -174,7 +174,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb23.png)
 
-### `--aepUserLdap--_USERS` — `--aepUserLdap--_MOBILE_DATA_USAGE`
+### 用户 — MOBILE_DATA_USAGE
 
 你以后会回到这里的。 单击&#x200B;**创建链接**&#x200B;以创建另一个链接。
 

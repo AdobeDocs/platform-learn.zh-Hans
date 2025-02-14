@@ -4,9 +4,9 @@ description: Foundation — 数据摄取 — 配置架构并设置标识符
 kt: 5342
 doc-type: tutorial
 exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
-source-git-commit: 29d5892a98d7ac4b7d1dfe24c2b39549ee6d5c66
+source-git-commit: b78460ab562c2b435988942b219787ed07af24d4
 workflow-type: tm+mt
-source-wordcount: '3117'
+source-wordcount: '3102'
 ht-degree: 4%
 
 ---
@@ -61,13 +61,9 @@ ht-degree: 4%
 
 ![数据获取](./images/sb1.png)
 
-在Adobe Experience Platform中，单击屏幕左侧菜单中的&#x200B;**[!UICONTROL 架构]**。 您将看到可用[!UICONTROL 架构]的列表。
+在Adobe Experience Platform中，单击屏幕左侧菜单中的&#x200B;**[!UICONTROL 架构]**。 您将看到可用[!UICONTROL 架构]的列表。 您应该创建一个新架构。 要创建新架构，请单击&#x200B;**[!UICONTROL +创建架构]**。
 
 ![数据获取](./images/menuschemas.png)
-
-您应该创建一个新架构。 要创建新架构，请单击&#x200B;**[!UICONTROL +创建架构]**。
-
-![数据获取](./images/createschema.png)
 
 选择&#x200B;**手动**&#x200B;并单击&#x200B;**选择**。
 
@@ -156,8 +152,8 @@ ht-degree: 4%
 
 您现在应使用以下对象定义输入此新字段的信息：
 
-- 字段名：**[!UICONTROL 标识]**
-- 显示名称： **[!UICONTROL 标识]**
+- 字段名称：**`--aepUserLdap--_identification`**
+- 显示名称： **`--aepUserLdap--_identification`**
 - 类型：**[!UICONTROL 对象]**
 - 字段组： **`--aepUserLdap-- - Profile Identification Field Group`**
 
@@ -279,7 +275,7 @@ ht-degree: 4%
 
 ![数据获取](./images/sureyps.png)
 
-### 客户会做什么？
+## 该客户做什么？
 
 捕获问题&#x200B;**的答案此客户做什么？您组织的**&#x200B;通过产品页面上的产品视图完成。
 
@@ -291,7 +287,7 @@ ht-degree: 4%
 
 若要指定该问题可以给出何种答案，您需要定义[!UICONTROL 字段组]。 [!UICONTROL 字段组]是[!UICONTROL ExperienceEvent]类的扩展，具有非常具体的配置。 例如，有关客户查看或添加到其购物车的哪种产品属于[!UICONTROL 字段组] **Commerce详细信息**&#x200B;的信息。
 
-其次，贵组织需要决定如何识别该客户的行为。 由于我们讨论的是网站上的交互，因此您的组织可能会了解客户，但同样有可能的是，某个未知的匿名访客活跃在网站上。 因此，我们不能使用像电子邮件地址这样的标识符。 在这种情况下，贵组织可能会决定使用[!UICONTROL Experience CloudID (ECID)]作为主标识符。
+其次，贵组织需要决定如何识别该客户的行为。 由于我们讨论的是网站上的交互，因此您的组织可能会了解客户，但同样有可能的是，某个未知的匿名访客活跃在网站上。 因此，我们不能使用像电子邮件地址这样的标识符。 在这种情况下，贵组织可能会决定使用[!UICONTROL Experience Cloud ID (ECID)]作为主标识符。
 
 最后，区分捕获数据的信道很重要。 在本例中，我们将讨论“网站交互”，需要定义的架构需要反映&#x200B;**其中**&#x200B;捕获了交互数据。 渠道在影响捕获的数据方面也将发挥重要作用。 因此，最佳实践是为渠道、主要标识符和收集的数据类型的每个组合定义架构。
 
@@ -305,13 +301,9 @@ ht-degree: 4%
 
 ![数据获取](./images/sb1.png)
 
-在Adobe Experience Platform中，单击屏幕左侧菜单中的&#x200B;**[!UICONTROL 架构]**，然后转到&#x200B;**浏览**。
+在Adobe Experience Platform中，单击屏幕左侧菜单中的&#x200B;**[!UICONTROL 架构]**，然后转到&#x200B;**浏览**。 您应该创建一个新架构。 要创建新架构，请单击&#x200B;**[!UICONTROL +创建架构]**&#x200B;按钮。
 
 ![数据获取](./images/menuschemas.png)
-
-在[!UICONTROL 架构]中，您将看到所有现有架构。 您应该创建一个新架构。 要创建新架构，请单击&#x200B;**[!UICONTROL +创建架构]**&#x200B;按钮。
-
-![数据获取](./images/schemasee.png)
 
 选择&#x200B;**手动**&#x200B;并单击&#x200B;**选择**。
 
@@ -390,8 +382,8 @@ ht-degree: 4%
 
 使用此项来定义新字段：
 
-- 字段名：**[!UICONTROL 标识]**
-- 显示名称： **[!UICONTROL 标识]**
+- 字段名称：**`--aepUserLdap--_identification`**
+- 显示名称： **`--aepUserLdap--_identification`**
 - 类型：**[!UICONTROL 对象]**
 - 字段组： `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
