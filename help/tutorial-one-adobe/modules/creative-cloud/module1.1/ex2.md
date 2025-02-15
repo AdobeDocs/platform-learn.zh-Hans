@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1442'
 ht-degree: 1%
 
 ---
@@ -290,6 +290,8 @@ ht-degree: 1%
 
 1. 在&#x200B;**权限**&#x200B;下，选择以下所需权限：
 
+   - **读取**
+   - **列表**
    - **添加**
    - **创建**
    - **写入**
@@ -343,11 +345,36 @@ ht-degree: 1%
 
    ![Azure存储](./images/az105.png){zoomable="yes"}
 
-   在前面的练习中，请求&#x200B;**Firefly - T2I (styleref) V3**&#x200B;的&#x200B;**Body**&#x200B;如下所示：
+### PostBuster中的变量
 
-   `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+如上节所示，读取和写入令牌中都有一些常见的变量。
 
-   ![Azure存储](./images/az24.png){zoomable="yes"}
+接下来，您需要在PostBuster中创建用于存储上述SAS令牌的各种元素的变量。 这两个URL中的一些值是相同的：
+
+- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`： `vangeluw`
+- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+打开PostBuster。 选择&#x200B;**基本环境**，然后单击&#x200B;**编辑**&#x200B;图标以打开基本环境。
+
+![Azure存储](./images/pbbe1.png)
+
+然后，您将看到4个空变量。 在此处输入您的Azure存储帐户详细信息。
+
+![Azure存储](./images/pbbe2.png)
+
+您的基本环境文件现在应如下所示。 单击&#x200B;**关闭**。
+
+![Azure存储](./images/pbbe3.png)
+
+### 测试您的配置
+
+在前面的练习中，请求&#x200B;**Firefly - T2I (styleref) V3**&#x200B;的&#x200B;**Body**&#x200B;如下所示：
+
+    &#39;&quot;url&quot;： &quot;https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&amp;st=2025-01-13T07%3A16%3A52Z&amp;se=2026-01-14T07%3A16%3A00Z&amp;sr=b&amp;sp=r&amp;sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D&quot;&#39;
+    
+    ！[Azure存储](./images/az24.png){zoomable="yes"}
 
 1. 将URL更改为：
 

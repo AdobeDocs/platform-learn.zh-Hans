@@ -3,9 +3,10 @@ title: 快速入门 — Postman设置
 description: 快速入门 — Postman设置
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
+source-git-commit: 07c890d1f3e5dbcec5b3a81badb9a7147eed72db
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '430'
 ht-degree: 2%
 
 ---
@@ -14,7 +15,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->如果您不是Adobe员工，请按照说明[安装Postman](./ex7.md)。 以下说明仅适用于Adobe员工。 如果您已配置Postman，请跳过此练习，转到[要安装的应用程序](./ex9.md)。
+>如果您不是Adobe员工，请按照说明[安装Postman](./ex7.md)。 以下说明仅适用于Adobe员工。
 
 ## 安装PostBuster
 
