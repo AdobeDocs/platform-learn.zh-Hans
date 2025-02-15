@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 0e9d1b5866d789ca2693d9c1a6ef7119c25ed009
+source-git-commit: 219945c74c620b9a4b93cb2b7462137118d42d33
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '823'
 ht-degree: 0%
 
 ---
@@ -135,10 +135,6 @@ ht-degree: 0%
 ![Firefly自定义模型](./images/ffcm22.png){zoomable="yes"}
 
 ## 1.1.4.4与Firefly服务自定义模型API交互
-
->[!IMPORTANT]
->
->如果您是Adobe员工，请按照此处的说明使用[PostBuster](./../../../postbuster.md)。
 
 在练习1.1.1的Firefly服务快速入门中，您已将此文件[postman-ff.zip](./../../../assets/postman/postman-ff.zip)下载到本地桌面，然后将该收藏集导入Postman。
 

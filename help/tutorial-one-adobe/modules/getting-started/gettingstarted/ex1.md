@@ -4,9 +4,9 @@ description: 快速入门 — 为Experience League文档安装Chrome扩展
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ IMS组织ID是Adobe Experience Cloud实例的唯一标识符，在本教程中�
 
 可以通过多种方式查找IMS组织ID。 如果您不确定，请咨询您实例的其中一位系统管理员来查找该ID。
 
-您可以通过转到[Admin Console](https://https://adminconsole.adobe.com/)找到它，您可以在其中找到它作为URL的一部分。
+您可以通过转到[Admin Console](https://https://adminconsole.adobe.com/)找到它，您可以在其中将它作为URL的一部分找到。
 
 ![DSN](./images/aepid1.png)
 
@@ -143,8 +143,10 @@ LDAP用于确保您即将执行的配置将链接到您，并且不会与您正�
 
 ![DSN](./images/mod7.png)
 
-下一步：[使用演示系统下一步设置您的Adobe Experience Platform数据收集客户端属性](./ex2.md)
+## 后续步骤
 
-[返回快速入门](./getting-started.md)
+转到[使用演示系统下一步以设置您的Adobe Experience Platform数据收集客户端属性](./ex2.md)
 
-[返回所有模块](./../../../overview.md)
+返回[开始使用](./getting-started.md){target="_blank"}
+
+返回[所有模块](./../../../overview.md){target="_blank"}

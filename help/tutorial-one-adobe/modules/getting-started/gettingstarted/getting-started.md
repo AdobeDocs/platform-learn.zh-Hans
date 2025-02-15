@@ -1,13 +1,13 @@
 ---
-title: 快速入门 — 一个Adobe
-description: 快速入门 — 一个Adobe
+title: 快速入门 — One Adobe
+description: 快速入门 — One Adobe
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
-source-git-commit: 7b76e7714d2a390d84393ce21a19063b56508ac1
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 3%
+source-wordcount: '318'
+ht-degree: 2%
 
 ---
 
@@ -47,6 +47,26 @@ ht-degree: 3%
 [使用移动应用程序](./ex5.md)
 
 在本练习中，您将设置移动应用程序，以便将其用于演示和启用。
+
+[配置Adobe I/O项目](./ex6.md)
+
+在本练习中，您将配置用于与各种Adobe I/O API端点交互的Adobe项目。
+
+[选项1：Postman设置](./ex7.md)
+
+>[!NOTE]
+>
+>如果您不是Adobe员工，请按照相关说明安装Postman！
+
+在本练习中，您将准备Postman环境以与各种Adobe API端点交互
+
+[选项2：PostBuster设置](./ex8.md)
+
+>[!NOTE]
+>
+>如果您是Adobe员工，请按照相关说明安装PostBuster！
+
+在本练习中，您将准备您的PostBuster环境以与各种Adobe API端点交互
 
 ![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

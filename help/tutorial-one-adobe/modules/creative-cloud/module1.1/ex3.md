@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: d33df99e9c75e7d5feef503b68174b93860ac245
+source-git-commit: f20a4fc49cc3f3ac411e4017179d0ae2f83df9c3
 workflow-type: tm+mt
-source-wordcount: '952'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,6 @@ ht-degree: 0%
 
 ## 1.1.3.2以编程方式与PSD文件交互
 
->[!IMPORTANT]
->
->如果您是Adobe员工，请按照此处的说明使用[PostBuster](./../../../postbuster.md)。
-
 1. 将[citisignal-fibre.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}下载到桌面。
 
 1. 在Photoshop中打开&#x200B;**citisignal-fibre.psd**。
@@ -83,13 +79,13 @@ ht-degree: 0%
 
 ### Photoshop API - Hello World
 
-接下来，我们来了解Photoshop API，以测试所有权限和访问权限是否设置正确。
+接下来，让我们向Photoshop API问好，以测试是否正确设置了所有权限和访问权限。
 
-1. 在集合&#x200B;**Photoshop**&#x200B;中，打开请求&#x200B;**Photoshop Hello（测试身份验证）。**&#x200B;的问题。选择&#x200B;**发送**。
+1. 在集合&#x200B;**Photoshop**&#x200B;中，打开请求&#x200B;**Photoshop Hello（测试身份验证）**&#x200B;的问题。选择&#x200B;**发送**。
 
 ![Azure存储](./images/ps10.png){zoomable="yes"}
 
-您应该会收到响应&#x200B;**欢迎使用Photoshop API！**。
+您应会收到响应&#x200B;**欢迎使用Photoshop API！**。
 
 ![Azure存储](./images/ps11.png){zoomable="yes"}
 
@@ -108,19 +104,19 @@ ht-degree: 0%
 
 ![Azure存储](./images/ps12.png){zoomable="yes"}
 
-1. 在&#x200B;**正文**&#x200B;中，选择文件&#x200B;**citisignal-fibre.psd**。
+1. 在&#x200B;**主体**&#x200B;中，选择文件&#x200B;**citisignal-fiber.psd**。
 
 ![Azure存储](./images/ps13.png){zoomable="yes"}
 
-1. 屏幕应该如下所示。 选择&#x200B;**发送**。
+1. 您的屏幕应如下所示。 选择&#x200B;**发送**。
 
 ![Azure存储](./images/ps14.png){zoomable="yes"}
 
-您应从Azure收到此空响应，这意味着您的文件将存储在您的Azure存储帐户的容器中。
+您应从Azure中获取此空响应，这意味着您的文件存储在您的Azure存储帐户的容器中。
 
 ![Azure存储](./images/ps15.png){zoomable="yes"}
 
-如果使用Azure存储资源管理器查看您的文件，请务必刷新您的文件夹。
+如果使用Azure存储资源管理器查看文件，请确保刷新文件夹。
 
 ![Azure存储](./images/ps16.png){zoomable="yes"}
 
@@ -229,7 +225,7 @@ ht-degree: 0%
 
 ![Azure存储](./images/ps24.png){zoomable="yes"}
 
-1. 将文件下载到您的计算机后，打开&#x200B;**citisignal-fibre-changed-text.psd**。 您应该会看到行动号召的占位符已被文本&#x200B;**立即获取Fiber！**&#x200B;替换。
+1. 将文件下载到计算机后，打开&#x200B;**citisignal-fibre-changed-text.psd**。 您应该会看到行动号召的占位符已被文本&#x200B;**立即获取Fiber！**&#x200B;替换。
 
 ![Azure存储](./images/ps25.png){zoomable="yes"}
 

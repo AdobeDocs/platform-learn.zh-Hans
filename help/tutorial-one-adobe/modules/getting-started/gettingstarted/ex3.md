@@ -4,9 +4,9 @@ description: 快速入门 — 创建数据流
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '827'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ ht-degree: 1%
 
 ![命名Edge配置并保存](./images/edgeconfig11m.png)
 
-单击&#x200B;**Adobe Experience PlatformEdge Network**&#x200B;扩展，然后单击&#x200B;**配置**。
+单击&#x200B;**Adobe Experience Platform Edge Network**&#x200B;扩展，然后单击&#x200B;**配置**。
 
 ![命名Edge配置并保存](./images/edgeconfig12m.png)
 
@@ -173,8 +173,10 @@ ht-degree: 1%
 
 ![命名Edge配置并保存](./images/edgeconfig17ma.png)
 
-下一步：[使用网站](./ex4.md)
+## 后续步骤
 
-[返回快速入门](./getting-started.md)
+转到[使用网站](./ex4.md)
 
-[返回所有模块](./../../../overview.md)
+返回[开始使用](./getting-started.md){target="_blank"}
+
+返回[所有模块](./../../../overview.md){target="_blank"}

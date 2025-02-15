@@ -4,7 +4,7 @@ description: 基础 — 数据摄取 — 从离线源摄取数据
 kt: 5342
 doc-type: tutorial
 exl-id: a4909a47-0652-453b-ae65-ba4c261f087c
-source-git-commit: fc5750ca614be30c3bd25b4f80ab45c5725a7649
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
 source-wordcount: '1562'
 ht-degree: 5%
@@ -236,19 +236,19 @@ Source架构字段&#x200B;**last_name**&#x200B;应链接到目标字段&#x200B;*
 
 #### consents.marketing.email.val
 
-Source架构字段&#x200B;**last_name**&#x200B;应链接到目标字段&#x200B;**consents.marketing.email.val**。
+Source架构字段&#x200B;**consent.email**&#x200B;应链接到目标字段&#x200B;**consent.marketing.email.val**。
 
 ![数据获取](./images/cons1.png)
 
 #### consents.marketing.commercialEmail.val
 
-Source架构字段&#x200B;**last_name**&#x200B;应链接到目标字段&#x200B;**consents.marketing.commercialEmail.val**。
+Source架构字段&#x200B;**consent.commercialEmail**&#x200B;应链接到目标字段&#x200B;**consent.marketing.commercialEmail.val**。
 
 ![数据获取](./images/cons2.png)
 
 #### consents.marketing.any.val
 
-Source架构字段&#x200B;**last_name**&#x200B;应链接到目标字段&#x200B;**consents.marketing.any.val**。
+Source架构字段&#x200B;**consent.any**&#x200B;应链接到目标字段&#x200B;**consent.marketing.any.val**。
 
 ![数据获取](./images/cons3.png)
 

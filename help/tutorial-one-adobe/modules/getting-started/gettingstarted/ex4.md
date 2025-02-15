@@ -4,9 +4,9 @@ description: 快速入门 — 使用网站
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '442'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -101,8 +101,10 @@ ht-degree: 0%
 
 ![DSN](./images/web7.png)
 
-下一步：[使用移动应用](./ex5.md)
+## 后续步骤
 
-[返回快速入门](./getting-started.md)
+转到[使用移动应用](./ex5.md)
 
-[返回所有模块](./../../../overview.md)
+返回[开始使用](./getting-started.md){target="_blank"}
+
+返回[所有模块](./../../../overview.md){target="_blank"}

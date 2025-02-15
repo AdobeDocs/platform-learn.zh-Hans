@@ -4,10 +4,10 @@ breadcrumb-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b2624546b221c1fd8de2b503c90e73d07ff4283b
+source-git-commit: e02737a6bf5cb30d4a71df417a7824b6c96bc796
 workflow-type: tm+mt
-source-wordcount: '345'
-ht-degree: 4%
+source-wordcount: '361'
+ht-degree: 3%
 
 ---
 
@@ -26,26 +26,29 @@ ht-degree: 4%
       + [创建数据流](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
       + [使用网站](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
       + [使用移动应用程序](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+      + [配置Adobe I/O项目](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex6.md)
+      + [选项1：Postman设置](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
+      + [选项2：PostBuster设置](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
+      + [要安装的应用程序](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
    + [前期工作](/help/tutorial-one-adobe/prework.md)
-   + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1创建和生产{#production}
-   + 1.1Adobe Firefly服务概述{#module11}
+   + 1.1 Adobe Firefly服务概述{#module11}
       + [概述](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
-      + [1.1.1Firefly服务快速入门](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
+      + [1.1.1 Firefly服务快速入门](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
       + [1.1.2使用Microsoft Azure和预签名URL优化您的Firefly流程](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
       + [1.1.3使用Photoshop API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
-      + [1.1.4Firefly自定义模型API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
+      + [1.1.4 Firefly自定义模型API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
    + 1.2使用Workfront Fusion实现创作工作流自动化{#module21}
       + [概述](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
       + [1.2.1 Workfront Fusion快速入门](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
-      + [1.2.2在Workfront Fusion中使用AdobeAPI](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
+      + [1.2.2在Workfront Fusion中使用Adobe API](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
       + [1.2.3使用Workfront Fusion实现流程自动化](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/summary.md)
 
 + 2内容供应链{#csc}
-   + 2.1 Adobe Experience ManagerCloud Service{#module21}
+   + 2.1 Adobe Experience Manager Cloud Service {#module21}
       + [概述](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
       + [2.1.1创建您的Cloud Manager项目](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
       + [2.1.2创建基于文档的网站](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
@@ -74,11 +77,11 @@ ht-degree: 4%
       + [3.2.2创建营销活动](/help/tutorial-one-adobe/modules/uce/module3.2/ex2.md)
       + [3.2.3向电子邮件添加语言](/help/tutorial-one-adobe/modules/uce/module3.2/ex3.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
-   + 3.3 Adobe Journey Optimizer：Offer decisioning{#module33}
+   + 3.3 Adobe Journey Optimizer： Offer Decisioning {#module33}
       + [概述](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)
-      + [3.3.1Offer decisioning101](/help/tutorial-one-adobe/modules/uce/module3.3/ex1.md)
+      + [3.3.1Offer Decisioning 101](/help/tutorial-one-adobe/modules/uce/module3.3/ex1.md)
       + [3.3.2配置优惠和决策](/help/tutorial-one-adobe/modules/uce/module3.3/ex2.md)
-      + [3.3.3准备您的Adobe Experience Platform数据收集客户端资产和Web SDK设置以进行Offer decisioning](/help/tutorial-one-adobe/modules/uce/module3.3/ex3.md)
+      + [3.3.3为Offer Decisioning准备Adobe Experience Platform数据收集客户端属性和Web SDK设置](/help/tutorial-one-adobe/modules/uce/module3.3/ex3.md)
       + [3.3.4将Adobe Target与Offer Decisioning结合使用](/help/tutorial-one-adobe/modules/uce/module3.3/ex4.md)
       + [3.3.5在电子邮件中使用您的决定](/help/tutorial-one-adobe/modules/uce/module3.3/ex5.md)
       + [3.3.6使用API测试您的决策](/help/tutorial-one-adobe/modules/uce/module3.3/ex6.md)

@@ -4,9 +4,9 @@ description: 快速入门 — 使用移动应用程序
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e505b8401509f6171d9c98f85a93af27c38a8303
+source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -81,8 +81,10 @@ ht-degree: 0%
 
 ![DSN](./images/mobileappn8.png)
 
-您现在已经完成了快速入门模块，并准备好开始后续练习。
+## 后续步骤
 
-[返回快速入门](./getting-started.md)
+转到[配置您的Adobe I/O项目](./ex6.md)
 
-[返回所有模块](./../../../overview.md)
+返回[开始使用](./getting-started.md){target="_blank"}
+
+返回[所有模块](./../../../overview.md){target="_blank"}
