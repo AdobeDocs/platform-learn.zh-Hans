@@ -1,21 +1,21 @@
 ---
-title: 映射身份
+title: 映射身份标识
 seo-title: Map identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-breadcrumb-title: 映射身份
+breadcrumb-title: 映射身份标识
 description: 在本课程中，我们将创建身份命名空间并将身份字段添加到架构中。
 role: Data Architect
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '926'
 ht-degree: 6%
 
 ---
 
-# 映射身份
+# 映射身份标识
 
 <!-- 30 min-->
 
@@ -26,7 +26,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 **数据架构师**&#x200B;需要在本教程之外映射身份。
 
 在开始练习之前，请观看此简短视频，了解有关Adobe Experience Platform中标识的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 ## 创建身份命名空间
 
-在本练习中，我们将为Luma的自定义身份字段`loyaltyId`、`crmId`和`productSku`创建身份命名空间。 身份命名空间在构建实时客户个人资料方面发挥着关键作用，因为同一命名空间的两个匹配值会让两个数据源形成身份图。
+在本练习中，我们将为Luma的自定义身份字段`loyaltyId`、`crmId`和`productSku`创建身份命名空间。 身份标识命名空间在构建实时客户轮廓方面发挥着关键作用，因为同一命名空间的两个匹配值会让两个数据源形成身份标识图。
 
 
 ### 在UI中创建命名空间
@@ -63,7 +63,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
    | 字段 | 值 |
    |---------------|-----------|
    | 显示名称 | Luma忠诚度Id |
-   | 标识符号 | lumaLoyaltyId |
+   | 身份标识符号 | lumaLoyaltyId |
    | 类型 | 跨设备 |
 
 1. 选择&#x200B;**[!UICONTROL 创建]**
@@ -75,7 +75,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 | 字段 | 值 |
 |---------------|-----------|
 | 显示名称 | Luma产品SKU |
-| 标识符号 | lumaProductSKU |
+| 身份标识符号 | lumaProductSKU |
 | 类型 | 非人员标识符 |
 
 
@@ -110,7 +110,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 1. 按&#x200B;**发送**&#x200B;按钮，您应会收到&#x200B;**200 OK**&#x200B;响应：
 
-   ![身份命名空间](assets/identity-createUsingApi.png)
+   ![身份标识命名空间](assets/identity-createUsingApi.png)
 
 如果您返回用户界面，现在应会看到三个新的自定义命名空间：
 ![身份命名空间](assets/identity-newIdentities.png)

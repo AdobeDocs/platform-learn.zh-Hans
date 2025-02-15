@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -22,9 +22,9 @@ ht-degree: 0%
 本视频探讨了以下内容：
 
 * 您可以利用的Adobe Experience Platform数据准备功能
-* 从Adobe Real-Time CDP、Adobe Journey Optimizer和Customer Journey Analytics中提高ROI
+* 提高Adobe Real-Time CDP、Adobe Journey Optimizer和Customer Journey Analytics的ROI
 
->[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342533?learn=on&enablevpops)
 
 ## SQL示例
 
@@ -49,4 +49,4 @@ order by price desc)D;
 
 >[!NOTE]
 >
->此视频摘自Adobe Summit2020会话&#x200B;*[为体验充电全渠道数据](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*。
+>此视频摘录自Adobe Summit 2020会话&#x200B;*[为体验注入电力的全渠道数据](https://business.adobe.com/summit/2022/sessions/recharging-omnichannel-data-for-electrifying-exper-s409.html)*。

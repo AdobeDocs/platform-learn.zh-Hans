@@ -8,7 +8,7 @@ feature: Data Management
 jira: KT-4348
 thumbnail: 4348-create-datasets.jpg
 exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 6%
@@ -26,7 +26,7 @@ ht-degree: 6%
 **数据架构师**&#x200B;需要在本教程之外创建数据集。
 
 在开始练习之前，请观看此简短视频，了解有关数据集的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 
 ## 所需的权限
 
@@ -119,7 +119,7 @@ ht-degree: 6%
 > * `400: There was a problem retrieving xdm schema`的问题。请确保已用您自己的`Luma CRM Schema`的ID替换上述示例中的ID
 > * 无身份验证令牌：运行&#x200B;**OAuth：请求访问令牌**&#x200B;请求以生成新令牌
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`：将&#x200B;**CONTAINER_ID**&#x200B;环境变量从`global`更新为`tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`：验证Admin Console中的用户权限
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`：在Admin Console中验证您的用户权限
 
 
 您可以返回到Platform用户界面中的&#x200B;**[!UICONTROL 数据集]**屏幕，您可以验证是否已成功创建全部五个数据集！

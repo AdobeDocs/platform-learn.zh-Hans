@@ -1,10 +1,10 @@
 ---
 title: 为Platform Web SDK创建标记规则
-description: 了解如何使用标记规则将事件与XDM对象一起发送到PlatformEdge Network。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
+description: 了解如何使用标记规则将事件与XDM对象一起发送到Platform Edge Network。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 2%
@@ -13,7 +13,7 @@ ht-degree: 2%
 
 # 创建标记规则
 
-了解如何使用标记规则将事件与XDM对象一起发送到Adobe Experience PlatformEdge Network。 标记规则是事件、条件和操作的组合，用于告知标记属性执行一些操作。 在Platform Web SDK中，规则用于将包含正确数据的事件发送到PlatformEdge Network。
+了解如何使用标记规则将事件与XDM对象一起发送到Adobe Experience Platform Edge Network。 标记规则是事件、条件和操作的组合，用于告知标记属性执行一些操作。 使用Platform Web SDK时，可以使用规则将事件与正确的数据发送到Platform Edge Network。
 
 ## 学习目标
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 * 使用“更新变量”和“发送事件”操作，发送包含XDM字段的事件
 * 跨多个规则栈叠多组XDM字段
 * 将单个或整个数组数据元素映射到XDM对象
-* 将标记规则Publish到开发库
+* 将标记规则发布到开发库
 
 
 ## 先决条件
@@ -53,10 +53,10 @@ ht-degree: 2%
 
 ## 创建标记规则
 
-在标记中，规则用于在各种条件下执行操作（触发调用）。 Platform Web SDK标记扩展包含本课程中使用的两个操作：
+在标记中，规则用于在各种条件下执行操作（触发调用）。 Platform Web SDK标记扩展包括本课程中使用的两个操作：
 
 * **[!UICONTROL 更新变量]**&#x200B;将数据元素映射到XDM对象中的属性
-* **[!UICONTROL 发送事件]**&#x200B;将XDM对象发送到Experience PlatformEdge Network
+* **[!UICONTROL 发送事件]**&#x200B;将XDM对象发送到Experience Platform Edge Network
 
 在本课程的其余部分中，我们将：
 
@@ -64,13 +64,13 @@ ht-degree: 2%
 
 1. 使用&#x200B;**[!UICONTROL 更新变量]**&#x200B;操作创建其他规则，这些规则将覆盖我们的“全局配置”，并在某些条件下（例如，在产品页面上添加产品详细信息）提供其他XDM字段。
 
-1. 使用&#x200B;**[!UICONTROL Send Event]**&#x200B;操作创建另一个规则，该操作会将完整的XDM对象发送到Adobe Experience PlatformEdge Network。
+1. 使用&#x200B;**[!UICONTROL 发送事件]**&#x200B;操作创建另一个规则，该操作会将完整的XDM对象发送到Adobe Experience Platform Edge Network。
 
 所有这些规则将使用“[!UICONTROL 顺序]”选项正确排序。
 
 此视频概述了此过程：
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### 全局配置字段
 
@@ -157,7 +157,7 @@ ht-degree: 2%
 
 ### 产品页面字段
 
-现在，在将XDM对象发送到[!UICONTROL 平台Edge Network]之前，开始在其他顺序规则中使用&#x200B;**[!UICONTROL 更新变量]**&#x200B;以扩充该对象。
+现在，在将XDM对象发送到[!UICONTROL Platform Edge Network]之前，开始在其他顺序规则中使用&#x200B;**[!UICONTROL 更新变量]**&#x200B;以扩充该对象。
 
 >[!TIP]
 >
@@ -332,7 +332,7 @@ ht-degree: 2%
 
 ### 发送事件规则
 
-现在您已设置变量，可以创建规则以使用&#x200B;**[!UICONTROL 发送事件]**&#x200B;操作将完整的XDM对象发送到PlatformEdge Network。
+现在，您已设置变量，接下来可以创建规则以使用&#x200B;**[!UICONTROL 发送事件]**&#x200B;操作将完整的XDM对象发送到Platform Edge Network。
 
 1. 在右侧，选择&#x200B;**[!UICONTROL 添加规则]**&#x200B;以创建另一个规则
 
@@ -362,7 +362,7 @@ ht-degree: 2%
 
    ![保存规则](assets/create-rule-save-rule.png)
 
-## Publish库中的规则
+## 在库中发布规则
 
 接下来，将规则发布到开发环境，以便您可以验证它是否有效。
 
@@ -391,7 +391,7 @@ ht-degree: 2%
 
 如您在[!UICONTROL 发布流]屏幕上所见，发布流程还有许多其他内容，这不在本教程的涵盖范围内。 本教程仅在开发环境中使用单个库。
 
-现在，您可以使用Adobe Experience Platform Debugger来验证请求中的数据。
+现在，您可以使用Adobe Experience Platform Debugger验证请求中的数据。
 
 [下一步 ](validate-with-debugger.md)
 

@@ -8,7 +8,7 @@ jira: KT-7923
 thumbnail: 333860.jpg
 last-substantial-update: 2023-12-08T00:00:00Z
 exl-id: 7ede8f72-2b9d-4fb0-b176-c1e31b0e6f6e
-source-git-commit: 54149fd9a3e0df70e42113d6f75dced1248b396e
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '125'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # 添加产品管理员
 
-了解如何为Adobe Experience Platform添加产品管理员。 产品管理员可管理对基于Platform的应用程序(如Real-time Customer Data Platform和Journey Optimizer)的访问控制。 他们可以在Admin Console中创建用户、开发人员和其他管理员，然后在Platform或Journey Optimizer界面中授予他们（和API凭据）权限。 有关详细信息，请访问[访问控制文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans)。
+了解如何为Adobe Experience Platform添加产品管理员。 产品管理员可管理对基于Platform的应用程序(如Real-Time Customer Data Platform和Journey Optimizer)的访问控制。 他们可以在Admin Console中创建用户、开发人员和其他管理员，然后在Platform或Journey Optimizer界面中授予他们（和API凭据）权限。 有关详细信息，请访问[访问控制文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on&enablevpops)
 
 >[!TIP]
 >

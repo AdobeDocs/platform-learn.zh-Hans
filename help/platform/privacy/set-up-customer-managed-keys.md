@@ -8,10 +8,10 @@ jira: KT-11382
 thumbnail: 3410673.jpeg
 last-substantial-update: 2024-06-28T00:00:00Z
 exl-id: 04cb1aeb-3260-4259-bb02-8392d9d787a2
-source-git-commit: b5b64728f5f2a7c917ddd431115a7cf65b0085f3
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '94'
-ht-degree: 0%
+ht-degree: 8%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 使用您自己的加密密钥管理静态数据加密。 有关详细信息，请访问[客户管理的密钥文档](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on&enablevpops)
 
 >[!IMPORTANT]
 >

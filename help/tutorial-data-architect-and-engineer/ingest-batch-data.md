@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2465'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 在开始练习之前，请观看此简短视频，了解有关数据摄取的更多信息：
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## 所需的权限
@@ -332,10 +332,10 @@ ht-degree: 0%
 
 ## ETL工具
 
-与多个ETL供应商Adobe合作伙伴以支持将数据摄取到Experience Platform中。 由于第三方供应商的多样性，本教程中不包含ETL，但欢迎您查看以下部分资源：
+Adobe与多个ETL供应商合作，支持将数据摄取到Experience Platform中。 由于第三方供应商的多样性，本教程中不包含ETL，但欢迎您查看以下部分资源：
 
 * [为Adobe Experience Platform开发ETL集成](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)上的[Informatica Adobe Experience Platform Connector页
+* Adobe Exchange上的[Informatica Adobe Experience Platform Connector页面](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
 * [Adobe Experience Platform Connector的Informatica文档](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform快照包](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
@@ -344,4 +344,4 @@ ht-degree: 0%
 * [批次摄取文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [批次摄取API引用](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
-现在，让我们使用Web SDK [流式传输数据](ingest-streaming-data.md)
+现在，让我们使用Web SDK[流式传输数据](ingest-streaming-data.md)

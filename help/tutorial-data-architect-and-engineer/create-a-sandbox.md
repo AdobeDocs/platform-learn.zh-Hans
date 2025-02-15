@@ -8,7 +8,7 @@ feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 2%
@@ -26,7 +26,7 @@ ht-degree: 2%
 **数据架构师**&#x200B;和&#x200B;**数据工程师**&#x200B;需要在本教程之外创建沙盒。
 
 在开始练习之前，请观看此简短视频，了解更多有关沙箱的信息：
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
 
 ## 所需的权限
 

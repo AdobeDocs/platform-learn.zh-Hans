@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 63987fb652a653283a05a5f35f7ce670127ae905
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 XDM是一个公开记录的规范，旨在提高数字体验的强大功能。 它提供通用结构和定义，供任何应用程序用于与Platform服务通信。 通过遵守XDM标准，所有客户体验数据都可以纳入到通用表示中，从而以更快、更集成的方式提供见解。 您可以从客户操作中获得有价值的见解，通过区段定义客户受众，并表达客户属性以进行个性化。
 
-XDM是一个基础框架，它允许Adobe Experience Cloud由Experience Platform提供支持，在正确的时间通过正确的渠道向正确的人员传递正确的信息。 构建Experience Platform所基于的方法&#x200B;**XDM System**&#x200B;可使Platform服务使用的Experience Data Model架构可操作化。
+XDM是一个基础框架，它允许由Experience Platform提供支持的Adobe Experience Cloud在正确的时间通过正确的渠道向正确的人员传递正确的信息。 构建Experience Platform所基于的方法&#x200B;**XDM System**&#x200B;可使Platform服务使用的Experience Data Model架构可操作化。
 
 <!--
 This seems too lengthy. The video should suffice
@@ -43,11 +43,11 @@ Key terms:
 **数据架构师**&#x200B;需要在本教程之外创建架构，但&#x200B;**数据工程师**&#x200B;将与数据架构师创建的架构密切合作。
 
 在开始练习之前，请观看此简短视频，详细了解架构和Experience Data Model (XDM)：
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> 若要更深入地探讨Experience Platform中的数据建模，我们建议观看播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，可在Experience League上免费观看！
+> 若要在Experience Platform中更深入地研究数据建模，我们建议观看可在Experience League上免费使用的播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)！
 
 ## 所需的权限
 
@@ -84,7 +84,7 @@ Key terms:
 
 ### 添加标准字段组
 
-创建架构后，您将被重定向到架构编辑器，您可以在其中向架构添加字段。 您可以直接将单个字段添加到架构或使用字段组。 请务必注意，所有单个字段仍与类或字段组相关联。 您可以从Adobe提供的大量行业标准字段组中进行选择，也可以创建自己的字段组。 当您开始在Experience Platform中对自己的数据进行建模时，最好熟悉Adobe提供的行业标准字段组。 最佳实践是尽可能使用它们，因为它们有时支持下游服务，例如客户人工智能、Attribution AI和Adobe Analytics。
+创建架构后，您将被重定向到架构编辑器，您可以在其中向架构添加字段。 您可以直接将单个字段添加到架构或使用字段组。 请务必注意，所有单个字段仍与类或字段组相关联。 您可以从Adobe提供的大量行业标准字段组中进行选择，也可以创建自己的字段组。 当您开始在Experience Platform中对自己的数据进行建模时，最好熟悉Adobe提供的行业标准字段组。 最佳实践是尽可能使用它们，因为它们有时支持下游服务，例如客户人工智能、归因人工智能和Adobe Analytics。
 
 处理您自己的数据时，重要的一步是确定应在Platform中捕获您自己的哪些数据以及应如何对其进行建模。 播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)中将更深入地讨论这个大主题。 在本教程中，我将指导您完成一些预先确定的架构的实施。
 
@@ -231,7 +231,7 @@ Key terms:
 >
 > * 无身份验证令牌：运行&#x200B;**OAuth：请求访问令牌**&#x200B;请求以生成新令牌
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`：将&#x200B;**CONTAINER_ID**&#x200B;环境变量从`global`更新为`tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`：验证Admin Console中的用户权限
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`：在Admin Console中验证您的用户权限
 
 ### 添加标准字段组
 
@@ -330,7 +330,7 @@ Key terms:
 
 选择&#x200B;**[!UICONTROL 使用者体验事件]**&#x200B;字段组。 此字段组包含商业和productListItems对象，这些对象也在[!UICONTROL Commerce详细信息]中。 事实上，[!UICONTROL 使用者体验事件]是另外几个标准字段组的组合，这些字段组也单独提供。 [!UICONTROL AEP Web SDK ExperienceEvent]字段组还包含其他字段组，包括[!UICONTROL 使用者体验事件]中一些相同的字段组。 幸运的是，他们完美地融合在一起。
 
-请注意，我们未将`Luma Identity ExperienceEvent field group`添加到此架构。 这是因为Web SDK具有不同的身份收集方式。 如果您在架构编辑器的&#x200B;**[!UICONTROL 合成]**&#x200B;区域中选择&#x200B;**[!UICONTROL XDM ExperienceEvent]**&#x200B;类，您将注意到它默认添加的字段之一名为&#x200B;**[!UICONTROL IdentityMap]**。 [!DNL IdentityMap]被各种Adobe应用程序用于链接到Platform。 您将在流摄取课程中看到如何通过identityMap将身份发送到Platform。
+请注意，我们未将`Luma Identity ExperienceEvent field group`添加到此架构。 这是因为Web SDK具有不同的身份收集方式。 如果您在架构编辑器的&#x200B;**[!UICONTROL 合成]**&#x200B;区域中选择&#x200B;**[!UICONTROL XDM ExperienceEvent]**&#x200B;类，您将注意到它默认添加的字段之一名为&#x200B;**[!UICONTROL IdentityMap]**。 各种Adobe应用程序使用[!DNL IdentityMap]链接到Platform。 您将在流摄取课程中看到如何通过identityMap将身份发送到Platform。
 
 
 ## 创建产品目录架构
@@ -339,7 +339,7 @@ Key terms:
 
 >[!NOTE]
 >
->如果您是现有Analytics或Target客户，则对具有架构关系的实体进行分类类似于SAINT分类或上传Recommendations的产品目录
+>如果您是现有Analytics或Target客户，则对具有架构关系的实体进行分类类似于SAINT分类或上传产品目录以获取推荐
 
 首先，我们必须使用自定义类为Luma的产品目录创建架构：
 

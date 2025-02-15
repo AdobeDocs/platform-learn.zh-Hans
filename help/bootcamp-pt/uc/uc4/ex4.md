@@ -1,6 +1,6 @@
 ---
-title: Bootcamp -Customer Journey Analytics- Analysis Workspace中的数据准备 — 巴西
-description: Bootcamp -Customer Journey Analytics- Analysis Workspace中的数据准备 — 巴西
+title: Bootcamp - Customer Journey Analytics - Analysis Workspace中的数据准备 — 巴西
+description: Bootcamp - Customer Journey Analytics - Analysis Workspace中的数据准备 — 巴西
 jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
@@ -9,14 +9,14 @@ solution: Customer Journey Analytics
 feature-set: Customer Journey Analytics
 feature: Workspace Basics, Calculated Metrics
 exl-id: d56128af-dd1e-47ea-922f-85418e9da687
-source-git-commit: 3c86f9b19cecf92c9a324fb6fcfcefaebf82177f
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
 
 ---
 
-# 4.4 Preparação de dados emCustomer Journey Analytics
+# 4.4 Preparação de dados em Customer Journey Analytics
 
 ## 目标
 
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 OAnalysis Workspace删除作为limitacoes típicas de um único relatório do Analytics的标记。 Ele fornece uma tela robusta e flexível para criar projetos de analytics personalizados. Arraste e solte qualquer número de tabelas de dados， visualizacoes e components(dimensoes， métricas， segmentos e granularidades de tempo) para um projeto. Criação instantana de avarias e segmentos， criação de cortes para análise， criação de alertas， comparação de segmentos， análise de fluxo e de falhas e relatórios de curadoria e agendamento para compartilhar com qualquer pessoa em seu negócio.
 
-OCustomer Journey Analyticstraz essa solução além dos dados da plataforma。 我建议你先走几步：
+O Customer Journey Analytics traz essa solução além dos dados da plataforma. 我建议你先走几步：
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 请向Analysis Workspace的祖先致敬，并建议：
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### 赤星专案
 
@@ -129,7 +129,7 @@ Nao se esqueca de **Salvar** a Métrica计算。
 
 ### 过滤器：维度计算
 
-我们来做些事情。 Antes de iniciar qualquer análise， também é interessante criar algumas **计算Dimension**。 Adobe Analytics上的&#x200B;**区段**&#x200B;很重要， essencialmente。 无Customer Journey Analytics，esses segmentos sao chamados de **筛选器**。
+我们来做些事情。 Antes de iniciar qualquer análise， também é interessante criar algumas **计算维度**。 Adobe Analytics上的&#x200B;**区段**&#x200B;很重要， essencialmente。 无Customer Journey Analytics，esses segmentos sao chamados de **筛选器**。
 
 ![演示](./images/prfilters.png)
 
@@ -155,7 +155,7 @@ Essas Dimensoes de tempo calculado ajudarao analistas e usuários de negócios a
 
 Agora voce concluisiu o excício de preparação de dados usando o o Analysis Workspace do CJA.
 
-Próxima etapa： [4.5 Visualização usandoCustomer Journey Analytics](./ex5.md)
+Próxima etapa： [4.5 Visualização usando Customer Journey Analytics](./ex5.md)
 
 [Retornar para fluxo de Usuário 4](./uc4.md)
 

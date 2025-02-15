@@ -3,7 +3,8 @@ title: Adobe Experience Platform数据收集和实时服务器端转发 — 摘�
 description: 摘要和优点
 kt: 5342
 doc-type: tutorial
-source-git-commit: 2cdc145d7f3933ec593db4e6f67b60961a674405
+exl-id: 7086f844-f21c-45d4-a7d9-3e695233b4b7
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 0%
@@ -31,7 +32,7 @@ ht-degree: 0%
 - 技术博客： [使用Adobe Experience Platform Web SDK和Edge Network解决实施难点](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
 - 技术博客： [使用Adobe Experience Platform Web SDK和Edge Network提升网站性能](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
 - 文档：[Adobe Experience Platform数据收集服务器端概述](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
-- 视频： [使用非Adobe的Edge解决方案实施Tag Management和Adobe Experience Platform数据收集服务器](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
+- 视频：[使用非Edge Tag Management解决方案实施Adobe和Adobe Experience Platform数据收集服务器](https://video.tv.adobe.com/v/331986?quality=12&learn=on&enablevpops)
 
 [返回模块2.5](./aep-data-collection-ssf.md)
 

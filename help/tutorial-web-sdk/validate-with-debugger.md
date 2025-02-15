@@ -1,28 +1,28 @@
 ---
-title: 使用Experience Platform调试器验证Web SDK实施
+title: 使用Experience Platform Debugger验证Web SDK实施
 description: 了解如何使用Adobe Experience Platform Debugger验证您的Platform Web SDK实施。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '1172'
 ht-degree: 3%
 
 ---
 
-# 使用Experience Platform调试器验证Web SDK实施
+# 使用Experience Platform Debugger验证Web SDK实施
 
 了解如何使用 Adobe Experience Platform Debugger 验证您的 Adobe Experience Platform Web SDK 实施。
 
-Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展，可帮助您查看在网页中实施的Adobe技术。 下载首选浏览器的版本：
+Experience Platform Debugger是适用于Chrome和Firefox浏览器的扩展，可帮助您查看在网页中实施的Adobe技术。 下载首选浏览器的版本：
 
 * [Firefox扩展](https://addons.mozilla.org/zh-CN/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 如果您以前从未使用过该调试器，则可能需要观看以下时长为5分钟的概述视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 在本课程中，您使用[Adobe Experience Platform Debugger扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)将[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)上硬编码的标记属性替换为您自己的属性。
 
@@ -33,8 +33,8 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 在本课程结束时，您将能够使用调试器执行以下操作：
 
 * 加载备用标记库
-* 验证客户端XDM事件是否按预期捕获数据并将数据发送到PlatformEdge Network
-* 启用Edge跟踪以查看由平台Edge Network发送的服务器端请求
+* 验证客户端XDM事件是否按预期捕获数据并发送到Platform Edge Network
+* 启用Edge跟踪以查看由Platform Edge Network发送的服务器端请求
 
 ## 先决条件
 
@@ -50,13 +50,13 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 
 ## 使用Debugger加载备用标记库
 
-Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标记库替换现有标记库。 此技术对验证非常有用，允许我们跳过本教程中的许多实施步骤。
+Experience Platform Debugger具有一项酷炫功能，您可以使用其他标记库替换现有标记库。 此技术对验证非常有用，允许我们跳过本教程中的许多实施步骤。
 
-1. 确保已打开[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}，并选择Experience PlatformDebugger扩展图标
+1. 确保已打开[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}，然后选择Experience Platform Debugger扩展图标
 1. 调试器将打开并显示硬编码实施的一些详细信息（您可能需要在打开调试器后重新加载Luma网站）
 1. 确认Debugger已“**[!UICONTROL 连接到Luma]**”（如下图所示），然后选择“**[!UICONTROL 锁定]**”图标以将Debugger锁定到Luma网站。
-1. 选择&#x200B;**[!UICONTROL 登录]**&#x200B;按钮，然后使用您的AdobeID登录Adobe Experience Cloud。
-1. 现在，转到左侧导航栏中的&#x200B;**[!UICONTROL Experience Platform标签]**
+1. 选择&#x200B;**[!UICONTROL 登录]**&#x200B;按钮，然后使用您的Adobe ID登录Adobe Experience Cloud。
+1. 现在，转到左侧导航栏中的&#x200B;**[!UICONTROL Experience Platform标记]**
 
    ![调试器标记屏幕](assets/validate-launch-screen.png)
 
@@ -77,15 +77,15 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
 在本教程的后面部分，您将使用此技术将Luma网站映射到您自己的标记资产，以验证您的Platform Web SDK实施。 在您自己的网站上使用标记时，您可以使用该同一技术验证生产网站上的开发标记库。
 
-## 使用Experience Platform调试器验证客户端网络请求
+## 使用Experience Platform Debugger验证客户端网络请求
 
-您可以使用Debugger验证从Platform Web SDK实施触发的客户端信标，以查看发送到PlatformEdge Network的数据：
+您可以使用Debugger验证从Platform Web SDK实施触发的客户端信标，以查看发送到Platform Edge Network的数据：
 
 1. 转到左侧导航中的&#x200B;**[!UICONTROL 摘要]**，以查看标记属性的详细信息
 
    ![摘要选项卡](assets/validate-summary.png)
 
-1. 现在，转到左侧导航栏中的&#x200B;**[!UICONTROL Experience PlatformWeb SDK]**&#x200B;以查看&#x200B;**[!UICONTROL 网络请求]**
+1. 现在，转到左侧导航栏中的&#x200B;**[!UICONTROL Experience Platform Web SDK]**&#x200B;以查看&#x200B;**[!UICONTROL 网络请求]**
 1. 打开&#x200B;**[!UICONTROL 事件]**&#x200B;行
 
    ![Adobe Experience Platform Web SDK请求](assets/validate-aep-screen.png)
@@ -112,7 +112,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
 1. 返回 [Luma 主页](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 在左侧导航中打开&#x200B;**[!UICONTROL Experience PlatformWeb SDK]**&#x200B;部分
+1. 在左侧导航中打开&#x200B;**[!UICONTROL Experience Platform Web SDK]**&#x200B;部分
 
    Debugger中的![Web SDK](assets/identity-debugger-websdk-dark.png)
 
@@ -139,9 +139,9 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
    >
    > ECID值在网络响应中可见。 它没有包括在网络请求的`identityMap`部分中，也没有以此格式存储在Cookie中。
 
-## 使用Experience Platform调试器验证服务器端网络请求
+## 使用Experience Platform Debugger验证服务器端网络请求
 
-如您在[配置数据流](configure-datastream.md)课程中所学的，Platform Web SDK会先将数据从您的数字资产发送到PlatformEdge Network。 然后，平台Edge Network会向数据流中启用的相应服务发出其他服务器端请求。 您可以在Debugger中使用Edge跟踪来验证平台Edge Network发出的服务器端请求。
+如您在[配置数据流](configure-datastream.md)课程中所学的，Platform Web SDK会先将数据从您的数字资产发送到Platform Edge Network。 然后，Platform Edge Network会向数据流中启用的相应服务发出其他服务器端请求。 通过使用Debugger中的Edge跟踪，您可以验证Platform Edge Network发出的服务器端请求。
 
 <!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
@@ -150,7 +150,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
 要启用Edge跟踪，请执行以下操作：
 
-1. 在&#x200B;**[!UICONTROL Experience Platform调试器]**&#x200B;的左侧导航中，选择&#x200B;**[!UICONTROL 日志]**
+1. 在&#x200B;**[!UICONTROL Experience Platform Debugger]**&#x200B;的左侧导航中，选择&#x200B;**[!UICONTROL 日志]**
 1. 选择&#x200B;**[!UICONTROL Edge]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 连接]**
 
    ![连接Edge跟踪](assets/analytics-debugger-edgeTrace.png)
@@ -159,11 +159,11 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
    ![连接的Edge跟踪](assets/analytics-debugger-edge-connected.png)
 
-1. 刷新[Luma主页](https://luma.enablementadobe.com/)并再次检查&#x200B;**[!UICONTROL Experience Platform调试器]**，以查看数据通过。
+1. 刷新[Luma主页](https://luma.enablementadobe.com/)并再次检查&#x200B;**[!UICONTROL Experience Platform Debugger]**，查看数据传入情况。
 
    ![Analytics信标Edge跟踪](assets/validate-edge-trace.png)
 
-此时，您无法查看任何将转至Adobe应用程序的平台Edge Network请求，因为您未在数据流中启用任何请求。 在将来的课程中，您将使用Edge跟踪查看用于Adobe应用程序和事件转发的传出服务器端请求。 但首先，了解用于验证平台Edge Network发出的服务器端请求的另一个工具 — Adobe Experience Platform Assurance！
+此时，您无法查看任何前往Adobe应用程序的Platform Edge Network请求，因为您未在数据流中启用任何请求。 在将来的课程中，您将使用Edge跟踪查看对Adobe应用程序的传出服务器端请求和事件转发。 但首先，了解用于验证Platform Edge Network发出的服务器端请求的另一个工具 — Adobe Experience Platform Assurance！
 
 [下一步： ](validate-with-assurance.md)
 

@@ -8,7 +8,7 @@ feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 **数据架构师**&#x200B;需要在本教程之外创建区段，并通过此任务支持他们的同事。
 
 在开始练习之前，请观看此简短视频，了解有关创建区段的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
 
 
 ## 所需的权限

@@ -10,7 +10,7 @@ last-substantial-update: 2023-10-25T00:00:00Z
 jira: KT-14116
 thumbnail: 3424763.jpeg
 exl-id: 3a4171dd-459e-4bef-a4a6-5b6520707a40
-source-git-commit: f650acd67fb1097eb17ed16ef3f991c474b6d479
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 0%
@@ -21,4 +21,4 @@ ht-degree: 0%
 
 了解如何使用包在Experience Platform沙盒之间复制配置。 跨沙盒轻松复制架构、数据集、历程等，以支持发布流程和多区域/多品牌部署。 有关详细信息，请参阅[沙盒工具文档](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on&enablevpops)

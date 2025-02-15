@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '3309'
 ht-degree: 0%
@@ -31,13 +31,13 @@ ht-degree: 0%
 
 在开始练习之前，请观看这两个简短视频，详细了解流数据引入和Web SDK：
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->虽然本教程侧重于通过Web SDK从网站流式摄取，但您也可以使用[AdobeMobile SDK](https://developer.adobe.com/client-sdks/documentation/)、[Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)和其他机制流式传输数据。
+>虽然本教程侧重于通过Web SDK从网站流式摄取，但您也可以使用[Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)、[Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)和其他机制流式传输数据。
 
 ## 所需的权限
 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ## 配置数据流
 
-首先，我们将配置数据流。 数据流会告知Adobe Edge网络，在从Web SDK调用收到数据后，将数据发送到何处。 例如，是否要将数据发送到Experience Platform、Adobe Analytics或Adobe Target？ 数据流在数据收集用户界面（以前称为Launch）中进行管理，并且对于通过Web SDK收集数据至关重要。
+首先，我们将配置数据流。 数据流会告知Adobe Edge网络在从Web SDK调用收到数据后要将数据发送到何处。 例如，是否要将数据发送到Experience Platform、Adobe Analytics或Adobe Target？ 数据流在数据收集用户界面（以前称为Launch）中进行管理，对于通过Web SDK收集数据至关重要。
 
 要创建您的[!UICONTROL 数据流]：
 
@@ -96,12 +96,12 @@ ht-degree: 0%
 
    ![命名数据流并保存](assets/websdk-edgeConfig-name.png)
 
-在下一个屏幕中，您指定要将数据发送到的位置。 要向Experience Platform发送数据，请执行以下操作：
+在下一个屏幕中，您指定要将数据发送到的位置。 要将数据发送到Experience Platform，请执行以下操作：
 
 1. 打开&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;以公开其他字段
 1. 对于&#x200B;**[!UICONTROL 沙盒]**，请选择`Luma Tutorial`
 1. 对于&#x200B;**[!UICONTROL 事件数据集]**，请选择`Luma Web Events Dataset`
-1. 如果您使用其他Adobe应用程序，请随意浏览其他部分，以了解在这些其他解决方案的Edge配置中需要哪些信息。 请记住，开发Web SDK不仅是为了将数据流式传输到Experience Platform中，而且也是为了替换其他Adobe应用程序使用的所有以前的JavaScript库。 Edge配置用于指定要将数据发送到的每个应用程序的帐户详细信息。
+1. 如果您使用其他Adobe应用程序，欢迎浏览其他部分，了解这些其他解决方案的Edge配置中需要哪些信息。 请记住，开发Web SDK不仅是为了将数据流式传输到Experience Platform，而且也是为了取代其他JavaScript应用程序使用的所有以前的Adobe库。 Edge配置用于指定要将数据发送到的每个应用程序的帐户详细信息。
 1. 选择&#x200B;**[!UICONTROL 保存]**
    ![配置数据流并保存](assets/websdk-edgeConfig-addEnvironment.png)
 
@@ -159,7 +159,7 @@ Now switch back to your browser tab with the Data Collection interface still ope
    ![安装Adobe Experience Platform Web SDK扩展](assets/websdk-property-addExtension.png)
 1. Web SDK扩展有多种配置可用，但在本教程中，我们将只配置两种。 将&#x200B;**[!UICONTROL Edge域]**&#x200B;更新为`data.enablementadobe.com`。 此设置允许您在Web SDK实施中设置第一方Cookie，我们鼓励这样做。 在本课程的后面部分，您将将`enablementadobe.com`域上的网站映射到您的标记属性。 `enablementadobe.com`域的CNAME已配置，因此`data.enablementadobe.com`将转发到Adobe服务器。 在您自己的网站上实施Web SDK时，您需要为自己的数据收集目的创建一个CNAME，例如`data.YOUR_DOMAIN.com`
 1. 从&#x200B;**[!UICONTROL 数据流]**&#x200B;下拉列表中，选择您的`Luma Platform Tutorial`数据流。
-1. 您可以随意查看其他配置选项（但不要更改它们！） 然后选择&#x200B;**[!UICONTROL 保存]**
+1. 您可以查看其他配置选项（但不要更改它们！），然后选择&#x200B;**[!UICONTROL 保存]**
    <!--is edge domain required for first party? when will it break?-->
    <!--any other fields that should be highlighted-->
    ![](assets/websdk-property-configureExtension.png)
@@ -188,7 +188,7 @@ Now switch back to your browser tab with the Data Collection interface still ope
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存规则\
    ![保存规则](assets/websdk-property-saveRule.png)
 
-## Publish库中的规则
+## 在库中发布规则
 
 接下来，我们将将规则发布到开发环境，以便验证它是否有效。
 
@@ -248,14 +248,14 @@ Now let's bundle the contents of our property&mdash;currently an extension and a
 
 ### 添加Adobe Experience Platform Debugger
 
-Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展，可帮助您查看在网页中实施的Adobe技术。 下载首选浏览器的版本：
+Experience Platform Debugger是适用于Chrome和Firefox浏览器的扩展，可帮助您查看在网页中实施的Adobe技术。 下载首选浏览器的版本：
 
 * [Firefox扩展](https://addons.mozilla.org/zh-CN/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome扩展](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 如果您以前从未使用过Debugger，并且此调试器与之前的Adobe Experience Cloud Debugger不同，那么您可能需要观看这段时长为5分钟的概述视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ### 打开Luma网站
 
@@ -268,11 +268,11 @@ Experience Platform调试器是一个适用于Chrome和Firefox浏览器的扩展
 
 ![Luma主页](assets/websdk-luma-homepage.png)
 
-### 使用Experience PlatformDebugger映射到您的标记属性
+### 使用Experience Platform Debugger映射到您的标记属性
 
-Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标记属性替换现有标记属性。 这有助于验证，并允许您跳过本教程中的许多实施步骤。
+Experience Platform Debugger具有一项酷炫功能，允许您使用其他标记属性替换现有标记属性。 这有助于验证，并允许您跳过本教程中的许多实施步骤。
 
-1. 确保已打开Luma网站并选择Experience PlatformDebugger扩展图标
+1. 确保已打开Luma网站并选择Experience Platform Debugger扩展图标
 1. 调试器将会打开并显示硬编码实施的一些详细信息，这些详细信息与本教程无关（在打开调试器后，您可能需要重新加载Luma网站）
 1. 确认Debugger已“**[!UICONTROL 连接到Luma]**”（如下图所示），然后选择“**[!UICONTROL 锁定]**”图标以将Debugger锁定到Luma网站。
 1. 选择右上角的&#x200B;**[!UICONTROL 登录]**&#x200B;按钮进行身份验证。
@@ -288,7 +288,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
    已替换![标记属性](assets/websdk-debugger-propertyReplaced.png)
 1. 转到左侧导航栏中的&#x200B;**[!UICONTROL 摘要]**，查看[!UICONTROL Launch]属性的详细信息
    ![摘要选项卡](assets/websdk-debugger-summary.png)
-1. 现在转到左侧导航中的&#x200B;**[!UICONTROL AEP Web SDK]**&#x200B;以查看&#x200B;**[!UICONTROL 网络请求]**
+1. 现在转到左侧导航栏中的&#x200B;**[!UICONTROL AEP Web SDK]**&#x200B;以查看&#x200B;**[!UICONTROL 网络请求]**
 1. 打开&#x200B;**[!UICONTROL 事件]**&#x200B;行
 
    ![Adobe Experience Platform Web SDK请求](assets/websdk-debugger-platformNetwork.png)
@@ -301,7 +301,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
 
 
-## 验证Experience Platform中的数据
+## 在Experience Platform中验证数据
 
 您可以通过查看`Luma Web Events Dataset`中到达的数据批来验证数据是否已登陆Platform。 (我知道，这被称为流式数据摄取，但现在我要说的是，它是批量获取的！ 它实时流式传输到用户档案，因此可用于实时分段和激活，但每15分钟会批量发送到数据湖。)
 
@@ -389,7 +389,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
 ## 发送其他身份
 
-您的Web SDK实施现在正在发送将Experience CloudID (ECID)作为主要标识符的事件。 ECID由Web SDK自动生成，并且在每个设备和浏览器中是唯一的。 根据客户使用的设备和浏览器，一个客户可以拥有多个ECID。 那么，我们如何才能获得该客户的统一视图，并将其在线活动关联到我们的CRM、忠诚度和离线购买数据？ 我们通过在用户会话期间收集其他身份并通过身份拼接确定性地关联用户档案来实现这一点。
+您的Web SDK实施现在正在发送将Experience Cloud ID (ECID)作为主要标识符的事件。 ECID由Web SDK自动生成，每个设备和浏览器均是唯一的。 根据客户使用的设备和浏览器，一个客户可以拥有多个ECID。 那么，我们如何才能获得该客户的统一视图，并将其在线活动关联到我们的CRM、忠诚度和离线购买数据？ 我们通过在用户会话期间收集其他身份并通过身份拼接确定性地关联用户档案来实现这一点。
 
 如果您还记得，我曾在[映射身份](map-identities.md)课程中提到我们将使用ECID和CRM ID作为Web数据的身份。 让我们使用Web SDK收集CRM ID！
 
@@ -414,7 +414,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 
    >[!WARNING]
    >
-   >Adobe Experience Platform Web SDK扩展版本2.2允许您使用Platform帐户中的实际值从预填充的下拉列表中选择命名空间。 很遗憾，此功能尚未“沙盒识别”，因此`Luma CRM Id`值可能不会显示在下拉列表中。 这可能会妨碍您完成本练习。 确认后，我们将发布解决方法。
+   >Adobe Experience Platform Web SDK扩展版本2.2允许您使用Platform帐户中的实际值，从预填充的下拉列表中选择命名空间。 很遗憾，此功能尚未“沙盒识别”，因此`Luma CRM Id`值可能不会显示在下拉列表中。 这可能会妨碍您完成本练习。 确认后，我们将发布解决方法。
 
 1. 作为&#x200B;**[!UICONTROL ID]**，选择图标以打开数据元素选择模式并选择您的`CRM Id`数据元素
 1. 作为&#x200B;**[!UICONTROL Authenticated State]**，请选择&#x200B;**[!UICONTROL Authenticated]**
@@ -445,7 +445,7 @@ Experience PlatformDebugger具有一项酷炫功能，允许您使用其他标�
 1. 按照之前的说明，使用Debugger将其映射到您的标记属性
 1. 选择Luma网站右上角的&#x200B;**登录**&#x200B;链接
 1. 使用凭据`test@adobe.com`/`test`登录
-1. 一旦通过身份验证，请在Debugger中检查Experience PlatformWeb SDK调用(**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL 网络请求]** > **[!UICONTROL 事件]**，您应会看到`lumaCrmId`：
+1. 通过身份验证后，在Debugger中检查Experience Platform Web SDK调用(最近请求的&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL 网络请求]** > **[!UICONTROL 事件]**)，此时您应会看到`lumaCrmId`：
    ![在Debugger中验证身份](assets/websdk-debugger-confirmIdentity.png)
 1. 使用ECID命名空间查找用户配置文件，然后再次查找值。 在配置文件中，您将看到CRM ID，以及忠诚度ID和配置文件详细信息，如姓名和电话号码。 所有身份和数据都已拼合到单个实时客户个人资料中！
    ![在Platform中验证身份](assets/websdk-platform-lumaCrmIdProfile.png)

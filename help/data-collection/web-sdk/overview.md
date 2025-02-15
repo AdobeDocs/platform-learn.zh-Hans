@@ -9,7 +9,7 @@ level: Beginner
 jira: KT-5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
-source-git-commit: 00ef0f40fb3d82f0c06428a35c0e402f46ab6774
+source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 41%
@@ -20,11 +20,11 @@ ht-degree: 41%
 
 了解 Adobe Experience Platform Web SDK 和 Edge Network 如何让客户使用一个 JavaScript 库和一个信标将数据发送到 Adobe 应用程序和第三方目标。
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
->此视频摘录自Adobe Summit2020会话&#x200B;*[Meet Alloy.js and Never Tag for a eVar或Mbox Agree](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*。
+>此视频摘自Adobe Summit 2020会话&#x200B;*[Meet Alloy.js and Never Tag for a eVar或Mbox Again ](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*。
 >
 >本视频中讨论的服务器端转发功能现在向所有许可客户公开提供。 请参阅[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
 
