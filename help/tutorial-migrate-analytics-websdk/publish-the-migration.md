@@ -1,18 +1,18 @@
 ---
-title: Publish迁移到暂存和生产环境
+title: 将迁移发布到暂存和生产环境
 description: 完成迁移的所有开发并进行验证后，构建到暂存，然后在准备就绪后发布到生产环境。
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16767
-source-git-commit: 15f2122c53a3b2f3dc1942502e908403e55519ab
+exl-id: 47c86999-6a9c-4451-8a59-475e8c65ab6a
+source-git-commit: 3084590685bee9cd139c27b9a27026f08abf897f
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
 
-
-# Publish迁移到暂存和生产环境
+# 将迁移发布到暂存和生产环境
 
 完成迁移的所有开发并进行验证后，构建到暂存，然后在准备就绪后发布到生产环境。
 
@@ -51,6 +51,6 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->请务必注意，执行此次实施迁移的主要原因之一是准备使用Adobe Experience Platform应用程序，如Customer Journey Analytics、Real-Time CDP或Journey Optimizer(如上#3所述)。 为此，使用您的网站数据将包括本教程中未包含的其他步骤，但本教程无疑将是进一步实施的前提条件。 因此，请先完成本教程，然后您可以继续执行必要的步骤，将此相同的网站数据也发送到Experience Platform。
+>请务必注意，您迁移实施的主要原因之一是准备使用Adobe Experience Platform应用程序，如Customer Journey Analytics、Real-Time CDP或Journey Optimizer。 为此，使用您的网站数据将包括本教程中未包含的其他步骤，但本教程无疑将是进一步实施的前提条件。 现在，您已完成本教程，可以开始执行将相同的网站数据发送到Experience Platform所需的步骤。
 
 祝您在分析和其他内容以及营销方面的工作取得进展顺利！
