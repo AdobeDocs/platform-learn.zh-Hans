@@ -3,9 +3,9 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: f25c1705ae6813dc744945e8a4ee9858513f7374
+source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '936'
 ht-degree: 2%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 2%
 ![技术内部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概述
-
-本教程是
 
 本教程的内容非常多样，提供了对以下应用程序的清晰洞察：
 
@@ -50,25 +48,21 @@ ht-degree: 2%
 - Adobe Experience Platform数据收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - 访问演示系统： [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
-## 前期工作
-
-在[此处](./prework.md){target="_blank"}验证需要在您的计算机上安装的所需应用程序。
-
 ## 完成和认证
 
 本教程是Adobe认证课程的一部分。 您可以转到[https://certification.adobe.com](https://certification.adobe.com)同时注册课程和本教程。
 
 对于您使用以下教程完成的每个模块，您需要按照[此处](./completion.md)的指示提交完成证明。
 
-## 内容
+## 内容状态
 
 要检查以下内容的状态，请转到[状态页面](./status.md){target="_blank"}。
 
-### 快速入门
+### 开始使用
 
 [快速入门](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
-在此基础模块中，您将设置所有内容，以便能够访问和使用演示环境。
+在本基本模块中，您将准备所有内容，以便能够访问和使用演示环境。
 
 ### 1.工作流程和规划
 
