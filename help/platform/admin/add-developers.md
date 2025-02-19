@@ -4,10 +4,11 @@ description: 了解如何将开发人员添加到基于Adobe Experience Platform
 feature: Access Control
 role: Admin, Developer
 level: Beginner
+doc-type: Feature Video
 jira: KT-14689
 last-substantial-update: 2023-12-15T00:00:00Z
 exl-id: 4bd28867-b664-4a45-8892-91af821cbbcc
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 64dd58999adea73cdf8b580a2e4da9f1d8944020
 workflow-type: tm+mt
 source-wordcount: '156'
 ht-degree: 0%
