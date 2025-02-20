@@ -5,7 +5,7 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 4d403a6694f856a9020fe9dfd541693603c57c69
+source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 18%
@@ -166,7 +166,7 @@ Campaigns
    + [目标概述](/help/platform/destinations/understanding-destinations.md)
    + [连接到目标](/help/platform/destinations/connecting-to-destinations.md)
    + [创建目标和激活数据](/help/platform/destinations/create-destinations-and-activate-data.md)
-   + [将配置文件和区段激活到目标](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+   + [将用户档案和受众激活到目标](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
    + [配置数据集导出目标](/help/platform/destinations/configure-dataset-export-destination.md)
    + [与Google Customer Match集成](/help/platform/destinations/integrate-with-google-customer-match.md)
    + [配置Azure Blob目标](/help/platform/destinations/configure-the-azure-blob-destination.md)
