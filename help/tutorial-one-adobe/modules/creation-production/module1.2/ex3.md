@@ -6,16 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
 
 # 1.2.3使用Workfront Fusion实现流程自动化
 
-了解如何使用Workfront Fusion处理自动化。
+了解如何使用Workfront Fusion实现流程自动化。
 
 ## 1.2.3.1对多个值进行迭代
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 
    ![WF Fusion](./images/wffusion215.png)
 
-## 1.2.3.2使用webhook激活场景
+## 1.2.3.2使用webhook激活您的场景
 
 到目前为止，您已手动运行场景进行测试。 现在，让我们使用webhook更新您的场景，以便可以从外部环境激活它。
 
@@ -200,7 +200,7 @@ ht-degree: 0%
 
 ## 后续步骤
 
-转到[Firefly Services Automation的摘要和优点](./summary.md){target="_blank"}
+使用连接器](./ex4.md){target="_blank"}转到[1.2.4自动化
 
 返回至[自动化Adobe Firefly服务](./automation.md){target="_blank"}
 
