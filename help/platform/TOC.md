@@ -5,7 +5,7 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 90a0ac0200ebe7b87d95c829773e74f8382b8443
+source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 18%
@@ -103,19 +103,19 @@ Campaigns
 + 受众和分段{#audiences}
    + [受众门户和构成简介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上传受众](audiences/upload-audiences.md)
-   + [联合受众构成概述](audiences/overview-of-federated-audience-composition.md)
-   + [连接和配置联合受众组合](audiences/connect-and-configure-federated-audience-composition.md)
-   + [创建联合受众组合](audiences/create-a-federated-audience-composition.md)
-   + [受众规则生成器概述](audiences/audience-rule-builder-overview.md)
-   + [创建受众](audiences/create-audiences.md)
-   + [使用时间限制](audiences/time-constraints.md)
-   + [创建基于内容的受众](audiences/create-content-based-audiences.md)
-   + [创建转化受众](audiences/create-conversion-audiences.md)
-   + [从现有受众创建受众](audiences/create-audiences-from-existing-audiences.md)
-   + [创建顺序受众](audiences/create-sequential-audiences.md)
-   + [创建动态受众](audiences/create-dynamic-audiences.md)
-   + [创建多实体受众](audiences/create-multi-entity-audiences.md)
-   + [创建和激活帐户受众(B2B)](audiences/create-audiences-with-b2b-data.md)
+   + [联合受众构成概述](audiences/fac/overview-of-federated-audience-composition.md)
+   + [连接和配置联合受众组合](audiences/fac/connect-and-configure-federated-audience-composition.md)
+   + [创建联合受众组合](audiences/fac/create-a-federated-audience-composition.md)
+   + [受众规则生成器概述](audiences/audience-builder/audience-rule-builder-overview.md)
+   + [创建受众](audiences/audience-builder/create-audiences.md)
+   + [使用时间限制](audiences/audience-builder/time-constraints.md)
+   + [创建基于内容的受众](audiences/audience-builder/create-content-based-audiences.md)
+   + [创建转化受众](audiences/audience-builder/create-conversion-audiences.md)
+   + [从现有受众创建受众](audiences/audience-builder/create-audiences-from-existing-audiences.md)
+   + [创建顺序受众](audiences/audience-builder/create-sequential-audiences.md)
+   + [创建动态受众](audiences/audience-builder/create-dynamic-audiences.md)
+   + [创建多实体受众](audiences/audience-builder/create-multi-entity-audiences.md)
+   + [创建和激活帐户受众(B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [流式客户细分演示](/help/platform/audiences/streaming-segmentation-demo.md)
    + [评估受众规则](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
    + [创建数据集以导出数据](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
