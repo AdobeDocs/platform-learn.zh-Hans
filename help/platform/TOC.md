@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 7317df472ec7c72dd6ecf4c6a298ccca818d28e9
+source-git-commit: bfb079fb603702e7d07bfa74fec771503a5188df
 workflow-type: tm+mt
-source-wordcount: '882'
-ht-degree: 18%
+source-wordcount: '883'
+ht-degree: 19%
 
 ---
 
@@ -137,6 +137,7 @@ Campaigns
    + [强制同意](/help/platform/governance/enforce-consent.md)
    + [与IAB透明度和同意框架2.0集成](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + 数据卫生{#data-hygiene}
+   + [概述](/help/platform/data-hygiene/overview.md)
    + [数据卫生数据准备](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [删除数据集和批次](/help/platform/data-hygiene/delete-datasets-and-batches.md)
    + [使数据集过期](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
