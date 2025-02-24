@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 6ef4ce94dbbcd65ab30bcfad24f4ddd746c26b82
+source-git-commit: c5a80b87ac8e997922cb8c69b4180c4220dd9862
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '1006'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 在继续此练习之前，您需要完成[您的Adobe I/O项目](./../../../modules/getting-started/gettingstarted/ex6.md)的设置，还需要配置应用程序以与API交互，例如[Postman](./../../../modules/getting-started/gettingstarted/ex7.md)或[PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md)。
 
-## 1.1.1.1 firefly.adobe.com
+## 1.1.1.2 firefly.adobe.com
 
 转到[https://firefly.adobe.com](https://firefly.adobe.com)。 单击&#x200B;**个人资料**&#x200B;图标并确保您已登录到正确的&#x200B;**帐户**，即`--aepImsOrgName--`。 如果需要，请单击&#x200B;**切换配置文件**&#x200B;以切换到该帐户。
 
@@ -131,6 +131,62 @@ ht-degree: 0%
     "strength": 50
   }
 ```
+
+然后您应该拥有此项。 单击&#x200B;**发送**。
+
+![Firefly](./images/ff6.png){zoomable="yes"}
+
+单击图像URL以将其打开。
+
+![Firefly](./images/ff7.png){zoomable="yes"}
+
+您的图像现在发生了一些更改。 应用样式预设时，种子图像的应用方式不再与之前相同。
+
+![Firefly](./images/ff8.png){zoomable="yes"}
+
+从请求的&#x200B;**Body**&#x200B;中删除&#x200B;**seed**&#x200B;对象的代码。 单击&#x200B;**发送**，然后单击从响应中获得的图像URL。
+
+```json
+,
+  "seeds": [
+    XXX
+  ]
+```
+
+![Firefly](./images/ff9.png){zoomable="yes"}
+
+您的图像现在又发生了一些更改。
+
+![Firefly](./images/ff10.png){zoomable="yes"}
+
+
+## 1.1.1.5 Firefly Services API，一般扩展
+
+从&#x200B;**FF - Firefly服务技术内部人士**&#x200B;集合中选择名为&#x200B;**POST - Firefly - Gen Expand**&#x200B;的请求，并转到该请求的&#x200B;**正文**。
+
+- **大小**：输入所需分辨率。 此处输入的值应大于图像的原始大小，且不能大于4096。
+- **image.source.url**：此字段需要指向需要扩展的图像的链接。 在此示例中，变量用于引用上一个练习中生成的图像。
+
+- **水平对齐方式**：接受的值为： `"center"`，`"left`，`"right"`。
+- **垂直对齐**：接受的值为： `"center"`，`"top`，`"bottom"`。
+
+![Firefly](./images/ff11.png){zoomable="yes"}
+
+单击响应中包含的图像URL。
+
+![Firefly](./images/ff12.png){zoomable="yes"}
+
+您会看到在上一个练习中生成的图像现在已扩展到3999x3999的分辨率。
+
+![Firefly](./images/ff13.png){zoomable="yes"}
+
+当更改放置的对齐方式时，输出也将略有不同。 在此示例中，位置被更改为&#x200B;**左，底部**。 单击&#x200B;**发送**，然后单击以打开生成的图像URL。
+
+![Firefly](./images/ff14.png){zoomable="yes"}
+
+然后您应该看到原始图像以不同的位置使用，这会影响整个图像。
+
+![Firefly](./images/ff15.png){zoomable="yes"}
 
 ## 后续步骤
 
