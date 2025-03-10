@@ -6,16 +6,16 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 35e1f0d4fb5a22a366b3fb8bc71d4ea2d26764bb
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '819'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 Firefly自定义模型API
 
-## 1.1.4.1配置自定义模型
+## 1.1.4.1配置您的自定义模型
 
 转到[https://firefly.adobe.com/](https://firefly.adobe.com/)。 单击&#x200B;**自定义模型**。
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 ![Firefly自定义模型](./images/ffcm18.png){zoomable="yes"}
 
-## 1.1.4.3为Firefly Services自定义模型API启用自定义模型
+## 1.1.4.3为Firefly服务自定义模型API启用自定义模型
 
 自定义模型一旦训练完成，也可以通过API使用。 在练习1.1.1中，您已配置Adobe I/O项目以通过API与Firefly服务交互。
 
@@ -112,9 +112,9 @@ ht-degree: 0%
 
 ![Firefly自定义模型](./images/ffcm20.png){zoomable="yes"}
 
-要访问Firefly自定义模型，需要将该自定义模型共享到Adobe I/O项目的&#x200B;**技术帐户ID**。
+要访问Firefly自定义模型，需要将该自定义模型共享到Adobe I/O项目的&#x200B;**技术帐户电子邮件**。
 
-要检索您的&#x200B;**技术帐户ID**，请转到[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)。 单击以打开名为`--aepUserLdap-- Firefly`的项目。
+若要检索您的&#x200B;**技术帐户电子邮件**，请转到[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)。 单击以打开名为`--aepUserLdap-- One Adobe tutorial`的项目。
 
 ![Firefly自定义模型](./images/ffcm24.png){zoomable="yes"}
 
@@ -122,15 +122,15 @@ ht-degree: 0%
 
 ![Firefly自定义模型](./images/ffcm25.png){zoomable="yes"}
 
-单击以复制您的&#x200B;**技术帐户ID**。
+单击以复制您的&#x200B;**技术帐户电子邮件**。
 
 ![Firefly自定义模型](./images/ffcm23.png){zoomable="yes"}
 
-粘贴您的&#x200B;**技术帐户ID**&#x200B;并单击&#x200B;**邀请进行编辑**。
+粘贴您的&#x200B;**技术帐户电子邮件**，然后单击&#x200B;**邀请编辑**。
 
 ![Firefly自定义模型](./images/ffcm21.png){zoomable="yes"}
 
-**技术帐户ID**&#x200B;现在应该能够访问自定义模型。
+**技术帐户电子邮件**&#x200B;现在应能够访问自定义模型。
 
 ![Firefly自定义模型](./images/ffcm22.png){zoomable="yes"}
 
