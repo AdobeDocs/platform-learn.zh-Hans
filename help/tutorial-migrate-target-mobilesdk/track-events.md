@@ -1,40 +1,29 @@
 ---
-title: 跟踪事件 — 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
+title: 跟踪转化事件 — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
 description: 了解如何使用Adobe Journey Optimizer - Decisioning Mobile扩展跟踪Adobe Target转化事件
 exl-id: 7b53aab1-0922-4d9f-8bf0-f5cf98ac04c4
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 4bc5323e1f406b1fc9524838978ba8673e33b44e
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
 
-# 使用Adobe Journey Optimizer - Decisioning Mobile扩展跟踪Target转化事件
+# 使用Decisioning移动扩展跟踪Target转化事件
 
-有关内容，请参阅此页面：https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#tracking
+大多数Target活动的目标是让用户在您的应用程序中执行有价值的操作，例如购买、注册、点击等等。 Target实施通常使用自定义转化事件来跟踪这些操作，通常包含有关转化的其他详细信息。 可以使用与Target SDK类似的“优化SDK”来跟踪Target的转化事件。 需要调用特定API来跟踪转化事件，如下表所示：
 
-可以通过以下方式跟踪Target的转化事件……转化事件通常分为以下类别：
-
-* 自动跟踪不需要任何配置的事件
-* 应为最佳实践决策扩展实施调整的购买转化事件
-* 需要代码更新的非购买转化事件
-
-## 目标跟踪比较
-
-下表比较了at.js和Platform Web SDK如何跟踪转化事件
-
-| 活动目标 | Target at.js 2.x | Platform Web SDK |
+| 活动目标 | 目标扩展 | Decisioning扩展 |
 |---|---|---|
-| | | |
+
+| 跟踪mbox位置（范围）的视图转换事件 | 查看mbox位置时调用[displayedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} API | 查看mbox位置的选件时，调用[displayed](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} API。 这会向Experience Edge网络发送一个事件类型为decisioning.propositionDisplay的事件。 |
+
+| 跟踪mbox位置（范围）的点击转化事件 | 单击mbox位置时，在中调用[clickedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} API | 单击mbox位置的选件时，调用[taped](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} API。 这会向Experience Edge网络发送一个事件类型为decisioning.propositionInteract的事件。 |
+
+| 跟踪可能还包括其他数据的自定义转化事件，如Target配置文件参数和订单详细信息 |在[displayedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank}和[clickedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} API提供的TargetParameters字段中传递其他数据 | 使用选件中适用于mbox位置的公共方法[generateDisplayInteractionXdm](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-edge-extension-api){target=_blank}和[generateTapInteractionXdm](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-edge-extension-api){target=_blank} API来分别生成用于查看和单击的XDM格式数据。 然后调用Edge SDK [sendEvent](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent){target=_blank} API以将此跟踪XDM数据以及任何其他XDM和自由格式数据发送到Experience Edge网络。 |
 
 
-## 自动跟踪的事件
-
-以下转化目标不需要对实施进行任何具体调整：
-
-
-
-接下来，了解如何[为一致的访客配置文件启用跨域ID共享](webview.md)。
+接下来，了解如何[更新受众和配置文件脚本](update-audiences.md)以确保与Decisioning扩展兼容。
 
 >[!NOTE]
 >

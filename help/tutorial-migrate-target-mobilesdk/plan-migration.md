@@ -1,10 +1,10 @@
 ---
-title: 规划迁移 — 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
+title: 规划迁移 — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
 description: 了解at.js与Platform Web SDK之间的主要区别，以及如何规划您的迁移工作。
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: cb08ad8a1ffd687d7748ca02643b11b2243cd1a7
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '312'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 迁移过程涉及以下关键步骤：
 
 1. 评估您当前的实施并确定迁移方法
-1. 设置初始组件以连接到Adobe Experience PlatformEdge Network
+1. 设置初始组件以连接到Adobe Experience Platform Edge Network
 1. 更新基本实施，将Target扩展替换为Decisioning扩展
 1. 针对您的特定用例，增强优化SDK实施。 这可能涉及传递其他参数、使用响应令牌等。
 1. 更新Target界面中的对象，例如配置文件脚本、活动和受众定义

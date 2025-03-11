@@ -1,10 +1,10 @@
 ---
-title: 初始设置 — 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
+title: 初始设置 — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
 description: 了解并设置您的Platform Web SDK实施所需的重要基本元素
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '373'
 ht-degree: 6%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 6%
 1. 轮廓
 1. 同意
 1. 身份标识
-1. AEP Assurance（可选，调试所需）
+1. AEP Assurance （可选，调试时需要使用）
 
 使用Decisioning扩展时安装的![标记扩展](assets/tag-extensions-decisioning.png)
 

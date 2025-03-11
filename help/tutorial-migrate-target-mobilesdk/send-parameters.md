@@ -1,17 +1,17 @@
 ---
-title: 发送参数 — 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
+title: 发送参数 — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
 description: 了解如何使用Experience Platform Web SDK将mbox、配置文件和实体参数发送到Adobe Target。
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
 
-# 使用Adobe Journey Optimizer - Decisioning移动扩展将参数发送到Target
+# 使用Decisioning扩展将参数发送到Target
 
-由于站点架构、业务要求和使用的功能，Target实施在各个网站之间有所不同。 大多数Target实施都包括传递上下文信息、受众和内容推荐的各种参数。
+由于应用程序架构、业务要求和使用的功能，Target实施在移动应用程序之间有所不同。 大多数Target实施都包括传递上下文信息、受众和内容推荐的各种参数。
 
 对于Target扩展，使用`TargetParameters`函数传递所有Target参数。
 
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 自定义参数
 
-自定义mbox参数是将数据传递到Target的最基本方式，可以在XDM或`data.__adobe.target`对象中传递。
+自定义mbox参数是将数据传递到Target的最基本方式，可以在`xdm`或`data.__adobe.target`对象中传递。
 
 ## 轮廓参数
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 实体参数
 
-[实体参数](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html)用于传递Target Recommendations的行为数据和补充目录信息。 与配置文件参数类似，所有实体参数都应在`data.__adobe.target`对象下传递。
+[实体参数](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html)用于传递Target Recommendations的行为数据和补充目录信息。 与配置文件参数类似，大多数实体参数应在`data.__adobe.target`对象下传递。 唯一的例外是`xdm.productListItems`数组存在，然后使用第一个`SKU`值作为`entity.id`。
 
 特定项的实体参数必须以`entity.`为前缀，才能正确捕获数据。 不应为推荐算法保留的`cartIds`和`excludedIds`参数添加前缀，每个参数的值都必须包含以逗号分隔的实体ID列表。
 
@@ -45,7 +45,7 @@ ht-degree: 1%
 
 当`commerce`字段组的`purchases.value`设置为`1`时，购买信息将传递到Target。 订单ID和订单总计自动从`order`对象映射。 如果`productListItems`数组存在，则`SKU`值将用于`productPurchasedId`。
 
-如果您没有在XDM对象中传递`commerce`字段，则可以使用`data.__adobe.target.orderId`、`data.__adobe.target.orderTotal`和`data.__adobe.target.productPurchasedId`字段将订单详细信息传递给Target。
+如果未在`xdm`对象中传递`commerce`字段，则可以使用`data.__adobe.target.orderId`、`data.__adobe.target.orderTotal`和`data.__adobe.target.productPurchasedId`字段将订单详细信息传递给Target。
 
 ## 客户ID (mbox3rdPartyId)
 
@@ -56,7 +56,7 @@ Target允许使用单个客户ID跨设备和系统同步配置文件。 此客�
 | 示例at.js参数 | Platform Web SDK选项 | 注释 |
 | --- | --- | --- |
 | `at_property` | 不适用 | 属性令牌在[数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target)中配置，无法在`sendEvent`调用中设置。 |
-| `pageName` | `xdm.web.webPageDetails.name` | 所有Target mbox参数都必须作为`xdm`对象的一部分进行传递，并且必须符合使用XDM ExperienceEvent类的架构。 Mbox参数不能作为`data`对象的一部分传递。 |
+| `pageName` | `xdm.web.webPageDetails.name`或<br> `data.__adobe.target.pageName` | 目标mbox参数可以作为`xdm`对象的一部分或`data.__adobe.target`对象的一部分进行传递。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 所有Target配置文件参数都必须作为`data`对象的一部分进行传递，并以为前缀`profile.`，才能正确映射。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | 用于Target的类别亲和度功能的保留参数，必须作为`data`对象的一部分传递。 |
 | `entity.id` | `data.__adobe.target.entity.id` <br>或<br> `xdm.productListItems[0].SKU` | 实体ID用于Target Recommendations行为计数器。 这些实体ID可以作为`data`对象的一部分传递，也可以自动从`xdm.productListItems`数组中的第一个项进行映射（如果您的实施使用该字段组）。 |
@@ -65,9 +65,9 @@ Target允许使用单个客户ID跨设备和系统同步配置文件。 此客�
 | `cartIds` | `data.__adobe.target.cartIds` | 用于Target基于购物车的推荐算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用于防止特定实体ID在推荐设计中返回。 |
 | `mbox3rdPartyId` | 在`xdm.identityMap`对象中设置 | 用于跨设备和客户属性同步Target配置文件。 必须在数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html)的[Target配置中指定用于客户ID的命名空间。 |
-| `orderId` | `xdm.commerce.order.purchaseID`<br> （当`commerce.purchases.value`设置为`1`时） | 用于标识Target转化跟踪的唯一订单。 |
-| `orderTotal` | `xdm.commerce.order.priceTotal`<br> （当`commerce.purchases.value`设置为`1`时） | 用于跟踪Target转化和优化目标的订单总计。 |
-| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> （当`commerce.purchases.value`设置为`1`时） <br>OR<br> `data.__adobe.target.productPurchasedId` | 用于Target转化跟踪和推荐算法。 有关详细信息，请参阅下面的[实体参数](#entity-parameters)部分。 |
+| `orderId` | `xdm.commerce.order.purchaseID`<br> （当`commerce.purchases.value`设置为`1`时）<br>或<br> `data.__adobe.target.orderId` | 用于标识Target转化跟踪的唯一订单。 |
+| `orderTotal` | `xdm.commerce.order.priceTotal`<br> （当`commerce.purchases.value`设置为`1`时）<br>或<br> `data.__adobe.target.orderTotal` | 用于跟踪Target转化和优化目标的订单总计。 |
+| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> （当`commerce.purchases.value`设置为`1`时） <br>OR<br> `data.__adobe.target.productPurchasedId` | 用于Target转化跟踪和推荐算法。 |
 | `mboxPageValue` | `data.__adobe.target.mboxPageValue` | 用于[自定义评分](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html)活动目标。 |
 
 {style="table-layout:auto"}
@@ -80,6 +80,42 @@ Target允许使用单个客户ID跨设备和系统同步配置文件。 此客�
 ### Android
 
 >[!BEGINTABS]
+
+>[!TAB 优化SDK]
+
+```Java
+final Map<String, Object> data = new HashMap<>();
+final Map<String, String> targetParameters = new HashMap<>();
+ 
+// Mbox parameters
+targetParameters.put("status", "platinum");
+ 
+// Profile parameters - prefix with profile.
+targetParameters.put("profile.gender", "male");
+ 
+// Product parameters
+targetParameters.put("productId", "pId1");
+targetParameters.put("categoryId", "cId1");
+ 
+// Order parameters
+targetParameters.put("orderId", "id1");
+targetParameters.put("orderTotal", "1.0");
+targetParameters.put("purchasedProductIds", "ppId1");
+ 
+data.put("__adobe", new HashMap<String, Object>() {
+  {
+    put("target", targetParameters);
+  }
+});
+ 
+// Target location (or mbox)
+final DecisionScope decisionScope = DecisionScope("myTargetLocation")
+ 
+final List<DecisionScope> decisionScopes = new ArrayList<>();
+decisionScopes.add(decisionScope);
+ 
+Optimize.updatePropositions(decisionScopes, null, data);
+```
 
 >[!TAB 定位SDK]
 
@@ -109,6 +145,36 @@ TargetParameters targetParameters = new TargetParameters.Builder()
 ### iOS
 
 >[!BEGINTABS]
+
+>[!TAB 优化SDK]
+
+```Swift
+var data: [String: Any] = [:]
+var targetParameters: [String: String] = [:]
+ 
+// Mbox parameters
+targetParameters["status"] = "platinum"
+ 
+// Profile parameters - prefix with profile.
+targetParameters["profile.gender"] = "make"
+ 
+// Product parameters
+targetParameters["productId"] = "pId1"
+targetParameters["categoryId"] = "cId1"
+ 
+// Add order parameters
+targetParameters["orderId"] = "id1"
+targetParameters["orderTotal"] = "1.0"
+targetParameters["purchasedProductIds"] = "ppId1"
+ 
+data["__adobe"] = [
+  "target": targetParameters
+]
+ 
+// Target location (or mbox)
+let decisionScope = DecisionScope(name: "myTargetLocation")
+Optimize.updatePropositions(for: [decisionScope] withXdm: nil andData: data)
+```
 
 >[!TAB 定位SDK]
 

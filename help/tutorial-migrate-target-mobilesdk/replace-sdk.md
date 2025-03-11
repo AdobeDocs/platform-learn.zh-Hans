@@ -1,10 +1,10 @@
 ---
-title: 替换SDK — 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
+title: 替换SDK — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
 description: 了解在从SDK迁移到Adobe Journey Optimizer - Decisioning Mobile扩展时如何替换Adobe Target。
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: 62afd1f41b3d20c04782a2b18423683ed3b49d1f
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '680'
 ht-degree: 2%
 
 ---
@@ -36,15 +36,10 @@ ht-degree: 2%
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
-implementation 'com.adobe.marketing.mobile:edgeconsent'
+implementation 'com.adobe.marketing.mobile:core'
 implementation 'com.adobe.marketing.mobile:edgeidentity'
 implementation 'com.adobe.marketing.mobile:edge'
-implementation 'com.adobe.marketing.mobile:assurance'
-implementation 'com.adobe.marketing.mobile:core'
-implementation 'com.adobe.marketing.mobile:identity'
-implementation 'com.adobe.marketing.mobile:lifecycle'
-implementation 'com.adobe.marketing.mobile:signal'
-implementation 'com.adobe.marketing.mobile:userprofile'
+implementation 'com.adobe.marketing.mobile:optimize'
 ```
 
 
@@ -117,49 +112,27 @@ pod 'AEPUserProfile', '~> 5.0'
 迁移后的Java初始化代码
 
 ```Java
-import com.adobe.marketing.mobile.AdobeCallback;
-import com.adobe.marketing.mobile.Assurance;
-import com.adobe.marketing.mobile.Edge;
-import com.adobe.marketing.mobile.Extension;
-import com.adobe.marketing.mobile.Identity;
-import com.adobe.marketing.mobile.Lifecycle;
-import com.adobe.marketing.mobile.LoggingMode;
 import com.adobe.marketing.mobile.MobileCore;
-import com.adobe.marketing.mobile.Signal;
-import com.adobe.marketing.mobile.UserProfile;
-import com.adobe.marketing.mobile.edge.consent.Consent;
+import com.adobe.marketing.mobile.Edge;
 import com.adobe.marketing.mobile.edge.identity.Identity;
-import java.util.Arrays;
-import java.util.List;
-...
-import android.app.Application;
-...
+import com.adobe.marketing.mobile.optimize.Optimize;
+import com.adobe.marketing.mobile.AdobeCallback;
+ 
 public class MainApp extends Application {
-...
+ 
+  private final String ENVIRONMENT_FILE_ID = "YOUR_APP_ENVIRONMENT_ID";
+ 
     @Override
     public void onCreate() {
         super.onCreate();
+ 
         MobileCore.setApplication(this);
-        MobileCore.setLogLevel(LoggingMode.DEBUG);
-        ...
-        List<Class<? extends Extension>> extensions = Arrays.asList(
-            Consent.EXTENSION,
-            com.adobe.marketing.mobile.edge.identity.Identity.EXTENSION,
-            com.adobe.marketing.mobile.Identity.EXTENSION,
-            Edge.EXTENSION,
-            Assurance.EXTENSION,
-            Lifecycle.EXTENSION,
-            Signal.EXTENSION,
-            UserProfile.EXTENSION
+        MobileCore.configureWithAppID(ENVIRONMENT_FILE_ID);
+ 
+        MobileCore.registerExtensions(
+            Arrays.asList(Edge.EXTENSION, Identity.EXTENSION, Optimize.EXTENSION),
+            o -> Log.d("MainApp", "Adobe Journey Optimizer - Decisioning Mobile SDK was initialized.")
         );
- 
- 
-        MobileCore.registerExtensions(extensions, new AdobeCallback () {
-            @Override
-            public void call(Object o) {
-                MobileCore.configureWithAppID(<Environment File ID>);
-            }
-        });
     }
 }
 ```
@@ -226,39 +199,23 @@ public class MainApp extends Application {
 
 ```Swift
 import AEPCore
-import AEPAnalytics
-import AEPTarget
-import AEPIdentity
-import AEPLifecycle
-import AEPSignal
-import AEPServices
-import AEPUserProfile
-...
+import AEPEdge
+import AEPEdgeIdentity
+import AEPOptimize
+ 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        MobileCore.setLogLevel(.debug)
-        let appState = application.applicationState
-        ...
-        let extensions = [
-            Consent.self,
-            AEPEdgeIdentity.Identity.self,
-            AEPIdentity.Identity.self,
-            Edge.self,
-            Assurance.self,
-            Lifecycle.self,
-            Signal.self,
-            UserProfile.self
-        ]
-        MobileCore.registerExtensions(extensions, {
-        MobileCore.configureWith(<Environment File ID>)
-        if appState != .background {
-            MobileCore.lifecycleStart(additionalContextData: ["contextDataKey": "contextDataVal"])
-            }
-        })
-        ...
-        return true
-    }
+final class AppDelegate: UIResponder, UIApplicationDelegate {
+  var window: UIWindow?
+ 
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+ 
+      // register the extensions
+      MobileCore.registerExtensions([Edge.self, AEPEdgeIdentity.Identity.self, Optimize.self]) {
+        MobileCore.configureWith(appId: <YOUR_ENVIRONMENT_FILE_ID>) // Replace <YOUR_ENVIRONMENT_FILE_ID> with a String containing your own ID.
+      }
+ 
+      return true
+  }
 }
 ```
 
@@ -326,7 +283,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 | `setTntId` | 不适用 | `locationHint:result`响应句柄包含Target位置提示信息。 假设Target Edge将与Experience Edge位于同一位置。<br> <br>Edge网络扩展使用EdgeNetwork位置提示来确定要将请求发送到的Edge网络群集。 要跨SDK（混合应用程序）共享Edge网络位置提示，请使用Edge Network扩展中的`getLocationHint`和`setLocationHint` API。 有关更多详细信息，请参阅[`getLocationHint` API文档](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint)。 |
 
 
-接下来，了解如何[请求并将活动](render-activities.md)渲染到页面。
+接下来，了解如何[请求并将活动](retrieve-activities.md)渲染到页面。
 
 >[!NOTE]
 >

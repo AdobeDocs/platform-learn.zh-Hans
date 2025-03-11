@@ -1,16 +1,16 @@
 ---
-title: 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
+title: 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
 description: 了解如何将移动应用程序实施从Adobe Target迁移到Adobe Journey Optimizer - Decisioning扩展
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
 
-# 从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展
+# 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
 
 本指南面向经验丰富的Adobe Target实施人员，帮助他们了解如何将现有Adobe Experience Platform Mobile SDK实施从Adobe Target扩展迁移到Adobe Journey Optimizer - Decisioning扩展。
 
