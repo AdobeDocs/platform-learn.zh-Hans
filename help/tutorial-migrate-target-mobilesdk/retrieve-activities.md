@@ -2,9 +2,9 @@
 title: 检索Target活动 — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
 description: 了解在从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展时如何检索Adobe Target活动。
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,11 @@ Target返回的内容（也称为“选件”）通常由文本或JSON组成，�
 
 
 ## 按需请求和应用内容
+
+>[!IMPORTANT]
+>
+>将内容应用到应用程序后，必须触发`displayed` API，以告知Target访客已查看活动中指定的替代内容或默认内容。 有关更多详细信息，请参阅[跟踪Target转化事件](track-events.md)页面。
+
 
 +++ Android示例
 

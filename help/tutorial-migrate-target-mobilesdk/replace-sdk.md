@@ -2,9 +2,9 @@
 title: 替换SDK — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
 description: 了解在从SDK迁移到Adobe Journey Optimizer - Decisioning Mobile扩展时如何替换Adobe Target。
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '717'
 ht-degree: 2%
 
 ---
@@ -16,6 +16,7 @@ ht-degree: 2%
 * 更新Podfile或`build.gradle`文件中的依赖项
 * 更新导入
 * 更新应用程序代码
+
 
 >[!INFO]
 >
@@ -263,24 +264,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 +++
 
-## 函数比较
+## API比较
 
-许多Target扩展函数都具有与使用Decisioning扩展等效的方法，如下表所述。 有关[函数](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/)的更多详细信息，请参阅《Adobe Target开发人员指南》。
+许多Target扩展API都具有使用下表概述的Decisioning扩展的等效方法。 有关[函数](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/)的更多详细信息，请参阅API参考。
 
 | 目标扩展 | Decisioning扩展 | 注释 |
 | --- | --- | --- | 
-| `prefetchContent` | `updatePropositions` |  |
-| `retrieveLocationContent` | `getPropositions` | 使用`getPropositions` API时，不会进行远程调用以获取SDK中未缓存的作用域。 |
-| `displayedLocations` | 选件 — > `displayed()` | 此外，`generateDisplayInteractionXdm`选件方法可用于为项目显示生成XDM。 随后，Edge网络SDK的sendEvent API可用于附加其他XDM自由格式数据并将体验事件发送到远程。 |
-| `clickedLocation` | 选件 — > `tapped()` | 此外，`generateTapInteractionXdm`选件方法可用于为项目点按生成XDM。 随后，Edge网络SDK的sendEvent API可用于附加其他XDM自由格式数据并将体验事件发送到远程。 |
-| `clearPrefetchCache` | `clearCachedPropositions` |  |
-| `resetExperience` | 不适用 | 使用用于SDK的Edge Network扩展的Identity的`removeIdentity` API停止将访客标识符发送到Edge网络。 有关详细信息，请参阅[removeIdentity API文档](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity)。 <br><br>注意： Mobile Core的`resetIdentities` API清除了SDK中所有存储的身份，包括Experience Cloud ID (ECID)，应谨慎使用它！ |
-| `getSessionId` | 不适用 | `state:store`响应句柄包含与会话相关的信息。 Edge network extension可将未过期状态存储区项目附加到后续请求，从而帮助管理它。 |
-| `setSessionId` | 不适用 | `state:store`响应句柄包含与会话相关的信息。 Edge network extension可将未过期状态存储区项目附加到后续请求，从而帮助管理它。 |
-| `getThirdPartyId` | 不适用 | 使用Identity for Edge Network扩展中的updateIdentities API提供第三方ID值。 然后，在数据流中配置第三方ID命名空间。 有关更多详细信息，请参阅[Target第三方ID移动设备文档](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id)。 |
-| `setThirdPartyId` | 不适用 | 使用Identity for Edge Network扩展中的updateIdentities API提供第三方ID值。 然后，在数据流中配置第三方ID命名空间。 有关更多详细信息，请参阅[Target第三方ID移动设备文档](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id)。 |
-| `getTntId` | 不适用 | `locationHint:result`响应句柄包含Target位置提示信息。 假设Target Edge将与Experience Edge位于同一位置。<br> <br>Edge网络扩展使用EdgeNetwork位置提示来确定要将请求发送到的Edge网络群集。 要跨SDK（混合应用程序）共享Edge网络位置提示，请使用Edge Network扩展中的`getLocationHint`和`setLocationHint` API。 有关更多详细信息，请参阅[`getLocationHint` API文档](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint)。 |
-| `setTntId` | 不适用 | `locationHint:result`响应句柄包含Target位置提示信息。 假设Target Edge将与Experience Edge位于同一位置。<br> <br>Edge网络扩展使用EdgeNetwork位置提示来确定要将请求发送到的Edge网络群集。 要跨SDK（混合应用程序）共享Edge网络位置提示，请使用Edge Network扩展中的`getLocationHint`和`setLocationHint` API。 有关更多详细信息，请参阅[`getLocationHint` API文档](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint)。 |
+| [prefetchContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [updatePropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  |
+| [retrieveLocationContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [getPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | 使用`getPropositions` API时，不会进行远程调用以获取SDK中未缓存的作用域。 |
+| [displayedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [选件 — >已显示()](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | 此外，`generateDisplayInteractionXdm`选件方法可用于为项目显示生成XDM。 随后，Edge网络SDK的sendEvent API可用于附加其他XDM自由格式数据并将体验事件发送到远程。 |
+| [clickedLocation](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#clickedlocation){target=_blank} | [选件 — >已点按()](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} | 此外，`generateTapInteractionXdm`选件方法可用于为项目点按生成XDM。 随后，Edge网络SDK的sendEvent API可用于附加其他XDM自由格式数据并将体验事件发送到远程。 |
+| [clearPrefetchCache](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#clickedlocation){target=_blank} | [clearCachedPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-direct-offer-class-methods){target=_blank} |  |
+| [resetExperience](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#resetexperience){target=_blank} | 不适用 | 为SDK使用Identity for Edge Network扩展中的[removeIdentity](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity){target=_blank} API停止将访客标识符发送到Edge网络。 有关详细信息，请参阅[removeIdentity API文档](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity)。 <br><br>注意： Mobile Core的`resetIdentities` API清除了SDK中所有存储的身份，包括Experience Cloud ID (ECID)，应谨慎使用它！ |
+| [getSessionId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#getsessionid){target=_blank} | 不适用 | `state:store`响应句柄包含与会话相关的信息。 Edge network extension可将未过期状态存储区项目附加到后续请求，从而帮助管理它。 |
+| [setSessionId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#setsessionid){target=_blank} | 不适用 | `state:store`响应句柄包含与会话相关的信息。 Edge network extension可将未过期状态存储区项目附加到后续请求，从而帮助管理它。 |
+| [getThirdPartyId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#getthirdpartyid){target=_blank} | 不适用 | 使用Identity for Edge Network扩展中的updateIdentities API提供第三方ID值。 然后，在数据流中配置第三方ID命名空间。 有关更多详细信息，请参阅[Target第三方ID移动设备文档](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id)。 |
+| [setThirdPartyId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#setthirdpartyid){target=_blank} | 不适用 | 使用Identity for Edge Network扩展中的updateIdentities API提供第三方ID值。 然后，在数据流中配置第三方ID命名空间。 有关更多详细信息，请参阅[Target第三方ID移动设备文档](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id)。 |
+| [getTntId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#gettntid){target=_blank} | 不适用 | `locationHint:result`响应句柄包含Target位置提示信息。 假设Target Edge将与Experience Edge位于同一位置。<br> <br>Edge网络扩展使用EdgeNetwork位置提示来确定要将请求发送到的Edge网络群集。 要跨SDK（混合应用程序）共享Edge网络位置提示，请使用Edge Network扩展中的`getLocationHint`和`setLocationHint` API。 有关更多详细信息，请参阅[`getLocationHint` API文档](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint)。 |
+| [setTntId](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#gettntid){target=_blank} | 不适用 | [locationHint：result](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#setlocationhint){target=_blank}响应句柄包含Target位置提示信息。 假设Target Edge将与Experience Edge位于同一位置。<br> <br>Edge网络扩展使用EdgeNetwork位置提示来确定要将请求发送到的Edge网络群集。 要跨SDK（混合应用程序）共享Edge网络位置提示，请使用Edge Network扩展中的`getLocationHint`和`setLocationHint` API。 有关更多详细信息，请参阅[`getLocationHint` API文档](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint)。 |
 
 
 接下来，了解如何[请求并将活动](retrieve-activities.md)渲染到页面。

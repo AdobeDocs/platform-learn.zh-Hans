@@ -3,10 +3,10 @@ title: 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optim
 description: 了解如何将移动应用程序实施从Adobe Target迁移到Adobe Journey Optimizer - Decisioning扩展
 last-substantial-update: 2023-02-23T00:00:00Z
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: d2da62ed2d36f73af1c8053be5af27feea32cb14
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 0%
+source-wordcount: '690'
+ht-degree: 1%
 
 ---
 
@@ -45,12 +45,19 @@ Adobe Experience Platform Mobile SDK支持您的移动应用程序中的端到�
 
 迁移过程涉及以下关键步骤：
 
-1. 评估您当前的实施
+1. 评估您当前的实施，包括：
+   1. 使用的所有Target SDK API
+   1. 修改Target全局设置
+   1. 与 Adobe Analytics 集成
+   1. mbox、配置文件和实体参数的使用
+   1. 使用配置文件脚本和受众
+   1. 您的实施特有的自定义代码
 1. 设置初始组件以连接到Adobe Experience Platform Edge Network
 1. 更新基本实施，将Target扩展替换为Decisioning扩展
 1. 针对您的特定用例，增强优化SDK实施。 这可能涉及传递其他参数、使用响应令牌等。
 1. 更新Target界面中的对象，例如配置文件脚本、活动和受众定义
 1. 在生产应用程序中进行切换之前，请验证最终实施
+
 
 >[!INFO]
 >
