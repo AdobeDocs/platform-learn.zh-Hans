@@ -8,7 +8,7 @@ duration: 92
 last-substantial-update: 2025-03-18T00:00:00Z
 jira: KT-17403
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: ff70af08af560ef69ed269a9425039851477cf43
+source-git-commit: cccb57946ca67afba7988aa2097aa322b4dd2107
 workflow-type: tm+mt
 source-wordcount: '357'
 ht-degree: 0%
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 了解Adobe Real-Time Collaboration，它是一种专门构建的数据协作应用程序，允许您发现和激活高价值受众，并使用测量功能产生切实的成果。
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446801?learn=on&enablevpops)
 
 
 ## 设置
