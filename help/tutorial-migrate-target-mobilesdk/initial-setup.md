@@ -2,9 +2,9 @@
 title: 初始设置 — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
 description: 了解并设置您的Platform Web SDK实施所需的重要基本元素
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 45a47cde8bb5ac3baba24d7527fc4029ca3d6596
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '379'
 ht-degree: 6%
 
 ---
@@ -61,7 +61,7 @@ Target扩展具有[可配置的设置](https://developer.adobe.com/client-sdks/s
 | 客户端代码 | 不适用 | 边缘使用IMS组织详细信息自动设置 |
 | 环境ID | 目标环境ID | 已在数据流中配置 |
 | Target Workspace资产 | 资产令牌 | 已在数据流中配置 |
-| 超时 | 不可配置 | Decisioning扩展的超时为10秒 |
+| 超时 | 超时 | 可在Decisioning扩展和优化SDK中进行配置。 默认超时为10秒。 |
 | Server Domain | Edge Network域 | 在Adobe Experience Platform Edge Network扩展中设置 |
 
 接下来，了解如何[替换Target SDK](replace-sdk.md)。
