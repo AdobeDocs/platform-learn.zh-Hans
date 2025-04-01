@@ -2,9 +2,9 @@
 title: Target扩展与Decisioning扩展的比较
 description: 了解Target扩展与Decisioning扩展之间的差异，包括功能、功能、设置和数据流。
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 314f0279ae445f970d78511d3e2907afb9307d67
+source-git-commit: 24effdb0905c6fd146a80031e0a39eed9672306d
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '791'
 ht-degree: 1%
 
 ---
@@ -57,7 +57,6 @@ Adobe Journey Optimizer - Decisioning扩展不同于适用于移动应用程序�
 | thirdPartyId (mbox3rdPartyId) | 支持 | 通过数据流中的身份映射和Target第三方ID命名空间支持 |
 | 通知（显示、点击） | 支持 | 支持 |
 | 响应令牌 | 支持 | 支持 |
-| Analytics for Target (A4T) | 仅客户端 | 客户端和服务器端 |
 | 移动设备预览（QA模式） | 支持 | Assurance有限支持 |
 
 >[!IMPORTANT]
