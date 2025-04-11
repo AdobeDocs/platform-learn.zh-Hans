@@ -8,9 +8,9 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 73645b8b088cfdfe6f256c187b3c510dcc2386fc
 workflow-type: tm+mt
-source-wordcount: '926'
+source-wordcount: '937'
 ht-degree: 6%
 
 ---
@@ -148,7 +148,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 >
 >通过Web SDK收集的数据是架构中标记身份字段的典型实践的例外。 Web SDK使用标识映射来标记实施端&#x200B;*上的标识*，因此我们将在Luma网站上实施Web SDK时确定`Luma Web Events Schema`的标识。 在稍后的课程中，我们将将Experience Cloud访客ID (ECID)收集为主要ID，将crmId收集为次要ID。
 
-通过选择主要身份，可以清楚地了解`Luma CRM Schema`如何连接到`Luma Offline Purchase Events Schema`，因为它们都使用`loyaltyId`作为标识符。 但我们如何将线下购买与在线行为联系起来？ 我们如何对随产品目录一起购买的产品进行分类？ 我们将使用其他标识字段和架构关系。
+通过选择主要身份，可以清楚地了解`Luma Loyalty Schema`如何连接到`Luma Offline Purchase Events Schema`，因为它们都使用loyaltyId作为标识符。 但是，CRM如何连接到离线购买事件？ 如何将离线购买与在线行为相关联？ 我们如何对随产品目录一起购买的产品进行分类？ 我们将使用其他标识字段和架构关系。
 
 <!--use a visual-->
 
