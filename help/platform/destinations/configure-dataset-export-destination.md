@@ -1,23 +1,25 @@
 ---
-title: 在 [!DNL Experience Platform]中配置数据集导出目标
-description: 了解使用目标连接将数据集从  [!DNL Adobe Experience Platform]  导出到云存储位置的配置、工作流和用例。
+title: 使用云存储目标导出数据集
+description: 了解如何设置连接并使用该工作流通过Cloud Service目标导出数据集。
 solution: Real-Time Customer Data Platform, Experience Platform
 feature: Destinations
 role: User, Admin
 level: Beginner
 jira: KT-13945
 thumbnail: 3424392.jpg
-last-substantial-update: 2023-09-27T00:00:00Z
+last-substantial-update: 2025-04-09T00:00:00Z
 exl-id: 139fc1e5-8866-4be4-b921-85443036e506
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
 workflow-type: tm+mt
-source-wordcount: '62'
-ht-degree: 33%
+source-wordcount: '72'
+ht-degree: 0%
 
 ---
 
-# 在[!DNL Experience Platform]中配置数据集导出目标
+# 使用云存储目标导出数据集
 
-了解使用目标连接将数据集从[!DNL Adobe Experience Platform]导出到云存储位置的配置、工作流和用例。 有关详细信息，请访问[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/export-datasets.html)。
+了解如何设置连接并使用该工作流通过Cloud Service目标导出数据集。 此外，还介绍了此功能的好处和用例。
+
+有关详细信息，请访问[文档](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)
