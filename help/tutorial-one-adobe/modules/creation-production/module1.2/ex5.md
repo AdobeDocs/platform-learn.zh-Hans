@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 003c0ff26183acbafbe745276bde6f90d5adef34
+source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
 workflow-type: tm+mt
-source-wordcount: '2665'
+source-wordcount: '2674'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,10 @@ ht-degree: 0%
 ## 1.2.5.2 Workfront Fusion和Frame.io
 
 在上一个练习中，您创建了方案`--aepUserLdap-- - Firefly + Photoshop`，该方案以自定义webhook开始，以webhook响应结束。 随后使用Postman测试了Webhook的使用情况，但显然，这种场景的要点是由外部应用程序调用。 如前所述，Frame.io将是该练习，但在Frame.io和`--aepUserLdap-- - Firefly + Photoshop`之间还需要另一个Workfront Fusion场景。 现在，您将配置该方案。
+
+转到[https://experience.adobe.com/](https://experience.adobe.com/)。 打开&#x200B;**Workfront Fusion**。
+
+![WF Fusion](./images/wffusion1.png)
 
 在左侧菜单中，转到&#x200B;**方案**&#x200B;并选择您的文件夹`--aepUserLdap--`。 单击&#x200B;**创建新方案**。
 
@@ -122,7 +126,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame22.png)
 
-气泡的详细视图显示了从Frame.io收到的数据。 您应会看到各种ID。例如，字段&#x200B;**resource.id**&#x200B;显示资产&#x200B;**citisignal-fibre.psd**&#x200B;的Frame.io中的唯一ID
+气泡的详细视图显示了从Frame.io收到的数据。 您应会看到各种ID。例如，字段&#x200B;**resource.id**&#x200B;显示资产&#x200B;**citisignal-fibre.psd**&#x200B;的Frame.io中的唯一ID。
 
 ![帧IO](./images/frame23.png)
 
