@@ -3,10 +3,10 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 9169b0f9be7f192fd7e16ddcc2ae32f6a8cca92c
+source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 2%
+source-wordcount: '978'
+ht-degree: 3%
 
 ---
 
@@ -18,14 +18,12 @@ ht-degree: 2%
 
 本教程的内容非常多样，提供了对以下应用程序的清晰洞察：
 
-- Adobe Firefly服务
-- Adobe Photoshop
+- Adobe Firefly Services、Adobe Photoshop、Adobe框架I/O、Adobe Substance 3D Staging
 - Adobe Workfront和Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service、Sites、Assets和Edge Delivery Services
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
-
 
 本教程不仅关注Adobe应用程序，还考虑到品牌运营的更广泛生态系统。 为此，在一些课程中，重点关注非Adobe应用程序如何与Adobe应用程序集成。 这样，您就可以深入了解以下应用程序如何与Adobe Experience Platform配合使用：
 
@@ -40,13 +38,12 @@ ht-degree: 2%
 
 如果您希望使用自己的Adobe Experience Cloud实例来参加本教程，则需要在您的实例中配置以下应用程序，并且您需要能够访问：
 
-- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
-- Adobe Photoshop
+- Adobe Firefly
+- Adobe Photoshop、Adobe框架I/O、Adobe Substance 3D Staging
 - Adobe Workfront
-- Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/){target="_blank"}
-- Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform){target="_blank"}
-- Adobe Experience Platform数据收集： [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
-- 访问演示系统： [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+- Adobe Workfront Fusion
+- Adobe Experience Platform、Adobe Experience Platform数据收集
+- 下一步访问演示系统： [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
 ## 完成和认证
 
@@ -70,11 +67,15 @@ ht-degree: 2%
 
 [1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
-在本模块中，您将使用Adobe Firefly Services API、Photoshop API和Microsoft Azure Storage Services生成图像并以编程方式存储这些图像。
+在本模块中，您将使用Adobe Firefly Services API、Photoshop API和Microsoft Azure存储服务生成图像并以编程方式存储这些图像。
 
-[1.2使用Workfront Fusion实现创意工作流程自动化](./modules/creation-production/module1.2/automation.md){target="_blank"}
+[1.2 Creative Fusion的Workfront工作流自动化](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 在此基础模块中，您将使用Adobe Workfront Fusion来自动化和扩展内容创建工作流。
+
+[1.3 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+
+在此基础模块中，您将使用Adobe Express创建图像和视频，并将这些资源共享到更广泛的Adobe Experience Cloud生态系统。
 
 ### 3.资产管理
 
