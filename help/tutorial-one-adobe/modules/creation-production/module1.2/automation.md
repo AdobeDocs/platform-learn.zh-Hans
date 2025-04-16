@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
+source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
 workflow-type: tm+mt
-source-wordcount: '197'
-ht-degree: 1%
+source-wordcount: '234'
+ht-degree: 0%
 
 ---
 
-# 1.2使用Workfront Fusion实现创作工作流自动化
+# 1.2使用Workfront Fusion实现Creative工作流自动化
 
 了解如何使用Workfront Fusion自动化创意工作流。
 
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 [1.2.1 Workfront Fusion快速入门](./ex1.md){target="_blank"}
 
-在本练习中，了解如何将Workfront Fusion与Firefly服务结合使用并了解其功能。
+在本练习中，将与Firefly Services一起探索Workfront Fusion，并了解其功能。
 
 [1.2.2在Workfront Fusion中使用Adobe API](./ex2.md){target="_blank"}
 
@@ -39,9 +39,13 @@ ht-degree: 1%
 
 在此练习中，继续优化您的历程以自动化图像创建过程。
 
-[1.2.5帧I/O和Workfront Fusion](./ex5.md){target="_blank"}
+[1.2.5 Frame.io和Workfront Fusion](./ex5.md){target="_blank"}
 
-在本练习中，您将将Frame I/O连接到Workfront Fusion场景。
+在本练习中，您将将Frame.io连接到Workfront Fusion场景。
+
+[1.2.6 Frame.io到Workfront Fusion到AEM Assets](./ex6.md){target="_blank"}
+
+在本练习中，将进一步优化设置，以便您在Frame.io中批准的资源使用Workfront Fusion场景，然后将资源的PNG格式副本导出到AEM Assets。
 
 [摘要和优点](./summary.md){target="_blank"}
 

@@ -4,10 +4,10 @@ breadcrumb-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b0d81ccd3c3bf1ef2a836a3565069dd024bd90a6
+source-git-commit: e6aca1f991d90beec146990ffe518a1cec333759
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 2%
+source-wordcount: '1146'
+ht-degree: 3%
 
 ---
 
@@ -19,8 +19,8 @@ ht-degree: 2%
 + [完成](/help/tutorial-one-adobe/completion.md)
 + [前期工作](/help/tutorial-one-adobe/prework.md)
 
-+ 快速入门{#gettingstarted}
-   + 快速入门{#gettingstarted}
++ 入门指南 {#gettingstarted}
+   + 入门指南 {#gettingstarted}
       + [概述](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [安装适用于Experience League文档的Chrome扩展](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
       + [使用Demo System Next设置您的Adobe Experience Platform数据收集客户端资产](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
@@ -32,26 +32,32 @@ ht-degree: 2%
       + [选项2：PostBuster设置](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [要安装的应用程序](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
 
-+ 工作流和计划{#planning}
++ 工作流和规划 {#planning}
 
-+ 创建和生产{#production}
-   + 1.1 Adobe Firefly服务概述{#crpr1}
++ 创建与生产 {#production}
+   + 1.1 Adobe Firefly Services概述 {#crpr1}
       + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.1/firefly-services.md)
-      + [1.1.1 Firefly服务快速入门](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
+      + [1.1.1 Firefly Services快速入门](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex1.md)
       + [1.1.2使用Microsoft Azure和预签名URL优化您的Firefly流程](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex2.md)
       + [1.1.3使用Photoshop API](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
       + [1.1.4 Firefly自定义模型API](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
-   + 1.2使用Workfront Fusion实现创作工作流自动化{#crpr2}
+   + 1.2使用Workfront Fusion实现Creative工作流自动化 {#crpr2}
       + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
       + [1.2.1 Workfront Fusion快速入门](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
       + [1.2.2在Workfront Fusion中使用Adobe API](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
       + [1.2.3使用Workfront Fusion实现流程自动化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
       + [1.2.4使用连接器实现自动化](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
-      + [1.2.5帧I/O和Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
+      + [1.2.5 Frame.io和Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
+      + [1.2.6 Frame.io到Workfront Fusion到AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
+   + 1.3 Adobe Express和Adobe Experience Cloud {#crpr3}
+      + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
+      + [1.3.1 Adobe Express快速入门](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
+      + [1.3.2 Adobe Express中的动画和视频](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+      + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
 
-+ 资产管理{#assetmgmt}
++ 资产管理 {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
       + [概述](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/aemcs.md)
       + [1.1.1创建您的Cloud Manager程序](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex1.md)
@@ -61,14 +67,14 @@ ht-degree: 2%
       + [1.1.5高级自定义块](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [1.1.6 AEM Edge Delivery Services MarTech插件](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
-   + 1.2 Workfront {#assetm2}
+   + 1.2Workfront {#assetm2}
       + [概述](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/workfront.md)
       + [1.2.1 Workfront快速入门](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
       + [1.2.2 Workfront校对](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex2.md)
       + [1.2.5 Workfront + Photoshop集成](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex5.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
-+ 传递和激活{#activation}
++ 交付和激活 {#activation}
    + 数据收集 {#dc}
       + 1.1 Adobe Experience Platform数据收集和Web SDK {#dc11}
          + [概述](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/data-ingestion-launch-web-sdk.md)
@@ -80,7 +86,7 @@ ht-degree: 2%
          + [1.1.6实施Adobe Target](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex6.md)
          + [1.1.7 Adobe Experience Platform中的XDM架构要求](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/ex7.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.1/summary.md)
-      + 1.2数据摄取{#dc12}
+      + 1.2数据摄取 {#dc12}
          + [概述](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/data-ingestion.md)
          + [1.2.1浏览网站](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex1.md)
          + [1.2.2配置架构并设置标识符](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex2.md)
@@ -88,14 +94,14 @@ ht-degree: 2%
          + [1.2.4从脱机源摄取数据](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex4.md)
          + [1.2.5数据登陆区](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/ex5.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.2/summary.md)
-      + 1.3联合受众构成{#dc13}
+      + 1.3联合受众构成 {#dc13}
          + [概述](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/fac.md)
          + [1.3.1设置您的Snowflake环境](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex1.md)
          + [1.3.2创建架构、数据模型和链接](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex2.md)
          + [1.3.3创建联合组合](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/ex3.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/delivery-activation/datacollection/dc1.3/summary.md)
    + Real-Time CDP B2C {#rtcdpb2c}
-      + 2.1实时客户资料{#rtcdp21}
+      + 2.1实时客户资料 {#rtcdp21}
          + [概述](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/real-time-customer-profile.md)
          + [2.1.1访问网站](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex1.md)
          + [2.1.2可视化您自己的实时客户个人资料 — UI](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex2.md)
@@ -103,13 +109,13 @@ ht-degree: 2%
          + [2.1.4创建受众 — UI](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex4.md)
          + [2.1.5在呼叫中心查看您的实时客户资料](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex5.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/summary.md)
-      + 2.2智能服务{#rtcdp22}
+      + 2.2智能服务 {#rtcdp22}
          + [概述](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/intelligent-services.md)
          + [2.2.1客户人工智能：数据准备（引入）](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex1.md)
          + [2.2.2客户人工智能：创建新实例（配置）](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex2.md)
          + [2.2.3客户人工智能：评分仪表板和分段（预测并采取行动）](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/ex3.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-2/summary.md)
-      + 2.3 Real-Time CDP：构建受众并采取行动！{#rtcdp23}
+      + 2.3 Real-Time CDP：构建受众并采取行动！ {#rtcdp23}
          + [概述](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/real-time-cdp-build-a-segment-take-action.md)
          + [2.3.1构建受众](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex1.md)
          + [2.3.2查看如何使用目标配置DV360目标](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex2.md)
@@ -118,7 +124,7 @@ ht-degree: 2%
          + [2.3.5采取行动：将受众发送至Adobe Target](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex5.md)
          + [2.3.6目标SDK](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/ex6.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-3/summary.md)
-      + 2.4 Real-Time CDP： Audience Activation到Microsoft Azure事件中心{#rtcdp24}
+      + 2.4 Real-Time CDP：Audience Activation到Microsoft Azure事件中心 {#rtcdp24}
          + [概述](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md)
          + [2.4.1配置环境](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex1.md)
          + [2.4.2配置Microsoft Azure EventHub环境](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/ex2.md)
@@ -144,14 +150,14 @@ ht-degree: 2%
          + [2.6.4安装和配置Kafka Connect和Adobe Experience Platform接收器连接器](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/ex4.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/summary.md)
    + Adobe Journey Optimizer B2C {#ajob2c}
-      + 3.1 Adobe Journey Optimizer：编排{#ajo31}
+      + 3.1 Adobe Journey Optimizer：编排 {#ajo31}
          + [概述](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md)
          + [3.1.1创建事件](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex1.md)
          + [3.1.2创建要在消息中使用的片段](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex2.md)
          + [3.1.3创建历程和电子邮件](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex3.md)
          + [3.1.4更新您的数据收集资产并测试您的历程](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/ex4.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-1/summary.md)
-      + 3.2 Adobe Journey Optimizer：外部数据源和自定义操作{#ajo32}
+      + 3.2 Adobe Journey Optimizer：外部数据源和自定义操作 {#ajo32}
          + [概述](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md)
          + [3.2.1定义事件](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex1.md)
          + [3.2.2定义外部数据源](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex2.md)
@@ -159,7 +165,7 @@ ht-degree: 2%
          + [3.2.4创建历程和消息](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
          + [3.2.5触发您的历程](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/summary.md)
-      + 3.3 Adobe Journey Optimizer： Offer Decisioning {#ajo33}
+      + 3.3Adobe Journey Optimizer： Offer Decisioning {#ajo33}
          + [概述](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
          + [3.3.1Offer Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
          + [3.3.2配置优惠和决策](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
@@ -168,23 +174,23 @@ ht-degree: 2%
          + [3.3.5在电子邮件中使用您的决定](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex5.md)
          + [3.3.6使用API测试您的决策](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex6.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/summary.md)
-      + 3.4 Adobe Journey Optimizer：基于事件的历程{#ajo34}
+      + 3.4 Adobe Journey Optimizer：基于事件的历程 {#ajo34}
          + [概述](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
          + [3.4.1配置基于触发器的历程 — 订单确认](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex1.md)
          + [3.4.2配置营销活动](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex2.md)
          + [3.4.3在电子邮件中应用基于区段的个性化](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex3.md)
          + [3.4.4设置和使用推送通知](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex4.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/summary.md)
-      + 3.5 Adobe Journey Optimizer：翻译服务{#ajo35}
+      + 3.5 Adobe Journey Optimizer：翻译服务 {#ajo35}
          + [概述](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
          + [3.5.1翻译提供程序](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex1.md)
          + [3.5.2创建营销活动](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex2.md)
          + [3.5.3向电子邮件添加语言](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex3.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/summary.md)
 
-+ 报表和分析{#reporting}
-   + Customer Journey Analytics {#cjab2c}
-      + 1.1 Customer Journey Analytics：使用Analysis Workspace {#cja1}构建功能板
++ 报表和分析 {#reporting}
+   + Customer Journey Analytics  {#cjab2c}
+      + 1.1 Customer Journey Analytics：使用Analysis Workspace构建功能板 {#cja1}
          + [概述](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
          + [1.1.1 Customer Journey Analytics 101](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex1.md)
          + [1.1.2在Customer Journey Analytics中连接Adobe Experience Platform数据集](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex2.md)
@@ -192,7 +198,7 @@ ht-degree: 2%
          + [1.1.4 Customer Journey Analytics中的数据准备](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex4.md)
          + [使用Customer Journey Analytics的1.1.5可视化图表](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/ex5.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-1/summary.md)
-      + 1.2 Customer Journey Analytics：使用BigQuery Source Connector {#cja2}在Adobe Experience Platform中摄取和分析Google Analytics数据
+      + 1.2 Customer Journey Analytics：使用BigQuery Source Connector在Adobe Experience Platform中摄取和分析Google Analytics数据 {#cja2}
          + [概述](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md)
          + [1.2.1开始使用Google Cloud平台](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex1.md)
          + [1.2.2在BigQuery中创建第一个查询](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex2.md)
@@ -200,8 +206,8 @@ ht-degree: 2%
          + [1.2.4将数据从BigQuery加载到Adobe Experience Platform中](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex4.md)
          + [1.2.5使用Customer Journey Analytics分析Google Analytics数据](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/ex5.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/reporting-insights/cja-b2c/cjab2c-2/summary.md)
-   + 数据Distiller {#datadistiller}
-      + 2.1查询服务{#dd1}
+   + 数据蒸馏器 {#datadistiller}
+      + 2.1查询服务 {#dd1}
          + [概述](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/query-service.md)
          + [2.1.1先决条件](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex1.md)
          + [2.1.2快速入门](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex2.md)
