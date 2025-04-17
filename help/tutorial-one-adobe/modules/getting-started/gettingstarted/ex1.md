@@ -4,7 +4,7 @@ description: 快速入门 — 为Experience League文档安装Chrome扩展
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 30f8ceface0b8c696da45699e2e32412413a2c96
 workflow-type: tm+mt
 source-wordcount: '913'
 ht-degree: 0%
@@ -88,7 +88,7 @@ IMS组织ID是Adobe Experience Cloud实例的唯一标识符，在本教程中�
 
 ![DSN](./images/aepid1.png)
 
-您还可以通过转至AEP菜单中的&#x200B;**数据管理>查询**&#x200B;找到它，您可以在&#x200B;**用户名**&#x200B;下找到它。
+您还可以通过转到AEP菜单中的&#x200B;**数据管理>查询**&#x200B;找到它，您可以在&#x200B;**用户名**&#x200B;下找到它。
 
 ![DSN](./images/aepid2.png)
 
@@ -135,11 +135,11 @@ LDAP用于确保您即将执行的配置将链接到您，并且不会与您正�
 
 ## 验证教程内容
 
-作为测试，请转到[此页面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2)。
+作为测试，请转到[此页面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2)。
 
 您现在应该会看到，根据Chrome扩展中激活的环境，此页面上的所有&#x200B;**环境变量**&#x200B;都已替换为其真值。
 
-您现在应具有类似于下面的视图，其中环境变量`aepSandboxName`已被替换为真正的AEP沙盒名称，在本例中为&#x200B;**one-adobe**。
+您现在应具有类似于下面的视图，其中环境变量`aepSandboxName`已被您的实际AEP沙盒名称（在本例中为&#x200B;**one-adobe**）替换。
 
 ![DSN](./images/mod7.png)
 
