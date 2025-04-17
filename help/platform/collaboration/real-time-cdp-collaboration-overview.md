@@ -1,16 +1,16 @@
 ---
 title: Real-Time CDP Collaboration概述
 description: 了解Adobe Real-Time Collaboration，它是一种专门构建的数据协作应用程序，允许您发现和激活高价值受众，并使用测量功能产生切实的成果。
-feature: Use Cases
+feature: Collaboration
 role: Leader, User
 level: Beginner
 duration: 92
-last-substantial-update: 2025-03-18T00:00:00Z
+last-substantial-update: 2025-04-17T00:00:00Z
 jira: KT-17403
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: cccb57946ca67afba7988aa2097aa322b4dd2107
+source-git-commit: c61d6117d523340b233a1bd1f58b35400e760b20
 workflow-type: tm+mt
-source-wordcount: '357'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,8 @@ ht-degree: 0%
 在下面您将找到视频和其他资源，以帮助您了解如何设置、使用Real-Time CDP Collaboration并从中获益。 其他资产将会添加到此页面和网站，因此请经常回来查看。 祝您学习顺利！
 
 有关详细信息，请参阅Real-Time CDP Collaboration [文档](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"}。
+
+[![ExL LIVE 2025年4月10日](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## 简介
 
