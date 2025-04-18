@@ -4,7 +4,7 @@ description: 快速入门 — 使用网站
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ![DSN](./images/web2.png)
 
-在上一步中创建的数据收集属性（名为`--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`）上单击&#x200B;**选择**。 单击&#x200B;**保存**。
+在上一步中创建的数据收集属性（名为`--aepUserLdap-- - One Adobe (DD/MM/YYYY) (web)`）上单击&#x200B;**选择**。 单击&#x200B;**保存**。
 
 ![DSN](./images/web2a.png)
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 ![DSN](./images/web2.png)
 
-在上一步中创建的数据收集属性（名为`--aepUserLdap - Demo System (DD/MM/YYYY) (web)`）上单击&#x200B;**选择**。
+在上一步中创建的数据收集属性（名为`--aepUserLdap - One Adobe (DD/MM/YYYY) (web)`）上单击&#x200B;**选择**。
 
 ![DSN](./images/web2a.png)
 

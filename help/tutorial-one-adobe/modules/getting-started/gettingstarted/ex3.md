@@ -4,7 +4,7 @@ description: 快速入门 — 创建数据流
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -149,7 +149,7 @@ ht-degree: 1%
 
 ![命名Edge配置并保存](./images/edgeconfig12m.png)
 
-你会看到这个。 现在，您需要选择刚刚配置的正确沙盒和数据流。 要使用的沙盒是`--aepSandboxName--`，数据流名为`--aepUserLdap-- - Demo System Datastream (Mobile)`。
+你会看到这个。 现在，您需要选择刚刚配置的正确沙盒和数据流。 要使用的沙盒是`--aepSandboxName--`，数据流名为`--aepUserLdap-- - One Adobe Datastream (Mobile)`。
 
 对于&#x200B;**Edge Network域**，请使用默认域。
 
