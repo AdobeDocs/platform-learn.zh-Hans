@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 156725fe0f89d97f109de1518f7fa79ffd7cea41
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2050'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 1.2.4.1复制并准备您的方案
 
-在左侧菜单中，转到&#x200B;**方案**&#x200B;并选择您的文件夹`--aepUserLdap--`。 然后，您应该会看到之前创建的名为`--aepUSerLdap-- - Adobe I/O Authentication`的方案。
+在左侧菜单中，转到&#x200B;**方案**&#x200B;并选择您的文件夹`--aepUserLdap--`。 然后，您应该会看到之前创建的名为`--aepUserLdap-- - Adobe I/O Authentication`的方案。
 
 ![WF Fusion](./images/wffc1.png)
 
@@ -113,7 +113,7 @@ Workfront Fusion Webhook仍在等待输入。
 - **客户端ID**：从名为`--aepUserLdap-- - One Adobe tutorial`的Adobe I/O项目中复制&#x200B;**客户端ID**。
 - **客户端密钥**：从名为`--aepUserLdap-- - One Adobe tutorial`的Adobe I/O项目中复制&#x200B;**客户端密钥**。
 
-您可以在[此处](https://developer.adobe.com/console/projects.)找到Adobe I/O项目的&#x200B;**客户端ID**&#x200B;和&#x200B;**客户端密钥**。
+您可以在[此处](https://developer.adobe.com/console/projects.){target="_blank"}找到Adobe I/O项目的&#x200B;**客户端ID**&#x200B;和&#x200B;**客户端密钥**。
 
 ![WF Fusion](./images/wffc20.png)
 

@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+exl-id: b2ffab2f-566e-4d7d-9790-1bbba76f8732
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
-source-wordcount: '106'
+source-wordcount: '158'
 ht-degree: 1%
 
 ---
@@ -25,6 +26,14 @@ ht-degree: 1%
 [1.3.1 Adobe Express快速入门](./ex1.md){target="_blank"}
 
 在本练习中，探索将Adobe Express与Firefly Services结合使用的，并了解其功能。
+
+在Adobe Express中[1.3.2动画和视频](./ex2.md){target="_blank"}
+
+在本练习中，您将使用Adobe Express制作图像的动画和创建视频。
+
+[1.3.3在Adobe Express中批量创建Assets](./ex3.md){target="_blank"}
+
+在本练习中，您将与Adobe Express合作，使用Adobe Express的现成自动化功能创建资产的多个版本。
 
 [摘要和优点](./summary.md){target="_blank"}
 

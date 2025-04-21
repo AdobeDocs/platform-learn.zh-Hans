@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -19,7 +19,7 @@ ht-degree: 1%
 
 ## 1.2.1.1创建新方案
 
-转到[https://experience.adobe.com/](https://experience.adobe.com/)。 打开&#x200B;**Workfront Fusion**。
+转到[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 打开&#x200B;**Workfront Fusion**。
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 | `CONST_client_secret` | 您的Adobe I/O项目客户端密钥 |
 | `CONST_scope` | 您的Adobe I/O项目范围 |
 
-通过转到[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)并打开名为`--aepUserLdap-- One Adobe tutorial`的Adobe I/O项目来查找这些变量。
+通过转到[https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects){target="_blank"}并打开名为`--aepUserLdap-- One Adobe tutorial`的Adobe I/O项目来查找这些变量。
 
 ![WF Fusion](./images/wffusion9.png)
 

@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 297fba1810934e6ce4d9b8dfaea0e1250e761ab5
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '1878'
 ht-degree: 1%
@@ -29,7 +29,7 @@ ht-degree: 1%
 
 ## 1.2.6.1创建新方案
 
-转到[https://experience.adobe.com/](https://experience.adobe.com/)。 打开&#x200B;**Workfront Fusion**。
+转到[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 打开&#x200B;**Workfront Fusion**。
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 ## 1.2.6.2在Frame.io中配置Webhook
 
-转到[https://developer.frame.io/](https://developer.frame.io/)。 单击&#x200B;**开发人员工具**，然后选择&#x200B;**自定义操作**。
+转到[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}。 单击&#x200B;**开发人员工具**，然后选择&#x200B;**自定义操作**。
 
 ![帧IO](./images/aemf7.png)
 
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 ![帧IO](./images/aemf11.png)
 
-转到[https://app.frame.io/projects](https://app.frame.io/projects)，然后转到您之前创建的文件夹，该文件夹应命名为`--aepUserLdap--`。 双击以打开在上一个练习中创建的资源。
+转到[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}，然后转到您之前创建的文件夹，该文件夹应命名为`--aepUserLdap--`。 双击以打开在上一个练习中创建的资源。
 
 ![帧IO](./images/aemf11a.png)
 
@@ -271,7 +271,7 @@ ht-degree: 1%
 
 ![帧IO](./images/aemf51.png)
 
-要创建新的专用文件夹，请转到[https://experience.adobe.com](https://experience.adobe.com/)。 确保选择正确的Experience Cloud实例，应为`--aepImsOrgName--`。 然后单击&#x200B;**Experience Manager Assets**。
+要创建新的专用文件夹，请转到[https://experience.adobe.com](https://experience.adobe.com/){target="_blank"}。 确保选择正确的Experience Cloud实例，应为`--aepImsOrgName--`。 然后单击&#x200B;**Experience Manager Assets**。
 
 ![帧IO](./images/aemf52.png)
 

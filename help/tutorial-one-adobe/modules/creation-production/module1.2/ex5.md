@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: d47b6da364fc6ffdb0c541197edc8a9d2fd34e42
+source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 1.2.5.1正在访问Frame.io
 
-转到[https://app.frame.io/projects](https://app.frame.io/projects)。
+转到[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}。
 
 单击&#x200B;**+图标**&#x200B;以在Frame.io中创建自己的项目。
 
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 在上一个练习中，您创建了方案`--aepUserLdap-- - Firefly + Photoshop`，该方案以自定义webhook开始，以webhook响应结束。 随后使用Postman测试了Webhook的使用情况，但显然，这种场景的要点是由外部应用程序调用。 如前所述，Frame.io将是该练习，但在Frame.io和`--aepUserLdap-- - Firefly + Photoshop`之间还需要另一个Workfront Fusion场景。 现在，您将配置该方案。
 
-转到[https://experience.adobe.com/](https://experience.adobe.com/)。 打开&#x200B;**Workfront Fusion**。
+转到[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 打开&#x200B;**Workfront Fusion**。
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame10.png)
 
-转到[https://developer.frame.io/](https://developer.frame.io/)。 单击&#x200B;**开发人员工具**，然后选择&#x200B;**自定义操作**。
+转到[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}。 单击&#x200B;**开发人员工具**，然后选择&#x200B;**自定义操作**。
 
 ![帧IO](./images/frame11.png)
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame14.png)
 
-返回[https://app.frame.io/projects](https://app.frame.io/projects)。 刷新页面。
+返回[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}。 刷新页面。
 
 ![帧IO](./images/frame16.png)
 
@@ -298,7 +298,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame49.png)
 
-要获取API令牌，请转到[https://developer.frame.io/](https://developer.frame.io/)。 单击&#x200B;**开发人员工具**，然后选择&#x200B;**令牌**。
+要获取API令牌，请转到[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}。 单击&#x200B;**开发人员工具**，然后选择&#x200B;**令牌**。
 
 ![帧IO](./images/frame50.png)
 
