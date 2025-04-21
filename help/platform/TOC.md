@@ -5,10 +5,10 @@ user-guide-description: 了解 Experience Platform 的多个组成部分。
 audience: all
 doc-type: video
 auto-video-transcripts: true
-source-git-commit: 13a78ab0c8886a1711678b1c7c676a18c2a07c95
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '904'
-ht-degree: 18%
+ht-degree: 20%
 
 ---
 
@@ -58,7 +58,7 @@ Campaigns
 
 
 + [Platform教程](/help/platform/overview.md)
-+ 平台{#intro-to-platform}简介
++ Platform简介 {#intro-to-platform}
    + [以 Experience Platform 为动力的客户体验](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
    + [幕后：由Experience Platform提供支持的客户体验](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
    + [Experience Platform 概述](/help/platform/intro-to-platform/overview.md)
@@ -69,7 +69,7 @@ Campaigns
    + [基本架构](/help/platform/intro-to-platform/basic-architecture.md)
    + [用户界面](/help/platform/intro-to-platform/interface-tour.md)
    + [角色和项目阶段](/help/platform/intro-to-platform/roles-and-project-phases.md)
-+ Real-Time CDP简介{#rtcdp}
++ Real-Time CDP简介 {#rtcdp}
    + [概述](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
    + [端到端演示](/help/platform/rtcdp/demo.md)
    + [工作流](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
@@ -100,7 +100,7 @@ Campaigns
    + [运营洞察](/help/platform/ai-assistant/operational-insights.md)
    + [影响分析](/help/platform/ai-assistant/impact-analysis.md)
    + [安全性概述](/help/platform/ai-assistant/security-overview.md)
-+ 受众和分段{#audiences}
++ 受众和分段 {#audiences}
    + [受众门户和构成简介](audiences/introduction-to-audience-portal-and-composition.md)
    + [上传受众](audiences/upload-audiences.md)
    + [联合受众构成概述](audiences/fac/overview-of-federated-audience-composition.md)
@@ -127,7 +127,7 @@ Campaigns
    + [区段匹配接收数据](/help/platform/segments/segment-match-receiving-data.md)
 + [审核日志](/help/platform/governance/audit-logs.md)
 + [数据收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
-+ Collaboration {#collaboration}
++ 协作 {#collaboration}
    + [Real-Time CDP Collaboration概述](collaboration/real-time-cdp-collaboration-overview.md)
    + [设置权限](collaboration/set-permissions-for-collaboration.md)
    + [设置广告商帐户](collaboration/set-up-an-advertiser-account.md)
@@ -135,7 +135,7 @@ Campaigns
    + [与发布者连接](collaboration/connect-with-publishers.md)
 + 仪表板 {#dashboards}
    + [创建功能板](/help/platform/dashboards/create-a-dashboard.md)
-+ 数据管理{#data-governance}
++ 数据治理 {#data-governance}
    + [概述](/help/platform/governance/understanding-data-governance.md)
    + [端到端演示](/help/platform/governance/introduction-to-data-governance.md)
    + [使用标签对数据进行分类](/help/platform/governance/classify-data-using-labels.md)
@@ -143,7 +143,7 @@ Campaigns
    + [强制执行数据使用策略](/help/platform/governance/enforce-data-usage-policies.md)
    + [强制同意](/help/platform/governance/enforce-consent.md)
    + [与IAB透明度和同意框架2.0集成](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
-+ 数据卫生{#data-hygiene}
++ 数据安全机制 {#data-hygiene}
    + [概述](/help/platform/data-hygiene/overview.md)
    + [数据卫生数据准备](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [删除数据集和批次](/help/platform/data-hygiene/delete-datasets-and-batches.md)
@@ -151,7 +151,7 @@ Campaigns
    + [假名配置文件和事件过期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [删除轮廓](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/profiles/delete-profiles)
    + [更新配置文件属性](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
-+ 数据摄取{#data-ingestion}
++ 数据引入 {#data-ingestion}
    + [概述](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批量摄取概述](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [创建和填充数据集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
@@ -168,7 +168,7 @@ Campaigns
    + [使用源连接器流式传输数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=zh-Hans)
    + [Web SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
    + [Mobile SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
-+ 数据生命周期{#data-lifecycle}
++ 数据生命周期 {#data-lifecycle}
    + [使数据集过期](/help/platform/data-lifecycle/expire-datasets.md)
 + 目标 {#destinations}
    + [目标概述](/help/platform/destinations/understanding-destinations.md)
@@ -193,10 +193,10 @@ Campaigns
    + [身份和身份图概述](/help/platform/identities/understanding-identity-and-identity-graphs.md)
    + [标记、引入并验证身份数据](/help/platform/identities/label-ingest-and-verify-identity-data.md)
    + [查看身份图](/help/platform/identities/view-identity-graphs.md)
-   + 身份图链接规则{#graph-linking-rules}
+   + 身份标识图链接规则 {#graph-linking-rules}
       + [概述](/help/platform/identities/identity-graph-linking-rules/overview.md)
       + [图形模拟](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
-+ Intelligent Services {#intelligent-services}
++ 智能服务 {#intelligent-services}
    + [概述](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
    + [归因人工智能概述](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
    + [Attribution AI值](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
@@ -206,11 +206,11 @@ Campaigns
    + [客户人工智能价值](/help/platform/intelligent-services/business-value-of-customer-ai.md)
    + [配置客户人工智能](/help/platform/intelligent-services/configure-customer-ai.md)
    + [使用客户人工智能评分和分析](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ 监测{#monitoring}
++ 监控 {#monitoring}
    + [监测数据摄取](/help/platform/monitoring/monitoring-dashboard.md)
    + [监测区段激活](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
    + [监测数据流](/help/platform/monitoring/data-monitoring.md)
-+ 合作伙伴数据支持{#partner-data-support}
++ 合作伙伴数据支持 {#partner-data-support}
    + [合作伙伴数据支持概述](/help/platform/partner-data-support/partner-data-support-overview.md)
    + [支持异地勘探](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
    + [将合作伙伴属性添加到配置文件](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
@@ -227,7 +227,7 @@ Campaigns
    + [假名配置文件过期(TTL)](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/data-hygiene/pseudonymous-profile-and-event-expiration)
    + [删除配置文件](/help/platform/profiles/delete-profiles.md)
    + [使用upsert更新特定属性](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
-+ 隐私和安全性{#privacy}
++ 隐私和安全性 {#privacy}
    + [Privacy Service简介](/help/platform/privacy/introduction-to-privacy-services.md)
    + [隐私请求中的身份数据](/help/platform/privacy/identity-data-in-privacy-requests.md)
    + [隐私JavaScript库](/help/platform/privacy/using-privacy-javascript-library.md)
@@ -239,7 +239,7 @@ Campaigns
    + [设置客户管理的密钥](/help/platform/privacy/set-up-customer-managed-keys.md)
    + [负责任的客户数据管理的10个注意事项](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
    + [提升营销人员作为数据管理者的角色](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
-+ 查询{#queries}
++ 查询 {#queries}
    + [概述](/help/platform/queries/understanding-query-service.md)
    + [查询服务UI](/help/platform/queries/query-service-ui.md)
    + [查询服务API](/help/platform/queries/query-service-api.md)
@@ -285,13 +285,13 @@ Campaigns
    + [概述](/help/platform/use-case-playbooks/overview.md)
    + [配置行动手册沙盒](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [创建和发布行动手册实例](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
-+ Experience Cloud集成{#experience-cloud}
++ Experience Cloud 集成 {#experience-cloud}
    + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
    + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
    + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
-+ 行业趋势{#industry}
+   + [Target](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
++ 行业趋势 {#industry}
    + [数据管理的未来和不断变化的环境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [一个故事，两种看法 — 品牌与消费者](/help/platform/industry/brands-vs-consumers.md)
    + [发展您的卓越受众中心](/help/platform/industry/evolving-your-audience-center-of-excellence.md)

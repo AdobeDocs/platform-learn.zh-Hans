@@ -4,7 +4,7 @@ description: 了解如何在数据收集界面中安装和配置Platform Web SDK
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 11%
@@ -13,7 +13,7 @@ ht-degree: 11%
 
 # 安装Adobe Experience Platform Web SDK标记扩展
 
-了解如何安装和配置Adobe Experience Platform Web SDK标记扩展。 实施Web SDK的最简单方法是使用Adobe的标签管理器（以前称为Launch）。 Platform Web SDK标记扩展是向&#x200B;_所有Adobe Experience Cloud应用程序_&#x200B;发送数据所需的&#x200B;_仅标记扩展_，包括[Analytics](setup-analytics.md)、[Target](setup-target.md)、[Audience Manager](setup-audience-manager.md)、Real-time Customer Data Platform和[Journey Optimizer](setup-web-channel.md)！
+了解如何安装和配置Adobe Experience Platform Web SDK标记扩展。 实施Web SDK的最简单方法是使用Adobe的标签管理器“标签”（以前称为Launch）。 Platform Web SDK标记扩展是向&#x200B;_所有Adobe Experience Cloud应用程序_&#x200B;发送数据所需的&#x200B;_仅标记扩展_，包括[Analytics](setup-analytics.md)、[Target](setup-target.md)、[Audience Manager](setup-audience-manager.md)、Real-Time Customer Data Platform和[Journey Optimizer](setup-web-channel.md)！
 
 ## 学习目标
 
@@ -35,7 +35,7 @@ ht-degree: 11%
 
 为教程创建新的标记属性：
 
-1. 打开[数据收集接口](https://launch.adobe.com/){target="_blank"}
+1. 打开[数据收集接口](https://experience.adobe.com/data-collection/){target="_blank"}
 1. 在左侧导航中选择&#x200B;**[!UICONTROL 标记]**
 1. 选择&#x200B;**[!UICONTROL 新建属性]**按钮
    ![添加新属性](assets/websdk-property-addNewProperty.png)
@@ -81,7 +81,7 @@ ht-degree: 11%
 >
 >在本教程中，您只需配置一个数据流，并将其与所有标记环境（开发、暂存和生产）关联。 在您自己的网站上实施Platform Web SDK时，您应该为每个环境配置单独的数据流，并在扩展配置中相应地映射它们。
 
-现在您已安装Platform Web SDK并将其与数据流关联，您可以开始收集数据了。
+现在您已经安装了Platform Web SDK并将其与数据流关联，您可以开始收集数据了。
 
 [下一步： ](create-data-elements.md)
 

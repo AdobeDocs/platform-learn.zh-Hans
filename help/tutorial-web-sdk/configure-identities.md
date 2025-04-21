@@ -4,7 +4,7 @@ description: 了解如何配置身份命名空间以用于Adobe Experience Platf
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 12%
@@ -57,7 +57,7 @@ ht-degree: 12%
 
 现在，为Luma CRM ID创建一个命名空间：
 
-1. 打开[数据收集接口](https://launch.adobe.com/){target="_blank"}
+1. 打开[数据收集接口](https://experience.adobe.com/data-collection/){target="_blank"}
 1. 选择您将在教程中使用的沙盒
 
    >[!NOTE]

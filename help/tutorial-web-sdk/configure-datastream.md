@@ -1,10 +1,10 @@
 ---
-title: 为Platform Web SDK配置数据源
-description: 了解如何启用数据流并配置Experience Cloud解决方案。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
+title: 为平台Web SDK配置数据流
+description: 了解如何启用数据流和配置Experience Cloud解决方案。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 7%
@@ -15,9 +15,9 @@ ht-degree: 7%
 
 了解如何为 Adobe Experience Platform Web SDK 配置数据流。
 
-[数据流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)告知Adobe Experience PlatformEdge Network将通过Platform Web SDK收集的数据发送到何处。 在数据流配置中，您可以启用Experience Cloud应用程序、Experience Platform帐户和事件转发。
+[数据流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)告知Adobe Experience Platform Edge Network将Platform Web SDK收集的数据发送到何处。 在数据流配置中，您可以启用Experience Cloud应用程序、Experience Platform帐户和事件转发。
 
-![Web SDK、数据流和Edge Network图](assets/dc-websdk-datastreams.png)
+![Web SDK、数据流和Edge Network关系图](assets/dc-websdk-datastreams.png)
 
 ## 学习目标
 
@@ -35,11 +35,11 @@ ht-degree: 7%
 
 ## 创建数据流
 
-现在，您可以创建一个数据流来告知PlatformEdge Network将Web SDK收集的数据发送到何处。
+现在，您可以创建一个数据流，告诉Platform Edge Network将Web SDK收集的数据发送到何处。
 
 **创建数据流：**
 
-1. 打开[数据收集接口](https://launch.adobe.com/){target="_blank"}
+1. 打开[数据收集接口](https://experience.adobe.com/data-collection/){target="_blank"}
 1. 确保您在正确的沙盒中
 
    >[!NOTE]
@@ -48,7 +48,7 @@ ht-degree: 7%
 
 1. 在左侧导航中转到&#x200B;**[!UICONTROL 数据流]**
 1. 选择&#x200B;**[!UICONTROL 新数据流]**
-1. 输入`Luma Web SDK: Development Environment`作为&#x200B;**[!UICONTROL Name]**。 当您稍后在标记属性中配置Web SDK扩展时，将会引用此名称。
+1. 输入`Luma Web SDK: Development Environment`作为&#x200B;**[!UICONTROL Name]**。 稍后在标记属性中配置Web SDK扩展时，会引用此名称。
 1. 选择&#x200B;**[!UICONTROL 保存]**
 
    ![创建数据流](assets/datastream-create-new-datastream.png)
@@ -61,7 +61,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->在您自己的网站上实施Platform Web SDK时，您应该创建三个数据流以映射到三个标记环境（开发、暂存和生产）。 如果您将Platform Web SDK与基于Platform的应用程序(如Adobe Real-time Customer Data Platform或Adobe Journey Optimizer)一起使用，则应确保在适当的Platform沙盒中创建这些数据流。
+>在您自己的网站上实施Platform Web SDK时，您应该创建三个数据流以映射到三个标记环境（开发、暂存和生产）。 如果您将Platform Web SDK与Adobe Real-Time Customer Data Platform或Adobe Journey Optimizer等基于平台的应用程序一起使用，则应确保在适当的Platform沙盒中创建这些数据流。
 
 ## 覆盖数据流
 
@@ -70,7 +70,7 @@ ht-degree: 7%
 数据流配置覆盖分为两步：
 
 1. 首先，在数据流服务配置中定义数据流覆盖。 例如，您可以定义替代的Analytics报表包、Target工作区或Platform数据集以用作覆盖。
-1. 然后，可通过Web SDK发送事件操作或通过Web SDK标记扩展中的配置将覆盖发送到Edge Network。
+1. 然后，通过Web SDK send event操作或Web SDK标记扩展中的配置将覆盖发送到Edge Network。
 
 在[设置Adobe Analytics](setup-analytics.md)课程中，您可以使用Platform Web SDK发送事件操作覆盖页面的报表包。
 

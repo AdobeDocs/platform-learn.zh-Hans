@@ -2,7 +2,7 @@
 title: 发送参数 — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
 description: 了解如何使用Experience Platform Web SDK将mbox、配置文件和实体参数发送到Adobe Target。
 exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
 source-wordcount: '774'
 ht-degree: 1%
@@ -55,7 +55,7 @@ Target允许使用单个客户ID跨设备和系统同步配置文件。 此客�
 
 | 示例at.js参数 | Platform Web SDK选项 | 注释 |
 | --- | --- | --- |
-| `at_property` | 不适用 | 属性令牌在[数据流](https://experienceleague.adobe.com/en/docs/experience-platform/edge/datastreams/configure#target)中配置，无法在`sendEvent`调用中设置。 |
+| `at_property` | 不适用 | 属性令牌在[数据流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#target)中配置，无法在`sendEvent`调用中设置。 |
 | `pageName` | `xdm.web.webPageDetails.name`或<br> `data.__adobe.target.pageName` | 目标mbox参数可以作为`xdm`对象的一部分或`data.__adobe.target`对象的一部分进行传递。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 所有Target配置文件参数都必须作为`data`对象的一部分进行传递，并以为前缀`profile.`，才能正确映射。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | 用于Target的类别亲和度功能的保留参数，必须作为`data`对象的一部分传递。 |

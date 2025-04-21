@@ -8,9 +8,9 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
 workflow-type: tm+mt
-source-wordcount: '2465'
+source-wordcount: '2446'
 ht-degree: 0%
 
 ---
@@ -282,7 +282,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->我们将在本练习中使用的离线购买数据包含日期时间数据。 日期时间数据应采用[ISO 8061格式字符串](https://www.iso.org/iso-8601-date-and-time-format.html)(&quot;2018-07-10T15:05:59.000-08:00&quot;)或以毫秒(1531263959000)为单位的Unix时间格式，并在摄取时转换为目标XDM类型。 有关数据转换和其他约束的详细信息，请参阅[批次摄取API文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types)。
+>我们将在本练习中使用的离线购买数据包含日期时间数据。 日期时间数据应采用[ISO 8061格式字符串](https://www.iso.org/iso-8601-date-and-time-format.html)&#x200B;(&quot;2018-07-10T15:05:59.000-08:00&quot;)或以毫秒(1531263959000)为单位的Unix时间格式，并在摄取时转换为目标XDM类型。 有关数据转换和其他约束的详细信息，请参阅[批次摄取API文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types)。
 
 ### 下载、准备数据并将其上传到您首选的云存储供应商
 
@@ -335,8 +335,6 @@ ht-degree: 0%
 Adobe与多个ETL供应商合作，支持将数据摄取到Experience Platform中。 由于第三方供应商的多样性，本教程中不包含ETL，但欢迎您查看以下部分资源：
 
 * [为Adobe Experience Platform开发ETL集成](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* Adobe Exchange上的[Informatica Adobe Experience Platform Connector页面](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Adobe Experience Platform Connector的Informatica文档](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform快照包](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## 其他资源
