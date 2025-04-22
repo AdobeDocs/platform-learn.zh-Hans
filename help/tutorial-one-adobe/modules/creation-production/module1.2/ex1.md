@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
+source-git-commit: 4b38b40c47b5c373f74a85261adce46f291303a8
 workflow-type: tm+mt
 source-wordcount: '705'
 ht-degree: 1%
@@ -230,7 +230,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion45.png)
 
-接下来，将方案的名称更改为`--aepUSerLdap-- - Adobe I/O Authentication`。
+接下来，将方案的名称更改为`--aepUserLdap-- - Adobe I/O Authentication`。
 
 ![WF Fusion](./images/wffusion46.png)
 
