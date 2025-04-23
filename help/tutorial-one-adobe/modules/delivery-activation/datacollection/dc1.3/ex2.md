@@ -4,9 +4,9 @@ description: 基础 — 常见问题解答 — 创建架构、数据模型和链
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '646'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 ![数据获取](./../dc1.2/images/home.png)
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为`--aepSandboxName--`。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
 
 ![数据获取](./../dc1.2/images/sb1.png)
 
@@ -98,7 +98,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb8.png)
 
-你会看到这个。 您可以单击任何架构并查看信息。 例如，单击&#x200B;**—aepUserLdap—_PERSONS**。
+你会看到这个。 您可以单击任何架构并查看信息。 例如，单击&#x200B;**`--aepUserLdap--_PERSONS`**。
 
 ![FAC](./images/fdb9.png)
 

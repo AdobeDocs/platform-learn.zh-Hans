@@ -6,16 +6,18 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c1b1d78d-9374-4ccd-82cf-e71c682fc907
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '963'
 ht-degree: 0%
 
 ---
 
 # 1.3.1 Adobe Express快速入门
 
-打开新的无痕浏览器窗口，然后转到[https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}。 使用您的&#x200B;**公司或学校帐户**&#x200B;登录，然后选择帐户&#x200B;**— aepImsOrgName—**。
+## 1.3.1.1登录到Adobe Express
+
+打开新的无痕浏览器窗口，然后转到[https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}。 使用您的&#x200B;**公司或学校帐户**&#x200B;登录，然后选择帐户&#x200B;**`--aepImsOrgName--`**。
 
 ![Adobe Express](./images/express1.png)
 
@@ -37,7 +39,7 @@ Adobe Express可作为贵组织许可证的一部分提供给您。 要确保您
 
 ![Adobe Express](./images/express5.png)
 
-## 1.3.1.1从品牌模板开始
+## 1.3.1.2从品牌模板开始
 
 在Adobe Express中，转到&#x200B;**品牌**。 您的品牌模板库目前可能为空。 CitiSignal之前定义了一个品牌模板，您现在应重复使用该现有模板。
 

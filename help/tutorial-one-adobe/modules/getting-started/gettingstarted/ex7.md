@@ -3,7 +3,8 @@ title: 快速入门 — Postman设置
 description: 快速入门 — Postman设置
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '519'
 ht-degree: 0%
@@ -14,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->如果您是Adobe员工，请按照说明[安装PostBuster](./ex8.md)！
+>如果您是Adobe员工，请按照说明[安装PostBuster](./ex8.md){target="_blank"}！
 
 ## Postman环境下载
 
@@ -22,7 +23,7 @@ ht-degree: 0%
 
 ![Adobe I/O新集成](./images/iopr.png){zoomable="yes"}
 
-单击&#x200B;**Firefly - Firefly服务** API。 然后，单击&#x200B;**下载Postman**&#x200B;并选择&#x200B;**OAuth服务器到服务器**&#x200B;以下载Postman环境。
+单击&#x200B;**Firefly - Firefly Services** API。 然后，单击&#x200B;**下载Postman**&#x200B;并选择&#x200B;**OAuth服务器到服务器**&#x200B;以下载Postman环境。
 
 ![Adobe I/O新集成](./images/iopm.png){zoomable="yes"}
 
@@ -43,7 +44,7 @@ ht-degree: 0%
 - 1个集合用于对Adobe I/O进行身份验证
 - 1本模块中的练习的集合
 
-将[postman-ff.zip](./../../../assets/postman/postman-ff.zip)下载到您的本地桌面。
+将[postman-ff.zip](./../../../assets/postman/postman-ff.zip){target="_blank"}下载到您的本地桌面。
 
 ![Adobe I/O新集成](./images/pmfolder.png){zoomable="yes"}
 
@@ -74,7 +75,7 @@ ht-degree: 0%
 
 ![Adobe I/O新集成](./images/impconfirm.png){zoomable="yes"}
 
-现在，您已拥有Postman中所需的一切，可以开始通过API与Firefly服务交互。
+现在，您已拥有Postman中所需的一切，可以开始通过API与Firefly Services交互。
 
 ## 请求访问令牌
 

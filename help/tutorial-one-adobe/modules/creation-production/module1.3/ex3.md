@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: c580ac9b-ded1-4b86-b7db-1c38649f50a4
-source-git-commit: ebf183d1eb4382ab0e6ccf3c7bb32229ffa269db
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ ht-degree: 0%
 在开始本练习之前，请从[https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"}下载所需的资产，并将其解压缩到桌面上。
 
 ![Adobe Express](./images/expressassets.png)
+
+## 1.3.3.1创建您的基本资产
 
 转到[https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}。 单击&#x200B;**+**&#x200B;图标以创建新的&#x200B;**映像**。
 
@@ -92,6 +94,8 @@ ht-degree: 0%
 您应该会看到此内容。
 
 ![Adobe Express](./images/expressbc17.png)
+
+## 在Adobe Express中批量创建1.3.3.2
 
 接下来，单击&#x200B;**批量创建**。
 

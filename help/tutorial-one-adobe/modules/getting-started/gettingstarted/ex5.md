@@ -4,7 +4,7 @@ description: 快速入门 — 使用移动应用程序
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: ef26abbeb0c1076adbada57f0f18f11c7634d022
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '434'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 下载应用程序
 
-转到计算机上的[https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app)。 你会看到这个。
+转到计算机上的[https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app){target="_blank"}。 你会看到这个。
 
 ![DSN](./images/mobileapp.png)
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsn5b.png)
 
-如果您意外关闭了浏览器窗口，或者为了将来演示或支持会议，还可以转到[https://dsn.adobe.com](https://dsn.adobe.com)访问您的网站项目。 使用Adobe ID登录后，您将看到此内容。 单击移动应用项目上的三个圆点&#x200B;**...**，然后单击&#x200B;**编辑**。
+如果您意外关闭了浏览器窗口，或者为了将来演示或支持会议，还可以转到[https://dsn.adobe.com](https://dsn.adobe.com){target="_blank"}访问您的网站项目。 使用Adobe ID登录后，您将看到此内容。 单击移动应用项目上的三个圆点&#x200B;**...**，然后单击&#x200B;**编辑**。
 
 ![DSN](./images/web8a.png)
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 ## 后续步骤
 
-转到[配置您的Adobe I/O项目](./ex6.md)
+转到[配置您的Adobe I/O项目](./ex6.md){target="_blank"}
 
 返回[开始使用](./getting-started.md){target="_blank"}
 

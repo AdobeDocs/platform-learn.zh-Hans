@@ -4,7 +4,7 @@ description: 快速入门 — 使用网站
 kt: 5342
 doc-type: tutorial
 exl-id: 4d2152c9-7f9a-48e3-a8e6-4a6add034b4e
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '444'
 ht-degree: 0%
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ## 选项2：从新的无痕浏览器窗口开始
 
-如果您意外关闭了浏览器窗口，或者为了进行以后的会话，还可以转到[https://dsn.adobe.com/](https://dsn.adobe.com/)来访问您的网站项目。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**编辑**。
+如果您意外关闭了浏览器窗口，或者为了进行以后的会话，还可以转到[https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}来访问您的网站项目。 使用Adobe ID登录后，您将看到此内容。 单击网站项目上的3个点&#x200B;**...**，然后单击&#x200B;**编辑**。
 
 ![DSN](./images/web8.png)
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 ## 后续步骤
 
-转到[使用移动应用](./ex5.md)
+转到[使用移动应用](./ex5.md){target="_blank"}
 
 返回[开始使用](./getting-started.md){target="_blank"}
 

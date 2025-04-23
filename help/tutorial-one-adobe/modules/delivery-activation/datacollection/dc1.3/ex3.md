@@ -4,9 +4,9 @@ description: Foundation - FAC — 创建联合组合
 kt: 5342
 doc-type: tutorial
 exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
 workflow-type: tm+mt
-source-wordcount: '502'
+source-wordcount: '499'
 ht-degree: 3%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 3%
 
 ![数据获取](./../dc1.2/images/home.png)
 
-在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为``--aepSandboxName--``。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
+在继续之前，您需要选择一个&#x200B;**沙盒**。 要选择的沙盒名为`--aepSandboxName--`。 选择相应的沙盒后，您将看到屏幕变化，现在您位于专用沙盒中。
 
 ![数据获取](./../dc1.2/images/sb1.png)
 
-## 1.3.3.1创建受众
+## 1.3.3.1创建您的受众
 
 在左侧菜单中，转到&#x200B;**受众**，然后转到&#x200B;**联合合成**。 单击&#x200B;**创建合成**。
 
@@ -47,7 +47,7 @@ ht-degree: 3%
 
 ![FAC](./images/fedcomp5.png)
 
-选择架构&#x200B;**—aepUserLdap—_HOMETHINGS**。 单击&#x200B;**确认**。
+选择架构&#x200B;**`--aepUserLdap--_HOUSEHOLDS`**。 单击&#x200B;**确认**。
 
 ![FAC](./images/fedcomp6.png)
 
@@ -71,7 +71,7 @@ ht-degree: 3%
 
 ![FAC](./images/fedcomp11.png)
 
-要添加的第二个条件是： `Is the user an existing CitiSignal Mobile subscriber?`。 回答该问题的方法是使用家庭与家庭中主要客户之间的关系，该关系在另一个表&#x200B;**—aepUserLdap—_PERSONES**&#x200B;中定义。 您可以使用&#x200B;**household2person**&#x200B;链接在属性菜单中向下展开。
+要添加的第二个条件是： `Is the user an existing CitiSignal Mobile subscriber?`。 回答该问题的方法是使用家庭与家庭中主要客户之间的关系，该关系在另一个表&#x200B;**`--aepUserLdap--_PERSONS`**&#x200B;中定义。 您可以使用&#x200B;**household2person**&#x200B;链接在属性菜单中向下展开。
 
 ![FAC](./images/fedcomp12.png)
 

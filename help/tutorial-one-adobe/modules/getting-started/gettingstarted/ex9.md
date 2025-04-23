@@ -2,7 +2,8 @@
 title: 快速入门 — 要安装的应用程序
 description: 快速入门 — 要安装的应用程序
 doc-type: multipage-overview
-source-git-commit: e02737a6bf5cb30d4a71df417a7824b6c96bc796
+exl-id: 25f80da8-88c3-4273-962a-476675cf6047
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 ## Adobe Creative Cloud
 
-转到[https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud)。
+转到[https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"}。
 
 ![Adobe I/O新集成](./images/cc.png)
 

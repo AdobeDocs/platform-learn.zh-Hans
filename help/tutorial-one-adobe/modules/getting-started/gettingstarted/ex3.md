@@ -4,7 +4,7 @@ description: 快速入门 — 创建数据流
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: 49b8be964fe4e92e2c2c437a797ded30af0bc261
+source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 创建数据流
 
-转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
+转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}。
 
 ![DSN](./images/launchprop.png)
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 ## 为移动设备创建数据流
 
-转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
+转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}。
 
 单击&#x200B;**[!UICONTROL 数据流]**。
 
@@ -175,7 +175,7 @@ ht-degree: 1%
 
 ## 后续步骤
 
-转到[使用网站](./ex4.md)
+转到[使用网站](./ex4.md){target="_blank"}
 
 返回[开始使用](./getting-started.md){target="_blank"}
 
