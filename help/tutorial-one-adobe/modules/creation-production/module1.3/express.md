@@ -6,20 +6,24 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: b2ffab2f-566e-4d7d-9790-1bbba76f8732
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: bfeb43ad8e4d8c994b03ebd7cb4b5ead89ca6e10
 workflow-type: tm+mt
-source-wordcount: '158'
-ht-degree: 1%
+source-wordcount: '264'
+ht-degree: 0%
 
 ---
 
 # 1.3 Adobe Express和Adobe Experience Cloud
 
-了解如何使用Workfront Fusion自动化创意工作流。
+借助流畅的内容供应链，营销团队可以跟上对内容永无止境的需求，并保持营销活动平稳运行。 在本练习中，您将了解如何利用Adobe Express和AEM Assets让营销团队能够轻松地跨团队创建引人注目的品牌营销活动，并且高效地协作 — 所有这些都在集成的互联内容生态系统中实现。
+
+您将学习如何
+
+- 利用锁定的Express模板和Brand Kit为本地和季节性活动创建和迭代品牌批准的内容- 使用针对您的独特品牌风格而经过培训的Firefly自定义模型，通过Adobe Express快速创建新背景和内容- 从Adobe Experience Manager中搜索批准的资源以编辑和个性化营销活动。
 
 ## 先决条件
 
-- 访问Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
+- 访问Adobe Express [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}
 
 ## 练习
 
