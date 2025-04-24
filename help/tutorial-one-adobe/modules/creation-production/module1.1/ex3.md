@@ -1,21 +1,21 @@
 ---
 title: 使用Photoshop API
-description: 了解如何使用Photoshop API和Firefly服务
+description: 了解如何使用Photoshop API和Firefly Services
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
-source-git-commit: b083a817700320e8e45645702c2868423c1fae99
+source-git-commit: 45f6f9db7d5b3e79e10d508a44a532261bd9cdb3
 workflow-type: tm+mt
-source-wordcount: '829'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
 
 # 1.1.3使用Photoshop API
 
-了解如何使用Photoshop API和Firefly服务。
+了解如何使用Photoshop API和Firefly Services。
 
 ## 1.1.3.1先决条件
 
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 接下来，让我们向Photoshop API问好，以测试是否正确设置了所有权限和访问权限。
 
-1. 在集合&#x200B;**Photoshop**&#x200B;中，打开请求&#x200B;**Photoshop Hello（测试身份验证）**&#x200B;的问题。选择&#x200B;**发送**。
+在集合&#x200B;**Photoshop**&#x200B;中，打开请求&#x200B;**Photoshop Hello（测试身份验证）**&#x200B;的问题。选择&#x200B;**发送**。
 
 ![Azure存储](./images/ps10.png){zoomable="yes"}
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 ### 将PSD上传到Azure
 
-1. 在Postman中，打开请求&#x200B;**将PSD上传到Azure存储帐户**。 在上一个练习中，您已在Postman中配置这些环境变量，现在将使用这些变量：
+在Postman中，打开请求&#x200B;**将PSD上传到Azure存储帐户**。 在上一个练习中，您已在Postman中配置这些环境变量，现在将使用这些变量：
 
 - `AZURE_STORAGE_URL`
 - `AZURE_STORAGE_CONTAINER`
@@ -66,11 +66,11 @@ ht-degree: 0%
 
 ![Azure存储](./images/ps12.png){zoomable="yes"}
 
-1. 在&#x200B;**主体**&#x200B;中，选择文件&#x200B;**citisignal-fiber.psd**。
+在&#x200B;**主体**&#x200B;中，选择文件&#x200B;**citisignal-fiber.psd**。
 
 ![Azure存储](./images/ps13.png){zoomable="yes"}
 
-1. 您的屏幕应如下所示。 选择&#x200B;**发送**。
+您的屏幕应如下所示。 选择&#x200B;**发送**。
 
 ![Azure存储](./images/ps14.png){zoomable="yes"}
 
@@ -86,33 +86,33 @@ ht-degree: 0%
 
 接下来，您需要获取PSD文件的清单文件。
 
-1. 在Postman中，打开请求&#x200B;**Photoshop — 获取PSD清单**。 转到&#x200B;**正文**。
+在Postman中，打开请求&#x200B;**Photoshop — 获取PSD清单**。 转到&#x200B;**正文**。
 
 正文应如下所示：
 
 ```json
-{
-  "inputs": [
-    {
-      "storage": "external",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-    }
-  ],
-  "options": {
-    "thumbnails": {
-      "type": "image/jpeg"
+  {
+    "inputs": [
+      {
+        "storage": "external",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
+      }
+    ],
+    "options": {
+      "thumbnails": {
+        "type": "image/jpeg"
+      }
     }
   }
-}
 ```
 
-1. 选择&#x200B;**发送**。
+选择&#x200B;**发送**。
 
 在响应中，您现在会看到一个链接。 由于Photoshop中的操作有时需要一些时间才能完成，因此Photoshop会提供状态文件作为对大多数传入请求的响应。 要了解您的请求发生了什么情况，您需要读取状态文件。
 
 ![Azure存储](./images/ps17.png){zoomable="yes"}
 
-1. 要读取状态文件，请打开请求&#x200B;**Photoshop — 获取PS状态**。 您可以看到此请求正在使用变量作为URL，该URL是由您发送的上一个请求&#x200B;**Photoshop — 获取PSD清单**&#x200B;设置的变量。 变量在每个请求的&#x200B;**脚本**&#x200B;中设置。 选择&#x200B;**发送**。
+要读取状态文件，请打开请求&#x200B;**Photoshop — 获取PS状态**。 您可以看到此请求正在使用变量作为URL，该URL是由您发送的上一个请求&#x200B;**Photoshop — 获取PSD清单**&#x200B;设置的变量。 变量在每个请求的&#x200B;**脚本**&#x200B;中设置。 选择&#x200B;**发送**。
 
 ![Azure存储](./images/ps18.png){zoomable="yes"}
 
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 ![Azure存储](./images/ps19.png){zoomable="yes"}
 
-1. 在&#x200B;**Photoshop — 获取PS状态**&#x200B;上再选择发送几次，直到状态更改为&#x200B;**succeeded**。 这可能需要几分钟的时间。
+在&#x200B;**Photoshop — 获取PS状态**&#x200B;上再选择发送几次，直到状态更改为&#x200B;**succeeded**。 这可能需要几分钟的时间。
 
 当响应可用时，您可以看到json文件包含有关PSD文件所有层的信息。 这是有用的信息，因为可以识别层名称或层ID等。
 
@@ -132,9 +132,9 @@ ht-degree: 0%
 
 ### Photoshop API — 更改文本
 
-接下来，您需要使用API更改行动号召的文本。
+接下来，您需要使用API更改call to action的文本。
 
-1. 在Postman中，打开请求&#x200B;**Photoshop — 更改文本**，然后转到&#x200B;**正文**。
+在Postman中，打开请求&#x200B;**Photoshop — 更改文本**，然后转到&#x200B;**正文**。
 
 屏幕应如下所示：
 
@@ -143,37 +143,37 @@ ht-degree: 0%
 - 第三，指定了输出文件： `citisignal-fiber-changed-text.psd`
 
 ```json
-{
-  "inputs": [
-    {
-      "storage": "external",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-    }
-  ],
-  "options": {
-    "layers": [
+  {
+    "inputs": [
       {
-        "name": "2048x2048-cta",
-        "text": {
-          "content": "Get Fiber now!"
+        "storage": "external",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
+      }
+    ],
+    "options": {
+      "layers": [
+        {
+          "name": "2048x2048-cta",
+          "text": {
+            "content": "Get Fiber now!"
+          }
         }
+      ]
+    },
+    "outputs": [
+      {
+        "storage": "azure",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
+        "type": "vnd.adobe.photoshop",
+        "overwrite": true
       }
     ]
-  },
-  "outputs": [
-    {
-      "storage": "azure",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
-      "type": "vnd.adobe.photoshop",
-      "overwrite": true
-    }
-  ]
-}
+  }
 ```
 
 输出文件的名称不同，因为您不想覆盖原始输入文件。
 
-1. 选择&#x200B;**发送**。
+选择&#x200B;**发送**。
 
 ![Azure存储](./images/ps23.png){zoomable="yes"}
 
@@ -181,13 +181,13 @@ ht-degree: 0%
 
 ![Azure存储](./images/ps22.png){zoomable="yes"}
 
-1. 要读取状态文件，请打开请求&#x200B;**Photoshop — 获取PS状态**，然后选择&#x200B;**发送**。 如果状态未立即设置为&#x200B;**succeeded**，请等待几秒钟，然后再次选择&#x200B;**发送**。
+要读取状态文件，请打开请求&#x200B;**Photoshop — 获取PS状态**，然后选择&#x200B;**发送**。 如果状态未立即设置为&#x200B;**succeeded**，请等待几秒钟，然后再次选择&#x200B;**发送**。
 
-1. 选择用于下载输出文件的URL。
+选择用于下载输出文件的URL。
 
 ![Azure存储](./images/ps24.png){zoomable="yes"}
 
-1. 将文件下载到计算机后，打开&#x200B;**citisignal-fibre-changed-text.psd**。 您应该会看到行动号召的占位符已被文本&#x200B;**立即获取Fiber！**&#x200B;替换。
+将文件下载到计算机后，打开&#x200B;**citisignal-fibre-changed-text.psd**。 您应该看到call to action的占位符已被文本&#x200B;**立即获取Fiber！**&#x200B;替换。
 
 ![Azure存储](./images/ps25.png){zoomable="yes"}
 
@@ -199,6 +199,6 @@ ht-degree: 0%
 
 转到[Firefly自定义模型API](./ex4.md){target="_blank"}
 
-返回[Adobe Firefly服务概述](./firefly-services.md){target="_blank"}
+返回[Adobe Firefly Services概述](./firefly-services.md){target="_blank"}
 
 返回[所有模块](./../../../overview.md){target="_blank"}
