@@ -4,10 +4,10 @@ description: 了解如何实施Adobe Experience Cloud移动应用程序。 本�
 recommendations: noDisplay,catalog
 last-substantial-update: 2023-11-29T00:00:00Z
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
-source-git-commit: a928fb5c8e48e71984b75faf4eb397814caac6aa
+source-git-commit: c08671ae28955ff090baa7aa5a47246b2196ba20
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 3%
+source-wordcount: '815'
+ht-degree: 4%
 
 ---
 
@@ -59,7 +59,7 @@ Experience Platform Mobile SDK是客户端SDK，它允许Adobe Experience Cloud�
 * 在数据收集中，您必须具有：
    * **[!UICONTROL 平台]** — 权限项&#x200B;**[!UICONTROL 移动设备]**
    * **[!UICONTROL 属性权限]** — 用于&#x200B;**[!UICONTROL 开发]**、**[!UICONTROL 批准]**、**[!UICONTROL 发布]**、**[!UICONTROL 管理扩展]**&#x200B;和&#x200B;**[!UICONTROL 管理环境]**&#x200B;的权限项。
-   * **[!UICONTROL 公司权限]** — 用于&#x200B;**[!UICONTROL 管理属性]**&#x200B;的权限项，如果完成可选的推送消息课程，还可以&#x200B;**[!UICONTROL 管理应用程序配置]**
+   * **[!UICONTROL 公司权限]** — 用于&#x200B;**[!UICONTROL 管理属性]**&#x200B;的权限项
 
      有关标记权限的详细信息，请参阅产品文档中的标记[用户权限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-hans){target="_blank"}。
 * 在Experience Platform中，您必须具有：

@@ -6,16 +6,16 @@ feature-set: Journey Optimizer
 feature: In App
 jira: KT-14639
 exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
-source-git-commit: e316f881372a387b82f8af27f7f0ea032a99be99
+source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 0%
+source-wordcount: '1607'
+ht-degree: 1%
 
 ---
 
 # 创建和发送应用程序内消息
 
-了解如何使用Experience PlatformMobile SDK和Journey Optimizer为移动应用程序创建应用程序内消息。
+了解如何使用Experience Platform Mobile SDK和Journey Optimizer为移动应用程序创建应用程序内消息。
 
 Journey Optimizer允许您创建营销活动，以将应用程序内消息发送给目标受众。 Journey Optimizer中的营销活动用于通过各种渠道向特定受众投放一次性内容。 借助营销策划，可同时执行各种操作，可以立即执行，也可以根据指定的计划执行。 使用历程时(请参阅[Journey Optimizer推送通知](journey-optimizer-push.md)课程)，操作将按顺序执行。
 
@@ -55,17 +55,36 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 >如果您已将环境设置为[Journey Optimizer推送消息](journey-optimizer-push.md)课程的一部分，则您可能已执行了此设置部分中的某些步骤。
 
 
-### 在数据收集中添加应用程序表面
+### 在Journey Optimizer中创建渠道配置
 
-1. 从[数据收集界面](https://experience.adobe.com/data-collection/)中，在左侧面板中选择&#x200B;**[!UICONTROL 应用程序表面]**。
-1. 要创建配置，请选择&#x200B;**[!UICONTROL 创建应用程序表面]**。
-   ![应用表面主页](assets/push-app-surface.png)
-1. 输入配置的&#x200B;**[!UICONTROL 名称]**，例如`Luma App Tutorial`。
-1. 从&#x200B;**[!UICONTROL 移动设备应用程序配置]**&#x200B;中，选择&#x200B;**[!UICONTROL Apple iOS]**。
-1. 在&#x200B;**[!UICONTROL 应用程序ID (iOS捆绑包ID)]**&#x200B;字段中输入移动应用程序捆绑包ID。 例如，`com.adobe.luma.tutorial.swiftui`。
-1. 选择&#x200B;**[!UICONTROL 保存]**。
+要开始，您必须创建渠道配置，以便能够从Journey Optimizer发送应用程序消息通知。
 
-   ![应用程序表面配置](assets/push-app-surface-config-inapp.png)
+1. 在Journey Optimizer界面中，打开&#x200B;**[!UICONTROL 渠道]** > **[!UICONTROL 常规设置]** > **[!UICONTROL 渠道配置]**&#x200B;菜单，然后选择&#x200B;**[!UICONTROL 创建渠道配置]**。
+
+   ![创建渠道配置](assets/push-config-9.png)
+
+1. 输入配置的名称和说明（可选）。
+
+   >[!NOTE]
+   >
+   > 名称必须以字母(A-Z)开头。 它只能包含字母数字字符。 您还可以使用下划线 `_`、点 `.` 和连字符 `-` 符号。
+
+
+1. 要为配置分配自定义或核心数据使用标签，您可以选择&#x200B;**[!UICONTROL 管理访问权限]**。 [了解有关对象级访问控制(OLAC)的更多信息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access)。
+
+1. 选择&#x200B;**应用程序内消息传送**&#x200B;渠道。
+
+1. 选择&#x200B;**[!UICONTROL 营销操作]**&#x200B;以使用此配置将同意策略关联到消息。 所有与营销活动相关的同意政策均可利用，以尊重客户的偏好。 [了解有关营销操作的更多信息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。
+
+1. 选择要为其定义设置的平台。 这样，您就可以为每个平台指定目标应用程序，并确保跨多个平台的一致内容交付。
+
+   >[!NOTE]
+   >
+   >对于iOS和Android平台，交付仅基于应用程序ID。 如果两个应用共享相同的应用ID，则无论在&#x200B;**[!UICONTROL 渠道配置]**&#x200B;中选择了什么平台，都将向两个应用交付内容。
+
+1. 选择&#x200B;**[!UICONTROL 提交]**&#x200B;以保存更改。
+
+   ![配置应用程序内渠道](assets/inapp_config_10.png)
 
 ### 更新数据流配置
 
@@ -74,7 +93,7 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 
 
 1. 在数据收集UI中，选择&#x200B;**[!UICONTROL 数据流]**，然后选择您的数据流，例如&#x200B;**[!DNL Luma Mobile App]**。
-1. 为&#x200B;**[!UICONTROL Experience Platform]**&#x200B;选择![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)并从上下文菜单中选择![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)**[!UICONTROL 编辑]**。
+1. 为&#x200B;**[!UICONTROL Experience Platform]**&#x200B;选择![更多](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)，然后从上下文菜单中选择![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]**。
 1. 在&#x200B;**[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;屏幕中，确保已选择&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 有关详细信息，请参阅[Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)。
 1. 要保存数据流配置，请选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -101,7 +120,7 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 
 >[!NOTE]
 >
->如果您已完成[安装SDK](install-sdks.md)部分，则表明该SDK已安装，您可以跳过此步骤。
+>如果您已完成[安装SDK](install-sdks.md)部分，则表明已安装SDK，您可以跳过此步骤。
 >
 
 1. 在Xcode中，确保将[AEP消息](https://github.com/adobe/aepsdk-messaging-ios)添加到包依赖关系中的包列表中。 请参阅[Swift包管理器](install-sdks.md#swift-package-manager)。
@@ -132,7 +151,7 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 ## 使用Assurance验证设置
 
 1. 查看[设置说明](assurance.md#connecting-to-a-session)部分以将模拟器或设备连接到Assurance。
-1. 在Assurance UI中，选择&#x200B;**[!UICONTROL 配置]**。
+1. 在Assurance用户界面中，选择&#x200B;**[!UICONTROL 配置]**。
    ![配置click](assets/push-validate-config.png)
 1. 选择&#x200B;**[!UICONTROL 应用程序内消息传送]**&#x200B;旁边的![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)按钮。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
@@ -152,9 +171,9 @@ Journey Optimizer允许您创建营销活动，以将应用程序内消息发送
 * 应用程序生命周期事件，例如启动、安装、升级、关闭或崩溃，
 * 地理位置事件，例如进入或退出目标点。
 
-在本教程中，您将使用Mobile Core通用API和与扩展无关的API（请参阅[Mobile Core通用API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)）来促进对用户屏幕、操作和PII数据的事件跟踪。 这些API生成的事件将发布到SDK事件中心，可供扩展使用。 SDK事件中心提供了与所有Mobile Platform SDK扩展绑定的核心数据结构，其中维护着已注册的扩展和内部模块的列表、已注册的事件侦听器的列表以及共享状态数据库。
+在本教程中，您将使用Mobile Core通用API和与扩展无关的API（请参阅[Mobile Core通用API](https://developer.adobe.com/client-sdks/documentation/mobile-core/#mobile-core-generic-apis)）来促进对用户屏幕、操作和PII数据的事件跟踪。 这些API生成的事件将发布到SDK事件中心，可供扩展使用。 SDK事件中心提供了与所有Mobile Platform SDK扩展绑定的核心数据结构，维护着已注册的扩展和内部模块的列表、已注册的事件侦听器的列表以及共享状态数据库。
 
-SDK事件中心发布并接收来自已注册的扩展的事件数据，以简化与Adobe和第三方解决方案的集成。 例如，在安装优化扩展时，事件中心将处理所有请求以及与Journey Optimizer — 决策管理选件引擎的交互。
+SDK事件中心发布和接收来自已注册的扩展的事件数据，以简化与Adobe和第三方解决方案的集成。 例如，在安装优化扩展时，事件中心将处理所有请求以及与Journey Optimizer — 决策管理选件引擎的交互。
 
 1. 在Journey Optimizer UI中，从左边栏中选择&#x200B;**[!UICONTROL 促销活动]**。
 1. 选择&#x200B;**[!UICONTROL 创建营销活动]**。
@@ -222,7 +241,7 @@ SDK事件中心发布并接收来自已注册的扩展的事件数据，以简�
    <img src="assets/ajo-in-app-message.png" width="300" />
 
 
-## 在Assurance中验证实施
+## 验证Assurance中的实施
 
 您可以在Assurance UI中验证应用程序内消息。
 
@@ -230,8 +249,8 @@ SDK事件中心发布并接收来自已注册的扩展的事件数据，以简�
 1. 选择&#x200B;**[!UICONTROL 应用程序内消息传送]**。
 1. 选择&#x200B;**[!UICONTROL 事件列表]**。
 1. 选择&#x200B;**[!UICONTROL 显示消息]**&#x200B;条目。
-1. Inspect原始事件，特别是`html`，其中包含应用程序内消息的完整布局和内容。
-   ![保证应用程序内消息](assets/assurance-in-app-display-message.png)
+1. 检查原始事件，特别是`html`，其中包含应用程序内消息的完整布局和内容。
+   ![Assurance应用程序内消息](assets/assurance-in-app-display-message.png)
 
 
 ## 后续步骤
@@ -240,8 +259,8 @@ SDK事件中心发布并接收来自已注册的扩展的事件数据，以简�
 
 >[!SUCCESS]
 >
->您已为应用程序内消息传送启用应用程序，并为Experience PlatformMobile SDK使用Journey Optimizer和Journey Optimizer扩展添加了应用程序内消息传送促销活动。
+>您已为应用程序内消息传送启用应用程序，并使用Journey Optimizer和Experience Platform Mobile SDK的Journey Optimizer扩展添加了应用程序内消息传送促销活动。
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望共享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上共享它们。
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享这些内容。
 
 下一步： **[创建和显示选件](journey-optimizer-offers.md)**
