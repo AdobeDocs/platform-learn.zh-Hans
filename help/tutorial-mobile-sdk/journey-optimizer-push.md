@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Push
 jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
-source-git-commit: f73f0fc345fc605e60b19be1abe2e328795898aa
+source-git-commit: 83046a6c56353ba8750c4e500f70ef2ca887fbe8
 workflow-type: tm+mt
-source-wordcount: '2871'
+source-wordcount: '2885'
 ht-degree: 1%
 
 ---
@@ -75,9 +75,9 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 1. 选择&#x200B;**[!UICONTROL 继续]**。
    ![配置新密钥](assets/mobile-push-apple-dev-config-key.png)
 1. 查看配置并选择&#x200B;**[!UICONTROL 注册]**。
-1. 下载`.p8`私钥。 它将在下一个练习的Journey Optimizer渠道配置中使用。
-1. 记下&#x200B;**[!UICONTROL 密钥ID]**。 它用于Journey Optimizer渠道配置。
-1. 记下&#x200B;**[!UICONTROL 团队ID]**。 它用于Journey Optimizer渠道配置。
+1. 下载`.p8`私钥。 当您配置Journey Optimizer推送凭据时，将在下一个练习中使用它。
+1. 记下&#x200B;**[!UICONTROL 密钥ID]**。 当您配置Journey Optimizer推送凭据时，将在下一个练习中使用它。
+1. 记下&#x200B;**[!UICONTROL 团队ID]**。 当您配置Journey Optimizer推送凭据时，将在下一个练习中使用它。
    ![键详细信息](assets/push-apple-dev-key-details.png)
 
 其他文档可在[此处](https://help.apple.com/developer-account/#/devcdfbb56a3)找到。
@@ -96,19 +96,17 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 
    ![在Journey Optimizer中新建推送凭据配置](assets/add-push-credential-ios.png)
 
-1. 从&#x200B;**[!UICONTROL 平台]**&#x200B;下拉列表中，选择&#x200B;**iOS**&#x200B;操作系统：
+1. 从&#x200B;**[!UICONTROL 平台]**&#x200B;下拉列表中，选择&#x200B;**iOS**&#x200B;操作系统。
 
+1. 在&#x200B;**[!UICONTROL 应用程序ID]** (iOS捆绑包ID)字段中输入移动应用程序捆绑包ID。 例如，com.adobe.luma.tutorial.swiftui
 
-   1. 在&#x200B;**[!UICONTROL 应用程序ID]** (iOS捆绑包ID)字段中输入移动应用程序捆绑包ID。 例如，com.adobe.luma.tutorial.swiftui
+1. 启用&#x200B;**[!UICONTROL 应用到所有沙盒]**&#x200B;选项以使这些推送凭据在所有沙盒中可用。 如果特定沙盒对于同一平台和应用程序ID对拥有自己的凭据，则这些特定于沙盒的凭据将优先。
 
-   1. 启用&#x200B;**[!UICONTROL 应用到所有沙盒]**&#x200B;选项以使这些推送凭据在所有沙盒中可用。 如果特定沙盒对于同一平台和应用程序ID对拥有自己的凭据，则这些特定于沙盒的凭据将优先。
+1. 拖放您在上一个练习中获得的.p8 **Apple推送通知身份验证密钥**&#x200B;文件。
 
+1. 提供&#x200B;**[!UICONTROL 密钥ID]**，在创建`p8`身份验证密钥期间分配的10字符字符串。 可在Apple开发人员门户页面的&#x200B;**证书、标识符和配置文件**&#x200B;页面的&#x200B;**[!UICONTROL 密钥]**&#x200B;选项卡下找到它。 （您在上一个练习中应该已经注意到。）
 
-   1. 拖放您在上一个练习中获得的.p8 **Apple推送通知身份验证密钥**&#x200B;文件。
-
-   1. 提供&#x200B;**[!UICONTROL 密钥ID]**，在创建`p8`身份验证密钥期间分配的10字符字符串。 可在Apple开发人员门户页面的&#x200B;**证书、标识符和配置文件**&#x200B;页面的&#x200B;**[!UICONTROL 密钥]**&#x200B;选项卡下找到它。 （您在上一个练习中应该已经注意到。）
-
-   1. 提供&#x200B;**[!UICONTROL 团队ID]**。 团队ID是一个值，可以在&#x200B;**成员资格**&#x200B;选项卡下方或Apple开发人员门户页面顶部找到。 （您在上一个练习中应该已经注意到。）
+1. 提供&#x200B;**[!UICONTROL 团队ID]**。 团队ID是一个值，可以在&#x200B;**成员资格**&#x200B;选项卡下方或Apple开发人员门户页面顶部找到。 （您在上一个练习中应该已经注意到。）
 
    Journey Optimizer中的![推送凭据配置](assets/add-app-config-ios.png)
 
