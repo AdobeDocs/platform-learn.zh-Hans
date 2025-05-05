@@ -26,7 +26,7 @@ ht-degree: 2%
 **数据架构师**&#x200B;和&#x200B;**数据工程师**&#x200B;需要在本教程之外创建沙盒。
 
 在开始练习之前，请观看此简短视频，了解更多有关沙箱的信息：
->[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430297/?learn=on&enablevpops&captions=chi_hans)
 
 ## 所需的权限
 

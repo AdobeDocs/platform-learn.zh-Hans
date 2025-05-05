@@ -25,7 +25,7 @@ Adobe Experience Platform查询服务允许您使用标准SQL在Platform中查�
 **数据架构师**&#x200B;和&#x200B;**数据工程师**&#x200B;需要在本教程之外使用查询服务。
 
 在开始练习之前，请观看此简短视频，了解关于查询服务的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33591?learn=on&enablevpops&captions=chi_hans)
 
 ## 所需的权限
 

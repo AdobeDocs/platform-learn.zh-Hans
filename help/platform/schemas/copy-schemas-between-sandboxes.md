@@ -22,4 +22,4 @@ ht-degree: 1%
 >
 >2023年下半年，引入了一个更简单、以界面为中心的流程，以在沙盒之间移动架构和其他对象，我们建议改用该流程。 请参阅[在沙盒之间复制对象](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413593?learn=on&enablevpops&captions=chi_hans)

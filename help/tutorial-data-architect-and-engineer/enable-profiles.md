@@ -33,7 +33,7 @@ ht-degree: 0%
 **数据架构师**&#x200B;需要在本教程之外启用Real-Time Customer Profile。
 
 在开始练习之前，请观看此简短视频，了解有关Real-Time Customer Profile的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31672?learn=on&enablevpops&captions=chi_hans)
 
 ## 所需的权限
 

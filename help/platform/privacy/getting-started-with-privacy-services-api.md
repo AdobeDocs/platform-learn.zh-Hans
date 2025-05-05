@@ -18,4 +18,4 @@ ht-degree: 2%
 
 了解如何设置并验证Privacy Service API。 有关详细信息，请访问[隐私服务文档](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/336075?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3447186?learn=on&enablevpops&captions=chi_hans)

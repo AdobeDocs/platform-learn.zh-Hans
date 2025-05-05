@@ -17,4 +17,4 @@ ht-degree: 0%
 
 有关适用于Mailchimp的Adobe事件转发扩展的概述视频。 有关详细信息，请访问[Mailchimp事件转发扩展文档](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/345140/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411289/?learn=on&enablevpops&captions=chi_hans)

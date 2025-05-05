@@ -18,6 +18,6 @@ ht-degree: 57%
 
 了解 Experience Platform 如何与 Experience Cloud 应用程序集成。
 
->[!VIDEO](https://video.tv.adobe.com/v/32553?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430387?learn=on&enablevpops&captions=chi_hans)
 
 

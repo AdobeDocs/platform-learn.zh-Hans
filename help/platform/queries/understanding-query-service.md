@@ -18,7 +18,7 @@ ht-degree: 15%
 
 了解Adobe Experience Platform中的查询服务如何帮助您了解客户行为并生成有影响力的见解。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33591?learn=on&enablevpops&captions=chi_hans)
 
 ## 基本用法
 
@@ -59,7 +59,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="query-service-api.md" title="查询服务API" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333700?format=jpeg&nocache=1740415310716" alt="查询服务API"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414083?format=jpeg&nocache=1740415310716&captions=chi_hans" alt="查询服务API"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -82,7 +82,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="adobe-defined-functions.md" title="Adobe定义的函数" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333701?format=jpeg&nocache=1740415310668" alt="Adobe定义的函数"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414047?format=jpeg&nocache=1740415310668&captions=chi_hans" alt="Adobe定义的函数"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -105,7 +105,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="使用查询服务运行查询" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1740415310683" alt="使用查询服务运行查询"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32702?format=jpeg&nocache=1740415310683&captions=chi_hans" alt="使用查询服务运行查询"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-data-usage-patterns-with-query-service.md" title="了解使用查询服务的数据使用模式" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29811?format=jpeg&nocache=1740415310706" alt="了解使用查询服务的数据使用模式"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33586?format=jpeg&nocache=1740415310706&captions=chi_hans" alt="了解使用查询服务的数据使用模式"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="浏览数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1740415312087" alt="浏览数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414053?format=jpeg&nocache=1740415312087&captions=chi_hans" alt="浏览数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-data-in-the-datalake.md" title="使用查询服务验证Datalake中的数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416130?format=jpeg&nocache=1740415312076" alt="使用查询服务验证Datalake中的数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445687?format=jpeg&nocache=1740415312076&captions=chi_hans" alt="使用查询服务验证Datalake中的数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -221,7 +221,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="准备数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1740415313086" alt="准备数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414065?format=jpeg&nocache=1740415313086&captions=chi_hans" alt="准备数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -257,7 +257,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-data-usage-patterns-with-query-service.md" title="了解使用查询服务的数据使用模式" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29811?format=jpeg&nocache=1740415313190" alt="了解使用查询服务的数据使用模式"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33586?format=jpeg&nocache=1740415313190&captions=chi_hans" alt="了解使用查询服务的数据使用模式"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -280,7 +280,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="psql-client-tableau.md" title="将Tableau连接到查询服务" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333702?format=jpeg&nocache=1740415313229" alt="将Tableau连接到查询服务"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414041?format=jpeg&nocache=1740415313229&captions=chi_hans" alt="将Tableau连接到查询服务"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -326,7 +326,7 @@ ht-degree: 15%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="为您的客户数据重新充电，以提供令人振奋的体验" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1740415313218" alt="为您的客户数据重新充电，以提供令人振奋的体验"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454956?format=jpeg&nocache=1740415313218&captions=chi_hans" alt="为您的客户数据重新充电，以提供令人振奋的体验"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

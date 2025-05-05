@@ -17,5 +17,5 @@ ht-degree: 0%
 
 在上一个视频中，我们看到了示例品牌Luma如何能够创建丰富、有价值且相关的客户体验。 本视频说明如何使用Adobe Experience Platform完成此历程。
 
->[!VIDEO](https://video.tv.adobe.com/v/28144?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35531?learn=on&enablevpops&captions=chi_hans)
 

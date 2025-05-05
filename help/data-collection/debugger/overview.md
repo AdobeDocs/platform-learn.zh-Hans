@@ -19,7 +19,7 @@ ht-degree: 54%
 
 了解Adobe Experience Platform Debugger [Chrome扩展](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)和[Firefox加载项](https://addons.mozilla.org/zh-CN/firefox/addon/adobe-experience-platform-dbg/)如何帮助您调试Adobe Experience Platform Web SDK、Adobe Analytics、Adobe Target、Adobe Audience Manager、tags等的Web实施。
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35858?learn=on&enablevpops&captions=chi_hans)
 
 ## 其他资源
 

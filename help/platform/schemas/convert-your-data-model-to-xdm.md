@@ -18,4 +18,4 @@ ht-degree: 1%
 
 此视频演示了数据架构师如何获取现有的事务性数据模型并将其转换为体验数据模型。 说明了实体关系图建模方法的不同。 有关详细信息，请访问[数据建模最佳实践文档](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333483?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413642?learn=on&enablevpops&captions=chi_hans)

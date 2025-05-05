@@ -18,4 +18,4 @@ ht-degree: 0%
 
 了解避免与SFTP源连接器发生连接问题的最佳实践。 查看特定检查点以成功将SFTP服务器连接到Adobe Experience Platform。 有关详细信息，请参阅[SFTP源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416134?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443484?learn=on&enablevpops&captions=chi_hans)

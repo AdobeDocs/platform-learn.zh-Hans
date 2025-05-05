@@ -18,4 +18,4 @@ ht-degree: 0%
 
 了解如何添加用户并管理Adobe Experience Platform数据收集功能的权限，以便贵公司的员工能够访问完成工作所需的权限。
 
->[!VIDEO](https://video.tv.adobe.com/v/28734/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33396/?learn=on&enablevpops&captions=chi_hans)

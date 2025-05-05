@@ -20,4 +20,4 @@ ht-degree: 0%
 
 了解如何使用AI Assistant识别未使用的受众，以便删除这些受众并使营销操作更高效。 有关查询AI助手的详细信息，请参阅[AI助手的问题指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/questions)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435532/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441997/?learn=on&enablevpops&captions=chi_hans)

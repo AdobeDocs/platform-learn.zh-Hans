@@ -26,7 +26,7 @@ ht-degree: 0%
 
 在开始练习之前，请观看此简短视频，了解有关数据摄取的更多信息：
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346829?learn=on&enablevpops&captions=chi_hans)
 
 
 ## 所需的权限

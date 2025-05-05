@@ -23,4 +23,4 @@ ht-degree: 1%
 
 了解如何在Adobe Target中使用Real-Time Customer Data Platform区段在您的网站和移动应用程序上提供个性化体验。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/target/using/integrate/integrating-with-rtcdp.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3419149/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446837/?learn=on&enablevpops&captions=chi_hans)

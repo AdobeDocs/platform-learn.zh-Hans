@@ -19,4 +19,4 @@ ht-degree: 33%
 
 了解Adobe Real-Time Customer Data Platform (CDP)如何整合已知和未知的客户数据以创建并激活可信的客户配置文件。 有关详细信息，请访问[Real-Time Customer Data Platform文档](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/29705?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32143?learn=on&enablevpops&captions=chi_hans)

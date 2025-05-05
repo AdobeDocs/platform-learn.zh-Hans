@@ -18,7 +18,7 @@ ht-degree: 16%
 
 Adobe Experience Platform的数据摄取功能让您可以将数据整合到一个开放且可伸缩的平台中，以便管理实时客户档案。 有关详细信息，请访问[数据摄取文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346829?learn=on&enablevpops&captions=chi_hans)
 
 ## 数据获取方法
 
@@ -35,7 +35,7 @@ Adobe Experience Platform的数据摄取功能让您可以将数据整合到一�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/overview.md" title="源概述" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29694?format=jpeg&nocache=1740414616559" alt="源概述"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32144?format=jpeg&nocache=1740414616559&captions=chi_hans" alt="源概述"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -58,7 +58,7 @@ Adobe Experience Platform的数据摄取功能让您可以将数据整合到一�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Adobe Experience Platform Web SDK和Edge Network概述" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616573" alt="Adobe Experience Platform Web SDK和Edge Network概述"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37264?format=jpeg&nocache=1740414616573&captions=chi_hans" alt="Adobe Experience Platform Web SDK和Edge Network概述"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -95,7 +95,7 @@ Adobe Experience Platform的数据摄取功能让您可以将数据整合到一�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="batch-ingestion-overview.md" title="批量数据摄取概述" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/330995?format=jpeg&nocache=1740414616813" alt="批量数据摄取概述"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345659?format=jpeg&nocache=1740414616813&captions=chi_hans" alt="批量数据摄取概述"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -118,7 +118,7 @@ Adobe Experience Platform的数据摄取功能让您可以将数据整合到一�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="understanding-streaming-ingestion.md" title="流数据引入概述" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28425?format=jpeg&nocache=1740414616825" alt="流数据引入概述"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31669?format=jpeg&nocache=1740414616825&captions=chi_hans" alt="流数据引入概述"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -141,7 +141,7 @@ Adobe Experience Platform的数据摄取功能让您可以将数据整合到一�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../../data-collection/web-sdk/overview.md" title="Adobe Experience Platform Web SDK和Edge Network概述" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/34141?format=jpeg&nocache=1740414616799" alt="Adobe Experience Platform Web SDK和Edge Network概述"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/37264?format=jpeg&nocache=1740414616799&captions=chi_hans" alt="Adobe Experience Platform Web SDK和Edge Network概述"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -178,7 +178,7 @@ Adobe Experience Platform的数据摄取功能让您可以将数据整合到一�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-crm.md" title="使用CRM Source连接器摄取数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740414616941" alt="使用CRM Source连接器摄取数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32139?format=jpeg&nocache=1740414616941&captions=chi_hans" alt="使用CRM Source连接器摄取数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -201,7 +201,7 @@ Adobe Experience Platform的数据摄取功能让您可以将数据整合到一�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-cloud-storage.md" title="使用Cloud Storage Source连接器引入数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740414616962" alt="使用Cloud Storage Source连接器引入数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32136?format=jpeg&nocache=1740414616962&captions=chi_hans" alt="使用Cloud Storage Source连接器引入数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -224,7 +224,7 @@ Adobe Experience Platform的数据摄取功能让您可以将数据整合到一�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-source-connector.md" title="使用Source连接器流式传输数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740414616930" alt="使用Source连接器流式传输数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410101?format=jpeg&nocache=1740414616930&captions=chi_hans" alt="使用Source连接器流式传输数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -247,7 +247,7 @@ Adobe Experience Platform的数据摄取功能让您可以将数据整合到一�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/streaming-ingestion-http-api.md" title="使用流连接HTTP API端点摄取数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331028?format=jpeg&nocache=1740414616952" alt="使用流连接HTTP API端点摄取数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410926?format=jpeg&nocache=1740414616952&captions=chi_hans" alt="使用流连接HTTP API端点摄取数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -284,7 +284,7 @@ Adobe Experience Platform的数据摄取功能让您可以将数据整合到一�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-adobe-analytics.md" title="使用Adobe Analytics源连接器摄取数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740414617197" alt="使用Adobe Analytics源连接器摄取数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430251?format=jpeg&nocache=1740414617197&captions=chi_hans" alt="使用Adobe Analytics源连接器摄取数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -307,7 +307,7 @@ Adobe Experience Platform的数据摄取功能让您可以将数据整合到一�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-marketo.md" title="从Marketo Engage引入数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740414617186" alt="从Marketo Engage引入数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451870?format=jpeg&nocache=1740414617186&captions=chi_hans" alt="从Marketo Engage引入数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -330,7 +330,7 @@ Adobe Experience Platform的数据摄取功能让您可以将数据整合到一�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../sources/ingest-data-from-aam.md" title="使用Adobe Audience Manager Data Connector引入数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331214/?format=jpeg&nocache=1740414617207" alt="使用Adobe Audience Manager Data Connector引入数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346982/?format=jpeg&nocache=1740414617207&captions=chi_hans" alt="使用Adobe Audience Manager Data Connector引入数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

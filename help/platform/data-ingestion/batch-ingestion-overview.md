@@ -18,4 +18,4 @@ ht-degree: 1%
 
 此视频概述了Adobe Experience Platform中的批量数据摄取，并演示了如何使用API摄取批量数据。 有关详细信息，请访问[数据摄取文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/330995?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345659?learn=on&enablevpops&captions=chi_hans)

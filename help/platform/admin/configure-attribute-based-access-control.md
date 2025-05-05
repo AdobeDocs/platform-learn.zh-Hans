@@ -20,4 +20,4 @@ ht-degree: 100%
 
 了解如何配置基于属性的访问控制以限制对特定 Experience Platform 资源的访问。有关更多信息，请访问[访问控制文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/abac/overview.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/345641?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451849?learn=on&enablevpops&captions=chi_hans)

@@ -18,4 +18,4 @@ ht-degree: 1%
 
 了解如何从各种支持PostgreSQL协议的桌面客户端应用程序连接到查询服务，以及如何使用PostgreSQL工具和驱动程序连接和写入查询。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333702?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414041?learn=on&enablevpops&captions=chi_hans)

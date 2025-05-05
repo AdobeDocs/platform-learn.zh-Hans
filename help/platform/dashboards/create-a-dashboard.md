@@ -23,4 +23,4 @@ ht-degree: 20%
 >
 >用户定义的功能板处于测试阶段。 其功能和文档可能会发生更改。
 
->[!VIDEO](https://video.tv.adobe.com/v/3409637/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413779/?learn=on&enablevpops&captions=chi_hans)

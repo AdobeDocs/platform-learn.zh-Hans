@@ -19,5 +19,5 @@ ht-degree: 0%
 
 此视频展示了客户人工智能如何通过基于人工智能的倾向性丰富客户档案，并支持客户分段和定位工作。 有关详细信息，请访问[客户人工智能文档](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328474?learn=on&enablevpops&captions=chi_hans)
 

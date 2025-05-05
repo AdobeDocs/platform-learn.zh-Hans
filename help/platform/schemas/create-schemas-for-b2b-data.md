@@ -19,4 +19,4 @@ ht-degree: 1%
 
 了解如何使用Real-Time Customer Data Platform、B2B edition为您的业务数据创建架构。 了解业务类、字段组和身份命名空间，以及如何使用Postman实用程序在您的帐户中自动创建它们。 有关详细信息，请访问[架构文档](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/338241?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453406?learn=on&enablevpops&captions=chi_hans)

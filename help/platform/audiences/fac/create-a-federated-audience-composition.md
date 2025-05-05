@@ -20,4 +20,4 @@ ht-degree: 1%
 
 了解如何创建联合受众合成，以及如何在UI中创建将进入数据仓库并选择正确数据的查询。 有关详细信息，请访问[联合受众组合文档](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/home){target="_blank"}。
 
->[!VIDEO](https://video.tv.adobe.com/v/3433247/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448588/?learn=on&enablevpops&captions=chi_hans)

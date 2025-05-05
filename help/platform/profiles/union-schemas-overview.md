@@ -18,4 +18,4 @@ ht-degree: 0%
 
 此视频概述了Adobe Experience Platform实时客户资料使用的合并架构。 合并架构让您能够看到共享同一类的架构中包含的所有字段的合并。 实时客户配置文件使用合并模式创建每个客户的整体视图。 有关详细信息，请访问[联合架构文档](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/342820?learn=on&enablevpops&captions=chi_hans)

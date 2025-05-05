@@ -18,4 +18,4 @@ ht-degree: 6%
 
 了解如何清理、准备和合并来自多个数据集的数据，以使用CTAS(Create Table AS)和Spark SQL函数创建新的数据集以用于报告和仪表板。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414065?learn=on&enablevpops&captions=chi_hans)

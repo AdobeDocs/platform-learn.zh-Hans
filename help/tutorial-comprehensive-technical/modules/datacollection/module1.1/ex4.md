@@ -25,7 +25,7 @@ Experience Platform Debugger是适用于Chrome和Firefox浏览器的扩展，可
 
 如果您以前从未使用过Debugger，并且此调试器与之前的Adobe Experience Cloud Debugger不同，那么您可能需要观看以下五分钟概述视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35858?quality=12&learn=on&enablevpops&captions=chi_hans)
 
 鉴于您将以无痕模式加载演示网站，您需要确保Experience Platform Debugger也可在无痕模式下使用。 为此，请在浏览器中转到&#x200B;**chrome://extensions**，然后打开Experience Platform Debugger扩展。
 

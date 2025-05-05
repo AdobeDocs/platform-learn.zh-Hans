@@ -34,7 +34,7 @@ Customer Journey Analytics基于Platform数据提供此解决方案。 我们强
 
 如果您以前未使用Analysis Workspace，我们强烈建议您观看此视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35509?quality=12&learn=on&enablevpops&captions=chi_hans)
 
 ### 创建项目
 

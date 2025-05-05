@@ -17,5 +17,5 @@ ht-degree: 0%
 
 查看使用Adobe Experience Platform构建的假设性体验，从客户的角度来看。 了解Experience Platform如何创建丰富、相关且实时的体验。
 
->[!VIDEO](https://video.tv.adobe.com/v/27361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35361?learn=on&enablevpops&captions=chi_hans)
 

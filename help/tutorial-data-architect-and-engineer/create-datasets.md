@@ -26,7 +26,7 @@ ht-degree: 6%
 **数据架构师**&#x200B;需要在本教程之外创建数据集。
 
 在开始练习之前，请观看此简短视频，了解有关数据集的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/34322?learn=on&enablevpops&captions=chi_hans)
 
 ## 所需的权限
 

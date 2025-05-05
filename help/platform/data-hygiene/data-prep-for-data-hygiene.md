@@ -20,4 +20,4 @@ ht-degree: 85%
 
 了解如何使用 Experience Platform 的数据准备功能支持数据最小化原则。了解如何仅引入您需要的字段，并在引入过程中对数据进行哈希处理。
 
->[!VIDEO](https://video.tv.adobe.com/v/3429485/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449285/?learn=on&enablevpops&captions=chi_hans)

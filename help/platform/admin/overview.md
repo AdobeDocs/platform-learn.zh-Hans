@@ -34,7 +34,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-users.md" title="添加用户" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336081?format=jpeg&nocache=1740173302150" alt="添加用户"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423937?format=jpeg&nocache=1740173302150&captions=chi_hans" alt="添加用户"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -57,7 +57,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-developers.md" title="添加开发人员" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426407?format=jpeg&nocache=1740173302176" alt="添加开发人员"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446408?format=jpeg&nocache=1740173302176&captions=chi_hans" alt="添加开发人员"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -80,7 +80,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="add-product-administrators.md" title="添加管理员" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1740173302208" alt="添加管理员"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423932?format=jpeg&nocache=1740173302208&captions=chi_hans" alt="添加管理员"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -103,7 +103,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribute-based-access-control.md" title="配置基于属性的访问控制" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345641?format=jpeg&nocache=1740173302190" alt="配置基于属性的访问控制"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451849?format=jpeg&nocache=1740173302190&captions=chi_hans" alt="配置基于属性的访问控制"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -126,7 +126,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/users-and-permissions" title="将用户添加到数据收集" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28734/?format=jpeg&nocache=1740173302543" alt="将用户添加到数据收集"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/33396/?format=jpeg&nocache=1740173302543&captions=chi_hans" alt="将用户添加到数据收集"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -163,7 +163,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-sandboxes.md" title="使用沙盒" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29838/?format=jpeg&nocache=1740173302789" alt="使用沙盒"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430297/?format=jpeg&nocache=1740173302789&captions=chi_hans" alt="使用沙盒"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -186,7 +186,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="copy-objects-between-sandboxes.md" title="在沙盒之间复制配置" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3424763/?format=jpeg&nocache=1740173302776" alt="在沙盒之间复制配置"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446099/?format=jpeg&nocache=1740173302776&captions=chi_hans" alt="在沙盒之间复制配置"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -209,7 +209,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="share-packages-across-orgs.md" title="跨IMS组织共享包" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435815/?format=jpeg&nocache=1740173302764" alt="跨IMS组织共享包"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443927/?format=jpeg&nocache=1740173302764&captions=chi_hans" alt="跨IMS组织共享包"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -276,7 +276,7 @@ ht-degree: 26%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-alerts.md" title="使用警报" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336218?format=jpeg&nocache=1740173305172" alt="使用警报"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423917?format=jpeg&nocache=1740173305172&captions=chi_hans" alt="使用警报"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

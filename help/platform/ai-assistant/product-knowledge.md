@@ -21,4 +21,4 @@ ht-degree: 0%
 
 从AI Assistant了解Adobe Experience Platform应用程序。 有关详细信息，请参阅[AI助手文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/home)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3441024/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441034/?learn=on&enablevpops&captions=chi_hans)

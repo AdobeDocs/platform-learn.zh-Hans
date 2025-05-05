@@ -18,4 +18,4 @@ ht-degree: 1%
 
 连接与数据合作伙伴的区段共享后，您可以探索并开始与合作伙伴共享数据。 本视频向您介绍为数据共享配置区段匹配实例的过程。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/342336/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346703/?learn=on&enablevpops&captions=chi_hans)

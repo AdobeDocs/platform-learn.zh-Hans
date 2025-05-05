@@ -43,7 +43,7 @@ Key terms:
 **数据架构师**&#x200B;需要在本教程之外创建架构，但&#x200B;**数据工程师**&#x200B;将与数据架构师创建的架构密切合作。
 
 在开始练习之前，请观看此简短视频，详细了解架构和Experience Data Model (XDM)：
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/38510?learn=on&enablevpops&captions=chi_hans)
 
 >[!TIP]
 >

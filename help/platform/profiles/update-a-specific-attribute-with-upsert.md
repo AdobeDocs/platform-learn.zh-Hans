@@ -19,4 +19,4 @@ ht-degree: 0%
 
 了解如何使用Adobe Experience Platform的`upsert`功能更新配置文件的特定属性。 通常，当您将仅具有特定属性的记录摄取到Platform中时，它会更新值，但也会使用`null`值更新其他属性。 `Upsert`允许您仅更新所需属性，而允许剩余字段保留其当前值。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416133/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443451/?learn=on&enablevpops&captions=chi_hans)

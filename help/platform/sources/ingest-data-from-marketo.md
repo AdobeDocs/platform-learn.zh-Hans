@@ -26,13 +26,13 @@ ht-degree: 18%
 
 了解如何使用模板工作流为Marketo配置源连接器。 此工作流会根据模板自动生成引入Marketo数据所需的资产。 这样可节省前期时间，并且可根据您的需求自定义资产。
 
->[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3451870?learn=on&enablevpops&captions=chi_hans)
 
 ## 标准工作流
 
 了解如何使用标准工作流为Marketo配置源连接器。 标准工作流需要预先创建架构和身份命名空间。
 
->[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452918?learn=on&enablevpops&captions=chi_hans)
 
 有关更多信息，请参阅以下文档：
 * [Marketo Engage源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hans)。

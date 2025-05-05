@@ -23,7 +23,7 @@ ht-degree: 0%
 
 了解如何使用标准工作流配置Salesforce CRM的源连接器。 标准工作流需要预先创建架构和身份命名空间。 其他CRM源连接器可能仅支持标准工作流。
 
->[!VIDEO](https://video.tv.adobe.com/v/29711?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32139?learn=on&enablevpops&captions=chi_hans)
 
 ## 模板工作流(Salesforce)
 

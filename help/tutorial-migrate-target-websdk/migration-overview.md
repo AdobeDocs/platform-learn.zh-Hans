@@ -56,7 +56,7 @@ Platform Web SDK不是Target at.js库的演变。 这是一种新的统一方法
 
 以下视频概述了Adobe Experience Platform Web SDK和Adobe Experience Platform Edge Network。
 
->[!VIDEO](https://video.tv.adobe.com/v/34141/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37264/?learn=on&enablevpops&captions=chi_hans)
 
 现在您已了解at.js与Platform Web SDK之间的高级差异，您可以[规划迁移](plan-migration.md)。
 

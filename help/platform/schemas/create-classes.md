@@ -18,4 +18,4 @@ ht-degree: 1%
 
 本视频说明如何在Adobe Experience Platform中创建用于体验数据模型(XDM)架构的类。 有关详细信息，请访问[架构文档](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333538?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413621?learn=on&enablevpops&captions=chi_hans)

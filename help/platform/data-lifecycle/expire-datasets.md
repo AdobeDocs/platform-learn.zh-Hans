@@ -22,7 +22,7 @@ ht-degree: 1%
 数据集删除允许数据管理员和数据工程师为数据集设置到期日期。 有关详细信息，请访问[数据卫生文档](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html?lang=zh-Hans)。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/345065?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430306?learn=on&enablevpops&captions=chi_hans)
 
 >[!NOTE]
 >

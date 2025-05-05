@@ -18,6 +18,6 @@ ht-degree: 0%
 
 大致了解Experience Platform是什么及其解决的业务挑战。
 
->[!VIDEO](https://video.tv.adobe.com/v/32797?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428501?learn=on&enablevpops&captions=chi_hans)
 
 

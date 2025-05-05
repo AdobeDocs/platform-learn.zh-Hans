@@ -19,4 +19,4 @@ ht-degree: 1%
 
 了解Adobe如何在Adobe Experience Platform中重新生成受众，包括如何导入、构建和管理受众。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421713/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423363/?learn=on&enablevpops&captions=chi_hans)

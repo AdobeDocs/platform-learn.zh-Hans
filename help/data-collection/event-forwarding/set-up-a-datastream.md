@@ -26,4 +26,4 @@ ht-degree: 0%
 > * Platform Launch服务器端现在为&#x200B;**[!DNL event forwarding]**
 > * Edge配置现在为&#x200B;**[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410358?learn=on&enablevpops&captions=chi_hans)

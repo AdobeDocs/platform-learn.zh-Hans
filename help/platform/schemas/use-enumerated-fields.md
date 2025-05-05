@@ -19,4 +19,4 @@ ht-degree: 33%
 
 了解如何使用枚举字段和建议值在区段生成器界面中创建友好的下拉菜单。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/xdm/ui/fields/enum.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3409501/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413675/?learn=on&enablevpops&captions=chi_hans)

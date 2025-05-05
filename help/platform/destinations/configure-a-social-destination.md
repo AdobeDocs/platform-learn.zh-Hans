@@ -19,5 +19,5 @@ ht-degree: 0%
 
 了解如何在Adobe Experience Platform中配置社交目标，包括身份验证、区段分配、ID映射等。 有关详细信息，请访问[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/overview.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411783/?learn=on&enablevpops&captions=chi_hans)
 

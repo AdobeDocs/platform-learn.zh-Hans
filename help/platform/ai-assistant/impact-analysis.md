@@ -20,4 +20,4 @@ ht-degree: 0%
 
 在本视频中，我们将介绍Adobe Experience Platform中的AI助手如何帮助您更有效地进行影响分析。 更改属性和受众等共享对象可能会破坏其他团队的工作流，使流程复杂化，并危及重要的营销工作。
 
->[!VIDEO](https://video.tv.adobe.com/v/3441680/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441690/?learn=on&enablevpops&captions=chi_hans)

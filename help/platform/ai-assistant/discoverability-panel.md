@@ -20,4 +20,4 @@ ht-degree: 0%
 
 了解如何使用AI Assistant中的可发现性面板。 有关详细信息，请参阅[AI助手UI指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/ui-guide#use-discoverability)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3440962/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440972/?learn=on&enablevpops&captions=chi_hans)

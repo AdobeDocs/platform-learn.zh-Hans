@@ -21,4 +21,4 @@ ht-degree: 0%
 
 这是基于<a href="https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/experience-cloud/adobe-ai-assistant-in-aep-security-fact-sheet.pdf">安全情况说明书</a>的AI Assistant安全功能概述。  有关其他信息，请参阅[AI助手隐私文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/privacy)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3441066/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441090/?learn=on&enablevpops&captions=chi_hans)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 了解如何使用包在IMS组织之间复制Experience Platform配置。 跨多个IMS组织轻松复制架构、数据集、历程等，以支持发布流程和多区域/多品牌部署。 有关详细信息，请参阅[沙盒工具文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3435815/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443927/?learn=on&enablevpops&captions=chi_hans)

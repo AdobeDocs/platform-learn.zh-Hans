@@ -20,4 +20,4 @@ ht-degree: 37%
 
 不稳定的市场力量和不同的消费者隐私要求可能会给数字营销人员带来令人生畏的情况。为了使营销活动符合法规要求，营销团队需要IT部门建立精简的流程，以适应未来的数据治理流程 — 理想情况下，该流程应使每个人都遵循并执行负责任地使用消费者数据的规则。 听取 Adobe和 Scotiabank Digital 讲述关于负责任的数据管理的重要注意事项。
 
->[!VIDEO](https://video.tv.adobe.com/v/332062/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3457061/?learn=on&enablevpops&captions=chi_hans)

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 了解如何使用AI Assistant揭示有关业务对象(如Adobe Experience Platform中的受众、数据集、架构、目标和历程)的运营见解
 
->[!VIDEO](https://video.tv.adobe.com/v/3444031/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3444042/?learn=on&enablevpops&captions=chi_hans)

@@ -20,7 +20,7 @@ ht-degree: 61%
 
 观看Adobe Experience Platform Web SDK和Edge Network的实际操作演示，只需一次Adobe调用，即可将数据发送到Experience Platform、Analytics、Audience Manager和Target。 有关详细信息，请访问[Adobe Experience Platform Web SDK文档](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413663?learn=on&enablevpops&captions=chi_hans)
 
 >[!NOTE]
 >

@@ -19,7 +19,7 @@ ht-degree: 0%
 
 了解如何将开发人员添加到基于Adobe Experience Platform的应用程序，如Real-Time Customer Data Platform和Journey Optimizer。 开发人员首先添加在Admin Console中。 在Developer Console中创建了Platform项目后，将在Platform或Journey Optimizer界面中为其API凭据分配权限。 有关详细信息，请访问[访问控制文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446408?learn=on&enablevpops&captions=chi_hans)
 
 >[!ADMIN]
 >

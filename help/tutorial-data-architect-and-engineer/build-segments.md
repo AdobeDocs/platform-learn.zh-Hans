@@ -25,7 +25,7 @@ ht-degree: 0%
 **数据架构师**&#x200B;需要在本教程之外创建区段，并通过此任务支持他们的同事。
 
 在开始练习之前，请观看此简短视频，了解有关创建区段的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31670?learn=on&enablevpops&captions=chi_hans)
 
 
 ## 所需的权限

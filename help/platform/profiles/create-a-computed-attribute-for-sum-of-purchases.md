@@ -18,4 +18,4 @@ ht-degree: 16%
 
 了解如何使用计算属性对用户在多个销售渠道中进行的购买金额进行求和。 单个客户可以在您的网站、移动应用程序以及实体店中进行购买。 利用计算属性功能，您可以对客户跨这些渠道购买的金额进行求和，然后使用此总和定义受众并进行其他个性化。 有关详细信息，请访问[计算属性UI指南](https://experienceleague.adobe.com/docs/experience-platform/profile/computed-attributes/ui.html?lang=zh-Hans&)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3425899?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443561?learn=on&enablevpops&captions=chi_hans)

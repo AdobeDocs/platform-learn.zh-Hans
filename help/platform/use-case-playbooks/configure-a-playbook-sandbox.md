@@ -26,4 +26,4 @@ ht-degree: 1%
 
 有关详细信息，请参阅[用例行动手册入门](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449836/?learn=on&enablevpops&captions=chi_hans)

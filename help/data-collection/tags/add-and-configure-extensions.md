@@ -18,4 +18,4 @@ ht-degree: 14%
 
 了解如何在标记属性中添加和配置扩展。扩展是预打包的“应用程序”，可在您的网站上安装，用于提供您所需的跟踪、个性化或其他功能。 随着Adobe、合作伙伴和客户创建扩展以支持用例，扩展市场一直在增长。 有关详细信息，请参阅[扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/extensions/overview.html?lang=zh-Hans)文档。
 
->[!VIDEO](https://video.tv.adobe.com/v/28732/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428591/?learn=on&enablevpops&captions=chi_hans)

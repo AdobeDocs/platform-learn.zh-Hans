@@ -19,7 +19,7 @@ ht-degree: 2%
 了解如何实时地将数据从云存储源流入Platform以及实时地使用数据吸引客户参与。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410101?learn=on&enablevpops&captions=chi_hans)
 
 ## 其他资源
 

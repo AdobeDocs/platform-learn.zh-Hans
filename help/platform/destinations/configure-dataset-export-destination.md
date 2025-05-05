@@ -22,4 +22,4 @@ ht-degree: 0%
 
 有关详细信息，请访问[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448828/?learn=on&enablevpops&captions=chi_hans)

@@ -22,5 +22,5 @@ Experience Platform中的受众规则生成器允许您将现有受众用作新�
 >
 > “[!UICONTROL 区段]”已在Platform界面中重命名为“[!UICONTROL 受众]”。 选择&#x200B;**[!UICONTROL 创建受众]** > **[!UICONTROL 生成规则]**&#x200B;以输入此视频中特别介绍的规则生成器。
 
->[!VIDEO](https://video.tv.adobe.com/v/333304/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413195/?learn=on&enablevpops&captions=chi_hans)
 

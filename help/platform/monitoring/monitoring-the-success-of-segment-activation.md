@@ -18,5 +18,5 @@ ht-degree: 0%
 
 在将区段配置文件发送给您的激活合作伙伴时，必须查看有关此数据传输成功的信息，尤其是这样您才能解决任何问题。 本视频说明两种主要的监控区段流向目标的方法。 有关详细信息，请访问[文档](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-segments.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/343248/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3409720/?learn=on&enablevpops&captions=chi_hans)
 

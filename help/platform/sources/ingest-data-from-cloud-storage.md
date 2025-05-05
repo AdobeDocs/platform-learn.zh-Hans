@@ -18,4 +18,4 @@ ht-degree: 0%
 
 此视频介绍如何轻松地以无缝和可伸缩的方式将数据从云存储服务引入Adobe Experience Platform的Real-time Customer Profile和Data Lake。 有关更详细的产品文档，请参阅Source连接器概述页面上的[云存储](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans#cloud-storage)或[Amazon S3源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/29695?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32136?learn=on&enablevpops&captions=chi_hans)

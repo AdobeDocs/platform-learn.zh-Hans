@@ -20,5 +20,5 @@ ht-degree: 0%
 
 了解如何设置访问和使用Real-Time CDP Collaboration所需的权限。 For detailed documentation, go to [Access control overview](https://experienceleague.adobe.com/zh-hans/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3452216/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3452240/?learn=on&enablevpops&captions=chi_hans)
 

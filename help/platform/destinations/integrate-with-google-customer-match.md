@@ -19,4 +19,4 @@ ht-degree: 0%
 
 了解Adobe的Real-Time Customer Data Platform和Google的“客户匹配”功能如何帮助品牌厂商就Google自有资产和运营资产吸引客户，以扩大其外联活动。 有关详细信息，请访问[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/38180?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/326483?learn=on&enablevpops&captions=chi_hans)

@@ -24,9 +24,9 @@ ht-degree: 1%
 Adobe Experience Platform数据管理允许您管理客户数据，并确保遵守适用于数据使用的法规、限制和策略。 它在各个级别的Experience Platform中起着关键作用，包括控制数据的使用。
 
 在开始练习之前，请观看这些关于数据管理的简短视频：
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41324?learn=on&enablevpops&captions=chi_hans)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32134?learn=on&enablevpops&captions=chi_hans)
 
 <!--
 ## Permissions required

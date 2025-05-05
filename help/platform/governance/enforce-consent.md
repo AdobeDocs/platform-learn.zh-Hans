@@ -18,7 +18,7 @@ ht-degree: 2%
 
 了解如何创建策略以强制执行客户的同意首选项。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3412097?learn=on&enablevpops&captions=chi_hans)
 
 >[!IMPORTANT]
 >

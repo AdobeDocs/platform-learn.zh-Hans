@@ -18,4 +18,4 @@ ht-degree: 38%
 
 了解隐私法规及其对数据操作的影响。此外，了解Privacy Service如何处理这些挑战。 有关详细信息，请访问[隐私服务文档](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/336074?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445721?learn=on&enablevpops&captions=chi_hans)

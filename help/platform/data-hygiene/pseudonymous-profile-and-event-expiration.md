@@ -22,4 +22,4 @@ ht-degree: 39%
 这些设置允许数据管理员设置未经身份验证的用户档案及其相关事件的过期日期。 这有助于使[!DNL Profile Service]与您的营销和广告用例相关。 有关详细信息，请访问[体验事件过期](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/event-expirations)和[假名配置文件数据过期](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/profile/event-expirations)文档。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3449867?learn=on&enablevpops&captions=chi_hans)

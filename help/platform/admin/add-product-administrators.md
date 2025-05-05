@@ -20,7 +20,7 @@ ht-degree: 0%
 
 了解如何为Adobe Experience Platform添加产品管理员。 产品管理员可管理对基于Platform的应用程序(如Real-Time Customer Data Platform和Journey Optimizer)的访问控制。 他们可以在Admin Console中创建用户、开发人员和其他管理员，然后在Platform或Journey Optimizer界面中授予他们（和API凭据）权限。 有关详细信息，请访问[访问控制文档](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333860?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423932?learn=on&enablevpops&captions=chi_hans)
 
 >[!TIP]
 >

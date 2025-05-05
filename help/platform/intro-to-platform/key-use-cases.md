@@ -18,5 +18,5 @@ ht-degree: 0%
 
 大致了解Experience Platform的五个关键用例 — 智能重新参与、“永不损失”促销活动、客户转化优化、上下文识别以及一次性价值到生命周期价值。
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430463?learn=on&enablevpops&captions=chi_hans)
 

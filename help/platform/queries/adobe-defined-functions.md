@@ -18,4 +18,4 @@ ht-degree: 1%
 
 了解如何在Adobe Experience Platform查询服务中使用Adobe定义的函数来对体验事件数据执行常见的业务相关任务。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333701?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414047?learn=on&enablevpops&captions=chi_hans)

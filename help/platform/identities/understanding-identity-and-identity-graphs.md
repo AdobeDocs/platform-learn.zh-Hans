@@ -18,7 +18,7 @@ ht-degree: 9%
 
 了解Adobe Experience Platform中身份解析的主要功能 — 身份收集、身份图形和API。 了解Identity Service如何链接断开连接的身份，以通过构建统一的用户档案来提供一致的连接体验。 有关详细信息，请访问[身份服务文档](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422769?learn=on&enablevpops&captions=chi_hans)
 
 ## 配置身份
 
@@ -32,7 +32,7 @@ ht-degree: 9%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="label-ingest-and-verify-identity-data.md" title="标记、引入并验证身份数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/28167?format=jpeg&nocache=1740414775790" alt="标记、引入并验证身份数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/31671?format=jpeg&nocache=1740414775790&captions=chi_hans" alt="标记、引入并验证身份数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -65,7 +65,7 @@ ht-degree: 9%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="identity-graph-linking-rules/graph-simulation.md" title="身份图形链接规则 — 图形模拟" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1740414776009" alt="身份图形链接规则 — 图形模拟"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444053/?format=jpeg&nocache=1740414776009&captions=chi_hans" alt="身份图形链接规则 — 图形模拟"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -98,7 +98,7 @@ ht-degree: 9%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="view-identity-graphs.md" title="查看身份图" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331030?format=jpeg&nocache=1740414776113" alt="查看身份图"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345652?format=jpeg&nocache=1740414776113&captions=chi_hans" alt="查看身份图"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

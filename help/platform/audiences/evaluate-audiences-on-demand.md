@@ -20,4 +20,4 @@ ht-degree: 0%
 
 使用Adobe Experience Platform的灵活受众评估功能按需评估批量受众。 有关更多信息和护栏，请参阅[灵活的受众评估指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/segmentation/methods/flexible-audience-evaluation)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3453640/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3453650/?learn=on&enablevpops&captions=chi_hans)

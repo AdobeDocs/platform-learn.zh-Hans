@@ -19,5 +19,5 @@ ht-degree: 21%
 
 了解如何订阅隐私事件以自动执行基于作业状态的工作流。 有关详细信息，请访问[隐私服务文档](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448182?learn=on&enablevpops&captions=chi_hans)
 

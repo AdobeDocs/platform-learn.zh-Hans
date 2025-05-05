@@ -31,20 +31,20 @@ ht-degree: 10%
 >
 > 创建API凭据后，系统管理员必须将该凭据与Experience Platform中的角色关联。
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31668/?learn=on&enablevpops&captions=chi_hans)
 
 ## 使用Postman生成访问令牌{#generate-an-access-token-with-postman}
 
 使用[Adobe Identity Management服务API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)获取访问令牌以访问Adobe Experience Platform API。
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32725/?learn=on&enablevpops&captions=chi_hans)
 
 
 ## 使用Postman与Experience Platform API交互
 
 利用[Adobe Experience Platform环境变量](#export-integration-details-to-postman)和[生成的访问令牌](#generate-an-access-token-with-postman)，探索使用[Adobe提供的Experience Platform API Postman收藏集](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)与Adobe Developer Console API交互。
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32721/?learn=on&enablevpops&captions=chi_hans)
 
 
 ## 这些视频中引用的资源

@@ -19,5 +19,5 @@ ht-degree: 0%
 
 了解如何在Real-Time Customer Data Platform、B2B edition和Adobe Experience Platform中查看客户个人资料和商机。 有关详细信息，请参阅[配置文件文档](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/338251?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446587?learn=on&enablevpops&captions=chi_hans)
 

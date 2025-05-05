@@ -18,4 +18,4 @@ ht-degree: 0%
 
 了解如何将CSV格式的受众上传到Adobe Experience Platform。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/segmentation/ui/audience-portal#import-audience)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3421714/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3423354/?learn=on&enablevpops&captions=chi_hans)

@@ -26,7 +26,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 **数据架构师**&#x200B;需要在本教程之外映射身份。
 
 在开始练习之前，请观看此简短视频，了解有关Adobe Experience Platform中标识的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422769?learn=on&enablevpops&captions=chi_hans)
 
 >[!NOTE]
 >

@@ -19,4 +19,4 @@ ht-degree: 50%
 
 此视频演示了Adobe的Real-Time Customer Data Platform如何在品牌参与数字财产交易时，帮助品牌尊重消费者的知情同意权。 通过 IAB Transparency &amp; Consent Framework 2.0 的支持，品牌在加大消费者对其知情同意权的控制力度的同时，围绕如何与消费者互动，获得了更大的灵活性。
 
->[!VIDEO](https://video.tv.adobe.com/v/38346?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/326475?learn=on&enablevpops&captions=chi_hans)

@@ -19,4 +19,4 @@ ht-degree: 36%
 
 了解如何堆叠标记属性的规则。规则栈叠使用标记规则事件中的`order`功能对规则进行排序，以便您可以管理可扩展的标记实施。 在全局规则中设置一些变量，在特定页面的规则中添加和覆盖变量，然后将数据发送到所需的营销应用程序。 有关规则排序的详细信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans#rule-ordering)文档。
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454037/?learn=on&enablevpops&captions=chi_hans)

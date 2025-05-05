@@ -18,5 +18,5 @@ ht-degree: 0%
 
 了解基于Adobe Experience Platform本机构建的应用程序：Customer Journey Analytics、Real-Time Customer Data Platform、Journey Optimizer和Mix Modeler。
 
->[!VIDEO](https://video.tv.adobe.com/v/32554?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3428524?learn=on&enablevpops&captions=chi_hans)
 

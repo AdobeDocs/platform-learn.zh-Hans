@@ -18,4 +18,4 @@ ht-degree: 1%
 
 本视频向您介绍一个概览图表，该图表展示了Adobe Experience Platform的实时客户资料功能。 有关详细信息，请访问[实时客户资料文档](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/33600?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36830?learn=on&enablevpops&captions=chi_hans)

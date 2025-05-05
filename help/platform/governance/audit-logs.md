@@ -17,5 +17,5 @@ ht-degree: 42%
 
 了解审核日志功能如何帮助您满足合规性要求并排查Adobe Experience Platform实施问题。 有关详细信息，请访问[审核日志文档](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/audit-logs/overview.html?lang=zh-Hans)或[API引用](https://developer.adobe.com/experience-platform-apis/references/audit-query/)。
 
->[!VIDEO](https://video.tv.adobe.com/v/341450?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/344644?learn=on&enablevpops&captions=chi_hans)
 

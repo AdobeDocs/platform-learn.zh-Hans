@@ -18,4 +18,4 @@ ht-degree: 1%
 
 了解Adobe Experience Platform的数据管理功能以及它如何帮助品牌厂商在提供对客户数据的完全控制的同时，向其客户提供个性化体验。 有关详细信息，请访问[数据管理文档](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/41324?learn=on&enablevpops&captions=chi_hans)
