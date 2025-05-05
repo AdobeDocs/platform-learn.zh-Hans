@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # 配置Marketo目标
 
-了解如何在Adobe Experience Platform中配置Marketo目标，以便能够将Platform区段激活到Marketo Engage实例。 有关详细信息，请参阅[配置文件文档](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html)。
+了解如何在Adobe Experience Platform中配置Marketo目标，以便能够将Platform区段激活到Marketo Engage实例。 有关详细信息，请参阅[配置文件文档](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
 

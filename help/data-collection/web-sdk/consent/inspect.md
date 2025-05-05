@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 检查并验证同意信号
 
-了解如何验证同意设置是否已正确应用于Adobe Experience Platform中的数据。 有关[测试您的实施](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=en#test-implementation)的更多信息，请参阅同意文档。
+了解如何验证同意设置是否已正确应用于Adobe Experience Platform中的数据。 有关[测试您的实施](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html?lang=zh-Hans#test-implementation)的更多信息，请参阅同意文档。
 
 >[!NOTE]
 >

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 在沙盒之间复制配置
 
-了解如何使用包在Experience Platform沙盒之间复制配置。 跨沙盒轻松复制架构、数据集、历程等，以支持发布流程和多区域/多品牌部署。 有关详细信息，请参阅[沙盒工具文档](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html)。
+了解如何使用包在Experience Platform沙盒之间复制配置。 跨沙盒轻松复制架构、数据集、历程等，以支持发布流程和多区域/多品牌部署。 有关详细信息，请参阅[沙盒工具文档](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424763/?learn=on&enablevpops)

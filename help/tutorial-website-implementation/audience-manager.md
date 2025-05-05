@@ -14,15 +14,15 @@ ht-degree: 72%
 
 本课程将指导您完成使用服务器端转发启用 Adobe Audience Manager 的步骤。
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html) (AAM) 提供了行业领先的在线受众数据管理服务，为数字广告商和出版商提供了控制和利用其数据资产所需的工具，进而助力取得销售成功。
+[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager/user-guide/aam-home.html?lang=zh-Hans) (AAM) 提供了行业领先的在线受众数据管理服务，为数字广告商和出版商提供了控制和利用其数据资产所需的工具，进而助力取得销售成功。
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
+> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)**
 
 ## 学习目标
 
@@ -44,7 +44,7 @@ ht-degree: 72%
 
    ![您可以使用 Debugger 在实际的网站上查找 Audience Manager 子域](images/aam-debugger-partner.png)
 
-如果您尚未实施 Audience Manager，请按照[获取 Audience Manager 子域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)中提供的说明进行操作。
+如果您尚未实施 Audience Manager，请按照[获取 Audience Manager 子域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=zh-Hans)中提供的说明进行操作。
 
 ## 实施选项
 
@@ -95,7 +95,7 @@ ht-degree: 72%
 >
 >由于需要按报表包启用SSF，因此，当您在实际网站的报表包中部署SSF时，请不要忘记为每个实际的报表包重复此步骤。
 >
->此外，如果 SSF 选项为灰色，您需要将报表包映射到 Experience Cloud 组织，才能启用此选项。[此文档](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html)对此进行了说明。
+>此外，如果 SSF 选项为灰色，您需要将报表包映射到 Experience Cloud 组织，才能启用此选项。[此文档](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html?lang=zh-Hans)对此进行了说明。
 
 完成此步骤后，如果您启用了 Adobe Experience Platform Identity Service，则数据将从 Analytics 转发到 AAM。但是，要完成此过程，以便响应从AAM正常返回到页面(并通过Audience Analytics功能返回到Analytics)，您还必须在标记中完成以下步骤。 别担心，这超级简单。
 
@@ -117,7 +117,7 @@ ht-degree: 72%
 
 1. 选中&#x200B;**[!UICONTROL 自动与Audience Manager]**&#x200B;共享Analytics数据的框。 这会将 Audience Manager“模块”（代码）添加到 Analytics `AppMeasurement.js` 实施中。
 
-1. 添加您的“Audience Manager 子域”（也称为“合作伙伴名称”、“合作伙伴 ID”或“合作伙伴子域”）。按照[获取 Audience Manager 子域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html)中提供的说明进行操作。
+1. 添加您的“Audience Manager 子域”（也称为“合作伙伴名称”、“合作伙伴 ID”或“合作伙伴子域”）。按照[获取 Audience Manager 子域](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/web-implementation/how-to-identify-your-partner-id-or-subdomain.html?lang=zh-Hans)中提供的说明进行操作。
 
 1. 单击&#x200B;**[!UICONTROL 保存到库并生成]**
 

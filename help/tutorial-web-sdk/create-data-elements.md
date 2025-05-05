@@ -54,7 +54,7 @@ ht-degree: 2%
 
 ### 在数据层中实施XDM
 
-此方法涉及使用完全定义的XDM对象作为数据层的结构。 然后，将整个数据层映射到标记中的XDM对象数据元素。 如果您的实施不使用标签管理器，则此方法可能比较理想，因为您可以使用[XDM sendEvent命令](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data)直接从应用程序向XDM发送数据。 如果您确实使用标记，则可以创建一个自定义代码数据元素，它将整个数据层作为传递到XDM的JSON对象进行捕获。 然后，将传递JSON映射到发送事件操作中的XDM对象字段。
+此方法涉及使用完全定义的XDM对象作为数据层的结构。 然后，将整个数据层映射到标记中的XDM对象数据元素。 如果您的实施不使用标签管理器，则此方法可能比较理想，因为您可以使用[XDM sendEvent命令](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data)直接从应用程序向XDM发送数据。 如果您确实使用标记，则可以创建一个自定义代码数据元素，它将整个数据层作为传递到XDM的JSON对象进行捕获。 然后，将传递JSON映射到发送事件操作中的XDM对象字段。
 
 以下是使用Adobe客户端数据层格式时数据层的外观示例：
 
@@ -129,17 +129,17 @@ window.adobeDataLayer.push({
 >
 > Google Data Layer
 > 
-> 如果贵组织已使用Google Analytics，并且网站上具有传统的Google数据层对象，则可以在标记中使用[Google数据层扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview)。 这使您能够更快地部署Adobe技术，而无需请求IT团队的支持。 将Google数据层映射到XDM将遵循与上述相同的步骤。
+> 如果贵组织已使用Google Analytics，并且网站上具有传统的Google数据层对象，则可以在标记中使用[Google数据层扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/google-data-layer/overview)。 这使您能够更快地部署Adobe技术，而无需请求IT团队的支持。 将Google数据层映射到XDM将遵循与上述相同的步骤。
 
 ### 在数据流中映射到XDM
 
-此方法使用名为[数据收集](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)的数据准备的数据流配置中内置的功能，并跳过将数据层变量映射到标记中的XDM。
+此方法使用名为[数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep)的数据准备的数据流配置中内置的功能，并跳过将数据层变量映射到标记中的XDM。
 
 #### 优点
 
 * 灵活，因为您可以将各个变量映射到XDM
-* 能够在数据层转到XDM之前[计算新值](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions)或[转换数据类型](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)
-* 利用[映射UI](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping)，通过点击式UI将源数据中的字段映射到XDM
+* 能够在数据层转到XDM之前[计算新值](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/functions)或[转换数据类型](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/data-handling)
+* 利用[映射UI](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep#create-mapping)，通过点击式UI将源数据中的字段映射到XDM
 
 #### 缺点
 

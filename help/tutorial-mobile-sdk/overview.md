@@ -71,7 +71,7 @@ Experience Platform Mobile SDK是客户端SDK，它允许Adobe Experience Cloud�
       * **[!UICONTROL 数据管理]** — 用于管理和查看数据集的权限项。
       * 可用于本教程的开发&#x200B;**沙盒**。
 
-   * 对于Journey Optimizer课程，您需要权限来配置&#x200B;**推送通知服务**&#x200B;并创建&#x200B;**应用程序表面**、**历程**、**消息**&#x200B;和&#x200B;**消息预设**。 对于决策管理，您需要具有适当的权限来&#x200B;**管理优惠**&#x200B;和&#x200B;**决策**，如[此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions)所述。
+   * 对于Journey Optimizer课程，您需要权限来配置&#x200B;**推送通知服务**&#x200B;并创建&#x200B;**应用程序表面**、**历程**、**消息**&#x200B;和&#x200B;**消息预设**。 对于决策管理，您需要具有适当的权限来&#x200B;**管理优惠**&#x200B;和&#x200B;**决策**，如[此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=zh-Hans#decisions-permissions)所述。
 
 * 对于Adobe Analytics，您必须知道可以使用哪些&#x200B;**报表包**&#x200B;来完成本教程。
 

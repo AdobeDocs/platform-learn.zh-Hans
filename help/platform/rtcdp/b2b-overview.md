@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Real-Time Customer Data Platform (CDP)、B2B edition概述
 
-了解企业到企业(B2B)营销人员如何跨系统统一人员和帐户配置文件，并全面了解其客户。 有关详细信息，请访问[Real-Time CDP B2B edition文档](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html)。
+了解企业到企业(B2B)营销人员如何跨系统统一人员和帐户配置文件，并全面了解其客户。 有关详细信息，请访问[Real-Time CDP B2B edition文档](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/b2b-overview.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338249?learn=on&enablevpops)

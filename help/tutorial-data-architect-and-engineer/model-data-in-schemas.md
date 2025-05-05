@@ -47,7 +47,7 @@ Key terms:
 
 >[!TIP]
 >
-> 若要在Experience Platform中更深入地研究数据建模，我们建议观看可在Experience League上免费使用的播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)！
+> 若要在Experience Platform中更深入地研究数据建模，我们建议观看可在Experience League上免费使用的播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/zh-hans/playlists/experience-platform-model-your-customer-experience-data-with-xdm)！
 
 ## 所需的权限
 
@@ -86,7 +86,7 @@ Key terms:
 
 创建架构后，您将被重定向到架构编辑器，您可以在其中向架构添加字段。 您可以直接将单个字段添加到架构或使用字段组。 请务必注意，所有单个字段仍与类或字段组相关联。 您可以从Adobe提供的大量行业标准字段组中进行选择，也可以创建自己的字段组。 当您开始在Experience Platform中对自己的数据进行建模时，最好熟悉Adobe提供的行业标准字段组。 最佳实践是尽可能使用它们，因为它们有时支持下游服务，例如客户人工智能、归因人工智能和Adobe Analytics。
 
-处理您自己的数据时，重要的一步是确定应在Platform中捕获您自己的哪些数据以及应如何对其进行建模。 播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)中将更深入地讨论这个大主题。 在本教程中，我将指导您完成一些预先确定的架构的实施。
+处理您自己的数据时，重要的一步是确定应在Platform中捕获您自己的哪些数据以及应如何对其进行建模。 播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/zh-hans/playlists/experience-platform-model-your-customer-experience-data-with-xdm)中将更深入地讨论这个大主题。 在本教程中，我将指导您完成一些预先确定的架构的实施。
 
 要添加字段组：
 
@@ -373,7 +373,7 @@ Key terms:
 
 ## 其他资源
 
-* [体验数据模型(XDM)系统文档](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
+* [体验数据模型(XDM)系统文档](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)
 * [架构注册表API](https://www.adobe.io/experience-platform-apis/references/schema-registry/)
 
 

@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # Customer AI简介
 
-全面概述营销人员如何使用客户人工智能生成客户预测。 有关详细信息，请访问[客户人工智能文档](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)。
+全面概述营销人员如何使用客户人工智能生成客户预测。 有关详细信息，请访问[客户人工智能文档](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on&enablevpops)

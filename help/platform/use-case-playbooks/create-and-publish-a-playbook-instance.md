@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # 创建和发布行动手册实例
 
-通过此端到端演示视频了解如何发现、创建、发布用例剧本的实例并对其进行故障排除。 有关详细信息，请参阅[创建、共享和重用行动手册实例](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html)。
+通过此端到端演示视频了解如何发现、创建、发布用例剧本的实例并对其进行故障排除。 有关详细信息，请参阅[创建、共享和重用行动手册实例](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on&enablevpops)

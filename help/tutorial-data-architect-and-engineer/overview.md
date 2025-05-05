@@ -48,7 +48,7 @@ Adobe Experience Platform是一个技术平台，旨在帮助您实现营销目�
 
 ## 先决条件
 
-* 您已观看Experience League上的[Adobe Experience Platform播放列表简介](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction)，并且熟悉Platform功能
+* 您已观看Experience League上的[Adobe Experience Platform播放列表简介](https://experienceleague.adobe.com/zh-hans/playlists/experience-platform-introduction)，并且熟悉Platform功能
 * 您可以访问由Adobe Experience Platform(或基于Platform的应用程序，如Real-Time CDP或Journey Optimizer)和数据收集（以前称为Launch）配置的帐户。
 * 您是该帐户的系统管理员，或者可以为您配置一个[用户权限](configure-permissions.md)。
 
@@ -58,7 +58,7 @@ Adobe Experience Platform是一个技术平台，旨在帮助您实现营销目�
 
 在本教程中创建各种Platform元素时，请尽量使用我推荐的名称。 但是，如果您的组织中有多个人员同时参加本教程，则可能需要自定义一些高级别元素名称。 例如，您可能希望将Platform沙盒命名为“Luma Tutorial Platform - Ignatius J Reilly”，而不是仅命名为“Luma Tutorial Platform”。
 
-如果卡住，请尝试先重新阅读说明，然后使用每个页面侧边栏上的![记录问题](https://experienceleague.adobe.com/assets/img/feedback.svg)链接与我联系。
+如果卡住，请尝试先重新阅读说明，然后使用每个页面侧边栏上的![记录问题](https://experienceleague.adobe.com/assets/img/feedback.svg?lang=zh-Hans)链接与我联系。
 
 ## 技术说明
 

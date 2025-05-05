@@ -39,17 +39,17 @@ Adobike还希望客户可以方便地在线订购自行车。 他们意识到，
 
 ### Adobe Experience Manager
 
-- [使用Creative Cloud服务的内容自动化概述](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=en)
-- [AEM Commerce as a Cloud Service 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html)
-- [Adobe Experience Manager as a Headless CMS简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=en)
+- [使用Creative Cloud服务的内容自动化概述](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/content-automation/overview.html?lang=zh-Hans)
+- [AEM Commerce as a Cloud Service 快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/storefront/getting-started.html?lang=zh-Hans)
+- [Adobe Experience Manager as a Headless CMS简介](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/headless/introduction.html?lang=zh-Hans)
 
 ### Adobe Express
 
-- [Adobe Express模板入门](https://helpx.adobe.com/express/using/work-with-templates.html)
+- [Adobe Express模板入门](https://helpx.adobe.com/cn/express/using/work-with-templates.html)
 
 ### Adobe Workfront
 
-- [产品文档Adobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/home.html?lang=en)
+- [产品文档Adobe Workfront](https://experienceleague.adobe.com/docs/workfront/using/home.html?lang=zh-Hans)
 - 适用于AEM Assets的[Workfront](https://exchange.adobe.com/apps/ec/101385/workfront-for-aem-assets)
 
 

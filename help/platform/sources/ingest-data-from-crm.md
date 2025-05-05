@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 使用CRM源连接器摄取数据
 
-了解如何轻松地将数据从CRM源无缝地批量引入Adobe Experience Platform的Real-time Customer Profile和数据湖。 有关更详细的产品文档，请参阅Source Connectors概述页面上的[客户关系管理(CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en#access-control-for-sources-in-data-ingestion)。
+了解如何轻松地将数据从CRM源无缝地批量引入Adobe Experience Platform的Real-time Customer Profile和数据湖。 有关更详细的产品文档，请参阅Source Connectors概述页面上的[客户关系管理(CRM)](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans#access-control-for-sources-in-data-ingestion)。
 
 ## 标准工作流
 
@@ -32,6 +32,6 @@ ht-degree: 0%
 >[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
 
 有关更多信息，请参阅以下文档：
-* [Salesforce创建连接文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html)。
-* [使用UI中的模板创建源数据流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)。
+* [Salesforce创建连接文档](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html?lang=zh-Hans)。
+* [使用UI中的模板创建源数据流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=zh-Hans#)。
 

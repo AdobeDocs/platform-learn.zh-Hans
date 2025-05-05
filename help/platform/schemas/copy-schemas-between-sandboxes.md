@@ -16,7 +16,7 @@ ht-degree: 1%
 
 # 在沙盒之间复制架构
 
-本视频说明如何使用导出/导入架构API在Adobe Experience Platform中将架构从一个沙盒复制到另一个沙盒。 在开发沙盒中构建和测试您的架构，然后将它们复制到生产环境中。 有关详细信息，请访问[架构文档](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)。
+本视频说明如何使用导出/导入架构API在Adobe Experience Platform中将架构从一个沙盒复制到另一个沙盒。 在开发沙盒中构建和测试您的架构，然后将它们复制到生产环境中。 有关详细信息，请访问[架构文档](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)。
 
 >[!TIP]
 >

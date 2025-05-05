@@ -35,7 +35,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果使用用于数据收集的[数据准备](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/data-prep)功能，您只需选择架构，在本教程中，我们将不会执行此操作。 请访问链接以了解更多信息。
+   >如果使用用于数据收集的[数据准备](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/edge-network/data-prep)功能，您只需选择架构，在本教程中，我们将不会执行此操作。 请访问链接以了解更多信息。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**
 

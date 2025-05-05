@@ -37,7 +37,7 @@ Customer Journey Analytics允许您执行高级归因建模，并将营销资金
 
 ## 看看这个
 
-- Experience Platform文档：[Customer Journey Analytics — 产品文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html)
+- Experience Platform文档：[Customer Journey Analytics — 产品文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hans)
 
 [返回模块4.1](./customer-journey-analytics-build-a-dashboard.md)
 

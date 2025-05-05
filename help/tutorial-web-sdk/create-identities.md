@@ -38,7 +38,7 @@ ht-degree: 3%
 
 ## Experience Cloud ID
 
-[Experience CloudID (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid)是跨Adobe Experience Platform和Adobe Experience Cloud应用程序使用的共享身份命名空间。 ECID为客户身份奠定了基础，是数字资产的默认身份。 ECID是跟踪未经身份验证的用户行为的理想标识符，因为它始终存在。
+[Experience CloudID (ECID)](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/ecid)是跨Adobe Experience Platform和Adobe Experience Cloud应用程序使用的共享身份命名空间。 ECID为客户身份奠定了基础，是数字资产的默认身份。 ECID是跟踪未经身份验证的用户行为的理想标识符，因为它始终存在。
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -71,7 +71,7 @@ FPID是使用您自己的Web服务器&#x200B;_设置的第一方Cookie_，Adobe�
 
 如上所述，在使用Platform Web SDK时，您数字资产的所有访客都会Adobe分配一个ECID。 ECID是用于跟踪未经身份验证的数字行为的默认身份。
 
-您还可以发送经过身份验证的用户ID，以便平台可以创建[身份图](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs)，并且Target可以设置其[第三方ID](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id)。 通过使用[!UICONTROL 标识映射]数据元素类型来设置经过身份验证的ID。
+您还可以发送经过身份验证的用户ID，以便平台可以创建[身份图](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs)，并且Target可以设置其[第三方ID](https://experienceleague.adobe.com/zh-hans/docs/target/using/audiences/visitor-profiles/3rd-party-id)。 通过使用[!UICONTROL 标识映射]数据元素类型来设置经过身份验证的ID。
 
 要创建[!UICONTROL 标识映射]数据元素：
 

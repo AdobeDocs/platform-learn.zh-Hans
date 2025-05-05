@@ -100,7 +100,7 @@ Platform Web SDK为使用指定了`actionType`的`applyPropositions`命令将基
 | `replaceHtml` | 移除容器并将其替换为选件 | 否 | 是 |
 | `appendHtml` | 在指定的选择器后附加选件 | 否 | 是 |
 
-请参阅有关使用Platform Web SDK渲染内容的[专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)，以获取其他渲染选项和示例。
+请参阅有关使用Platform Web SDK渲染内容的[专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hans)，以获取其他渲染选项和示例。
 
 ## 实施示例
 

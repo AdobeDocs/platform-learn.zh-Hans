@@ -32,11 +32,11 @@ ht-degree: 0%
 
 当在目标VEC中打开网站以进行创作时，会自动启用可视化编辑帮助程序。 该扩展没有任何条件设置。 该扩展会自动处理所有设置，包括SameSite Cookie设置。
 
-请参阅专用文档以了解有关[可视化编辑帮助程序扩展](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html)和[可视化体验编辑器故障诊断](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html)的更多信息。
+请参阅专用文档以了解有关[可视化编辑帮助程序扩展](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html?lang=zh-Hans)和[可视化体验编辑器故障诊断](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html?lang=zh-Hans)的更多信息。
 
 >[!IMPORTANT]
 >
->新的[可视化编辑帮助程序扩展](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)取代了以前的[Target VEC帮助程序浏览器扩展](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html)。 如果安装了旧版VEC助手扩展，则在使用可视化编辑助手扩展之前，应将其删除或禁用。
+>新的[可视化编辑帮助程序扩展](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)取代了以前的[Target VEC帮助程序浏览器扩展](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=zh-Hans)。 如果安装了旧版VEC助手扩展，则在使用可视化编辑助手扩展之前，应将其删除或禁用。
 
 ## 自动请求和应用内容
 
@@ -128,9 +128,9 @@ alloy("sendEvent", {
 
 >[!NOTE]
 >
->可以[手动渲染在可视化体验编辑器中进行的修改](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html#manually-rendering-content)。 基于VEC的修改手动渲染并不常见。 检查您的at.js实施是否使用`getOffers()`函数手动执行Target `pageLoad`请求，而不使用`applyOffers()`将内容应用到页面。
+>可以[手动渲染在可视化体验编辑器中进行的修改](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hans#manually-rendering-content)。 基于VEC的修改手动渲染并不常见。 检查您的at.js实施是否使用`getOffers()`函数手动执行Target `pageLoad`请求，而不使用`applyOffers()`将内容应用到页面。
 
-Platform Web SDK在请求和呈现内容方面为开发人员提供了极大的灵活性。 有关其他选项和详细信息，请参阅有关渲染个性化内容的[专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)。
+Platform Web SDK在请求和呈现内容方面为开发人员提供了极大的灵活性。 有关其他选项和详细信息，请参阅有关渲染个性化内容的[专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hans)。
 
 ## 实施示例
 

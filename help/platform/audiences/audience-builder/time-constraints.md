@@ -18,6 +18,6 @@ ht-degree: 18%
 
 # 在区段定义中使用时间限制
 
-了解如何在Adobe Experience Platform受众生成器界面中使用各种日期和时间选项。 在配置文件属性中使用日期为生日的用户构建受众。 在事件中使用日期来构建受众，这些受众面向在特定时间范围内进行了多次购买或者在特定时间范围内没有采取操作的用户。 有关详细信息，请参阅[区段生成器用户界面指南](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder)。
+了解如何在Adobe Experience Platform受众生成器界面中使用各种日期和时间选项。 在配置文件属性中使用日期为生日的用户构建受众。 在事件中使用日期来构建受众，这些受众面向在特定时间范围内进行了多次购买或者在特定时间范围内没有采取操作的用户。 有关详细信息，请参阅[区段生成器用户界面指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/segmentation/ui/segment-builder)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3432259/?learn=on&enablevpops)

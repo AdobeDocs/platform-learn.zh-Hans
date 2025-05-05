@@ -17,7 +17,7 @@ ht-degree: 5%
 
 Assurance（正式称为Project Griffon）旨在帮助您检查、证明、模拟和验证在移动应用程序中收集数据或提供体验的方式。
 
-Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原始 SDK 事件。SDK 收集的所有事件都可供检查。SDK 事件加载在列表视图中，按时间排序。每个事件都有一个详细视图，可提供更多详细信息。还提供了用于浏览SDK配置、数据元素、共享状态和SDK扩展版本的其他视图。 在产品文档中了解有关[Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html)的更多信息。
+Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原始 SDK 事件。SDK 收集的所有事件都可供检查。SDK 事件加载在列表视图中，按时间排序。每个事件都有一个详细视图，可提供更多详细信息。还提供了用于浏览SDK配置、数据元素、共享状态和SDK扩展版本的其他视图。 在产品文档中了解有关[Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=zh-Hans)的更多信息。
 
 
 ## 先决条件
@@ -35,7 +35,7 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 
 ## 确认访问
 
-确认您的组织有权访问Assurance。 您作为用户，应该被添加到Adobe Experience Platform的配置文件。 有关详细信息，请参阅保证指南中的[用户访问权限](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en)。
+确认您的组织有权访问Assurance。 您作为用户，应该被添加到Adobe Experience Platform的配置文件。 有关详细信息，请参阅保证指南中的[用户访问权限](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=zh-Hans)。
 
 ## 实施
 
@@ -169,7 +169,7 @@ Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基�
 
          ![保证事件](assets/assurance-events.png)
 
-如果您遇到任何挑战，请查阅[技术](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}和[常规文档](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}。
+如果您遇到任何挑战，请查阅[技术](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"}和[常规文档](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=zh-Hans){target="_blank"}。
 
 
 ## 验证扩展

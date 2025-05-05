@@ -20,7 +20,7 @@ ht-degree: 0%
 
 了解如何在Real-Time Customer Data Platform中设置连接并将数据发送到Azure Blob Storage目标。 此目标支持导出数据集和受众，并允许您自定义文件标题和数据属性。
 
-有关详细信息，请访问[文档](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)。
+有关详细信息，请访问[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
 

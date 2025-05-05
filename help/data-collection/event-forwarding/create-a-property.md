@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 创建事件转发属性
 
-了解如何在数据收集中创建事件转发属性。 有关详细信息，请访问[创建事件转发属性文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property)。
+了解如何在数据收集中创建事件转发属性。 有关详细信息，请访问[创建事件转发属性文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=zh-Hans#create-an-event-forwarding-property)。
 
 >[!NOTE]
 >

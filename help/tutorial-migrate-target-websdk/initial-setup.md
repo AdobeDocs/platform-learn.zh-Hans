@@ -13,11 +13,11 @@ ht-degree: 0%
 
 从at.js迁移到Platform Web SDK需要进行初始设置，以启用Platform Web SDK的正确数据捕获、特性和功能。 在进行任何网站实施更改之前，必须完成[Platform Web SDK实施教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans)中的以下步骤：
 
-- [在Adobe Admin Console中为数据收集配置适当的权限](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"}
-- [配置XDM架构](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html){target="_blank"}以将结构化数据传递到Edge Network
-- [为跨设备个性化和mbox3rdPartyId功能配置标识命名空间](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html){target="_blank"}
-- [创建数据流](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html){target="_blank"}以启用从Edge Network转发数据
-- [配置数据流](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html#configure-the-datastream){target="_blank"}以启用将数据转发到Adobe Target
+- [在Adobe Admin Console中为数据收集配置适当的权限](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-web-sdk/overview#prerequisites){target="_blank"}
+- [配置XDM架构](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-schemas.html?lang=zh-Hans){target="_blank"}以将结构化数据传递到Edge Network
+- [为跨设备个性化和mbox3rdPartyId功能配置标识命名空间](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-identities.html?lang=zh-Hans){target="_blank"}
+- [创建数据流](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/initial-configuration/configure-datastream.html?lang=zh-Hans){target="_blank"}以启用从Edge Network转发数据
+- [配置数据流](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=zh-Hans#configure-the-datastream){target="_blank"}以启用将数据转发到Adobe Target
 
 >[!CAUTION]
 >

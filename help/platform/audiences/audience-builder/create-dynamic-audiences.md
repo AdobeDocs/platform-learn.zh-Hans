@@ -16,7 +16,7 @@ ht-degree: 7%
 
 # 创建动态受众
 
-动态受众是Adobe Experience Platform中的一项高级分段功能，可解决营销人员在为营销活动构建受众时通常面临的可扩展性问题。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+动态受众是Adobe Experience Platform中的一项高级分段功能，可解决营销人员在为营销活动构建受众时通常面临的可扩展性问题。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hans)。
 
 >[!NOTE]
 >

@@ -176,7 +176,7 @@ AEM为您提供两个环境：创作环境和Publish环境。 通过这些交互
 
 >[!NOTE]
 >
-> 想进一步了解实时副本吗？ 签出[“正在创建和同步活动副本”。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=en)
+> 想进一步了解实时副本吗？ 签出[“正在创建和同步活动副本”。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/administering/reusing-content/msm/creating-live-copies.html?lang=zh-Hans)
 
 - 完成后，您现在应该会在您的网站上看到该商店。 选择它，然后单击创建\>页面，以创建我们富有启迪的产品页面。
 

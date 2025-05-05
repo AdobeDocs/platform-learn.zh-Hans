@@ -36,8 +36,8 @@ Adobe Experience Platform具有几个现成的整套集成，可以轻松而快�
 
 ## 看看这个
 
-- 帮助中心： [Source连接器 — Google BigQuery连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html)
-- Experience Platform文档：[Customer Journey Analytics — 产品文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html)
+- 帮助中心： [Source连接器 — Google BigQuery连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html?lang=zh-Hans)
+- Experience Platform文档：[Customer Journey Analytics — 产品文档](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html?lang=zh-Hans)
 
 ## 后续步骤
 

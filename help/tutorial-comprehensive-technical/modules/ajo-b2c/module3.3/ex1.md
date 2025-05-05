@@ -16,7 +16,7 @@ ht-degree: 2%
 
 ## 3.3.1.1术语
 
-为了更好地了解Offer decisioning，我们强烈建议您阅读有关Offer decisioning应用程序服务如何与Adobe Experience Platform配合使用的[概述](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=en)。
+为了更好地了解Offer decisioning，我们强烈建议您阅读有关Offer decisioning应用程序服务如何与Adobe Experience Platform配合使用的[概述](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=zh-Hans)。
 
 使用Offer Decisioning时，您需要了解以下概念：
 

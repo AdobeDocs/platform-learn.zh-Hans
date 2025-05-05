@@ -115,7 +115,7 @@ ht-degree: 3%
 
 如果不更改这些设置，CJA会将该维度解释为&#x200B;**Prop**（点击级别）。 此外，我们可以更改持久性以使维度成为&#x200B;**eVar**（在整个历程中保留该值）。
 
-如果您不熟悉eVar和Prop，则可以在文档[&#128279;](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html)中阅读有关它们的更多信息。
+如果您不熟悉eVar和Prop，则可以在文档[&#128279;](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html?lang=zh-Hans)中阅读有关它们的更多信息。
 
 让我们将“页面名称”保留为Prop。 因此，您无需更改任何&#x200B;**持久性设置**。
 

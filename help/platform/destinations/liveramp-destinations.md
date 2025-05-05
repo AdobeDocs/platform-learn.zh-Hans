@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 通过LiveRamp目标激活广告合作伙伴
 
-了解如何在Real-Time CDP中配置LiveRamp目标，以将受众发送给您的激活合作伙伴。 有关详细文档，请参阅[LiveRamp — 登录连接](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html)和[LiveRamp — 分发连接](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html)。
+了解如何在Real-Time CDP中配置LiveRamp目标，以将受众发送给您的激活合作伙伴。 有关详细文档，请参阅[LiveRamp — 登录连接](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html?lang=zh-Hans)和[LiveRamp — 分发连接](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3425367/?learn=on&enablevpops)

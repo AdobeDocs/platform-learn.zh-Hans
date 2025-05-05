@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 为[!DNL B2B]和[!DNL B2P]创建和激活帐户受众
 
-了解[!DNL Real-Time Customer Data Platform]的[!DNL B2B]和[!DNL B2P]版本中的Account-Based Marketing功能，包括创建和激活帐户受众。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html)。
+了解[!DNL Real-Time Customer Data Platform]的[!DNL B2B]和[!DNL B2P]版本中的Account-Based Marketing功能，包括创建和激活帐户受众。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on&enablevpops)
 

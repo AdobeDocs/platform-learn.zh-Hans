@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 使用合作伙伴辅助的访客识别功能，为未知访客提供个性化的现场体验
 
-了解如何从[!DNL Adobe Experience Platform Web SDK]中收集第三方属性，并使用合作伙伴辅助的访客识别功能为未知访客个性化您的现场体验。 有关详细信息，请访问[使用合作伙伴辅助的访客识别功能来个性化现场体验](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html)文档。
+了解如何从[!DNL Adobe Experience Platform Web SDK]中收集第三方属性，并使用合作伙伴辅助的访客识别功能为未知访客个性化您的现场体验。 有关详细信息，请访问[使用合作伙伴辅助的访客识别功能来个性化现场体验](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/onsite-personalization.html?lang=zh-Hans)文档。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423076/?learn=on&enablevpops)

@@ -19,11 +19,11 @@ ht-degree: 0%
 
 ## 在Analytics中映射变量
 
-Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽快通过Web SDK实现Analytics的新实施。 自动映射的变量在[此处](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection)列出。
+Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽快通过Web SDK实现Analytics的新实施。 自动映射的变量在[此处](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=zh-Hans#data-collection)列出。
 
-对于未自动映射到Adobe Analytics的XDM数据，您可以使用[上下文数据](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=zh-Hans)来匹配您的[架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html)。 然后，可以使用[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)将其映射到Analytics中以填充Analytics变量。 上下文数据和处理规则将是以前与Analytics一起使用的概念所熟悉的概念，但如果它们是新概念，则现在无需担心详细信息。
+对于未自动映射到Adobe Analytics的XDM数据，您可以使用[上下文数据](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html?lang=zh-Hans)来匹配您的[架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans)。 然后，可以使用[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=zh-Hans)将其映射到Analytics中以填充Analytics变量。 上下文数据和处理规则将是以前与Analytics一起使用的概念所熟悉的概念，但如果它们是新概念，则现在无需担心详细信息。
 
-您还可以使用一组默认的操作和产品列表，通过AEP Web SDK发送或检索数据。 为此，请参阅[产品](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection)。
+您还可以使用一组默认的操作和产品列表，通过AEP Web SDK发送或检索数据。 为此，请参阅[产品](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=zh-Hans#data-collection)。
 
 ### 上下文数据
 
@@ -54,7 +54,7 @@ Adobe Experience Platform [!DNL Web SDK]自动映射某些值，从而能够尽�
 
 ### 处理规则
 
-可以通过[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html)访问边缘网络收集的所有数据。 在Analytics中，您可以使用处理规则将上下文数据纳入Analytics变量。
+可以通过[处理规则](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html?lang=zh-Hans)访问边缘网络收集的所有数据。 在Analytics中，您可以使用处理规则将上下文数据纳入Analytics变量。
 
 ## Experience Platform Edge Network上的Audience Manager
 

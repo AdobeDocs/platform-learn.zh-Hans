@@ -35,5 +35,5 @@ ht-degree: 18%
 >[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on&enablevpops)
 
 有关更多信息，请参阅以下文档：
-* [Marketo Engage源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html)。
-* [在UI中使用模板创建源数据流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)
+* [Marketo Engage源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html?lang=zh-Hans)。
+* [在UI中使用模板创建源数据流](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html?lang=zh-Hans#)

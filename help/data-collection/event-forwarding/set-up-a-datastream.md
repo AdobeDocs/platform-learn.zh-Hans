@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 设置用于事件转发的数据流
 
-了解如何设置用于事件转发的数据流。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+了解如何设置用于事件转发的数据流。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=zh-Hans#create-a-datastream)
 
 
 >[!NOTE]

@@ -47,8 +47,8 @@ ht-degree: 2%
 
 关键资源：
 
-* [Experience Platform 教程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
+* [Experience Platform 教程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html?lang=zh-Hans)
 * [Experience Platform 文档](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=zh-Hans)
-* [Experience League课程](https://experienceleague.adobe.com/#dashboard/learning)
+* [Experience League课程](https://experienceleague.adobe.com/zh-hans#dashboard/learning)
 
 感谢您的努力和好运，助您与Adobe Experience Platform共进！

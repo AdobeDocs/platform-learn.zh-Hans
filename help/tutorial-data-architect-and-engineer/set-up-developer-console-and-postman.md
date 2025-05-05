@@ -189,7 +189,7 @@ Adobe提供了一组丰富的[!DNL Postman]收藏集，可帮助您探索Experie
 1. 将其导入[!DNL Postman]
 1. 打开&#x200B;**架构注册表API >架构>列表架构**
 1. 查看&#x200B;**Params**&#x200B;和&#x200B;**Headers**&#x200B;选项卡，并注意它们如何包含我们之前输入的一些环境变量。
-1. 请注意，**Headers > Accept value字段**&#x200B;设置为`application/vnd.adobe.xed-id+json`。 架构注册表API需要这些[指定的接受标头值](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept)之一，这些值在响应中提供不同的格式。
+1. 请注意，**Headers > Accept value字段**&#x200B;设置为`application/vnd.adobe.xed-id+json`。 架构注册表API需要这些[指定的接受标头值](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=zh-Hans#accept)之一，这些值在响应中提供不同的格式。
 1. 选择&#x200B;**发送**&#x200B;以进行您的第一个Platform API调用！
 
 希望您获得成功的`200 OK`响应，其中包含沙盒中可用Adobe提供的XDM架构列表，如下图所示。

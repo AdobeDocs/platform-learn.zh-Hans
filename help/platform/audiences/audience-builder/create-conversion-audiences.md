@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 创建转化受众
 
-在本视频中，了解如何使用Experience Platform中的受众规则生成器，创建在网站或其他数据系统中执行了转化事件的受众。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+在本视频中，了解如何使用Experience Platform中的受众规则生成器，创建在网站或其他数据系统中执行了转化事件的受众。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hans)。
 
 >[!NOTE]
 >

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 访问AI助手
 
-了解如何在Adobe Experience Platform中设置AI Assistant的访问权限。 有关详细信息，请参阅[访问Experience Platform中的AI助手](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access)。
+了解如何在Adobe Experience Platform中设置AI Assistant的访问权限。 有关详细信息，请参阅[访问Experience Platform中的AI助手](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/access)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3436470/?learn=on&enablevpops)

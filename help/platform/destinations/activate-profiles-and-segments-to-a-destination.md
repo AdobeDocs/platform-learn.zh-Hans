@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 将用户档案和受众激活到目标
 
-了解如何在Real-Time CDP中将配置文件和受众激活到目标。  在目标或受众用户界面中启动此工作流。 有关详细信息，请访问[文档](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/activation-overview)。
+了解如何在Real-Time CDP中将配置文件和受众激活到目标。  在目标或受众用户界面中启动此工作流。 有关详细信息，请访问[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/activation-overview)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/336046/?learn=on&enablevpops)
 

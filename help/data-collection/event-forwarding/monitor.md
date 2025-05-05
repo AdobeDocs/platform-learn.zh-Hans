@@ -15,6 +15,6 @@ ht-degree: 28%
 
 # 监测事件转发
 
-了解如何在数据收集界面中监测事件转发。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)。
+了解如何在数据收集界面中监测事件转发。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/343999?learn=on&enablevpops)

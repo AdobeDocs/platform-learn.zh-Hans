@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 从现有受众创建受众
 
-Experience Platform中的受众规则生成器允许您将现有受众用作新受众规则定义的一部分。 观看本视频，了解操作提示。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+Experience Platform中的受众规则生成器允许您将现有受众用作新受众规则定义的一部分。 观看本视频，了解操作提示。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hans)。
 
 >[!NOTE]
 >

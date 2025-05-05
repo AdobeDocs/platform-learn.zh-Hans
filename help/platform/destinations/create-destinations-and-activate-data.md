@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 创建目标和激活数据
 
-了解如何在Adobe的Real-Time Customer Data Platform中创建目标和激活数据。 有关更详细的产品文档，请参阅[将配置文件和区段激活到目标](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)、[如何连接目标](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html)和[连接到流式目标并使用API激活数据](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html)。
+了解如何在Adobe的Real-Time Customer Data Platform中创建目标和激活数据。 有关更详细的产品文档，请参阅[将配置文件和区段激活到目标](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html?lang=zh-Hans)、[如何连接目标](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html?lang=zh-Hans)和[连接到流式目标并使用API激活数据](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29710?learn=on&enablevpops)
 

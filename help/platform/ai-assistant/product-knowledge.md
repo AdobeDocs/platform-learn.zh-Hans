@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 使用AI Assistant学习Experience Platform应用程序
 
-从AI Assistant了解Adobe Experience Platform应用程序。 有关详细信息，请参阅[AI助手文档](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home)。
+从AI Assistant了解Adobe Experience Platform应用程序。 有关详细信息，请参阅[AI助手文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/home)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441024/?learn=on&enablevpops)

@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 验证来自AI Assistant的响应
 
-了解如何验证和验证Adobe Experience Platform中的AI Assistant提供的响应。 有关详细信息，请参阅[AI助手UI指南](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#verify-responses)。
+了解如何验证和验证Adobe Experience Platform中的AI Assistant提供的响应。 有关详细信息，请参阅[AI助手UI指南](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/ui-guide#verify-responses)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441738/?learn=on&enablevpops)

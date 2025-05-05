@@ -15,7 +15,7 @@ ht-degree: 1%
 
 了解如何使用 Adobe Experience Platform Web SDK 实施 Adobe Target。了解如何投放体验，以及如何将其他参数传递给 Target。
 
-[Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home)是一种Adobe Experience Cloud应用程序，可为您提供定制和个性化客户体验所需的一切功能，从而最大限度地增加您的Web和移动设备网站、应用程序及其他数字渠道的收入。
+[Adobe Target](https://experienceleague.adobe.com/zh-hans/docs/target/using/target-home)是一种Adobe Experience Cloud应用程序，可为您提供定制和个性化客户体验所需的一切功能，从而最大限度地增加您的Web和移动设备网站、应用程序及其他数字渠道的收入。
 
 ![Web SDK和Adobe Target关系图](assets/dc-websdk-at.png)
 
@@ -42,13 +42,13 @@ ht-degree: 1%
 要完成此部分中的课程，您必须首先：
 
 * 完成有关Platform Web SDK初始配置的所有课程，包括设置数据元素和规则。
-* 确保您在Adobe Target中具有[编辑者或审批者角色](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)。
-* 如果您使用Google Chrome浏览器，请安装[可视化体验编辑器助手扩展](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)。
+* 确保您在Adobe Target中具有[编辑者或审批者角色](https://experienceleague.adobe.com/zh-hans/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)。
+* 如果您使用Google Chrome浏览器，请安装[可视化体验编辑器助手扩展](https://experienceleague.adobe.com/zh-hans/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)。
 * 了解如何在Target中设置活动。 如果您需要复习者，以下教程和指南对本课程很有帮助：
-   * [使用可视化体验编辑器(VEC)助手扩展](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
-   * [使用 Visual Experience Composer](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
-   * [使用基于表单的体验编辑器](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
-   * [创建体验定位活动](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
+   * [使用可视化体验编辑器(VEC)助手扩展](https://experienceleague.adobe.com/zh-hans/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
+   * [使用 Visual Experience Composer](https://experienceleague.adobe.com/zh-hans/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
+   * [使用基于表单的体验编辑器](https://experienceleague.adobe.com/zh-hans/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
+   * [创建体验定位活动](https://experienceleague.adobe.com/zh-hans/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
 
 ## 添加闪烁处理
 
@@ -142,7 +142,7 @@ Adobe建议如Luma网站上所示异步实施标记。 但是，如果同步加�
 
 ### 资产令牌
 
-Target Premium客户可以选择使用属性管理用户权限。 Target属性允许您围绕用户可以运行Target活动的位置建立边界。 有关详细信息，请参阅Target文档的[企业权限](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview)部分。
+Target Premium客户可以选择使用属性管理用户权限。 Target属性允许您围绕用户可以运行Target活动的位置建立边界。 有关详细信息，请参阅Target文档的[企业权限](https://experienceleague.adobe.com/zh-hans/docs/target/using/administer/manage-users/enterprise/properties-overview)部分。
 
 要设置或查找属性令牌，请导航到&#x200B;**Adobe Target** > **[!UICONTROL 管理]** > **[!UICONTROL 属性]**。 `</>`图标显示实施代码。 `at_property`值是您将在数据流中使用的属性令牌。
 
@@ -156,9 +156,9 @@ Target Premium客户可以选择使用属性管理用户权限。 Target属性�
 
 ### 目标环境Id
 
-Target中的[环境](https://experienceleague.adobe.com/en/docs/target/using/administer/environments)可帮助您在开发的所有阶段管理实施。 此可选设置指定要用于每个数据流的Target环境。
+Target中的[环境](https://experienceleague.adobe.com/zh-hans/docs/target/using/administer/environments)可帮助您在开发的所有阶段管理实施。 此可选设置指定要用于每个数据流的Target环境。
 
-Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设置Target环境ID，以简化操作。 或者，您可以使用[主机](https://experienceleague.adobe.com/en/docs/target/using/administer/hosts)功能在Target界面中组织环境。
+Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设置Target环境ID，以简化操作。 或者，您可以使用[主机](https://experienceleague.adobe.com/zh-hans/docs/target/using/administer/hosts)功能在Target界面中组织环境。
 
 要设置或查找环境ID，请导航到&#x200B;**Adobe Target** > **[!UICONTROL 管理]** > **[!UICONTROL 环境]**。
 
@@ -170,7 +170,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 ### 目标第三方ID命名空间
 
-通过这个可选设置，您可以指定要用于Target第三方ID的身份符号。 Target仅支持在单个身份符号或命名空间上同步配置文件。 有关详细信息，请参阅Target指南的[mbox3rdPartyId](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id)的实时配置文件同步。
+通过这个可选设置，您可以指定要用于Target第三方ID的身份符号。 Target仅支持在单个身份符号或命名空间上同步配置文件。 有关详细信息，请参阅Target指南的[mbox3rdPartyId](https://experienceleague.adobe.com/zh-hans/docs/target/using/audiences/visitor-profiles/3rd-party-id)的实时配置文件同步。
 
 标识符号位于&#x200B;**数据收集** > **[!UICONTROL 客户]** > **[!UICONTROL 标识]**&#x200B;下的标识列表中。
 
@@ -221,11 +221,11 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 ### 使用可视化体验编辑器设置Target活动
 
-现在，基本实施部分已完成，请在Target中创建体验定位(XT)活动，以验证所有内容是否均可正常工作。 如果需要帮助，您可以参阅[创建体验定位活动](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/activities/create-experience-targeting-activities)的Target教程。
+现在，基本实施部分已完成，请在Target中创建体验定位(XT)活动，以验证所有内容是否均可正常工作。 如果需要帮助，您可以参阅[创建体验定位活动](https://experienceleague.adobe.com/zh-hans/docs/target-learn/tutorials/activities/create-experience-targeting-activities)的Target教程。
 
 >[!NOTE]
 >
->如果您将Google Chrome用作浏览器，则需要[可视化体验编辑器(VEC)助手扩展](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)才能正确加载站点，以便在VEC中进行编辑。
+>如果您将Google Chrome用作浏览器，则需要[可视化体验编辑器(VEC)助手扩展](https://experienceleague.adobe.com/zh-hans/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)才能正确加载站点，以便在VEC中进行编辑。
 
 1. 导航到Adobe Target界面
 1. 使用活动URL的Luma主页创建体验定位(XT)活动
@@ -249,9 +249,9 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
    >如果不使用Adobe Analytics，请选择Target作为报表源，然后选择其他指标，如&#x200B;**参与>页面查看次数**。 保存和预览活动需要目标量度。
 
 1. 保存活动
-1. 如果您对所做更改感到满意，则可以激活活动。 否则，如果要预览体验而不激活，则可以复制[QA预览URL](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa)。
+1. 如果您对所做更改感到满意，则可以激活活动。 否则，如果要预览体验而不激活，则可以复制[QA预览URL](https://experienceleague.adobe.com/zh-hans/docs/target/using/activities/activity-qa/activity-qa)。
 1. 加载Luma主页，此时您应会看到所做的更改已应用
-1. 几小时后，您应该能够在Adobe Analytics中看到Target活动数据和转化情况。 有关[Analytics for Target (A4T)报表](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/reporting)的详细信息，请参阅Target指南。
+1. 几小时后，您应该能够在Adobe Analytics中看到Target活动数据和转化情况。 有关[Analytics for Target (A4T)报表](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/a4t/reporting)的详细信息，请参阅Target指南。
 
 
 
@@ -261,7 +261,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 >[!CAUTION]
 >
->如果您使用Google Chrome并安装了[可视化体验编辑器(VEC) Helper扩展](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)，请确保禁用&#x200B;**插入Target库**&#x200B;设置。 启用此设置将导致额外的Target请求。
+>如果您使用Google Chrome并安装了[可视化体验编辑器(VEC) Helper扩展](https://experienceleague.adobe.com/zh-hans/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)，请确保禁用&#x200B;**插入Target库**&#x200B;设置。 启用此设置将导致额外的Target请求。
 
 1. 打开Adobe Experience Platform Debugger浏览器扩展
 1. 转到[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)并使用调试器[将网站上的标记属性切换到您自己的开发属性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
@@ -405,7 +405,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 1. 在[!UICONTROL 目标和设置]步骤中，选择Adobe Target作为报表源，选择[!UICONTROL 参与] > [!UICONTROL 页面查看次数]作为目标
 1. 保存活动
-1. 如果您对所做更改感到满意，则可以激活活动。 否则，如果要预览体验而不激活，则可以复制[QA预览URL](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa)。
+1. 如果您对所做更改感到满意，则可以激活活动。 否则，如果要预览体验而不激活，则可以复制[QA预览URL](https://experienceleague.adobe.com/zh-hans/docs/target/using/activities/activity-qa/activity-qa)。
 1. 加载Luma主页，此时您应会看到所做的更改已应用
 
 >[!NOTE]
@@ -440,7 +440,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 ### 页面(mbox)参数和XDM
 
-所有XDM字段都会作为[页面参数](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters)或mbox参数自动传递到Target。
+所有XDM字段都会作为[页面参数](https://experienceleague.adobe.com/zh-hans/docs/target-dev/developer/implementation/methods/page-parameters)或mbox参数自动传递到Target。
 
 其中一些XDM字段将映射到Target后端中的特殊对象。 例如，`web.webPageDetails.URL`将自动可用于构建基于URL的定位条件，或在创建配置文件脚本时作为`page.url`对象。
 
@@ -450,10 +450,10 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 有些数据点对于没有从XDM对象映射的Target可能很有用。 这些特殊的Target参数包括：
 
-* [用户档案属性](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
-* [Recommendations实体属性](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
-* [Recommendations保留的参数](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
-* [类别亲和度](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)的类别值
+* [用户档案属性](https://experienceleague.adobe.com/zh-hans/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
+* [Recommendations实体属性](https://experienceleague.adobe.com/zh-hans/docs/target/using/recommendations/entities/entity-attributes)
+* [Recommendations保留的参数](https://experienceleague.adobe.com/zh-hans/docs/target/using/recommendations/plan-implement#pass-behavioral)
+* [类别亲和度](https://experienceleague.adobe.com/zh-hans/docs/target/using/audiences/visitor-profiles/category-affinity)的类别值
 
 这些参数必须在`data`对象中发送，而不是`xdm`对象中发送。 此外，页面（或mbox）参数也可以包含在`data`对象中。
 

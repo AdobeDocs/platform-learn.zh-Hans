@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 创建顺序受众
 
-在本视频中，了解如何将体验事件添加到受众中的时间轴，以创建在一定时间段内按特定顺序执行操作的受众。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+在本视频中，了解如何将体验事件添加到受众中的时间轴，以创建在一定时间段内按特定顺序执行操作的受众。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hans)。
 
 >[!NOTE]
 >

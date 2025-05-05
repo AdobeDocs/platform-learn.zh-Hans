@@ -108,7 +108,7 @@ ht-degree: 0%
 单击左侧导航中的&#x200B;**[!UICONTROL 区段]**，让我们花些时间查看一下我们的三个区段：
 
 * 我们的两个区段是批处理区段，一个是流式区段。
-* Platform会尽可能默认使用流式客户细分，这样客户在符合条件后即可尽快获得细分资格。 当区段定义过于复杂而无法流式传输时，它们会自动转换为批处理。 在这种情况下，这两个区段将默认使用批处理，因为采购事件的回顾时间范围大于7天。 有关流限制的完整和当前列表，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html)。
+* Platform会尽可能默认使用流式客户细分，这样客户在符合条件后即可尽快获得细分资格。 当区段定义过于复杂而无法流式传输时，它们会自动转换为批处理。 在这种情况下，这两个区段将默认使用批处理，因为采购事件的回顾时间范围大于7天。 有关流限制的完整和当前列表，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=zh-Hans)。
 * 批处理作业按每日计划运行，可以切换该计划。
 
 ![在过去30天区段内购买相同产品](assets/segment-review.png)

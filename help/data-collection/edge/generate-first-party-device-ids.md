@@ -21,7 +21,7 @@ Adobe Experience Cloud应用程序传统上会使用不同的技术生成Cookie�
 1. Adobe服务器使用域名的CNAME配置设置的第一方Cookie
 1. JavaScript设置的第一方Cookie
 
-最近的浏览器更改限制了这类Cookie的持续时间。 在使用客户拥有的服务器（使用DNS A/AAAA记录而非DNS CNAME）设置第一方Cookie时，它们最有效。 [第一方设备ID (FPID)功能](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids)允许实施Adobe Experience Platform Web SDK的客户在使用DNS A/AAAA记录的服务器中的Cookie中使用设备ID。 然后，可以将这些ID发送到Adobe，并用作种子来生成Experience CloudID (ECID)，这仍然是Adobe Experience Cloud应用程序中的主要标识符。
+最近的浏览器更改限制了这类Cookie的持续时间。 在使用客户拥有的服务器（使用DNS A/AAAA记录而非DNS CNAME）设置第一方Cookie时，它们最有效。 [第一方设备ID (FPID)功能](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/identity/first-party-device-ids)允许实施Adobe Experience Platform Web SDK的客户在使用DNS A/AAAA记录的服务器中的Cookie中使用设备ID。 然后，可以将这些ID发送到Adobe，并用作种子来生成Experience CloudID (ECID)，这仍然是Adobe Experience Cloud应用程序中的主要标识符。
 
 以下是有关该功能的工作原理的简短示例：
 
@@ -152,4 +152,4 @@ PHP没有用于生成UUID的本地库，因此这些代码示例比使用其他�
 1. 向PlatformEdge Network发送另一个请求。
 1. 确认`AMCV_<IMSORGID@AdobeOrg>` Cookie中的值与已删除的`AMCV_` Cookie中的值相同`ECID`。 如果给定FPID的Cookie值相同，则ECID的设定种子过程成功。
 
-有关此功能的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)。
+有关此功能的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=zh-Hans)。

@@ -22,4 +22,4 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on&enablevpops)
 
-有关详细信息，请访问[文档](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination)。
+有关详细信息，请访问[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/connect-destination)。

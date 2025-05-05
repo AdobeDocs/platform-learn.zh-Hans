@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 其他资源
 
-* [在UI中创建Amazon Kinesis源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html)
-* [在UI中创建Azure事件中心源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html)
+* [在UI中创建Amazon Kinesis源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html?lang=zh-Hans)
+* [在UI中创建Azure事件中心源连接](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html?lang=zh-Hans)
 * [Azure事件中心文档](https://docs.microsoft.com/en-us/azure/event-hubs/)
 * [Amazon Kinesis数据流文档](https://docs.aws.amazon.com/kinesis/index.html)

@@ -18,7 +18,7 @@ ht-degree: 25%
 
 # 用例行动手册概述
 
-了解用例战术手册如何帮助 Real-Time Customer Data Platform 和 Journey Optimizer 的客户更快地实现价值。用例行动手册是涵盖多个行业和营销目标的几十个模板的目录。 行动手册可生成受众、历程和架构等技术资产，然后可对其进行自定义并发布到其他沙盒。 有关详细信息，请参阅[用例行动手册文档](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html)。
+了解用例战术手册如何帮助 Real-Time Customer Data Platform 和 Journey Optimizer 的客户更快地实现价值。用例行动手册是涵盖多个行业和营销目标的几十个模板的目录。 行动手册可生成受众、历程和架构等技术资产，然后可对其进行自定义并发布到其他沙盒。 有关详细信息，请参阅[用例行动手册文档](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 

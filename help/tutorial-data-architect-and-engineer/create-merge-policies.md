@@ -140,7 +140,7 @@ CRM ID是`Luma Loyalty Dataset`中的标识字段，但只能使用主标识查�
 
 ## 其他资源
 
-* [合并策略文档](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
+* [合并策略文档](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=zh-Hans)
 * [合并策略API（实时客户个人资料API的一部分）引用](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 现在我们转到[数据治理框架](apply-data-governance-framework.md)。

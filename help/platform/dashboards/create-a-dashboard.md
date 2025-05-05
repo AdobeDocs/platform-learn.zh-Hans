@@ -17,7 +17,7 @@ ht-degree: 20%
 
 # 创建功能板
 
-了解如何在Adobe Experience Platform中创建功能板。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html)。
+了解如何在Adobe Experience Platform中创建功能板。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/dashboards/user-defined-dashboards.html?lang=zh-Hans)。
 
 >[!IMPORTANT]
 >

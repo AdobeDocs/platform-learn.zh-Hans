@@ -39,7 +39,7 @@ Adobe具有AI/ML专业知识以及深入的CXM经验，并且智能服务是专�
 
 ## 看看这个
 
-- 智能服务概述： [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=en)
+- 智能服务概述： [https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=zh-Hans](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=zh-Hans)
 
 ## 后续步骤
 

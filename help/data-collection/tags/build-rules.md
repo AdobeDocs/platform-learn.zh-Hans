@@ -16,6 +16,6 @@ ht-degree: 37%
 
 # 生成标记规则
 
-了解如何创建规则，以便在标记中执行命令。事件和条件决定&#x200B;*何时*&#x200B;执行操作，而操作决定&#x200B;*何时*&#x200B;执行操作。 有关详细信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)文档。
+了解如何创建规则，以便在标记中执行命令。事件和条件决定&#x200B;*何时*&#x200B;执行操作，而操作决定&#x200B;*何时*&#x200B;执行操作。 有关详细信息，请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans)文档。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on&enablevpops)

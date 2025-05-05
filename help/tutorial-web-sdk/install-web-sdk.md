@@ -71,7 +71,7 @@ ht-degree: 11%
 
    ![数据流选择](assets/extension-luma-web-sdk-datastream-extension.png)
 
-有关扩展的每个部分的详细信息，请参阅[配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
+有关扩展的每个部分的详细信息，请参阅[配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
 
 >[!NOTE]
 >

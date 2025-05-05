@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 受众规则生成器概述
 
-了解Experience Platform中的受众规则生成器，包括受众的构建块、用户界面以及几个关于开始生成受众规则的提示。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+了解Experience Platform中的受众规则生成器，包括受众的构建块、用户界面以及几个关于开始生成受众规则的提示。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hans)。
 
 >[!NOTE]
 >

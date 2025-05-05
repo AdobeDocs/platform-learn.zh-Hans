@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # 规划您的数据模型
 
-本视频说明在Adobe Experience Platform中开始构建架构之前要做什么。 记录您的商业用例，了解您的平台许可证，了解产品保障，并识别在最终确定数据模型之前要提取的数据。 有关详细信息，请访问[架构文档](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)。
+本视频说明在Adobe Experience Platform中开始构建架构之前要做什么。 记录您的商业用例，了解您的平台许可证，了解产品保障，并识别在最终确定数据模型之前要提取的数据。 有关详细信息，请访问[架构文档](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333478?learn=on&enablevpops)

@@ -42,4 +42,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->现在，Tags资产已基本安装和配置了Web SDK扩展。 在本迁移教程中创建或修改数据元素和规则时，我们将使用Web SDK扩展的部分内容，但不会更改教程中的任何其他扩展配置项目。 其他配置项目可以也应该用于其他用例。 有关这些配置的详细文档，请参阅[配置Web SDK标记扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
+>现在，Tags资产已基本安装和配置了Web SDK扩展。 在本迁移教程中创建或修改数据元素和规则时，我们将使用Web SDK扩展的部分内容，但不会更改教程中的任何其他扩展配置项目。 其他配置项目可以也应该用于其他用例。 有关这些配置的详细文档，请参阅[配置Web SDK标记扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。

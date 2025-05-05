@@ -21,7 +21,7 @@ ht-degree: 42%
 
 ## 其他信息
 
-* [使用API API文档创建流连接](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html)。
-* [使用流式引入API的流记录数据文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
-* [使用流式引入API文档流式处理时间序列数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
-* [在单一HTTP请求文档中发送多条消息](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
+* [使用API API文档创建流连接](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html?lang=zh-Hans)。
+* [使用流式引入API的流记录数据文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html?lang=zh-Hans)
+* [使用流式引入API文档流式处理时间序列数据](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html?lang=zh-Hans)
+* [在单一HTTP请求文档中发送多条消息](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html?lang=zh-Hans)

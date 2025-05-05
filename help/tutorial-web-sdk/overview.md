@@ -48,7 +48,7 @@ Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Exper
    * **[!UICONTROL 属性权限]** — 权限&#x200B;**[!UICONTROL 批准]**、**[!UICONTROL 开发]**、**[!UICONTROL 编辑属性]**、**[!UICONTROL 管理环境]**、**[!UICONTROL 管理扩展]**&#x200B;和&#x200B;**[!UICONTROL Publish]**，
    * **[!UICONTROL 公司权限]** — 权限&#x200B;**[!UICONTROL 管理资产]**
 
-     有关标记权限的详细信息，请参阅[文档](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions)。
+     有关标记权限的详细信息，请参阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/admin/user-permissions)。
 
 * 对于&#x200B;**Experience Platform**，您必须具有：
 
@@ -62,13 +62,13 @@ Experience PlatformWeb SDK是一个客户端JavaScript库，它允许Adobe Exper
 
      所需的功能应该可供所有Experience Cloud客户使用，即使您不是基于平台的应用程序(如Real-Time CDP)的客户。
 
-     有关Platform访问控制的详细信息，请参阅[文档](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home)。
+     有关Platform访问控制的详细信息，请参阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/home)。
 
-* 对于可选&#x200B;**Adobe Analytics**&#x200B;课程，您必须拥有[对报表包设置、处理规则和Analysis Workspace的管理员访问权限](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
+* 对于可选&#x200B;**Adobe Analytics**&#x200B;课程，您必须拥有[对报表包设置、处理规则和Analysis Workspace的管理员访问权限](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-console/home)
 
-* 对于可选&#x200B;**Adobe Target**&#x200B;课程，您必须具有[编辑者或审批者](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)访问权限。
+* 对于可选&#x200B;**Adobe Target**&#x200B;课程，您必须具有[编辑者或审批者](https://experienceleague.adobe.com/zh-hans/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)访问权限。
 
-* 对于可选的&#x200B;**Audience Manager**&#x200B;课程，您必须具有创建、读取和写入特征、区段和目标的权限。 有关详细信息，请参阅有关[Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)的教程。
+* 对于可选的&#x200B;**Audience Manager**&#x200B;课程，您必须具有创建、读取和写入特征、区段和目标的权限。 有关详细信息，请参阅有关[Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/zh-hans/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)的教程。
 
 
 >[!NOTE]

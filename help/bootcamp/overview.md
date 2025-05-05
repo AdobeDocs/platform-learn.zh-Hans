@@ -83,7 +83,7 @@ ht-degree: 1%
 
 在开始实践练习之前，请查看本教程背后的架构。 此引导营将深入探讨Adobe Experience Platform的一系列特性和功能，还将讨论跨各种源和目标的多种集成。 为了让您正确了解本教程背后的架构以及Adobe Experience Platform在您的企业生态系统中的整体定位，请首先查看架构视频和图表。
 
-转到[架构](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en)。
+转到[架构](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=zh-Hans)。
 
 ## 视频
 
@@ -93,7 +93,7 @@ ht-degree: 1%
 
 已创建的其他多个视频展示了bootcamp的元素以及Adobe Experience Platform和非Adobe应用程序之间的强大集成。 单击以下链接可查找这些视频的概述。
 
-转到[视频](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en)。
+转到[视频](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=zh-Hans)。
 
 ## YouTube
 

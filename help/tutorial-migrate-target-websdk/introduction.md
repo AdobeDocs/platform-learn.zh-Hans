@@ -34,9 +34,9 @@ Adobe Experience Platform Web SDK是一个客户端JavaScript库，它允许Adob
 
 与独立的at.js库相比，Platform Web SDK具有以下优势：
 
-* 更快地从[Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)共享受众
-* 将Target与Journey Optimizer集成以支持[Offer Decisioning交付](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
-* 能够使用[第一方ID](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids)生成ECID以延长访客识别持续时间
+* 更快地从[Real-Time Customer Data Platform](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)共享受众
+* 将Target与Journey Optimizer集成以支持[Offer Decisioning交付](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/ajo/offer-decision)
+* 能够使用[第一方ID](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids)生成ECID以延长访客识别持续时间
 * 占用更小的空间以改进页面速度量度
 * 为开发人员增加实施灵活性
 
@@ -63,11 +63,11 @@ Adobe Experience Platform Web SDK是一个客户端JavaScript库，它允许Adob
 要完成本教程，您应该首先：
 
 * 从技术角度了解您当前的Target at.js实施
-* 确保您拥有Target实例的[编辑者或发布者角色](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80)，以便您可以自行尝试示例
+* 确保您拥有Target实例的[编辑者或发布者角色](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html?lang=zh-Hans#section_8C425E43E5DD4111BBFC734A2B7ABC80)，以便您可以自行尝试示例
 * 了解如何在Adobe Target中设置活动。 如果您需要复习者，以下教程和指南对本课程很有帮助：
-   * [使用 Visual Experience Composer](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html)
-   * [使用基于表单的体验编辑器](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
-   * [创建体验目标选择活动](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html) 
+   * [使用 Visual Experience Composer](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer.html?lang=zh-Hans)
+   * [使用基于表单的体验编辑器](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html?lang=zh-Hans)
+   * [创建体验目标选择活动](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html?lang=zh-Hans) 
 
 准备就绪后，成功迁移的第一步是[了解迁移过程](migration-overview.md)以及at.js和平台Web SDK之间的差异。
 

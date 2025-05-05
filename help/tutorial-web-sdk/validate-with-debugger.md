@@ -143,7 +143,7 @@ Experience Platform Debugger具有一项酷炫功能，您可以使用其他标�
 
 如您在[配置数据流](configure-datastream.md)课程中所学的，Platform Web SDK会先将数据从您的数字资产发送到Platform Edge Network。 然后，Platform Edge Network会向数据流中启用的相应服务发出其他服务器端请求。 通过使用Debugger中的Edge跟踪，您可以验证Platform Edge Network发出的服务器端请求。
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/assurance/home). -->
 
 
 ### 启用Edge跟踪

@@ -62,11 +62,11 @@ document.addEventListener("click", event => {
 
 >[!TIP]
 >
->使用标记功能（以前称为Launch）实施Web SDK时，无需自定义代码即可实现跨域ID共享。 有关详细信息，请参阅[专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html#tags-extension)。
+>使用标记功能（以前称为Launch）实施Web SDK时，无需自定义代码即可实现跨域ID共享。 有关详细信息，请参阅[专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=zh-Hans#tags-extension)。
 
 >[!NOTE]
 >
->Platform Web SDK还支持在本机移动设备应用程序用例中进行移动设备到Web ID共享。 有关详细信息，请参阅有关[移动到Web和跨域ID共享](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html)的专用文档。
+>Platform Web SDK还支持在本机移动设备应用程序用例中进行移动设备到Web ID共享。 有关详细信息，请参阅有关[移动到Web和跨域ID共享](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/id-sharing.html?lang=zh-Hans)的专用文档。
 
 接下来，了解如何[更新受众和配置文件脚本](update-audiences.md)以确保与Platform Web SDK兼容。
 

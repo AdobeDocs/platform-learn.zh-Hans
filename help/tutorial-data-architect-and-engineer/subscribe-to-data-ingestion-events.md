@@ -81,7 +81,7 @@ ht-degree: 0%
 ## 其他资源
 
 * [Webhook.site](https://webhook.site/)
-* [数据摄取通知文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
+* [数据摄取通知文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=zh-Hans)
 * [Adobe I/O事件快速入门文档](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 好，让我们最终开始[摄取数据](ingest-batch-data.md)！

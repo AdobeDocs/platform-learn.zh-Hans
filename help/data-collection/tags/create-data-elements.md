@@ -16,6 +16,6 @@ ht-degree: 38%
 
 # 创建数据元素
 
-了解如何创建数据元素以存储从数据层拉取的值，并将这些数据元素提供给标记属性中的规则和扩展使用。 有关详细信息，请参阅[数据元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html)文档。
+了解如何创建数据元素以存储从数据层拉取的值，并将这些数据元素提供给标记属性中的规则和扩展使用。 有关详细信息，请参阅[数据元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=zh-Hans)文档。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on&enablevpops)

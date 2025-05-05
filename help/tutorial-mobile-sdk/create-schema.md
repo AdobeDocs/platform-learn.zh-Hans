@@ -25,11 +25,11 @@ Experience Platform使用架构以一致且可重用的方式描述数据结构�
 
 在将数据引入Platform之前，必须组合模式以描述数据的结构并对每个字段中可以包含的数据类型提供约束。 架构由一个基类以及零个或多个架构字段组组成。
 
-有关架构组合模型的更多信息，包括设计原则和最佳实践，请参阅架构组合的[基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en)或播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)。
+有关架构组合模型的更多信息，包括设计原则和最佳实践，请参阅架构组合的[基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans)或播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/zh-hans/playlists/experience-platform-model-your-customer-experience-data-with-xdm)。
 
 >[!TIP]
 >
->如果您熟悉Analytics解决方案设计参考(SDR)，则可以将架构视为更强大的SDR。 有关详细信息，请参阅[创建和维护解决方案设计参考(SDR)文档](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=en)。
+>如果您熟悉Analytics解决方案设计参考(SDR)，则可以将架构视为更强大的SDR。 有关详细信息，请参阅[创建和维护解决方案设计参考(SDR)文档](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=zh-Hans)。
 
 ## 先决条件
 
@@ -70,7 +70,7 @@ Experience Platform使用架构以一致且可重用的方式描述数据结构�
 * **类**&#x200B;定义架构包含的数据的行为方面。 例如： `XDM ExperienceEvent`捕获时间序列、事件数据和`XDM Individual Profile`捕获有关个人的属性数据。
 * **数据类型**&#x200B;在类或字段组中用作引用字段类型，其使用方式与基本文本字段相同。
 
-以上描述只是简要的概述。 有关更多详细信息，请参阅[架构构建基块](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=zh-CN)视频或阅读产品文档中的[架构组合基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en)。
+以上描述只是简要的概述。 有关更多详细信息，请参阅[架构构建基块](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schema-building-blocks.html?lang=zh-CN)视频或阅读产品文档中的[架构组合基础知识](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=zh-Hans)。
 
 在本教程中，您将使用使用者体验事件字段组并创建一个自定义字段组来演示该过程。
 

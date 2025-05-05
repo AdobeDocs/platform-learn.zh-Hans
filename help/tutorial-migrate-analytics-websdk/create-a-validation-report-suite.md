@@ -35,5 +35,5 @@ ht-degree: 0%
 
 >[!TIP]
 >
->有关创建报表包的视频演练，请参阅[了解和创建报表包](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}。
+>有关创建报表包的视频演练，请参阅[了解和创建报表包](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}。
 

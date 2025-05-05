@@ -18,7 +18,7 @@ ht-degree: 5%
 
 # AI 助手
 
-了解在基于Adobe Experience Platform的应用程序(如Real-Time Customer Data Platform、Journey Optimizer和Customer Journey Analytics)中使用AI Assistant可以做什么。 有关详细信息，请访问[AI助手文档](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home)。
+了解在基于Adobe Experience Platform的应用程序(如Real-Time Customer Data Platform、Journey Optimizer和Customer Journey Analytics)中使用AI Assistant可以做什么。 有关详细信息，请访问[AI助手文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/home)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3429845/?learn=on&enablevpops)
 

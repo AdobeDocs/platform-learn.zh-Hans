@@ -18,7 +18,7 @@ ht-degree: 1%
 
 与Adobe Analytics相反，Customer Journey Analytics *使用来自Experience Platform中创建的数据集的*&#x200B;数据。 使用Adobe Experience Platform Mobile SDK时，数据不会直接发送到Customer Journey Analytics，而是会发送到数据集。 然后，在Customer Journey Analytics中配置连接以选择您将在报表和分析项目中使用的数据集。
 
-本教程中的本课程侧重于报告和分析从Luma教程应用程序捕获的数据。 Customer Journey Analytics的独特功能之一是将来自多个来源（CRM、销售点、忠诚度应用程序、呼叫中心）和渠道（Web、移动、离线）的数据整合在一起，以便深入了解客户历程。 该功能不在本课程的讨论范围内。 有关详细信息，请参阅[Customer Journey Analytics概述](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview)。
+本教程中的本课程侧重于报告和分析从Luma教程应用程序捕获的数据。 Customer Journey Analytics的独特功能之一是将来自多个来源（CRM、销售点、忠诚度应用程序、呼叫中心）和渠道（Web、移动、离线）的数据整合在一起，以便深入了解客户历程。 该功能不在本课程的讨论范围内。 有关详细信息，请参阅[Customer Journey Analytics概述](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-overview/cja-overview)。
 
 
 ## 先决条件
@@ -113,7 +113,7 @@ Customer Journey Analytics中的连接从要用于报表和分析的Experience P
 
 数据视图是Customer Journey Analytics专属的容器，通过它，可决定如何解释来自连接的数据。 您可以从任何在连接中定义为Analysis Workspace中的组件（维度、量度）的数据集中配置标准和架构字段。
 
-Customer Journey Analytics中的数据视图提供了极大的灵活性，可以正确设置和定义来自连接的数据。 在本教程中，您将仅使用报告和分析所需的功能。 有关详细信息，请参阅[数据视图](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views)。
+Customer Journey Analytics中的数据视图提供了极大的灵活性，可以正确设置和定义来自连接的数据。 在本教程中，您将仅使用报告和分析所需的功能。 有关详细信息，请参阅[数据视图](https://experienceleague.adobe.com/zh-hans/docs/analytics-platform/using/cja-dataviews/data-views)。
 
 
 要创建数据视图，请执行以下操作：
@@ -213,7 +213,7 @@ Customer Journey Analytics中的数据视图提供了极大的灵活性，可以
 
 ## 创建项目
 
-Workspace项目在Customer Journey Analytics中用于构建报告和可视化图表。 构建全面报告和引人入胜的可视化图表有许多可能性，但这不在本教程的涵盖范围内。 有关详细信息，请参阅[Workspace概述](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview)和[生成新项目](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project)。
+Workspace项目在Customer Journey Analytics中用于构建报告和可视化图表。 构建全面报告和引人入胜的可视化图表有许多可能性，但这不在本教程的涵盖范围内。 有关详细信息，请参阅[Workspace概述](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview)和[生成新项目](https://experienceleague.adobe.com/zh-hans/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project)。
 
 在本课程的此部分中，您将创建一个项目，其中显示有关以下各项的报告和可视化图表：
 

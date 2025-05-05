@@ -56,7 +56,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 
 ## 授予对决策管理的访问权限
 
-要授予对决策管理功能的访问权限，您必须创建&#x200B;**产品配置文件**，并为用户分配相应的权限。 [在本节](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)中了解有关管理Journey Optimizer用户和权限的更多信息。
+要授予对决策管理功能的访问权限，您必须创建&#x200B;**产品配置文件**，并为用户分配相应的权限。 [在本节](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)中了解有关管理Journey Optimizer用户和权限的更多信息。
 
 ## 配置数据流
 
@@ -339,7 +339,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 
 ### 测试忠诚度优惠
 
-1. 选择要用于模拟的测试用户档案。 单击&#x200B;**管理配置文件**。 [要创建或指定新的测试配置文件以进行选件测试，请遵循本指南](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
+1. 选择要用于模拟的测试用户档案。 单击&#x200B;**管理配置文件**。 [要创建或指定新的测试配置文件以进行选件测试，请遵循本指南](https://experienceleague.adobe.com/zh-hans/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +371,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 
 您可以使用Luma网站上的调试器来验证生产中的决策逻辑。 忠诚度奖励用例启动并运行后，此验证是一种很好的做法，可确保一切配置正确。
 
-[通过此处](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)了解如何使用指南在浏览器中配置调试器。
+[通过此处](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/debugger/overview)了解如何使用指南在浏览器中配置调试器。
 
 要使用调试器开始验证，请执行以下操作：
 

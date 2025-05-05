@@ -15,9 +15,9 @@ ht-degree: 12%
 
 了解如何配置身份标识命名空间，以与 Adobe Experience Platform Web SDK 一起使用。
 
-[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home)在基于SDK的Adobe应用程序中设置了一个通用访客ID (ECID)，以增强Experience Cloud功能，如应用程序之间的受众共享。 您还可以将自己的客户ID发送到该服务，以启用跨设备定位以及与其他系统(例如客户关系管理(CRM)系统)的集成。
+[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/zh-hans/docs/id-service/using/home)在基于SDK的Adobe应用程序中设置了一个通用访客ID (ECID)，以增强Experience Cloud功能，如应用程序之间的受众共享。 您还可以将自己的客户ID发送到该服务，以启用跨设备定位以及与其他系统(例如客户关系管理(CRM)系统)的集成。
 
-[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)（是的，有两个！）使用ECID和客户ID生成标识图，从而允许您将属性和行为合并到实时客户配置文件中。
+[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)（是的，有两个！）使用ECID和客户ID生成标识图，从而允许您将属性和行为合并到实时客户配置文件中。
 
 >[!NOTE]
 >

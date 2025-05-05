@@ -16,6 +16,6 @@ ht-degree: 1%
 
 # 架构构建基块
 
-此视频回顾了Experience Data Model (XDM)架构的关键构建基块元素，包括字段、数据类型、架构字段组、类和行为。 有关详细信息，请访问[架构文档](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)。
+此视频回顾了Experience Data Model (XDM)架构的关键构建基块元素，包括字段、数据类型、架构字段组、类和行为。 有关详细信息，请访问[架构文档](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333469?learn=on&enablevpops)

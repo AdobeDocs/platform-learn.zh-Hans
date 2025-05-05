@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # Attribution AI简介
 
-全面概述营销人员和分析人员如何使用Attribution AI了解其营销渠道和营销活动的影响。 有关详细信息，请访问[归因人工智能文档](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)。
+全面概述营销人员和分析人员如何使用Attribution AI了解其营销渠道和营销活动的影响。 有关详细信息，请访问[归因人工智能文档](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32667?learn=on&enablevpops)

@@ -13,7 +13,7 @@ ht-degree: 7%
 
 # 通过Experience Platform保证验证Web SDK实施
 
-Adobe Experience Platform Assurance是一项功能，可帮助您检查、证明、模拟和验证数据收集或提供体验的方式。 详细了解[Adobe保证](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home)。
+Adobe Experience Platform Assurance是一项功能，可帮助您检查、证明、模拟和验证数据收集或提供体验的方式。 详细了解[Adobe保证](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/assurance/home)。
 
 
 ## 学习目标

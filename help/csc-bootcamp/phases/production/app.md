@@ -41,7 +41,7 @@ AEM as a Cloud Service是一款灵活的工具，提供了三种强大的功能�
 1. 用于投放的内容API
    - AEM GraphQL API支持内容片段投放。
    - AEM Assets REST API支持内容片段CRUD操作。
-   - 使用内容片段核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)的JSON导出也可实现直接内容投放。
+   - 使用内容片段核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)的JSON导出也可实现直接内容投放。
 
 ## 练习
 

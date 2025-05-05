@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 使用Adobe Analytics源连接器摄取数据
 
-Adobe Analytics Source Connector允许您轻松地将数据从Adobe Analytics流式传输、映射和过滤到Adobe Experience Platform的Real-Time Customer Profile和Experience Data Lake。 了解如何使用数据准备功能创建语义和计算字段以改善区段生成器和Platform应用程序中的用户体验。 此连接器支持跨区域报表包。 有关更详细的产品文档，请参阅[在UI中创建Adobe Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)。
+Adobe Analytics Source Connector允许您轻松地将数据从Adobe Analytics流式传输、映射和过滤到Adobe Experience Platform的Real-Time Customer Profile和Experience Data Lake。 了解如何使用数据准备功能创建语义和计算字段以改善区段生成器和Platform应用程序中的用户体验。 此连接器支持跨区域报表包。 有关更详细的产品文档，请参阅[在UI中创建Adobe Analytics源连接器](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29687?learn=on&enablevpops)

@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 流数据引入概述
 
-使用Experience Platform的流摄取，您可以确保发送的任何数据都将在Real-Time Customer Profile中可用。 此数据可以从CRM和ERP系统捕获，也可以从任何能够通过HTTP或公共云流基础架构进行通信的其他来源捕获。 然后，您可以使用此数据进行实时分段并激活其他营销流程。 有关详细信息，请访问[流式摄取文档](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/streaming/overview)。
+使用Experience Platform的流摄取，您可以确保发送的任何数据都将在Real-Time Customer Profile中可用。 此数据可以从CRM和ERP系统捕获，也可以从任何能够通过HTTP或公共云流基础架构进行通信的其他来源捕获。 然后，您可以使用此数据进行实时分段并激活其他营销流程。 有关详细信息，请访问[流式摄取文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ingestion/streaming/overview)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)

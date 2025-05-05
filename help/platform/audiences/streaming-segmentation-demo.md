@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 流式分段演示
 
-了解Adobe Experience Platform中的流式分段功能如何让品牌商根据实时数据个性化客户体验。 查看客户体验示例并快速浏览界面。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)。
+了解Adobe Experience Platform中的流式分段功能如何让品牌商根据实时数据个性化客户体验。 查看客户体验示例并快速浏览界面。 有关详细信息，请参阅[区段生成器文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=zh-Hans)。
 
 >[!NOTE]
 >

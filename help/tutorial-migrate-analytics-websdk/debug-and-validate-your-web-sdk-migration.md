@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Adobe Experience Platform Debugger
 
-此调试器是一种浏览器扩展，可在Chrome Store上使用。 有一个[视频教程](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)介绍了如何下载和使用调试器，建议您先了解该教程以了解基本用法。
+此调试器是一种浏览器扩展，可在Chrome Store上使用。 有一个[视频教程](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/debugger/overview)介绍了如何下载和使用调试器，建议您先了解该教程以了解基本用法。
 
 一旦调试器启动并运行，您就可以使用该调试器来确保数据从您的网站正确流动并流经Edge Network。 本教程将保留其非常基本的用法，但请尽其所能使用调试器来检查您的数据。
 

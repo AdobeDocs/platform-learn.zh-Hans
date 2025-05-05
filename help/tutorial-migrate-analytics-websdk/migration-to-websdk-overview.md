@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 使用标记将Adobe Analytics迁移到Web SDK
 
-了解使用Tags中的Analytics扩展（以前称为Launch）将Adobe Analytics实施迁移到Web SDK的步骤，还可使用Experience Platform中的Web SDK扩展。 在Tags中使用Adobe Analytics扩展时，幕后使用的是“AppMeasurement.js”代码。 因此，您可以将此视为一个将AppMeasurement迁移到Web SDK的教程，但本教程将完全包含在Tags中，并且不包含从JavaScript实施迁移或迁移的过程(在Tags UI中使用的JavaScript代码除外)。 有关迁移JavaScript实施的信息，请参阅[文档](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)。
+了解使用Tags中的Analytics扩展（以前称为Launch）将Adobe Analytics实施迁移到Web SDK的步骤，还可使用Experience Platform中的Web SDK扩展。 在Tags中使用Adobe Analytics扩展时，幕后使用的是“AppMeasurement.js”代码。 因此，您可以将此视为一个将AppMeasurement迁移到Web SDK的教程，但本教程将完全包含在Tags中，并且不包含从JavaScript实施迁移或迁移的过程(在Tags UI中使用的JavaScript代码除外)。 有关迁移JavaScript实施的信息，请参阅[文档](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk)。
 
 >[!NOTE]
 >

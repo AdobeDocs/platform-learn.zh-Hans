@@ -26,14 +26,14 @@ Experience Platform业务用户通常必须完成一系列步骤，包括识别�
 
 >[!NOTE]
 >
->本教程的最终结果是一个沙盒，其中包含与[面向数据架构师和数据工程师的Adobe Experience Platform快速入门教程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)类似的数据。 它于2023年4月更新，以支持[Journey Optimizer挑战](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hans)。 它于2023年6月更新，以将身份验证方法切换到OAuth。
+>本教程的最终结果是一个沙盒，其中包含与[面向数据架构师和数据工程师的Adobe Experience Platform快速入门教程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hans)类似的数据。 它于2023年4月更新，以支持[Journey Optimizer挑战](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hans)。 它于2023年6月更新，以将身份验证方法切换到OAuth。
 
 
 ## 先决条件
 
 * 您有权访问Experience PlatformAPI并了解如何进行身份验证。 如果没有，请查看此[教程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=zh-Hans)。
 * 您有权访问Experience Platform开发沙盒。
-* 您知道您的Experience Platform租户ID。 您可以通过发出经过身份验证的[API请求](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)来获取它
+* 您知道您的Experience Platform租户ID。 您可以通过发出经过身份验证的[API请求](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=zh-Hans#know-your-tenant_id)来获取它
 或者通过在您登录Platform帐户时从URL中提取此变量。 例如，在以下URL中，租户是“`techmarketingdemos`”`https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`。
 
 ## 使用[!DNL Postman] {#postman}
@@ -187,16 +187,16 @@ Experience Platform业务用户通常必须完成一系列步骤，包括识别�
 
 如果您想了解Adobe Journey Optimizer，此沙盒包含您进行[Journey Optimizer挑战](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hans)所需的一切
 
-如果您想了解合并策略、数据管理、查询服务和区段生成器，请跳转到数据架构师和数据工程师快速入门教程[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en)中的第11课。 本其他教程的前面课程让您手动构建这些Postman收藏集刚刚填充的所有内容 — 祝您一切顺利！
+如果您想了解合并策略、数据管理、查询服务和区段生成器，请跳转到数据架构师和数据工程师快速入门教程[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=zh-Hans)中的第11课。 本其他教程的前面课程让您手动构建这些Postman收藏集刚刚填充的所有内容 — 祝您一切顺利！
 
 如果要构建示例Web SDK实施以链接到此沙盒，请查看
 [使用Web SDK实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans)。 设置Web SDK教程的“初始配置”、“标记配置”和“设置Experience Platform”课程后，使用密码`test`登录Luma网站（使用`luma-crm.json`文件中的前10个电子邮件地址），查看配置文件片段与本教程中上传的数据合并的情况。
 
 如果要构建一个链接到此沙盒的示例Mobile SDK实施，请查看
-[在移动应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)。 在设置Web SDK教程的“初始配置”、“应用程序实施”和“Experience Platform”课程后，使用`luma-crm.json`文件中的第一个电子邮件地址登录Luma网站，查看配置文件片段与本教程中上传的数据合并的情况。
+[在移动应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans)。 在设置Web SDK教程的“初始配置”、“应用程序实施”和“Experience Platform”课程后，使用`luma-crm.json`文件中的第一个电子邮件地址登录Luma网站，查看配置文件片段与本教程中上传的数据合并的情况。
 
 ## 重置沙盒环境 {#reset-sandbox}
 
 重置非生产沙盒会删除与该沙盒关联的所有资源（架构、数据集等），同时保持沙盒的名称和关联的权限。 对于有权访问此“清理”沙盒的用户，将继续以相同的名称提供该沙盒。
 
-按照[此处](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox)步骤重置沙盒环境。
+按照[此处](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=zh-Hans#reset-a-sandbox)步骤重置沙盒环境。

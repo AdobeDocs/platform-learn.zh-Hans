@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 在Real-Time CDP Collaboration中设置广告商帐户
 
-了解如何在Real-Time CDP Collaboration中设置广告商帐户（组织）。 有关详细文档，请参阅[载入和管理组织](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}。
+了解如何在Real-Time CDP Collaboration中设置广告商帐户（组织）。 有关详细文档，请参阅[载入和管理组织](https://experienceleague.adobe.com/zh-hans/docs/real-time-cdp-collaboration/using/setup/onboard-organization){target="_blank"}。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452264/?learn=on&enablevpops)

@@ -20,6 +20,6 @@ ht-degree: 0%
 
 了解如何设置连接并使用该工作流通过Cloud Service目标导出数据集。 此外，还介绍了此功能的好处和用例。
 
-有关详细信息，请访问[文档](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/activate/export-datasets)。
+有关详细信息，请访问[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/ui/activate/export-datasets)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424392/?learn=on&enablevpops)

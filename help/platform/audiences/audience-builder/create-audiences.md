@@ -16,7 +16,7 @@ ht-degree: 5%
 
 # 创建受众
 
-了解如何在Adobe Experience Platform中创建受众。 构建受众规则并将它们应用于您的实时客户档案，以生成将为客户体验提供支持的受众。 有关详细的产品文档，请参阅[在UI中创建区段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hans)和[使用API创建区段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html)。
+了解如何在Adobe Experience Platform中创建受众。 构建受众规则并将它们应用于您的实时客户档案，以生成将为客户体验提供支持的受众。 有关详细的产品文档，请参阅[在UI中创建区段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=zh-Hans)和[使用API创建区段](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-a-segment.html?lang=zh-Hans)。
 
 >[!NOTE]
 >

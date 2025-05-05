@@ -16,6 +16,6 @@ ht-degree: 48%
 
 # 创建数据使用策略
 
-了解如何在Adobe Experience Platform用户界面中创建和管理数据使用策略。 通过数据使用策略，您可以基于数据的标签限制特定目的下的数据使用。要了解基于API的方法，请参阅[使用API创建数据使用策略](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/create.html)。
+了解如何在Adobe Experience Platform用户界面中创建和管理数据使用策略。 通过数据使用策略，您可以基于数据的标签限制特定目的下的数据使用。要了解基于API的方法，请参阅[使用API创建数据使用策略](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/create.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32977?learn=on&enablevpops)

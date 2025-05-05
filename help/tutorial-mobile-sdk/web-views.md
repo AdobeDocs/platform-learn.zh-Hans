@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 潜在的跟踪问题
 
-如果您从应用程序的本机部分和应用程序内的WebView发送数据，则每个部分都会生成自己的Experience CloudID (ECID)，这会导致断开连接的点击量和夸大的访问/访客数据。 有关ECID的详细信息，请参阅[ECID概述](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en)。
+如果您从应用程序的本机部分和应用程序内的WebView发送数据，则每个部分都会生成自己的Experience CloudID (ECID)，这会导致断开连接的点击量和夸大的访问/访客数据。 有关ECID的详细信息，请参阅[ECID概述](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=zh-Hans)。
 
 要解决该不良情况，请务必将用户的ECID从应用程序的本机部分传递到您可能想要在应用程序中使用的WebView。
 

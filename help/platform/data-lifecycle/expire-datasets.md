@@ -26,4 +26,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-> 所有Platform客户都可以[根据需要删除数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete)。 计划数据集删除当前仅适用于Healthcare Shield或Privacy and Security Shield的客户。
+> 所有Platform客户都可以[根据需要删除数据集](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html?lang=zh-Hans#delete)。 计划数据集删除当前仅适用于Healthcare Shield或Privacy and Security Shield的客户。

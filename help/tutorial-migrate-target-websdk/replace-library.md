@@ -20,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->提供的示例仅用于说明目的，您实际的Target实施可能会有所不同。 如果您现有的Target实施使用Adobe的数据收集标记管理器，您还可以参阅[Platform Web SDK Target实施教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html)以了解更多信息。
+>提供的示例仅用于说明目的，您实际的Target实施可能会有所不同。 如果您现有的Target实施使用Adobe的数据收集标记管理器，您还可以参阅[Platform Web SDK Target实施教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=zh-Hans)以了解更多信息。
 
 
 ## 查看Target管理设置
@@ -52,7 +52,7 @@ Platform Web SDK使用数据流配置，允许您为单独的开发、暂存和�
 >
 >如果在数据流配置中未指定环境ID，则Target将使用&#x200B;**主机**&#x200B;部分中指定的域到环境的映射。
 
-有关详细信息，请参阅[数据流配置](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target)指南和Target [主机](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html)文档。
+有关详细信息，请参阅[数据流配置](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html?lang=zh-Hans#target)指南和Target [主机](https://experienceleague.adobe.com/docs/target/using/administer/hosts.html?lang=zh-Hans)文档。
 
 ## 部署Platform Web SDK
 
@@ -173,7 +173,7 @@ Target功能由at.js和Platform Web SDK提供。 如果同时使用这两个库�
 
 预建独立版本要求直接将“基础代码”添加到页面，以创建名为alloy的全局函数。 使用此函数与SDK交互。 如果要将全局函数命名为其他名称，请更改`alloy`名称。
 
-有关其他详细信息和部署选项，请参阅[安装Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html)文档。
+有关其他详细信息和部署选项，请参阅[安装Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html?lang=zh-Hans)文档。
 
 
 ## 更新内容预隐藏方法
@@ -213,9 +213,9 @@ Target功能由at.js和Platform Web SDK提供。 如果同时使用这两个库�
 
 Adobe建议异步实施Platform Web SDK，以获得最佳的总体页面性能。 但是，如果同步加载alloy.js库或tags嵌入代码，则不需要预隐藏代码片段。 而是在Platform Web SDK配置中指定预隐藏样式。
 
-可以使用[`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle)选项配置同步实施的预隐藏样式。 下节将介绍Platform Web SDK配置。
+可以使用[`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=zh-Hans#prehidingStyle)选项配置同步实施的预隐藏样式。 下节将介绍Platform Web SDK配置。
 
-要了解有关Platform Web SDK如何管理闪烁的更多信息，请参阅指南部分： [管理个性化体验的闪烁](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
+要了解有关Platform Web SDK如何管理闪烁的更多信息，请参阅指南部分： [管理个性化体验的闪烁](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html?lang=zh-Hans)
 
 ## 配置Platform Web SDK
 
@@ -274,7 +274,7 @@ alloy("configure", {
 | `thirdPartyCookiesEnabled` | 启用Adobe第三方Cookie的设置。 SDK可以在第三方上下文中保留访客ID，以便能够在各个网站中使用相同的访客ID。 如果您有多个网站，请使用此选项；但是，出于隐私原因，有时不需要使用此选项。 | `true` |
 | `prehidingStyle` | 用于创建在从服务器加载个性化内容时隐藏网页内容区域的CSS样式定义。 这仅用于SDK的同步部署。 | `body { opacity: 0 !important }` |
 
-有关选项的完整列表，请参阅[配置Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html)指南。
+有关选项的完整列表，请参阅[配置Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html?lang=zh-Hans)指南。
 
 ## 实施示例
 

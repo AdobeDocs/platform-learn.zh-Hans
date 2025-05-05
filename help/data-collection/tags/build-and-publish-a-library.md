@@ -16,6 +16,6 @@ ht-degree: 25%
 
 # 构建和发布标记库
 
-了解如何在标记属性中创建库，并在开发、暂存和生产环境中推送更改。了解如何使用多个开发环境来帮助多个团队在并行工作流中更新资产。 有关详细信息，请参阅[发布](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)文档。
+了解如何在标记属性中创建库，并在开发、暂存和生产环境中推送更改。了解如何使用多个开发环境来帮助多个团队在并行工作流中更新资产。 有关详细信息，请参阅[发布](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans)文档。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28731/?learn=on&enablevpops)
