@@ -16,13 +16,15 @@ ht-degree: 0%
 ## 熟悉Azure事件中心功能
 
 Azure Functions允许您运行一小段代码（称为&#x200B;**函数**），而无需担心应用程序基础架构。 利用Azure Functions，云基础架构可提供保持应用程序大规模运行所需的所有最新服务器。
-函数是由特定类型的事件触发的&#x200B;****。 支持的触发器包括响应数据更改、响应消息（例如事件中心）、按计划运行或作为HTTP请求的结果。
+函数是由特定类型的事件触发的&#x200B;**&#x200B;**。 支持的触发器包括响应数据更改、响应消息（例如事件中心）、按计划运行或作为HTTP请求的结果。
 Azure Functions是一种无服务器计算服务，可让您运行事件触发的代码，而无需明确配置或管理基础架构。
 Azure事件中心与Azure Functions集成以实现无服务器架构。
+
 ## 打开Visual Studio代码并登录到Azure
 
 Visual Studio Code可以轻松地……
 - 定义Azure函数并将其绑定到事件中心- 本地测试- 部署到Azure- 远程日志函数执行
+
 ### 打开Visual Studio Code
 
 ### 登录到Azure
@@ -36,6 +38,7 @@ Visual Studio Code可以轻松地……
 ![3-03-vsc-login-ok.png](./images/303vscloginok.png)
 返回到Visual Code Studio（您将看到Azure订阅的名称，例如&#x200B;**Azure订阅1**）：
 ![3-04-vsc-logged-in.png](./images/304vscloggedin.png)
+
 ## 创建Azure项目
 
 单击&#x200B;**创建函数项目……**：
@@ -65,6 +68,7 @@ Visual Studio Code可以轻松地……
 创建项目后，在编辑器中打开文件`--aepUserLdap---aep-event-hub-trigger.js`：
 ![3-16-vsc-open-index-js.png](./images/vsc13.png)
 Adobe Experience Platform发送到事件中心的有效负载将如下所示：
+
 ```json
 {
   "identityMap": {
@@ -92,16 +96,19 @@ Adobe Experience Platform发送到事件中心的有效负载将如下所示：
 
 使用以下代码更新Visual Studio代码的`--aepUserLdap---aep-event-hub-trigger.js`中的代码。 每次Real-time CDP将受众资格发送到事件中心目标时，都将执行此代码。 在此示例中，代码仅用于显示传入有效负载，但您可以想象任何类型的附加功能，以便实时处理受众资格并使用进一步的数据管道生态系统。
 文件`--aepUserLdap---aep-event-hub-trigger.js`中的第11行当前显示以下内容：
+
 ```javascript
 context.log('Event hub message:', message);
 ```
 
 将`--aepUserLdap---aep-event-hub-trigger.js`中的第11行更改为：
+
 ```javascript
 context.log('Event hub message:', JSON.stringify(message));
 ```
 
 总有效负载应如下所示：
+
 ```javascript
 const { app } = require('@azure/functions');
 
@@ -125,6 +132,7 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 
 结果应如下所示：
 ![3-16b-vsc-edit-index-js.png](./images/vsc1.png)
+
 ## 运行Azure项目
 
 现在该运行您的项目了。 在此阶段，我们不会将该项目部署到Azure。 我们将在调试模式下在本地运行该程序。 选择运行图标，单击绿色箭头。
@@ -135,10 +143,12 @@ app.eventHub('--aepUserLdap---aep-event-hub-trigger', {
 ![3-17-vsc-run-project.png](./images/vsc14b.png)
 您的项目现已启动并正在运行，并将列出事件中心中的事件。 在下一个练习中，您将在CitiSignal演示网站上演示符合受众条件的行为。 因此，您将在事件中心触发函数的终端中接收受众资格有效负载。
 ![3-24-vsc-application-stop.png](./images/vsc18.png)
+
 ## 停止Azure项目
 
 要停止项目，请转到VSC中的列&#x200B;**调用栈栈**，单击正在运行的项目上的箭头，然后单击&#x200B;**停止**。
 ![3-24-vsc-application-stop.png](./images/vsc17.png)
+
 ## 后续步骤
 
 转到[2.4.7端到端方案](./ex7.md){target="_blank"}

@@ -181,7 +181,7 @@ Adobe提供了一组丰富的[!DNL Postman]收藏集，可帮助您探索Experie
 
 现在，让我们进行Platform API调用，以确认我们正确配置了所有内容。
 
-在GitHub](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)中打开[Experience Platform [!DNL Postman] 集合。 此页面上有许多适用于各种Platform API的收藏集。 我强烈建议将它加入书签。
+在GitHub[&#128279;](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)中打开Experience Platform [!DNL Postman] 集合。 此页面上有许多适用于各种Platform API的收藏集。 我强烈建议将它加入书签。
 
 现在，我们进行第一个API调用：
 

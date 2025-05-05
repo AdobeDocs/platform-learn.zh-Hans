@@ -21,7 +21,7 @@ ht-degree: 0%
 
 在本课程中，您将通过使用Adobe Developer Console和在线webhook开发工具设置webhook来订阅数据摄取事件。 在后续课程中，您将使用这些事件监测数据摄取作业的状态。
 
-**数据工程师**将希望在本教程之外订阅数据摄取事件。
+**数据工程师**&#x200B;将希望在本教程之外订阅数据摄取事件。
 **数据架构师** _可以跳过本课程_&#x200B;并转到[批量摄取课程](ingest-batch-data.md)。
 
 ## 所需的权限
@@ -59,17 +59,17 @@ ht-degree: 0%
    ![添加事件](assets/ioevents-addEvents.png)
 1. 通过选择&#x200B;**[!UICONTROL Experience Platform]**&#x200B;筛选列表
 1. 选择&#x200B;**[!UICONTROL 平台通知]**
-1. 选择&#x200B;**[!UICONTROL 下一步]**按钮
+1. 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮
    ![添加通知](assets/ioevents-addNotifications.png)
 1. 选择所有事件
-1. 选择&#x200B;**[!UICONTROL 下一步]**按钮
+1. 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮
    ![选择订阅](assets/ioevents-addSubscriptions.png)
-1. 在配置凭据的下一个屏幕上，再次选择&#x200B;**[!UICONTROL 下一步]**按钮
+1. 在配置凭据的下一个屏幕上，再次选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮
    ![跳过凭据屏幕](assets/ioevents-clickNext.png)
 1. 作为&#x200B;**[!UICONTROL 事件注册名称]**，请输入`Platform notifications`
 1. 向下滚动并选择以打开&#x200B;**[!UICONTROL Webhook]**&#x200B;部分
 1. 作为&#x200B;**[!UICONTROL Webhook URL]**，粘贴来自webhook.site的&#x200B;**您的唯一URL**&#x200B;字段的值
-1. 选择&#x200B;**[!UICONTROL 保存配置的事件]**按钮
+1. 选择&#x200B;**[!UICONTROL 保存配置的事件]**&#x200B;按钮
    ![保存事件](assets/ioevents-addWebhook.png)
 1. 等待配置保存，您应该会看到`Platform notifications`事件处于活动状态，并且webhook详细信息未显示错误消息
    ![配置已保存](assets/ioevents-webhookConfigured.png)

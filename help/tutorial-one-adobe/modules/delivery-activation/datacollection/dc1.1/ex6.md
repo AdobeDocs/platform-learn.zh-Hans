@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ## 后续步骤
 
-转到Adobe Experience Platform](./ex7.md){target="_blank"}中的[1.1.7 XDM架构要求
+转到Adobe Experience Platform[&#128279;](./ex7.md){target="_blank"}中的1.1.7 XDM架构要求
 
 返回到[Adobe Experience Platform数据收集和Web SDK标记扩展的设置](./data-ingestion-launch-web-sdk.md){target="_blank"}
 

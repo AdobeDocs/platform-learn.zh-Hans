@@ -25,7 +25,7 @@ ht-degree: 0%
 
 ### 获取并安装可视化编辑帮助程序
 
-1. 导航到Chrome网上应用商店](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)中的[Adobe Experience Cloud可视化编辑帮助程序浏览器扩展。
+1. 导航到Chrome网上应用商店[&#128279;](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)中的Adobe Experience Cloud可视化编辑帮助程序浏览器扩展。
 1. 单击“添加到&#x200B;**Chrome** > **添加扩展**”。
 1. 在Target中打开VEC。
 1. 若要使用该扩展，请在VEC或QA模式下，单击Chrome浏览器工具栏中的可视化编辑帮助程序浏览器扩展图标![可视化编辑扩展图标](assets/VEC-Helper.png){zoomable="yes"}。

@@ -36,7 +36,7 @@ ht-degree: 0%
 首先，为您的事件提供如下名称： `--aepUserLdap--PurchaseEvent`，然后添加如下描述： `Purchase Event`。
 
 对于&#x200B;**类型**，请选择&#x200B;**单一**。
-对于**事件ID类型**，选择&#x200B;**系统生成的**。
+对于&#x200B;**事件ID类型**，选择&#x200B;**系统生成的**。
 
 ![Journey Optimizer](./images/eventidtype.png)
 
@@ -68,8 +68,8 @@ ht-degree: 0%
 
 随后将保存您的新事件，您现在将在可用事件列表中看到您的事件。
 
-再次单击您的事件以再次打开&#x200B;**编辑事件**屏幕。
-再次将鼠标悬停在**有效负载**&#x200B;字段上可再次查看这3个图标。 单击&#x200B;**查看有效负载**&#x200B;图标。
+再次单击您的事件以再次打开&#x200B;**编辑事件**&#x200B;屏幕。
+再次将鼠标悬停在&#x200B;**有效负载**&#x200B;字段上可再次查看这3个图标。 单击&#x200B;**查看有效负载**&#x200B;图标。
 
 ![Journey Optimizer](./images/oc41.png)
 
@@ -283,7 +283,7 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 ![Journey Optimizer](./images/oc71.png)
 
 在左侧菜单中，单击&#x200B;**上下文属性**。
-单击**Journey Orchestration**&#x200B;旁边的箭头可更深入地查看。
+单击&#x200B;**Journey Orchestration**&#x200B;旁边的箭头可更深入地查看。
 
 ![Journey Optimizer](./images/oc72.png)
 
@@ -311,9 +311,9 @@ We'll be back in touch with you as soon as we've finished packing your package. 
 
 ![Journey Optimizer](./images/oc76.png)
 
-再次单击&#x200B;**总价**&#x200B;旁边的&#x200B;**+**图标以将其添加到画布中。
-您还可以将**Order**&#x200B;对象中的字段&#x200B;**Currency**添加到画布上，如此处所示。
-完成后，单击**保存**&#x200B;以保存更改。
+再次单击&#x200B;**总价**&#x200B;旁边的&#x200B;**+**&#x200B;图标以将其添加到画布中。
+您还可以将&#x200B;**Order**&#x200B;对象中的字段&#x200B;**Currency**&#x200B;添加到画布上，如此处所示。
+完成后，单击&#x200B;**保存**&#x200B;以保存更改。
 
 ![Journey Optimizer](./images/oc77.png)
 

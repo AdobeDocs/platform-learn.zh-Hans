@@ -55,7 +55,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >您无需选择架构。 仅当使用用于数据收集](/help/data-collection/edge/data-prep.md)的[数据准备功能时，才需要选择架构。
+   >您无需选择架构。 仅当使用用于数据收集[&#128279;](/help/data-collection/edge/data-prep.md)的数据准备功能时，才需要选择架构。
 
 在下一个屏幕上，您可以向数据流添加Adobe应用程序等服务，但此时不会添加任何服务。 您稍后将在课程[设置Experience Platform](setup-experience-platform.md)、[设置Analytics](setup-analytics.md)、[设置Audience Manager](setup-audience-manager.md)、[设置Target](setup-target.md)或[事件转发](setup-event-forwarding.md)中执行此操作。
 

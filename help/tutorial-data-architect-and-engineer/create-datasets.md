@@ -44,14 +44,14 @@ ht-degree: 6%
 在本练习中，我们将在UI中创建数据集。 让我们从忠诚度数据开始：
 
 1. 在Platform用户界面的左侧导航中转到&#x200B;**[!UICONTROL 数据集]**
-1. 选择&#x200B;**[!UICONTROL 创建数据集]**按钮
+1. 选择&#x200B;**[!UICONTROL 创建数据集]**&#x200B;按钮
    ![创建数据集](assets/datasets-createDataset.png)
 
 1. 在下一个屏幕中，选择&#x200B;**从架构创建数据集**
-1. 在下一个屏幕上，选择您的`Luma Loyalty Schema`，然后选择&#x200B;**[!UICONTROL 下一步]**按钮
+1. 在下一个屏幕上，选择您的`Luma Loyalty Schema`，然后选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮
    ![选择数据集](assets/datasets-selectSchema.png)
 
-1. 命名数据集`Luma Loyalty Dataset`并选择&#x200B;**[!UICONTROL 完成]**按钮
+1. 命名数据集`Luma Loyalty Dataset`并选择&#x200B;**[!UICONTROL 完成]**&#x200B;按钮
    ![命名数据集](assets/datasets-nameDataset.png)
 1. 保存数据集后，您将看到如下屏幕：
    已创建![数据集](assets/datasets-created.png)
@@ -122,7 +122,7 @@ ht-degree: 6%
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`：在Admin Console中验证您的用户权限
 
 
-您可以返回到Platform用户界面中的&#x200B;**[!UICONTROL 数据集]**屏幕，您可以验证是否已成功创建全部五个数据集！
+您可以返回到Platform用户界面中的&#x200B;**[!UICONTROL 数据集]**&#x200B;屏幕，您可以验证是否已成功创建全部五个数据集！
 ![五个数据集完成](assets/datasets-allComplete.png)
 
 

@@ -52,7 +52,7 @@ ht-degree: 2%
 
 1. 选择![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 创建数据集]**。
 
-1. 选择&#x200B;**[!UICONTROL 从架构]**创建数据集。
+1. 选择&#x200B;**[!UICONTROL 从架构]**&#x200B;创建数据集。
    ![数据集主页](assets/dataset-create.png)
 
 1. 搜索您的架构。 例如在搜索字段中使用`Luma Mobile`。
@@ -103,7 +103,7 @@ ht-degree: 2%
 
 ![验证数据登录Platform数据集批次](assets/platform-dataset-batches.png)
 
-您还应该能够使用&#x200B;**[!UICONTROL 预览数据集]**功能查看示例记录和字段：
+您还应该能够使用&#x200B;**[!UICONTROL 预览数据集]**&#x200B;功能查看示例记录和字段：
 ![验证发送到Platform数据集的生命周期](assets/lifecycle-platform-dataset.png)
 
 用于验证数据的更强大的工具是Platform的[查询服务](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html?lang=zh-CN)。

@@ -54,7 +54,7 @@ ht-degree: 6%
 
 ## 数据流配置
 
-Target扩展具有[可配置的设置](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui)，使用决策扩展这些设置在数据流](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup)中配置了[。
+Target扩展具有[可配置的设置](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui)，使用决策扩展这些设置在数据流[&#128279;](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup)中配置了。
 
 | 目标扩展 | Decisioning扩展 | 注释 |
 | --- | --- | --- | 

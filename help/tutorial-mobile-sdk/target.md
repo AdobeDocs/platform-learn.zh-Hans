@@ -169,7 +169,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
    1. 将无标题活动重命名，例如`Luma Mobile SDK Tutorial - A/B Test Example`。
    1. 输入A/B测试的&#x200B;**[!UICONTROL 目标]**，例如`A/B Test for Luma mobile app tutorial`。
-   1. 选择&#x200B;**[!UICONTROL 转化]**，**[!UICONTROL 在**[!UICONTROL &#x200B;目标量度&#x200B;]**>**[!UICONTROL &#x200B;我的主要目标&#x200B;]**拼贴中查看了mbox]**，并输入您的位置(mbox)名称，例如`luma-mobileapp-abtest`。
+   1. 选择&#x200B;**[!UICONTROL 转化]**，**[!UICONTROL 在**&#x200B;[!UICONTROL &#x200B;目标量度&#x200B;]&#x200B;**>**&#x200B;[!UICONTROL &#x200B;我的主要目标&#x200B;]&#x200B;**拼贴中查看了mbox]**，并输入您的位置(mbox)名称，例如`luma-mobileapp-abtest`。
    1. 选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
       ![目标设置](assets/target-goals.png)
@@ -280,7 +280,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 1. 在左边栏中选择&#x200B;**[!UICONTROL 配置]**，然后选择&#x200B;**[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**&#x200B;下&#x200B;**[!UICONTROL 查看和模拟]**&#x200B;旁边的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 在左边栏中选择&#x200B;**[!UICONTROL 查看和模拟]**。 数据流设置以及应用程序中的SDK设置均已验证。
-1. 选择顶部栏中的&#x200B;**[!UICONTROL 请求]**。 您会看到您的&#x200B;**[!DNL Target]**请求。
+1. 选择顶部栏中的&#x200B;**[!UICONTROL 请求]**。 您会看到您的&#x200B;**[!DNL Target]**&#x200B;请求。
    ![AJO Decisioning验证](assets/assurance-decisioning-requests.png)
 
 1. 您可以浏览&#x200B;**[!UICONTROL 模拟]**&#x200B;和&#x200B;**[!UICONTROL 事件列表]**&#x200B;选项卡，以进一步了解检查您的Target优惠设置的功能。

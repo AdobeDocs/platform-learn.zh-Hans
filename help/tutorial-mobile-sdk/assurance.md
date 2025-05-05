@@ -146,6 +146,7 @@ Assurance的工作方式是通过浏览器或二维码打开URL。 该URL以基�
 
    1. 选择&#x200B;**[!UICONTROL 复制链接]**。
    1. 使用![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)复制深层链接，然后使用该深层链接在模拟器中通过Safari打开应用程序。
+
       ![保证副本链接](assets/assurance-copy-link.png)
 
 1. 应用程序加载时，系统会显示一个模式对话框，要求您输入步骤7中显示的PIN。

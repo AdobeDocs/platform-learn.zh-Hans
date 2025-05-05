@@ -102,7 +102,7 @@ person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItem
 ![区段](./images/previewprofilesdtl.png)
 
 最后，让我们为您的受众命名，
-将**评估方法**&#x200B;设置为&#x200B;**流式传输**，然后单击&#x200B;**Publish**。
+将&#x200B;**评估方法**&#x200B;设置为&#x200B;**流式传输**，然后单击&#x200B;**Publish**。
 
 作为命名约定，请使用：
 

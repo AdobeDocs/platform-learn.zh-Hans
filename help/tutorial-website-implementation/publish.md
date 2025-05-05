@@ -80,11 +80,11 @@ ht-degree: 54%
 
 1. 单击磁盘图标以进行保存
 
-   Debugger](images/switchEnvironments-debugger-save.png)中显示的![标记环境
+   Debugger![&#128279;](images/switchEnvironments-debugger-save.png)中显示的标记环境
 
 1. 重新加载并查看调试器的“概要”选项卡。在Launch部分下，您现在应该看到已实施暂存资产，并显示资产名称（例如，“tags Tutorial”或您命名的任何资产名称）！
 
-   Debugger](images/publishing-debugger-staging.png)中显示的![标记环境
+   Debugger![&#128279;](images/publishing-debugger-staging.png)中显示的标记环境
 
 在实际工作中，当您的 QA 团队通过审核暂存环境中的更改进行签核后，便可以将其发布到生产环境。
 

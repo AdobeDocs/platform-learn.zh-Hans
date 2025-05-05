@@ -78,7 +78,7 @@ Platform Web SDK将数据从您的网站发送到PlatformEdge Network。 然后�
 
 ### 自动映射的字段
 
-许多XDM字段会自动映射到Analytics变量。 有关最新的映射列表，请参阅AdobeExperience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)中的[Analytics变量映射。
+许多XDM字段会自动映射到Analytics变量。 有关最新的映射列表，请参阅AdobeExperience Edge[&#128279;](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)中的Analytics变量映射。
 
 即使您尚未定义自定义架构&#x200B;_，如果_&#x200B;也会发生这种情况。 Experience PlatformWeb SDK会自动收集一些数据，并将其作为XDM字段发送到PlatformEdge Network。 例如，Web SDK读取当前页面URL并将其作为XDM字段`web.webPageDetails.URL`发送。 此字段将转发到Adobe Analytics，并且它会自动在Adobe Analytics中填充页面URL报表。
 
@@ -254,7 +254,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 将&#x200B;**[!UICONTROL 扩展]**&#x200B;保留为&#x200B;**[!UICONTROL 核心]**
 
-1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;]**的**[!UICONTROL &#x200B;路径
+1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;**的**&#x200B;路径
 
 1. 在右侧，将&#x200B;**[!UICONTROL 正则表达式]**&#x200B;切换保持禁用状态
 
@@ -443,13 +443,13 @@ Adobe Experience Platform Assurance可帮助您检查、验证、模拟和验证
 要验证Adobe Analytics是否正在捕获ECID，请选择一个信标并打开有效负载。  此信标的供应商应为&#x200B;**[!UICONTROL com.adobe.analytics.hitdebugger]**
 ![Adobe Analytics验证（含保证）](assets/assurance-hitdebugger-payload.png)
 
-然后向下滚动到&#x200B;**[!UICONTROL mcvisId]**以验证是否正确捕获了ECID
+然后向下滚动到&#x200B;**[!UICONTROL mcvisId]**&#x200B;以验证是否正确捕获了ECID
 ![Experience CloudID验证（含保证）](assets/assurance-hitdebugger-mcvisId.png)
 
 ### 内容页面查看次数验证
 
 使用相同的信标，验证内容页面查看是否已映射到正确的Adobe Analytics变量。
-向下滚动到**[!UICONTROL pageName]**&#x200B;以验证是否正确捕获了`Page Name`
+向下滚动到&#x200B;**[!UICONTROL pageName]**&#x200B;以验证是否正确捕获了`Page Name`
 ![使用保证验证页面名称](assets/assurance-hitdebugger-content-pagename.png)
 
 ### 产品字符串和电子商务事件验证

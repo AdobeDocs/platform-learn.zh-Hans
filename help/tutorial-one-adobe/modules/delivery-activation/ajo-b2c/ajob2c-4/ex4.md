@@ -237,8 +237,8 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 然后，您将看到空的事件配置。
 首先，为您的事件提供如下名称： `--aepUserLdap--StoreEntryEvent`并将描述设置为`Store Entry Event`。
-下一个是**事件类型**&#x200B;选择。 选择&#x200B;**单一**。
-下一个是**事件ID类型**&#x200B;选择。 选择&#x200B;**系统生成的**。
+下一个是&#x200B;**事件类型**&#x200B;选择。 选择&#x200B;**单一**。
+下一个是&#x200B;**事件ID类型**&#x200B;选择。 选择&#x200B;**系统生成的**。
 
 ![ACOP](./images/eventname.png)
 

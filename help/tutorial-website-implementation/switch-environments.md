@@ -52,7 +52,7 @@ ht-degree: 21%
 
 1. 请注意，当前实施的标记属性将显示在“摘要”选项卡中
 
-   Debugger](images/switchEnvironments-debuggerOnWeRetail-prod.png)中显示的![标记环境
+   Debugger![&#128279;](images/switchEnvironments-debuggerOnWeRetail-prod.png)中显示的标记环境
 
 1. 转到“工具”选项卡
 1. 滚动到&#x200B;**[!UICONTROL 替换Launch嵌入代码]**&#x200B;部分
@@ -60,11 +60,11 @@ ht-degree: 21%
 1. 打开“跨luma.enablementadobe.com应用”功能，以便Luma网站上的所有页面都将映射到您的标记属性
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;按钮
 
-   Debugger](images/switchEnvironments-debugger-save.png)中显示的![标记环境
+   Debugger![&#128279;](images/switchEnvironments-debugger-save.png)中显示的标记环境
 
 1. 重新加载 Luma 网站并检查 Debugger 的“摘要”选项卡。在 Launch 部分下，现在您应会看到开发资产正在使用中。请确认该资产的名称与您的资产名称匹配，并且环境显示为“development”。
 
-   Debugger](images/switchEnvironments-debuggerOnWeRetail.png)中显示的![标记环境
+   Debugger![&#128279;](images/switchEnvironments-debuggerOnWeRetail.png)中显示的标记环境
 
 >[!NOTE]
 >

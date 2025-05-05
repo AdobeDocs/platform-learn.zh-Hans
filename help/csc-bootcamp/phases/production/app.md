@@ -41,7 +41,7 @@ AEM as a Cloud Service是一款灵活的工具，提供了三种强大的功能�
 1. 用于投放的内容API
    - AEM GraphQL API支持内容片段投放。
    - AEM Assets REST API支持内容片段CRUD操作。
-   - 使用内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)的[JSON导出也可实现直接内容投放。
+   - 使用内容片段核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=en)的JSON导出也可实现直接内容投放。
 
 ## 练习
 
@@ -84,6 +84,7 @@ AEM as a Cloud Service是一款灵活的工具，提供了三种强大的功能�
 - 在打开的模式窗口中，您会看到某些字段尚未可编辑。 这是符合逻辑的：根据我们创建片段的位置，将提供不同的模型。
   ![创建内容片段](./images/prod-app-create-cf-details.png)
    - 首先，通过单击“位置”字段旁边的文件夹图标选择我们将创建片段的位置。 单击文件夹“adobike”\>“en”\>“mobile-app”展开内容树，然后单击“选择”按钮确认您的选择。
+
      ![选择正确的位置](./images/prod-app-folder.png)
    - 您会注意到“内容片段模型”字段现在可以编辑。 单击字段旁边的箭头以打开下拉菜单，然后选择我们之前查看的内容模型：“移动设备应用程序主页”。
    - 接下来，为您的内容片段提供一个有意义的标题（提示：包含您的团队成员以轻松找到内容）。 您会注意到“Name”字段会自动填充 — 这是为了使您的生活更轻松：它是系统用于识别您的片段的名称，不应触及。
@@ -94,6 +95,7 @@ AEM as a Cloud Service是一款灵活的工具，提供了三种强大的功能�
    - 要选择图像资源，请单击文件夹图标以浏览AEM Assets以获取正确的图像。
    - 对于精选产品，请单击产品查找图标，以便您可以轻松选择我们的“Adobike 1”Commerce产品，以便在应用程序中加载与商业相关的详细信息。
    - 完成保存所有创作内容并发布更改后，请务必单击“保存”按钮。
+
      ![发布更改](./images/prod-app-publish.png)
 
 现在，我们已经预见了包含一些内容的移动应用程序，我们可以开始投放营销活动了。

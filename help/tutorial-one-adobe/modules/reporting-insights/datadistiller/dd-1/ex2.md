@@ -107,7 +107,7 @@ macOS：
 
 ## 后续步骤
 
-使用查询服务](./ex3.md){target="_blank"}转到[2.1.3
+使用查询服务[&#128279;](./ex3.md){target="_blank"}转到2.1.3
 
 返回[查询服务](./query-service.md){target="_blank"}
 

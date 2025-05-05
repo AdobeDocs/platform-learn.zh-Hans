@@ -80,6 +80,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
    1. 从&#x200B;**[!UICONTROL 选择库]**&#x200B;列表中选择&#x200B;**[!DNL Luma]**。
    1. 请确保已选择您的工作库，例如&#x200B;**[!UICONTROL 初始内部版本]**。
    1. 从&#x200B;**[!UICONTROL 保存到库]**&#x200B;中选择&#x200B;**[!UICONTROL 保存到库并生成]**。
+
       ![安装Places扩展](assets/places-install-extension.png)。
 
 1. 已重建您的库。
@@ -93,7 +94,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 从顶部栏中选择&#x200B;**[!UICONTROL 浏览]**。
 1. 选择您的架构以将其打开。
 1. 在架构编辑器中，选择&#x200B;**[!UICONTROL 使用者体验事件]**。
-1. 您看到&#x200B;**[!UICONTROL placeContext]**对象，其中包含用于捕获POI交互和地理位置数据的对象和字段。
+1. 您看到&#x200B;**[!UICONTROL placeContext]**&#x200B;对象，其中包含用于捕获POI交互和地理位置数据的对象和字段。
    ![架构位置](assets/schema-places-context.png)。
 
 
@@ -139,6 +140,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 选择&#x200B;**[!UICONTROL EVENTS]**&#x200B;下的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
    1. 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择&#x200B;**[!UICONTROL 地标]**，并从&#x200B;**[!UICONTROL 事件类型]**&#x200B;列表中选择&#x200B;**[!UICONTROL 输入POI]**。
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
+
       ![标记事件](assets/tags-event-mobile-core.png)。
 1. 选择&#x200B;**[!UICONTROL ACTIONS]**&#x200B;下的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
    1. 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择&#x200B;**[!UICONTROL 移动核心]**，从列表&#x200B;**[!UICONTROL 操作类型]**&#x200B;中选择&#x200B;**[!UICONTROL 附加数据]**。 此操作附加有效负荷数据。
@@ -169,6 +171,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
       您还可以通过选择![数据](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)在JSON中插入`{%% ... %%}`数据元素占位符值。 弹出对话框允许您选择创建的任何数据元素。
 
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
+
       ![标记操作](assets/tags-action-mobile-core.png)
 
 1. 选择&#x200B;**[!UICONTROL 移动核心 — 附加数据]**&#x200B;操作旁边的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。

@@ -81,7 +81,7 @@ ht-degree: 4%
 
 ![数据获取](./images/emptyschema.png)
 
-现在您需要定义问题&#x200B;**此客户是谁？的答案**应该看起来像。
+现在您需要定义问题&#x200B;**此客户是谁？的答案**&#x200B;应该看起来像。
 在本实验的介绍中，我们注意到需要使用以下属性来定义客户：
 
 - 人口统计信息，如名字、姓氏和地址
@@ -234,15 +234,15 @@ ht-degree: 4%
 
 接下来，您必须将&#x200B;**`--aepUserLdap--_ecid`**&#x200B;和&#x200B;**`--aepUserLdap--_mobilenr`**&#x200B;的其他字段定义为标准标识符。
 
-选择字段&#x200B;**`--aepUserLdap--_ecid`**。 在右侧的字段属性中，向下滚动直到看到&#x200B;**[!UICONTROL 标识]**&#x200B;为止。 选中&#x200B;**[!UICONTROL 标识]**的复选框。
-接下来，从**[!UICONTROL 命名空间]**&#x200B;列表中选择命名空间&#x200B;**[!UICONTROL ECID]**。
-单击**[!UICONTROL 应用]**&#x200B;以保存更改。
+选择字段&#x200B;**`--aepUserLdap--_ecid`**。 在右侧的字段属性中，向下滚动直到看到&#x200B;**[!UICONTROL 标识]**&#x200B;为止。 选中&#x200B;**[!UICONTROL 标识]**&#x200B;的复选框。
+接下来，从&#x200B;**[!UICONTROL 命名空间]**&#x200B;列表中选择命名空间&#x200B;**[!UICONTROL ECID]**。
+单击&#x200B;**[!UICONTROL 应用]**&#x200B;以保存更改。
 
 ![数据获取](./images/ecidid.png)
 
-选择字段&#x200B;**`--aepUserLdap--_mobilenr`**。 在右侧的字段属性中，向下滚动直到看到&#x200B;**[!UICONTROL 标识]**&#x200B;为止。 选中&#x200B;**[!UICONTROL 标识]**的复选框。
-从**[!UICONTROL 命名空间]**&#x200B;列表中选择命名空间&#x200B;**[!UICONTROL 电话]**。
-单击**[!UICONTROL 应用]**&#x200B;以保存更改。
+选择字段&#x200B;**`--aepUserLdap--_mobilenr`**。 在右侧的字段属性中，向下滚动直到看到&#x200B;**[!UICONTROL 标识]**&#x200B;为止。 选中&#x200B;**[!UICONTROL 标识]**&#x200B;的复选框。
+从&#x200B;**[!UICONTROL 命名空间]**&#x200B;列表中选择命名空间&#x200B;**[!UICONTROL 电话]**。
+单击&#x200B;**[!UICONTROL 应用]**&#x200B;以保存更改。
 
 ![数据获取](./images/mobid.png)
 
@@ -254,7 +254,7 @@ ht-degree: 4%
 
 ![数据获取](./images/saveschema.png)
 
-此处的最后一个操作是激活要链接到&#x200B;**[!UICONTROL 配置文件]**的架构。
+此处的最后一个操作是激活要链接到&#x200B;**[!UICONTROL 配置文件]**&#x200B;的架构。
 通过为配置文件启用架构，您将确保针对此架构发送到Adobe Experience Platform的所有数据都将成为Real-time Customer Profile环境的一部分，从而确保所有这些数据都可以实时用于查询、分段和激活。
 
 为此，请选择架构的名称。
@@ -321,7 +321,7 @@ ht-degree: 4%
 
 ![数据获取](./images/emptyschemaee.png)
 
-现在，您需要定义问题&#x200B;**此客户有何行为？**应该看起来像。
+现在，您需要定义问题&#x200B;**此客户有何行为？**&#x200B;应该看起来像。
 在本实验的介绍中，我们注意到需要使用以下属性来定义客户的操作：
 
 - 访问过哪些页面或产品？
@@ -359,7 +359,7 @@ ht-degree: 4%
 ![数据获取](./images/addmixinee2.png)
 
 您现在将创建自己的[!UICONTROL 字段组]，而不是重用现有的[!UICONTROL 字段组]。 选择&#x200B;**[!UICONTROL 新建字段组]**&#x200B;并输入字段组的名称，如下所示： `--aepUserLdap-- - ExperienceEvent Identification Field Group`。
-单击**添加字段组**
+单击&#x200B;**添加字段组**
 
 ![数据获取](./images/createmixineew.png)
 
@@ -401,7 +401,7 @@ ht-degree: 4%
 
 ![数据获取](./images/tenantfieldeewv.png)
 
-ECID字段将被定义为类型&#x200B;**[!UICONTROL 字符串]**，您将将此字段配置为&#x200B;**[!UICONTROL 标识]**。 对于网站&#x200B;]**的架构**[!UICONTROL &#x200B;演示系统 — 事件架构，我们假设客户将始终由其[!UICONTROL ECID]标识，这意味着您必须将字段&#x200B;**[!UICONTROL ECID]**&#x200B;配置为&#x200B;**主**&#x200B;标识符
+ECID字段将被定义为类型&#x200B;**[!UICONTROL 字符串]**，您将将此字段配置为&#x200B;**[!UICONTROL 标识]**。 对于网站&#x200B;**的架构**&#x200B;演示系统 — 事件架构，我们假设客户将始终由其[!UICONTROL ECID]标识，这意味着您必须将字段&#x200B;**[!UICONTROL ECID]**&#x200B;配置为&#x200B;**主**&#x200B;标识符
 
 现在，您有一个空字段。 您需要按指示配置上述字段。
 
@@ -425,27 +425,27 @@ ECID字段将被定义为类型&#x200B;**[!UICONTROL 字符串]**，您将将此
 ![数据获取](./images/3fieldsee.png)
 
 要开始将这些字段定义为&#x200B;**[!UICONTROL 标识]**&#x200B;字段，请选择字段&#x200B;**`--aepUserLdap--_ecidweb`**。
-在右侧的字段属性中，向下滚动直到看到**[!UICONTROL 标识]**&#x200B;为止。 选中&#x200B;**[!UICONTROL 标识]**&#x200B;的复选框，并选中&#x200B;**[!UICONTROL 主标识]**的复选框。
-从**[!UICONTROL 命名空间]**&#x200B;列表中选择命名空间&#x200B;**[!UICONTROL ECID]**。
+在右侧的字段属性中，向下滚动直到看到&#x200B;**[!UICONTROL 标识]**&#x200B;为止。 选中&#x200B;**[!UICONTROL 标识]**&#x200B;的复选框，并选中&#x200B;**[!UICONTROL 主标识]**&#x200B;的复选框。
+从&#x200B;**[!UICONTROL 命名空间]**&#x200B;列表中选择命名空间&#x200B;**[!UICONTROL ECID]**。
 
 单击&#x200B;**[!UICONTROL 应用]**&#x200B;以保存更改。
 
 ![数据获取](./images/ecididee.png)
 
-**[!UICONTROL 标识]**&#x200B;对象现在应如下所示，ecid-field现在还显示&#x200B;**指纹**图标，以显示它们已被定义为标识符。
-单击**[!UICONTROL 保存]**&#x200B;以保存更改。
+**[!UICONTROL 标识]**&#x200B;对象现在应如下所示，ecid-field现在还显示&#x200B;**指纹**&#x200B;图标，以显示它们已被定义为标识符。
+单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存更改。
 
 ![数据获取](./images/applyidenee.png)
 
 请务必注意，最终针对此架构摄取数据时，需要填写一些字段。
-例如，字段**[!UICONTROL _id]**&#x200B;和&#x200B;**[!UICONTROL timestamp]**&#x200B;是必填字段，这是ExperienceEvent类强制要求的条件。
+例如，字段&#x200B;**[!UICONTROL _id]**&#x200B;和&#x200B;**[!UICONTROL timestamp]**&#x200B;是必填字段，这是ExperienceEvent类强制要求的条件。
 
 - _id需要包含用于特定数据摄取的唯一id
 - 时间戳需要为此点击的时间戳，格式为&#x200B;**`"YYYY-MM-DDTHH:MM:SSSZ"`**，例如实例：**`"2024-11-18T07:20:000Z"`**
 
 您现在已定义架构，链接了现有和新创建的[!UICONTROL 字段组]，并定义了标识符。
 
-此处的最后一个操作是激活要链接到&#x200B;**[!UICONTROL 配置文件]**的架构。
+此处的最后一个操作是激活要链接到&#x200B;**[!UICONTROL 配置文件]**&#x200B;的架构。
 通过启用[!UICONTROL 配置文件]的架构，您将确保针对此架构发送到Adobe Experience Platform的所有数据都将包含在Real-time Customer Profile中，从而确保所有数据能够实时用于查询、分段和激活。
 
 为此，请单击架构的名称。

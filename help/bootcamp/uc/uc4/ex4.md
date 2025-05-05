@@ -39,7 +39,7 @@ Customer Journey Analytics基于Platform数据提供此解决方案。 我们强
 ### 创建项目
 
 现在该创建您的第一个CJA项目了。 转到CJA中的“项目”选项卡。
-单击**新建**。
+单击&#x200B;**新建**。
 
 ![演示](./images/prmenu.png)
 

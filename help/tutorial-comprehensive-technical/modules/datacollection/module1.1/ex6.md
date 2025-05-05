@@ -31,7 +31,7 @@ ht-degree: 1%
 
 ![AEP调试器](./images/at1.png)
 
-下一步： Adobe Experience Platform](./ex7.md)中的[1.1.7 XDM架构要求
+下一步： Adobe Experience Platform[&#128279;](./ex7.md)中的1.1.7 XDM架构要求
 
 [返回模块1.1](./data-ingestion-launch-web-sdk.md)
 

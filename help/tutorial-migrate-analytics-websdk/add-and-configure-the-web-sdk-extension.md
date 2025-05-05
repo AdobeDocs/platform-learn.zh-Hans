@@ -19,8 +19,10 @@ ht-degree: 0%
 
 1. 导航到Experience Platform数据收集。 这可以通过两种方式之一实现：
    1. 转到[Adobe Experience Platform界面](https://platform.adobe.com/)，然后选择左侧导航底部附近的&#x200B;**[!UICONTROL 标记]**。
+
       ![访问标记1](assets/access-tags-1.jpg)
    1. 如果您无权访问Platform，则可以使用窗口右上角的应用程序切换器（9个点）并选择数据收集(登录Experience.Adobe.com后)。
+
       ![访问标记2](assets/access-tags-2.jpg)
 1. 查找并选择您要迁移到Web SDK的标记属性。
 1. 在标记属性的左侧导航中，选择&#x200B;**[!UICONTROL 扩展]**。

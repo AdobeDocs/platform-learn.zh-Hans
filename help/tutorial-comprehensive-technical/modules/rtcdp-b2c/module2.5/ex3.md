@@ -102,8 +102,8 @@ ht-degree: 1%
 
 ![Adobe Experience Platform数据收集SSF](./images/rl10.png)
 
-现在，您已在Event Forwarding属性中配置了第一个规则。 转到&#x200B;**发布流**以发布您的更改。
-按指示单击**编辑**&#x200B;以打开开发库&#x200B;**Main**。
+现在，您已在Event Forwarding属性中配置了第一个规则。 转到&#x200B;**发布流**&#x200B;以发布您的更改。
+按指示单击&#x200B;**编辑**&#x200B;以打开开发库&#x200B;**Main**。
 
 ![Adobe Experience Platform数据收集SSF](./images/rl11.png)
 

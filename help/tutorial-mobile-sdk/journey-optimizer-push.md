@@ -174,6 +174,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
    1. 选择一个环境，例如&#x200B;**[!UICONTROL 开发]**。
    1. 从&#x200B;**[!UICONTROL 事件数据集]**&#x200B;列表中选择&#x200B;**[!UICONTROL AJO推送跟踪体验事件数据集]**&#x200B;数据集。
    1. 选择&#x200B;**[!UICONTROL 保存到库并生成]**。
+
       ![AJO扩展设置](assets/push-tags-ajo.png)
 
 >[!NOTE]
@@ -307,6 +308,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
    1. 在&#x200B;**[!UICONTROL 字段属性]**&#x200B;窗格中，向下滚动以查看事件类型可能值的列表。 选择&#x200B;**[!UICONTROL 添加行]**，并将`application.test`添加为&#x200B;**[!UICONTROL VALUE]**，将`[!UICONTROL Test event for push notification]`添加为`DISPLAY NAME`。
    1. 选择&#x200B;**[!UICONTROL 应用]**。
    1. 选择&#x200B;**[!UICONTROL 保存]**。
+
       ![向事件类型添加值](assets/ajo-update-schema-eventtype-enum.png)
 
 ### 定义事件
@@ -343,11 +345,13 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
 
       1. 在&#x200B;**[!UICONTROL 添加事件ID条件]**&#x200B;对话框中，将&#x200B;**[!UICONTROL 事件类型(eventType)]**&#x200B;拖放到&#x200B;**[!UICONTROL 将元素拖放到此处]**。
       1. 在弹出窗口中，滚动到底部并选择&#x200B;**[!UICONTROL application.test]**（这是您之前作为[更新架构](#update-your-schema)的一部分添加到事件类型列表中的事件类型）。 然后向上滚动到顶部并选择&#x200B;**[!UICONTROL 确定]**。
-      1. 选择&#x200B;**[!UICONTROL 确定]**以保存条件。
+      1. 选择&#x200B;**[!UICONTROL 确定]**&#x200B;以保存条件。
+
          ![编辑事件条件](assets/ajo-edit-condition.png)
 
    1. 从&#x200B;**[!UICONTROL 命名空间]**&#x200B;列表中选择&#x200B;**[!UICONTROL ECID (ECID)]**。 自动使用&#x200B;**[!UICONTROL 映射identityMap]**&#x200B;的键ECID的第一个元素的ID填充&#x200B;**[!UICONTROL 配置文件标识符]**&#x200B;字段。
    1. 选择&#x200B;**[!UICONTROL 保存]**。
+
       ![编辑事件步骤2](assets/ajo-edit-event2.png)
 
 您刚刚创建了一个事件配置，该配置基于您之前在本教程中创建的“移动应用程序体验事件”架构。 此事件配置将使用您的特定事件类型(`application.test`)筛选传入的体验事件，因此，只有从该移动应用程序发起的特定类型的事件才会触发您在下一步中构建的历程。 在现实场景中，您可能希望从外部服务发送推送通知，但可以应用相同的概念：从外部应用程序将体验事件发送到Experience Platform，该事件具有可用于在这些事件触发历程之前应用条件的特定字段。
@@ -364,6 +368,7 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
    1. 输入历程的&#x200B;**[!UICONTROL 描述]**，例如`Journey for test push notifications in Luma mobile app`。
    1. 确保已选择&#x200B;**[!UICONTROL 允许重新进入]**，并将&#x200B;**[!UICONTROL 重新进入等待期]**&#x200B;设置为&#x200B;**[!UICONTROL 30]** **[!UICONTROL 秒]**。
    1. 选择&#x200B;**[!UICONTROL 确定]**。
+
       ![历程属性](assets/ajo-journey-properties.png)
 
 1. 返回历程画布，从&#x200B;**[!UICONTROL EVENTS]**，将![Event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Globe_18_N.svg) **[!DNL LumaTestEvent]**&#x200B;拖放到画布上，其中显示&#x200B;**[!UICONTROL 选择一个进入事件或读取受众活动]**。
@@ -373,7 +378,8 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
 1. 从&#x200B;**[!UICONTROL ACTIONS]**&#x200B;下拉列表中，将![推送](https://spectrum.adobe.com/static/icons/workflow_18/Smock_PushNotification_18_N.svg) **[!UICONTROL 推送]**&#x200B;拖放到显示于&#x200B;**[!DNL LumaTestEvent]**&#x200B;活动右侧的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)上。 在&#x200B;**[!UICONTROL 操作：推送]**&#x200B;窗格中：
 
    1. 提供&#x200B;**[!UICONTROL 标签]**，例如`Luma Test Push Notification`，提供&#x200B;**[!UICONTROL 描述]**，例如`Test push notification for Luma mobile app`，从&#x200B;**[!UICONTROL 类别]**&#x200B;列表中选择&#x200B;**[!UICONTROL 事务型]**，并从&#x200B;**[!UICONTROL 推送表面]**&#x200B;中选择&#x200B;**[!DNL Luma]**。
-   1. 选择![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑内容]**以开始编辑实际的推送通知。
+   1. 选择![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑内容]**&#x200B;以开始编辑实际的推送通知。
+
       ![推送属性](assets/ajo-push-properties.png)
 
       在&#x200B;**[!UICONTROL 推送通知]**&#x200B;编辑器中：
@@ -381,11 +387,12 @@ Journey Optimizer中的事件允许您统一触发历程以发送消息，例如
       1. 输入&#x200B;**[!UICONTROL 标题]**，例如`Luma Test Push Notification`，并输入&#x200B;**[!UICONTROL 正文]**，例如`Test push notification for Luma mobile app`。
       1. 或者，您可以在&#x200B;**[!UICONTROL 添加媒体]**&#x200B;中输入指向图像(.png或.jpg)的链接。 如果这样做，图像将成为推送通知的一部分。
       1. 要保存并退出编辑器，请选择![左V形](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg)。
+
          ![推送编辑器](assets/ajo-push-editor.png)
 
    1. 要保存并完成推送通知定义，请选择&#x200B;**[!UICONTROL 确定]**。
 
-1. 您的历程应如下所示。 选择&#x200B;**[!UICONTROL 发布]**以发布并激活您的历程。
+1. 您的历程应如下所示。 选择&#x200B;**[!UICONTROL 发布]**&#x200B;以发布并激活您的历程。
    ![已完成历程](assets/ajo-journey-finished.png)
 
 

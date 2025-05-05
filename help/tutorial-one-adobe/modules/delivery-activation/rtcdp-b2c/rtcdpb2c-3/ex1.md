@@ -46,7 +46,7 @@ ht-degree: 2%
 ![DSN](../../../getting-started/gettingstarted/images/web7.png)
 
 在本例中，您希望对查看特定产品的特定客户做出响应。
-从**Citi Signal**&#x200B;主页，转到&#x200B;**手机和设备**，然后单击产品&#x200B;**Galaxy S24**。
+从&#x200B;**Citi Signal**&#x200B;主页，转到&#x200B;**手机和设备**，然后单击产品&#x200B;**Galaxy S24**。
 
 ![数据获取](./images/homegalaxy.png)
 

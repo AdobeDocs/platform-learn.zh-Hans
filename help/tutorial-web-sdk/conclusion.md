@@ -37,8 +37,8 @@ ht-degree: 3%
 
 * **在Journey Optimizer中触发历程**。 您在Luma网站中实施的事件可用于触发历程。 在此[视频教程](https://experienceleague.adobe.com/en/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey)中了解详情。
 * **连接Customer Journey Analytics**。 如果您创建了[Platform数据集](setup-experience-platform.md)，则可以将该数据集连接到Customer Journey Analytics。 在此[视频教程中了解详情](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/connections/connecting-customer-journey-analytics-to-data-sources-in-platform)
-* **在Platform**&#x200B;中生成区段。 如果您为Real-time Customer Profile](setup-experience-platform.md)启用了[架构和数据集，则可以根据您的Web事件生成区段，然后将这些区段发送到Real-time Customer Data Platform中的目标。 在此[视频教程](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/audiences/create-audiences)中了解有关区段生成器的更多信息。
-* **实施Platform Mobile SDK**。 您现在已经掌握了一个SDK，请学习另一个！ Adobe Experience Platform Mobile SDK用于为移动设备应用程序上的Experience Cloud和第三方服务提供支持。 Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview)有一个类似的[实践教程。 完成这两个操作后，即可看到配置文件跨设备合并！
+* **在Platform**&#x200B;中生成区段。 如果您为Real-time Customer Profile[&#128279;](setup-experience-platform.md)启用了架构和数据集，则可以根据您的Web事件生成区段，然后将这些区段发送到Real-time Customer Data Platform中的目标。 在此[视频教程](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/audiences/create-audiences)中了解有关区段生成器的更多信息。
+* **实施Platform Mobile SDK**。 您现在已经掌握了一个SDK，请学习另一个！ Adobe Experience Platform Mobile SDK用于为移动设备应用程序上的Experience Cloud和第三方服务提供支持。 Mobile SDK[&#128279;](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview)有一个类似的实践教程。 完成这两个操作后，即可看到配置文件跨设备合并！
 * **了解有关Experience Platform的更多信息**。 在[面向数据架构师和数据工程师的Adobe Experience Platform快速入门](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview)中了解如何从其他源摄取数据
 
 

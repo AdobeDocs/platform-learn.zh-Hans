@@ -29,10 +29,13 @@ ht-degree: 0%
 
 - 以下是您感兴趣的内容：
    - Adobike横幅深色：根据选定的资产，创建带有深色叠加的Adobike横幅
+
      ![深色横幅](./images/prod-banner-dark.jpg)
    - Adobike横幅图示：根据选定的资产，创建带有浅色叠加的Adobike横幅
+
      ![浅色横幅](./images/prod-banner-light.jpg)
    - Adobike横幅绿色：根据选定的资产，创建带有绿色叠加的Adobike横幅
+
      ![绿色横幅](./images/prod-banner-green.jpg)
 
 - 选择要创建的横幅类型后，选择该处理配置文件，然后选择“将配置文件应用到文件夹”。

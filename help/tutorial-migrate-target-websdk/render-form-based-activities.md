@@ -49,7 +49,7 @@ adobe.target.getOffer({
 
 +++
 
-使用`applyPropositions`命令的+++Platform Web SDK等效项：
++++使用`applyPropositions`命令的Platform Web SDK等效项：
 
 1. 执行`sendEvent`命令以请求一个或多个位置（范围）的选件（建议）
 1. 使用元数据对象执行`applyPropositions`命令，元数据对象提供有关如何将内容应用于每个作用域的页面的说明
@@ -106,7 +106,7 @@ Platform Web SDK为使用指定了`actionType`的`applyPropositions`命令将基
 
 下面的示例页面基于上一节中概述的实现，只是它向`sendEvent`命令添加了其他范围。
 
-具有多个范围的+++Platform Web SDK示例
++++具有多个范围的Platform Web SDK示例
 
 ```HTML
 <!doctype html>

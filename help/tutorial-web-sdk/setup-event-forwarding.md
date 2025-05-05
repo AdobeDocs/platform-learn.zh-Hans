@@ -290,7 +290,7 @@ ht-degree: 3%
 
 现在，您可以使用Platform Debugger和Webhook.site验证事件转发属性：
 
-1. 按照以下步骤[将[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en/men.html)上的标记库](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)切换到您在数据流中映射了事件转发属性的Web SDK标记属性。
+1. 按照以下步骤[&#128279;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)将[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en/men.html)上的标记库切换到您在数据流中映射了事件转发属性的Web SDK标记属性。
 
 1. 在重新加载页面之前，在Experience Platform调试器上，从左侧导航中打开&#x200B;**[!UICONTROL 日志]**
 

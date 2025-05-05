@@ -76,7 +76,7 @@ ht-degree: 0%
 ![Journey Optimizer](./images/fragm10.png)
 
 几分钟后，您会看到片段的状态已更改为&#x200B;**实时**。
-接下来，您应该为电子邮件的页脚创建新片段。 单击**创建片段**。
+接下来，您应该为电子邮件的页脚创建新片段。 单击&#x200B;**创建片段**。
 
 ![Journey Optimizer](./images/fragm11.png)
 

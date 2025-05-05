@@ -73,7 +73,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 1. 查看[设置说明](assurance.md#connecting-to-a-session)部分以将模拟器或设备连接到Assurance。
 1. 将应用程序发送到后台。 在保证UI中检查&#x200B;**[!UICONTROL LifecyclePause]**&#x200B;事件。
-1. 将应用程序置于前台。 在保证UI中检查&#x200B;**[!UICONTROL LifecycleResume]**事件。
+1. 将应用程序置于前台。 在保证UI中检查&#x200B;**[!UICONTROL LifecycleResume]**&#x200B;事件。
    ![验证生命周期](assets/lifecycle-lifecycle-assurance.png)
 
 
@@ -93,6 +93,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    1. 选择&#x200B;**[!UICONTROL 移动核心]**&#x200B;作为&#x200B;**[!UICONTROL 扩展]**。
    1. 选择&#x200B;**[!UICONTROL 前台]**&#x200B;作为&#x200B;**[!UICONTROL 事件类型]**。
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
+
       ![规则事件配置](assets/rule-event-configuration.png)
 1. 返回&#x200B;**[!UICONTROL 创建规则]**&#x200B;屏幕，选择&#x200B;**[!UICONTROL 移动核心 — 前台]**&#x200B;旁边的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加]**。
    ![下一个事件配置](assets/rule-event-configuration-next.png)
@@ -100,6 +101,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    1. 选择&#x200B;**[!UICONTROL 移动核心]**&#x200B;作为&#x200B;**[!UICONTROL 扩展]**。
    1. 选择&#x200B;**[!UICONTROL 背景]**&#x200B;作为&#x200B;**[!UICONTROL 事件类型]**。
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
+
       ![规则事件配置](assets/rule-event-configuration-background.png)
 1. 返回&#x200B;**[!UICONTROL 创建规则]**&#x200B;屏幕，在&#x200B;**[!UICONTROL 操作]**&#x200B;下选择![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加]**。
    ![规则添加操作](assets/rule-action-button.png)
@@ -107,10 +109,11 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
    1. 选择&#x200B;**[!UICONTROL Adobe体验Edge Network]**&#x200B;作为&#x200B;**[!UICONTROL 扩展]**。
    1. 选择&#x200B;**[!UICONTROL 将事件转发到Edge Network]**&#x200B;作为&#x200B;**[!UICONTROL 操作类型]**。
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
+
       ![规则操作配置](assets/rule-action-configuration.png)
 1. 选择&#x200B;**[!UICONTROL 保存到库]**。
    ![规则 — 保存到库](assets/rule-save-to-library.png)
-1. 选择&#x200B;**[!UICONTROL 生成]**以重新生成库。
+1. 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以重新生成库。
    ![规则 — 内部版本](assets/rule-build.png)
 
 成功构建资产后，事件将发送到PlatformEdge Network，并根据数据流配置转发到其他应用程序和服务。

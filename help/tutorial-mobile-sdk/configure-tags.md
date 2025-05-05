@@ -37,6 +37,7 @@ Adobe Experience Platform中的标记是Adobe推出的新一代标记管理功�
 1. 在数据收集界面中创建新的移动标记属性：
    1. 在左侧导航中选择&#x200B;**[!UICONTROL 标记]**。
    1. 选择&#x200B;**[!UICONTROL 新属性]**
+
       ![创建标记属性](assets/tags-new-property.png)。
    1. 对于&#x200B;**[!UICONTROL Name]**，输入`Luma Mobile App Tutorial`。
    1. 对于&#x200B;**[!UICONTROL 平台]**，请选择&#x200B;**[!UICONTROL 移动设备]**。
@@ -64,7 +65,8 @@ Adobe Experience Platform中的标记是Adobe推出的新一代标记管理功�
 
       ![生成库](assets/tags-save-library.png)
 
-   1. 最后，从&#x200B;**[!UICONTROL 选择工作库]**&#x200B;菜单中选择&#x200B;**[!UICONTROL 初始生成]**作为工作库。
+   1. 最后，从&#x200B;**[!UICONTROL 选择工作库]**&#x200B;菜单中选择&#x200B;**[!UICONTROL 初始生成]**&#x200B;作为工作库。
+
       ![选择作为工作库](assets/tags-working-library.png)
 1. 检查扩展：
 

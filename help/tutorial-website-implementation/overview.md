@@ -130,7 +130,7 @@ Adobe Experience Platform的标记功能是Adobe推出的新一代网站标记�
    </html>
    ```
 
-+++
+   +++
 
 1. 获取一个文本编辑器，您可以在其中更改示例 HTML 页面。（如果您没有文本编辑器，我们建议您尝试使用 [Brackets](https://brackets.io/)）
 1. 将 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)加入书签

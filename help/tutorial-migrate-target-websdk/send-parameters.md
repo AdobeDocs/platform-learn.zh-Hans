@@ -17,7 +17,7 @@ ht-degree: 0%
 
 假定以下两个使用at.js的示例页面：
 
-“产品详细信息”页面上的+++at.js：
++++“产品详细信息”页面上的at.js：
 
 ```HTML
 <!doctype html>
@@ -59,7 +59,7 @@ ht-degree: 0%
 +++
 
 
-订单确认页面上的+++at.js：
++++订单确认页面上的at.js：
 
 ```HTML
 <!doctype html>
@@ -122,7 +122,7 @@ Platform Web SDK提供了一种统一的数据发送方式，而无需使用额�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 自定义实体参数用于更新Recommendations产品目录。 这些自定义参数必须作为`data`对象的一部分进行传递。 |
 | `cartIds` | `data.__adobe.target.cartIds` | 用于Target基于购物车的推荐算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用于防止特定实体ID在推荐设计中返回。 |
-| `mbox3rdPartyId` | 在`xdm.identityMap`对象中设置 | 用于跨设备和客户属性同步Target配置文件。 必须在数据流](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html)的[Target配置中指定用于客户ID的命名空间。 |
+| `mbox3rdPartyId` | 在`xdm.identityMap`对象中设置 | 用于跨设备和客户属性同步Target配置文件。 必须在数据流[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html)的Target配置中指定用于客户ID的命名空间。 |
 | `orderId` | `xdm.commerce.order.purchaseID` | 用于标识Target转化跟踪的唯一订单。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal` | 用于跟踪Target转化和优化目标的订单总计。 |
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>或<br> `xdm.productListItems[0-n].SKU` | 用于Target转化跟踪和推荐算法。 有关详细信息，请参阅下面的[实体参数](#entity-parameters)部分。 |
@@ -442,7 +442,7 @@ alloy("sendEvent", {
 - 用于初始化库的`configure`命令
 - 用于发送数据和请求渲染目标内容的`sendEvent`命令
 
-产品详细信息页面上的+++Web SDK：
++++产品详细信息页面上的Web SDK：
 
 ```HTML
 <!doctype html>
@@ -518,7 +518,7 @@ alloy("sendEvent", {
 
 +++
 
-订单确认页面上的+++Web SDK：
++++订单确认页面上的Web SDK：
 
 ```HTML
 <!doctype html>

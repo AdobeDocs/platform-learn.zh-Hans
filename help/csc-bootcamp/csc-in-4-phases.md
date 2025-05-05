@@ -52,7 +52,7 @@ _Source：_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/
 
 理想情况下，您的营销团队应使用工作管理解决方案，该解决方案允许跨职能协作，并将项目与规划的、数据驱动的结果相关联。 它还应使营销团队从战略角度确定工作的优先级，并向您的创意团队宣布这些优先级。 从那里，创意摘要、内容版本和反馈应在每个项目中捆绑在一起，以便您的团队不必搜索旧电子邮件来查找他们要查找的内容。
 
-您的创意团队应使用[出色的数字资产管理](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)[系统](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)进行设置，该系统已与您的创意和工作管理工具集成。 这样，他们就可以轻松地查找、使用、更新相关资产或重新设定其用途。 通过执行所有这些操作，您可以提高上市速度并简化内部操作和流程。
+您的创意团队应使用[出色的数字资产管理](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [系统](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)进行设置，该系统已与您的创意和工作管理工具集成。 这样，他们就可以轻松地查找、使用、更新相关资产或重新设定其用途。 通过执行所有这些操作，您可以提高上市速度并简化内部操作和流程。
 
 ### 通过无缝工作流提高生产效率
 

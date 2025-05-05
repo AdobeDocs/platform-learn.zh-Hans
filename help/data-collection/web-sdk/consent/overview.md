@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 同意概述
 
-了解Adobe Experience Platform Web SDK中的同意管理如何帮助您遵守法律隐私要求并尊重客户的偏好。 有关详细信息，请参阅Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en#consent)中有关[治理、隐私和安全的概述。
+了解Adobe Experience Platform Web SDK中的同意管理如何帮助您遵守法律隐私要求并尊重客户的偏好。 有关详细信息，请参阅Platform[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en#consent)中有关治理、隐私和安全的概述。
 
 >[!NOTE]
 >

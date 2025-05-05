@@ -180,6 +180,7 @@ SDK事件中心发布和接收来自已注册的扩展的事件数据，以简�
 1. 在&#x200B;**[!UICONTROL 创建营销活动]**&#x200B;屏幕中：
    1. 选择&#x200B;**[!UICONTROL 应用程序内消息]**&#x200B;并从&#x200B;**[!UICONTROL 应用程序表面]**&#x200B;列表中选择应用程序表面，例如&#x200B;**[!DNL Luma Mobile App]**。
    1. 选择&#x200B;**[!UICONTROL 创建]**
+
       ![营销活动属性](assets/ajo-campaign-properties.png)
 1. 在Campaign定义屏幕的&#x200B;**[!UICONTROL 属性]**&#x200B;中，输入促销活动的&#x200B;**[!UICONTROL 名称]**，例如`Luma - In-App Messaging Campaign`，并输入&#x200B;**[!UICONTROL 描述]**，例如`In-app messaging campaign for Luma app`。
    ![促销活动名称](assets/ajo-campaign-properties-name.png)
@@ -191,6 +192,7 @@ SDK事件中心发布和接收来自已注册的扩展的事件数据，以简�
    4. 输入&#x200B;**[!UICONTROL 解除]**&#x200B;作为&#x200B;**[!UICONTROL 按钮#1文本（主要）]**。
    5. 请注意预览的更新方式。
    6. 选择&#x200B;**[!UICONTROL 查看以激活]**。
+
       ![应用程序内编辑器](assets/ajo-in-app-editor.png)
 1. 在&#x200B;**[!UICONTROL 查看以激活（Luma — 应用程序内消息传送促销活动）]**&#x200B;屏幕中，选择&#x200B;**[!UICONTROL 计划]**&#x200B;拼贴中的![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg)。
    ![查看计划选择计划](assets/ajo-review-select-schedule.png)
@@ -199,6 +201,7 @@ SDK事件中心发布和接收来自已注册的扩展的事件数据，以简�
    1. 要删除&#x200B;**[!UICONTROL 应用程序启动事件]**，请选择![关闭](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) 。
    1. 重复使用![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加条件]**&#x200B;为&#x200B;**[!UICONTROL 显示消息if]**&#x200B;生成以下逻辑。
    1. 单击&#x200B;**[!UICONTROL 完成]**。
+
       ![触发器逻辑](assets/ajo-trigger-logic.png)
 
    您已定义一个跟踪操作，其中&#x200B;**[!UICONTROL 操作]**&#x200B;等于`in-app`，而包含该操作的&#x200B;**[!UICONTROL 上下文数据]**&#x200B;是`"showMessage" : "true"`的键值对。

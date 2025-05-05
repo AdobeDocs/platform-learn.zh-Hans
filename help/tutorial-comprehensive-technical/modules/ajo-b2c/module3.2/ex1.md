@@ -47,7 +47,7 @@ ht-degree: 2%
 
 让我们快速了解一下如何在Adobe Experience Platform中定义这些架构。
 
-在左侧菜单中，转到&#x200B;**架构**&#x200B;并在新的浏览器选项卡中打开它。 在&#x200B;**架构**&#x200B;中，转到&#x200B;**浏览**以查看可用架构的列表。
+在左侧菜单中，转到&#x200B;**架构**&#x200B;并在新的浏览器选项卡中打开它。 在&#x200B;**架构**&#x200B;中，转到&#x200B;**浏览**&#x200B;以查看可用架构的列表。
 打开架构`Demo System - Event Schema for Website (Global v1.1)`。
 
 ![数据获取](./images/schemas.png)
@@ -88,7 +88,7 @@ Adobe Journey Optimizer随后将自动选择某些必填字段，但您可以编
 ![演示](./images/popupok.png)
 
 Adobe Journey Optimizer还需要一个标识符来标识客户。 由于Adobe Journey Optimizer已链接到Adobe Experience Platform，因此架构的主要标识符会自动被视为历程的标识符。
-主要标识符还将自动考虑Adobe Experience Platform的完整身份图，并将所有可用身份、设备和渠道的所有行为链接到同一配置文件，以便Adobe Journey Optimizer具有情境性、相关性和一致性。 单击**保存**。
+主要标识符还将自动考虑Adobe Experience Platform的完整身份图，并将所有可用身份、设备和渠道的所有行为链接到同一配置文件，以便Adobe Journey Optimizer具有情境性、相关性和一致性。 单击&#x200B;**保存**。
 
 ![演示](./images/eventidentifier.png)
 
@@ -99,7 +99,7 @@ Adobe Journey Optimizer还需要一个标识符来标识客户。 由于Adobe Jo
 最后，您需要为自定义事件恢复`Orchestration eventID`。
 
 单击事件列表中的事件以再次打开该事件。
-在事件中，单击**字段**&#x200B;旁边的&#x200B;**查看有效负荷**&#x200B;图标。
+在事件中，单击&#x200B;**字段**&#x200B;旁边的&#x200B;**查看有效负荷**&#x200B;图标。
 
 ![演示](./images/fieldseyepayload.png)
 

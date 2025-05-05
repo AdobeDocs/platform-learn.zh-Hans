@@ -27,8 +27,8 @@ ht-degree: 4%
 
 ![演示](./images/menudatasources.png)
 
-您随后将看到&#x200B;**数据源**列表。
-单击**创建数据Source**&#x200B;以开始添加数据源。
+您随后将看到&#x200B;**数据源**&#x200B;列表。
+单击&#x200B;**创建数据Source**&#x200B;以开始添加数据源。
 
 ![演示](./images/dshome.png)
 

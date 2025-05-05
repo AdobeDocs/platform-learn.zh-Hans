@@ -65,8 +65,8 @@ Adobe Target可作为Real-Time CDP的目标。 要设置您的Adobe Target集成
 
 ![RTCDP](./images/excl.png)
 
-在&#x200B;**Adobe Target**主页上，您将看到所有现有活动。
-单击**+创建活动**&#x200B;以创建新活动。
+在&#x200B;**Adobe Target**&#x200B;主页上，您将看到所有现有活动。
+单击&#x200B;**+创建活动**&#x200B;以创建新活动。
 
 ![RTCDP](./images/exclatov.png)
 

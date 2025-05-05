@@ -108,7 +108,7 @@ ht-degree: 5%
 
 此处最重要的设置是数据集与架构之间的链接。 架构定义可以摄取哪些数据以及这些数据的外观。
 
-在本例中，我们使用的是CRM (Global v1.1)]**的**[!UICONTROL  Demo System - Profile Schema，该架构映射到&#x200B;**[!UICONTROL Profile]**&#x200B;的类并已实施扩展（也称为字段组）。
+在本例中，我们使用的是CRM (Global v1.1)**的** Demo System - Profile Schema，该架构映射到&#x200B;**[!UICONTROL Profile]**&#x200B;的类并已实施扩展（也称为字段组）。
 
 ![数据获取](./images/ds_schemalink.png)
 

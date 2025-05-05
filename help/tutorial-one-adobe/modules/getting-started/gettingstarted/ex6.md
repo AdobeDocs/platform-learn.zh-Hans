@@ -21,7 +21,7 @@ ht-degree: 0%
 ![Adobe I/O新集成](./images/iohome.png){zoomable="yes"}
 
 确保在屏幕右上角选择正确的实例。 您的实例为`--aepImsOrgName--`。
-接下来，选择**新建项目**。
+接下来，选择&#x200B;**新建项目**。
 
 ![Adobe I/O新集成](./images/iocomp.png){zoomable="yes"}
 

@@ -71,7 +71,7 @@ Key terms:
 
 1. 转到Platform用户界面，并确保已选择您的沙盒。
 1. 在左侧导航中转到&#x200B;**[!UICONTROL 架构]**。
-1. 选择右上方的&#x200B;**[!UICONTROL 创建架构]**按钮。
+1. 选择右上方的&#x200B;**[!UICONTROL 创建架构]**&#x200B;按钮。
    具有OOTB字段组的![架构](assets/schemas-loyaltyCreateSchema.png)
 
 1. 在创建架构工作流中，选择&#x200B;**[!UICONTROL 个人资料]**&#x200B;作为架构的基类，因为我们将为单个客户的属性（点、状态等）建模。
@@ -79,7 +79,7 @@ Key terms:
    ![选择基类](assets/schemas-loyaltySelectBaseClass.png)
 
 1. 在&#x200B;**[!UICONTROL 架构显示名称]**&#x200B;文本字段中输入`Luma Loyalty Schema`。 在以下画布中，您还可以查看和验证所选类提供的基本架构结构。
-1. 选择&#x200B;**[!UICONTROL 完成]**以创建您的架构。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以创建您的架构。
    ![完成创建忠诚度架构](assets/schemas-loyaltyFinishSchemaCreation.png)
 
 ### 添加标准字段组
@@ -100,7 +100,7 @@ Key terms:
 
 1. 选中&#x200B;**[!UICONTROL Industry]** > **[!UICONTROL Retail]**&#x200B;框以公开特定于行业的字段组。
 1. 选择&#x200B;**[!UICONTROL 忠诚度详细信息]**&#x200B;以添加忠诚度计划字段。
-1. 选择&#x200B;**[!UICONTROL 添加字段组]**以将所有三个字段组添加到架构。
+1. 选择&#x200B;**[!UICONTROL 添加字段组]**&#x200B;以将所有三个字段组添加到架构。
    ![将标准字段组添加到忠诚度架构](assets/schemas-loyalty-saveOotbMixins.png)
 
 
@@ -144,8 +144,10 @@ Key terms:
    1. **[!UICONTROL 显示名称]**： `System Identifier`
    1. **[!UICONTROL 类型]**：**[!UICONTROL 对象]**
    1. 在&#x200B;**[!UICONTROL 字段组]**&#x200B;下拉列表中，选择我们创建的&#x200B;**Luma标识配置文件字段组**。
+
       ![添加新字段组](assets/schemas-loyalty-addSystemIdentifier.png)
    1. 选择&#x200B;**[!UICONTROL 应用]**
+
       ![应用新字段属性](assets/schemas-loyalty-applySystemIdentifier.png)
 
 现在，在`systemIdentifier`对象下添加两个字段：
@@ -159,7 +161,7 @@ Key terms:
    1. **[!UICONTROL 显示名称]**： `CRM Id`
    1. **[!UICONTROL 类型]**： **[!UICONTROL 字符串]**
 
-您的新字段组应如下所示。 选择&#x200B;**[!UICONTROL Save]**按钮以保存您的架构，但在下一次练习中保持该架构处于打开状态。
+您的新字段组应如下所示。 选择&#x200B;**[!UICONTROL Save]**&#x200B;按钮以保存您的架构，但在下一次练习中保持该架构处于打开状态。
 ![忠诚度字段组完成](assets/schemas-loyalty-identityFieldGroupComplete.png)
 
 ## 创建数据类型
@@ -344,12 +346,12 @@ Key terms:
 首先，我们必须使用自定义类为Luma的产品目录创建架构：
 
 1. 选择&#x200B;**[!UICONTROL 创建架构]**&#x200B;按钮。
-1. 在创建架构工作流中，选择&#x200B;**[!UICONTROL 其他]**选项。
+1. 在创建架构工作流中，选择&#x200B;**[!UICONTROL 其他]**&#x200B;选项。
    ![创建新架构](assets/schemas-newSchema-browseClasses.png)
 1. 选择&#x200B;**[!UICONTROL 创建类]**&#x200B;按钮
 1. 将其命名为`Luma Product Catalog Class`
 1. 将&#x200B;**[!UICONTROL 行为]**&#x200B;保留为&#x200B;**[!UICONTROL 记录]**
-1. 选择&#x200B;**[!UICONTROL 创建]**按钮。
+1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。
    ![创建新类](assets/schemas-productClass.png)
 1. 您创建的&#x200B;**Luma产品目录类**&#x200B;出现在下面的“类”表中。 确保已选择类，然后选择&#x200B;**[!UICONTROL 下一步]**。
    ![新类已添加](assets/schemas-productClassSelected.png)

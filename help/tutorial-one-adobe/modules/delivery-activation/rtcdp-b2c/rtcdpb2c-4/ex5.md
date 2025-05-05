@@ -27,7 +27,7 @@ ht-degree: 2%
 
 ![数据获取](./../../../../modules/delivery-activation/datacollection/dc1.2/images/sb1.png)
 
-转到&#x200B;**目标**，然后单击&#x200B;**浏览**。 然后，您将看到所有可用的目标。 找到您的目标并单击下面所示的3个圆点**...**，然后单击&#x200B;**激活受众**。
+转到&#x200B;**目标**，然后单击&#x200B;**浏览**。 然后，您将看到所有可用的目标。 找到您的目标并单击下面所示的3个圆点&#x200B;**...**，然后单击&#x200B;**激活受众**。
 
 ![5-01-select-destination.png](./images/501selectdestination.png)
 

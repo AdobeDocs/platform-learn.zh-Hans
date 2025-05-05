@@ -15,7 +15,7 @@ ht-degree: 4%
 
 ## 设置您的Adobe I/O项目
 
-在本练习中，您将再次使用Adobe I/O来查询Adobe Experience Platform的API。如果尚未配置Adobe I/O项目，请返回模块2.1](../rtcdpb2c-1/ex3.md)中的[练习3，然后按照其中的说明操作。
+在本练习中，您将再次使用Adobe I/O来查询Adobe Experience Platform的API。如果尚未配置Adobe I/O项目，请返回模块2.1[&#128279;](../rtcdpb2c-1/ex3.md)中的练习3，然后按照其中的说明操作。
 
 >[!IMPORTANT]
 >
@@ -23,7 +23,7 @@ ht-degree: 4%
 
 ## 对Adobe I/O的身份验证
 
-在本练习中，您将再次使用Postman来查询Adobe Experience Platform的API。如果尚未配置Postman应用程序，请返回模块2.1](../rtcdpb2c-1/ex3.md)中的[练习3，然后按照其中的说明操作。
+在本练习中，您将再次使用Postman来查询Adobe Experience Platform的API。如果尚未配置Postman应用程序，请返回模块2.1[&#128279;](../rtcdpb2c-1/ex3.md)中的练习3，然后按照其中的说明操作。
 
 >[!IMPORTANT]
 >
@@ -68,7 +68,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->如果您没有该Postman收藏集，请返回模块2.1](../rtcdpb2c-1/ex3.md)中的[练习3，并按照其中的说明设置Postman和提供的Postman收藏集。
+>如果您没有该Postman收藏集，请返回模块2.1[&#128279;](../rtcdpb2c-1/ex3.md)中的练习3，并按照其中的说明设置Postman和提供的Postman收藏集。
 
 你会看到这个。 在&#x200B;**Headers**&#x200B;下，您需要手动更新键&#x200B;**x-sandbox-name**&#x200B;的值并将其设置为`--aepSandboxName--`。 选择值&#x200B;**{{SANDBOX_NAME}}**。
 
@@ -117,7 +117,7 @@ ht-degree: 4%
 >
 >请不要忘记，在向Adobe I/O发送请求之前，您需要具有有效的`access_token`。 要获得有效的`access_token`，请运行请求&#x200B;**Adobe IO - OAuth**&#x200B;集合中的&#x200B;**POST — 获取访问令牌**。
 
-单击&#x200B;**发送**&#x200B;后，将创建您的服务器模板，作为响应的一部分，您将看到名为&#x200B;**instanceId**&#x200B;的字段。 请记下它，因为您将在下一步中需要它。 在此示例中，**instanceId**为
+单击&#x200B;**发送**&#x200B;后，将创建您的服务器模板，作为响应的一部分，您将看到名为&#x200B;**instanceId**&#x200B;的字段。 请记下它，因为您将在下一步中需要它。 在此示例中，**instanceId**&#x200B;为
 `52482c90-8a1e-42fc-b729-7f0252e5cebd`。
 
 ![数据获取](./images/sdkpm6.png)
@@ -282,7 +282,7 @@ ht-degree: 4%
 ![DSN](../../../getting-started/gettingstarted/images/web7.png)
 
 在本例中，您希望对查看特定产品的特定客户做出响应。
-从**Citi Signal**&#x200B;主页，转到&#x200B;**手机和设备**，然后单击产品&#x200B;**Galaxy S24**。
+从&#x200B;**Citi Signal**&#x200B;主页，转到&#x200B;**手机和设备**，然后单击产品&#x200B;**Galaxy S24**。
 
 ![数据获取](./images/homegalaxy.png)
 

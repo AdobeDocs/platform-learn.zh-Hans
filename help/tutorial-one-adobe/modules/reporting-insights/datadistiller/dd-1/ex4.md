@@ -179,7 +179,7 @@ limit 10;
 
 ### Adobe定义的函数
 
-Adobe已将一组&#x200B;**Adobe定义的函数**&#x200B;添加到标准SQL语法中，以便您更好地了解体验数据。 在接下来的几个查询中，您将了解这些ADF函数。 您可以在文档](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html)中找到更多信息和完整列表[。
+Adobe已将一组&#x200B;**Adobe定义的函数**&#x200B;添加到标准SQL语法中，以便您更好地了解体验数据。 在接下来的几个查询中，您将了解这些ADF函数。 您可以在文档[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html)中找到更多信息和完整列表。
 
 ### 在会话的第3页访问“取消服务”页面之前，人们在网站上做什么？
 

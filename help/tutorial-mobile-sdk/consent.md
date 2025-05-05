@@ -98,7 +98,7 @@ ht-degree: 1%
 
 1. 从设备或模拟器中删除应用程序，以正确重置和初始化跟踪并获取同意。
 1. 若要将模拟器或设备连接到Assurance，请查看[设置说明](assurance.md#connecting-to-a-session)部分。
-1. 在将应用从&#x200B;**[!UICONTROL 主页]**&#x200B;屏幕移至&#x200B;**[!UICONTROL 产品]**&#x200B;屏幕并移回&#x200B;**[!UICONTROL 主页]**&#x200B;屏幕时，您应会在Assurance UI中看到&#x200B;**[!UICONTROL 获取同意响应]**事件。
+1. 在将应用从&#x200B;**[!UICONTROL 主页]**&#x200B;屏幕移至&#x200B;**[!UICONTROL 产品]**&#x200B;屏幕并移回&#x200B;**[!UICONTROL 主页]**&#x200B;屏幕时，您应会在Assurance UI中看到&#x200B;**[!UICONTROL 获取同意响应]**&#x200B;事件。
    ![验证同意](assets/consent-update.png)
 
 

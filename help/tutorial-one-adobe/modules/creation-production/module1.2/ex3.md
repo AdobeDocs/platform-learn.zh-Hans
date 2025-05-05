@@ -198,7 +198,7 @@ split函数需要分号前有一个值数组，并需要您在分号后指定分
 
 ## 后续步骤
 
-使用连接器](./ex4.md){target="_blank"}转到[1.2.4自动化
+使用连接器[&#128279;](./ex4.md){target="_blank"}转到1.2.4自动化
 
 返回到[使用Workfront Fusion的Creative工作流自动化](./automation.md){target="_blank"}
 

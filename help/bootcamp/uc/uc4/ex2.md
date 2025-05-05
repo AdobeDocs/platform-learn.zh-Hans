@@ -123,7 +123,7 @@ ht-degree: 1%
 ![演示](./images/cja16.png)
 
 单击&#x200B;**保存**，然后转到下一个练习。
-创建**Connection**&#x200B;后，可能需要几个小时才能在CJA中使用您的数据。
+创建&#x200B;**Connection**&#x200B;后，可能需要几个小时才能在CJA中使用您的数据。
 
 ![演示](./images/cja20.png)
 

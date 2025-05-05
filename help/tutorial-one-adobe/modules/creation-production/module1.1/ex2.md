@@ -150,7 +150,7 @@ ht-degree: 1%
 ![Azure存储](./images/az22.png){zoomable="yes"}
 
 返回Postman打开请求&#x200B;**POST - Firefly - T2I (styleref) V3**。
-这出现在**正文**&#x200B;中。
+这出现在&#x200B;**正文**&#x200B;中。
 
 ![Azure存储](./images/az23.png){zoomable="yes"}
 

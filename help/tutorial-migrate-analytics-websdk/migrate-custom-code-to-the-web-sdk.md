@@ -87,7 +87,7 @@ const s = content.__adobe.analytics;
 ## 插件呢？
 
 如果您在Adobe Analytics中实施了“appMeasurement”，并使用Experience Platform标记（以前称为“Launch”）中的Analytics扩展，则您可能要使用一个或多个JavaScript“插件”来设置变量或执行其他任务。 如果这些JavaScript函数和调用位于规则内的代码窗口中，则此页面上的上述信息应可帮助您将代码迁移到Web SDK。
-但是，更有可能的情况是，插件代码位于Adobe Analytics扩展本身配置的代码窗口中。 要检查您是否有要迁移的插件和其他代码，请转到“数据收集和标记”打开Analytics扩展，打开您的资产，然后单击左侧导航栏中的**扩展**。
+但是，更有可能的情况是，插件代码位于Adobe Analytics扩展本身配置的代码窗口中。 要检查您是否有要迁移的插件和其他代码，请转到“数据收集和标记”打开Analytics扩展，打开您的资产，然后单击左侧导航栏中的&#x200B;**扩展**。
 
 1. 选择页面顶部的&#x200B;**Installed**&#x200B;选项卡，然后选择您的Adobe Analytics扩展。
 1. 然后在页面右侧，单击&#x200B;**配置**
@@ -128,12 +128,12 @@ const s = content.__adobe.analytics;
 
 好吧，有也没有。 是的，您确实需要更改一些小更改，但不，只要您确实更改了这些小更改，就不需要更改大部分代码：
 
-_**代码更改1：**_
-在您选择之后（或之前），将“插件”代码粘贴到Web SDK扩展的代码窗口中，请从代码中**删除**&#x200B;个“doPlugin”行。 您不需要这些代码，因为它们是appMeasurement.js的一部分，而不是Web SDK代码的一部分，因此它们会导致错误。
+_&#x200B;**代码更改1：**&#x200B;_
+在您选择之后（或之前），将“插件”代码粘贴到Web SDK扩展的代码窗口中，请从代码中&#x200B;**删除**&#x200B;个“doPlugin”行。 您不需要这些代码，因为它们是appMeasurement.js的一部分，而不是Web SDK代码的一部分，因此它们会导致错误。
 
 ![删除doPlugins代码行](assets/remove-doplugins.jpg)
 
-_**代码更改2：**_
+_&#x200B;**代码更改2：**&#x200B;_
 您需要执行的另一项更改是添加一些代码，以便定义“s”对象，这非常类似于上文讨论的有关规则操作中的代码的内容。 在这种情况下，我们将需要以稍微不同的方式定义代码，添加已在规则操作中定义的“数据”节点，但此处不适用。
 此定义应放置在代码窗口的顶部。 需要在中复制的代码(将代码放入Web SDK扩展时)如下所示：
 
@@ -143,7 +143,7 @@ content.data.__adobe.analytics = content.data.__adobe.analytics || {};
 const s = content.data.__adobe.analytics;
 ```
 
-_**同时更改代码：**_
+_&#x200B;**同时更改代码：**&#x200B;_
 下面是上面列出的代码，但我们刚刚讨论了这两个更改：
 
 ![已更新代码](assets/update-code.jpg)

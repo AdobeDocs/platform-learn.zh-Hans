@@ -26,7 +26,7 @@ ht-degree: 0%
 
 尽管听起来很神奇，但您无需为配置文件激活&#x200B;*所有数据*。 事实上，您应该只启用激活用例所需的数据。 启用要用于营销用例、呼叫中心集成等的数据，在这些用例中，您需要快速访问强大的客户档案。 如果您只上传数据进行分析，则可能不应为配置文件启用此功能。
 
-在决定您自己的哪些数据应为配置文件启用时，您应该查看实时客户配置文件数据](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)的重要[护栏。
+在决定您自己的哪些数据应为配置文件启用时，您应该查看实时客户配置文件数据[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)的重要护栏。
 
 <!--is this accurate. Are there other considerations to point out? -->
 

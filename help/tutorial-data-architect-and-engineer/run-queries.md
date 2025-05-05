@@ -64,11 +64,11 @@ Adobe Experience Platform查询服务允许您使用标准SQL在Platform中查�
 
    ![从忠诚度数据集中选择数据](assets/queries-loyaltySelect.png)
 
-1. 如果有任何错误，**[!UICONTROL 控制台]**选项卡中将显示详细消息，如下图所示
+1. 如果有任何错误，**[!UICONTROL 控制台]**&#x200B;选项卡中将显示详细消息，如下图所示
    ![查询出错](assets/queries-error.png)
 
 1. 成功查询后，**[!UICONTROL 命名]**，其名称为`Luma Gold Level Customers`
-1. 选择&#x200B;**[!UICONTROL 保存]**按钮
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;按钮
    ![正在保存查询](assets/queries-loyaltySelect-save.png)
 
 
