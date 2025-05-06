@@ -2,24 +2,24 @@
 title: 初始设置 — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
 description: 了解并设置您的Platform Web SDK实施所需的重要基本元素
 exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: cc2c72ec0a339254c49867c3616eb43c7c16aafa
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '380'
 ht-degree: 6%
 
 ---
 
 # 执行初始数据收集设置
 
-从Target SDK迁移到优化SDK需要进行初始设置，才能启用优化SDK的正确数据捕获、特性和功能。 在进行任何网站实施更改之前，必须完成以下步骤：
+从Target SDK迁移到优化SDK需要进行初始设置，才能启用优化SDK的正确数据捕获、特性和功能。 在进行任何移动设备应用程序实施更改之前，必须完成以下步骤：
 
-- [在Adobe Admin Console中为数据收集配置适当的权限](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"}
-- [配置XDM架构](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"}以将结构化数据传递到Edge Network
-- [配置架构](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"}以接收Adobe Target数据
-- [为跨设备个性化和mbox3rdPartyId功能配置标识命名空间](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"}
-- [创建数据流](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"}以启用从Edge Network转发数据
-- [配置数据流](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"}以启用将数据转发到Adobe Target
-- [为Decisioning扩展配置Tag属性](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"}
+- [在Adobe Admin Console中为数据收集配置适当的权限](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"}
+- [配置XDM架构](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"}以将结构化数据传递到Edge Network
+- [配置架构](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-your-schema){target="_blank"}以接收Adobe Target数据
+- [为跨设备个性化和mbox3rdPartyId功能配置标识命名空间](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/app-implementation/identity#set-up-a-custom-identity-namespace){target="_blank"}
+- [创建数据流](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-datastream){target="_blank"}以启用从Edge Network转发数据
+- [配置数据流](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"}以启用将数据转发到Adobe Target
+- [为Decisioning扩展配置Tag属性](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"}
 
 ## 扩展配置
 
@@ -54,7 +54,7 @@ ht-degree: 6%
 
 ## 数据流配置
 
-Target扩展具有[可配置的设置](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui)，使用决策扩展这些设置在数据流[&#128279;](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup)中配置了。
+Target扩展具有[可配置的设置](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui)，使用决策扩展这些设置在数据流](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup)中配置了[。
 
 | 目标扩展 | Decisioning扩展 | 注释 |
 | --- | --- | --- | 
