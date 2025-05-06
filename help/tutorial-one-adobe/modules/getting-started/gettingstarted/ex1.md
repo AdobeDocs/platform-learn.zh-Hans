@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ## 配置Chrome扩展
 
-转到[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}，然后单击扩展图标以将其打开。
+转到[https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}，然后单击扩展图标以将其打开。
 
 ![DSN](./images/tuthome.png)
 
@@ -136,7 +136,7 @@ LDAP用于确保您即将执行的配置将链接到您，并且不会与您正�
 
 ## 验证教程内容
 
-作为测试，请转到[此页面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}。
+作为测试，请转到[此页面](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}。
 
 您现在应该会看到，根据Chrome扩展中激活的环境，此页面上的所有&#x200B;**环境变量**&#x200B;都已替换为其真值。
 
