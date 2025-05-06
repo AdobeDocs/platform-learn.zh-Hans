@@ -4,9 +4,9 @@ description: 快速入门 — 使用演示系统设置您的Launch资产
 kt: 5342
 doc-type: tutorial
 exl-id: 455b72f6-84fd-463a-a7b5-3c4999035ab2
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '329'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ![DSN](./images/dsnsetup.png)
 
-在&#x200B;**环境**&#x200B;下拉列表中，选择您的AEP实例和沙盒。
+在&#x200B;**环境**&#x200B;下拉列表中，选择您的实例和沙盒。
 
 ![DSN](./images/dsnh1.png)
 

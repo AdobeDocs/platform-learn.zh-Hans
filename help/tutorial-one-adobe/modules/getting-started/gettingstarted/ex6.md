@@ -3,9 +3,10 @@ title: 快速入门 — Adobe I/O
 description: 快速入门 — Adobe I/O
 kt: 5342
 doc-type: tutorial
-source-git-commit: 431f7696df12c8c133aced57c0f639c682304dee
+exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -21,11 +22,16 @@ ht-degree: 0%
 ![Adobe I/O新集成](./images/iohome.png){zoomable="yes"}
 
 确保在屏幕右上角选择正确的实例。 您的实例为`--aepImsOrgName--`。
+
+>[!NOTE]
+>
+> 以下屏幕截图显示了正在选择的特定组织。 在阅读本教程时，您的组织很可能具有不同的名称。 当您注册本教程时，系统已为您提供了要使用的环境详细信息，请按照这些说明操作。
+
 接下来，选择&#x200B;**新建项目**。
 
 ![Adobe I/O新集成](./images/iocomp.png){zoomable="yes"}
 
-### Firefly服务API
+### FIREFLY SERVICES API
 
 您应该会看到此内容。 选择&#x200B;**+添加到项目**&#x200B;并选择&#x200B;**API**。
 
@@ -35,7 +41,7 @@ ht-degree: 0%
 
 ![Adobe I/O新集成](./images/api1.png){zoomable="yes"}
 
-选择&#x200B;**Creative Cloud**&#x200B;并选择&#x200B;**Firefly - Firefly服务**，然后选择&#x200B;**下一步**。
+选择&#x200B;**Creative Cloud**&#x200B;并选择&#x200B;**Firefly - Firefly Services**，然后选择&#x200B;**下一步**。
 
 ![Adobe I/O新集成](./images/api3.png){zoomable="yes"}
 
@@ -43,7 +49,7 @@ ht-degree: 0%
 
 ![Adobe I/O新集成](./images/api4.png){zoomable="yes"}
 
-选择默认配置文件&#x200B;**默认Firefly服务配置**，然后选择&#x200B;**保存配置的API**。
+选择默认配置文件&#x200B;**默认Firefly Services配置**，然后选择&#x200B;**保存配置的API**。
 
 ![Adobe I/O新集成](./images/api9.png){zoomable="yes"}
 
@@ -57,7 +63,7 @@ ht-degree: 0%
 
 ![Azure存储](./images/ps2.png){zoomable="yes"}
 
-选择&#x200B;**Creative Cloud**，然后选择&#x200B;**Photoshop - Firefly服务**。 选择&#x200B;**下一步**。
+选择&#x200B;**Creative Cloud**，然后选择&#x200B;**Photoshop - Firefly Services**。 选择&#x200B;**下一步**。
 
 ![Azure存储](./images/ps3.png){zoomable="yes"}
 
@@ -67,7 +73,7 @@ ht-degree: 0%
 
 接下来，您需要选择一个产品配置文件，以定义此集成可用的权限。
 
-选择&#x200B;**默认Firefly服务配置**&#x200B;和&#x200B;**默认Creative Cloud自动化服务配置**。
+选择&#x200B;**默认Firefly Services配置**&#x200B;和&#x200B;**默认Creative Cloud自动化服务配置**。
 
 选择&#x200B;**保存配置的API**。
 

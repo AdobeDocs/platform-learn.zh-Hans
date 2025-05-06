@@ -4,9 +4,9 @@ description: 快速入门 — 创建数据流
 kt: 5342
 doc-type: tutorial
 exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '827'
+source-wordcount: '1001'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,15 @@ ht-degree: 1%
 转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}。
 
 ![DSN](./images/launchprop.png)
+
+在继续操作之前，请使用屏幕右上角的环境切换器，确保已选择正确的环境。 要使用的正确环境称为`--aepImsOrgName--`。
+
+>[!NOTE]
+>
+> 以下屏幕截图显示了正在选择的特定组织。 在阅读本教程时，您的组织很可能具有不同的名称。 当您注册本教程时，系统已为您提供了要使用的环境详细信息，请按照这些说明操作。
+
+
+![DSN](./images/org.png)
 
 在左侧菜单中，单击&#x200B;**[!UICONTROL 标记]**。 在上一个练习之后，您现在拥有3个数据收集属性：一个用于Web、一个用于移动设备，一个用于CX应用程序。
 
@@ -33,13 +42,17 @@ ht-degree: 1%
 
 在屏幕右上角，选择沙盒名称，应为`--aepSandboxName--`。
 
+>[!NOTE]
+>
+> 以下屏幕截图显示了正在选择的特定沙盒。 在阅读本教程时，您的沙盒很可能具有不同的名称。 当您注册本教程时，系统已为您提供了要使用的环境详细信息，请按照这些说明操作。
+
 ![单击左侧导航栏中的“Edge配置”图标](./images/edgeconfig1b.png)
 
 单击&#x200B;**[!UICONTROL 新建数据流]**。
 
 ![单击左侧导航栏中的“Edge配置”图标](./images/edgeconfig1.png)
 
-对于&#x200B;**[!UICONTROL Name]**，对于可选描述，请输入`--aepUserLdap-- - One Adobe Datastream`。 对于&#x200B;**映射架构**，请选择&#x200B;**演示系统 — 网站(Global v1.1)**&#x200B;的事件架构。 单击&#x200B;**保存**。
+对于&#x200B;**Name**，对于可选描述，请输入`--aepUserLdap-- - One Adobe Datastream`。 对于&#x200B;**映射架构**，请选择&#x200B;**演示系统 — 网站(Global v1.1)**&#x200B;的事件架构。 单击&#x200B;**保存**。
 
 ![命名Edge配置并保存](./images/edgeconfig2.png)
 
@@ -108,6 +121,10 @@ ht-degree: 1%
 ![单击左侧导航中的“数据流”图标](./images/edgeconfig1a.png)
 
 在屏幕右上角，选择沙盒名称，应为`--aepSandboxName--`。
+
+>[!NOTE]
+>
+> 以下屏幕截图显示了正在选择的特定沙盒。 在阅读本教程时，您的沙盒很可能具有不同的名称。 当您注册本教程时，系统已为您提供了要使用的环境详细信息，请按照这些说明操作。
 
 ![单击左侧导航栏中的“Edge配置”图标](./images/edgeconfig1b.png)
 

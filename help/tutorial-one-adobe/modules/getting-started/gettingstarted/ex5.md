@@ -4,9 +4,9 @@ description: 快速入门 — 使用移动应用程序
 kt: 5342
 doc-type: tutorial
 exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 下载应用程序
 
-转到计算机上的[https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app){target="_blank"}。 你会看到这个。
+转到计算机上的[https://dsn.adobe.com/install](https://dsn.adobe.com/install){target="_blank"}。 使用您的Adobe ID登录，您随后将看到此信息。
 
 ![DSN](./images/mobileapp.png)
 

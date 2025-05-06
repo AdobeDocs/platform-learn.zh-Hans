@@ -4,9 +4,9 @@ description: 快速入门 — 为Experience League文档安装Chrome扩展
 kt: 5342
 doc-type: tutorial
 exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,16 @@ ht-degree: 0%
 
 ## 关于Chrome扩展
 
-该文档已经过通用化，任何人都可以使用任何Adobe Experience Platform实例轻松重复使用。
-为了使文档可重用，文档中引入了&#x200B;**环境变量**，这意味着您将在文档中找到以下&#x200B;**占位符**。 每个占位符都是适用于特定环境的特定变量，Chrome扩展会更改该变量，以便您轻松地从教程页面复制代码和文本，并将其粘贴到教程中使用的各种用户界面中。
+本教程已变得通用，任何人都可以使用任何Adobe Experience Cloud实例轻松重复使用。
+
+为了使文档可重用，在教程中引入了&#x200B;**环境变量**，这意味着您将在文档中找到以下&#x200B;**占位符**。 每个占位符都是适用于特定环境的特定变量，Chrome扩展会更改该变量，以便您轻松地从教程页面复制代码和文本，并将其粘贴到教程中使用的各种用户界面中。
 
 此类值的示例如下所示。 目前，这些值尚无法使用，但一旦您安装和激活Chrome扩展，就会看到这些变量变为可供复制和重用的普通文本。
 
 | 名称 | 键 | 示例 |
 |:-------------:| :---------------:| :---------------:|
-| AEP IMS组织ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| AEP IMS组织名称 | `--aepImsOrgName--` | `Experience Platform International` |
+| IMS 组织 ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
+| IMS组织名称 | `--aepImsOrgName--` | `Experience Platform International` |
 | AEP租户ID | `--aepTenantId--` | `_experienceplatform` |
 | AEP沙盒名称 | `--aepSandboxName--` | `one-adobe` |
 | 学习者配置文件LDAP | `--aepUserLdap--` | `vangeluw` |
@@ -58,7 +59,7 @@ ht-degree: 0%
 
 ## 配置Chrome扩展
 
-转到[https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}，然后单击扩展图标以将其打开。
+转到[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}，然后单击扩展图标以将其打开。
 
 ![DSN](./images/tuthome.png)
 
@@ -121,7 +122,7 @@ IMS组织ID是Adobe Experience Cloud实例的唯一标识符，在本教程中�
 LDAP用于确保您即将执行的配置将链接到您，并且不会与您正在使用的同一实例和沙盒的其他用户发生冲突。
 
 您的值应当类似于以下内容。
-最后，单击&#x200B;**新建**。
+最后，单击**新建**。
 
 ![DSN](./images/c8a.png)
 
@@ -135,7 +136,7 @@ LDAP用于确保您即将执行的配置将链接到您，并且不会与您正�
 
 ## 验证教程内容
 
-作为测试，请转到[此页面](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}。
+作为测试，请转到[此页面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}。
 
 您现在应该会看到，根据Chrome扩展中激活的环境，此页面上的所有&#x200B;**环境变量**&#x200B;都已替换为其真值。
 
