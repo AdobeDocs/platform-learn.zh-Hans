@@ -1,6 +1,6 @@
 ---
 title: 基本架构
-description: 从概览图的引导式演练概括地了解 Adobe Experience Platform 的体系结构。
+description: 从概述图的引导式演练中了解 Adobe Experience Platform 的高级架构。
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 jira: KT-4336
@@ -16,8 +16,8 @@ ht-degree: 80%
 
 # Adobe Experience Platform的基础架构
 
-从概览图的引导式演练概括地了解 Adobe Experience Platform 的体系结构。
+从概述图的引导式演练中了解 Adobe Experience Platform 的高级架构。
 
->[!VIDEO](https://video.tv.adobe.com/v/3422778?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/32456?learn=on&enablevpops)
 
 
