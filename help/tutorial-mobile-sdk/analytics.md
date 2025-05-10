@@ -171,7 +171,7 @@ s.events = "scAdd:321435"
 
 ## 与上下文数据映射
 
-转发到Analytics的XDM数据将转换为[上下文数据](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=en)，包括标准字段和自定义字段。
+转发到Analytics的XDM数据将转换为[上下文数据](https://experienceleague.adobe.com/docs/mobile-services/ios/getting-started-ios/proc-rules.html?lang=zh-Hans)，包括标准字段和自定义字段。
 
 上下文数据键按以下语法构建：
 
