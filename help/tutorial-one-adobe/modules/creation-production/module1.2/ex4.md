@@ -234,8 +234,8 @@ Workfront Fusion Webhook仍在等待输入。
 
 ![WF Fusion](./images/wffc31.png)
 
-在&#x200B;**高级设置**&#x200B;下，选择&#x200B;**是**以覆盖同名文件。
-单击**添加**。
+在&#x200B;**高级设置**&#x200B;下，选择&#x200B;**是**&#x200B;以覆盖同名文件。
+单击&#x200B;**添加**。
 
 ![WF Fusion](./images/wffc32.png)
 
