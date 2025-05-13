@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: 45f6f9db7d5b3e79e10d508a44a532261bd9cdb3
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1438'
 ht-degree: 1%
 
 ---
@@ -150,7 +150,7 @@ ht-degree: 1%
 ![Azure存储](./images/az22.png){zoomable="yes"}
 
 返回Postman打开请求&#x200B;**POST - Firefly - T2I (styleref) V3**。
-这出现在&#x200B;**正文**&#x200B;中。
+这出现在**正文**&#x200B;中。
 
 ![Azure存储](./images/az23.png){zoomable="yes"}
 
@@ -186,7 +186,7 @@ ht-degree: 1%
 
 ![Azure存储](./images/az28.png){zoomable="yes"}
 
-收到&#x200B;**SAS令牌**&#x200B;后，选择&#x200B;**复制**。
+收到&#x200B;**共享访问签名**&#x200B;后，选择&#x200B;**复制**&#x200B;以复制URL。
 
 ![Azure存储](./images/az29.png){zoomable="yes"}
 
@@ -278,9 +278,9 @@ URL当前看起来像这样，但需要更改。
 
 您可以从上述URL派生出几个值：
 
-- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`： `vangeluw`
-- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
 
 ### 长期写入SAS令牌
 
@@ -312,10 +312,10 @@ URL当前看起来像这样，但需要更改。
 
 您可以从上述URL派生出几个值：
 
-- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`： `vangeluw`
-- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
-- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 ### Postman中的变量
 
@@ -323,10 +323,10 @@ URL当前看起来像这样，但需要更改。
 
 接下来，您需要在Postman中创建用于存储上述SAS令牌的各种元素的变量。 这两个URL中的一些值是相同的：
 
-- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`： `vangeluw`
-- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
-- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 对于将来的API交互，主要的变化是资源名称，而上述变量保持不变。 在这种情况下，最好在Postman中创建变量，这样您就无需每次都手动指定它们。
 
@@ -351,10 +351,10 @@ URL当前看起来像这样，但需要更改。
 
 接下来，您需要在PostBuster中创建用于存储上述SAS令牌的各种元素的变量。 这两个URL中的一些值是相同的：
 
-- `AZURE_STORAGE_URL`： `https://vangeluw.blob.core.windows.net`
-- `AZURE_STORAGE_CONTAINER`： `vangeluw`
-- `AZURE_STORAGE_SAS_READ`： `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
-- `AZURE_STORAGE_SAS_WRITE`： `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
 打开PostBuster。 选择&#x200B;**基本环境**，然后单击&#x200B;**编辑**&#x200B;图标以打开基本环境。
 

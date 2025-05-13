@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
-source-wordcount: '2050'
+source-wordcount: '2109'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ ht-degree: 1%
 ![WF Fusion](./images/wffc2.png)
 
 将克隆方案的&#x200B;**Name**&#x200B;设置为`--aepUserLdap-- - Firefly + Photoshop`并选择适当的&#x200B;**目标团队**。 单击&#x200B;**添加**&#x200B;添加新的webhook。
+
+>[!NOTE]
+>
+>您可能看不到用于选择&#x200B;**目标团队**&#x200B;的选项。 仅当您是Workfront Fusion中一个以上团队的用户时，才会显示此选项。 如果没有看到此选项，则仅表示您仅被添加到1个团队，因此不需要选择。
 
 ![WF Fusion](./images/wffc3.png)
 
@@ -214,7 +218,7 @@ Workfront Fusion Webhook仍在等待输入。
 
 向下滚动，直到看到&#x200B;**输入**。 现在，您需要定义需要插入到背景图层中的内容。 在这种情况下，您需要选择包含动态生成的图像的&#x200B;**Adobe Firefly**&#x200B;模块的输出。
 
-对于&#x200B;**存储**，请选择&#x200B;**外部**。 对于&#x200B;**文件位置**，请从&#x200B;**Adobe Firefly**&#x200B;模块的输出复制并粘贴变量`{{XX.details[].url}}`。 将变量中的&#x200B;**XX**&#x200B;替换为&#x200B;**Adobe Firefly**&#x200B;模块的序列号，在此示例中为&#x200B;**22**。
+对于&#x200B;**存储**，请选择&#x200B;**外部**。 对于&#x200B;**文件位置**，您需要从&#x200B;**Adobe Firefly**&#x200B;模块的输出复制并粘贴变量`{{XX.details[].url}}`，但您需要使用&#x200B;**Adobe Firefly**&#x200B;模块的序列号替换变量中的&#x200B;**XX**，本例中为&#x200B;**22**。
 
 ![WF Fusion](./images/wffc28.png)
 
@@ -230,8 +234,8 @@ Workfront Fusion Webhook仍在等待输入。
 
 ![WF Fusion](./images/wffc31.png)
 
-在&#x200B;**高级设置**&#x200B;下，选择&#x200B;**是**&#x200B;以覆盖同名文件。
-单击&#x200B;**添加**。
+在&#x200B;**高级设置**&#x200B;下，选择&#x200B;**是**以覆盖同名文件。
+单击**添加**。
 
 ![WF Fusion](./images/wffc32.png)
 

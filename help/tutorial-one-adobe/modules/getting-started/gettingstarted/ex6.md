@@ -4,9 +4,9 @@ description: 快速入门 — Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: cc8efbdbcf90607f5a9bc98a2e787b61b4cd66d9
+source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -101,6 +101,10 @@ ht-degree: 0%
 
 选择&#x200B;**Adobe Experience Platform — 所有用户 — PROD**。
 
+>[!NOTE]
+>
+>AEP的产品配置文件的名称取决于环境的配置方式。 如果您没有看到上述产品配置文件，则可能有一个名为&#x200B;**默认的生产所有访问权限**&#x200B;的产品配置文件。 如果您不确定要选择哪一个，请咨询您的AEP系统管理员。
+
 选择&#x200B;**保存配置的API**。
 
 ![Azure存储](./images/aep4.png){zoomable="yes"}
@@ -119,7 +123,7 @@ ht-degree: 0%
 
 ![Adobe I/O新集成](./images/api14.png){zoomable="yes"}
 
-为您的集成输入友好名称： `--aepUserLdap-- One Adobe tutorial`并选择&#x200B;**保存**。
+为您的集成输入友好名称： `--aepUserLdap-- One Adobe tutorial`，然后选择&#x200B;**保存**。
 
 ![Adobe I/O新集成](./images/api15.png){zoomable="yes"}
 

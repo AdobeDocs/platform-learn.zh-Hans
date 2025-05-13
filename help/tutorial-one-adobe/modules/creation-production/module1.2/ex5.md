@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 7df1daa33a67f177ba07f3ca4add08ebc317973c
+source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
 workflow-type: tm+mt
 source-wordcount: '2674'
 ht-degree: 0%
@@ -250,7 +250,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame38.png)
 
-切换回Workfront Fusion，然后单击&#x200B;**Webhook响应**&#x200B;模块上的气泡。 您将在&#x200B;**OUTPUT**&#x200B;下看到包含表单的JSON有效负载的正文。 再次单击&#x200B;**运行一次**。
+切换回Workfront Fusion，然后单击&#x200B;**Webhook响应**&#x200B;模块上的气泡。 您将在&#x200B;**INPUT**&#x200B;下看到包含表单的JSON有效负载的正文。 再次单击&#x200B;**运行一次**。
 
 ![帧IO](./images/frame40.png)
 
@@ -397,7 +397,7 @@ ht-degree: 0%
 ![帧IO](./images/frame69.png)
 
 将&#x200B;**Body type**&#x200B;设置为&#x200B;**Raw**&#x200B;并将&#x200B;**Content type**&#x200B;设置为&#x200B;**JSON (application/json)**。
-将以下JSON有效负载粘贴到字段&#x200B;**请求内容**&#x200B;中，并启用&#x200B;**分析响应**&#x200B;的复选框。
+将以下JSON有效负载粘贴到字段**请求内容**&#x200B;中，并启用&#x200B;**分析响应**&#x200B;的复选框。
 
 ```json
 {
