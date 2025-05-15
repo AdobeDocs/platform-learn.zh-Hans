@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 9ddabdf0b66ea4772352f5aa82c612fa07891db3
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2058'
 ht-degree: 1%
 
 ---
@@ -125,9 +125,13 @@ Workfront Fusion Webhook仍在等待输入。
 
 ![WF Fusion](./images/wffcff6.png)
 
-接下来，选择传入的&#x200B;**自定义webhook**&#x200B;提供给方案的变量&#x200B;**prompt**。 单击&#x200B;**确定**。
+接下来，选择传入的&#x200B;**自定义webhook**&#x200B;提供给方案的变量&#x200B;**prompt**。
 
 ![WF Fusion](./images/wffcff7.png)
+
+接下来，将&#x200B;**模型版本** **提示符**&#x200B;设置为&#x200B;**image4 standard**。 单击&#x200B;**确定**。
+
+![WF Fusion](./images/wffcff7b.png)
 
 在继续操作之前，需要禁用场景中的旧路由，如同本练习一样，您将只使用当前配置的新路由。 为此，请单击&#x200B;**路由器**&#x200B;模块和&#x200B;**迭代器**&#x200B;模块之间的&#x200B;**扳手**&#x200B;图标，然后选择&#x200B;**禁用路由**。
 
@@ -234,8 +238,8 @@ Workfront Fusion Webhook仍在等待输入。
 
 ![WF Fusion](./images/wffc31.png)
 
-在&#x200B;**高级设置**&#x200B;下，选择&#x200B;**是**&#x200B;以覆盖同名文件。
-单击&#x200B;**添加**。
+在&#x200B;**高级设置**&#x200B;下，选择&#x200B;**是**以覆盖同名文件。
+单击**添加**。
 
 ![WF Fusion](./images/wffc32.png)
 
@@ -261,8 +265,6 @@ Workfront Fusion Webhook仍在等待输入。
 
 ## 1.2.4.3更改PSD文件的文本图层
 
-### 行动动员文本
-
 接下来，将鼠标悬停在&#x200B;**Adobe Photoshop — 应用PSD编辑**&#x200B;模块上，然后单击&#x200B;**+**&#x200B;图标。
 
 ![WF Fusion](./images/wffc34.png)
@@ -277,67 +279,59 @@ Workfront Fusion Webhook仍在等待输入。
 
 您应该会看到此内容。 首先，选择您之前已配置的Adobe Photoshop连接，该连接应名为`--aepUserLdap-- Adobe IO`。
 
-您现在需要定义&#x200B;**输入文件**&#x200B;的位置，这是上一步的输出，在&#x200B;**图层**&#x200B;下，您需要输入要更改的文本图层的&#x200B;**名称**。
+您现在需要定义上一步的输出文件&#x200B;**输入文件**&#x200B;的位置，在&#x200B;**图层**&#x200B;下，您需要为每个需要更改文本的图层单击“**+添加项**”。
 
 ![WF Fusion](./images/wffc37.png)
 
-对于&#x200B;**输入文件**，为&#x200B;**输入文件存储**&#x200B;选择&#x200B;**Azure**，并确保从上一个请求&#x200B;**Adobe Photoshop — 应用PSD编辑**&#x200B;中选择输出，您可以从此处获取该输出： `data[]._links.renditions[].href`
+对于&#x200B;**输入文件**，为&#x200B;**输入文件存储**&#x200B;选择&#x200B;**Azure**，并确保从上一个请求&#x200B;**Adobe Photoshop — 应用PSD编辑**&#x200B;中选择输出，您可以如下定义： ``{{XX.data[].`_links`.renditions[].href}}`` (将XX替换为上一个模块Adobe Photoshop — 应用PSD编辑的序列号)。
+
+接下来，单击&#x200B;**图层**&#x200B;下的&#x200B;**+添加项**&#x200B;以开始添加需要更新的文本图层。
 
 ![WF Fusion](./images/wffc37a.png)
 
-打开文件&#x200B;**citisignal-fibre.psd**。 在文件中，您会注意到包含行动号召的层名为&#x200B;**2048x2048-cta**。
+有2项需要更改，需要更新文件&#x200B;**citisignal-fibre.psd**&#x200B;中的CTA文本和按钮文本。
+
+要查找层名称，请打开文件&#x200B;**citisignal-fibre.psd**。 在文件中，您会注意到包含行动号召的层名为&#x200B;**2048x2048-cta**。
 
 ![WF Fusion](./images/wffc38.png)
 
-在对话框的&#x200B;**名称**&#x200B;下输入名称&#x200B;**2048x2048-cta**。
+在文件&#x200B;**citisignal-fibre.psd**&#x200B;中，您还会注意到包含call to action的层名为&#x200B;**2048x2048-button-text**。
+
+![WF Fusion](./images/wffc44.png)
+
+您首先需要配置需要对层&#x200B;**2048x2048-cta**&#x200B;进行的更改。 在对话框的&#x200B;**名称**&#x200B;下输入名称&#x200B;**2048x2048-cta**。
 
 ![WF Fusion](./images/wffc39.png)
 
-向下滚动直到看到&#x200B;**文本** > **内容**。 从Webhook有效负载中选择变量&#x200B;**cta**。
+向下滚动直到看到&#x200B;**文本** > **内容**。 从Webhook有效负载中选择变量&#x200B;**cta**。 单击&#x200B;**添加**。
 
 ![WF Fusion](./images/wffc40.png)
 
-向下滚动，直到看到&#x200B;**输出**。 对于&#x200B;**存储**，请选择&#x200B;**Azure**。 对于&#x200B;**文件位置**，请输入以下位置。 请注意，在文件名中添加了变量`{{timestamp}}`，用于确保生成的每个文件都有唯一名称。 此外，将&#x200B;**Type**&#x200B;设置为&#x200B;**vnd.adobe.photoshop**。 单击&#x200B;**确定**。
+您应该会看到此内容。 单击&#x200B;**图层**&#x200B;下的&#x200B;**+添加项**&#x200B;开始添加需要更新的文本图层。
+
+![WF Fusion](./images/wffc40a.png)
+
+在对话框的&#x200B;**名称**&#x200B;下输入名称&#x200B;**2048x2048-button-text**。
+
+![WF Fusion](./images/wffc40b.png)
+
+向下滚动直到看到&#x200B;**文本** > **内容**。 从Webhook有效负载中选择变量&#x200B;**按钮**。 单击&#x200B;**添加**。
+
+![WF Fusion](./images/wffc40c.png)
+
+您应该会看到此内容。
+
+![WF Fusion](./images/wffc40d.png)
+
+向下滚动，直到看到&#x200B;**输出**。 对于&#x200B;**存储**，请选择&#x200B;**Azure**。 对于&#x200B;**文件位置**，请输入以下位置。 请注意，在文件名中添加了变量`{{timestamp}}`，用于确保生成的每个文件都有唯一名称。 此外，将&#x200B;**Type**&#x200B;设置为&#x200B;**vnd.adobe.photoshop**。
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
 ![WF Fusion](./images/wffc41.png)
 
-### 按钮文本
+将&#x200B;**Type**&#x200B;设置为&#x200B;**vnd.adobe.photoshop**。 单击&#x200B;**确定**。
 
-右键单击刚创建的模块并选择&#x200B;**克隆**。 这将创建另一个类似的模块。
-
-![WF Fusion](./images/wffc42.png)
-
-将克隆的模块连接到之前的&#x200B;**Adobe Photoshop — 编辑文本图层**&#x200B;模块。
-
-![WF Fusion](./images/wffc42a.png)
-
-您应该会看到此内容。 首先，选择您之前已配置的Adobe Photoshop连接，该连接应名为`--aepUserLdap-- Adobe IO`。
-
-您现在需要定义&#x200B;**输入文件**&#x200B;的位置，这是上一步的输出，在&#x200B;**图层**&#x200B;下，您需要输入要更改的文本图层的&#x200B;**名称**。
-
-![WF Fusion](./images/wffc43.png)
-
-对于&#x200B;**输入文件**，为&#x200B;**输入文件存储**&#x200B;选择&#x200B;**Azure**，并确保从上一个请求&#x200B;**Adobe Photoshop — 编辑文本图层**&#x200B;中选择输出，可从此处获取该输出： `data[]._links.renditions[].href`
-
-打开文件&#x200B;**citisignal-fibre.psd**。 在文件中，您会注意到包含行动号召的图层名为&#x200B;**2048x2048-button-text**。
-
-![WF Fusion](./images/wffc44.png)
-
-在对话框的&#x200B;**名称**&#x200B;下输入名称&#x200B;**2048x2048-button-text**。
-
-![WF Fusion](./images/wffc43.png)
-
-向下滚动直到看到&#x200B;**文本** > **内容**。 从Webhook有效负载中选择变量&#x200B;**按钮**。
-
-![WF Fusion](./images/wffc45.png)
-
-向下滚动，直到看到&#x200B;**输出**。 对于&#x200B;**存储**，请选择&#x200B;**Azure**。 对于&#x200B;**文件位置**，请输入以下位置。 请注意，在文件名中添加了变量`{{timestamp}}`，用于确保生成的每个文件都有唯一名称。 此外，将&#x200B;**Type**&#x200B;设置为&#x200B;**vnd.adobe.photoshop**。 单击&#x200B;**确定**。
-
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
-
-![WF Fusion](./images/wffc46.png)
+![WF Fusion](./images/wffc41a.png)
 
 单击&#x200B;**保存**&#x200B;以保存更改。
 
@@ -369,9 +363,13 @@ Workfront Fusion Webhook仍在等待输入。
 
 ![WF Fusion](./images/wffc51.png)
 
-复制并粘贴变量`{{XX.data[]._links.renditions[].href}}`并用最后&#x200B;**Adobe Photoshop — 编辑文本图层**&#x200B;模块的序列号替换&#x200B;**XX**，在本例中为&#x200B;**25**。 启用&#x200B;**显示高级设置**&#x200B;的复选框，然后单击&#x200B;**添加项**。
+复制并粘贴变量`{{XX.data[]._links.renditions[].href}}`并用最后&#x200B;**Adobe Photoshop — 编辑文本图层**&#x200B;模块的序列号替换&#x200B;**XX**，在本例中为&#x200B;**30**。
 
 ![WF Fusion](./images/wffc52.png)
+
+启用&#x200B;**显示高级设置**&#x200B;的复选框，然后单击&#x200B;**添加项**。
+
+![WF Fusion](./images/wffc52b.png)
 
 在&#x200B;**键**&#x200B;字段中，输入`Content-Type`。 在&#x200B;**值**&#x200B;字段中，输入`application/json`。 单击&#x200B;**添加**。
 
