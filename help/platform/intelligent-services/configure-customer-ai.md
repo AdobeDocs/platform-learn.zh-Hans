@@ -23,4 +23,4 @@ ht-degree: 45%
 >
 >客户人工智能支持Adobe Analytics和Adobe Audience Manager数据集，无需ETL您的数据以符合消费者体验事件(CEE)架构。 要了解更多信息，请访问[Intelligent Services数据准备指南](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36592?learn=on&enablevpops&captions=chi_hans)

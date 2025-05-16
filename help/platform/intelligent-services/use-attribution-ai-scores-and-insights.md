@@ -18,4 +18,4 @@ ht-degree: 51%
 
 了解如何使用Attribution AI分析页面，以了解营销渠道和营销活动的ROI。 有关详细信息，请访问[归因人工智能文档](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345098?learn=on&enablevpops&captions=chi_hans)
