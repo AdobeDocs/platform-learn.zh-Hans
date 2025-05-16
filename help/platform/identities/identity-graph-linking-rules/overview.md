@@ -22,7 +22,7 @@ ht-degree: 17%
 >
 >标识图链接规则当前处于“有限可用”状态。 有关如何访问开发沙盒中的功能的信息，请与您的Adobe客户团队联系。
 
-大致了解身份图链接规则如何帮助数据架构师维护准确的客户配置文件并防止图形折叠。 有关详细信息，请参阅[标识图链接规则文档](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)。
+大致了解身份图链接规则如何帮助数据架构师维护准确的客户配置文件并防止图形折叠。 有关详细信息，请参阅[标识图链接规则文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 
