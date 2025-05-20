@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 64cce12ba89112583a9cabb4558622ba970335f0
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '2222'
+source-wordcount: '2596'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,37 @@ ht-degree: 0%
 
 在继续此练习之前，您需要完成[您的Adobe I/O项目](./../../../modules/getting-started/gettingstarted/ex6.md)的设置，还需要配置应用程序以与API交互，例如[Postman](./../../../modules/getting-started/gettingstarted/ex7.md)或[PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md)。
 
-## 1.1.1.2浏览firefly.adobe.com — 第1阶段
+## 1.1.1.2 API基础知识
+
+有多种类型的API请求：
+
+- **GET**：在尝试从API端点检索信息（如获取状态报告）时，将使用此项
+- **POST**：在需要执行新操作时(例如让Adobe Firefly Services生成新图像)，将使用此选项
+- **PUT**：用于完全更新现有数据
+- **PATCH**：用于有选择地更新现有数据
+- **DELETE**：用于删除数据
+
+在使用API时，您还会注意到各个API端点返回的响应代码。
+
+您可能会收到5种不同类型的响应：
+
+- **1xx信息响应**：已收到请求，正在继续进程
+- **2xx成功**：已成功接收、理解和接受该请求
+- **3xx重定向**：需要执行进一步操作才能完成请求
+- **4xx客户端错误**：请求包含语法错误或无法完成
+- **5xx服务器错误**：服务器未能完成明显有效的请求
+
+以下是您可能会期望得到的常见响应代码示例：
+
+- **200 OK**：很好，您的请求已成功完成
+- **201已创建**：很好，例如，您的图像已创建
+- **202 Accepted**：很好，您的请求已被接受，将进行处理
+- **401 Unauthorized**：这不是好事，您的访问令牌可能无效
+- **403禁止访问**：这不是好事，您可能缺少尝试执行的操作所需的权限
+- **404未找到**：这不是好事，可能您尝试访问的URL不存在
+- **429请求太多**：这不是好事，您可能已在短时间内发送了多个请求。 请稍后重试。
+
+## 1.1.1.3浏览firefly.adobe.com — 第1阶段
 
 让我们开始探索Adobe Firefly Services。 对于探究，您首先会看到CitiSignal图像生成示例。 CitiSignal设计团队希望生成CitiSignal品牌名称的霓虹版本。 他们希望使用Adobe Firefly Services来做到这一点。
 
@@ -29,7 +59,7 @@ ht-degree: 0%
 
 ![Postman](./images/CitiSignal.jpg)
 
-### 1.1.1.2.1创建合成参考图像
+### 1.1.1.3.1创建合成参考图像
 
 您可以使用[此示例图像](./images/CitiSignal.jpg)，也可以创建自己的文本进行试验。 请按照Adobe Illustrator中的以下步骤创建自己的图像文件。 如果您选择使用预定义的图像，请跳过以下部分并转到步骤&#x200B;**1.1.1.2。2直接生成图像**。
 
@@ -81,7 +111,7 @@ ht-degree: 0%
 
 ![Postman](./images/ill13.png)
 
-### 1.1.1.2.2生成图像
+### 1.1.1.3.2生成图像
 
 转到[https://firefly.adobe.com](https://firefly.adobe.com)。 单击&#x200B;**配置文件**&#x200B;图标，并确保您已登录到右侧的&#x200B;**帐户**，它应为`--aepImsOrgName--`。 如果需要，请单击&#x200B;**切换配置文件**&#x200B;以切换到该帐户。
 
@@ -109,7 +139,7 @@ ht-degree: 0%
 
 现在，您已学会使用Firefly在几分钟内解决设计问题。
 
-## 1.1.1.3浏览firefly.adobe.com — 第2阶段
+## 1.1.1.4浏览firefly.adobe.com — 第2阶段
 
 转到[https://firefly.adobe.com/generate/image](https://firefly.adobe.com/generate/image)。 您应该会看到此内容。 单击&#x200B;**模型**&#x200B;下拉列表。 您会注意到Adobe Firefly Services有3个可用版本：
 
@@ -184,13 +214,13 @@ ht-degree: 0%
 
 在下一个练习中，您将使用Firefly Services执行类似操作，但随后会使用API而不是UI。 在此示例中，第一个图像的种子号为&#x200B;**142194**，该图像有2匹马头朝对方看着。
 
-## 1.1.1.4 Adobe I/O - access_token
+## 1.1.1.5 Adobe I/O - access_token
 
 在&#x200B;**Adobe IO - OAuth**&#x200B;集合中，选择名为&#x200B;**POST — 获取访问令牌**&#x200B;的请求，然后选择&#x200B;**发送**。 响应应包含新的&#x200B;**accestoken**。
 
 ![Postman](./images/ioauthresp.png)
 
-## 1.1.1.5 Firefly Services API，文本2图像，图像3
+## 1.1.1.6 Firefly Services API，文本2图像，图像3
 
 现在您拥有了有效且新鲜的access_token，您可以向Firefly Services API发送您的第一个请求了。
 
@@ -269,7 +299,7 @@ ht-degree: 0%
 
 ![Firefly](./images/ff10.png)
 
-## 1.1.1.6 Firefly Services API，一般扩展
+## 1.1.1.7 Firefly Services API，一般扩展
 
 从&#x200B;**FF - Firefly Services技术内部人士**&#x200B;集合中选择名为&#x200B;**POST - Firefly - Gen Expand**&#x200B;的请求，并转到该请求的&#x200B;**正文**。
 
@@ -297,15 +327,25 @@ ht-degree: 0%
 
 ![Firefly](./images/ff15.png)
 
-## 1.1.1.7 Firefly Services API，文本2图像，图像4和图像4 Ultra
+## 1.1.1.8 Firefly Services API，文本2图像，图像4和图像4 Ultra
 
-### 1.1.1.7.1 image4_standard
+在最新版本的Firefly Image Model 4中，提供了几项改进：
+
+- Firefly Image Model 4提供2K分辨率输出，具有增强的定义和细节。
+- Firefly Image Model 4在文本渲染、人类、动物和建筑方面提供了显着改进。
+- Firefly Image Model 4秉承Adobe对IP友好、商业上安全的创新型人工智能的承诺。
+
+Firefly Image Model 4为您提供卓越的人类、动物和详细场景图像，您可以使用Image Model 4 Ultra生成具有超逼真的人际交互、建筑元素和复杂景观的图像&#x200B;。
+
+### 1.1.1.8.1 image4_standard
 
 从&#x200B;**FF - Firefly Services Tech Insiders**&#x200B;集合中选择名为&#x200B;**POST - Firefly - T2I V4**&#x200B;的请求，并转到该请求的&#x200B;**Headers**。
 
 您会注意到该请求的URL与&#x200B;**Firefly Services API，文本2图像，图像3**&#x200B;请求不同，即&#x200B;**https://firefly-api.adobe.io/v3/images/generate**。 此URL指向&#x200B;**https://firefly-api.adobe.io/v3/images/generate-async**。 在URL中添加&#x200B;**-async**&#x200B;意味着您使用的是异步终结点。
 
 在&#x200B;**标头**&#x200B;变量中，您会注意到名为&#x200B;**x-model-version**&#x200B;的新变量。 这是与Firefly Image 4和Image 4 Ultra交互时所需的标头。 要在生成图像时使用Firefly Image 4或Image 4 Ultra，则应将标头的值设置为`image4_standard`或`image4_ultra`。 在此示例中，您将使用`image4_standard`。
+
+如果您未将&#x200B;**x-model-version**&#x200B;设置为`image4_standard`或`image4_ultra`，则Firefly Services当前将默认使用`image3`。
 
 ![Firefly](./images/ffim4_1.png)
 
@@ -333,7 +373,7 @@ ht-degree: 0%
 
 ![Firefly](./images/ffim4_7.png)
 
-### 1.1.1.7.2 image4_ultra
+### 1.1.1.8.2 image4_ultra
 
 从&#x200B;**FF - Firefly Services Tech Insiders**&#x200B;集合返回名为&#x200B;**POST - Firefly - T2I V4**&#x200B;的请求，并转到请求的&#x200B;**Headers**。
 

@@ -6,10 +6,10 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 1%
+source-wordcount: '1918'
+ht-degree: 0%
 
 ---
 
@@ -17,11 +17,47 @@ ht-degree: 1%
 
 了解如何使用Microsoft Azure和预签名URL优化Firefly过程。
 
-## 1.1.2.1创建Azure订阅
+## 1.1.2.1什么是预签名URL？
+
+预签名URL是一种授予您临时访问存储位置中特定对象权限的URL。 例如，使用URL，用户可以读取对象或写入对象（或更新现有对象）。 URL包含由应用程序设置的特定参数。
+
+在创建内容供应链自动化的上下文中，通常需要针对特定用例执行多个文件操作。 例如，可能需要更改文件的背景，可能需要更改各种图层的文本等。 并非总是可以同时执行所有文件操作，这就需要多步方法。 在每个中间步骤之后，输出是执行下一个步骤所需的临时文件。 执行下一步后，临时文件会快速丢失值，通常不再需要它，因此应将其删除。
+
+Adobe Firefly Services当前支持以下域：
+
+- Amazon AWS： *.amazonaws.com
+- Microsoft Azure： *.windows.net
+- Dropbox： *.dropboxusercontent.com
+
+之所以经常使用云存储解决方案，是因为正在创建的中间资产会迅速失去价值。 通过预签名URL解决的问题通常最好通过商品存储解决方案（通常是上述云服务之一）来解决。
+
+在Adobe生态系统中，还有存储解决方案，如Frame.io、Workfront Fusion和Adobe Experience Manager资源。 这些解决方案还支持预签名的URL，因此往往需要在实施期间做出选择。 然后，选择通常基于现有应用程序和存储成本的组合。
+
+因此，预签名URL将与Adobe Firefly Services操作结合使用，因为：
+
+- 企业通常需要在中间步骤中处理对同一映像的多项更改，并且需要中间存储才能做到这一点。
+- 从云存储位置进行读写的访问应该是安全的，并且在服务器端环境中，无法手动登录，因此需要将安全性直接写入URL。
+
+预签名URL使用三个参数来限制用户的访问：
+
+- 存储位置：这可以是AWS S3存储段位置、带有容器的Microsoft Azure存储帐户位置
+- 文件名：需要读取、更新、删除的特定文件。
+- 查询字符串参数：查询字符串参数始终以问号开头，后跟一系列复杂的参数
+
+示例：
+
+- **Amazon AWS**： `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
+- **Microsoft Azure**： `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
+
+## 1.1.2.2创建Azure订阅
 
 >[!NOTE]
 >
 >如果您已有现有的Azure订阅，则可以跳过此步骤。 请继续该案例中的下一个练习。
+
+>[!NOTE]
+>
+>如果您作为现场指导研讨会或指导式按需培训的一部分学习本教程，则可能已有权访问Microsoft Azure Storage帐户。 在这种情况下，您无需创建自己的帐户 — 请使用已在培训中提供给您的帐户。
 
 转到[https://portal.azure.com](https://portal.azure.com){target="_blank"}并使用您的Azure帐户登录。 如果您没有个人电子邮件地址，请使用个人电子邮件地址创建您的Azure帐户。
 
@@ -43,7 +79,7 @@ ht-degree: 1%
 
 ![Azure存储](./images/06azuresubscriptionok.png){zoomable="yes"}
 
-## 1.1.2.2创建Azure存储帐户
+## 1.1.2.3创建Azure存储帐户
 
 搜索`storage account`，然后选择&#x200B;**存储帐户**。
 
@@ -85,7 +121,7 @@ ht-degree: 1%
 
 ![Azure存储](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.3安装Azure存储资源管理器
+## 1.1.2.4安装Azure存储资源管理器
 
 [下载Microsoft Azure Storage Explorer以管理您的文件](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}。 为您的特定操作系统选择正确的版本，然后下载并安装该版本。
 
@@ -127,7 +163,7 @@ ht-degree: 1%
 
 ![Azure存储](./images/az18.png){zoomable="yes"}
 
-## 1.1.2.4手动文件上传并使用图像文件作为样式引用
+## 1.1.2.5手动文件上传并使用图像文件作为样式引用
 
 将您选择的图像文件或[此文件](./images/gradient.jpg){target="_blank"}上载到容器。
 
@@ -150,7 +186,7 @@ ht-degree: 1%
 ![Azure存储](./images/az22.png){zoomable="yes"}
 
 返回Postman打开请求&#x200B;**POST - Firefly - T2I (styleref) V3**。
-这出现在&#x200B;**正文**&#x200B;中。
+这出现在**正文**&#x200B;中。
 
 ![Azure存储](./images/az23.png){zoomable="yes"}
 
@@ -166,7 +202,7 @@ ht-degree: 1%
 
 ![Azure存储](./images/az26.png){zoomable="yes"}
 
-## 1.1.2.5编程文件上传
+## 1.1.2.6编程文件上传
 
 若要通过Azure存储帐户使用编程文件上传，您需要创建一个新的&#x200B;**共享访问签名(SAS)**&#x200B;令牌，该令牌具有允许您写入文件的权限。
 
@@ -247,7 +283,7 @@ URL当前看起来像这样，但需要更改。
 
 ![Azure存储](./images/az38.png){zoomable="yes"}
 
-## 1.1.2.6编程文件使用
+## 1.1.2.7编程文件使用
 
 若要以编程方式长期读取Azure存储帐户中的文件，您需要创建一个新的&#x200B;**共享访问签名(SAS)**&#x200B;令牌，该令牌具有允许您读取文件的权限。 从技术上讲，您可以使用在上一个练习中创建的SAS令牌，但最佳实践是让单独的令牌仅具有&#x200B;**读取**&#x200B;权限，而单独的令牌仅具有&#x200B;**写入**&#x200B;权限。
 
