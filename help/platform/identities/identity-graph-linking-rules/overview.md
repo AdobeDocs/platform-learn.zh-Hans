@@ -20,7 +20,7 @@ ht-degree: 20%
 
 大致了解身份图链接规则如何帮助数据架构师维护准确的客户配置文件并防止图形折叠。 有关详细信息，请参阅[标识图链接规则文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448282/?learn=on&enablevpops&captions=chi_hans)
 
 ## 配置
 
@@ -37,7 +37,7 @@ ht-degree: 20%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="graph-simulation.md" title="身份图形链接规则 — 图形模拟" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444032/?format=jpeg&nocache=1747355376342" alt="身份图形链接规则 — 图形模拟"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444053/?format=jpeg&nocache=1747355376342&captions=chi_hans" alt="身份图形链接规则 — 图形模拟"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
