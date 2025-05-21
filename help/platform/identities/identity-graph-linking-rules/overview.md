@@ -18,7 +18,7 @@ ht-degree: 20%
 
 # 身份标识图链接规则概述
 
-大致了解身份图链接规则如何帮助数据架构师维护准确的客户配置文件并防止图形折叠。 有关详细信息，请参阅[标识图链接规则文档](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)。
+大致了解身份图链接规则如何帮助数据架构师维护准确的客户配置文件并防止图形折叠。 有关详细信息，请参阅[标识图链接规则文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/identity-graph-linking-rules/overview)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
 
