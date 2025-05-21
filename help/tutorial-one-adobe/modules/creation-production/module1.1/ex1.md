@@ -6,16 +6,31 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
+source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
 workflow-type: tm+mt
-source-wordcount: '2596'
+source-wordcount: '3182'
 ht-degree: 0%
 
 ---
 
 # 1.1.1 Firefly Services快速入门
 
-了解如何使用Postman和Adobe I/O查询Adobe Firefly Services API。
+Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop API**、**InDesign API**&#x200B;和&#x200B;**内容标记API**。
+
+这些API包将Adobe的创作工具(如Photoshop和Lightroom)的强大功能与前沿的AI/ML功能（如内容标记、创成性填充、文本到图像等）结合起来。
+
+使用Firefly Services，您不仅要创建，还要自动化、扩展内容生产，并利用最新的AI/ML技术来强化工作流程。
+
+在本练习中，您将了解如何使用Postman和Adobe I/O来使用各种Adobe Firefly Services API。
+
+本练习专门针对Firefly API，例如：
+
+- **Firefly生成图像API**：此API用于使用Firefly的模型生成图像
+- **Firefly生成类似图像API**：此API用于生成与现有图像类似的图像
+- **Firefly扩展图像API**：此API用于将现有图像扩展为更大的宽高比/大小
+- **Firefly填充图像API**：此API根据Firefly基于您的提示生成的图像填充现有图像的区域。 这是使用定义需要填充的区域的蒙版来实现的。
+- **Firefly生成对象复合API**：此API允许您自行提供输入图像，然后将您的图像与Firefly生成的图像组合以创建图像复合或场景。
+- **Firefly自定义模型API**：此API允许您使用自己的Firefly自定义模型，以根据您的Firefly自定义模型生成新图像
 
 ## 1.1.1.1先决条件
 
@@ -216,7 +231,7 @@ ht-degree: 0%
 
 ## 1.1.1.5 Adobe I/O - access_token
 
-在&#x200B;**Adobe IO - OAuth**&#x200B;集合中，选择名为&#x200B;**POST — 获取访问令牌**&#x200B;的请求，然后选择&#x200B;**发送**。 响应应包含新的&#x200B;**accestoken**。
+在&#x200B;**Adobe IO - OAuth**&#x200B;集合中，选择名为&#x200B;**POST — 获取访问令牌**&#x200B;的请求，然后选择&#x200B;**发送**。 响应应包含新的&#x200B;**access_token**。
 
 ![Postman](./images/ioauthresp.png)
 
@@ -224,13 +239,26 @@ ht-degree: 0%
 
 现在您拥有了有效且新鲜的access_token，您可以向Firefly Services API发送您的第一个请求了。
 
-从&#x200B;**FF - Firefly Services技术内部人士**&#x200B;收藏集中选择名为&#x200B;**POST - Firefly - T2I V3**&#x200B;的请求。 转到&#x200B;**正文**&#x200B;并验证提示。 单击&#x200B;**发送**。
-
-您在此使用的请求是一个&#x200B;**同步**&#x200B;请求，该请求会在几秒钟内为您提供一个包含所请求图像的响应。
+您将在此处使用的请求是一个&#x200B;**同步**&#x200B;请求，该请求会在几秒钟内为您提供一个包含所请求图像的响应。
 
 >[!NOTE]
 >
 >随着Firefly Image 4和Image 4 Ultra的发布，将弃用同步请求以支持异步请求。 在本教程的后面，您将找到有关异步请求的练习。
+
+从&#x200B;**FF - Firefly Services技术内部人士**&#x200B;收藏集中选择名为&#x200B;**POST - Firefly - T2I V3**&#x200B;的请求。 转到&#x200B;**标头**&#x200B;并验证键/值对组合。
+
+| 键 | 值 |
+|:-------------:| :---------------:| 
+| `x-api-key` | `{{API_KEY}}` |
+| `Authorization` | `Bearer {{ACCESS_TOKEN}}` |
+
+此请求中的这两个值都引用了预先定义的环境变量。 `{{API_KEY}}`引用您的Adobe I/O项目的字段&#x200B;**客户端ID**。 在本教程的&#x200B;**快速入门**&#x200B;部分中，您已在Postman中进行配置。
+
+字段&#x200B;**Authorization**&#x200B;的值是位特殊值： `Bearer {{ACCESS_TOKEN}}`。 它包含对您在上一步中生成的&#x200B;**访问令牌**&#x200B;的引用。 当您在&#x200B;**Adobe IO - OAuth**&#x200B;集合中使用请求&#x200B;**POST - Get Access Token**&#x200B;收到&#x200B;**访问令牌**&#x200B;时，Postman中运行了一个脚本，该脚本将字段&#x200B;**access_token**&#x200B;存储为环境变量，该变量现正由请求&#x200B;**POST - Firefly - T2I V3**&#x200B;中引用。 请注意特定添加的&#x200B;**Bearer**&#x200B;一词和`{{ACCESS_TOKEN}}`之前的空格。 单词载体区分大小写，并且需要空格。 如果未正确执行此操作，Adobe I/O将返回&#x200B;**401 Unauthorized**&#x200B;错误，因为它无法正确处理您的&#x200B;**访问令牌**。
+
+![Firefly](./images/ff0.png)
+
+接下来，转到&#x200B;**正文**&#x200B;并验证提示。 单击&#x200B;**发送**。
 
 ![Firefly](./images/ff1.png)
 
@@ -400,6 +428,30 @@ Firefly Image Model 4为您提供卓越的人类、动物和详细场景图像�
 然后，您应该会在字段&#x200B;**中看到**&#x200B;匹马的超真实图像。
 
 ![Firefly](./images/ffim4_16.png)
+
+### 负面提示
+
+如果您希望请求Firefly不要在将要生成的图像中包含某些内容，您可以在使用API时包含字段`negativePrompt`（此选项当前未向UI公开）。 例如，如果您不希望在执行字段&#x200B;**中的提示**&#x200B;马时包含任何花，则可以在API请求的&#x200B;**Body**&#x200B;中指定此内容：
+
+```
+"negativePrompt": "no flowers",
+```
+
+从&#x200B;**FF - Firefly Services技术内部人士**&#x200B;集合转到请求&#x200B;**POST - Firefly - T2I V4**，并转到请求的&#x200B;**Body**。 将以上文本粘贴到请求正文中。 单击&#x200B;**发送**。
+
+![Firefly](./images/ffim4_17.png)
+
+您应该会看到此内容。
+
+![Firefly](./images/ffim4_18.png)
+
+要检查正在运行的作业的状态报告，请从&#x200B;**FF - Firefly技术内部人士**&#x200B;集合中选择名为&#x200B;**GET - Firefly Services — 获取状态报告**&#x200B;的请求。 单击以将其打开，然后单击&#x200B;**发送**。 选择所生成图像的URL并在浏览器中将其打开。
+
+![Firefly](./images/ffim4_19.png)
+
+然后您会看到生成的图像，该图像不应包含任何花朵。
+
+![Firefly](./images/ffim4_20.png)
 
 ## 后续步骤
 

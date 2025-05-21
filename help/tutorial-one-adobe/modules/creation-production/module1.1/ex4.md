@@ -6,16 +6,53 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
-source-git-commit: 35e1f0d4fb5a22a366b3fb8bc71d4ea2d26764bb
+source-git-commit: 29a0f77f113daace66ffbba63fabac7237f7d5f3
 workflow-type: tm+mt
-source-wordcount: '819'
+source-wordcount: '1253'
 ht-degree: 0%
 
 ---
 
 # 1.1.4 Firefly自定义模型API
 
-## 1.1.4.1配置您的自定义模型
+## 1.1.4.1什么是Firefly自定义模型？
+
+借助Firefly自定义模型，您可以使用文本到图像功能生成与品牌一致的图像变体。 通过使用您自己的图像来训练这些模型，可以生成反映您品牌标识的内容。
+转变您的风格或主题以探索新想法、可视化不同环境、生成创新内容并根据特定区段定制内容。
+
+借助Firefly自定义模型，您可以……
+
+- 创建品牌内创意和概念
+- 生成具有一致样式的字符主题
+- 创建一致的品牌样式以快速扩展营销活动
+
+要实现此目的，Firefly自定义模型支持：
+
+- 自定义主题模型
+- 自定义样式模型
+
+### 自定义主题模型
+
+针对特定主题（无论是对象还是字符）培训自定义模型时，目标是识别主题的基本特征，并帮助模型在不同上下文和位置中复制它们。
+
+在训练主题模型时，查找具有以下特征的图像：
+
+- 对象一致性：提供与主体具有相同品牌和模型的图像，同时确保主体在不同图像间的外观不会有很大差异。 避免混合使用多种颜色，并确保图像之间具有共同的主题或图案。 但是，您的主题可能因场景、姿势、服装和背景而异。
+- 对象焦点：使用具有清晰焦点的对象图像，而不会造成不必要的干扰。 将主题保持在图像的中心附近，并确保它至少占据图像区域的25%。
+- 环境上下文：提供不同视图和上下文中的主题图像，以各种光照条件显示主题。 虽然可以使用白色或透明背景的图像，但最好也混合使用更复杂的环境。
+- 避免使用其他对象：避免在背景中使用大型项目或与字符相关的项目。 模型会记住图像中显示的任意大项，这些大项会出现在生成的图像中，类似于训练数据集中的相同项。
+
+### 自定义样式模型
+
+接受样式培训的自定义模型将标识资源的外观，以便在出现提示时生成类似图像。
+
+要训练有效的样式模型，请执行以下操作：
+
+- 提供类似的美学：包括显示各种场景和对象的图像，同时保持相同的外观和风格。
+- 使用各种图像：使用尽可能多的图像，以防止模型过多地关注不需要的对象或主体。
+- 避免使用任何固定短语：固定模式的权重比其他短语大。 例如，如果每个题注都包含“背景为纯黑色”或“可爱的卡通样式”，则模型将取决于此短语，任何没有此短语的测试提示将不会生成所需的结果。
+
+## 1.1.4.2配置您的自定义模型
 
 转到[https://firefly.adobe.com/](https://firefly.adobe.com/)。 单击&#x200B;**自定义模型**。
 
@@ -86,7 +123,7 @@ ht-degree: 0%
 
 ![Firefly自定义模型](./images/ffcm16.png){zoomable="yes"}
 
-## 1.1.4.2在UI中使用自定义模型
+## 1.1.4.3在UI中使用自定义模型
 
 转到[https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train)。 单击自定义模型以将其打开。
 
@@ -100,9 +137,9 @@ ht-degree: 0%
 
 ![Firefly自定义模型](./images/ffcm18.png){zoomable="yes"}
 
-## 1.1.4.3为Firefly服务自定义模型API启用自定义模型
+## 1.1.4.4为Firefly Services自定义模型API启用自定义模型
 
-自定义模型一旦训练完成，也可以通过API使用。 在练习1.1.1中，您已配置Adobe I/O项目以通过API与Firefly服务交互。
+自定义模型一旦训练完成，也可以通过API使用。 在练习1.1.1中，您已配置Adobe I/O项目以通过API与Firefly Services交互。
 
 转到[https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train)。 单击自定义模型以将其打开。
 
@@ -134,9 +171,9 @@ ht-degree: 0%
 
 ![Firefly自定义模型](./images/ffcm22.png){zoomable="yes"}
 
-## 1.1.4.4与Firefly服务自定义模型API交互
+## 1.1.4.5与Firefly Services自定义模型API交互
 
-在练习1.1.1的Firefly服务快速入门中，您已将此文件[postman-ff.zip](./../../../assets/postman/postman-ff.zip)下载到本地桌面，然后将该收藏集导入Postman。
+在练习1.1.1开始使用Firefly Services时，您将此文件[postman-ff.zip](./../../../assets/postman/postman-ff.zip)下载到本地桌面，然后将该收藏集导入到Postman中。
 
 打开Postman并转到文件夹&#x200B;**FF — 自定义模型API**。
 
@@ -184,4 +221,4 @@ ht-degree: 0%
 
 返回至[使用Photoshop API](./ex3.md){target="_blank"}
 
-返回[Adobe Firefly服务概述](./firefly-services.md){target="_blank"}
+返回[Adobe Firefly Services概述](./firefly-services.md){target="_blank"}

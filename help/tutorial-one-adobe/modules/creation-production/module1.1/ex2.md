@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: e7f83f362e5c9b2dff93d43a7819f6c23186b456
+source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
 workflow-type: tm+mt
-source-wordcount: '1918'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
@@ -167,6 +167,13 @@ Adobe Firefly Services当前支持以下域：
 
 将您选择的图像文件或[此文件](./images/gradient.jpg){target="_blank"}上载到容器。
 
+>[!NOTE]
+>
+>将图像用作样式引用、合成引用或蒙版图像时，可以接受以下图像类型：
+>- image/jpeg
+>- image/png
+>- image/webp
+
 ![Azure存储](./images/gradient.jpg)
 
 上传后，您可以在容器中看到该包：
@@ -186,7 +193,7 @@ Adobe Firefly Services当前支持以下域：
 ![Azure存储](./images/az22.png){zoomable="yes"}
 
 返回Postman打开请求&#x200B;**POST - Firefly - T2I (styleref) V3**。
-这出现在&#x200B;**正文**&#x200B;中。
+这出现在**正文**&#x200B;中。
 
 ![Azure存储](./images/az23.png){zoomable="yes"}
 
