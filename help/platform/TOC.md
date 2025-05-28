@@ -75,13 +75,13 @@ Campaigns
    + [工作流](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
    + [B2B edition概述](/help/platform/rtcdp/b2b-overview.md)
    + [使用Marketo Engage编排活动](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [入门：数据架构师和数据工程师](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
++ [入门：数据架构师和数据工程师](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hans){target="_blank"}
 + [验证Experience Platform API](/help/platform/authentication/platform-api-authentication.md)
 + [将示例数据导入Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + 管理 {#admin}
    + [概述](/help/platform/admin/overview.md)
    + [添加用户](/help/platform/admin/add-users.md)
-   + [将用户添加到数据集合](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
+   + [将用户添加到数据集合](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/users-and-permissions)
    + [添加开发人员](/help/platform/admin/add-developers.md)
    + [添加产品管理员](/help/platform/admin/add-product-administrators.md)
    + [配置基于属性的访问控制](/help/platform/admin/configure-attribute-based-access-control.md)
@@ -119,15 +119,15 @@ Campaigns
    + [创建和激活帐户受众(B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
    + [流式客户细分演示](/help/platform/audiences/streaming-segmentation-demo.md)
    + [按需评估批受众](/help/platform/audiences/evaluate-audiences-on-demand.md)
-   + [评估受众规则](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-   + [创建数据集以导出数据](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+   + [评估受众规则](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html?lang=zh-Hans){target="_blank"}
+   + [创建数据集以导出数据](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html?lang=zh-Hans){target="_blank"}
    + [区段匹配连接设置](/help/platform/segments/segment-match-connection-setup.md)
    + [区段匹配数据管理](/help/platform/segments/segment-match-data-governance.md)
    + [区段匹配配置流程](/help/platform/segments/segment-match-configuration-flow.md)
    + [区段匹配预共享见解](/help/platform/segments/segment-match-pre-share-insights.md)
    + [区段匹配接收数据](/help/platform/segments/segment-match-receiving-data.md)
 + [审核日志](/help/platform/governance/audit-logs.md)
-+ [数据收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ [数据收集](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html?lang=zh-Hans){target="_blank"}
 + 协作 {#collaboration}
    + [Real-Time CDP Collaboration概述](collaboration/real-time-cdp-collaboration-overview.md)
    + [设置权限](collaboration/set-permissions-for-collaboration.md)
@@ -148,27 +148,27 @@ Campaigns
    + [概述](/help/platform/data-hygiene/overview.md)
    + [数据卫生数据准备](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
    + [删除数据集和批次](/help/platform/data-hygiene/delete-datasets-and-batches.md)
-   + [使数据集过期](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+   + [使数据集过期](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
    + [假名配置文件和事件过期(TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
    + [删除轮廓](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/profiles/delete-profiles)
-   + [更新配置文件属性](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
+   + [更新配置文件属性](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + 数据引入 {#data-ingestion}
    + [概述](/help/platform/data-ingestion/understanding-data-ingestion.md)
    + [批量摄取概述](/help/platform/data-ingestion/batch-ingestion-overview.md)
    + [创建和填充数据集](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
    + [删除数据集和批次](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
-   + [将CSV文件映射到XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
-   + [源概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-   + [从Adobe Analytics引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
-   + [从Audience Manager引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [将CSV文件映射到XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html?lang=zh-Hans){target="_blank"}
+   + [源概述](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html?lang=zh-Hans)
+   + [从Adobe Analytics引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hans)
+   + [从Audience Manager引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html?lang=zh-Hans)
    + [从云存储引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html?lang=zh-Hans)
    + [从CRM引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html?lang=zh-Hans)
-   + [从数据库引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
+   + [从数据库引入数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html?lang=zh-Hans)
    + [流摄取概述](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-   + [使用 HTTP API 流式传输数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
+   + [使用 HTTP API 流式传输数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html?lang=zh-Hans)
    + [使用源连接器流式传输数据](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html?lang=zh-Hans)
-   + [Web SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
-   + [Mobile SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
+   + [Web SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html?lang=zh-Hans){target="_blank"}
+   + [Mobile SDK教程](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html?lang=zh-Hans){target="_blank"}
 + 数据生命周期 {#data-lifecycle}
    + [使数据集过期](/help/platform/data-lifecycle/expire-datasets.md)
 + 目标 {#destinations}
@@ -221,7 +221,7 @@ Campaigns
    + [了解Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
    + [配置文件概述图](/help/platform/profiles/overview-diagram.md)
    + [将数据引入轮廓](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-   + [自定义配置文件视图详细信息](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
+   + [自定义配置文件视图详细信息](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html?lang=zh-Hans){target="_blank"}
    + [查看帐户配置文件](/help/platform/profiles/view-account-profiles.md)
    + [创建合并策略](/help/platform/profiles/create-merge-policies.md)
    + [合并模式概述](/help/platform/profiles/union-schemas-overview.md)
@@ -250,12 +250,12 @@ Campaigns
    + [Adobe定义的函数](/help/platform/queries/adobe-defined-functions.md)
    + [数据使用模式](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
    + [运行查询](/help/platform/queries/run-queries.md)
-   + [从查询结果生成数据集](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
+   + [从查询结果生成数据集](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html?lang=zh-Hans){target="_blank"}
    + [表格](/help/platform/queries/psql-client-tableau.md)
    + [分析和可视化数据](/help/platform/queries/analyze-and-visualize.md)
    + [使用BI工具构建仪表板](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
    + [为您的客户数据充电](/help/platform/queries/recharge-your-customer-data.md)
-   + [将客户端连接到查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+   + [将客户端连接到查询服务](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html?lang=zh-Hans){target="_blank"}
    + [验证Datalake中的数据](/help/platform/queries/validate-data-in-the-datalake.md)
 + 架构 {#schemas}
    + [概述](/help/platform/schemas/schemas-and-experience-data-model.md)
@@ -271,7 +271,7 @@ Campaigns
    + [使用枚举字段和建议值](/help/platform/schemas/use-enumerated-fields.md)
    + [在沙盒之间复制架构](/help/platform/schemas/copy-schemas-between-sandboxes.md)
    + [更新架构](/help/platform/schemas/update-schemas.md)
-   + [创建临时架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
+   + [创建临时架构](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html?lang=zh-Hans){target="_blank"}
 + 源 {#sources}
    + [概述](/help/platform/sources/overview.md)
    + [从Adobe Analytics引入数据](/help/platform/sources/ingest-data-from-adobe-analytics.md)
@@ -288,11 +288,11 @@ Campaigns
    + [配置行动手册沙盒](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
    + [创建和发布行动手册实例](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Experience Cloud 集成 {#experience-cloud}
-   + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
-   + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+   + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html?lang=zh-Hans)
+   + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html?lang=zh-Hans)
    + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
-   + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-   + [Target](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
+   + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html?lang=zh-Hans)
+   + [Target](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
 + 行业趋势 {#industry}
    + [数据管理的未来和不断变化的环境](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
    + [一个故事，两种看法 — 品牌与消费者](/help/platform/industry/brands-vs-consumers.md)
