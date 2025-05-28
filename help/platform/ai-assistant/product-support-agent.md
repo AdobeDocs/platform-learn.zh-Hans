@@ -20,4 +20,4 @@ ht-degree: 0%
 
 产品支持代理是一个始终可用的AI代理，它可以利用Adobe的专家支持团队策划的大量知识源，甚至您自己的数据，帮助您解决客户关怀问题，从而让您能够在工作流中进行故障排除。 如果您需要其他帮助，产品支持代理可以创建包含详细上下文信息的支持案例，从而大大减少创建支持工单所需的时间和工作。
 
->[!VIDEO](https://video.tv.adobe.com/v/3443183/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3443193/?learn=on&enablevpops&captions=chi_hans)
