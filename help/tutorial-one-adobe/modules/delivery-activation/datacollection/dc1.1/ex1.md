@@ -61,9 +61,9 @@ Adobe Experience Platform数据收集由品牌商用于许多用例。 它是新
 Adobe Experience Platform数据收集是一个非常高级的工具，其范围超出了Adobe Experience Platform教程。 组织可能无法使用Adobe Experience Platform数据收集来实现其标记管理功能，而是使用非Adobe标记管理解决方案来插入代码和管理标记。 Adobe和Adobe Professional Services支持使用非Adobe标签管理解决方案。
 下面是希望进一步了解Adobe Experience Platform数据收集内容的人可以阅读的一些内容。
 
-- [Adobe Experience Platform数据收集用户指南](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
+- [Adobe Experience Platform数据收集用户指南](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)
 - [“利用 Web SDK 实施 Adobe Experience Cloud”教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans)
-- [设置用户权限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
+- [设置用户权限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hans)
 - [API文档](https://developer.adobelaunch.com/api/)
 
 ## 后续步骤
