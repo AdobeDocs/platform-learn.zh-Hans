@@ -4,10 +4,10 @@ description: 基础 — 常见问题解答 — 创建架构、数据模型和链
 kt: 5342
 doc-type: tutorial
 exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
-source-git-commit: 2beb052927f88e13f42b2af940a637cbc3caa19d
+source-git-commit: 915054a0342a0e5bb003d2fbc73d1540725aa5f0
 workflow-type: tm+mt
-source-wordcount: '646'
-ht-degree: 2%
+source-wordcount: '683'
+ht-degree: 3%
 
 ---
 
@@ -67,7 +67,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb5.png)
 
-选择联合数据库并单击&#x200B;**+添加表**。
+选择联合数据库并单击&#x200B;**下一步**。
 
 ![FAC](./images/fdb6.png)
 
@@ -79,7 +79,7 @@ ht-degree: 2%
 - `--aepUserLdap--_PERSONS`
 - `--aepUserLdap--_USERS`
 
-单击&#x200B;**添加**。
+单击&#x200B;**下一步**。
 
 ![FAC](./images/fdb7.png)
 
@@ -94,7 +94,7 @@ ht-degree: 2%
 
 在本练习中，无需进行任何更改。
 
-单击&#x200B;**创建**。
+单击&#x200B;**完成**。
 
 ![FAC](./images/fdb8.png)
 
@@ -106,7 +106,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb10.png)
 
-然后，您将看到数据示例。
+然后，您将看到数据示例。 此数据直接从Snowflake加载，不会保留在AEP中。
 
 ![FAC](./images/fdb11.png)
 
@@ -136,9 +136,9 @@ ht-degree: 2%
 
 您现在可以开始定义架构之间的链接。 若要开始定义链接，您需要单击&#x200B;**创建链接**。
 
-![FAC](./images/fdb16.png)
+![FAC](./images/fdb16a.png)
 
-首先，我们定义表`--aepUserLdap--_USERS`和`--aepUserLdap--_PERSONS`之间的链接。
+首先，您需要定义表`--aepUserLdap--_USERS`和`--aepUserLdap--_PERSONS`之间的链接。
 
 单击&#x200B;**添加**。
 
@@ -150,7 +150,9 @@ ht-degree: 2%
 
 ![FAC](./images/fdb17.png)
 
-接下来，让我们定义表`--aepUserLdap--_HOUSEHOLDS`和`--aepUserLdap--_PERSONS`之间的链接。
+接下来，您需要定义表`--aepUserLdap--_HOUSEHOLDS`和`--aepUserLdap--_PERSONS`之间的链接。
+
+单击&#x200B;**添加**。
 
 ![FAC](./images/fdb19.png)
 
@@ -160,10 +162,11 @@ ht-degree: 2%
 
 ![FAC](./images/fdb20.png)
 
-接下来，让我们定义表`--aepUserLdap--_USERS`和`--aepUserLdap--_MONTHLY_DATA_USAGE`之间的链接。
+接下来，您需要定义表`--aepUserLdap--_USERS`和`--aepUserLdap--_MONTHLY_DATA_USAGE`之间的链接。
+
+单击&#x200B;**添加**。
 
 ![FAC](./images/fdb21.png)
-
 
 ### 用户 — 家庭
 
@@ -171,7 +174,9 @@ ht-degree: 2%
 
 ![FAC](./images/fdb22.png)
 
-接下来，让我们定义表`--aepUserLdap--_USERS`和`--aepUserLdap--_HOUSEHOLDS`之间的链接。
+接下来，您需要定义表`--aepUserLdap--_USERS`和`--aepUserLdap--_HOUSEHOLDS`之间的链接。
+
+单击&#x200B;**添加**。
 
 ![FAC](./images/fdb23.png)
 
@@ -181,7 +186,9 @@ ht-degree: 2%
 
 ![FAC](./images/fdb24.png)
 
-接下来，让我们定义表`--aepUserLdap--_USERS`和`--aepUserLdap--_MOBILE_DATA_USAGE`之间的链接。
+接下来，您需要定义表`--aepUserLdap--_USERS`和`--aepUserLdap--_MOBILE_DATA_USAGE`之间的链接。
+
+单击&#x200B;**添加**。
 
 ![FAC](./images/fdb25.png)
 
@@ -189,7 +196,7 @@ ht-degree: 2%
 
 ![FAC](./images/fdb26.png)
 
-AEP中的设置现已完成。 您现在可以开始在联合受众组合中使用联合数据。
+Adobe Experience Platform中联合数据库的设置现已完成。 您现在可以开始在联合受众组合中使用联合数据。
 
 ## 后续步骤
 

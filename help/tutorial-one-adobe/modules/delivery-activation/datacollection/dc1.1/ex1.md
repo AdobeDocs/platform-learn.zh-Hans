@@ -4,9 +4,9 @@ description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '573'
 ht-degree: 2%
 
 ---
@@ -24,7 +24,13 @@ Adobe Experience Platform数据收集由品牌商用于许多用例。 它是新
 
 ## 浏览UI
 
-转到[Adobe Experience Platform数据收集](https://experience.adobe.com/#/data-collection/)。
+转到[Adobe Experience Platform数据收集](https://experience.adobe.com/#/data-collection/)。 确保您使用的是正确的环境，即`--aepImsOrgName--`。
+
+>[!NOTE]
+>
+>本教程使用环境&#x200B;**Experience Platform International**&#x200B;进行记录。 您的环境名称可能不同，因此每当您在屏幕快照中看到名称&#x200B;**Experience Platform International**&#x200B;时，都应将其替换为您自己的环境名称，即`--aepImsOrgName--`。
+
+![启动项属性视图](./images/launch0.png)
 
 转到&#x200B;**标记**。 您现在看到&#x200B;**[!UICONTROL 属性]**&#x200B;视图。 此处列出的属性用于教程管理。 这些属性表示：
 
@@ -55,9 +61,9 @@ Adobe Experience Platform数据收集由品牌商用于许多用例。 它是新
 Adobe Experience Platform数据收集是一个非常高级的工具，其范围超出了Adobe Experience Platform教程。 组织可能无法使用Adobe Experience Platform数据收集来实现其标记管理功能，而是使用非Adobe标记管理解决方案来插入代码和管理标记。 Adobe和Adobe Professional Services支持使用非Adobe标签管理解决方案。
 下面是希望进一步了解Adobe Experience Platform数据收集内容的人可以阅读的一些内容。
 
-- [Adobe Experience Platform数据收集用户指南](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)
+- [Adobe Experience Platform数据收集用户指南](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 - [“利用 Web SDK 实施 Adobe Experience Cloud”教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans)
-- [设置用户权限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hans)
+- [设置用户权限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
 - [API文档](https://developer.adobelaunch.com/api/)
 
 ## 后续步骤

@@ -4,9 +4,9 @@ description: 基础 — 实时客户个人资料 — 创建受众 — UI
 kt: 5342
 doc-type: tutorial
 exl-id: 4870ea42-810b-400b-8285-ab1f89c6a018
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
 workflow-type: tm+mt
-source-wordcount: '697'
+source-wordcount: '709'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 3%
 
 ![区段](./images/menusegbr.png)
 
-进入新的受众生成器后，您会立即注意到&#x200B;**属性**&#x200B;菜单选项和&#x200B;**XDM个人资料**&#x200B;引用。
+进入受众生成器后，您会立即注意到&#x200B;**Attributes**&#x200B;菜单选项和&#x200B;**XDM个人资料**&#x200B;引用。
 
 ![区段](./images/segmentationui.png)
 
@@ -83,6 +83,10 @@ ht-degree: 3%
 
 ![区段](./images/pv.png)
 
+将区段上的时间条件设置为&#x200B;**在过去24小时内**。
+
+![区段](./images/pv1.png)
+
 每次将元素添加到受众生成器时，都可以单击&#x200B;**刷新估算**&#x200B;按钮以获取受众中群体的最新估算。
 
 到目前为止，您仅使用UI构建受众，但还有一个代码选项可用于构建受众。
@@ -102,7 +106,7 @@ person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItem
 ![区段](./images/previewprofilesdtl.png)
 
 最后，让我们为您的受众命名，
-将&#x200B;**评估方法**&#x200B;设置为&#x200B;**流式传输**，然后单击&#x200B;**发布**。
+将**评估方法**&#x200B;设置为&#x200B;**Edge**，然后单击&#x200B;**发布**。
 
 作为命名约定，请使用：
 
