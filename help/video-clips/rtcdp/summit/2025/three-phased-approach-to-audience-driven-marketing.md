@@ -20,4 +20,4 @@ ht-degree: 0%
 探索使用Real-Time CDP构建、扩展和优化受众策略的简单三阶段框架。
 
 <!-- 72_S508_3442517_213_threephased-approach-to-audiencedriven-marketing -->
->[!VIDEO](https://video.tv.adobe.com/v/3458299/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463000/?learn=on&enablevpops=true&captions=chi_hans)

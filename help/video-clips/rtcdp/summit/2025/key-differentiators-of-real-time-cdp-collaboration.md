@@ -20,4 +20,4 @@ ht-degree: 0%
 探索Adobe Real-Time CDP Collaboration的独特功能，包括其对营销人员友好的UI、互操作性和以隐私为中心的设计。
 
 <!-- 62_OS511_3442426_75_key-differentiators-of-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458280/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460551/?learn=on&enablevpops=true&captions=chi_hans)

@@ -20,4 +20,4 @@ ht-degree: 0%
 了解部署Adobe Experience Platform的关键注意事项，包括治理、增长规划和架构。
 
 <!-- 62_S601_3442532_72_key-takeaways-for-deploying-aep-at-scale -->
->[!VIDEO](https://video.tv.adobe.com/v/3458314/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460529/?learn=on&enablevpops=true&captions=chi_hans)

@@ -20,4 +20,4 @@ ht-degree: 0%
 了解Adobe Real-Time CDP中的受众人工智能助手如何帮助营销人员通过大小估计、倾向评分和实时见解来优化受众策略。
 
 <!-- 62_S508_3442517_109_the-power-of-ai-in-realtime-cdp-for-audience-optimization -->
->[!VIDEO](https://video.tv.adobe.com/v/3458207/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3463027/?learn=on&enablevpops=true&captions=chi_hans)

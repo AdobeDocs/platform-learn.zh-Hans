@@ -20,4 +20,4 @@ ht-degree: 0%
 了解Adobe在Real-Time CDP中的预测AI功能如何帮助营销人员优化分段、个性化和受众分析。
 
 <!-- 85_OS512_3442427_65_how-ai-enhances-realtime-cdp-with-predictive-insights -->
->[!VIDEO](https://video.tv.adobe.com/v/3458200/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459970/?learn=on&enablevpops=true&captions=chi_hans)

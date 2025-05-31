@@ -20,4 +20,4 @@ ht-degree: 0%
 了解Adobe的Real-Time CDP Collaboration如何为营销人员简化数据清理工作室，从而实现无缝的受众发现、激活和测量。
 
 <!-- 65_OS511_3442426_34_introduction-to-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458279/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459977/?learn=on&enablevpops=true&captions=chi_hans)

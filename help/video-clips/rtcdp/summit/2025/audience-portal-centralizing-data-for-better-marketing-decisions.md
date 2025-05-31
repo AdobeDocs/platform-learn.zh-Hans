@@ -20,4 +20,4 @@ ht-degree: 0%
 探索Adobe Real-Time CDP中的受众门户如何统一客户数据，实现高级受众管理和实时激活。
 
 <!-- 72_S508_3442517_82_audience-portal-centralizing-data-for-better-marketing-decisions -->
->[!VIDEO](https://video.tv.adobe.com/v/3458185/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459692/?learn=on&enablevpops=true&captions=chi_hans)

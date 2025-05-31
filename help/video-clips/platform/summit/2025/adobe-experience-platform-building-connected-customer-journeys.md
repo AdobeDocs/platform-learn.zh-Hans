@@ -20,4 +20,4 @@ ht-degree: 0%
 了解Adobe Experience Platform如何通过数据、内容和跨渠道激活来启用连接的客户历程。
 
 <!-- 62_S655_3442541_51_adobe-experience-platform-building-connected-customer-journeys -->
->[!VIDEO](https://video.tv.adobe.com/v/3458326/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459637/?learn=on&enablevpops=true&captions=chi_hans)

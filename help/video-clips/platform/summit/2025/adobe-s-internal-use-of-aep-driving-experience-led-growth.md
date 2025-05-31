@@ -20,4 +20,4 @@ ht-degree: 0%
 了解Adobe如何在内部使用AEP来统一客户档案、促进参与并跨团队扩展操作。
 
 <!-- 62_S655_3442541_255_adobes-internal-use-of-aep-driving-experienceled-growth -->
->[!VIDEO](https://video.tv.adobe.com/v/3458328/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459705/?learn=on&enablevpops=true&captions=chi_hans)

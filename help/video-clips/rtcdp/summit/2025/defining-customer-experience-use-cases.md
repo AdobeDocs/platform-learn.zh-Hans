@@ -20,4 +20,4 @@ ht-degree: 0%
 探索Adobe的五个问题框架，用于定义客户体验用例，以协调团队并推动业务成果。
 
 <!-- 85_S651_3442537_47_defining-customer-experience-use-cases -->
->[!VIDEO](https://video.tv.adobe.com/v/3458292/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459790/?learn=on&enablevpops=true&captions=chi_hans)

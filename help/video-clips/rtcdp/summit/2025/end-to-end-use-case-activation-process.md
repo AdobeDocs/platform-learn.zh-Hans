@@ -20,4 +20,4 @@ ht-degree: 0%
 了解Adobe端到端用例激活流程从构思到优化的六个阶段。
 
 <!-- 65_S651_3442537_212_endtoend-use-case-activation-process -->
->[!VIDEO](https://video.tv.adobe.com/v/3458248/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460252/?learn=on&enablevpops=true&captions=chi_hans)

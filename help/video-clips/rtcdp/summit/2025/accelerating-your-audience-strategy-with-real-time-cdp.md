@@ -20,4 +20,4 @@ ht-degree: 0%
 了解如何利用Real-Time CDP统一数据、个性化体验并促进参与，从而加快受众策略的实施速度。
 
 <!-- 62_S508_3442517_45_accelerating-your-audience-strategy-with-realtime-cdp -->
->[!VIDEO](https://video.tv.adobe.com/v/3458220/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459615/?learn=on&enablevpops=true&captions=chi_hans)

@@ -20,4 +20,4 @@ ht-degree: 0%
 了解适用于受众的AI助手如何帮助识别高价值区段、优化受众策略并节省时间。
 
 <!-- 62_S508_3442517_109_ai-assistant-for-audiences-optimizing-audience-strategies -->
->[!VIDEO](https://video.tv.adobe.com/v/3458285/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459670/?learn=on&enablevpops=true&captions=chi_hans)

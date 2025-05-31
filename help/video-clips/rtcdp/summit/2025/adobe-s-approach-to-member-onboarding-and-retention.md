@@ -20,4 +20,4 @@ ht-degree: 0%
 探索Adobe如何使用数据驱动型洞察和AJO来增强会员登记并推动维系。
 
 <!-- 62_S655_3442541_35_adobes-approach-to-member-onboarding-and-retention -->
->[!VIDEO](https://video.tv.adobe.com/v/3458282/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459648/?learn=on&enablevpops=true&captions=chi_hans)

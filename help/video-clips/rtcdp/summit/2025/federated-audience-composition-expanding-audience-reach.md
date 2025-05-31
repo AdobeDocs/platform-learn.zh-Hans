@@ -20,4 +20,4 @@ ht-degree: 0%
 了解联合受众组合如何让您将外部数据仓库连接到Real-Time CDP以进行即时营销。
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-audience-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458295/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459801/?learn=on&enablevpops=true&captions=chi_hans)

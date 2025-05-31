@@ -20,4 +20,4 @@ ht-degree: 0%
 探索Adobe如何使用AEP通过利用数据驱动型洞察和个性化的客户历程来提高保留率和参与度。
 
 <!-- 62_S655_3442541_61_adobes-internal-use-of-aep-driving-retention-with-datadriven-journeys -->
->[!VIDEO](https://video.tv.adobe.com/v/3458264/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459659/?learn=on&enablevpops=true&captions=chi_hans)

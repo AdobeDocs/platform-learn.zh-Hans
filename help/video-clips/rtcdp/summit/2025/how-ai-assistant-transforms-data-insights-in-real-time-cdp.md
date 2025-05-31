@@ -20,4 +20,4 @@ ht-degree: 0%
 了解Adobe的AI Assistant如何通过自然语言查询彻底改变数据洞察，为营销人员提供即时、可操作的结果。
 
 <!-- 62_S653_3442539_57_how-ai-assistant-transforms-data-insights-in-realtime-cdp -->
->[!VIDEO](https://video.tv.adobe.com/v/3458199/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459867/?learn=on&enablevpops=true&captions=chi_hans)

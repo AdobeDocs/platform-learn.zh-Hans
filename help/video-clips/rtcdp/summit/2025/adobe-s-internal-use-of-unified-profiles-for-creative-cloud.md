@@ -20,4 +20,4 @@ ht-degree: 0%
 了解Adobe如何使用统一配置文件推动70多个团队之间的协作，并为Creative Cloud用户提供个性化体验。
 
 <!-- 62_S655_3442541_146_adobes-internal-use-of-unified-profiles-for-creative-cloud -->
->[!VIDEO](https://video.tv.adobe.com/v/3458283/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459681/?learn=on&enablevpops=true&captions=chi_hans)

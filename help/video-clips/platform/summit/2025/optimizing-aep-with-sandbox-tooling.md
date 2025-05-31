@@ -20,4 +20,4 @@ ht-degree: 0%
 了解如何在Adobe Experience Platform中使用沙盒工具简化工作流和启用跨团队协作。
 
 <!-- 62_S601_3442532_175_optimizing-aep-with-sandbox-tooling -->
->[!VIDEO](https://video.tv.adobe.com/v/3458320/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460562/?learn=on&enablevpops=true&captions=chi_hans)

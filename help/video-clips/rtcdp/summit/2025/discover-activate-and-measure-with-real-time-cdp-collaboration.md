@@ -20,4 +20,4 @@ ht-degree: 0%
 深入了解Adobe Real-Time CDP Collaboration的核心功能：受众发现、安全激活和性能测量。
 
 <!-- 72_OS511_3442426_179_discover-activate-and-measure-with-realtime-cdp-collaboration -->
->[!VIDEO](https://video.tv.adobe.com/v/3458275/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460185/?learn=on&enablevpops=true&captions=chi_hans)

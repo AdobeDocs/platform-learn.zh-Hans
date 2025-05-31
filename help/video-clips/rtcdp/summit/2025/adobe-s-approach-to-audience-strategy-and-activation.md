@@ -20,4 +20,4 @@ ht-degree: 0%
 了解Adobe Experience Platform如何支持跨渠道历程的受众创建和激活。
 
 <!-- 62_S655_3442541_49_adobes-approach-to-audience-strategy-and-activation -->
->[!VIDEO](https://video.tv.adobe.com/v/3458225/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459630/?learn=on&enablevpops=true&captions=chi_hans)

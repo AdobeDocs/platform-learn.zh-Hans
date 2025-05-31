@@ -20,4 +20,4 @@ ht-degree: 0%
 观看AI Assistant如何帮助营销人员构建预测模型并为营销活动创建具有高度针对性的受众。
 
 <!-- 62_OS512_3442427_175_creating-targeted-audiences-with-ai-assistant -->
->[!VIDEO](https://video.tv.adobe.com/v/3458186/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460197/?learn=on&enablevpops=true&captions=chi_hans)

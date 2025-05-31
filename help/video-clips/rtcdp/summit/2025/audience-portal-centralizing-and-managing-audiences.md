@@ -20,4 +20,4 @@ ht-degree: 0%
 探索Real-Time CDP中的受众门户如何帮助统一客户数据、管理受众以及启用实时激活。
 
 <!-- 62_S508_3442517_101_audience-portal-centralizing-and-managing-audiences -->
->[!VIDEO](https://video.tv.adobe.com/v/3458287/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459747/?learn=on&enablevpops=true&captions=chi_hans)

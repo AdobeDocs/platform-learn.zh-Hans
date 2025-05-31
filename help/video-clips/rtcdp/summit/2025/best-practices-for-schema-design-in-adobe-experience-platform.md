@@ -20,4 +20,4 @@ ht-degree: 0%
 借助这些最佳实践来实现可扩展性、验证并与Adobe Experience Platform的数据模型保持一致，从而避免在架构设计中犯下代价高昂的错误。
 
 <!-- 72_S655_3442541_260_best-practices-for-schema-design-in-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458268/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460131/?learn=on&enablevpops=true&captions=chi_hans)

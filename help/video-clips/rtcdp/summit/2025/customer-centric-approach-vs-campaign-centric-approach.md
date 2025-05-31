@@ -20,4 +20,4 @@ ht-degree: 0%
 了解如何从以活动为中心转变为以客户为中心的方法，以推动可持续增长并改善客户体验。
 
 <!-- 85_S651_3442537_125_customercentric-approach-vs-campaigncentric-approach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458235/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460121/?learn=on&enablevpops=true&captions=chi_hans)

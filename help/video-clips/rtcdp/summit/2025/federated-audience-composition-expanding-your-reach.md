@@ -20,4 +20,4 @@ ht-degree: 0%
 了解联合受众组合如何通过将外部数据源集成到Real-Time CDP中来实现实时营销。
 
 <!-- 62_S508_3442517_87_federated-audience-composition-expanding-your-reach -->
->[!VIDEO](https://video.tv.adobe.com/v/3458250/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459911/?learn=on&enablevpops=true&captions=chi_hans)

@@ -20,4 +20,4 @@ ht-degree: 0%
 了解架构设计、可扩展性和避免在Adobe Experience Platform中犯下代价高昂的错误的重要性。
 
 <!-- 85_S655_3442541_276_best-practices-for-data-modeling-in-adobe-experience-platform -->
->[!VIDEO](https://video.tv.adobe.com/v/3458291/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3460142/?learn=on&enablevpops=true&captions=chi_hans)

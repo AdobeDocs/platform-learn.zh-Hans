@@ -20,4 +20,4 @@ ht-degree: 0%
 了解如何构建Adobe Experience Platform以实现高效实施，平衡集中化和分散化方法。
 
 <!-- 62_S601_3442532_176_architecting-adobe-experience-platform-for-scalability -->
->[!VIDEO](https://video.tv.adobe.com/v/3458321/?learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3459714/?learn=on&enablevpops=true&captions=chi_hans)
