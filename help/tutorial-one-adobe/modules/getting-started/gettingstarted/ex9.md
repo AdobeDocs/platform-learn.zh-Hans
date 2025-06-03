@@ -3,16 +3,16 @@ title: 快速入门 — 要安装的应用程序
 description: 快速入门 — 要安装的应用程序
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '186'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
 
 # 要安装的应用程序
 
-以下是参加实时研讨会之前所需的准备工作概述。
+以下是启动本教程之前需要在计算机上安装的应用程序概述。
 
 ## Adobe Creative Cloud
 

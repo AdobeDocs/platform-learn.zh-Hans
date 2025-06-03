@@ -3,10 +3,10 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 603e48e0453911177823fe7ceb340f8ca801c5e1
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '978'
-ht-degree: 3%
+source-wordcount: '944'
+ht-degree: 2%
 
 ---
 
@@ -34,22 +34,16 @@ ht-degree: 3%
 - Snowflake
 - ...
 
-## 先决条件
+## 显示您的知识
 
-如果您希望使用自己的Adobe Experience Cloud实例来参加本教程，则需要在您的实例中配置以下应用程序，并且您需要能够访问：
+![Adobe符合条件](./assets/images/badge.png){width="100px" align="left"}
 
-- Adobe Firefly
-- Adobe Photoshop、Adobe框架I/O、Adobe Substance 3D Staging
-- Adobe Workfront
-- Adobe Workfront Fusion
-- Adobe Experience Platform、Adobe Experience Platform数据收集
-- 下一步访问演示系统： [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+完成本教程中的部分模块后，您可以参加Adobe凭据考试以获得&#x200B;**Adobe资格**&#x200B;徽章。
 
-## 完成和认证
-
-本教程是Adobe认证课程的一部分。 您可以转到[https://certification.adobe.com](https://certification.adobe.com)同时注册课程和本教程。
-
-对于您使用以下教程完成的每个模块，您需要按照[此处](./completion.md)的指示提交完成证明。
+- 完成[Adobe Firefly Services概述](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}模块后，您便可以参加和通过&#x200B;**Adobe资格认证**&#x200B;考试&#x200B;**AD2-E901**：
+  [https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential)。
+- 当您使用Workfront Fusion完成模块[Creative工作流自动化](./modules/creation-production/module1.2/automation.md){target="_blank"}时，您已准备好参加并通过了&#x200B;**Adobe资格鉴定**&#x200B;考试&#x200B;**XXX**：
+  [TBC](https://certification.adobe.com/certification/services-qualified-credential)。
 
 ## 内容状态
 
@@ -65,7 +59,7 @@ ht-degree: 3%
 
 ### 2.创建与生产
 
-[1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Adobe Firefly Services概述](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 在本模块中，您将使用Adobe Firefly Services API、Photoshop API和Microsoft Azure存储服务生成图像并以编程方式存储这些图像。
 

@@ -4,9 +4,9 @@ breadcrumb-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 3542de25dab9ca0d94928f526060d2fead2e2f34
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1153'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,6 @@ ht-degree: 3%
 + [教程概述](/help/tutorial-one-adobe/overview.md)
 + [内容状态](/help/tutorial-one-adobe/status.md)
 + [完成](/help/tutorial-one-adobe/completion.md)
-+ [前期工作](/help/tutorial-one-adobe/prework.md)
 
 + 入门指南 {#gettingstarted}
    + 入门指南 {#gettingstarted}

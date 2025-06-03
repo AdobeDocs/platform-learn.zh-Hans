@@ -4,9 +4,9 @@ description: 快速入门 — Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: 3b6ae4bb4eb2d9f189438dddc461bb0f2a0a9aac
+source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,10 @@ ht-degree: 0%
 ![Adobe I/O新集成](./images/iocomp.png){zoomable="yes"}
 
 ### FIREFLY SERVICES API
+
+>[!IMPORTANT]
+>
+>根据您选择的学习路径，您可能无权访问Firefly Services API。 只有当您位于学习路径&#x200B;**Firefly**、**Workfront Fusion**、**ALL**&#x200B;上或参加&#x200B;**现场研讨会**&#x200B;时，您才有权访问Firefly Services API。 如果您未按照以下学习路径之一进行学习，则可以跳过此步骤。
 
 您应该会看到此内容。 选择&#x200B;**+添加到项目**&#x200B;并选择&#x200B;**API**。
 
@@ -59,6 +63,10 @@ ht-degree: 0%
 
 ### PHOTOSHOP SERVICES API
 
+>[!IMPORTANT]
+>
+>根据您选择的学习路径，您可能无权访问Photoshop Services API。 只有当您位于学习路径&#x200B;**Firefly**、**Workfront Fusion**、**ALL**&#x200B;上或参加&#x200B;**现场研讨会**&#x200B;时，您才有权访问Photoshop Services API。 如果您未按照以下学习路径之一进行学习，则可以跳过此步骤。
+
 选择&#x200B;**+添加到项目**，然后选择&#x200B;**API**。
 
 ![Azure存储](./images/ps2.png){zoomable="yes"}
@@ -84,6 +92,10 @@ ht-degree: 0%
 ![Adobe I/O新集成](./images/ps7.png){zoomable="yes"}
 
 ### ADOBE EXPERIENCE PLATFORM API
+
+>[!IMPORTANT]
+>
+>根据您选择的学习路径，您可能无权访问Adobe Experience Platform API。 只有在您位于学习路径&#x200B;**AEP + Apps**、**ALL**&#x200B;上或参加&#x200B;**现场研讨会**&#x200B;时，您才有权访问Adobe Experience Platform API。 如果您未按照以下学习路径之一进行学习，则可以跳过此步骤。
 
 选择&#x200B;**+添加到项目**，然后选择&#x200B;**API**。
 
