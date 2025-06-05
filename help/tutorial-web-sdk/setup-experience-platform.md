@@ -1,24 +1,24 @@
 ---
-title: 使用Platform Web SDK将数据流式传输到Adobe Experience Platform
+title: 通过Platform Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '2107'
 ht-degree: 5%
 
 ---
 
-# 使用Web SDK流式传输数据以Experience Platform
+# 使用Web SDK将数据流式传输到Experience Platform
 
 了解如何使用 Platform Web SDK 将 Web 数据传输到 Adobe Experience Platform。
 
-Experience Platform是所有新Experience Cloud应用程序(如Adobe Real-time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer)的支柱。 这些应用程序旨在使用Platform Web SDK作为它们的最佳的Web数据收集方法。
+Experience Platform是所有新的Experience Cloud应用程序(例如Adobe Real-Time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer)的骨干。 这些应用程序旨在使用Platform Web SDK作为其最佳的Web数据收集方法。
 
 ![Web SDK和Adobe Experience Platform关系图](assets/dc-websdk-aep.png)
 
-Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事件数据。 当该数据被发送到PlatformEdge Network时，数据流配置可以将其转发到Experience Platform。
+Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事件数据。 当该数据发送至Platform Edge Network时，数据流配置可以将其转发至Experience Platform。
 
 ## 学习目标
 
@@ -35,7 +35,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 要完成本课程，您必须首先：
 
-* 有权访问Adobe Experience Platform应用程序，如Real-time Customer Data Platform、Journey Optimizer或Customer Journey Analytics
+* 有权访问Adobe Experience Platform应用程序，如Real-Time Customer Data Platform、Journey Optimizer或Customer Journey Analytics
 * 完成本教程的初始配置和标记配置部分中之前的课程。
 
 >[!NOTE]
@@ -44,7 +44,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 ## 创建数据集
 
-所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 [数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。
+所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 [数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。
 
 让我们为您的Luma Web事件数据设置一个数据集：
 
@@ -72,7 +72,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 ## 配置数据流
 
-现在您可以将[!UICONTROL 数据流]配置为将数据发送到[!UICONTROL Adobe Experience Platform]。 数据流是标记属性、PlatformEdge Network和Experience Platform数据集之间的链接。
+现在您可以将[!UICONTROL 数据流]配置为将数据发送到[!UICONTROL Adobe Experience Platform]。 数据流是标记资产、Platform Edge Network和Experience Platform数据集之间的链接。
 
 1. 打开[数据收集](https://experience.adobe.com/#/data-collection){target="blank"}接口
 1. 从左侧导航中选择&#x200B;**[!UICONTROL 数据流]**
@@ -89,13 +89,13 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
    ![数据流配置](assets/experience-platform-datastream-config.png)
 
-在映射到标记属性的[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)上生成流量时，数据会在Experience Platform中填充数据集！
+在映射到标记属性的[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)上生成流量时，数据会填充Experience Platform中的数据集！
 
 ## 验证数据集
 
 此步骤对于确保数据已载入数据集至关重要。 验证发送到数据集的数据有两个方面。
 
-* 使用[!UICONTROL Experience Platform调试器]进行验证
+* 使用[!UICONTROL Experience Platform Debugger]进行验证
 * 使用[!UICONTROL 预览数据集]进行验证
 * 使用[!UICONTROL 查询服务]进行验证
 
@@ -103,17 +103,17 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 这些步骤与您在[调试器课程](validate-with-debugger.md)中所执行的操作大致相同。 但是，由于只有在数据流中启用数据后才会将数据发送到Platform，因此您必须生成一些更多示例数据：
 
-1. 打开[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)并选择[!UICONTROL Experience Platform调试器]扩展图标
+1. 打开[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)并选择[!UICONTROL Experience Platform Debugger]扩展图标
 
 1. 配置Debugger以将标记属性映射到&#x200B;*您的*&#x200B;开发环境，如[使用Debugger验证](validate-with-debugger.md)课程中所述
 
    ![Debugger 中显示的 Launch 开发环境](assets/experience-platform-debugger-dev.png)
 
-1. 使用凭据 `test@adobe.com`/`test` 登录 Luma 网站
+1. 使用凭据 `test@test.com`/`test` 登录 Luma 网站
 
 1. 返回 [Luma 主页](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 在调试器显示的Platform Web SDK网络信标中，选择“事件”行以在弹出窗口中展开详细信息
+1. 在Debugger显示的Platform Web SDK网络信标中，选择“事件”行以在弹出窗口中展开详细信息
 
    Debugger中的![Web SDK](assets/experience-platform-debugger-dev-eventType.png)
 
@@ -124,7 +124,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 ### 预览数据集
 
-要确认数据已登陆Platform的数据湖，一个快速选项是使用&#x200B;**[!UICONTROL 预览数据集]**&#x200B;功能。 将Web SDK数据微批次发送到数据湖，并定期在Platform界面中刷新。 查看生成的数据可能需要10-15分钟。
+要确认数据已登陆Platform的数据湖，一个快速选项是使用&#x200B;**[!UICONTROL 预览数据集]**&#x200B;功能。 Web SDK数据将微批次传输到数据湖，并定期在Platform界面中刷新。 查看生成的数据可能需要10-15分钟。
 
 1. 在[Experience Platform](https://experience.adobe.com/platform/)界面中，从左侧导航中选择&#x200B;**[!UICONTROL 数据管理>数据集]**&#x200B;以打开&#x200B;**[!UICONTROL 数据集]**&#x200B;仪表板。
 
@@ -160,14 +160,14 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 >[!INFO]
 >
->  有关Adobe Experience Platform查询服务的更多详细信息，请参阅Platform教程部分中的[浏览数据](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/queries/explore-data)。
+>  有关Adobe Experience Platform查询服务的更多详细信息，请参阅Platform教程部分中的[浏览数据](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
 
 
 ## 为实时客户个人资料启用数据集和架构
 
-对于Real-time Customer Data Platform和Journey Optimizer的客户，下一步是为实时客户个人资料启用数据集和架构。 来自Web SDK的数据流将是流入Platform的众多数据源之一，您希望将Web数据与其他数据源连接以构建360度客户档案。 要了解有关Real-time Customer Profile的更多信息，请观看此短视频：
+对于Real-Time Customer Data Platform和Journey Optimizer的客户，下一步是为实时客户个人资料启用数据集和架构。 来自Web SDK的数据流将是流入Platform的众多数据源之一，并且您希望将Web数据与其他数据源连接以构建360度客户档案。 要了解有关Real-time Customer Profile的更多信息，请观看此短视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/31672?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -198,7 +198,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
    >[!IMPORTANT]
    >
-   >    发送到Real-Time Customer Profile的每个记录都需要主身份。 通常，架构中会标记身份字段。 但是，在使用身份映射时，身份字段在架构中不可见。 此对话框用于确认您有一个主要身份，并且您将在发送数据时在身份映射中指定该身份。 如您所知，Web SDK使用将Experience CloudID (ECID)作为默认主标识且经过身份验证的ID作为主标识（如果可用）的标识映射。
+   >    发送到Real-Time Customer Profile的每个记录都需要主身份。 通常，架构中会标记身份字段。 但是，在使用身份映射时，身份字段在架构中不可见。 此对话框用于确认您有一个主要身份，并且您将在发送数据时在身份映射中指定该身份。 如您所知，Web SDK使用标识映射，将Experience Cloud Id (ECID)作为默认主标识，并将经过身份验证的ID作为主标识（如果可用）。
 
 
 1. 选择&#x200B;**[!UICONTROL 启用]**
@@ -226,18 +226,18 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 您可以在Platform界面(或Journey Optimizer界面)中查找客户配置文件，以确认数据已载入实时客户配置文件。 顾名思义，用户档案会实时填充，因此不会像验证数据集中的数据那样延迟。
 
-首先，必须生成更多示例数据。 重复本课程中前面介绍的步骤，在网站被映射到您的标记资产时登录到Luma网站。 Inspect Platform Web SDK请求，以确保其随`lumaCRMId`发送数据。
+首先，必须生成更多示例数据。 重复本课程中前面介绍的步骤，在网站被映射到您的标记资产时登录到Luma网站。 检查Platform Web SDK请求，以确保其使用`lumaCRMId`发送数据。
 
 1. 在[Experience Platform](https://experience.adobe.com/platform/)界面中，在左侧导航中选择&#x200B;**[!UICONTROL 客户]** > **[!UICONTROL 配置文件]**
 
 1. 由于&#x200B;**[!UICONTROL 身份命名空间]**&#x200B;使用`lumaCRMId`
-1. 复制并粘贴您在Experience Platform调试器中检查的调用中传递的`lumaCRMId`的值，在本例中为`112ca06ed53d3db37e4cea49cc45b71e`。
+1. 复制并粘贴您在Experience Platform Debugger中检查的调用中传递的`lumaCRMId`的值，在本例中为`b642b4217b34b1e8d3bd915fc65c4452`。
 
-   ![用户档案](assets/experience-platform-validate-dataset-profile.png)
+   ![轮廓](assets/experience-platform-validate-dataset-profile.png)
 
 1. 如果`lumaCRMId`的配置文件中存在有效值，则控制台中会填充配置文件ID：
 
-   ![用户档案](assets/experience-platform-validate-dataset-profile-set.png)
+   ![轮廓](assets/experience-platform-validate-dataset-profile-set.png)
 
 1. 要查看每个ID的完整&#x200B;**[!UICONTROL 客户配置文件]**，请在主窗口中选择&#x200B;**[!UICONTROL 配置文件ID]**。
 
@@ -250,13 +250,13 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
    ![客户个人资料](assets/experience-platform-validate-dataset-custProfile.png)
 
-您现在已为Experience Platform启用了Platform Web SDK(和Real-Time CDP！ 还有Journey Optimizer！ 还有Customer Journey Analytics！)。
+您现在已为Experience Platform(和Real-Time CDP！启用了Platform Web SDK 还有Journey Optimizer！ 和Customer Journey Analytics！)。
 
 ### 创建忠诚度模式并摄取示例数据
 
-Real-time Customer Data Platform和Journey Optimizer的客户可望完成本练习。
+Real-Time Customer Data Platform和Journey Optimizer的客户可望完成本练习。
 
-将Web SDK数据摄取到Adobe Experience Platform中后，可以通过已摄取到Platform中的其他数据源来扩充这些数据。 例如，当用户登录到Luma网站时，将在Experience Platform中构建身份图，并且所有其他启用配置文件的数据集可能会连接在一起，以构建实时客户配置文件。 要查看其实际效果，请快速在Adobe Experience Platform中创建另一个包含一些忠诚度数据示例的数据集，以便您可以将实时客户配置文件与Real-time Customer Data Platform和Journey Optimizer结合使用。 由于您已经进行了类似的练习，因此会提供简短的说明。
+将Web SDK数据摄取到Adobe Experience Platform后，可以通过已摄取到Platform的其他数据源来扩充这些数据。 例如，当用户登录到Luma网站时，将在Experience Platform中构建一个身份图，并且所有其他启用配置文件的数据集可能会合并到一起以构建实时客户配置文件。 要查看其实际效果，请快速在Adobe Experience Platform中创建另一个包含一些忠诚度数据示例的数据集，以便您可以将实时客户配置文件与Real-Time Customer Data Platform和Journey Optimizer结合使用。 由于您已经进行了类似的练习，因此会提供简短的说明。
 
 创建忠诚度模式：
 
@@ -302,7 +302,7 @@ Real-time Customer Data Platform和Journey Optimizer的客户可望完成本练�
 
    ![定义受众](assets/web-campaign-define-audience.png)
 
-由于这是一个非常简单的受众，因此我们可以使用Edge评估方法。 Edge受众会在边缘进行评估，因此在Web SDK向PlatformEdge Network发出的相同请求中，我们可以评估受众定义并立即确认用户是否符合条件。
+由于这是一个非常简单的受众，因此我们可以使用Edge评估方法。 Edge受众会在边缘进行评估，因此在由Web SDK向Platform Edge Network发出的相同请求中，我们可以评估受众定义并立即确认用户是否符合条件。
 
 
 [下一步： ](setup-analytics.md)

@@ -4,7 +4,7 @@ description: 了解如何使用Platform Web SDK实施Adobe Target。 本课程�
 solution: Data Collection, Target
 jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
-source-git-commit: e7bb1a7856d04c30da63cc013c2d5a5fea3d718e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '4363'
 ht-degree: 1%
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 了解如何使用 Adobe Experience Platform Web SDK 实施 Adobe Target。了解如何投放体验，以及如何将其他参数传递给 Target。
 
-[Adobe Target](https://experienceleague.adobe.com/zh-hans/docs/target/using/target-home)是一种Adobe Experience Cloud应用程序，可为您提供定制和个性化客户体验所需的一切功能，从而最大限度地增加您的Web和移动设备网站、应用程序及其他数字渠道的收入。
+[Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home)是一种Adobe Experience Cloud应用程序，可为您提供定制和个性化客户体验所需的一切功能，从而最大限度地增加您的Web和移动设备网站、应用程序及其他数字渠道的收入。
 
 ![Web SDK和Adobe Target关系图](assets/dc-websdk-at.png)
 
@@ -42,13 +42,13 @@ ht-degree: 1%
 要完成此部分中的课程，您必须首先：
 
 * 完成有关Platform Web SDK初始配置的所有课程，包括设置数据元素和规则。
-* 确保您在Adobe Target中具有[编辑者或审批者角色](https://experienceleague.adobe.com/zh-hans/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)。
-* 如果您使用Google Chrome浏览器，请安装[可视化体验编辑器助手扩展](https://experienceleague.adobe.com/zh-hans/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)。
+* 确保您在Adobe Target中具有[编辑者或审批者角色](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80)。
+* 如果您使用Google Chrome浏览器，请安装[可视化体验编辑器助手扩展](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)。
 * 了解如何在Target中设置活动。 如果您需要复习者，以下教程和指南对本课程很有帮助：
-   * [使用可视化体验编辑器(VEC)助手扩展](https://experienceleague.adobe.com/zh-hans/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
-   * [使用 Visual Experience Composer](https://experienceleague.adobe.com/zh-hans/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
-   * [使用基于表单的体验编辑器](https://experienceleague.adobe.com/zh-hans/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
-   * [创建体验定位活动](https://experienceleague.adobe.com/zh-hans/docs/target-learn/tutorials/activities/create-experience-targeting-activities)
+   * [使用可视化体验编辑器(VEC)助手扩展](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
+   * [使用 Visual Experience Composer](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-visual-experience-composer)
+   * [使用基于表单的体验编辑器](https://experienceleague.adobe.com/en/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer)
+   * [创建体验目标选择活动](https://experienceleague.adobe.com/zh-hans/docs/target-learn/tutorials/activities/create-experience-targeting-activities) 
 
 ## 添加闪烁处理
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->本教程使用[Luma网站](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}，该网站已异步实施标记并实施了闪烁抑制。 此部分旨在了解闪烁缓解如何与Platform Web SDK配合使用，以供参考。
+>本教程使用[Luma网站](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}，该网站已异步实施标记并实施了闪烁抑制。 此部分旨在了解如何通过Platform Web SDK来减少闪烁。
 
 
 ### 异步实施
@@ -84,7 +84,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Platform Web SDK的预隐藏代码片段与Target at.js库中使用的代码片段略有不同。 请确保为Platform Web SDK使用正确的代码片段，因为它使用不同的样式ID `alloy-prehiding`。 如果使用了适用于at.js的预隐藏代码片段，则可能无法正常使用。
+>Platform Web SDK的预隐藏代码片段与Target at.js库使用的预隐藏代码片段略有不同。 请确保为Platform Web SDK使用正确的代码片段，因为它使用其他样式ID `alloy-prehiding`。 如果使用了适用于at.js的预隐藏代码片段，则可能无法正常使用。
 
 标记中还提供了预隐藏代码片段：
 
@@ -122,7 +122,7 @@ Adobe建议如Luma网站上所示异步实施标记。 但是，如果同步加�
 
 ## 配置数据流
 
-必须先在数据流配置中启用Target，Platform Web SDK才能交付任何Target活动。
+必须先在数据流配置中启用Target，然后才能通过Platform Web SDK交付任何Target活动。
 
 要在数据流中配置Target，请执行以下操作：
 
@@ -142,7 +142,7 @@ Adobe建议如Luma网站上所示异步实施标记。 但是，如果同步加�
 
 ### 资产令牌
 
-Target Premium客户可以选择使用属性管理用户权限。 Target属性允许您围绕用户可以运行Target活动的位置建立边界。 有关详细信息，请参阅Target文档的[企业权限](https://experienceleague.adobe.com/zh-hans/docs/target/using/administer/manage-users/enterprise/properties-overview)部分。
+Target Premium客户可以选择使用资产管理用户权限。 Target属性允许您围绕用户可以运行Target活动的位置建立边界。 有关详细信息，请参阅Target文档的[企业权限](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview)部分。
 
 要设置或查找属性令牌，请导航到&#x200B;**Adobe Target** > **[!UICONTROL 管理]** > **[!UICONTROL 属性]**。 `</>`图标显示实施代码。 `at_property`值是您将在数据流中使用的属性令牌。
 
@@ -156,9 +156,9 @@ Target Premium客户可以选择使用属性管理用户权限。 Target属性�
 
 ### 目标环境Id
 
-Target中的[环境](https://experienceleague.adobe.com/zh-hans/docs/target/using/administer/environments)可帮助您在开发的所有阶段管理实施。 此可选设置指定要用于每个数据流的Target环境。
+Target中的[环境](https://experienceleague.adobe.com/en/docs/target/using/administer/environments)可帮助您在开发的所有阶段管理实施。 此可选设置指定要用于每个数据流的Target环境。
 
-Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设置Target环境ID，以简化操作。 或者，您可以使用[主机](https://experienceleague.adobe.com/zh-hans/docs/target/using/administer/hosts)功能在Target界面中组织环境。
+Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设置Target环境ID，以简化操作。 或者，您可以使用[主机](https://experienceleague.adobe.com/en/docs/target/using/administer/hosts)功能在Target界面中组织环境。
 
 要设置或查找环境ID，请导航到&#x200B;**Adobe Target** > **[!UICONTROL 管理]** > **[!UICONTROL 环境]**。
 
@@ -170,7 +170,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 ### 目标第三方ID命名空间
 
-通过这个可选设置，您可以指定要用于Target第三方ID的身份符号。 Target仅支持在单个身份符号或命名空间上同步配置文件。 有关详细信息，请参阅Target指南的[mbox3rdPartyId](https://experienceleague.adobe.com/zh-hans/docs/target/using/audiences/visitor-profiles/3rd-party-id)的实时配置文件同步。
+通过这个可选设置，您可以指定要用于Target第三方ID的身份符号。 Target仅支持在单个身份符号或命名空间上同步配置文件。 有关详细信息，请参阅Target指南的[mbox3rdPartyId](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id)的实时配置文件同步。
 
 标识符号位于&#x200B;**数据收集** > **[!UICONTROL 客户]** > **[!UICONTROL 标识]**&#x200B;下的标识列表中。
 
@@ -216,7 +216,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 >
 >通常，每次全页加载仅应为单个“发送事件”操作启用[!UICONTROL 呈现可视化个性化决策]设置。 如果多个发送事件操作启用了此设置，则会忽略后续渲染请求。
 
-如果您希望使用自定义代码自行呈现或操作这些决策，则可以禁用[!UICONTROL 呈现可视化个性化决策]设置。 Platform Web SDK非常灵活，它提供了这项功能让您能够完全控制。 您可以参阅指南以了解有关[手动渲染个性化内容](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content)的详细信息。
+如果您希望使用自定义代码自行呈现或操作这些决策，则可以禁用[!UICONTROL 呈现可视化个性化决策]设置。 Platform Web SDK非常灵活，并提供了这项功能来为您提供完全的控制。 您可以参阅指南以了解有关[手动渲染个性化内容](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content)的详细信息。
 
 
 ### 使用可视化体验编辑器设置Target活动
@@ -225,7 +225,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 >[!NOTE]
 >
->如果您将Google Chrome用作浏览器，则需要[可视化体验编辑器(VEC)助手扩展](https://experienceleague.adobe.com/zh-hans/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)才能正确加载站点，以便在VEC中进行编辑。
+>如果您将Google Chrome用作浏览器，则需要[可视化体验编辑器(VEC)助手扩展](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)才能正确加载站点，以便在VEC中进行编辑。
 
 1. 导航到Adobe Target界面
 1. 使用活动URL的Luma主页创建体验定位(XT)活动
@@ -249,9 +249,9 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
    >如果不使用Adobe Analytics，请选择Target作为报表源，然后选择其他指标，如&#x200B;**参与>页面查看次数**。 保存和预览活动需要目标量度。
 
 1. 保存活动
-1. 如果您对所做更改感到满意，则可以激活活动。 否则，如果要预览体验而不激活，则可以复制[QA预览URL](https://experienceleague.adobe.com/zh-hans/docs/target/using/activities/activity-qa/activity-qa)。
+1. 如果您对所做更改感到满意，则可以激活活动。 否则，如果要预览体验而不激活，则可以复制[QA预览URL](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa)。
 1. 加载Luma主页，此时您应会看到所做的更改已应用
-1. 几小时后，您应该能够在Adobe Analytics中看到Target活动数据和转化情况。 有关[Analytics for Target (A4T)报表](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/a4t/reporting)的详细信息，请参阅Target指南。
+1. 几小时后，您应该能够在Adobe Analytics中看到Target活动数据和转化情况。 有关[Analytics for Target (A4T)报表](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/reporting)的详细信息，请参阅Target指南。
 
 
 
@@ -261,29 +261,29 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 >[!CAUTION]
 >
->如果您使用Google Chrome并安装了[可视化体验编辑器(VEC) Helper扩展](https://experienceleague.adobe.com/zh-hans/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)，请确保禁用&#x200B;**插入Target库**&#x200B;设置。 启用此设置将导致额外的Target请求。
+>如果您使用Google Chrome并安装了[可视化体验编辑器(VEC) Helper扩展](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)，请确保禁用&#x200B;**插入Target库**&#x200B;设置。 启用此设置将导致额外的Target请求。
 
 1. 打开Adobe Experience Platform Debugger浏览器扩展
 1. 转到[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)并使用调试器[将网站上的标记属性切换到您自己的开发属性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. 重新加载页面
 1. 在调试器中选择&#x200B;**[!UICONTROL 网络]**&#x200B;工具
-1. 按&#x200B;**[!UICONTROL Experience PlatformWeb SDK]**&#x200B;筛选
+1. 按&#x200B;**[!UICONTROL Experience Platform Web SDK]**&#x200B;筛选
 1. 在事件行中为第一次调用选择值
 
    Adobe Experience Platform Debugger中的![网络调用](assets/target-debugger-network.png)
 
-1. 请注意，`query` > `personalization`下有键，`decisionScopes`的值为`__view__`。 此范围等同于`target-global-mbox`。 此Platform Web SDK调用从Target请求决策。
+1. 请注意，`query` > `personalization`下有键，`decisionScopes`的值为`__view__`。 此范围等同于`target-global-mbox`。 此Platform Web SDK调用请求来自Target的决策。
 
    ![`__view__` decisionScope请求](assets/target-debugger-view-scope.png)
 
 1. 关闭叠加并选择第二次网络调用的事件详细信息。 此调用仅在Target返回活动时存在。
-1. 请注意，其中包含有关从Target返回的活动和体验的详细信息。 此Platform Web SDK调用会向用户发送一条通知，告知用户已渲染Target活动，并会增加展示次数。
+1. 请注意，其中包含有关从Target返回的活动和体验的详细信息。 此Platform Web SDK调用会向用户发送一条通知，告知其已将Target活动呈现给用户，并会增加展示次数。
 
    ![目标活动展示](assets/target-debugger-activity-impression.png)
 
 ## 设置和呈现自定义决策范围
 
-自定义决策范围（以前称为“mbox”）可用于通过基于Target表单的HTML编辑器以结构化方式交付体验或JSON内容。 交付给其中一个自定义范围的内容不会由Platform Web SDK自动呈现。 可以使用Tags中的操作渲染。
+自定义决策范围（以前称为“mbox”）可用于通过基于Target表单的体验编辑器，以结构化方式交付HTML或JSON内容。 交付给其中一个自定义范围的内容不会由Platform Web SDK自动呈现。 可以使用Tags中的操作渲染。
 
 ### 向[!UICONTROL 发送事件操作]添加作用域
 
@@ -303,7 +303,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 ### 处理来自Target的响应
 
-现在，您已将Platform Web SDK配置为请求`homepage-hero`范围的内容，必须对响应执行一些操作。 Platform Web SDK标记扩展提供了[!UICONTROL 发送事件完成]事件，当收到来自[!UICONTROL 发送事件]操作的响应时，可使用该事件立即触发新规则。
+现在，您已将Platform Web SDK配置为请求`homepage-hero`范围的内容，必须对响应执行一些操作。 Platform Web SDK标记扩展提供了[!UICONTROL 发送事件完成]事件，该事件可用于在收到[!UICONTROL 发送事件]操作的响应时立即触发新规则。
 
 1. 创建名为`homepage - send event complete - render homepage-hero`的规则。
 1. 向规则添加事件。 使用&#x200B;**Adobe Experience Platform Web SDK**&#x200B;扩展和&#x200B;**[!UICONTROL 发送事件完成]**&#x200B;事件类型。
@@ -405,7 +405,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 1. 在[!UICONTROL 目标和设置]步骤中，选择Adobe Target作为报表源，选择[!UICONTROL 参与] > [!UICONTROL 页面查看次数]作为目标
 1. 保存活动
-1. 如果您对所做更改感到满意，则可以激活活动。 否则，如果要预览体验而不激活，则可以复制[QA预览URL](https://experienceleague.adobe.com/zh-hans/docs/target/using/activities/activity-qa/activity-qa)。
+1. 如果您对所做更改感到满意，则可以激活活动。 否则，如果要预览体验而不激活，则可以复制[QA预览URL](https://experienceleague.adobe.com/en/docs/target/using/activities/activity-qa/activity-qa)。
 1. 加载Luma主页，此时您应会看到所做的更改已应用
 
 >[!NOTE]
@@ -430,7 +430,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
    ![`__view__` decisionScope请求](assets/target-debugger-view-custom-scope.png)
 
 1. 关闭叠加并选择第二次网络调用的事件详细信息。 此调用仅在Target返回活动时存在。
-1. 请注意，其中包含有关从Target返回的活动和体验的详细信息。 此Platform Web SDK调用会向用户发送一条通知，告知用户已渲染Target活动，并会增加展示次数。 它由您之前添加的自定义代码操作启动。
+1. 请注意，其中包含有关从Target返回的活动和体验的详细信息。 此Platform Web SDK调用会向用户发送一条通知，告知其已将Target活动呈现给用户，并会增加展示次数。 它由您之前添加的自定义代码操作启动。
 
    ![目标活动展示](assets/target-debugger-activity-impression.png)
 
@@ -440,7 +440,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 ### 页面(mbox)参数和XDM
 
-所有XDM字段都会作为[页面参数](https://experienceleague.adobe.com/zh-hans/docs/target-dev/developer/implementation/methods/page-parameters)或mbox参数自动传递到Target。
+所有XDM字段都会作为[页面参数](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters)或mbox参数自动传递到Target。
 
 其中一些XDM字段将映射到Target后端中的特殊对象。 例如，`web.webPageDetails.URL`将自动可用于构建基于URL的定位条件，或在创建配置文件脚本时作为`page.url`对象。
 
@@ -450,10 +450,10 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 有些数据点对于没有从XDM对象映射的Target可能很有用。 这些特殊的Target参数包括：
 
-* [用户档案属性](https://experienceleague.adobe.com/zh-hans/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
-* [Recommendations实体属性](https://experienceleague.adobe.com/zh-hans/docs/target/using/recommendations/entities/entity-attributes)
-* [Recommendations保留的参数](https://experienceleague.adobe.com/zh-hans/docs/target/using/recommendations/plan-implement#pass-behavioral)
-* [类别亲和度](https://experienceleague.adobe.com/zh-hans/docs/target/using/audiences/visitor-profiles/category-affinity)的类别值
+* [轮廓属性](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes)
+* [推荐实体属性](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
+* [推荐保留的参数](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
+* [类别亲和度](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)的类别值
 
 这些参数必须在`data`对象中发送，而不是`xdm`对象中发送。 此外，页面（或mbox）参数也可以包含在`data`对象中。
 
@@ -498,7 +498,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 
 Luma网站上的数据层是在tags嵌入代码之前完全定义的。 这样，我们就可以使用单次调用来获取个性化内容(例如从Adobe Target)并发送分析数据(例如发送到Adobe Analytics)。
 
-但是，在许多网站上，数据层的加载时间不够早，或者速度不够快，无法同时为两个应用程序使用一个调用。 在这些情况下，您可以在单个页面加载中使用两个[!UICONTROL 发送事件]操作，并将第一个操作用于个性化，将第二个操作用于分析。 通过这种方式拆分事件，可以尽早触发个性化事件，同时等待数据层完全加载后再发送Analytics事件。 这类似于许多Web SDK之前的实施，在这些实施中，Adobe Target将在页面顶部触发`target-global-mbox`，而Adobe Analytics将在页面底部触发`s.t()`调用
+但是，在许多网站上，数据层的加载时间不够早，或者速度不够快，无法同时为两个应用程序使用一个调用。 在这些情况下，您可以在单个页面加载中使用两个[!UICONTROL 发送事件]操作，并将第一个操作用于个性化，将第二个操作用于分析。 通过这种方式拆分事件，可以尽早触发个性化事件，同时等待数据层完全加载后再发送Analytics事件。 这类似于许多Web前SDK实施，在这些实施中，Adobe Target将在页面顶部触发`target-global-mbox`，而Adobe Analytics将在页面底部触发`s.t()`调用
 
 要创建置顶个性化请求，请执行以下操作：
 
@@ -528,11 +528,11 @@ Luma网站上的数据层是在tags嵌入代码之前完全定义的。 这样�
 
 现在规则已更新，您可以使用Adobe Debugger验证数据是否正确传递。
 
-1. 导航到[Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html)并使用电子邮件`test@adobe.com`和密码`test`登录
+1. 导航到[Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html)并使用电子邮件`test@test.com`和密码`test`登录
 1. 导航到产品详细信息页面
 1. 打开Adobe Experience Platform Debugger浏览器扩展，然后[将标记属性切换到您自己的开发属性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. 重新加载页面
-1. 在Debugger中选择&#x200B;**Network**&#x200B;工具，并按&#x200B;**Adobe Experience Platform Web SDK**&#x200B;进行筛选
+1. 在Debugger中选择&#x200B;**网络**&#x200B;工具，并按&#x200B;**Adobe Experience Platform Web SDK**&#x200B;进行筛选
 1. 在事件行中为第一次调用选择值
 1. 请注意，`data` > `__adobe` > `target`下有密钥，并且其中填充了产品、类别和登录状态的相关信息。
 
@@ -556,19 +556,19 @@ Luma网站上的数据层是在tags嵌入代码之前完全定义的。 这样�
 
    ![在Target配置文件中验证](assets/validate-in-target-profile.png)
 
-如果您具有Target Premium，则还可以验证实体数据是否正确传递，以及产品数据是否已写入Recommendations产品目录。
+如果您具有Target Premium，则还可以验证实体数据是否正确传递，以及产品数据是否已写入推荐产品目录。
 
-1. 导航到&#x200B;**[!UICONTROL Recommendations]**&#x200B;部分
+1. 导航到&#x200B;**[!UICONTROL 推荐]**&#x200B;部分
 1. 在左侧导航中选择&#x200B;**[!UICONTROL 目录搜索]**
 1. 搜索您之前在Luma网站上访问过的产品SKU或产品名称。 产品应显示在产品目录中。 新产品可能需要几分钟才能在Recommendations产品目录中搜索。
 
    ![在Target目录搜索中验证](assets/validate-in-target-catalogsearch.png)
 
-### 使用保证功能进行验证
+### 使用 Assurance 进行验证
 
-此外，您可以酌情使用Assurance ，以确认Target决策请求获得了正确的数据并且任何服务器端转换均正确发生。 您还可以确认营销活动和体验信息包含在Adobe Analytics调用中，即使Target决策调用和Adobe Analytics调用是单独发送也是如此。
+此外，您可以酌情使用Assurance来确认Target决策请求是否获得正确的数据以及是否正确发生任何服务器端转换。 您还可以确认营销活动和体验信息包含在Adobe Analytics调用中，即使Target决策调用和Adobe Analytics调用是单独发送也是如此。
 
-1. 打开[保证](https://experience.adobe.com/assurance)
+1. 打开[Assurance](https://experience.adobe.com/assurance)
 1. 启动新的保证会话，输入&#x200B;**[!UICONTROL 会话名称]**，并为您的网站或您正在测试的任何其他页面输入&#x200B;**[!UICONTROL 基本URL]**
 1. 单击&#x200B;**[!UICONTROL 下一步]**
 
@@ -580,7 +580,7 @@ Luma网站上的数据层是在tags嵌入代码之前完全定义的。 这样�
 
    ![通过复制链接在保证连接中进行验证](assets/validate-in-assurance-copylink.png)
 
-1. 一旦启动保障会话，您就会看到事件选项卡中填充的事件
+1. 启动Assurance会话后，您会看到事件选项卡中填充的事件
 1. 按“tnta”筛选
 1. 选择最近的调用并展开消息以确保正确填充并记下“tnta”值
 
@@ -593,7 +593,7 @@ Luma网站上的数据层是在tags嵌入代码之前完全定义的。 这样�
 
 这可以确认，当我们在页面上稍后触发分析跟踪调用时，已正确发送在我们进行Target决策调用时排队等候稍后传输的A4T信息。
 
-现在，您已完成本课程，应该可以使用Platform Web SDK有效实施Adobe Target。
+现在，您已完成本课程，应该可以使用Platform Web SDK来实施Adobe Target。
 
 [下一步： ](setup-web-channel.md)
 

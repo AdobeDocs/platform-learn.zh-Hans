@@ -8,7 +8,7 @@ feature: Data Ingestion
 jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '2446'
 ht-degree: 0%
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 在开始练习之前，请观看此简短视频，了解有关数据摄取的更多信息：
 
->[!VIDEO](https://video.tv.adobe.com/v/346829?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## 所需的权限
@@ -79,8 +79,8 @@ ht-degree: 0%
 >
 >在本课程的各个屏幕中，您会看到一些选项，**[!UICONTROL 错误诊断]**&#x200B;和&#x200B;**[!UICONTROL 部分摄取]**。 本教程中未介绍这些选项。 一些快速信息：
 >
->* 启用错误诊断会生成有关数据摄取的数据，然后您可以使用数据访问API查看这些数据。 有关详情，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=zh-Hans)。
->* 部分摄取允许您摄取包含错误的数据，最大摄取阈值由您指定。 有关详情，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=zh-Hans)
+>* 启用错误诊断会生成有关数据摄取的数据，然后您可以使用数据访问API查看这些数据。 有关详情，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html)。
+>* 部分摄取允许您摄取包含错误的数据，最大摄取阈值由您指定。 有关详情，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
 ### 验证数据
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 ![数据摄取webhook](assets/ingestion-loyalty-webhook.png)
 
-有关通知的更多详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=zh-Hans#available-status-notification-events)。
+有关通知的更多详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events)。
 
 ## 使用平台API批量摄取数据
 
@@ -210,7 +210,7 @@ ht-degree: 0%
 
 ![批次预览](assets/ingestion-crm-preview.png)
 
-最后，通过按照`Luma CRM Id`命名空间查找其中一个配置文件来确认您的其中一个配置文件已创建，例如`112ca06ed53d3db37e4cea49cc45b71e`
+最后，通过按照`Luma CRM Id`命名空间查找其中一个配置文件来确认您的其中一个配置文件已创建，例如`b642b4217b34b1e8d3bd915fc65c4452`
 
 ![已摄取配置文件](assets/ingestion-crm-profile.png)
 
@@ -226,7 +226,7 @@ ht-degree: 0%
 
 ![数据摄取webhook](assets/ingestion-crm-webhook.png)
 
-有关通知的更多详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=zh-Hans#available-status-notification-events)。
+有关通知的更多详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events)。
 
 ## 通过工作流引入数据
 
@@ -242,14 +242,14 @@ ht-degree: 0%
 现在，让我们设置工作流：
 
 1. 在左侧导航中转到&#x200B;**[!UICONTROL 工作流]**
-1. 选择&#x200B;**[!UICONTROL 将CSV映射到XDM架构]**&#x200B;并选择&#x200B;**[!UICONTROL 启动]**&#x200B;按钮
+1. 选择&#x200B;**[!UICONTROL 将CSV映射到XDM架构]**&#x200B;并选择&#x200B;**[!UICONTROL 启动]**按钮
    ![启动工作流](assets/ingestion-products-launchWorkflow.png)
-1. 选择您的`Luma Product Catalog Dataset`并选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮
+1. 选择您的`Luma Product Catalog Dataset`并选择&#x200B;**[!UICONTROL 下一步]**按钮
    ![选择您的数据集](assets/ingestion-products-selectDataset.png)
-1. 添加您下载的`luma-products.csv`文件并选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮
+1. 添加您下载的`luma-products.csv`文件并选择&#x200B;**[!UICONTROL 下一步]**按钮
    ![选择您的数据集](assets/ingestion-products-selectData.png)
 1. 现在您位于映射器界面中，可以在其中将源数据（`luma-products.csv`文件中的列名之一）中的字段映射到目标架构中的XDM字段。 在我们的示例中，列名称与架构字段名称足够接近，因此映射器能够自动检测正确的映射！ 如果映射器无法自动检测右字段，则可以选择目标字段右侧的图标以选择正确的XDM字段。 此外，如果您不想从CSV摄取其中一列，则可以从映射器中删除该行。 欢迎在`luma-products.csv`中随意玩耍和更改列标题，以熟悉映射器的工作方式。
-1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;按钮
+1. 选择&#x200B;**[!UICONTROL 完成]**按钮
    ![选择您的数据集](assets/ingestion-products-mapper.png)
 
 ### 验证数据
@@ -282,7 +282,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->我们将在本练习中使用的离线购买数据包含日期时间数据。 日期时间数据应采用[ISO 8061格式字符串](https://www.iso.org/iso-8601-date-and-time-format.html)&#x200B;(&quot;2018-07-10T15:05:59.000-08:00&quot;)或以毫秒(1531263959000)为单位的Unix时间格式，并在摄取时转换为目标XDM类型。 有关数据转换和其他约束的详细信息，请参阅[批次摄取API文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=zh-Hans#types)。
+>我们将在本练习中使用的离线购买数据包含日期时间数据。 日期时间数据应采用[ISO 8061格式字符串](https://www.iso.org/iso-8601-date-and-time-format.html)&#x200B;(&quot;2018-07-10T15:05:59.000-08:00&quot;)或以毫秒(1531263959000)为单位的Unix时间格式，并在摄取时转换为目标XDM类型。 有关数据转换和其他约束的详细信息，请参阅[批次摄取API文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types)。
 
 ### 下载、准备数据并将其上传到您首选的云存储供应商
 
@@ -296,25 +296,25 @@ ht-degree: 0%
 
 1. 在Platform用户界面中，将[!UICONTROL 源]目录筛选为&#x200B;**[!UICONTROL 云存储]**
 1. 请注意，`...`下有指向文档的便捷链接
-1. 在首选云存储供应商的框中，选择&#x200B;**[!UICONTROL 配置]**&#x200B;按钮
+1. 在首选云存储供应商的框中，选择&#x200B;**[!UICONTROL 配置]**按钮
    ![选择配置](assets/ingestion-offline-selectFTP.png)
 1. **[!UICONTROL 身份验证]**&#x200B;是第一步。 输入帐户的名称，例如`Luma's FTP Account`和身份验证详细信息。 对于所有云存储源，此步骤应该都非常相似，尽管字段可能略有不同。 输入帐户的身份验证详细信息后，您可以将其重新用于其他源连接，这些源连接可能按不同计划发送与同一帐户中其他文件不同的数据
 1. 选择&#x200B;**[!UICONTROL 连接到源按钮]**
-1. 当平台成功连接到Source时，选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮
+1. 当平台成功连接到Source时，选择&#x200B;**[!UICONTROL 下一步]**按钮
    ![验证源](assets/ingestion-offline-authentication.png)
 
 1. 在&#x200B;**[!UICONTROL 选择数据]**&#x200B;步骤中，用户界面将使用您的凭据打开云存储解决方案上的文件夹
 1. 选择要摄取的文件，例如`luma-offline-purchases.json`
 1. 选择`XDM JSON`作为&#x200B;**[!UICONTROL 数据格式]**
 1. 然后，您可以预览文件中的json结构和示例数据
-1. 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮
+1. 选择&#x200B;**[!UICONTROL 下一步]**按钮
    ![选择您的数据文件](assets/ingestion-offline-selectData.png)
 
-1. 在&#x200B;**[!UICONTROL 映射]**&#x200B;步骤中，选择您的`Luma Offline Purchase Events Dataset`并选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮。 在消息中请注意，由于我们要摄取的数据是JSON文件，因此没有将源字段映射到目标字段的映射步骤。 JSON数据必须已位于XDM中。 如果您正在摄取CSV，您将在以下步骤中看到完整映射用户界面：
+1. 在&#x200B;**[!UICONTROL 映射]**&#x200B;步骤中，选择您的`Luma Offline Purchase Events Dataset`并选择&#x200B;**[!UICONTROL 下一步]**按钮。 在消息中请注意，由于我们要摄取的数据是JSON文件，因此没有将源字段映射到目标字段的映射步骤。 JSON数据必须已位于XDM中。 如果您正在摄取CSV，您将在以下步骤中看到完整映射用户界面：
    ![选择您的数据集](assets/ingestion-offline-mapping.png)
-1. 在&#x200B;**[!UICONTROL 计划]**&#x200B;步骤中，您可以选择从Source中摄取数据的频率。 请花些时间查看相关选项。 我们即将执行一次性摄取，因此将&#x200B;**[!UICONTROL 频率]**&#x200B;保留在&#x200B;**[!UICONTROL 一次]**&#x200B;并选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮：
+1. 在&#x200B;**[!UICONTROL 计划]**&#x200B;步骤中，您可以选择从Source中摄取数据的频率。 请花些时间查看相关选项。 我们即将执行一次性摄取，因此将&#x200B;**[!UICONTROL 频率]**&#x200B;保留在&#x200B;**[!UICONTROL 一次]**&#x200B;并选择&#x200B;**[!UICONTROL 下一步]**按钮：
    ![计划您的数据流](assets/ingestion-offline-scheduling.png)
-1. 在&#x200B;**[!UICONTROL 数据流详细信息]**&#x200B;步骤中，您可以选择数据流名称、输入可选描述、打开错误诊断以及部分摄取。 保持设置不变并选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮：
+1. 在&#x200B;**[!UICONTROL 数据流详细信息]**&#x200B;步骤中，您可以选择数据流名称、输入可选描述、打开错误诊断以及部分摄取。 保持设置不变并选择&#x200B;**[!UICONTROL 下一步]**按钮：
    ![编辑数据流的详细信息](assets/ingestion-offline-detail.png)
 1. 在&#x200B;**[!UICONTROL 审核]**&#x200B;步骤中，您可以同时审核所有设置并进行编辑或选择&#x200B;**[!UICONTROL 完成]**&#x200B;按钮
 1. 保存后，您将登陆到如下屏幕：
@@ -334,12 +334,12 @@ ht-degree: 0%
 
 Adobe与多个ETL供应商合作，支持将数据摄取到Experience Platform中。 由于第三方供应商的多样性，本教程中不包含ETL，但欢迎您查看以下部分资源：
 
-* [为Adobe Experience Platform开发ETL集成](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=zh-Hans)
+* [为Adobe Experience Platform开发ETL集成](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [[!DNL Snaplogic] Adobe Experience Platform快照包](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## 其他资源
 
-* [批次摄取文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=zh-Hans)
+* [批次摄取文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [批次摄取API引用](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 现在，让我们使用Web SDK[流式传输数据](ingest-streaming-data.md)

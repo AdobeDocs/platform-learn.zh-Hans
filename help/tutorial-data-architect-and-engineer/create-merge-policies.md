@@ -11,7 +11,7 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Adobe Experience Platform允许您将来自多个来源的数据整合在一起�
 **数据架构师**&#x200B;需要在本教程之外创建合并策略。
 
 在开始练习之前，请观看此简短视频，了解有关合并策略的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/345074?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## 所需的权限
 
@@ -72,7 +72,7 @@ Adobe Experience Platform允许您将来自多个来源的数据整合在一起�
 1. 对于&#x200B;**[!UICONTROL 属性合并]**，选择&#x200B;**[!UICONTROL 数据集优先顺序]**
 1. 将`Luma Loyalty Dataset`和`Luma CRM Dataset`拖放到&#x200B;**[!UICONTROL 数据集]**&#x200B;面板。
 1. 通过将`Luma Loyalty Dataset`拖放到`Luma CRM Dataset`的上方以确保位于顶部
-1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;按钮
+1. 选择&#x200B;**[!UICONTROL 保存]**按钮
    <!--do i need to explain Private Graph? Is that GA?-->
    ![合并策略](assets/mergepolicies-newPolicy.png)
 
@@ -83,7 +83,7 @@ Adobe Experience Platform允许您将来自多个来源的数据整合在一起�
 1. 转到&#x200B;**[!UICONTROL 浏览]**&#x200B;选项卡
 1. 将&#x200B;**[!UICONTROL 合并策略]**&#x200B;更改为新的`Loyalty Prioritized`策略
 1. 作为&#x200B;**[!UICONTROL 身份命名空间]**，使用您的`Luma CRM Id`
-1. 由于&#x200B;**[!UICONTROL 标识值]**&#x200B;使用`112ca06ed53d3db37e4cea49cc45b71e`
+1. 由于&#x200B;**[!UICONTROL 标识值]**&#x200B;使用`b642b4217b34b1e8d3bd915fc65c4452`
 1. 选择&#x200B;**[!UICONTROL 显示配置文件]**&#x200B;按钮
 1. `Daniel`回来了！
 
@@ -110,7 +110,7 @@ Adobe Experience Platform允许您将来自多个来源的数据整合在一起�
 1. 转到&#x200B;**[!UICONTROL 浏览]**&#x200B;选项卡
 1. 将&#x200B;**[!UICONTROL 合并策略]**&#x200B;更改为新的`Loyalty Only`策略
 1. 作为&#x200B;**[!UICONTROL 身份命名空间]**，使用您的`Luma CRM Id`
-1. 由于&#x200B;**[!UICONTROL 标识值]**&#x200B;使用`112ca06ed53d3db37e4cea49cc45b71e`
+1. 由于&#x200B;**[!UICONTROL 标识值]**&#x200B;使用`b642b4217b34b1e8d3bd915fc65c4452`
 1. 选择&#x200B;**[!UICONTROL 显示配置文件]**&#x200B;按钮
 1. 确认未找到配置文件：
    ![仅忠诚度无CRM Id查找。](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
@@ -140,7 +140,7 @@ CRM ID是`Luma Loyalty Dataset`中的标识字段，但只能使用主标识查�
 
 ## 其他资源
 
-* [合并策略文档](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=zh-Hans)
+* [合并策略文档](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [合并策略API（实时客户个人资料API的一部分）引用](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 现在我们转到[数据治理框架](apply-data-governance-framework.md)。

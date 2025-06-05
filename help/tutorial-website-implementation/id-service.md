@@ -3,7 +3,7 @@ title: 添加包含标记的Adobe Experience Platform Identity服务
 description: 了解如何添加 Adobe Experience Platform Identity Service 扩展，以及如何使用“Set Customer IDs”操作收集客户 ID。本课程是“在网站中实施Experience Cloud”教程的一部分。
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '1945'
 ht-degree: 64%
@@ -12,17 +12,17 @@ ht-degree: 64%
 
 # 添加 Adobe Experience Platform Identity Service
 
-本课程将指导您完成实施 [Adobe Experience Platform Identity Service 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hans)以及发送客户 ID 所需的步骤。
+本课程将指导您完成实施 [Adobe Experience Platform Identity Service 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)以及发送客户 ID 所需的步骤。
 
-[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)在所有Adobe解决方案中设置了一个通用访客ID，以便增强Experience Cloud功能，如解决方案之间的受众共享。 您还可以将自己的客户 ID 发送到该服务，以启用跨设备定位以及与客户关系管理 (CRM) 系统的集成。
+[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)在所有Adobe解决方案中设置了一个通用访客ID，以便增强Experience Cloud功能，如解决方案之间的受众共享。 您还可以将自己的客户 ID 发送到该服务，以启用跨设备定位以及与客户关系管理 (CRM) 系统的集成。
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
-> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)**
-> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)**
+> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 学习目标
 
@@ -90,14 +90,13 @@ Identity Service扩展是少数标记扩展之一，该扩展无需使用规则�
    1. 展开左侧的 `Cookies`
    1. 单击域 `https://luma.enablementadobe.com`
    1. 在右侧查找 AMCV_ Cookie。您可能会看到自那时以来已使用硬编码标记属性以及您自己的属性加载Luma网站的多个。
-
       ![验证 AMCV_ Cookie](images/idservice-AMCVCookie.png)
 
-操作完成！您已添加第一个扩展！有关 Identity Service 配置选项的更多详细信息，请参阅[此文档](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=zh-Hans)。
+操作完成！您已添加第一个扩展！有关 Identity Service 配置选项的更多详细信息，请参阅[此文档](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html)。
 
 ## 发送客户 ID
 
-接下来，您将向 Identity Service 发送[客户 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hans)。这样您就能够[集成 CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans) 与 Experience Cloud，并跨多个设备跟踪访客。
+接下来，您将向 Identity Service 发送[客户 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)。这样您就能够[集成 CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) 与 Experience Cloud，并跨多个设备跟踪访客。
 
 在之前的[添加数据元素、规则和库](add-data-elements-rules.md)课程中，您已创建一个数据元素并将其用在规则中。现在，您将使用这些相同的技术在访客进行身份验证后发送客户 ID。
 
@@ -206,7 +205,7 @@ Adobe Experience Platform Identity Service 使用名为“Set Customer IDs”的
 
    ![添加新操作](images/idservice-customerId-addAction.png)
 
-   1. 对于&#x200B;**[!UICONTROL 扩展]**，选择&#x200B;**[!UICONTROL Experience CloudID服务]**
+   1. 对于&#x200B;**[!UICONTROL 扩展]**，选择&#x200B;**[!UICONTROL Experience Cloud ID服务]**
    1. 对于&#x200B;**[!UICONTROL 操作类型]**，选择&#x200B;**[!UICONTROL 设置客户ID]**
    1. 对于&#x200B;**[!UICONTROL 集成代码]**，输入`crm_id`
    1. 对于&#x200B;**[!UICONTROL Value]**，打开数据元素选择器模式并选择`Email (Hashed)`
@@ -237,7 +236,7 @@ Adobe Experience Platform Identity Service 使用名为“Set Customer IDs”的
 
    ![在顶部导航中单击 LOGIN](images/idservice-loginNav.png)
 
-1. 输入 `test@adobe.com` 作为用户名
+1. 输入 `test@test.com` 作为用户名
 1. 输入 `test` 作为密码
 1. 单击&#x200B;**[!UICONTROL 登录]**&#x200B;按钮
 

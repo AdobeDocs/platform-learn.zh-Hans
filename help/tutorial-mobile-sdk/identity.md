@@ -4,7 +4,7 @@ description: 了解如何在移动应用程序中收集身份数据。
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 25f0df2ea09bb7383f45a698e75bd31be7541754
+source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
 workflow-type: tm+mt
 source-wordcount: '815'
 ht-degree: 1%
@@ -39,13 +39,13 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 >[!NOTE]
 >
->Mobile SDK会在安装应用程序后在自身的命名空间中生成一个唯一标识，名为Experience CloudID (ECID)。 此ECID存储在移动设备上的永久内存中，随每次点击一起发送。 当用户卸载应用程序或将Mobile SDK全局隐私状态设置为选择退出时，将会删除ECID。 在示例Luma应用程序中，您应该删除并重新安装该应用程序，以使用它自己的唯一ECID创建新配置文件。
+>Mobile SDK会在自己的命名空间中生成一个唯一标识，即在安装应用程序时名为Experience Cloud ID (ECID)。 此ECID存储在移动设备上的永久内存中，随每次点击一起发送。 当用户卸载应用程序或将Mobile SDK全局隐私状态设置为选择退出时，将会删除ECID。 在示例Luma应用程序中，您应该删除并重新安装该应用程序，以使用它自己的唯一ECID创建新配置文件。
 
 
 要创建新的身份命名空间，请执行以下操作：
 
 1. 在数据收集界面中，从左边栏导航中选择&#x200B;**[!UICONTROL 标识]**。
-1. 选择&#x200B;**[!UICONTROL 创建身份命名空间]**。
+1. 选择&#x200B;**[!UICONTROL 创建身份标识命名空间]**。
 1. 提供`Luma CRM ID`的&#x200B;**[!UICONTROL 显示名称]**&#x200B;和`lumaCRMId`的&#x200B;**[!UICONTROL 标识符号]**&#x200B;值。
 1. 选择&#x200B;**[!UICONTROL 跨设备ID]**。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
@@ -95,7 +95,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
       ```
 
-   1. 将`IdentityItem`对象作为对Edge Network的`Identity.updateIdentities` API调用的一部分发送。
+   1. 将`IdentityItem`对象作为`Identity.updateIdentities` API调用的一部分发送到Edge Network。
 
       ```swift
       Identity.updateIdentities(with: identityMap) 
@@ -116,7 +116,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 ## 删除身份
 
-您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API从存储的客户端标识映射中删除标识。 Identity扩展停止向Edge Network发送标识符。 使用此API不会从服务器端标识图中删除标识符。 有关身份图的详细信息，请参阅[查看身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=zh-Hans)。
+您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API从存储的客户端标识映射中删除标识。 Identity扩展停止向Edge Network发送标识符。 使用此API不会从服务器端标识图中删除标识符。 有关身份图的详细信息，请参阅[查看身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en)。
 
 1. 在Xcode项目导航器中导航到&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**，并将以下代码添加到`func removeIdentities(emailAddress: String, crmId: String)`函数：
 
@@ -125,7 +125,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
    currentEmailId = "testUser@gmail.com"
-   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
+   currentCRMId = "b642b4217b34b1e8d3bd915fc65c4452"
    ```
 
 1. 在Xcode项目导航器中导航到&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL 登录工作表]**，并找到要在选择&#x200B;**[!UICONTROL 注销]**&#x200B;按钮时执行的代码。 添加以下代码：
@@ -136,11 +136,11 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
    ```
 
 
-## 使用保证功能进行验证
+## 使用 Assurance 进行验证
 
 1. 查看[设置说明](assurance.md#connecting-to-a-session)部分以将模拟器或设备连接到Assurance。
 1. 在Luma应用程序中
-   1. 选择&#x200B;**[!UICONTROL 主页]**&#x200B;选项卡，并将“保证”图标向左移动。
+   1. 选择&#x200B;**[!UICONTROL 主页]**&#x200B;选项卡，并将Assurance图标向左移动。
    1. 选择 右上角的<img src="assets/login.png" width="15" />图标。
 
       <img src="./assets/identity1.png" width="300">
@@ -153,7 +153,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 
 1. 在Assurance Web界面中查找来自&#x200B;**[!UICONTROL com.adobe.griffon.mobile]**&#x200B;供应商的&#x200B;**[!UICONTROL Edge标识更新标识]**&#x200B;事件。
-1. 选择事件并查看&#x200B;**[!UICONTROL ACPExtensionEventData]**&#x200B;对象中的数据。 您应该会看到已更新的身份。
+1. 选择事件并查看&#x200B;**[!UICONTROL ACPExtensionEventData]**对象中的数据。 您应该会看到已更新的身份。
    ![验证标识更新](assets/identity-validate-assurance.png)
 
 ## 使用身份图进行验证
@@ -174,7 +174,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 >[!SUCCESS]
 >
->现在，您已设置应用程序以更新Edge Network中的身份和（设置后）Adobe Experience Platform。
+>现在，您已设置应用程序以在Edge Network中和（设置后）使用Adobe Experience Platform更新身份。
 >
 >感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享这些内容
 
