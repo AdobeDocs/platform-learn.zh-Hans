@@ -116,7 +116,7 @@ Adobe Experience Platform Identity Service通过跨设备和系统桥接身份�
 
 ## 删除身份
 
-您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API从存储的客户端标识映射中删除标识。 Identity扩展停止向Edge Network发送标识符。 使用此API不会从服务器端标识图中删除标识符。 有关身份图的详细信息，请参阅[查看身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en)。
+您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API从存储的客户端标识映射中删除标识。 Identity扩展停止向Edge Network发送标识符。 使用此API不会从服务器端标识图中删除标识符。 有关身份图的详细信息，请参阅[查看身份图](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=zh-Hans)。
 
 1. 在Xcode项目导航器中导航到&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**，并将以下代码添加到`func removeIdentities(emailAddress: String, crmId: String)`函数：
 
