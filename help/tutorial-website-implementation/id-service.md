@@ -90,6 +90,7 @@ Identity Service扩展是少数标记扩展之一，该扩展无需使用规则�
    1. 展开左侧的 `Cookies`
    1. 单击域 `https://luma.enablementadobe.com`
    1. 在右侧查找 AMCV_ Cookie。您可能会看到自那时以来已使用硬编码标记属性以及您自己的属性加载Luma网站的多个。
+
       ![验证 AMCV_ Cookie](images/idservice-AMCVCookie.png)
 
 操作完成！您已添加第一个扩展！有关 Identity Service 配置选项的更多详细信息，请参阅[此文档](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html)。

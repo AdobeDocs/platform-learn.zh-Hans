@@ -106,8 +106,8 @@ Analytics产品字符串的各个部分通过`productListItems`对象下的不�
 >[!NOTE]
 >
 >自2022年8月18日起，`productListItems[].SKU`优先映射到s.products变量中的产品名称。
->>仅当`productListItems[].SKU`不存在时，设置为`productListItems[].name`的值才会映射到产品名称。 否则，它将被取消映射，并可用于上下文数据。
->>请勿将空字符串或null设置为`productListItems[].SKU`。 这会产生不需要的效果，即映射到s.products变量中的产品名称。
+>&#x200B;>仅当`productListItems[].SKU`不存在时，设置为`productListItems[].name`的值才会映射到产品名称。 否则，它将被取消映射，并可用于上下文数据。
+>&#x200B;>请勿将空字符串或null设置为`productListItems[].SKU`。 这会产生不需要的效果，即映射到s.products变量中的产品名称。
 
 
 ### 在数据对象中设置变量
@@ -254,7 +254,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 将&#x200B;**[!UICONTROL 扩展]**&#x200B;保留为&#x200B;**[!UICONTROL 核心]**
 
-1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;]**的**[!UICONTROL &#x200B;路径
+1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;**的**&#x200B;路径
 
 1. 在右侧，将&#x200B;**[!UICONTROL 正则表达式]**&#x200B;切换保持禁用状态
 
@@ -443,13 +443,13 @@ Adobe Experience Platform Assurance可帮助您检查、验证、模拟和验证
 要验证Adobe Analytics是否正在捕获ECID，请选择一个信标并打开有效负载。  此信标的供应商应为&#x200B;**[!UICONTROL com.adobe.analytics.hitdebugger]**
 使用Assurance进行![Adobe Analytics验证](assets/assurance-hitdebugger-payload.png)
 
-然后向下滚动到&#x200B;**[!UICONTROL mcvisId]**以验证是否正确捕获了ECID
+然后向下滚动到&#x200B;**[!UICONTROL mcvisId]**&#x200B;以验证是否正确捕获了ECID
 使用Assurance进行![Experience Cloud ID验证](assets/assurance-hitdebugger-mcvisId.png)
 
 ### 内容页面查看次数验证
 
 使用相同的信标，验证内容页面查看是否已映射到正确的Adobe Analytics变量。
-向下滚动到**[!UICONTROL pageName]**&#x200B;以验证是否正确捕获了`Page Name`
+向下滚动到&#x200B;**[!UICONTROL pageName]**&#x200B;以验证是否正确捕获了`Page Name`
 使用Assurance进行![页面名称验证](assets/assurance-hitdebugger-content-pagename.png)
 
 ### 产品字符串和电子商务事件验证

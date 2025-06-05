@@ -72,7 +72,7 @@ Adobe Experience Platform允许您将来自多个来源的数据整合在一起�
 1. 对于&#x200B;**[!UICONTROL 属性合并]**，选择&#x200B;**[!UICONTROL 数据集优先顺序]**
 1. 将`Luma Loyalty Dataset`和`Luma CRM Dataset`拖放到&#x200B;**[!UICONTROL 数据集]**&#x200B;面板。
 1. 通过将`Luma Loyalty Dataset`拖放到`Luma CRM Dataset`的上方以确保位于顶部
-1. 选择&#x200B;**[!UICONTROL 保存]**按钮
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;按钮
    <!--do i need to explain Private Graph? Is that GA?-->
    ![合并策略](assets/mergepolicies-newPolicy.png)
 
