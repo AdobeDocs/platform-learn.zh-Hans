@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a5742f724a818b05f30d7550f36c162223855d66
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '1944'
 ht-degree: 0%
 
 ---
@@ -193,7 +193,7 @@ Adobe Firefly Services当前支持以下域：
 ![Azure存储](./images/az22.png){zoomable="yes"}
 
 返回Postman打开请求&#x200B;**POST - Firefly - T2I (styleref) V3**。
-这出现在&#x200B;**正文**&#x200B;中。
+这出现在**正文**&#x200B;中。
 
 ![Azure存储](./images/az23.png){zoomable="yes"}
 
@@ -233,7 +233,7 @@ Adobe Firefly Services当前支持以下域：
 
 ![Azure存储](./images/az29.png){zoomable="yes"}
 
-使用&#x200B;**SAS-token**&#x200B;将文件上传到您的Azure存储帐户。
+使用&#x200B;**SAS令牌URL**&#x200B;将文件上传到您的Azure存储帐户。
 
 返回Postman，选择文件夹&#x200B;**FF - Firefly Services Tech Insiders**，然后在&#x200B;**Firefly**&#x200B;文件夹中选择&#x200B;**...**，然后选择&#x200B;**添加请求**。
 
@@ -345,7 +345,7 @@ URL当前看起来像这样，但需要更改。
 
 ![Azure存储](./images/az102.png){zoomable="yes"}
 
-复制URL并将其写到计算机上的文件中，以获得具有读取权限的长期SAS令牌。
+复制URL并将其写到计算机上的文件中，以获得具有读/写权限的长期SAS令牌。
 
 ![Azure存储](./images/az103.png){zoomable="yes"}
 

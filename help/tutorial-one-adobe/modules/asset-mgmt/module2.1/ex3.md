@@ -4,9 +4,9 @@ description: 设置您的AEM CS环境
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: dd075b0296c6ba06d72b229145635060c2c6abb1
+source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '991'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ ZZZ = `citisignal`
 
 您现在需要访问AEM的&#x200B;**CRX包管理器**&#x200B;环境。 为此，请从URL中删除`ui#/aem/aem/start.html?appId=aemshell`并将其替换为`crx/packmgr`，这意味着您的URL现在应如下所示：
 `https://author-p148073-e1511503.adobeaemcloud.com/crx/packmgr`。
-按&#x200B;**Enter**&#x200B;以加载包管理器环境
+按**Enter**&#x200B;以加载包管理器环境
 
 ![AEMCS](./images/aemcssetup22.png){zoomable="yes"}
 
@@ -308,10 +308,10 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup45.png){zoomable="yes"}
 
-现在，在将XXX替换为您的GitHub用户帐户（本例中为`woutervangeluwe`）之后，您可以通过转到`main--citisignal--XXX.aem.page/us/en`和/或`main--citisignal--XXX.aem.live/us/en`来访问您的网站。
+现在，在将XXX替换为您的GitHub用户帐户（本例中为`woutervangeluwe`）之后，您可以通过转到`main--citisignal--XXX.aem.page/us/en/`和/或`main--citisignal--XXX.aem.live/us/en/`来访问您的网站。
 
 在此示例中，完整URL将变为：
-`https://main--citisignal--woutervangeluwe.aem.page/us/en`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en`。
+`https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
 
 可能需要一些时间才能正确显示所有资源，因为它们需要先发布。
 
@@ -323,7 +323,7 @@ ZZZ = `citisignal`
 
 ![AEMCS](./images/aemcssetup47.png){zoomable="yes"}
 
-## 1.1.3.7测试页面性能
+## 1.1.3.7测试页性能
 
 转到[https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}。 输入URL并单击&#x200B;**分析**。
 

@@ -3,9 +3,9 @@ title: 快速入门 — 要安装的应用程序
 description: 快速入门 — 要安装的应用程序
 doc-type: multipage-overview
 exl-id: 25f80da8-88c3-4273-962a-476675cf6047
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '212'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,15 @@ ht-degree: 0%
 
 ![Adobe I/O新集成](./images/cc.png)
 
-## Photoshop
+## Adobe Photoshop
 
 打开&#x200B;**Adobe Creative Cloud**&#x200B;应用，转到&#x200B;**应用**。 在计算机上安装Photoshop。
+
+![Adobe I/O新集成](./images/psd.png)
+
+## Adobe Illustrator
+
+打开&#x200B;**Adobe Creative Cloud**&#x200B;应用，转到&#x200B;**应用**。 在计算机上安装Illustrator。
 
 ![Adobe I/O新集成](./images/psd.png)
 

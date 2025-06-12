@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: da6917ec8c4e863e80eef91280e46b20816a5426
+source-git-commit: 1d1ee3462bd890556037c8e24ba2fe94c3423187
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1981'
 ht-degree: 1%
 
 ---
@@ -59,35 +59,27 @@ ht-degree: 1%
 
 ## 1.2.6.2在Frame.io中配置Webhook
 
-转到[https://developer.frame.io/](https://developer.frame.io/){target="_blank"}。 单击&#x200B;**开发人员工具**，然后选择&#x200B;**Webhooks**。
+转到Postman并打开请求&#x200B;**POST — 获取集合** Adobe IO - OAuth **中的访问令牌**。 接下来，单击&#x200B;**发送**&#x200B;以请求新的&#x200B;**access_token**。
 
-![帧IO](./images/aemf7.png)
+![帧IO](./images/frameV4api2.png)
 
-单击&#x200B;**创建Webhook**。
+在左侧菜单中，返回&#x200B;**收藏集**。 在收藏集&#x200B;**Frame.io V4 - Tech Insiders**&#x200B;的文件夹&#x200B;**Webhooks**&#x200B;中打开请求&#x200B;**POST — 创建Webhook**。
 
-![帧IO](./images/aemf8.png)
+转到请求的&#x200B;**正文**。 将字段&#x200B;**name**&#x200B;更改为`--aepUserLdap--  - Fusion to AEM Assets`，然后将字段&#x200B;**url**&#x200B;更改为您从Workfront Fusion复制的Webhook URL的值。
 
-输入以下值：
+单击&#x200B;**发送**。
 
-- **名称**：使用`--aepUserLdap-- - Asset Labels Updated`
-- **URL**：输入您刚刚在Workfront Fusion中创建的webhook的URL
-- **团队**：选择适当的Frame.io团队，在本例中为&#x200B;**一个Adobe教程**。
+![帧IO](./images/framewh1.png)
 
-![帧IO](./images/aemf9.png)
+您的Frame.io V4自定义操作现已创建。
 
-向下滚动并启用&#x200B;**资产标签 — 已更新**&#x200B;旁边的复选框。 单击&#x200B;**提交**。
+![帧IO](./images/framewh2.png)
 
-![帧IO](./images/aemf10.png)
-
-您应该会看到此内容。
-
-![帧IO](./images/aemf11.png)
-
-转到[https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}，然后转到您之前创建的文件夹，该文件夹应命名为`--aepUserLdap--`。 双击以打开在上一个练习中创建的资源。
+转到[https://next.frame.io/project](https://next.frame.io/project){target="_blank"}，然后转到您之前创建的名为`--aepUserLdap--`的项目，并打开文件夹&#x200B;**CitiSignal Fiber Campaign**。 您现在应该会看到上一个练习中创建的资源。
 
 ![帧IO](./images/aemf11a.png)
 
-然后您应该会看到类似这样的内容。 单击字段&#x200B;**无状态**&#x200B;并将状态更改为&#x200B;**正在进行**。
+单击字段&#x200B;**状态**&#x200B;并将状态更改为&#x200B;**进行中**。
 
 ![帧IO](./images/aemf12.png)
 
@@ -113,23 +105,45 @@ ht-degree: 1%
 
 现在，Frame.io与Workfront Fusion之间的通信已通过自定义webhook建立，您应该获得有关其状态标签已更新的资源的更多详细信息。 为此，您将再次使用Workfront Fusion中的Frame.io连接器，类似于上一个练习。
 
-单击&#x200B;**？**&#x200B;模块并输入搜索词`frame`。 单击&#x200B;**Frame.io**。
+将鼠标悬停在&#x200B;**自定义webhook**&#x200B;对象上，然后单击&#x200B;**+**&#x200B;图标以添加另一个模块。
+
+![帧IO](./images/aemf18a.png)
+
+输入搜索词`frame`。 单击&#x200B;**Frame.io**。
 
 ![帧IO](./images/aemf18.png)
 
-单击&#x200B;**Frame.io（旧版）**。
+单击&#x200B;**Frame.io**。
 
 ![帧IO](./images/aemf19.png)
 
-单击&#x200B;**获取资产**。
+单击&#x200B;**进行自定义API调用**。
 
 ![帧IO](./images/aemf20.png)
 
-验证该连接是否设置为您在上一个练习中创建的、应命名为`--aepUserLdap-- - Frame.io Token`的连接。
+验证该连接是否设置为您在上一个练习中创建的、应命名为`--aepUserLdap-- - Adobe I/O - Frame.io S2S`的连接。
 
 ![帧IO](./images/aemf21.png)
 
-接下来，您需要提供&#x200B;**资产ID**。 作为初始&#x200B;**自定义webhook**&#x200B;通信的一部分，Frame.io已将&#x200B;**资源ID**&#x200B;共享到Workfront Fusion，该资源ID可在字段&#x200B;**resource.id**&#x200B;下找到。 选择&#x200B;**resource.id**&#x200B;并单击&#x200B;**确定**。
+对于模块&#x200B;**Frame.io — 进行自定义API调用**，请使用URL： `/v4/accounts/{{1.account.id}}/files/{{1.resource.id}}`。
+
+>[!NOTE]
+>
+>可以使用以下语法手动指定Workfront Fusion中的变量： `{{1.account.id}}`和`{{1.resource.id}}`。 变量中的数字引用场景中的模块。 在此示例中，您可以看到场景中的第一个模块名为&#x200B;**Webhooks**，其序列号为&#x200B;**1**。 这意味着变量`{{1.account.id}}`和`{{1.resource.id}}`将从序列号为1的模块中访问该字段。 序列号有时可能不同，因此，在复制/粘贴此类变量时请务必注意，并始终验证使用的序列号是否正确。
+
+接下来，单击&#x200B;**查询字符串**&#x200B;下的&#x200B;**+添加项**。
+
+![帧IO](./images/aemf21a.png)
+
+输入这些值，然后单击&#x200B;**添加**。
+
+| 键 | 值 |
+|:-------------:| :---------------:| 
+| `include` | `media_links.original` |
+
+![帧IO](./images/aemf21b.png)
+
+您现在应该拥有此项。 单击&#x200B;**确定**。
 
 ![帧IO](./images/aemf22.png)
 
@@ -137,21 +151,36 @@ ht-degree: 1%
 
 ![帧IO](./images/aemf23.png)
 
-切换回Frame.io并单击字段&#x200B;**需要审核**&#x200B;并将状态更改为&#x200B;**正在进行**。
+切换回Frame.io并将状态更改为&#x200B;**正在进行**。
 
 ![帧IO](./images/aemf24.png)
 
-返回到Workfront Fusion并单击&#x200B;**Frame.io — 获取资源**&#x200B;模块上的气泡。 然后，您应该会看到类似的概述。
+返回到Workfront Fusion并单击&#x200B;**Frame.io上的气泡 — 进行自定义API调用**&#x200B;模块。 然后，您应该会看到类似的概述。
 
 ![帧IO](./images/aemf25.png)
 
-在Frame.io提供的资源详细信息中，您可以找到名为&#x200B;**Label**&#x200B;且设置为&#x200B;**in_progress**&#x200B;的字段。 您以后必须使用该字段来配置过滤器。
+接下来，您应该设置一个过滤器，以确保仅对状态为&#x200B;**已批准**&#x200B;的资源渲染PNG文件。 为此，请单击模块&#x200B;**自定义webhook**&#x200B;和&#x200B;**Frame.io之间的**&#x200B;扳手&#x200B;**图标 — 进行自定义API调用**，然后选择&#x200B;**设置过滤器**。
 
-![帧IO](./images/aemf26.png)
+![帧IO](./images/aemf25a.png)
+
+配置以下字段：
+
+- **标签**：使用`Status = Approved`。
+- **条件**： `{{1.metadata.value[]}}`。
+- **基本运算符**：选择&#x200B;**等于**。
+- **值**： `Approved`。
+
+单击&#x200B;**确定**。
+
+![帧IO](./images/aemf35.png)
+
+然后您应该拥有此项。 单击&#x200B;**保存**&#x200B;以保存更改。
+
+![帧IO](./images/aemf35a.png)
 
 ## 1.2.6.4转换为PNG
 
-将鼠标悬停在模块&#x200B;**Frame.io上 — 获取资源**&#x200B;并单击&#x200B;**+**&#x200B;图标。
+将鼠标悬停在模块&#x200B;**Frame.io上 — 进行自定义API调用**&#x200B;并单击&#x200B;**+**&#x200B;图标。
 
 ![帧IO](./images/aemf27.png)
 
@@ -165,13 +194,13 @@ ht-degree: 1%
 
 验证字段&#x200B;**Connection**&#x200B;是否正在使用您之前创建的名为`--aepUserLdap-- - Adobe IO`的连接。
 
-在&#x200B;**Input**&#x200B;下，将字段&#x200B;**Storage**&#x200B;设置为&#x200B;**External**，并将&#x200B;**File Location**&#x200B;设置为使用模块&#x200B;**Frame.io返回的变量** Original **— 获取资源**。
+在&#x200B;**Input**&#x200B;下，将字段&#x200B;**Storage**&#x200B;设置为&#x200B;**External**，并将&#x200B;**File Location**&#x200B;设置为使用模块&#x200B;**Frame.io返回的变量** Original **— 进行自定义API调用**。
 
 接下来，单击&#x200B;**输出**&#x200B;下的&#x200B;**添加项**。
 
 ![帧IO](./images/aemf30.png)
 
-对于&#x200B;**输出**&#x200B;配置，将字段&#x200B;**Storage**&#x200B;设置为&#x200B;**Fusion内部存储**，将&#x200B;**Type**&#x200B;设置为&#x200B;**image/png**。 单击&#x200B;**保存**。
+对于&#x200B;**输出**&#x200B;配置，将字段&#x200B;**Storage**&#x200B;设置为&#x200B;**Fusion内部存储**，将&#x200B;**Type**&#x200B;设置为&#x200B;**image/png**。 单击&#x200B;**添加**。
 
 ![帧IO](./images/aemf31.png)
 
@@ -179,28 +208,9 @@ ht-degree: 1%
 
 ![帧IO](./images/aemf33.png)
 
-单击&#x200B;**保存**&#x200B;以保存更改。
-
-![帧IO](./images/aemf32.png)
-
-接下来，您应该设置一个过滤器，以确保仅对状态为&#x200B;**已批准**&#x200B;的资源渲染PNG文件。 为此，请单击模块&#x200B;**Frame.io — 获取资源**&#x200B;和&#x200B;**Adobe Photoshop — 转换图像格式**&#x200B;之间的&#x200B;**扳手**&#x200B;图标，然后选择&#x200B;**设置过滤器**。
-
-![帧IO](./images/aemf34.png)
-
-配置以下字段：
-
-- **标签**：使用`Is Asset Approved`。
-- **条件**：从&#x200B;**Frame.io的响应中选择字段** Label **— 获取资源**&#x200B;模块。
-- **基本运算符**：选择&#x200B;**等于**。
-- **值**： `approved`。
-
-单击&#x200B;**确定**。
-
-![帧IO](./images/aemf35.png)
-
 单击&#x200B;**保存**&#x200B;以保存更改，然后单击&#x200B;**运行一次**&#x200B;以测试配置。
 
-![帧IO](./images/aemf36.png)
+![帧IO](./images/aemf32.png)
 
 切换回Frame.io并单击字段&#x200B;**In Progress**&#x200B;并将状态更改为&#x200B;**Approved**。
 
@@ -255,11 +265,19 @@ ht-degree: 1%
 
 ![帧IO](./images/aemf47.png)
 
-随后将转到&#x200B;**Developer Console**。 单击&#x200B;**新建技术帐户**。
+转到&#x200B;**工具** > **集成**。
+
+![帧IO](./images/aemf47a.png)
+
+单击&#x200B;**新建技术帐户**。
 
 ![帧IO](./images/aemf48.png)
 
-然后您应该会看到类似这样的内容。 将完整的JSON有效负载复制到剪贴板。
+然后您应该会看到类似这样的内容。 打开新创建的技术帐户。 单击3个点&#x200B;**...**，然后选择&#x200B;**视图**。
+
+![帧IO](./images/aemf48a.png)
+
+然后，您应该会看到类似的技术帐户令牌有效负载。 将完整的JSON有效负载复制到剪贴板。
 
 ![帧IO](./images/aemf50.png)
 
@@ -283,7 +301,7 @@ ht-degree: 1%
 
 ![帧IO](./images/aemf54.png)
 
-输入名称`--aepUserLdap-- - Frame.io PNG`并单击&#x200B;**创建**。
+输入名称`--aepUserLdap-- - CitiSignal Fiber Campaign`并单击&#x200B;**创建**。
 
 ![帧IO](./images/aemf55.png)
 
@@ -291,19 +309,19 @@ ht-degree: 1%
 
 ![帧IO](./images/aemf56.png)
 
-返回到Workfront Fusion，单击&#x200B;**单击此处选择文件夹**，然后选择文件夹`--aepUserLdap-- - Frame.io PNG`。
+返回到Workfront Fusion，选择&#x200B;**单击此处选择文件夹**，然后选择文件夹`--aepUserLdap-- - CitiSignal Fiber Campaign`。
 
 ![帧IO](./images/aemf57.png)
 
-验证目标是否设置为`--aepUserLdap-- - Frame.io PNG`。 然后在&#x200B;**Source文件**&#x200B;下，选择&#x200B;**映射**。
+验证目标是否设置为`--aepUserLdap-- - CitiSignal Fiber Campaign`。 然后在&#x200B;**Source文件**&#x200B;下，选择&#x200B;**映射**。
 
-在&#x200B;**文件名**&#x200B;下，选择变量`{{3.filenames[]}}`。
+在&#x200B;**文件名**&#x200B;下，选择变量`{{3.filenames[1]}}`。
 
-在&#x200B;**数据**&#x200B;下，选择变量`{{3.files[]}}`。
+在&#x200B;**数据**&#x200B;下，选择变量`{{3.files[1]}}`。
 
 >[!NOTE]
 >
->可以使用以下语法手动指定Workfront Fusion中的变量： `{{3.filenames[]}}`。 变量中的数字引用场景中的模块。 在此示例中，您可以看到场景中的第三个模块名为&#x200B;**Adobe Photoshop — 转换图像格式**，其序列号为&#x200B;**3**。 这意味着变量`{{3.filenames[]}}`将访问序列号为3的模块中的字段&#x200B;**文件名[]**。 序列号有时可能不同，因此，在复制/粘贴此类变量时请务必注意，并始终验证使用的序列号是否正确。
+>可以使用以下语法手动指定Workfront Fusion中的变量： `{{3.filenames[1]}}`。 变量中的数字引用场景中的模块。 在此示例中，您可以看到场景中的第三个模块名为&#x200B;**Adobe Photoshop — 转换图像格式**，其序列号为&#x200B;**3**。 这意味着变量`{{3.filenames[1]}}`将访问序列号为3的模块中的字段&#x200B;**文件名[]**。 序列号有时可能不同，因此，在复制/粘贴此类变量时请务必注意，并始终验证使用的序列号是否正确。
 
 单击&#x200B;**确定**。
 

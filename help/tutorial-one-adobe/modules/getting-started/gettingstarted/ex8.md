@@ -4,9 +4,9 @@ description: 快速入门 — Postman设置
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: e95acadeb7a0438f9be056dd426063ac8abc6bc0
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '440'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 ## 安装PostBuster
 
-转到[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542){target="_blank"}。
+转到[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}。
 
 单击以下载&#x200B;**PostBuster**&#x200B;的最新版本。
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 
 ![PostBuster](./images/pb11.png)
 
-复制以下环境占位符并将其粘贴到&#x200B;**基本环境**&#x200B;中。
+复制以下环境占位符，并通过替换其中的内容将其粘贴到&#x200B;**基本环境**&#x200B;中。
 
 ```json
 {
@@ -83,7 +83,8 @@ ht-degree: 2%
 		"additional_info.projectedProductContext", 
 		"session",
 		"ff_apis",
-		"firefly_api"
+		"firefly_api",
+		"frame.s2s.all"
 	],
 	"TECHNICAL_ACCOUNT_ID": "",
 	"IMS": "ims-na1.adobelogin.com",
@@ -93,7 +94,10 @@ ht-degree: 2%
 	"AZURE_STORAGE_URL": "",
 	"AZURE_STORAGE_CONTAINER": "",
 	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": ""
+	"AZURE_STORAGE_SAS_WRITE": "",
+	"FRAME_IO_BASE_URL": "https://api.frame.io",
+	"FRAME_IO_ACCOUNT_ID": "",
+	"FRAME_IO_WORKSPACE_ID": ""
 }
 ```
 
@@ -105,11 +109,11 @@ ht-degree: 2%
 
 转到[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}并打开您的项目。
 
-![Adobe I/O新集成](./images/iopr.png){zoomable="yes"}
+![Adobe I/O新集成](./images/iopr.png)
 
 转到&#x200B;**OAuth服务器到服务器**。
 
-![Adobe I/O新集成](./images/iopbvar1.png){zoomable="yes"}
+![Adobe I/O新集成](./images/iopbvar1.png)
 
 您现在需要从Adobe I/O项目中复制以下值，并将其粘贴到PostBuster基本环境中。
 
@@ -118,7 +122,7 @@ ht-degree: 2%
 - 技术帐户ID
 - 组织ID（向下滚动以查找您的组织ID）
 
-![Adobe I/O新集成](./images/iopbvar2.png){zoomable="yes"}
+![Adobe I/O新集成](./images/iopbvar2.png)
 
 逐一复制上述变量，并将其粘贴到PostBuster中的&#x200B;**基本环境**&#x200B;中。
 
@@ -129,11 +133,15 @@ ht-degree: 2%
 | 技术帐户ID | `TECHNICAL_ACCOUNT_ID` |
 | 组织 ID | `IMS_ORG` |
 
-逐个复制这些变量后，您的PostBuster基本环境应如下所示：
+逐个复制这些变量后，您的PostBuster基本环境应如下所示。
 
-![Adobe I/O新集成](./images/iopbvar3.png){zoomable="yes"}
+单击&#x200B;**关闭**。
+
+![Adobe I/O新集成](./images/iopbvar3.png)
 
 在&#x200B;**Adobe IO - OAuth**&#x200B;集合中，选择名为&#x200B;**POST — 获取访问令牌**&#x200B;的请求，然后选择&#x200B;**发送**。
+
+![Adobe I/O新集成](./images/iopbvar3a.png)
 
 您应会看到包含以下信息的类似响应：
 
@@ -145,9 +153,9 @@ ht-degree: 2%
 
 Adobe I/O **bearer-token**&#x200B;具有特定值（非常长的access_token）和到期窗口，现在有效期为24小时。 这意味着24小时后，如果您要使用Postman与Adobe API交互，则必须通过再次运行此请求来生成新令牌。
 
-![Adobe I/O新集成](./images/iopbvar4.png){zoomable="yes"}
+![Adobe I/O新集成](./images/iopbvar4.png)
 
-您的PostBuster环境现已设置并正常工作。 您现在已完成入门模块。
+您的PostBuster环境现已配置完毕，可正常使用。 您现在已经完成了此练习。
 
 ## 后续步骤
 

@@ -4,9 +4,9 @@ description: 快速入门 — Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 转到[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}。
 
-![Adobe I/O新集成](./images/iohome.png){zoomable="yes"}
+![Adobe I/O新集成](./images/iohome.png)
 
 确保在屏幕右上角选择正确的实例。 您的实例为`--aepImsOrgName--`。
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 接下来，选择&#x200B;**新建项目**。
 
-![Adobe I/O新集成](./images/iocomp.png){zoomable="yes"}
+![Adobe I/O新集成](./images/iocomp.png)
 
 ### FIREFLY SERVICES API
 
@@ -39,45 +39,45 @@ ht-degree: 0%
 
 您应该会看到此内容。 选择&#x200B;**+添加到项目**&#x200B;并选择&#x200B;**API**。
 
-![Adobe I/O新集成](./images/adobe_io_access_api.png){zoomable="yes"}
+![Adobe I/O新集成](./images/adobe_io_access_api.png)
 
 您的屏幕应如下所示。
 
-![Adobe I/O新集成](./images/api1.png){zoomable="yes"}
+![Adobe I/O新集成](./images/api1.png)
 
 选择&#x200B;**Creative Cloud**&#x200B;并选择&#x200B;**Firefly - Firefly Services**，然后选择&#x200B;**下一步**。
 
-![Adobe I/O新集成](./images/api3.png){zoomable="yes"}
+![Adobe I/O新集成](./images/api3.png)
 
 为您的凭据提供一个名称： `--aepUserLdap-- - One Adobe OAuth credential`并选择&#x200B;**下一步**。
 
-![Adobe I/O新集成](./images/api4.png){zoomable="yes"}
+![Adobe I/O新集成](./images/api4.png)
 
 选择默认配置文件&#x200B;**默认Firefly Services配置**，然后选择&#x200B;**保存配置的API**。
 
-![Adobe I/O新集成](./images/api9.png){zoomable="yes"}
+![Adobe I/O新集成](./images/api9.png)
 
 您应该会看到此内容。
 
-![Adobe I/O新集成](./images/api10.png){zoomable="yes"}
+![Adobe I/O新集成](./images/api10.png)
 
 ### PHOTOSHOP SERVICES API
 
 >[!IMPORTANT]
 >
 >根据您选择的学习路径，您可能无权访问Photoshop Services API。 只有当您位于学习路径&#x200B;**Firefly**、**Workfront Fusion**、**ALL**&#x200B;上或参加&#x200B;**现场研讨会**&#x200B;时，您才有权访问Photoshop Services API。 如果您未按照以下学习路径之一进行学习，则可以跳过此步骤。
-
+>
 选择&#x200B;**+添加到项目**，然后选择&#x200B;**API**。
 
-![Azure存储](./images/ps2.png){zoomable="yes"}
+![Azure存储](./images/ps2.png)
 
 选择&#x200B;**Creative Cloud**，然后选择&#x200B;**Photoshop - Firefly Services**。 选择&#x200B;**下一步**。
 
-![Azure存储](./images/ps3.png){zoomable="yes"}
+![Azure存储](./images/ps3.png)
 
 选择&#x200B;**下一步**。
 
-![Azure存储](./images/ps4.png){zoomable="yes"}
+![Azure存储](./images/ps4.png)
 
 接下来，您需要选择一个产品配置文件，以定义此集成可用的权限。
 
@@ -85,11 +85,11 @@ ht-degree: 0%
 
 选择&#x200B;**保存配置的API**。
 
-![Azure存储](./images/ps5.png){zoomable="yes"}
+![Azure存储](./images/ps5.png)
 
 您应该会看到此内容。
 
-![Adobe I/O新集成](./images/ps7.png){zoomable="yes"}
+![Adobe I/O新集成](./images/ps7.png)
 
 ### ADOBE EXPERIENCE PLATFORM API
 
@@ -99,15 +99,15 @@ ht-degree: 0%
 
 选择&#x200B;**+添加到项目**，然后选择&#x200B;**API**。
 
-![Azure存储](./images/aep1.png){zoomable="yes"}
+![Azure存储](./images/aep1.png)
 
 选择&#x200B;**Adobe Experience Platform**，然后选择&#x200B;**Experience Platform API**。 选择&#x200B;**下一步**。
 
-![Azure存储](./images/aep2.png){zoomable="yes"}
+![Azure存储](./images/aep2.png)
 
 选择&#x200B;**下一步**。
 
-![Azure存储](./images/aep3.png){zoomable="yes"}
+![Azure存储](./images/aep3.png)
 
 接下来，您需要选择一个产品配置文件，以定义此集成可用的权限。
 
@@ -119,11 +119,43 @@ ht-degree: 0%
 
 选择&#x200B;**保存配置的API**。
 
-![Azure存储](./images/aep4.png){zoomable="yes"}
+![Azure存储](./images/aep4.png)
 
 您应该会看到此内容。
 
-![Adobe I/O新集成](./images/aep5.png){zoomable="yes"}
+![Adobe I/O新集成](./images/aep5.png)
+
+### Frame.io API
+
+>[!IMPORTANT]
+>
+>根据您选择的学习路径，您可能无权访问Frame.io API。 只有当您位于学习路径&#x200B;**Workfront Fusion**、**ALL**&#x200B;上或参加&#x200B;**现场研讨会**&#x200B;时，才能访问Frame.io API。 如果您未按照以下学习路径之一进行学习，则可以跳过此步骤。
+
+选择&#x200B;**+添加到项目**，然后选择&#x200B;**API**。
+
+![Azure存储](./images/fiops2.png)
+
+选择&#x200B;**Creative Cloud**&#x200B;并选择&#x200B;**Frame.io API**。 选择&#x200B;**下一步**。
+
+![Azure存储](./images/fiops3.png)
+
+选择&#x200B;**服务器到服务器身份验证**，然后单击&#x200B;**下一步**。
+
+![Azure存储](./images/fiops4.png)
+
+选择&#x200B;**OAuth服务器到服务器**，然后单击&#x200B;**下一步**。
+
+![Azure存储](./images/fiops5.png)
+
+接下来，您需要选择一个产品配置文件，以定义此集成可用的权限。
+
+选择&#x200B;**默认Frame.io Enterprise - Prime配置**，然后单击&#x200B;**保存配置的API**。
+
+![Azure存储](./images/fiops6.png)
+
+您应该会看到此内容。
+
+![Adobe I/O新集成](./images/fiops7.png)
 
 ### 项目名称
 
