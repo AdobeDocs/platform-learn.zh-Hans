@@ -29,7 +29,7 @@ ht-degree: 16%
 
 了解Adobe Real-Time Collaboration，它是一种专门构建的数据协作应用程序，允许您发现和激活高价值受众，并使用测量功能产生切实的成果。
 
->[!VIDEO](https://video.tv.adobe.com/v/3446801?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446811?learn=on&enablevpops&captions=chi_hans)
 
 
 ## 设置
@@ -47,7 +47,7 @@ ht-degree: 16%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="为Real-Time CDP Collaboration设置权限" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1750198179177" alt="为Real-Time CDP Collaboration设置权限"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452240/?format=jpeg&nocache=1750198179177&captions=chi_hans" alt="为Real-Time CDP Collaboration设置权限"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
