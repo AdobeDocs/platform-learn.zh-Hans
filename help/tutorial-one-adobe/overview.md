@@ -3,9 +3,9 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '986'
 ht-degree: 2%
 
 ---
@@ -65,9 +65,13 @@ ht-degree: 2%
 
 [1.2 Creative Fusion的Workfront工作流自动化](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
-在此基础模块中，您将使用Adobe Workfront Fusion来自动化和扩展内容创建工作流。
+在本模块中，您将使用Adobe Workfront Fusion来自动化和扩展内容创建工作流。
 
-[1.3 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+[1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+
+在本模块中，您将使用Adobe GenStudio for Performance Marketing（面向营销和创意团队的面向人工智能的先进端到端工作流应用程序），通过数字营销活动的企业治理来创建、激活和优化全渠道内容。
+
+[1.4 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
 在此基础模块中，您将使用Adobe Express创建图像和视频，并将这些资源共享到更广泛的Adobe Experience Cloud生态系统。
 

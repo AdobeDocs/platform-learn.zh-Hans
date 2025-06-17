@@ -4,9 +4,9 @@ breadcrumb-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: a45283bf5263a6de5c2f83f5be35b7d03ce04d7d
+source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1171'
 ht-degree: 3%
 
 ---
@@ -50,12 +50,16 @@ ht-degree: 3%
       + [1.2.5 Frame.io和Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
       + [1.2.6 Frame.io到Workfront Fusion到AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
-   + 1.3 Adobe Express和Adobe Experience Cloud {#crpr3}
-      + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
-      + [1.3.1 Adobe Express快速入门](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
-      + [1.3.2 Adobe Express中的动画和视频](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
-      + [1.3.3在Adobe Express中批量创建Assets](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+   + 1.3GenStudio for Performance Marketing {#crpr3}
+      + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
+      + [1.3.1 GenStudio for Performance Marketing快速入门](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
+   + 1.4 Adobe Express和Adobe Experience Cloud {#crpr4}
+      + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.4/express.md)
+      + [1.4.1 Adobe Express快速入门](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex1.md)
+      + [1.4.2 Adobe Express中的动画和视频](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex2.md)
+      + [1.4.3在Adobe Express中批量创建Assets](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex3.md)
+      + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.4/summary.md)
 
 + 资产管理 {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}

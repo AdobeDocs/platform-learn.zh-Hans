@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: e22ec4d64c60fdc720896bd8b339f49b05d7e48d
+source-git-commit: a9f2e42d001e260f79439850bc5a364a64d1fc0e
 workflow-type: tm+mt
-source-wordcount: '3182'
+source-wordcount: '3788'
 ht-degree: 0%
 
 ---
@@ -239,13 +239,13 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 现在您拥有了有效且新鲜的access_token，您可以向Firefly Services API发送您的第一个请求了。
 
-您将在此处使用的请求是一个&#x200B;**同步**&#x200B;请求，该请求会在几秒钟内为您提供一个包含所请求图像的响应。
+您将在此处使用的请求是一个&#x200B;**异步**&#x200B;请求，该请求为您提供包含已提交作业的URL的响应，这意味着您将需要使用第二个请求来检查作业的状态并访问生成的图像。
 
 >[!NOTE]
 >
->随着Firefly Image 4和Image 4 Ultra的发布，将弃用同步请求以支持异步请求。 在本教程的后面，您将找到有关异步请求的练习。
+>随着Firefly Image 4和Image 4 Ultra的发布，将弃用同步请求以支持异步请求。
 
-从&#x200B;**FF - Firefly Services技术内部人士**&#x200B;收藏集中选择名为&#x200B;**POST - Firefly - T2I V3**&#x200B;的请求。 转到&#x200B;**标头**&#x200B;并验证键/值对组合。
+从&#x200B;**FF - Firefly Services Tech Insiders**&#x200B;收藏集中选择名为&#x200B;**POST - Firefly - T2I V3 async**&#x200B;的请求。 转到&#x200B;**标头**&#x200B;并验证键/值对组合。
 
 | 键 | 值 |
 |:-------------:| :---------------:| 
@@ -254,7 +254,7 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 此请求中的这两个值都引用了预先定义的环境变量。 `{{API_KEY}}`引用您的Adobe I/O项目的字段&#x200B;**客户端ID**。 在本教程的&#x200B;**快速入门**&#x200B;部分中，您已在Postman中进行配置。
 
-字段&#x200B;**Authorization**&#x200B;的值是位特殊值： `Bearer {{ACCESS_TOKEN}}`。 它包含对您在上一步中生成的&#x200B;**访问令牌**&#x200B;的引用。 当您在&#x200B;**Adobe IO - OAuth**&#x200B;集合中使用请求&#x200B;**POST - Get Access Token**&#x200B;收到&#x200B;**访问令牌**&#x200B;时，Postman中运行了一个脚本，该脚本将字段&#x200B;**access_token**&#x200B;存储为环境变量，该变量现正由请求&#x200B;**POST - Firefly - T2I V3**&#x200B;中引用。 请注意特定添加的&#x200B;**Bearer**&#x200B;一词和`{{ACCESS_TOKEN}}`之前的空格。 单词载体区分大小写，并且需要空格。 如果未正确执行此操作，Adobe I/O将返回&#x200B;**401 Unauthorized**&#x200B;错误，因为它无法正确处理您的&#x200B;**访问令牌**。
+字段&#x200B;**Authorization**&#x200B;的值是位特殊值： `Bearer {{ACCESS_TOKEN}}`。 它包含对您在上一步中生成的&#x200B;**访问令牌**&#x200B;的引用。 当您在&#x200B;**Adobe IO - OAuth**&#x200B;集合中使用请求&#x200B;**POST - Get Access Token**&#x200B;收到&#x200B;**访问令牌**&#x200B;时，Postman中运行了一个脚本，该脚本将字段&#x200B;**access_token**&#x200B;存储为环境变量，该变量现已在请求&#x200B;**POST - Firefly - T2I V3异步**&#x200B;中引用。 请注意特定添加的&#x200B;**Bearer**&#x200B;一词和`{{ACCESS_TOKEN}}`之前的空格。 单词载体区分大小写，并且需要空格。 如果未正确执行此操作，Adobe I/O将返回&#x200B;**401 Unauthorized**&#x200B;错误，因为它无法正确处理您的&#x200B;**访问令牌**。
 
 ![Firefly](./images/ff0.png)
 
@@ -262,7 +262,23 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff1.png)
 
-从响应中复制（或单击）图像URL，然后在Web浏览器中打开该URL以查看图像。
+然后您会立即得到响应。 此响应不包含已生成图像的图像URL，而是包含您启动的作业的状态报告的URL，并且包含另一个允许您取消正在运行的作业的URL。
+
+>[!NOTE]
+>
+>您使用的Postman集合已配置为使用动态变量。 例如，由于在PostmanPostman中配置了&#x200B;**脚本**，字段&#x200B;**statusUrl**&#x200B;已存储为动态变量。
+
+![Firefly](./images/ff1a.png)
+
+要检查正在运行的作业的状态报告，请从&#x200B;**FF - Firefly技术内部人士**&#x200B;集合中选择名为&#x200B;**GET - Firefly Services — 获取状态报告**&#x200B;的请求。 单击以将其打开，然后单击&#x200B;**发送**。 选择所生成图像的URL并在浏览器中将其打开。
+
+>[!NOTE]
+>
+>您使用的Postman集合已配置为使用动态变量。 例如，上一请求的字段&#x200B;**statusUrl**&#x200B;在Postman中存储为动态变量，现在正将其用作&#x200B;**GET - Firefly — 获取状态报告**&#x200B;请求的URL。
+
+![Firefly](./images/ff1b.png)
+
+您应该已经收到了类似的响应。 这是已执行的作业的概述。 您可以看到包含所生成图像的字段&#x200B;**url**。 从响应中复制（或单击）图像URL，然后在Web浏览器中打开该URL以查看图像。
 
 ![Firefly](./images/ff2.png)
 
@@ -270,7 +286,7 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff3.png)
 
-在请求&#x200B;**POST - Firefly - T2I V3**&#x200B;的&#x200B;**Body**&#x200B;中，在字段`"promptBiasingLocaleCode": "en-US"`下添加以下内容，并使用Firefly Services UI随机使用的种子编号之一替换变量`XXX`。 在此示例中，**seed**&#x200B;编号为`142194`。
+在请求&#x200B;**POST - Firefly - T2I V3异步**&#x200B;的&#x200B;**Body**&#x200B;中，在字段`"promptBiasingLocaleCode": "en-US"`下添加以下内容，并使用Firefly Services UI随机使用的种子编号之一替换变量`XXX`。 在此示例中，**seed**&#x200B;编号为`142194`。
 
 ```json
 ,
@@ -279,7 +295,11 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
   ]
 ```
 
-单击&#x200B;**发送**。 然后，您将收到包含Firefly Services生成的新图像的响应。 打开图像以进行查看。
+单击&#x200B;**发送**。 然后，您将再次收到一个响应，其中包含指向您刚刚提交的作业的状态报告的链接。
+
+![Firefly](./images/ff3a.png)
+
+要检查正在运行的作业的状态报告，请从&#x200B;**FF - Firefly技术内部人士**&#x200B;集合中选择名为&#x200B;**GET - Firefly Services — 获取状态报告**&#x200B;的请求。 单击以将其打开，然后单击&#x200B;**发送**。 选择所生成图像的URL并在浏览器中将其打开。
 
 ![Firefly](./images/ff4.png)
 
@@ -287,7 +307,7 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff5.png)
 
-接下来，在请求&#x200B;**POST - Firefly - T2I V3**&#x200B;的&#x200B;**Body**&#x200B;中，将以下&#x200B;**样式**&#x200B;对象粘贴到&#x200B;**seed**&#x200B;对象下。 这会将生成的图像的样式更改为&#x200B;**art_deco**。
+接下来，在请求&#x200B;**POST - Firefly - T2I V3异步**&#x200B;的&#x200B;**Body**&#x200B;中，将以下&#x200B;**样式**&#x200B;对象粘贴到&#x200B;**seed**&#x200B;对象下。 这会将生成的图像的样式更改为&#x200B;**art_deco**。
 
 ```json
 ,
@@ -300,11 +320,11 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
   }
 ```
 
-然后您应该拥有此项。 单击&#x200B;**发送**。
+然后您应该拥有此项。 单击&#x200B;**发送**。 然后，您将再次收到一个响应，其中包含指向您刚刚提交的作业的状态报告的链接。
 
 ![Firefly](./images/ff6.png)
 
-单击图像URL以将其打开。
+要检查正在运行的作业的状态报告，请从&#x200B;**FF - Firefly技术内部人士**&#x200B;集合中选择名为&#x200B;**GET - Firefly Services — 获取状态报告**&#x200B;的请求。 单击以将其打开，然后单击&#x200B;**发送**。 选择所生成图像的URL并在浏览器中将其打开。
 
 ![Firefly](./images/ff7.png)
 
@@ -312,7 +332,7 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff8.png)
 
-从请求的&#x200B;**Body**&#x200B;中删除&#x200B;**seed**&#x200B;对象的代码。 单击&#x200B;**发送**，然后单击从响应中获得的图像URL。
+从&#x200B;**POST - Firefly - T2I V3异步**&#x200B;请求的&#x200B;**Body**&#x200B;中删除&#x200B;**seed**&#x200B;对象的代码。 单击&#x200B;**发送**，然后单击从响应中获得的图像URL。 然后，您将再次收到一个响应，其中包含指向您刚刚提交的作业的状态报告的链接。
 
 ```json
 ,
@@ -323,13 +343,17 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff9.png)
 
+要检查正在运行的作业的状态报告，请从&#x200B;**FF - Firefly技术内部人士**&#x200B;集合中选择名为&#x200B;**GET - Firefly Services — 获取状态报告**&#x200B;的请求。 单击以将其打开，然后单击&#x200B;**发送**。 选择所生成图像的URL并在浏览器中将其打开。
+
+![Firefly](./images/ff9a.png)
+
 您的图像现在又发生了一些更改。
 
 ![Firefly](./images/ff10.png)
 
 ## 1.1.1.7 Firefly Services API，一般扩展
 
-从&#x200B;**FF - Firefly Services技术内部人士**&#x200B;集合中选择名为&#x200B;**POST - Firefly - Gen Expand**&#x200B;的请求，并转到该请求的&#x200B;**正文**。
+从&#x200B;**FF - Firefly Services Tech Insiders**&#x200B;集合中选择名为&#x200B;**POST - Firefly - Gen Expand异步**&#x200B;的请求，并转到该请求的&#x200B;**正文**。
 
 - **大小**：输入所需分辨率。 此处输入的值应大于图像的原始大小，且不能大于3999。
 - **image.source.url**：此字段需要指向需要扩展的图像的链接。 在此示例中，变量用于引用上一个练习中生成的图像。
@@ -339,7 +363,11 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff11.png)
 
-单击响应中包含的图像URL。
+然后，您将再次收到一个响应，其中包含指向您刚刚提交的作业的状态报告的链接。
+
+![Firefly](./images/ff11a.png)
+
+要检查正在运行的作业的状态报告，请从&#x200B;**FF - Firefly技术内部人士**&#x200B;集合中选择名为&#x200B;**GET - Firefly Services — 获取状态报告**&#x200B;的请求。 单击以将其打开，然后单击&#x200B;**发送**。 选择所生成图像的URL并在浏览器中将其打开。
 
 ![Firefly](./images/ff12.png)
 
@@ -347,9 +375,27 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ![Firefly](./images/ff13.png)
 
-当更改放置的对齐方式时，输出也将略有不同。 在此示例中，位置被更改为&#x200B;**左，底部**。 单击&#x200B;**发送**，然后单击以打开生成的图像URL。
+使用&#x200B;**Firefly - T2I V3异步**&#x200B;请求生成新图像。
+
+![Firefly](./images/ff13a.png)
+
+要检查正在运行的作业的状态报告，请从&#x200B;**FF - Firefly技术内部人士**&#x200B;集合中选择名为&#x200B;**GET - Firefly Services — 获取状态报告**&#x200B;的请求。 单击以将其打开，然后单击&#x200B;**发送**。 选择所生成图像的URL并在浏览器中将其打开。
+
+![Firefly](./images/ff13b.png)
+
+然后，您应该会看到类似图像。
+
+![Firefly](./images/ff13c.png)
+
+从&#x200B;**FF - Firefly Services Tech Insiders**&#x200B;集合中选择名为&#x200B;**POST - Firefly - Gen Expand异步**&#x200B;的请求，并转到该请求的&#x200B;**正文**。
+
+当更改放置的对齐方式时，输出也将略有不同。 在此示例中，位置被更改为&#x200B;**左，底部**。 单击&#x200B;**发送**。 然后，您将再次收到一个响应，其中包含指向您刚刚提交的作业的状态报告的链接。
 
 ![Firefly](./images/ff14.png)
+
+要检查正在运行的作业的状态报告，请从&#x200B;**FF - Firefly技术内部人士**&#x200B;集合中选择名为&#x200B;**GET - Firefly Services — 获取状态报告**&#x200B;的请求。 单击以将其打开，然后单击&#x200B;**发送**。 选择所生成图像的URL并在浏览器中将其打开。
+
+![Firefly](./images/ff14a.png)
 
 然后您应该看到原始图像以不同的位置使用，这会影响整个图像。
 
@@ -381,7 +427,7 @@ Firefly Image Model 4为您提供卓越的人类、动物和详细场景图像�
 
 ![Firefly](./images/ffim4_2.png)
 
-然后您会立即得到响应。 与之前使用的同步请求相反，此响应不包含所生成图像的图像URL。 它包含您启动的作业的状态报告的URL，并且包含另一个允许您取消正在运行的作业的URL。
+然后您会立即得到响应。 此响应不包含已生成图像的图像URL，而是包含您启动的作业的状态报告的URL，并且包含另一个允许您取消正在运行的作业的URL。
 
 ![Firefly](./images/ffim4_3.png)
 
