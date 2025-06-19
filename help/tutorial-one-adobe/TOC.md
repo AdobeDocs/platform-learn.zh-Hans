@@ -4,9 +4,9 @@ breadcrumb-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1179'
 ht-degree: 3%
 
 ---
@@ -52,7 +52,9 @@ ht-degree: 3%
       + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
    + 1.3GenStudio for Performance Marketing {#crpr3}
       + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
-      + [1.3.1 GenStudio for Performance Marketing快速入门](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
+      + [1.3.1配置：品牌](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
+      + [1.3.2配置：角色、产品和模板](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+      + [1.3.3 Campaign对元数据的激活](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
    + 1.4 Adobe Express和Adobe Experience Cloud {#crpr4}
       + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.4/express.md)

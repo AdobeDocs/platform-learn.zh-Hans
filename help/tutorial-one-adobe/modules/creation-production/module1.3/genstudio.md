@@ -5,10 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
 workflow-type: tm+mt
-source-wordcount: '86'
-ht-degree: 11%
+source-wordcount: '106'
+ht-degree: 9%
 
 ---
 
@@ -21,9 +21,13 @@ ht-degree: 11%
 
 ## 练习
 
-[1.3.1 GenStudio for Performance Marketing快速入门](./ex1.md){target="_blank"}
+[1.3.1配置：品牌](./ex1.md){target="_blank"}
 
-在本练习中，探索GenStudio for Performance Marketing。
+在本练习中，您将在GenStudio for Performance Marketing中配置CitiSignal品牌。
+
+[1.3.2配置：角色、产品和模板](./ex2.md){target="_blank"}
+
+在本练习中，您将配置GenStudio for Performance Marketing中的角色和产品。
 
 [摘要和优点](./summary.md){target="_blank"}
 

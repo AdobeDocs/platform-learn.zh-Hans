@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: badef353b0df7b678e05d2e89280393b56fd65b6
+source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
 workflow-type: tm+mt
-source-wordcount: '3367'
+source-wordcount: '3352'
 ht-degree: 0%
 
 ---
@@ -470,7 +470,7 @@ ht-degree: 0%
 ![帧IO](./images/frame69.png)
 
 将&#x200B;**Body type**&#x200B;设置为&#x200B;**Raw**&#x200B;并将&#x200B;**Content type**&#x200B;设置为&#x200B;**JSON (application/json)**。
-将以下JSON有效负载粘贴到字段&#x200B;**请求内容**&#x200B;中，并启用&#x200B;**分析响应**&#x200B;的复选框。
+将以下JSON有效负载粘贴到字段**请求内容**&#x200B;中，并启用&#x200B;**分析响应**&#x200B;的复选框。
 
 ```json
 {
@@ -524,14 +524,12 @@ ht-degree: 0%
 
 对于模块&#x200B;**Frame.io — 进行自定义API调用**，请使用URL： `/v4/accounts/{{1.account_id}}/folders/{{4.body.data.parent_id}}/files/remote_upload`。
 
-您需要用文件夹的ID替换上述URL中的XXX
-
 >[!NOTE]
 >
 >如前所述，可以使用以下语法手动指定Workfront Fusion中的变量： `{{1.account_id}}`和`{{4.body.data.parent_id}}`。 变量中的数字引用场景中的模块。
->&#x200B;>在此示例中，您可以看到场景中的第一个模块名为&#x200B;**Webhooks**，其序列号为&#x200B;**1**。 这意味着变量`{{1.account_id}}`将从序列号为1的模块中访问该字段。
->&#x200B;>在此示例中，您可以看到场景中的第四个模块名为&#x200B;**Frame.io — 进行自定义API调用**，其序列号为&#x200B;**4**。 这意味着变量`{{4.body.data.parent_id}}`将从序列号为4的模块中访问该字段。
->&#x200B;>如果模块的序列号不同，则必须更新上述URL中的变量以链接到正确的模块。
+>>在此示例中，您可以看到场景中的第一个模块名为&#x200B;**Webhooks**，其序列号为&#x200B;**1**。 这意味着变量`{{1.account_id}}`将从序列号为1的模块中访问该字段。
+>>在此示例中，您可以看到场景中的第四个模块名为&#x200B;**Frame.io — 进行自定义API调用**，其序列号为&#x200B;**4**。 这意味着变量`{{4.body.data.parent_id}}`将从序列号为4的模块中访问该字段。
+>>如果模块的序列号不同，则必须更新上述URL中的变量以链接到正确的模块。
 
 ![帧IO](./images/frame78.png)
 
@@ -551,7 +549,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >可以使用以下语法手动指定Workfront Fusion中的变量： `{{6.data.newPsdTemplate}}`。 变量中的数字引用场景中的模块。 在此示例中，您可以看到方案中的第六个模块名为&#x200B;**HTTP — 发出请求**，其序列号为&#x200B;**6**。 这意味着变量`{{6.data.newPsdTemplate}}`将访问序列号为6的模块中的字段&#x200B;**data.newPsdTemplate**。
->&#x200B;>如果模块的序列号不同，则必须更新上述URL中的变量以链接到正确的模块。
+>>如果模块的序列号不同，则必须更新上述URL中的变量以链接到正确的模块。
 
 单击&#x200B;**确定**。
 
