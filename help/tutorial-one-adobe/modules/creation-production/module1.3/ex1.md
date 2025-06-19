@@ -5,14 +5,21 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 51ad32eb3a017c973d0822b6d1e5a39d5c3947b7
+exl-id: b34c6bbf-4c47-4791-b15e-73b8ba059434
+source-git-commit: b18b2e00f22c0a5ce2f17a95892be344387718e3
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '548'
 ht-degree: 2%
 
 ---
 
 # 1.3.1配置：Brand
+
+品牌可将组织、产品、服务或概念与其他人区分开来。 品牌的某些方面是客观的，如商标，而其他方面则是主观的，如语调。
+
+GenStudio for Performance Marketing利用来自您品牌的丰富品牌信息，将其与产品和角色信息相结合，并构建全面的品牌识别。 此品牌标识用于指导使用Adobe的创作AI技术创建品牌上内容。
+
+要开始创建您自己的品牌，请执行以下步骤。
 
 转到[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 打开&#x200B;**GenStudio**。
 
