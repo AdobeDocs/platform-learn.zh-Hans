@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: b247307c3b01df2b67b2ff4301f0b7d442b725c0
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 >[!IMPORTANT]
 >
 >要完成本练习，您需要有权访问启用了AEM Content Hub的有效AEM Assets CS创作环境。 如果您按照练习[Adobe Experience Manager Cloud Service和Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}，您将有权访问此类环境。
+
+>[!IMPORTANT]
+>
+>要执行本练习中的所有步骤，您需要具有对现有Adobe Workfront环境的访问权限，并且在该环境中，您需要创建项目和审批工作流。 如果您使用Adobe Workfront](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}学习练习[工作流管理，您将拥有所需的设置。
 
 >[!IMPORTANT]
 >
@@ -169,7 +173,7 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsasset5.png)
 
-将CitiSignal徽标放在左上角。
+将CitiSignal徽标放在图像的顶部，中间不远。
 
 ![GSPeM](./images/gsasset6.png)
 
@@ -223,7 +227,124 @@ Zip codes with underserved or dissatisfied cable customers
 
 ## 1.3.3.4创建和批准元广告
 
+在左侧菜单中，转到&#x200B;**创建**。 选择&#x200B;**元**。
+
+![GSPeM](./images/gsad1.png)
+
+选择您之前导入的&#x200B;**元广告**&#x200B;模板（名为`--aepUserLdap---citisignal-meta-ad`）。 单击&#x200B;**使用**。
+
+![GSPeM](./images/gsad2.png)
+
+您应该会看到此内容。 将广告名称更改为`--aepUserLdap-- - Meta Ad Fiber Max`。
+
+在&#x200B;**参数**&#x200B;下，选择以下选项：
+
+- **品牌**： `--aepUserLdap-- - CitiSignal`
+- **语言**： `English (US)`
+- **角色**： `--aepUserLdap-- - Smart Home Families`
+- **产品**： `--aepUserLdap-- - CitiSignal Fiber Max`
+
+单击&#x200B;**从内容中选择**。
+
+![GSPeM](./images/gsad3.png)
+
+选择资源`--aepUserLdap-- - neon rabbit.png`。 单击&#x200B;**使用**。
+
+![GSPeM](./images/gsad4.png)
+
+输入提示`focus on lightning fast internet for big families`并单击&#x200B;**生成**。
+
+![GSPeM](./images/gsad5.png)
+
+然后您应该会看到类似这样的内容。 您的广告现在已准备好进行审查和批准。 为此，请单击&#x200B;**请求审批**，这将连接到Adobe Workfront。
+
+![GSPeM](./images/gsad6.png)
+
+选择您的应名为`--aepUserLdap-- - CitiSignal Fiber Launch`的Adobe Workfront项目。 在&#x200B;**邀请联系人**&#x200B;下输入您自己的电子邮件地址，并确保您的角色已设置为&#x200B;**审批者**。
+
+![GSPeM](./images/gsad7.png)
+
+或者，您也可以使用Adobe Workfront中的现有审批工作流。 为此，请单击&#x200B;**使用模板**&#x200B;并选择模板`--aepuserLdap-- - Approval Workflow`。 单击&#x200B;**发送**。
+
+![GSPeM](./images/gsad8.png)
+
+单击&#x200B;**在Workfront中查看评论**，您现在将被发送到Adobe Workfront校对UI。
+
+![GSPeM](./images/gsad9.png)
+
+在Adobe Workfront Proof UI中，单击&#x200B;**做出决定**。
+
+![GSPeM](./images/gsad10.png)
+
+选择&#x200B;**已批准**&#x200B;并单击&#x200B;**做出决策**。
+
+![GSPeM](./images/gsad11.png)
+
+单击&#x200B;**发布**。
+
+![GSPeM](./images/gsad12.png)
+
+选择您的营销活动`--aepUserLdap-- - CitiSignal Fiber Launch Campaign`并单击&#x200B;**发布**。
+
+![GSPeM](./images/gsad13.png)
+
+单击&#x200B;**在Content**&#x200B;中打开。
+
+![GSPeM](./images/gsad14.png)
+
+现在，4个元广告在&#x200B;**内容** > **体验**&#x200B;下可用。
+
+![GSPeM](./images/gsad15.png)
+
 ## 1.3.3.5将广告发布到元
+
+选择其中一个广告，然后单击&#x200B;**激活**。
+
+![GSPeM](./images/gsmetaad1.png)
+
+从列表中选择一个&#x200B;**Call to action**&#x200B;并输入示例URL。 单击&#x200B;**下一步**。
+
+![GSPeM](./images/gsmetaad3.png)
+
+选择元帐户、链接的Facebook页面、元营销活动和元广告集。
+
+为添加项命名，使用`--aepUserLdap-- Fiber Max Ad`。
+
+单击&#x200B;**下一步**。
+
+![GSPeM](./images/gsmetaad4.png)
+
+单击&#x200B;**发布**。
+
+![GSPeM](./images/gsmetaad5.png)
+
+单击&#x200B;**确定**。
+
+![GSPeM](./images/gsmetaad6.png)
+
+您的广告状态现在设置为&#x200B;**正在发布**，这可能需要几分钟的时间。
+
+![GSPeM](./images/gsmetaad7.png)
+
+几分钟后，广告的状态将更改为&#x200B;**已发布**。 这意味着广告已从GenStudio for Performance Marketing发送到Meta。 这并不意味着广告已经在Meta中发布！ 在Meta Business帐户中制作和发布广告仍有许多步骤需要执行，以便用户在各种元平台上查看。
+
+单击&#x200B;**查看详细信息**。
+
+![GSPeM](./images/gsmetaad8.png)
+
+单击&#x200B;**打开**，您将转到您的元业务帐户。
+
+>[!IMPORTANT]
+>
+>如果您无权访问连接到环境的Meta Business帐户，则无法在Meta中显示此广告。
+
+![GSPeM](./images/gsmetaad9.png)
+
+以下是您刚刚创建，但现在位于Meta中的广告的概述。
+
+![GSPeM](./images/gsmetaad10.png)
+
+您现在已经完成了此练习。
 
 ## 后续步骤
 
