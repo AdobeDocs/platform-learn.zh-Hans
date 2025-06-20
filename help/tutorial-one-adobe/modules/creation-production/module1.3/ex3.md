@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->要执行本练习中的所有步骤，您需要具有对现有Adobe Workfront环境的访问权限，并且在该环境中，您需要创建项目和审批工作流。 如果您使用Adobe Workfront](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}学习练习[工作流管理，您将拥有所需的设置。
+>要执行本练习中的所有步骤，您需要具有对现有Adobe Workfront环境的访问权限，并且在该环境中，您需要创建项目和审批工作流。 如果您使用Adobe Workfront[&#128279;](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}学习练习工作流管理，您将拥有所需的设置。
 
 >[!IMPORTANT]
 >
