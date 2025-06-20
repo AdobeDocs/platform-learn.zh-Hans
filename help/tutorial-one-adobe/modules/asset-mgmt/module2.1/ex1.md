@@ -4,10 +4,10 @@ description: 创建Cloud Manager项目
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 1bcc5123f16dbde30877662159e06d61d75e7287
+source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 4%
+source-wordcount: '360'
+ht-degree: 3%
 
 ---
 
@@ -76,7 +76,34 @@ ht-degree: 4%
 
 然后，您将看到环境详细信息，包括&#x200B;**作者**&#x200B;环境的URL，在下个练习中您将需要该URL。
 
+查看&#x200B;**Content Hub**&#x200B;行，然后选择&#x200B;**单击以激活**。
+
 ![AEMCS](./images/aemcs10.png)
+
+单击&#x200B;**激活**。
+
+![AEMCS](./images/aemcsact1.png)
+
+**Content Hub**&#x200B;激活现已开始。 这可能需要10分钟或更长时间。
+
+![AEMCS](./images/aemcsact2.png)
+
+大约10分钟后，将完成&#x200B;**Content Hub**的激活。
+接下来，查看**Dynamic Media**&#x200B;行，并选择&#x200B;**单击以激活**。
+
+![AEMCS](./images/aemcsact3.png)
+
+单击&#x200B;**激活**。
+
+![AEMCS](./images/aemcsact4.png)
+
+**Dynamic Media**&#x200B;激活现已开始。 这可能需要10分钟或更长时间。
+
+![AEMCS](./images/aemcsact5.png)
+
+大约10分钟后，将完成&#x200B;**Dynamic Media**&#x200B;的激活。
+
+![AEMCS](./images/aemcsact6.png)
 
 管道运行完成后，您可以继续下一个练习。
 
