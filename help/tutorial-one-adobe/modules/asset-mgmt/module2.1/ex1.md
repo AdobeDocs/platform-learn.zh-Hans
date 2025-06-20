@@ -88,8 +88,8 @@ ht-degree: 3%
 
 ![AEMCS](./images/aemcsact2.png)
 
-大约10分钟后，将完成&#x200B;**Content Hub**的激活。
-接下来，查看**Dynamic Media**&#x200B;行，并选择&#x200B;**单击以激活**。
+大约10分钟后，将完成&#x200B;**Content Hub**&#x200B;的激活。
+接下来，查看&#x200B;**Dynamic Media**&#x200B;行，并选择&#x200B;**单击以激活**。
 
 ![AEMCS](./images/aemcsact3.png)
 
