@@ -20,6 +20,6 @@ ht-degree: 0%
 
 了解在Collaboration中创建项目的基础知识，包括简要了解发现、激活和测量。
 
->[!VIDEO](https://video.tv.adobe.com/v/3464033/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464044/?learn=on&enablevpops&captions=chi_hans)
 
 有关详细信息，请访问[文档](https://experienceleague.adobe.com/zh-hans/docs/real-time-cdp-collaboration/using/collaborate/manage-projects){target="_blank"}。
