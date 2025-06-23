@@ -3,10 +3,10 @@ title: 通过Platform Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2107'
-ht-degree: 5%
+source-wordcount: '2307'
+ht-degree: 4%
 
 ---
 
@@ -44,7 +44,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 ## 创建数据集
 
-所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 [数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。
+所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 [数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。
 
 让我们为您的Luma Web事件数据设置一个数据集：
 
@@ -160,14 +160,14 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 >[!INFO]
 >
->  有关Adobe Experience Platform查询服务的更多详细信息，请参阅Platform教程部分中的[浏览数据](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/queries/explore-data)。
+>  有关Adobe Experience Platform查询服务的更多详细信息，请参阅Platform教程部分中的[浏览数据](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
 
 
 ## 为实时客户个人资料启用数据集和架构
 
 对于Real-Time Customer Data Platform和Journey Optimizer的客户，下一步是为实时客户个人资料启用数据集和架构。 来自Web SDK的数据流将是流入Platform的众多数据源之一，并且您希望将Web数据与其他数据源连接以构建360度客户档案。 要了解有关Real-time Customer Profile的更多信息，请观看此短视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/31672?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -252,11 +252,15 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 您现在已为Experience Platform(和Real-Time CDP！启用了Platform Web SDK 还有Journey Optimizer！ 和Customer Journey Analytics！)。
 
+## 创建经Edge评估的受众
+
+建议使用Real-Time Customer Data Platform和Journey Optimizer的客户完成此练习。
+
+将Web SDK数据摄取到Adobe Experience Platform后，可以通过已摄取到Platform的其他数据源来扩充这些数据。 例如，当用户登录到Luma网站时，将在Experience Platform中构建一个身份图，并且所有其他启用配置文件的数据集可能会合并到一起以构建实时客户配置文件。 要查看其实际效果，您将快速在Adobe Experience Platform中创建另一个包含一些忠诚度数据示例的数据集，以便可以将实时客户配置文件与Real-Time Customer Data Platform和Journey Optimizer结合使用。 然后，您将基于此数据构建受众。
+
 ### 创建忠诚度模式并摄取示例数据
 
-Real-Time Customer Data Platform和Journey Optimizer的客户可望完成本练习。
-
-将Web SDK数据摄取到Adobe Experience Platform后，可以通过已摄取到Platform的其他数据源来扩充这些数据。 例如，当用户登录到Luma网站时，将在Experience Platform中构建一个身份图，并且所有其他启用配置文件的数据集可能会合并到一起以构建实时客户配置文件。 要查看其实际效果，请快速在Adobe Experience Platform中创建另一个包含一些忠诚度数据示例的数据集，以便您可以将实时客户配置文件与Real-Time Customer Data Platform和Journey Optimizer结合使用。 由于您已经进行了类似的练习，因此会提供简短的说明。
+由于您已经进行了类似的练习，因此会提供简短的说明。
 
 创建忠诚度模式：
 
@@ -282,9 +286,33 @@ Real-Time Customer Data Platform和Journey Optimizer的客户可望完成本练�
 
    ![忠诚度架构](assets/web-channel-loyalty-dataset.png)
 
+
+### 设置Edge上的活动合并策略
+
+所有受众均使用合并策略创建。 合并策略会创建配置文件的不同“视图”，可以包含数据集的子集，并规定不同数据集贡献相同配置文件属性时的优先级顺序。 要在边缘进行评估，受众必须使用具有&#x200B;**[!UICONTROL Active-On-Edge合并策略]**&#x200B;设置的合并策略。
+
+
+>[!IMPORTANT]
+>
+>每个沙盒只能有一个合并策略，该策略可以具有&#x200B;**[!UICONTROL Active-On-Edge合并策略]**&#x200B;设置
+
+
+1. 打开Experience Platform或Journey Optimizer界面，并确保您使用的是本教程所用的开发环境。
+1. 导航到&#x200B;**[!UICONTROL 客户]** > **[!UICONTROL 配置文件]** > **[!UICONTROL 合并策略]**&#x200B;页面
+1. 打开&#x200B;**[!UICONTROL 默认合并策略]** （可能名为`Default Timebased`）
+   ![创建受众](assets/merge-policy-open-default.png)
+1. 启用&#x200B;**[!UICONTROL Edge上的Active-On合并策略]**&#x200B;设置
+1. 选择&#x200B;**[!UICONTROL 下一步]**
+
+   ![创建受众](assets/merge-policy-set-active-on-edge.png)
+1. 继续选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以继续执行工作流程的其他步骤，并选择&#x200B;**[!UICONTROL 完成]**以保存您的设置
+   ![创建受众](assets/merge-policy-finish.png)
+
+您现在可以创建将在Edge上评估的受众。
+
 ### 创建受众
 
-受众会根据常见特征将用户档案分组在一起。 构建可在Web营销活动中使用的快速受众：
+受众会根据常见特征将用户档案分组在一起。 构建可在Real-Time CDP或Journey Optimizer中使用的简单受众：
 
 1. 在Experience Platform或Journey Optimizer界面中，在左侧导航中转到&#x200B;**[!UICONTROL 客户]** > **[!UICONTROL 受众]**
 1. 选择&#x200B;**[!UICONTROL 创建受众]**
@@ -301,6 +329,11 @@ Real-Time Customer Data Platform和Journey Optimizer的客户可望完成本练�
 1. 选择&#x200B;**[!UICONTROL 保存]**
 
    ![定义受众](assets/web-campaign-define-audience.png)
+
+>[!NOTE]
+>
+> 由于我们已将默认合并策略设置为&#x200B;**[!UICONTROL Edge上的活动合并策略]**，因此您创建的受众将自动与此合并策略关联。
+
 
 由于这是一个非常简单的受众，因此我们可以使用Edge评估方法。 Edge受众会在边缘进行评估，因此在由Web SDK向Platform Edge Network发出的相同请求中，我们可以评估受众定义并立即确认用户是否符合条件。
 

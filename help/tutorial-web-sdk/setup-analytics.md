@@ -4,16 +4,16 @@ description: 了解如何使用Experience Platform Web SDK设置Adobe Analytics�
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
 workflow-type: tm+mt
-source-wordcount: '2865'
+source-wordcount: '2904'
 ht-degree: 1%
 
 ---
 
 # 使用Adobe Experience Platform Web SDK设置Adobe Analytics
 
-了解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/web-sdk/overview)设置Adobe Analytics，创建标记规则以将数据发送到Adobe Analytics，并验证Analytics是否按预期捕获数据。
+了解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)设置Adobe Analytics，创建标记规则以将数据发送到Adobe Analytics，并验证Analytics是否按预期捕获数据。
 
 [Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics)是一款行业领先的应用程序，可帮助您了解客户的行为和需求，并根据客户情报掌控业务发展方向。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 * 熟悉并访问Adobe Analytics。
 
-* 至少具有一个测试/开发报表包ID。 如果您没有可用于本教程的测试/开发报表包，[请创建一个](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
+* 至少具有一个测试/开发报表包ID。 如果您没有可用于本教程的测试/开发报表包，[请创建一个](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
 
 * 完成本教程的初始配置和标记配置部分中之前的课程。
 
@@ -106,8 +106,8 @@ Analytics产品字符串的各个部分通过`productListItems`对象下的不�
 >[!NOTE]
 >
 >自2022年8月18日起，`productListItems[].SKU`优先映射到s.products变量中的产品名称。
->&#x200B;>仅当`productListItems[].SKU`不存在时，设置为`productListItems[].name`的值才会映射到产品名称。 否则，它将被取消映射，并可用于上下文数据。
->&#x200B;>请勿将空字符串或null设置为`productListItems[].SKU`。 这会产生不需要的效果，即映射到s.products变量中的产品名称。
+>>仅当`productListItems[].SKU`不存在时，设置为`productListItems[].name`的值才会映射到产品名称。 否则，它将被取消映射，并可用于上下文数据。
+>>请勿将空字符串或null设置为`productListItems[].SKU`。 这会产生不需要的效果，即映射到s.products变量中的产品名称。
 
 
 ### 在数据对象中设置变量
@@ -254,7 +254,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 将&#x200B;**[!UICONTROL 扩展]**&#x200B;保留为&#x200B;**[!UICONTROL 核心]**
 
-1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;**的**&#x200B;路径
+1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;]**的**[!UICONTROL &#x200B;路径
 
 1. 在右侧，将&#x200B;**[!UICONTROL 正则表达式]**&#x200B;切换保持禁用状态
 
@@ -366,6 +366,10 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 1. 查找`[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`。
 1. 向下滚动以查看`[!UICONTROL gn]`变量。 它是`[!UICONTROL s.pageName]`变量的Analytics动态语法。 它从数据层捕获页面名称。
 
+   >[!NOTE]
+   >
+   > 如果您在之前的练习中使用`data`对象覆盖了`xdm`对象，则`gn`值可能为`test`。
+
    ![Analytics产品字符串](assets/analytics-debugger-edge-page-view.png)
 
 ### 产品字符串和电子商务事件验证
@@ -389,7 +393,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    >[!TIP]
    >
-   > `ecommerce - pdp library loaded - AA (order 20)`规则正在覆盖`all pages global content variables - library loaded - AA (order 1)`规则设置的`eventType`的值，因为该规则设置为稍后在序列中触发
+   > `ecommerce - library loaded - set product details variables - 20`规则正在覆盖`all pages - library loaded - set global variables - 1`规则设置的`eventType`的值，因为该规则设置为稍后在序列中触发
 
 
    ![Analytics产品视图](assets/analytics-debugger-prodView.png)
@@ -443,14 +447,20 @@ Adobe Experience Platform Assurance可帮助您检查、验证、模拟和验证
 要验证Adobe Analytics是否正在捕获ECID，请选择一个信标并打开有效负载。  此信标的供应商应为&#x200B;**[!UICONTROL com.adobe.analytics.hitdebugger]**
 使用Assurance进行![Adobe Analytics验证](assets/assurance-hitdebugger-payload.png)
 
-然后向下滚动到&#x200B;**[!UICONTROL mcvisId]**&#x200B;以验证是否正确捕获了ECID
+然后向下滚动到&#x200B;**[!UICONTROL mcvisId]**以验证是否正确捕获了ECID
 使用Assurance进行![Experience Cloud ID验证](assets/assurance-hitdebugger-mcvisId.png)
 
 ### 内容页面查看次数验证
 
 使用相同的信标，验证内容页面查看是否已映射到正确的Adobe Analytics变量。
-向下滚动到&#x200B;**[!UICONTROL pageName]**&#x200B;以验证是否正确捕获了`Page Name`
-使用Assurance进行![页面名称验证](assets/assurance-hitdebugger-content-pagename.png)
+向下滚动到**[!UICONTROL pageName]**&#x200B;以验证是否正确捕获了`Page Name`：
+
+
+    >[！NOTE]
+    >
+    >如果您在之前的练习中使用“data”对象覆盖了“xdm”对象，则“pageName”值可能为“test”。
+    
+    ![使用Assurance验证页面名称](assets/assurance-hitdebugger-content-pagename.png)
 
 ### 产品字符串和电子商务事件验证
 

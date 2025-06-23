@@ -3,10 +3,10 @@ title: 数据收集教程
 description: 让您成为数据收集高级用户的操作方法视频和教程
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: d818b07dbd7f58254083fd0696b81b0bab1ee9d3
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 22%
+ht-degree: 23%
 
 ---
 
@@ -23,16 +23,62 @@ ht-degree: 22%
 
 <div id="staff-picks-section">
 
+## 实施指南
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+      <img alt="利用 Web SDK 实施 Adobe Experience Cloud" src="assets/thumb_websdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-web-sdk/overview" target="_blank">
+    <strong>使用Web SDK实施Experience Cloud</strong>
+    </a>
+    </div>
+    <p>
+    <em>使用标记实施Platform Web SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <img alt="在移动应用程序中实施" src="assets/thumb_swift.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <strong>在移动应用程序中实施Experience Cloud</strong>
+    </a>
+    </div>
+    <p>
+    <em>使用标记实施Platform Mobile SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <img alt="将Target迁移到Web SDK" src="assets/thumb_legacy.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <strong>使用标记实施旧版库</strong>
+    </a>
+    </div>
+    <p>
+    <em>使用标记实施旧版Analytics、Target和Audience Manager库</em>
+    <p>
+  </td>
+</tr>
+</table>
+
 ## 迁移指南
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="将Target迁移到Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>将Adobe Target迁移到Web SDK</strong>
     </a>
     </div>
@@ -83,52 +129,6 @@ ht-degree: 22%
   <td>
   </td>
   </tr>
-</table>
-
-## 实施指南
-
-<table>
-<tr>
-  <td>
-    <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-      <img alt="利用 Web SDK 实施 Adobe Experience Cloud" src="assets/thumb_websdk.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-web-sdk/overview" target="_blank">
-    <strong>使用Web SDK实施Experience Cloud</strong>
-    </a>
-    </div>
-    <p>
-    <em>使用标记实施Platform Web SDK</em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
-      <img alt="在移动应用程序中实施" src="assets/thumb_swift.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
-    <strong>在移动应用程序中实施Experience Cloud</strong>
-    </a>
-    </div>
-    <p>
-    <em>使用标记实施Platform Mobile SDK</em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-      <img alt="将Target迁移到Web SDK" src="assets/thumb_legacy.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-    <strong>使用标记实施旧版库</strong>
-    </a>
-    </div>
-    <p>
-    <em>使用标记实施旧版Analytics、Target和Audience Manager库</em>
-    <p>
-  </td>
-</tr>
 </table>
 
 </div>
