@@ -16,7 +16,7 @@ ht-degree: 13%
 
 # 查询服务和数据Distiller概述
 
-Adobe Experience Platform查询服务使用户能够使用SQL浏览、验证和转换存储在Data Lake中的客户体验数据，并通过数据Distiller加载项提供增强的功能，如数据输出和计划。 此视频概述了一些核心功能，以帮助用户了解如何跨各种基于平台的应用程序利用查询服务。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)。
+Adobe Experience Platform查询服务使用户能够使用SQL浏览、验证和转换存储在Data Lake中的客户体验数据，并通过数据Distiller加载项提供增强的功能，如数据输出和计划。 此视频概述了一些核心功能，以帮助用户了解如何跨各种基于平台的应用程序利用查询服务。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
 
