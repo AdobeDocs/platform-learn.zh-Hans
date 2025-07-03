@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer — 外部天气API、SMS操作等
 kt: 5342
 doc-type: tutorial
 exl-id: bde4290a-59d1-4471-83a7-1cad69f94ff1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '754'
 ht-degree: 2%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 2%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 然后，您将进入沙盒`--aepSandboxName--`的&#x200B;**主页**&#x200B;视图。
+您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 然后，您将进入沙盒&#x200B;**的**&#x200B;主页`--aepSandboxName--`视图。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 ![演示](./images/evname.png)
 
-接下来，您需要选择一个架构。 此处显示的所有架构都是Adobe Experience Platform架构。
+接下来，您需要选择一个架构。
 
 ![演示](./images/evschema.png)
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 让我们快速了解一下如何在Adobe Experience Platform中定义这些架构。
 
-在左侧菜单中，转到&#x200B;**架构**&#x200B;并在新的浏览器选项卡中打开它。 在&#x200B;**架构**&#x200B;中，转到&#x200B;**浏览**&#x200B;以查看可用架构的列表。
+在左侧菜单中，转到&#x200B;**架构**&#x200B;并在新的浏览器选项卡中打开它。 在&#x200B;**架构**&#x200B;中，转到&#x200B;**浏览**以查看可用架构的列表。
 打开架构`Demo System - Event Schema for Website (Global v1.1)`。
 
 ![数据获取](./images/schemas.png)
@@ -88,7 +88,7 @@ Adobe Journey Optimizer随后将自动选择某些必填字段，但您可以编
 ![演示](./images/popupok.png)
 
 Adobe Journey Optimizer还需要一个标识符来标识客户。 由于Adobe Journey Optimizer已链接到Adobe Experience Platform，因此架构的主要标识符会自动被视为历程的标识符。
-主要标识符还将自动考虑Adobe Experience Platform的完整身份图，并将所有可用身份、设备和渠道的所有行为链接到同一配置文件，以便Adobe Journey Optimizer具有情境性、相关性和一致性。 单击&#x200B;**保存**。
+主要标识符还将自动考虑Adobe Experience Platform的完整身份图，并将所有可用身份、设备和渠道的所有行为链接到同一配置文件，以便Adobe Journey Optimizer具有情境性、相关性和一致性。 单击**保存**。
 
 ![演示](./images/eventidentifier.png)
 
@@ -99,7 +99,7 @@ Adobe Journey Optimizer还需要一个标识符来标识客户。 由于Adobe Jo
 最后，您需要为自定义事件恢复`Orchestration eventID`。
 
 单击事件列表中的事件以再次打开该事件。
-在事件中，单击&#x200B;**字段**&#x200B;旁边的&#x200B;**查看有效负荷**&#x200B;图标。
+在事件中，单击**字段**&#x200B;旁边的&#x200B;**查看有效负荷**&#x200B;图标。
 
 ![演示](./images/fieldseyepayload.png)
 
@@ -109,7 +109,7 @@ Adobe Journey Optimizer还需要一个标识符来标识客户。 由于Adobe Jo
 
 写下`eventID`，因为您最后需要它来测试您的配置。
 
-在此示例中，`eventID`是`4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e`。
+在此示例中，`eventID`是`209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7`。
 
 您现在已定义将触发我们正在构建的历程的事件。 触发历程后，地理围栏字段（如“城市”）和您可能选择的任何其他字段（如“国家/地区”、“纬度”和“经度”）将提供给历程。
 

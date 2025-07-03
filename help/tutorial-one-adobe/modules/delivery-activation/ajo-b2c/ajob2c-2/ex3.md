@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer — 外部天气API、SMS操作等 — 定�
 kt: 5342
 doc-type: tutorial
 exl-id: 92752e84-3bbe-4d11-b187-bd9fdbbee709
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '416'
 ht-degree: 3%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 然后，您将进入沙盒`--aepSandboxName--`的&#x200B;**主页**&#x200B;视图。
+您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 然后，您将进入沙盒&#x200B;**的**&#x200B;主页`--aepSandboxName--`视图。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -54,10 +54,6 @@ ht-degree: 3%
 
 ![演示](./images/slackname.png)
 
-您无需更改标题字段。
-
-![演示](./images/slackurl.png)
-
 **身份验证**&#x200B;应设置为&#x200B;**无身份验证**。
 
 ![演示](./images/slackauth.png)
@@ -84,7 +80,7 @@ ht-degree: 3%
 }
 ```
 
-您随后将看到以下内容：
+你会看到这个。 单击&#x200B;**保存**。
 
 ![演示](./images/slackmsgpopup1.png)
 
@@ -96,7 +92,7 @@ ht-degree: 3%
 
 ![演示](./images/slackdone.png)
 
-您已定义事件、外部数据源和操作。 现在，让我们将所有这些整合到一个历程中。
+您已定义事件、外部数据源和操作。 接下来，您将所有这些合并到一个历程中。
 
 ## 后续步骤
 

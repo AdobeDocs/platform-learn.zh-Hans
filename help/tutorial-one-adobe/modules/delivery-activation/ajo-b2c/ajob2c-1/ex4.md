@@ -4,9 +4,9 @@ description: 更新配置ID并测试历程
 kt: 5342
 doc-type: tutorial
 exl-id: da018975-7421-4d70-b04d-ad8b0597f460
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '634'
 ht-degree: 1%
 
 ---
@@ -15,11 +15,11 @@ ht-degree: 1%
 
 ## 3.1.3.1更新您的数据收集属性
 
-转到[Adobe Experience Platform数据收集](https://experience.adobe.com/launch/)并选择&#x200B;**标记**。
+转到[Adobe Experience Platform数据收集](https://experience.adobe.com/data-collection/home)并选择&#x200B;**标记**。
 
 ![属性页](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-在&#x200B;**快速入门**&#x200B;中，演示系统为您创建了两个客户端属性：一个用于网站，另一个用于移动应用程序。 通过在&#x200B;**[!UICONTROL 搜索]**&#x200B;框中搜索`--aepUserLdap--`来查找它们。 单击以打开&#x200B;**Web**&#x200B;属性。
+在&#x200B;**快速入门**&#x200B;中，Demo System Next为您创建了两个Tags属性，包括一个用于网站的属性和一个用于移动设备应用程序的属性。 通过在`--aepUserLdap-- - One Adobe`搜索&#x200B;**[!UICONTROL 框中搜索]**&#x200B;来查找它们。 单击以打开&#x200B;**Web**&#x200B;属性。
 
 ![搜索框](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ![启动安装程序](./images/rule3.png)
 
-然后，您会看到在触发此操作时，将使用特定的数据元素来定义XDM数据结构。 您需要更新该数据元素，并且需要定义您在[练习3.1.1](./ex1.md)中配置的事件的&#x200B;**事件ID**。
+然后，您会看到在触发此操作时，将使用特定的数据元素来定义XDM数据结构。 您需要更新该数据元素，并且需要定义您在&#x200B;**练习3.1.1**&#x200B;中配置的事件的[事件ID](./ex1.md)。
 
 ![启动安装程序](./images/rule4.png)
 
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 导航到字段`_experience.campaign.orchestration.eventID`。 删除当前值，并将您的eventID粘贴到该处。
 
-提醒一下，您可以在Adobe Journey Optimizer中的&#x200B;**配置>事件**&#x200B;下找到事件ID，您还可以在事件有效负荷中找到事件ID，如下所示： `"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`。
+提醒一下，您可以在Adobe Journey Optimizer中的&#x200B;**配置>事件**&#x200B;下找到事件ID，您还可以在事件有效负荷中找到事件ID，如下所示： `"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`。
 
 ![ACOP](./images/payloadeventID.png)
 

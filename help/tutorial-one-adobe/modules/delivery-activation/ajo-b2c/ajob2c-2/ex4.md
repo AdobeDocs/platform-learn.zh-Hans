@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer — 配置您的历程和消息
 kt: 5342
 doc-type: tutorial
 exl-id: 687eb818-2d50-4293-88e6-7e5945b91db6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1484'
 ht-degree: 4%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 4%
 
 对于这3种情况，您需要在Adobe Journey Optimizer中定义3条消息。
 
-## 3.2.4.1创建历程
+## 3.2.4.1创建您的历程
 
 通过转到[Adobe Experience Cloud](https://experience.adobe.com)登录Adobe Journey Optimizer。 单击&#x200B;**Journey Optimizer**。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 然后，您将进入沙盒`--aepSandboxName--`的&#x200B;**主页**&#x200B;视图。
+您将被重定向到Journey Optimizer中的&#x200B;**主页**&#x200B;视图。 首先，确保使用正确的沙盒。 要使用的沙盒名为`--aepSandboxName--`。 然后，您将进入沙盒&#x200B;**的**&#x200B;主页`--aepSandboxName--`视图。
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
@@ -43,7 +43,7 @@ ht-degree: 4%
 
 ![演示](./images/joname.png)
 
-在屏幕左侧，查看&#x200B;**事件**。 您应会在该列表中看到之前创建的事件。 选择它，然后将其拖放到历程画布上。 您的历程随后将类似于此。 单击&#x200B;**保存**。
+在屏幕左侧，查看&#x200B;**事件**。 您应该会在该列表中看到之前创建的事件，该列表名为`--aepUserLdap--GeofenceEntry`。 选择它，然后将其拖放到历程画布上。 您的历程随后将类似于此。
 
 ![演示](./images/joevents.png)
 
@@ -147,8 +147,8 @@ ht-degree: 4%
 
 ![演示](./images/joct2.png)
 
-双击Path1以将名称更改为&#x200B;**比25 C**&#x200B;热。
-然后，单击此路径中表达式的&#x200B;**编辑**&#x200B;图标。
+双击Path1以将名称更改为&#x200B;**比25 C**热。
+然后，单击此路径中表达式的**编辑**&#x200B;图标。
 
 ![演示](./images/joct6.png)
 
@@ -201,7 +201,7 @@ ht-degree: 4%
 
 ![演示](./images/joa18.png)
 
-转到&#x200B;**操作参数**&#x200B;并单击参数`textToSlack`的&#x200B;**编辑**&#x200B;图标。
+向下滚动到&#x200B;**请求参数**&#x200B;并单击参数&#x200B;**的**&#x200B;编辑`textToSlack`图标。
 
 ![演示](./images/joa19.png)
 
@@ -215,13 +215,13 @@ ht-degree: 4%
 
 ![演示](./images/joa21.png)
 
-您将看到已完成的操作。 单击&#x200B;**保存**。
+您将看到已完成的操作。 向上滚动并单击&#x200B;**保存**。
 
 ![演示](./images/joa22.png)
 
 此历程路径现已准备就绪。
 
-## 3.2.4.3为10°至25°摄氏度的路径发送消息
+## 3.2.4.3发送以下路径的消息：摄氏10度至25度之间
 
 对于每个温度上下文，您将尝试向客户发送消息。 在本练习中，您将向Slack渠道发送一条真正的消息，而不是一个手机号码。
 
@@ -233,7 +233,7 @@ ht-degree: 4%
 
 ![演示](./images/jop18.png)
 
-转到&#x200B;**操作参数**&#x200B;并单击参数`textToSlack`的&#x200B;**编辑**&#x200B;图标。
+向下滚动到&#x200B;**请求参数**&#x200B;并单击参数&#x200B;**的**&#x200B;编辑`textToSlack`图标。
 
 ![演示](./images/joa19z.png)
 
@@ -247,13 +247,13 @@ ht-degree: 4%
 
 ![演示](./images/jop21.png)
 
-您将看到已完成的操作。 单击&#x200B;**确定**。
+您将看到已完成的操作。 向上滚动并单击&#x200B;**保存**。
 
 ![演示](./images/jop22.png)
 
 此历程路径现已准备就绪。
 
-## 3.2.4.4发送以下路径的消息：温度超过25° Celsius
+## 3.2.4.4发送以下路径的消息：温度高于25°C
 
 对于每个温度上下文，您将尝试向客户发送消息。 在本练习中，您将向Slack渠道发送一条真正的消息，而不是一个手机号码。
 
@@ -265,7 +265,7 @@ ht-degree: 4%
 
 ![演示](./images/jod18.png)
 
-转到&#x200B;**操作参数**&#x200B;并单击参数`textToSlack`的&#x200B;**编辑**&#x200B;图标。
+向下滚动到&#x200B;**请求参数**&#x200B;并单击参数&#x200B;**的**&#x200B;编辑`textToSlack`图标。
 
 ![演示](./images/joa19zzz.png)
 

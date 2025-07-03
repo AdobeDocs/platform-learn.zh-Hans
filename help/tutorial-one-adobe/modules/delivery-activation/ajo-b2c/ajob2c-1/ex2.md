@@ -4,9 +4,9 @@ description: Journey Optimizer — 创建您的片段
 kt: 5342
 doc-type: tutorial
 exl-id: 4e71164d-9e25-46aa-a4b8-a2f6535c491e
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1052'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您在AEM Assets库中看不到Citi Signal图像，您可以在[此处](./../../../../assets/ajo/CitiSignal-images.zip)找到它们。 将它们下载到桌面，创建文件夹&#x200B;**citi-signal-images**，然后上传该文件夹中的所有图像。
+>如果您在AEM Assets库中看不到CitiSignal图像，您可以在[此处](./../../../../assets/ajo/CitiSignal-images.zip)找到它们。 将它们下载到桌面，创建文件夹&#x200B;**citi-signal-images**，然后上传该文件夹中的所有图像。
 
 ![Journey Optimizer](./images/fragm5.png)
 
@@ -74,11 +74,11 @@ ht-degree: 0%
 ![Journey Optimizer](./images/fragm10.png)
 
 几分钟后，您会看到片段的状态已更改为&#x200B;**实时**。
-接下来，您应该为电子邮件的页脚创建新片段。 单击&#x200B;**创建片段**。
+接下来，您应该为电子邮件的页脚创建新片段。 单击**创建片段**。
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.1.2.2创建页脚片段
+## 3.1.2.2创建您的页脚片段
 
 单击&#x200B;**创建片段**。
 
@@ -231,8 +231,6 @@ Unsubscribe
 几分钟后，您会看到页脚的状态已更改为&#x200B;**实时**。
 
 ![Journey Optimizer](./images/fragm38.png)
-
-您现在已经完成了此练习。
 
 ## 后续步骤
 

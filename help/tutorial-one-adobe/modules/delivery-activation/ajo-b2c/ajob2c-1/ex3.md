@@ -4,14 +4,14 @@ description: Journey Optimizer创建您的电子邮件
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '1305'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
 
-# 3.1.3创建您的历程、片段和消息
+# 3.1.3创建历程和电子邮件
 
 在本练习中，您将配置历程以及当有人在演示网站上创建帐户时需要触发的消息。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ![ACOP](./images/journeyempty.png)
 
-在上一个练习中，您创建了一个新的&#x200B;**事件**。 您将其命名为类似于`--aepUserLdap--AccountCreationEvent`，并将`ldap`替换为LDAP。 这是创建事件的结果：
+在上一个练习中，您创建了一个新的&#x200B;**事件**。 您将其命名为如下`--aepUserLdap--AccountCreationEvent`。 这是创建事件的结果：
 
 ![ACOP](./images/eventdone.png)
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ![ACOP](./images/eventlist.png)
 
-选择您的活动，并将其拖放到历程画布上。 您的历程现在看起来像这样：
+选择您的事件，并将其拖放到历程画布上。 您的历程现在看起来像这样：
 
 ![ACOP](./images/journeyevent.png)
 
@@ -57,11 +57,11 @@ ht-degree: 0%
 
 ![ACOP](./images/journeyactions.png)
 
-将&#x200B;**类别**&#x200B;设置为&#x200B;**营销**&#x200B;并选择允许您发送电子邮件的电子邮件配置。 在这种情况下，要选择的电子邮件配置是&#x200B;**电子邮件**。 确保同时启用了&#x200B;**电子邮件**&#x200B;和&#x200B;**电子邮件打开次数**&#x200B;的复选框。
+将&#x200B;**类别**&#x200B;设置为&#x200B;**营销**&#x200B;并选择允许您发送电子邮件的电子邮件配置。 在这种情况下，要选择的电子邮件配置是&#x200B;**Email-TI**。
 
 ![ACOP](./images/journeyactions1.png)
 
-## 3.1.3.2创建消息
+## 3.1.3.2创建您的消息
 
 若要创建消息，请单击&#x200B;**编辑内容**。
 
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/msg5.png)
 
-写入文本`Hi `。 接下来，您需要为存储在`profile.person.name.firstName`下的字段&#x200B;**名字**&#x200B;引入个性化令牌。 在左侧菜单中，导航以查找&#x200B;**人员>全名>名字**&#x200B;字段，然后单击&#x200B;**+**&#x200B;图标。 然后，您会看到个性化令牌显示在文本字段中。
+写入文本`Hi `。 接下来，您需要为存储在&#x200B;**下的字段**&#x200B;名字`profile.person.name.firstName`引入个性化令牌。 在左侧菜单中，导航以查找&#x200B;**人员>全名>名字**&#x200B;字段，然后单击&#x200B;**+**&#x200B;图标。 然后，您会看到个性化令牌显示在文本字段中。
 
 ![Journey Optimizer](./images/msg9.png)
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/msg34.png)
 
-接下来，您需要带入存储在`profile.person.name.firstName`下的&#x200B;**名字**&#x200B;个性化令牌。 在菜单中，找到&#x200B;**人员**&#x200B;元素，向下钻取到&#x200B;**全名**&#x200B;元素，然后单击&#x200B;**+**&#x200B;图标以将“名字”字段添加到表达式编辑器中。
+接下来，您需要带入存储在&#x200B;**下的**&#x200B;名字`profile.person.name.firstName`个性化令牌。 在菜单中，找到&#x200B;**人员**&#x200B;元素，向下钻取到&#x200B;**全名**&#x200B;元素，然后单击&#x200B;**+**&#x200B;图标以将“名字”字段添加到表达式编辑器中。
 
 单击&#x200B;**保存**。
 
@@ -186,7 +186,7 @@ At CitiSignal, we understand that staying connected is more than just a convenie
 
 ![Journey Optimizer](./images/msg54.png)
 
-单击“保存”**&#x200B;**&#x200B;保存您的邮件，然后单击左上角主题行文本旁边的&#x200B;**箭头**&#x200B;返回邮件仪表板。
+单击“保存”****&#x200B;保存您的邮件，然后单击左上角主题行文本旁边的&#x200B;**箭头**&#x200B;返回邮件仪表板。
 
 ![Journey Optimizer](./images/msg55.png)
 

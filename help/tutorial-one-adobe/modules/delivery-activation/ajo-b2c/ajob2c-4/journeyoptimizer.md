@@ -4,14 +4,14 @@ description: 在本模块中，您将学习关于Journey Optimizer的所有须�
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '288'
+source-wordcount: '263'
 ht-degree: 2%
 
 ---
 
-# 3.4Adobe Journey Optimizer
+# 3.4 Adobe Journey Optimizer：订单确认历程和营销活动
 
 在本模块中，您将学习关于Adobe Journey Optimizer的所有须知内容，这有助于企业为其客户设计和提供互联、情境式和个性化的体验。
 
@@ -45,10 +45,6 @@ ht-degree: 2%
 [3.4.3在电子邮件中应用基于区段的个性化](./ex3.md)
 
 在本练习中，您将使用区段成员资格来定义要在电子邮件中显示的内容。
-
-[3.4.4设置和使用推送通知](./ex4.md)
-
-在本练习中，您将在iOS设备上安装移动应用程序，并配置推送通知并将其交付到设备。
 
 [摘要和优点](./summary.md)
 

@@ -5,17 +5,16 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: 7ae5afb2-689e-428a-9382-b72ac0cb5826
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
 workflow-type: tm+mt
-source-wordcount: '77'
+source-wordcount: '52'
 ht-degree: 1%
 
 ---
 
 # 摘要和优点
 
-恭喜并感谢您投入时间学习Offer Decisioning和Adobe Journey Optimizer！
-在本模块中，您已了解如何使用Offer Decisioning应用程序服务。
+恭喜并感谢您投入时间学习Adobe Journey Optimizer！
 
 ## 优点
 
@@ -23,11 +22,8 @@ ht-degree: 1%
 
 ## 看看这个
 
-- 产品文档： [Offer Decisioning术语表](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html#glossary?lang=zh-Hans)
-- 产品文档：[Web SDK - Offer Decisioning概述](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=zh-Hans)
-
 ## 后续步骤
 
-返回[Offer Decisioning](offer-decisioning.md){target="_blank"}
+返回[Adobe Journey Optimizer：推送和应用程序内消息](ajopushinapp.md){target="_blank"}
 
 返回[所有模块](./../../../../overview.md){target="_blank"}

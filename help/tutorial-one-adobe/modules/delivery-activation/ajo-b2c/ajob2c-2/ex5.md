@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer — 外部数据源和自定义操作
 kt: 5342
 doc-type: tutorial
 exl-id: 5c8cbec6-58c1-4992-a0c7-1a2b7c34e5b6
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: e3d3b8e3abdea1766594eca53255df024129cb2c
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 在本练习中，您将测试并触发在此模块中配置的历程。
 
-## 3.2.5.1更新地理围栏事件配置
+## 3.2.5.1更新您的地理围栏事件配置
 
 转到[Adobe Experience Platform数据收集](https://experience.adobe.com/launch/)并选择&#x200B;**标记**。
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ![属性页](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png)
 
-在&#x200B;**快速入门**&#x200B;中，演示系统为您创建了两个客户端属性：一个用于网站，另一个用于移动应用程序。 通过在&#x200B;**[!UICONTROL 搜索]**&#x200B;框中搜索`--aepUserLdap--`来查找它们。 单击以打开&#x200B;**Web**&#x200B;属性。
+在&#x200B;**快速入门**&#x200B;中，演示系统Next为您创建了标记属性：一个用于网站，一个用于移动设备应用程序。 通过在`--aepUserLdap--`搜索&#x200B;**[!UICONTROL 框中搜索]**&#x200B;来查找它们。 单击以打开&#x200B;**Web**&#x200B;属性。
 
 ![搜索框](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 ![启动安装程序](./images/rule3.png)
 
-然后，您会看到在触发此操作时，将使用特定的数据元素来定义XDM数据结构。 您需要更新该数据元素，并且需要定义您在[练习3.2.1](./ex1.md)中配置的事件的&#x200B;**事件ID**。
+然后，您会看到在触发此操作时，将使用特定的数据元素来定义XDM数据结构。 您需要更新该数据元素，并且需要定义您在&#x200B;**练习3.2.1**&#x200B;中配置的事件的[事件ID](./ex1.md)。
 
 ![启动安装程序](./images/rule4.png)
 
@@ -53,7 +53,7 @@ ht-degree: 0%
 
 导航到字段`_experience.campaign.orchestration.eventID`。 删除当前值，并将您的eventID粘贴到该处。
 
-提醒一下，您可以在Adobe Journey Optimizer中的&#x200B;**配置>事件**&#x200B;下找到事件ID，您还可以在事件有效负荷中找到事件ID，如下所示： `"eventID": "4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e"`。
+提醒一下，您可以在Adobe Journey Optimizer中的&#x200B;**配置>事件**&#x200B;下找到事件ID，您还可以在事件有效负荷中找到事件ID，如下所示： `"eventID": "209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7"`。
 
 ![ACOP](./images/payloadeventID.png)
 
@@ -103,11 +103,17 @@ ht-degree: 0%
 
 ![演示](./images/pv2.png)
 
-在配置文件查看器面板上，单击&#x200B;**实用工具**。 输入`geofenceevent`并单击&#x200B;**发送**。
+在配置文件查看器面板上，单击&#x200B;**实用工具**，然后选择&#x200B;**直接调用**。
 
 >[!NOTE]
 >
 >如果您在配置文件查看器面板上无法选择发送直接调用事件，则可以手动发送，方法是打开浏览器的开发人员视图并转到&#x200B;**控制台**，然后粘贴并发送以下命令： `_satellite.track('geofenceevent')`。
+
+![演示](./images/pv3.png)
+
+输入`geofenceevent`并单击&#x200B;**提交**。
+
+![演示](./images/pv4.png)
 
 几秒钟后，您将在Slack渠道中看到来自Adobe Journey Optimizer的消息。
 

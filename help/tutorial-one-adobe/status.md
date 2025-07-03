@@ -3,9 +3,9 @@ title: 内容状态
 description: 内容状态
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 174c818dfc9edd78afd32cb919f14acc4aabca72
+source-git-commit: 31466040336580e9e4b2308801347dc387be4da5
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '397'
 ht-degree: 12%
 
 ---
@@ -56,11 +56,14 @@ ht-degree: 12%
 | [2.4 Real-Time CDP： Audience Activation到Microsoft Azure事件中心](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md){target="_blank"} | 21/11/2024 | 是 | - |
 | [2.5 Real-Time CDP连接：事件转发](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md){target="_blank"} | 21/11/2024 | 是 | - |
 | [2.6将数据从Apache Kafka流式传输到Real-Time CDP](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md){target="_blank"} | 25/11/2024 | 是 | - |
-| [3.1 Adobe Journey Optimizer：编排](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md){target="_blank"} | 30/12/2024 | 是 | - |
-| [3.2 Adobe Journey Optimizer：外部数据源和自定义操作](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md){target="_blank"} | 30/12/2024 | 是 | - |
-| [3.3 Adobe Journey Optimizer： Offer Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md){target="_blank"} | 06/01/2025 | 是 | - |
-| [3.4 Adobe Journey Optimizer：基于事件的历程](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 05/01/2025 | 是 | - |
-| [3.5 Adobe Journey Optimizer：翻译服务](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 08/02/2025 | 是 | - |
+| [3.1 Adobe Journey Optimizer：编排](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md){target="_blank"} | 03/07/2025 | 是 | - |
+| [3.2 Adobe Journey Optimizer：外部数据源和自定义操作](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md){target="_blank"} | 03/07/2025 | 是 | - |
+| [3.3 Adobe Journey Optimizer：推送和应用程序内消息](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md){target="_blank"} | 03/07/2025/2025 | 是 | - |
+| [3.4 Adobe Journey Optimizer：基于事件的历程](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"} | 03/07/2025 | 是 | - |
+| [3.5 Adobe Journey Optimizer：翻译服务](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 03/07/2025 | 是 | - |
+| [3.6 Adobe Journey Optimizer：内容管理](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | 否 | 正在开发的内容 |
+| [3.7 Adobe Journey Optimizer： Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"} | 03/07/2025 | 否 | 正在开发的内容 |
+| [3.8 Adobe Journey Optimizer：营销活动](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"} | 03/07/2025 | 否 | 正在开发的内容 |
 
 ## 5.报表和见解
 

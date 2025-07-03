@@ -4,9 +4,9 @@ description: Journey Optimizer创建您的活动
 kt: 5342
 doc-type: tutorial
 exl-id: 2c03cc8d-0106-4fa5-80c6-e25712ca2eab
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ![ACOP](./images/eventpayload.png)
 
-您会看到&#x200B;**字段**&#x200B;窗口弹出窗口，您需要在该窗口中选择个性化电子邮件所需的某些字段。  我们稍后将使用Adobe Experience Platform中已有的数据，选择其他配置文件属性。
+您会看到&#x200B;**字段**&#x200B;窗口弹出窗口，您需要在该窗口中选择个性化电子邮件所需的某些字段。  您稍后将使用Adobe Experience Platform中已有的数据选择其他配置文件属性。
 
 ![ACOP](./images/eventfields.png)
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-您应该会看到此内容。 将&#x200B;**Namespace**&#x200B;设置为&#x200B;**ECID (ECID)**。 单击&#x200B;**保存**。
+您应该会看到此内容。 确保&#x200B;**命名空间**&#x200B;设置为&#x200B;**ECID (ECID)**。 单击&#x200B;**保存**。
 
 ![ACOP](./images/eventsave.png)
 
@@ -77,17 +77,15 @@ ht-degree: 0%
 您的事件具有独特的编排eventID，您可以通过在该有效负荷中向下滚动直至看到`_experience.campaign.orchestration.eventID`来查找该事件。
 
 事件ID是需要发送到Adobe Experience Platform以触发您下一步将构建的历程的事件。 请记住此eventID，因为在下个练习中将需要它。
-`"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`
+`"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`
 
 单击&#x200B;**确定**。
 
 ![ACOP](./images/payloadeventID.png)
 
-单击&#x200B;**取消**。
+单击&#x200B;**取消**&#x200B;关闭此窗口。
 
 ![ACOP](./images/payloadeventID1.png)
-
-您现在已经完成了此练习。
 
 ## 后续步骤
 
