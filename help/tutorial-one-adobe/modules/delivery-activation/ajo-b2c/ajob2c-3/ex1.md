@@ -86,7 +86,7 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ![Adobe Experience Platform数据收集](./images/launchprop2.png)
 
-你以后会回到这里的。 您将看到&#x200B;**AEP Assurance**&#x200B;的扩展。 AEP Assurance可帮助您检查、验证、模拟和验证在移动应用程序中收集数据或提供体验的方式。 您可以在此处阅读有关AEP Assurance的更多信息：[https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/assurance/home)。
+你以后会回到这里的。 您将看到&#x200B;**AEP Assurance**&#x200B;的扩展。 AEP Assurance可帮助您检查、验证、模拟和验证在移动应用程序中收集数据或提供体验的方式。 您可以在此处阅读有关AEP Assurance的更多信息：[https://experienceleague.adobe.com/zh-hans/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/assurance/home)。
 
 ![Adobe Experience Platform数据收集](./images/launchprop8.png)
 
