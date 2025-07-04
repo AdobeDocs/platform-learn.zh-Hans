@@ -4,9 +4,10 @@ description: 推送通知入门
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+exl-id: b46e0205-b0a1-4a14-95f6-9afe21cd2b5e
+source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1235'
 ht-degree: 1%
 
 ---
@@ -33,27 +34,27 @@ ht-degree: 1%
 
 ![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
 
-## 3.4.4.1推送数据集
+## 3.3.1.1推送数据集
 
 Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中存储来自移动设备的推送令牌或与推送消息的交互（例如：已发送消息、已打开消息等）。
 
-您可以通过转到屏幕左侧菜单中的&#x200B;**[!UICONTROL 数据集]**&#x200B;来查找这些数据集。 要显示系统数据集，请单击过滤器图标。
+您可以通过转到屏幕左侧菜单中的&#x200B;**数据集**&#x200B;来查找这些数据集。 要显示系统数据集，请单击&#x200B;**启用筛选器**&#x200B;图标。
 
-启用选项&#x200B;**显示系统数据集**&#x200B;并搜索&#x200B;**AJO**。 然后，您将看到用于推送通知的数据集。
+启用&#x200B;**系统**&#x200B;的选项并搜索&#x200B;**AJO**。 然后，您将看到用于推送通知的数据集。
 
 ![数据获取](./images/menudsjo1.png)
 
-## 移动的3.4.4.2数据流
+## 移动的3.3.1.2数据流
 
 转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。
 
-在左侧菜单中，转到&#x200B;**[!UICONTROL 数据流]**&#x200B;并搜索您在[快速入门](./../../../../modules/getting-started/gettingstarted/ex2.md)中创建的、名为`--aepUserLdap-- - Demo System Datastream (Mobile)`的数据流。 单击以将其打开。
+在左侧菜单中，转到&#x200B;**数据流**&#x200B;并搜索您在[快速入门](./../../../../modules/getting-started/gettingstarted/ex2.md)中创建的、名为`--aepUserLdap-- - One Adobe Datastream (Mobile)`的数据流。 单击以将其打开。
 
-![单击左侧导航中的“数据流”图标](./images/edgeconfig1a.png)
+![数据流](./images/edgeconfig1a.png)
 
 单击&#x200B;**Adobe Experience Platform**&#x200B;服务上的&#x200B;**编辑**。
 
-![单击左侧导航中的“数据流”图标](./images/edgeconfig1.png)
+![数据流](./images/edgeconfig1.png)
 
 然后，您将看到定义的数据流设置，以及要将数据集事件和配置文件属性存储到哪些中。
 
@@ -67,16 +68,17 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ![命名数据流并保存](./images/edgeconfig2.png)
 
-## 3.4.4.3查看您的移动数据收集属性
+## 3.3.1.3查看您的移动数据收集属性
 
-转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 作为[快速入门](./../../../../modules/getting-started/gettingstarted/ex1.md)的一部分，创建了2个数据收集属性。
-您已在以前的模块中使用了这些数据收集客户端属性。
+转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)，转到&#x200B;**标记**。 作为[快速入门](./../../../../modules/getting-started/gettingstarted/ex1.md)模块的一部分，已创建数据收集标记属性。
+
+您已在以前的模块中使用过这些数据收集标记属性。
 
 单击以打开移动设备的数据收集属性。
 
 ![DSN](./images/launchprop.png)
 
-在数据收集属性中，转到&#x200B;**扩展**。 然后，您将看到移动应用程序所需的各种扩展。 单击以打开扩展&#x200B;**Adobe Experience Platform Edge Network**。
+在数据收集属性中，转到&#x200B;**扩展**。 然后，您将看到移动应用程序所需的各种扩展。 单击以选择扩展&#x200B;**Adobe Experience Platform Edge Network**，然后选择&#x200B;**配置**。
 
 ![Adobe Experience Platform数据收集](./images/launchprop1.png)
 
@@ -84,21 +86,19 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ![Adobe Experience Platform数据收集](./images/launchprop2.png)
 
-你以后会回到这里的。 您将看到&#x200B;**AEP Assurance**&#x200B;的扩展。 AEP Assurance可帮助您检查、验证、模拟和验证在移动应用程序中收集数据或提供体验的方式。 您可以在此处[https://aep-sdks.gitbook.io/docs/beta/project-griffon](https://aep-sdks.gitbook.io/docs/beta/project-griffon)阅读有关AEP Assurance和项目Griffon的更多信息。
+你以后会回到这里的。 您将看到&#x200B;**AEP Assurance**&#x200B;的扩展。 AEP Assurance可帮助您检查、验证、模拟和验证在移动应用程序中收集数据或提供体验的方式。 您可以在此处阅读有关AEP Assurance的更多信息：[https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/assurance/home)。
 
 ![Adobe Experience Platform数据收集](./images/launchprop8.png)
 
-接下来，单击&#x200B;**配置**&#x200B;以打开扩展&#x200B;**Adobe Journey Optimizer**。
+接下来，单击&#x200B;**配置**&#x200B;以打开扩展&#x200B;**Adobe Journey Optimizer**。 此扩展可为Adobe Journey Optimizer启用推送通知和测量。
 
 ![Adobe Experience Platform数据收集](./images/launchprop9.png)
 
-然后，您会看到这是用于跟踪推送事件的数据集的链接位置。
+然后，您会看到这是用于跟踪推送事件的数据集的链接位置。 无需对数据收集属性进行任何更改。 单击&#x200B;**取消**&#x200B;返回上一屏幕。
 
 ![Adobe Experience Platform数据收集](./images/launchprop10.png)
 
-无需对数据收集属性进行任何更改。
-
-## 3.4.4.4查看您的应用程序表面设置
+## 3.3.1.4查看您的应用程序表面设置
 
 转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 在左侧菜单中，转到&#x200B;**应用程序表面**，然后打开&#x200B;**DX演示应用程序APNS**&#x200B;的应用程序表面。
 
@@ -108,31 +108,27 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ![Adobe Experience Platform数据收集](./images/appsf1.png)
 
-## 3.4.4.5使用AEP Assurance测试推送通知设置。
+## 3.3.1.5使用AEP Assurance测试推送通知设置。
 
-安装应用程序后，您将在设备的主屏幕上找到该应用程序。 单击图标以打开应用程序。
+您已在&#x200B;**快速入门**&#x200B;模块中安装了&#x200B;**DX演示**&#x200B;移动应用程序。 安装应用程序后，您将在设备的主屏幕上找到该应用程序。 单击图标以打开应用程序。
 
 ![DSN](./../../../../modules/getting-started/gettingstarted/images/mobileappn1.png)
 
-首次使用应用程序时，系统会要求您使用Adobe ID登录。 完成登录过程。
+登录后，您将看到一条通知，请求您发送通知的权限。 我们将在本教程中发送通知，因此请单击&#x200B;**允许**。
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn2.png)
 
-登录后，您将看到一条通知，请求您发送通知的权限。 我们将在本教程中发送通知，因此请单击&#x200B;**允许**。
+然后，您将看到该应用程序的主页。 转到&#x200B;**设置**。
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn3.png)
 
-然后，您将看到该应用程序的主页。 转到&#x200B;**设置**。
+在设置中，您会看到当前应用程序中已加载&#x200B;**公共项目**。 单击&#x200B;**自定义项目**。
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn4.png)
 
-在设置中，您会看到当前应用程序中已加载&#x200B;**公共项目**。 单击&#x200B;**自定义项目**。
-
-![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn5.png)
-
 您现在可以加载自定义项目。 单击二维码可轻松加载项目。
 
-![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn6.png)
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn5.png)
 
 在完成&#x200B;**快速入门**&#x200B;部分后，您得到了此结果。 单击以打开为您创建的&#x200B;**移动零售项目**。
 
@@ -150,28 +146,28 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/web8c.png)
 
-然后，您将在应用程序中看到项目ID，随后可单击&#x200B;**保存**。
+然后，您会在应用程序中看到项目ID，之后可以单击&#x200B;**切换**。
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn7.png)
 
-现在，返回应用程序中的&#x200B;**主页**。 您的应用程序现已准备就绪，可供使用。
+您的应用程序现已准备就绪，可供使用。
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn8.png)
 
-现在，您需要扫描二维码以将移动设备连接到AEP Assurance会话。
+现在，您需要扫描二维码以将移动设备连接到Assurance会话。
 
 要启动AEP Assurance会话，请转到[https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)。 单击左侧菜单中的&#x200B;**Assurance**。 然后单击&#x200B;**创建会话**。
 
 ![Adobe Experience Platform数据收集](./images/griffon3.png)
 
-单击&#x200B;**开始**。
+选择&#x200B;**深层链接连接**，然后单击&#x200B;**开始**。
 
 ![Adobe Experience Platform数据收集](./images/griffon5.png)
 
 填写值：
 
-- 会话名称：使用`--aepUserLdap-- - push debugging`并将ldap替换为ldap
-- 基本URL：使用`dxdemo://default`
+- 会话名称： `--aepUserLdap-- - Push Debugging`
+- 基本URL： `dxdemo://default`
 
 单击&#x200B;**下一步**。
 
@@ -181,7 +177,7 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ![Adobe Experience Platform数据收集](./images/griffon6.png)
 
-在移动设备上，打开相机应用程序并扫描AEP Assurance显示的二维码。
+在移动设备上，打开相机应用程序并扫描Assurance显示的二维码。
 
 ![Adobe Experience Platform数据收集](./images/ipadPushTest8a.png)
 
@@ -193,24 +189,22 @@ Adobe Journey Optimizer使用数据集在Adobe Journey Optimizer的数据集中�
 
 ![Adobe Experience Platform数据收集](./images/ipadPushTest11.png)
 
-在Assurance中，您现在会看到一台设备正在访问Assurance会话。 单击&#x200B;**完成**。
+在Assurance中，您现在将看到客户端设备已连接到Assurance会话。 接下来，单击&#x200B;**配置**。
 
 ![Adobe Experience Platform数据收集](./images/griffon7.png)
 
-转到&#x200B;**推送调试**。
+向下滚动至&#x200B;**推送调试**。 单击&#x200B;**+**&#x200B;图标，然后单击&#x200B;**保存**。
 
->[!NOTE]
->
->如果在左侧菜单中找不到&#x200B;**推送调试**，请单击屏幕左下角的&#x200B;**配置**，然后将&#x200B;**推送调试**&#x200B;添加到菜单中。
+![Adobe Experience Platform数据收集](./images/griffon7a.png)
 
-你会看到这样的东西。
+转到&#x200B;**推送调试**。 你应该看看这个。
 
 ![Adobe Experience Platform数据收集](./images/griffon10.png)
 
 部分原因在于：
 
 - 第一列&#x200B;**Client**&#x200B;显示iOS设备上的可用标识符。 您将看到ECID和推送令牌。
-- 第2列显示了&#x200B;**App Store凭据和配置**，该凭据和配置是作为练习&#x200B;**3.4.5.4在Launch中创建应用程序配置**&#x200B;的一部分设置的
+- 第二列显示&#x200B;**App Store凭据和配置**
 - 第二列显示&#x200B;**配置文件**&#x200B;信息，以及有关推送令牌所在的平台（APNS或APNSSandbox）的其他信息。 如果单击“**检查配置文件**”按钮，您将转到Adobe Experience Platform，并看到完整的Real-time Customer Profile。
 
 要测试推送配置设置，请转到&#x200B;**发送测试推送设置**&#x200B;按钮。 单击&#x200B;**发送测试推送通知**
