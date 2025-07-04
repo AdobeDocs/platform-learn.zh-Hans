@@ -4,9 +4,9 @@ description: 在本模块中，您将学习关于Journey Optimizer的所有须�
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '252'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,6 @@ ht-degree: 2%
 - 熟悉Adobe Journey Optimizer
 - 创建电子邮件和推送消息
 - 配置基于触发器的历程和批量历程
-- 在客户历程中发送电子邮件和推送通知
 
 ## 先决条件
 

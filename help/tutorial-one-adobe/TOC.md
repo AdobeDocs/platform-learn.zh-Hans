@@ -1,18 +1,18 @@
 ---
-user-guide-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全面技术教程
-breadcrumb-title: 从Creative Cloud到Experience Cloud，Adobe应用程序的全面技术教程
+user-guide-title: 一门Adobe技术教程
+breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: decd2a5545cf3bb856d893d6af178b1f96ae20ae
+source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
 workflow-type: tm+mt
-source-wordcount: '1217'
+source-wordcount: '1200'
 ht-degree: 3%
 
 ---
 
 
-# 全面的技术教程 — 一个Adobe {#tutorial-one-adobe}
+# 一门Adobe技术教程 {#tutorial-one-adobe}
 
 + [教程概述](/help/tutorial-one-adobe/overview.md)
 + [内容状态](/help/tutorial-one-adobe/status.md)
