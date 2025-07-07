@@ -20,4 +20,4 @@ ht-degree: 0%
 
 简单介绍Adobe Real-Time CDP Collaboration，它是一种专门构建的数据协作应用程序，可让您发现和激活高价值受众，并使用测量功能产生切实的成果。
 
->[!VIDEO](https://video.tv.adobe.com/v/3446801/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446811/?learn=on&enablevpops&captions=chi_hans)

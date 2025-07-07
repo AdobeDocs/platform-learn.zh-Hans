@@ -41,7 +41,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration简介" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1751925455077" alt="Real-Time CDP Collaboration简介"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446811/?format=jpeg&nocache=1751925455077&captions=chi_hans" alt="Real-Time CDP Collaboration简介"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -125,7 +125,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="为Real-Time CDP Collaboration设置权限" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1751925455752" alt="为Real-Time CDP Collaboration设置权限"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452240/?format=jpeg&nocache=1751925455752&captions=chi_hans" alt="为Real-Time CDP Collaboration设置权限"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -231,7 +231,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="在Real-Time CDP Collaboration中创建项目" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1751925456092" alt="在Real-Time CDP Collaboration中创建项目"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464044/?format=jpeg&nocache=1751925456092&captions=chi_hans" alt="在Real-Time CDP Collaboration中创建项目"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
