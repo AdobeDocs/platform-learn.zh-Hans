@@ -20,4 +20,4 @@ ht-degree: 0%
 
 此视频旨在为机构或付费媒体从业者提供Real-Time CDP价值属性的高级概述，包括其内容、工作方式及其用途，并重点介绍可为其提供Real-Time CDP Collaboration用例和工作流支持的数据源和受众。
 
->[!VIDEO](https://video.tv.adobe.com/v/3464657/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3464668/?learn=on&enablevpops&captions=chi_hans)
