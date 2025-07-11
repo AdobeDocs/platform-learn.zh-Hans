@@ -180,7 +180,7 @@ Experience Platform业务用户通常必须完成一系列步骤，包括识别�
 
 ![打开用户档案](../assets/data-generator/images/validation-profile-open.png)
 
-通过浏览&#x200B;**[!UICONTROL 属性]**&#x200B;和&#x200B;**[!UICONTROL 事件]**选项卡中的数据，您应该会看到配置文件包含来自各种数据文件的数据：
+通过浏览&#x200B;**[!UICONTROL 属性]**&#x200B;和&#x200B;**[!UICONTROL 事件]**&#x200B;选项卡中的数据，您应该会看到配置文件包含来自各种数据文件的数据：
 来自离线购买事件文件的![事件数据](../assets/data-generator/images/validation-profile-events.png)
 
 ## 后续步骤
