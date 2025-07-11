@@ -18,4 +18,4 @@ ht-degree: 0%
 
 使用[Adobe提供的Adobe Experience Platform API Postman集合](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)浏览Experience Platform API，该集合基于[Adobe Developer Console环境变量](platform-api-authentication.md)和[生成的访问令牌](generate-an-access-token.md)。
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32721/?learn=on&enablevpops&captions=chi_hans)

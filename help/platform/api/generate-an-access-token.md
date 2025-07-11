@@ -20,5 +20,5 @@ ht-degree: 2%
 
 使用[Adobe Identity Management服务API](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)获取访问令牌以访问Adobe Experience Platform API。
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32725/?learn=on&enablevpops&captions=chi_hans)
 
