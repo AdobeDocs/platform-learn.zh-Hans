@@ -7,7 +7,7 @@ level: Experienced
 jira: KT-7349
 last-substantial-update: 2023-06-21T00:00:00Z
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
-source-git-commit: 4db88dbae923d37884391a65ff8fc16f53e19187
+source-git-commit: 1836e80bbf3d38b600f120d83d6628a9cb3c257b
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 3%
@@ -26,14 +26,14 @@ Experience Platform业务用户通常必须完成一系列步骤，包括识别�
 
 >[!NOTE]
 >
->本教程的最终结果是一个沙盒，其中包含与[面向数据架构师和数据工程师的Adobe Experience Platform快速入门教程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html?lang=zh-Hans)类似的数据。 它于2023年4月更新，以支持[Journey Optimizer挑战](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hans)。 它于2023年6月更新，以将身份验证方法切换到OAuth。
+>本教程的最终结果是一个沙盒，其中包含与[面向数据架构师和数据工程师的Adobe Experience Platform快速入门教程](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)类似的数据。 它于2023年4月更新，以支持[Journey Optimizer挑战](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hans)。 它于2023年6月更新，以将身份验证方法切换到OAuth。
 
 
 ## 先决条件
 
-* 您有权访问Experience PlatformAPI并了解如何进行身份验证。 如果没有，请查看此[教程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=zh-Hans)。
+* 您有权访问Experience Platform API并了解如何进行身份验证。 如果没有，请查看此[教程](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html?lang=zh-Hans)。
 * 您有权访问Experience Platform开发沙盒。
-* 您知道您的Experience Platform租户ID。 您可以通过发出经过身份验证的[API请求](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=zh-Hans#know-your-tenant_id)来获取它
+* 您知道您的Experience Platform租户ID。 您可以通过发出经过身份验证的[API请求](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)来获取它
 或者通过在您登录Platform帐户时从URL中提取此变量。 例如，在以下URL中，租户是“`techmarketingdemos`”`https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`。
 
 ## 使用[!DNL Postman] {#postman}
@@ -81,7 +81,7 @@ Experience Platform业务用户通常必须完成一系列步骤，包括识别�
 1. 在Postman中，从右上角的下拉列表中选择您的环境，然后单击眼睛图标以查看环境变量：
    ![环境选择](../assets/data-generator/images/env-selection.png)
 
-1. 确保填充了以下环境变量。 要了解如何获取环境变量的值，请查看[向Experience PlatformAPI进行身份验证](/help/platform/authentication/platform-api-authentication.md)教程以了解分步说明。
+1. 确保填充了以下环境变量。 要了解如何获取环境变量的值，请查看[对Experience Platform API进行身份验证](/help/platform/api/platform-api-authentication.md)教程以了解分步说明。
 
    * `CLIENT_SECRET`
    * Adobe Developer Console中的`API_KEY`—`Client ID`
@@ -120,7 +120,7 @@ Experience Platform业务用户通常必须完成一系列步骤，包括识别�
 
 ### 身份验证
 
-接下来，您需要进行身份验证并生成用户令牌。 请注意，本教程中使用的令牌生成方法仅适用于非生产用途。 本地签名从第三方主机加载JavaScript库，而远程签名将私钥发送到Adobe拥有并操作的Web服务。 虽然Adobe不会存储此私钥，但绝不应该与任何人共享生产密钥。
+接下来，您需要进行身份验证并生成用户令牌。 请注意，本教程中使用的令牌生成方法仅适用于非生产用途。 本地签名从第三方主机加载JavaScript库，而远程签名将私钥发送到Adobe拥有并操作的Web服务。 虽然Adobe不存储此私钥，但绝不应该与任何人共享生产密钥。
 
 1. 打开`0-Authentication`收藏集，选择`OAuth: Request Access Token`请求，然后单击`SEND`进行身份验证并获取访问令牌。
 
@@ -180,23 +180,23 @@ Experience Platform业务用户通常必须完成一系列步骤，包括识别�
 
 ![打开用户档案](../assets/data-generator/images/validation-profile-open.png)
 
-通过浏览&#x200B;**[!UICONTROL 属性]**&#x200B;和&#x200B;**[!UICONTROL 事件]**&#x200B;选项卡中的数据，您应该会看到配置文件包含来自各种数据文件的数据：
+通过浏览&#x200B;**[!UICONTROL 属性]**&#x200B;和&#x200B;**[!UICONTROL 事件]**选项卡中的数据，您应该会看到配置文件包含来自各种数据文件的数据：
 来自离线购买事件文件的![事件数据](../assets/data-generator/images/validation-profile-events.png)
 
 ## 后续步骤
 
 如果您想了解Adobe Journey Optimizer，此沙盒包含您进行[Journey Optimizer挑战](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html?lang=zh-Hans)所需的一切
 
-如果您想了解合并策略、数据管理、查询服务和区段生成器，请跳转到数据架构师和数据工程师快速入门教程[&#128279;](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=zh-Hans)中的第11课。 本其他教程的前面课程让您手动构建这些Postman收藏集刚刚填充的所有内容 — 祝您一切顺利！
+如果您想了解合并策略、数据管理、查询服务和区段生成器，请跳转到数据架构师和数据工程师快速入门教程[中的](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en)第11课。 本其他教程的前面课程让您手动构建这些Postman收藏集刚刚填充的所有内容 — 祝您一切顺利！
 
-如果要构建示例Web SDK实施以链接到此沙盒，请查看
-[使用Web SDK实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans)。 设置Web SDK教程的“初始配置”、“标记配置”和“设置Experience Platform”课程后，使用密码`test`登录Luma网站（使用`luma-crm.json`文件中的前10个电子邮件地址），查看配置文件片段与本教程中上传的数据合并的情况。
+如果要构建一个链接到此沙盒的示例Web SDK实施，请查看
+[使用Web SDK实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans)。 在Web SDK教程中设置“初始配置”、“标记配置”和“设置Experience Platform”课程后，使用密码`luma-crm.json`通过`test`文件中的前十个电子邮件地址登录Luma网站，查看配置文件片段与本教程中上传的数据合并的情况。
 
-如果要构建一个链接到此沙盒的示例Mobile SDK实施，请查看
-[在移动应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html?lang=zh-Hans)。 在设置Web SDK教程的“初始配置”、“应用程序实施”和“Experience Platform”课程后，使用`luma-crm.json`文件中的第一个电子邮件地址登录Luma网站，查看配置文件片段与本教程中上传的数据合并的情况。
+如果要构建一个Mobile SDK实施示例以链接到此沙盒，请查看
+[在移动应用程序中实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)。 在设置Web SDK教程的“初始配置”、“应用程序实施”和“Experience Platform”课程后，使用`luma-crm.json`文件中的第一个电子邮件地址登录Luma网站，查看配置文件片段与本教程中上传的数据合并的情况。
 
 ## 重置沙盒环境 {#reset-sandbox}
 
 重置非生产沙盒会删除与该沙盒关联的所有资源（架构、数据集等），同时保持沙盒的名称和关联的权限。 对于有权访问此“清理”沙盒的用户，将继续以相同的名称提供该沙盒。
 
-按照[此处](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=zh-Hans#reset-a-sandbox)步骤重置沙盒环境。
+按照[此处](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox)步骤重置沙盒环境。
