@@ -22,4 +22,4 @@ ht-degree: 0%
 * [将受众数据激活到批处理配置文件导出目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-batch-profile-destinations.html?lang=zh-Hans)，以获取有关如何使用Experience Platform UI将数据激活到批处理或电子邮件营销目标的说明
 * [使用流服务API连接到批处理目标并激活数据](https://experienceleague.adobe.com/docs/experience-platform/destinations/api/connect-activate-batch-destinations.html?lang=zh-Hans)，以获取有关如何使用流服务API将数据激活到批处理或电子邮件营销目标的说明
 
->[!VIDEO](https://video.tv.adobe.com/v/328175/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/340722/?learn=on&enablevpops&captions=chi_hans)
