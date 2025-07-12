@@ -64,7 +64,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="面向代理从业者的Real-Time CDP概述" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1751925455060" alt="面向代理从业者的Real-Time CDP概述"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464668/?format=jpeg&nocache=1751925455060&captions=chi_hans" alt="面向代理从业者的Real-Time CDP概述"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration — 流程和人员" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1751925455067" alt="Real-Time CDP Collaboration — 流程和人员"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464679/?format=jpeg&nocache=1751925455067&captions=chi_hans" alt="Real-Time CDP Collaboration — 流程和人员"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
