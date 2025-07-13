@@ -26,7 +26,7 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
->要访问[Adobe Developer Console](https://developer.adobe.com/console/home)，您必须是[Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-roles.html)中的[系统管理员](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.)或[开发人员](https://adminconsole.adobe.com)。
+>要访问[Adobe Developer Console](https://developer.adobe.com/console/home)，您必须是[Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-roles.html)中的[系统管理员](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.)或[开发人员](https://adminconsole.adobe.com)。
 >
 > 创建API凭据后，系统管理员必须将该凭据与Experience Platform中的角色关联。
 >
