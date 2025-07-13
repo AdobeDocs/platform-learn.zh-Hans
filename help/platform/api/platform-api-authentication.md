@@ -33,7 +33,7 @@ ht-degree: 7%
 >有关详细说明，请参阅[添加开发人员并授予API凭据权限](../admin/add-developers.md)。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31668/?learn=on&enablevpops&captions=chi_hans)
 
 <!-- CARDS
 * generate-an-access-token.md
@@ -46,7 +46,7 @@ ht-degree: 7%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="generate-an-access-token.md" title="使用Postman生成Experience Platform API访问令牌" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29698/?format=jpeg&nocache=1752259602830" alt="使用Postman生成Experience Platform API访问令牌"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32725/?format=jpeg&nocache=1752259602830&captions=chi_hans" alt="使用Postman生成Experience Platform API访问令牌"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -69,7 +69,7 @@ ht-degree: 7%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-apis-with-postman.md" title="在Postman中使用Experience Platform API" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29704/?format=jpeg&nocache=1752259602844" alt="在Postman中使用Experience Platform API"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32721/?format=jpeg&nocache=1752259602844&captions=chi_hans" alt="在Postman中使用Experience Platform API"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
