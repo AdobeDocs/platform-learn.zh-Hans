@@ -4,9 +4,9 @@ description: Journey Optimizer创建您的电子邮件
 kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
-source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
+source-git-commit: ea8255de9869061cd21d2b5e7c8690f84be0a25b
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ At CitiSignal, we understand that staying connected is more than just a convenie
 
 ![Journey Optimizer](./images/msg54.png)
 
-单击“保存”**&#x200B;**&#x200B;保存您的邮件，然后单击左上角主题行文本旁边的&#x200B;**箭头**&#x200B;返回邮件仪表板。
+单击“保存”****&#x200B;保存您的邮件，然后单击左上角主题行文本旁边的&#x200B;**箭头**&#x200B;返回邮件仪表板。
 
 ![Journey Optimizer](./images/msg55.png)
 
@@ -216,7 +216,7 @@ At CitiSignal, we understand that staying connected is more than just a convenie
 
 ![ACOP](./images/publish1.png)
 
-几分钟后，历程的状态将更改为&#x200B;**实时**，您将看到历程性能的实时仪表板。
+几分钟后，您的历程状态将更改为&#x200B;**实时**，您将看到历程性能的实时仪表板。
 
 ![ACOP](./images/published.png)
 
