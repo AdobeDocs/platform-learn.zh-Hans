@@ -186,7 +186,7 @@ At CitiSignal, we understand that staying connected is more than just a convenie
 
 ![Journey Optimizer](./images/msg54.png)
 
-单击“保存”****&#x200B;保存您的邮件，然后单击左上角主题行文本旁边的&#x200B;**箭头**&#x200B;返回邮件仪表板。
+单击“保存”**&#x200B;**&#x200B;保存您的邮件，然后单击左上角主题行文本旁边的&#x200B;**箭头**&#x200B;返回邮件仪表板。
 
 ![Journey Optimizer](./images/msg55.png)
 

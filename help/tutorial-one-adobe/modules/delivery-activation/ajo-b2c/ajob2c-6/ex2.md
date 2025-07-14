@@ -40,7 +40,7 @@ CitiSignal希望询问客户对以下领域的兴趣：
 ![登陆页面](./images/lp1.png)
 
 对于&#x200B;**标题**，使用： `--aepUserLdap--_SL_Interest_in_Smart_Home`。
-对于**描述**，使用： `Interest in Smart Home`。
+对于&#x200B;**描述**，使用： `Interest in Smart Home`。
 
 单击&#x200B;**提交**。
 
@@ -51,7 +51,7 @@ CitiSignal希望询问客户对以下领域的兴趣：
 ![登陆页面](./images/lp3.png)
 
 对于&#x200B;**标题**，使用： `--aepUserLdap--_SL_Interest_WFH`。
-对于**描述**，使用： `Interest in Work From Home`。
+对于&#x200B;**描述**，使用： `Interest in Work From Home`。
 
 单击&#x200B;**提交**。
 
@@ -62,7 +62,7 @@ CitiSignal希望询问客户对以下领域的兴趣：
 ![登陆页面](./images/lp5.png)
 
 对于&#x200B;**标题**，使用： `--aepUserLdap--_SL_Interest_Online_Gaming`。
-对于**描述**，使用： `Interest in Online Gaming`。
+对于&#x200B;**描述**，使用： `Interest in Online Gaming`。
 
 单击&#x200B;**提交**。
 
