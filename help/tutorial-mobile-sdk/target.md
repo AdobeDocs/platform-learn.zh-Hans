@@ -6,9 +6,9 @@ feature-set: Target
 feature: A/B Tests
 jira: KT-14641
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 4c9ac30ecc0f41b7d6cd9a6653bca50e602cbc13
 workflow-type: tm+mt
-source-wordcount: '1749'
+source-wordcount: '1746'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 了解如何使用Platform Mobile SDK和Adobe Target优化和个性化移动应用程序中的体验。
 
-Target提供了您必须定制和个性化客户体验的所有功能。 Target可帮助您最大限度地提高网站和移动网站、应用程序、社交媒体和其他数字渠道的收入。 Target可以执行A/B测试、多变量测试、推荐产品和内容、定位内容、使用AI自动个性化内容等等。 本课程重点介绍Target的A/B测试功能。 有关详细信息，请参阅[A/B测试概述](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=zh-Hans)。
+Target提供了您必须定制和个性化客户体验的所有功能。 Target可帮助您最大限度地提高网站和移动网站、应用程序、社交媒体和其他数字渠道的收入。 Target可以执行A/B测试、多变量测试、推荐产品和内容、定位内容、使用AI自动个性化内容等等。 本课程重点介绍Target的A/B测试功能。 有关详细信息，请参阅[A/B测试概述](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en)。
 
 ![架构](assets/architecture-at.png)
 
@@ -66,9 +66,9 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
    您可以在Target UI的&#x200B;**[!UICONTROL 管理]** > **[!UICONTROL 属性]**&#x200B;中找到您的属性。 选择![代码](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg)以显示要使用的属性的属性令牌。 属性令牌的格式为`"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`；您必须仅输入值`xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`。
 
-   或者，您可以指定Target环境ID。 Target使用环境来组织站点和预生产环境，以便轻松管理和单独报告。 预设环境包括生产、暂存和开发。 有关详细信息，请参阅[环境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=zh-Hans)和[目标环境ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=zh-Hans#target-environment-id)。
+   或者，您可以指定Target环境ID。 Target使用环境来组织站点和预生产环境，以便轻松管理和单独报告。 预设环境包括生产、暂存和开发。 有关详细信息，请参阅[环境](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en)和[目标环境ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id)。
 
-   或者，您可以指定Target第三方ID命名空间，以支持在身份命名空间上同步配置文件（例如CRM ID）。 有关详细信息，请参阅[目标第三方ID命名空间](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=zh-Hans#target-third-party-id-namespace)。
+   或者，您可以指定Target第三方ID命名空间，以支持在身份命名空间上同步配置文件（例如CRM ID）。 有关详细信息，请参阅[目标第三方ID命名空间](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace)。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -81,7 +81,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 1. 在数据收集UI中，选择&#x200B;**[!UICONTROL 数据流]**，然后选择您的数据流，例如&#x200B;**[!DNL Luma Mobile App]**。
 1. 为![Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)选择&#x200B;**[!UICONTROL 更多]**，然后从上下文菜单中选择![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]**。
-1. 在&#x200B;**[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;屏幕中，确保已选择&#x200B;**[!UICONTROL Offer Decisioning]**、**[!UICONTROL Edge分段]**&#x200B;和&#x200B;**[!UICONTROL Personalization目标]**。 如果您还参加了Journey Optimizer课程，请选择&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 有关详细信息，请参阅[Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hans#aep)。
+1. 在&#x200B;**[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;屏幕中，确保已选择&#x200B;**[!UICONTROL Offer Decisioning]**、**[!UICONTROL Edge分段]**&#x200B;和&#x200B;**[!UICONTROL Personalization目标]**。 如果您还参加了Journey Optimizer课程，请选择&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 有关详细信息，请参阅[Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)。
 1. 要保存数据流配置，请选择&#x200B;**[!UICONTROL 保存]** 。
 
    ![AEP数据流配置](assets/datastream-aep-configuration-target.png)
@@ -114,7 +114,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 要验证Assurance中的设置，请执行以下操作：
 
 1. 转到Assurance UI。
-1. 在左边栏中选择&#x200B;**[!UICONTROL 配置]**，然后选择![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下的&#x200B;**[!UICONTROL 验证设置]**&#x200B;旁的&#x200B;**[!UICONTROL 添加]**。
+1. 在左边栏中选择&#x200B;**[!UICONTROL 配置]**，然后选择![OFFER DECISIONING和TARGET](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下的&#x200B;**[!UICONTROL 验证设置]**&#x200B;旁的&#x200B;**[!UICONTROL 添加]**。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 在左边栏中选择&#x200B;**[!UICONTROL 验证设置]**。 您的应用程序中的数据流设置和SDK设置均已验证。
    ![AJO Decisioning验证](assets/ajo-decisioning-validation.png)
@@ -277,10 +277,10 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 要在Assurance中验证A/B测试，请执行以下操作：
 
 1. 查看[设置说明](assurance.md#connecting-to-a-session)部分以将模拟器或设备连接到Assurance。
-1. 在左边栏中选择&#x200B;**[!UICONTROL 配置]**，然后选择![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下&#x200B;**[!UICONTROL 查看和模拟]**&#x200B;旁边的&#x200B;**[!UICONTROL 添加]**。
+1. 在左边栏中选择&#x200B;**[!UICONTROL 配置]**，然后选择![OFFER DECISIONING和TARGET](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下的&#x200B;**[!UICONTROL 审阅和模拟]**&#x200B;旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 在左边栏中选择&#x200B;**[!UICONTROL 查看和模拟]**。 您的应用程序中的数据流设置和SDK设置均已验证。
-1. 选择顶部栏中的&#x200B;**[!UICONTROL 请求]**。 您会看到您的&#x200B;**[!DNL Target]**&#x200B;请求。
+1. 选择顶部栏中的&#x200B;**[!UICONTROL 请求]**。 您会看到您的&#x200B;**[!DNL Target]**请求。
    ![AJO Decisioning验证](assets/assurance-decisioning-requests.png)
 
 1. 您可以浏览&#x200B;**[!UICONTROL 模拟]**&#x200B;和&#x200B;**[!UICONTROL 事件列表]**&#x200B;选项卡，以进一步了解检查您的Target优惠设置的功能。
@@ -291,7 +291,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 
 >[!SUCCESS]
 >
->您已为A/B测试启用应用程序，并在Adobe Experience Platform Mobile SDK中显示了使用Adobe Target以及Offer Decisioning和Target扩展的A/B测试的结果。
+>您已为A/B测试启用应用程序，并在Adobe Experience Platform Mobile SDK中使用Offer Decisioning和Target扩展显示了A/B测试的结果。
 >
 >感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享这些内容。
 

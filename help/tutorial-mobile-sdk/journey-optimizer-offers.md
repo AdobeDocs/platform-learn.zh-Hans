@@ -6,7 +6,7 @@ feature-set: Journey Optimizer
 feature: Offers
 jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 4c9ac30ecc0f41b7d6cd9a6653bca50e602cbc13
 workflow-type: tm+mt
 source-wordcount: '2475'
 ht-degree: 2%
@@ -21,7 +21,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 
 ![架构](assets/architecture-ajo.png)
 
-决策管理通过集中的营销优惠库和决策引擎(该引擎可将规则和约束应用于Adobe Experience Platform创建的丰富实时用户档案)轻松实现个性化。 这样，您就可以在适当的时间向客户发送合适的优惠。 有关详细信息，请参阅[关于决策管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=zh-Hans)。
+决策管理通过集中的营销优惠库和决策引擎(该引擎可将规则和约束应用于Adobe Experience Platform创建的丰富实时用户档案)轻松实现个性化。 这样，您就可以在适当的时间向客户发送合适的优惠。 有关详细信息，请参阅[关于决策管理](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en)。
 
 
 
@@ -35,7 +35,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 
 * 在安装和配置SDK的情况下成功构建和运行应用程序。
 * 为Adobe Experience Platform设置应用程序。
-* 访问Journey Optimizer — 具有相应权限以管理优惠和决策的决策管理，如[此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=zh-Hans#decisions-permissions)所述。
+* 访问Journey Optimizer — 具有相应权限以管理优惠和决策的决策管理，如[此处](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions)所述。
 
 
 ## 学习目标
@@ -63,7 +63,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 
 1. 在数据收集UI中，选择&#x200B;**[!UICONTROL 数据流]**，然后选择您的数据流，例如&#x200B;**[!DNL Luma Mobile App]**。
 1. 为![Experience Platform](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg)选择&#x200B;**[!UICONTROL 更多]**，然后从上下文菜单中选择![编辑](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL 编辑]**。
-1. 在&#x200B;**[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;屏幕中，确保已选择&#x200B;**[!UICONTROL Offer Decisioning]**、**[!UICONTROL Edge分段]**&#x200B;和&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如果要参加Target课程，请同时选择&#x200B;**[!UICONTROL Personalization目标]**。 有关详细信息，请参阅[Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=zh-Hans#aep)。
+1. 在&#x200B;**[!UICONTROL 数据流]** > ![文件夹](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) > **[!UICONTROL Adobe Experience Platform]**&#x200B;屏幕中，确保已选择&#x200B;**[!UICONTROL Offer Decisioning]**、**[!UICONTROL Edge分段]**&#x200B;和&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 如果要参加Target课程，请同时选择&#x200B;**[!UICONTROL Personalization目标]**。 有关详细信息，请参阅[Adobe Experience Platform设置](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep)。
 1. 要保存数据流配置，请选择&#x200B;**[!UICONTROL 保存]** 。
 
    ![AEP数据流配置](assets/datastream-aep-configuration-offers.png)
@@ -98,7 +98,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 要验证Assurance中的设置，请执行以下操作：
 
 1. 转到Assurance UI。
-1. 在左边栏中选择&#x200B;**[!UICONTROL 配置]**，然后选择![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下的&#x200B;**[!UICONTROL 验证设置]**&#x200B;旁的&#x200B;**[!UICONTROL 添加]**。
+1. 在左边栏中选择&#x200B;**[!UICONTROL 配置]**，然后选择![OFFER DECISIONING和TARGET](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下的&#x200B;**[!UICONTROL 验证设置]**&#x200B;旁的&#x200B;**[!UICONTROL 添加]**。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 在左边栏中选择&#x200B;**[!UICONTROL 验证设置]**。 您的应用程序中的数据流设置和SDK设置都经过验证。
    ![AJO Decisioning验证](assets/ajo-decisioning-validation.png)
@@ -134,7 +134,6 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 1. 在&#x200B;**[!UICONTROL 新建个性化优惠]**&#x200B;的&#x200B;**[!UICONTROL 详细信息]**&#x200B;步骤中：
    1. 输入选件的&#x200B;**[!UICONTROL 名称]**，例如`Luma - Juno Jacket`，并输入&#x200B;**[!UICONTROL 开始日期和时间]**&#x200B;和&#x200B;**[!UICONTROL 结束日期和时间]**。 在这些日期之外，决策引擎将不会选择该产品建议。
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
-
       ![优惠 — 详细信息](assets/ajo-offers-details.png)
 
 1. 在&#x200B;**[!UICONTROL 创建新的个性化优惠]**&#x200B;的&#x200B;**[!UICONTROL 添加呈现]**&#x200B;步骤中：
@@ -153,17 +152,14 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
          ```
 
       1. 选择&#x200B;**[!UICONTROL 保存]**。
-
          ![选件 — 自定义内容](assets/ajo-offers-customcontent.png)
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
-
       ![优惠呈现](assets/ajo-offers-representations.png)
 
 1. 在&#x200B;**[!UICONTROL 新建个性化优惠]**&#x200B;的&#x200B;**[!UICONTROL 添加约束]**&#x200B;步骤中：
    1. 将&#x200B;**[!UICONTROL 优先级]**&#x200B;设置为`10`。
    1. 关闭&#x200B;**[!UICONTROL 包括上限]**。
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
-
       ![优惠 — 约束](assets/ajo-offers-constraints.png)
 
 1. 在&#x200B;**[!UICONTROL 创建新的个性化]**&#x200B;优惠的&#x200B;**[!UICONTROL 审核]**&#x200B;步骤中：
@@ -243,7 +239,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 * 资格规则：例如，选件仅适用于特定受众，
 * 排名方法：当有多个选件可供选择时，您使用哪个方法为其排名（例如，按选件优先级、使用公式或AI模型）。
 
-如果您想更好地了解版面、规则、排名、优惠、呈现、收藏集、决策等如何交互和相互关联，请参阅[创建和管理优惠的关键步骤](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=zh-Hans)。 本课程仅侧重于使用决策的输出，而不是侧重于在Journey Optimizer中定义决策的灵活性 — 决策管理。
+如果您想更好地了解版面、规则、排名、优惠、呈现、收藏集、决策等如何交互和相互关联，请参阅[创建和管理优惠的关键步骤](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en)。 本课程仅侧重于使用决策的输出，而不是侧重于在Journey Optimizer中定义决策的灵活性 — 决策管理。
 
 1. 在Journey Optimizer UI中，从左边栏中选择&#x200B;**[!UICONTROL 选件]**。
 1. 从顶部栏中选择&#x200B;**[!UICONTROL 决策]**。
@@ -257,11 +253,9 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
    1. 在&#x200B;**[!UICONTROL 评估标准]**&#x200B;图块中，选择![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL 添加]**。
       1. 在&#x200B;**[!UICONTROL 添加优惠收藏集]**&#x200B;对话框中，选择您的优惠收藏集。 例如：**[!DNL Luma - Mobile App Collection]**。
       1. 选择&#x200B;**[!UICONTROL 添加]**。
-
          ![决策 — 选择收藏集](assets/ajo-decision-selectcollection.png)
    1. 确保为&#x200B;**[!UICONTROL 资格]**&#x200B;选择&#x200B;**[!UICONTROL 无]**，并选择&#x200B;**[!UICONTROL 优惠优先级]**&#x200B;作为&#x200B;**[!UICONTROL 排名方法]**。
    1. 选择&#x200B;**[!UICONTROL 下一步]**。
-
       ![决策范围](assets/ajo-decision-scopes.png)。
 1. 在&#x200B;**[!UICONTROL 新建优惠决策]**&#x200B;的&#x200B;**[!UICONTROL 添加后备优惠]**&#x200B;步骤中：
    1. 选择您的后备优惠，例如&#x200B;**[!DNL Luma - Fallback offer]**。
@@ -407,7 +401,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 1. 在左边栏中选择&#x200B;**[!UICONTROL 配置]**，然后选择![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下&#x200B;**[!UICONTROL 查看和模拟]**&#x200B;旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 在左边栏中选择&#x200B;**[!UICONTROL 查看和模拟]**。 您的应用程序中的数据流设置和SDK设置均已验证。
-1. 选择顶部栏中的&#x200B;**[!UICONTROL 请求]**。 您会看到您的&#x200B;**[!UICONTROL 优惠]**&#x200B;请求。
+1. 选择顶部栏中的&#x200B;**[!UICONTROL 请求]**。 您会看到您的&#x200B;**[!UICONTROL 优惠]**请求。
    ![AJO Decisioning验证](assets/assurance-decisioning-requests.png)
 
 1. 您可以浏览&#x200B;**[!UICONTROL 模拟]**&#x200B;和&#x200B;**[!UICONTROL 事件列表]**&#x200B;选项卡以获取更多功能，并检查您的Journey Optimizer决策管理设置。
