@@ -22,8 +22,8 @@ Adobe Experience Platform Mobile SDK支持您的移动应用程序中的端到�
 
 与Target扩展相比，Adobe Journey Optimizer Offer Decisioning和Target扩展具有以下优势：
 
-* 更快地从[Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)共享受众
-* 将Target与Journey Optimizer集成以支持[Offer Decisioning交付](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
+* 更快地从[Real-Time Customer Data Platform](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)共享受众
+* 将Target与Journey Optimizer集成以支持[Offer Decisioning交付](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/ajo/offer-decision)
 * 与Adobe Analytics更紧密集成，后者不依赖拼接来自单独网络调用的信息
 * 为开发人员增加实施灵活性
 

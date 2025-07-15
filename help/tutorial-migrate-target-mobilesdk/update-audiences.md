@@ -55,11 +55,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-有关更多信息和最佳实践，请参阅有关[配置文件脚本](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/profile-parameters)的专用文档。
+有关更多信息和最佳实践，请参阅有关[配置文件脚本](https://experienceleague.adobe.com/zh-hans/docs/target/using/audiences/visitor-profiles/profile-parameters)的专用文档。
 
 ## 更新动态内容的参数令牌
 
-如果您将mbox参数迁移到`xdm`对象，并且您有任何使用[动态内容替换](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer)的选件、推荐设计或活动，则可能需要对其进行相应更新以考虑新的XDM参数名称。
+如果您将mbox参数迁移到`xdm`对象，并且您有任何使用[动态内容替换](https://experienceleague.adobe.com/zh-hans/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer)的选件、推荐设计或活动，则可能需要对其进行相应更新以考虑新的XDM参数名称。
 
 根据您使用令牌替换mbox参数的方式，您可以增强现有设置以考虑旧参数名和新参数名。 但是，在无法自定义JavaScript代码的情况下（例如在JSON选件中），您应在迁移完成并在生产网站上处于活动状态之后创建副本并进行更新。
 

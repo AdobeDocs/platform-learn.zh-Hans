@@ -35,7 +35,7 @@ ht-degree: 1%
 
 ## 实体参数
 
-[实体参数](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)用于传递Target Recommendations的行为数据和补充目录信息。 与配置文件参数类似，大多数实体参数应在`data.__adobe.target`对象下传递。 唯一的例外是`xdm.productListItems`数组存在，然后使用第一个`SKU`值作为`entity.id`。
+[实体参数](https://experienceleague.adobe.com/zh-hans/docs/target/using/recommendations/entities/entity-attributes)用于传递Target Recommendations的行为数据和补充目录信息。 与配置文件参数类似，大多数实体参数应在`data.__adobe.target`对象下传递。 唯一的例外是`xdm.productListItems`数组存在，然后使用第一个`SKU`值作为`entity.id`。
 
 特定项的实体参数必须以`entity.`为前缀，才能正确捕获数据。 不应为推荐算法保留的`cartIds`和`excludedIds`参数添加前缀，每个参数的值都必须包含以逗号分隔的实体ID列表。
 
@@ -55,7 +55,7 @@ Target允许使用单个客户ID跨设备和系统同步配置文件。 此客�
 
 | 示例at.js参数 | Platform Web SDK选项 | 注释 |
 | --- | --- | --- |
-| `at_property` | 不适用 | 属性令牌在[数据流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#target)中配置，无法在`sendEvent`调用中设置。 |
+| `at_property` | 不适用 | 属性令牌在[数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure#target)中配置，无法在`sendEvent`调用中设置。 |
 | `pageName` | `xdm.web.webPageDetails.name`或<br> `data.__adobe.target.pageName` | 目标mbox参数可以作为`xdm`对象的一部分或`data.__adobe.target`对象的一部分进行传递。 |
 | `profile.gender` | `data.__adobe.target.profile.gender` | 所有Target配置文件参数都必须作为`data`对象的一部分进行传递，并以为前缀`profile.`，才能正确映射。 |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | 用于Target的类别亲和度功能的保留参数，必须作为`data`对象的一部分传递。 |
@@ -68,7 +68,7 @@ Target允许使用单个客户ID跨设备和系统同步配置文件。 此客�
 | `orderId` | `xdm.commerce.order.purchaseID`<br> （当`commerce.purchases.value`设置为`1`时）<br>或<br> `data.__adobe.target.orderId` | 用于标识Target转化跟踪的唯一订单。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal`<br> （当`commerce.purchases.value`设置为`1`时）<br>或<br> `data.__adobe.target.orderTotal` | 用于跟踪Target转化和优化目标的订单总计。 |
 | `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> （当`commerce.purchases.value`设置为`1`时） <br>OR<br> `data.__adobe.target.productPurchasedId` | 用于Target转化跟踪和推荐算法。 |
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | 用于[自定义评分](https://experienceleague.adobe.com/en/docs/target/using/activities/success-metrics/capture-score)活动目标。 |
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | 用于[自定义评分](https://experienceleague.adobe.com/zh-hans/docs/target/using/activities/success-metrics/capture-score)活动目标。 |
 
 {style="table-layout:auto"}
 
