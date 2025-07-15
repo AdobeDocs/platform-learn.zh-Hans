@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 6c0051e8-3dce-4b1f-a9fa-e86565a9fff4
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '499'
 ht-degree: 2%
 
 ---
@@ -47,6 +47,10 @@ GenStudio for Performance Marketing使用有关您的品牌和市场的信息来
 [1.3.3 Campaign激活到Meta](./ex3.md){target="_blank"}
 
 在本练习中，您将创建一个营销策划。 您还将配置与Meta的连接，并完成创建广告、使用Adobe Workfront批准广告以及将广告发布到Meta所需的所有步骤。
+
+[1.3.4创建AJO的电子邮件体验](./ex4.md){target="_blank"}
+
+在本练习中，您将使用GenStudio for Performance Marketing中的模板创建一个电子邮件体验，并将与Adobe Journey Optimizer共享该体验以发送电子邮件营销活动。
 
 [摘要和优点](./summary.md){target="_blank"}
 

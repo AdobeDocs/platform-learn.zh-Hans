@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
-source-git-commit: b8f7b370a5aba82a0dcd6e7f4f0222fe209976f7
+source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '1038'
 ht-degree: 0%
 
 ---
@@ -233,6 +233,8 @@ GenStudio for Performance Marketing使内容创建者能够使用模板快速生
 
 ![GSPeM](./images/gspem17.png)
 
+### 元模板
+
 转到&#x200B;**内容** > **模板**。 单击&#x200B;**+添加模板**。
 
 ![GSPeM](./images/gspem125.png)
@@ -261,6 +263,8 @@ GenStudio for Performance Marketing使内容创建者能够使用模板快速生
 您的模板现已保存，并可在模板库中使用。
 
 ![GSPeM](./images/gspem131.png)
+
+### 显示横幅广告模板
 
 单击&#x200B;**+添加模板**。
 
@@ -348,6 +352,39 @@ GenStudio for Performance Marketing使内容创建者能够使用模板快速生
 您的模板现已保存，并可在模板库中使用。
 
 ![GSPeM](./images/gspem152.png)
+
+### 电子邮件模板
+
+单击&#x200B;**+添加模板**。
+
+![GSPeM](./images/gspem153.png)
+
+选择&#x200B;**电子邮件**，然后单击&#x200B;**浏览**。
+
+![GSPeM](./images/gspem154.png)
+
+在包含下载的&#x200B;**CitiSignal-GSPeM-assets**&#x200B;文件的文件夹中，导航到文件夹&#x200B;**模板**。 选择文件&#x200B;**citisignal-email-template.html**，然后单击&#x200B;**打开**。
+
+![GSPeM](./images/gspem155.png)
+
+您应该会看到此内容。 单击&#x200B;**下一步**。
+
+![GSPeM](./images/gspem156.png)
+
+单击&#x200B;**下一步**。
+
+![GSPeM](./images/gspem157.png)
+
+将此用于字段&#x200B;**模板名称**：
+`--aepUserLdap---citisignal-email-template`。
+
+单击&#x200B;**发布模板**。
+
+![GSPeM](./images/gspem158.png)
+
+您的模板现已保存，并可在模板库中使用。
+
+![GSPeM](./images/gspem159.png)
 
 您现在已经配置了下一次练习所需的模板。
 
