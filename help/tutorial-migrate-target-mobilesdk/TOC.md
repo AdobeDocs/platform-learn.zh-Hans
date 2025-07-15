@@ -1,5 +1,5 @@
 ---
-user-guide-title: 将您的移动应用程序从Adobe Target迁移到Adobe Journey Optimizer - Decisioning扩展
+user-guide-title: 将您的移动应用程序从Adobe Target迁移到Offer Decisioning和Target扩展
 user-guide-description: 面向Target客户的实践教程，其中涵盖了如何成功将Mobile SDK实施从Target扩展迁移到Optimize扩展
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
@@ -9,7 +9,7 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-17468
-source-git-commit: b6b1416dfdd7077db20b7771d9bd36ca59b84ef6
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
 source-wordcount: '76'
 ht-degree: 3%
@@ -17,7 +17,7 @@ ht-degree: 3%
 ---
 
 
-# 将您的移动应用程序从Adobe Target迁移到Adobe Journey Optimizer - Decisioning扩展{#migrate-target-to-mobile-sdk-decisioning}
+# 将您的移动应用程序从Adobe Target迁移到Offer Decisioning和Target扩展{#migrate-target-to-mobile-sdk-decisioning}
 
 + [教程简介](overview.md)
 

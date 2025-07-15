@@ -1,10 +1,10 @@
 ---
-title: 检索Target活动 — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
-description: 了解在从Adobe Target迁移到Adobe Journey Optimizer - Decisioning Mobile扩展时如何检索Adobe Target活动。
+title: 检索Target活动 — 将移动设备应用程序中的Adobe Target实施迁移到Offer Decisioning和Target扩展
+description: 了解在从Adobe Target迁移到Offer Decisioning和Adobe Target移动设备扩展时如何检索Target活动。
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Target返回的内容（也称为“选件”）通常由文本或JSON组成，�
 * 在应用程序中启用功能标记
 * 提供替换文本或图像
 
-如果您的活动需要同时在应用程序的Target扩展版本和Decisioning扩展版本中运行，请确保进行全面测试。 如果您需要对应用程序的不同版本使用不同的选件，请考虑使用界面中的定位选项将不同的选件交付给不同的版本。
+如果您的活动需要同时在Target扩展以及应用程序的Offer Decisioning和Target扩展版本中运行，请务必进行全面测试。 如果您需要对应用程序的不同版本使用不同的选件，请考虑使用界面中的定位选项将不同的选件交付给不同的版本。
 
 请始终确保包括错误处理功能，以在错误条件下显示合适的体验。
 
@@ -143,8 +143,8 @@ Optimize.updatePropositions(for: [decisionScope1, decisionScope2]
 
 
 
-接下来，了解如何使用Decisioning扩展[传递Target参数](send-parameters.md)。
+接下来，了解如何使用Offer Decisioning和Target扩展[传递目标参数](send-parameters.md)。
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Decisioning扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)中发帖让我们知道。
+>我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Offer Decisioning和Target扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)中发帖让我们知道。

@@ -1,35 +1,35 @@
 ---
-title: Target扩展与Decisioning扩展的比较
-description: 了解Target扩展与Decisioning扩展之间的差异，包括功能、功能、设置和数据流。
+title: Target扩展与Offer Decisioning和Target扩展的比较
+description: 了解Offer Decisioning的Target扩展与Target扩展之间的差异，包括功能、功能、设置和数据流。
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '833'
 ht-degree: 1%
 
 ---
 
-# Target扩展与Decisioning扩展的比较
+# Target扩展与Offer Decisioning和Target扩展的比较
 
-Adobe Journey Optimizer - Decisioning扩展不同于适用于移动应用程序的Adobe Target扩展。 下表可供参考，以帮助您评估在迁移过程中可能需要重点实施的各个方面。
+Offer Decisioning和Target扩展不同于适用于移动设备应用程序的Adobe Target扩展。 下表可供参考，以帮助您评估在迁移过程中可能需要重点实施的各个方面。
 
 在查看以下信息并评估您当前的技术性Target扩展实施情况后，您应该能够了解以下内容：
 
-- Adobe Journey Optimizer支持哪些Target功能 — Decisioning
-- 哪些Adobe Target扩展函数具有Adobe Journey Optimizer — 决策等效项
-- 如何将Target设置应用于Adobe Journey Optimizer - Decisioning
-- 使用Adobe Journey Optimizer - Decisioning扩展时的数据流动方式
+- Offer Decisioning和Target支持哪些目标功能
+- 哪些Adobe Target扩展函数具有Offer Decisioning和Target等效项
+- 如何将Target设置与Offer Decisioning和Target一起应用
+- 使用Offer Decisioning和Target扩展时的数据流动方式
 
 ## 操作差异
 
-| | 目标扩展 | Decisioning扩展 |
+| | 目标扩展 | Offer Decisioning和Target扩展 |
 |---|---|---|
-| 进程 | 对Target实施所做的更改可能会遵循与其他应用程序（如Analytics）相比节奏或QA要求不同的流程。 | 对Decisioning扩展实施的更改应考虑所有下游应用程序，并应相应地调整QA和发布流程。 |
-| 协作 | 可以在Target调用中直接传递特定于Target的数据。 如果Target报表源是Adobe Analytics (A4T)，则当在Target扩展中调用适当的跟踪方法来进行Target内容显示和交互时，特定于Target的数据也可以传递到Adobe Analytics。 | 如果Target报表源是Adobe Analytics (A4T)，并且在数据流中启用了Adobe Analytics，并且在显示Target内容并与之交互时，可以将在Decisioning扩展调用中传递的数据转发到Target和Analytics。 |
+| 进程 | 对Target实施所做的更改可能会遵循与其他应用程序（如Analytics）相比节奏或QA要求不同的流程。 | 对Offer Decisioning和Target扩展实施所做的更改应考虑所有下游应用程序，并应相应地调整QA和发布流程。 |
+| 协作 | 可以在Target调用中直接传递特定于Target的数据。 如果Target报表源是Adobe Analytics (A4T)，则当在Target扩展中调用适当的跟踪方法来进行Target内容显示和交互时，特定于Target的数据也可以传递到Adobe Analytics。 | 如果目标报表源是Adobe Analytics (A4T)，并且在数据流中启用了Adobe Analytics，并且显示Target内容并与之交互时，调用了Offer Decisioning和Target扩展中的相应跟踪方法，则可以将在Offer Decisioning和Target扩展调用中传递的数据转发到Target和Analytics。 |
 
 ## 基本差异
 
-| | 目标扩展 | Decisioning扩展 |
+| | 目标扩展 | Offer Decisioning和Target扩展 |
 |---|---|---|
 | 依赖关系 | 仅依赖于Mobile Core SDK | 依赖于Mobile Core和Edge Network SDK |
 | 库功能 | 仅支持从Adobe Target获取内容 | 支持从Adobe Target和Offer Decisioning获取内容 |
@@ -43,10 +43,10 @@ Adobe Journey Optimizer - Decisioning扩展不同于适用于移动应用程序�
 
 ## 功能比较
 
-| 功能 | 目标扩展 | Decisioning扩展(通过Edge的Target) |
+| 功能 | 目标扩展 | Offer Decisioning和Target扩展(Target通过Edge) |
 |---|---|---|
 | 预取模式 | 支持 | 支持 |
-| 执行模式 | 支持 | 不支持 |
+| 执行模式 | 支持 | 不受支持 |
 | 自定义参数 | 支持 | 支持* |
 | 轮廓参数 | 支持 | 支持* |
 | 实体参数 | 支持 | 支持* |
@@ -69,9 +69,9 @@ Adobe Journey Optimizer - Decisioning扩展不同于适用于移动应用程序�
 
 >[!NOTE]
 >
->即使在将应用程序代码迁移到Decisioning扩展后，仍应保持Target扩展标记配置和设置不变。 这有助于确保尚未将应用程序更新到新版本的客户能够继续使用Target。
+>即使您将应用程序代码迁移到Offer Decisioning和Target扩展，也要保持Target扩展标记配置和设置不变。 这有助于确保尚未将应用程序更新到新版本的客户能够继续使用Target。
 >
->如果您使用Analytics for Target集成(A4T)，则在将Target实施迁移到Decisioning扩展时，请务必同时使用Edge Bridge扩展迁移Analytics实施。
+>如果您使用Analytics for Target集成(A4T)，则在将Target实施迁移到Edge和Target扩展时，请务必同时使用Offer Decisioning Bridge扩展迁移Analytics实施。
 
 
 
@@ -79,15 +79,15 @@ Adobe Journey Optimizer - Decisioning扩展不同于适用于移动应用程序�
 
 >[!IMPORTANT]
 >
-> 即使将应用程序代码迁移到Decisioning扩展，Target扩展设置仍保持不变。 这有助于确保Target继续适用于尚未更新应用程序的用户。
+> 即使将应用程序代码迁移到Offer Decisioning和Target扩展后，Target扩展设置仍保持不变。 这有助于确保Target继续适用于尚未更新应用程序的用户。
 
-## Decisioning扩展系统图
+## Offer Decisioning和Target扩展系统图
 
-下图应该可以帮助您了解使用Adobe Journey Optimizer - Decisioning扩展的数据流。
+下图应该可以帮助您了解使用Offer Decisioning和Target扩展的数据流。
 
 使用客户端Mobile SDK的![Adobe Target Edge Decisioning](assets/diagram.png)
 
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Decisioning扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)中发帖让我们知道。
+>我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Offer Decisioning和Target扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)中发帖让我们知道。

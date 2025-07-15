@@ -1,10 +1,10 @@
 ---
-title: 更新Target受众和配置文件脚本 — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
-description: 了解如何更新Adobe Target受众和配置文件脚本，以便与Decisioning扩展兼容。
+title: 更新Target受众和配置文件脚本 — 将移动设备应用程序中的Adobe Target实施迁移到Offer Decisioning和Target扩展
+description: 了解如何更新Adobe Target受众和配置文件脚本，以便与Offer Decisioning和Target扩展兼容。
 exl-id: de3ce2c7-0066-496a-a8a7-994d7ce3d92c
-source-git-commit: b8baa6d48b9a99d2d32fad2221413b7c10937191
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '542'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 # 更新Target受众和配置文件脚本，以实现Decisioning移动扩展兼容性
 
 
-完成将Target迁移到Decisioning扩展的技术更新后，您可能需要更新某些受众、配置文件脚本和活动，以确保顺利过渡。
+完成技术更新以将Target迁移到Offer Decisioning和Target扩展后，您可能需要更新某些受众、配置文件脚本和活动以确保顺利过渡。
 
 >[!INFO]
 >
@@ -29,9 +29,9 @@ ht-degree: 0%
 
 如果您将mbox参数迁移到`xdm`对象，则应更新使用自定义mbox参数的受众以使用新的XDM参数名称。 例如，`page_name`的自定义参数可能会映射到`web.webpagedetails.pageName`。
 
-一种确保与Target扩展和Decisioning扩展兼容的方法是，更新任何相关的受众，以便使用`OR`条件，如下所示：
+一种确保与Target扩展以及Offer Decisioning和Target扩展兼容的方法是，更新任何相关的受众，以便使用`OR`条件，如下所示：
 
-![如何查看更新Target受众以获得Decisioning扩展兼容性](assets/target-audience-update.png){zoomable="yes"}
+![如何查看更新Target受众以了解Offer Decisioning和Target扩展兼容性](assets/target-audience-update.png){zoomable="yes"}
 
 ## 编辑配置文件脚本
 
@@ -55,11 +55,11 @@ if((mbox.param('pageName') == 'Product Details') || (mbox.param('web.webPageDeta
 }
 ```
 
-有关更多信息和最佳实践，请参阅有关[配置文件脚本](https://experienceleague.adobe.com/zh-hans/docs/target/using/audiences/visitor-profiles/profile-parameters)的专用文档。
+有关更多信息和最佳实践，请参阅有关[配置文件脚本](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/profile-parameters)的专用文档。
 
 ## 更新动态内容的参数令牌
 
-如果您将mbox参数迁移到`xdm`对象，并且您有任何使用[动态内容替换](https://experienceleague.adobe.com/zh-hans/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer)的选件、推荐设计或活动，则可能需要对其进行相应更新以考虑新的XDM参数名称。
+如果您将mbox参数迁移到`xdm`对象，并且您有任何使用[动态内容替换](https://experienceleague.adobe.com/en/docs/target/using/experiences/offers/passing-profile-attributes-to-the-html-offer)的选件、推荐设计或活动，则可能需要对其进行相应更新以考虑新的XDM参数名称。
 
 根据您使用令牌替换mbox参数的方式，您可以增强现有设置以考虑旧参数名和新参数名。 但是，在无法自定义JavaScript代码的情况下（例如在JSON选件中），您应在迁移完成并在生产网站上处于活动状态之后创建副本并进行更新。
 
@@ -88,4 +88,4 @@ JSON选件示例：
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Decisioning扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。
+>我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Offer Decisioning和Target扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。

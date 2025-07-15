@@ -3,9 +3,9 @@ title: 通过Platform Mobile SDK使用Places
 description: 了解如何在移动应用程序中使用Places地理位置服务。
 jira: KT-14635
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
-source-git-commit: 3186788dfb834f980f743cef82942b3cf468a857
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1591'
 ht-degree: 1%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 了解如何在应用程序中使用Places地理位置服务。
 
-Adobe Experience Platform数据收集位置服务是一种地理位置服务，它使具有位置感知的移动应用程序能够了解位置上下文。 该服务使用丰富且易于使用的SDK接口，并随附了灵活的兴趣点(POI)数据库。
+Adobe Experience Platform数据收集位置服务是一种地理位置服务，它使具有位置感知的移动应用程序能够了解位置上下文。 该服务使用丰富且易于使用的SDK界面，并随附了灵活的兴趣点(POI)数据库。
 
 ## 先决条件
 
@@ -38,7 +38,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
 ## 设置
 
-要使Places服务在您的应用程序和Mobile SDK中正常工作，您必须进行一些设置。
+要使Places服务在您的应用程序内但在Mobile SDK中正常工作，您必须进行一些设置。
 
 ### 定义地标
 
@@ -74,13 +74,12 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 搜索&#x200B;**[!UICONTROL Places]**&#x200B;扩展。
 1. 安装扩展。
 
-   ![添加Decisioning扩展](assets/tag-places-extension.png)
+   ![添加Offer Decisioning和Target扩展](assets/tag-places-extension.png)
 
 1. 在&#x200B;**[!UICONTROL 安装扩展]**&#x200B;对话框中：
-   1. 从&#x200B;**[!UICONTROL 选择库]**&#x200B;列表中选择&#x200B;**[!DNL Luma]**。
+   1. 从&#x200B;**[!DNL Luma]**&#x200B;选择库&#x200B;**[!UICONTROL 列表中选择]**。
    1. 请确保已选择您的工作库，例如&#x200B;**[!UICONTROL 初始内部版本]**。
    1. 从&#x200B;**[!UICONTROL 保存到库]**&#x200B;中选择&#x200B;**[!UICONTROL 保存到库并生成]**。
-
       ![安装Places扩展](assets/places-install-extension.png)。
 
 1. 已重建您的库。
@@ -94,7 +93,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 从顶部栏中选择&#x200B;**[!UICONTROL 浏览]**。
 1. 选择您的架构以将其打开。
 1. 在架构编辑器中，选择&#x200B;**[!UICONTROL 使用者体验事件]**。
-1. 您看到&#x200B;**[!UICONTROL placeContext]**&#x200B;对象，其中包含用于捕获POI交互和地理位置数据的对象和字段。
+1. 您看到&#x200B;**[!UICONTROL placeContext]**对象，其中包含用于捕获POI交互和地理位置数据的对象和字段。
    ![架构位置](assets/schema-places-context.png)。
 
 
@@ -137,12 +136,11 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 在标记属性中，从左边栏选择&#x200B;**[!UICONTROL 规则]**。
 1. 选择&#x200B;**[!UICONTROL 添加规则]**。
 1. 在&#x200B;**[!UICONTROL 创建规则]**&#x200B;屏幕中，输入规则的名称，例如`POI - Entry`。
-1. 选择&#x200B;**[!UICONTROL EVENTS]**&#x200B;下的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
+1. 选择![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下的&#x200B;**[!UICONTROL 添加]**。
    1. 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择&#x200B;**[!UICONTROL 地标]**，并从&#x200B;**[!UICONTROL 事件类型]**&#x200B;列表中选择&#x200B;**[!UICONTROL 输入POI]**。
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
-
       ![标记事件](assets/tags-event-mobile-core.png)。
-1. 选择&#x200B;**[!UICONTROL ACTIONS]**&#x200B;下的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
+1. 选择![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下的&#x200B;**[!UICONTROL 添加]**。
    1. 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择&#x200B;**[!UICONTROL 移动核心]**，从列表&#x200B;**[!UICONTROL 操作类型]**&#x200B;中选择&#x200B;**[!UICONTROL 附加数据]**。 此操作附加有效负荷数据。
    1. 在&#x200B;**[!UICONTROL JSON有效负载]**&#x200B;中，粘贴以下有效负载：
 
@@ -168,14 +166,13 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
       }
       ```
 
-      您还可以通过选择![数据](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)在JSON中插入`{%% ... %%}`数据元素占位符值。 弹出对话框允许您选择创建的任何数据元素。
+      您还可以通过选择`{%% ... %%}`数据![在JSON中插入](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg)数据元素占位符值。 弹出对话框允许您选择创建的任何数据元素。
 
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
-
       ![标记操作](assets/tags-action-mobile-core.png)
 
-1. 选择&#x200B;**[!UICONTROL 移动核心 — 附加数据]**&#x200B;操作旁边的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
-   1. 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择&#x200B;**[!UICONTROL Adobe Experience PlatformEdge Network]**，然后选择&#x200B;**[!UICONTROL 将事件转发到Edge Network]**。 此操作确保将事件和其他有效负载数据转发到PlatformEdge Network。
+1. 选择![移动核心 — 附加数据](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)操作旁边的&#x200B;**[!UICONTROL 添加]**。
+   1. 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**，然后选择&#x200B;**[!UICONTROL 将事件转发到Edge Network]**。 此操作确保将事件和其他有效负载数据转发到Platform Edge Network。
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
 
 1. 要保存规则，请选择&#x200B;**[!UICONTROL 保存到库]**。
@@ -185,10 +182,10 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 让我们再创建一个规则
 
 1. 在&#x200B;**[!UICONTROL 创建规则]**&#x200B;屏幕中，输入规则的名称，例如`POI - Exit`。
-1. 选择&#x200B;**[!UICONTROL EVENTS]**&#x200B;下的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
+1. 选择![EVENTS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下的&#x200B;**[!UICONTROL 添加]**。
    1. 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择&#x200B;**[!UICONTROL 地标]**，并从&#x200B;**[!UICONTROL 事件类型]**&#x200B;列表中选择&#x200B;**[!UICONTROL 退出POI]**。
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
-1. 选择&#x200B;**[!UICONTROL ACTIONS]**&#x200B;下的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
+1. 选择![ACTIONS](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下的&#x200B;**[!UICONTROL 添加]**。
    1. 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择&#x200B;**[!UICONTROL 移动核心]**，从&#x200B;**[!UICONTROL 操作类型]**&#x200B;列表中选择&#x200B;**[!UICONTROL 附加数据]**。
    1. 在&#x200B;**[!UICONTROL JSON有效负载]**&#x200B;中，粘贴以下有效负载：
 
@@ -216,8 +213,8 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
 
-1. 选择&#x200B;**[!UICONTROL 移动核心 — 附加数据]**&#x200B;操作旁边的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)。
-   1. 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择&#x200B;**[!UICONTROL Adobe Experience PlatformEdge Network]**，然后选择&#x200B;**[!UICONTROL 将事件转发到Edge Network]**。
+1. 选择![移动核心 — 附加数据](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)操作旁边的&#x200B;**[!UICONTROL 添加]**。
+   1. 从&#x200B;**[!UICONTROL 扩展]**&#x200B;列表中选择&#x200B;**[!UICONTROL Adobe Experience Platform Edge Network]**，然后选择&#x200B;**[!UICONTROL 将事件转发到Edge Network]**。
    1. 选择&#x200B;**[!UICONTROL 保留更改]**。
 
 1. 要保存规则，请选择&#x200B;**[!UICONTROL 保存到库]**。
@@ -236,10 +233,10 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
 ## 验证Assurance中的设置
 
-要在Assurance中验证设置，请执行以下操作：
+要验证Assurance中的设置，请执行以下操作：
 
 1. 转到Assurance UI。
-1. 如果左边栏中尚不可用，请在左边栏中选择&#x200B;**[!UICONTROL 配置]**，然后选择&#x200B;**[!UICONTROL 事件]**&#x200B;旁边的![添加](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)和&#x200B;**[!UICONTROL PLACES SERVICE]**&#x200B;下的&#x200B;**[!UICONTROL 映射和模拟]**。
+1. 如果左边栏中尚不可用，请在左边栏中选择&#x200B;**[!UICONTROL 配置]**，然后选择![事件](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)旁边的&#x200B;**[!UICONTROL 添加]**&#x200B;和&#x200B;**[!UICONTROL PLACES SERVICE]**&#x200B;下的&#x200B;**[!UICONTROL 映射和模拟]**。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 在左边栏中选择&#x200B;**[!UICONTROL 映射和模拟]**。
 1. 将地图移动到某个POI的位置。
@@ -257,7 +254,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
 >[!NOTE]
 >
->如果您已完成[安装SDK](install-sdks.md)部分，则表明已安装Places SDK，您可以跳过此步骤。
+>如果您已完成[安装SDK](install-sdks.md)部分，则Places SDK已安装，您可以跳过此步骤。
 >
 
 1. 在Xcode中，确保将[AEP Places](https://github.com/adobe/aepsdk-places-ios)添加到包依赖关系中的包列表中。 请参阅[Swift包管理器](install-sdks.md#swift-package-manager)。
@@ -339,16 +336,16 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
 ## 后续步骤
 
-您现在应该拥有所有工具，以便开始在应用程序中为地理位置功能添加更多功能。 由于您已将事件转发给Edge Network，因此，在为[Experience Platform](platform.md)设置应用程序后，您应该会看到应用程序中使用的配置文件所显示的体验事件。
+您现在应该拥有所有工具，以便开始在应用程序中为地理位置功能添加更多功能。 由于您已将事件转发到Edge Network，因此，在为[Experience Platform](platform.md)设置应用程序后，您应该会看到应用程序中使用的配置文件所显示的体验事件。
 
 在本教程的Journey Optimizer部分中，您将看到体验事件可用于触发历程(请参阅[推送通知](journey-optimizer-inapp.md)和使用Journey Optimizer的[应用程序内消息传送](journey-optimizer-push.md))。 例如，通常情况下，当用户进入实体商店的地理围栏时，向应用程序用户发送推送通知并促销某些产品。
 
-您已看到应用程序功能的实施，这些功能主要由Places服务以及您在标记属性中定义的数据元素和规则驱动。 因此，请最大限度地减少应用程序中的代码。 或者，您可以使用包含填充的`placeContext`对象的XDM有效负载，通过[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API（有关详细信息，请参阅[事件](events.md)）直接在您的应用程序中实施相同的功能。
+您已看到应用程序功能的实施，这些功能主要由Places服务以及您在标记属性中定义的数据元素和规则驱动。 因此，请最大限度地减少应用程序中的代码。 或者，您可以使用包含填充的[`Edge.sendEvent`对象的XDM有效负载，通过](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)[ API（有关详细信息，请参阅](events.md)事件`placeContext`）直接在您的应用程序中实施相同的功能。
 
 >[!SUCCESS]
 >
->现在，您已使用Experience PlatformMobile SDK中的Places扩展为地理定位服务启用应用程序。
+>现在，您已使用Experience Platform Mobile SDK中的Places扩展为地理定位服务启用应用程序。
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有疑问、希望共享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上共享它们。
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享这些内容。
 
 下一步：**[将数据映射到Adobe Analytics](analytics.md)**

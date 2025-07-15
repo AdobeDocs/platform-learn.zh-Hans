@@ -1,10 +1,10 @@
 ---
-title: 替换SDK — 将移动应用程序中的Adobe Target实施迁移到Adobe Journey Optimizer - Decisioning扩展
-description: 了解在从SDK迁移到Adobe Journey Optimizer - Decisioning Mobile扩展时如何替换Adobe Target。
+title: 替换SDK — 将移动应用程序中的Adobe Target实施迁移到Offer Decisioning和Target扩展
+description: 了解在从SDK迁移到Offer Decisioning和Adobe Target Mobile扩展时如何替换Target。
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
-source-git-commit: 2ebad2014d4c29a50af82328735258958893b42c
+source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '726'
 ht-degree: 2%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 2%
 >在Adobe Experience Platform Mobile SDK生态系统内，扩展由导入到您的应用程序中的SDK实施，这些SDK可能具有不同的名称：
 >
 > * **Target SDK**&#x200B;实现&#x200B;**Adobe Target扩展**
-> * **优化SDK**&#x200B;实施&#x200B;**Adobe Journey Optimizer - Decisioning扩展**
+> * **优化SDK**&#x200B;实现&#x200B;**Offer Decisioning和Target扩展**
 
 ## 更新依赖项
 
@@ -132,7 +132,7 @@ public class MainApp extends Application {
  
         MobileCore.registerExtensions(
             Arrays.asList(Edge.EXTENSION, Identity.EXTENSION, Optimize.EXTENSION),
-            o -> Log.d("MainApp", "Adobe Journey Optimizer - Decisioning Mobile SDK was initialized.")
+            o -> Log.d("MainApp", "Offer Decisioning and Target Mobile SDK was initialized.")
         );
     }
 }
@@ -266,9 +266,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ## API比较
 
-许多Target扩展API都具有使用下表概述的Decisioning扩展的等效方法。 有关[函数](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/)的更多详细信息，请参阅API参考。
+许多Target扩展API都具有使用下表所述的Offer Decisioning和Target扩展的等效方法。 有关[函数](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/)的更多详细信息，请参阅API参考。
 
-| 目标扩展 | Decisioning扩展 | 注释 |
+| 目标扩展 | Offer Decisioning和Target扩展 | 注释 |
 | --- | --- | --- | 
 | [prefetchContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [updatePropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  |
 | [retrieveLocationContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [getPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | 使用`getPropositions` API时，不会进行远程调用以获取SDK中未缓存的作用域。 |
@@ -288,4 +288,4 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Decisioning扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)中发帖让我们知道。
+>我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Offer Decisioning和Target扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)中发帖让我们知道。
