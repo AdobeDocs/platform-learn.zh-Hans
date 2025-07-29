@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 为Real-Time CDP Collaboration设置权限
 
-了解如何设置访问和使用Real-Time CDP Collaboration所需的权限。 有关详细文档，请转到[访问控制概述](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}。
+了解如何设置访问和使用Real-Time CDP Collaboration所需的权限。 有关详细文档，请转到[访问控制概述](https://experienceleague.adobe.com/zh-hans/docs/real-time-cdp-collaboration/using/permissions/overview){target="_blank"}。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452216/?learn=on&enablevpops)
 
