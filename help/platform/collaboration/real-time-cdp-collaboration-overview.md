@@ -1,6 +1,6 @@
 ---
 title: Real-Time CDP Collaboration概述
-description: 了解Adobe Real-Time Collaboration，它是一种专门构建的数据协作应用程序，允许您发现和激活高价值受众，并使用测量功能产生切实的成果。
+description: 了解 Adobe Real-Time CDP Collaboration——一款专为数据协作打造的应用程序，可帮助您发现并激活高价值受众，并通过衡量功能推动实际业务成果。
 feature: Collaboration
 role: Leader, User
 level: Beginner
@@ -8,22 +8,22 @@ duration: 92
 last-substantial-update: 2025-07-07T00:00:00Z
 jira: KT-17316
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
-source-git-commit: 26f0df1b3b62ac4687243f7c564dacc385b4ede4
+source-git-commit: 250163d15e7ed54252bf1f2762dc35663bc7647d
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 12%
+source-wordcount: '642'
+ht-degree: 18%
 
 ---
 
 # Real-Time CDP Collaboration概述
 
-借助Adobe Real-Time Customer Data Platform (CDP) Collaboration，您可以发现、激活和衡量高价值受众，而无需依赖第三方Cookie。 此解决方案支持广告商和发布商之间的高级数据协作，帮助您在安全隐私的集中环境中创建个性化的、有影响力的客户体验。
+借助Adobe Real-Time CDP Collaboration，您可以发现、激活和衡量高价值受众，而无需依赖第三方Cookie。 此解决方案支持协作者之间的高级数据协作，可帮助您在安全隐私的集中环境中创建个性化的、有影响力的客户体验。
 
 在下面您将找到视频和其他资源，以帮助您了解如何设置、使用Real-Time CDP Collaboration并从中获益。 其他资产将会添加到此页面和网站，因此请经常回来查看。 祝您学习顺利！
 
-有关详细信息，请参阅Real-Time CDP Collaboration [文档](https://experienceleague.adobe.com/zh-hans/docs/real-time-cdp-collaboration/using/home){target="_blank"}。
+有关详细信息，请参阅Real-Time CDP Collaboration [文档](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/home){target="_blank"}。
 
-[![ExL LIVE 2025年4月10日](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/zh-hans/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
+[![ExL LIVE 2025年4月10日](../assets/exl-live-20250410-img.jpg)](https://experienceleague.adobe.com/en/docs/events/experience-league-live-recordings/episodes/exl-live-episode-04-10-25)
 
 ## 快速入门
 
@@ -41,7 +41,7 @@ ht-degree: 12%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration简介" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446811/?format=jpeg&nocache=1752870045626&captions=chi_hans" alt="Real-Time CDP Collaboration简介"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1752870045626" alt="Real-Time CDP Collaboration简介"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -51,7 +51,7 @@ ht-degree: 12%
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="real-time-cdp-collaboration-intro.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration简介">Real-Time CDP Collaboration简介</a>
                     </p>
-                    <p class="is-size-6">简单介绍Adobe Real-Time CDP Collaboration，它是一种专门构建的数据协作应用程序，可让您发现和激活高价值受众，并使用测量功能产生切实的成果。</p>
+                    <p class="is-size-6">了解 Adobe Real-Time CDP Collaboration——一款专为数据协作打造的应用程序，可帮助您发现并激活高价值受众，并通过衡量功能推动实际业务成果。</p>
                 </div>
                 <a href="real-time-cdp-collaboration-intro.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">观看</span>
@@ -64,7 +64,7 @@ ht-degree: 12%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="面向代理从业者的Real-Time CDP概述" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464668/?format=jpeg&nocache=1752870045622&captions=chi_hans" alt="面向代理从业者的Real-Time CDP概述"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1752870045622" alt="面向代理从业者的Real-Time CDP概述"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ ht-degree: 12%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration — 流程和人员" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464679/?format=jpeg&nocache=1752870045616&captions=chi_hans" alt="Real-Time CDP Collaboration — 流程和人员"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1752870045616" alt="Real-Time CDP Collaboration — 流程和人员"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -112,7 +112,7 @@ ht-degree: 12%
 
 ## 设置
 
-要开始配置，请联系您的Adobe Experience Platform (AEP)管理员，以确保您拥有设置Real-Time CDP Collaboration权限的适当访问权限，如后续教程中所述。 如果您无法识别AEP管理员，请联系您的Adobe帐户团队。
+要开始配置，请联系您的Adobe Experience Platform管理员，以确保您拥有设置Real-Time CDP Collaboration权限的适当访问权限，如后续教程中所述。 如果您无法识别Experience Platform管理员，请联系您的Adobe帐户团队。
 
 <!-- CARDS
 {cta=Watch}
@@ -128,7 +128,7 @@ ht-degree: 12%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="为基于Adobe Experience Platform的应用程序添加产品管理员" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423932?format=jpeg&nocache=1752870046144&captions=chi_hans" alt="为基于Adobe Experience Platform的应用程序添加产品管理员"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1752870046144" alt="为基于Adobe Experience Platform的应用程序添加产品管理员"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,7 @@ ht-degree: 12%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="为Real-Time CDP Collaboration设置权限" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452240/?format=jpeg&nocache=1752870046165&captions=chi_hans" alt="为Real-Time CDP Collaboration设置权限"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1752870046165" alt="为Real-Time CDP Collaboration设置权限"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -184,7 +184,7 @@ ht-degree: 12%
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="set-up-an-advertiser-account.md" target="_blank" rel="referrer" title="在Real-Time CDP Collaboration中设置广告商帐户">在 Real-Time CDP Collaboration 中设置广告商帐户</a>
                     </p>
-                    <p class="is-size-6">了解如何在 Real-Time CDP Collaboration 中设置广告商帐户（组织）。</p>
+                    <p class="is-size-6">了解如何在Real-Time CDP Collaboration中设置广告商帐户。</p>
                 </div>
                 <a href="set-up-an-advertiser-account.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">观看</span>
@@ -219,9 +219,9 @@ ht-degree: 12%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="reference-audiences-as-an-advertiser.md" target="_blank" rel="referrer" title="在Real-Time CDP Collaboration中将受众引用为广告商">在 Real-Time CDP Collaboration 中作为广告商引用受众</a>
+                        在Real-Time CDP Collaboration中将<a href="reference-audiences-as-an-advertiser.md" target="_blank" rel="referrer" title="在Real-Time CDP Collaboration中将受众引用为广告商">Source受众作为广告商</a>
                     </p>
-                    <p class="is-size-6">作为广告商，了解如何引用受众，将他们带入您的界面，以便在您与伙伴合作时使用他们。</p>
+                    <p class="is-size-6">作为广告商，了解如何获取受众，将受众引入您的界面，以便在与合作伙伴协作时使用这些受众。</p>
                 </div>
                 <a href="reference-audiences-as-an-advertiser.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">观看</span>
@@ -257,7 +257,7 @@ ht-degree: 12%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="在Real-Time CDP Collaboration中创建项目" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464044/?format=jpeg&nocache=1752870046719&captions=chi_hans" alt="在Real-Time CDP Collaboration中创建项目"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1752870046719" alt="在Real-Time CDP Collaboration中创建项目"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -265,9 +265,9 @@ ht-degree: 12%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="create-a-project.md" target="_blank" rel="referrer" title="在Real-Time CDP Collaboration中创建项目">在Real-Time CDP Collaboration中创建项目</a>
+                        <a href="create-a-project.md" target="_blank" rel="referrer" title="在Real-Time CDP Collaboration中创建项目">在 Real-Time CDP Collaboration 中创建项目</a>
                     </p>
-                    <p class="is-size-6">了解在Collaboration中创建项目的基础知识，包括简要了解发现、激活和测量。</p>
+                    <p class="is-size-6">了解在 Collaboration 中创建项目的基础知识，并简要了解受众发现、激活与衡量功能。</p>
                 </div>
                 <a href="create-a-project.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">观看</span>
