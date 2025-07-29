@@ -20,7 +20,7 @@ ht-degree: 1%
 
 了解如何订阅联合受众构成警报，以接收成功执行和失败执行的应用程序内通知或电子邮件通知。 要启用此功能，请在Experience Platform产品的“通知设置”中配置其首选项。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470054/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470064/?learn=on&enablevpops&captions=chi_hans)
 
 
 ## 如何启用通知

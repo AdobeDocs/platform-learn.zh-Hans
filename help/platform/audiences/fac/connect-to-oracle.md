@@ -20,4 +20,4 @@ ht-degree: 0%
 
 了解如何在Adobe Experience Platform中连接Oracle数据库以发现架构、构建数据模型并将数据用于受众扩充。 该视频将逐步介绍添加联合Oracle数据库的过程，从导航到联合数据部分到输入连接详细信息。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470069/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470086/?learn=on&enablevpops&captions=chi_hans)
