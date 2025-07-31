@@ -143,7 +143,7 @@ ht-degree: 3%
 >[!TIP]
 >
 >您还可以通过使用Web浏览器网络工具、筛选`/ee`请求、打开信标&#x200B;[!UICONTROL **有效负载**]并向下钻取到要查找的变量来查找XDM对象路径。 然后，使用鼠标右键单击并选择“复制属性路径”。 以下是浏览器视区高度的示例：
->> ![事件转发XDM路径](assets/event-forwarding-xdm-path.png)
+>&#x200B;> ![事件转发XDM路径](assets/event-forwarding-xdm-path.png)
 
 1. 转到您最近创建的&#x200B;**[!UICONTROL 事件转发]**&#x200B;属性
 

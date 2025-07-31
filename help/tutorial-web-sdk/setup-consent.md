@@ -58,7 +58,9 @@ ht-degree: 1%
     >[！NOTE]
     >
     >通常，负责处理CMP的团队或个人（如OneTrust或TrustArc.
+
 ）会完成并注意上述步骤。
+
 ## 插入CMP
 
 >[!WARNING]
@@ -152,7 +154,7 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 
 1. 创建一个规则，该规则在访客单击&#x200B;**时触发。我拒绝**。  将此规则命名为： `all pages - click consent banner - set consent "out"`
 
-1. 作为&#x200B;**[!UICONTROL Event]**，对与CSS选择器匹配的&#x200B;**[!UICONTROL 元素使用]** Click ****`#klaro .cn-decline`
+1. 作为&#x200B;**[!UICONTROL Event]**，对与CSS选择器匹配的&#x200B;**[!UICONTROL 元素使用]** Click **&#x200B;**`#klaro .cn-decline`
 
    ![规则条件用户单击“我拒绝”](assets/consent-optOut-clickEvent.png)
 
@@ -196,11 +198,11 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 
 1. 创建一个规则，该规则将在访客单击&#x200B;**时触发，这没有关系**。  将此规则命名为： `all pages - click consent banner - set consent "in"`
 
-1. 作为&#x200B;**[!UICONTROL Event]**，对与CSS选择器匹配的&#x200B;**[!UICONTROL 元素使用]** Click ****`#klaro .cm-btn-success`
+1. 作为&#x200B;**[!UICONTROL Event]**，对与CSS选择器匹配的&#x200B;**[!UICONTROL 元素使用]** Click **&#x200B;**`#klaro .cm-btn-success`
 
    ![规则条件用户单击“没问题”](assets/consent-optIn-clickEvent.png)
 
-1. 使用[!UICONTROL 的Experience Platform Web SDK ]扩展&#x200B;**[!UICONTROL ，]**&#x200B;操作类型&#x200B;**[!UICONTROL ，]**&#x200B;常规同意&#x200B;**[!UICONTROL ，添加操作]**&#x200B;作为&#x200B;**[!UICONTROL In]**。
+1. 使用[!UICONTROL 的Experience Platform Web SDK &#x200B;]扩展&#x200B;**[!UICONTROL ，]**&#x200B;操作类型&#x200B;**[!UICONTROL ，]**&#x200B;常规同意&#x200B;**[!UICONTROL ，添加操作]**&#x200B;作为&#x200B;**[!UICONTROL In]**。
 
    ![同意规则选择加入操作](assets/consent-rule-optin-action.png)
 

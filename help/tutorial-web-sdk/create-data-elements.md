@@ -58,7 +58,7 @@ ht-degree: 2%
 
 以下是使用Adobe客户端数据层格式时数据层的外观示例：
 
-数据层中的+++XDM示例
++++数据层中的XDM示例
 
 ```JSON
 window.adobeDataLayer.push({
@@ -174,16 +174,16 @@ window.adobeDataLayer.push({
 
 按照以下相同步骤创建这些附加数据元素：
 
-* **`page.pageInfo.server`**映射到
+* **`page.pageInfo.server`**&#x200B;映射到
   `digitalData.page.pageInfo.server`
 
-* **`page.pageInfo.hierarchie1`**映射到
+* **`page.pageInfo.hierarchie1`**&#x200B;映射到
   `digitalData.page.pageInfo.hierarchie1`
 
-* **`user.profile.attributes.username`**映射到
+* **`user.profile.attributes.username`**&#x200B;映射到
   `digitalData.user.0.profile.0.attributes.username`
 
-* **`user.profile.attributes.loggedIn`**映射到
+* **`user.profile.attributes.loggedIn`**&#x200B;映射到
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
 * **`product.productInfo.sku`**&#x200B;映射到`digitalData.product.0.productInfo.sku`

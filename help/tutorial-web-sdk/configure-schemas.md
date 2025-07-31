@@ -113,7 +113,7 @@ XDM架构是描述Experience Platform中数据的标准方式，允许与架构�
 
 >[!TIP]
 > 
->在本练习中，您将为Web数据收集添加推荐的预定义字段组：_**[!UICONTROL AEP Web SDK ExperienceEvent]**_&#x200B;和&#x200B;_**[!UICONTROL 使用者体验事件]**_。
+>在本练习中，您将为Web数据收集添加推荐的预定义字段组：_&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_&#x200B;和&#x200B;_&#x200B;**[!UICONTROL 使用者体验事件]**&#x200B;_。
 >
 
 
@@ -151,7 +151,7 @@ XDM架构是描述Experience Platform中数据的标准方式，允许与架构�
 >
 >
 >此设置将在[设置Experience Platform](setup-experience-platform.md)课程中详细讨论。
->>![配置文件架构](assets/schema-profile.png)
+>&#x200B;>![配置文件架构](assets/schema-profile.png)
 
 要完成本课程，请选择右上方的&#x200B;**[!UICONTROL 保存]**。
 
