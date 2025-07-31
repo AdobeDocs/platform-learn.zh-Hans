@@ -6,9 +6,9 @@ feature-set: Journey Optimizer
 feature: Decision Management,Offers
 jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
-source-git-commit: 901b90ca165a74bbc4f871469222064b70d0a20a
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2513'
+source-wordcount: '2511'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 * 掌握Adobe Journey Optimizer中决策管理的核心概念及其与Adobe Experience Platform Web SDK的集成。
 
-* 了解配置Web SDK以进行Offer decisioning的分步流程，从而确保与Journey Optimizer的无缝集成。
+* 了解为Offer Decisioning配置Web SDK的分步流程，确保与Journey Optimizer无缝集成。
 
 * 探索以忠诚度状态优惠为中心的详细用例，深入了解如何有效创建和管理优惠、决策和投放。
 
@@ -42,9 +42,9 @@ ht-degree: 1%
 
 要完成此部分中的课程，您必须首先：
 
-* 确保您的组织有权访问Adobe Journey Optimizer Ultimate(Journey Optimizer和Offer Decisioning)或Adobe Experience Platform以及Offer decisioning加载项。
+* 确保您的组织有权访问Adobe Journey Optimizer Ultimate(Journey Optimizer和Offer Decisioning)或Adobe Experience Platform以及Offer Decisioning加载项。
 
-* 完成有关Platform Web SDK初始配置的所有课程。
+* 完成关于Platform Web SDK初始配置的所有课程。
 
 * 为您的组织启用Edge Decisioning。
 
@@ -56,13 +56,13 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 
 ## 授予对决策管理的访问权限
 
-要授予对决策管理功能的访问权限，您必须创建&#x200B;**产品配置文件**，并为用户分配相应的权限。 [在本节](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)中了解有关管理Journey Optimizer用户和权限的更多信息。
+要授予对决策管理功能的访问权限，您必须创建&#x200B;**产品配置文件**，并为用户分配相应的权限。 [在本节](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions)中了解有关管理Journey Optimizer用户和权限的更多信息。
 
 ## 配置数据流
 
-必须先在&#x200B;**数据流**&#x200B;配置中启用Offer decisioning，Platform Web SDK才能交付任何决策管理活动。
+必须先在&#x200B;**数据流**&#x200B;配置中启用Offer Decisioning，Platform Web SDK才能交付任何决策管理活动。
 
-要在数据流中配置Offer decisioning，请执行以下操作：
+要在数据流中配置Offer Decisioning，请执行以下操作：
 
 1. 转到[数据收集](https://experience.adobe.com/#/data-collection)接口。
 
@@ -76,7 +76,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 
    ![编辑服务](assets/decisioning-edit-datastream.png)
 
-1. 选中&#x200B;**Offer decisioning**&#x200B;框。
+1. 选中&#x200B;**Offer Decisioning**&#x200B;框。
 
    ![添加屏幕快照](assets/decisioning-check-offer-box.png)
 
@@ -89,7 +89,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 根据Web SDK实施类型，决策管理需要其他SDK步骤。 有两个可用选项可用于为决策管理配置SDK。
 
 * SDK独立安装
-   1. 使用您的`decisionScopes`配置`sendEvent`操作。
+   1. 使用您的`sendEvent`配置`decisionScopes`操作。
 
       ```javascript
       alloy("sendEvent", {
@@ -143,7 +143,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 
 >[!NOTE]
 >
-> 由于本教程面向实施者，因此需要注意的是，本课程涉及Journey Optimizer中的大量界面工作。 虽然此类界面任务通常由营销人员处理，但对于实施者而言，深入了解该流程可能会有所帮助，即使他们并不负责决策管理营销活动的长期创建。
+> 由于本教程面向实施者，因此需要注意的是，本课程涉及Journey Optimizer中的大量界面工作。 虽然此类界面任务通常由营销人员处理，但对于实施者而言，将insight纳入流程可能会很有用，即使他们并不负责决策管理营销活动的长期创建。
 
 ## 组件
 
@@ -166,7 +166,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 1. 定义投放位置的属性：
    * **名称**：投放位置的名称。 让我们调用示例位置&#x200B;*&#39;主页横幅&#39;*。
    * **渠道类型**：用于投放位置的渠道。 让我们使用&#x200B;*&#39;Web&#39;*，因为选件显示在Luma网站上。
-   * **内容类型**：允许投放位置显示的内容类型：文本、HTML、图像链接或JSON。 您可以将&#x200B;*HTML“*”用于选件。
+   * **内容类型**：允许投放位置显示的内容类型：文本、HTML、图像链接或JSON。 您可以将&#x200B;*&#39;HTML&#39;*&#x200B;用于选件。
    * **描述**：投放位置的描述（可选）。
 
    ![添加详细信息](assets/decisioning-placement-details.png)
@@ -219,7 +219,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 
 1. 新的集合限定符现在应显示在&#x200B;**集合限定符**&#x200B;选项卡中
 
-## 选件
+## 产品建议
 
 现在，该创建忠诚度奖励优惠了。
 
@@ -248,7 +248,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 
    ![添加选件HTML](assets/decisioning-add-offer-html.png)
 
-1. 此外，您可以使用表达式编辑器检索存储在Adobe Experience Platform中的属性。 让我们将用户档案的名字添加到优惠内容中，以便更好地按1:1级别为忠诚会员进行个性化。
+1. 此外，您可以使用表达式编辑器检索存储在Adobe Experience Platform中的属性。 让我们将用户档案的名字添加到优惠内容中，以便更好地为1:1级别的忠诚度会员进行个性化。
 
    ![添加优惠个性化](assets/decisioning-add-offer-personalization.png)
 
@@ -274,7 +274,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 将后备选件内容添加到&#x200B;**表达式编辑器**。 请记住，您可以向此投放位置添加HTML、JSON或文本内容。 请确保根据您的内容类型在编辑器底部选择正确的&#x200B;**模式**。 您还可以点击&#x200B;**验证**&#x200B;以确保没有错误。
+1. 将后备选件内容添加到&#x200B;**表达式编辑器**。 请记住，您可以将HTML、JSON或TEXT内容添加到此投放位置。 请确保根据您的内容类型在编辑器底部选择正确的&#x200B;**模式**。 您还可以点击&#x200B;**验证**&#x200B;以确保没有错误。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -339,7 +339,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 
 ### 测试忠诚度优惠
 
-1. 选择要用于模拟的测试用户档案。 单击&#x200B;**管理配置文件**。 [要创建或指定新的测试配置文件以进行选件测试，请遵循本指南](https://experienceleague.adobe.com/zh-hans/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
+1. 选择要用于模拟的测试用户档案。 单击&#x200B;**管理配置文件**。 [要创建或指定新的测试配置文件以进行选件测试，请遵循本指南](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv)。
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -371,7 +371,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 
 您可以使用Luma网站上的调试器来验证生产中的决策逻辑。 忠诚度奖励用例启动并运行后，此验证是一种很好的做法，可确保一切配置正确。
 
-[通过此处](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/debugger/overview)了解如何使用指南在浏览器中配置调试器。
+[通过此处](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)了解如何使用指南在浏览器中配置调试器。
 
 要使用调试器开始验证，请执行以下操作：
 
@@ -383,24 +383,22 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 导航到&#x200B;**摘要**。 验证&#x200B;**数据流ID**&#x200B;是否与您启用了Offer decisioning的&#x200B;**Adobe数据收集**&#x200B;中的&#x200B;**数据流**&#x200B;匹配。
+1. 导航到&#x200B;**摘要**。 验证&#x200B;**数据流ID**&#x200B;是否与您启用了Offer Decisioning的&#x200B;**Adobe数据收集**&#x200B;中的&#x200B;**数据流**&#x200B;匹配。
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 在&#x200B;**解决方案**&#x200B;下，导航到&#x200B;**Experience PlatformWeb SDK**。
+1. 在&#x200B;**解决方案**&#x200B;下，导航到&#x200B;**Experience Platform Web SDK**。
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 在&#x200B;**配置**&#x200B;选项卡中，打开&#x200B;**启用调试**。 这将启用&#x200B;**Adobe Experience Platform保证**&#x200B;会话中的会话日志记录。
+1. 在&#x200B;**配置**&#x200B;选项卡中，打开&#x200B;**启用调试**。 这将启用&#x200B;**Adobe Experience Platform Assurance**&#x200B;会话中会话的日志记录。
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. 然后，您可以使用各种Luma忠诚度帐户登录网站，并使用调试器验证发送到&#x200B;**Adobe Experience Platform Edge网络**&#x200B;的请求。 所有这些请求都应在&#x200B;**保证**&#x200B;中捕获以进行日志跟踪。
+1. 然后，您可以使用各种Luma忠诚度帐户登录网站，并使用调试器验证发送到&#x200B;**Adobe Experience Platform Edge网络**&#x200B;的请求。 所有这些请求都应在&#x200B;**Assurance**&#x200B;中捕获以进行日志跟踪。
 <!--
    ![ADD SCREENSHOT](#)
 -->
-
-[下一步： ](setup-consent.md)
 
 >[!NOTE]
 >

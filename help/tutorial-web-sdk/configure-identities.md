@@ -4,9 +4,9 @@ description: 了解如何配置身份命名空间以用于Adobe Experience Platf
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '655'
+source-wordcount: '654'
 ht-degree: 12%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 12%
 
 了解如何配置身份标识命名空间，以与 Adobe Experience Platform Web SDK 一起使用。
 
-[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/zh-hans/docs/id-service/using/home)在基于SDK的Adobe应用程序中设置了一个通用访客ID (ECID)，以增强Experience Cloud功能，如应用程序之间的受众共享。 您还可以将自己的客户ID发送到该服务，以启用跨设备定位以及与其他系统(例如客户关系管理(CRM)系统)的集成。
+[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home)在基于SDK的Adobe应用程序中设置了一个通用访客ID (ECID)，以增强Experience Cloud功能，如应用程序之间的受众共享。 您还可以将自己的客户ID发送到该服务，以启用跨设备定位以及与其他系统(例如客户关系管理(CRM)系统)的集成。
 
-[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)（是的，有两个！）使用ECID和客户ID生成标识图，从而允许您将属性和行为合并到实时客户配置文件中。
+[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)（是的，有两个！）使用ECID和客户ID生成标识图，从而允许您将属性和行为合并到实时客户配置文件中。
 
 >[!NOTE]
 >
@@ -25,7 +25,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
-> 出于演示目的，本课程中的练习允许您使用凭据&#x200B;**用户： `test@test.com` /密码： test**&#x200B;捕获登录到[Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html)的虚构客户的身份详细信息。
+> 出于演示目的，本课程中的练习允许您使用凭据[用户： ](https://luma.enablementadobe.com/content/luma/us/en.html) /密码： test **捕获登录到`test@test.com`Luma演示站点**&#x200B;的虚构客户的身份详细信息。
 
 ## 学习目标
 
@@ -53,7 +53,7 @@ ht-degree: 12%
 
 在开始练习之前，请观看此简短视频，了解有关Adobe Experience Platform中标识的更多信息：
 
->[!VIDEO](https://video.tv.adobe.com/v/3422769?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 现在，为Luma CRM ID创建一个命名空间：
 
@@ -95,8 +95,6 @@ ht-degree: 12%
 > 在[创建身份](create-identities.md)课程中，您将了解在向Platform Edge Network发送身份时如何使用此命名空间。
 
 现在，标识已准备就绪，可以配置数据流。
-
-[下一步： ](configure-datastream.md)
 
 >[!NOTE]
 >

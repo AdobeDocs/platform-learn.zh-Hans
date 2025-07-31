@@ -1,12 +1,12 @@
 ---
 title: 使用Platform Web SDK设置同意
-description: 了解如何配置Experience PlatformWeb SDK标记扩展的隐私设置。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
+description: 了解如何配置Experience Platform Web SDK标记扩展的隐私设置。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1603'
 ht-degree: 1%
 
 ---
@@ -25,12 +25,12 @@ ht-degree: 1%
 在本课程结束时，您能够：
 
 * 使用标记加载CMP
-* 在Experience PlatformWeb SDK标记扩展中配置隐私设置
-* 根据访客的操作为Experience PlatformWeb SDK设置同意
+* 在Experience Platform Web SDK标记扩展中配置隐私设置
+* 根据访客的操作为Experience Platform Web SDK设置同意
 
 ## 先决条件
 
-您应该熟悉标记以及使用Debugger创建规则、数据元素、生成库到Experience Platform和切换标记库的步骤。
+您应该熟悉标记以及使用Experience Platform Debugger创建规则、数据元素、生成库到环境和切换标记库的步骤。
 
 在开始配置隐私设置并创建用于设置同意的规则之前，请确保已将同意管理平台脚本插入网站并正常运行。 CMP可以在站点开发人员的帮助下直接加载到源代码中，也可以通过标记本身进行加载。 这一课表明了后一种方法。
 
@@ -58,21 +58,19 @@ ht-degree: 1%
     >[！NOTE]
     >
     >通常，负责处理CMP的团队或个人（如OneTrust或TrustArc.
-
 ）会完成并注意上述步骤。
-
 ## 插入CMP
 
 >[!WARNING]
 >
->实施同意管理平台的最佳做法通常是先加载CMP _，然后再加载标记管理器_。 为便于阅读本教程，您将使用&#x200B;_加载带标签管理器的CMP_。 本课程旨在向您展示如何使用Platform Web SDK中的同意功能，但不应将其用作正确配置Klaro或任何其他CMP的指南。
+>实施同意管理平台的最佳做法通常是先加载CMP _，然后再加载标记管理器_。 为便于阅读本教程，您将使用&#x200B;_加载带标签管理器的CMP_。 本课程旨在向您展示如何使用Platform Web SDK中的同意功能，但不应将其作为正确配置Klaro或任何其他CMP的指南。
 
 
 现在，完成Klaro的配置后，使用以下配置创建标记规则：
 
 * [!UICONTROL 名称]： `all pages - library load - Klaro`
 * [!UICONTROL 事件]： [!UICONTROL 已加载库（页面顶部）]，其中[!UICONTROL 高级选项] > [!UICONTROL 顺序]设置为1
-* [!UICONTROL 操作]： [!UICONTROL 自定义代码]，[!UICONTROL 语言]：加载CMP脚本的HTML。
+* [!UICONTROL 操作]： [!UICONTROL 自定义代码]，[!UICONTROL 语言]：HTML以加载CMP脚本。
 
 ![插入CMP规则](assets/consent-cmp-inject-rule-1.png)
 
@@ -108,7 +106,7 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 
 现在，您将为此方案配置并实施同意：
 
-1. 在Experience PlatformWeb SDK标记扩展的&#x200B;**[!UICONTROL Privacy]**&#x200B;部分中，确保&#x200B;**[!UICONTROL 默认同意]**&#x200B;设置为&#x200B;**[!UICONTROL In]**：
+1. 在Experience Platform Web SDK标记扩展的&#x200B;**[!UICONTROL Privacy]**&#x200B;部分中，确保&#x200B;**[!UICONTROL 默认同意]**&#x200B;设置为&#x200B;**[!UICONTROL In]**：
 
 
    ![同意AEP扩展隐私配置](assets/consent-web-sdk-privacy-in.png)
@@ -117,14 +115,14 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
    > 
    >对于动态解决方案，请选择“提供数据元素”选项并传递返回值```klaro.getManager().consents```的数据元素
    >
-   >如果在&#x200B;*之前将CMP插入到源代码*&#x200B;中，并使用标签嵌入代码，则使用此选项，这样在Experience PlatformWeb SDK扩展开始加载之前即可获得默认同意。 在本例中，我们无法使用此选项，因为CMP是和标记一起加载的，而不是在标记之前。
+   >如果CMP是在标记嵌入代码&#x200B;*之前*&#x200B;插入源代码的，则使用此选项，这样默认同意在Experience Platform Web SDK扩展开始加载之前可用。 在本例中，我们无法使用此选项，因为CMP是和标记一起加载的，而不是在标记之前。
 
 
 
 2. 将此更改保存并生成到您的标记库
 3. 在Luma演示网站上加载标记库
 4. 在Luma网站上启用标记调试并重新加载页面。 在浏览器的开发人员控制台中，您应该看到defaultConsent等于&#x200B;**[!UICONTROL In]**
-5. 对于此配置，Experience PlatformWeb SDK扩展将继续发出网络请求，除非访客决定拒绝Cookie并选择退出：
+5. 对于此配置，Experience Platform Web SDK扩展将继续发出网络请求，除非访客决定拒绝Cookie并选择退出：
 
    ![同意默示选择加入](assets/consent-Implied-optin-default.png)
 
@@ -154,11 +152,11 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 
 1. 创建一个规则，该规则在访客单击&#x200B;**时触发。我拒绝**。  将此规则命名为： `all pages - click consent banner - set consent "out"`
 
-1. 作为&#x200B;**[!UICONTROL Event]**，对与CSS选择器匹配的&#x200B;**[!UICONTROL 元素使用**&#x200B;[!UICONTROL &#x200B; Click &#x200B;]&#x200B;**]**`#klaro .cn-decline`
+1. 作为&#x200B;**[!UICONTROL Event]**，对与CSS选择器匹配的&#x200B;**[!UICONTROL 元素使用]** Click ****`#klaro .cn-decline`
 
    ![规则条件用户单击“我拒绝”](assets/consent-optOut-clickEvent.png)
 
-1. 现在，使用Experience PlatformWeb SDK [!UICONTROL 设置同意] [!UICONTROL 操作类型]将同意设置为“out”：
+1. 现在，使用Experience Platform Web SDK [!UICONTROL 设置同意] [!UICONTROL 操作类型]将同意设置为“out”：
 
    ![同意规则选择退出操作](assets/consent-rule-optout-action.png)
 
@@ -168,7 +166,7 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 
 现在，当访客选择退出时，将触发以上述方式配置的规则，并将Web SDK同意设置为&#x200B;**[!UICONTROL 退出]**。
 
-通过转到Luma演示网站进行验证，拒绝Cookie，并确认在选择退出后不会触发任何Web SDK请求。
+通过转到Luma演示网站进行验证，拒绝Cookie，并确认在选择退出后不会触发Web SDK请求。
 
 ### 场景2：隐式选择退出
 
@@ -177,15 +175,15 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 
 以下是如何为隐含的选择退出方案设置配置的：
 
-1. 在Klaro中，关闭`aep web sdk`服务中的&#x200B;**服务默认状态**&#x200B;并保存更新的配置。
+1. 在Klaro中，关闭&#x200B;**服务中的**&#x200B;服务默认状态`aep web sdk`并保存更新的配置。
 
-1. 在Experience PlatformWeb SDK扩展的&#x200B;**[!UICONTROL Privacy]**&#x200B;部分中，根据需要将默认同意设置为&#x200B;**[!UICONTROL Out]**&#x200B;或&#x200B;**[!UICONTROL Pending]**。
+1. 在Experience Platform Web SDK扩展的&#x200B;**[!UICONTROL Privacy]**&#x200B;部分中，根据需要将默认同意设置为&#x200B;**[!UICONTROL Out]**&#x200B;或&#x200B;**[!UICONTROL Pending]**。
 
    ![同意AEP扩展隐私配置](assets/consent-implied-opt-out.png)
 
 1. **将**&#x200B;更新的配置保存到您的标记库并重新生成它。
 
-   使用此配置，Experience PlatformWeb SDK可确保不会触发任何请求，除非同意权限更改为&#x200B;**[!UICONTROL In]**。 访客通过选择加入手动接受Cookie可能会导致这种情况。
+   使用此配置，Experience Platform Web SDK可确保不会触发任何请求，除非同意权限更改为&#x200B;**[!UICONTROL In]**。 访客通过选择加入手动接受Cookie可能会导致这种情况。
 
 1. 在Debugger中，确保Luma网站已映射到您的标记属性，并且标记控制台日志记录已打开。
 1. 使用浏览器的开发人员控制台在&#x200B;**应用程序** > **存储**&#x200B;中&#x200B;**清除站点数据**
@@ -198,11 +196,11 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 
 1. 创建一个规则，该规则将在访客单击&#x200B;**时触发，这没有关系**。  将此规则命名为： `all pages - click consent banner - set consent "in"`
 
-1. 作为&#x200B;**[!UICONTROL Event]**，对与CSS选择器匹配的&#x200B;**[!UICONTROL 元素使用**&#x200B;[!UICONTROL &#x200B; Click &#x200B;]&#x200B;**]**`#klaro .cm-btn-success`
+1. 作为&#x200B;**[!UICONTROL Event]**，对与CSS选择器匹配的&#x200B;**[!UICONTROL 元素使用]** Click ****`#klaro .cm-btn-success`
 
    ![规则条件用户单击“没问题”](assets/consent-optIn-clickEvent.png)
 
-1. 使用&#x200B;**[!UICONTROL 的Experience PlatformWeb SDK [!UICONTROL 扩展]、**&#x200B;[!UICONTROL &#x200B;操作类型&#x200B;]&#x200B;**设置同意]**、**[!UICONTROL 一般同意]**&#x200B;作为&#x200B;**[!UICONTROL 在]**&#x200B;中，添加操作。
+1. 使用[!UICONTROL 的Experience Platform Web SDK ]扩展&#x200B;**[!UICONTROL ，]**&#x200B;操作类型&#x200B;**[!UICONTROL ，]**&#x200B;常规同意&#x200B;**[!UICONTROL ，添加操作]**&#x200B;作为&#x200B;**[!UICONTROL In]**。
 
    ![同意规则选择加入操作](assets/consent-rule-optin-action.png)
 
@@ -216,15 +214,13 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 
 一旦设置好此规则，事件收集就应在访客选择加入时开始。
 
-![同意Post访客选项](assets/consent-post-user-optin.png)
+![同意帖子访客选项](assets/consent-post-user-optin.png)
 
 
-有关Web SDK中同意的详细信息，请参阅[支持客户同意首选项](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/consent/supporting-consent)。
+有关Web SDK中同意的详细信息，请参阅[支持客户同意首选项](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent)。
 
 
-有关[!UICONTROL 设置同意]操作的详细信息，请参阅[设置同意](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent)。
-
-[下一步： ](setup-event-forwarding.md)
+有关[!UICONTROL 设置同意]操作的详细信息，请参阅[设置同意](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent)。
 
 >[!NOTE]
 >

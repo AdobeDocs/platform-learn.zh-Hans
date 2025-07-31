@@ -4,16 +4,16 @@ description: 了解如何在标记中创建XDM对象并将数据元素映射到�
 feature: Tags
 jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
-source-git-commit: a8431137e0551d1135763138da3ca262cb4bc4ee
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1337'
+source-wordcount: '1336'
 ht-degree: 2%
 
 ---
 
 # 创建数据元素
 
-了解如何在[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)上的内容、商业和身份数据的标记中创建数据元素。 然后，使用Adobe Experience Platform Web SDK扩展变量数据元素类型填充XDM架构中的字段。
+了解如何在[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)上的内容、商业和身份数据的标记中创建数据元素。 然后，使用Adobe Experience Platform Web SDK扩展Variable数据元素类型填充XDM架构中的字段。
 
 ## 学习目标
 
@@ -54,11 +54,11 @@ ht-degree: 2%
 
 ### 在数据层中实施XDM
 
-此方法涉及使用完全定义的XDM对象作为数据层的结构。 然后，将整个数据层映射到标记中的XDM对象数据元素。 如果您的实施不使用标签管理器，则此方法可能比较理想，因为您可以使用[XDM sendEvent命令](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data)直接从应用程序向XDM发送数据。 如果您确实使用标记，则可以创建一个自定义代码数据元素，它将整个数据层作为传递到XDM的JSON对象进行捕获。 然后，将传递JSON映射到发送事件操作中的XDM对象字段。
+此方法涉及使用完全定义的XDM对象作为数据层的结构。 然后，将整个数据层映射到标记中的XDM对象数据元素。 如果您的实施不使用标签管理器，则此方法可能比较理想，因为您可以使用[XDM sendEvent命令](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data)直接从应用程序向XDM发送数据。 如果您确实使用标记，则可以创建一个自定义代码数据元素，它将整个数据层作为传递到XDM的JSON对象进行捕获。 然后，将传递JSON映射到发送事件操作中的XDM对象字段。
 
 以下是使用Adobe客户端数据层格式时数据层的外观示例：
 
-+++数据层中的XDM示例
+数据层中的+++XDM示例
 
 ```JSON
 window.adobeDataLayer.push({
@@ -129,17 +129,17 @@ window.adobeDataLayer.push({
 >
 > Google Data Layer
 > 
-> 如果贵组织已使用Google Analytics，并且网站上具有传统的Google数据层对象，则可以在标记中使用[Google数据层扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/google-data-layer/overview)。 这使您能够更快地部署Adobe技术，而无需请求IT团队的支持。 将Google数据层映射到XDM将遵循与上述相同的步骤。
+> 如果贵组织已使用Google Analytics，并且网站上具有传统的Google数据层对象，则可以在标记中使用[Google数据层扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview)。 这样，您就可以更快地部署Adobe技术，而无需请求IT团队提供支持。 将Google数据层映射到XDM将遵循与上述相同的步骤。
 
 ### 在数据流中映射到XDM
 
-此方法使用名为[数据收集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep)的数据准备的数据流配置中内置的功能，并跳过将数据层变量映射到标记中的XDM。
+此方法使用名为[数据收集](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep)的数据准备的数据流配置中内置的功能，并跳过将数据层变量映射到标记中的XDM。
 
 #### 优点
 
 * 灵活，因为您可以将各个变量映射到XDM
-* 能够在数据层转到XDM之前[计算新值](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/functions)或[转换数据类型](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/data-prep/data-handling)
-* 利用[映射UI](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/data-prep#create-mapping)，通过点击式UI将源数据中的字段映射到XDM
+* 能够在数据层转到XDM之前[计算新值](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions)或[转换数据类型](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling)
+* 利用[映射UI](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping)，通过点击式UI将源数据中的字段映射到XDM
 
 #### 缺点
 
@@ -174,16 +174,16 @@ window.adobeDataLayer.push({
 
 按照以下相同步骤创建这些附加数据元素：
 
-* **`page.pageInfo.server`**&#x200B;映射到
+* **`page.pageInfo.server`**映射到
   `digitalData.page.pageInfo.server`
 
-* **`page.pageInfo.hierarchie1`**&#x200B;映射到
+* **`page.pageInfo.hierarchie1`**映射到
   `digitalData.page.pageInfo.hierarchie1`
 
-* **`user.profile.attributes.username`**&#x200B;映射到
+* **`user.profile.attributes.username`**映射到
   `digitalData.user.0.profile.0.attributes.username`
 
-* **`user.profile.attributes.loggedIn`**&#x200B;映射到
+* **`user.profile.attributes.loggedIn`**映射到
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
 * **`product.productInfo.sku`**&#x200B;映射到`digitalData.product.0.productInfo.sku`
@@ -271,7 +271,7 @@ window.adobeDataLayer.push({
 1. 选择适当的&#x200B;**[!UICONTROL 架构]**，在本例中为`Luma Web Event Data`
 1. 选择&#x200B;**[!UICONTROL 保存]**
 
-   XDM![&#128279;](assets/analytics-tags-data-element-xdm-variable.png)的变量数据元素
+   XDM![的](assets/analytics-tags-data-element-xdm-variable.png)变量数据元素
 
 接下来，为数据对象创建变量数据元素：
 
@@ -306,9 +306,7 @@ window.adobeDataLayer.push({
 >
 >在将来的[创建标记规则](create-tag-rule.md)课程中，您将了解&#x200B;**[!UICONTROL 变量]**&#x200B;数据元素如何允许您使用&#x200B;**[!UICONTROL 更新变量操作类型]**&#x200B;栈叠标记中的多个规则。
 
-设置这些数据元素后，您就可以开始使用标记规则将数据发送到PlatformEdge Network。 但首先，了解如何使用Web SDK收集身份。
-
-[下一步： ](create-identities.md)
+设置这些数据元素后，您就可以开始使用标记规则将数据发送到Platform Edge Network。 但首先，了解如何使用Web SDK收集身份。
 
 >[!NOTE]
 >

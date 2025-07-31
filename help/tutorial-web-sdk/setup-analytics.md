@@ -4,16 +4,16 @@ description: 了解如何使用Experience Platform Web SDK设置Adobe Analytics�
 solution: Data Collection, Analytics
 jira: KT-15408
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
-source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2903'
 ht-degree: 1%
 
 ---
 
 # 使用Adobe Experience Platform Web SDK设置Adobe Analytics
 
-了解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/web-sdk/overview)设置Adobe Analytics，创建标记规则以将数据发送到Adobe Analytics，并验证Analytics是否按预期捕获数据。
+了解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)设置Adobe Analytics，创建标记规则以将数据发送到Adobe Analytics，并验证Analytics是否按预期捕获数据。
 
 [Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics)是一款行业领先的应用程序，可帮助您了解客户的行为和需求，并根据客户情报掌控业务发展方向。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 * 熟悉并访问Adobe Analytics。
 
-* 至少具有一个测试/开发报表包ID。 如果您没有可用于本教程的测试/开发报表包，[请创建一个](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
+* 至少具有一个测试/开发报表包ID。 如果您没有可用于本教程的测试/开发报表包，[请创建一个](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
 
 * 完成本教程的初始配置和标记配置部分中之前的课程。
 
@@ -74,7 +74,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 1. 在Analytics处理规则中将XDM字段映射到Analytics变量（不再推荐）。
 1. 直接在XDM架构中映射到Analytics变量（不再推荐）。
 
-自2024年5月起，您不再需要创建XDM架构来使用Platform Web SDK实施Adobe Analytics。 `data`对象（以及您在[创建数据元素](create-data-elements.md)课程中创建的`data.variable`数据元素）可用于设置所有自定义Analytics变量。 现有Analytics客户将会很熟悉在数据对象中设置这些变量，并且比使用处理规则界面更有效，还可以防止不必要的数据占用实时客户配置文件中的空间(如果您有Real-Time Customer Data Platform或Journey Optimizer，这一点很重要)。
+自2024年5月起，您不再需要创建XDM架构来使用Platform Web SDK实施Adobe Analytics。 `data`对象（以及您在`data.variable`创建数据元素[课程中创建的](create-data-elements.md)数据元素）可用于设置所有自定义Analytics变量。 现有Analytics客户将会很熟悉在数据对象中设置这些变量，并且比使用处理规则界面更有效，还可以防止不必要的数据占用实时客户配置文件中的空间(如果您有Real-Time Customer Data Platform或Journey Optimizer，这一点很重要)。
 
 ### 自动映射的字段
 
@@ -106,8 +106,8 @@ Analytics产品字符串的各个部分通过`productListItems`对象下的不�
 >[!NOTE]
 >
 >自2022年8月18日起，`productListItems[].SKU`优先映射到s.products变量中的产品名称。
->&#x200B;>仅当`productListItems[].SKU`不存在时，设置为`productListItems[].name`的值才会映射到产品名称。 否则，它将被取消映射，并可用于上下文数据。
->&#x200B;>请勿将空字符串或null设置为`productListItems[].SKU`。 这会产生不需要的效果，即映射到s.products变量中的产品名称。
+>>仅当`productListItems[].name`不存在时，设置为`productListItems[].SKU`的值才会映射到产品名称。 否则，它将被取消映射，并可用于上下文数据。
+>>请勿将空字符串或null设置为`productListItems[].SKU`。 这会产生不需要的效果，即映射到s.products变量中的产品名称。
 
 
 ### 在数据对象中设置变量
@@ -243,7 +243,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 在&#x200B;**[!UICONTROL Event Type]**&#x200B;下，选择&#x200B;**[!UICONTROL Library Loaded (Page Top)]**
 
-1. 选择以打开&#x200B;**[!UICONTROL 高级选项]**，键入`51`。 这将确保规则在设置具有&#x200B;**[!UICONTROL 更新变量]**&#x200B;操作类型的基线XDM的`all pages - library loaded - send event - 50`之后运行。
+1. 选择以打开&#x200B;**[!UICONTROL 高级选项]**，键入`51`。 这将确保规则在设置具有`all pages - library loaded - send event - 50`更新变量&#x200B;**[!UICONTROL 操作类型的基线XDM的]**&#x200B;之后运行。
 1. 选择&#x200B;**[!UICONTROL 保留更改]**
 
    ![Analytics报表包覆盖](assets/set-up-analytics-rs-override.png)
@@ -254,7 +254,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 将&#x200B;**[!UICONTROL 扩展]**&#x200B;保留为&#x200B;**[!UICONTROL 核心]**
 
-1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;**的**&#x200B;路径
+1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;**[!UICONTROL 的]**&#x200B;路径
 
 1. 在右侧，将&#x200B;**[!UICONTROL 正则表达式]**&#x200B;切换保持禁用状态
 
@@ -270,9 +270,9 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
 1. 作为&#x200B;**[!UICONTROL 操作类型]**，请选择&#x200B;**[!UICONTROL 发送事件]**
 
-1. 对于&#x200B;**[!UICONTROL XDM数据]**，请选择您在[创建数据元素](create-data-elements.md)课程中创建的`xdm.variable.content`数据元素
+1. 对于&#x200B;**[!UICONTROL XDM数据]**，请选择您在`xdm.variable.content`创建数据元素[课程中创建的](create-data-elements.md)数据元素
 
-1. 作为&#x200B;**[!UICONTROL 数据]**，选择您在[创建数据元素](create-data-elements.md)课程中创建的`data.variable`数据元素
+1. 作为&#x200B;**[!UICONTROL 数据]**，选择您在`data.variable`创建数据元素[课程中创建的](create-data-elements.md)数据元素
 
    ![Analytics数据流覆盖](assets/set-up-analytics-datastream-override-1.png)
 
@@ -345,7 +345,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    >[!NOTE]
    >
-   >由于您已登录，请花些时间验证`[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`中已捕获的用户&#x200B;**`test@test.com`**&#x200B;的身份验证ID `b642b4217b34b1e8d3bd915fc65c4452`
+   >由于您已登录，请花些时间验证`b642b4217b34b1e8d3bd915fc65c4452`中已捕获的用户&#x200B;**`test@test.com`**&#x200B;的身份验证ID `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
 
 ### 报表包覆盖验证
 
@@ -368,13 +368,13 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    >[!NOTE]
    >
-   > 如果您在之前的练习中使用`data`对象覆盖了`xdm`对象，则`gn`值可能为`test`。
+   > 如果您在之前的练习中使用`gn`对象覆盖了`test`对象，则`xdm`值可能为`data`。
 
    ![Analytics产品字符串](assets/analytics-debugger-edge-page-view.png)
 
 ### 产品字符串和电子商务事件验证
 
-由于您已在产品页面上，因此本练习将继续使用相同的Edge跟踪来验证Analytics捕获的产品数据。 产品字符串和电子商务事件都会自动将XDM变量映射到Analytics。 只要您在[为Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)配置XDM架构时映射到适当的`productListItem` XDM变量，Platform Edge Network就会将数据映射到适当的Analytics变量。
+由于您已在产品页面上，因此本练习将继续使用相同的Edge跟踪来验证Analytics捕获的产品数据。 产品字符串和电子商务事件都会自动将XDM变量映射到Analytics。 只要您在`productListItem`为Adobe Analytics[配置XDM架构时映射到适当的](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics) XDM变量，Platform Edge Network就会将数据映射到适当的Analytics变量。
 
 **首先验证`Product String`是否已设置**
 
@@ -385,7 +385,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    ![Analytics产品字符串](assets/analytics-debugger-prodstring.png)
 
-   Edge跟踪对`commerce`事件的处理方式与`productList`维度略有不同。 您不会看到上下文数据变量以与看到映射到上述`[!UICONTROL c.a.x.productlistitem.[0].name]`的产品名称相同的方式进行映射。 Edge跟踪反而会在Analytics `event`变量中显示最终事件自动映射。 Platform Edge Network会相应地映射该架构，只要您在[为Adobe Analytics配置架构时](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)映射到适当的XDM `commerce`变量；在本例中为`commerce.productViews.value=1`。
+   Edge跟踪对`commerce`事件的处理方式与`productList`维度略有不同。 您不会看到上下文数据变量以与看到映射到上述`[!UICONTROL c.a.x.productlistitem.[0].name]`的产品名称相同的方式进行映射。 Edge跟踪反而会在Analytics `event`变量中显示最终事件自动映射。 Platform Edge Network会相应地映射该架构，只要您在`commerce`为Adobe Analytics配置架构时[映射到适当的XDM ](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)变量；在本例中为`commerce.productViews.value=1`。
 
 1. 返回Experience Platform Debugger窗口，向下滚动到`[!UICONTROL events]`变量，该变量设置为`[!UICONTROL prodView]`
 
@@ -393,7 +393,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    >[!TIP]
    >
-   > `ecommerce - library loaded - set product details variables - 20`规则正在覆盖`all pages - library loaded - set global variables - 1`规则设置的`eventType`的值，因为该规则设置为稍后在序列中触发
+   > `ecommerce - library loaded - set product details variables - 20`规则正在覆盖`eventType`规则设置的`all pages - library loaded - set global variables - 1`的值，因为该规则设置为稍后在序列中触发
 
 
    ![Analytics产品视图](assets/analytics-debugger-prodView.png)
@@ -447,13 +447,13 @@ Adobe Experience Platform Assurance可帮助您检查、验证、模拟和验证
 要验证Adobe Analytics是否正在捕获ECID，请选择一个信标并打开有效负载。  此信标的供应商应为&#x200B;**[!UICONTROL com.adobe.analytics.hitdebugger]**
 使用Assurance进行![Adobe Analytics验证](assets/assurance-hitdebugger-payload.png)
 
-然后向下滚动到&#x200B;**[!UICONTROL mcvisId]**&#x200B;以验证是否正确捕获了ECID
+然后向下滚动到&#x200B;**[!UICONTROL mcvisId]**以验证是否正确捕获了ECID
 使用Assurance进行![Experience Cloud ID验证](assets/assurance-hitdebugger-mcvisId.png)
 
 ### 内容页面查看次数验证
 
 使用相同的信标，验证内容页面查看是否已映射到正确的Adobe Analytics变量。
-向下滚动到&#x200B;**[!UICONTROL pageName]**&#x200B;以验证是否正确捕获了`Page Name`：
+向下滚动到**[!UICONTROL pageName]**&#x200B;以验证是否正确捕获了`Page Name`：
 
 
     >[！NOTE]
@@ -486,8 +486,6 @@ Adobe Experience Platform Assurance可帮助您检查、验证、模拟和验证
 
 
 恭喜！你做到了！ 在本课程结束时，您已准备好使用Platform Web SDK为您自己的网站实施Adobe Analytics。
-
-[下一步： ](setup-audience-manager.md)
 
 >[!NOTE]
 >

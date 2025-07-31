@@ -3,9 +3,9 @@ title: 通过Platform Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 7c302bf9503e7a95162ab83af59d466bb4ff1f7e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '2307'
+source-wordcount: '2306'
 ht-degree: 4%
 
 ---
@@ -44,7 +44,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 ## 创建数据集
 
-所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 [数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。
+所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 [数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。
 
 让我们为您的Luma Web事件数据设置一个数据集：
 
@@ -60,7 +60,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
    ![从架构创建数据集](assets/experience-platform-create-dataset-schema.png)
 
-1. 选择在[之前的课程](configure-schemas.md)中创建的`Luma Web Event Data`架构，然后选择&#x200B;**[!UICONTROL 下一步]**
+1. 选择在`Luma Web Event Data`之前的课程[中创建的](configure-schemas.md)架构，然后选择&#x200B;**[!UICONTROL 下一步]**
 
    ![数据集，选择架构](assets/experience-platform-create-dataset-schema-selection.png)
 
@@ -160,14 +160,14 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 >[!INFO]
 >
->  有关Adobe Experience Platform查询服务的更多详细信息，请参阅Platform教程部分中的[浏览数据](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/queries/explore-data)。
+>  有关Adobe Experience Platform查询服务的更多详细信息，请参阅Platform教程部分中的[浏览数据](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
 
 
 ## 为实时客户个人资料启用数据集和架构
 
 对于Real-Time Customer Data Platform和Journey Optimizer的客户，下一步是为实时客户个人资料启用数据集和架构。 来自Web SDK的数据流将是流入Platform的众多数据源之一，并且您希望将Web数据与其他数据源连接以构建360度客户档案。 要了解有关Real-time Customer Profile的更多信息，请观看此短视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/31672?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -269,7 +269,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 1. 命名架构`Luma Loyalty Schema`
 1. 添加[!UICONTROL 忠诚度详细信息]字段组
 1. 添加[!UICONTROL 人口统计详细信息]字段组
-1. 选择`Person ID`字段并使用`Luma CRM Id` [!UICONTROL 标识命名空间]将其标记为[!UICONTROL 标识]和[!UICONTROL 主标识]。
+1. 选择`Person ID`字段并使用标识命名空间[!UICONTROL 将其标记为]标识`Luma CRM Id`和[!UICONTROL 主标识]。
 1. 为[!UICONTROL 配置文件]启用架构。 如果找不到配置文件切换开关，请尝试单击左上角的架构名称。
 1. 保存架构
 
@@ -305,7 +305,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 1. 选择&#x200B;**[!UICONTROL 下一步]**
 
    ![创建受众](assets/merge-policy-set-active-on-edge.png)
-1. 继续选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以继续执行工作流程的其他步骤，并选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存您的设置
+1. 继续选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以继续执行工作流程的其他步骤，并选择&#x200B;**[!UICONTROL 完成]**以保存您的设置
    ![创建受众](assets/merge-policy-finish.png)
 
 您现在可以创建将在Edge上评估的受众。
@@ -337,8 +337,6 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 由于这是一个非常简单的受众，因此我们可以使用Edge评估方法。 Edge受众会在边缘进行评估，因此在由Web SDK向Platform Edge Network发出的相同请求中，我们可以评估受众定义并立即确认用户是否符合条件。
 
-
-[下一步： ](setup-analytics.md)
 
 >[!NOTE]
 >

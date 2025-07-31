@@ -1,12 +1,12 @@
 ---
 title: 使用Platform Web SDK数据设置事件转发
-description: 了解如何使用Experience PlatformWeb SDK数据来使用event-forwarding属性。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
+description: 了解如何使用Experience Platform Web SDK数据的事件转发属性。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 8602110d2b2ddc561e45f201e3bcce5e6a6f8261
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1872'
 ht-degree: 3%
 
 ---
@@ -15,22 +15,22 @@ ht-degree: 3%
 
 了解如何使将事件转发功能与 Adobe Experience Platform Web SDK 数据一起使用。
 
-事件转发是数据收集中可用的一种新属性。 事件转发让您能够直接从Adobe Experience PlatformEdge Network而不是传统的客户端浏览器向第三方非Adobe供应商发送数据。 在[事件转发概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/event-forwarding/overview)中进一步了解事件转发的优势。
+事件转发是数据收集中可用的一种新属性。 事件转发让您能够直接从Adobe Experience Platform Edge Network而不是传统的客户端浏览器向第三方非Adobe供应商发送数据。 在[事件转发概述](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)中进一步了解事件转发的优势。
 
 
 ![Web SDK和事件转发图](assets/dc-websdk-eventforwarding.png)
 
-要在Adobe Experience Platform中使用事件转发，必须首先使用以下三个选项中的一个或多个将数据发送到Adobe Experience PlatformEdge Network：
+要在Adobe Experience Platform中使用事件转发，必须首先使用以下三个选项中的一个或多个将数据发送到Adobe Experience Platform Edge Network：
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/zh-hans/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
 >Platform Web SDK和Platform Mobile SDK不需要通过标记进行部署，但是，建议使用标记来部署这些SDK。
 
-完成本教程中之前的课程后，您应该使用Web SDK将数据发送到PlatformEdge Network。 数据进入平台Edge Network后，您可以启用事件转发并使用event-forwarding属性将数据发送到非Adobe解决方案。
+完成本教程中之前的课程后，您应该使用Web SDK将数据发送到Platform Edge Network。 数据传入Platform Edge Network中后，您可以启用事件转发并使用事件转发属性将数据发送到非Adobe解决方案。
 
 ## 学习目标
 
@@ -47,7 +47,7 @@ ht-degree: 3%
 ## 先决条件
 
 * 包含事件转发的软件许可证。 事件转发是数据收集的一项付费功能。 有关更多详细信息，请联系您的Adobe客户团队。
-* 已在您的Experience Cloud组织中启用事件转发。
+* 您的Experience Cloud组织中启用了事件转发。
 * 用于事件转发的用户权限。 (在[Admin Console](https://adminconsole.adobe.com/)中，在Adobe Experience Platform Launch产品下，[!UICONTROL 平台] > [!UICONTROL Edge]的权限项和所有[!UICONTROL 属性权限])。 获得授权后，您应该会在数据收集界面的左侧导航中看到[!UICONTROL 事件转发]：
   ![事件转发属性](assets/event-forwarding-menu.png)
 
@@ -84,7 +84,7 @@ ht-degree: 3%
 
 ## 配置数据流
 
-要使事件转发使用您发送到PlatformEdge Network的数据，您必须将新创建的事件转发属性链接到用于将数据发送到Adobe解决方案的相同数据流。
+对于事件转发，要使用您发送到Platform Edge Network的数据，必须将新创建的事件转发属性链接到用于将数据发送到Adobe解决方案的相同数据流。
 
 要在数据流中配置Target，请执行以下操作：
 
@@ -104,7 +104,7 @@ ht-degree: 3%
 
    >[!TIP]
    >
-   >    若要将数据发送到Adobe组织外部的事件转发环境，请选择&#x200B;**[!UICONTROL 手动输入ID]**&#x200B;并粘贴到ID中。 此ID是在创建事件转发属性时提供的。
+   >    若要将数据发送到Adobe组织之外的事件转发环境，请选择&#x200B;**[!UICONTROL 手动输入ID]**&#x200B;并粘贴到ID中。 此ID是在创建事件转发属性时提供的。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -112,7 +112,7 @@ ht-degree: 3%
 
 当您准备好通过发布流提升所做更改时，请为暂存和生产数据流重复这些步骤。
 
-## 将数据从平台Edge Network转发到非Adobe解决方案
+## 将数据从Platform Edge Network转发到非Adobe解决方案
 
 在本练习中，您将学习如何设置事件转发数据元素、配置事件转发规则，以及使用名为[Webhook.site](https://webhook.site/)的第三方工具进行验证。
 
@@ -122,7 +122,7 @@ ht-degree: 3%
 
 >[!IMPORTANT]
 >
->您必须已创建数据元素并将其映射到XDM对象，且已配置标记规则并在库中将这些更改构建到标记环境才能继续。 如果没有，请参阅[先决条件](setup-event-forwarding.md#prerequisites)部分中的&#x200B;**标记配置**&#x200B;步骤。 这些步骤可确保将数据发送到PlatformEdge Network，并且您可从此处配置事件转发属性以将数据转发到非Adobe解决方案。
+>您必须已创建数据元素并将其映射到XDM对象，且已配置标记规则并在库中将这些更改构建到标记环境才能继续。 如果没有，请参阅&#x200B;**先决条件**&#x200B;部分中的[标记配置](setup-event-forwarding.md#prerequisites)步骤。 这些步骤可确保将数据发送到Platform Edge Network，并且您可从此处配置事件转发属性以将数据转发到非Adobe解决方案。
 
 
 ### 创建事件转发数据元素
@@ -138,12 +138,12 @@ ht-degree: 3%
 >
 >如果未正确指定此路径，则不会收集数据。
 
-在本练习中，您要将浏览器视区高度和Experience CloudID从XDM对象转发到webhook。 XDM字段路径由[配置XDM架构](configure-schemas.md)课程中创建的XDM架构确定。
+在本练习中，您将把浏览器视区高度和Experience Cloud ID从XDM对象转发到webhook。 XDM字段路径由[配置XDM架构](configure-schemas.md)课程中创建的XDM架构确定。
 
 >[!TIP]
 >
 >您还可以通过使用Web浏览器网络工具、筛选`/ee`请求、打开信标&#x200B;[!UICONTROL **有效负载**]并向下钻取到要查找的变量来查找XDM对象路径。 然后，使用鼠标右键单击并选择“复制属性路径”。 以下是浏览器视区高度的示例：
-> ![事件转发XDM路径](assets/event-forwarding-xdm-path.png)
+>> ![事件转发XDM路径](assets/event-forwarding-xdm-path.png)
 
 1. 转到您最近创建的&#x200B;**[!UICONTROL 事件转发]**&#x200B;属性
 
@@ -174,7 +174,7 @@ ht-degree: 3%
 
 1. 在&#x200B;**[!UICONTROL 数据元素类型]**&#x200B;下，选择`Path`
 
-1. 键入包含Experience CloudID `arc.event.xdm.identityMap.ECID.0.id`的XDM对象路径
+1. 键入包含Experience Cloud ID `arc.event.xdm.identityMap.ECID.0.id`的XDM对象路径
 
 1. 选择&#x200B;**[!UICONTROL 保存]**
 
@@ -192,13 +192,13 @@ ht-degree: 3%
 
 ### 安装Adobe云连接器扩展
 
-若要将数据发送到第三方位置，您将首先安装[!UICONTROL Adobe云连接器]扩展。
+若要将数据发送到第三方位置，您将首先安装[!UICONTROL Adobe Cloud Connector]扩展。
 
 1. 在左侧导航中选择&#x200B;**[!UICONTROL 扩展]**
 
 1. 选择&#x200B;**[!UICONTROL 目录]**&#x200B;选项卡
 
-1. 搜索&#x200B;**[!UICONTROL Adobe云连接器]**，选择&#x200B;**[!UICONTROL 安装]**
+1. 搜索&#x200B;**[!UICONTROL Adobe Cloud Connector]**，选择&#x200B;**[!UICONTROL 安装]**
 
    ![事件转发ECID路径](assets/event-forwarding-adobe-cloud-connector.png)
 
@@ -211,7 +211,7 @@ ht-degree: 3%
 * **[!UICONTROL 事件]和[!UICONTROL 条件]**：
 
    * **标记**：所有规则均由必须在规则中指定的事件触发，例如`Library Loaded - Page Top`。 条件为可选。
-   * **事件转发**：假定每个发送到PlatformEdge Network的事件都是转发数据的触发器。 因此，在事件转发规则中不能选择[!UICONTROL 事件]。 要管理哪些事件会触发事件转发规则，您必须配置条件。
+   * **事件转发**：假定每个发送到Platform Edge Network的事件都是转发数据的触发器。 因此，在事件转发规则中不能选择[!UICONTROL 事件]。 要管理哪些事件会触发事件转发规则，您必须配置条件。
 
 * **数据元素标记化**：
 
@@ -260,11 +260,11 @@ ht-degree: 3%
 
 1. 在&#x200B;**[Query Params]**&#x200B;下，您将添加之前创建的两个数据元素。
 
-1. 在`viewPortHeight`中的&#x200B;**[!UICONTROL 键]**&#x200B;列类型上。 在&#x200B;**[!UICONTROL 值]**&#x200B;列上，通过键入`{{environment.browserDetails.viewportHeight}}`数据元素或从数据元素选择器图标中进行选择来输入该数据元素
+1. 在&#x200B;**[!UICONTROL 中的]**&#x200B;键`viewPortHeight`列类型上。 在&#x200B;**[!UICONTROL 值]**&#x200B;列上，通过键入`{{environment.browserDetails.viewportHeight}}`数据元素或从数据元素选择器图标中进行选择来输入该数据元素
 
 1. 选择&#x200B;[!UICONTROL **+添加另一个**]&#x200B;以添加另一个查询参数
 
-1. 在`ecid`中的&#x200B;**[!UICONTROL 键]**&#x200B;列类型上。 在值列中，输入`{{ecid}}`数据元素
+1. 在&#x200B;**[!UICONTROL 中的]**&#x200B;键`ecid`列类型上。 在值列中，输入`{{ecid}}`数据元素
 
 1. 选择&#x200B;**[!UICONTROL 保留更改]**
 
@@ -290,17 +290,17 @@ ht-degree: 3%
 
 现在，您可以使用Platform Debugger和Webhook.site验证事件转发属性：
 
-1. 按照以下步骤[&#128279;](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)将[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en/men.html)上的标记库切换到您在数据流中映射了事件转发属性的Web SDK标记属性。
+1. 按照以下步骤操作： [将](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property)Luma演示网站[上的标记库](https://luma.enablementadobe.com/content/luma/us/en/men.html)切换到您在数据流中将事件转发属性映射到的Web SDK标记属性。
 
-1. 在重新加载页面之前，在Experience Platform调试器上，从左侧导航中打开&#x200B;**[!UICONTROL 日志]**
+1. 在重新加载页面之前，在Experience Platform Debugger上，从左侧导航中打开&#x200B;**[!UICONTROL 日志]**
 
-1. 选择&#x200B;**[!UICONTROL Edge]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 连接]**&#x200B;以查看PlatformEdge Network请求
+1. 选择&#x200B;**[!UICONTROL Edge]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 连接]**&#x200B;以查看Platform Edge Network请求
 
    ![事件转发边缘网络会话](assets/event-forwarding-edge-session.png)
 
 1. 重新加载页面
 
-1. 您将看到其他请求，这些请求使您能够了解平台Edge Network发送到WebHook的服务器端请求
+1. 您将看到其他请求，这些请求让您能够了解Platform Edge Network发送到WebHook的服务器端请求
 
 1. 需要重点验证的请求是显示由Edge网络发送的完全构建的URL的请求
 
@@ -320,8 +320,6 @@ ht-degree: 3%
    ![事件转发webhook站点数据](assets/event-forwarding-webhook-data.png)
 
 恭喜！您已配置事件转发！
-
-[下一步： ](conclusion.md)
 
 >[!NOTE]
 >

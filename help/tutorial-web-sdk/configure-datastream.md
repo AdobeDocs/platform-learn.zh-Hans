@@ -4,9 +4,9 @@ description: 了解如何启用数据流和配置Experience Cloud解决方案。
 feature: Web SDK,Datastreams
 jira: KT-15399
 exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
-source-git-commit: e0359d1bade01f79d0f7aff6a6e69f3e4d0c3b62
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '536'
+source-wordcount: '535'
 ht-degree: 7%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 了解如何为 Adobe Experience Platform Web SDK 配置数据流。
 
-[数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/overview)告知Adobe Experience Platform Edge Network将Platform Web SDK收集的数据发送到何处。 在数据流配置中，您可以启用Experience Cloud应用程序、Experience Platform帐户和事件转发。
+[数据流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)告知Adobe Experience Platform Edge Network将Platform Web SDK收集的数据发送到何处。 在数据流配置中，您可以启用Experience Cloud应用程序、Experience Platform帐户和事件转发。
 
 ![Web SDK、数据流和Edge Network关系图](assets/dc-websdk-datastreams.png)
 
@@ -55,7 +55,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   >您无需选择架构。 仅当使用用于数据收集[&#128279;](/help/data-collection/edge/data-prep.md)的数据准备功能时，才需要选择架构。
+   >您无需选择架构。 仅当使用用于数据收集[的](/help/data-collection/edge/data-prep.md)数据准备功能时，才需要选择架构。
 
 在下一个屏幕上，您可以向数据流添加Adobe应用程序等服务，但此时不会添加任何服务。 您稍后将在课程[设置Experience Platform](setup-experience-platform.md)、[设置Analytics](setup-analytics.md)、[设置Audience Manager](setup-audience-manager.md)、[设置Target](setup-target.md)或[事件转发](setup-event-forwarding.md)中执行此操作。
 
@@ -65,7 +65,7 @@ ht-degree: 7%
 
 ## 覆盖数据流
 
-[数据流覆盖](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/overrides)允许您为数据流定义其他配置，然后在特定条件下覆盖默认配置。
+[数据流覆盖](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides)允许您为数据流定义其他配置，然后在特定条件下覆盖默认配置。
 
 数据流配置覆盖分为两步：
 
@@ -75,8 +75,6 @@ ht-degree: 7%
 在[设置Adobe Analytics](setup-analytics.md)课程中，您可以使用Platform Web SDK发送事件操作覆盖页面的报表包。
 
 现在，您可以在标记资产中安装Platform Web SDK扩展了！
-
-[下一步： ](install-web-sdk.md)
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: 了解如何使用标记规则将事件与XDM对象一起发送到P
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1982'
 ht-degree: 2%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 2%
 
 此视频概述了此过程：
 
->[!VIDEO](https://video.tv.adobe.com/v/3454037/?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### 全局配置字段
 
@@ -98,7 +98,7 @@ ht-degree: 2%
    >
    > 订单编号越低，执行的时间就越早。 因此，我们给予“全球配置”一个较低的订单编号。
 
-1. 选择&#x200B;**[!UICONTROL Keep Changes]**&#x200B;以返回主规则屏幕
+1. 选择&#x200B;**[!UICONTROL Keep Changes]**以返回主规则屏幕
    ![选择库已加载触发器](assets/create-tag-rule-trigger-loaded.png)
 
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 添加]**
@@ -107,7 +107,7 @@ ht-degree: 2%
 
 1. 作为&#x200B;**[!UICONTROL 操作类型]**，请选择&#x200B;**[!UICONTROL 更新变量]**
 
-1. 作为&#x200B;**[!UICONTROL 数据元素]**，选择您在[创建数据元素](create-data-elements.md)课程中创建的`xdm.variable.content`
+1. 作为&#x200B;**[!UICONTROL 数据元素]**，选择您在`xdm.variable.content`创建数据元素[课程中创建的](create-data-elements.md)
 
    ![更新变量架构](assets/create-rule-update-variable.png)
 
@@ -149,7 +149,7 @@ ht-degree: 2%
 
    >[!TIP]
    >
-   > 虽然Adobe Analytics不需要将设置为`web.webpagedetails.pageViews`的`eventType`和`web.webPageDetails.pageViews.value`来处理作为页面查看的信标，但使用标准方式为其他下游应用程序指示页面查看很有用。
+   > 虽然Adobe Analytics不需要将设置为`eventType`的`web.webpagedetails.pageViews`和`web.webPageDetails.pageViews.value`来处理作为页面查看的信标，但使用标准方式为其他下游应用程序指示页面查看很有用。
 
 
 1. 选择&#x200B;**[!UICONTROL 保留更改]**，然后在下一个屏幕中选择&#x200B;**[!UICONTROL 保存]**&#x200B;规则以完成创建规则
@@ -157,7 +157,7 @@ ht-degree: 2%
 
 ### 产品页面字段
 
-现在，在将XDM对象发送到[!UICONTROL Platform Edge Network]之前，开始在其他顺序规则中使用&#x200B;**[!UICONTROL 更新变量]**&#x200B;以扩充该对象。
+现在，在将XDM对象发送到&#x200B;**[!UICONTROL Platform Edge Network]**&#x200B;之前，开始在其他顺序规则中使用[!UICONTROL 更新变量]以扩充该对象。
 
 >[!TIP]
 >
@@ -179,7 +179,7 @@ ht-degree: 2%
 1. 在&#x200B;**[!UICONTROL 条件]**&#x200B;下，选择&#x200B;**[!UICONTROL 添加]**
 1. 将&#x200B;**[!UICONTROL 逻辑类型]**&#x200B;保留为&#x200B;**[!UICONTROL 常规]**
 1. 将&#x200B;**[!UICONTROL 扩展]**&#x200B;保留为&#x200B;**[!UICONTROL 核心]**
-1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;**的**&#x200B;路径
+1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;**[!UICONTROL 的]**&#x200B;路径
 1. 在右侧，启用&#x200B;**[!UICONTROL 正则表达式]**&#x200B;切换开关
 1. 在&#x200B;**[!UICONTROL 路径下，等于]**&#x200B;设置`/products/`。 对于Luma演示站点，它确保规则仅在产品页面上触发
 1. 选择&#x200B;**[!UICONTROL 保留更改]**
@@ -237,8 +237,8 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->请注意数值变量的转换方式，数据层中的字符串值（如`price`和`qty`）将重新格式化为数据元素中的数字。 这些格式要求对于Platform中的数据完整性非常重要，可以在[配置架构](configure-schemas.md)步骤中确定。 在示例中，**[!UICONTROL 数量]**&#x200B;使用&#x200B;**[!UICONTROL 整数]**&#x200B;数据类型。
-> ![XDM架构数据类型](assets/set-up-analytics-quantity-integer.png)
+>请注意数值变量的转换方式，数据层中的字符串值（如`price`和`qty`）将重新格式化为数据元素中的数字。 这些格式要求对于Platform中的数据完整性非常重要，可以在[配置架构](configure-schemas.md)步骤中确定。 在示例中，**[!UICONTROL 数量]**&#x200B;使用&#x200B;**[!UICONTROL 整数]**数据类型。
+>> ![XDM架构数据类型](assets/set-up-analytics-quantity-integer.png)
 
 现在，让我们将数组映射到XDM对象：
 
@@ -255,7 +255,7 @@ ht-degree: 2%
 1. 在&#x200B;**[!UICONTROL 条件]**&#x200B;下，选择&#x200B;**[!UICONTROL 添加]**
 1. 将&#x200B;**[!UICONTROL 逻辑类型]**&#x200B;保留为&#x200B;**[!UICONTROL 常规]**
 1. 将&#x200B;**[!UICONTROL 扩展]**&#x200B;保留为&#x200B;**[!UICONTROL 核心]**
-1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;**的**&#x200B;路径
+1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;**[!UICONTROL 的]**&#x200B;路径
 1. 在右侧，**不**&#x200B;启用&#x200B;**[!UICONTROL 正则表达式]**&#x200B;切换开关
 1. 在&#x200B;**[!UICONTROL 路径下，等于]**&#x200B;设置`/content/luma/us/en/user/cart.html`。 对于Luma演示站点，它确保规则仅在购物车页面上触发
 1. 选择&#x200B;**[!UICONTROL 保留更改]**
@@ -342,9 +342,9 @@ ht-degree: 2%
 
 1. 使用&#x200B;**[!UICONTROL 核心扩展]**&#x200B;并选择`Library Loaded (Page Top)`作为&#x200B;**[!UICONTROL 事件类型]**
 
-1. 选择&#x200B;**[!UICONTROL 高级]**&#x200B;下拉菜单并在&#x200B;**[!UICONTROL 顺序]**&#x200B;中输入`50`。 这将确保此规则在您配置的所有其他规则（这些规则将`1`或`20`作为其[!UICONTROL 顺序]）之后触发。
+1. 选择&#x200B;**[!UICONTROL 高级]**&#x200B;下拉菜单并在`50`顺序&#x200B;**[!UICONTROL 中输入]**。 这将确保此规则在您配置的所有其他规则（这些规则将`1`或`20`作为其[!UICONTROL 顺序]）之后触发。
 
-1. 选择&#x200B;**[!UICONTROL Keep Changes]**&#x200B;以返回主规则屏幕
+1. 选择&#x200B;**[!UICONTROL Keep Changes]**以返回主规则屏幕
    ![选择库已加载触发器](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 添加]**
@@ -392,8 +392,6 @@ ht-degree: 2%
 如您在[!UICONTROL 发布流]屏幕上所见，发布流程还有许多其他内容，这不在本教程的涵盖范围内。 本教程仅在开发环境中使用单个库。
 
 现在，您可以使用Adobe Experience Platform Debugger验证请求中的数据。
-
-[下一步 ](validate-with-debugger.md)
 
 >[!NOTE]
 >

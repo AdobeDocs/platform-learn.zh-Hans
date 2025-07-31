@@ -4,9 +4,9 @@ description: 了解如何使用Adobe Experience Platform Debugger验证您的Pla
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
 workflow-type: tm+mt
-source-wordcount: '1172'
+source-wordcount: '1171'
 ht-degree: 3%
 
 ---
@@ -22,7 +22,7 @@ Experience Platform Debugger是适用于Chrome和Firefox浏览器的扩展，可
 
 如果您以前从未使用过该调试器，则可能需要观看以下时长为5分钟的概述视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/35858?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 在本课程中，您使用[Adobe Experience Platform Debugger扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)将[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)上硬编码的标记属性替换为您自己的属性。
 
@@ -90,7 +90,7 @@ Experience Platform Debugger具有一项酷炫功能，您可以使用其他标�
 
    ![Adobe Experience Platform Web SDK请求](assets/validate-aep-screen.png)
 
-1. 请注意，如何查看您在[!UICONTROL 更新变量]操作中指定的`web.webpagedetails.pageView`事件类型，以及其他位于`AEP Web SDK ExperienceEvent`字段组后面的现成变量
+1. 请注意，如何查看您在`web.webpagedetails.pageView`更新变量[!UICONTROL 操作中指定的]事件类型，以及其他位于`AEP Web SDK ExperienceEvent`字段组后面的现成变量
 
    ![事件详细信息](assets/validate-event-pageViews.png)
 
@@ -143,7 +143,7 @@ Experience Platform Debugger具有一项酷炫功能，您可以使用其他标�
 
 如您在[配置数据流](configure-datastream.md)课程中所学的，Platform Web SDK会先将数据从您的数字资产发送到Platform Edge Network。 然后，Platform Edge Network会向数据流中启用的相应服务发出其他服务器端请求。 通过使用Debugger中的Edge跟踪，您可以验证Platform Edge Network发出的服务器端请求。
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### 启用Edge跟踪
@@ -164,8 +164,6 @@ Experience Platform Debugger具有一项酷炫功能，您可以使用其他标�
    ![Analytics信标Edge跟踪](assets/validate-edge-trace.png)
 
 此时，您无法查看任何前往Adobe应用程序的Platform Edge Network请求，因为您未在数据流中启用任何请求。 在将来的课程中，您将使用Edge跟踪查看对Adobe应用程序的传出服务器端请求和事件转发。 但首先，了解用于验证Platform Edge Network发出的服务器端请求的另一个工具 — Adobe Experience Platform Assurance！
-
-[下一步： ](validate-with-assurance.md)
 
 >[!NOTE]
 >
