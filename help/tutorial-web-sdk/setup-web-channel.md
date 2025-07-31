@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 使用Web SDK设置Journey Optimizer Web渠道
 
-了解如何使用Adobe Experience Platform Web SDK实施Adobe Journey Optimizer [Web渠道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web)。 本课程包括基本Web渠道先决条件、配置的详细步骤以及围绕忠诚度状态的用例的深入探讨。
+了解如何使用Adobe Experience Platform Web SDK实施Adobe Journey Optimizer [Web渠道](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/web/get-started-web)。 本课程包括基本Web渠道先决条件、配置的详细步骤以及围绕忠诚度状态的用例的深入探讨。
 
 通过学习本课程，Journey Optimizer用户将能够使用Journey Optimizer Web Designer的Web渠道来实现高级在线个性化。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
   > 1. 网站嵌入在iframe中。
   > 1. 无法从外部访问客户的QA或暂存站点（它是一个内部站点）。
 
-* 从Adobe Experience Manager Assets Essentials库创建Web体验并包含内容时，需要[配置用于发布此内容的子域](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains)。
+* 从Adobe Experience Manager Assets Essentials库创建Web体验并包含内容时，需要[配置用于发布此内容的子域](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains)。
 * 如果使用内容试验功能，请确保您的Web数据集也包含在报表配置中。
 * 目前，支持两种类型的实施，以便能够在Web资产上创作和交付Web渠道营销活动：
    * 仅限客户端：要修改您的网站，必须实施Adobe Experience Platform Web SDK。
@@ -123,7 +123,7 @@ ht-degree: 0%
 
 要在Web渠道营销活动中使用内容实验，必须确保使用的Web数据集也包含在报表配置中。 Journey Optimizer报表系统以只读方式使用数据集来填充现成的内容试验报表。
 
-[本节](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets)详细介绍了如何添加用于内容试验报告的数据集。
+[本节](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets)详细介绍了如何添加用于内容试验报告的数据集。
 
 ## 用例概述 — 忠诚度奖励
 
@@ -302,7 +302,7 @@ ht-degree: 0%
 
 您可以使用Luma网站上的调试器来验证生产环境中的Web渠道体验。 在忠诚度奖励用例启动并运行后，这是一种最佳实践，可确保正确配置所有内容。
 
-[通过此处](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)了解如何使用指南在浏览器中配置调试器。
+[通过此处](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/debugger/overview)了解如何使用指南在浏览器中配置调试器。
 
 要使用调试器开始验证，请执行以下操作：
 

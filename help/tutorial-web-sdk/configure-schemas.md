@@ -58,7 +58,7 @@ Platform Web SDK使用您的架构来标准化Web事件数据，将其发送到P
 >
 > 出于演示目的，本课程中的练习构建了一个示例架构，用于捕获客户在[Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html)中查看的内容和购买的产品。 虽然您可以使用这些步骤创建不同的架构以满足您自己的目的，但建议您首先在创建示例架构的同时学习架构编辑器的功能。
 
-要了解有关XDM架构的更多信息，请观看播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，或查看[XDM系统概述](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)。
+要了解有关XDM架构的更多信息，请观看播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/zh-hans/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，或查看[XDM系统概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)。
 
 ## 学习目标
 
@@ -74,7 +74,7 @@ Platform Web SDK使用您的架构来标准化Web事件数据，将其发送到P
 
 ## 创建 XDM 架构
 
-XDM架构是描述Experience Platform中数据的标准方式，允许与架构匹配的所有数据在组织内重复使用，而不会产生冲突，甚至可以在多个组织之间共享。 若要了解详细信息，请参阅架构组合的[基础知识](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)。
+XDM架构是描述Experience Platform中数据的标准方式，允许与架构匹配的所有数据在组织内重复使用，而不会产生冲突，甚至可以在多个组织之间共享。 若要了解详细信息，请参阅架构组合的[基础知识](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition)。
 
 在本练习中，您将使用建议的基线字段组创建一个XDM架构，用于捕获[Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}上的Web事件数据：
 
@@ -107,9 +107,9 @@ XDM架构是描述Experience Platform中数据的标准方式，允许与架构�
 
 ## 添加字段组
 
-如前所述，XDM是通过提供在下游Adobe Experience Platform服务中使用的通用结构和定义来标准化客户体验数据的核心框架。 通过遵守XDM标准，可以将&#x200B;_所有客户体验数据_&#x200B;合并到通用表示中。 通过这种方法，您可以从客户操作中获得有价值的见解，通过区段定义客户受众，并使用来自多个来源的数据表示客户属性以进行个性化。 有关详细信息，请参阅[数据建模的最佳实践](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices)。
+如前所述，XDM是通过提供在下游Adobe Experience Platform服务中使用的通用结构和定义来标准化客户体验数据的核心框架。 通过遵守XDM标准，可以将&#x200B;_所有客户体验数据_&#x200B;合并到通用表示中。 通过这种方法，您可以从客户操作中获得有价值的见解，通过区段定义客户受众，并使用来自多个来源的数据表示客户属性以进行个性化。 有关详细信息，请参阅[数据建模的最佳实践](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/best-practices)。
 
-如果可能，建议使用现有字段组并遵守与产品无关的模型和命名约定。 对于特定于您的组织、不适合上述预定义字段组的任何数据，您可以创建自定义字段组。 有关自定义架构的更多详细步骤，请参阅[使用架构编辑器创建架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create)。
+如果可能，建议使用现有字段组并遵守与产品无关的模型和命名约定。 对于特定于您的组织、不适合上述预定义字段组的任何数据，您可以创建自定义字段组。 有关自定义架构的更多详细步骤，请参阅[使用架构编辑器创建架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui#create)。
 
 >[!TIP]
 > 
@@ -133,7 +133,7 @@ XDM架构是描述Experience Platform中数据的标准方式，允许与架构�
 
 ![架构字段组](assets/schema-consumer-experience-event.png)
 
-这个课程只是一个起点。 在构建您自己的Web事件架构时，您必须探索并记录您的业务要求。 此过程类似于为Adobe Analytics实施创建[业务需求文档](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document)和[解决方案设计参考](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr)，但应包括对&#x200B;_所有下游数据收件人_&#x200B;的需求，例如平台、Target和事件转发目标。
+这个课程只是一个起点。 在构建您自己的Web事件架构时，您必须探索并记录您的业务要求。 此过程类似于为Adobe Analytics实施创建[业务需求文档](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document)和[解决方案设计参考](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr)，但应包括对&#x200B;_所有下游数据收件人_&#x200B;的需求，例如平台、Target和事件转发目标。
 
 
 ### identityMap对象
@@ -147,7 +147,7 @@ XDM架构是描述Experience Platform中数据的标准方式，允许与架构�
 
 >[!IMPORTANT]
 >
-> 在保存架构之前，可以为架构启用&#x200B;**[!UICONTROL 配置文件]**。 **此时不要**&#x200B;启用它。 为配置文件启用架构后，如果不重置整个沙盒，则无法禁用或删除该架构。 此时也无法从架构中删除字段，但可以[弃用UI中的字段](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate)。 在生产环境中使用您自己的数据时，请务必牢记这些含义。
+> 在保存架构之前，可以为架构启用&#x200B;**[!UICONTROL 配置文件]**。 **此时不要**&#x200B;启用它。 为配置文件启用架构后，如果不重置整个沙盒，则无法禁用或删除该架构。 此时也无法从架构中删除字段，但可以[弃用UI中的字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate)。 在生产环境中使用您自己的数据时，请务必牢记这些含义。
 >
 >
 >此设置将在[设置Experience Platform](setup-experience-platform.md)课程中详细讨论。

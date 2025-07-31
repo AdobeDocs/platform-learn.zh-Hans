@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # 使用Adobe Experience Platform Web SDK设置Adobe Analytics
 
-了解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview)设置Adobe Analytics，创建标记规则以将数据发送到Adobe Analytics，并验证Analytics是否按预期捕获数据。
+了解如何使用[Adobe Experience Platform Web SDK](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/web-sdk/overview)设置Adobe Analytics，创建标记规则以将数据发送到Adobe Analytics，并验证Analytics是否按预期捕获数据。
 
 [Adobe Analytics](https://experienceleague.adobe.com/zh-hans/docs/analytics)是一款行业领先的应用程序，可帮助您了解客户的行为和需求，并根据客户情报掌控业务发展方向。
 
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 * 熟悉并访问Adobe Analytics。
 
-* 至少具有一个测试/开发报表包ID。 如果您没有可用于本教程的测试/开发报表包，[请创建一个](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
+* 至少具有一个测试/开发报表包ID。 如果您没有可用于本教程的测试/开发报表包，[请创建一个](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。
 
 * 完成本教程的初始配置和标记配置部分中之前的课程。
 
