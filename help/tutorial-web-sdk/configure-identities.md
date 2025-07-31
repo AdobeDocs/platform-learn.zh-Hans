@@ -53,7 +53,7 @@ ht-degree: 12%
 
 在开始练习之前，请观看此简短视频，了解有关Adobe Experience Platform中标识的更多信息：
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422769?learn=on&enablevpops&captions=chi_hans)
 
 现在，为Luma CRM ID创建一个命名空间：
 
