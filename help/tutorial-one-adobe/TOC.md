@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1222'
 ht-degree: 3%
 
 ---
@@ -31,7 +31,17 @@ ht-degree: 3%
       + [选项2：PostBuster设置](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [要安装的应用程序](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
 
-+ 工作流和规划 {#planning}
++ 工作流和规划 {#wfplanning}
+   + 1.1 Workfront规划 {#wfpl1}
+      + [概述](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/wfplanning.md)
+      + [1.1.1 Workfront Planning快速入门](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/ex1.md)
+      + [摘要和优点](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/summary.md)
+   + 1.2Workfront {#wfpl2}
+      + [概述](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
+      + [1.2.1 Workfront快速入门](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
+      + [1.2.2 Workfront校对](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
+      + [1.2.5 Workfront + Photoshop集成](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
+      + [摘要和优点](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 
 + 创建与生产 {#production}
    + 1.1 Adobe Firefly Services概述 {#crpr1}
@@ -74,12 +84,6 @@ ht-degree: 3%
       + [1.1.5高级自定义块](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [1.1.6 AEM Edge Delivery Services MarTech插件](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
-   + 1.2Workfront {#assetm2}
-      + [概述](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/workfront.md)
-      + [1.2.1 Workfront快速入门](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
-      + [1.2.2 Workfront校对](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex2.md)
-      + [1.2.5 Workfront + Photoshop集成](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex5.md)
-      + [摘要和优点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
 + 交付和激活 {#activation}
    + 数据收集 {#dc}

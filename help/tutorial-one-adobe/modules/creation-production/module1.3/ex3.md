@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: b247307c3b01df2b67b2ff4301f0b7d442b725c0
+source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
 workflow-type: tm+mt
 source-wordcount: '1273'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->要执行本练习中的所有步骤，您需要具有对现有Adobe Workfront环境的访问权限，并且在该环境中，您需要创建项目和审批工作流。 如果您使用Adobe Workfront[&#128279;](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}学习练习工作流管理，您将拥有所需的设置。
+>要执行本练习中的所有步骤，您需要具有对现有Adobe Workfront环境的访问权限，并且在该环境中，您需要创建项目和审批工作流。 如果您使用Adobe Workfront[学习练习](./../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"}工作流管理，您将拥有所需的设置。
 
 >[!IMPORTANT]
 >

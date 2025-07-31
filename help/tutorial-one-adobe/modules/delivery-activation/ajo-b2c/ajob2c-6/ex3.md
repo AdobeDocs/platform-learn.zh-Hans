@@ -4,7 +4,7 @@ description: AJO和GenStudio for Performance Marketing
 kt: 5342
 doc-type: tutorial
 exl-id: 1424f649-d004-4b14-b8af-927ca1d47de5
-source-git-commit: 8052d82b1b820a9077766d8966b331ad2a21b220
+source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->要执行本练习中的所有步骤，您需要具有对现有Adobe Workfront环境的访问权限，并且在该环境中，您需要创建项目和审批工作流。 如果您使用Adobe Workfront[学习练习](./../../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}工作流管理，您将拥有所需的设置。
+>要执行本练习中的所有步骤，您需要具有对现有Adobe Workfront环境的访问权限，并且在该环境中，您需要创建项目和审批工作流。 如果您使用Adobe Workfront[学习练习](./../../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"}工作流管理，您将拥有所需的设置。
 
 ## 1.3.4.1在Adobe GenStudio中创建和批准电子邮件体验
 

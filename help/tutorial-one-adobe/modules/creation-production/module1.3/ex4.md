@@ -1,13 +1,14 @@
 ---
-title: GenStudio for Performance Marketing Campaign对元数据的激活
-description: GenStudio for Performance Marketing Campaign对元数据的激活
+title: GenStudio for Performance Marketing为AJO创建电子邮件体验
+description: GenStudio for Performance Marketing为AJO创建电子邮件体验
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+exl-id: 9837c076-e6ca-47a0-96b9-5fa5fdba3fd2
+source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
 workflow-type: tm+mt
-source-wordcount: '854'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->要执行本练习中的所有步骤，您需要具有对现有Adobe Workfront环境的访问权限，并且在该环境中，您需要创建项目和审批工作流。 如果您使用Adobe Workfront[学习练习](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"}工作流管理，您将拥有所需的设置。
+>要执行本练习中的所有步骤，您需要具有对现有Adobe Workfront环境的访问权限，并且在该环境中，您需要创建项目和审批工作流。 如果您使用Adobe Workfront[学习练习](./../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"}工作流管理，您将拥有所需的设置。
 
 ## 1.3.4.1创建和批准电子邮件体验
 
@@ -40,7 +41,7 @@ ht-degree: 0%
 
 - **品牌**： `--aepUserLdap-- - CitiSignal`
 - **语言**： `English (US)`
-- **角色**： `--aepUserLdap-- - Smart Home Families`
+- **角色**： `--aepUserLdap-- - Online Gamers`
 - **产品**： `--aepUserLdap-- - CitiSignal Fiber Max`
 
 单击&#x200B;**从内容中选择**。

@@ -4,7 +4,7 @@ description: AEM CS — 基本自定义块
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
 workflow-type: tm+mt
 source-wordcount: '814'
 ht-degree: 1%
@@ -259,7 +259,7 @@ Adobe建议您分三步开发块：
 
 ![AEMCS](./images/nav1.png){zoomable="yes"}
 
-输入此&#x200B;**URL** `/us/en//citisignal-fiber`并单击&#x200B;**V**&#x200B;图标进行确认。
+输入此&#x200B;**URL** `/us/en/citisignal-fiber`并单击&#x200B;**V**&#x200B;图标进行确认。
 
 ![AEMCS](./images/nav3.png){zoomable="yes"}
 
@@ -271,7 +271,7 @@ Adobe建议您分三步开发块：
 
 ![AEMCS](./images/nav5.png){zoomable="yes"}
 
-现在，在将XXX替换为您的GitHub用户帐户（本示例中为`woutervangeluwe`）之后，您可以通过转到`main--citisignal--XXX.aem.page/us/en/`和/或`main--citisignal--XXX.aem.live/us/en/`查看对您网站的更改。
+现在，在将XXX替换为您的GitHub用户帐户（本示例中为`main--citisignal--XXX.aem.page/us/en/`）之后，您可以通过转到`main--citisignal--XXX.aem.live/us/en/`和/或`woutervangeluwe`查看对您网站的更改。
 
 在此示例中，完整URL将变为：
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
