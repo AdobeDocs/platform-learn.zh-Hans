@@ -18,5 +18,5 @@ ht-degree: 90%
 
 通过区段匹配，您的战略合作伙伴可以向您共享数据。在此视频中，了解如何批准和接收数据，以及在哪里查看这些数据并将其添加到您自己的区段。
 
->[!VIDEO](https://video.tv.adobe.com/v/344419/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411138/?learn=on&enablevpops&captions=chi_hans)
 

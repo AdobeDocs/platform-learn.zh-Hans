@@ -18,4 +18,4 @@ ht-degree: 1%
 
 了解如何在Real-Time CDP中设置和使用数据管理控件，以便限制可以与数据合作伙伴共享的数据集（以及使用这些数据集的区段）。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/342212/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346356/?learn=on&enablevpops&captions=chi_hans)
