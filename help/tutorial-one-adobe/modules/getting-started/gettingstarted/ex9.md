@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## Adobe Premiere Pro
 
-从[https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)在计算机上安装Adobe Premiere Pro Beta版本
+从[https://helpx.adobe.com/cn/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/cn/premiere-pro/using/premiere-pro-beta.html)在计算机上安装Adobe Premiere Pro Beta版本
 
 ![Adobe I/O新集成](./images/prpro.png)
 
