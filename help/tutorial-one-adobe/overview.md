@@ -3,9 +3,9 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1166'
 ht-degree: 2%
 
 ---
@@ -84,7 +84,11 @@ ht-degree: 2%
 
 [1.4 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
-在此基础模块中，您将使用Adobe Express创建图像和视频，并将这些资源共享到更广泛的Adobe Experience Cloud生态系统。
+在本模块中，您将使用Adobe Express创建图像和视频，并将这些资源共享到更广泛的Adobe Experience Cloud生态系统。
+
+[1.5使用Frame.io简化您的工作流](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+在本模块中，您将将Adobe Frame.io与Adobe Premiere Pro结合使用，以便协作和查看图像和视频。
 
 ### 3.资产管理
 
@@ -185,6 +189,12 @@ ht-degree: 2%
 [2.1查询服务](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
 
 在本模块中，您将学习如何使用Adobe Experience Platform查询服务。
+
+#### Content Analytics
+
+[3.1Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
+
+在本模块中，您将学习如何实施和使用Adobe Content Analytics。
 
 ![技术内部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 

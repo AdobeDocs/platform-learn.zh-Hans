@@ -2,9 +2,10 @@
 title: GenStudio for Content Supply Chain Technology Enablement
 description: GenStudio for Content Supply Chain Technology Enablement
 doc-type: multipage-overview
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
+source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '439'
 ht-degree: 1%
 
 ---
@@ -57,6 +58,10 @@ ht-degree: 1%
 
 在此基础模块中，您将使用Adobe Express创建图像和视频，并将这些资源共享到更广泛的Adobe Experience Cloud生态系统。
 
+[使用Frame.io简化您的工作流](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+在本模块中，您将将Adobe Frame.io与Adobe Premiere Pro结合使用，以便协作和查看图像和视频。
+
 ### 资产管理
 
 [Adobe Experience Manager Cloud Service和Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
@@ -67,9 +72,9 @@ ht-degree: 1%
 
 #### Adobe Content Analytics
 
-[Content Analytics](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
+[Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
 
-在本模块中，您将设置和配置Content Analytics。
+在本模块中，您将学习如何实施和使用Adobe Content Analytics。
 
 ![技术内部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 
