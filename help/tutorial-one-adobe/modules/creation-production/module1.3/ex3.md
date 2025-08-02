@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '1273'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->要完成本练习，您需要有权访问启用了AEM Content Hub的有效AEM Assets CS创作环境。 如果您按照练习[Adobe Experience Manager Cloud Service和Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}，您将有权访问此类环境。
+>要完成本练习，您需要有权访问启用了AEM Assets Content Hub的有效AEM Assets CS创作环境。
+>
+>考虑以下两个选项：
+>
+>- 如果您参加GenStudio的CSC技术支持研讨会，您的讲师已经为您创建了一个AEM Assets CS创作环境。 请与他们确认名称以及操作方法。
+>
+>- 如果您遵循完整的One Adobe教程路径，请转到练习[Adobe Experience Manager Cloud Service &amp; Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}。 按照上面的说明进行操作，您将有权访问此类环境。
 
 >[!IMPORTANT]
 >

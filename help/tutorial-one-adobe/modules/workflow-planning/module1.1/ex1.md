@@ -3,9 +3,10 @@ title: Workfront Planning入门
 description: Workfront Planning入门
 kt: 5342
 doc-type: tutorial
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1084'
 ht-degree: 1%
 
 ---
@@ -196,7 +197,7 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront计划](./images/wfpl35.png)
 
-## 1.1.1.7创建自动化
+## 1.1.1.7创建Portfolio和自定义表单
 
 在下一步中，您将创建一个自动功能，该功能将从您在Workfront Planning中创建的营销策划中获得信息，并在Workfront中使用该信息创建项目。 在创建自动化之前，必须先在Workfront中配置两项：项目组合和自定义表单。
 
@@ -224,7 +225,7 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront计划](./images/wfplss6.png)
 
-将表单名称更改为`--aepUserLdap-- Program Information`。
+将表单名称更改为`--aepUserLdap-- - Program Information`。
 
 ![Workfront计划](./images/wfplss7.png)
 

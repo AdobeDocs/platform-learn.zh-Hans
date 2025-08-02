@@ -3,14 +3,15 @@ title: 使用Adobe Workfront进行工作流管理
 description: 使用Adobe Workfront进行工作流管理
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '138'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
 
-# 1.2使用Adobe Workfront进行工作流管理
+# 1.2使用Adobe Workfront工作流进行工作流管理
 
 ## 学习目标
 
@@ -22,13 +23,17 @@ ht-degree: 2%
 
 ## 练习
 
-[1.2.1 Workfront快速入门](./ex1.md){target="_blank"}
+[1.2.1 Workfront + AEM Assets CS元数据集成](./ex1.md){target="_blank"}
 
-在本练习中，您将设置Workfront中的许多基本设置。
+在本练习中，您将设置Workfront + AEM Assets CS集成。
 
 [1.2.2 Workfront校对](./ex2.md)
 
 在本练习中，您将配置并使用验证审批工作流。
+
+[1.2.4 Workfront + AEM Sites CS集成](./ex4.md){target="_blank"}
+
+在本练习中，您将设置并开始使用将Adobe Experience Manager Cloud Service Sites与Adobe Workfront连接的插件。
 
 [1.2.5 Workfront + Photoshop集成](./ex5.md){target="_blank"}
 

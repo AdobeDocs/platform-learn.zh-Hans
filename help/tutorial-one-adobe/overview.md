@@ -3,9 +3,9 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 23176cb4a07a52ec3500ee9922d851f658351c06
+source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1122'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 本教程的内容非常多样，提供了对以下应用程序的清晰洞察：
 
 - Adobe Firefly Services、Adobe Photoshop、Adobe框架I/O、Adobe Substance 3D Staging
-- Adobe Workfront、Adobe Workfront Planning和Adobe Workfront Fusion
+- Adobe Workfront工作流程、Adobe Workfront Planning和Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service、Sites、Assets、Forms和Edge Delivery Services
 - AEM Assets Dynamic Media， Content Hub
 - Adobe Experience Platform
@@ -64,7 +64,7 @@ ht-degree: 2%
 
 在本模块中，您将配置和使用Adobe Workfront Planning来创建新工作区、定义记录类型、管理记录、创建新请求表单并利用AI助手。
 
-使用Adobe Workfront进行[1.2工作流管理](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[1.2使用Adobe Workfront工作流进行工作流管理](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 在本模块中，您将配置和使用Adobe Workfront来管理审批流，并将使用与Adobe Experience Manager Assets、通用编辑器、Photoshop等的集成。
 

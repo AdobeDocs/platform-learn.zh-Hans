@@ -3,20 +3,23 @@ title: 使用Workfront校对
 description: 使用Workfront校对
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
+source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '810'
 ht-degree: 0%
 
 ---
 
 # 1.2.2 Workfront校对
 
+>[!IMPORTANT]
+>
+>如果您之前已使用AEM CS环境配置了AEM Assets CS项目，则可能是您的AEM CS沙盒已休眠。 鉴于解除此类沙盒的休眠需要10-15分钟，最好现在就启动解除休眠过程，这样以后就不必等待它。
+
 ## 1.2.2.1创建新的审批流程
 
-转到[https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/){target="_blank"}。
-
-单击9个点&#x200B;**汉堡包**&#x200B;图标并选择&#x200B;**校对**。
+返回&#x200B;**Adobe Workfront**。 单击&#x200B;**菜单**&#x200B;图标并选择&#x200B;**校对**。
 
 ![WF](./images/wfp1.png)
 
@@ -28,7 +31,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp3.png)
 
-向下滚动，在&#x200B;**阶段** > **阶段1**&#x200B;下，添加&#x200B;**Wouter Van Galuwe**，其角色为&#x200B;**，审批者为**，审批者为&#x200B;**。**
+向下滚动，在&#x200B;**阶段** > **阶段1**&#x200B;下，将自己添加为&#x200B;**审阅者和审批者**&#x200B;的&#x200B;**角色**。
 
 单击&#x200B;**创建**。
 
@@ -40,13 +43,35 @@ ht-degree: 0%
 
 ## 1.2.2.2创建新项目
 
-从Workfront主页中，在&#x200B;**我的项目**&#x200B;选项卡中单击&#x200B;**新建**。 选择&#x200B;**空白项目**。
+打开&#x200B;**菜单**&#x200B;并转到&#x200B;**程序**。
+
+![WF](./images/wfp6a.png)
+
+单击到您之前创建的名为`--aepUserLdap-- CitiSignal Fiber Launch`的程序。
+
+>[!NOTE]
+>
+>您在[Workfront Planning](./../module1.1/ex1.md)上的练习中创建了一个项目，并使用了您创建和运行的自动化功能。 如果您尚未这样做，可以在此处查找说明。
+
+![WF](./images/wfp6b.png)
+
+在您的项目中，转到&#x200B;**项目**。 单击&#x200B;**+新建项目**，然后选择&#x200B;**新建项目**。
 
 ![WF](./images/wfp6.png)
 
 您应该会看到此内容。 将名称更改为`--aepUserLdap-- - CitiSignal Fiber Launch`。
 
-![WF](./images/wfp6a.png)
+![WF](./images/wfp6c.png)
+
+转到&#x200B;**项目详细信息**。 单击&#x200B;**描述**&#x200B;下的&#x200B;**+添加**。
+
+![WF](./images/wfp6d.png)
+
+将描述设置为`The CitiSignal Fiber Launch project is used to plan the upcoming launch of CitiSignal Fiber.`
+
+单击&#x200B;**保存更改**。
+
+![WF](./images/wfp6e.png)
 
 您的项目现已创建。
 
@@ -54,7 +79,15 @@ ht-degree: 0%
 
 ## 1.2.2.3创建新任务
 
-为您的任务输入此名称： **为Fiber营销活动创建资产**。 单击&#x200B;**创建任务**。
+转到&#x200B;**任务**&#x200B;并单击&#x200B;**+新建任务**。
+
+![WF](./images/wfp7a.png)
+
+为您的任务输入此名称： `Create assets for Fiber campaign`。
+
+将字段&#x200B;**Description**&#x200B;设置为： `This task is used to track the progress of the creation of the assets for the CitiSignal Fiber Launch Campaign.`
+
+单击&#x200B;**创建任务**。
 
 ![WF](./images/wfp8.png)
 
@@ -62,9 +95,25 @@ ht-degree: 0%
 
 ![WF](./images/wfp9.png)
 
+在&#x200B;**工作**&#x200B;列中，添加您自己的名称。
+
+![WF](./images/wfp9a.png)
+
+然后，该任务将分配给您。
+
+![WF](./images/wfp9b.png)
+
 ## 1.2.2.4向您的任务添加新文档通过审批流程
 
-单击&#x200B;**+添加新**，然后选择&#x200B;**文档**。
+单击&#x200B;**Workfront**&#x200B;徽标以返回概览页面。 然后，您应该会看到刚刚创建的项目出现在概述中。 单击您的项目以将其打开。
+
+![WF](./images/wfp9c.png)
+
+在&#x200B;**任务**&#x200B;中，单击以打开任务。
+
+![WF](./images/wfp9d.png)
+
+转到&#x200B;**文档**。 单击&#x200B;**+添加新**，然后选择&#x200B;**文档**。
 
 ![WF](./images/wfp10.png)
 
@@ -76,21 +125,13 @@ ht-degree: 0%
 
 ![WF](./images/wfp12.png)
 
-然后您应该拥有此项。 单击&#x200B;**创建验证**，然后选择&#x200B;**高级验证**。
+然后您应该拥有此项。 将鼠标悬停在上传文档上。 单击&#x200B;**创建验证**，然后选择&#x200B;**高级验证**。
 
 ![WF](./images/wfp13.png)
 
-在&#x200B;**新验证**&#x200B;窗口中，选择您之前创建的工作流模板，该模板应命名为`--aepUserLdap-- - Approval Workflow`。 单击&#x200B;**创建校对**。
+在&#x200B;**新验证**&#x200B;窗口中，选择&#x200B;**自动**，然后选择您之前创建的工作流模板，该模板应命名为`--aepUserLdap-- - Approval Workflow`。 单击&#x200B;**创建校对**。
 
 ![WF](./images/wfp14.png)
-
-然后你就可以回到你的任务中了。 单击&#x200B;**分配给**&#x200B;按钮并选择&#x200B;**分配给我**。
-
-![WF](./images/wfp15.png)
-
-单击&#x200B;**保存**。
-
-![WF](./images/wfp16.png)
 
 单击&#x200B;**处理它**。
 
@@ -124,7 +165,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp24.png)
 
-那你就该回到这里来。 现在，您需要上传第二个图像，该图像会考虑您提供的评论。
+返回您的&#x200B;**任务**&#x200B;和&#x200B;**文档**。 现在，您需要上传第二个图像，该图像会考虑您提供的评论。
 
 ![WF](./images/wfp25.png)
 
@@ -160,7 +201,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp32.png)
 
-关闭验证预览。
+单击&#x200B;**任务名称**&#x200B;以返回任务概述。
 
 ![WF](./images/wfp33.png)
 
@@ -168,11 +209,11 @@ ht-degree: 0%
 
 ![WF](./images/wfp34.png)
 
-单击&#x200B;**共享箭头**&#x200B;图标并选择您的应命名为`--aepUserLdap-- - Citi Signal AEM`的AEM Assets集成。
+选择已批准的文档。 单击&#x200B;**共享箭头**&#x200B;图标并选择您的应命名为`--aepUserLdap-- - CitiSignal AEM`的AEM Assets集成。
 
 ![WF](./images/wfp35.png)
 
-双击您之前创建的文件夹，该文件夹应名为`--aepUserLdap-- - Workfront Assets`。
+双击您之前创建的文件夹，该文件夹应名为`--aepUserLdap-- - CitiSignal Fiber Launch Assets`。
 
 ![WF](./images/wfp36.png)
 
@@ -184,29 +225,13 @@ ht-degree: 0%
 
 ![WF](./images/wfp37a.png)
 
-单击&#x200B;**打开摘要**。
-
-![WF](./images/wfp38.png)
-
-转到&#x200B;**元数据**，您应该会看到以下内容：
-
-![WF](./images/wfp39.png)
-
-转到&#x200B;**概述**&#x200B;并单击&#x200B;**+添加**&#x200B;添加说明。
-
-![WF](./images/wfp40.png)
-
-输入您的说明。 您的验证和文档设置现已完成。
-
-![WF](./images/wfp41.png)
-
 ## 1.2.2.5在AEM Assets中查看您的文件
 
-转到AEM Assets中名为`--aepUserLdap-- - Workfront Assets`的文件夹。
+转到AEM Assets CS中名为`--aepUserLdap-- - CitiSignal Fiber Launch Assets`的文件夹。
 
 ![WF](./images/wfppaem1.png)
 
-单击图像下面的3个圆点，然后选择&#x200B;**详细信息**。
+选择映像，然后选择&#x200B;**详细信息**。
 
 ![WF](./images/wfppaem2.png)
 

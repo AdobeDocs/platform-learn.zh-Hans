@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 1fcb7b56cdf9ecf3520e3f293b120ddd0b67da74
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1239'
 ht-degree: 3%
 
 ---
@@ -15,6 +15,7 @@ ht-degree: 3%
 # 一门Adobe技术教程 {#tutorial-one-adobe}
 
 + [教程概述](/help/tutorial-one-adobe/overview.md)
++ [GenStudio for Content Supply Chain Technology Enablement](/help/tutorial-one-adobe/genstudiocsc.md)
 + [内容状态](/help/tutorial-one-adobe/status.md)
 + [完成](/help/tutorial-one-adobe/completion.md)
 
@@ -36,10 +37,11 @@ ht-degree: 3%
       + [概述](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/wfplanning.md)
       + [1.1.1 Workfront Planning快速入门](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/ex1.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/summary.md)
-   + 1.2Workfront {#wfpl2}
+   + 1.2 Workfront工作流程 {#wfpl2}
       + [概述](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
-      + [1.2.1 Workfront快速入门](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
+      + [1.2.1 Workfront + AEM Assets CS元数据集成](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
       + [1.2.2 Workfront校对](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
+      + [1.2.4 Workfront + AEM Sites CS集成](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex4.md)
       + [1.2.5 Workfront + Photoshop集成](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 
