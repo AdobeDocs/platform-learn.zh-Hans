@@ -1,6 +1,6 @@
 ---
 title: 标记、引入并验证身份数据
-description: 了解如何将数据字段标记为身份、引入身份数据以及验证 Adobe Experience Platform Identity Service 私有图中的数据。
+description: 了解如何将数据字段标记为身份、引入身份数据以及验证 Adobe Experience Platform 身份标识服务私有图中的数据。
 feature: Identities
 role: Data Architect, Data Engineer, Developer
 level: Beginner
@@ -18,4 +18,4 @@ ht-degree: 35%
 
 了解如何将数据字段标记为身份、引入身份数据以及验证Adobe Experience Platform Identity Service专用图中的数据。 有关详细信息，请访问[身份服务文档](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=zh-Hans)
 
->[!VIDEO](https://video.tv.adobe.com/v/31671?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28167?learn=on&enablevpops)
