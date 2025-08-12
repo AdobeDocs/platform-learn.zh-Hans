@@ -19,7 +19,7 @@ ht-degree: 0%
 
 在本课程中，我们将在Adobe Experience Platform与您的企业Data Warehouse之间配置连接以启用联合受众合成。 这允许您直接从支持的仓库查询数据，而无需复制。 此外，我们还基于Data Warehouse表创建架构和数据模型。
 
-本实验连接到Snowflake帐户。 联合受众组合支持不断增加的云仓库连接列表。 查看[更新的集成列表](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+本实验连接到Snowflake帐户。 联合受众组合支持不断增加的云仓库连接列表。 查看[更新的集成列表](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 
 ## 步骤

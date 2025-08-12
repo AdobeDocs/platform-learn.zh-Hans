@@ -63,6 +63,6 @@ ht-degree: 3%
 
 **注意：**&#x200B;我们使用产品和信用信息构建受众，这些受众未将敏感数据（如信用分数）移动到下游平台进行激活。
 
-有关受众组合的详细信息，请访问[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
+有关受众组合的详细信息，请访问[Experience League](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
 
 现已创建联合受众，我们将继续[将其映射到S3帐户](map-federated-audience-to-s3.md)。
