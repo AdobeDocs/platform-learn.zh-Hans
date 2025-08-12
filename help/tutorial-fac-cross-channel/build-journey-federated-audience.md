@@ -7,7 +7,7 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 hide: true
-source-git-commit: fcfadca95c12d0123cfb221e44909f7e0fa8abab
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -27,13 +27,13 @@ ht-degree: 0%
 
    ![创建历程](assets/create-journey.png)
 
-2. 使用新名称更新历程属性： `SecurFinancial - Home Loan Offer - [your lab user ID]`。
+2. 使用新名称更新历程属性： **`SecurFinancial - Home Loan Offer`**。
 
 3. 单击&#x200B;**编排**，然后将&#x200B;**读取受众**&#x200B;磁贴拖放到画布上。
 
 4. 单击屏幕右侧“受众”框旁边的&#x200B;**铅笔图标**。
 
-5. 在搜索栏中搜索`SecureFinancial Customers - No Loans, Good Credit`，然后单击&#x200B;**保存**。
+5. 在搜索栏中搜索&#x200B;**`SecureFinancial Customers - No Loans, Good Credit`**，然后单击&#x200B;**保存**。
 
    ![创建历程](assets/select-audience.png)
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 2. 在右侧菜单中，单击&#x200B;**电子邮件配置**&#x200B;并选择&#x200B;**电子邮件营销**。 然后单击&#x200B;**编辑内容**。
 
-3. 在主题行中，添加：`Learn more about SecurFinancial Home Loan`。 然后单击&#x200B;**编辑电子邮件正文**。
+3. 在主题行中，添加：**`Learn more about SecurFinancial Home Loan`**。 然后单击&#x200B;**编辑电子邮件正文**。
 
 4. 单击右上角的&#x200B;**内容模板**&#x200B;按钮。 查找并选择`SecureFinancial Template`，然后单击&#x200B;**确认**。
 
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 6. 您现在位于电子邮件Designer中。 将鼠标悬停在`{profile.person.name.firstName}`宏上并单击&#x200B;**个性化头像**。
 
-7. 在个性化窗口中，向下钻取到以下文件夹路径：`[sandbox] > audienceEnrichment > CustomerAudienceUpload`
+7. 在个性化窗口中，向下钻取到以下文件夹路径：**`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
 
 8. 单击&#x200B;**读取受众**&#x200B;文件夹。 您可以在此处找到联合受众的扩充属性。
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 11. 现在，名字个性化已添加，请将`Hi, `添加到个性化变量之前。 然后单击&#x200B;**保存**。
 
-    ![journey-email-save](assets/journey-email-save.png)
+   ![journey-email-save](assets/journey-email-save.png)
 
 12. 单击&#x200B;**返回**&#x200B;按钮两次以返回历程画布。 然后在右侧的&#x200B;**操作：电子邮件**&#x200B;菜单中，单击&#x200B;**保存**。
 

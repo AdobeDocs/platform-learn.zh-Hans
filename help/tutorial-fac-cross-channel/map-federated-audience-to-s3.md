@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -37,8 +37,7 @@ ht-degree: 0%
 
 5. 在&#x200B;**计划**&#x200B;部分中，保留所有默认设置，然后单击&#x200B;**下一步**。
 
-6. 在&#x200B;**映射**&#x200B;步骤中，确保包含并选定以下项作为&#x200B;**重复数据删除键**。 然后单击&#x200B;**下一步**：
-   - `xdm: personalEmail.address`
+6. 在&#x200B;**映射**&#x200B;步骤中，确保包含`xdm: personalEmail.address`并将其选为&#x200B;**重复数据删除键**。 然后单击&#x200B;**下一步**：
 
    ![重复数据删除键](assets/deduplication-key.png)
 

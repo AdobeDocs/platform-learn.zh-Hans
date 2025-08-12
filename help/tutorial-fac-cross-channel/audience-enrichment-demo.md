@@ -7,15 +7,15 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 5%
+source-wordcount: '293'
+ht-degree: 4%
 
 ---
 
 
-# 联合受众构成
+# 使用联合数据丰富Experience Platform受众
 
 联合受众组合允许您利用从企业数据仓库联合的组合受众数据来扩充Adobe Experience Platform (AEP)中的现有受众。 该数据不会保留在 Adobe Experience Platform 客户轮廓中。
 
