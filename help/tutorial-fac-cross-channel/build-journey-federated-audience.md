@@ -69,7 +69,7 @@ ht-degree: 0%
 
 11. 现在，名字个性化已添加，请将`Hi, `添加到个性化变量之前。 然后单击&#x200B;**保存**。
 
-   ![journey-email-save](assets/journey-email-save.png)
+    ![journey-email-save](assets/journey-email-save.png)
 
 12. 单击&#x200B;**返回**&#x200B;按钮两次以返回历程画布。 然后在右侧的&#x200B;**操作：电子邮件**&#x200B;菜单中，单击&#x200B;**保存**。
 
