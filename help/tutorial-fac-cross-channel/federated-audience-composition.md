@@ -6,14 +6,13 @@ description: 在此可视化练习中，Experience Platform受众使用联合数
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
-hide: true
-source-git-commit: 0bbdc93969b4716407ecf51499d572cb50f5a0d3
+exl-id: 3f6aa121-0dbd-4ad9-b136-d1455eed03ca
+source-git-commit: 3de9721332379f9fd3dd45768ba2ca2308e09357
 workflow-type: tm+mt
 source-wordcount: '175'
 ht-degree: 7%
 
 ---
-
 
 # 使用联合数据丰富Experience Platform受众
 

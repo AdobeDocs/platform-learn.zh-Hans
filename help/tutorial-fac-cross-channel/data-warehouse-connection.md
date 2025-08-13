@@ -6,9 +6,8 @@ description: 在本可视化练习中，我们将配置Adobe Experience Platform
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
-hide: true
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
+source-git-commit: 15619a8419f608da6a77745fabf72c356a2ac4b4
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -19,7 +18,7 @@ ht-degree: 0%
 
 我们首先配置Adobe Experience Platform与您的企业Data Warehouse之间的连接以启用联合受众合成。 这允许您直接从支持的仓库查询数据，而无需复制。 此外，我们还基于Data Warehouse表创建架构和数据模型。
 
-为了演示，我们连接到Snowflake帐户。 联合受众组合支持不断增加的云仓库连接列表。 查看[更新的集成列表](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+为了演示，我们连接到Snowflake帐户。 联合受众组合支持不断增加的云仓库连接列表。 查看[更新的集成列表](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 ## 步骤
 
