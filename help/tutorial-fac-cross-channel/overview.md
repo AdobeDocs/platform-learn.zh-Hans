@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 概述
 
-联合受众组合是一项强大的功能，可用于Adobe Real-Time Customer Data Platform (Real-Time CDP)和Adobe Journey Optimizer环境。 它使数据架构师和数据工程师能够直接从[受支持的第三方数据仓库](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}构建和扩充受众，而无需将数据复制到Adobe Experience Platform。 本教程为技术用户提供了实践指导，帮助他们连接企业数据仓库、创建和丰富受众以及激活受众以提供个性化的营销体验。
+联合受众组合是一项强大的功能，可用于Adobe Real-Time Customer Data Platform (Real-Time CDP)和Adobe Journey Optimizer环境。 它使数据架构师和数据工程师能够直接从[受支持的第三方数据仓库](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}构建和扩充受众，而无需将数据复制到Adobe Experience Platform。 本教程为技术用户提供了实践指导，帮助他们连接企业数据仓库、创建和丰富受众以及激活受众以提供个性化的营销体验。
 
 ## 可视化指南
 
@@ -51,10 +51,10 @@ SecurFinancial希望发起电子邮件营销活动，重新定位那些根据良
 
 - 访问配置了Real-Time CDP或Journey Optimizer的Adobe Experience Platform帐户。
 - 系统管理员权限或配置权限的功能。
-- 熟悉Adobe Experience Platform概念，例如架构、数据集和受众(推荐：完成Experience League上的[Adobe Experience Platform播放列表简介](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"})。
+- 熟悉Adobe Experience Platform概念，例如架构、数据集和受众(推荐：完成Experience League上的[Adobe Experience Platform播放列表简介](https://experienceleague.adobe.com/zh-hans/playlists/experience-platform-introduction?lang=en){target="_blank"})。
 - 访问支持的企业数据仓库(例如，Amazon Redshift、Azure Synapse Analytics、Snowflake或Google BigQuery)。
 - 用于查询数据仓库的SQL的基本知识。
 - **沙盒环境**：在您组织的Real-Time CDP实例中创建一个沙盒，以便在不影响生产数据的情况下安全地试验。
-- **Data Warehouse连接**：本教程使用Snowflake连接，但您可以使用任何[支持的云仓库](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites)。
+- **Data Warehouse连接**：本教程使用Snowflake连接，但您可以使用任何[支持的云仓库](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/start/access-prerequisites)。
 
 让我们从[Data Warehouse连接](data-warehouse-connection.md)开始。
