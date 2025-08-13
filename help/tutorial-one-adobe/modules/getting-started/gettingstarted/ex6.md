@@ -4,9 +4,9 @@ description: 快速入门 — Adobe I/O
 kt: 5342
 doc-type: tutorial
 exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 53b252df80801e521ad3df2fe4c158039adfa365
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 ![Adobe I/O新集成](./images/api1.png)
 
-选择&#x200B;**Creative Cloud**&#x200B;并选择&#x200B;**Firefly - Firefly Services**，然后选择&#x200B;**下一步**。
+选择&#x200B;**Adobe Firefly Services**&#x200B;并选择&#x200B;**Firefly - Firefly Services**，然后选择&#x200B;**下一步**。
 
 ![Adobe I/O新集成](./images/api3.png)
 
@@ -67,11 +67,11 @@ ht-degree: 0%
 >
 >根据您选择的学习路径，您可能无权访问Photoshop Services API。 只有当您位于学习路径&#x200B;**Firefly**、**Workfront Fusion**、**ALL**&#x200B;上或参加&#x200B;**现场研讨会**&#x200B;时，您才有权访问Photoshop Services API。 如果您未按照以下学习路径之一进行学习，则可以跳过此步骤。
 >
->选择&#x200B;**+添加到项目**，然后选择&#x200B;**API**。
+选择&#x200B;**+添加到项目**，然后选择&#x200B;**API**。
 
 ![Azure存储](./images/ps2.png)
 
-选择&#x200B;**Creative Cloud**，然后选择&#x200B;**Photoshop - Firefly Services**。 选择&#x200B;**下一步**。
+选择&#x200B;**Adobe Firefly Services**，然后选择&#x200B;**Photoshop - Firefly Services**。 选择&#x200B;**下一步**。
 
 ![Azure存储](./images/ps3.png)
 
