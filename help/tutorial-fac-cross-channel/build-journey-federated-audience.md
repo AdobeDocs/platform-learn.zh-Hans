@@ -2,22 +2,24 @@
 title: 使用联合受众数据构建历程
 seo-title: Build a journey with federated audience data | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: 使用联合受众数据构建历程
-description: 在本课程中，我们将在Journey Optimizer历程中使用联合受众。
+description: 在此可视化练习中，联合受众用于Journey Optimizer历程。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 hide: true
-source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
+exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '410'
-ht-degree: 0%
+source-wordcount: '421'
+ht-degree: 1%
 
 ---
 
-
 # 使用联合受众数据构建历程
 
-在本课程中，您将了解如何在Adobe Journey Optimizer (AJO)内的历程中使用联合受众。 这包括使用来自联合受众组合的查询属性来个性化消息传递。 为了继续介绍SecurFinancial客户案例并解决客户重新定位和个性化用例，我们为预认证客户策划了一个历程。 目标是根据从SecurFinancial的Data Warehouse联合的属性发送个性化电子邮件。
+联合受众可在Adobe Journey Optimizer (AJO)内的历程中使用。 这包括使用来自联合受众组合的查询属性来个性化消息传递。
+
+为了继续介绍SecurFinancial案例，特别是客户重新定位和个性化用例，我们为预认证的客户策划了一个历程。 目标是根据从SecurFinancial的Data Warehouse联合的属性发送个性化电子邮件。
 
 ## 步骤
 
@@ -27,13 +29,13 @@ ht-degree: 0%
 
    ![创建历程](assets/create-journey.png)
 
-2. 使用新名称更新历程属性： **`SecurFinancial - Home Loan Offer`**。
+2. 使用新名称更新历程属性。 在我们的示例中： **`SecurFinancial - Home Loan Offer`**。
 
 3. 单击&#x200B;**编排**，然后将&#x200B;**读取受众**&#x200B;磁贴拖放到画布上。
 
 4. 单击屏幕右侧“受众”框旁边的&#x200B;**铅笔图标**。
 
-5. 在搜索栏中搜索&#x200B;**`SecureFinancial Customers - No Loans, Good Credit`**，然后单击&#x200B;**保存**。
+5. 在搜索栏中，搜索受众。 在我们的示例中： **`SecureFinancial Customers - No Loans, Good Credit`**。 单击&#x200B;**保存**。
 
    ![创建历程](assets/select-audience.png)
 
@@ -47,9 +49,9 @@ ht-degree: 0%
 
 2. 在右侧菜单中，单击&#x200B;**电子邮件配置**&#x200B;并选择&#x200B;**电子邮件营销**。 然后单击&#x200B;**编辑内容**。
 
-3. 在主题行中，添加：**`Learn more about SecurFinancial Home Loan`**。 然后单击&#x200B;**编辑电子邮件正文**。
+3. 添加主题行。 在我们的示例中： **`Learn more about SecurFinancial Home Loan`**。 然后单击&#x200B;**编辑电子邮件正文**。
 
-4. 单击右上角的&#x200B;**内容模板**&#x200B;按钮。 查找并选择`SecureFinancial Template`，然后单击&#x200B;**确认**。
+4. 单击右上角的&#x200B;**内容模板**&#x200B;按钮。 查找并选择相应的模板。 我们的示例使用`SecureFinancial Template`。 然后单击&#x200B;**确认**。
 
    ![journey-email-config](assets/journey-email-config.png)
 
@@ -59,7 +61,7 @@ ht-degree: 0%
 
 6. 您现在位于电子邮件Designer中。 将鼠标悬停在`{profile.person.name.firstName}`宏上并单击&#x200B;**个性化头像**。
 
-7. 在个性化窗口中，向下钻取到以下文件夹路径：**`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
+7. 在个性化窗口中，向下展开至包含上传的联合受众的文件夹路径。 在我们的示例中： **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
 
 8. 单击&#x200B;**读取受众**&#x200B;文件夹。 您可以在此处找到联合受众的扩充属性。
 
@@ -69,12 +71,12 @@ ht-degree: 0%
 
 11. 现在，名字个性化已添加，请将`Hi, `添加到个性化变量之前。 然后单击&#x200B;**保存**。
 
-    ![journey-email-save](assets/journey-email-save.png)
+   ![journey-email-save](assets/journey-email-save.png)
 
 12. 单击&#x200B;**返回**&#x200B;按钮两次以返回历程画布。 然后在右侧的&#x200B;**操作：电子邮件**&#x200B;菜单中，单击&#x200B;**保存**。
 
    ![save-final-journey](assets/save-final-journey.png)
 
-恭喜！您已在AJO中使用联合受众和联合扩充属性创建历程。
+我们在AJO中使用联合受众和联合扩充属性创建了历程。
 
-现在，我们将了解如何使用Experience Platform中的联合数据[扩充现有受众](audience-enrichment-demo.md)。
+现在，我们将了解如何使用Experience Platform中的联合数据[扩充现有受众](federated-audience-composition.md)。

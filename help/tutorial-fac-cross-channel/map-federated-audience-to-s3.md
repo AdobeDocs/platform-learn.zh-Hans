@@ -2,22 +2,22 @@
 title: 将联合受众映射到S3
 seo-title: Map a federated audience to S3 | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: 将联合受众映射到S3
-description: 在本课程中，我们会将联合受众映射到下游Real-Time CDP目标，以支持个性化的离线体验。
+description: 在此可视化练习中，我们将将联合受众映射到下游Real-Time CDP目标，以支持个性化的离线体验。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
+exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '268'
 ht-degree: 0%
 
 ---
 
-
 # 将联合受众映射到S3以利用受众属性进行扩充
 
-在本练习中，您将了解如何利用Data Warehouse中的受众属性来丰富受众在使用RTCDP目标的下游激活工作流中的体验。 对于SecurFinancial，这些联合属性可用于增强客户受众的离线个性化体验。 在本例中，我们会将联合受众映射到预配置的Amazon S3目标。
+您可以利用Data Warehouse中的受众属性，让受众在使用RTCDP目标的下游激活工作流中更加丰富。 对于SecurFinancial，这些联合属性可用于增强客户受众的离线个性化体验。 以下，联合受众映射到预配置的Amazon S3目标。
 
 ## 步骤
 
@@ -31,22 +31,26 @@ ht-degree: 0%
 
    ![select-s3-destination](assets/select-s3-destination.png)
 
-4. 选择&#x200B;**SecureFinancial客户 — 无贷款，信用良好**&#x200B;受众。
+4. 选择相应的受众。 在我们的示例中：**SecureFinancial客户 — 无贷款，信用良好**&#x200B;受众。
 
    ![select-s3-audience](assets/select-s3-audience.png)
 
-5. 在&#x200B;**计划**&#x200B;部分中，保留所有默认设置，然后单击&#x200B;**下一步**。
+5. 在&#x200B;**计划**&#x200B;部分中，使用默认设置并单击&#x200B;**下一步**。
 
-6. 在&#x200B;**映射**&#x200B;步骤中，确保包含`xdm: personalEmail.address`并将其选为&#x200B;**重复数据删除键**。 然后单击&#x200B;**下一步**：
+6. 在&#x200B;**映射**&#x200B;步骤中，选择重复数据消除键。 在我们的示例中，`xdm: personalEmail.address`被包含并选为&#x200B;**重复数据消除键**。 然后单击&#x200B;**下一步**：
 
    ![重复数据删除键](assets/deduplication-key.png)
 
-7. 在以下映射步骤中，您可以根据联合受众构成中的受众字段映射选择扩充属性。 单击&#x200B;**铅笔（编辑）**&#x200B;图标以查看预先选定的属性。
+7. 在映射步骤中，根据联合受众构成中的受众字段映射选择扩充属性。 单击&#x200B;**铅笔（编辑）**&#x200B;图标以查看预先选定的属性。
 
    ![编辑属性](assets/edit-attributes.png)
 
    ![最终属性](assets/final-attribution.png)
 
 8. 查看您的受众映射并点击&#x200B;**完成**。
+
+>[**摘要**]
+>
+> 我们已成功构建受众并轻松将其激活到S3目标。 该平台的用户友好界面允许营销团队快速构建和激活受众，从而缩短实现价值的时间。 采用此方法的客户在两个月内便完成了第一个用例。
 
 我们已准备好继续[构建历程](build-journey-federated-audience.md)。

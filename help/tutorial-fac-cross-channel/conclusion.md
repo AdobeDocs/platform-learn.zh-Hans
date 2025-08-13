@@ -2,29 +2,30 @@
 title: 结论
 seo-title: Conclusion | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: 结论
-description: 在本课程中，我们总结了学到的知识和关键技巧。
+description: 最后，总结了本文的研究成果和主要工作。
 role: Data Architect, Data Engineer
 jira: KT-18743
 hide: true
-source-git-commit: a5ae2695763bc3d6dce786861dcbc15f3422c035
+exl-id: 19f3065a-c439-44b6-9888-664c9a5cb33c
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '153'
 ht-degree: 3%
 
 ---
-
 
 # 结论
 
 Experience Platform Federated Audience Composition提供了新的途径和更大的访问权限，可创建从企业数据仓库到推动品牌启动和即时的体验的受众。
 
-本教程实践性地介绍了Adobe Experience Platform中的联合受众合成。 您已了解如何：
+本可视化指南简单介绍了Adobe Experience Platform中的联合受众合成。 您已了解如何：
 
-- 将Data Warehouse连接到Adobe Experience Platform。
-- 使用仓库数据创建和扩充受众，而无需复制。
-- 将受众导出到Amazon S3以供下游使用。
-- 通过联合受众构建个性化的客户历程。
-- 使用联合数据丰富Experience Platform受众。
+- 将Adobe Experience Platform连接到企业数据仓库。
+- 使用联合受众组合创建和管理受众。
+- 将联合受众映射到外部目标，如Amazon S3。
+- 使用联合数据丰富现有受众。
+- 创建受众以推动“即时”个性化。
+- 使用联合受众数据构建客户历程。
 
 ## 关键要点
 

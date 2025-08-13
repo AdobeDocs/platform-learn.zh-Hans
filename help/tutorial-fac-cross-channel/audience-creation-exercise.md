@@ -2,22 +2,22 @@
 title: 创建受众
 seo-title: Create an audience | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: 创建受众
-description: 在本课程中，我们将在Adobe Experience Platform与您的企业Data Warehouse之间配置连接以启用联合受众合成。
+description: 在本可视化练习中，我们将配置Adobe Experience Platform与您的企业Data Warehouse之间的连接以启用联合受众合成。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
-source-git-commit: b5611dccdba66d31f7dfcd96506e06d1bdd5fb3d
+exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
+source-git-commit: a3c8d8b03472d01f491bf787ed647a696d3a5524
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 3%
+source-wordcount: '341'
+ht-degree: 2%
 
 ---
 
-
 # 受众创建练习
 
-本练习将指导您使用联合受众合成从Data Warehouse创建受众。 我们构建受众，以授予信用积分为650分或以上且目前其SecurFinancial组合中无贷款的SecurFinancial客户资格。
+接下来，我们将引导您使用联合受众合成，从我们的Data Warehouse中创建受众。 受众包括信用积分为650分或以上且目前其SecurFinancial组合中无贷款的SecurFinancial客户。
 
 ## 步骤
 
@@ -26,13 +26,13 @@ ht-degree: 3%
 
    ![创建合成](assets/create-composition.png)
 
-3. 将合成标记为`SecurFinancial Customers - No Loans, Good Credit`。 单击&#x200B;**创建**。
+3. 为合成设置标签。 在我们的示例中： `SecurFinancial Customers - No Loans, Good Credit`。 单击&#x200B;**创建**。
 
-4. 单击画布中的&#x200B;**+**&#x200B;按钮并选择&#x200B;**生成受众**。 将显示右侧边栏。
+4. 单击画布中的&#x200B;**+**&#x200B;按钮并选择&#x200B;**生成受众**。 出现右侧边栏。
 
-5. 单击&#x200B;**选择架构**&#x200B;并选择&#x200B;**FSI_CRM**&#x200B;架构，然后单击&#x200B;**确认**。
+5. 单击&#x200B;**选择架构**，选择适当的架构，然后单击&#x200B;**确认**。
 
-6. 单击&#x200B;**继续**。 在查询生成器窗口中，单击&#x200B;**+**&#x200B;按钮，然后单击&#x200B;**自定义条件**。 创建以下条件：
+6. 单击&#x200B;**继续**。 在查询生成器窗口中，单击&#x200B;**+**&#x200B;按钮，然后单击&#x200B;**自定义条件**。 编写条件。 我们的示例使用：
 
    `CURRENTPRODUCTS does not contain loan`
    `AND`
@@ -44,27 +44,27 @@ ht-degree: 3%
 
    **注意：**&#x200B;值字段区分大小写。
 
-   现在，您的查询应如下所示：
-
    ![查询生成器](assets/query-builder.png)
 
-7. 单击下一个&#x200B;**+**&#x200B;按钮，然后单击&#x200B;**保存受众**。 将此步骤标记为`SecurFinancial Customers - No Loans, Good Credit`。 使用与受众标签相同的值。
+7. 单击下一个&#x200B;**+**&#x200B;按钮，然后单击&#x200B;**保存受众**。 为此步骤设置标签。 在我们的示例中，我们将它标记为`SecurFinancial Customers - No Loans, Good Credit`。
 
-8. 添加以下受众映射：
+8. 添加相关的受众映射。 在此示例中：
 
    - **Source受众字段：**&#x200B;电子邮件
    - **Source受众字段：**&#x200B;当前产品
    - **Source受众字段：**&#x200B;名字
 
-9. 选择用于配置文件的主要身份和命名空间：
+9. 选择用于配置文件的主要身份和命名空间。 以下是用于数据的标识和字段：
 
    - **主标识字段：**&#x200B;电子邮件
    - **身份命名空间：**&#x200B;电子邮件
 
-10. 单击&#x200B;**保存**，然后单击&#x200B;**开始**&#x200B;以运行刚刚构建的组合查询。
+10. 单击&#x200B;**保存**，然后单击&#x200B;**开始**&#x200B;以运行组合查询。
 
-**注意：**&#x200B;我们使用产品和信用信息构建受众，这些受众未将敏感数据（如信用分数）移动到下游平台进行激活。
+>[**摘要**]
+>
+> 在此示例中，产品和信用信息用于通过直接访问Snowflake中的企业数据来构建受众，而无需将其复制到Adobe Experience Platform。 一旦外部系统处理了查询，就只有相关的电子邮件、当前产品和名字值会引入受众定义以进行下游激活。 这适用于RTCDP支持的所有目标。
 
-有关受众组合的详细信息，请访问[Experience League](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
+有关受众组合的详细信息，请访问[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
 
-现已创建联合受众，我们将继续[将其映射到S3帐户](map-federated-audience-to-s3.md)。
+现在已创建联合受众，我们将[将其映射到S3帐户](map-federated-audience-to-s3.md)。
