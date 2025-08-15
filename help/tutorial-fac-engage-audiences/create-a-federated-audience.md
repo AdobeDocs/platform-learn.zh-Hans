@@ -1,22 +1,22 @@
 ---
 title: 创建联合受众
-seo-title: Create a federated audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 创建联合受众
-description: 在本练习中，我们将配置Adobe Experience Platform与您的企业Data Warehouse之间的连接以启用联合受众合成。
+description: 在本练习中，我们将使用联合受众组合从Snowflake Data Warehouse创建一个受众。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
 
 # 创建联合受众
 
-接下来，我们将引导您使用联合受众合成，从我们的Data Warehouse中创建受众。 受众包括信用积分为650分或以上且目前其SecurFinancial组合中无贷款的SecurFinancial客户。
+接下来，我们将指导您使用联合受众合成，从Snowflake Data Warehouse中创建受众。 受众包括信用积分为650分或以上且目前其SecurFinancial组合中无贷款的SecurFinancial客户。
 
 ## 步骤
 
@@ -64,6 +64,6 @@ ht-degree: 0%
 >
 > 在此示例中，产品和信用信息用于通过直接访问Snowflake中的企业数据来构建受众，而无需将其复制到Adobe Experience Platform。 一旦外部系统处理了查询，就只有相关的电子邮件、当前产品和名字值会引入受众定义以进行下游激活。 这适用于RTCDP支持的所有目标。
 
-有关受众组合的详细信息，请访问[Experience League](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
+有关受众组合的详细信息，请访问[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
 
 现在已创建联合受众，我们将[将其映射到S3帐户](map-federated-audience-to-s3.md)。

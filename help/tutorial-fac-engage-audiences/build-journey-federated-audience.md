@@ -1,13 +1,13 @@
 ---
 title: 通过联合受众构建历程
-seo-title: Build a Journey with a Federated Audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 通过联合受众构建历程
 description: 在本练习中，联盟受众用于Journey Optimizer历程。
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
-source-git-commit: dd5f594a54a9cab8ef78d36d2cf15a9b5f2b682a
+source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 联合受众可在Adobe Journey Optimizer (AJO)内的历程中使用。 这包括使用来自联合受众组合的查询属性来个性化消息传递。
 
-为了继续介绍SecurFinancial案例，特别是客户重新定位和个性化用例，我们为预认证的客户策划了一个历程。 目标是根据从SecurFinancial的Data Warehouse联合的属性发送个性化电子邮件。
+为了继续介绍SecurFinancial案例，特别是客户重新定位和个性化用例，我们为预认证的客户策划了一个历程。 目标是根据从SecurFinancial数据仓库联合的属性发送个性化电子邮件。
 
 ## 步骤
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
 11. 现在，名字个性化已添加，请将`Hi, `添加到个性化变量之前。 然后单击&#x200B;**保存**。
 
-    ![journey-email-save](assets/journey-email-save.png)
+   ![journey-email-save](assets/journey-email-save.png)
 
 12. 单击&#x200B;**返回**&#x200B;按钮两次以返回历程画布。 然后在右侧的&#x200B;**操作：电子邮件**&#x200B;菜单中，单击&#x200B;**保存**。
 
