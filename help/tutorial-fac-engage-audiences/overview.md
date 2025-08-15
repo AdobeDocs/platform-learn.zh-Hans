@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 使用联合受众构成概述直接从Data Warehouse吸引受众
 
-联合受众合成(FAC)是一个用于Adobe Real-Time Customer Data Platform (Real-Time CDP)和Adobe Journey Optimizer的模块。 它还随Adobe Real-Time CDP Composable Audiences提供（为作为可组合CDP的客户定制的解决方案）。 它使数据架构师和数据工程师能够直接从[受支持的企业数据仓库](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}策划和激活高价值受众，而无需将客户数据复制或移动到Adobe Experience Platform (AEP)。 这种可组合的CDP方法（一种为客户量身定制的解决方案）符合行业趋势，使企业能够利用其数据基础架构实现个性化的数字体验，同时维护数据治理。
+联合受众合成(FAC)是一个用于Adobe Real-Time Customer Data Platform (Real-Time CDP)和Adobe Journey Optimizer的模块。 它还随Adobe Real-Time CDP Composable Audiences提供（为作为可组合CDP的客户定制的解决方案）。 它使数据架构师和数据工程师能够直接从[受支持的企业数据仓库](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}策划和激活高价值受众，而无需将客户数据复制或移动到Adobe Experience Platform (AEP)。 这种可组合的CDP方法（一种为客户量身定制的解决方案）符合行业趋势，使企业能够利用其数据基础架构实现个性化的数字体验，同时维护数据治理。
 
 ## 业务上下文
 
@@ -51,10 +51,10 @@ SecurFinancial希望发起电子邮件营销活动，重新定位那些根据良
 
 - 访问配置了Real-Time CDP或Journey Optimizer的Adobe Experience Platform帐户。
 - 系统管理员权限或配置权限的功能。
-- 熟悉Adobe Experience Platform概念，例如架构、数据集和受众(推荐：完成Experience League上的[Adobe Experience Platform播放列表简介](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"})。
-- 访问支持的[企业数据仓库](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+- 熟悉Adobe Experience Platform概念，例如架构、数据集和受众(推荐：完成Experience League上的[Adobe Experience Platform播放列表简介](https://experienceleague.adobe.com/zh-hans/playlists/experience-platform-introduction?lang=en){target="_blank"})。
+- 访问支持的[企业数据仓库](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 - 用于查询数据仓库的SQL的基本知识。
 - **沙盒环境**：在您组织的实例中创建一个沙盒，以便在不影响生产数据的情况下安全地试验。
-- **Data Warehouse连接**：本教程使用Snowflake连接，但您可以使用任何[受支持的Data Warehouse](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites)。
+- **Data Warehouse连接**：本教程使用Snowflake连接，但您可以使用任何[受支持的Data Warehouse](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/start/access-prerequisites)。
 
 首先，我们来回顾[联合受众组合的高级架构和流程](fac-architecture-and-flow.md)。

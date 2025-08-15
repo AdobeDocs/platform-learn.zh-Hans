@@ -16,7 +16,7 @@ ht-degree: 0%
 
 # 使用Edge Network提供“即时”个性化
 
-联合受众组合允许您利用从企业数据仓库联合的组合受众数据来扩充Adobe Experience Platform (AEP)中的现有受众。 此数据将不会保留在Adobe Experience Platform中，但您可以使用[事件转发](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview){target="_blank"}功能将此数据直接发送到您的Data Warehouse。
+联合受众组合允许您利用从企业数据仓库联合的组合受众数据来扩充Adobe Experience Platform (AEP)中的现有受众。 此数据将不会保留在Adobe Experience Platform中，但您可以使用[事件转发](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/event-forwarding/overview){target="_blank"}功能将此数据直接发送到您的Data Warehouse。
 
 在本练习中，我们使用通过信用评分和贷款活动查询的联合受众来丰富贷款申请网页访客的行为受众。
 

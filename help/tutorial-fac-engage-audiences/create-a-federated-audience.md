@@ -64,6 +64,6 @@ ht-degree: 0%
 >
 > 在此示例中，产品和信用信息用于通过直接访问Snowflake中的企业数据来构建受众，而无需将其复制到Adobe Experience Platform。 一旦外部系统处理了查询，就只有相关的电子邮件、当前产品和名字值会引入受众定义以进行下游激活。 这适用于RTCDP支持的所有目标。
 
-有关受众组合的详细信息，请访问[Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
+有关受众组合的详细信息，请访问[Experience League](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}。
 
 现在已创建联合受众，我们将[将其映射到S3帐户](map-federated-audience-to-s3.md)。
