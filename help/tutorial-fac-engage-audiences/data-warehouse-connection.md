@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 我们首先配置Adobe Experience Platform与您的企业Data Warehouse之间的连接。 我们根据数据在Data Warehouse中的存放方式使用架构和数据模型来支持查询构建。
 
-为了演示，我们连接到Snowflake帐户。 联合受众组合支持不断增长的数据仓库连接列表。 查看[更新的集成列表](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+为了演示，我们连接到Snowflake帐户。 联合受众组合支持不断增长的数据仓库连接列表。 查看[更新的集成列表](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 ## 步骤
 
@@ -78,4 +78,4 @@ ht-degree: 0%
 
 ![预览 — 数据模型](assets/preview-data-model.png)
 
-现在，我们准备好[创建和受众](create-a-federated-audience.md)。
+现在，我们准备好[创建联合受众](create-a-federated-audience.md)。
