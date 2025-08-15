@@ -18,7 +18,7 @@ ht-degree: 0%
 
 我们首先配置Adobe Experience Platform与您的企业Data Warehouse之间的连接。 我们根据数据在Data Warehouse中的存放方式使用架构和数据模型来支持查询构建。
 
-为了演示，我们连接到Snowflake帐户。 联合受众组合支持不断增加的云仓库连接列表。 查看[更新的集成列表](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+为了演示，我们连接到Snowflake帐户。 联合受众组合支持不断增加的云仓库连接列表。 查看[更新的集成列表](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 ## 步骤
 
