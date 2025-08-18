@@ -4,9 +4,9 @@ description: Workfront Planning入门
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 645d078b55b7126a692dedded71208e1f3c04971
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '1098'
+source-wordcount: '1234'
 ht-degree: 1%
 
 ---
@@ -85,7 +85,7 @@ ht-degree: 1%
 
 ![Workfront计划](./images/wfpl10.png)
 
-您现在将看到空表格视图，因为您新创建的记录类型尚未定义任何字段。
+您现在将看到空表格视图，因为您新创建的记录类型尚未定义任何业务部门记录。
 
 ![Workfront计划](./images/wfpl11.png)
 
@@ -115,7 +115,49 @@ ht-degree: 1%
 
 ![Workfront计划](./images/wfpl17.png)
 
-您现在已创建新的记录类型，并且您既删除了字段，也创建了字段。 单击左上角的箭头，返回到Workspace概述屏幕。
+单击第一条记录上的3个点&#x200B;**...**，然后选择&#x200B;**查看**。
+
+![Workfront计划](./images/wfpla1.png)
+
+将&#x200B;**Name**&#x200B;设置为`Consumer Services`。
+
+将&#x200B;**描述**&#x200B;设置为`Handles residential offerings like mobile plans, internet packages, and customer support.`。
+
+将&#x200B;**业务部门潜在客户**&#x200B;设置为您自己。
+
+完成后，单击箭头返回上一个屏幕。
+
+![Workfront计划](./images/wfpla2.png)
+
+单击第二条记录上的3个圆点&#x200B;**...**，然后选择&#x200B;**查看**。
+
+![Workfront计划](./images/wfpla3.png)
+
+将&#x200B;**Name**&#x200B;设置为`Enterprise & Business Solutions`
+
+将&#x200B;**描述**&#x200B;设置为`Provides connectivity, cloud, and managed services to corporate clients and government entities.`
+
+将&#x200B;**业务部门潜在客户**&#x200B;设置为您自己。
+
+完成后，单击箭头返回上一个屏幕。
+
+![Workfront计划](./images/wfpla4.png)
+
+单击第三条记录上的3个圆点&#x200B;**...**，然后选择&#x200B;**查看**。
+
+![Workfront计划](./images/wfpla5.png)
+
+将&#x200B;**Name**&#x200B;设置为`Sales & Marketing`
+
+将&#x200B;**描述**&#x200B;设置为`Drives customer acquisition, brand strategy, advertising, and market segmentation.`
+
+将&#x200B;**业务部门潜在客户**&#x200B;设置为您自己。
+
+完成后，单击箭头返回上一个屏幕。
+
+![Workfront计划](./images/wfpla6.png)
+
+您现在已创建了新记录类型，您既删除了字段，又创建了字段，并且创建了3个业务部门。 单击左上角的箭头，返回到Workspace概述屏幕。
 
 ![Workfront计划](./images/wfpl18.png)
 
@@ -129,7 +171,7 @@ ht-degree: 1%
 
 ![Workfront计划](./images/wfpl20.png)
 
-单击&#x200B;**+**&#x200B;图标以创建新字段。 选择&#x200B;**新建连接**，然后选择&#x200B;**角色**。
+单击&#x200B;**+**&#x200B;图标以创建新字段。 选择&#x200B;**新建连接**，然后选择&#x200B;**业务单元**。
 
 ![Workfront计划](./images/wfpl21.png)
 
@@ -151,7 +193,7 @@ ht-degree: 1%
 
 ![Workfront计划](./images/wfpl25.png)
 
-将名称更改为`Campaign Request Form`。 单击&#x200B;**保存**。
+将名称更改为`Campaign Request Form`。 单击&#x200B;**创建**。
 
 ![Workfront计划](./images/wfpl26.png)
 
@@ -186,6 +228,8 @@ ht-degree: 1%
 ```
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
 ```
+
+根据需要填写其他字段。
 
 单击&#x200B;**提交请求**。
 
@@ -297,19 +341,15 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront计划](./images/wfpl47.png)
 
-要在Workfront中查看项目，请打开菜单并单击&#x200B;**项目组合**。
+要在Workfront中检查程序，请向右滚动并单击&#x200B;**连接的程序**&#x200B;列中的程序。
 
 ![Workfront计划](./images/wfpl48.png)
 
-打开应名为`--aepUserLdap-- - Marketing`的项目组合。
-
-![Workfront计划](./images/wfpl49.png)
-
-转到&#x200B;**程序**，然后您应该会看到刚刚由您配置的自动化程序创建的程序。
+然后，您应该会看到刚刚通过所配置的自动化程序创建的程序。
 
 ![Workfront计划](./images/wfpl50.png)
 
-下一步： [1.2.2 TBD](./ex1.md){target="_blank"}
+下一步：[摘要和优点](./summary.md){target="_blank"}
 
 返回[Workfront规划简介](./wfplanning.md){target="_blank"}
 

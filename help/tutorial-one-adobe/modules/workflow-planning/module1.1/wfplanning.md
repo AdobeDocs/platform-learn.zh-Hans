@@ -3,22 +3,31 @@ title: Adobe Workfront规划
 description: Adobe Workfront规划
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 08ed2cca-4670-4038-b2f0-aa7adb3fc2bf
+source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 4%
+source-wordcount: '200'
+ht-degree: 2%
 
 ---
 
 # 1.1 Adobe Workfront规划
 
+本练习将指导您完成Workfront Planning的基本方面，包括创建工作区、定义记录类型、管理记录以及利用AI Assistant简化操作。 执行本实验将使您熟悉这一功能强大的解决方案，并为您提供一个起点，以便进一步探索未来的功能。
+
 ## 学习目标
 
-- 了解如何使用Adobe Workfront规划。
+完成本实验后，您将熟悉以下各项：
+
+- 了解Workfront Planning的核心组件：工作区、记录类型和记录。
+- 创建针对特定运营生命周期的新Workspace。
+- 在Workspace中定义和自定义记录类型。
+- 管理记录，包括创建、更新和删除条目。
+- 利用AI Assistant高效地执行操作。
 
 ## 先决条件
 
-- 访问Workfront规划。
+- 使用Workfront规划包访问Adobe Workfront帐户。
 
 ## 练习
 
