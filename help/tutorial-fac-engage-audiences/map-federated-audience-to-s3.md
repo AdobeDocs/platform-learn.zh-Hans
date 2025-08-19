@@ -7,9 +7,9 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 41298ea7c79a5b540c546be93dcb14201ce27ce3
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ ht-degree: 0%
 
 8. 查看您的受众映射并点击&#x200B;**完成**。
 
->[**!SUMMARY**]
->
-> 我们已成功构建受众并轻松将其激活到S3目标。 任何其他解决方案都可以直接接收和使用此受众。 这个用户友好的界面允许营销团队快速构建和激活受众，而无需移动基础数据。 采用此方法的客户已在大约一个月内将其第一个用例投入使用。
+### 摘要
+
+我们已成功构建受众并轻松将其激活到S3目标。 任何其他解决方案都可以直接接收和使用此受众。 这个用户友好的界面允许营销团队快速构建和激活受众，而无需移动基础数据。 采用此方法的客户已在大约一个月内将其第一个用例投入使用。
 
 
 现在我们将[构建历程](build-journey-federated-audience.md)。
