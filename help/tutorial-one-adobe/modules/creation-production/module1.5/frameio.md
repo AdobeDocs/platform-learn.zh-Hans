@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+exl-id: 2b22fc2b-ce95-4860-8ba6-71163bacf5e7
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
-source-wordcount: '90'
-ht-degree: 2%
+source-wordcount: '126'
+ht-degree: 1%
 
 ---
 
@@ -25,6 +26,14 @@ ht-degree: 2%
 [1.5.1 Frame.io快速入门](./ex1.md){target="_blank"}
 
 在本练习中，探索Frame.io并了解其功能。
+
+[1.5.2审批和Frame.io](./ex2.md){target="_blank"}
+
+在本练习中，您将通过Frame.io完成标准审批流程。
+
+[1.5.3 Frame.io和Premiere Pro](./ex3.md){target="_blank"}
+
+在本练习中，您将发现Frame.io与Adobe Premiere Pro之间的集成。
 
 [摘要和优点](./summary.md){target="_blank"}
 

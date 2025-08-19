@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 9837c076-e6ca-47a0-96b9-5fa5fdba3fd2
-source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '856'
 ht-degree: 0%
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ![GSPeM](./images/gsemail9.png)
 
-然后，您可以查看有关优化复杂性得分可执行的操作的更多详细信息。
+然后，您可以查看有关优化合规性得分可执行的操作的更多详细信息。
 
 ![GSPeM](./images/gsemail10.png)
 

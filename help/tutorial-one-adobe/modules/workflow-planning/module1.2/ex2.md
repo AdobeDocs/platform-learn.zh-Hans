@@ -4,7 +4,7 @@ description: 使用Workfront校对
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -132,9 +132,9 @@ ht-degree: 0%
 为您的任务输入此名称： `Create layout using approved assets and copy`。
 
 将字段&#x200B;**工作**&#x200B;设置为角色&#x200B;**Designer**。
-将字段&#x200B;**持续时间**&#x200B;设置为&#x200B;**5天**。
-将字段前置任务设置为&#x200B;**9**。
-为&#x200B;**开始日期**&#x200B;和&#x200B;**到期日期**&#x200B;字段输入日期。
+将字段**持续时间**&#x200B;设置为&#x200B;**5天**。
+将字段前置任务设置为**9**。
+为**开始日期**&#x200B;和&#x200B;**到期日期**&#x200B;字段输入日期。
 
 单击屏幕中的其他位置以保存新任务。
 
@@ -197,7 +197,7 @@ ht-degree: 0%
 
 作为此任务的一部分，您需要创建新图像，然后将其作为文档上传到Workfront。 现在，您将自行使用Adobe Express创建该资源。
 
-## 1.2.2.5使用Adobe Firely Services和Adobe Express创建资源
+## 1.2.2.5使用Adobe Firefly Services和Adobe Express创建资源
 
 转到[https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}。 输入提示`a neon rabbit running very fast through space`并单击&#x200B;**生成**。
 
@@ -244,7 +244,7 @@ ht-degree: 0%
 ![GSPeM](./images/gsasset8.png)
 
 将文件名更改为`CitiSignal - Neon Rabbit - Timetravel now!`。
-单击&#x200B;**选择文件夹**。
+单击**选择文件夹**。
 
 ![GSPeM](./images/gsasset9.png)
 

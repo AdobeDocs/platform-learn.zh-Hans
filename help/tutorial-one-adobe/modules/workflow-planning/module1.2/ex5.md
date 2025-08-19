@@ -3,16 +3,17 @@ title: 设置Photoshop + Workfront插件
 description: 设置Photoshop + Workfront插件
 kt: 5342
 doc-type: tutorial
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+exl-id: 0695845e-d18e-416d-a8f4-34464618995a
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 1%
 
 ---
 
-# 2.2.5设置Photoshop + Workfront插件
+# 1.2.5设置Photoshop + Workfront插件
 
-## 2.2.5.1安装适用于Photoshop的Workfront插件
+## 1.2.5.1安装适用于Photoshop的Workfront插件
 
 要设置Workfront与Photoshop之间的集成，请在您的计算机上安装Creative Cloud应用程序。 使用您的Adobe ID登录。
 
@@ -42,7 +43,7 @@ ht-degree: 1%
 
 ![WF](./images/wf7.png)
 
-## 2.2.5.2在Photoshop中配置插件
+## 1.2.5.2在Photoshop中配置插件
 
 打开Photoshop。 在任务栏中，转到&#x200B;**插件** > **Adobe Photoshop的Workfront** >单击&#x200B;**Adobe Workfront**。
 

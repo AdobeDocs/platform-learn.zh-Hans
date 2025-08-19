@@ -5,9 +5,10 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: efb4ecf90a27d00d256c1648e78c6e295199733e
+exl-id: 09e8fdfd-e02f-43ff-a4f4-fa92eb3f01a3
+source-git-commit: 917ebcd2dd5d8316413a183bd2c1a048c090428c
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -114,37 +115,9 @@ ht-degree: 0%
 
 ![Frame.io](./images/frameio21.png)
 
-## 1.5.1.3设置Adobe Premiere Pro Beta
-
-您已将Adobe Premiere Pro Beta作为快速入门模块的一部分安装。 要将Frame.io与Adobe Premiere Pro Beta结合使用，您可以利用为此集成开发的插件。
-
-打开Creative Cloud应用并搜索`frame.io`。
-
-![Frame.io](./images/frameio23.png)
-
-在搜索结果中向下滚动以查找插件&#x200B;**Frame.io V4注释**。 单击它。
-
-![Frame.io](./images/frameio24.png)
-
-您应该会看到此内容。 单击&#x200B;**安装**。
-
-![Frame.io](./images/frameio25.png)
-
-如果Adobe Premiere Pro Beta处于打开状态，您需要先&#x200B;**关闭**，然后才能安装该插件。
-
-![Frame.io](./images/frameio26.png)
-
-单击&#x200B;**确定**。 插件正在安装中。
-
-![Frame.io](./images/frameio27.png)
-
-安装该插件后，在计算机上打开Adobe Premiere Pro Beta 。
-
-![Frame.io](./images/frameio22.png)
-
 ## 后续步骤
 
-转到[-](./ex1.md){target="_blank"}
+使用Frame.io[转到](./ex2.md){target="_blank"}1.5.2审批
 
 返回[使用Frame.io简化您的工作流](./frameio.md){target="_blank"}
 

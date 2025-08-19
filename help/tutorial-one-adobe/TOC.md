@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+source-git-commit: 93e074dac589b0a8773cfd097d24f7efec5400e9
 workflow-type: tm+mt
-source-wordcount: '1271'
+source-wordcount: '1298'
 ht-degree: 3%
 
 ---
@@ -78,6 +78,8 @@ ht-degree: 3%
    + 1.5使用Frame.io简化您的工作流 {#crpr5}
       + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.5/frameio.md)
       + [1.5.1 Frame.io快速入门](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex1.md)
+      + [1.5.2使用Frame.io进行审批](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex2.md)
+      + [1.5.3 Frame.io和Premiere Pro](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex3.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
 
 + 资产管理 {#assetmgmt}
@@ -90,6 +92,10 @@ ht-degree: 3%
       + [1.1.5高级自定义块](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
       + [1.1.6 AEM Edge Delivery Services MarTech插件](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
+   + 1.2Adobe Experience Manager Assets {#assetm2}
+      + [概述](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
+      + [1.2.1 AEM Assets快速入门](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
+      + [摘要和优点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
 + 交付和激活 {#activation}
    + 数据收集 {#dc}
