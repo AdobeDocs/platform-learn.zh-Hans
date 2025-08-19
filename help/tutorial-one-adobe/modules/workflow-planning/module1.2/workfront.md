@@ -4,10 +4,10 @@ description: 使用Adobe Workfront进行工作流管理
 kt: 5342
 doc-type: tutorial
 exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '169'
-ht-degree: 2%
+source-wordcount: '225'
+ht-degree: 1%
 
 ---
 
@@ -15,11 +15,17 @@ ht-degree: 2%
 
 ## 学习目标
 
-- 了解如何以各种方式使用Adobe Workfront。
+完成本实验后，您将熟悉以下各项：
+
+- 了解Workfront对象的层次结构，包括项目组合、项目群、项目和任务
+- 使用为营销活动量身定制的模板创建新项目。
+- 按角色和可用性将任务分配给资源。
+- 上传文档并请求审批
+- 将批准的文档发送到具有内置集成的AEM Assets CS
 
 ## 先决条件
 
-- 访问Workfront和Workfront Fusion
+- 使用Workfront standard/planner许可证访问Adobe Workfront。
 
 ## 练习
 

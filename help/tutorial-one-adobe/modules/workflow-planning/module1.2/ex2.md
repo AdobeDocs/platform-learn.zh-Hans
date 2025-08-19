@@ -4,9 +4,9 @@ description: 使用Workfront校对
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
+source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '1613'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp3.png)
 
-向下滚动，在&#x200B;**阶段** > **阶段1**&#x200B;下，将自己添加为&#x200B;**审阅者和审批者**&#x200B;的&#x200B;**角色**。
+向下滚动，在&#x200B;**阶段** > **阶段1**&#x200B;下，将&#x200B;**校对创建者**&#x200B;角色更改为&#x200B;**审阅者和审批者**。 例如，您还可以通过选择您的用户并设置&#x200B;**审阅者和审批者**&#x200B;的&#x200B;**角色**&#x200B;来添加您自己。
 
 单击&#x200B;**创建**。
 
@@ -41,7 +41,37 @@ ht-degree: 0%
 
 ![WF](./images/wfp5.png)
 
-## 1.2.2.2创建新项目
+## 1.2.2.2启用Workfront Blueprint
+
+在下一步中，您将使用模板创建新项目。 Adobe Workfront提供了许多只需激活即可使用的蓝图。
+
+对于CitiSignal的使用案例，您需要使用&#x200B;**集成营销活动执行**&#x200B;蓝图。
+
+要安装该Blueprint，请打开菜单并选择&#x200B;**Blueprint**。
+
+![WF](./images/blueprint1.png)
+
+选择过滤器&#x200B;**Marketing**，然后向下滚动以查找Blueprint **集成营销活动执行**。 单击&#x200B;**安装**。
+
+![WF](./images/blueprint2.png)
+
+单击&#x200B;**继续**。
+
+![WF](./images/blueprint3.png)
+
+单击&#x200B;**按原样安装……**。
+
+![WF](./images/blueprint4.png)
+
+您应该会看到此内容。 安装可能需要几分钟的时间。
+
+![WF](./images/blueprint5.png)
+
+几分钟后，将安装Blueprint。
+
+![WF](./images/blueprint6.png)
+
+## 1.2.2.3创建新项目
 
 打开&#x200B;**菜单**&#x200B;并转到&#x200B;**程序**。
 
@@ -55,15 +85,23 @@ ht-degree: 0%
 
 ![WF](./images/wfp6b.png)
 
-在您的项目中，转到&#x200B;**项目**。 单击&#x200B;**+新建项目**，然后选择&#x200B;**新建项目**。
+在您的项目中，转到&#x200B;**项目**。 单击&#x200B;**+新建项目**，然后选择&#x200B;**从模板新建项目**。
 
 ![WF](./images/wfp6.png)
 
-您应该会看到此内容。 将名称更改为`--aepUserLdap-- - CitiSignal Fiber Launch`。
+选择模板&#x200B;**集成营销活动执行**，然后单击&#x200B;**使用模板**。
+
+![WF](./images/wfp6g.png)
+
+您应该会看到此内容。 将名称更改为`--aepUserLdap-- - CitiSignal Fiber Launch Winter 2026`并单击&#x200B;**创建项目**。
 
 ![WF](./images/wfp6c.png)
 
-转到&#x200B;**项目详细信息**。 单击&#x200B;**描述**&#x200B;下的&#x200B;**+添加**。
+您的项目现已创建。 转到&#x200B;**项目详细信息**。
+
+![WF](./images/wfp6h.png)
+
+转到&#x200B;**项目详细信息**。 单击以选择&#x200B;**描述**&#x200B;下的当前文本。
 
 ![WF](./images/wfp6d.png)
 
@@ -73,57 +111,164 @@ ht-degree: 0%
 
 ![WF](./images/wfp6e.png)
 
-您的项目现已创建。
+您的项目现已准备就绪，可供使用。
 
 ![WF](./images/wfp7.png)
 
-## 1.2.2.3创建新任务
+项目中的任务和依赖项是根据您选择的模板创建的，并且您已被设置为。 项目的所有者。 项目的状态已设置为&#x200B;**计划**。 您可以通过选择列表中的其他值来更改项目的状态。
 
-转到&#x200B;**任务**&#x200B;并单击&#x200B;**+新建任务**。
+![WF](./images/wfp7z.png)
+
+## 1.2.2.4创建新任务
+
+将鼠标悬停在任务&#x200B;**开始创建设计模板**&#x200B;上并单击3个点&#x200B;**...**。
 
 ![WF](./images/wfp7a.png)
 
-为您的任务输入此名称： `Create assets for Fiber campaign`。
+选择选项&#x200B;**在下方插入任务**。
 
-将字段&#x200B;**Description**&#x200B;设置为： `This task is used to track the progress of the creation of the assets for the CitiSignal Fiber Launch Campaign.`
+![WF](./images/wfp7x.png)
 
-单击&#x200B;**创建任务**。
+为您的任务输入此名称： `Create layout using approved assets and copy`。
+
+将字段&#x200B;**工作**&#x200B;设置为角色&#x200B;**Designer**。
+将字段**持续时间**&#x200B;设置为&#x200B;**5天**。
+将字段前置任务设置为**9**。
+为**开始日期**&#x200B;和&#x200B;**到期日期**&#x200B;字段输入日期。
+
+单击屏幕中的其他位置以保存新任务。
 
 ![WF](./images/wfp8.png)
 
-您应该会看到此内容。
+您应该会看到此内容。 单击任务以将其打开。
 
 ![WF](./images/wfp9.png)
 
-在&#x200B;**工作**&#x200B;列中，添加您自己的名称。
+转到&#x200B;**任务详细信息**&#x200B;并将字段&#x200B;**描述**&#x200B;设置为： `This task is used to track the progress of the creation of the assets for the CitiSignal Fiber Launch Campaign.`
+
+单击&#x200B;**保存更改**。
 
 ![WF](./images/wfp9a.png)
 
-然后，该任务将分配给您。
+您应该会看到此内容。 单击&#x200B;**项目**&#x200B;字段以返回您的项目。
 
 ![WF](./images/wfp9b.png)
 
-## 1.2.2.4向您的任务添加新文档通过审批流程
+在&#x200B;**项目**&#x200B;视图中，转到&#x200B;**工作负载均衡器**。
 
-单击&#x200B;**Workfront**&#x200B;徽标以返回概览页面。 然后，您应该会看到刚刚创建的项目出现在概述中。 单击您的项目以将其打开。
+![WF](./images/wfpwlb1.png)
 
-![WF](./images/wfp9c.png)
+单击&#x200B;**批量分配**。
 
-在&#x200B;**任务**&#x200B;中，单击以打开任务。
+![WF](./images/wfpwlb2.png)
 
-![WF](./images/wfp9d.png)
+选择&#x200B;**Designer**&#x200B;的&#x200B;**角色分配**，然后单击字段&#x200B;**用户以分配**。 这将显示在您的Workfront实例中具有&#x200B;**Designer**&#x200B;角色的所有用户。 在这种情况下，请选择虚构的用户&#x200B;**Melissa Jenkins**。
 
-转到&#x200B;**文档**。 单击&#x200B;**+添加新**，然后选择&#x200B;**文档**。
+![WF](./images/wfpwlb3.png)
+
+单击&#x200B;**分配**。 现在，您选择的用户将被分派到项目中链接到&#x200B;**Designer**&#x200B;角色的任务。
+
+![WF](./images/wfpwlb4.png)
+
+任务现已分配。 单击&#x200B;**任务**&#x200B;以返回&#x200B;**任务**&#x200B;概述页面。
+
+![WF](./images/wfpwlb5.png)
+
+单击您创建的任务，该任务名为
+**使用批准的资源创建布局并复制**。
+
+![WF](./images/wfpwlb6.png)
+
+作为本练习的一部分，您现在将开始处理此任务。 此时您会看到Melissa Jenkins已分配到此任务。 若要将其更改给您自己，请单击&#x200B;**工作总揽**&#x200B;字段并选择&#x200B;**分配给我**。
+
+![WF](./images/wfpwlb7.png)
+
+单击&#x200B;**保存**。
+
+![WF](./images/wfpwlb8.png)
+
+单击&#x200B;**处理它**。
+
+![WF](./images/wfpwlb9.png)
+
+您应该会看到此内容。
+
+![WF](./images/wfpwlb10.png)
+
+作为此任务的一部分，您需要创建新图像，然后将其作为文档上传到Workfront。 现在，您将自行使用Adobe Express创建该资源。
+
+## 1.2.2.5使用Adobe Firely Services和Adobe Express创建资源
+
+转到[https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}。 输入提示`a neon rabbit running very fast through space`并单击&#x200B;**生成**。
+
+![GSPeM](./images/gsasset1.png)
+
+然后，您将看到正在生成的多个图像。 选择您最喜欢的图像，单击图像上的&#x200B;**共享**&#x200B;图标，然后选择&#x200B;**在Adobe Express中打开**。
+
+![GSPeM](./images/gsasset2.png)
+
+然后，您将看到刚刚生成的图像在Adobe Express中可用于编辑。 您现在需要在图像上添加CitiSignal徽标。 为此，请转到&#x200B;**品牌**。
+
+![GSPeM](./images/gsasset3.png)
+
+然后，您应该会看到CitiSignal品牌模板。 在GenStudio for Performance Marketing中创建的区段会显示在Adobe Express中。 单击以选择名称中包含`CitiSignal`的品牌模板。
+
+![GSPeM](./images/gsasset4.png)
+
+转到&#x200B;**徽标**&#x200B;并单击&#x200B;**白色** Citisignal徽标将其放到图像上。
+
+![GSPeM](./images/gsasset5.png)
+
+将CitiSignal徽标放在图像的顶部，中间不远。
+
+![GSPeM](./images/gsasset6.png)
+
+转到&#x200B;**文本**。
+
+![GSPeM](./images/gsasset6a.png)
+
+单击&#x200B;**添加您的文本**。
+
+![GSPeM](./images/gsasset6b.png)
+
+输入文本`Timetravel now!`，更改字体颜色和字体大小，将文本设置为&#x200B;**粗体**，以便您拥有与此类似的图像。
+
+![GSPeM](./images/gsasset6c.png)
+
+接下来，单击&#x200B;**共享**。
+
+![GSPeM](./images/gsasset7.png)
+
+选择&#x200B;**AEM Assets**。
+
+![GSPeM](./images/gsasset8.png)
+
+将文件名更改为`CitiSignal - Neon Rabbit - Timetravel now!`。
+单击**选择文件夹**。
+
+![GSPeM](./images/gsasset9.png)
+
+选择您的AEM Assets CS存储库（应命名为`--aepUserLdap-- - CitiSignal`），然后选择文件夹`--aepUserLdap-- - CitiSignal Fiber Campaign`。 单击&#x200B;**选择**。
+
+![GSPeM](./images/gsasset11.png)
+
+您应该会看到此内容。 单击&#x200B;**上传1项资源**。 您的图像现在将上传到AEM Assets CS。
+
+![GSPeM](./images/gsasset12.png)
+
+## 1.2.2.6向您的任务添加新文档并开始审批流程
+
+返回&#x200B;**任务详细信息**&#x200B;屏幕。 转到&#x200B;**文档**。 单击“**+新增**”，然后选择您的名为`--aepUserLdap-- - CitiSignal`的AEM Assets CS存储库。
 
 ![WF](./images/wfp10.png)
 
-将[此文件](./images/2048x2048.png)下载到桌面。
+双击以打开文件夹`--aepUserLdap-- CitiSignal Fiber Campaign`。
+
+![WF](./images/wfp10a.png)
+
+选择您在上一步中创建的名为&#x200B;**CitiSignal - Neon Rabbit - Timetravel Now！的文件。png**。 单击&#x200B;**选择**。
 
 ![WF](./images/2048x2048.png){width="50px" align="left"}
-
-选择文件&#x200B;**2048x2048.png**，然后单击&#x200B;**打开**。
-
-![WF](./images/wfp12.png)
 
 然后您应该拥有此项。 将鼠标悬停在上传文档上。 单击&#x200B;**创建验证**，然后选择&#x200B;**高级验证**。
 
@@ -133,10 +278,6 @@ ht-degree: 0%
 
 ![WF](./images/wfp14.png)
 
-单击&#x200B;**处理它**。
-
-![WF](./images/wfp17.png)
-
 单击&#x200B;**打开校对**
 
 ![WF](./images/wfp18.png)
@@ -145,41 +286,57 @@ ht-degree: 0%
 
 ![WF](./images/wfp19.png)
 
-输入您的评论并单击&#x200B;**发布**。 单击&#x200B;**关闭**。
+输入您的评论并单击&#x200B;**发布**。 接下来，单击&#x200B;**做出决定**。
 
 ![WF](./images/wfp20.png)
-
-接下来，您需要将您的角色从&#x200B;**审阅者**&#x200B;更改为&#x200B;**审阅者和批准者**。 为此，请返回任务并单击&#x200B;**校对工作流**。
-
-![WF](./images/wfp21.png)
-
-将您的角色从&#x200B;**审阅者**&#x200B;更改为&#x200B;**审阅者和批准者**。
-
-![WF](./images/wfp22.png)
-
-返回您的任务，然后再次打开验证。 您现在看到一个新按钮，**做出决定**。 单击它。
-
-![WF](./images/wfp23.png)
 
 选择&#x200B;**所需的更改**&#x200B;并单击&#x200B;**做出决定**。
 
 ![WF](./images/wfp24.png)
 
-返回您的&#x200B;**任务**&#x200B;和&#x200B;**文档**。 现在，您需要上传第二个图像，该图像会考虑您提供的评论。
+返回您的&#x200B;**任务**&#x200B;和&#x200B;**文档**。 您会看到文本&#x200B;**所需更改**&#x200B;也会显示在该处。
 
 ![WF](./images/wfp25.png)
 
-将[此文件](./images/2048x2048_buynow.png)下载到桌面。
+您现在需要进行设计更改，此操作将在Adobe Express中完成。
 
-![此文件](./images/2048x2048_buynow.png){width="50px" align="left"}
+## 1.2.2.7在Adobe Express中进行设计更改
 
-在“任务”视图中，选择未批准的旧图像文件。 然后，单击“**+新增**”，选择“**版本**”，然后选择“**文档**”。
+转到[https://new.express.adobe.com/your-stuff/files](https://new.express.adobe.com/your-stuff/files)并再次打开您之前创建的图像。
+
+![WF](./images/wfp25a.png)
+
+将CTA文本更改为`Get On Board Now!`。
+
+![WF](./images/wfp25b.png)
+
+单击&#x200B;**共享**，然后选择&#x200B;**AEM Assets**。
+
+![WF](./images/wfp25c.png)
+
+输入名称`CitiSignal - Neon Rabbit - Get On Board Now!`，然后单击&#x200B;**选择文件夹**&#x200B;以选择目标文件夹。
+
+![WF](./images/wfp25d.png)
+
+选择您的AEM Assets CS存储库（应命名为`--aepUserLdap-- - CitiSignal`），然后选择文件夹`--aepUserLdap-- - CitiSignal Fiber Campaign`。 单击&#x200B;**选择**。
+
+![WF](./images/wfp25e.png)
+
+单击&#x200B;**上传1项资源**。
+
+![WF](./images/wfp25f.png)
+
+您的新资源现已创建并存储在AEM Assets中。
+
+## 1.2.2.8将文档的新版本添加到任务中
+
+在Adobe Workfront的“任务”视图中，选择未批准的旧图像文件。 然后，单击“**+新增**”，选择“**版本**”，然后选择您的AEM Assets CS存储库，该存储库应命名为`--aepUserLdap-- - CitiSignal`。
 
 ![WF](./images/wfp26.png)
 
-选择文件&#x200B;**2048x2048_buynow.png**，然后单击&#x200B;**打开**。
+导航到文件夹`--aepUserLdap-- CitiSignal Fiber Campaign`并选择文件`CitiSignal - Neon Rabit - Get On Board Now!.png`。 单击&#x200B;**选择**。
 
-![WF](./images/wfp27.png)
+![WF](./images/wfp26a.png)
 
 然后您应该拥有此项。 单击&#x200B;**创建验证**，然后再次选择&#x200B;**高级验证**。
 
@@ -193,15 +350,19 @@ ht-degree: 0%
 
 ![WF](./images/wfp30.png)
 
-现在，您可以在其旁边看到文件的2个版本。
+现在，您可以在其旁边看到文件的2个版本。 单击&#x200B;**比较校样**&#x200B;按钮。
 
 ![WF](./images/wfp31.png)
 
-单击&#x200B;**做出决定**，选择&#x200B;**已批准**，然后单击&#x200B;**再次做出决定**。
+然后，您应该会看到该图像的两个版本彼此相邻。 单击&#x200B;**做出决定**。
 
 ![WF](./images/wfp32.png)
 
-单击&#x200B;**任务名称**&#x200B;以返回任务概述。
+选择&#x200B;**已批准**&#x200B;并再次单击&#x200B;**做出决策**。
+
+![WF](./images/wfp32a.png)
+
+通过关闭图像的左侧版本来关闭&#x200B;**比较验证**&#x200B;视图。 单击&#x200B;**任务名称**&#x200B;以返回任务概述。
 
 ![WF](./images/wfp33.png)
 
@@ -233,7 +394,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp37c.png)
 
-## 1.2.2.5在AEM Assets中查看您的文件
+## 1.2.2.9在AEM Assets中查看您的文件
 
 转到AEM Assets CS中名为`--aepUserLdap-- - CitiSignal Fiber Launch Assets`的文件夹。
 
