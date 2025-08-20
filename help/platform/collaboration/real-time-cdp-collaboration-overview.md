@@ -41,7 +41,7 @@ ht-degree: 24%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="real-time-cdp-collaboration-intro.md" title="Real-Time CDP Collaboration简介" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446801/?format=jpeg&nocache=1755703749870" alt="Real-Time CDP Collaboration简介"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3446811/?format=jpeg&nocache=1755703749870&captions=chi_hans" alt="Real-Time CDP Collaboration简介"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -64,7 +64,7 @@ ht-degree: 24%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-overview-for-agency-practitioners.md" title="面向代理从业者的Real-Time CDP概述" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464657/?format=jpeg&nocache=1755703749854" alt="面向代理从业者的Real-Time CDP概述"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464668/?format=jpeg&nocache=1755703749854&captions=chi_hans" alt="面向代理从业者的Real-Time CDP概述"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,7 +87,7 @@ ht-degree: 24%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="rtcdp-collaboration-process-and-people.md" title="Real-Time CDP Collaboration — 流程和人员" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464658/?format=jpeg&nocache=1755703749860" alt="Real-Time CDP Collaboration — 流程和人员"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464679/?format=jpeg&nocache=1755703749860&captions=chi_hans" alt="Real-Time CDP Collaboration — 流程和人员"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -128,7 +128,7 @@ ht-degree: 24%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../admin/add-product-administrators.md" title="为基于Adobe Experience Platform的应用程序添加产品管理员" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333860?format=jpeg&nocache=1755703750314" alt="为基于Adobe Experience Platform的应用程序添加产品管理员"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3423932?format=jpeg&nocache=1755703750314&captions=chi_hans" alt="为基于Adobe Experience Platform的应用程序添加产品管理员"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -151,7 +151,7 @@ ht-degree: 24%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="set-permissions-for-collaboration.md" title="为Real-Time CDP Collaboration设置权限" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452216/?format=jpeg&nocache=1755703750284" alt="为Real-Time CDP Collaboration设置权限"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3452240/?format=jpeg&nocache=1755703750284&captions=chi_hans" alt="为Real-Time CDP Collaboration设置权限"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -258,7 +258,7 @@ ht-degree: 24%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="create-a-project.md" title="在Real-Time CDP Collaboration中创建项目" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464033/?format=jpeg&nocache=1755703750674" alt="在Real-Time CDP Collaboration中创建项目"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3464044/?format=jpeg&nocache=1755703750674&captions=chi_hans" alt="在Real-Time CDP Collaboration中创建项目"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -281,7 +281,7 @@ ht-degree: 24%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="brand-to-brand-collaboration.md" title="品牌到Collaboration" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470936/?format=jpeg&nocache=1755703750685" alt="品牌到Collaboration"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3470946/?format=jpeg&nocache=1755703750685&captions=chi_hans" alt="品牌到Collaboration"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
