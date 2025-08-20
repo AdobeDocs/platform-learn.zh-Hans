@@ -20,4 +20,4 @@ ht-degree: 0%
 
 了解品牌到品牌协作支持的用例以及为支持这些工作流而引入的特定功能。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470936/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3470946/?learn=on&enablevpops&captions=chi_hans)
