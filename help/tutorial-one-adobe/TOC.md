@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93e074dac589b0a8773cfd097d24f7efec5400e9
+source-git-commit: cc45eefc9042d27ae38fc9bb2dd9b6c1af9a9e4b
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1339'
 ht-degree: 3%
 
 ---
@@ -81,6 +81,13 @@ ht-degree: 3%
       + [1.5.2使用Frame.io进行审批](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex2.md)
       + [1.5.3 Frame.io和Premiere Pro](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex3.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
+   + 1.6 GenStudio for Performance Marketing — 可扩展性 {#crpr6}
+      + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.6/genstudioext.md)
+      + [1.6.1 Adobe IO和App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
+      + [1.6.2创建您的AWS S3存储段](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
+      + [1.6.3创建外部DAM应用程序](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
+      + [1.6.4部署代码并私下发布应用程序](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
+      + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
 
 + 资产管理 {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}

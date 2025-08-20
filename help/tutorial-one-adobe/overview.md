@@ -3,9 +3,9 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 8ed0b38056c6e2db4937bfaa9cfb53f5878250ee
+source-git-commit: 8e0356921360017fa00d59fb323839b6ac1cd2c1
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1207'
 ht-degree: 2%
 
 ---
@@ -90,11 +90,19 @@ ht-degree: 2%
 
 在本模块中，您将将Adobe Frame.io与Adobe Premiere Pro结合使用，以便协作和查看图像和视频。
 
+[1.6 GenStudio for Performance Marketing — 可扩展性](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
+
+在本模块中，您将使用Adobe IO和App Builder构建自定义应用程序，以扩展GenStudio for Performance Marketing中的功能。
+
 ### 3.资产管理
 
 [1.1 Adobe Experience Manager Cloud Service和Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
-在此基础模块中，您将设置Adobe Experience Manager Cloud Service项目、站点和Assets存储库。
+在本模块中，您将设置Adobe Experience Manager Cloud Service Program、Site和Assets存储库。
+
+[1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
+
+在本模块中，您将学习AEM Assets。
 
 ### 4.交付和激活
 

@@ -4,16 +4,20 @@ description: Workfront Planning入门
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 62651668752d5f711c102b763564d01c561f7eb4
+source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1258'
 ht-degree: 1%
 
 ---
 
 # 1.1.1 Workfront Planning快速入门
 
-## 1.1.1.1 Workfront规划术语
+## 1.1.1.1 CitiSignal营销活动摘要
+
+若要了解CitiSignal的背景以及他们尝试实现的目标，请在此处下载并阅读CitiSignal的营销活动简报： [CitiSignal-Fibre-Launch-Winter-2026.pdf](./../../../assets/brief/CitiSignal-Fiber-Launch-Winter-2026.pdf)。
+
+## 1.1.1.2 Workfront规划术语
 
 以下是主要的Workfront Planning对象和概念：
 
@@ -31,7 +35,7 @@ ht-degree: 1%
 
 现在，您将亲自开始创建其中一些对象。
 
-## 1.1.1.2 Workspace，记录类型，字段
+## 1.1.1.3 Workspace，记录类型，字段
 
 转到[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 单击以打开&#x200B;**Workfront**。
 
@@ -61,7 +65,7 @@ ht-degree: 1%
 
 ![Workfront计划](./images/wfpl7a.png)
 
-## 1.1.1.3分类：记录类型和字段
+## 1.1.1.4分类：记录类型和字段
 
 在&#x200B;**分类**&#x200B;下，单击&#x200B;**+添加记录类型**，然后选择&#x200B;**手动添加**。
 
@@ -165,7 +169,7 @@ ht-degree: 1%
 
 ![Workfront计划](./images/wfpl19.png)
 
-## 1.1.1.4操作记录类型：字段
+## 1.1.1.5操作记录类型：字段
 
 单击以打开&#x200B;**营销活动**。
 
@@ -187,7 +191,7 @@ ht-degree: 1%
 
 ![Workfront计划](./images/wfpl24.png)
 
-## 1.1.1.5创建请求表单
+## 1.1.1.6创建请求表单
 
 在营销活动概述屏幕上，单击3个圆点&#x200B;**...**，然后选择&#x200B;**创建请求表单**。
 
@@ -209,7 +213,7 @@ ht-degree: 1%
 
 ![Workfront计划](./images/wfpl29.png)
 
-## 1.1.1.6使用请求表单提交新记录
+## 1.1.1.7使用请求表单提交新记录
 
 在促销活动概览屏幕上，单击&#x200B;**+新建记录**。
 
@@ -243,7 +247,7 @@ The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber in
 
 ![Workfront计划](./images/wfpl35.png)
 
-## 1.1.1.7创建Portfolio和自定义表单
+## 1.1.1.8创建Portfolio和自定义表单
 
 在下一步中，您将创建一个自动功能，该功能将从您在Workfront Planning中创建的营销策划中获得信息，并在Workfront中使用该信息创建项目。 在创建自动化之前，必须先在Workfront中配置两项：项目组合和自定义表单。
 
