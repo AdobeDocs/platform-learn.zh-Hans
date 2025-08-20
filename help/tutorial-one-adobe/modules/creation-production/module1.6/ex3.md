@@ -5,14 +5,15 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
+source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
 
-# 1.6.3创建外部DAM应用程序
+# 1.6.3创建和部署外部DAM应用程序
 
 ## 1.6.3.1下载示例应用程序文件
 
@@ -131,15 +132,15 @@ AWS_REGION=
 AWS_BUCKET_NAME=
 ```
 
-在上一个练习中创建IAM用户后，字段&#x200B;**AWS_ACCESS_KEY_ID**&#x200B;和&#x200B;**AWS_SECRET_ACCESS_KEY**&#x200B;可用。 系统要求您写下这些值，您现在可以复制这些值。
+在上一个练习中创建IAM用户后，字段&#x200B;**`AWS_ACCESS_KEY_ID`**&#x200B;和&#x200B;**`AWS_SECRET_ACCESS_KEY`**&#x200B;可用。 系统要求您写下这些值，您现在可以复制这些值。
 
 ![ETL](./images/cred1.png)
 
-字段&#x200B;**AWS_REGION**&#x200B;可以从AWS S3 Home视图中获取，位于存储段名称旁边。 在此示例中，区域是&#x200B;**us-west-2**。
+字段&#x200B;**`AWS_REGION`**&#x200B;可以从AWS S3 Home视图中获取，位于存储段名称旁边。 在此示例中，区域是&#x200B;**us-west-2**。
 
 ![ETL](./images/bucket2.png)
 
-字段&#x200B;**AWS_BUCKET_NAME**&#x200B;应为`--aepUserLdap---gspem-dam`。
+字段&#x200B;**`AWS_BUCKET_NAME`**&#x200B;应为`--aepUserLdap---gspem-dam`。
 
 此信息允许您更新每个变量的值。
 
@@ -169,9 +170,53 @@ AWS_BUCKET_NAME=--aepUserLdap---gspem-dam
 
 ![外部DAM](./images/extdam24.png)
 
+现在，您已确认您的应用程序正在运行。 下一步是部署它。
+
+首先，按&#x200B;**CTRL+C**&#x200B;以停止应用程序运行。 然后，输入命令`aio app deploy`。 此命令会将您的代码部署到Adobe IO。
+
+因此，您将收到一个类似的URL来访问已部署的应用程序：
+
+`https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+![外部DAM](./images/extdam27.png)
+
+为了进行测试，您现在可以通过将`?ext=`添加为上述URL的前缀来将该URL用作查询字符串参数。 这将导致此查询字符串参数：
+
+`?ext=https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+转到[https://experience.adobe.com/genstudio/create](https://experience.adobe.com/genstudio/create)。
+
+![外部DAM](./images/extdam25.png)
+
+接下来，将查询字符串参数添加到&#x200B;**#**&#x200B;之前。 您的新URL应如下所示：
+
+`https://experience.adobe.com/?ext=https://133309-201burgundyguan.adobeio-static.net/index.html#/@experienceplatform/genstudio/create`
+
+页面将正常加载。 单击&#x200B;**横幅**&#x200B;开始创建新横幅。
+
+![外部DAM](./images/extdam26.png)
+
+选择模板并单击&#x200B;**使用**。
+
+![外部DAM](./images/extdam28.png)
+
+单击&#x200B;**从内容中选择**。
+
+![外部DAM](./images/extdam29.png)
+
+然后，您应该能够从下拉列表中选择外部DAM。
+
+![外部DAM](./images/extdam30.png)
+
+在本地计算机上更改代码时，您需要重新部署应用程序。 当您重新部署时，请使用以下终端命令：
+
+`aio app deploy --force-build --force-deploy`
+
+您的应用程序现已准备就绪，可供发布。
+
 ## 后续步骤
 
-转到[部署代码并私下发布应用程序](./ex4.md){target="_blank"}
+转到[单独发布您的应用程序](./ex4.md){target="_blank"}
 
 返回至[GenStudio for Performance Marketing — 可扩展性](./genstudioext.md){target="_blank"}
 

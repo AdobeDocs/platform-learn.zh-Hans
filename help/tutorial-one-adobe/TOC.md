@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: cc45eefc9042d27ae38fc9bb2dd9b6c1af9a9e4b
+source-git-commit: 10c3f0a3ae1540562f0f46a5936b1556e37a251b
 workflow-type: tm+mt
-source-wordcount: '1339'
+source-wordcount: '1337'
 ht-degree: 3%
 
 ---
@@ -85,8 +85,8 @@ ht-degree: 3%
       + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.6/genstudioext.md)
       + [1.6.1 Adobe IO和App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
       + [1.6.2创建您的AWS S3存储段](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
-      + [1.6.3创建外部DAM应用程序](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
-      + [1.6.4部署代码并私下发布应用程序](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
+      + [1.6.3创建和部署外部DAM应用程序](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
+      + [1.6.4私下发布您的应用程序](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
 
 + 资产管理 {#assetmgmt}
