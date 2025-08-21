@@ -5,10 +5,11 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-source-git-commit: 1dd8b487cbd16e438e9c006c34e458ddb82cce64
+exl-id: 044677e4-7ca3-4dfe-9067-640983681ea7
+source-git-commit: 1f9a868c5e4ef4aa0e09d7f5d73a951006ee6c5a
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 5%
+source-wordcount: '502'
+ht-degree: 6%
 
 ---
 
@@ -139,19 +140,39 @@ AWS资源的访问权限由Amazon Identity and Access Management (IAM)控制。
 
 ![ETL](./images/bucket4.png)
 
-您可以在[此处](./../../asset-mgmt/module2.2/images/CitiSignal_Neon_Rabbit.zip){target="_blank"}下载CitiSignal图像文件。
+您可以在[此处](./images/package.zip){target="_blank"}下载CitiSignal图像文件。
 
 将文件导出到桌面。
 
 ![ETL](./images/bucket5.png)
 
-获取该文件夹中的2个图像文件，并将其放入S3存储桶上传窗口。 单击&#x200B;**上传**。
+单击&#x200B;**添加文件夹**。
 
 ![ETL](./images/bucket6.png)
 
-您应该会看到此内容。 您的S3存储段、图像文件和IAM用户现在可供外部DAM应用程序使用。
+从下载文件夹&#x200B;**包**&#x200B;中选择文件夹&#x200B;**资源**。 单击&#x200B;**上传**。
 
 ![ETL](./images/bucket7.png)
+
+您应该会看到此内容。 再次单击&#x200B;**添加文件夹**。
+
+![ETL](./images/bucket8.png)
+
+从下载文件夹&#x200B;**包**&#x200B;中选择文件夹&#x200B;**缩略图**。 单击&#x200B;**上传**。
+
+![ETL](./images/bucket9.png)
+
+您应该会看到此内容。 单击&#x200B;**上传**。
+
+![ETL](./images/bucket10.png)
+
+您的上传现已完成。 单击&#x200B;**关闭**。
+
+![ETL](./images/bucket11.png)
+
+现在，您的S3存储桶中应该具有此文件夹结构。
+
+![ETL](./images/bucket12.png)
 
 ## 后续步骤
 
