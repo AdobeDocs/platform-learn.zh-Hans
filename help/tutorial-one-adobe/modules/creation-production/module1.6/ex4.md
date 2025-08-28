@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 5a77ccdd-4000-4fb7-b696-dec40d01b41b
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 8219f3bd33448f90b87bf9ccb15738f1294e5965
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '351'
 ht-degree: 1%
 
 ---
@@ -58,6 +58,10 @@ ht-degree: 1%
 ![GSPeM可扩展性](./images/gspemextpub6.png)
 
 ## 1.6.4.2批准您的应用程序
+
+>[!IMPORTANT]
+>
+>此步骤只能由Adobe Admin Console中的系统管理员执行。 如果您不是系统管理员，则无法执行此命令。 请联系您的系统管理员以请求批准您的应用程序。
 
 开发人员提交新应用程序以进行发布后，将会通知您组织的系统管理员，并会要求他们进行审查和批准。
 
