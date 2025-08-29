@@ -18,6 +18,6 @@ ht-degree: 0%
 
 # 发现Collaboration项目中的受众重叠
 
-了解如何在Real-Time CDP Collaboration项目中比较受众重叠。 有关详细信息，请访问[文档](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}。
+了解如何在Real-Time CDP Collaboration项目中比较受众重叠。 有关详细信息，请访问[文档](https://experienceleague.adobe.com/zh-hans/docs/real-time-cdp-collaboration/using/collaborate/discover){target="_blank"}。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3471675/?learn=on&enablevpops)
