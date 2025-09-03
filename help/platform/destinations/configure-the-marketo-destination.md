@@ -23,7 +23,7 @@ ht-degree: 1%
 
 了解[!DNL Marketo Engage]目标如何实现受众数据和配置文件属性的无缝实时同步，从而支持整个技术栈栈中的统一营销。 它通过灵活的同步选项和简化的设置，支持重新吸引潜在客户、更新用户档案和扩展个性化B2B历程触及范围等用例。
 
-有关详细信息，请查阅[文档](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection)。
+有关详细信息，请查阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
 
