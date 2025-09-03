@@ -25,5 +25,5 @@ ht-degree: 1%
 
 有关详细信息，请查阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/adobe/marketo-engage-connection)。
 
->[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3440168?learn=on&enablevpops&captions=chi_hans)
 
