@@ -20,4 +20,4 @@ ht-degree: 0%
 
 了解如何在Real-Time CDP Collaboration项目中向协作合作伙伴激活受众。 有关详细信息，请访问[文档](https://experienceleague.adobe.com/zh-hans/docs/real-time-cdp-collaboration/using/collaborate/activate){target="_blank"}。
 
->[!VIDEO](https://video.tv.adobe.com/v/3471677/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3471688/?learn=on&enablevpops&captions=chi_hans)
