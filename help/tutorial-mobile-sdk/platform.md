@@ -43,7 +43,7 @@ ht-degree: 3%
 
 ## 创建数据集
 
-所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。 数据集还包含描述其存储的数据的各方面特性的元数据。有关详细信息，请参阅[文档](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)。
+所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 数据集是用于数据集合（通常是表）的存储和管理结构，其中包含架构（列）和字段（行）。 数据集还包含描述其存储的数据的各方面特性的元数据。有关详细信息，请参阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)。
 
 1. 导航到Experience Platform UI。 从右上角的“应用程序”**[!UICONTROL “应用程序”]**&#x200B;菜单中选择![“Experience Platform”](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg)。
 
@@ -106,7 +106,7 @@ ht-degree: 3%
 您还应看到使用&#x200B;**[!UICONTROL 预览数据集]**&#x200B;功能的示例记录和字段：
 ![验证发送到Platform数据集的生命周期](assets/lifecycle-platform-dataset.png){zoomable="yes"}
 
-用于验证数据的更强大的工具是Platform的[查询服务](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
+用于验证数据的更强大的工具是Platform的[查询服务](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/queries/explore-data)。
 
 ## 启用Real-time Customer Profile
 

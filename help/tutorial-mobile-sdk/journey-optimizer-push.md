@@ -17,7 +17,7 @@ ht-degree: 1%
 
 了解如何使用Experience Platform Mobile SDK和Journey Optimizer为移动应用程序创建推送通知。
 
-Journey Optimizer允许您创建历程并向目标受众发送消息。 在使用Journey Optimizer发送推送通知之前，您必须确保已进行适当的配置和集成。 要了解Journey Optimizer中的推送通知数据流，请参阅[文档](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/push-config/push-gs)。
+Journey Optimizer允许您创建历程并向目标受众发送消息。 在使用Journey Optimizer发送推送通知之前，您必须确保已进行适当的配置和集成。 要了解Journey Optimizer中的推送通知数据流，请参阅[文档](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channels/push/push-config/push-gs)。
 
 ![架构](assets/architecture-ajo.png){zoomable="yes"}
 
@@ -30,7 +30,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 
 * 在安装和配置SDK的情况下成功构建并运行应用程序。
 * 为Adobe Experience Platform设置应用程序。
-* 访问Journey Optimizer和[足够的权限](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/channels/push/push-config/push-configuration)。 此外，您需要具有足够的权限才能使用以下Journey Optimizer功能。
+* 访问Journey Optimizer和[足够的权限](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/channels/push/push-config/push-configuration)。 此外，您需要具有足够的权限才能使用以下Journey Optimizer功能。
    * 创建推送凭据。
    * 创建推送渠道配置。
    * 创建旅程。
@@ -174,12 +174,12 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
    > 名称必须以字母(A-Z)开头。 它只能包含字母数字字符。 您还可以使用下划线 `_`、点 `.` 和连字符 `-` 符号。
 
 
-1. 要为配置分配自定义或核心数据使用标签，您可以选择&#x200B;**[!UICONTROL 管理访问权限]**。 [了解有关对象级访问控制(OLAC)的更多信息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access)。
+1. 要为配置分配自定义或核心数据使用标签，您可以选择&#x200B;**[!UICONTROL 管理访问权限]**。 [了解有关对象级访问控制(OLAC)的更多信息](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/access-control/object-based-access)。
 
 1. 选择&#x200B;**推送**&#x200B;渠道。
 
 
-1. 选择&#x200B;**[!UICONTROL 营销操作]**&#x200B;以使用此配置将同意策略与消息关联。 所有与营销活动相关的同意政策都可以用来尊重客户的偏好。 [了解有关营销操作的更多信息](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。
+1. 选择&#x200B;**[!UICONTROL 营销操作]**&#x200B;以使用此配置将同意策略与消息关联。 所有与营销活动相关的同意政策都可以用来尊重客户的偏好。 [了解有关营销操作的更多信息](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions)。
 
 1. 选择您的&#x200B;**[!UICONTROL 平台]**。 您可以为渠道配置同时配置&#x200B;**[!UICONTROL iOS]**&#x200B;和&#x200B;**[!UICONTROL Android]**。
 
@@ -203,7 +203,7 @@ Journey Optimizer允许您创建历程并向目标受众发送消息。 在使�
 
    1. 如果尚未选择，请从&#x200B;**[!UICONTROL 配置文件数据集]**&#x200B;中选择&#x200B;**[!UICONTROL AJO推送配置文件数据集]**。 使用`MobileCore.setPushIdentifier` API调用时需要此配置文件数据集（请参阅[注册推送通知的设备令牌](#register-device-token-for-push-notifications)）。 此选择还可确保将推送通知的唯一标识符（即推送标识符）存储为用户配置文件的一部分。
 
-   1. 已选择&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 有关详细信息，请参阅[Adobe Experience Platform设置](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure)。
+   1. 已选择&#x200B;**[!UICONTROL Adobe Journey Optimizer]**。 有关详细信息，请参阅[Adobe Experience Platform设置](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/configure)。
 
    1. 要保存数据流配置，请选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -443,7 +443,7 @@ Android推送通知要求您在应用程序中和在发送推送通知时定义�
 
 ### 定义事件
 
-Journey Optimizer中的事件允许您触发发送消息的历程，例如推送通知。 有关详细信息，请参阅[关于事件](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events)。
+Journey Optimizer中的事件允许您触发发送消息的历程，例如推送通知。 有关详细信息，请参阅[关于事件](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/configure-journeys/events-journeys/about-events)。
 
 1. 在Journey Optimizer UI中，从左边栏中选择&#x200B;**[!UICONTROL 配置]**。
 

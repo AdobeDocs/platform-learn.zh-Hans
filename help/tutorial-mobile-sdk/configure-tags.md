@@ -15,7 +15,7 @@ ht-degree: 2%
 
 了解如何在[!UICONTROL 数据收集]界面中配置标记属性。
 
-Adobe Experience Platform中的标记是Adobe推出的新一代标记管理功能。 标记为客户提供了一种简单的方式来部署和管理用来加强相关客户体验的分析、营销和广告标记。 在产品文档中了解有关[标记](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)的更多信息。
+Adobe Experience Platform中的标记是Adobe推出的新一代标记管理功能。 标记为客户提供了一种简单的方式来部署和管理用来加强相关客户体验的分析、营销和广告标记。 在产品文档中了解有关[标记](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)的更多信息。
 
 ## 先决条件
 
@@ -23,7 +23,7 @@ Adobe Experience Platform中的标记是Adobe推出的新一代标记管理功�
 
 >[!NOTE]
 >
-> Platform Launch（客户端）现在为[标记](https://experienceleague.adobe.com/en/docs/experience-platform/tags/home)
+> Platform Launch（客户端）现在为[标记](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/home)
 
 ## 学习目标
 

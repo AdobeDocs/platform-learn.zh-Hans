@@ -15,7 +15,7 @@ ht-degree: 5%
 
 了解如何在 Experience Platform 中创建数据流。
 
-数据流是Platform Edge Network上的服务器端配置。 数据流可确保将传入到Platform Edge Network的数据正确路由到Adobe Experience Cloud应用程序和服务。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)或此[视频](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/edge-network/configure-datastreams)。
+数据流是Platform Edge Network上的服务器端配置。 数据流可确保将传入到Platform Edge Network的数据正确路由到Adobe Experience Cloud应用程序和服务。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/overview)或此[视频](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/edge-network/configure-datastreams)。
 
 ![架构](assets/architecture.png){zoomable="yes"}
 
@@ -102,7 +102,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->启用您的组织使用的每项服务，可确保随时随地使用在移动应用程序中收集的数据。 有关详细信息，请参阅[数据流设置](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)。
+>启用您的组织使用的每项服务，可确保随时随地使用在移动应用程序中收集的数据。 有关详细信息，请参阅[数据流设置](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/overview)。
 
 在您自己的应用程序中实施Platform Mobile SDK时，您最终应创建三个数据流以映射到三个标记环境（开发、暂存和生产）。 如果您将Platform Mobile SDK与基于Platform的应用程序(如Adobe Real-Time Customer Data Platform或Adobe Journey Optimizer)一起使用，则应确保在相应的沙盒中创建这些数据流。
 

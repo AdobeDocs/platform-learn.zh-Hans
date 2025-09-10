@@ -54,11 +54,11 @@ ht-degree: 0%
 
 ## 自动映射
 
-许多标准XDM字段会自动映射到Analytics变量。 查看[完整列表](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping)。
+许多标准XDM字段会自动映射到Analytics变量。 查看[完整列表](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping)。
 
 ### 示例#1 - s.products
 
-无法使用处理规则填充的[products变量](https://experienceleague.adobe.com/en/docs/analytics/implementation/vars/page-vars/products)就是一个很好的示例。 对于XDM实施，您传递了`productListItems`中的所有必需数据，并且`s.products`通过Analytics映射自动填充。
+无法使用处理规则填充的[products变量](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/vars/page-vars/products)就是一个很好的示例。 对于XDM实施，您传递了`productListItems`中的所有必需数据，并且`s.products`通过Analytics映射自动填充。
 
 此对象：
 
@@ -87,7 +87,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 >[!NOTE]
 >
->如果`productListItems[].SKU`和`productListItems[].name`都包含数据，则使用`productListItems[].SKU`中的值。 有关详细信息，请参阅Adobe Experience Edge中的[Analytics变量映射](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/xdm-var-mapping)。
+>如果`productListItems[].SKU`和`productListItems[].name`都包含数据，则使用`productListItems[].SKU`中的值。 有关详细信息，请参阅Adobe Experience Edge中的[Analytics变量映射](https://experienceleague.adobe.com/zh-hans/docs/analytics/implementation/aep-edge/xdm-var-mapping)。
 
 
 ### 示例#2 - scAdd
@@ -211,7 +211,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 ### 促销eVar
 
-如果您在Analytics设置中使用[促销eVar](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars)，则必须扩展您在[跟踪事件数据](events.md)中定义的XDM有效负载以捕获该促销信息。 促销变量示例为`evar1`，其中您要捕获产品（如`&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`）的颜色
+如果您在Analytics设置中使用[促销eVar](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars)，则必须扩展您在[跟踪事件数据](events.md)中定义的XDM有效负载以捕获该促销信息。 促销变量示例为`evar1`，其中您要捕获产品（如`&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`）的颜色
 
 * 在JSON中：
 
@@ -301,7 +301,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >首次映射到处理规则时，界面不会显示XDM对象中的上下文数据变量。 要修复该错误，请选择任意值，请保存并返回进行编辑。 此时应会显示所有XDM变量。
 
 
-查看[使用处理规则](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules)将contextData变量映射到prop和eVar。
+查看[使用处理规则](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules)将contextData变量映射到prop和eVar。
 
 >[!TIP]
 >
