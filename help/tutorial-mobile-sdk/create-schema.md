@@ -219,7 +219,7 @@ Experience Platform使用架构，以一致且可重用的方式描述数据结�
 
    ![提供名称和描述](assets/schema-fieldgroup-name.png){zoomable="yes"}
 
-1. 从主构成屏幕中，选择**[!UICONTROL 应用程序交互**]。
+1. 从主构成屏幕中，选择&#x200B;**[!UICONTROL 应用程序交互**]。
 
 1. 通过选择架构名称旁边的![加号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)按钮，向架构的根添加字段。
 

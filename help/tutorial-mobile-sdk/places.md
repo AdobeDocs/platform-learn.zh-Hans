@@ -93,7 +93,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 1. 从顶部栏中选择&#x200B;**[!UICONTROL 浏览]**。
 1. 选择您的架构以将其打开。
 1. 在架构编辑器中，选择&#x200B;**[!UICONTROL 使用者体验事件]**。
-1. 您看到&#x200B;**[!UICONTROL placeContext]**对象，其中包含用于捕获POI交互和地理位置数据的对象和字段。
+1. 您看到&#x200B;**[!UICONTROL placeContext]**&#x200B;对象，其中包含用于捕获POI交互和地理位置数据的对象和字段。
    ![架构位置](assets/schema-places-context.png){zoomable="yes"}。
 
 
@@ -325,7 +325,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
 >[!TAB Android]
 
-1. 在Android Studio中，确保[aepsdk-places-android](https://github.com/adobe/aepsdk-places-android)是&#x200B;**[!UICONTROL Android:app]** ChevronDown **** Gradle脚本![中](/help/assets/icons/ChevronDown.svg)build.gradle.kts （模块&#x200B;**[!UICONTROL ）]**&#x200B;的依赖项的一部分。 查看[Gradle](install-sdks.md#gradle)。
+1. 在Android Studio中，确保[aepsdk-places-android](https://github.com/adobe/aepsdk-places-android)是&#x200B;**[!UICONTROL Android:app]** ChevronDown **&#x200B;**&#x200B;Gradle脚本![中](/help/assets/icons/ChevronDown.svg)build.gradle.kts （模块&#x200B;**[!UICONTROL ）]**&#x200B;的依赖项的一部分。 查看[Gradle](install-sdks.md#gradle)。
 1. 在Android Studio项目导航器中导航到&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]**。
 1. 确保`com.adobe.marketing.mobile.Messaging`是导入列表的一部分。
 
@@ -440,7 +440,7 @@ Adobe Experience Platform数据收集位置服务是一种地理位置服务，�
 
 在本教程的Journey Optimizer部分中，您会看到体验事件可用于触发历程(请参阅[推送通知](journey-optimizer-inapp.md)和使用Journey Optimizer的[应用程序内消息传送](journey-optimizer-push.md))。 例如，通常情况下，当用户进入实体商店的地理围栏时，向应用程序用户发送推送通知并促销某些产品。
 
-为您的应用程序实施的地理位置功能正在最大限度地减少代码。 您在标记属性中定义的Places服务、数据元素和规则提供了大多数功能。 或者，您可以使用包含填充的[`Edge.sendEvent`对象的XDM有效负载，通过](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent)[ API（有关详细信息，请参阅](events.md)事件`placeContext`）直接在您的应用程序中实施相同的功能。
+为您的应用程序实施的地理位置功能正在最大限度地减少代码。 您在标记属性中定义的Places服务、数据元素和规则提供了大多数功能。 或者，您可以使用包含填充的[`Edge.sendEvent`对象的XDM有效负载，通过](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) [ API（有关详细信息，请参阅](events.md)事件`placeContext`）直接在您的应用程序中实施相同的功能。
 
 >[!SUCCESS]
 >

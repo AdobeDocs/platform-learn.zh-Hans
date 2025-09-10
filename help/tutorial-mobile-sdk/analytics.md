@@ -193,7 +193,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >自定义字段放在Experience Cloud组织标识符下。
 >
-已将租户名称`_techmarketingdemos`替换为您组织的唯一值。
+>已将租户名称`_techmarketingdemos`替换为您组织的唯一值。
 
 
 
@@ -288,7 +288,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 * 如果设置了&#x200B;**[!UICONTROL a.x._techmarketingdemo.appstatedetails.screenname]** (4) **[!UICONTROL (5)，则您]**&#x200B;用值&#x200B;**[!UICONTROL a.x._techmarketingdemo.appstatedetails.appstatedetails.screenname]** (3)覆盖&#x200B;**[!UICONTROL (1)的值]**&#x200B;应用程序屏幕名称(eVar2)**[!UICONTROL (2)]** (5)。
 
-* 如果设置了&#x200B;**[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **** (10)，则您&#x200B;**[!UICONTROL 将event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7)设置为&#x200B;**[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8)。
+* 如果设置了&#x200B;**[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **&#x200B;**&#x200B;(10)，则您&#x200B;**[!UICONTROL 将event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7)设置为&#x200B;**[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8)。
 
 ![分析处理规则](assets/analytics-processing-rules.png){zoomable="yes"}
 
