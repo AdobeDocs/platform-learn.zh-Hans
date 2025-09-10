@@ -4,7 +4,7 @@ description: Workfront Planning入门
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: bdb5b2c2ae1cb1380c69bc1ef2d12e7d8b6ea05d
+source-git-commit: 42c9c3bbf0958794d5a65c37d4771345c6ff584c
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 1%
@@ -49,7 +49,7 @@ ht-degree: 1%
 
 ![Workfront计划](./images/wfpl3.png)
 
-单击模板&#x200B;**基本营销管理**&#x200B;的&#x200B;**使用模板**。
+单击&#x200B;**将模板**&#x200B;用于模板&#x200B;**基本营销管理**。
 
 ![Workfront计划](./images/wfpl4.png)
 

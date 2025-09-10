@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
-source-git-commit: 4d8952cdd136e9bf3a82fa864de4d51641bcbfd8
+source-git-commit: ceb8d1ca1efdd94d608eca41ec60b6d96cb207ff
 workflow-type: tm+mt
-source-wordcount: '3788'
+source-wordcount: '3787'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 ## 1.1.1.3浏览firefly.adobe.com — 第1阶段
 
-让我们开始探索Adobe Firefly Services。 对于探究，您首先会看到CitiSignal图像生成示例。 CitiSignal设计团队希望生成CitiSignal品牌名称的霓虹版本。 他们希望使用Adobe Firefly Services来做到这一点。
+让我们开始探索Adobe Firefly Services。 对于探索，您首先会看一下CitiSignal图像生成示例。 CitiSignal设计团队希望生成CitiSignal品牌名称的霓虹版本。 他们希望使用Adobe Firefly Services来做到这一点。
 
 要实现这一点，首先需要的是CitiSignal品牌名称的黑白版本，它看起来像这样：
 
@@ -158,7 +158,7 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 
 转到[https://firefly.adobe.com/generate/image](https://firefly.adobe.com/generate/image)。 您应该会看到此内容。 单击&#x200B;**模型**&#x200B;下拉列表。 您会注意到Adobe Firefly Services有3个可用版本：
 
-- Firefly图像3
+- Firefly Image 3
 - Firefly图像4
 - Firefly Image 4 Ultra
 
@@ -168,7 +168,7 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 >
 >Firefly Image 3和Image 4可供使用Adobe Firefly Services的每个人使用，而Firefly Image 4 Ultra需要Firefly Pro许可证。
 
-单击以为此练习选择&#x200B;**Firefly图像3**。
+单击以为此练习选择&#x200B;**Firefly Image 3**。
 
 ![Postman](./images/ffui1a.png)
 
@@ -406,10 +406,10 @@ Firefly Services包括&#x200B;**Firefly API**、**Lightroom API**、**Photoshop 
 在最新版本的Firefly Image Model 4中，提供了几项改进：
 
 - Firefly Image Model 4提供2K分辨率输出，具有增强的定义和细节。
-- Firefly Image Model 4在文本渲染、人类、动物和建筑方面提供了显着改进。
+- Firefly Image Model 4在文本渲染、人类、动物和建筑方面做出了显着改进。
 - Firefly Image Model 4秉承Adobe对IP友好、商业上安全的创新型人工智能的承诺。
 
-Firefly Image Model 4为您提供卓越的人类、动物和详细场景图像，您可以使用Image Model 4 Ultra生成具有超逼真的人际交互、建筑元素和复杂景观的图像&#x200B;。
+Firefly Image Model 4为您提供卓越的人类、动物和详细场景图像，您可以使用图像模型4 Ultra生成具有超逼真的人际交互、建筑元素和复杂景观的图像&#x200B;。
 
 ### 1.1.1.8.1 image4_standard
 
