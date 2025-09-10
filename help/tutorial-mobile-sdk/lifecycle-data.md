@@ -98,7 +98,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 1. 查看[设置说明](assurance.md#connecting-to-a-session)部分以将模拟器或设备连接到Assurance。
 1. 将应用程序发送到后台。 在Assurance UI中检查&#x200B;**[!UICONTROL LifecyclePause]**&#x200B;事件。
-1. 将应用程序置于前台。 在Assurance UI中检查&#x200B;**[!UICONTROL LifecycleResume]**事件。
+1. 将应用程序置于前台。 在Assurance UI中检查&#x200B;**[!UICONTROL LifecycleResume]**&#x200B;事件。
    ![验证生命周期](assets/lifecycle-lifecycle-assurance.png){zoomable="yes"}
 
 
@@ -137,7 +137,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
       ![规则操作配置](assets/rule-action-configuration.png){zoomable="yes"}
 1. 选择&#x200B;**[!UICONTROL 保存到库]**。
    ![规则 — 保存到库](assets/rule-save-to-library.png){zoomable="yes"}
-1. 选择&#x200B;**[!UICONTROL 生成]**以重新生成库。
+1. 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以重新生成库。
    ![规则 — 内部版本](assets/rule-build.png){zoomable="yes"}
 
 成功构建资产后，事件将被发送到Platform Edge Network，并根据您的数据流配置转发到其他应用程序和服务。
