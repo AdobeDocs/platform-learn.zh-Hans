@@ -8,10 +8,10 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
-source-git-commit: 6a6d8dcceead2421c79a0727e18bec97dfe3d9cb
+source-git-commit: 323702d37425b22b0a5270d410e8b000aa0d5434
 workflow-type: tm+mt
-source-wordcount: '78'
-ht-degree: 67%
+source-wordcount: '79'
+ht-degree: 68%
 
 ---
 
@@ -30,8 +30,8 @@ ht-degree: 67%
    + [生命周期数据](lifecycle-data.md)
    + [事件数据](events.md)
    + [WebViews](web-views.md)
-   + [标识](identity.md)
-   + [配置文件](profile.md)
+   + [身份标识](identity.md)
+   + [轮廓](profile.md)
    + [Places](places.md)
 + Experience Cloud{#experience-cloud}
    + [Analytics](analytics.md)
@@ -40,7 +40,8 @@ ht-degree: 67%
       + [推送通知](journey-optimizer-push.md)
       + [应用程序内消息](journey-optimizer-inapp.md)
       + [决策管理](journey-optimizer-offers.md)
-   + [Target](target.md)
+   + [目标](target.md)
    + [Customer Journey Analytics](customer-journey-analytics.md)
+   + [测试](test.md)
 + [结论](conclusion.md)
 
