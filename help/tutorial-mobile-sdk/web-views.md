@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 潜在的跟踪问题
 
-当您从应用程序的本机部分和应用程序内的WebView发送数据时，会生成单独的(Experience Cloud标识)ECID。 这些单独的ECID会导致断开连接的点击以及夸大的访问和访客数据。 有关ECID的详细信息，请参阅[ECID概述](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid)。
+当您从应用程序的本机部分和应用程序内的WebView发送数据时，会生成单独的(Experience Cloud标识)ECID。 这些单独的ECID会导致断开连接的点击以及夸大的访问和访客数据。 有关ECID的详细信息，请参阅[ECID概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/ecid)。
 
 要解决断开连接的点击和夸大的数据，您需要将用户的ECID从应用程序的本机部分传递到您可能要在应用程序中使用的WebView。
 
