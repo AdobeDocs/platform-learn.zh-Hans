@@ -3,7 +3,7 @@ title: 使用Platform Mobile SDK处理WebViews
 description: 了解如何在移动应用程序中通过WebViews处理数据收集。
 jira: KT-14632
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '564'
 ht-degree: 1%
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 ## 潜在的跟踪问题
 
-当您从应用程序的本机部分和应用程序内的WebView发送数据时，会生成单独的(Experience Cloud标识)ECID。 这些单独的ECID会导致断开连接的点击以及夸大的访问和访客数据。 有关ECID的详细信息，请参阅[ECID概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/features/ecid)。
+当您从应用程序的本机部分和应用程序内的WebView发送数据时，会生成单独的(Experience Cloud标识)ECID。 这些单独的ECID会导致断开连接的点击以及夸大的访问和访客数据。 有关ECID的详细信息，请参阅[ECID概述](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid)。
 
 要解决断开连接的点击和夸大的数据，您需要将用户的ECID从应用程序的本机部分传递到您可能要在应用程序中使用的WebView。
 
@@ -110,11 +110,11 @@ Identity.getUrlVariables {
 
 >[!TAB iOS]
 
-<img src="./assets/tou1.png" width="300" /> <img src="./assets/tou2.png" width="300" />
+<img src="./assets/tou1.png" width="300"> <img src="./assets/tou2.png" width="300">
 
 >[!TAB Android]
 
-<img src="./assets/tou1-android.png" width="300" /> <img src="./assets/tou2-android.png" width="300" />
+<img src="./assets/tou1-android.png" width="300"> <img src="./assets/tou2-android.png" width="300">
 
 >[!ENDTABS]
 

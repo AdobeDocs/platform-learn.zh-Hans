@@ -3,7 +3,7 @@ title: 使用Platform Mobile SDK收集用户档案数据
 description: 了解如何在移动应用程序中收集用户档案数据。
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 2%
@@ -122,8 +122,8 @@ ht-degree: 2%
 
    此代码：
 
-   1. 在[`UserProfile.getUserAttributes`数组中调用具有](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)属性名称的`isPaidUser` `attributeNames` API作为单个元素。
-   1. 然后检查`isPaidUser`属性的值，当`yes`时，在 工具栏右上角的<img src="assets/paiduser.png" width="20" />图标。
+   1. 在[`UserProfile.getUserAttributes`数组中调用具有](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)属性名称的`isPaidUser``attributeNames` API作为单个元素。
+   1. 然后检查`isPaidUser`属性的值，当`yes`时，在 工具栏右上角的<img src="assets/paiduser.png" width="20">图标。
 
 >[!TAB Android]
 
@@ -138,8 +138,8 @@ ht-degree: 2%
 
    此代码：
 
-   1. 在[`UserProfile.getUserAttributes`数组中调用具有](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)属性名称的`isPaidUser` `attributeNames` API作为单个元素。
-   1. 然后检查`isPaidUser`属性的值。 当`yes`时，该代码将人员图标替换为 工具栏右上角的<img src="assets/paiduser.png" width="20" />图标。
+   1. 在[`UserProfile.getUserAttributes`数组中调用具有](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)属性名称的`isPaidUser``attributeNames` API作为单个元素。
+   1. 然后检查`isPaidUser`属性的值。 当`yes`时，该代码将人员图标替换为 工具栏右上角的<img src="assets/paiduser.png" width="20">图标。
 
 >[!ENDTABS]
 
@@ -168,7 +168,7 @@ ht-degree: 2%
 1. 在选项卡栏中选择&#x200B;**[!DNL Products]**。
 1. 选择一个产品。
 1. 选择 <img src="assets/saveforlater.png" width="15" />。
-1. 选择 <img src="assets/addtocart.png" width="20" />。
+1. 选择 <img src="assets/addtocart.png" width="20">。
 1. 选择 <img src="assets/purchase.png" width="15" />。
 
    <img src="./assets/mobile-app-events-3.png" width="300">
@@ -193,8 +193,8 @@ ht-degree: 2%
 
 1. 在选项卡栏中选择&#x200B;**[!DNL Products]**。
 1. 选择一个产品。
-1. 选择<img src="assets/heart.png" width="25" />。
-1. 选择 <img src="assets/addtocart.png" width="20" />。
+1. 选择<img src="assets/heart.png" width="25">。
+1. 选择 <img src="assets/addtocart.png" width="20">。
 1. 选择 <img src="assets/purchase.png" width="15" />。
 
    <img src="./assets/mobile-app-events-3-android.png" width="300">
