@@ -35,7 +35,7 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 
 ## 确认访问
 
-确认您的组织有权访问Assurance。 您作为用户，应该被添加到Adobe Experience Platform的配置文件。 有关详细信息，请参阅Assurance指南中的[用户访问权限](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access)。
+确认您的组织有权访问Assurance。 您作为用户，应该被添加到Adobe Experience Platform的配置文件。 有关详细信息，请参阅Assurance指南中的[用户访问权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/assurance/user-access)。
 
 ## 实施
 
