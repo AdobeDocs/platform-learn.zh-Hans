@@ -269,7 +269,7 @@ MobileSDK.shared.removeIdentities(
 返回Assurance：
 
 1. 在Assurance Web界面中检查&#x200B;**[!UICONTROL com.adobe.griffon.mobile]**&#x200B;供应商的&#x200B;**[!UICONTROL Edge标识更新标识]**&#x200B;事件。
-1. 选择事件并查看&#x200B;**[!UICONTROL ACPExtensionEventData]**对象中的数据。 您应该会看到已更新的身份。
+1. 选择事件并查看&#x200B;**[!UICONTROL ACPExtensionEventData]**&#x200B;对象中的数据。 您应该会看到已更新的身份。
    ![验证标识更新](assets/identity-validate-assurance.png){zoomable="yes"}
 
 ## 使用身份图进行验证

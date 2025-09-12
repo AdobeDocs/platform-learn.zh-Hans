@@ -122,7 +122,7 @@ ht-degree: 1%
 
    此代码：
 
-   1. 在[`UserProfile.getUserAttributes`数组中调用具有](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)属性名称的`isPaidUser``attributeNames` API作为单个元素。
+   1. 在[`UserProfile.getUserAttributes`数组中调用具有](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)属性名称的`isPaidUser` `attributeNames` API作为单个元素。
    1. 然后检查`isPaidUser`属性的值，当`yes`时，将徽章放置在右上角工具栏中的![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg)图标上。
 
 >[!TAB Android]
@@ -138,7 +138,7 @@ ht-degree: 1%
 
    此代码：
 
-   1. 在[`UserProfile.getUserAttributes`数组中调用具有](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)属性名称的`isPaidUser``attributeNames` API作为单个元素。
+   1. 在[`UserProfile.getUserAttributes`数组中调用具有](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)属性名称的`isPaidUser` `attributeNames` API作为单个元素。
    1. 然后检查`isPaidUser`属性的值。 当`yes`时，代码将人员图标替换为右上角的工具栏中的徽章图标。
 
 >[!ENDTABS]
