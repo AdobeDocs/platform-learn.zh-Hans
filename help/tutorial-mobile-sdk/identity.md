@@ -4,9 +4,9 @@ description: 了解如何在移动应用程序中收集身份数据。
 feature: Mobile SDK,Identities
 jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '966'
 ht-degree: 1%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 Adobe Experience Platform Identity服务可帮助您更好地了解客户及其行为。 这些服务跨设备和系统桥接身份，并允许您实时提供有影响力的个人数字体验。 身份字段和命名空间是将不同数据源连接在一起的粘合剂，可构建360度实时客户档案。
 
-在文档中了解有关[Identity扩展](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/)和[Identity服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)的更多信息。
+在文档中了解有关[Identity扩展](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/)和[Identity服务](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)的更多信息。
 
 ## 先决条件
 
@@ -35,7 +35,7 @@ Adobe Experience Platform Identity服务可帮助您更好地了解客户及其�
 
 ## 设置自定义身份命名空间
 
-身份命名空间是[身份服务](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)的组件，充当与身份相关的上下文的指示器。 例如，它们将`name@email.com`的值区分为电子邮件地址或`443522`区分为数字CRM ID。
+身份命名空间是[身份服务](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)的组件，充当与身份相关的上下文的指示器。 例如，它们将`name@email.com`的值区分为电子邮件地址或`443522`区分为数字CRM ID。
 
 >[!NOTE]
 >
@@ -179,7 +179,7 @@ Adobe Experience Platform Identity服务可帮助您更好地了解客户及其�
 
 ## 删除身份
 
-您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API从存储的客户端标识映射中删除标识。 Identity扩展停止向Edge Network发送标识符。 使用此API不会从服务器端标识图中删除标识符。 有关身份图的详细信息，请参阅[查看身份图](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/identities/view-identity-graphs)。
+您可以使用[`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API从存储的客户端标识映射中删除标识。 Identity扩展停止向Edge Network发送标识符。 使用此API不会从服务器端标识图中删除标识符。 有关身份图的详细信息，请参阅[查看身份图](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/view-identity-graphs)。
 
 
 >[!BEGINTABS]
@@ -247,6 +247,8 @@ MobileSDK.shared.removeIdentities(
 
 >[!ENDTABS]
 
+在&#x200B;**[!UICONTROL 标识]**&#x200B;屏幕中：
+
 1. 提供电子邮件地址和CRM ID，或者
 1. 选择&#x200B;**[!UICONTROL A |]** (iOS)或&#x200B;**[!UICONTROL 生成随机电子邮件]** (Android)以随机生成&#x200B;**[!UICONTROL 电子邮件]**&#x200B;和&#x200B;**[!UICONTROL CRM ID]**。
 1. 选择&#x200B;**[!UICONTROL 登录]**。
@@ -267,7 +269,7 @@ MobileSDK.shared.removeIdentities(
 返回Assurance：
 
 1. 在Assurance Web界面中检查&#x200B;**[!UICONTROL com.adobe.griffon.mobile]**&#x200B;供应商的&#x200B;**[!UICONTROL Edge标识更新标识]**&#x200B;事件。
-1. 选择事件并查看&#x200B;**[!UICONTROL ACPExtensionEventData]**&#x200B;对象中的数据。 您应该会看到已更新的身份。
+1. 选择事件并查看&#x200B;**[!UICONTROL ACPExtensionEventData]**对象中的数据。 您应该会看到已更新的身份。
    ![验证标识更新](assets/identity-validate-assurance.png){zoomable="yes"}
 
 ## 使用身份图进行验证

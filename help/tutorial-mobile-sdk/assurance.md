@@ -4,7 +4,7 @@ description: 了解如何在移动应用程序中实施Assurance扩展。
 feature: Mobile SDK,Assurance
 jira: KT-14628
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
 source-wordcount: '1660'
 ht-degree: 4%
@@ -35,7 +35,7 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 
 ## 确认访问
 
-确认您的组织有权访问Assurance。 您作为用户，应该被添加到Adobe Experience Platform的配置文件。 有关详细信息，请参阅Assurance指南中的[用户访问权限](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/assurance/user-access)。
+确认您的组织有权访问Assurance。 您作为用户，应该被添加到Adobe Experience Platform的配置文件。 有关详细信息，请参阅Assurance指南中的[用户访问权限](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/user-access)。
 
 ## 实施
 
@@ -105,7 +105,7 @@ Assurance 可帮助您检查 Adobe Experience Platform Mobile SDK 生成的原�
 
 请确保使用&#x200B;_唯一_&#x200B;捆绑标识符并替换`com.adobe.luma.tutorial.swiftui`捆绑标识符，因为每个捆绑标识符必须是唯一的。 通常，您使用反向DNS格式来打包的ID字符串，如`com.organization.brand.uniqueidentifier`。 例如，本教程的完成版本使用`com.adobe.luma.tutorial.swiftui`。
 
-![Xcode签名功能](assets/xcode-signing-capabilities.png){zoomable="yes"}{zoomable="yes"}
+![Xcode签名功能](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 >[!TAB Android]
 

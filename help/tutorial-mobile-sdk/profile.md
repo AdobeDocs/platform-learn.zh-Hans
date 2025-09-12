@@ -3,9 +3,9 @@ title: 使用Platform Mobile SDK收集用户档案数据
 description: 了解如何在移动应用程序中收集用户档案数据。
 jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
-source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
+source-git-commit: 456c5437cec745f667435e97d21edfba1700750a
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '787'
 ht-degree: 1%
 
 ---
@@ -122,7 +122,7 @@ ht-degree: 1%
 
    此代码：
 
-   1. 在[`UserProfile.getUserAttributes`数组中调用具有](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)属性名称的`isPaidUser` `attributeNames` API作为单个元素。
+   1. 在[`UserProfile.getUserAttributes`数组中调用具有](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)属性名称的`isPaidUser``attributeNames` API作为单个元素。
    1. 然后检查`isPaidUser`属性的值，当`yes`时，将徽章放置在右上角工具栏中的![UserCheckedOut](/help/assets/icons/UserCheckedOut.svg)图标上。
 
 >[!TAB Android]
@@ -138,7 +138,7 @@ ht-degree: 1%
 
    此代码：
 
-   1. 在[`UserProfile.getUserAttributes`数组中调用具有](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)属性名称的`isPaidUser` `attributeNames` API作为单个元素。
+   1. 在[`UserProfile.getUserAttributes`数组中调用具有](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes)属性名称的`isPaidUser``attributeNames` API作为单个元素。
    1. 然后检查`isPaidUser`属性的值。 当`yes`时，代码将人员图标替换为右上角的工具栏中的徽章图标。
 
 >[!ENDTABS]
@@ -160,7 +160,7 @@ ht-degree: 1%
 
    <img src="./assets/mobile-app-events-1.png" width="300">
 
-1. 要插入随机电子邮件和客户id，请选择>按钮。
+1. 要插入随机电子邮件和客户ID，请选择&#x200B;**[!UICONTROL A |]**&#x200B;按钮。
 1. 选择&#x200B;**[!UICONTROL 登录]**。
 
    <img src="./assets/mobile-app-events-2.png" width="300">
