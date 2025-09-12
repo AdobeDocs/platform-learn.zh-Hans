@@ -3,9 +3,9 @@ title: 使用Experience Platform Mobile SDK跟踪移动应用程序中的事件�
 description: 了解如何跟踪移动应用程序中的事件数据。
 jira: KT-14631
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
-source-git-commit: 49d8c53d2ba2f9dcecf2470d855ad22f44763f6f
+source-git-commit: 4a0fa85c76c00fd505118692ea4b6cbe410f5839
 workflow-type: tm+mt
-source-wordcount: '1678'
+source-wordcount: '1698'
 ht-degree: 1%
 
 ---
@@ -200,9 +200,9 @@ Edge.sendEvent(productViewEvent, null)
 您的应用程序中有不同的商业产品相关操作，并且您要根据用户执行的以下操作发送事件：
 
 * 视图：在用户查看特定产品时发生，
-* 添加到购物车：用户点击时 产品详细信息屏幕中的<img src="assets/addtocart.png" width="20">，
-* 暂存：用户点击时 <img src="assets/saveforlater.png" width="15" /> / 产品详细信息屏幕中的<img src="assets/heart.png" width="25">，
-* 购买：用户点击时 产品详细信息屏幕中的<img src="assets/purchase.png" width="20">。
+* 添加到购物车：当用户点击产品详细信息屏幕中的![ShoppingCart](/help/assets/icons/ShoppingCart.svg)时，
+* 暂存：当用户点击产品详细信息屏幕中的![心](/help/assets/icons/Heart.svg) / ![ThumbUp](/help/assets/icons/ThumbUp.svg)时，
+* 购买：用户点按![信用卡](/help/assets/icons/CreditCard.svg)产品详细信息屏幕时。
 
 要以可重用方式实施与商业相关的体验事件的发送，请使用专用函数：
 
@@ -249,23 +249,23 @@ Edge.sendEvent(productViewEvent, null)
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```
 
-   1. 对于每个按钮(<img src="assets/saveforlater.png" width="15" />， <img src="assets/addtocart.png" width="20">和 <img src="assets/purchase.png" width="20">)，在`ATTrackingManager.trackingAuthorizationStatus == .authorized`结束位置内添加相关调用：
+   1. 对于工具栏中的每个按钮（![Heart](/help/assets/icons/Heart.svg)、![ShoppingCart](/help/assets/icons/ShoppingCart.svg)和![CreditCard](/help/assets/icons/CreditCard.svg)），在`ATTrackingManager.trackingAuthorizationStatus == .authorized`关闭内添加相关调用：
 
-      1. 对象 <img src="assets/saveforlater.png" width="15" />：
+      1. 对于![心](/help/assets/icons/Heart.svg)：
 
          ```swift
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
          ```
 
-      1. 对象 <img src="assets/addtocart.png" width="20">：
+      1. 对于![ShoppingCart](/help/assets/icons/ShoppingCart.svg)：
 
          ```swift
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
          ```
 
-      1. 对象 <img src="assets/purchase.png" width="20">：
+      1. 对于![信用卡](/help/assets/icons/CreditCard.svg)：
 
          ```swift
          // Send purchase commerce experience event
@@ -308,23 +308,23 @@ Edge.sendEvent(productViewEvent, null)
       MobileSDK.shared.sendCommerceExperienceEvent("productViews", product)
       ```
 
-   1. 对于每个按钮(<img src="assets/heart.png" width="25">， <img src="assets/addtocart.png" width="20">和 <img src="assets/purchase.png" width="20">)，在`scope.launch`的`if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement`中添加相关调用：
+   1. 对于工具栏中的每个按钮（![ThumbUp](/help/assets/icons/ThumbUp.svg)、![ShoppingCart](/help/assets/icons/ShoppingCart.svg)和![CreditCard](/help/assets/icons/CreditCard.svg)），在`scope.launch`的`if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement`中添加相关调用：
 
-      1. 对象 <img src="assets/heart.png" width="25">：
+      1. 对于![ThumbUp](/help/assets/icons/ThumbUp.svg)：
 
          ```kotlin
          // Send saveForLater commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent("saveForLaters", product)
          ```
 
-      1. 对象 <img src="assets/addtocart.png" width="20">：
+      1. 对于![ShoppingCart](/help/assets/icons/ShoppingCart.svg)：
 
          ```kotlin
          // Send productListAdds commerce experience event
          MobileSDK.shared.sendCommerceExperienceEvent("productListAdds", product)
          ```
 
-      1. 对象 <img src="assets/purchase.png" width="20">：
+      1. 对于![信用卡](/help/assets/icons/CreditCard.svg)：
 
          ```kotlin
          // Send purchase commerce experience event
@@ -610,7 +610,7 @@ Edge.sendEvent(event, null)
       * 使用映射设置体验事件，
       * 使用[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API发送体验事件。
 
-1. 导航到&#x200B;**[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B;视图&#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**
+1. 导航到&#x200B;**[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B;视图&#x200B;]**>**[!UICONTROL  LoginSheet.kt ]**
 
    1. 将以下高亮显示的代码添加到&#x200B;**[!UICONTROL Button]** **[!UICONTROL onClick]**&#x200B;事件：
 
@@ -638,9 +638,9 @@ Edge.sendEvent(event, null)
    1. 在选项卡栏中选择&#x200B;**[!UICONTROL Home]**，并验证您是否在Home屏幕中看到&#x200B;**[!UICONTROL ECID]**、**[!UICONTROL 电子邮件]**&#x200B;和&#x200B;**[!UICONTROL CRM ID]**。
    1. 在选项卡栏中选择&#x200B;**[!DNL Products]**。
    1. 选择产品。
-   1. 选择 <img src="assets/saveforlater.png" width="15"> (iOS)或 <img src="assets/heart.png" width="25"> (Android)。
-   1. 选择 <img src="assets/addtocart.png" width="20">。
-   1. 选择 <img src="assets/purchase.png" width="15">。
+   1. 选择![心](/help/assets/icons/Heart.svg) (iOS)或![ThumbUp](/help/assets/icons/ThumbUp.svg) (Android)。
+   1. 选择![购物车添加](/help/assets/icons/ShoppingCart.svg)。
+   1. 选择![信用卡](/help/assets/icons/CreditCard.svg)。
 
 >[!BEGINTABS]
 
