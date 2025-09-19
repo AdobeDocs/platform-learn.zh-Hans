@@ -1,23 +1,25 @@
 ---
-title: 如何配置社交目标
-description: 了解如何在Adobe Experience Platform中配置社交目标，包括身份验证、区段分配、ID映射等。
+title: 配置社交目标
+description: 了解如何在Adobe Real-Time CDP中将受众关联并激活到社交目标。
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
 level: Intermediate
 jira: KT-7206
 thumbnail: 332599.jpg
+last-substantial-update: 2025-09-17T00:00:00Z
+duration: 277
 exl-id: 9ec200e6-8ef9-47f5-98ca-1c1a2da3fb29
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: d53f3faa6ccb71dffbd13f4060ad56c3cc19b5e4
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '58'
 ht-degree: 0%
 
 ---
 
 # 配置社交目标
 
-了解如何在Adobe Experience Platform中配置社交目标，包括身份验证、区段分配、ID映射等。 有关详细信息，请访问[文档](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/overview.html?lang=zh-Hans)。
+了解如何将受众连接并激活到社交目标。 此视频演示了在Adobe Real-Time Customer Data Platform中使用LinkedIn匹配受众目标的工作流。  有关详细信息，请查阅[文档](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/social/overview)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3411783/?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
 
