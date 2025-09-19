@@ -21,5 +21,5 @@ ht-degree: 0%
 
 了解如何将受众连接并激活到社交目标。 此视频演示了在Adobe Real-Time Customer Data Platform中使用LinkedIn匹配受众目标的工作流。  有关详细信息，请查阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/social/overview)。
 
->[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3411783/?learn=on&enablevpops&captions=chi_hans)
 
