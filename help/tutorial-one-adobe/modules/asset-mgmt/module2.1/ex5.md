@@ -4,14 +4,14 @@ description: AEM CS — 高级自定义块
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 457e7d0dec233edf75717fb9930585a3511bdc65
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '998'
 ht-degree: 0%
 
 ---
 
-# 1.1.5高级自定义块
+# 1.1.4高级自定义块
 
 在上一个练习中，您配置了一个名为&#x200B;**光纤选件**&#x200B;的基本自定义块，该块在您的网站上显示&#x200B;**选件文本**、**选件CTA**&#x200B;和&#x200B;**选件图像**&#x200B;等字段。
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-## 1.1.5.1为块设置样式
+## 1.1.4.1为块设置样式
 
 现在您有一个有效的&#x200B;**光纤选件**&#x200B;块，您可以对其应用样式。
 
@@ -106,7 +106,7 @@ export default function decorate(block) {
 
 ![块](./images/blockadv12.png){zoomable="yes"}
 
-现在，在将XXX替换为您的GitHub用户帐户（本示例中为`woutervangeluwe`）之后，您可以通过转到`main--citisignal--XXX.aem.page/us/en/`和/或`main--citisignal--XXX.aem.live/us/en/`查看对您网站的更改。
+现在，在将XXX替换为您的GitHub用户帐户（本示例中为`main--citisignal--XXX.aem.page/us/en/`）之后，您可以通过转到`main--citisignal--XXX.aem.live/us/en/`和/或`woutervangeluwe`查看对您网站的更改。
 
 在此示例中，完整URL将变为：
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
@@ -115,7 +115,7 @@ export default function decorate(block) {
 
 ![块](./images/blockadv13.png){zoomable="yes"}
 
-## 1.1.5.2添加逻辑并从外部端点加载数据
+## 1.1.4.2添加逻辑并从外部端点加载数据
 
 在本练习中，您将对Adobe的Web SDK进行“原始”配置，并向Adobe Journey Optimizer Offer Decisioning请求下一个最佳选件。
 
@@ -336,7 +336,7 @@ async function getOffer(ECID) {
 
 ![块](./images/blockadv19.png){zoomable="yes"}
 
-现在，在将XXX替换为您的GitHub用户帐户（本示例中为`woutervangeluwe`）之后，您可以通过转到`main--citisignal--XXX.aem.page/us/en/`和/或`main--citisignal--XXX.aem.live/us/en/`查看对您网站的更改。
+现在，在将XXX替换为您的GitHub用户帐户（本示例中为`main--citisignal--XXX.aem.page/us/en/`）之后，您可以通过转到`main--citisignal--XXX.aem.live/us/en/`和/或`woutervangeluwe`查看对您网站的更改。
 
 在此示例中，完整URL将变为：
 `https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
@@ -345,7 +345,7 @@ async function getOffer(ECID) {
 
 ![块](./images/blockadv20.png){zoomable="yes"}
 
-下一步：[1.1.6 AEM Edge Delivery Services MarTech插件](./ex6.md){target="_blank"}
+下一步：[AEM Edge Delivery Services MarTech插件](./ex6.md){target="_blank"}
 
 返回[Adobe Experience Manager Cloud Service和Edge Delivery Services](./aemcs.md){target="_blank"}
 

@@ -4,16 +4,16 @@ description: AEM CS — 基本自定义块
 kt: 5342
 doc-type: tutorial
 exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
-source-git-commit: d583df79bff499b7605f77146d52e66bc02810b9
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '814'
+source-wordcount: '812'
 ht-degree: 1%
 
 ---
 
-# 1.1.4开发基本自定义块
+# 1.1.3开发基本自定义块
 
-## 1.1.4.1设置您的本地开发环境
+## 1.1.3.1设置您的本地开发环境
 
 转到[https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}，下载并安装&#x200B;**Github Desktop**。
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 ![块](./images/block7.png){zoomable="yes"}
 
-## 1.1.4.2创建基本自定义块
+## 1.1.3.2创建基本自定义块
 
 Adobe建议您分三步开发块：
 
@@ -145,7 +145,7 @@ Adobe建议您分三步开发块：
 
 ![块](./images/block15.png){zoomable="yes"}
 
-## 1.1.4.3提交更改
+## 1.1.3.3提交更改
 
 现在，您在项目中进行了一些需要提交回GitHub存储库的更改。 为此，请打开&#x200B;**GitHub Desktop**。
 
@@ -169,7 +169,7 @@ Adobe建议您分三步开发块：
 
 ![块](./images/block20.png){zoomable="yes"}
 
-## 1.1.4.4将您的块添加到页面
+## 1.1.3.4将您的块添加到页面
 
 现在，您的基本报价块已定义并提交到CitiSignal项目，您可以向现有页面添加&#x200B;**fiberoffer**&#x200B;块。
 
@@ -249,7 +249,7 @@ Adobe建议您分三步开发块：
 
 您的新页面现已发布。
 
-## 1.1.4.5将您的新页面添加到导航菜单
+## 1.1.3.5将您的新页面添加到导航菜单
 
 在您的AEM Sites概述中，转到&#x200B;**CitiSignal** > **Fragments**，并选中&#x200B;**Header**&#x200B;的复选框。 单击&#x200B;**编辑**。
 
@@ -284,7 +284,7 @@ Adobe建议您分三步开发块：
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-下一步： [1.1.5高级自定义块](./ex5.md){target="_blank"}
+下一步：[高级自定义块](./ex5.md){target="_blank"}
 
 返回[Adobe Experience Manager Cloud Service和Edge Delivery Services](./aemcs.md){target="_blank"}
 

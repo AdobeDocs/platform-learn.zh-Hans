@@ -4,9 +4,9 @@ description: 创建Cloud Manager项目
 kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
-source-git-commit: 7b9df90424c1d8c2fbe7672f00e9b2ce0ec66d19
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '344'
 ht-degree: 3%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 3%
 
 ![AEMCS](./images/aemcs1.png)
 
-对于&#x200B;**计划名称**，请使用`--aepUserLdap-- - CitiSignal`。 选择选项&#x200B;**设置沙盒**。 单击&#x200B;**继续**。
+对于&#x200B;**计划名称**，请使用`--aepUserLdap-- - CitiSignal AEM+ACCS`。 选择选项&#x200B;**设置沙盒**。 单击&#x200B;**继续**。
 
 ![AEMCS](./images/aemcs2.png)
 
@@ -51,8 +51,6 @@ ht-degree: 3%
 创建环境将需要一些时间，即10到20分钟。
 
 ![AEMCS](./images/aemcs4.png)
-
-等待时，您可以开始练习[1.1.2创建基于文档的网站](./ex2.md){target="_blank"}。
 
 创建环境并准备使用后，您将收到一封电子邮件确认，之后您可以返回此处。
 
@@ -88,8 +86,8 @@ ht-degree: 3%
 
 ![AEMCS](./images/aemcsact2.png)
 
-大约10分钟后，将完成&#x200B;**Content Hub**&#x200B;的激活。
-接下来，查看&#x200B;**Dynamic Media**&#x200B;行，并选择&#x200B;**单击以激活**。
+大约10分钟后，将完成&#x200B;**Content Hub**的激活。
+接下来，查看**Dynamic Media**&#x200B;行，并选择&#x200B;**单击以激活**。
 
 ![AEMCS](./images/aemcsact3.png)
 
@@ -107,7 +105,7 @@ ht-degree: 3%
 
 管道运行完成后，您可以继续下一个练习。
 
-下一步： [1.1.2创建基于文档的网站](./ex2.md){target="_blank"}
+下一步：[设置您的AEM CS环境](./ex3.md){target="_blank"}
 
 返回[Adobe Experience Manager Cloud Service和Edge Delivery Services](./aemcs.md){target="_blank"}
 

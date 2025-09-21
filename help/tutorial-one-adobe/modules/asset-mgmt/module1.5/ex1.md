@@ -3,10 +3,10 @@ title: Adobe Commerce as a Cloud Service快速入门
 description: Adobe Commerce as a Cloud Service快速入门
 kt: 5342
 doc-type: tutorial
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
 workflow-type: tm+mt
-source-wordcount: '656'
-ht-degree: 16%
+source-wordcount: '688'
+ht-degree: 15%
 
 ---
 
@@ -100,6 +100,16 @@ ht-degree: 16%
 然后，您应该会看到此消息。 单击&#x200B;**确定**。
 
 ![AEM Assets](./images/accs15.png)
+
+那你就该回到这里来。 单击&#x200B;**CitiSignal**&#x200B;网站以将其打开。
+
+![AEM Assets](./images/accs16.png)
+
+选中此复选框可将此网站设置为默认网站。
+
+单击&#x200B;**保存网站**。
+
+![AEM Assets](./images/accs16a.png)
 
 那你就该回到这里来。
 
