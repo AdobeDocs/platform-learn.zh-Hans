@@ -153,7 +153,7 @@ ZZZ = `citisignal-aem-accs`
 
 您现在需要访问AEM的&#x200B;**CRX包管理器**&#x200B;环境。 为此，请从URL中删除`ui#/aem/aem/start.html?appId=aemshell`并将其替换为`crx/packmgr`，这意味着您的URL现在应如下所示：
 `https://author-p166717-e1786231.adobeaemcloud.com/crx/packmgr`。
-按**Enter**&#x200B;以加载包管理器环境
+按&#x200B;**Enter**&#x200B;以加载包管理器环境
 
 ![AEMCS](./images/aemcssetup22.png)
 
