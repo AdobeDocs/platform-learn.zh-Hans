@@ -20,5 +20,5 @@ ht-degree: 85%
 
 Experimentation 代理为营销人员、分析师和管理员提供洞察、引导式设置和自动分析，从而加速数字优化。
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 

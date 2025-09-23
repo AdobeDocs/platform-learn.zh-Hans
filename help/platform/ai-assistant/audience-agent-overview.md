@@ -19,7 +19,7 @@ ht-degree: 85%
 
 Audience 代理可在各种 B2B/B2C 应用程序中实现对话式创建、优化、洞察和安全集成，从而简化受众管理。
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
+<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
 
 >[!SLIDE](audience-agent-overview)
 
