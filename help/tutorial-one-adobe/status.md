@@ -3,9 +3,9 @@ title: 内容状态
 description: 内容状态
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 28553f8042be7bfc0b553272a6c72e6677fe1cb3
+source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '467'
 ht-degree: 12%
 
 ---
@@ -77,6 +77,13 @@ ht-degree: 12%
 | [1.2 Customer Journey Analytics：使用BigQuery Source Connector在Adobe Experience Platform中摄取和分析Google Analytics数据](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"} | 07/01/2025 | 否 | 源数据的数据准备建模存在问题。 此问题正在等待修复。 |
 | [2.1查询服务](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 04/12/2024 | 是 | - |
 | [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 02/08/2025 | 否 | 正在开发的内容 |
+
+## 6.遗传人工智能
+
+| 名称 | 上次更新 | 工作100% | 备注 |
+| ---------------------- | ------------ | ------------ |------------ |
+| [1.1代理AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 2025年9月23日 | 否 | - |
+| [1.2代理AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 2025年9月23日 | 否 | - |
 
 {style="table-layout:auto"}
 
