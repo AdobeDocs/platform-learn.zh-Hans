@@ -9,16 +9,16 @@ last-substantial-update: 2025-09-23T00:00:00Z
 jira: KT-19110
 hide: true
 hidefromtoc: true
-source-git-commit: 86cb610029defc5e46ab98fd493892fec4a78474
+exl-id: 8089b703-a694-4c0c-86bc-61991edc9b78
+source-git-commit: 12a056d6489d5673b65adc38444f66631506d6c2
 workflow-type: tm+mt
-source-wordcount: '42'
-ht-degree: 85%
+source-wordcount: '51'
+ht-degree: 35%
 
 ---
 
 # 试验代理概述
 
-Experimentation 代理为营销人员、分析师和管理员提供洞察、引导式设置和自动分析，从而加速数字优化。
+试验代理通过面向营销人员、分析人员和管理员的见解、引导设置和自动分析加快数字优化速度。 有关详细信息，请参阅[实验加速器文档](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator)。
 
-<!-- For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/ui-guide#use-discoverability).-->
-
+>[!SLIDE](experimentation-agent-overview)
