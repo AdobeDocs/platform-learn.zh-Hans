@@ -19,6 +19,6 @@ ht-degree: 35%
 
 # 试验代理概述
 
-试验代理通过面向营销人员、分析人员和管理员的见解、引导设置和自动分析加快数字优化速度。 有关详细信息，请参阅[实验加速器文档](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator)。
+试验代理通过面向营销人员、分析人员和管理员的见解、引导设置和自动分析加快数字优化速度。 有关详细信息，请参阅[实验加速器文档](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator)。
 
 >[!SLIDE](experimentation-agent-overview)
