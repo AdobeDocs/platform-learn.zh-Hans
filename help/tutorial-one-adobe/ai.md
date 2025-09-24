@@ -2,7 +2,8 @@
 title: Agentic AI技术实验室概述
 description: Agentic AI技术实验室概述
 doc-type: multipage-overview
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 Agentic AI技术实验室正在进行中，将于2025年11月/12月发布。
 
-## 1.1代理和人工智能快速入门
+[1.1代理和人工智能快速入门](./modules/agentic-ai/module1.1/agenticai.md)
 
 **目标**
 
@@ -37,7 +38,7 @@ Agentic AI技术实验室正在进行中，将于2025年11月/12月发布。
 - MCP服务器， Python笔记本
 - Adobe API的
 
-## 1.2 Agent Collaboration
+[1.2 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
 
 **目标**
 

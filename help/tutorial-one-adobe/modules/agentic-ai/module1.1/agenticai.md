@@ -3,10 +3,11 @@ title: 代理式 AI
 description: 代理式 AI
 kt: 5342
 doc-type: tutorial
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+exl-id: 434e7c16-92ef-4c2f-b958-3549d5150301
+source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
 workflow-type: tm+mt
-source-wordcount: '54'
-ht-degree: 14%
+source-wordcount: '74'
+ht-degree: 10%
 
 ---
 
@@ -14,7 +15,7 @@ ht-degree: 14%
 
 ## 学习目标
 
-- ...
+在本模块中，您将创建自己的代理，并探索构成代理的各种架构元素。
 
 ## 先决条件
 

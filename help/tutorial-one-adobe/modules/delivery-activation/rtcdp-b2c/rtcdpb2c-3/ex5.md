@@ -4,7 +4,7 @@ description: Real-time CDP — 构建受众并采取行动 — 将受众发送�
 kt: 5342
 doc-type: tutorial
 exl-id: 2a9a982b-0ffd-468d-9b71-77224e2c7e1d
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 2%
@@ -75,7 +75,7 @@ Adobe Target可作为Real-Time CDP的目标。 要设置您的Adobe Target集成
 
 ![AT](./images/atdest2.png)
 
-在可用受众列表中，选择您在上一个练习[创建名为`--aepUserLdap-- - Interest in Galaxy S24`的受众](./ex1.md)中创建的受众。 然后，单击&#x200B;**下一步**。
+在可用受众列表中，选择您在上一个练习[创建名为](./ex1.md)的受众`--aepUserLdap-- - Interest in Galaxy S24`中创建的受众。 然后，单击&#x200B;**下一步**。
 
 ![AT](./images/atdest8.png)
 
@@ -146,7 +146,7 @@ Adobe Target可作为Real-Time CDP的目标。 要设置您的Adobe Target集成
 粘贴以下代码。
 
 ```javascript
-<script>document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Image > img").src="https://tech-insiders.s3.us-west-2.amazonaws.com/citisignal-new-hero.png"; document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > h1").innerHTML="Hi there ";
+<script>document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Image > img").src="https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/citisignal-new-hero.png"; document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > h1").innerHTML="Hi there ";
 document.querySelector("#SpectrumProvider > div.App > div > div.Page.home > main > div.Banner.Banner--alignment-right.Banner--verticalAlignment-middle.main-banner > div.Banner__content > div > div > div > div > p").innerHTML="What about 10% off of your next Galaxy S24 smartphone?";
 </script>
 ```

@@ -4,9 +4,9 @@ description: 设置您的AEM CS环境
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 7537cd4d4ca6bc25afcb8f61a736498b0c297850
+source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ ZZZ = `citisignal-aem-accs`
 
 文件`fstab.yaml`现已更新。
 
-## 1.1.2.3上传CitiSignal资产
+## 1.1.2.3上传CitiSignal资产和站点
 
 转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 单击您的&#x200B;**程序**&#x200B;以将其打开。
 
@@ -153,7 +153,7 @@ ZZZ = `citisignal-aem-accs`
 
 您现在需要访问AEM的&#x200B;**CRX包管理器**&#x200B;环境。 为此，请从URL中删除`ui#/aem/aem/start.html?appId=aemshell`并将其替换为`crx/packmgr`，这意味着您的URL现在应如下所示：
 `https://author-p166717-e1786231.adobeaemcloud.com/crx/packmgr`。
-按&#x200B;**Enter**&#x200B;以加载包管理器环境
+按**Enter**&#x200B;以加载包管理器环境
 
 ![AEMCS](./images/aemcssetup22.png)
 
@@ -163,11 +163,11 @@ ZZZ = `citisignal-aem-accs`
 
 单击&#x200B;**浏览**&#x200B;以查找要上载的包。
 
-要上传的包名为&#x200B;**citisignal-assets.zip**，可从此处下载： [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}。
+要上传的包名为&#x200B;**citisignal-assets.zip**，可从此处下载： [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal_aem_accs.zip){target="_blank"}。
 
 ![AEMCS](./images/aemcssetup23.png)
 
-选择包并单击&#x200B;**打开**。
+选择包`citisignal_aem_accs.zip`并单击&#x200B;**打开**。
 
 ![AEMCS](./images/aemcssetup24.png)
 
@@ -175,11 +175,7 @@ ZZZ = `citisignal-aem-accs`
 
 ![AEMCS](./images/aemcssetup25.png)
 
-随后将上传包。
-
-![AEMCS](./images/aemcssetup26.png)
-
-接下来，在刚刚上传的包上单击&#x200B;**安装**。
+随后将上传包。 接下来，在刚刚上传的包上单击&#x200B;**安装**。
 
 ![AEMCS](./images/aemcssetup27.png)
 
@@ -229,61 +225,66 @@ ZZZ = `citisignal-aem-accs`
 
 您的资产现已发布。
 
-## 1.1.2.5创建CitiSignal网站
+## 1.1.2.5发布CitiSignal网站
 
-转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 单击您的&#x200B;**程序**&#x200B;以将其打开。
+单击屏幕左上角的&#x200B;**Adobe Experience Manager**&#x200B;产品名称，然后单击&#x200B;**Assets**&#x200B;旁边的&#x200B;**箭头**。
 
-![AEMCS](./images/aemcs6.png)
+![AEMCS](./images/aemcssetup30a.png)
 
-接下来，单击创作环境的URL。
-
-![AEMCS](./images/aemcssetup18.png)
-
-单击&#x200B;**使用Adobe登录**。
-
-![AEMCS](./images/aemcssetup19.png)
-
-然后，您将看到创作环境。 单击&#x200B;**站点**。
+接下来，单击&#x200B;**站点**。
 
 ![AEMCS](./images/aemcssetup30.png)
 
-单击&#x200B;**创建**，然后单击&#x200B;**从模板创建站点**。
+然后，您应该会看到之前安装包之后创建的&#x200B;**CitiSignal**&#x200B;网站。
 
 ![AEMCS](./images/aemcssetup31.png)
 
-单击&#x200B;**导入**。
+要将您的站点链接到之前创建的GitHub存储库，您需要创建&#x200B;**Edge Delivery Services配置**。
+
+要执行此操作，第一步是创建&#x200B;**云配置**。
+
+为此，请单击屏幕左上角的&#x200B;**Adobe Experience Manager**&#x200B;产品名称，然后单击&#x200B;**工具**&#x200B;图标，然后选择&#x200B;**常规**。 单击以打开&#x200B;**配置浏览器**。
+
+![AEMCS](./images/aemcssetup31a.png)
+
+您应该会看到此内容。 单击&#x200B;**创建**
+
+![AEMCS](./images/aemcssetup31b.png)
+
+将字段&#x200B;**标题**&#x200B;和&#x200B;**名称**&#x200B;设置为`CitiSignal`。 启用&#x200B;**云配置**&#x200B;的复选框。
+
+单击&#x200B;**创建**。
+
+![AEMCS](./images/aemcssetup31c.png)
+
+然后您应该拥有此项。
+
+![AEMCS](./images/aemcssetup31d.png)
+
+接下来，您需要更新刚刚创建的&#x200B;**云配置**&#x200B;的某些字段。
+
+为此，请单击屏幕左上角的&#x200B;**Adobe Experience Manager**&#x200B;产品名称，然后单击&#x200B;**工具**&#x200B;图标，然后选择&#x200B;**云服务**。 单击以打开&#x200B;**Edge Delivery Services配置**。
 
 ![AEMCS](./images/aemcssetup32.png)
 
-您现在需要为站点导入预配置的模板。 您可以在[此处](./../../../assets/aem/citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip){target="_blank"}下载模板。 将文件保存到桌面。
+选择&#x200B;**CitiSignal**，单击&#x200B;**创建**&#x200B;并选择&#x200B;**配置**。
 
-接下来，选择文件`citisignal-aem-sites-commerce-with-edge-delivery-services-template-0.4.0.zip`并单击&#x200B;**打开**。
+![AEMCS](./images/aemcssetup31e.png)
+
+您现在需要填写字段&#x200B;**组织**&#x200B;和&#x200B;**站点名称**。 为此，请首先查看GitHub存储库的URL。
+
+![AEMCS](./images/aemcssetup31f.png)
+
+- **组织**：使用您的GitHub组织名称的名称，在此示例中为`woutervangeluwe`
+- **站点名称**：使用GitHub存储库的名称，该名称应为`citisignal-aem-accs`。
+
+单击&#x200B;**保存并关闭**。
 
 ![AEMCS](./images/aemcssetup33.png)
 
-你会看到这个。 单击选择您刚刚上传的模板，然后单击&#x200B;**下一步**。
+然后您应该拥有此项。 启用新创建的Edge云配置前面的复选框，然后单击&#x200B;**发布**。
 
 ![AEMCS](./images/aemcssetup34.png)
-
-您现在需要填写一些详细信息。
-
-- 网站标题：使用&#x200B;**CitiSignal**
-- 站点名称：使用&#x200B;**CitiSignal**
-- GitHub URL：复制您之前使用的GitHub存储库的URL
-
-![AEMCS](./images/aemcssetup35.png)
-
-你就能拥有这个了。 单击&#x200B;**创建**。
-
-![AEMCS](./images/aemcssetup36.png)
-
-正在创建您的站点。 这可能需要几分钟的时间。 单击&#x200B;**确定**。
-
-![AEMCS](./images/aemcssetup37.png)
-
-几分钟后刷新屏幕，您随后将看到新创建的CitiSignal网站。
-
-![AEMCS](./images/aemcssetup38.png)
 
 ## 1.1.2.6更新文件路径.json
 
@@ -308,6 +309,10 @@ ZZZ = `citisignal-aem-accs`
 文件`paths.json`现已更新。
 
 ## 1.1.2.7发布CitiSignal网站
+
+单击屏幕左上角的&#x200B;**Adobe Experience Manager**&#x200B;产品名称，然后选择&#x200B;**站点**。
+
+![AEMCS](./images/aemcssetup38.png)
 
 接下来，单击&#x200B;**CitiSignal**&#x200B;前面的复选框。 然后，单击&#x200B;**管理发布**。
 
@@ -364,7 +369,7 @@ ZZZ = `citisignal-aem-accs`
 
 ![AEMCS](./images/aemcssetup50.png)
 
-下一步：[开发自定义块](./ex4.md){target="_blank"}
+下一步：[开发自定义块](./ex3.md){target="_blank"}
 
 返回[Adobe Experience Manager Cloud Service和Edge Delivery Services](./aemcs.md){target="_blank"}
 
