@@ -16,6 +16,6 @@ ht-degree: 4%
 
 # Adobe Experience Platform Agent Orchestrator概述
 
-Agent Orchestrator是Adobe Experience Platform中的代理层，通过专门构建的代理、高级推理引擎和强大的对话界面，为客户体验编排提供支持。 有关详细信息，请参阅[Agent Orchestrator文档](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)。
+Agent Orchestrator是Adobe Experience Platform中的代理层，通过专门构建的代理、高级推理引擎和强大的对话界面，为客户体验编排提供支持。 有关详细信息，请参阅[Agent Orchestrator文档](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/agent-orchestrator)。
 
 >[!SLIDE](agent-orchestrator-overview)
