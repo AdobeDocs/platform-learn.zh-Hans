@@ -7,10 +7,8 @@ role: User, Developer, Leader, Admin
 level: Beginner
 last-substantial-update: 2025-09-23T00:00:00Z
 jira: KT-19110
-hide: true
-hidefromtoc: true
 exl-id: 8089b703-a694-4c0c-86bc-61991edc9b78
-source-git-commit: 12a056d6489d5673b65adc38444f66631506d6c2
+source-git-commit: 4c0fdd180d52c5c92f306ee1a40864505ee8102d
 workflow-type: tm+mt
 source-wordcount: '51'
 ht-degree: 35%
@@ -19,6 +17,6 @@ ht-degree: 35%
 
 # 试验代理概述
 
-试验代理通过面向营销人员、分析人员和管理员的见解、引导设置和自动分析加快数字优化速度。 有关详细信息，请参阅[实验加速器文档](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator)。
+试验代理通过面向营销人员、分析人员和管理员的见解、引导设置和自动分析加快数字优化速度。 有关详细信息，请参阅[实验加速器文档](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/experiment/experiment-accelerator)。
 
 >[!SLIDE](experimentation-agent-overview)
