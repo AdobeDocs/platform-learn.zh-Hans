@@ -3,10 +3,11 @@ title: Adobe Commerce as a Cloud Service快速入门
 description: Adobe Commerce as a Cloud Service快速入门
 kt: 5342
 doc-type: tutorial
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+exl-id: 8603c8e2-c3ba-4976-9703-cef9e63924b8
+source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
 workflow-type: tm+mt
-source-wordcount: '688'
-ht-degree: 15%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -181,7 +182,7 @@ ht-degree: 15%
 
 ![AEM Assets](./images/accs30.png)
 
-在所有3列中使用名称`1TB`配置第三个选项，然后再次单击&#x200B;**添加选项**。
+在所有3列中使用名称`1TB`配置第三个选项。
 
 ![AEM Assets](./images/accs31.png)
 
@@ -234,7 +235,7 @@ ht-degree: 15%
 
 ![AEM Assets](./images/accs42.png)
 
-单击&#x200B;**保存**。
+将每个产品的&#x200B;**数量**&#x200B;设置为`10000`。 单击&#x200B;**保存**。
 
 ![AEM Assets](./images/accs43.png)
 
@@ -255,7 +256,6 @@ ht-degree: 15%
 您现在可以在产品目录中看到产品&#x200B;**iPhone Air**&#x200B;及其变体。
 
 ![AEM Assets](./images/accs47.png)
-
 
 下一步：[将ACCS连接到AEM Sites CS/EDS店面](./ex2.md){target="_blank"}
 
