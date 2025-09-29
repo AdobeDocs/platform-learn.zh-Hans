@@ -19,4 +19,4 @@ ht-degree: 1%
 
 了解如何使用Adobe Experience Platform的查询服务验证数据是否已成功引入datalake。 有关详细的产品文档，请参阅[查询编辑器用户界面指南](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3445687?learn=on&enablevpops&captions=chi_hans)

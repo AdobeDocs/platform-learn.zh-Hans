@@ -19,4 +19,4 @@ ht-degree: 0%
 
 此视频分享有关在查询编辑器界面、PSQL客户端、商业智能(BI)解决方案和HTTP API中运行查询的提示和最佳实践。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)。
 
->[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33586?learn=on&enablevpops&captions=chi_hans)
