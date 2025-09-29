@@ -1,21 +1,21 @@
 ---
-title: 准备数据
-description: 了解如何清理、准备和合并来自多个数据集的数据，以使用CTAS(Create Table AS)和Spark SQL函数创建新的数据集以用于报告和仪表板。
+title: 使用数据Distiller获取数据
+description: 了解数据工程师如何使用查询服务来转换数据和输出新数据集。 按计划运行这些查询，以推动自动功能板和分段。
 feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-8005
-thumbnail: 333699.jpg
+last-substantial-update: 2025-09-23T00:00:00Z
 exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 1712f2b22b8042e0cf96e619ca1a2e99e5368a18
 workflow-type: tm+mt
-source-wordcount: '72'
-ht-degree: 6%
+source-wordcount: '76'
+ht-degree: 0%
 
 ---
 
-# 准备数据
+# 使用数据Distiller获取数据
 
-了解如何清理、准备和合并来自多个数据集的数据，以使用CTAS(Create Table AS)和Spark SQL函数创建新的数据集以用于报告和仪表板。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/docs/experience-platform/query/home.html?lang=zh-Hans)。
+了解数据工程师如何使用查询服务来转换数据和输出新数据集。 按计划运行这些查询，以推动自动功能板和分段。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3414065?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
