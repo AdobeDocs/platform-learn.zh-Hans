@@ -18,4 +18,4 @@ ht-degree: 0%
 
 了解数据工程师如何使用查询服务来转换数据和输出新数据集。 按计划运行这些查询，以推动自动功能板和分段。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)。
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3414065?learn=on&enablevpops&captions=chi_hans)

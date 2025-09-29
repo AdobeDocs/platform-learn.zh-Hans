@@ -20,4 +20,4 @@ ht-degree: 0%
 
 容量和流监控仪表板为企业提供了对平台使用情况的查看和控制能力。 它们有助于分配吞吐量、检测峰值或未得到充分利用，并实时提供性能分析，从而实施主动决策和警报以防止过载并确保关键服务保持稳定。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475272/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475283/?learn=on&enablevpops&captions=chi_hans)
