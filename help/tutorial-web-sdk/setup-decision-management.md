@@ -175,7 +175,7 @@ Adobe Journey Optimizer当前不支持基于事件的优惠。 如果您基于�
 1. 创建投放位置后，该投放位置将显示在投放位置列表中。
 1. 选择包含新版面的行并记下版面ID，因为这对于在决策范围内进行配置可能很有必要。
 
-   ![查看版面ID ](assets/decisioning-placement-id.png)
+   ![查看版面ID &#x200B;](assets/decisioning-placement-id.png)
 
 ### 忠诚度状态的决策规则
 

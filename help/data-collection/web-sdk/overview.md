@@ -24,7 +24,7 @@ ht-degree: 41%
 
 >[!NOTE]
 >
->此视频摘自Adobe Summit 2020会话&#x200B;*[Meet Alloy.js and Never Tag for a eVar或Mbox Again ](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*。
+>此视频摘自Adobe Summit 2020会话&#x200B;*[Meet Alloy.js and Never Tag for a eVar或Mbox Again &#x200B;](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*。
 >
 >本视频中讨论的服务器端转发功能现在向所有许可客户公开提供。 请参阅[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)
 

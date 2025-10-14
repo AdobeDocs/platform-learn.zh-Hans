@@ -16,7 +16,7 @@ ht-degree: 4%
 
 ## 幻灯片组
 
-本文档可帮助您熟悉此引导营的概念以及内容供应链。 但是，始终有一些我们想展示但无法再包含的内容。 您可以在[后面的幻灯片组](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&amp;csf=1&amp;web=1&amp;e=57aFUU)以及我们的[可能演示的艺术](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen)中找到此信息。
+本文档可帮助您熟悉此引导营的概念以及内容供应链。 但是，始终有一些我们想展示但无法再包含的内容。 您可以在[后面的幻灯片组](https://adobe.sharepoint.com/:p:/r/sites/SWEnterpriseMarketingTeam/Shared%20Documents/Bootcamps/Content%20Supply%20Chain%20Bootcamp/Experience%20Makers%20Content%20Supply%20Chain%20Slide%20Deck.pptx?d=w1a3787d39c3a43ab941cfd0069f8383a&csf=1&web=1&e=57aFUU)以及我们的[可能演示的艺术](https://xd.adobe.com/view/45ea642f-69fb-4bbe-bba6-6915a3709a6d-10b9/?fullscreen)中找到此信息。
 
 ## 认识阿多比克
 

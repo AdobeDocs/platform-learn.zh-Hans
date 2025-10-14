@@ -610,7 +610,7 @@ Edge.sendEvent(event, null)
       * 使用映射设置体验事件，
       * 使用[`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API发送体验事件。
 
-1. 导航到&#x200B;**[!UICONTROL Android]** ![ChevronDown ](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B;视图&#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**
+1. 导航到&#x200B;**[!UICONTROL Android]** ![ChevronDown &#x200B;](/help/assets/icons/ChevronDown.svg)**[!DNL app]**>**[!DNL kotlin+java]**>**[!DNL com.adobe.luma.tutorial.android]**>**[!UICONTROL &#x200B;视图&#x200B;]**>**[!UICONTROL &#x200B; LoginSheet.kt &#x200B;]**
 
    1. 将以下高亮显示的代码添加到&#x200B;**[!UICONTROL Button]** **[!UICONTROL onClick]**&#x200B;事件：
 

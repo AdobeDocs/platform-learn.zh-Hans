@@ -385,7 +385,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    ![Analytics产品字符串](assets/analytics-debugger-prodstring.png)
 
-   Edge跟踪对`commerce`事件的处理方式与`productList`维度略有不同。 您不会看到上下文数据变量以与看到映射到上述`[!UICONTROL c.a.x.productlistitem.[0].name]`的产品名称相同的方式进行映射。 Edge跟踪反而会在Analytics `event`变量中显示最终事件自动映射。 Platform Edge Network会相应地映射该架构，只要您在`commerce`为Adobe Analytics配置架构时[映射到适当的XDM ](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)变量；在本例中为`commerce.productViews.value=1`。
+   Edge跟踪对`commerce`事件的处理方式与`productList`维度略有不同。 您不会看到上下文数据变量以与看到映射到上述`[!UICONTROL c.a.x.productlistitem.[0].name]`的产品名称相同的方式进行映射。 Edge跟踪反而会在Analytics `event`变量中显示最终事件自动映射。 Platform Edge Network会相应地映射该架构，只要您在`commerce`为Adobe Analytics配置架构时[映射到适当的XDM &#x200B;](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)变量；在本例中为`commerce.productViews.value=1`。
 
 1. 返回Experience Platform Debugger窗口，向下滚动到`[!UICONTROL events]`变量，该变量设置为`[!UICONTROL prodView]`
 
