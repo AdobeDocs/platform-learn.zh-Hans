@@ -24,4 +24,4 @@ ht-degree: 61%
 
 >[!NOTE]
 >
->此视频摘自Adobe Summit 2020会话&#x200B;*[Meet Alloy.js and Never Tag for a eVar或Mbox Again &#x200B;](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*。
+>此视频摘自Adobe Summit 2020会话&#x200B;*[Meet Alloy.js and Never Tag for a eVar或Mbox Again &#x200B;](https://business.adobe.com/cn/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*。

@@ -52,7 +52,7 @@ _Source：_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/
 
 理想情况下，您的营销团队应使用工作管理解决方案，该解决方案允许跨职能协作，并将项目与规划的、数据驱动的结果相关联。 它还应使营销团队从战略角度确定工作的优先级，并向您的创意团队宣布这些优先级。 从那里，创意摘要、内容版本和反馈应在每个项目中捆绑在一起，以便您的团队不必搜索旧电子邮件来查找他们要查找的内容。
 
-您的创意团队应使用[出色的数字资产管理](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html) [系统](https://business.adobe.com/products/experience-manager/assets/digital-asset-management.html)进行设置，该系统已与您的创意和工作管理工具集成。 这样，他们就可以轻松地查找、使用、更新相关资产或重新设定其用途。 通过执行所有这些操作，您可以提高上市速度并简化内部操作和流程。
+您的创意团队应使用[出色的数字资产管理](https://business.adobe.com/cn/products/experience-manager/assets/digital-asset-management.html) [(DAM)](https://business.adobe.com/cn/products/experience-manager/assets/digital-asset-management.html) [系统](https://business.adobe.com/cn/products/experience-manager/assets/digital-asset-management.html)进行设置，该系统已与您的创意和工作管理工具集成。 这样，他们就可以轻松地查找、使用、更新相关资产或重新设定其用途。 通过执行所有这些操作，您可以提高上市速度并简化内部操作和流程。
 
 ### 通过无缝工作流提高生产效率
 
@@ -70,9 +70,9 @@ _Source：_ [_Deloitte Digital_](https://www2.deloitte.com/content/dam/Deloitte/
 
 ## 在Adobe，我们正在构建一流的内容供应链
 
-我们自己的[Adobe Experience Cloud业务](https://business.adobe.com/)专注于执行之前概述的步骤，以使我们的营销活动得以实施并支持多个区段。 我们的愿景一直是，根据我们的营销活动框架和消息传递在全球范围内提供引人注目的内容。
+我们自己的[Adobe Experience Cloud业务](https://business.adobe.com/cn/)专注于执行之前概述的步骤，以使我们的营销活动得以实施并支持多个区段。 我们的愿景一直是，根据我们的营销活动框架和消息传递在全球范围内提供引人注目的内容。
 
-我们的端到端内容创建过程的关键是[Adobe Workfront](https://business.adobe.com/products/workfront/main.html)与[Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html)的配对。 让我们看一下我们如何通过这三个高级别阶段来处理我们的流程。
+我们的端到端内容创建过程的关键是[Adobe Workfront](https://business.adobe.com/cn/products/workfront/main.html)与[Adobe Experience Manager Assets](https://business.adobe.com/cn/products/experience-manager/assets/aem-assets.html)的配对。 让我们看一下我们如何通过这三个高级别阶段来处理我们的流程。
 
 我们从&#x200B;**规划**&#x200B;开始，在此过程中，我们从整个业务中接收了数百个内容请求，然后根据季度优先级对它们进行优先级排序。 然后，我们使用Workfront中的内容计划仪表板来提供透明度，以便我们能够与利益相关者保持一致，并快速获得营销、创意、Web和销售团队的认可。 这样，我们就可以创建季度承诺投入的资源的记录，同时还可以让创意和Web团队了解总请求量，以便他们能够规划资源配置。 此外，管理人员可以轻松监控团队的工作负载。
 

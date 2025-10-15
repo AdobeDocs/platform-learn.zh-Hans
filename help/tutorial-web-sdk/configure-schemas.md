@@ -51,7 +51,7 @@ Platform Web SDK使用您的架构来标准化Web事件数据，将其发送到P
 
 如果所有处理订单的企业都决定以一致的方式为订单数据建模，并采用业内通用的术语，那么奇迹般的事情可能就会开始发生。 信息可以在您的组织内外的交流更加流畅，而不是不断地解释和翻译数据（ prop和evar ，任何人？ ）。 机器学习可以更轻松地了解数据&#x200B;_的含义_&#x200B;并提供可操作分析。 用于呈现相关数据的用户界面可以变得更加直观。 您的数据可以与遵循相同建模的合作伙伴和供应商无缝集成。
 
-这是Adobe的[体验数据模型](https://business.adobe.com/products/experience-platform/experience-data-model.html)的目标。 XDM为行业中常见的数据提供规范性建模，同时允许您扩展模型以满足特定需求。 Adobe Experience Platform是围绕XDM构建的，因此，发送到Experience Platform的数据需要位于XDM中。 您无需考虑在将数据发送到Experience Platform之前可以在何处以及如何将当前数据模型转换为XDM，而是可以考虑在整个组织中更普遍地采用XDM，以便几乎不需要进行翻译。
+这是Adobe的[体验数据模型](https://business.adobe.com/cn/products/experience-platform/experience-data-model.html)的目标。 XDM为行业中常见的数据提供规范性建模，同时允许您扩展模型以满足特定需求。 Adobe Experience Platform是围绕XDM构建的，因此，发送到Experience Platform的数据需要位于XDM中。 您无需考虑在将数据发送到Experience Platform之前可以在何处以及如何将当前数据模型转换为XDM，而是可以考虑在整个组织中更普遍地采用XDM，以便几乎不需要进行翻译。
 
 
 >[!NOTE]
