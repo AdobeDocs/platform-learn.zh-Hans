@@ -20,4 +20,4 @@ ht-degree: 0%
 
 了解如何在Adobe Experience Platform中设置AI Assistant的访问权限。 有关详细信息，请参阅[访问Experience Platform中的AI助手](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/access)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3436470/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475929/?captions=chi_hans&learn=on&enablevpops)

@@ -22,5 +22,5 @@ ht-degree: 0%
 
 有关详细信息，请访问[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/cloud-storage/azure-blob)。
 
->[!VIDEO](https://video.tv.adobe.com/v/331082/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346815/?captions=chi_hans&learn=on&enablevpops)
 

@@ -20,4 +20,4 @@ ht-degree: 45%
 
 Experience Platform 联合受众构成为 Adobe Real-Time CDP 和 Adobe Journey Optimizer 用户提供了数据管理的灵活性和高效性。利用联合受众合成，您可以使用对营销人员友好的UI访问企业数据仓库，以构建受众并利用Adobe Experience Platform工作流中的数据集，而无需将数据仓库中的所有数据导入Experience Platform。
 
->[!VIDEO](https://video.tv.adobe.com/v/3432261/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450896/?captions=chi_hans&learn=on&enablevpops)

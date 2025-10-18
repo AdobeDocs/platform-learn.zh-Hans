@@ -38,7 +38,7 @@ ht-degree: 8%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="访问AI助手" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="访问AI助手"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475929/?captions=chi_hans&format=jpeg&nocache=1748392732990" alt="访问AI助手"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ AI Assistant是一种学习新产品或快速获得熟悉产品答案的有用�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="使用AI助手缩短上线时间" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="使用AI助手缩短上线时间"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475940/?captions=chi_hans&format=jpeg&nocache=1748392735030" alt="使用AI助手缩短上线时间"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

@@ -290,7 +290,7 @@ ht-degree: 16%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/overview-of-federated-audience-composition.md" title="联合受众构成概述" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3432261/?format=jpeg&nocache=1740173579477" alt="联合受众构成概述"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3450896/?captions=chi_hans&format=jpeg&nocache=1740173579477" alt="联合受众构成概述"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -313,7 +313,7 @@ ht-degree: 16%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="fac/connect-and-configure-federated-audience-composition.md" title="连接和配置联合受众组合" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3433246/?format=jpeg&nocache=1740173579488" alt="连接和配置联合受众组合"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451566/?captions=chi_hans&format=jpeg&nocache=1740173579488" alt="连接和配置联合受众组合"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

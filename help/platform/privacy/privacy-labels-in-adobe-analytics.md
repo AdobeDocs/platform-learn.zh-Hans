@@ -18,4 +18,4 @@ ht-degree: 1%
 
 了解将数据隐私标签添加到Analytics变量的过程，包括划分每个标签类型的含义以及何时使用它们。 有关详细信息，请访问[隐私服务文档](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/336077?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3450672?captions=chi_hans&learn=on&enablevpops)
