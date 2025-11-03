@@ -69,7 +69,7 @@ ht-degree: 0%
 >
 >根据您选择的学习路径，您可能无权访问Photoshop Services API。 只有当您位于学习路径&#x200B;**Firefly**、**Workfront Fusion**、**ALL**&#x200B;上或参加&#x200B;**现场研讨会**&#x200B;时，您才有权访问Photoshop Services API。 如果您未按照以下学习路径之一进行学习，则可以跳过此步骤。
 >
-选择&#x200B;**+添加到项目**，然后选择&#x200B;**API**。
+>选择&#x200B;**+添加到项目**，然后选择&#x200B;**API**。
 
 ![Azure存储](./images/ps2.png)
 
