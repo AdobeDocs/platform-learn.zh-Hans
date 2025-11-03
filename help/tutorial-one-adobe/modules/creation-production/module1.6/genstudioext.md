@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2860dcb7-4f7a-4b48-93d4-141cd7f4899e
-source-git-commit: fe162f285d67cc2a37736f80715a5c5717835e95
+source-git-commit: 6b93c7ed76ef38dda8903d63f4800a98f4e46e1d
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '340'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,16 @@ GenStudio for Performance Marketing加载项是您创建的Adobe App Builder应�
 - 对Adobe GenStudio for Performance Marketing的访问权限
 - 对App Builder的访问权限
 - 访问Amazon AWS S3存储段
+
+## 视频
+
+在本视频中，您将获得本练习涉及的所有步骤的解释和演示。
+
+>[!NOTE]
+>
+>此视频还没有音频。 音频可用后，将上传新版本。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476498?quality=12&learn=on)
 
 ## 练习
 
