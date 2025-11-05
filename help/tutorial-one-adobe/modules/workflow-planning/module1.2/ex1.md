@@ -4,7 +4,7 @@ description: Workfront快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
-source-git-commit: a63c01ebe81df39569981d62b85d0461119ecf66
+source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
 workflow-type: tm+mt
 source-wordcount: '1099'
 ht-degree: 1%
@@ -109,7 +109,7 @@ ht-degree: 1%
 
 ![WF](./images/wfbaem3a.png)
 
-命名您的文件夹`--aepUserLdap-- - CitiSignal Fiber Launch Assets`，然后单击&#x200B;**创建**。
+命名您的文件夹`--aepUserLdap-- - CitiSignal Fiber Campaign`，然后单击&#x200B;**创建**。
 
 ![WF](./images/wfbaem4.png)
 
@@ -161,7 +161,7 @@ ht-degree: 1%
 
 ![WF](./images/wfbaem11a.png)
 
-你将再次看到此弹出窗口。 在搜索字段中，输入`wm:document`，然后选择字段&#x200B;**项目ID**。 单击&#x200B;**选择**。
+你将再次看到此弹出窗口。 在搜索字段中，输入`wm:document`，然后选择字段&#x200B;**文档状态**。 单击&#x200B;**选择**。
 
 ![WF](./images/wfbaem101.png)
 
@@ -173,7 +173,7 @@ ht-degree: 1%
 
 ![WF](./images/wfbaem103.png)
 
-你将再次看到此弹出窗口。 在搜索字段中，输入`wm:document`，然后选择字段&#x200B;**项目ID**。 单击&#x200B;**选择**。
+你将再次看到此弹出窗口。 在搜索字段中，输入`wm:document`，然后选择字段&#x200B;**文档名称**。 单击&#x200B;**选择**。
 
 ![WF](./images/wfbaem104.png)
 
@@ -221,7 +221,7 @@ ht-degree: 1%
 
 ![WF](./images/wfbaem15.png)
 
-选择您的文件夹，该文件夹应命名为`--aepUserLdap-- - CitiSignal Fiber Launch Assets`。 单击&#x200B;**分配**。
+选择您的文件夹，该文件夹应命名为`--aepUserLdap-- - CitiSignal Fiber Campaign`。 单击&#x200B;**分配**。
 
 ![WF](./images/wfbaem16.png)
 
