@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 1d1ee3462bd890556037c8e24ba2fe94c3423187
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '1981'
+source-wordcount: '1983'
 ht-degree: 1%
 
 ---
 
-# 1.2.6帧I/O到Workfront Fusion到AEM Assets
+# 1.2.4帧I/O到Workfront Fusion到AEM Assets
 
 >[!IMPORTANT]
 >
@@ -27,7 +27,7 @@ ht-degree: 1%
 
 但是，业务团队不需要PSD文件，他们需要PNG文件或JPG文件。 在本练习中，您将配置一种新的自动化方法，一旦帧I/O中的资产获得批准，就会生成一个PNG文件，并且该PNG文件会自动存储在AEM Assets中。
 
-## 1.2.6.1创建新方案
+## 1.2.4.1创建新方案
 
 转到[https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}。 打开&#x200B;**Workfront Fusion**。
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 ![帧IO](./images/aemf6.png)
 
-## 1.2.6.2在Frame.io中配置Webhook
+## 1.2.4.2在Frame.io中配置Webhook
 
 转到Postman并打开请求&#x200B;**POST — 获取集合** Adobe IO - OAuth **中的访问令牌**。 接下来，单击&#x200B;**发送**&#x200B;以请求新的&#x200B;**access_token**。
 
@@ -101,7 +101,7 @@ ht-degree: 1%
 
 ![帧IO](./images/aemf16.png)
 
-## 1.2.6.3从Frame.io获取资源详细信息
+## 1.2.4.3从Frame.io获取资源详细信息
 
 现在，Frame.io与Workfront Fusion之间的通信已通过自定义webhook建立，您应该获得有关其状态标签已更新的资源的更多详细信息。 为此，您将再次使用Workfront Fusion中的Frame.io连接器，类似于上一个练习。
 
@@ -178,7 +178,7 @@ ht-degree: 1%
 
 ![帧IO](./images/aemf35a.png)
 
-## 1.2.6.4转换为PNG
+## 1.2.4.4转换为PNG
 
 将鼠标悬停在模块&#x200B;**Frame.io上 — 进行自定义API调用**&#x200B;并单击&#x200B;**+**&#x200B;图标。
 
@@ -224,7 +224,7 @@ ht-degree: 1%
 
 ![帧IO](./images/aemf39.png)
 
-## 1.2.6.5在AEM Assets CS中存储PNG
+## 1.2.4.5在AEM Assets CS中存储PNG
 
 将鼠标悬停在&#x200B;**Adobe Photoshop — 转换图像格式**&#x200B;模块上，然后单击&#x200B;**+**&#x200B;图标。
 
@@ -390,3 +390,4 @@ ht-degree: 1%
 返回到[使用Workfront Fusion的Creative工作流自动化](./automation.md){target="_blank"}
 
 返回[所有模块](./../../../overview.md){target="_blank"}
+1.2.4

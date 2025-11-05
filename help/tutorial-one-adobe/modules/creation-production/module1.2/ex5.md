@@ -6,14 +6,14 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: 31ff3c9764b07f29d1235ac146d1631529b6038f
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
 source-wordcount: '3352'
 ht-degree: 0%
 
 ---
 
-# 1.2.5 Frame.io和Workfront Fusion
+# 1.2.3 Frame.io和Workfront Fusion
 
 在上一个练习中，您配置了场景`--aepUserLdap-- - Firefly + Photoshop`并配置了一个传入webhook以触发该场景，并在场景成功完成时配置了一个webhook响应。 然后，您使用Postman触发了该方案。 Postman是一个非常出色的测试工具，但在实际商业情景中，商业用户不会使用Postman触发情景。 相反，他们会使用其他应用程序，并且希望其他应用程序在Workfront Fusion中激活场景。 在本练习中，您将对Frame.io执行同样的操作。
 
@@ -21,11 +21,11 @@ ht-degree: 0%
 >
 >此练习是为Frame.io V4创建的。 本练习中使用的以下某些功能当前以alpha语言提供，尚未正式提供。
 
-## 1.2.5.1先决条件
+## 1.2.3.1先决条件
 
 在继续此练习之前，您需要完成[您的Adobe I/O项目](./../../../modules/getting-started/gettingstarted/ex6.md)的设置，包括将&#x200B;**Frame.io API**&#x200B;添加到Adobe I/O项目，还需要配置应用程序以与API交互，例如[Postman](./../../../modules/getting-started/gettingstarted/ex7.md)或[PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md)。
 
-## 1.2.5.2正在访问Frame.io
+## 1.2.3.2正在访问Frame.io
 
 转到[https://next.frame.io/](https://next.frame.io/){target="_blank"}。
 
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 ![帧IO](./images/framev4_7.png)
 
-## 1.2.5.3 Workfront Fusion和Frame.io
+## 1.2.3.3 Workfront Fusion和Frame.io
 
 在上一个练习中，您创建了方案`--aepUserLdap-- - Firefly + Photoshop`，该方案以自定义webhook开始，以webhook响应结束。 随后使用Postman测试了Webhook的使用情况，但显然，这种场景的要点是由外部应用程序调用。 如前所述，Frame.io将是该练习，但在Frame.io和`--aepUserLdap-- - Firefly + Photoshop`之间还需要另一个Workfront Fusion场景。 现在，您将配置该方案。
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame10.png)
 
-## 1.2.5.4 Frame.io V4自定义操作API
+## 1.2.3.4 Frame.io V4自定义操作API
 
 转到Postman并打开请求&#x200B;**POST — 获取集合** Adobe IO - OAuth **中的访问令牌**。 验证&#x200B;**参数**&#x200B;下的字段&#x200B;**作用域**。 字段&#x200B;**范围**&#x200B;应包含范围`frame.s2s.all`。 如果它丢失，请添加它。 接下来，单击&#x200B;**发送**&#x200B;以请求新的&#x200B;**access_token**。
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frameV4api3.png)
 
-在左侧菜单中，转到&#x200B;**环境**&#x200B;并选择您正在使用的环境。 在&#x200B;**初始值**&#x200B;列和&#x200B;**当前值**&#x200B;列中查找变量&#x200B;**`FRAME_IO_ACCOUNT_ID`**&#x200B;并粘贴您从上一个请求获得的&#x200B;**id**。 单击&#x200B;**保存**。
+在左侧菜单中，转到&#x200B;**环境**&#x200B;并选择您正在使用的环境。 在&#x200B;**`FRAME_IO_ACCOUNT_ID`**&#x200B;初始值&#x200B;**列和**&#x200B;当前值&#x200B;**列中查找变量**&#x200B;并粘贴您从上一个请求获得的&#x200B;**id**。 单击&#x200B;**保存**。
 
 ![帧IO](./images/frameV4api4.png)
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frameV4api6.png)
 
-在左侧菜单中，转到&#x200B;**环境**&#x200B;并选择您正在使用的环境。 在&#x200B;**初始值**&#x200B;列和&#x200B;**当前值**&#x200B;列中查找变量&#x200B;**`FRAME_IO_WORKSPACE_ID`**&#x200B;并粘贴您从上一个请求获得的&#x200B;**id**。 单击&#x200B;**保存**。
+在左侧菜单中，转到&#x200B;**环境**&#x200B;并选择您正在使用的环境。 在&#x200B;**`FRAME_IO_WORKSPACE_ID`**&#x200B;初始值&#x200B;**列和**&#x200B;当前值&#x200B;**列中查找变量**&#x200B;并粘贴您从上一个请求获得的&#x200B;**id**。 单击&#x200B;**保存**。
 
 ![帧IO](./images/frameV4api7.png)
 
@@ -143,7 +143,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frameV4api9.png)
 
-返回[https://next.frame.io/](https://next.frame.io/){target="_blank"}，并转到您在项目`--aepUserLdap--`中创建的&#x200B;**CitiSignal Fibre Campaign**&#x200B;文件夹。 刷新页面。
+返回[https://next.frame.io/](https://next.frame.io/){target="_blank"}，并转到您在项目&#x200B;**中创建的** CitiSignal Fibre Campaign`--aepUserLdap--`文件夹。 刷新页面。
 
 ![帧IO](./images/frame16.png)
 
@@ -177,7 +177,7 @@ ht-degree: 0%
 
 现在，Frame.io与Workfront Fusion之间的通信已建立，您可以继续配置。
 
-## 1.2.5.5提供对Frame.io的自定义表单响应
+## 1.2.3.5提供对Frame.io的自定义表单响应
 
 在Frame.io中调用自定义操作时，Frame.io预期会收到来自Workfront Fusion的响应。 如果您回想一下您在上一个练习中构建的场景，则需要多个变量才能更新标准Photoshop PSD文件。 这些变量在您使用的有效载荷中定义：
 
@@ -287,7 +287,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame36.png)
 
-返回到Frame.io并再次单击资产&#x200B;**citisignal-fibre.psd**&#x200B;上的自定义操作`--aepUserLdap-- - Frame IO Custom Action Fusion`。
+返回到Frame.io并再次单击资产`--aepUserLdap-- - Frame IO Custom Action Fusion`citisignal-fibre.psd **上的自定义操作**。
 
 ![帧IO](./images/frame37.png)
 
@@ -321,7 +321,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame43.png)
 
-## 1.2.5.6从Frame.io检索文件位置
+## 1.2.3.6从Frame.io检索文件位置
 
 如前所述，此方案需要诸如&#x200B;**prompt**、**cta**、**button**&#x200B;和&#x200B;**psdTemplate**&#x200B;之类的字段才能正常工作。 前3个字段现在已可用，但仍缺少要使用的&#x200B;**psdTemplate**。 **psdTemplate**&#x200B;现在将引用Frame.io位置，因为文件&#x200B;**citisignal-fibre.psd**&#x200B;托管在Frame.io中。 为了检索该文件的位置，您需要在Workfront Fusion中配置并使用Frame.io连接。
 
@@ -345,7 +345,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame48.png)
 
-接下来，您需要输入在&#x200B;**快速入门**&#x200B;模块中配置的Adobe I/O项目的&#x200B;**客户端ID**&#x200B;和&#x200B;**客户端密钥**。 您可以在[此处](https://developer.adobe.com/console/projects.){target="_blank"}找到Adobe I/O项目的&#x200B;**客户端ID**&#x200B;和&#x200B;**客户端密钥**。
+接下来，您需要输入在&#x200B;**快速入门**&#x200B;模块中配置的Adobe I/O项目的&#x200B;**客户端ID**&#x200B;和&#x200B;**客户端密钥**。 您可以在&#x200B;**此处**&#x200B;找到Adobe I/O项目的&#x200B;**客户端ID**&#x200B;和[客户端密钥](https://developer.adobe.com/console/projects.){target="_blank"}。
 
 ![帧IO](./images/frame50.png)
 
@@ -403,7 +403,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame58b.png)
 
-返回到Frame.io并再次单击资产&#x200B;**citisignal-fibre.psd**&#x200B;上的自定义操作`--aepUserLdap-- - Frame IO Custom Action Fusion V4`。
+返回到Frame.io并再次单击资产`--aepUserLdap-- - Frame IO Custom Action Fusion V4`citisignal-fibre.psd **上的自定义操作**。
 
 ![帧IO](./images/frame37.png)
 
@@ -437,7 +437,7 @@ ht-degree: 0%
 
 您现在拥有此用例运行所需的所有信息（**prompt**、**cta**、**button**&#x200B;和&#x200B;**psdTemplate**）。
 
-## 1.2.5.7调用Workfront方案
+## 1.2.3.7调用Workfront方案
 
 在上一个练习中，您已配置方案`--aepUserLdap-- - Firefly + Photoshop`。 现在，您需要对此场景进行细微更改。
 
@@ -470,7 +470,7 @@ ht-degree: 0%
 ![帧IO](./images/frame69.png)
 
 将&#x200B;**Body type**&#x200B;设置为&#x200B;**Raw**&#x200B;并将&#x200B;**Content type**&#x200B;设置为&#x200B;**JSON (application/json)**。
-将以下JSON有效负载粘贴到字段&#x200B;**请求内容**&#x200B;中，并启用&#x200B;**分析响应**&#x200B;的复选框。
+将以下JSON有效负载粘贴到字段**请求内容**&#x200B;中，并启用&#x200B;**分析响应**&#x200B;的复选框。
 
 ```json
 {
@@ -486,7 +486,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame70.png)
 
-对于字段&#x200B;**psdTemplate**，请用变量&#x200B;**`Body > data > media_links > original > download_url`**&#x200B;替换静态变量&#x200B;**citisignal-fibre.psd**。
+对于字段&#x200B;**psdTemplate**，请用变量&#x200B;**替换静态变量** citisignal-fibre.psd **`Body > data > media_links > original > download_url`**。
 
 ![帧IO](./images/frame71.png)
 
@@ -502,7 +502,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame73.png)
 
-## 1.2.5.8在Frame.io中保存新资源
+## 1.2.3.8在Frame.io中保存新资源
 
 调用另一个Workfront Fusion场景后，将生成一个可用的新Photoshop PSD模板。 该PSD文件需要存储回Frame.io中，这是此方案中的最后一步。
 
@@ -527,9 +527,9 @@ ht-degree: 0%
 >[!NOTE]
 >
 >如前所述，可以使用以下语法手动指定Workfront Fusion中的变量： `{{1.account_id}}`和`{{4.body.data.parent_id}}`。 变量中的数字引用场景中的模块。
->&#x200B;>在此示例中，您可以看到场景中的第一个模块名为&#x200B;**Webhooks**，其序列号为&#x200B;**1**。 这意味着变量`{{1.account_id}}`将从序列号为1的模块中访问该字段。
->&#x200B;>在此示例中，您可以看到场景中的第四个模块名为&#x200B;**Frame.io — 进行自定义API调用**，其序列号为&#x200B;**4**。 这意味着变量`{{4.body.data.parent_id}}`将从序列号为4的模块中访问该字段。
->&#x200B;>如果模块的序列号不同，则必须更新上述URL中的变量以链接到正确的模块。
+>在此示例中，您可以看到场景中的第一个模块名为&#x200B;**Webhooks**，其序列号为&#x200B;**1**。 这意味着变量`{{1.account_id}}`将从序列号为1的模块中访问该字段。
+>在此示例中，您可以看到场景中的第四个模块名为&#x200B;**Frame.io — 进行自定义API调用**，其序列号为&#x200B;**4**。 这意味着变量`{{4.body.data.parent_id}}`将从序列号为4的模块中访问该字段。
+>如果模块的序列号不同，则必须更新上述URL中的变量以链接到正确的模块。
 
 ![帧IO](./images/frame78.png)
 
@@ -549,7 +549,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >可以使用以下语法手动指定Workfront Fusion中的变量： `{{6.data.newPsdTemplate}}`。 变量中的数字引用场景中的模块。 在此示例中，您可以看到方案中的第六个模块名为&#x200B;**HTTP — 发出请求**，其序列号为&#x200B;**6**。 这意味着变量`{{6.data.newPsdTemplate}}`将访问序列号为6的模块中的字段&#x200B;**data.newPsdTemplate**。
->&#x200B;>如果模块的序列号不同，则必须更新上述URL中的变量以链接到正确的模块。
+>如果模块的序列号不同，则必须更新上述URL中的变量以链接到正确的模块。
 
 单击&#x200B;**确定**。
 
@@ -559,13 +559,13 @@ ht-degree: 0%
 
 ![帧IO](./images/frame81.png)
 
-## 1.2.5.9测试您的端到端用例
+## 1.2.3.9测试您的端到端用例
 
-单击方案`--aepUserLdap-- - Frame IO Custom Action`中的&#x200B;**运行一次**。
+单击方案&#x200B;**中的**&#x200B;运行一次`--aepUserLdap-- - Frame IO Custom Action`。
 
 ![帧IO](./images/frame85.png)
 
-返回到Frame.io并再次单击资产&#x200B;**citisignal-fibre.psd**&#x200B;上的自定义操作`--aepUserLdap-- - Frame IO Custom Action Fusion V4`。
+返回到Frame.io并再次单击资产`--aepUserLdap-- - Frame IO Custom Action Fusion V4`citisignal-fibre.psd **上的自定义操作**。
 
 ![帧IO](./images/frame37.png)
 
@@ -573,7 +573,7 @@ ht-degree: 0%
 
 ![帧IO](./images/frame38.png)
 
-切换回Workfront Fusion。 单击方案`--aepUserLdap-- - Frame IO Custom Action V4`中的&#x200B;**运行一次**。
+切换回Workfront Fusion。 单击方案&#x200B;**中的**&#x200B;运行一次`--aepUserLdap-- - Frame IO Custom Action V4`。
 
 ![帧IO](./images/frame86.png)
 

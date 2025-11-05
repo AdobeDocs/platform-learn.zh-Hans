@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: 9ddabdf0b66ea4772352f5aa82c612fa07891db3
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '2058'
+source-wordcount: '1991'
 ht-degree: 1%
 
 ---
@@ -17,51 +17,95 @@ ht-degree: 1%
 
 现在，您将开始在Workfront Fusion for Photoshop中使用现成的连接器，并将Firefly Text-2-Image请求和Photoshop请求连接到一个场景中。
 
-## 1.2.4.1复制并准备您的方案
+## 1.2.4.1更新变量
 
-在左侧菜单中，转到&#x200B;**方案**&#x200B;并选择您的文件夹`--aepUserLdap--`。 然后，您应该会看到之前创建的名为`--aepUserLdap-- - Adobe I/O Authentication`的方案。
+在继续连接器设置之前，需要将以下变量添加到&#x200B;**初始化常量**&#x200B;模块。
 
-![WF Fusion](./images/wffc1.png)
+- `AZURE_STORAGE_URL`
+- `AZURE_STORAGE_CONTAINER`
+- `AZURE_STORAGE_SAS_READ`
+- `AZURE_STORAGE_SAS_WRITE`
 
-单击箭头打开下拉菜单，然后选择&#x200B;**克隆**。
+返回第一个节点，选择&#x200B;**初始化常量**，然后为每个变量选择&#x200B;**添加项**。
 
-![WF Fusion](./images/wffc2.png)
+![WF Fusion](./images/wffusion69.png)
 
-将克隆方案的&#x200B;**Name**&#x200B;设置为`--aepUserLdap-- - Firefly + Photoshop`并选择适当的&#x200B;**目标团队**。 单击&#x200B;**添加**&#x200B;添加新的webhook。
+| 键 | 示例值 |
+|:-------------:| :---------------:| 
+| `AZURE_STORAGE_URL` | `https://vangeluw.blob.core.windows.net` |
+| `AZURE_STORAGE_CONTAINER` | `vangeluw` |
+| `AZURE_STORAGE_SAS_READ` | `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |
+| `AZURE_STORAGE_SAS_WRITE` | `?sv=2023-01-03&st=2025-01-13T17%3A21%3A09Z&se=2025-01-14T17%3A21%3A09Z&sr=c&sp=racwl&sig=FD4m0YyyqUj%2B5T8YyTFJDi55RiTDC9xKtLTgW0CShps%3D` |
 
->[!NOTE]
->
->您可能看不到用于选择&#x200B;**目标团队**&#x200B;的选项。 仅当您是Workfront Fusion中一个以上团队的用户时，才会显示此选项。 如果没有看到此选项，则仅表示您仅被添加到1个团队，因此不需要选择。
+您可以通过返回Postman并打开&#x200B;**环境变量**&#x200B;来查找变量。
 
-![WF Fusion](./images/wffc3.png)
+![Azure存储](./../module1.1/images/az105.png)
+
+将这些值复制到Workfront Fusion，并为这4个变量中的每一个添加新项。
+
+您的屏幕应如下所示。 选择&#x200B;**确定**。
+
+![WF Fusion](./images/wffusion68.png)
+
+## 1.2.4.2使用webhook激活您的场景
+
+到目前为止，您已手动运行场景进行测试。 现在，让我们使用webhook更新您的场景，以便可以从外部环境激活它。
+
+选择&#x200B;**+**，搜索&#x200B;**webhook**，然后选择&#x200B;**Webhook**。
+
+![WF Fusion](./images/wffusion216.png)
+
+选择&#x200B;**自定义webhook**。
+
+![WF Fusion](./images/wffusion217.png)
+
+将&#x200B;**自定义webhook**&#x200B;模块拖动到方案的开头。 接下来，选择&#x200B;**clock**&#x200B;图标并将其拖动到&#x200B;**自定义webhook**&#x200B;模块。
+
+![WF Fusion](./images/wffusion217a.png)
+
+您应该会看到此内容。 接下来，将第一个模块上的红点朝第二个模块上的紫点拖动。
+
+![WF Fusion](./images/wffusion217b.png)
+
+您应该会看到此内容。 新建，单击&#x200B;**自定义webhook**&#x200B;模块。
+
+![WF Fusion](./images/wffusion217c.png)
+
+单击&#x200B;**添加**。
+
+![WF Fusion](./images/wffusion218.png)
 
 将&#x200B;**Webhook名称**&#x200B;设置为`--aepUserLdap-- - Firefly + Photoshop Webhook`。 单击&#x200B;**保存**。
 
-![WF Fusion](./images/wffc4.png)
+![WF Fusion](./images/wffusion219.png)
 
-您应该会看到此内容。 单击&#x200B;**保存**。
+您的webhook URL现已可用。 单击&#x200B;**将地址复制到剪贴板**&#x200B;以复制URL。
 
-![WF Fusion](./images/wffc5.png)
+![WF Fusion](./images/wffusion221.png)
 
-您应该会看到此内容。 单击&#x200B;**Webhook**&#x200B;模块。
+打开Postman，并在集合&#x200B;**FF - Firefly Services技术内部人士**&#x200B;中添加新文件夹。
 
-![WF Fusion](./images/wffc6.png)
+![WF Fusion](./images/wffusion222.png)
 
-单击&#x200B;**将地址复制到剪贴板**，然后单击&#x200B;**重新确定数据结构**。
+命名您的文件夹`--aepUserLdap-- - Workfront Fusion`。
 
-![WF Fusion](./images/wffc7.png)
+![WF Fusion](./images/wffusion223.png)
 
-打开Postman。 在您之前使用的同一文件夹中添加新请求。
+在刚刚创建的文件夹中，选择3个圆点&#x200B;**...**，然后选择&#x200B;**添加请求**。
 
-![WF Fusion](./images/wffc9.png)
+![WF Fusion](./images/wffusion224.png)
 
-确保应用以下设置：
+将&#x200B;**方法类型**&#x200B;设置为&#x200B;**POST**，并将webhook的URL粘贴到地址栏中。
 
-- 请求名称： `POST - Send Request to Workfront Fusion Webhook Firefly + Photoshop`
-- 请求类型： `POST`
-- 请求URL：粘贴您从Workfront Fusion场景的webhook复制的URL。
+![WF Fusion](./images/wffusion225.png)
 
-转到&#x200B;**正文**&#x200B;并将&#x200B;**正文类型**&#x200B;设置为&#x200B;**原始** - **JSON**。 将以下有效负载粘贴到&#x200B;**主体**&#x200B;中。
+您需要发送自定义主体，以便可以将外部源中的变量元素提供给Workfront Fusion方案。
+
+转到&#x200B;**正文**&#x200B;并选择&#x200B;**原始**。
+
+![WF Fusion](./images/wffusion226.png)
+
+将以下文本粘贴到请求正文中。 选择&#x200B;**发送**。
 
 ```json
 {
@@ -73,37 +117,25 @@ ht-degree: 1%
 }
 ```
 
-此新有效负载将确保从场景外部提供所有变量信息，而不是在场景中对其进行硬编码。 在企业方案中，组织需要以可重用方式定义方案，这意味着需要提供多个变量作为输入变量，而不是在方案中对其进行硬编码。
+![WF Fusion](./images/wffusion229.png)
 
-然后您应该拥有此项。 单击&#x200B;**发送**。
+返回到Workfront Fusion后，您的自定义webhook上会显示一条消息，显示：**已成功确定**。
 
-![WF Fusion](./images/wffc10.png)
+![WF Fusion](./images/wffusion227.png)
 
-Workfront Fusion Webhook仍在等待输入。
+## 1.2.4.3 Adobe Firefly连接器
 
-![WF Fusion](./images/wffc11.png)
-
-单击&#x200B;**发送**&#x200B;后，邮件应更改tp **成功确定**。 单击&#x200B;**确定**。
-
-![WF Fusion](./images/wffc12.png)
-
-## 1.2.4.2更新Firefly T2I模块
-
-右键单击模块&#x200B;**Firefly T2I**&#x200B;并选择&#x200B;**删除模块**。
-
-![WF Fusion](./images/wffcff1.png)
-
-单击&#x200B;**+**&#x200B;图标，输入搜索词`firefly`，然后选择&#x200B;**Adobe Firefly**。
+单击&#x200B;**+**&#x200B;图标以添加新模块。
 
 ![WF Fusion](./images/wffcff2.png)
+
+输入搜索词`Adobe Firefly`，然后选择&#x200B;**Adobe Firefly**。
+
+![WF Fusion](./images/wffcff2a.png)
 
 选择&#x200B;**生成图像**。
 
 ![WF Fusion](./images/wffcff3.png)
-
-拖放&#x200B;**Adobe Firefly**&#x200B;模块，使其连接到&#x200B;**路由器**&#x200B;模块。
-
-![WF Fusion](./images/wffcff4.png)
 
 单击&#x200B;**Adobe Firefly**&#x200B;模块以将其打开，然后单击&#x200B;**添加**&#x200B;以创建新连接。
 
@@ -114,10 +146,10 @@ Workfront Fusion Webhook仍在等待输入。
 - **连接名称**：使用`--aepUserLdap-- - Firefly connection`。
 - **环境**：使用&#x200B;**生产**。
 - **类型**：使用&#x200B;**个人帐户**。
-- **客户端ID**：从名为`--aepUserLdap-- - One Adobe tutorial`的Adobe I/O项目中复制&#x200B;**客户端ID**。
-- **客户端密钥**：从名为`--aepUserLdap-- - One Adobe tutorial`的Adobe I/O项目中复制&#x200B;**客户端密钥**。
+- **客户端ID**：从名为&#x200B;**的Adobe I/O项目中复制**&#x200B;客户端ID`--aepUserLdap-- - One Adobe tutorial`。
+- **客户端密钥**：从名为&#x200B;**的Adobe I/O项目中复制**&#x200B;客户端密钥`--aepUserLdap-- - One Adobe tutorial`。
 
-您可以在[此处](https://developer.adobe.com/console/projects.){target="_blank"}找到Adobe I/O项目的&#x200B;**客户端ID**&#x200B;和&#x200B;**客户端密钥**。
+您可以在&#x200B;**此处**&#x200B;找到Adobe I/O项目的&#x200B;**客户端ID**&#x200B;和[客户端密钥](https://developer.adobe.com/console/projects.){target="_blank"}。
 
 ![WF Fusion](./images/wffc20.png)
 
@@ -129,13 +161,9 @@ Workfront Fusion Webhook仍在等待输入。
 
 ![WF Fusion](./images/wffcff7.png)
 
-接下来，将&#x200B;**模型版本** **提示符**&#x200B;设置为&#x200B;**image4 standard**。 单击&#x200B;**确定**。
+将&#x200B;**模型版本** **提示符**&#x200B;设置为&#x200B;**image4 standard**。 单击&#x200B;**确定**。
 
 ![WF Fusion](./images/wffcff7b.png)
-
-在继续操作之前，需要禁用场景中的旧路由，如同本练习一样，您将只使用当前配置的新路由。 为此，请单击&#x200B;**路由器**&#x200B;模块和&#x200B;**迭代器**&#x200B;模块之间的&#x200B;**扳手**&#x200B;图标，然后选择&#x200B;**禁用路由**。
-
-![WF Fusion](./images/wffcff7a.png)
 
 单击&#x200B;**保存**&#x200B;以保存更改，然后单击&#x200B;**运行一次**&#x200B;以测试配置。
 
@@ -153,7 +181,7 @@ Workfront Fusion Webhook仍在等待输入。
 
 ![WF Fusion](./images/wffcff10.png)
 
-现在，您应该会看到一个图像，该图像表示您从Postman请求发送的提示，在本例中为&#x200B;**雾状草原**。
+复制URL并将其粘贴到浏览器中。 现在，您应该会看到一个图像，该图像表示您从Postman请求发送的提示，在本例中为&#x200B;**雾状草原**。
 
 ![WF Fusion](./images/wffcff11.png)
 
@@ -180,7 +208,7 @@ Workfront Fusion Webhook仍在等待输入。
 按如下方式配置连接：
 
 - 连接类型：选择&#x200B;**Adobe Photoshop （服务器到服务器）**
-- 连接名称：输入`--aepUserLdap-- - Adobe IO`
+- 连接名称：输入`--aepUserLdap-- - Adobe I/O`
 - 客户端ID：粘贴您的客户端ID
 - 客户端密码：粘贴您的客户端密码
 
@@ -222,7 +250,7 @@ Workfront Fusion Webhook仍在等待输入。
 
 向下滚动，直到看到&#x200B;**输入**。 现在，您需要定义需要插入到背景图层中的内容。 在这种情况下，您需要选择包含动态生成的图像的&#x200B;**Adobe Firefly**&#x200B;模块的输出。
 
-对于&#x200B;**存储**，请选择&#x200B;**外部**。 对于&#x200B;**文件位置**，您需要从&#x200B;**Adobe Firefly**&#x200B;模块的输出复制并粘贴变量`{{XX.details[].url}}`，但您需要使用&#x200B;**Adobe Firefly**&#x200B;模块的序列号替换变量中的&#x200B;**XX**，本例中为&#x200B;**22**。
+对于&#x200B;**存储**，请选择&#x200B;**外部**。 对于&#x200B;**文件位置**，您需要从`{{XX.details[].url}}`Adobe Firefly **模块的输出复制并粘贴变量**，但您需要使用&#x200B;**Adobe Firefly**&#x200B;模块的序列号替换变量中的&#x200B;**XX**，本例中为&#x200B;**5**。
 
 ![WF Fusion](./images/wffc28.png)
 
@@ -238,8 +266,8 @@ Workfront Fusion Webhook仍在等待输入。
 
 ![WF Fusion](./images/wffc31.png)
 
-在&#x200B;**高级设置**&#x200B;下，选择&#x200B;**是**&#x200B;以覆盖同名文件。
-单击&#x200B;**添加**。
+在&#x200B;**高级设置**&#x200B;下，选择&#x200B;**是**以覆盖同名文件。
+单击**添加**。
 
 ![WF Fusion](./images/wffc32.png)
 
@@ -277,9 +305,7 @@ Workfront Fusion Webhook仍在等待输入。
 
 ![WF Fusion](./images/wffc36.png)
 
-您应该会看到此内容。 首先，选择您之前已配置的Adobe Photoshop连接，该连接应名为`--aepUserLdap-- Adobe IO`。
-
-您现在需要定义上一步的输出文件&#x200B;**输入文件**&#x200B;的位置，在&#x200B;**图层**&#x200B;下，您需要为每个需要更改文本的图层单击“**+添加项**”。
+您应该会看到此内容。 首先，选择您之前已配置的Adobe Photoshop连接，该连接应名为`--aepUserLdap-- Adobe I/O`。
 
 ![WF Fusion](./images/wffc37.png)
 
@@ -291,7 +317,7 @@ Workfront Fusion Webhook仍在等待输入。
 
 有2项需要更改，需要更新文件&#x200B;**citisignal-fibre.psd**&#x200B;中的CTA文本和按钮文本。
 
-要查找层名称，请打开文件&#x200B;**citisignal-fibre.psd**。 在文件中，您会注意到包含行动号召的层名为&#x200B;**2048x2048-cta**。
+要查找层名称，请打开文件&#x200B;**citisignal-fibre.psd**。 在文件中，您会注意到包含call to action的层名为&#x200B;**2048x2048-cta**。
 
 ![WF Fusion](./images/wffc38.png)
 
@@ -307,7 +333,7 @@ Workfront Fusion Webhook仍在等待输入。
 
 ![WF Fusion](./images/wffc40.png)
 
-您应该会看到此内容。 单击&#x200B;**图层**&#x200B;下的&#x200B;**+添加项**&#x200B;开始添加需要更新的文本图层。
+您应该会看到此内容。 单击&#x200B;**图层**&#x200B;下的&#x200B;**+添加项**&#x200B;开始添加需要更新的下一个文本图层。
 
 ![WF Fusion](./images/wffc40a.png)
 
@@ -327,11 +353,9 @@ Workfront Fusion Webhook仍在等待输入。
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
-![WF Fusion](./images/wffc41.png)
-
 将&#x200B;**Type**&#x200B;设置为&#x200B;**vnd.adobe.photoshop**。 单击&#x200B;**确定**。
 
-![WF Fusion](./images/wffc41a.png)
+![WF Fusion](./images/wffc41.png)
 
 单击&#x200B;**保存**&#x200B;以保存更改。
 
@@ -363,7 +387,7 @@ Workfront Fusion Webhook仍在等待输入。
 
 ![WF Fusion](./images/wffc51.png)
 
-复制并粘贴变量`{{XX.data[]._links.renditions[].href}}`并用最后&#x200B;**Adobe Photoshop — 编辑文本图层**&#x200B;模块的序列号替换&#x200B;**XX**，在本例中为&#x200B;**30**。
+复制并粘贴变量`{{XX.data[]._links.renditions[].href}}`并用最后&#x200B;**Adobe Photoshop — 编辑文本图层**&#x200B;模块的序列号替换&#x200B;**XX**，在本例中为&#x200B;**7**。
 
 ![WF Fusion](./images/wffc52.png)
 

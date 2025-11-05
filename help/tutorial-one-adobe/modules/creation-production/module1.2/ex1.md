@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 4b38b40c47b5c373f74a85261adce46f291303a8
+source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '699'
 ht-degree: 1%
 
 ---
@@ -83,7 +83,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion11.png)
 
-输入&#x200B;**变量名称**： **CONST_client_id**&#x200B;及其&#x200B;**变量值**，选择&#x200B;**添加**。
+输入&#x200B;**变量名称**： **`CONST_client_id`**&#x200B;及其&#x200B;**变量值**，选择&#x200B;**添加**。
 
 ![WF Fusion](./images/wffusion12.png)
 
@@ -91,7 +91,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion13.png)
 
-输入&#x200B;**变量名称**：**CONST_client_secret**&#x200B;及其&#x200B;**变量值**，选择&#x200B;**添加**。
+输入&#x200B;**变量名称**： **`CONST_client_secret`**&#x200B;及其&#x200B;**变量值**，选择&#x200B;**添加**。
 
 ![WF Fusion](./images/wffusion14.png)
 
@@ -99,7 +99,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion15.png)
 
-输入&#x200B;**变量名称**： **CONST_scope**&#x200B;及其&#x200B;**变量值**，选择&#x200B;**添加**。
+输入&#x200B;**变量名称**： **`CONST_scope`**&#x200B;及其&#x200B;**变量值**，选择&#x200B;**添加**。
 
 ![WF Fusion](./images/wffusion16.png)
 
@@ -230,7 +230,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion45.png)
 
-接下来，将方案的名称更改为`--aepUserLdap-- - Adobe I/O Authentication`。
+接下来，将方案的名称更改为`--aepUserLdap-- - Firefly + Photoshop`。
 
 ![WF Fusion](./images/wffusion46.png)
 
@@ -240,7 +240,7 @@ ht-degree: 1%
 
 ## 后续步骤
 
-转到[在Workfront Fusion中使用Adobe API](./ex2.md){target="_blank"}
+使用连接器[转到](./ex4.md){target="_blank"}自动化
 
 返回到[使用Workfront Fusion的Creative工作流自动化](./automation.md){target="_blank"}
 
