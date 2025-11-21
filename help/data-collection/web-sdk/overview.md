@@ -24,13 +24,13 @@ ht-degree: 41%
 
 >[!NOTE]
 >
->此视频摘自Adobe Summit 2020会话&#x200B;*[Meet Alloy.js and Never Tag for a eVar或Mbox Again &#x200B;](https://business.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*。
+>此视频摘自Adobe Summit 2020会话&#x200B;*[Meet Alloy.js and Never Tag for a eVar或Mbox Again &#x200B;](https://business.adobe.com/cn/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*。
 >
->本视频中讨论的服务器端转发功能现在向所有许可客户公开提供。 请参阅[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+>本视频中讨论的服务器端转发功能现在向所有许可客户公开提供。 请参阅[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)
 
 ## 其他资源
 
-* [Adobe Experience Platform Web SDK文档](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html)
+* [Adobe Experience Platform Web SDK文档](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=zh-Hans)
 * [使用Adobe Experience Platform Web SDK博客帖子简化客户工作流](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
 * [简化客户端服务器与Adobe Experience Platform Experience Edge博客的集成](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
 * [将您的Adobe Experience Platform服务与Adobe Experience Platform Web SDK博客帖子统一起来](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)

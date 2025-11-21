@@ -16,7 +16,7 @@ ht-degree: 31%
 
 # 创建标记属性
 
-了解如何创建标记属性以管理您网站上的营销标记。 有关详细信息，请参阅[属性](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html)文档。
+了解如何创建标记属性以管理您网站上的营销标记。 有关详细信息，请参阅[属性](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=zh-Hans)文档。
 
 >[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on&enablevpops)
 
