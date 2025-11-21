@@ -1,6 +1,6 @@
 ---
 title: 如何使用Real-Time Customer Data Platform用户界面和工作流
-description: 了解如何在 Real-time Customer Data Platform (CDP) 用户界面中导航，以了解其功能如何共同在数字客户历程中提供实时激活。
+description: 了解如何在 Real-Time Customer Data Platform (CDP) 的用户界面中进行导航，深入理解其功能如何协同运作，从而在整个数字化客户历程中实现实时激活。
 solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
@@ -19,4 +19,4 @@ ht-degree: 31%
 
 了解如何在Real-Time Customer Data Platform (CDP)用户界面中导航，了解其功能如何相结合以在数字客户历程中提供实时激活。 有关详细信息，请访问[Real-Time Customer Data Platform文档](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/36695?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29762?learn=on&enablevpops)

@@ -21,19 +21,19 @@ Adobe Experience Cloud应用程序传统上会使用不同的技术生成Cookie�
 1. Adobe服务器使用域名的CNAME配置设置的第一方Cookie
 1. JavaScript设置的第一方Cookie
 
-最近的浏览器更改限制了这类Cookie的持续时间。 在使用客户拥有的服务器（使用DNS A/AAAA记录而非DNS CNAME）设置第一方Cookie时，它们最有效。 [第一方设备ID (FPID)功能](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/identity/first-party-device-ids)允许实施Adobe Experience Platform Web SDK的客户在使用DNS A/AAAA记录的服务器中的Cookie中使用设备ID。 然后，可以将这些ID发送到Adobe，并用作种子来生成Experience CloudID (ECID)，这仍然是Adobe Experience Cloud应用程序中的主要标识符。
+最近的浏览器更改限制了这类Cookie的持续时间。 在使用客户拥有的服务器（使用DNS A/AAAA记录而非DNS CNAME）设置第一方Cookie时，它们最有效。 [第一方设备ID (FPID)功能](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids)允许实施Adobe Experience Platform Web SDK的客户在使用DNS A/AAAA记录的服务器中的Cookie中使用设备ID。 然后，可以将这些ID发送到Adobe并用作生成Experience Cloud ID (ECID)的种子，该ID仍是Adobe Experience Cloud应用程序中的主要标识符。
 
 以下是有关该功能的工作原理的简短示例：
 
-![第一方设备ID (FPID)和Experience CloudID (ECID)](../assets/kt-9728.png)
+![第一方设备ID (FPID)和Experience Cloud ID (ECID)](../assets/kt-9728.png)
 
 1. 最终用户的浏览器从客户的Web服务器或CDN请求网页。
 1. 客户在其Web服务器或CDN上生成设备ID (FPID)（Web服务器应绑定到域名的DNS A/AAAA-record）。
 1. 客户设置第一方Cookie以将FPID存储在最终用户的浏览器中。
-1. 客户的Adobe Experience Platform Web SDK实施会向PlatformEdge Network发出请求，并且：
+1. 客户的Adobe Experience Platform Web SDK实施会向Platform Edge Network发出请求，并且：
    1. 在标识映射中包含FPID。
    1. 为其Web SDK请求配置CNAME，并使用其FPID Cookie的名称配置其数据流。
-1. Experience PlatformEdge Network接收FPID并使用它生成Experience CloudID (ECID)。
+1. Experience Platform Edge Network接收FPID并使用它生成Experience Cloud ID (ECID)。
 1. Platform Web SDK响应会将ECID发送回最终用户的浏览器。
 1. 如果`idMigrationEnabled=true`，Platform Web SDK使用JavaScript将ECID存储为最终用户浏览器中的`AMCV_` Cookie。
 1. 如果`AMCV_` Cookie过期，进程将自行重复。 只要有相同的第一方设备ID可用，就会使用与之前相同的ECID值创建一个新的`AMCV_` Cookie。
@@ -146,10 +146,10 @@ PHP没有用于生成UUID的本地库，因此这些代码示例比使用其他�
 通过确认从第一方设备ID生成相同的ECID来验证实施：
 
 1. 生成FPID Cookie。
-1. 使用Platform Web SDK向PlatformEdge Network发送请求。
+1. 使用Platform Web SDK向Platform Edge Network发送请求。
 1. 生成格式为`AMCV_<IMSORGID@AdobeOrg>`的Cookie。 此Cookie包含ECID。
 1. 记下生成的Cookie值，然后删除网站的所有Cookie（`FPID` Cookie除外）。
-1. 向PlatformEdge Network发送另一个请求。
-1. 确认`AMCV_<IMSORGID@AdobeOrg>` Cookie中的值与已删除的`AMCV_` Cookie中的值相同`ECID`。 如果给定FPID的Cookie值相同，则ECID的设定种子过程成功。
+1. 向Platform Edge Network发送另一个请求。
+1. 确认`AMCV_<IMSORGID@AdobeOrg>` Cookie中的值与已删除的`ECID` Cookie中的值相同`AMCV_`。 如果给定FPID的Cookie值相同，则ECID的设定种子过程成功。
 
-有关此功能的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=zh-Hans)。
+有关此功能的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)。

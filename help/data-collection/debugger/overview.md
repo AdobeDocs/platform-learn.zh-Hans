@@ -19,11 +19,11 @@ ht-degree: 54%
 
 了解Adobe Experience Platform Debugger [Chrome扩展](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)和[Firefox加载项](https://addons.mozilla.org/zh-CN/firefox/addon/adobe-experience-platform-dbg/)如何帮助您调试Adobe Experience Platform Web SDK、Adobe Analytics、Adobe Target、Adobe Audience Manager、tags等的Web实施。
 
->[!VIDEO](https://video.tv.adobe.com/v/35858?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 ## 其他资源
 
 * [下载Firefox加载项](https://addons.mozilla.org/zh-CN/firefox/addon/adobe-experience-platform-dbg/)
 * [下载Chrome扩展](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-* [Experience Platform Debugger文档](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=zh-Hans)
-* [调试标记实现](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=zh-Hans)
+* [Experience Platform Debugger文档](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html)
+* [调试标记实现](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)

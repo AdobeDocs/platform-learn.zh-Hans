@@ -11,15 +11,15 @@ exl-id: 23e15df2-1bf2-4c19-a5d5-9cfb2f7b0bd8
 source-git-commit: 695093c3ddc1952b1d6ffbe7bb4f3f489264d37d
 workflow-type: tm+mt
 source-wordcount: '422'
-ht-degree: 43%
+ht-degree: 45%
 
 ---
 
 # 智能服务简介
 
-关于智能服务的高级介绍，此服务可让营销分析师和从业人员在没有数据科学专业知识的背景下，利用客户体验用例中的人工智能和机器学习的功能。 有关详细信息，请访问[智能服务文档](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=zh-Hans)。
+关于智能服务的高级介绍，此服务可让营销分析师和从业人员在没有数据科学专业知识的背景下，利用客户体验用例中的人工智能和机器学习的功能。 有关详细信息，请访问[智能服务文档](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/36593?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 
 ## 客户人工智能
 
@@ -39,7 +39,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-customer-ai.md" title="Customer AI简介" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36439?format=jpeg&nocache=1740250112240&captions=chi_hans" alt="Customer AI简介"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32664?format=jpeg&nocache=1740250112240" alt="Customer AI简介"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-customer-ai.md" title="配置客户人工智能" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36592?format=jpeg&nocache=1740250112226&captions=chi_hans" alt="配置客户人工智能"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32665?format=jpeg&nocache=1740250112226" alt="配置客户人工智能"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,8 +84,8 @@ ht-degree: 43%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="use-customer-ai-scores-and-insights.md" title="使用客户人工智能评分和分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36591?format=jpeg&nocache=1740250112262&captions=chi_hans" alt="使用客户人工智能评分和分析"
+                    <a href="use-customer-ai-scores-and-insights.md" title="使用客户人工智能评分和洞察" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32666?format=jpeg&nocache=1740250112262" alt="使用客户人工智能评分和洞察"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -93,9 +93,9 @@ ht-degree: 43%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="use-customer-ai-scores-and-insights.md" target="_blank" rel="referrer" title="使用客户人工智能评分和分析">使用 Customer AI 评分和分析</a>
+                        <a href="use-customer-ai-scores-and-insights.md" target="_blank" rel="referrer" title="使用客户人工智能评分和洞察">使用客户人工智能评分和洞察</a>
                     </p>
-                    <p class="is-size-6">了解如何使用 Customer AI 倾向评分和洞察转化和维系客户。</p>
+                    <p class="is-size-6">了解如何使用客户人工智能倾向评分和洞察转化和维系客户。</p>
                 </div>
                 <a href="use-customer-ai-scores-and-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">观看</span>
@@ -108,7 +108,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-customer-ai.md" title="客户人工智能的商业价值" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328474?format=jpeg&nocache=1740250112251&captions=chi_hans" alt="客户人工智能的商业价值"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40374?format=jpeg&nocache=1740250112251" alt="客户人工智能的商业价值"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -147,7 +147,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-attribution-ai.md" title="Attribution AI简介" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36584?format=jpeg&nocache=1740250113366&captions=chi_hans" alt="Attribution AI简介"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32667?format=jpeg&nocache=1740250113366" alt="Attribution AI简介"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -170,7 +170,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribution-ai.md" title="配置归因人工智能" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36590?format=jpeg&nocache=1740250113378&captions=chi_hans" alt="配置归因人工智能"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32668?format=jpeg&nocache=1740250113378" alt="配置归因人工智能"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -192,8 +192,8 @@ ht-degree: 43%
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="use-attribution-ai-scores-and-insights.md" title="使用归因人工智能评分和分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345098?format=jpeg&nocache=1740250113402&captions=chi_hans" alt="使用归因人工智能评分和分析"
+                    <a href="use-attribution-ai-scores-and-insights.md" title="使用归因人工智能评分和洞察" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32669?format=jpeg&nocache=1740250113402" alt="使用归因人工智能评分和洞察"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -201,9 +201,9 @@ ht-degree: 43%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="use-attribution-ai-scores-and-insights.md" target="_blank" rel="referrer" title="使用归因人工智能评分和分析">使用 Attribution AI 评分和分析</a>
+                        <a href="use-attribution-ai-scores-and-insights.md" target="_blank" rel="referrer" title="使用归因人工智能评分和洞察">使用归因人工智能评分和洞察</a>
                     </p>
-                    <p class="is-size-6">了解如何使用 Attribution AI 分析页面以了解营销渠道和营销活动的 ROI</p>
+                    <p class="is-size-6">了解如何使用归因人工智能洞察页面以了解营销渠道和营销活动的 ROI</p>
                 </div>
                 <a href="use-attribution-ai-scores-and-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">观看</span>
@@ -216,7 +216,7 @@ ht-degree: 43%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-attribution-ai.md" title="Attribution AI的商业价值" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328465?format=jpeg&nocache=1740250113390&captions=chi_hans" alt="Attribution AI的商业价值"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40375?format=jpeg&nocache=1740250113390" alt="Attribution AI的商业价值"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

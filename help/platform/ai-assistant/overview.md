@@ -38,7 +38,7 @@ ht-degree: 8%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="access.md" title="访问AI助手" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475929/?captions=chi_hans&format=jpeg&nocache=1748392732990" alt="访问AI助手"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3436470/?format=jpeg&nocache=1748392732990" alt="访问AI助手"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +61,7 @@ ht-degree: 8%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="discoverability-panel.md" title="使用AI Assistant中的可发现性面板" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440972/?format=jpeg&nocache=1748392732984&captions=chi_hans" alt="使用AI Assistant中的可发现性面板"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3440962/?format=jpeg&nocache=1748392732984" alt="使用AI Assistant中的可发现性面板"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +84,7 @@ ht-degree: 8%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="validate-responses.md" title="验证来自AI Assistant的响应" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441749/?format=jpeg&nocache=1748392733006&captions=chi_hans" alt="验证来自AI Assistant的响应"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441738/?format=jpeg&nocache=1748392733006" alt="验证来自AI Assistant的响应"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -122,7 +122,7 @@ ht-degree: 8%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="operational-insights.md" title="利用AI Assistant获取运营见解" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444042/?format=jpeg&nocache=1748392734347&captions=chi_hans" alt="利用AI Assistant获取运营见解"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3444031/?format=jpeg&nocache=1748392734347" alt="利用AI Assistant获取运营见解"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,7 +130,7 @@ ht-degree: 8%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="operational-insights.md" target="_blank" rel="referrer" title="利用AI Assistant获取运营见解">通过 AI 助手获取运营见解</a>
+                        <a href="operational-insights.md" target="_blank" rel="referrer" title="利用AI Assistant获取运营见解">通过 AI 助手获取运营洞察</a>
                     </p>
                     <p class="is-size-6">了解如何使用AI Assistant揭示有关业务对象(如Adobe Experience Platform中的受众、数据集、架构、目标和历程)的运营见解</p>
                 </div>
@@ -145,7 +145,7 @@ ht-degree: 8%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="find-unused-audiences.md" title="AI助手 — 受众清理用例" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441997/?format=jpeg&nocache=1748392734324&captions=chi_hans" alt="AI助手 — 受众清理用例"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3435532/?format=jpeg&nocache=1748392734324" alt="AI助手 — 受众清理用例"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -168,7 +168,7 @@ ht-degree: 8%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="impact-analysis.md" title="使用AI助手进行影响分析" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441690/?format=jpeg&nocache=1748392734336&captions=chi_hans" alt="使用AI助手进行影响分析"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441680/?format=jpeg&nocache=1748392734336" alt="使用AI助手进行影响分析"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -204,7 +204,7 @@ AI Assistant是一种学习新产品或快速获得熟悉产品答案的有用�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-knowledge.md" title="使用AI Assistant学习Experience Platform应用程序" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441034/?format=jpeg&nocache=1748392735046&captions=chi_hans" alt="使用AI Assistant学习Experience Platform应用程序"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441024/?format=jpeg&nocache=1748392735046" alt="使用AI Assistant学习Experience Platform应用程序"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -227,7 +227,7 @@ AI Assistant是一种学习新产品或快速获得熟悉产品答案的有用�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="onboard.md" title="使用AI助手缩短上线时间" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3475940/?captions=chi_hans&format=jpeg&nocache=1748392735030" alt="使用AI助手缩短上线时间"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3438032/?format=jpeg&nocache=1748392735030" alt="使用AI助手缩短上线时间"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -262,7 +262,7 @@ AI Assistant是一种学习新产品或快速获得熟悉产品答案的有用�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="product-support-agent.md" title="产品支持代理" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443193/?format=jpeg&nocache=1748392735554&captions=chi_hans" alt="产品支持代理"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443183/?format=jpeg&nocache=1748392735554" alt="产品支持代理"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -297,7 +297,7 @@ AI Assistant是一种学习新产品或快速获得熟悉产品答案的有用�
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="security-overview.md" title="AI助手的安全概述" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441090/?format=jpeg&nocache=1748392736016&captions=chi_hans" alt="AI助手的安全概述"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3441066/?format=jpeg&nocache=1748392736016" alt="AI助手的安全概述"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

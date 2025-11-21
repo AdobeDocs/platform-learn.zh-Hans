@@ -20,4 +20,4 @@ ht-degree: 64%
 >
 > 启动项现在为&#x200B;**[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/33546?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/28948?learn=on&enablevpops)
