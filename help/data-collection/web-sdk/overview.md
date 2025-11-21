@@ -20,7 +20,7 @@ ht-degree: 41%
 
 了解 Adobe Experience Platform Web SDK 和 Edge Network 如何让客户使用一个 JavaScript 库和一个信标将数据发送到 Adobe 应用程序和第三方目标。
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37264?captions=chi_hans&learn=on&enablevpops)
 
 >[!NOTE]
 >

@@ -19,7 +19,7 @@ ht-degree: 45%
 
 关于智能服务的高级介绍，此服务可让营销分析师和从业人员在没有数据科学专业知识的背景下，利用客户体验用例中的人工智能和机器学习的功能。 有关详细信息，请访问[智能服务文档](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36593?captions=chi_hans&learn=on&enablevpops)
 
 ## 客户人工智能
 
@@ -39,7 +39,7 @@ ht-degree: 45%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-customer-ai.md" title="Customer AI简介" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32664?format=jpeg&nocache=1740250112240" alt="Customer AI简介"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36439?captions=chi_hans&format=jpeg&nocache=1740250112240" alt="Customer AI简介"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -62,7 +62,7 @@ ht-degree: 45%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-customer-ai.md" title="配置客户人工智能" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32665?format=jpeg&nocache=1740250112226" alt="配置客户人工智能"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36592?captions=chi_hans&format=jpeg&nocache=1740250112226" alt="配置客户人工智能"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -85,7 +85,7 @@ ht-degree: 45%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-customer-ai-scores-and-insights.md" title="使用客户人工智能评分和洞察" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32666?format=jpeg&nocache=1740250112262" alt="使用客户人工智能评分和洞察"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36591?captions=chi_hans&format=jpeg&nocache=1740250112262" alt="使用客户人工智能评分和洞察"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -108,7 +108,7 @@ ht-degree: 45%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-customer-ai.md" title="客户人工智能的商业价值" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40374?format=jpeg&nocache=1740250112251" alt="客户人工智能的商业价值"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328474?captions=chi_hans&format=jpeg&nocache=1740250112251" alt="客户人工智能的商业价值"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -147,7 +147,7 @@ ht-degree: 45%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="introduction-to-attribution-ai.md" title="Attribution AI简介" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32667?format=jpeg&nocache=1740250113366" alt="Attribution AI简介"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36584?captions=chi_hans&format=jpeg&nocache=1740250113366" alt="Attribution AI简介"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -170,7 +170,7 @@ ht-degree: 45%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-attribution-ai.md" title="配置归因人工智能" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32668?format=jpeg&nocache=1740250113378" alt="配置归因人工智能"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/36590?captions=chi_hans&format=jpeg&nocache=1740250113378" alt="配置归因人工智能"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -193,7 +193,7 @@ ht-degree: 45%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-attribution-ai-scores-and-insights.md" title="使用归因人工智能评分和洞察" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32669?format=jpeg&nocache=1740250113402" alt="使用归因人工智能评分和洞察"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345098?captions=chi_hans&format=jpeg&nocache=1740250113402" alt="使用归因人工智能评分和洞察"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -216,7 +216,7 @@ ht-degree: 45%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="business-value-of-attribution-ai.md" title="Attribution AI的商业价值" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40375?format=jpeg&nocache=1740250113390" alt="Attribution AI的商业价值"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/328465?captions=chi_hans&format=jpeg&nocache=1740250113390" alt="Attribution AI的商业价值"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

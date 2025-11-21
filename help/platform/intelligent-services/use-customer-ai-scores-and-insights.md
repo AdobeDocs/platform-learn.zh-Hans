@@ -19,5 +19,5 @@ ht-degree: 51%
 
 了解如何使用Customer AI倾向评分和分析以转化并留住客户。 有关详细信息，请访问[客户人工智能文档](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/36591?captions=chi_hans&learn=on&enablevpops)
 
