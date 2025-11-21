@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: 843140d3befd415a1879410f34c2b60c6adf18d0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -170,11 +170,11 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion30.png)
 
-选择&#x200B;**设置多个变量**&#x200B;对象上的&#x200B;**问号**&#x200B;图标以查看该对象运行时发生的情况。
+选择&#x200B;**设置多个变量**&#x200B;对象上的&#x200B;**放大镜**&#x200B;图标以查看该对象运行时发生的情况。
 
 ![WF Fusion](./images/wffusion31.png)
 
-选择&#x200B;**HTTP上的**&#x200B;问号&#x200B;**图标 — 发出请求**&#x200B;对象以查看该对象运行时发生的情况。 在&#x200B;**OUTPUT**&#x200B;中，查看Adobe I/O返回的&#x200B;**access_token**。
+选择&#x200B;**HTTP上的**&#x200B;放大镜&#x200B;**图标 — 发出请求**&#x200B;对象以查看该对象运行时发生的情况。 在&#x200B;**OUTPUT**&#x200B;中，查看Adobe I/O返回的&#x200B;**access_token**。
 
 ![WF Fusion](./images/wffusion32.png)
 
@@ -206,7 +206,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion39.png)
 
-方案运行后，在最后&#x200B;**设置多个变量**&#x200B;对象上选择&#x200B;**问号**&#x200B;图标。 您应该看到access_token存储在变量`bearer_token`中。
+方案运行后，选择最后&#x200B;**设置多个变量**&#x200B;对象上的&#x200B;**放大镜**&#x200B;图标。 您应该看到access_token存储在变量`bearer_token`中。
 
 ![WF Fusion](./images/wffusion40.png)
 

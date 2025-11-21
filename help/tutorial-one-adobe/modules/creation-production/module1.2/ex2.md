@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: c9807ef0787f4390d12bc7285cfe71260aa3eabf
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -67,7 +67,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffusion217b.png)
 
-您应该会看到此内容。 新建，单击&#x200B;**自定义webhook**&#x200B;模块。
+您应该会看到此内容。 接下来，单击&#x200B;**自定义webhook**&#x200B;模块。
 
 ![WF Fusion](./images/wffusion217c.png)
 
@@ -266,8 +266,8 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffc31.png)
 
-在&#x200B;**高级设置**&#x200B;下，选择&#x200B;**是**&#x200B;以覆盖同名文件。
-单击&#x200B;**添加**。
+在&#x200B;**高级设置**&#x200B;下，选择&#x200B;**是**以覆盖同名文件。
+单击**添加**。
 
 ![WF Fusion](./images/wffc32.png)
 

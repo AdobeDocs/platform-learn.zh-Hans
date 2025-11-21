@@ -4,7 +4,7 @@ description: AEM CS — 高级自定义块
 kt: 5342
 doc-type: tutorial
 exl-id: 31fd1dea-70c9-4f82-87ad-16276ffa7f5b
-source-git-commit: 179b83b733f3314280d307e5eee0db9600a173b0
+source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
 workflow-type: tm+mt
 source-wordcount: '998'
 ht-degree: 0%
@@ -106,10 +106,10 @@ export default function decorate(block) {
 
 ![块](./images/blockadv12.png){zoomable="yes"}
 
-现在，在将XXX替换为您的GitHub用户帐户（本示例中为`main--citisignal--XXX.aem.page/us/en/`）之后，您可以通过转到`main--citisignal--XXX.aem.live/us/en/`和/或`woutervangeluwe`查看对您网站的更改。
+现在，在将XXX替换为您的GitHub用户帐户（本示例中为`main--citisignal-aem-accs--XXX.aem.page`）之后，您可以通过转到`main--citisignal-aem-accs--XXX.aem.live`和/或`woutervangeluwe`查看对您网站的更改。
 
 在此示例中，完整URL将变为：
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page`和/或`https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
 
 然后，您应该会看到此内容，并将样式应用于页面。
 
@@ -336,10 +336,10 @@ async function getOffer(ECID) {
 
 ![块](./images/blockadv19.png){zoomable="yes"}
 
-现在，在将XXX替换为您的GitHub用户帐户（本示例中为`main--citisignal--XXX.aem.page/us/en/`）之后，您可以通过转到`main--citisignal--XXX.aem.live/us/en/`和/或`woutervangeluwe`查看对您网站的更改。
+现在，在将XXX替换为您的GitHub用户帐户（本示例中为`main--citisignal-aem-accs--XXX.aem.page`）之后，您可以通过转到`main--citisignal-aem-accs--XXX.aem.live`和/或`woutervangeluwe`查看对您网站的更改。
 
 在此示例中，完整URL将变为：
-`https://main--citisignal--woutervangeluwe.aem.page/us/en/`和/或`https://main--citisignal--woutervangeluwe.aem.live/us/en/`。
+`https://main--citisignal-aem-accs--woutervangeluwe.aem.page`和/或`https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
 
 您应该会看到此内容。
 

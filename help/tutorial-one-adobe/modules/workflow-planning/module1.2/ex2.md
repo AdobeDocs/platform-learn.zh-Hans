@@ -4,9 +4,9 @@ description: 使用Workfront校对
 kt: 5342
 doc-type: tutorial
 exl-id: 5feb9486-bdb4-4d59-941c-09fc2e38163b
-source-git-commit: da966703aed5342000c19732b6b48682c3958c7f
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1279'
+source-wordcount: '1282'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,8 @@ ht-degree: 0%
 
 ![WF](./images/blueprint3.png)
 
+将&#x200B;**项目模板名称**&#x200B;更改为`--aepUserLdap-- - Integrated Campaign Execution`。
+
 单击&#x200B;**按原样安装……**。
 
 ![WF](./images/blueprint4.png)
@@ -89,7 +91,7 @@ ht-degree: 0%
 
 ![WF](./images/wfp6.png)
 
-选择模板&#x200B;**集成营销活动执行**，然后单击&#x200B;**使用模板**。
+选择模板`--aepUserLdap-- - Integrated Campaign Execution`并单击&#x200B;**使用模板**。
 
 ![WF](./images/wfp6g.png)
 
@@ -132,9 +134,9 @@ ht-degree: 0%
 为您的任务输入此名称： `Create layout using approved assets and copy`。
 
 将字段&#x200B;**工作**&#x200B;设置为角色&#x200B;**Designer**。
-将字段&#x200B;**持续时间**&#x200B;设置为&#x200B;**5天**。
-将字段前置任务设置为&#x200B;**9**。
-为&#x200B;**开始日期**&#x200B;和&#x200B;**到期日期**&#x200B;字段输入日期。
+将字段**持续时间**&#x200B;设置为&#x200B;**5天**。
+将字段前置任务设置为**9**。
+为**开始日期**&#x200B;和&#x200B;**到期日期**&#x200B;字段输入日期。
 
 单击屏幕中的其他位置以保存新任务。
 

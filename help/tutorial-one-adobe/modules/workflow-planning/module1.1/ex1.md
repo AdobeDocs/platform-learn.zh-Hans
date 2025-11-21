@@ -4,7 +4,7 @@ description: Workfront Planning入门
 kt: 5342
 doc-type: tutorial
 exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
-source-git-commit: 42c9c3bbf0958794d5a65c37d4771345c6ff584c
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
 source-wordcount: '1258'
 ht-degree: 1%
@@ -77,7 +77,7 @@ ht-degree: 1%
 
 在&#x200B;**外观**&#x200B;选项卡上更新以下信息：
 
-- 由&#x200B;**替换**&#x200B;无标题记录类型`Business Unit`。
+- 将&#x200B;**无标题记录类型**&#x200B;替换为`Business Unit`。
 - 描述： `Defines which BU is leading campaign planning.`。
 - 选择所选图标的颜色和形状
 
@@ -115,7 +115,7 @@ ht-degree: 1%
 
 将字段的&#x200B;**Name**&#x200B;设置为`Business Unit Lead`并将字段的描述设置为`Business Unit Lead responsible for budget and resources (VP, Head).`
 
-单击&#x200B;**保存**。
+单击&#x200B;**创建**。
 
 ![Workfront计划](./images/wfpl17.png)
 

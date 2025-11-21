@@ -1,14 +1,14 @@
 ---
-title: GenStudio for Performance Marketing Campaign对元数据的激活
-description: GenStudio for Performance Marketing Campaign对元数据的激活
+title: 将GenStudio for Performance Marketing Campaign激活到Meta
+description: 将GenStudio for Performance Marketing Campaign激活到Meta
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
-source-git-commit: 19291afe2d8101fead734fa20212a3db76369522
+source-git-commit: 9af7cc3e221ddacd8b6ddc02a2215b7d9c134d0a
 workflow-type: tm+mt
-source-wordcount: '1326'
+source-wordcount: '1333'
 ht-degree: 0%
 
 ---
@@ -127,25 +127,25 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gscampaign8.png)
 
-## 1.3.3.2设置与元的连接
+## 1.3.3.2设置与Meta的连接
 
 >[!IMPORTANT]
 >
->要设置与Meta的连接，您需要具有可用的Meta用户帐户，并且需要将该用户帐户添加到Meta Business帐户。
+>要设置与Meta的连接，您需要具有可用的Meta用户帐户，并且需要将该用户帐户添加到Meta商业帐户。
 
-要设置到Meta的连接，请单击3个点&#x200B;**...**，然后选择&#x200B;**设置**。
+要设置与Meta的连接，请单击3个点&#x200B;**...**，然后选择&#x200B;**设置**。
 
 ![GSPeM](./images/gsconnection1.png)
 
-单击&#x200B;**元广告**&#x200B;的&#x200B;**连接**。
+单击&#x200B;**Meta Ads**&#x200B;的&#x200B;**连接**。
 
 ![GSPeM](./images/gsconnection2.png)
 
-使用您的元帐户登录。 单击&#x200B;**继续**。
+使用您的Meta帐户登录。 单击&#x200B;**继续**。
 
 ![GSPeM](./images/gsconnection3.png)
 
-如果您的帐户关联到Meta Business帐户，您将能够选择已在Meta中配置的业务组合。
+如果您的帐户关联到Meta商业帐户，您将能够选择已在Meta中配置的业务组合。
 
 ![GSPeM](./images/gsconnection5.png)
 
@@ -153,7 +153,7 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsconnection4.png)
 
-然后，您应该会看到连接到GenStudio for Performance Marketing的元业务帐户的详细信息。
+然后，您应该会看到连接到GenStudio for Performance Marketing的Meta商业帐户的详细信息。
 
 ![GSPeM](./images/gsconnection6.png)
 
@@ -191,7 +191,7 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsasset8.png)
 
-单击&#x200B;**选择文件夹**。
+单击&#x200B;**选择文件夹**。 将资源的名称更改为`--aepUserLdap-- - neon rabbit`。
 
 ![GSPeM](./images/gsasset9.png)
 
@@ -231,13 +231,13 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsasset18.png)
 
-## 1.3.3.4创建和批准元广告
+## 1.3.3.4创建和批准Meta广告
 
-在左侧菜单中，转到&#x200B;**创建**。 选择&#x200B;**元**。
+在左侧菜单中，转到&#x200B;**创建**。 选择&#x200B;**Meta**。
 
 ![GSPeM](./images/gsad1.png)
 
-选择您之前导入的&#x200B;**元广告**&#x200B;模板（名为`--aepUserLdap---citisignal-meta-ad`）。 单击&#x200B;**使用**。
+选择您之前导入的&#x200B;**Meta广告**&#x200B;模板（名为`--aepUserLdap---citisignal-meta-ad`）。 单击&#x200B;**使用**。
 
 ![GSPeM](./images/gsad2.png)
 
@@ -298,11 +298,11 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsad14.png)
 
-现在，4个元广告在&#x200B;**内容** > **体验**&#x200B;下可用。
+现在，4个Meta广告可在&#x200B;**内容** > **体验**&#x200B;下使用。
 
 ![GSPeM](./images/gsad15.png)
 
-## 1.3.3.5将广告发布到元
+## 1.3.3.5将广告发布到Meta
 
 选择其中一个广告，然后单击&#x200B;**激活**。
 
@@ -312,7 +312,7 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsmetaad3.png)
 
-选择元帐户、链接的Facebook页面、元营销活动和元广告集。
+选择Meta帐户、链接的Facebook页面、Meta营销活动和Meta广告集。
 
 为添加项命名，使用`--aepUserLdap-- Fiber Max Ad`。
 
@@ -332,21 +332,21 @@ Zip codes with underserved or dissatisfied cable customers
 
 ![GSPeM](./images/gsmetaad7.png)
 
-几分钟后，广告的状态将更改为&#x200B;**已发布**。 这意味着广告已从GenStudio for Performance Marketing发送到Meta。 这并不意味着广告已经在Meta中发布！ 在Meta Business帐户中制作和发布广告仍有许多步骤需要执行，以便用户在各种元平台上查看。
+几分钟后，广告的状态将更改为&#x200B;**已发布**。 这意味着广告已从GenStudio for Performance Marketing发送到Meta。 这并不意味着该广告已经在Meta中发布！ 在Meta业务帐户中制作和发布广告时，还需要执行许多步骤，以便用户在各种Meta平台上能够看到这些广告。
 
 单击&#x200B;**查看详细信息**。
 
 ![GSPeM](./images/gsmetaad8.png)
 
-单击&#x200B;**打开**，您将转到您的元业务帐户。
+单击&#x200B;**打开**，您将转到您的Meta业务帐户。
 
 >[!IMPORTANT]
 >
->如果您无权访问连接到环境的Meta Business帐户，则无法在Meta中显示此广告。
+>如果您无权访问连接到环境的Meta商业帐户，则无法在Meta中可视化此广告。
 
 ![GSPeM](./images/gsmetaad9.png)
 
-以下是您刚刚创建，但现在位于Meta中的广告的概述。
+下面是您刚刚创建但现在位于Meta中的广告的概述。
 
 ![GSPeM](./images/gsmetaad10.png)
 
