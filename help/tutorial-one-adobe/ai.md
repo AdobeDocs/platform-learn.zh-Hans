@@ -3,9 +3,9 @@ title: Agentic AI技术实验室概述
 description: Agentic AI技术实验室概述
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
+source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,22 @@ ht-degree: 0%
 
 ## 概述 — 工作进行中
 
-Agentic AI技术实验室正在进行中，将于2025年11月/12月发布。
+[1.1Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
-[1.1代理和人工智能快速入门](./modules/agentic-ai/module1.1/agenticai.md)
+**目标**
+
+了解如何使用Adobe Experience Platform代理和Agent Orchestrator来：
+
+- 分析购买趋势
+- 识别高倾向性受众
+- 验证历程性能
+- 为CitiSignal Fiber Max转出创建新的历程
+
+[1.2代理和人工智能快速入门](./modules/agents/module1.2/agenticai.md)
+
+>[!NOTE]
+>
+>此模块尚未发布。
 
 **目标**
 
@@ -38,7 +51,11 @@ Agentic AI技术实验室正在进行中，将于2025年11月/12月发布。
 - MCP服务器， Python笔记本
 - Adobe API的
 
-[1.2 Agent Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md)
+[1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md)
+
+>[!NOTE]
+>
+>此模块尚未发布。
 
 **目标**
 

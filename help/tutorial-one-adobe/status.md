@@ -3,10 +3,10 @@ title: 内容状态
 description: 内容状态
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 715b96b7ba92d63ef3ab39b6083ebf4418f67c8a
+source-git-commit: 8b05c619c8101e4ba8e5c301954d15b27fe395cf
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 9%
+source-wordcount: '540'
+ht-degree: 10%
 
 ---
 
@@ -82,8 +82,9 @@ ht-degree: 9%
 
 | 名称 | 上次更新 | 工作100% | 备注 | 时间投资 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1代理AI](./modules/agentic-ai/module1.1/agenticai.md){target="_blank"} | 2025年9月23日 | 否 | 工作进行中 | 待定 |
-| [1.2代理Collaboration](./modules/agentic-ai/module1.2/agentcollaboration.md){target="_blank"} | 2025年9月23日 | 否 | 工作进行中 | 待定 |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 2025年11月25日 | 否 | 工作进行中 | 待定 |
+| [1.2代理AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 2025年11月25日 | 否 | 工作进行中 | 待定 |
+| [1.3代理Collaboration](./modules/agents/module1.3/agentcollaboration.md){target="_blank"} | 2025年11月25日 | 否 | 工作进行中 | 待定 |
 
 {style="table-layout:auto"}
 
