@@ -3,9 +3,9 @@ title: 内容状态
 description: 内容状态
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 8b05c619c8101e4ba8e5c301954d15b27fe395cf
+source-git-commit: 6642acb3fdce2c9d3a9b919d5c9457191e4780a6
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '548'
 ht-degree: 10%
 
 ---
@@ -82,9 +82,10 @@ ht-degree: 10%
 
 | 名称 | 上次更新 | 工作100% | 备注 | 时间投资 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 2025年11月25日 | 否 | 工作进行中 | 待定 |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 2025年11月25日 | 是 | - | 30分钟 |
 | [1.2代理AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 2025年11月25日 | 否 | 工作进行中 | 待定 |
 | [1.3代理Collaboration](./modules/agents/module1.3/agentcollaboration.md){target="_blank"} | 2025年11月25日 | 否 | 工作进行中 | 待定 |
+| [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 2025年11月25日 | 否 | 工作进行中 | 待定 |
 
 {style="table-layout:auto"}
 
