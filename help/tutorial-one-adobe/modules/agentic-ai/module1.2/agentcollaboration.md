@@ -4,10 +4,10 @@ description: Collaboration代理
 kt: 5342
 doc-type: tutorial
 exl-id: 96f8490e-a7f4-4b81-8e7a-1ae2cab158fe
-source-git-commit: 252ca08d13fbb7bc966a777003da1dd9e3df20a0
+source-git-commit: 0a329e63dec0f5819e2c9baea0257e86c66247c8
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 5%
+source-wordcount: '61'
+ht-degree: 6%
 
 ---
 
@@ -22,10 +22,6 @@ ht-degree: 5%
 - ...
 
 ## 练习
-
-[1.1.1代理Collaboration快速入门](./ex1.md){target="_blank"}
-
-在本练习中， ...
 
 ![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
