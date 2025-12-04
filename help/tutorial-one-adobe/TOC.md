@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: fd1b004a975635871d0d00a8c6b5c1d559521ce9
+source-git-commit: b384842ce17731e241a1404a1d5c41cc70b434ff
 workflow-type: tm+mt
-source-wordcount: '1408'
+source-wordcount: '1416'
 ht-degree: 3%
 
 ---
@@ -282,3 +282,4 @@ ht-degree: 3%
    + 1.4Brand Concierge {#agents4}
       + [概述](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
       + [1.4.1 Brand Concierge快速入门](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
+      + [1.4.2在您的网站上实施Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
