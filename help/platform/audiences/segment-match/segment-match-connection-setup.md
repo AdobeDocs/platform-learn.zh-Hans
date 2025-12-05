@@ -25,4 +25,4 @@ ht-degree: 0%
 > * 对于美国、加拿大、EMEA、澳大利亚和新西兰的客户：Adobe建议Real-Time CDP Prime和Ultimate客户将数据协作用例从区段匹配过渡到Real-Time CDP Collaboration。 查看Real-Time CDP Collaboration的[文档](https://experienceleague.adobe.com/zh-hans/docs/real-time-cdp-collaboration/using/home){target="_blank"}和[快速入门指南](https://experienceleague.adobe.com/zh-hans/docs/real-time-cdp-collaboration/using/quick-start-guide){target="_blank"}，并联系Adobe客户团队以了解详情。
 > * 对于所有其他地区的客户：在2026年在这些地区发布Real-Time CDP Collaboration之前，建议使用区段匹配选项。
 
->[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/346349/?captions=chi_hans&learn=on&enablevpops)
