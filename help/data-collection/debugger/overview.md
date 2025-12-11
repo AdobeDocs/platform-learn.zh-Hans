@@ -19,7 +19,7 @@ ht-degree: 51%
 
 了解Adobe Experience Platform Debugger [Chrome扩展](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)如何帮助您调试Adobe Experience Platform Web SDK、AppMeasurement.js和at.js的实施，这些库支持Real-Time CDP、Journey Optimizer、Customer Journey Analytics、Adobe Analytics、Adobe Target、Adobe Audience Manager、tags等库。
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35858?captions=chi_hans&learn=on&enablevpops)
 
 ## 其他资源
 
