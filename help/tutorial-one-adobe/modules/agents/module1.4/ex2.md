@@ -3,9 +3,9 @@ title: 在您的网站上实施Brand Concierge
 description: 在您的网站上实施Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: ea5fa4694205a94f63d277fdcf2018951fa31fbc
+source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1347'
 ht-degree: 0%
 
 ---
@@ -180,7 +180,9 @@ export default function decorate(block) {
 
 >[!NOTE]
 >
->您的环境可能处于休眠状态。 如果是这种情况，您需要先解除环境休眠。
+>您的环境可能处于休眠状态。 如果是这种情况，您需要先解除环境休眠。 您可在以下视频中找到有关如何解除休眠的说明。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478141?quality=12&learn=on)
 
 ![AEMCS](./images/aemcs10.png)
 

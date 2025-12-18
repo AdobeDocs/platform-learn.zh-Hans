@@ -4,10 +4,10 @@ description: 设置您的AEM CS环境
 kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
-source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
+source-git-commit: 13f74467a74eb3d8bbd135f5b8c7d9bb1a177f8b
 workflow-type: tm+mt
-source-wordcount: '1178'
-ht-degree: 0%
+source-wordcount: '1218'
+ht-degree: 1%
 
 ---
 
@@ -121,6 +121,17 @@ ZZZ = `citisignal-aem-accs`
 
 `https://author-p166717-e1786231.adobeaemcloud.com/bin/franklin.delivery/woutervangeluwe/citisignal-aem-accs/main`
 
+您还应确认已将以下几行代码添加到文件中：
+
+```
+folders:
+  /products/: /products/default
+```
+
+>[!IMPORTANT]
+>
+>您可以在下图中的第6行和第7行上看到这些代码行。 如果缺少这些行，请手动添加它们。
+
 单击&#x200B;**提交更改……**。
 
 ![AEMCS](./images/aemcs13.png)
@@ -153,7 +164,7 @@ ZZZ = `citisignal-aem-accs`
 
 您现在需要访问AEM的&#x200B;**CRX包管理器**&#x200B;环境。 为此，请从URL中删除`ui#/aem/aem/start.html?appId=aemshell`并将其替换为`crx/packmgr`，这意味着您的URL现在应如下所示：
 `https://author-p166717-e1786231.adobeaemcloud.com/crx/packmgr`。
-按&#x200B;**Enter**&#x200B;以加载包管理器环境
+按**Enter**&#x200B;以加载包管理器环境
 
 ![AEMCS](./images/aemcssetup22.png)
 
@@ -278,7 +289,7 @@ ZZZ = `citisignal-aem-accs`
 - **组织**：使用您的GitHub组织名称的名称，在此示例中为`woutervangeluwe`
 - **站点名称**：使用GitHub存储库的名称，该名称应为`citisignal-aem-accs`。
 
-单击&#x200B;**保存并关闭**。
+单击&#x200B;**“保存并关闭”。**
 
 ![AEMCS](./images/aemcssetup33.png)
 
