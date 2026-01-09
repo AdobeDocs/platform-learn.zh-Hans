@@ -4,17 +4,17 @@ description: 客户人工智能 — 数据准备（引入）
 kt: 5342
 doc-type: tutorial
 exl-id: 2b49d86a-af75-4ecd-ab3f-0182f3b8da2f
-source-git-commit: 15adbf950115f0b6bb6613e69a60b310f25de058
+source-git-commit: fff1930bed3b8b0a059217b67f0a0b00a359a019
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # 2.2.1客户人工智能 — 数据准备（引入）
 
 为了使智能服务从营销事件数据中发掘洞察信息，必须在语义上丰富并维护标准结构中的数据。 智能服务可利用Adobe的Experience Data Model (XDM)架构来实现这一点。
-具体而言，在智能服务中使用的所有数据集都必须符合&#x200B;**使用者体验事件** XDM架构。
+具体而言，在智能服务中使用的所有数据集都必须符合**使用者体验事件** XDM架构。
 
 ## 创建架构
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 ![新CEE架构](./images/cee1.png)
 
-- IdentityMap
+- Identitymap
 
 单击&#x200B;**添加字段组**。
 
@@ -112,7 +112,7 @@ ht-degree: 1%
 
 为本练习中的体验事件准备的数据必须符合[使用者体验事件XDM字段组](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md)的要求和架构。
 
-请从以下位置下载包含演示数据的zip文件： [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip)。
+请从以下位置下载包含演示数据的zip文件： [https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM_CAI_EVENTS-WEB.zip](https://one-adobe-tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM_CAI_EVENTS-WEB.zip)。
 
 您现在已下载名为&#x200B;**CUSTOM-CAI-EVENTS-WEB.zip**&#x200B;的文件。 将文件放在计算机的桌面上并解压缩，之后您将看到名为&#x200B;**CUSTOM-CAI-EVENTS-WEB**&#x200B;的文件夹。
 

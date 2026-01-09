@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: fff1930bed3b8b0a059217b67f0a0b00a359a019
 workflow-type: tm+mt
-source-wordcount: '184'
+source-wordcount: '209'
 ht-degree: 1%
 
 ---
@@ -19,7 +19,15 @@ ht-degree: 1%
 
 ## 先决条件
 
-- 访问Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
+- 对Adobe Firefly的访问权限
+- 访问Adobe Workfront Fusion
+- 访问Adobe Frame.io
+
+## 视频
+
+在本视频中，您将获得本练习涉及的所有步骤的解释和演示。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3478697?quality=12&learn=on)
 
 ## 练习
 
