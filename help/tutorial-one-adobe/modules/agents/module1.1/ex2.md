@@ -3,14 +3,18 @@ title: Adobe Marketing Agent与ChatGPT
 description: Adobe Marketing Agent与ChatGPT
 kt: 5342
 doc-type: tutorial
-source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
+source-git-commit: 9663ef2838024e293acc72c203b1e3578911d57f
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '894'
 ht-degree: 0%
 
 ---
 
 # 1.1.2带有ChatGPT的Adobe Marketing Agent
+
+>[!IMPORTANT]
+>
+>本实验使用的功能尚未发布。 该功能仍在开发中，因此尚未公开发布。
 
 ## 视频
 
