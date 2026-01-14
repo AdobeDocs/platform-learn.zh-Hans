@@ -11,9 +11,9 @@ doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
 exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 10d36ee194c8da937f667c1ba438681959c5fc68
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '991'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Adobe Experience Platform允许您将来自多个来源的数据整合在一起�
 **数据架构师**&#x200B;需要在本教程之外创建合并策略。
 
 在开始练习之前，请观看此简短视频，了解有关合并策略的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/345074?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
 
 ## 所需的权限
 
@@ -55,7 +55,7 @@ Adobe Experience Platform允许您将来自多个来源的数据整合在一起�
 
 ![合并策略屏幕](assets/mergepolicies-default.png)
 
-为配置文件启用多个架构时，将为所有启用配置文件的记录架构自动创建[!UICONTROL 联合架构]，记录架构共享基类。 您可以通过转到&#x200B;**[!UICONTROL 合并架构]**&#x200B;选项卡来查看[!UICONTROL 合并架构]。
+为配置文件启用多个架构时，将为所有启用配置文件的记录架构自动创建[!UICONTROL 联合架构]，记录架构共享基类。 您可以通过转到[!UICONTROL 合并架构]选项卡来查看&#x200B;**[!UICONTROL 合并架构]**。
 
 ![合并策略屏幕](assets/mergepolicies-unionSchema.png)
 
@@ -72,7 +72,7 @@ Adobe Experience Platform允许您将来自多个来源的数据整合在一起�
 1. 对于&#x200B;**[!UICONTROL 属性合并]**，选择&#x200B;**[!UICONTROL 数据集优先顺序]**
 1. 将`Luma Loyalty Dataset`和`Luma CRM Dataset`拖放到&#x200B;**[!UICONTROL 数据集]**&#x200B;面板。
 1. 通过将`Luma Loyalty Dataset`拖放到`Luma CRM Dataset`的上方以确保位于顶部
-1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;按钮
+1. 选择&#x200B;**[!UICONTROL 保存]**按钮
    <!--do i need to explain Private Graph? Is that GA?-->
    ![合并策略](assets/mergepolicies-newPolicy.png)
 
@@ -122,7 +122,7 @@ CRM ID是`Luma Loyalty Dataset`中的标识字段，但只能使用主标识查�
 1. 选择&#x200B;**[!UICONTROL 显示配置文件]**&#x200B;按钮
 1. 选择配置文件ID以打开配置文件
 1. 转到&#x200B;**[!UICONTROL 属性]**&#x200B;选项卡
-1. 请注意，CRM数据集中的其他配置文件详细信息（如手机号码和电子邮件地址）不可用，因为仅
+1. 请注意，CRM数据集中的其他配置文件详细信息（如手机号码和电子邮件地址）不可用，因为我们的`Loyalty Only`合并策略不包含CRM数据集。
    ![CRM数据在仅忠诚度策略中不可查看](assets/mergepolicies-loyaltyOnly-attributes.png)
 1. 转到&#x200B;**[!UICONTROL 事件]**&#x200B;选项卡
 1. ExperienceEvent数据可用，尽管未明确将其包含在合并策略数据集中：
@@ -140,7 +140,7 @@ CRM ID是`Luma Loyalty Dataset`中的标识字段，但只能使用主标识查�
 
 ## 其他资源
 
-* [合并策略文档](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html?lang=zh-Hans)
+* [合并策略文档](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
 * [合并策略API（实时客户个人资料API的一部分）引用](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 现在我们转到[数据治理框架](apply-data-governance-framework.md)。
