@@ -31,7 +31,7 @@ Adobe Experience Platform允许您将来自多个来源的数据整合在一起�
 **数据架构师**&#x200B;需要在本教程之外创建合并策略。
 
 在开始练习之前，请观看此简短视频，了解有关合并策略的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/345074?captions=chi_hans&learn=on&enablevpops)
 
 ## 所需的权限
 
