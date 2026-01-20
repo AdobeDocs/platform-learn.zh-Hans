@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 添加事件转发扩展
 
-了解如何在数据收集中添加事件转发扩展。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)。
+了解如何在数据收集中添加事件转发扩展。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/event-forwarding/overview)。
 
 >[!NOTE]
 >

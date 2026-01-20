@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 创建事件转发规则
 
-了解如何在数据收集中创建事件转发规则。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)。
+了解如何在数据收集中创建事件转发规则。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)。
 
 >[!NOTE]
 >

@@ -14,6 +14,6 @@ ht-degree: 33%
 
 # 配置数据流
 
-了解如何为Web和移动SDK实施创建和配置数据流。 有关详细信息，请访问[数据流文档](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)。
+了解如何为Web和移动SDK实施创建和配置数据流。 有关详细信息，请访问[数据流文档](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/340825?learn=on&enablevpops)

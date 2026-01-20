@@ -23,5 +23,5 @@ ht-degree: 52%
 ## 其他资源
 
 * [下载Chrome扩展](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-* [Experience Platform Debugger文档](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html)
-* [调试标记实现](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)
+* [Experience Platform Debugger文档](https://experienceleague.adobe.com/docs/debugger/using-v2/experience-cloud-debugger.html?lang=zh-Hans)
+* [调试标记实现](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html?lang=zh-Hans)

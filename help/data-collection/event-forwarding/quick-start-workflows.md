@@ -22,6 +22,6 @@ ht-degree: 0%
 1. 使用工作流创建引用对象。 
 1. 将引用对象复制到现有实现中。
 
-有关Meta Conversions API快速入门工作流的详细信息，请访问[文档](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/server/meta/overview#quick-start)。
+有关Meta Conversions API快速入门工作流的详细信息，请访问[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/server/meta/overview#quick-start)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on&enablevpops)

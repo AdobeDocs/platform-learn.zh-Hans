@@ -12,7 +12,7 @@ ht-degree: 69%
 
 # 添加 Adobe Analytics
 
-在本课程中，您将实施 [Adobe Analytics 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html)，并创建相应规则以将数据发送到 Adobe Analytics。
+在本课程中，您将实施 [Adobe Analytics 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html?lang=zh-Hans)，并创建相应规则以将数据发送到 Adobe Analytics。
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html?lang=zh-Hans) 是一款行业领先的解决方案，可帮助您充分了解客户的行为和需求，并根据客户情报掌控自己的业务发展方向。
 
@@ -20,9 +20,9 @@ ht-degree: 69%
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
-> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
-> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
+> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)**
 
 ## 学习目标
 
@@ -41,7 +41,7 @@ ht-degree: 69%
 
 您应该已经完成[配置标记](create-a-property.md)和[添加Identity服务](id-service.md)中的课程。
 
-此外，您还至少需要一个报表包 ID 和跟踪服务器。如果您没有可在本教程中使用的测试/开发报表包，请创建一个。如果不确定如何执行此操作，请参阅[此文档](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。您可以从当前实施中检索跟踪服务器，或者向 Adobe 顾问或客户关怀代表索取。
+此外，您还至少需要一个报表包 ID 和跟踪服务器。如果您没有可在本教程中使用的测试/开发报表包，请创建一个。如果不确定如何执行此操作，请参阅[此文档](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite)。您可以从当前实施中检索跟踪服务器，或者向 Adobe 顾问或客户关怀代表索取。
 
 ## 添加 Analytics 扩展
 
@@ -196,7 +196,7 @@ Analytics 扩展包含两个主要部分：
 
 ### 添加 Adobe Analytics Product String 扩展
 
-如果您已经熟悉 Adobe Analytics 实施，则可能也熟悉[产品变量](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html)。产品变量具有非常具体的语法，而且其使用方式会因上下文而略有不同。为帮助在标记中更轻松地填充产品变量，已在标记扩展市场中创建了三个其他扩展！ 在此部分中，您将添加一个由 Adobe 咨询团队创建的扩展，以将其用在产品详细信息页面中。
+如果您已经熟悉 Adobe Analytics 实施，则可能也熟悉[产品变量](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=zh-Hans)。产品变量具有非常具体的语法，而且其使用方式会因上下文而略有不同。为帮助在标记中更轻松地填充产品变量，已在标记扩展市场中创建了三个其他扩展！ 在此部分中，您将添加一个由 Adobe 咨询团队创建的扩展，以将其用在产品详细信息页面中。
 
 **添加 `Adobe Analytics Product String` 扩展**
 
@@ -426,7 +426,7 @@ Analytics 扩展包含两个主要部分：
 
 此插件的用途是：当访客刷新页面或使用浏览器的返回按钮返回到在其中设置了值的页面时，防止错误地在代码中重复显示该值。在本课程中，您将使用该插件来防止重复显示 `clickthrough` 事件。
 
-此插件的代码可在 [Analytics 文档](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html)中找到，但我们仍在此处提供，方便您复制/粘贴。
+此插件的代码可在 [Analytics 文档](https://experienceleague.adobe.com/docs/analytics/implementation/vars/plugins/getvalonce.html?lang=zh-Hans)中找到，但我们仍在此处提供，方便您复制/粘贴。
 
 1. 复制以下代码
 

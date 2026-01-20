@@ -39,7 +39,7 @@ Adobe Experience Platform Debugger可以安装在Google Chrome中。 请按照�
 
 安装Chrome扩展或Firefox加载项后，会在扩展栏中添加一个图标(![](assets/start-icon.jpg))。 选择此图标以打开扩展。
 
-请参阅专用指南，了解有关[Adobe Experience Platform Debugger扩展](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html)以及如何调试所有Adobe Web应用程序的更多信息。
+请参阅专用指南，了解有关[Adobe Experience Platform Debugger扩展](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=zh-Hans)以及如何调试所有Adobe Web应用程序的更多信息。
 
 ## 使用QA URL预览Target活动
 
@@ -51,7 +51,7 @@ at.js和Platform Web SDK都允许您使用Target QA URL预览Target活动，并�
 >
 >平台Web SDK版本2.13.0或更高版本支持Target QA模式功能。 已根据`xdm.web.webPageDetails.URL`调用中传递的`sendEvent`值启用目标QA模式。 对此值所做的任何修改（例如将所有字符变为小写），都可能会妨碍Target QA模式正常工作。
 
-有关[Target活动QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html)的详细信息，请参阅专用指南。
+有关[Target活动QA](https://experienceleague.adobe.com/docs/target/using/activities/activity-qa/activity-qa.html?lang=zh-Hans)的详细信息，请参阅专用指南。
 
 ## 调试Target实施
 
@@ -129,7 +129,7 @@ Target跟踪可提供有关活动资格和访客的Target配置文件的详细�
 - 请求详细信息
 - 配置文件快照
 
-有关Target跟踪的详细信息，请参阅有关[调试Target内容投放](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html)的专用指南。
+有关Target跟踪的详细信息，请参阅有关[调试Target内容投放](https://experienceleague.adobe.com/docs/target/using/activities/troubleshoot-activities/content-trouble.html?lang=zh-Hans)的专用指南。
 
 ### Assurance疑难解答
 
@@ -180,4 +180,4 @@ Platform Web SDK `sendEvent`调用的请求有效负载和响应与at.js不同�
 
 >[!NOTE]
 >
->我们致力于帮助您成功从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。
+>我们致力于帮助您成功从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=zh-Hans#M463)中发帖让我们知道。

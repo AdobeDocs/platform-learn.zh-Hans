@@ -14,7 +14,7 @@ ht-degree: 23%
 
 # 事件转发概述
 
-了解事件转发如何集中数据收集，减少Web和移动应用程序中所需的代码量，以及通过Adobe Experience Platform Edge Network将数据流式传输到非Adobe解决方案。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)。
+了解事件转发如何集中数据收集，减少Web和移动应用程序中所需的代码量，以及通过Adobe Experience Platform Edge Network将数据流式传输到非Adobe解决方案。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/event-forwarding/overview)。
 
 >[!NOTE]
 >
