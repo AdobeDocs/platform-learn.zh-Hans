@@ -4,9 +4,8 @@ description: 了解如何在数据收集中添加事件转发扩展。
 feature: Event Forwarding
 level: Intermediate
 jira: KT-6422
-thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 # 添加事件转发扩展
 
-了解如何在数据收集中添加事件转发扩展。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)。
+了解如何在数据收集中添加事件转发扩展。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)。
 
 >[!NOTE]
 >
@@ -25,4 +24,4 @@ ht-degree: 0%
 > * Platform Launch服务器端现在为&#x200B;**[!DNL event forwarding]**
 > * Edge配置现在为&#x200B;**[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/3410376?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/331941?learn=on&enablevpops)

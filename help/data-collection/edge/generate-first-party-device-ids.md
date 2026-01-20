@@ -4,9 +4,8 @@ description: 了解如何生成第一方设备 ID
 feature: Web SDK
 level: Experienced
 jira: KT-9728
-thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
-source-git-commit: fd60f7ad338c81f5b32e7951d5a00b49c5aa1756
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '704'
 ht-degree: 0%
@@ -21,7 +20,7 @@ Adobe Experience Cloud应用程序传统上会使用不同的技术生成Cookie�
 1. Adobe服务器使用域名的CNAME配置设置的第一方Cookie
 1. JavaScript设置的第一方Cookie
 
-最近的浏览器更改限制了这类Cookie的持续时间。 在使用客户拥有的服务器（使用DNS A/AAAA记录而非DNS CNAME）设置第一方Cookie时，它们最有效。 [第一方设备ID (FPID)功能](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/identity/first-party-device-ids)允许实施Adobe Experience Platform Web SDK的客户在使用DNS A/AAAA记录的服务器中的Cookie中使用设备ID。 然后，可以将这些ID发送到Adobe并用作生成Experience Cloud ID (ECID)的种子，该ID仍是Adobe Experience Cloud应用程序中的主要标识符。
+最近的浏览器更改限制了这类Cookie的持续时间。 在使用客户拥有的服务器（使用DNS A/AAAA记录而非DNS CNAME）设置第一方Cookie时，它们最有效。 [第一方设备ID (FPID)功能](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids)允许实施Adobe Experience Platform Web SDK的客户在使用DNS A/AAAA记录的服务器中的Cookie中使用设备ID。 然后，可以将这些ID发送到Adobe并用作生成Experience Cloud ID (ECID)的种子，该ID仍是Adobe Experience Cloud应用程序中的主要标识符。
 
 以下是有关该功能的工作原理的简短示例：
 
@@ -152,4 +151,4 @@ PHP没有用于生成UUID的本地库，因此这些代码示例比使用其他�
 1. 向Platform Edge Network发送另一个请求。
 1. 确认`AMCV_<IMSORGID@AdobeOrg>` Cookie中的值与已删除的`ECID` Cookie中的值相同`AMCV_`。 如果给定FPID的Cookie值相同，则ECID的设定种子过程成功。
 
-有关此功能的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=zh-Hans)。
+有关此功能的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html)。

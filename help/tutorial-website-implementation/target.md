@@ -3,18 +3,18 @@ title: 添加带有标记的Adobe Target
 description: 了解如何使用带有at.js的标记、页面加载请求、参数、订单请求和自定义页眉/页脚代码来实施Adobe Target。 本课程是“在网站中实施Experience Cloud”教程的一部分。
 solution: Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
 workflow-type: tm+mt
-source-wordcount: '4252'
-ht-degree: 68%
+source-wordcount: '4245'
+ht-degree: 67%
 
 ---
 
 # 添加 Adobe Target
 
-在本课程中，我们将通过页面加载请求和自定义参数来实施 [Adobe Target 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=zh-Hans)。
+在本课程中，我们将通过页面加载请求和自定义参数来实施 [Adobe Target 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html)。
 
-[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=zh-Hans) 是一种 Adobe Experience Cloud 解决方案，可为您提供定制和个性化客户体验所需的一切功能，从而最大限度地增加您的 Web 和移动设备网站、应用程序、社交媒体及其他数字渠道的收入。
+[Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html) 是一种 Adobe Experience Cloud 解决方案，可为您提供定制和个性化客户体验所需的一切功能，从而最大限度地增加您的 Web 和移动设备网站、应用程序、社交媒体及其他数字渠道的收入。
 
 >[!NOTE]
 >
@@ -91,11 +91,11 @@ ht-degree: 68%
 * `body {opacity: 0 !important}` 指定在 Target 加载之前要用于预隐藏的 css 定义。默认情况下，将隐藏整个主体。例如，如果您拥有一个一致的 DOM 结构，该结构中包含一个封装导航下所有内容的易于识别的容器元素，而且您从不希望测试导航或对其进行个性化设置，则可以使用此设置限制仅对该容器元素进行预隐藏。
 * `3000` 指定预隐藏的超时设置。默认情况下，如果 Target 未在 3 秒内加载，则会显示页面。这种情况应极其少见。
 
-有关更多详细信息，以及如需了解如何获取未缩小的预隐藏代码片段，请参阅[使用异步部署的 Adobe Target 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html?lang=zh-Hans#adobe-target-extension-with-an-asynchronous-deployment)。
+有关更多详细信息，以及如需了解如何获取未缩小的预隐藏代码片段，请参阅[使用异步部署的 Adobe Target 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html#adobe-target-extension-with-an-asynchronous-deployment)。
 
 ## 添加 Target 扩展
 
-Adobe Target 扩展支持使用适用于新版 Web 的 Target JavaScript SDK at.js 进行客户端实施。仍在使用Target旧版库mbox.js [的客户应升级到at.js 2.x](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/migrate-mbox/target-atjs-implementation.html?lang=zh-Hans)，以便使用标记。
+Adobe Target扩展支持使用Target的at.js JavaScript库进行客户端实施。 有关Adobe Target的Web SDK实施，请参阅[Experience Platform Web SDK教程](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-web-sdk/applications-setup/setup-target)。
 
 Target v2 扩展包含两个主要部分：
 
@@ -186,7 +186,7 @@ Target v2 扩展包含两个主要部分：
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 如[前面的课程](switch-environments.md)中所述，确保Debugger将标记属性映射到&#x200B;*您的*&#x200B;开发环境
+1. 如&#x200B;*前面的课程*&#x200B;中所述，确保Debugger将标记属性映射到[您的](switch-environments.md)开发环境
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -208,11 +208,11 @@ Target v2 扩展包含两个主要部分：
 
 通过在 Target 请求中传递参数，可以向您的定位、测试和个性化活动增添强大的功能。标记扩展提供了两个用于传递参数的操作：
 
-1. `Add Params to Page Load Request`，可向页面加载请求添加参数（等效于 [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=zh-Hans) 方法）
+1. `Add Params to Page Load Request`，可向页面加载请求添加参数（等效于 [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html) 方法）
 
-1. `Add Params to All Requests`，可在所有 Target 请求中添加参数，例如页面加载请求以及从 Custom Code 操作发出或在您的网站上硬编码的其他请求（等效于 [targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html?lang=zh-Hans) 方法）
+1. `Add Params to All Requests`，可在所有 Target 请求中添加参数，例如页面加载请求以及从 Custom Code 操作发出或在您的网站上硬编码的其他请求（等效于 [targetPageParamsAll()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html) 方法）
 
-这两个操作可在 `Load Target` 操作“之前”**&#x200B;使用，并且可根据您的规则配置在不同的页面上设置不同的参数。使用通过 Identity Service 设置客户 ID 时所使用的规则排序功能，在触发页面加载请求的规则之前对 `Library Loaded` 事件设置其他参数。
+这两个操作可在 `Load Target` 操作“之前”**&#x200B;使用，并且可根据您的规则配置在不同的页面上设置不同的参数。使用通过身份标识服务设置客户 ID 时所使用的规则排序功能，在触发页面加载请求的规则之前对 `Library Loaded` 事件设置其他参数。
 >[!TIP]
 >
 >由于大多数实施都使用页面加载请求进行活动交付，因此通常只使用`Add Params to Page Load Requests`操作便已足够。
@@ -277,7 +277,7 @@ Target v2 扩展包含两个主要部分：
 
 ### 轮廓参数
 
-与请求参数类似，轮廓参数也通过 Target 请求进行传递。但是，轮廓参数存储在 Target 访客轮廓数据库中，并在[访客轮廓留存期](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html?lang=zh-Hans)内持久保留。您可以在网站的一个页面上设置配置文件参数，然后将其用于另一页面上的 Targe 活动。以下是一个汽车网站的示例。当访客访问某个车辆页面时，您可以传递配置文件参数“profile.lastViewed=sportscar”，以记录访客对该特定车辆感兴趣。当访客浏览至其他非车辆页面时，您可以根据访客最近查看的车辆锁定内容。轮廓参数适用于很少更改或只在某些页面上可用的属性。
+与请求参数类似，轮廓参数也通过 Target 请求进行传递。但是，轮廓参数存储在 Target 访客轮廓数据库中，并在[访客轮廓留存期](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile-lifetime.html)内持久保留。您可以在网站的一个页面上设置配置文件参数，然后将其用于另一页面上的 Targe 活动。以下是一个汽车网站的示例。当访客访问某个车辆页面时，您可以传递配置文件参数“profile.lastViewed=sportscar”，以记录访客对该特定车辆感兴趣。当访客浏览至其他非车辆页面时，您可以根据访客最近查看的车辆锁定内容。轮廓参数适用于很少更改或只在某些页面上可用的属性。
 
 在本教程中，您将不会传递任何轮廓参数，但其工作流程与传递 `pageName` 参数时所执行的操作几乎相同。唯一的不同之处在于，您需要为轮廓参数名称指定 `profile.` 前缀。下面显示了 `Add Params to Page Load Request` 操作中名为“userType”的轮廓参数：
 
@@ -285,7 +285,7 @@ Target v2 扩展包含两个主要部分：
 
 ### 实体参数
 
-实体参数是[实施推荐](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=zh-Hans)时使用的特殊参数，主要有三个原因：
+实体参数是[实施推荐](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html)时使用的特殊参数，主要有三个原因：
 
 1. 用作触发产品推荐的键值。例如，当使用诸如“查看了产品 X 的人员还查看了 Y”之类的推荐算法时，“X”便是推荐的“键值”。它通常为访客当前正在查看的产品 SKU (`entity.id`) 或类别 (`entity.categoryId`)。
 1. 用于收集访客行为以提供推荐算法，例如“最近查看的产品”或“查看次数最多的产品”
@@ -297,16 +297,16 @@ Target v2 扩展包含两个主要部分：
 
 ### 添加客户 ID 参数
 
-通过 Adobe Experience Platform Identity Service 收集客户 ID，可以使用 Adobe Experience Cloud 的[客户属性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=zh-Hans)功能轻松地将 CRM 数据导入 Target。它还支持[跨设备访客拼合](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html?lang=zh-Hans)，当客户在笔记本电脑和移动设备之间切换时，可以保持一致的用户体验。
+通过 Adobe Experience Platform 身份标识服务收集客户 ID，可以使用 Adobe Experience Cloud 的[客户属性](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=zh-Hans)功能轻松地将 CRM 数据导入 Target。它还支持[跨设备访客拼合](https://experienceleague.adobe.com/docs/target/using/integrate/experience-cloud-device-co-op.html)，当客户在笔记本电脑和移动设备之间切换时，可以保持一致的用户体验。
 
-在触发页面加载请求之前，必须在 Identity Service 的 `Set Customer IDs` 操作中设置客户 ID。为此，请确保您能够在网站上执行以下操作：
+在触发页面加载请求之前，必须在身份标识服务的 `Set Customer IDs` 操作中设置客户 ID。为此，请确保您能够在网站上执行以下操作：
 
 * 必须在页面上先提供客户ID，然后再提供标记嵌入代码
-* 必须安装 Adobe Experience Platform Identity Service
+* 必须安装 Adobe Experience Platform 身份标识服务
 * 必须在发生“Library Loaded (Page Top)”事件时触发的规则中使用 `Set Customer IDs` 操作
 * 在“Set Customer IDs”操作“之后”**&#x200B;触发的规则中使用 `Fire Page Load Request` 操作
 
-在上一课程（[添加 Adobe Experience Platform Identity Service](id-service.md)）中，您创建了 `All Pages - Library Loaded - Authenticated - 10` 规则以触发“Set Customer ID”操作。由于此规则的 `Order` 设置为 `10`，因此客户 ID 会在页面加载请求从 `All Pages - Library Loaded` 规则（其 `Order` 设置为 `50`）触发之前进行设置。这样，您便已经为 Target 实施了客户 ID 收集！
+在上一课程（[添加 Adobe Experience Platform 身份标识服务](id-service.md)）中，您创建了 `All Pages - Library Loaded - Authenticated - 10` 规则以触发“Set Customer ID”操作。由于此规则的 `Order` 设置为 `10`，因此客户 ID 会在页面加载请求从 `All Pages - Library Loaded` 规则（其 `Order` 设置为 `50`）触发之前进行设置。这样，您便已经为 Target 实施了客户 ID 收集！
 
 #### 验证客户 ID
 
@@ -316,7 +316,7 @@ Target v2 扩展包含两个主要部分：
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 如[前面的课程](switch-environments.md)中所述，确保Debugger将标记属性映射到&#x200B;*您的*&#x200B;开发环境
+1. 如&#x200B;*前面的课程*&#x200B;中所述，确保Debugger将标记属性映射到[您的](switch-environments.md)开发环境
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -334,7 +334,7 @@ Target v2 扩展包含两个主要部分：
 1. Open the Debugger
 1. Go to the Target tab
 1. Expand your client code
-1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html?lang=zh-Hans):
+1. You should see parameters in the latest Target request for `vst.crm_id.id` and `vst.crm_id.authState`. `vst.crm_id.id` should have a value of the hashed email address and `vst.crm_id.authState` should have a value of `1` to represent `authenticated`. Note that `crm_id` is the `Integration Code` you specified in the Identity Service configuration and must align with the key you use in your [Customer Attributes data file](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/t-crs-usecase.html):
 
 ![The Customer Id details should be visible as custom parameters in the Target request](images/target-debugger-customerId.png)
 -->
@@ -391,7 +391,7 @@ Target属性与标记属性和Analytics报表包类似。 具有多个品牌、�
 
 >[!WARNING]
 >
->如果您尝试通过&#x200B;**[!UICONTROL Add Params to Page Load Request]**&#x200B;操作添加`at_property`参数，网络请求中将填充该参数，但Target的可视化体验编辑器(VEC)在加载页面时无法自动检测它。 始终使用Custom Code操作中的`targetPageParams()`函数填充`at_property`。
+>如果您尝试通过`at_property`Add Params to Page Load Request **[!UICONTROL 操作添加]**&#x200B;参数，网络请求中将填充该参数，但Target的可视化体验编辑器(VEC)在加载页面时无法自动检测它。 始终使用Custom Code操作中的`at_property`函数填充`targetPageParams()`。
 
 #### 验证资产令牌
 
@@ -400,7 +400,7 @@ Target属性与标记属性和Analytics报表包类似。 具有多个品牌、�
 **验证资产令牌参数**
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
-1. 如[前面的课程](switch-environments.md)中所述，确保Debugger将标记属性映射到&#x200B;*您的*&#x200B;开发环境
+1. 如&#x200B;*前面的课程*&#x200B;中所述，确保Debugger将标记属性映射到[您的](switch-environments.md)开发环境
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -430,7 +430,7 @@ Target属性与标记属性和Analytics报表包类似。 具有多个品牌、�
 
 最佳做法是在所有订单漏斗中使用订单确认请求，即使在非零售网站上也是如此。 例如，商机开发网站中的潜在客户漏斗通常会在末尾生成一个唯一的“潜在客户 ID”。这些网站应该实施订单请求，并对 orderTotal 使用一个静态值（例如“1”）。
 
-如果客户在大多数报表中使用Analytics for Target (A4T)集成，并且使用的是不支持A4T的Automated Personalization活动，则他们可能还希望实施订单请求。 此外，订单请求是Recommendations实施中的一个关键元素，可根据购买行为提供适当的算法。 有关A4T支持的最新信息，请参阅[文档](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hans#section_F487896214BF4803AF78C552EF1669AA)。
+如果客户在大多数报表中使用Analytics for Target (A4T)集成，并且使用的是不支持A4T的Automated Personalization活动，则他们可能还希望实施订单请求。 此外，订单请求是Recommendations实施中的一个关键元素，可根据购买行为提供适当的算法。 有关A4T支持的最新信息，请参阅[文档](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=en#section_F487896214BF4803AF78C552EF1669AA)。
 
 订单确认请求应通过只在订单确认页面上或仅在发生订单确认事件时触发的规则进行触发。通常，订单确认请求可以与设置 Adobe Analytics 购买事件的规则结合使用。订单确认请求必须使用核心扩展的 Custom Code 操作进行配置，并使用适当的数据元素来设置 orderId、orderTotal 和 productPurchasedId 参数。
 
@@ -532,7 +532,7 @@ Target属性与标记属性和Analytics报表包类似。 具有多个品牌、�
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 如[前面的课程](switch-environments.md)中所述，确保Debugger将标记属性映射到&#x200B;*您的*&#x200B;开发环境
+1. 如&#x200B;*前面的课程*&#x200B;中所述，确保Debugger将标记属性映射到[您的](switch-environments.md)开发环境
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -564,11 +564,11 @@ Target属性与标记属性和Analytics报表包类似。 具有多个品牌、�
 
 在极少数情况下，您需要发出页面加载请求和订单确认请求以外的Target请求。 例如，有时您要用于个性化的重要数据未在页面上的标记嵌入代码之前定义，此数据可能会在页面底部进行硬编码，或从异步API请求返回。 此数据可以使用其他请求发送到Target，不过在页面可见的情况下使用此请求交付内容并不是最佳做法。 此数据可用于丰富访客配置文件以供日后使用（使用配置文件参数）或填充Recommendations目录。
 
-在这些情况下，使用核心扩展中的Custom Code操作，以使用[getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html?lang=zh-Hans)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html?lang=zh-Hans)和[trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html?lang=zh-Hans)方法触发请求。 这非常类似于您在[订单确认请求](#order-confirmation-request)练习中所执行的操作，但使用的请求名称有所不同，而且不会使用特殊的订单参数。 在通过自定义代码发起Target请求之前，请确保使用&#x200B;**[!UICONTROL Load Target]**&#x200B;操作。
+在这些情况下，使用核心扩展中的Custom Code操作，以使用[getOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-applyoffer.html)和[trackEvent()](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/adobe-target-trackevent.html)方法触发请求。 这非常类似于您在[订单确认请求](#order-confirmation-request)练习中所执行的操作，但使用的请求名称有所不同，而且不会使用特殊的订单参数。 在通过自定义代码发起Target请求之前，请确保使用&#x200B;**[!UICONTROL Load Target]**&#x200B;操作。
 
 ## 库页眉和库页脚
 
-Target 用户界面的“编辑 at.js”屏幕中有几处位置，可供您粘贴紧接 at.js 文件之前或之后执行的自定义 JavaScript。库页眉有时用于通过 [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html?lang=zh-Hans) 函数覆盖 at.js 设置，或者使用[数据提供商](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=zh-Hans)功能传递来自第三方的数据。库页脚有时用于添加 [at.js 自定义事件](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html?lang=zh-Hans)侦听器。
+Target 用户界面的“编辑 at.js”屏幕中有几处位置，可供您粘贴紧接 at.js 文件之前或之后执行的自定义 JavaScript。库页眉有时用于通过 [targetGlobalSettings()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/targetgobalsettings.html) 函数覆盖 at.js 设置，或者使用[数据提供商](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)功能传递来自第三方的数据。库页脚有时用于添加 [at.js 自定义事件](https://experienceleague.adobe.com/docs/target-dev/developer/client-side/at-js-implementation/functions-overview/atjs-custom-events.html)侦听器。
 
 要在标记中复制此功能，只需使用核心扩展中的Custom Code操作，并将该操作排在Load Target操作之前（库页眉）或之后（库页脚）。 可以在与 `Load Target` 操作相同的规则中执行上述操作（如下图所示），或者也可以在单独的规则中执行，但其中的事件或顺序设置需确保在包含 `Load Target` 的规则之前或之后可靠触发：
 
@@ -576,8 +576,8 @@ Target 用户界面的“编辑 at.js”屏幕中有几处位置，可供您粘�
 
 要进一步了解自定义页眉和页脚的用例，请参阅以下资源：
 
-* [使用 dataProviders 将第三方数据集成到 Adobe Target 中](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html?lang=zh-Hans)
-* [实施 dataProviders 将第三方数据集成到 Adobe Target 中](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html?lang=zh-Hans)
-* [将响应令牌和 at.js 自定义事件与 Adobe Target 结合使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html?lang=zh-Hans)
+* [使用 dataProviders 将第三方数据集成到 Adobe Target 中](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-data-providers-to-integrate-third-party-data.html)
+* [实施 dataProviders 将第三方数据集成到 Adobe Target 中](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/implement-data-providers-to-integrate-third-party-data.html)
+* [将响应令牌和 at.js 自定义事件与 Adobe Target 结合使用](https://experienceleague.adobe.com/docs/target-learn/tutorials/integrations/use-response-tokens-and-atjs-custom-events.html)
 
 [下一课程“添加Adobe Analytics”>](analytics.md)

@@ -4,9 +4,8 @@ description: 了解如何设置用于事件转发的数据流。
 feature: Event Forwarding, Datastreams
 level: Intermediate
 jira: KT-6421
-thumbnail: 331939.jpeg
 exl-id: 20e30a36-3d56-4d15-acb7-b1bd560bb94d
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe848fe7376fbeb54fb53ee0947a9f8284fcef61
 workflow-type: tm+mt
 source-wordcount: '97'
 ht-degree: 0%
@@ -15,7 +14,7 @@ ht-degree: 0%
 
 # 设置用于事件转发的数据流
 
-了解如何设置用于事件转发的数据流。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html?lang=zh-Hans#create-a-datastream)
+了解如何设置用于事件转发的数据流。 有关详细信息，请访问[事件转发文档](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
 
 
 >[!NOTE]
@@ -26,4 +25,4 @@ ht-degree: 0%
 > * Platform Launch服务器端现在为&#x200B;**[!DNL event forwarding]**
 > * Edge配置现在为&#x200B;**[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/3410358?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on&enablevpops)
