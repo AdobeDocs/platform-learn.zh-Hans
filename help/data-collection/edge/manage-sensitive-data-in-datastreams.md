@@ -18,4 +18,4 @@ ht-degree: 26%
 
 了解如何管理数据流中的敏感数据。  有关详细信息，请参阅[数据流文档](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3413100/?captions=chi_hans&learn=on&enablevpops)

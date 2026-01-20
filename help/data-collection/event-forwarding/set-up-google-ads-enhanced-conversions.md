@@ -18,4 +18,4 @@ ht-degree: 0%
 
 使用事件转发和Google Ads API，通过第一方哈希数据增强Google转化数据。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html?lang=zh-Hans)
 
->[!VIDEO](https://video.tv.adobe.com/v/3411365/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3416060/?captions=chi_hans&learn=on&enablevpops)
