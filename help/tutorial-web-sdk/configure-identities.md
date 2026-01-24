@@ -45,7 +45,7 @@ ht-degree: 12%
 >
 >实施Adobe Experience Platform Web SDK时不需要[Experience Cloud ID扩展](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension)，因为Web SDK JavaScript库包含访客ID服务功能。
 >
-> 如果您的网站已经在您的网站上通过访客API或Experience Cloud ID服务标签扩展使用Experience Cloud ID服务，并且您希望在迁移到Adobe Experience Platform Web SDK时继续使用它，则必须使用最新版本的访客API或Experience Cloud ID服务标签扩展。 有关详细信息，请参阅[ID迁移](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview)。
+> 如果您的网站已经在您的网站上通过访客API或Experience Cloud ID服务标签扩展使用Experience Cloud ID服务，并且您希望在迁移到Adobe Experience Platform Web SDK时继续使用它，则必须使用最新版本的访客API或Experience Cloud ID服务标签扩展。 有关详细信息，请参阅[ID迁移](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/identity/overview)。
 
 ## 创建身份命名空间
 
@@ -98,4 +98,4 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容

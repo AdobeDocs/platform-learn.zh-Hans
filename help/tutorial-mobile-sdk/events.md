@@ -681,6 +681,6 @@ Edge.sendEvent(event, null)
 >
 >现在，您已设置应用程序以在Adobe Experience Platform Edge Network中跟踪商务、应用程序交互和屏幕跟踪事件。 以及您在数据流中定义的所有服务。
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享这些内容。
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=zh-Hans)上分享这些内容。
 
 下一步： **[处理WebViews](web-views.md)**

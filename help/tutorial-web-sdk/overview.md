@@ -14,7 +14,7 @@ ht-degree: 7%
 
 了解如何使用 Adobe Experience Platform Web SDK 实施 Experience Cloud 应用程序。
 
-Experience Platform Web SDK是一个客户端JavaScript库，它允许Adobe Experience Cloud的客户通过Adobe Edge Network与Adobe Experience Platform应用程序和第三方服务进行交互。 有关更多详细信息，请参阅[Adobe Experience Platform Web SDK概述](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home)。
+Experience Platform Web SDK是一个客户端JavaScript库，它允许Adobe Experience Cloud的客户通过Adobe Edge Network与Adobe Experience Platform应用程序和第三方服务进行交互。 有关更多详细信息，请参阅[Adobe Experience Platform Web SDK概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/home)。
 
 ![Experience Platform Web SDK架构](assets/dc-websdk.png)
 
@@ -89,4 +89,4 @@ Experience Platform Web SDK是一个客户端JavaScript库，它允许Adobe Expe
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容

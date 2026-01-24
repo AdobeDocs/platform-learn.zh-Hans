@@ -196,6 +196,6 @@ Adobe提供了一组丰富的[!DNL Postman]收藏集，可帮助您探索Experie
 
 Postman中的![第一个API调用](assets/postman-firstAPICall.png)
 
-如果您的调用失败，请花些时间使用API调用的错误响应详细信息调试并查看上述步骤。 如果卡住，请在[社区论坛](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community)中请求帮助，或使用此页面右侧的链接“记录问题”。
+如果您的调用失败，请花些时间使用API调用的错误响应详细信息调试并查看上述步骤。 如果卡住，请在[社区论坛](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community?profile.language=zh-Hans)中请求帮助，或使用此页面右侧的链接“记录问题”。
 
 设置了Platform权限、沙盒和[!DNL Postman]后，您便可以[在架构中建模数据](model-data-in-schemas.md)！

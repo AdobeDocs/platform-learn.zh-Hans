@@ -78,7 +78,7 @@ Platform Web SDK将数据从您的网站发送到Platform Edge Network。 然后
 
 ### 自动映射的字段
 
-许多XDM字段会自动映射到Analytics变量。 有关最新的映射列表，请参阅Adobe Experience Edge中的[Analytics变量映射](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)。
+许多XDM字段会自动映射到Analytics变量。 有关最新的映射列表，请参阅Adobe Experience Edge中的[Analytics变量映射](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars)。
 
 即使您尚未定义自定义架构&#x200B;_，如果_&#x200B;也会发生这种情况。 Experience Platform Web SDK会自动收集一些数据，并将其作为XDM字段发送到Platform Edge Network。 例如，Web SDK读取当前页面URL并将其作为XDM字段`web.webPageDetails.URL`发送。 此字段将转发到Adobe Analytics，并且它会自动在Adobe Analytics中填充页面URL报表。
 
@@ -489,4 +489,4 @@ Adobe Experience Platform Assurance可帮助您检查、验证、模拟和验证
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容

@@ -169,7 +169,7 @@ Experience Platform的实时客户资料允许您构建每个客户的整体视�
 
 >[!SUCCESS]
 >
->现在，您已设置应用程序，以便将数据不仅发送到Edge Network，还发送到Adobe Experience Platform。<br>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享这些内容。
+>现在，您已设置应用程序，以便将数据不仅发送到Edge Network，还发送到Adobe Experience Platform。<br>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=zh-Hans)上分享这些内容。
 >
 
 下一步： **[创建并发送推送通知](journey-optimizer-push.md)**

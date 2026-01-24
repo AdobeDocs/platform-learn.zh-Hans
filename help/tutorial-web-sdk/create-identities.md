@@ -47,7 +47,7 @@ ht-degree: 3%
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-详细了解如何使用Platform Web SDK[跟踪](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview)ECID。
+详细了解如何使用Platform Web SDK[跟踪](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/identity/overview)ECID。
 
 ECID是使用第一方Cookie和平台Edge Network的组合设置的。 默认情况下，第一方身份Cookie由Web SDK在客户端设置。 要说明浏览器对Cookie生命周期的限制，您可以选择改为在服务器端设置您自己的第一方身份Cookie。 这些身份Cookie称为第一方设备ID (FPID)。
 
@@ -61,7 +61,7 @@ FPID是使用您自己的Web服务器&#x200B;_设置的第一方Cookie_，Adobe�
 
 设置FPID Cookie后，在收集事件数据时，可以获取其值并将其发送到Adobe。 收集的FPID将用作种子，以在Platform Edge Network上生成ECID，这仍将是Adobe Experience Cloud应用程序中的默认标识符。
 
-虽然本教程中未使用FPID，但建议您在自己的网络SDK实施中使用FPID。 阅读有关Platform Web SDK中的[第一方设备ID的详细信息](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
+虽然本教程中未使用FPID，但建议您在自己的网络SDK实施中使用FPID。 阅读有关Platform Web SDK中的[第一方设备ID的详细信息](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -149,4 +149,4 @@ FPID是使用您自己的Web服务器&#x200B;_设置的第一方Cookie_，Adobe�
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容

@@ -64,7 +64,7 @@ Target允许使用单个客户ID跨设备和系统同步配置文件。 此客�
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | 自定义实体参数用于更新推荐产品目录。 这些自定义参数必须作为`data`对象的一部分进行传递。 |
 | `cartIds` | `data.__adobe.target.cartIds` | 用于Target基于购物车的推荐算法。 |
 | `excludedIds` | `data.__adobe.target.excludedIds` | 用于防止特定实体ID在推荐设计中返回。 |
-| `mbox3rdPartyId` | 在`xdm.identityMap`对象中设置 | 用于跨设备和客户属性同步Target配置文件。 必须在数据流[的](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid)Target配置中指定用于客户ID的命名空间。 |
+| `mbox3rdPartyId` | 在`xdm.identityMap`对象中设置 | 用于跨设备和客户属性同步Target配置文件。 必须在数据流[的](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid)Target配置中指定用于客户ID的命名空间。 |
 | `orderId` | `xdm.commerce.order.purchaseID`<br> （当`commerce.purchases.value`设置为`1`时）<br>或<br> `data.__adobe.target.orderId` | 用于标识Target转化跟踪的唯一订单。 |
 | `orderTotal` | `xdm.commerce.order.priceTotal`<br> （当`commerce.purchases.value`设置为`1`时）<br>或<br> `data.__adobe.target.orderTotal` | 用于跟踪Target转化和优化目标的订单总计。 |
 | `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> （当`commerce.purchases.value`设置为`1`时） <br>OR<br> `data.__adobe.target.productPurchasedId` | 用于Target转化跟踪和推荐算法。 |
@@ -206,4 +206,4 @@ let targetParameters = TargetParameters(parameters: mboxParameters, profileParam
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Offer Decisioning和Target扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)中发帖让我们知道。
+>我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Offer Decisioning和Target扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=zh-Hans#M625)中发帖让我们知道。

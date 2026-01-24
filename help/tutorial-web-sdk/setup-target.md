@@ -117,7 +117,7 @@ Adobe建议如Luma网站上所示异步实施标记。 但是，如果同步加�
 >
 >预隐藏样式设置仅用于同步实施。 如果您使用异步标记实施，则此样式应留空或被注释掉。
 
-要了解有关Platform Web SDK如何管理闪烁的更多信息，请参阅指南部分： [管理个性化体验的闪烁](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/manage-flicker)。
+要了解有关Platform Web SDK如何管理闪烁的更多信息，请参阅指南部分： [管理个性化体验的闪烁](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/personalization/manage-flicker)。
 
 
 ## 配置数据流
@@ -216,7 +216,7 @@ Adobe建议为每个开发、暂存和生产数据流分别以不同的方式设
 >
 >通常，每次全页加载仅应为单个“发送事件”操作启用[!UICONTROL 呈现可视化个性化决策]设置。 如果多个发送事件操作启用了此设置，则会忽略后续渲染请求。
 
-如果您希望使用自定义代码自行呈现或操作这些决策，则可以禁用[!UICONTROL 呈现可视化个性化决策]设置。 Platform Web SDK非常灵活，并提供了这项功能来为您提供完全的控制。 您可以参阅指南以了解有关[手动渲染个性化内容](https://experienceleague.adobe.com/en/docs/experience-platform/edge/personalization/rendering-personalization-content)的详细信息。
+如果您希望使用自定义代码自行呈现或操作这些决策，则可以禁用[!UICONTROL 呈现可视化个性化决策]设置。 Platform Web SDK非常灵活，并提供了这项功能来为您提供完全的控制。 您可以参阅指南以了解有关[手动渲染个性化内容](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/personalization/rendering-personalization-content)的详细信息。
 
 
 ### 使用可视化体验编辑器设置Target活动
@@ -597,4 +597,4 @@ Luma网站上的数据层是在tags嵌入代码之前完全定义的。 这样�
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容

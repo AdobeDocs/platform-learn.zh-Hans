@@ -62,4 +62,4 @@ Platform Web SDK不是Target at.js库的演变。 这是一种新的统一方法
 
 >[!NOTE]
 >
->我们致力于帮助您成功从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。
+>我们致力于帮助您成功从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=zh-Hans#M463)中发帖让我们知道。

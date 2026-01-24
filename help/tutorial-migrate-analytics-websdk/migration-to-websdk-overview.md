@@ -61,7 +61,7 @@ ht-degree: 0%
 在逐步执行这些步骤时，需要了解以下一些重要的注意事项：
 
 1. 首先，您可能需要，也可能不需要所有这些步骤。 例如，有一节关于迁移自定义代码的课程。 如果您的Tags实施不使用自定义代码（包括使用插件），则您无需学习本课程。 我们尝试加入大多数人所需的课程，因此请至少通读这些课程，查看在迁移期间是否需要调整您的网站。
-1. 此外，我们根本无法创建涵盖所有人正在使用的全部用例的迁移教程。 如前一项所述，我们试图列入大多数人需要的经验教训，这将涵盖大多数主要用例。 但是，毫无疑问，本教程中未介绍一些用例。 在这种情况下，请查看包含的课程能否让您很好地了解应如何针对用例进行迁移。 您还可以向[Experience League社区的同事询问数据收集](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community)。
+1. 此外，我们根本无法创建涵盖所有人正在使用的全部用例的迁移教程。 如前一项所述，我们试图列入大多数人需要的经验教训，这将涵盖大多数主要用例。 但是，毫无疑问，本教程中未介绍一些用例。 在这种情况下，请查看包含的课程能否让您很好地了解应如何针对用例进行迁移。 您还可以向[Experience League社区的同事询问数据收集](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/ct-p/adobe-launch-community?profile.language=zh-Hans)。
 
 迁移过程涉及以下关键步骤：
 
@@ -81,5 +81,5 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Analytics迁移到Web SDK。 如果您在迁移时遇到障碍或觉得本指南中缺少重要信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}中发帖让我们知道。
+>我们致力于帮助您成功将Analytics迁移到Web SDK。 如果您在迁移时遇到障碍或觉得本指南中缺少重要信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308?profile.language=zh-Hans#M604){target="_blank"}中发帖让我们知道。
 

@@ -150,6 +150,6 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 >
 >您现在已将应用程序设置为将应用程序状态（前台、后台）事件发送到Adobe Experience Platform Edge Network以及您在数据流中定义的所有服务。
 >
-> 感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享这些内容
+> 感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=zh-Hans)上分享这些内容
 
 下一步： **[跟踪事件数据](events.md)**
