@@ -82,7 +82,7 @@ ht-degree: 1%
 
 人员ID字段的名称并不重要，只要人员ID字段中的值相对应。 假设我们在一个数据集中有`email`，在另一个定义为“人员ID”的数据集中有`emailAddress`。 如果两个数据集上的人员ID字段的`delaigle@adobe.com`值相同，CJA将能够拼合数据。
 
-请在此处查看CJA常见问题解答，以了解身份拼接的细微差别： [常见问题解答](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html)。
+请在此处查看CJA常见问题解答，以了解身份拼接的细微差别： [常见问题解答](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans)。
 
 ### 使用人员ID拼合数据
 
