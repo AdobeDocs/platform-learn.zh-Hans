@@ -4,9 +4,9 @@ description: Customer Journey Analytics — 在Customer Journey Analytics中连�
 kt: 5342
 doc-type: tutorial
 exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '714'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ![演示](./images/cja2.png)
 
-在这里，您可以看到CJA和Platform之间建立的各种连接。 这些连接与Adobe Analytics中的报表包具有相同的目标。 然而，数据的收集是完全不同的。 所有数据都来自Adobe Experience Platform数据集。
+在这里，您可以看到CJA与Platform之间建立的所有不同连接。 这些连接与Adobe Analytics中的报表包具有相同的目标。 然而，数据的收集是完全不同的。 所有数据都来自Adobe Experience Platform数据集。
 
 让我们来创建您的第一个连接。 单击&#x200B;**新建连接**。
 
@@ -62,7 +62,7 @@ ht-degree: 1%
 
 ![演示](./images/cja9.png)
 
-## 1.1.2.3人员ID和数据拼接
+## 1.1.2.3个人ID和数据拼接
 
 ### 人员 ID
 
@@ -80,9 +80,9 @@ ht-degree: 1%
 
 如前所述，您可以为每个数据集设置不同的人员ID。 这允许您在CJA中将来自多个源的不同数据集整合在一起。 想象一下，如果能引入NPS或调查数据，那将非常有趣，并且有助于了解背景以及某些事情为什么会发生。
 
-人员ID字段的名称并不重要，只要人员ID字段中的值相对应。 假设我们在一个数据集中有`email`，在另一个定义为“人员ID”的数据集中有`emailAddress`。 如果两个数据集上的人员ID字段的`delaigle@adobe.com`值相同，则CJA将能够拼合数据。
+人员ID字段的名称并不重要，只要人员ID字段中的值相对应。 假设我们在一个数据集中有`email`，在另一个定义为“人员ID”的数据集中有`emailAddress`。 如果两个数据集上的人员ID字段的`delaigle@adobe.com`值相同，CJA将能够拼合数据。
 
-请在此处查看CJA常见问题解答以了解身份拼接的细微差别：[常见问题解答](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html?lang=zh-Hans)。
+请在此处查看CJA常见问题解答，以了解身份拼接的细微差别： [常见问题解答](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html)。
 
 ### 使用人员ID拼合数据
 
@@ -128,7 +128,7 @@ ht-degree: 1%
 
 ## 后续步骤
 
-转到[1.1.3创建数据视图](./ex3.md)(./ex2.md){target="_blank"}
+转到[1.1.3创建数据视图](./ex3.md){target="_blank"}
 
 返回[Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 

@@ -3,14 +3,21 @@ title: Adobe Marketing Agent与ChatGPT
 description: Adobe Marketing Agent与ChatGPT
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9663ef2838024e293acc72c203b1e3578911d57f
+source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
 
 # 1.1.2带有ChatGPT的Adobe Marketing Agent
+
+[!BADGE Beta 版]
+
++++查看详细信息
+通过将Adobe Marketing Agent与ChatGPT Beta结合使用，您在此确认Beta是“按原样”提供的，不提供任何形式的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持Beta。 建议您谨慎使用，切勿依赖此类Beta和/或随附材料的正确功能或性能。 Beta被视为Adobe的机密信息。  您向Beta提供的任何“反馈”(有关Beta的信息，包括但不限于您在使用Adobe时遇到的问题或缺陷、建议、改进和推荐)均会分配给Adobe，其中包括针对该反馈的所有权利、标题和兴趣。
+
++++
 
 >[!IMPORTANT]
 >
@@ -30,7 +37,7 @@ ht-degree: 0%
 >- OpenAI的ChatGPT的付费版本
 >- 使用ChatGPT Web客户端
 
-转到https://chatgpt.com/ ，然后使用您的帐户详细信息登录。 登录后，您应该会看到此内容。 单击您的用户名。
+转到[https://chatgpt.com/](https://chatgpt.com/){target="_blank"}并使用您的帐户详细信息登录。 登录后，您应该会看到此内容。 单击您的用户名。
 
 ![ChatGPT](./images/chatgpt1.png)
 
@@ -86,11 +93,11 @@ ChatGPT现在将尝试连接到您的Adobe帐户。 选择&#x200B;**允许访问
 
 - **沙盒**： **Prod — 加速(VA7)**
 
-沙盒设置可帮助确定在询问问题时沙盒AI助手应查看哪个沙盒。
+沙盒设置有助于在询问问题时识别ChatGPT应查看的沙盒。
 
 - **数据视图**： **加速2026 B2C**
 
-数据视图设置可帮助确定在询问问题时数据视图AI助手应查看的数据视图。
+数据视图设置有助于在提问时识别ChatGPT应查看的数据视图。
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
@@ -122,9 +129,9 @@ list dataviews
 
 ![Agent Orchestrator](./images/chatgpt14.png)
 
-然后，您应该会看到一个类似的可用沙盒列表。 此示例中的当前沙盒设置为&#x200B;**prod**。
+然后，您应该会看到可用数据视图的类似列表。
 
-若要将其更改为需要使用的沙盒，请输入以下&#x200B;**提示**，然后单击&#x200B;**发送**&#x200B;按钮。
+要设置需要使用的数据视图，请输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
 switch to Accelerate 2026 B2C

@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
+source-git-commit: f3a0f2d0b06d93f51ee2ed4904eb4a8e1f42beb4
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1446'
 ht-degree: 3%
 
 ---
@@ -19,8 +19,8 @@ ht-degree: 3%
 + [内容状态](/help/tutorial-one-adobe/status.md)
 + [架构](/help/tutorial-one-adobe/architecture.md)
 
-+ 入门指南 {#gettingstarted}
-   + 入门指南 {#gettingstarted}
++ 快速入门 {#gettingstarted}
+   + 快速入门 {#gettingstarted}
       + [概述](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [安装适用于Experience League文档的Chrome扩展](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
       + [使用Demo System Next设置您的Adobe Experience Platform数据收集客户端资产](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
@@ -274,13 +274,16 @@ ht-degree: 3%
       + [概述](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
       + [1.1.1 Agent Orchestrator快速入门](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
       + [1.1.2带有ChatGPT的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+      + [1.1.3 Adobe Marketing Agent与Microsoft Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
    + 1.2代理和人工智能快速入门 {#agents2}
       + [概述](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Agentic AI快速入门](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-   + 1.3 Agent Collaboration {#agents3}
-      + [概述](/help/tutorial-one-adobe/modules/agents/module1.3/agentcollaboration.md)
-      + [1.3.1 Collaboration代理入门](/help/tutorial-one-adobe/modules/agents/module1.3/ex1.md)
    + 1.4Brand Concierge {#agents4}
       + [概述](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
       + [1.4.1 Brand Concierge快速入门](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
       + [1.4.2在您的网站上实施Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+   + 1.5 Analytics和代理 {#agents5}
+      + [概述](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+      + [1.5.1 CJA和ChatGPT带MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+      + [1.5.2 CJA和Claude.ai与MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+      + [1.5.3 Adobe Analytics和ChatGPT带MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)

@@ -3,9 +3,9 @@ title: Agentic AI技术实验室概述
 description: Agentic AI技术实验室概述
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 350292be24f19462abe3c5ea1a795b4bd93b613f
+source-git-commit: 58c89444d36f92d8df7546964eb4b2b5cea8c82c
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -51,25 +51,16 @@ ht-degree: 0%
 - MCP服务器， Python笔记本
 - Adobe API的
 
-[1.3 Agent Collaboration](./modules/agents/module1.3/agentcollaboration.md)
-
->[!NOTE]
->
->此模块尚未发布。
+[1.3Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 
 **目标**
 
-将您自己的代理连接到Adobe代理。 学习者将设置Agent2Agent (A2A)协议以将其代理连接到AEP Agent Orchestrator。
+Brand Concierge是一个AI支持的数字伙伴，它改变了品牌与其网站访客互动的方式。 与通用聊天机器人不同，Brand Concierge可根据每位访客的意愿提供量身定制的个性化对话体验。 它可以帮助访客发现产品、比较选项、获取即时答案以及实时接收引导式推荐。 该平台同时为B2C和B2B提供服务，它是您品牌在任何数字渠道上的智能扩展，同时保护您的品牌声音、内容完整性和合规性。
 
-- 代理链接
-- Collaboration代理
+在本练习中，您将学习如何：
 
-Adobe代理背后的架构是什么？
-A2A背后的体系结构是什么？
-
-技术元素：
-
-- 代理与Google的A2A协议的互操作性
+- 在Adobe Experience Platform沙盒中配置Brand Concierge实例
+- 在AEM CS/EDS网站上实施Brand Concierge
 
 ![技术内部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 

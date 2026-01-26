@@ -3,10 +3,10 @@ title: Agent Orchestrator
 description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
-source-git-commit: fe8716bfae92588a3f0ec0ca1c5d37bf1296f6f6
+source-git-commit: 1eafbf27de93b45288bec8cb3cd70f04e8cc715e
 workflow-type: tm+mt
-source-wordcount: '176'
-ht-degree: 5%
+source-wordcount: '211'
+ht-degree: 4%
 
 ---
 
@@ -42,6 +42,10 @@ ht-degree: 5%
 [1.1.2带有ChatGPT的Adobe Marketing Agent](./ex2.md){target="_blank"}
 
 在本练习中，您将通过使用带有ChatGPT的Adobe Marketing Agent，在CitiSignal Fibre Max启动促销活动的背景下探索Agent Orchestrator的能力。
+
+[1.1.3 Adobe Marketing Agent与Microsoft Copilot](./ex3.md){target="_blank"}
+
+在本练习中，您将通过将Agent Orchestrator与Microsoft Copilot结合使用，在CitiSignal发布Fibre Max活动的背景下探讨Adobe Marketing Agent的能力。
 
 ![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
