@@ -18,6 +18,6 @@ ht-degree: 46%
 
 # Journey 代理概述
 
-Journey Agent使用AI通过对话界面创建、分析和优化B2B/B2C历程。 有关详细信息，请参阅[Journey Agent文档](https://experienceleague.adobe.com/en/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent)。
+Journey Agent使用AI通过对话界面创建、分析和优化B2B/B2C历程。 有关详细信息，请参阅[Journey Agent文档](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-ai/experience-cloud-ai/agents/ajo-agent)。
 
 >[!SLIDE](journey-agent-overview)
