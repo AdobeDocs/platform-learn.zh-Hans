@@ -3,9 +3,9 @@ title: 带有MCP服务器的CJA和Claude.ai
 description: 带有MCP服务器的CJA和Claude.ai
 kt: 5342
 doc-type: tutorial
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,9 @@ ht-degree: 0%
 
 在本视频中，您将获得本练习涉及的所有步骤的解释和演示。
 
->[!VIDEO](https://video.tv.adobe.com/v/3479159?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3479561?quality=12&learn=on)
 
-## 1.5.1.1在Claude.ai中为CJA创建自定义应用程序
+## 1.5.2.1在Claude.ai中为CJA创建自定义应用程序
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ ht-degree: 0%
 
 ![克劳德.ai](./images/claude4.png)
 
-您应该会看到此内容。 单击&#x200B;**添加**。
+您应该会看到此内容。 单击&#x200B;**连接**。
 
 ![克劳德.ai](./images/claude5.png)
 
@@ -75,8 +75,7 @@ ht-degree: 0%
 
 ![克劳德.ai](./images/claude7.png)
 
-
-## 1.5.1.2在CJA中设置上下文
+## 1.5.2.2在CJA中设置上下文
 
 在通过Claude.ai与CJA进一步交互之前，需要设置上下文。
 
@@ -120,7 +119,7 @@ switch to dataview --aepUserLdap-- - Omnichannel Data View
 
 您的上下文现已正确设置，因此您可以开始在下一步发送特定提示。
 
-## 1.5.1.3浏览数据视图
+## 1.5.2.3浏览数据视图
 
 >[!NOTE]
 >
@@ -142,7 +141,7 @@ list the available metrics and dimensions
 
 ![Claude.ai和CJA](./images/claude102.png)
 
-## 1.5.1.4自由格式表 — 产品查看
+## 1.5.2.4自由格式表 — 产品查看
 
 您现在可以开始浏览数据。 首先输入以下提示，然后单击&#x200B;**发送**&#x200B;以提交您的报告请求。
 
@@ -212,7 +211,7 @@ can you breakdown product views by user agent?
 
 ![Claude.ai和CJA](./images/claude117.png)
 
-## 1.5.1.5流失可视化图表
+## 1.5.2.5流失可视化图表
 
 输入以下&#x200B;**提示符**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
@@ -225,6 +224,8 @@ can you create a fallout visualization for the product interaction funnel, start
 然后，您应该看到类似这样的内容，其中包括Claude.ai根据Customer Journey Analytics提供的数据生成的可视化图表。
 
 ![Claude.ai和CJA](./images/claude119.png)
+
+下一步：[使用MCP服务器的Adobe Analytics和Claude.ai](./ex3.md){target="_blank"}
 
 返回[Analytics和代理](./analyticsagents.md){target="_blank"}
 

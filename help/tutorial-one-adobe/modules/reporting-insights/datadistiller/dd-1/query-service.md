@@ -4,9 +4,9 @@ description: 查询服务
 kt: 5342
 doc-type: tutorial
 exl-id: 881dcff5-3637-4b67-9e61-88690babe83b
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '531'
 ht-degree: 1%
 
 ---
@@ -32,10 +32,6 @@ ht-degree: 1%
 - 数据集（实验室期间使用的数据集，为您预加载）
 - PostgreSQL
 - Tableau或Microsoft Power BI桌面
-- **下载这些资源**：
-   - [JSON — 示例数据：网站交互](./../../../../assets/json/ee.json)
-   - [JSON — 示例数据：呼叫中心交互](./../../../../assets/json/callcenter.json)
-   - [JSON — 示例数据：忠诚度](./../../../../assets/json/loyalty.json)
 
 >[!NOTE]
 >

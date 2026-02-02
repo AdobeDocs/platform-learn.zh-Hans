@@ -3,9 +3,9 @@ title: CJA和ChatGPT与MCP服务器
 description: CJA和ChatGPT与MCP服务器
 kt: 5342
 doc-type: tutorial
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
-source-wordcount: '797'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -251,17 +251,7 @@ can you show me a visualization of the above fallout analysis?
 
 ![ChatGPT和CJA](./images/chatgpt122.png)
 
-输入以下&#x200B;**提示符**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
-
-```javascript
-break down the fallout analysis at the touchpoint of the add to carts
-```
-
-![ChatGPT和CJA](./images/chatgpt123.png)
-
-选择&#x200B;**运行报告**。
-
-![ChatGPT和CJA](./images/chatgpt124.png)
+下一步：[使用MCP服务器的CJA和Claude.ai](./ex2.md){target="_blank"}
 
 返回[Analytics和代理](./analyticsagents.md){target="_blank"}
 

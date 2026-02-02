@@ -4,7 +4,7 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
 workflow-type: tm+mt
 source-wordcount: '1459'
 ht-degree: 3%
@@ -290,4 +290,4 @@ ht-degree: 3%
       + [概述](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
       + [1.5.1 CJA和ChatGPT带MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
       + [1.5.2 CJA和Claude.ai与MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
-      + [1.5.3 Adobe Analytics和ChatGPT带MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+      + [1.5.3 Adobe Analytics和Claude.ai与MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
