@@ -4,9 +4,9 @@ description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的
 kt: 5342
 doc-type: tutorial
 exl-id: 6ba82c35-1087-45c5-85a3-8bca7408cfec
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,11 @@ ht-degree: 0%
 
 Experience Platform Debugger是适用于Chrome和Firefox浏览器的扩展，可帮助您查看在网页中实施的Adobe技术。 为您的首选浏览器安装此版本：
 
-- [Firefox扩展](https://addons.mozilla.org/zh-CN/firefox/addon/adobe-experience-platform-dbg/)
-
 - [Chrome扩展](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 如果您以前从未使用过Debugger，并且此调试器与之前的Adobe Experience Cloud Debugger不同，那么您可能需要观看以下五分钟概述视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/35858?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
 
 鉴于您将以无痕模式加载演示网站，您需要确保Experience Platform Debugger也可在无痕模式下使用。 为此，请在浏览器中转到&#x200B;**chrome://extensions**，然后打开Experience Platform Debugger扩展。
 
@@ -72,19 +70,19 @@ Experience Platform Debugger是适用于Chrome和Firefox浏览器的扩展，可
 
 单击右上方的&#x200B;**[!UICONTROL 登录]**&#x200B;按钮进行身份验证。 如果您已经打开了包含Adobe Experience Platform数据收集界面的浏览器选项卡，则身份验证步骤将自动完成，您无需再次输入用户名和密码。
 
-![AEP调试器](./images/validate2.png)
+![AEP Debugger](./images/validate2.png)
 
 然后，您将登录到Debugger。
 
-![AEP调试器](./images/validate2ab.png)
+![AEP Debugger](./images/validate2ab.png)
 
 单击演示网站上的“重新加载”按钮，将调试器连接到该特定选项卡。
 
-![AEP调试器](./images/validate2a.png)
+![AEP Debugger](./images/validate2a.png)
 
 确认Debugger已&#x200B;**[!UICONTROL 连接到主页]**（如上图所示），然后单击&#x200B;**[!UICONTROL 锁定]**&#x200B;图标将Debugger锁定到演示网站。 如果不这样做，Debugger将不断切换以显示任何焦点浏览器选项卡的实施详细信息，这可能会造成混淆。 锁定调试器后，图标将更改为&#x200B;**解锁**。
 
-![AEP调试器](./images/validate3.png)
+![AEP Debugger](./images/validate3.png)
 
 接下来，转到演示网站上的任何页面，例如&#x200B;**计划**&#x200B;类别页面。
 

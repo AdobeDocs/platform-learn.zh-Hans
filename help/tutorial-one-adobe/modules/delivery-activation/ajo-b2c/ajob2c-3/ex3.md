@@ -1,12 +1,12 @@
 ---
-title: Offer Decisioning — 测试您的决策
-description: Offer Decisioning — 测试您的决策
+title: 使用应用程序内消息配置营销活动
+description: 使用应用程序内消息配置营销活动
 kt: 5342
 doc-type: tutorial
 exl-id: c40b9b8c-9717-403c-bf02-6b8f42a59c05
-source-git-commit: 2e856759e1a9b5509ad0632e28b269bcfc4ae861
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -90,12 +90,12 @@ ht-degree: 0%
 ![应用程序内](./images/inapp15.png)
 
 对于&#x200B;**标头**&#x200B;文本，使用： `CitiSignal Fiber Max`。
-对于&#x200B;**正文**&#x200B;文本，使用： `Conquer lag with Fiber Max`。
+对于**正文**&#x200B;文本，使用： `Conquer lag with Fiber Max`。
 
 ![应用程序内](./images/inapp16.png)
 
 将文本&#x200B;**#1**&#x200B;按钮设置为： `Go to Plans`。
-将&#x200B;**目标**&#x200B;设置为`com.adobe.dsn.dxdemo://plans`。
+将**目标**&#x200B;设置为`com.adobe.dsn.dxdemo://plans`。
 
 单击&#x200B;**查看以激活**。
 

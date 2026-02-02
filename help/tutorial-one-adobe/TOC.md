@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 44d0e98ae4c7568411cb0e01ed8eff38b4a34137
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1459'
 ht-degree: 3%
 
 ---
@@ -64,7 +64,7 @@ ht-degree: 3%
       + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
       + [1.3.1配置：品牌](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
       + [1.3.2配置：角色、产品和模板](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
-      + [1.3.3 Campaign对元数据的激活](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+      + [1.3.3 Campaign到Meta的激活](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
       + [1.3.4为AJO创建电子邮件体验](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex4.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
    + 1.4 Adobe Express和Adobe Experience Cloud {#crpr4}
@@ -86,6 +86,9 @@ ht-degree: 3%
       + [1.6.3创建和部署外部DAM应用程序](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
       + [1.6.4私下发布您的应用程序](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
+   + 1.7工作流生成器 {#crpr7}
+      + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
+      + [1.7.1 Workflow Builder入门](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
 
 + 资产管理 {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -268,6 +271,7 @@ ht-degree: 3%
          + [概述](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analytics快速入门](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
 + 代理 {#agents}
    + [Agentic AI概述](/help/tutorial-one-adobe/ai.md)
    + 1.1Agent Orchestrator {#agents1}

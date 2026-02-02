@@ -4,9 +4,9 @@ description: 快速入门 — Postman设置
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
+source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '462'
 ht-degree: 3%
 
 ---
@@ -25,15 +25,19 @@ ht-degree: 3%
 
 ## 安装PostBuster
 
-转到[https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}。
+转到[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}。
 
 单击以下载&#x200B;**PostBuster**&#x200B;的最新版本。
 
 ![PostBuster](./images/pb1.png)
 
-下载适用于您的操作系统的正确版本。
+单击操作系统的正确版本。
 
 ![PostBuster](./images/pb2.png)
+
+下载文件。
+
+![PostBuster](./images/pb2a.png)
 
 下载完成并安装后，打开PostBuster。 您应该会看到此内容。 单击&#x200B;**导入**。
 
