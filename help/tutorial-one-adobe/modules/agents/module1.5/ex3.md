@@ -3,9 +3,9 @@ title: 带有MCP服务器的Adobe Analytics和Claude.ai
 description: 带有MCP服务器的Adobe Analytics和Claude.ai
 kt: 5342
 doc-type: tutorial
-source-git-commit: 5eb5432251ee7193909ed4ec7decd0d94d0843a2
+source-git-commit: 44559d6278da4bed8a864d0faf092352b8370398
 workflow-type: tm+mt
-source-wordcount: '561'
+source-wordcount: '630'
 ht-degree: 0%
 
 ---
@@ -191,6 +191,26 @@ Analyze different metrics by marketing channel
 然后您应该会看到类似这样的内容。
 
 ![Claude.ai和CJA](./images/claudeaa113.png)
+
+输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
+
+```javascript
+which tracking codes drove the most visits and purchases?
+```
+
+![Claude.ai和CJA](./images/claudeaa114.png)
+
+然后，您应该会看到类似这样的内容，首先显示&#x200B;**按访问次数划分的热门跟踪代码**。
+
+![Claude.ai和CJA](./images/claudeaa115.png)
+
+然后，您可以在&#x200B;**按订单（购买）**&#x200B;排名最前的跟踪代码报表中查看驱动最多购买的跟踪代码。
+
+![Claude.ai和CJA](./images/claudeaa116.png)
+
+然后，您会发现Claude.ai根据来自Adobe Analytics的数据提供了其他见解。
+
+![Claude.ai和CJA](./images/claudeaa117.png)
 
 您现在已经完成了此练习。
 

@@ -3,9 +3,9 @@ title: 内容状态
 description: 内容状态
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 72fbe8d1dfddd83b85bcb423167cdf4f6e44886d
+source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '553'
 ht-degree: 9%
 
 ---
@@ -37,6 +37,8 @@ ht-degree: 9%
 | [1.4 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | 是 | - | 45分钟 |
 | [1.5使用Frame.io简化您的工作流](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 02/08/2025 | 是 | - | 1h |
 | [1.6 GenStudio for Performance Marketing — 可扩展性](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | 是 | - | 1小时30分钟 |
+| [1.7工作流生成器](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 02/02/2026 | 否 | 开发中的内容 | - |
+| [1.8企业存储管理](./modules/creation-production/module1.8/esm.md){target="_blank"} | 02/02/2026 | 否 | 开发中的内容 | - |
 
 
 ## 3.资产管理
@@ -82,10 +84,10 @@ ht-degree: 9%
 
 | 名称 | 上次更新 | 工作100% | 备注 | 时间投资 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
-| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 2026年1月23日 | 是 | - | 90分钟 |
-| [1.2代理AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 2026年1月23日 | 否 | 正在开发的内容 | 待定 |
+| [1.1 Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md){target="_blank"} | 02/02/2026 | 是 | - | 60分钟 |
+| [1.2代理AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 02/02/2026 | 否 | 正在开发的内容 | 待定 |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 2026年1月23日 | 是 | - | 90分钟 |
-| [1.5 Analytics和代理](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 2026年1月23日 | 否 | 正在开发的内容 | 待定 |
+| [1.5 Analytics和代理](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 02/02/2026 | 是 | - | 45分钟 |
 
 {style="table-layout:auto"}
 
