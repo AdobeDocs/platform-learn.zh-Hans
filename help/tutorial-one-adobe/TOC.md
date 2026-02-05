@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
+source-git-commit: 6ab5ca7ba774b02c1c48a16c4399ceeaf6bd2a32
 workflow-type: tm+mt
-source-wordcount: '1477'
+source-wordcount: '1501'
 ht-degree: 3%
 
 ---
@@ -296,3 +296,9 @@ ht-degree: 3%
       + [1.5.1 CJA和ChatGPT带MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
       + [1.5.2 CJA和Claude.ai与MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
       + [1.5.3 Adobe Analytics和Claude.ai与MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+   + 1.6AEM与代理 {#agents6}
+      + [概述](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
+      + [1.6.1Content Production Agent](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+   + 1.7适用于Adobe Commerce的智能开发人员工具 {#agents7}
+      + [概述](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
+      + [1.7.1设置开发环境](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
