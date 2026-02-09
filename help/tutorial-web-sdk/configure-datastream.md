@@ -15,7 +15,7 @@ ht-degree: 7%
 
 了解如何为 Adobe Experience Platform Web SDK 配置数据流。
 
-[数据流](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview)告知Adobe Experience Platform Edge Network将Platform Web SDK收集的数据发送到何处。 在数据流配置中，您可以启用Experience Cloud应用程序、Experience Platform帐户和事件转发。
+[数据流](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/overview)告知Adobe Experience Platform Edge Network将Platform Web SDK收集的数据发送到何处。 在数据流配置中，您可以启用Experience Cloud应用程序、Experience Platform帐户和事件转发。
 
 >[!WARNING]
 >
@@ -69,7 +69,7 @@ ht-degree: 7%
 
 ## 覆盖数据流
 
-[数据流覆盖](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides)允许您为数据流定义其他配置，然后在特定条件下覆盖默认配置。
+[数据流覆盖](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/datastreams/overrides)允许您为数据流定义其他配置，然后在特定条件下覆盖默认配置。
 
 数据流配置覆盖分为两步：
 
@@ -82,4 +82,4 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容

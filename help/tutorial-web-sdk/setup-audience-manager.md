@@ -15,7 +15,7 @@ ht-degree: 4%
 
 了解如何使用 Adobe Experience Platform Web SDK 设置 Adobe Audience Manager 并使用 cookie 目标验证实施。
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager)是一种Adobe Experience Cloud解决方案，它提供了收集与网站访客有关的商业相关信息、创建可销售的区段以及向合适的受众提供定向广告和内容所需的一切。
+[Adobe Audience Manager](https://experienceleague.adobe.com/zh-hans/docs/audience-manager)是一种Adobe Experience Cloud解决方案，它提供了收集与网站访客有关的商业相关信息、创建可销售的区段以及向合适的受众提供定向广告和内容所需的一切。
 
 
 >[!WARNING]
@@ -37,11 +37,11 @@ ht-degree: 4%
 要完成本课程，您必须首先：
 
 * 完成本教程的初始配置和标记配置部分中之前的课程。
-* 有权访问Adobe Audience Manager以及创建、读取和写入特征、区段和目标的相应权限。 有关详细信息，请查阅[Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)。
+* 有权访问Adobe Audience Manager以及创建、读取和写入特征、区段和目标的相应权限。 有关详细信息，请查阅[Audience Manager基于角色的访问控制](https://experienceleague.adobe.com/zh-hans/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control)。
 
 ## 配置数据流
 
-使用Platform Web SDK的Audience Manager实施与使用[服务器端转发(SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf)的实施不同。 服务器端转发将Adobe Analytics请求数据传递到Audience Manager。 Platform Web SDK实施将发送到Platform Edge Network的XDM数据传递到Audience Manager。 在数据流中启用了Audience Manager：
+使用Platform Web SDK的Audience Manager实施与使用[服务器端转发(SSF)](https://experienceleague.adobe.com/zh-hans/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf)的实施不同。 服务器端转发将Adobe Analytics请求数据传递到Audience Manager。 Platform Web SDK实施将发送到Platform Edge Network的XDM数据传递到Audience Manager。 在数据流中启用了Audience Manager：
 
 1. 转到[数据收集](https://experience.adobe.com/#/data-collection){target="blank"}接口
 1. 在左侧导航中，选择&#x200B;**[!UICONTROL 数据流]**
@@ -58,7 +58,7 @@ ht-degree: 4%
 
 ## 创建数据源
 
-接下来，创建一个[Data Source](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings)，这是用于在Audience Manager中组织数据的基本工具：
+接下来，创建一个[Data Source](https://experienceleague.adobe.com/zh-hans/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings)，这是用于在Audience Manager中组织数据的基本工具：
 
 1. 转到[Audience Manager](https://experience.adobe.com/#/audience-manager/)界面
 1. 从顶部导航中选择&#x200B;**[!UICONTROL 受众数据]**
@@ -78,7 +78,7 @@ ht-degree: 4%
 
 ## 创建特征
 
-保存数据Source后，设置[特征](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview)。 特征是Audience Manager中一个或多个信号的组合。 为主页访客创建特征。
+保存数据Source后，设置[特征](https://experienceleague.adobe.com/zh-hans/docs/audience-manager/user-guide/features/traits/traits-overview)。 特征是Audience Manager中一个或多个信号的组合。 为主页访客创建特征。
 
 >[!NOTE]
 >
@@ -188,4 +188,4 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容
