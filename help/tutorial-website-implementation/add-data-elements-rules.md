@@ -2,10 +2,10 @@
 title: 添加数据元素、规则和库
 description: 了解如何在标记中创建数据元素、规则和库。 本课程是“在网站中实施Experience Cloud”教程的一部分。
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1441'
-ht-degree: 52%
+source-wordcount: '1473'
+ht-degree: 51%
 
 ---
 
@@ -15,13 +15,18 @@ ht-degree: 52%
 
 数据元素和规则是标记的基本构建块。 数据元素会存储您要发送到营销和广告解决方案的属性，而规则会在适当的条件下触发向这些解决方案发送的请求。库是在页面上加载以用于完成所有工作的 JavaScript 文件。在本课程中，您将使用所有这三项来让示例页面完成一些工作。
 
+
+>[!WARNING]
+>
+> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
-> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)**
-> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)**
+> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 学习目标
 

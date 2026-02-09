@@ -4,9 +4,9 @@ description: 了解如何配置Experience Platform Web SDK标记扩展的隐私�
 feature: Web SDK,Tags,Consent
 jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1635'
 ht-degree: 1%
 
 ---
@@ -14,6 +14,11 @@ ht-degree: 1%
 # 使用Platform Web SDK设置同意
 
 了解如何配置Adobe Experience Platform Web SDK标记扩展的隐私设置。 根据访客与同意管理平台(CMP)中的横幅的交互来设置同意。
+
+
+>[!WARNING]
+>
+> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
 
 >[!NOTE]
 > 
@@ -58,9 +63,7 @@ ht-degree: 1%
     >[！NOTE]
     >
     >通常，负责处理CMP的团队或个人（如OneTrust或TrustArc.
-
 ）会完成并注意上述步骤。
-
 ## 插入CMP
 
 >[!WARNING]
@@ -154,7 +157,7 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 
 1. 创建一个规则，该规则在访客单击&#x200B;**时触发。我拒绝**。  将此规则命名为： `all pages - click consent banner - set consent "out"`
 
-1. 作为&#x200B;**[!UICONTROL Event]**，对与CSS选择器匹配的&#x200B;**[!UICONTROL 元素使用]** Click **&#x200B;**`#klaro .cn-decline`
+1. 作为&#x200B;**[!UICONTROL Event]**，对与CSS选择器匹配的&#x200B;**[!UICONTROL 元素使用]** Click ****`#klaro .cn-decline`
 
    ![规则条件用户单击“我拒绝”](assets/consent-optOut-clickEvent.png)
 
@@ -198,11 +201,11 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 
 1. 创建一个规则，该规则将在访客单击&#x200B;**时触发，这没有关系**。  将此规则命名为： `all pages - click consent banner - set consent "in"`
 
-1. 作为&#x200B;**[!UICONTROL Event]**，对与CSS选择器匹配的&#x200B;**[!UICONTROL 元素使用]** Click **&#x200B;**`#klaro .cm-btn-success`
+1. 作为&#x200B;**[!UICONTROL Event]**，对与CSS选择器匹配的&#x200B;**[!UICONTROL 元素使用]** Click ****`#klaro .cm-btn-success`
 
    ![规则条件用户单击“没问题”](assets/consent-optIn-clickEvent.png)
 
-1. 使用[!UICONTROL 的Experience Platform Web SDK &#x200B;]扩展&#x200B;**[!UICONTROL ，]**&#x200B;操作类型&#x200B;**[!UICONTROL ，]**&#x200B;常规同意&#x200B;**[!UICONTROL ，添加操作]**&#x200B;作为&#x200B;**[!UICONTROL In]**。
+1. 使用[!UICONTROL 的Experience Platform Web SDK ]扩展&#x200B;**[!UICONTROL ，]**&#x200B;操作类型&#x200B;**[!UICONTROL ，]**&#x200B;常规同意&#x200B;**[!UICONTROL ，添加操作]**&#x200B;作为&#x200B;**[!UICONTROL In]**。
 
    ![同意规则选择加入操作](assets/consent-rule-optin-action.png)
 
@@ -219,11 +222,11 @@ GDPR、CCPA和其他隐私行为在如何设计同意实施方面起着至关重
 ![同意帖子访客选项](assets/consent-post-user-optin.png)
 
 
-有关Web SDK中同意的详细信息，请参阅[支持客户同意首选项](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/consent/supporting-consent)。
+有关Web SDK中同意的详细信息，请参阅[支持客户同意首选项](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent)。
 
 
-有关[!UICONTROL 设置同意]操作的详细信息，请参阅[设置同意](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent)。
+有关[!UICONTROL 设置同意]操作的详细信息，请参阅[设置同意](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent)。
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容

@@ -1,34 +1,39 @@
 ---
 title: 添加包含标记的Adobe Experience Platform Identity服务
-description: 了解如何添加 Adobe Experience Platform Identity Service 扩展，以及如何使用“Set Customer IDs”操作收集客户 ID。本课程是“在网站中实施Experience Cloud”教程的一部分。
+description: 了解如何添加 Adobe Experience Platform 身份标识服务扩展，以及如何使用“Set Customer IDs”操作收集客户 ID。本课程是“在网站中实施Experience Cloud”教程的一部分。
 solution: Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1945'
-ht-degree: 64%
+source-wordcount: '1977'
+ht-degree: 61%
 
 ---
 
-# 添加 Adobe Experience Platform Identity Service
+# 添加 Adobe Experience Platform 身份标识服务
 
-本课程将指导您完成实施 [Adobe Experience Platform Identity Service 扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html?lang=zh-Hans)以及发送客户 ID 所需的步骤。
+本课程将指导您完成实施 [Adobe Experience Platform 身份标识服务扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html)以及发送客户 ID 所需的步骤。
 
-[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)在所有Adobe解决方案中设置了一个通用访客ID，以便增强Experience Cloud功能，如解决方案之间的受众共享。 您还可以将自己的客户 ID 发送到该服务，以启用跨设备定位以及与客户关系管理 (CRM) 系统的集成。
+[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html)在所有Adobe解决方案中设置了一个通用访客ID，以便增强Experience Cloud功能，如解决方案之间的受众共享。 您还可以将自己的客户 ID 发送到该服务，以启用跨设备定位以及与客户关系管理 (CRM) 系统的集成。
+
+
+>[!WARNING]
+>
+> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
-> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)**
-> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)**
+> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 学习目标
 
 在本课程结束后，您将能够：
 
-* 添加 Identity Service 扩展
+* 添加身份标识服务扩展
 * 创建数据元素以收集客户 ID
 * 创建规则以使用“Set Customer IDs”操作将客户 ID 发送到 Adobe
 * 使用规则排序功能对同一事件中触发的规则进行排序
@@ -37,11 +42,11 @@ ht-degree: 64%
 
 您应该已经完成[配置标记](create-a-property.md)部分中的课程。
 
-## 添加 Identity Service 扩展
+## 添加身份标识服务扩展
 
 由于这是您添加的第一个扩展，这里先简要概述一下扩展。扩展是标记的核心功能之一。 扩展是由 Adobe、Adobe 合作伙伴或任何 Adobe 客户构建的集成，可为您部署到网站的标记添加无限数量的新选项。如果将标记看作一种操作系统，那么扩展就是您安装的应用程序，因此标记可以执行您所需的各种操作。
 
-**添加 Identity Service 扩展**
+**添加身份标识服务扩展**
 
 1. 在左侧导航中，单击&#x200B;**[!UICONTROL 扩展]**
 
@@ -53,7 +58,7 @@ ht-degree: 64%
 
 1. 在Adobe Experience Platform Identity Service的卡片上，单击&#x200B;**[!UICONTROL 安装]**
 
-   ![安装 Identity Service 扩展](images/idservice-install.png)
+   ![安装身份标识服务扩展](images/idservice-install.png)
 
 1. 请注意，已自动为您检测 Experience Cloud 组织 ID。
 
@@ -63,26 +68,26 @@ ht-degree: 64%
 
 >[!NOTE]
 >
->Identity Service扩展的每个版本均附带一个特定版本的VisitorAPI.js，扩展描述中对其进行了说明。 您可以通过更新 Identity Service 扩展来更新 VisitorAPI.js 版本。
+>Identity Service扩展的每个版本均附带一个特定版本的VisitorAPI.js，扩展描述中对其进行了说明。 您可以通过更新身份标识服务扩展来更新 VisitorAPI.js 版本。
 
 ### 验证该扩展
 
-Identity Service扩展是少数标记扩展之一，该扩展无需使用规则操作即可发出请求。 该扩展会在第一次访问网站并加载第一页时自动向 Identity Service 发出请求。请求获取 ID 后，该 ID 将存储在以“AMCV_”开头的第一方 Cookie 中。
+Identity Service扩展是少数标记扩展之一，该扩展无需使用规则操作即可发出请求。 该扩展会在第一次访问网站并加载第一页时自动向身份标识服务发出请求。请求获取 ID 后，该 ID 将存储在以“AMCV_”开头的第一方 Cookie 中。
 
-**验证 Identity Service 扩展**
+**验证身份标识服务扩展**
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 如[前面的课程](switch-environments.md)中所述，确保Debugger将标记属性映射到&#x200B;*您的*&#x200B;开发环境。
+1. 如&#x200B;*前面的课程*&#x200B;中所述，确保Debugger将标记属性映射到[您的](switch-environments.md)开发环境。
 
 1. 在Debugger的“摘要”选项卡上，标记部分应指示已实施Adobe Experience Platform Identity Service扩展。
 
 1. 此外，在“摘要”选项卡上，Identity Service部分还应使用数据收集界面的扩展配置屏幕上显示的相同组织ID进行填充：
 
-   ![检查是否已实施 Adobe Experience Platform Identity Service 扩展](images/idservice-debugger-summary.png)
+   ![检查是否已实施 Adobe Experience Platform 身份标识服务扩展](images/idservice-debugger-summary.png)
 
-1. 用于检索访客 ID 的初始请求可能会显示在 Debugger 的 Identity Service 选项卡中。但是，由于可能已经发出该请求，因此如果您没有看到该请求，请不要担心。
-   ![检查是否存在向 Identity Service 发出的获取组织 ID 的请求](images/idservice-idRequest.png)
+1. 用于检索访客 ID 的初始请求可能会显示在 Debugger 的身份标识服务选项卡中。但是，由于可能已经发出该请求，因此如果您没有看到该请求，请不要担心。
+   ![检查是否存在向身份标识服务发出的获取组织 ID 的请求](images/idservice-idRequest.png)
 
 1. 在发出获取访客 ID 的初始请求后，该 ID 会存储在名称以 `AMCV_` 开头的 Cookie 中。您可以通过执行以下操作确认已设置该 Cookie：
    1. 打开浏览器的开发人员工具
@@ -90,14 +95,13 @@ Identity Service扩展是少数标记扩展之一，该扩展无需使用规则�
    1. 展开左侧的 `Cookies`
    1. 单击域 `https://luma.enablementadobe.com`
    1. 在右侧查找 AMCV_ Cookie。您可能会看到自那时以来已使用硬编码标记属性以及您自己的属性加载Luma网站的多个。
-
       ![验证 AMCV_ Cookie](images/idservice-AMCVCookie.png)
 
-操作完成！您已添加第一个扩展！有关 Identity Service 配置选项的更多详细信息，请参阅[此文档](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html?lang=zh-Hans)。
+操作完成！您已添加第一个扩展！有关身份标识服务配置选项的更多详细信息，请参阅[此文档](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html)。
 
 ## 发送客户 ID
 
-接下来，您将向 Identity Service 发送[客户 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html?lang=zh-Hans)。这样您就能够[集成 CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans) 与 Experience Cloud，并跨多个设备跟踪访客。
+接下来，您将向身份标识服务发送[客户 ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html)。这样您就能够[集成 CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) 与 Experience Cloud，并跨多个设备跟踪访客。
 
 在之前的[添加数据元素、规则和库](add-data-elements-rules.md)课程中，您已创建一个数据元素并将其用在规则中。现在，您将使用这些相同的技术在访客进行身份验证后发送客户 ID。
 
@@ -139,7 +143,7 @@ Identity Service扩展是少数标记扩展之一，该扩展无需使用规则�
 
    ![保存数据元素](images/idservice-authenticationStateFinalSave.png)
 
-通过了解用户的身份验证状态，您可以知道客户 ID 应何时存在于页面上以发送到 Identity Service。下一步是为客户 ID 本身创建一个数据元素。在 Luma 演示网站上，您将使用访客电子邮件地址的哈希版本。
+通过了解用户的身份验证状态，您可以知道客户 ID 应何时存在于页面上以发送到身份标识服务。下一步是为客户 ID 本身创建一个数据元素。在 Luma 演示网站上，您将使用访客电子邮件地址的哈希版本。
 
 **为经过哈希处理的电子邮件添加数据元素**
 
@@ -157,7 +161,7 @@ Identity Service扩展是少数标记扩展之一，该扩展无需使用规则�
 
 ### 添加用于发送客户 ID 的规则
 
-Adobe Experience Platform Identity Service 使用名为“Set Customer IDs”的操作，在规则中传递客户 ID。现在，您将创建一个规则，以在访客进行身份验证后触发此操作：
+Adobe Experience Platform Identity Service使用名为“Set Customer IDs”的操作，在规则中传递客户ID。  现在，您将创建一个规则，以在访客进行身份验证后触发此操作：
 
 **创建用于发送客户 ID 的规则**
 
@@ -196,7 +200,7 @@ Adobe Experience Platform Identity Service 使用名为“Set Customer IDs”的
       ![设置身份验证状态](images/idservice-customerId-authStateCondition.png)
 
 1. 确保运算符为 `Equals`
-1. 在文本字段中键入“logged in”，这会导致规则在数据元素“Authentication State”具有“logged in”值时触发。
+1. 在文本字段中键入“logged in”，这会导致规则在数据元素“Authentication State”具有“logged in”值时触发
 
 1. 单击&#x200B;**[!UICONTROL 保留更改]**
 
@@ -229,7 +233,7 @@ Adobe Experience Platform Identity Service 使用名为“Set Customer IDs”的
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 如[前面的课程](switch-environments.md)中所述，确保Debugger将标记属性映射到&#x200B;*您的*&#x200B;开发环境
+1. 如&#x200B;*前面的课程*&#x200B;中所述，确保Debugger将标记属性映射到[您的](switch-environments.md)开发环境
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -247,10 +251,10 @@ Adobe Experience Platform Identity Service 使用名为“Set Customer IDs”的
 
 现在，使用 Debugger 扩展确认已将客户 ID 发送到该服务。
 
-**验证 Identity Service 是否传递了客户 ID**
+**验证身份标识服务是否传递了客户 ID**
 
 1. 确保焦点位于显示 Luma 网站的标签页中
-1. 在 Debugger 中，转到 Adobe Experience Platform Identity Service 选项卡
+1. 在 Debugger 中，转到 Adobe Experience Platform 身份标识服务选项卡
 1. 展开您的组织 ID
 1. 单击具有 `Customer ID - crm_id` 值的单元格
 1. 在该模式窗口中，请注意客户 ID 值，以及反映的状态是 `AUTHENTICATED`：

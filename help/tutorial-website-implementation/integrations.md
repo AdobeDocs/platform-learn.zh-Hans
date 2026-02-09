@@ -2,16 +2,21 @@
 title: 实施Experience Cloud与标记的集成
 description: 了解如何验证 Adobe Experience Cloud 实施中的受众、A4T 和客户属性集成。本课程是“在网站中实施Experience Cloud”教程的一部分。
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
-source-git-commit: d73f9b3eafb327783d6bfacaf4d57cf8881479f7
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1199'
-ht-degree: 85%
+source-wordcount: '1231'
+ht-degree: 83%
 
 ---
 
 # Experience Cloud 集成
 
 在本课程中，您将回顾刚刚实施的解决方案之间的关键集成。好消息是，通过完成前面的课程，您已经实施了集成的代码方面！在本课程中，除了阅读相关说明并进行验证以外，您无需执行任何其他操作。
+
+
+>[!WARNING]
+>
+> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
 
 ## 学习目标
 
@@ -28,16 +33,16 @@ ht-degree: 85%
 >
 >要充分使用这些集成，需要满足许多用户权限要求并完成相应的帐户配置和置备步骤，而这些内容都不在本教程的涵盖范围内。 如果您尚未在当前的 Experience Cloud 实施中使用这些集成，则应考虑以下事项：
 >
->* 查看[核心服务集成](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/getting-started)的完整要求
->* 查看 [Analytics for Target 集成](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/a4t/before-implement)的完整要求
+>* 查看[核心服务集成](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)的完整要求
+>* 查看 [Analytics for Target 集成](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)的完整要求
 
 ## 受众
 
-[受众](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/audiences/overview)是人员核心服务的一部分，允许您在解决方案之间共享受众。例如，您可以在 Audience Manager 中创建受众，然后使用它通过 Target 来提供个性化内容。
+[受众](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview)是人员核心服务的一部分，允许您在解决方案之间共享受众。例如，您可以在 Audience Manager 中创建受众，然后使用它通过 Target 来提供个性化内容。
 
 实施 A4T（您已经完成）的主要要求包括：
 
-1. 实施 Adobe Experience Platform Identity Service
+1. 实施 Adobe Experience Platform 身份标识服务
 1. 实施 Audience Manager
 1. 实施您希望接收或创建受众的其他解决方案，例如 Target 和 Analytics
 
@@ -49,7 +54,7 @@ ht-degree: 85%
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 如[前面的课程](switch-environments.md)中所述，确保Debugger将标记属性映射到&#x200B;*您的*&#x200B;开发环境
+1. 如&#x200B;*前面的课程*&#x200B;中所述，确保Debugger将标记属性映射到[您的](switch-environments.md)开发环境
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -71,11 +76,11 @@ ht-degree: 85%
 
 ## Analytics for Target (A4T)
 
-通过 [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hans) 集成，您可以将 Analytics 数据作为报告 Target 中的量度的来源。
+通过 [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) 集成，您可以将 Analytics 数据作为报告 Target 中的量度的来源。
 
 实施 A4T（您已经完成）的主要要求包括：
 
-1. 实施 Adobe Experience Platform Identity Service
+1. 实施 Adobe Experience Platform 身份标识服务
 1. 在 Analytics 页面查看信标之前触发 Target 页面加载请求
 
 A4T 的工作方式是将从 Target 向 Analytics 发出的服务器端请求与 Analytics 页面查看信标拼合在一起，我们称之为“点击拼合”。“点击拼合”要求用于交付活动（或，递增基于 Target 的目标量度）的 Target 请求中有一个参数与 Analytics 页面查看信标中的参数相匹配。此参数称为补充数据 ID (SDID)。
@@ -88,7 +93,7 @@ A4T 的工作方式是将从 Target 向 Analytics 发出的服务器端请求与
 
 1. 打开 [Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 如[前面的课程](switch-environments.md)中所述，确保Debugger将标记属性映射到&#x200B;*您的*&#x200B;开发环境
+1. 如&#x200B;*前面的课程*&#x200B;中所述，确保Debugger将标记属性映射到[您的](switch-environments.md)开发环境
 
    ![Debugger中显示的标记开发环境](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -110,16 +115,16 @@ A4T 的工作方式是将从 Target 向 Analytics 发出的服务器端请求与
 
 ## 客户属性
 
-[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans)是人员核心服务的一部分，允许您上传客户关系管理 (CRM) 数据库中的数据，并在 Adobe Analytics 和 Adobe Target 中利用这些数据。
+[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html)是人员核心服务的一部分，允许您上传客户关系管理 (CRM) 数据库中的数据，并在 Adobe Analytics 和 Adobe Target 中利用这些数据。
 
 实施客户属性（您已经完成）的主要要求包括：
 
-1. 实施 Adobe Experience Platform Identity Service
+1. 实施 Adobe Experience Platform 身份标识服务
 1. 在&#x200B;*之前，通过ID服务*&#x200B;设置客户ID。Target和Analytics会触发其请求（您已使用标记中的规则排序功能完成此操作）
 
 ### 验证客户属性实施
 
-在前面的课程中，您已经验证客户 ID 会传递到 Identity Service 和 Target。您还可以在 Analytics 点击中验证客户 ID。此时，客户 ID 是少数几个未在 Experience Cloud Debugger 中显示的参数之一，但您将使用浏览器的 JavaScript 控制台来查看客户 ID。
+在前面的课程中，您已经验证客户 ID 会传递到身份标识服务和 Target。您还可以在 Analytics 点击中验证客户 ID。此时，客户 ID 是少数几个未在 Experience Cloud Debugger 中显示的参数之一，但您将使用浏览器的 JavaScript 控制台来查看客户 ID。
 
 1. 打开 Luma 网站
 1. 打开浏览器的开发人员工具
@@ -142,7 +147,7 @@ A4T 的工作方式是将从 Target 向 Analytics 发出的服务器端请求与
 1. 单击请求并选择“标头”选项卡
 1. 向下滚动直到看到一些嵌套参数为止
    1. cid - 这是请求的客户 ID 部分的标准分隔符
-   1. crm_id - 这是您在 Identity Service 课程中指定的自定义集成代码
+   1. crm_id - 这是您在身份标识服务课程中指定的自定义集成代码
    1. id - 来自您的 `Email (Hashed)` 数据元素中的客户 ID 值
    1. as - 身份验证状态，其中“1”表示已登录
 

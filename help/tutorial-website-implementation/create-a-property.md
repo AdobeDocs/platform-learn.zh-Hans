@@ -2,10 +2,10 @@
 title: 创建标记属性
 description: 了解如何登录数据收集界面并创建标记属性。 本课程是“在网站中实施Experience Cloud”教程的一部分。
 exl-id: f83d374a-a831-4598-b9d3-6f183224b589
-source-git-commit: cc7a77c4dd380ae1bc23dc75608e8e2224dfe78c
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 50%
+source-wordcount: '562'
+ht-degree: 47%
 
 ---
 
@@ -15,17 +15,22 @@ ht-degree: 50%
 
 资产基本上就是一个容器，在将标记部署到网站时可在其中填充扩展、规则、数据元素和库。
 
+
+>[!WARNING]
+>
+> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
+
 ## 先决条件
 
-要完成接下来的几个课程，您必须拥有在标记中开发、批准、Publish、管理扩展和管理环境的权限。 如果由于用户界面选项不可用而无法完成其中的任何步骤，请联系 Experience Cloud 管理员以请求获取访问权限。有关标记用户权限的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hans)。
+要完成接下来的几个课程，您必须拥有在标记中开发、批准、发布、管理扩展和管理环境的权限。 如果由于用户界面选项不可用而无法完成其中的任何步骤，请联系 Experience Cloud 管理员以请求获取访问权限。有关标记用户权限的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)。
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
-> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)**
-> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)**
+> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 学习目标
 
@@ -51,7 +56,7 @@ ht-degree: 50%
 
 ## 创建资产
 
-资产基本上就是一个容器，在将标记部署到网站时可在其中填充扩展、规则、数据元素和库。资产可以是一个或多个域和子域的任意组合。您可以通过相似的方式管理和跟踪这些资产。例如，假定您有多个基于一个模板的网站，并希望在所有这些网站中跟踪相同的资产。您可以将一个资产应用于多个域。有关创建资产的更多信息，请参阅产品文档中的[“公司和资产”](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=zh-Hans)。
+资产基本上就是一个容器，在将标记部署到网站时可在其中填充扩展、规则、数据元素和库。资产可以是一个或多个域和子域的任意组合。您可以通过相似的方式管理和跟踪这些资产。例如，假定您有多个基于一个模板的网站，并希望在所有这些网站中跟踪相同的资产。您可以将一个资产应用于多个域。有关创建资产的更多信息，请参阅产品文档中的[“公司和资产”](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html)。
 
 **创建资产**
 

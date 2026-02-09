@@ -4,9 +4,9 @@ description: 了解如何使用Adobe Experience Platform Debugger验证您的Pla
 feature: Web SDK,Tags,Debugger
 jira: KT-15405
 exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
-source-git-commit: d70d5df8b11c8500dbe4764b08e2627893f436f0
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1190'
 ht-degree: 3%
 
 ---
@@ -15,13 +15,18 @@ ht-degree: 3%
 
 了解如何使用 Adobe Experience Platform Debugger 验证您的 Adobe Experience Platform Web SDK 实施。
 
+
+>[!WARNING]
+>
+> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
+
 Experience Platform Debugger是适用于Chrome的扩展，可帮助您查看在网页中实施的Adobe技术：
 
 * [Chrome扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 如果您以前从未使用过该调试器，则可能需要观看以下时长为5分钟的概述视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/35858?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
 在本课程中，您使用[Adobe Experience Platform Debugger扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)将[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)上硬编码的标记属性替换为您自己的属性。
 
@@ -142,7 +147,7 @@ Experience Platform Debugger具有一项酷炫功能，您可以使用其他标�
 
 如您在[配置数据流](configure-datastream.md)课程中所学的，Platform Web SDK会先将数据从您的数字资产发送到Platform Edge Network。 然后，Platform Edge Network会向数据流中启用的相应服务发出其他服务器端请求。 通过使用Debugger中的Edge跟踪，您可以验证Platform Edge Network发出的服务器端请求。
 
-<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/assurance/home). -->
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). -->
 
 
 ### 启用Edge跟踪
@@ -166,4 +171,4 @@ Experience Platform Debugger具有一项酷炫功能，您可以使用其他标�
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容

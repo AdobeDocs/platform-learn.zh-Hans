@@ -4,9 +4,9 @@ description: 了解如何使用Experience Platform Web SDK数据的事件转发�
 feature: Web SDK,Tags,Event Forwarding
 jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1904'
 ht-degree: 3%
 
 ---
@@ -15,8 +15,12 @@ ht-degree: 3%
 
 了解如何使将事件转发功能与 Adobe Experience Platform Web SDK 数据一起使用。
 
-事件转发是数据收集中可用的一种新属性。 事件转发让您能够直接从Adobe Experience Platform Edge Network而不是传统的客户端浏览器向第三方非Adobe供应商发送数据。 在[事件转发概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/event-forwarding/overview)中进一步了解事件转发的优势。
+事件转发是数据收集中可用的一种新属性。 事件转发让您能够直接从Adobe Experience Platform Edge Network而不是传统的客户端浏览器向第三方非Adobe供应商发送数据。 在[事件转发概述](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview)中进一步了解事件转发的优势。
 
+
+>[!WARNING]
+>
+> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
 
 ![Web SDK和事件转发图](assets/dc-websdk-eventforwarding.png)
 
@@ -24,7 +28,7 @@ ht-degree: 3%
 
 * [Adobe Experience Platform Web SDK](overview.md)
 * [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
-  <!--* [Server-to-Server API](https://experienceleague.adobe.com/zh-hans/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
+  <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
 >[!NOTE]
@@ -143,7 +147,7 @@ ht-degree: 3%
 >[!TIP]
 >
 >您还可以通过使用Web浏览器网络工具、筛选`/ee`请求、打开信标&#x200B;[!UICONTROL **有效负载**]并向下钻取到要查找的变量来查找XDM对象路径。 然后，使用鼠标右键单击并选择“复制属性路径”。 以下是浏览器视区高度的示例：
->&#x200B;> ![事件转发XDM路径](assets/event-forwarding-xdm-path.png)
+> ![事件转发XDM路径](assets/event-forwarding-xdm-path.png)
 
 1. 转到您最近创建的&#x200B;**[!UICONTROL 事件转发]**&#x200B;属性
 
@@ -323,4 +327,4 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容

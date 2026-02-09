@@ -1,12 +1,12 @@
 ---
 title: 在网站中使用标记实施 Experience Cloud
-description: 对于希望了解如何在网站中实施Adobe Experience Cloud解决方案的前端开发人员或技术营销人员而言，“使用标签在网站中实施Experience Cloud”是他们的最佳起点。
+description: 对于希望了解如何在网站中实施Experience Cloud解决方案的前端开发人员或技术营销人员而言，“使用标记在网站中实施Adobe Experience Cloud”是他们的最佳起点。
 recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
-source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '851'
-ht-degree: 36%
+source-wordcount: '883'
+ht-degree: 34%
 
 ---
 
@@ -37,15 +37,15 @@ _使用标记在网站中实施Experience Cloud_&#x200B;是想要了解如何在
 
 * 使用 Adobe Experience Cloud Debugger 验证实施
 
-* Publish通过开发、暂存和生产环境进行更改
+* 通过开发、暂存和生产环境发布更改
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
-> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)**
-> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)**
+> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ _使用标记在网站中实施Experience Cloud_&#x200B;是想要了解如何在
 
 在这些课程中，我们假定您拥有 Adobe ID 和完成练习所需的权限。如果没有，您可能需要联系 Experience Cloud 管理员以请求获取访问权限。
 
-* 对于标记，您必须拥有“开发”、“批准”、“Publish”、“管理扩展”和“管理环境”权限。 有关标记用户权限的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hans)。
+* 对于标记，您必须拥有“开发”、“批准”、“发布”、“管理扩展”和“管理环境”权限。 有关标记用户权限的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)。
 * 对于 Adobe Analytics，您必须知晓跟踪服务器以及用于完成本教程的报表包
 * 对于Audience Manager，您必须知晓Audience Manager子域（也称为“合作伙伴名称”、“合作伙伴ID”或“合作伙伴子域”）
 
@@ -65,13 +65,18 @@ _使用标记在网站中实施Experience Cloud_&#x200B;是想要了解如何在
 
 Adobe Experience Platform的标记功能是Adobe推出的新一代网站标记和移动SDK管理功能。 标记为客户提供了一种简单的方式来部署和管理所有用来改善相关客户体验的分析、营销和广告解决方案。 标记无需额外付费。 它可供任何 Adobe Experience Cloud 客户使用。
 
-网站的标记允许您集中管理与桌面和移动设备网站上使用的分析、营销和广告解决方案相关的所有JavaScript。 例如，如果您部署Adobe Analytics，则标记将管理AppMeasurementJavaScript库、填充变量和触发请求。
+网站的标记允许您集中管理与桌面和移动设备网站上使用的分析、营销和广告解决方案相关的所有JavaScript。 例如，如果您部署Adobe Analytics，则标记将管理AppMeasurement JavaScript库、填充变量和触发请求。
 
 您的容器的内容将被缩小，包括您的自定义代码。一切都是模块化的。如果您不需要某个项目，它不会包含在您的库中。这样，实施就会变得快速而紧凑。
 
 标记也是一个平台，它允许第三方供应商创建扩展，以便轻松地通过标记部署其解决方案。 扩展是一种代码包(JavaScript、HTML和CSS)，用于扩展标记界面和客户端功能。 您可以将标记视为一个操作系统，而扩展则是您用来完成任务的应用程序。
 
 ## 关于课程
+
+
+>[!WARNING]
+>
+> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
 
 在这些课程中，您将在名为 Luma 的虚拟零售网站中实施 Adobe Experience Cloud。[Luma 网站](https://luma.enablementadobe.com/content/luma/us/en.html)具有丰富的数据层和功能，可让您构建实际可行的实施。您将在自己的Experience Cloud组织中构建自己的标记资产，并使用Experience Cloud Debugger将其映射到我们托管的Luma网站。
 
@@ -83,7 +88,7 @@ Adobe Experience Platform的标记功能是Adobe推出的新一代网站标记�
 1. 将[Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)扩展添加到您的Chrome浏览器
 1. 复制示例html页面代码
 
-   +++示例HTML页面代码
+   +++html页面代码示例
 
    ```html
    <!doctype html>
@@ -125,7 +130,7 @@ Adobe Experience Platform的标记功能是Adobe推出的新一代网站标记�
    <body>
        <h1>Tags: Sample HTML Page</h1>
        <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-       <p>See <a href="https://docs.adobe.com/content/help/zh-Hans/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+       <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
    </body>
    </html>
    ```

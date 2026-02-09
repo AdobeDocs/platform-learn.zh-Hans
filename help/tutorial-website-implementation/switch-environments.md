@@ -1,11 +1,11 @@
 ---
 title: 使用Adobe Experience Cloud Debugger切换标记环境
-description: 了解如何使用Experience Cloud Debugger加载其他标记嵌入代码。 本课程是“在网站中实施Experience Cloud”教程的一部分。
+description: 了解如何使用Experience Cloud Debugger加载不同的标记嵌入代码。 本课程是“在网站中实施Experience Cloud”教程的一部分。
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: 2483409b52562e13a4f557fe5bdec75b5afb4716
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '588'
-ht-degree: 21%
+source-wordcount: '620'
+ht-degree: 20%
 
 ---
 
@@ -13,15 +13,20 @@ ht-degree: 21%
 
 在本课程中，您将使用[Adobe Experience Platform Debugger扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)将[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)上硬编码的标记属性替换为您自己的属性。
 
+
+>[!WARNING]
+>
+> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
+
 此技术称为环境切换，当您以后在自己的网站上使用标记时，此技术将非常有用。 您可以在浏览器中加载生产网站，但需要您的&#x200B;*开发*&#x200B;标记环境。 这使您能够放心地做出并验证标记更改，而不依赖于常规代码发布。  毕竟，将营销标记发布与常规代码发布分开是客户最初使用标记的主要原因之一！
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
-> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)**
-> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)**
+> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 学习目标
 
@@ -46,13 +51,13 @@ ht-degree: 21%
 
 1. 在您的 Chrome 浏览器中打开 [Luma 演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. 通过单击![Experience Platform器图标](images/icon-debugger.png)图标，打开[调试器扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+1. 通过单击[Debugger图标](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)图标打开![Experience Platform Debugger扩展](images/icon-debugger.png)
 
    ![单击 Debugger 图标](images/switchEnvironments-openDebugger.png)
 
 1. 请注意，当前实施的标记属性将显示在“摘要”选项卡中
 
-   Debugger![&#128279;](images/switchEnvironments-debuggerOnWeRetail-prod.png)中显示的标记环境
+   Debugger![中显示的](images/switchEnvironments-debuggerOnWeRetail-prod.png)标记环境
 
 1. 转到“工具”选项卡
 1. 滚动到&#x200B;**[!UICONTROL 替换Launch嵌入代码]**&#x200B;部分
@@ -60,11 +65,11 @@ ht-degree: 21%
 1. 打开“跨luma.enablementadobe.com应用”功能，以便Luma网站上的所有页面都将映射到您的标记属性
 1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;按钮
 
-   Debugger![&#128279;](images/switchEnvironments-debugger-save.png)中显示的标记环境
+   Debugger![中显示的](images/switchEnvironments-debugger-save.png)标记环境
 
 1. 重新加载 Luma 网站并检查 Debugger 的“摘要”选项卡。在 Launch 部分下，现在您应会看到开发资产正在使用中。请确认该资产的名称与您的资产名称匹配，并且环境显示为“development”。
 
-   Debugger![&#128279;](images/switchEnvironments-debuggerOnWeRetail.png)中显示的标记环境
+   Debugger![中显示的](images/switchEnvironments-debuggerOnWeRetail.png)标记环境
 
 >[!NOTE]
 >

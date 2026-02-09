@@ -4,9 +4,9 @@ description: 了解如何在数据收集界面中为Web数据创建XDM架构。 
 feature: Web SDK,Schemas
 jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
-source-git-commit: 7ccbaaf4db43921f07c971c485e1460a1a7f0334
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1541'
+source-wordcount: '1573'
 ht-degree: 3%
 
 ---
@@ -18,6 +18,11 @@ ht-degree: 3%
 体验数据模型(XDM)架构是在Adobe Experience Platform中收集数据的构建块、原则和最佳实践。
 
 Platform Web SDK使用您的架构来标准化Web事件数据，将其发送到Platform Edge Network，并最终将数据转发到数据流中配置的任何Experience Cloud应用程序。 此步骤至关重要，因为它定义了将客户体验数据摄取到Experience Platform所需的标准数据模型，并支持基于这些标准构建的下游服务和应用程序。
+
+
+>[!WARNING]
+>
+> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
 
 >[!NOTE]
 >
@@ -51,14 +56,14 @@ Platform Web SDK使用您的架构来标准化Web事件数据，将其发送到P
 
 如果所有处理订单的企业都决定以一致的方式为订单数据建模，并采用业内通用的术语，那么奇迹般的事情可能就会开始发生。 信息可以在您的组织内外的交流更加流畅，而不是不断地解释和翻译数据（ prop和evar ，任何人？ ）。 机器学习可以更轻松地了解数据&#x200B;_的含义_&#x200B;并提供可操作分析。 用于呈现相关数据的用户界面可以变得更加直观。 您的数据可以与遵循相同建模的合作伙伴和供应商无缝集成。
 
-这是Adobe的[体验数据模型](https://business.adobe.com/cn/products/experience-platform/experience-data-model.html)的目标。 XDM为行业中常见的数据提供规范性建模，同时允许您扩展模型以满足特定需求。 Adobe Experience Platform是围绕XDM构建的，因此，发送到Experience Platform的数据需要位于XDM中。 您无需考虑在将数据发送到Experience Platform之前可以在何处以及如何将当前数据模型转换为XDM，而是可以考虑在整个组织中更普遍地采用XDM，以便几乎不需要进行翻译。
+这是Adobe的[体验数据模型](https://business.adobe.com/products/experience-platform/experience-data-model.html)的目标。 XDM为行业中常见的数据提供规范性建模，同时允许您扩展模型以满足特定需求。 Adobe Experience Platform是围绕XDM构建的，因此，发送到Experience Platform的数据需要位于XDM中。 您无需考虑在将数据发送到Experience Platform之前可以在何处以及如何将当前数据模型转换为XDM，而是可以考虑在整个组织中更普遍地采用XDM，以便几乎不需要进行翻译。
 
 
 >[!NOTE]
 >
 > 出于演示目的，本课程中的练习构建了一个示例架构，用于捕获客户在[Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html)中查看的内容和购买的产品。 虽然您可以使用这些步骤创建不同的架构以满足您自己的目的，但建议您首先在创建示例架构的同时学习架构编辑器的功能。
 
-要了解有关XDM架构的更多信息，请观看播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/zh-hans/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，或查看[XDM系统概述](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/home)。
+要了解有关XDM架构的更多信息，请观看播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)，或查看[XDM系统概述](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home)。
 
 ## 学习目标
 
@@ -74,7 +79,7 @@ Platform Web SDK使用您的架构来标准化Web事件数据，将其发送到P
 
 ## 创建 XDM 架构
 
-XDM架构是描述Experience Platform中数据的标准方式，允许与架构匹配的所有数据在组织内重复使用，而不会产生冲突，甚至可以在多个组织之间共享。 若要了解详细信息，请参阅架构组合的[基础知识](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/composition)。
+XDM架构是描述Experience Platform中数据的标准方式，允许与架构匹配的所有数据在组织内重复使用，而不会产生冲突，甚至可以在多个组织之间共享。 若要了解详细信息，请参阅架构组合的[基础知识](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition)。
 
 在本练习中，您将使用建议的基线字段组创建一个XDM架构，用于捕获[Luma演示站点](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}上的Web事件数据：
 
@@ -107,13 +112,13 @@ XDM架构是描述Experience Platform中数据的标准方式，允许与架构�
 
 ## 添加字段组
 
-如前所述，XDM是通过提供在下游Adobe Experience Platform服务中使用的通用结构和定义来标准化客户体验数据的核心框架。 通过遵守XDM标准，可以将&#x200B;_所有客户体验数据_&#x200B;合并到通用表示中。 通过这种方法，您可以从客户操作中获得有价值的见解，通过区段定义客户受众，并使用来自多个来源的数据表示客户属性以进行个性化。 有关详细信息，请参阅[数据建模的最佳实践](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/schema/best-practices)。
+如前所述，XDM是通过提供在下游Adobe Experience Platform服务中使用的通用结构和定义来标准化客户体验数据的核心框架。 通过遵守XDM标准，可以将&#x200B;_所有客户体验数据_&#x200B;合并到通用表示中。 通过这种方法，您可以从客户操作中获得有价值的见解，通过区段定义客户受众，并使用来自多个来源的数据表示客户属性以进行个性化。 有关详细信息，请参阅[数据建模的最佳实践](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices)。
 
-如果可能，建议使用现有字段组并遵守与产品无关的模型和命名约定。 对于特定于您的组织、不适合上述预定义字段组的任何数据，您可以创建自定义字段组。 有关自定义架构的更多详细步骤，请参阅[使用架构编辑器创建架构](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/create-schema-ui#create)。
+如果可能，建议使用现有字段组并遵守与产品无关的模型和命名约定。 对于特定于您的组织、不适合上述预定义字段组的任何数据，您可以创建自定义字段组。 有关自定义架构的更多详细步骤，请参阅[使用架构编辑器创建架构](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create)。
 
 >[!TIP]
 > 
->在本练习中，您将为Web数据收集添加推荐的预定义字段组：_&#x200B;**[!UICONTROL AEP Web SDK ExperienceEvent]**&#x200B;_&#x200B;和&#x200B;_&#x200B;**[!UICONTROL 使用者体验事件]**&#x200B;_。
+>在本练习中，您将为Web数据收集添加推荐的预定义字段组：_**[!UICONTROL AEP Web SDK ExperienceEvent]**_&#x200B;和&#x200B;_**[!UICONTROL 使用者体验事件]**_。
 >
 
 
@@ -133,7 +138,7 @@ XDM架构是描述Experience Platform中数据的标准方式，允许与架构�
 
 ![架构字段组](assets/schema-consumer-experience-event.png)
 
-这个课程只是一个起点。 在构建您自己的Web事件架构时，您必须探索并记录您的业务要求。 此过程类似于为Adobe Analytics实施创建[业务需求文档](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document)和[解决方案设计参考](https://experienceleague.adobe.com/zh-hans/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr)，但应包括对&#x200B;_所有下游数据收件人_&#x200B;的需求，例如平台、Target和事件转发目标。
+这个课程只是一个起点。 在构建您自己的Web事件架构时，您必须探索并记录您的业务要求。 此过程类似于为Adobe Analytics实施创建[业务需求文档](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document)和[解决方案设计参考](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr)，但应包括对&#x200B;_所有下游数据收件人_&#x200B;的需求，例如平台、Target和事件转发目标。
 
 
 ### identityMap对象
@@ -147,11 +152,11 @@ XDM架构是描述Experience Platform中数据的标准方式，允许与架构�
 
 >[!IMPORTANT]
 >
-> 在保存架构之前，可以为架构启用&#x200B;**[!UICONTROL 配置文件]**。 **此时不要**&#x200B;启用它。 为配置文件启用架构后，如果不重置整个沙盒，则无法禁用或删除该架构。 此时也无法从架构中删除字段，但可以[弃用UI中的字段](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate)。 在生产环境中使用您自己的数据时，请务必牢记这些含义。
+> 在保存架构之前，可以为架构启用&#x200B;**[!UICONTROL 配置文件]**。 **此时不要**&#x200B;启用它。 为配置文件启用架构后，如果不重置整个沙盒，则无法禁用或删除该架构。 此时也无法从架构中删除字段，但可以[弃用UI中的字段](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate)。 在生产环境中使用您自己的数据时，请务必牢记这些含义。
 >
 >
 >此设置将在[设置Experience Platform](setup-experience-platform.md)课程中详细讨论。
->&#x200B;>![配置文件架构](assets/schema-profile.png)
+>![配置文件架构](assets/schema-profile.png)
 
 要完成本课程，请选择右上方的&#x200B;**[!UICONTROL 保存]**。
 
@@ -162,4 +167,4 @@ XDM架构是描述Experience Platform中数据的标准方式，允许与架构�
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容

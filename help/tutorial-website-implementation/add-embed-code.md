@@ -2,10 +2,10 @@
 title: 添加嵌入代码
 description: 了解如何获取标记资产的嵌入代码并在您的网站中实施它们。 本课程是“在网站中实施Experience Cloud”教程的一部分。
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: 277f5f2c07bb5818e8c5cc129bef1ec93411c90d
+source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
 workflow-type: tm+mt
-source-wordcount: '1037'
-ht-degree: 43%
+source-wordcount: '1069'
+ht-degree: 42%
 
 ---
 
@@ -13,13 +13,18 @@ ht-degree: 43%
 
 在本课程中，您将实施标记资产的开发环境的异步嵌入代码。 在此过程中，您将了解标记的两个主要概念：环境和嵌入代码。
 
+
+>[!WARNING]
+>
+> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
+
 >[!NOTE]
 >
 >Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
 >
-> * platform launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
-> * platform launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)**
-> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)**
+> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)**
+> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)**
+> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 ## 学习目标
 
@@ -42,7 +47,7 @@ ht-degree: 43%
 
 标记允许添加其他开发环境，对于有多位开发人员同时处理不同项目的大型组织而言，通常需要这样做。
 
-要完成本教程，只需要这三个环境。通过这些环境，您可以将标记库的不同工作版本托管在不同的URL，这样您便可以安全地添加新功能，并在适当的时间将这些功能提供给适当的用户（例如，开发人员、QA工程师、公众等等） 。
+要完成本教程，只需要这三个环境。通过这些环境，您可以将标记库的不同工作版本托管在不同的URL，这样您便可以安全地添加新功能，并在适当的时间将这些功能提供给适当的用户（例如，开发人员、QA工程师、公众等）。
 
 现在，让我们复制嵌入代码：
 
@@ -62,7 +67,7 @@ ht-degree: 43%
 
 如果没有模板文件，请复制示例的html页面代码并将其粘贴到代码编辑器中。 [Brackets](https://brackets.io/) 是一个免费的开源编辑器（如果需要）。
 
-+++示例HTML页面代码
++++html页面代码示例
 
 ```html
 <!doctype html>
@@ -104,7 +109,7 @@ ht-degree: 43%
 <body>
     <h1>Tags: Sample HTML Page</h1>
     <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-    <p>See <a href="https://docs.adobe.com/content/help/zh-Hans/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
 </body>
 </html>
 ```
