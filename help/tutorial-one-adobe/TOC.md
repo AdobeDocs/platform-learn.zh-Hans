@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: bed1141b0b51063637684a29a9bd946c934fc2ba
+source-git-commit: 9d3e39cf99f3cfa6c1198c53f30b21fa8fbf7854
 workflow-type: tm+mt
-source-wordcount: '1518'
+source-wordcount: '1529'
 ht-degree: 3%
 
 ---
@@ -89,11 +89,10 @@ ht-degree: 3%
    + 1.7工作流生成器 {#crpr7}
       + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.7/workflowbuilder.md)
       + [1.7.1 Workflow Builder入门](/help/tutorial-one-adobe/modules/creation-production/module1.7/ex1.md)
-   + 1.8企业存储管理 {#crpr8}
+   + 1.8通过Workfront、Frame.io和企业存储管理进行统一审查和批准 {#crpr8}
       + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
-      + [1.8.1 Workfront和ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
-      + [1.8.2 Frame.io和ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
-      + [1.8.3 Adobe Express和ESM](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex3.md)
+      + [1.8.1 Workfront、Frame.io和ESM快速入门](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
+      + [1.8.2创建新资产并进行审查和批准](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
 
 + 资产管理 {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
