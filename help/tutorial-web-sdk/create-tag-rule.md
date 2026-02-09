@@ -75,7 +75,7 @@ ht-degree: 2%
 
 此视频概述了此过程：
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3454037/?captions=chi_hans&learn=on&enablevpops)
 
 ### 全局配置字段
 

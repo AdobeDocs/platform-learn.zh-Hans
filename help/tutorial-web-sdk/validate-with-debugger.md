@@ -26,7 +26,7 @@ Experience Platform Debugger是适用于Chrome的扩展，可帮助您查看在�
 
 如果您以前从未使用过该调试器，则可能需要观看以下时长为5分钟的概述视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35858?captions=chi_hans&learn=on&enablevpops)
 
 在本课程中，您使用[Adobe Experience Platform Debugger扩展](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)将[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)上硬编码的标记属性替换为您自己的属性。
 
