@@ -29,7 +29,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
-> 出于演示目的，本课程中的练习允许您使用凭据[用户： ](https://luma.enablementadobe.com/content/luma/us/en.html) /密码： test **捕获登录到`test@test.com`Luma演示站点**&#x200B;的虚构客户的身份详细信息。
+> 出于演示目的，本课程中的练习允许您使用凭据[用户： &#x200B;](https://luma.enablementadobe.com/content/luma/us/en.html) /密码： test **捕获登录到`test@test.com`Luma演示站点**&#x200B;的虚构客户的身份详细信息。
 
 ## 学习目标
 

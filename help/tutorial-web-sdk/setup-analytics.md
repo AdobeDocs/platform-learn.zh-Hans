@@ -390,7 +390,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 
    ![Analytics产品字符串](assets/analytics-debugger-prodstring.png)
 
-   Edge跟踪对`commerce`事件的处理方式与`productList`维度略有不同。 您不会看到上下文数据变量以与看到映射到上述`[!UICONTROL c.a.x.productlistitem.[0].name]`的产品名称相同的方式进行映射。 Edge跟踪反而会在Analytics `event`变量中显示最终事件自动映射。 Platform Edge Network会相应地映射该架构，只要您在`commerce`为Adobe Analytics配置架构时[映射到适当的XDM ](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)变量；在本例中为`commerce.productViews.value=1`。
+   Edge跟踪对`commerce`事件的处理方式与`productList`维度略有不同。 您不会看到上下文数据变量以与看到映射到上述`[!UICONTROL c.a.x.productlistitem.[0].name]`的产品名称相同的方式进行映射。 Edge跟踪反而会在Analytics `event`变量中显示最终事件自动映射。 Platform Edge Network会相应地映射该架构，只要您在`commerce`为Adobe Analytics配置架构时[映射到适当的XDM &#x200B;](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics)变量；在本例中为`commerce.productViews.value=1`。
 
 1. 返回Experience Platform Debugger窗口，向下滚动到`[!UICONTROL events]`变量，该变量设置为`[!UICONTROL prodView]`
 
@@ -452,13 +452,13 @@ Adobe Experience Platform Assurance可帮助您检查、验证、模拟和验证
 要验证Adobe Analytics是否正在捕获ECID，请选择一个信标并打开有效负载。  此信标的供应商应为&#x200B;**[!UICONTROL com.adobe.analytics.hitdebugger]**
 使用Assurance进行![Adobe Analytics验证](assets/assurance-hitdebugger-payload.png)
 
-然后向下滚动到&#x200B;**[!UICONTROL mcvisId]**以验证是否正确捕获了ECID
+然后向下滚动到&#x200B;**[!UICONTROL mcvisId]**&#x200B;以验证是否正确捕获了ECID
 使用Assurance进行![Experience Cloud ID验证](assets/assurance-hitdebugger-mcvisId.png)
 
 ### 内容页面查看次数验证
 
 使用相同的信标，验证内容页面查看是否已映射到正确的Adobe Analytics变量。
-向下滚动到**[!UICONTROL pageName]**&#x200B;以验证是否正确捕获了`Page Name`：
+向下滚动到&#x200B;**[!UICONTROL pageName]**&#x200B;以验证是否正确捕获了`Page Name`：
 
 
     >[！NOTE]

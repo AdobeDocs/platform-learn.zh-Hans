@@ -179,16 +179,16 @@ window.adobeDataLayer.push({
 
 按照以下相同步骤创建这些附加数据元素：
 
-* **`page.pageInfo.server`**映射到
+* **`page.pageInfo.server`**&#x200B;映射到
   `digitalData.page.pageInfo.server`
 
-* **`page.pageInfo.hierarchie1`**映射到
+* **`page.pageInfo.hierarchie1`**&#x200B;映射到
   `digitalData.page.pageInfo.hierarchie1`
 
-* **`user.profile.attributes.username`**映射到
+* **`user.profile.attributes.username`**&#x200B;映射到
   `digitalData.user.0.profile.0.attributes.username`
 
-* **`user.profile.attributes.loggedIn`**映射到
+* **`user.profile.attributes.loggedIn`**&#x200B;映射到
   `digitalData.user.0.profile.0.attributes.loggedIn`
 
 * **`product.productInfo.sku`**&#x200B;映射到`digitalData.product.0.productInfo.sku`

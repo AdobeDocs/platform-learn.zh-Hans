@@ -103,7 +103,7 @@ ht-degree: 2%
    >
    > 订单编号越低，执行的时间就越早。 因此，我们给予“全球配置”一个较低的订单编号。
 
-1. 选择&#x200B;**[!UICONTROL Keep Changes]**以返回主规则屏幕
+1. 选择&#x200B;**[!UICONTROL Keep Changes]**&#x200B;以返回主规则屏幕
    ![选择库已加载触发器](assets/create-tag-rule-trigger-loaded.png)
 
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 添加]**
@@ -242,7 +242,7 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->请注意数值变量的转换方式，数据层中的字符串值（如`price`和`qty`）将重新格式化为数据元素中的数字。 这些格式要求对于Platform中的数据完整性非常重要，可以在[配置架构](configure-schemas.md)步骤中确定。 在示例中，**[!UICONTROL 数量]**&#x200B;使用&#x200B;**[!UICONTROL 整数]**数据类型。
+>请注意数值变量的转换方式，数据层中的字符串值（如`price`和`qty`）将重新格式化为数据元素中的数字。 这些格式要求对于Platform中的数据完整性非常重要，可以在[配置架构](configure-schemas.md)步骤中确定。 在示例中，**[!UICONTROL 数量]**&#x200B;使用&#x200B;**[!UICONTROL 整数]**&#x200B;数据类型。
 > ![XDM架构数据类型](assets/set-up-analytics-quantity-integer.png)
 
 现在，让我们将数组映射到XDM对象：
@@ -349,7 +349,7 @@ ht-degree: 2%
 
 1. 选择&#x200B;**[!UICONTROL 高级]**&#x200B;下拉菜单并在`50`顺序&#x200B;**[!UICONTROL 中输入]**。 这将确保此规则在您配置的所有其他规则（这些规则将`1`或`20`作为其[!UICONTROL 顺序]）之后触发。
 
-1. 选择&#x200B;**[!UICONTROL Keep Changes]**以返回主规则屏幕
+1. 选择&#x200B;**[!UICONTROL Keep Changes]**&#x200B;以返回主规则屏幕
    ![选择库已加载触发器](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 添加]**

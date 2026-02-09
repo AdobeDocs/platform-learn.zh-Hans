@@ -310,7 +310,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 1. 选择&#x200B;**[!UICONTROL 下一步]**
 
    ![创建受众](assets/merge-policy-set-active-on-edge.png)
-1. 继续选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以继续执行工作流程的其他步骤，并选择&#x200B;**[!UICONTROL 完成]**以保存您的设置
+1. 继续选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以继续执行工作流程的其他步骤，并选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存您的设置
    ![创建受众](assets/merge-policy-finish.png)
 
 您现在可以创建将在Edge上评估的受众。
