@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ![AEM Assets Dynamic Media](./images/aaemassdmcomp4.png)
 
-现在，您应会收到类似于以下内容的电子邮件，其中包含您的临时密码。 要更改密码，或者如果未收到电子邮件则检索密码，您应该安装&#x200B;**Adobe Dynamic Media Classic桌面应用程序**。 您可以在此处找到安装说明： [https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app)。
+现在，您应会收到类似于以下内容的电子邮件，其中包含您的临时密码。 要更改密码，或者如果未收到电子邮件则检索密码，您应该安装&#x200B;**Adobe Dynamic Media Classic桌面应用程序**。 您可以在此处找到安装说明： [https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app)。
 
 按照该处的说明操作，并在您的系统上安装应用程序后返回此处。
 
