@@ -3,7 +3,8 @@ title: 适用于Adobe Commerce的智能开发人员工具
 description: 适用于Adobe Commerce的智能开发人员工具
 kt: 5342
 doc-type: tutorial
-source-git-commit: 6ab5ca7ba774b02c1c48a16c4399ceeaf6bd2a32
+exl-id: d6ff0907-260f-4f83-98e2-d22954a03678
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
 source-wordcount: '73'
 ht-degree: 8%

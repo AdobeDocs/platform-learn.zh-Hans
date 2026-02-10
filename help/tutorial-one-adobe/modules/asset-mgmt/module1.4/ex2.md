@@ -3,10 +3,11 @@ title: 在Adobe Journey Optimizer中使用Dynamic Media模板
 description: 在Adobe Journey Optimizer中使用Dynamic Media模板
 kt: 5342
 doc-type: tutorial
-source-git-commit: 261475b85bfb15f7e9f630d1c5203732c2d4c254
+exl-id: 0dd499cc-ec3b-42c3-9c08-6512ea5b9377
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 0%
+source-wordcount: '637'
+ht-degree: 1%
 
 ---
 
@@ -82,9 +83,69 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/gsemail32.png)
 
-您应该会看到此内容。
+您应该会看到此内容。 你也是。 请注意允许您更改Dynamic Media模板参数的&#x200B;**PARAMETERS**。
 
 ![Journey Optimizer](./images/gsemail33.png)
+
+## 1.4.2.2个性化Dynamic Media模板
+
+如上一个练习中所述，AJO现在需要动态确定哪些值应该成为Dynamic Media模板的一部分。
+
+与上一个练习中的&#x200B;**预览**&#x200B;步骤一样，**city_paris**、**city_dubai**&#x200B;和&#x200B;**city_ny**&#x200B;字段应设置为1，这意味着这些图像将被隐藏。
+
+对于字段&#x200B;**title**，单击个性化图标。
+
+![Journey Optimizer](./images/gsemail34.png)
+
+用以下替换默认文本： `Hi {{profile.person.name.firstName}}`。 单击&#x200B;**保存**。
+
+![Journey Optimizer](./images/gsemail35.png)
+
+对于字段&#x200B;**body**，单击个性化图标。
+
+![Journey Optimizer](./images/gsemail36.png)
+
+用以下替换默认文本： `CitiSignal is coming to {{profile.homeAddress.city}}!`。 单击&#x200B;**保存**。
+
+![Journey Optimizer](./images/gsemail37.png)
+
+确保字段&#x200B;**`dynamic_city_hide`**&#x200B;设置为0。 单击字段&#x200B;**`dynamic_city_image`**&#x200B;的个性化图标。
+
+![Journey Optimizer](./images/gsemail38.png)
+
+用以下替换默认文本： `--aepUserLdap--CitiSignalDM/citisignal-fiber-max-is-coming_citisignal-{{profile._experienceplatform.individualCharacteristics.fiber_rollout.closest_rollout_city}}-1`。 单击&#x200B;**保存**。
+
+![Journey Optimizer](./images/gsemail39.png)
+
+您应该会看到此内容。 由于动态变量在电子邮件编辑器的上下文中不可用，因此此处不再呈现图像。
+
+单击&#x200B;**保存**。
+
+![Journey Optimizer](./images/gsemail40.png)
+
+最常测试您的配置，单击&#x200B;**模拟内容**，然后选择&#x200B;**模拟内容**。
+
+![Journey Optimizer](./images/gsemail41.png)
+
+然后您应该会看到类似这样的内容。 如果您没有可用的测试配置文件，则可以转到&#x200B;**管理测试配置文件**&#x200B;来添加它们。
+
+一旦您的测试配置文件可用，其中包含测试此用例所需的数据，您就可以从一个配置文件切换到另一个配置文件，查看更改是否动态发生。
+
+这是一个与纽约转出城市相关的个人资料。
+
+![Journey Optimizer](./images/gsemail42.png)
+
+这是一个与巴黎转出城市相关联的用户档案。
+
+![Journey Optimizer](./images/gsemail43.png)
+
+这是一段与迪拜转出城市相关的资料。
+
+单击&#x200B;**关闭**。
+
+![Journey Optimizer](./images/gsemail44.png)
+
+您现在已经完成了此练习。 无需发布电子邮件营销活动。
 
 ## 后续步骤
 

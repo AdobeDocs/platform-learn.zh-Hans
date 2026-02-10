@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 2f9a3eef-16ef-497c-97f7-377ff9ed2f82
-source-git-commit: c92e21cbc385eb1cf31887c1f829af0e9ddf6ae6
+source-git-commit: 8f746831d4a1481f8ccc14539273c4b16ca5170b
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1022'
 ht-degree: 1%
 
 ---
@@ -63,10 +63,6 @@ ht-degree: 1%
 
 ![WF](./images/blueprint4.png)
 
-您应该会看到此内容。 安装可能需要几分钟的时间。
-
-![WF](./images/blueprint5.png)
-
 几分钟后，将安装Blueprint。
 
 ![WF](./images/blueprint6.png)
@@ -89,7 +85,7 @@ ht-degree: 1%
 
 ![WF](./images/wfnp1.png)
 
-输入项目名称： `--aepUserLdap-- CitiSignal Fiber Launch`。
+输入项目名称： `--aepUserLdap-- - CitiSignal Fiber Launch`。
 
 ![WF](./images/wfp6b.png)
 
@@ -153,9 +149,9 @@ Adobe企业存储的主要优势包括：
 为您的任务输入此名称： `Create layout using approved assets and copy`。
 
 将字段&#x200B;**工作**&#x200B;设置为角色&#x200B;**Designer**。
-将字段&#x200B;**持续时间**&#x200B;设置为&#x200B;**5天**。
-将字段前置任务设置为&#x200B;**9**。
-为&#x200B;**开始日期**&#x200B;和&#x200B;**到期日期**&#x200B;字段输入日期（此任务的开始日期应安排在上一个任务的结束日期之后）。
+将字段**持续时间**&#x200B;设置为&#x200B;**5天**。
+将字段前置任务设置为**9**。
+为**开始日期**&#x200B;和&#x200B;**到期日期**&#x200B;字段输入日期（此任务的开始日期应安排在上一个任务的结束日期之后）。
 
 单击屏幕中的其他位置以保存新任务。
 
