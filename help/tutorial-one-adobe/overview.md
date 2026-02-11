@@ -3,9 +3,9 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 490bc79332bb84520ba084ec784ea3ef48a68fb5
+source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1325'
 ht-degree: 2%
 
 ---
@@ -94,6 +94,14 @@ ht-degree: 2%
 
 在本模块中，您将使用Adobe IO和App Builder构建自定义应用程序，以扩展GenStudio for Performance Marketing中的功能。
 
+[1.7工作流生成器](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+
+在本模块中，您将使用工作流生成器来解析可重复的创意设计和自动化用例。
+
+[1.8通过Workfront、Frame.io和企业存储管理进行统一审查和批准](./modules/creation-production/module1.8/esm.md){target="_blank"}
+
+在本模块中，您将直接将Workfront的项目和工作管理功能与Frame.io的实时审查和协作体验联系起来。
+
 ### 3.资产管理和网站
 
 [1.1 Adobe Experience Manager Cloud Service和Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
@@ -103,6 +111,10 @@ ht-degree: 2%
 [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 在本模块中，您将学习AEM Assets。
+
+[1.4 Adobe Experience Manager Assets和Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
+
+在本模块中，您将设置AEM Assets Dynamic Media ，并在Adobe Journey Optimizer中使用Dynamic Media模板。
 
 [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
 
