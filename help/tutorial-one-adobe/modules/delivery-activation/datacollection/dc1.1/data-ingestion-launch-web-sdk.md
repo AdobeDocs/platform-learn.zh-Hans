@@ -23,9 +23,9 @@ ht-degree: 0%
 - 了解品牌用来将数据摄取到其Adobe产品的数据流。
 - 了解如何通过Adobe Experience Platform Edge Network将数据发送到Adobe Experience Platform和其他产品。
 - 了解如何创建从Web和移动设备收集数据的数据元素和规则。
-- 了解[Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/home)跟踪事件以及如何调试其内容。
+- 了解[Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)跟踪事件以及如何调试其内容。
 - 了解什么是数据层以及Adobe在实施数据层时推荐什么。
-- 了解从头开始实施[Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/home)的步骤是什么。
+- 了解从头开始实施[Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)的步骤是什么。
 - 了解Web实施与移动实施之间的区别。
 
 ## 先决条件

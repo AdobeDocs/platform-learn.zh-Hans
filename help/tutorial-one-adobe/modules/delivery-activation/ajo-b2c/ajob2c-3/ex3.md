@@ -90,12 +90,12 @@ ht-degree: 0%
 ![应用程序内](./images/inapp15.png)
 
 对于&#x200B;**标头**&#x200B;文本，使用： `CitiSignal Fiber Max`。
-对于&#x200B;**正文**&#x200B;文本，使用： `Conquer lag with Fiber Max`。
+对于**正文**&#x200B;文本，使用： `Conquer lag with Fiber Max`。
 
 ![应用程序内](./images/inapp16.png)
 
 将文本&#x200B;**#1**&#x200B;按钮设置为： `Go to Plans`。
-将&#x200B;**目标**&#x200B;设置为`com.adobe.dsn.dxdemo://plans`。
+将**目标**&#x200B;设置为`com.adobe.dsn.dxdemo://plans`。
 
 单击&#x200B;**查看以激活**。
 

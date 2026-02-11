@@ -30,7 +30,7 @@ ht-degree: 0%
 ## 配置Kafka连接
 
 转到桌面上名为&#x200B;**Kafka_AEP**&#x200B;的文件夹，然后导航到文件夹`kafka_2.13-3.9.0/config`。
-在该文件夹中，使用任意文本编辑器打开文件&#x200B;**connect-distributed.properties**。
+在该文件夹中，使用任意文本编辑器打开文件**connect-distributed.properties**。
 
 ![Kafka](./images/kc3a.png)
 
