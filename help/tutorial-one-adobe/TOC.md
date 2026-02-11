@@ -4,7 +4,7 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 79e869a8764224b630c1523d272316e37c93d65a
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 3%
@@ -289,4 +289,4 @@ ht-degree: 3%
    + 1.7适用于Adobe Commerce的智能开发人员工具 {#agents7}
       + [概述](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1设置开发环境](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
-      + [1.7.2使用Cursor.ai开发项目](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)
+      + [1.7.2使用Cursor开发项目](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)

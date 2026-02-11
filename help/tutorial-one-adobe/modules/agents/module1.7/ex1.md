@@ -4,7 +4,7 @@ description: 设置开发环境
 kt: 5342
 doc-type: tutorial
 exl-id: c9bfb327-362f-4475-89da-8e9788940d56
-source-git-commit: ce3ee3dde103383a6f7897cba36d548058879ea7
+source-git-commit: 25901342e8d9c46b0edce3b2092b9f1d66ba5849
 workflow-type: tm+mt
 source-wordcount: '640'
 ht-degree: 0%
@@ -31,7 +31,7 @@ ht-degree: 0%
 
 ![GSPeM可扩展性](./images/commerceagent2.png)
 
-输入名称`--aepUserLdap-- vangeluw Commerce Events`。 单击&#x200B;**保存**。
+输入名称`--aepUserLdap-- Commerce Events`。 单击&#x200B;**保存**。
 
 ![GSPeM可扩展性](./images/commerceagent4.png)
 
@@ -175,7 +175,7 @@ Adobe Developer命令行界面(CLI)现在也已成功安装。
 
 ## 后续步骤
 
-转到[使用Cursor.ai开发项目](./ex2.md){target="_blank"}
+转到[使用光标开发项目](./ex2.md){target="_blank"}
 
 返回至[适用于Adobe Commerce的智能开发人员工具](./aiassisteddev.md){target="_blank"}
 
