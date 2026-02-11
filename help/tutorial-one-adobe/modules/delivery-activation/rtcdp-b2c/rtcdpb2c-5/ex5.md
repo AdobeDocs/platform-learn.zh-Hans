@@ -284,8 +284,8 @@ Amazon Kinesis数据流侧重于摄取和存储数据流。 Kinesis Data Firehos
 
 ![Adobe Experience Platform数据收集SSF](./images/rlaws7.png)
 
-转到&#x200B;**发布流**以发布您的更改。
-单击**Main**&#x200B;打开开发库。
+转到&#x200B;**发布流**&#x200B;以发布您的更改。
+单击&#x200B;**Main**&#x200B;打开开发库。
 
 ![Adobe Experience Platform数据收集SSF](./images/rlaws11.png)
 
