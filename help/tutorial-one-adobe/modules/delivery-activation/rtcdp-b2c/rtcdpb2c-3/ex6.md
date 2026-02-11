@@ -160,7 +160,7 @@ ht-degree: 4%
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=zh-Hans",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"
