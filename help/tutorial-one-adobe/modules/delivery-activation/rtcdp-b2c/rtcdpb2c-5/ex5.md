@@ -20,7 +20,7 @@ ht-degree: 2%
 ## 很高兴知道
 
 Adobe Experience Platform支持将各种Amazon服务作为目标。
-Kinesis和S3都是[配置文件导出目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en)，可以作为Adobe Experience Platform Real-Time CDP的一部分使用。
+Kinesis和S3都是[配置文件导出目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=zh-Hans)，可以作为Adobe Experience Platform Real-Time CDP的一部分使用。
 您可以轻松地将高价值区段事件和相关配置文件属性馈送到您选择的系统。
 
 在本练习中，您将了解如何设置自己的Amazon Kinesis流，以将来自Adobe Experience Platform Edge生态系统的事件数据流式传输到云存储目标，如Amazon S3。 如果您希望从Web和移动属性收集体验事件并将它们推送到Datalake中以用于分析和操作报告，则此功能非常有用。 数据湖通常通过大量每日文件导入以批量方式摄取数据，它们不会公开可与事件转发结合使用的公共http端点。
