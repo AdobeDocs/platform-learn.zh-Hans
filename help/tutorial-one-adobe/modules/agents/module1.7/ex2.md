@@ -203,9 +203,9 @@ ht-degree: 0%
 
 在转到&#x200B;**Workspace概述**&#x200B;后，请查看URL，它应如下所示： **https://developer.adobe.com/console/projects/133309/4566206088345586770/workspaces/4566206088345619105/details**。
 
-此示例中的第一个数字133309是用于字段&#x200B;**IO_CONSUMER_ID**的值。
-此示例中的第二个数字4566206088345586770是用于字段**IO_PROJECT_ID**的值。
-此示例中的第三个数字4566206088345619105是用于字段**IO_WORKSPACE_ID**&#x200B;的值。
+此示例中的第一个数字133309是用于字段&#x200B;**IO_CONSUMER_ID**&#x200B;的值。
+此示例中的第二个数字4566206088345586770是用于字段&#x200B;**IO_PROJECT_ID**&#x200B;的值。
+此示例中的第三个数字4566206088345619105是用于字段&#x200B;**IO_WORKSPACE_ID**&#x200B;的值。
 
 ![Cursor + Commerce](./images/cursorai31.png)
 
