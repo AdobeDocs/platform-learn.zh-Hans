@@ -4,9 +4,9 @@ description: Audience Activation到Microsoft Azure事件中心 — 操作
 kt: 5342
 doc-type: tutorial
 exl-id: bff4d2ee-eaff-4b56-9fa0-4ffc3c368141
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## 启动Azure事件中心触发器
 
-要显示Adobe Experience Platform Real-time CDP在受众资格鉴定后发送到我们的Azure事件中心的有效负载，我们需要启动简单的Azure事件中心触发函数。 此函数将简单地将有效负载“转储”到Visual Studio Code中的控制台。 但请记住，此函数可以通过任何方式扩展到使用专用API和协议与各种环境进行接口。
+要显示Adobe Experience Platform Real-time CDP在获得受众资格后发送到我们Azure事件中心的有效负载，我们需要启动简单的Azure事件中心触发功能。 此函数将简单地将有效负载“转储”到Visual Studio Code中的控制台。 但请记住，此函数可以通过任何方式扩展到使用专用API和协议与各种环境进行接口。
 
 ### 启动Visual Studio代码并启动项目
 
@@ -110,8 +110,6 @@ For detailed output, run func with --verbose flag.
 
 ## 后续步骤
 
-转到[摘要和优点](./summary.md){target="_blank"}
-
-返回至[Real-Time CDP：Audience Activation至Microsoft Azure事件中心](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+返回至[Real-Time CDP： Audience Activation至Microsoft Azure事件中心](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
 返回[所有模块](./../../../../overview.md){target="_blank"}

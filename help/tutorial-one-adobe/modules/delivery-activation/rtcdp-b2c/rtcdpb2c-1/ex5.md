@@ -4,10 +4,10 @@ description: 在呼叫中心查看您的实时客户资料的实际操作情况
 kt: 5342
 doc-type: tutorial
 exl-id: d3bd34a1-5577-4da7-a5a5-0f186b1a73c2
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 3%
+source-wordcount: '315'
+ht-degree: 5%
 
 ---
 
@@ -57,8 +57,6 @@ ht-degree: 3%
 ![演示](./images/20.png)
 
 ## 后续步骤
-
-转到[摘要和优点](./summary.md){target="_blank"}
 
 返回[实时客户个人资料](./real-time-customer-profile.md){target="_blank"}
 

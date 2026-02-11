@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: f18a0ec9-ee56-42b9-98bd-b5e433d77043
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '438'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
@@ -60,10 +60,6 @@ ht-degree: 0%
 [3.2.5触发您的历程](./ex5.md)
 
 触发您的特定历程。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

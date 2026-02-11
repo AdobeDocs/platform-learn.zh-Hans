@@ -4,9 +4,9 @@ description: AJO和GenStudio for Performance Marketing
 kt: 5342
 doc-type: tutorial
 exl-id: 1424f649-d004-4b14-b8af-927ca1d47de5
-source-git-commit: 10f1f6a1f77c41e3c912b3d03b73da7b6c68670c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
@@ -234,8 +234,6 @@ ht-degree: 0%
 您现在已经完成了此练习。
 
 ## 后续步骤
-
-转到[摘要和优点](./summary.md)
 
 返回[Adobe Journey Optimizer：内容管理](./ajocontent.md){target="_blank"}
 

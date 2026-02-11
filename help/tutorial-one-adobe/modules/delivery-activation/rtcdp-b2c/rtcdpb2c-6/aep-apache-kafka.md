@@ -4,9 +4,9 @@ description: 在本模块中，您将学习如何设置自己的Apache Kafka集�
 kt: 5342
 doc-type: tutorial
 exl-id: 28c63675-272e-46ff-88fc-6cd4096d66ca
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '356'
 ht-degree: 1%
 
 ---
@@ -49,10 +49,6 @@ ht-degree: 1%
 [2.6.4安装和配置Kafka Connect和Adobe Experience Platform接收器连接器](./ex4.md)
 
 在本练习中，您将使用Kafka Connect来安装和使用Adobe Experience Platform接收器连接器，并将手动将事件发送到Adobe Experience Platform。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

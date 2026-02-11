@@ -1,19 +1,19 @@
 ---
-title: Audience Activation到Microsoft Azure事件中心
-description: Audience Activation到Microsoft Azure事件中心
+title: Audience Activation到Microsoft Azure活动中心
+description: Audience Activation到Microsoft Azure活动中心
 kt: 5342
 doc-type: tutorial
 exl-id: c1f5566d-0f57-4554-95ee-950d66373716
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
 # 2.4 Real-Time CDP：Audience Activation到Microsoft Azure事件中心
 
-在本模块中，您将设置Microsoft Azure EventHub目标作为Adobe Experience Platform Real-time CDP的实时目标。 您还将设置和部署一个Azure函数，每当Adobe Experience Platform将受众有效负载交付到Azure EventHub目标时，该函数都将实时触发。 您将触发的Azure函数将显示Adobe Experience Platform Real-time CDP激活功能的机制。
+在本模块中，您将设置Microsoft Azure EventHub目标作为Adobe Experience Platform Real-time CDP的实时目标。 您还将设置和部署Azure函数，每当Adobe Experience Platform将受众有效负载交付到Azure EventHub目标时，该函数都将实时触发。 您将触发的Azure函数将显示Adobe Experience Platform Real-time CDP激活功能的机制。
 
 在本模块中，您还将了解什么会触发Real-time CDP将有效负载实际传送到指定目标。 我们还将讨论受众资格的状态以及它与激活的关系。
 
@@ -23,11 +23,11 @@ Microsoft Azure事件中心是一项完全托管的实时数据摄取服务，�
 
 ## 学习目标
 
-- 熟悉Microsoft Azure事件中心
+- 熟悉Microsoft Azure活动中心
 - 设置Microsoft Azure事件中心的RTCDP目标
 - 了解Real-time CDP何时激活以及激活有效负载的外观
 - 设置Visual Studio代码以开发、测试和部署您的Azure项目
-- 创建和部署使用RTCDP实时提供的受众资格的Azure函数
+- 创建和部署利用RTCDP实时提供的受众资格的Azure功能
 
 ## 先决条件
 
@@ -42,7 +42,7 @@ Microsoft Azure事件中心是一项完全托管的实时数据摄取服务，�
 
 [2.4.1配置环境](./ex1.md)
 
-在本练习中，您将设置您的Microsoft Azure环境。
+在本练习中，您将设置Microsoft Azure环境。
 
 [2.4.2配置Microsoft Azure EventHub环境](./ex2.md)
 
@@ -62,15 +62,11 @@ Microsoft Azure事件中心是一项完全托管的实时数据摄取服务，�
 
 [2.4.6创建您的Microsoft Azure项目](./ex6.md)
 
-在本练习中，您将创建一个Azure函数，该函数将在Adobe Experience Platform将受众资格交付给相应的Azure事件中心目标时实时触发。
+在本练习中，您将创建一个Azure函数，当Adobe Experience Platform将受众资格交付到相应的Azure事件中心目标时，该函数将实时触发。
 
 [2.4.7端到端方案](./ex7.md)
 
 此时，一切都已设置。 您现在可以在演示网站上进行浏览，并将受众资格交付到Microsoft Azure事件中心触发器功能。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

@@ -4,9 +4,9 @@ description: 在本模块中，您将学习关于Journey Optimizer的所有须�
 kt: 5342
 doc-type: tutorial
 exl-id: b1422971-ffce-4f4f-9bd8-986f5f1537c3
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '240'
 ht-degree: 2%
 
 ---
@@ -44,10 +44,6 @@ ht-degree: 2%
 [3.4.3在电子邮件中应用基于区段的个性化](./ex3.md)
 
 在本练习中，您将使用区段成员资格来定义要在电子邮件中显示的内容。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

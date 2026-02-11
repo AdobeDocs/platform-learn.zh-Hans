@@ -4,9 +4,9 @@ description: 此练习介绍了如何在电子邮件内容中使用区段个性�
 kt: 5342
 doc-type: tutorial
 exl-id: a1ad649e-d0c4-4e87-b784-1e2d99f34a2e
-source-git-commit: 203590e3289d2e5342085bf8b6b4e3cd11859539
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -71,12 +71,12 @@ ht-degree: 0%
 
 然后，您应该保留第一行不变，并用以下代码替换第2行和第3行：
 
-&grave;&grave;
+``
     PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
     PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
-&grave;&grave;
+``
 
 你就能拥有这个了。 单击&#x200B;**保存**。
 
@@ -107,8 +107,6 @@ ht-degree: 0%
 您已完成此练习。
 
 ## 后续步骤
-
-转到[摘要和优点](./summary.md){target="_blank"}
 
 返回[Adobe Journey Optimizer](journeyoptimizer.md){target="_blank"}
 

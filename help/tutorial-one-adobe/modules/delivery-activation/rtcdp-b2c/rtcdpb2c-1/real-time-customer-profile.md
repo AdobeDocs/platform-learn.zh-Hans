@@ -5,9 +5,9 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 exl-id: 18b22ac4-313b-4b54-b480-dd6c27858e31
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '346'
 ht-degree: 1%
 
 ---
@@ -53,10 +53,6 @@ ht-degree: 1%
 [2.1.5在呼叫中心查看您的实时客户资料](./ex5.md)
 
 在本练习中，您将模拟一个接到客户呼叫的呼叫中心员工。 为了真正影响客户的体验，您需要实时访问所有可用的信息。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

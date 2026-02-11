@@ -4,9 +4,9 @@ description: 向AWS生态系统推进各项活动
 kt: 5342
 doc-type: tutorial
 exl-id: 9b5f1466-d173-40a0-beed-d4e859e64e40
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1566'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 ## 很高兴知道
 
 Adobe Experience Platform支持将各种Amazon服务作为目标。
-Kinesis和S3都是[配置文件导出目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=zh-Hans)，可以作为Adobe Experience Platform Real-Time CDP的一部分使用。
+Kinesis和S3都是[配置文件导出目标](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en)，可以作为Adobe Experience Platform Real-Time CDP的一部分使用。
 您可以轻松地将高价值区段事件和相关配置文件属性馈送到您选择的系统。
 
 在本练习中，您将了解如何设置自己的Amazon Kinesis流，以将来自Adobe Experience Platform Edge生态系统的事件数据流式传输到云存储目标，如Amazon S3。 如果您希望从Web和移动属性收集体验事件并将它们推送到Datalake中以用于分析和操作报告，则此功能非常有用。 数据湖通常通过大量每日文件导入以批量方式摄取数据，它们不会公开可与事件转发结合使用的公共http端点。
@@ -284,8 +284,8 @@ Amazon Kinesis数据流侧重于摄取和存储数据流。 Kinesis Data Firehos
 
 ![Adobe Experience Platform数据收集SSF](./images/rlaws7.png)
 
-转到&#x200B;**发布流**&#x200B;以发布您的更改。
-单击&#x200B;**Main**&#x200B;打开开发库。
+转到&#x200B;**发布流**以发布您的更改。
+单击**Main**&#x200B;打开开发库。
 
 ![Adobe Experience Platform数据收集SSF](./images/rlaws11.png)
 
@@ -344,8 +344,6 @@ Amazon Kinesis数据流侧重于摄取和存储数据流。 Kinesis Data Firehos
 >一旦您的设置按预期工作，请不要忘记打开AWS Kinesis数据流和Data Firehose以避免收费！
 
 ## 后续步骤
-
-转到[摘要和优点](./summary.md){target="_blank"}
 
 返回[Real-Time CDP连接：事件转发](./aep-data-collection-ssf.md){target="_blank"}
 

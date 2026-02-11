@@ -4,9 +4,9 @@ description: 客户人工智能 — 评分仪表板和分段（预测并采取�
 kt: 5342
 doc-type: tutorial
 exl-id: a6df3ff1-f907-4185-8189-f0b39c67c943
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '269'
 ht-degree: 0%
 
 ---
@@ -55,13 +55,11 @@ Customer AI仪表板允许通过单击定义区段。 单击倾向卡上的&#x20
 
 ## 清除
 
-为了确保您的环境中不会保留不需要的演示数据，请确保在成功完成此练习后删除数据集`--aepUserLdap-- - Demo System - Customer Experience Event Dataset`。 如果不删除演示数据，则会对AEP实例造成成本影响。
+为了确保您的环境中不会保留不需要的演示数据，请确保在成功完成此练习后删除数据集`--aepUserLdap-- - Demo System - Customer Experience Event Dataset`。 如果不删除演示数据，则您的AEP实例将受到成本影响。
 
 ![轮廓](./images/cleanup.png)
 
 ## 后续步骤
-
-转到[摘要和优点](./summary.md){target="_blank"}
 
 返回[智能服务](./intelligent-services.md){target="_blank"}
 

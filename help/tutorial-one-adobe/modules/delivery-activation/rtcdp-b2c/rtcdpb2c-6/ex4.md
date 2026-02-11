@@ -4,9 +4,9 @@ description: 安装和配置Kafka Connect和Adobe Experience Platform接收器�
 kt: 5342
 doc-type: tutorial
 exl-id: 51ddfdfc-fa5c-4bf4-bfc2-b4a88b0b8a4d
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 ## 配置Kafka连接
 
 转到桌面上名为&#x200B;**Kafka_AEP**&#x200B;的文件夹，然后导航到文件夹`kafka_2.13-3.9.0/config`。
-在该文件夹中，使用任意文本编辑器打开文件&#x200B;**connect-distributed.properties**。
+在该文件夹中，使用任意文本编辑器打开文件**connect-distributed.properties**。
 
 ![Kafka](./images/kc3a.png)
 
@@ -57,7 +57,7 @@ value.converter.schemas.enable=false
 
 ![Kafka](./images/kc6.png)
 
-返回文本编辑器，转到文件&#x200B;**connect-distributed.properties**，然后向下滚动到最后一行（屏幕快照中的第89行）。 您应该取消注释以`# plugin.path=`开头的行（删除`#`），并且应该将完整路径粘贴到名为`connectors`的文件夹。 结果应类似于下面这样：
+返回文本编辑器，转到文件&#x200B;**connect-distributed.properties**，然后向下滚动到最后一行（屏幕快照中的第89行）。 您应该取消注释以`#`开头的行（删除`# plugin.path=`），并且应该将完整路径粘贴到名为`connectors`的文件夹。 结果应类似于下面这样：
 
 `plugin.path=/Users/woutervangeluwe/Desktop/Kafka_AEP/kafka_2.13-3.9.0/connectors`
 
@@ -97,7 +97,7 @@ value.converter.schemas.enable=false
 
 ![Kafka](./images/kc11.png)
 
-要创建连接器，请单击以打开Kafka集合中的第二个请求，**POST创建AEP接收器连接器**，然后转到&#x200B;**主体**。 你会看到这个。 在第11行，上面显示“**”aep.endpoint“：”**，您需要将粘贴到您在上一个练习结束时收到的HTTP API流端点URL。 HTTP API流终结点URL如下所示： `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`。
+要创建连接器，请单击以打开Kafka集合中的第二个请求，**POST创建AEP接收器连接器**，然后转到&#x200B;**正文**。 你会看到这个。 在第11行，上面显示“**”aep.endpoint“：”**，您需要将粘贴到您在上一个练习结束时收到的HTTP API流端点URL。 HTTP API流终结点URL如下所示： `https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`。
 
 ![Kafka](./images/kc12a.png)
 
@@ -232,8 +232,6 @@ value.converter.schemas.enable=false
 您已完成此练习。
 
 ## 后续步骤
-
-转到[摘要和优点](./summary.md){target="_blank"}
 
 返回到[将数据从Apache Kafka流式传输到Adobe Experience Platform](./aep-apache-kafka.md){target="_blank"}
 

@@ -4,16 +4,16 @@ description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
 exl-id: d5eb2a8d-f6cb-4f35-b8d7-ac0b92ba9f85
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '258'
 ht-degree: 3%
 
 ---
 
 # 3.1 Adobe Journey Optimizer：编排
 
-在本模块中，我们将引导您完成使用Adobe Journey Optimizer的步骤。 您将配置根据发送给AEP的体验事件中的触发器启动的事件和历程。
+在本模块中，我们将引导您完成使用Adobe Journey Optimizer的步骤。 您将配置根据发送到AEP的体验事件中的触发器启动的事件和历程。
 
 ## 学习目标
 
@@ -46,10 +46,6 @@ ht-degree: 3%
 [3.1.3更新您的数据收集属性并测试您的历程](./ex4.md)
 
 这将引导您完成Launch配置以触发您的事件并提供正确的有效负载，最后，您将能够向您自己发送电子邮件。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

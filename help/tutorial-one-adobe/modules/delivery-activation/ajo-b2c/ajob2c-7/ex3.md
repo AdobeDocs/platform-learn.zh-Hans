@@ -3,9 +3,10 @@ title: Offer Decisioning — 测试您的决策
 description: Offer Decisioning — 测试您的决策
 kt: 5342
 doc-type: tutorial
-source-git-commit: 13d790855601fa6f36c1afa0f2d5faad5fc07eb0
+exl-id: 8cfe3d33-9451-46f4-b468-b93cd37d0806
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '148'
 ht-degree: 1%
 
 ---
@@ -29,8 +30,6 @@ ht-degree: 1%
 在下一个练习中，您将了解如何将在Adobe Journey Optimizer中创建的优惠和决策与Adobe Target体验定位活动相结合。
 
 ## 后续步骤
-
-转到[摘要和优点](./summary.md){target="_blank"}
 
 返回至[Experience Decisioning](ajo-decisioning.md){target="_blank"}
 

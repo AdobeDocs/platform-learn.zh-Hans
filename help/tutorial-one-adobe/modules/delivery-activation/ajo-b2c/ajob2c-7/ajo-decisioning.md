@@ -1,18 +1,19 @@
 ---
-title: Experience Decisioning
-description: Experience Decisioning
+title: Adobe Journey Optimizer Decisioning
+description: Adobe Journey Optimizer Decisioning
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-source-git-commit: 13d790855601fa6f36c1afa0f2d5faad5fc07eb0
+exl-id: 42f69ae8-114a-4195-b343-c143638d9d34
+source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '277'
 ht-degree: 1%
 
 ---
 
-# 3.7 Adobe Journey Optimizer： Experience Decisioning
+# 3.7 Adobe Journey Optimizer： Decisioning
 
 在本模块中，您将获得有关Adobe Journey Optimizer Experience Decisioning功能的实践演练。
 
@@ -35,7 +36,7 @@ Adobe Journey Optimizer允许创建个性化优惠，并以协调的方式将其
 
 ## 练习
 
-[3.7.1 Experience Decisioning 101](./ex1.md)
+[3.7.1 Adobe Journey Optimizer Decisioning 101](./ex1.md)
 
 在本练习中，您将更好地了解Offer Decisioning的所有不同概念，以及如何在Adobe Journey Optimizer中访问Offer Decisioning。
 
@@ -43,13 +44,9 @@ Adobe Journey Optimizer允许创建个性化优惠，并以协调的方式将其
 
 在本练习中，您将配置自己的个性化优惠和自己的决策，这些配置随后将发布。
 
-[3.7.3适用于Experience Decisioning的Web SDK设置](./ex3.md)
+[3.7.3适用于Adobe Journey Optimizer Decisioning的Web SDK设置](./ex3.md)
 
 在本练习中，您将使用演示网站来测试您的决策。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

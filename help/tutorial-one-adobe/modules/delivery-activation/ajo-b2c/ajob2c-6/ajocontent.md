@@ -3,9 +3,10 @@ title: Adobe Journey Optimizer内容管理
 description: Adobe Journey Optimizer内容管理
 kt: 5342
 doc-type: tutorial
-source-git-commit: 37e7d88e77f424d30e4f7c210f703cd1748a6c13
+exl-id: 43161ace-b2bc-418c-8f2b-a8fe0e3d0ebf
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '197'
+source-wordcount: '185'
 ht-degree: 2%
 
 ---
@@ -35,10 +36,6 @@ ht-degree: 2%
 [3.6.3AJO和GenStudio for Performance Marketing](./ex3.md)
 
 在本练习中，您将从GenStudio for Performance Marketing导入一个品牌模板，并在Adobe Journey Optimizer中使用它，然后在GenStudio for Performance Marketing中使用创作AI创建电子邮件体验，然后在Adobe Journey Optimizer中使用它。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

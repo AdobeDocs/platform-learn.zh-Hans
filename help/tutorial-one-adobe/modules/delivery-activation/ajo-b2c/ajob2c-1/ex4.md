@@ -4,9 +4,9 @@ description: 更新配置ID并测试历程
 kt: 5342
 doc-type: tutorial
 exl-id: da018975-7421-4d70-b04d-ad8b0597f460
-source-git-commit: d19bd2e39c7ff5eb5c99fc7c747671fb80e125ee
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '629'
 ht-degree: 1%
 
 ---
@@ -122,8 +122,6 @@ ht-degree: 1%
 ![启动安装程序](./images/emaildash.png)
 
 ## 后续步骤
-
-转到[摘要和优点](./summary.md){target="_blank"}
 
 返回至[Adobe Journey Optimizer：编排](./journey-orchestration-create-account.md){target="_blank"}
 

@@ -4,9 +4,9 @@ description: 数据收集 — 联合受众构成
 kt: 5342
 doc-type: tutorial
 exl-id: a2449e72-794a-4ff0-a208-28303fd574d1
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '613'
 ht-degree: 0%
 
 ---
@@ -47,10 +47,6 @@ Experience Platform中的联合受众构成(FAC)允许您通过企业数据仓�
 [1.3.3创建联合组合](./ex3.md)
 
 在本练习中，您将在AEP中为联合数据配置数据模型。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

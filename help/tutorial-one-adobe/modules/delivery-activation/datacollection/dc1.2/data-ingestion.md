@@ -4,9 +4,9 @@ description: 基础 — 数据摄取
 kt: 5342
 doc-type: tutorial
 exl-id: 0fa38179-637b-4dda-a4e4-754a4cdd61a8
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '386'
 ht-degree: 1%
 
 ---
@@ -55,10 +55,6 @@ ht-degree: 1%
 [1.2.5数据登陆区](./ex5.md)
 
 使用Azure Blob Storage设置数据登陆区Source连接器。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

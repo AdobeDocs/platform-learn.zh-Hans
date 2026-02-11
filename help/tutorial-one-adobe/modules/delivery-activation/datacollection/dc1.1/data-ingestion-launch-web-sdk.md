@@ -4,9 +4,9 @@ description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的
 kt: 5342
 doc-type: tutorial
 exl-id: 8c613648-9007-49fb-898f-039c366297da
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 - 了解品牌用来将数据摄取到其Adobe产品的数据流。
 - 了解如何通过Adobe Experience Platform Edge Network将数据发送到Adobe Experience Platform和其他产品。
 - 了解如何创建从Web和移动设备收集数据的数据元素和规则。
-- 了解[Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/home)跟踪事件以及如何调试其内容。
+- 了解[Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)跟踪事件以及如何调试其内容。
 - 了解什么是数据层以及Adobe在实施数据层时推荐什么。
-- 了解从头开始实施[Web SDK](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/web-sdk/home)的步骤是什么。
+- 了解从头开始实施[Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home)的步骤是什么。
 - 了解Web实施与移动实施之间的区别。
 
 ## 先决条件
@@ -67,10 +67,6 @@ ht-degree: 0%
 [1.1.7 Adobe Experience Platform中的XDM架构要求](./ex7.md)
 
 为了确保Web SDK能够将数据摄取到Adobe Experience Platform，需要特定的XDM mixin才能成为Adobe Experience Platform中XDM架构的一部分。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

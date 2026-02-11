@@ -6,9 +6,9 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: fcf4fd2d-8225-408c-b394-539860ee2997
-source-git-commit: 93b1708278435ae9851835ca5efbd93d9e260d70
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '217'
 ht-degree: 3%
 
 ---
@@ -44,10 +44,6 @@ ht-degree: 3%
 [3.3.3使用应用程序内消息配置营销活动](./ex3.md)
 
 在本练习中，您将配置一个向客户发送应用程序内消息的营销活动。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

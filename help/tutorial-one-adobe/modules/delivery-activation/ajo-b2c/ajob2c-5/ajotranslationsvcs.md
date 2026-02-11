@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer翻译服务
 kt: 5342
 doc-type: tutorial
 exl-id: c0b3e37f-69f5-41e3-8663-0dcf736d1fc0
-source-git-commit: b407941266a3d6151363f07592bd445034d44909
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '154'
+source-wordcount: '142'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 ## 先决条件
 
 - 对Adobe Journey Optimizer的访问权限
-- 访问Microsoft Azure转换器
+- 访问Microsoft Azure翻译人员
 
 ## 练习
 
@@ -35,10 +35,6 @@ ht-degree: 2%
 [3.5.3向电子邮件添加语言](./ex3.md)
 
 在本练习中，您将向营销活动中的电子邮件添加语言。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

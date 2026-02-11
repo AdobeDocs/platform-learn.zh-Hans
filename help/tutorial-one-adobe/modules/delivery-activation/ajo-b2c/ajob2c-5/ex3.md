@@ -4,9 +4,9 @@ description: AJO翻译服务
 kt: 5342
 doc-type: tutorial
 exl-id: fff315ce-88d2-407f-b8c4-c24517688e60
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/camploc5.png)
 
-选择名为`--aepUserLdap--_translations`的&#x200B;**语言设置**。 单击&#x200B;**选择**。
+选择名为&#x200B;**的**&#x200B;语言设置`--aepUserLdap--_translations`。 单击&#x200B;**选择**。
 
 ![Journey Optimizer](./images/camplocs1.png)
 
@@ -49,8 +49,8 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/camplocs2.png)
 
-然后，您应该会看到如下消息。 **发送到翻译**&#x200B;工作流现已启动，需要几分钟才能完成。
-您会看到状态更改为&#x200B;**正在进行翻译**。
+然后，您应该会看到如下消息。 **发送到翻译**工作流现已启动，需要几分钟才能完成。
+您会看到状态更改为**正在进行翻译**。
 
 ![Journey Optimizer](./images/camplocs3.png)
 
@@ -58,8 +58,8 @@ ht-degree: 0%
 
 ![Journey Optimizer](./images/camplocs4.png)
 
-单击&#x200B;**`[es] Spanish`**&#x200B;翻译。 然后，您将在电子邮件预览中以及&#x200B;**主题行**&#x200B;中看到更新的文本。
-如果需要，您仍然可以直接在&#x200B;**主题行**&#x200B;字段中查看和更新翻译。
+单击&#x200B;**`[es] Spanish`**&#x200B;翻译。 然后，您将在电子邮件预览中以及&#x200B;**主题行**中看到更新的文本。
+如果需要，您仍然可以直接在**主题行**&#x200B;字段中查看和更新翻译。
 
 单击&#x200B;**编辑电子邮件正文**&#x200B;以查看电子邮件内的翻译。
 
@@ -88,8 +88,6 @@ ht-degree: 0%
 您现在已经完成了此练习。
 
 ## 后续步骤
-
-转到[摘要和优点](./summary.md)
 
 返回[Adobe Journey Optimizer：翻译服务](./ajotranslationsvcs.md){target="_blank"}
 

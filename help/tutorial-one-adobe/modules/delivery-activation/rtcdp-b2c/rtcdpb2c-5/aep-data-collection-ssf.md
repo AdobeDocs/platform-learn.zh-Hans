@@ -4,9 +4,9 @@ description: 在本模块中，您将使用之前配置的数据集、架构和A
 kt: 5342
 doc-type: tutorial
 exl-id: dbf5e995-9c2e-4f72-b336-e942cb22cde5
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
 workflow-type: tm+mt
-source-wordcount: '460'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -58,10 +58,6 @@ ht-degree: 0%
 [2.5.5将活动转发至AWS Kinesis和AWS S3](./ex5.md)
 
 在本练习中，您将使用AWS IAM、AWS Kinesis、AWS Firehose和AWS S3配置您的AWS环境，之后您将开始转发Web SDK收集的事件数据。
-
-[摘要和优点](./summary.md)
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
 

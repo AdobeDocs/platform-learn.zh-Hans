@@ -4,9 +4,9 @@ description: 基础 — 数据摄取 — 从离线源摄取数据
 kt: 5342
 doc-type: tutorial
 exl-id: 9fce6ece-f454-45de-9c95-35d604b3ae95
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 23816907de778cbe3b9708f4a7273bdcb8e86d5c
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '767'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 在本练习中，目标是使用Azure Blob Storage设置您的数据登陆区Source连接器。
 
-数据登录区是由Adobe Experience Platform设置的Azure Blob存储界面，允许您访问安全、基于云的文件存储设施，以将文件导入Platform。 数据登陆区支持基于SAS的身份验证，其数据受标准Azure Blob存储安全机制的静态和中转保护。 基于SAS的身份验证允许您通过公共Internet连接安全地访问数据登陆区容器。
+数据登录区是由Adobe Experience Platform配置的Azure Blob存储界面，允许您访问安全的基于云的文件存储设施，以将文件导入Platform。 数据登录区支持基于SAS的身份验证，其数据受标准Azure Blob存储安全机制的保护，无论是在静止状态还是在传输中。 基于SAS的身份验证允许您通过公共Internet连接安全地访问数据登陆区容器。
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ ht-degree: 2%
 
 ![dlz-unzip-azcopy.png](./images/dlzunzipazcopy.png)
 
-## 1.2.5.2将数据登陆区连接到Adobe Experience Platform
+## 1.2.5.2将数据登陆区域连接到Adobe Experience Platform
 
 通过转到以下URL登录Adobe Experience Platform： [https://experience.adobe.com/platform](https://experience.adobe.com/platform)。
 
@@ -64,11 +64,11 @@ ht-degree: 2%
 
 ![dlz-copy-sas-uri.png](./images/dlzcopysasuri.png)
 
-## 将csv文件复制到AEP数据登陆区
+## 将csv文件复制到AEP数据登录区
 
-现在，您将使用AZCopy通过Azure命令行工具将数据摄取到Adobe Experience Platform。
+现在，您将使用Azure命令行工具通过AZCopy将数据摄取到Adobe Experience Platform。
 
-在azcopy安装位置打开终端并执行以下命令，将文件复制到AEP的数据登陆区域：
+在azcopy安装位置打开终端并执行以下命令，将文件复制到AEP的数据登录区域：
 
 ``./azcopy copy <your-local-file> <your SASUri>``
 
@@ -138,7 +138,7 @@ ht-degree: 2%
 
 您需要映射几个其他字段，请单击&#x200B;**+新建字段类型**，然后单击&#x200B;**添加新字段**&#x200B;并为此映射添加字段
 
-| 源 | 目标 |
+| 源 | Target |
 |---|---|
 | resource.info.pagename | web.webPageDetails.name |
 | 时间戳 | 时间戳 |
@@ -169,8 +169,6 @@ ht-degree: 2%
 ![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
 ## 后续步骤
-
-转到[摘要和优点](./summary.md){target="_blank"}
 
 返回[数据摄取](./data-ingestion.md){target="_blank"}
 
