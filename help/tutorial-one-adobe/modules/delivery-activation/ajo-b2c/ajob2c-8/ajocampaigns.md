@@ -4,14 +4,14 @@ description: Adobe Journey Optimizer Campaigns
 kt: 5342
 doc-type: tutorial
 exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
-source-git-commit: bf3bebfa3bd79829da5352e950aed3f4ef5bf6d1
+source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 5%
+source-wordcount: '193'
+ht-degree: 4%
 
 ---
 
-# 3.8 Adobe Journey Optimizer：营销活动编排
+# 3.8 Adobe Journey Optimizer：编排的营销活动
 
 借助Adobe Journey Optimizer Campaign Orchestration，品牌可以解决复杂的营销活动编排用例，这些用例侧重于品牌发起的客户参与，从而提高收入和客户忠诚度。
 
@@ -26,11 +26,13 @@ Adobe Journey Optimizer Campaign Orchestration附带了一个关系XDM架构，�
 
 ## 学习目标
 
-- 了解如何在Adobe Journey Optimizer中配置和使用营销活动。
+- 了解如何在Adobe Journey Optimizer中设置关系模式
+- 了解如何在Adobe Journey Optimizer中引入数据
+- 了解如何在Adobe Journey Optimizer中配置和使用编排的营销活动。
 
 ## 先决条件
 
-- 对Adobe Journey Optimizer的访问权限
+- 访问Adobe Journey Optimizer编排的营销活动
 
 ## 练习
 
