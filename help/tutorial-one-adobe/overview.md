@@ -3,9 +3,9 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 2bfa7f4bee54df8411c96b001224d2986e9fcaf9
+source-git-commit: 461024fe62167c26e88688c553b47b8a816bdaa8
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1328'
 ht-degree: 2%
 
 ---
@@ -94,9 +94,9 @@ ht-degree: 2%
 
 在本模块中，您将使用Adobe IO和App Builder构建自定义应用程序，以扩展GenStudio for Performance Marketing中的功能。
 
-[1.7工作流生成器](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
+[1.7 Firefly自定义工作流](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"}
 
-在本模块中，您将使用工作流生成器来解析可重复的创意设计和自动化用例。
+在本模块中，您将使用Firefly中的自定义工作流来解决可重复的创意设计和自动化用例。
 
 [1.8通过Workfront、Frame.io和企业存储管理进行统一审查和批准](./modules/creation-production/module1.8/esm.md){target="_blank"}
 

@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 7d9ad7ec-7744-4ba6-9c11-c434e6cdef09
-source-git-commit: d5008825c083357b5b1479157cb01f795120d409
+source-git-commit: 4ddfc850f335ad773c89c10e18bb3541e514bf5f
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1333'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ ht-degree: 0%
 
 ![Firefly自定义工作流](./images/ffcw27.png)
 
-## 1.7.1.4缩放
+## 1.7.1.5缩放
 
 您现在已为1个图像完成此操作。 现在，让我们使用此工作流，但适用于多个图像。
 
@@ -203,9 +203,53 @@ ht-degree: 0%
 
 ![Firefly自定义工作流](./images/ffcw33.png)
 
-## 后续步骤
+## AEM Assets CS中的1.7.1.5商店
 
-转到[...](./ex1.md){target="_blank"}
+在本练习中，您会将作为自定义工作流的一部分创建的资源存储在AEM Assets CS中。
+
+您应该首先在AEM Assets CS环境中创建新文件夹。
+
+为此，请转到[https://experience.adobe.com](https://experience.adobe.com)。 单击以打开&#x200B;**Experience Manager Assets**。
+
+![Firefly自定义工作流](./images/ffcw50.png)
+
+选择您的AEM Assets CS环境，应将其命名为`--aepUserLdap-- - CitiSignal AEM + ACCS`。
+
+![Firefly自定义工作流](./images/ffcw51.png)
+
+转到&#x200B;**Assets**&#x200B;并单击&#x200B;**创建文件夹**。
+
+![Firefly自定义工作流](./images/ffcw52.png)
+
+输入名称： `--aepUserLdap-- - Firefly Custom Workflows`。 单击&#x200B;**创建**。
+
+![Firefly自定义工作流](./images/ffcw53.png)
+
+返回自定义工作流，然后转到&#x200B;**输出图像**&#x200B;节点。 单击&#x200B;**默认**，然后选择&#x200B;**AEM Assets**。
+
+![Firefly自定义工作流](./images/ffcw57.png)
+
+然后您应该会看到此弹出窗口。 选择您的AEM Assets CS存储库，然后选择之前创建的文件夹，其名称应为： `--aepUserLdap-- - Firefly Custom Workflows`。 单击&#x200B;**选择**。
+
+![Firefly自定义工作流](./images/ffcw54.png)
+
+转到&#x200B;**输出视频**&#x200B;节点。 单击&#x200B;**默认**，然后选择&#x200B;**AEM Assets**。
+
+![Firefly自定义工作流](./images/ffcw55.png)
+
+然后您应该会看到此弹出窗口。 选择您的AEM Assets CS存储库，然后选择之前创建的文件夹，其名称应为： `--aepUserLdap-- - Firefly Custom Workflows`。 单击&#x200B;**选择**。
+
+![Firefly自定义工作流](./images/ffcw56.png)
+
+然后您应该拥有此项。 单击&#x200B;**运行**。
+
+![Firefly自定义工作流](./images/ffcw56a.png)
+
+几分钟后，您应该会在AEM Assets CS的文件夹中看到已创建的可用资源。
+
+![Firefly自定义工作流](./images/ffcw58.png)
+
+## 后续步骤
 
 返回[工作流生成器](./workflowbuilder.md){target="_blank"}
 
