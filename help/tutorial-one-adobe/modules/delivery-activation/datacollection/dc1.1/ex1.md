@@ -4,7 +4,7 @@ description: 基础 — Adobe Experience Platform数据收集和Web SDK扩展的
 kt: 5342
 doc-type: tutorial
 exl-id: 1f5dd730-d84a-4d3a-b5ef-2be3e089c7fd
-source-git-commit: 9c4d585d99920f0cdfd9de083c3f020f0d8171ab
+source-git-commit: f9aab1a556e1d58a3f76f0ca877ecbd5f5e6e12f
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 2%
@@ -22,7 +22,7 @@ Adobe Experience Platform数据收集由品牌商用于许多用例。 它是新
 - 允许进行测试和生命周期管理。
 - 插入自定义JavaScript和第三方标记，所有这些标记都在一个位置进行管理。
 
-## 浏览UI
+## 浏览 UI
 
 转到[Adobe Experience Platform数据收集](https://experience.adobe.com/#/data-collection/)。 确保您使用的是正确的环境，即`--aepImsOrgName--`。
 
@@ -61,10 +61,10 @@ Adobe Experience Platform数据收集由品牌商用于许多用例。 它是新
 Adobe Experience Platform数据收集是一个非常高级的工具，其范围超出了Adobe Experience Platform教程。 组织可能无法使用Adobe Experience Platform数据收集来实现其标记管理功能，而是使用非Adobe标记管理解决方案来插入代码和管理标记。 Adobe和Adobe Professional Services支持使用非Adobe标签管理解决方案。
 下面是希望进一步了解Adobe Experience Platform数据收集内容的人可以阅读的一些内容。
 
-- [Adobe Experience Platform数据收集用户指南](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)
+- [Adobe Experience Platform数据收集用户指南](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 - [“利用 Web SDK 实施 Adobe Experience Cloud”教程](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html?lang=zh-Hans)
-- [设置用户权限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hans)
-- [API文档](https://developer.adobelaunch.com/api/)
+- [设置用户权限](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
+- [API文档](https://experienceleague.adobe.com/en/docs/experience-platform/tags/api/overview)
 
 ## 后续步骤
 
