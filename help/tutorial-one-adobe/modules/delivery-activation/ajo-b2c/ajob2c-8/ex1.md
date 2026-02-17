@@ -4,9 +4,9 @@ description: 设置关系数据基础
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
-source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
+source-git-commit: 4d420ad101c87b58a2bcc425cd4d8da08ad04c8e
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '2051'
 ht-degree: 2%
 
 ---
@@ -679,7 +679,59 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajoocdatas21e.png)
 
-所有数据现已摄取。 在下一个练习中，您将开始将该数据用作编排的营销活动的一部分。
+所有数据现已摄取。
+
+## 3.8.1.3配置文件目标Dimension
+
+借助编排的营销活动，您可以利用Adobe Experience Platform的关系架构功能，在实体级别设计和提供有针对性的通信。 Experience Platform使用架构，以一致且可重用的方式描述数据结构。 当数据被摄取到Experience Platform中时，它会根据XDM架构进行构建。
+
+虽然编排的营销活动分段主要在关系架构上运行，但实际消息投放始终在用户档案级别进行。
+
+在配置定位时，您可以定义两个关键方面：
+
+- 可定位架构：您可以指定哪些关系架构符合定位条件。 默认情况下使用名为Recipient的架构，但您可以配置替代方案，例如访客、客户等。
+
+- 配置文件链接：系统必须了解目标架构如何映射到配置文件架构。 这是通过共享身份字段实现的，该字段存在于目标架构和配置文件架构中，并配置为身份命名空间。
+
+您现在需要配置个人资料目标维度。 转到&#x200B;**管理** > **配置**，然后单击&#x200B;**配置文件目标Dimension**&#x200B;下的&#x200B;**管理**。
+
+![AJO OC](./images/ajoocptd1.png)
+
+您应该会看到此内容。 单击&#x200B;**创建**。
+
+![AJO OC](./images/ajoocptd2.png)
+
+对于&#x200B;**架构**，请选择`--aepUserLdap--_citisignal_accounts`。 对于&#x200B;**标识值**，请选择&#x200B;**account_id**。
+
+单击&#x200B;**保存**。
+
+![AJO OC](./images/ajoocptd3.png)
+
+再次单击&#x200B;**创建**。
+
+![AJO OC](./images/ajoocptd4.png)
+
+对于&#x200B;**架构**，请选择`--aepUserLdap--_citisignal_recipients`。 对于&#x200B;**标识值**，请选择&#x200B;**account_id**。
+
+单击&#x200B;**保存**。
+
+![AJO OC](./images/ajoocptd5.png)
+
+再次单击&#x200B;**创建**。
+
+![AJO OC](./images/ajoocptd6.png)
+
+对于&#x200B;**架构**，请选择`--aepUserLdap--_citisignal_recipients`。 对于&#x200B;**标识值**，请选择&#x200B;**电子邮件**。
+
+单击&#x200B;**保存**。
+
+![AJO OC](./images/ajoocptd7.png)
+
+然后您应该拥有此项。
+
+![AJO OC](./images/ajoocptd8.png)
+
+在下一个练习中，您将开始将该数据用作编排的营销活动的一部分。
 
 ## 后续步骤
 
