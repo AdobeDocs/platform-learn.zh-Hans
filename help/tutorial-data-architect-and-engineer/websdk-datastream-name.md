@@ -10,7 +10,7 @@ thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 source-git-commit: 45fec5b2a82e12bdc4a9d017664e8c11d5625cef
 workflow-type: tm+mt
-source-wordcount: '3316'
+source-wordcount: '3222'
 ht-degree: 0%
 
 ---
@@ -91,9 +91,7 @@ ht-degree: 0%
 
 要创建您的[!UICONTROL 数据流]：
 
-1. 登录[Experience Platform数据收集用户界面](https://experience.adobe.com/launch/)
-   <!--when will the edge config go live?-->
-
+1. 确保您仍然在` Luma Tutorial`沙盒中
 1. 在左侧导航中选择&#x200B;**[!UICONTROL 数据流]**
 1. 选择右上角的&#x200B;**[!UICONTROL 新建数据流]**&#x200B;按钮
 
@@ -105,18 +103,19 @@ ht-degree: 0%
 
    ![命名数据流并保存](assets/websdk-edgeConfig-name.png)
 
-在下一个屏幕中，您指定要将数据发送到的位置。 要将数据发送到Experience Platform，请执行以下操作：
+数据到达Edge后，[!UICONTROL 数据流]会将其转发到配置的[!UICONTROL 服务]。 要将数据发送到Experience Platform，请执行以下操作：
 
-1. 打开&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;以公开其他字段
-1. 对于&#x200B;**[!UICONTROL 沙盒]**，请选择`Luma Tutorial`
-1. 对于&#x200B;**[!UICONTROL 事件数据集]**，请选择`Luma Web Events Dataset`
-1. 如果您使用其他Adobe应用程序，欢迎浏览其他部分，了解这些其他解决方案的Edge配置中需要哪些信息。 请记住，开发Web SDK不仅是为了将数据流式传输到Experience Platform，而且也是为了取代其他JavaScript应用程序使用的所有以前的Adobe库。 Edge配置用于指定要将数据发送到的每个应用程序的帐户详细信息。
+1. 选择&#x200B;**[!UICONTROL 添加服务]**
+   ![添加服务](assets/websdk-datastream-addService.png)
+
+1. 选择您的`Luma Web Events Dataset`
 1. 选择&#x200B;**[!UICONTROL 保存]**
-   ![配置数据流并保存](assets/websdk-edgeConfig-addEnvironment.png)
 
-保存Edge配置后，生成的屏幕将显示为开发、暂存和生产环境创建的三个环境。 可以添加其他开发环境：
-![每个Edge配置都可以有多个环境](assets/websdk-edgeConfig-environments.png)
-所有三个环境都包含您刚刚输入的平台详细信息。 但是，这些详细信息的配置方式因环境而异。 例如，您可以让每个环境将数据发送到不同的Platform沙盒。 在本教程中，我们将不会对数据流进行任何额外的自定义。
+   ![选择您的数据集并保存](assets/websdk-datastream-addPlatformService.png)
+
+尽管数据流配置中有一个“配置文件数据集”选项，但不应使用此选项将普通的XDM个人配置文件数据发送到Platform。 此设置只应用于发送同意、推送令牌和用户活动区域详细信息。
+
+[!UICONTROL Offer Decisioning]、[!UICONTROL Edge分段]、[!UICONTROL Personalization目标]和[!UICONTROL Adobe Journey Optimizer]的复选框允许您在Edge上激活数据，但本教程中并未使用这些复选框。
 
 ## 安装Web SDK扩展
 

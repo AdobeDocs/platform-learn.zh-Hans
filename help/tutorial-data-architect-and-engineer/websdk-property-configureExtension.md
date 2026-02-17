@@ -10,7 +10,7 @@ thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 source-git-commit: 45fec5b2a82e12bdc4a9d017664e8c11d5625cef
 workflow-type: tm+mt
-source-wordcount: '3316'
+source-wordcount: '3125'
 ht-degree: 0%
 
 ---
@@ -91,32 +91,31 @@ ht-degree: 0%
 
 要创建您的[!UICONTROL 数据流]：
 
-1. 登录[Experience Platform数据收集用户界面](https://experience.adobe.com/launch/)
-   <!--when will the edge config go live?-->
-
+1. 确保您仍然在` Luma Tutorial`沙盒中
 1. 在左侧导航中选择&#x200B;**[!UICONTROL 数据流]**
 1. 选择右上角的&#x200B;**[!UICONTROL 新建数据流]**&#x200B;按钮
 
-   ![在左侧导航中选择数据流](assets/websdk-edgeConfig-clickNav.png)
+   ![在左侧导航中选择数据流](assets/websdk-datastream-newDatastream.png)
 
 
 1. 对于&#x200B;**[!UICONTROL 友好名称]**，输入`Luma Platform Tutorial` （如果贵公司的多个人员正在参加本教程，请添加您的名称到结尾）
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;按钮
 
-   ![命名数据流并保存](assets/websdk-edgeConfig-name.png)
+   ![命名数据流并保存](assets/websdk-datastream-name.png)
 
-在下一个屏幕中，您指定要将数据发送到的位置。 要将数据发送到Experience Platform，请执行以下操作：
+数据到达Edge后，[!UICONTROL 数据流]会将其转发到配置的[!UICONTROL 服务]。 要将数据发送到Experience Platform，请执行以下操作：
 
-1. 打开&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;以公开其他字段
-1. 对于&#x200B;**[!UICONTROL 沙盒]**，请选择`Luma Tutorial`
-1. 对于&#x200B;**[!UICONTROL 事件数据集]**，请选择`Luma Web Events Dataset`
-1. 如果您使用其他Adobe应用程序，欢迎浏览其他部分，了解这些其他解决方案的Edge配置中需要哪些信息。 请记住，开发Web SDK不仅是为了将数据流式传输到Experience Platform，而且也是为了取代其他JavaScript应用程序使用的所有以前的Adobe库。 Edge配置用于指定要将数据发送到的每个应用程序的帐户详细信息。
+1. 选择&#x200B;**[!UICONTROL 添加服务]**
+   ![添加服务](assets/websdk-datastream-addService.png)
+
+1. 选择您的`Luma Web Events Dataset`
 1. 选择&#x200B;**[!UICONTROL 保存]**
-   ![配置数据流并保存](assets/websdk-edgeConfig-addEnvironment.png)
 
-保存Edge配置后，生成的屏幕将显示为开发、暂存和生产环境创建的三个环境。 可以添加其他开发环境：
-![每个Edge配置都可以有多个环境](assets/websdk-edgeConfig-environments.png)
-所有三个环境都包含您刚刚输入的平台详细信息。 但是，这些详细信息的配置方式因环境而异。 例如，您可以让每个环境将数据发送到不同的Platform沙盒。 在本教程中，我们将不会对数据流进行任何额外的自定义。
+   ![选择您的数据集并保存](assets/websdk-datastream-addPlatformService.png)
+
+尽管数据流配置中有一个“配置文件数据集”选项，但不应使用此选项将普通的XDM个人配置文件数据发送到Platform。 此设置只应用于发送同意、推送令牌和用户活动区域详细信息。
+
+[!UICONTROL Offer Decisioning]、[!UICONTROL Edge分段]、[!UICONTROL Personalization目标]和[!UICONTROL Adobe Journey Optimizer]的复选框允许您在Edge上激活数据，但本教程中并未使用这些复选框。
 
 ## 安装Web SDK扩展
 
@@ -126,8 +125,8 @@ ht-degree: 0%
 
 要创建资产，请执行以下操作：
 
-1. 在左侧导航中转到&#x200B;**[!UICONTROL 属性]**
-1. 选择&#x200B;**[!UICONTROL 新建属性]**按钮
+1. 在左侧导航中转到&#x200B;**[!UICONTROL 标记]**
+1. 选择&#x200B;**[!UICONTROL 新属性]**
    ![添加新属性](assets/websdk-property-addNewProperty.png)
 1. 作为&#x200B;**[!UICONTROL Name]**，输入`Luma Platform Tutorial` （如果贵公司的多个人员参加本教程，请添加您的姓名到结尾）
 1. 作为&#x200B;**[!UICONTROL 域]**，请输入`enablementadobe.com`（稍后解释）
@@ -164,10 +163,11 @@ Now switch back to your browser tab with the Data Collection interface still ope
 1. 在左侧导航中转到&#x200B;**[!UICONTROL 扩展]**
 1. 转到&#x200B;**[!UICONTROL 目录]**&#x200B;选项卡
 1. 有许多扩展可用于标记。 使用术语`Web SDK`筛选目录
-1. 在&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;扩展中，选择&#x200B;**[!UICONTROL 安装]**按钮
+1. 选择&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;扩展以打开侧面板
+1. 选择&#x200B;**[!UICONTROL 安装]**按钮
    ![安装Adobe Experience Platform Web SDK扩展](assets/websdk-property-addExtension.png)
 1. Web SDK扩展有多种配置可用，但在本教程中，我们将只配置两种。 将&#x200B;**[!UICONTROL Edge域]**&#x200B;更新为`data.enablementadobe.com`。 此设置允许您在Web SDK实施中设置第一方Cookie，我们鼓励这样做。 在本课程的后面部分，您将将`enablementadobe.com`域上的网站映射到您的标记属性。 `enablementadobe.com`域的CNAME已配置，因此`data.enablementadobe.com`将转发到Adobe服务器。 在您自己的网站上实施Web SDK时，您需要为自己的数据收集目的创建一个CNAME，例如`data.YOUR_DOMAIN.com`
-1. 从&#x200B;**[!UICONTROL 数据流]**&#x200B;下拉列表中，选择您的`Luma Platform Tutorial`数据流。
+1. 在&#x200B;**[!UICONTROL 数据流]**&#x200B;部分中，对于生产环境，选择您的`Luma Tutorial`沙盒和`Luma Platform Tutorial`数据流。
 1. 您可以查看其他配置选项（但不要更改它们！），然后选择&#x200B;**[!UICONTROL 保存]**
    <!--is edge domain required for first party? when will it break?-->
    <!--any other fields that should be highlighted-->
@@ -179,7 +179,7 @@ Now switch back to your browser tab with the Data Collection interface still ope
 
 现在，我们将创建一个规则以将数据发送到Platform。 规则是指示标记执行操作的事件、条件和操作的组合。 要创建规则，请执行以下操作：
 
-1. 在左侧导航中转到&#x200B;**[!UICONTROL 规则]**
+1. 导航到&#x200B;**[!UICONTROL 规则]**
 1. 选择&#x200B;**[!UICONTROL 创建新规则]**按钮
    ![创建规则](assets/websdk-property-createRule.png)
 1. 将规则命名为 `All Pages - Library Loaded`
@@ -191,7 +191,7 @@ Now switch back to your browser tab with the Data Collection interface still ope
 1. 将&#x200B;**[!UICONTROL Conditions]**&#x200B;保留为空，因为我们希望此规则按照我们为其提供的名称在所有页面上触发
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;下，选择&#x200B;**[!UICONTROL 添加]**&#x200B;按钮
 1. 使用&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]** **[!UICONTROL 扩展]**&#x200B;并选择&#x200B;**[!UICONTROL 发送事件]**&#x200B;作为&#x200B;**[!UICONTROL 操作类型]**
-1. 在右侧，从&#x200B;**[!UICONTROL 类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL web.webpagedetails.pageViews]**。 这是我们`Luma Web Events Schema`中的XDM字段之一
+1. 在右侧，从&#x200B;**[!UICONTROL 类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Web Webpagedetails页面查看次数]**。 这将填充我们`Luma Web Events Schema`的eventType字段
 1. 选择&#x200B;**[!UICONTROL Keep Changes]**以返回主规则屏幕
    ![添加“发送事件”操作](assets/websdk-property-addAction.png)
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存规则\
@@ -261,7 +261,7 @@ Experience Platform Debugger是适用于Chrome的扩展，可帮助您查看在�
 
 * [Chrome扩展](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-如果您以前从未使用过Debugger，并且此调试器与之前的Adobe Experience Cloud Debugger不同，那么您可能需要观看这段时长为5分钟的概述视频：
+如果您以前从未使用过该调试器，则可能需要观看以下时长为5分钟的概述视频：
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
 
@@ -284,7 +284,7 @@ Experience Platform Debugger具有一项酷炫功能，允许您使用其他标�
 1. 调试器将会打开并显示硬编码实施的一些详细信息，这些详细信息与本教程无关（在打开调试器后，您可能需要重新加载Luma网站）
 1. 确认Debugger已“**[!UICONTROL 连接到Luma]**”（如下图所示），然后选择“**[!UICONTROL 锁定]**”图标以将Debugger锁定到Luma网站。
 1. 选择右上角的&#x200B;**[!UICONTROL 登录]**&#x200B;按钮进行身份验证。
-1. 现在转到左侧导航栏中的&#x200B;**[!UICONTROL Launch]**
+1. 现在转到左侧导航栏中的&#x200B;**[!UICONTROL Experience Platform标记]**
 1. 选择配置选项卡
 1. 右侧显示&#x200B;**[!UICONTROL 页面嵌入代码]**，打开&#x200B;**[!UICONTROL 操作]**&#x200B;下拉列表，然后选择&#x200B;**[!UICONTROL 替换]**
    ![选择“操作”>“替换”](assets/websdk-debugger-replaceLibrary.png)
@@ -292,16 +292,16 @@ Experience Platform Debugger具有一项酷炫功能，允许您使用其他标�
 1. 选择您的`Development`环境
 1. 选择&#x200B;**[!UICONTROL 应用]**按钮
    ![选择备用标记属性](assets/websdk-debugger-selectProperty.png)
-1. Luma网站现在将使用您的标记属性&#x200B;_重新加载_。 救命，我被黑客攻击了！ 开玩笑的。
+1. Luma网站现在将使用您的标记属性&#x200B;_重新加载_。
    已替换![标记属性](assets/websdk-debugger-propertyReplaced.png)
 1. 转到左侧导航栏中的&#x200B;**[!UICONTROL 摘要]**，查看[!UICONTROL Launch]属性的详细信息
    ![摘要选项卡](assets/websdk-debugger-summary.png)
-1. 现在转到左侧导航栏中的&#x200B;**[!UICONTROL AEP Web SDK]**&#x200B;以查看&#x200B;**[!UICONTROL 网络请求]**
+1. 现在转到左侧导航栏中的&#x200B;**[!UICONTROL Experience Platform Web SDK]**&#x200B;以查看&#x200B;**[!UICONTROL 网络请求]**
 1. 打开&#x200B;**[!UICONTROL 事件]**&#x200B;行
+1. 请注意我们如何查看在`web.webpagedetails.pageView`发送事件[!UICONTROL 操作中指定的]事件类型
 
    ![Adobe Experience Platform Web SDK请求](assets/websdk-debugger-platformNetwork.png)
-1. 请注意，我们如何查看在`web.webpagedetails.pageView`发送事件[!UICONTROL 操作中指定的]事件类型，以及其他遵循`AEP Web SDK ExperienceEvent Mixin`格式的现成变量
-   ![事件详细信息](assets/websdk-debugger-eventDetails.png)
+
 1. 这些类型的请求详细信息也显示在浏览器的Web开发人员工具&#x200B;**网络**&#x200B;选项卡中。 打开并重新加载页面。 筛选具有`interact`的调用以查找该调用，选择它，然后查看&#x200B;**标头**&#x200B;选项卡，**请求有效负载**区域。
    ![网络选项卡](assets/websdk-debugger-networkTab.png)
 1. 转到&#x200B;**响应**选项卡，并记下ECID值是如何包含在响应中的。 复制此值，因为您将在下一个练习中使用它来验证用户档案信息。
@@ -334,16 +334,34 @@ Experience Platform Debugger具有一项酷炫功能，允许您使用其他标�
 
 ## 向事件添加自定义数据
 
-### 为页面名称创建数据元素
+### 创建数据元素以存储XDM数据
 
-1. 在数据收集标记界面中，在`Luma Platform Tutorial`属性的右上角，打开&#x200B;**[!UICONTROL 选择工作库]**&#x200B;下拉菜单并选择`Luma Platform Tutorial`库。 此设置使得向库发布其他更新更加容易。
+1. 导航回您的`Luma Platform Tutorial`标记属性
+1. 打开&#x200B;**[!UICONTROL 选择工作库]**&#x200B;下拉列表，然后选择您的`Luma Platform Tutorial`库。 此设置使得向库发布其他更新更加容易。
 1. 现在转到左侧导航中的&#x200B;**[!UICONTROL 数据元素]**
 1. 选择&#x200B;**[!UICONTROL 创建新数据元素]**&#x200B;按钮
 
    ![创建新数据元素](assets/websdk-property-createNewDataElement.png)
+
+在&#x200B;**[!UICONTROL 数据元素]**&#x200B;页面上：
+
+
+1. 作为&#x200B;**[!UICONTROL Name]**，输入`XDM Object`
+1. 对于&#x200B;**[!UICONTROL 扩展]**，请选择`Adobe Experience Platform Web SDK`
+1. 作为&#x200B;**[!UICONTROL 数据元素类型]**，请选择`XDM object`
+1. 作为&#x200B;**[!UICONTROL 沙盒]**，选择您的`Luma Tutorial`沙盒
+1. 作为&#x200B;**[!UICONTROL 架构]**，选择您的`Luma Web Events Schema`
+1. 选择`web.webPageDetails.name`字段
+1. 作为&#x200B;**[!UICONTROL Value]**，选择图标以打开数据元素选择模式并选择您的`Page Name`数据元素
+1. 选择&#x200B;**[!UICONTROL 保存到库]**
+   ![将页面名称映射到XDM对象数据元素](assets/websdk-property-dataElement-createXDMVariable.png)
+
+### 为页面名称创建数据元素
+
+1. 创建新数据元素
 1. 作为&#x200B;**[!UICONTROL Name]**，输入`Page Name`
 1. 作为&#x200B;**[!UICONTROL 数据元素类型]**，请选择`JavaScript Variable`
-1. 对于&#x200B;**[!UICONTROL JavaScript变量名称]**，请输入`digitalData.page.pageInfo.pageName`
+1. 对于&#x200B;**[!UICONTROL JavaScript变量名称]**，请输入`adobeDataLayer.0.page.name`
 1. 为了帮助标准化值的格式，请选中&#x200B;**[!UICONTROL 强制小写值]**&#x200B;和&#x200B;**[!UICONTROL 清除文本]**&#x200B;的复选框
 1. 确保选择`Luma Platform Tutorial`作为工作库
 1. 选择&#x200B;**[!UICONTROL 保存到库]**
@@ -353,25 +371,10 @@ Experience Platform Debugger具有一项酷炫功能，允许您使用其他标�
 
 现在，我们将页面名称映射到Web SDK。
 
->[!IMPORTANT]
->
->为了完成此任务，我们需要确保您的用户首先有权访问Prod沙盒。 如果您还无法从其他产品配置文件访问Prod沙盒，请快速打开您的`Luma Tutorial Platform`配置文件并添加权限项&#x200B;**[!UICONTROL 沙盒]** > **[!UICONTROL Prod]**。 执行此操作后，在“数据元素”页面上执行SHIFT-Reload操作以清除缓存
->![添加Prod沙盒](assets/websdk-property-permissionToLoadSchema.png)
 
-在&#x200B;**[!UICONTROL 数据元素]**&#x200B;页面上：
 
-1. 创建新数据元素
-1. 作为&#x200B;**[!UICONTROL Name]**，输入`XDM Object`
-1. 对于&#x200B;**[!UICONTROL 扩展]**，请选择`Adobe Experience Platform Web SDK`
-1. 作为&#x200B;**[!UICONTROL 数据元素类型]**，请选择`XDM object`
-1. 作为&#x200B;**[!UICONTROL 沙盒]**，选择您的`Luma Tutorial`沙盒
-1. 作为&#x200B;**[!UICONTROL 架构]**，选择您的`Luma Web Events Schema`
-1. 选择`web.webPageDetails.name`字段
-1. 作为&#x200B;**[!UICONTROL Value]**，选择图标以打开数据元素选择模式并选择您的`Page Name`数据元素
-1. 选择&#x200B;**[!UICONTROL 保存到库]**
-   ![将页面名称映射到XDM对象数据元素](assets/websdk-property-dataElement-createXDMObject.png)
 
-可使用同一过程将网站上的其他自定义数据映射到XDM字段。
+
 
 ### 将XDM数据添加到您的“发送事件”操作
 
