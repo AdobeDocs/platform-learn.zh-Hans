@@ -18,6 +18,6 @@ ht-degree: 32%
 
 # Source受众作为Real-Time CDP Collaboration中的广告商
 
-作为广告商，了解如何获取受众，将受众引入您的界面，以便在与合作伙伴协作时使用这些受众。 有关详细文档，请参阅[源和管理受众](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/setup/source-audiences/onboard-audiences){target="_blank"}。
+作为广告商，了解如何获取受众，将受众引入您的界面，以便在与合作伙伴协作时使用这些受众。 有关详细文档，请参阅[源和管理受众](https://experienceleague.adobe.com/zh-hans/docs/real-time-cdp-collaboration/using/setup/source-audiences/onboard-audiences){target="_blank"}。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3452217/?learn=on&enablevpops)
