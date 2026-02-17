@@ -35,9 +35,9 @@ ht-degree: 0%
 
 在开始练习之前，请观看这两个简短视频，详细了解流数据引入和Web SDK：
 
->[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/31669?captions=chi_hans&learn=on&enablevpops)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/37264?captions=chi_hans&learn=on&enablevpops)
 
 >[!NOTE]
 >
@@ -175,7 +175,7 @@ Experience Platform Debugger是适用于Chrome的扩展，可帮助您查看在�
 
 如果您以前从未使用过该调试器，则可能需要观看以下时长为5分钟的概述视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/35858?captions=chi_hans&learn=on&enablevpops)
 
 ### 打开Luma网站
 
