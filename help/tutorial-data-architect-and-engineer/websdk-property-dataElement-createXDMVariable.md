@@ -109,7 +109,7 @@ ht-degree: 0%
 1. 转到&#x200B;**[!UICONTROL 目录]**&#x200B;选项卡
 1. 有许多扩展可用于标记。 使用术语`Web SDK`筛选目录
 1. 选择&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;扩展以打开侧面板
-1. 选择&#x200B;**[!UICONTROL 安装]**按钮
+1. 选择&#x200B;**[!UICONTROL 安装]**&#x200B;按钮
    ![安装Adobe Experience Platform Web SDK扩展](assets/websdk-property-addExtension.png)
 1. Web SDK扩展有多种配置可用，但在本教程中，我们将只配置两种。 将&#x200B;**[!UICONTROL Edge域]**&#x200B;更新为`data.enablementadobe.com`。 此设置允许您在Web SDK实施中设置第一方Cookie，我们鼓励这样做。 在您自己的网站上实施Web SDK时，我们建议您为自己的数据收集目的创建一个CNAME，例如`data.YOUR_DOMAIN.com`
 1. 在&#x200B;**[!UICONTROL 数据流]**&#x200B;部分中，对于生产环境，选择您的`Luma Tutorial`沙盒和`Luma Platform Tutorial`数据流。
@@ -127,19 +127,19 @@ ht-degree: 0%
 现在，我们将创建一个规则以将数据发送到Platform。 规则是指示标记执行操作的事件、条件和操作的组合。 要创建规则，请执行以下操作：
 
 1. 导航到&#x200B;**[!UICONTROL 规则]**
-1. 选择&#x200B;**[!UICONTROL 创建新规则]**按钮
+1. 选择&#x200B;**[!UICONTROL 创建新规则]**&#x200B;按钮
    ![创建规则](assets/websdk-property-createRule.png)
 1. 将规则命名为 `adobeDataLayer event`
-1. 在&#x200B;**[!UICONTROL 事件]**&#x200B;下，选择&#x200B;**[!UICONTROL 添加]**按钮
+1. 在&#x200B;**[!UICONTROL 事件]**&#x200B;下，选择&#x200B;**[!UICONTROL 添加]**&#x200B;按钮
    ![命名规则并添加事件](assets/websdk-property-nameRule.png)
 1. 使用&#x200B;**[!UICONTROL Adobe Client Data Layer]** **[!UICONTROL 扩展]**&#x200B;并选择&#x200B;**[!UICONTROL 推送的数据]**&#x200B;作为&#x200B;**[!UICONTROL 事件类型]**。
 1. 选择&#x200B;**[!UICONTROL 侦听]**。 **[!UICONTROL 所有活动]**。
-1. 选择&#x200B;**[!UICONTROL Keep Changes]**以返回主规则屏幕
+1. 选择&#x200B;**[!UICONTROL Keep Changes]**&#x200B;以返回主规则屏幕
    ![添加Library Loaded事件](assets/websdk-property-addEvent.png)
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;下，选择&#x200B;**[!UICONTROL 添加]**&#x200B;按钮
 1. 使用&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]** **[!UICONTROL 扩展]**&#x200B;并选择&#x200B;**[!UICONTROL 发送事件]**&#x200B;作为&#x200B;**[!UICONTROL 操作类型]**
 1. 在右侧，从&#x200B;**[!UICONTROL 类型]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Web Webpagedetails页面查看次数]**。 这将填充我们`Luma Web Events Schema`的eventType字段
-1. 选择&#x200B;**[!UICONTROL Keep Changes]**以返回主规则屏幕
+1. 选择&#x200B;**[!UICONTROL Keep Changes]**&#x200B;以返回主规则屏幕
    ![添加“发送事件”操作](assets/websdk-property-addAction.png)
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存规则\
    ![保存规则](assets/websdk-property-saveRule.png)
@@ -157,7 +157,7 @@ ht-degree: 0%
 1. 对于&#x200B;**[!UICONTROL Name]**，输入`Luma Platform Tutorial`
 1. 对于&#x200B;**[!UICONTROL 环境]**，请选择`Development`
 1. 选择&#x200B;**[!UICONTROL Add All Changed Resources]**&#x200B;按钮。 (除了[!UICONTROL Adobe Experience Platform Web SDK]扩展和`adobeDataLayer event`规则之外，您还将看到添加的[!UICONTROL Core]扩展包含所有标记Web属性所需的基本JavaScript。)
-1. 选择&#x200B;**[!UICONTROL Save &amp; Build for Development]**按钮
+1. 选择&#x200B;**[!UICONTROL Save &amp; Build for Development]**&#x200B;按钮
    ![创建并生成库](assets/websdk-property-buildLibrary.png)
 
 库可能需要几分钟才能构建，完成后，库名称左侧会显示一个绿色圆点：
@@ -202,7 +202,7 @@ Experience Platform Debugger具有一项酷炫功能，允许您使用其他标�
    ![选择“操作”>“替换”](assets/websdk-debugger-replaceLibrary.png)
 1. 由于您已经过身份验证，调试器将会拉入您的可用标记属性和环境。 选择您的`Luma Platform Tutorial`属性
 1. 选择您的`Development`环境
-1. 选择&#x200B;**[!UICONTROL 应用]**按钮
+1. 选择&#x200B;**[!UICONTROL 应用]**&#x200B;按钮
    ![选择备用标记属性](assets/websdk-debugger-selectProperty.png)
 1. Luma网站现在将使用您的标记属性&#x200B;_重新加载_。
    已替换![标记属性](assets/websdk-debugger-propertyReplaced.png)
@@ -217,9 +217,9 @@ Experience Platform Debugger具有一项酷炫功能，允许您使用其他标�
    ![Adobe Experience Platform Web SDK请求](assets/websdk-debugger-eventDetails.png)
 
 
-1. 请求详细信息也显示在浏览器的Web开发人员工具&#x200B;**网络**&#x200B;选项卡中。 打开并重新加载页面。 筛选具有`interact`的调用以查找该调用，选择它，然后查看&#x200B;**标头**&#x200B;选项卡，**请求有效负载**区域。
+1. 请求详细信息也显示在浏览器的Web开发人员工具&#x200B;**网络**&#x200B;选项卡中。 打开并重新加载页面。 筛选具有`interact`的调用以查找该调用，选择它，然后查看&#x200B;**标头**&#x200B;选项卡，**请求有效负载**&#x200B;区域。
    ![网络选项卡](assets/websdk-debugger-networkTab.png)
-1. 转到&#x200B;**响应**选项卡，并记下ECID值是如何包含在响应中的。 复制此值，因为您将在下一个练习中使用它来验证用户档案信息。
+1. 转到&#x200B;**响应**&#x200B;选项卡，并记下ECID值是如何包含在响应中的。 复制此值，因为您将在下一个练习中使用它来验证用户档案信息。
    ![网络选项卡](assets/websdk-debugger-networkTab-response.png)
 
 
@@ -232,7 +232,7 @@ Experience Platform Debugger具有一项酷炫功能，允许您使用其他标�
 
 1. 在Platform用户界面中，转到左侧导航中的&#x200B;**[!UICONTROL 数据集]**
 1. 打开`Luma Web Events Dataset`并确认批次已到达。 请记住，它们每15分钟发送一次，因此您可能需要等待批次显示。
-1. 选择&#x200B;**[!UICONTROL 预览数据集]**按钮
+1. 选择&#x200B;**[!UICONTROL 预览数据集]**&#x200B;按钮
    ![打开数据集](assets/websdk-platform-dataset.png)
 1. 在预览模式中，请注意如何选择左侧的架构的不同字段来预览这些特定数据点：
    ![预览字段](assets/websdk-platform-datasetPreview.png)
@@ -241,9 +241,9 @@ Experience Platform Debugger具有一项酷炫功能，允许您使用其他标�
 
 1. 在Platform用户界面中，转到左侧导航中的&#x200B;**[!UICONTROL 配置文件]**
 1. 选择&#x200B;**[!UICONTROL ECID]**&#x200B;命名空间并搜索您的ECID值（从响应中复制）。 该配置文件将具有其自己的ID，与ECID分开。
-1. 选择&#x200B;**[!UICONTROL 配置文件ID]**以打开配置文件
+1. 选择&#x200B;**[!UICONTROL 配置文件ID]**&#x200B;以打开配置文件
    ![查找并打开配置文件](assets/websdk-platform-openProfile.png)
-1. 选择&#x200B;**[!UICONTROL 事件]**选项卡以查看您查看的页面
+1. 选择&#x200B;**[!UICONTROL 事件]**&#x200B;选项卡以查看您查看的页面
    ![配置文件事件](assets/websdk-platform-profileEvents.png)\
    <!--![](assets/websdk-platform-confirmProfile.png)-->
 
