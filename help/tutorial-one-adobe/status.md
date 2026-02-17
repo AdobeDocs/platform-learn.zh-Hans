@@ -3,10 +3,10 @@ title: 内容状态
 description: 内容状态
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: c8607416fbff6970bd348ff5d52656902c14317b
+source-git-commit: 1e20509f0005c6060764fa3f572acbd14fb76600
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 9%
+source-wordcount: '581'
+ht-degree: 10%
 
 ---
 
@@ -20,14 +20,14 @@ ht-degree: 9%
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [0。 入门指南](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"} | 04/06/2025 | 是 | - | 45分钟 |
 
-## 1.工作流程和规划
+## 工作流程和规划
 
 | 名称 | 上次更新 | 工作100% | 备注 | 时间投资 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Adobe Workfront计划](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 02/08/2025 | 是 | - | 45分钟 |
 | 使用Adobe Workfront进行[1.2工作流管理](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025 | 是 | 内容尚未完成 | 1小时30分钟 |
 
-## 2.创建与生产
+## 创建与生产
 
 | 名称 | 上次更新 | 工作100% | 备注 | 时间投资 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
@@ -37,17 +37,18 @@ ht-degree: 9%
 | [1.4 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | 是 | - | 45分钟 |
 | [1.5使用Frame.io简化您的工作流](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 02/08/2025 | 是 | - | 1h |
 | [1.6 GenStudio for Performance Marketing — 可扩展性](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | 是 | - | 1小时30分钟 |
-| [1.7工作流生成器](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 02/02/2026 | 否 | 开发中的内容 | - |
-| [1.8企业存储管理](./modules/creation-production/module1.8/esm.md){target="_blank"} | 02/02/2026 | 否 | 开发中的内容 | - |
+| [1.7 Firefly自定义工作流](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 17/02/2026 | 是 | - | - |
+| [1.8企业存储管理](./modules/creation-production/module1.8/esm.md){target="_blank"} | 17/02/2026 | 是 | - | - |
 
 
-## 3.资产管理
+## 资产管理
 
 | 名称 | 上次更新 | 工作100% | 备注 | 时间投资 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Adobe Experience Manager Cloud Service和Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025 | 是 | - | 1小时30分钟 |
 | [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025 | 是 | - | 30分钟 |
-| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 2025年9月23日 | 是 | - | 1h |
+| [1.4 Adobe Experience Manager Assets和Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"} | 17/02/2026 | 是 | - | 1h30min |
+| [1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"} | 2025年9月23日 | 是 | - | 1h30min |
 
 ## 4.交付和激活
 
@@ -69,9 +70,9 @@ ht-degree: 9%
 | [3.5 Adobe Journey Optimizer：翻译服务](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"} | 03/07/2025 | 是 | - | 2h |
 | [3.6 Adobe Journey Optimizer：内容管理](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"} | 03/07/2025 | 是 | - | 2h |
 | [3.7 Adobe Journey Optimizer： Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"} | 03/07/2025 | 否 | 正在开发的内容 | 待定 |
-| [3.8 Adobe Journey Optimizer：营销活动](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"} | 03/07/2025 | 否 | 正在开发的内容 | 待定 |
+| [3.8 Adobe Journey Optimizer：营销活动](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"} | 03/07/2025 | 是 | - | 1h30min |
 
-## 5.报表和见解
+## 报表和分析
 
 | 名称 | 上次更新 | 工作100% | 备注 | 时间投资 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
@@ -80,7 +81,7 @@ ht-degree: 9%
 | [2.1查询服务](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"} | 04/12/2024 | 是 | - | 2h |
 | [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"} | 02/08/2025 | 否 | 正在开发的内容 | 待定 |
 
-## 6.遗传人工智能
+## 代理式 AI
 
 | 名称 | 上次更新 | 工作100% | 备注 | 时间投资 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
@@ -88,6 +89,8 @@ ht-degree: 9%
 | [1.2代理AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 02/02/2026 | 否 | 正在开发的内容 | 待定 |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 2026年1月23日 | 是 | - | 90分钟 |
 | [1.5 Analytics和代理](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 02/02/2026 | 是 | - | 45分钟 |
+| [1.6 Adobe Experience Manager和代理](./modules/agents/module1.6/aemagents.md){target="_blank"} | 17/02/2026 | 否 | 正在开发的内容 | 待定 |
+| [1.7 Adobe Commerce的智能开发人员工具](./modules/agents/module1.7/aiassisteddev.md){target="_blank"} | 17/02/2026 | 是 | - | 45分钟 |
 
 {style="table-layout:auto"}
 

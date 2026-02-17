@@ -4,9 +4,9 @@ description: Adobe Journey Optimizer Campaigns
 kt: 5342
 doc-type: tutorial
 exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
-source-git-commit: 9373f13336165d3fd49deebc450e3046f0471900
+source-git-commit: 2e4808654f285b21ea2dcc4570ea879b98a772b0
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '211'
 ht-degree: 4%
 
 ---
@@ -33,6 +33,12 @@ Adobe Journey Optimizer Campaign Orchestration附带了一个关系XDM架构，�
 ## 先决条件
 
 - 访问Adobe Journey Optimizer编排的营销活动
+
+## 视频
+
+在本视频中，您将获得本练习涉及的所有步骤的解释和演示。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3479938?quality=12&learn=on)
 
 ## 练习
 
