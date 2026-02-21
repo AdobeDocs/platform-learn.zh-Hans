@@ -3,9 +3,9 @@ title: 数据收集教程
 description: 让您成为数据收集高级用户的操作方法视频和教程
 mini-toc-levels: 0
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
-source-git-commit: 4c2cc6da2a5590dbd4405555f6813a4b06dc2dff
+source-git-commit: 9641ab713461f141c8c4f8de1c68732b872eb964
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '262'
 ht-degree: 23%
 
 ---
@@ -41,11 +41,11 @@ ht-degree: 23%
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
       <img alt="在移动应用程序中实施" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview" target="_blank">
     <strong>在移动应用程序中实施Experience Cloud</strong>
     </a>
     </div>
@@ -54,11 +54,11 @@ ht-degree: 23%
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
-      <img alt="将Target迁移到Web SDK" src="assets/thumb_legacy.png" />
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/overview" target="_blank">
+      <img alt="实施旧版库" src="assets/thumb_legacy.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/implement-in-websites/overview" target="_blank">
     <strong>使用标记实施旧版库</strong>
     </a>
     </div>
@@ -74,11 +74,11 @@ ht-degree: 23%
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
       <img alt="将Target迁移到Web SDK" src="assets/thumb_targetWebSdk.jpg" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/zh-hans/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-target-to-websdk/introduction" target="_blank">
     <strong>将Adobe Target迁移到Web SDK</strong>
     </a>
     </div>
