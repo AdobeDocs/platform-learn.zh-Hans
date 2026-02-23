@@ -409,7 +409,7 @@ On the page XXX, please make the following changes:
 
 ![AEM代理](./images/aemagents76.png)
 
-要执行操作，请单击“在AEM中编辑”****。
+要执行操作，请单击“在AEM中编辑”**&#x200B;**。
 
 ![AEM代理](./images/aemagents75a.png)
 
