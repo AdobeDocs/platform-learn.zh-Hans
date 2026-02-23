@@ -4,9 +4,9 @@ description: AEM代理快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: cb1bf6f0-f329-4e38-ba64-36ffdc3b8bd4
-source-git-commit: abec60dbd2a67228fb5bbcedaadc7494e0057eda
+source-git-commit: c7108c2818ee7fad820af33b99f277181bcf6a02
 workflow-type: tm+mt
-source-wordcount: '1636'
+source-wordcount: '1674'
 ht-degree: 1%
 
 ---
@@ -409,7 +409,7 @@ On the page XXX, please make the following changes:
 
 ![AEM代理](./images/aemagents76.png)
 
-要执行操作，请单击“在AEM中编辑”**&#x200B;**。
+要执行操作，请单击“在AEM中编辑”****。
 
 ![AEM代理](./images/aemagents75a.png)
 
@@ -461,7 +461,24 @@ On the page XXX, please make the following changes:
 
 ### 内容更新 — 表单创建
 
-表单创建技能使用户能够通过自然语言提示构建自适应表单，而无需依赖开发或IT团队。 此功能可加快表单开发，同时保持品牌一致性，并允许业务用户在不具备深入的技术产品知识的情况下创建表单。
+在使用Edge Delivery Services的[Adobe Experience Manager Forms](./../../asset-mgmt/module1.3/aemforms.md){target="_blank"}模块中，您可以找到手动创建表单所涉及的步骤。
+
+表单创建技能现在使用户能够通过自然语言提示构建自适应表单，而无需依赖开发或IT团队。 此功能可加快表单开发，同时保持品牌一致性，并允许业务用户在不具备深入的技术产品知识的情况下创建表单。
+
+转到[https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat)。
+
+![AEM代理](./images/aemagentsforms1.png)
+
+输入以下提示并单击&#x200B;**发送**。
+
+```
+Create a new adaptive form using Edge Delivery Services with the following details:
+- Form name: "citisignal-fiber-max-interest-2"
+- Form fields: 4 text input fields are needed, for "first-name", "last-name", "email" and "city"
+- When the form is submitted, send the submission to a spreadsheet, with this URL: https://docs.google.com/spreadsheets/d/1WwKrcM8mZ2d_W3sMheUAw3nFhP_OFk05TsqxhHkudfQ/edit?usp=sharing.
+```
+
+
 
 ## 后续步骤
 
