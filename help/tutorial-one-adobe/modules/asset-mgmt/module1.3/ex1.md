@@ -3,7 +3,8 @@ title: 创建您的第一个表单
 description: 创建您的第一个表单
 kt: 5342
 doc-type: tutorial
-source-git-commit: 9aad8cb1fdfa739d1660bc25376b874fa8ed8c89
+exl-id: 288e113f-2e9e-4352-8ddd-ca231b552b70
+source-git-commit: d2b746d50ec559e0b29a7adb27c3521b0e00d386
 workflow-type: tm+mt
 source-wordcount: '1109'
 ht-degree: 9%
@@ -100,7 +101,7 @@ if (block.dataset.aueModel === 'form') {
 
 设置好这些要求后，即可创建第一个表单。
 
-## 1.3.1.1创建表单
+## 1.3.1.2创建表单
 
 转到[https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}。 您应选择的组织是`--aepImsOrgName--`。 打开您的环境。
 
@@ -270,7 +271,7 @@ if (block.dataset.aueModel === 'form') {
 
 ![AEM 表单](./images/aemforms29.png)
 
-## 1.3.1.2提交表单
+## 1.3.1.3提交表单
 
 若要提交表单，需要满足以下条件：
 
