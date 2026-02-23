@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 44a7679ab3eab5fbc24c86a31fec620e789acffe
+source-git-commit: 7315383e72017a9922cc5f06b727c465c07f4052
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1525'
 ht-degree: 3%
 
 ---
@@ -107,6 +107,9 @@ ht-degree: 3%
       + [概述](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
       + [1.2.1 AEM Assets快速入门](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
       + [摘要和优点](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
+   + 1.3 Adobe Experience Manager Forms与Edge Delivery Services {#assetm5}
+      + [概述](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/aemforms.md)
+      + [1.3.1创建您的第一个表单](/help/tutorial-one-adobe/modules/asset-mgmt/module1.3/ex1.md)
    + 1.4 Adobe Experience Manager Assets和Dynamic Media {#assetm4}
       + [概述](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/aemassetsdm.md)
       + [1.4.1创建资产和Dynamic Media模板](/help/tutorial-one-adobe/modules/asset-mgmt/module1.4/ex1.md)

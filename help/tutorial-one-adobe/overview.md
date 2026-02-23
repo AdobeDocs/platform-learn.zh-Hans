@@ -3,10 +3,10 @@ title: 概述 — 全面的技术教程 — 一个Adobe
 description: 全面的技术教程 — 一个Adobe
 doc-type: multipage-overview
 exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
-source-git-commit: 461024fe62167c26e88688c553b47b8a816bdaa8
+source-git-commit: 877965ea9e83d39faff4d05eeb7dd66eb8cbac5a
 workflow-type: tm+mt
-source-wordcount: '1328'
-ht-degree: 2%
+source-wordcount: '1351'
+ht-degree: 1%
 
 ---
 
@@ -111,6 +111,10 @@ ht-degree: 2%
 [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 在本模块中，您将学习AEM Assets。
+
+[1.3 Adobe Experience Manager Forms与Edge Delivery Services](./modules/asset-mgmt/module1.3/aemforms.md){target="_blank"}
+
+在本模块中，您将学习如何使用Edge Delivery Services探索Adobe Experience Manager Forms。
 
 [1.4 Adobe Experience Manager Assets和Dynamic Media](./modules/asset-mgmt/module1.4/aemassetsdm.md){target="_blank"}
 

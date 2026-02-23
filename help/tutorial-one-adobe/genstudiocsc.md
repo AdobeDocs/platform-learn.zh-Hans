@@ -1,22 +1,22 @@
 ---
-title: GenStudio for Content Supply Chain Technology Enablement
-description: GenStudio for Content Supply Chain Technology Enablement
+title: GenStudio for Content Supply chain技术支持
+description: GenStudio for Content Supply chain技术支持
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: 42f6d8a07baa03a9ab31cff0ef518ae2c5ad930e
+source-git-commit: 9ff92b0c295f854219631f1463c3ccabc1a65938
 workflow-type: tm+mt
 source-wordcount: '439'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
-# 概述 — 用于内容供应链技术支持的GenStudio
+# 概述 — 用于Content Supply chain技术支持的GenStudio
 
 ![技术内部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## 概述
 
-如果您正在参加我们专为内容供应链技术支持而举办的GenStudio现场研讨会，那么这将是您即将参加的技术实验室的起点。
+如果您正在参加我们的一个重点介绍Supply chain内容技术支持的实时GenStudio研讨会，那么这将是您即将参加的技术实验室的起点。
 
 在此技术支持研讨会技术实验室中，您将亲身了解以下应用程序：
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 您将参加的技术实验室是更广泛的One Adobe教程的一部分，您可以在其中进一步了解广泛的Adobe Creative Cloud和Adobe Experience Cloud解决方案。 如果您有兴趣查看可用内容，请在此处查看：[一个Adobe教程概述](./overview.md)
 
-## GenStudio内容供应链技术实验室
+## GenStudio for Content Supply chain技术实验室
 
 下面是作为此次技术支持研讨会的一部分而您将参加的技术实验室。
 
