@@ -21,7 +21,7 @@ ht-degree: 0%
 
 了解如何在Adobe Real-Time CDP中配置并使用Snowflake批量目标，以便在您的Snowflake帐户中提供每日完全刷新受众快照。 请参阅Adobe Experience Platform中的端到端工作流程、数据在Snowflake中如何显示为动态表，以及确保成功集成的关键设置步骤和验证。
 
-有关详细信息，请查阅[文档](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch)。
+有关详细信息，请查阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch)。
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
