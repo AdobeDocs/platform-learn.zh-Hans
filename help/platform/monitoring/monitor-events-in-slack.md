@@ -326,7 +326,7 @@ aio app deploy
 1. 选择&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;作为产品。
 1. 选择&#x200B;**[!UICONTROL 平台通知]**&#x200B;作为事件类型。
 1. 选择您希望在Slack中收到通知的特定事件（或所有事件），然后选择&#x200B;**[!UICONTROL 下一步]**。
-1. 选择或[创建您的OAuth凭据](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}。
+1. 选择或[创建您的OAuth凭据](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/api/platform-api-authentication){target=_blank}。
 1. 配置&#x200B;**[!UICONTROL 事件注册详细信息]**：
    1. **[!UICONTROL 注册名称]**：为注册提供一个描述性名称。
    1. **[!UICONTROL 注册描述]**：确保此描述是显式的，以便其他参与者能够了解其用途。
