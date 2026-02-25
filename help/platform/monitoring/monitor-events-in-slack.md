@@ -48,7 +48,7 @@ Adobe App Builder是一个完整的框架，它允许企业开发人员构建云
 
 * **配置**：默认情况下不启用App Builder；必须作为功能为您的组织配置它。 确保您的组织具有&#x200B;**[!DNL App Builder]**&#x200B;权利。
 
-* **项目模板**： App Builder项目是专门使用&#x200B;**[!UICONTROL 中的]** App Builder[!DNL Developer Console]模板创建的(来自模板[!UICONTROL  > ]App Builder[!UICONTROL 的]项目)。 模板会自动设置必要的工作区和运行时环境。
+* **项目模板**： App Builder项目是专门使用&#x200B;**[!UICONTROL 中的]** App Builder[!DNL Developer Console]模板创建的(来自模板[!UICONTROL &#x200B; > &#x200B;]App Builder[!UICONTROL 的]项目)。 模板会自动设置必要的工作区和运行时环境。
 
 * **App Builder快速入门指南**：请参阅文档[以配置并创建您的第一个项目（从模板](https://developer.adobe.com/app-builder/docs/get_started/app_builder_get_started/first-app){target=_blank}）。
 
