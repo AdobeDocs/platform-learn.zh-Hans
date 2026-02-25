@@ -20,7 +20,7 @@ ht-degree: 0%
 了解如何通过与Experience Platform App Builder webhook代理集成，在Slack中接收Adobe通知。 数据工程师和管理员可能希望在Slack中接收来自Adobe Experience Platform的主动通知，以监控其Platform实施的运行状况。 本教程概述了使用Adobe App Builder将Adobe I/O Events连接到Slack的架构和实施步骤。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480183?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3480205?captions=chi_hans&learn=on)
 
 ## 为什么是webhook代理？
 
