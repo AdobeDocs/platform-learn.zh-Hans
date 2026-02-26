@@ -4,9 +4,9 @@ description: 创建编排的营销活动
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
-source-git-commit: 0328260e8699107bc82103af98caae684319a60d
+source-git-commit: 72aee2daa489f00dfc753e6986f0cab2271c6a7f
 workflow-type: tm+mt
-source-wordcount: '1075'
+source-wordcount: '1112'
 ht-degree: 2%
 
 ---
@@ -578,6 +578,30 @@ ht-degree: 2%
 单击&#x200B;**编辑电子邮件正文**。
 
 ![AJO OC](./images/ajooc126.png)
+
+将文件[family_account_review.zip](./assets/family_account_review.zip)下载到桌面。
+
+![AJO OC](./images/ajooc127.png)
+
+单击&#x200B;**导入HTML**。
+
+![AJO OC](./images/ajooc128.png)
+
+单击以选择文件。
+
+![AJO OC](./images/ajooc129.png)
+
+选择文件&#x200B;**`family_account_review.zip`**。
+
+![AJO OC](./images/ajooc130.png)
+
+单击&#x200B;**下一步**。
+
+![AJO OC](./images/ajooc131.png)
+
+您应该会看到此内容。
+
+![AJO OC](./images/ajooc132.png)
 
 ## 后续步骤
 
