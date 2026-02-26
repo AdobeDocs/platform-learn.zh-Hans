@@ -4,9 +4,9 @@ description: 设置关系数据基础
 kt: 5342
 doc-type: tutorial
 exl-id: 532e5f2c-971f-488f-bef4-3a8141408cc8
-source-git-commit: 4d420ad101c87b58a2bcc425cd4d8da08ad04c8e
+source-git-commit: defdae3329e1409159f59c4a0ef2aa21c7e3949b
 workflow-type: tm+mt
-source-wordcount: '2051'
+source-wordcount: '2159'
 ht-degree: 2%
 
 ---
@@ -730,6 +730,52 @@ ht-degree: 2%
 然后您应该拥有此项。
 
 ![AJO OC](./images/ajoocptd8.png)
+
+## 3.8.1.4电子邮件渠道
+
+在左侧菜单中，转到&#x200B;**频道**。 单击&#x200B;**创建渠道配置**。
+
+![AJO OC](./images/ajoocchannel1.png)
+
+使用名称： `--aepUserLdap---citisignal-email-oc`。 选择渠道&#x200B;**电子邮件**
+
+![AJO OC](./images/ajoocchannel2.png)
+
+选择可用的&#x200B;**子域**&#x200B;和&#x200B;**IP池**。
+
+![AJO OC](./images/ajoocchannel3.png)
+
+向下滚动并填写&#x200B;**标头参数**。
+
+- **发件人姓名**： `info@techinsiders.org`
+- **来自电子邮件前缀**： `info`
+- **回复姓名**：`info@techinsiders.org`
+- **回复电子邮件**： `info@techinsiders.org`
+- **电子邮件前缀错误**： `error`
+
+![AJO OC](./images/ajoocchannel4.png)
+
+向下滚动。 转到&#x200B;**编排的营销活动**。 选中&#x200B;**已启用**&#x200B;的复选框。 选择&#x200B;**定向维度**。
+
+![AJO OC](./images/ajoocchannel5.png)
+
+对于&#x200B;**配置文件目标Dimension**，请选择`--aepUserLdap--_citisignal_recipients - email`。
+
+选择&#x200B;**目标Dimension**&#x200B;并单击&#x200B;**打开文件夹**&#x200B;图标。
+
+![AJO OC](./images/ajoocchannel6.png)
+
+单击 `--aepUserLdap--_citisignal_recipients`。
+
+![AJO OC](./images/ajoocchannel7.png)
+
+选择字段&#x200B;**电子邮件**&#x200B;并单击&#x200B;**选择**。
+
+![AJO OC](./images/ajoocchannel8.png)
+
+向上滚动并单击&#x200B;**提交**。
+
+![AJO OC](./images/ajoocchannel9.png)
 
 在下一个练习中，您将开始将该数据用作编排的营销活动的一部分。
 

@@ -4,9 +4,9 @@ description: 创建编排的营销活动
 kt: 5342
 doc-type: tutorial
 exl-id: f3ca3230-db30-4e41-91f1-9324b12211a6
-source-git-commit: 53be5cf34db144e346f9810359b583072743382f
+source-git-commit: 0328260e8699107bc82103af98caae684319a60d
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '1075'
 ht-degree: 2%
 
 ---
@@ -195,6 +195,10 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc41.png)
 
+将&#x200B;**配置文件映射字段**&#x200B;设置为&#x200B;**`--aepUserLdap--_citisignal_recipients - account_id`**。
+
+![AJO OC](./images/ajooc41a.png)
+
 ### 扩充： Internet订阅
 
 单击&#x200B;**+**&#x200B;图标。
@@ -253,7 +257,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc53.png)
 
-选择&#x200B;**`avg_dowload_usage_gb`**&#x200B;并单击&#x200B;**确认**。
+选择&#x200B;**`avg_bandwidth_usage_gb`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc54.png)
 
@@ -303,11 +307,15 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc64.png)
 
-深入到&#x200B;**`citisignal_mobile_subscriptions`**。
+深入到&#x200B;**`citisignal_accounts`**。
 
 ![AJO OC](./images/ajooc65.png)
 
-选择&#x200B;**`account_id`**&#x200B;并单击&#x200B;**确认**。
+深入到&#x200B;**`citisignal_mobile_subscriptions`**。
+
+![AJO OC](./images/ajooc65a.png)
+
+选择&#x200B;**`phone_number`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc66.png)
 
@@ -315,15 +323,23 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc67.png)
 
-选择&#x200B;**`subscription_id`**&#x200B;并单击&#x200B;**确认**。
+深入到&#x200B;**`citisignal_equipment_subscriptions`**。
 
 ![AJO OC](./images/ajooc68.png)
+
+选择&#x200B;**`model`**&#x200B;并单击&#x200B;**确认**。
+
+![AJO OC](./images/ajooc68a.png)
 
 单击&#x200B;**添加属性**。
 
 ![AJO OC](./images/ajooc69.png)
 
-选择&#x200B;**`phone_number`**&#x200B;并单击&#x200B;**确认**。
+深入到&#x200B;**`citisignal_equipment_subscriptions`**。
+
+![AJO OC](./images/ajooc69a.png)
+
+选择&#x200B;**`recommended_device_model`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc70.png)
 
@@ -331,15 +347,35 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc71.png)
 
-选择&#x200B;**`renewal_eligibility_date`**&#x200B;并单击&#x200B;**确认**。
+深入到&#x200B;**`citisignal_equipment_subscriptions`**。
+
+![AJO OC](./images/ajooc71a.png)
+
+选择&#x200B;**`is_upgrade_eligible`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc72.png)
+
+您现在可以通过运行测试来测试进度，并查看营销活动中可用的数据。
+
+保存更改，然后单击&#x200B;**开始**。
+
+![AJO OC](./images/ajooctest1.png)
+
+过了一段时间，您应该会看到此内容。 单击&#x200B;**预览结果**。
+
+![AJO OC](./images/ajooctest2.png)
+
+然后，您应该会看到类似以下的内容。 单击&#x200B;**关闭**。
+
+![AJO OC](./images/ajooctest3.png)
+
+返回节点&#x200B;**扩充：移动设备订阅**。
 
 单击&#x200B;**添加属性**。
 
 ![AJO OC](./images/ajooc73.png)
 
-选择&#x200B;**`line_user_recipient_id`**&#x200B;并单击&#x200B;**确认**。
+选择&#x200B;**`account_id`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc74.png)
 
@@ -347,7 +383,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc75.png)
 
-选择&#x200B;**`is_upgrade_eligible`**&#x200B;并单击&#x200B;**确认**。
+选择&#x200B;**`subscription_id`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc76.png)
 
@@ -355,7 +391,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc77.png)
 
-选择&#x200B;**`current_device_id`**&#x200B;并单击&#x200B;**确认**。
+选择&#x200B;**`renewal_eligibility_date`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc78.png)
 
@@ -363,7 +399,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc79.png)
 
-选择&#x200B;**`contract_start_date`**&#x200B;并单击&#x200B;**确认**。
+选择&#x200B;**`line_user_recipient_id`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc80.png)
 
@@ -371,25 +407,17 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc81.png)
 
-深入到&#x200B;**`citisignal_equipment_subscriptions`**。
+选择&#x200B;**`current_device_id`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc82.png)
-
-选择&#x200B;**`model`**&#x200B;并单击&#x200B;**确认**。
-
-![AJO OC](./images/ajooc83.png)
 
 单击&#x200B;**添加属性**。
 
 ![AJO OC](./images/ajooc86.png)
 
-深入到&#x200B;**`citisignal_equipment_subscriptions`**。
+选择&#x200B;**`contract_start_date`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc87.png)
-
-选择&#x200B;**`manufacturer`**&#x200B;并单击&#x200B;**确认**。
-
-![AJO OC](./images/ajooc88.png)
 
 单击&#x200B;**添加属性**。
 
@@ -399,7 +427,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc90.png)
 
-选择&#x200B;**`device_age_months`**&#x200B;并单击&#x200B;**确认**。
+选择&#x200B;**`manufacturer`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc91.png)
 
@@ -411,7 +439,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc93.png)
 
-选择&#x200B;**`is_upgrade_eligible`**&#x200B;并单击&#x200B;**确认**。
+选择&#x200B;**`device_age_months`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc94.png)
 
@@ -423,7 +451,7 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc96.png)
 
-选择&#x200B;**`recommended_upgrade_product_id`**&#x200B;并单击&#x200B;**确认**。
+选择&#x200B;**`trade_in_value`**&#x200B;并单击&#x200B;**确认**。
 
 ![AJO OC](./images/ajooc97.png)
 
@@ -439,48 +467,117 @@ ht-degree: 2%
 
 ![AJO OC](./images/ajooc100.png)
 
-单击&#x200B;**添加属性**。
+### 扩充：移动设备订阅
+
+然后您应该拥有此项。 单击 **Save**。然后，单击&#x200B;**+**&#x200B;图标以添加新节点并选择&#x200B;**扩充**。
 
 ![AJO OC](./images/ajooc101.png)
 
-深入到&#x200B;**`citisignal_equipment_subscriptions`**。
+您应该会看到此内容。 单击&#x200B;**添加扩充数据**。
 
 ![AJO OC](./images/ajooc102.png)
 
-为&#x200B;**启用排序**&#x200B;启用开关。 单击&#x200B;**编辑**&#x200B;图标。
+深入到&#x200B;**定向维度**。
 
 ![AJO OC](./images/ajooc103.png)
 
-选择&#x200B;**`phone_number`**&#x200B;并单击&#x200B;**确认**。
+深入到&#x200B;**`citisignal_offer_eligibility`**。
 
 ![AJO OC](./images/ajooc104.png)
 
-然后您应该拥有此项。
+深入到&#x200B;**`citisignal_offers`**。
 
 ![AJO OC](./images/ajooc105.png)
 
+选择&#x200B;**`offer_name`**&#x200B;并单击&#x200B;**确认**。
 
+![AJO OC](./images/ajooc106.png)
 
+单击&#x200B;**添加属性**。
 
-然后您应该拥有此项。 单击&#x200B;**保存**。
+![AJO OC](./images/ajooc107.png)
 
-![AJO OC](./images/ajooc80a.png)
+深入到&#x200B;**`citisignal_offers`**。
 
+![AJO OC](./images/ajooc108.png)
 
+选择&#x200B;**`offer_code`**&#x200B;并单击&#x200B;**确认**。
 
+![AJO OC](./images/ajooc109.png)
 
+单击&#x200B;**添加属性**。
 
+![AJO OC](./images/ajooc110.png)
 
+深入到&#x200B;**`citisignal_offers`**。
 
+![AJO OC](./images/ajooc111.png)
 
+选择&#x200B;**`offer_description`**&#x200B;并单击&#x200B;**确认**。
 
+![AJO OC](./images/ajooc112.png)
 
+单击&#x200B;**添加属性**。
 
+![AJO OC](./images/ajooc110.png)
 
+深入到&#x200B;**`citisignal_offers`**。
 
+![AJO OC](./images/ajooc113.png)
 
-![AJO OC](./images/ajooc103.png)
+选择&#x200B;**`offer_description`**&#x200B;并单击&#x200B;**确认**。
 
+![AJO OC](./images/ajooc114.png)
+
+打开&#x200B;**启用排序**。
+
+![AJO OC](./images/ajooc115.png)
+
+深入到&#x200B;**`citisignal_offers`**。
+
+![AJO OC](./images/ajooc116.png)
+
+选择&#x200B;**`offer_priority`**&#x200B;并单击&#x200B;**确认**。
+
+![AJO OC](./images/ajooc117.png)
+
+您现在可以测试营销活动。 单击&#x200B;**开始**。
+
+![AJO OC](./images/ajooc118.png)
+
+过了一段时间，您应该会看到此内容。 单击&#x200B;**结果**，然后选择&#x200B;**预览结果**。
+
+![AJO OC](./images/ajooc120.png)
+
+然后，您应该会看到类似以下的内容。
+
+![AJO OC](./images/ajooc121.png)
+
+### 电子邮件活动
+
+单击&#x200B;**+**&#x200B;图标，然后选择&#x200B;**电子邮件**。
+
+![AJO OC](./images/ajooc122.png)
+
+单击&#x200B;**编辑电子邮件**。
+
+![AJO OC](./images/ajooc123.png)
+
+转到&#x200B;**操作**。
+
+![AJO OC](./images/ajooc124.png)
+
+选择您之前创建的&#x200B;**电子邮件渠道配置**，然后单击&#x200B;**编辑内容**。
+
+![AJO OC](./images/ajooc125.png)
+
+对于&#x200B;**主题行**，请粘贴以下内容：
+
+`{{target.--aepUserLdap--_citisignal_recipients.first_name}}, Your CitiSignal Family Account Summary`
+
+单击&#x200B;**编辑电子邮件正文**。
+
+![AJO OC](./images/ajooc126.png)
 
 ## 后续步骤
 
