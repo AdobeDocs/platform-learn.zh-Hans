@@ -3,9 +3,9 @@ title: 通过Platform Web SDK将数据流式传输到Adobe Experience Platform
 description: 了解如何使用Web SDK将Web数据流式传输到Adobe Experience Platform。 本课程是《使用 Web SDK 实施 Adobe Experience Cloud》教程的一部分。
 jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '2338'
+source-wordcount: '2321'
 ht-degree: 4%
 
 ---
@@ -17,9 +17,6 @@ ht-degree: 4%
 Experience Platform是所有新的Experience Cloud应用程序(例如Adobe Real-Time Customer Data Platform、Adobe Customer Journey Analytics和Adobe Journey Optimizer)的骨干。 这些应用程序旨在使用Platform Web SDK作为其最佳的Web数据收集方法。
 
 
->[!WARNING]
->
-> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
 
 ![Web SDK和Adobe Experience Platform关系图](assets/dc-websdk-aep.png)
 
@@ -49,7 +46,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 ## 创建数据集
 
-所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 [数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/catalog/datasets/overview)是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。
+所有成功引入Adobe Experience Platform的数据将作为数据集保留在数据湖中。 [数据集](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview)是用于数据集合的存储和管理结构，通常是包含架构（列）和字段（行）的表。 数据集还包含描述其存储的数据的各个方面的元数据。
 
 让我们为您的Luma Web事件数据设置一个数据集：
 
@@ -81,20 +78,22 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 1. 打开[数据收集](https://experience.adobe.com/#/data-collection){target="blank"}接口
 1. 从左侧导航中选择&#x200B;**[!UICONTROL 数据流]**
-1. 打开您在[配置数据流](configure-datastream.md)课程`Luma Web SDK`中创建的数据流
+1. 打开您在[配置数据流](configure-datastream.md)课程`Luma Web SDK: Development Environment`中创建的数据流
 
    ![选择Luma Web SDK数据流](assets/datastream-luma-web-sdk-development.png)
 
 1. 选择&#x200B;**[!UICONTROL 添加服务]**
    ![向数据流添加服务](assets/experience-platform-addService.png)
 1. 选择&#x200B;**[!UICONTROL Adobe Experience Platform]**&#x200B;作为&#x200B;**[!UICONTROL 服务]**
+1. 选择&#x200B;**[!UICONTROL 已启用]**
 1. 选择`Luma Web Event Data`作为&#x200B;**[!UICONTROL 事件数据集]**
+1. 启用&#x200B;**[!UICONTROL Edge分段]**。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
    ![数据流配置](assets/experience-platform-datastream-config.png)
 
-在映射到标记属性的[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)上生成流量时，数据会填充Experience Platform中的数据集！
+在映射到标记属性的[Luma演示网站](https://newluma.enablementadobe.com)上生成流量时，数据会填充Experience Platform中的数据集！
 
 ## 验证数据集
 
@@ -108,15 +107,13 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 这些步骤与您在[调试器课程](validate-with-debugger.md)中所执行的操作大致相同。 但是，由于只有在数据流中启用数据后才会将数据发送到Platform，因此您必须生成一些更多示例数据：
 
-1. 打开[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)并选择[!UICONTROL Experience Platform Debugger]扩展图标
+1. 打开[Luma演示网站](https://newluma.enablementadobe.com)并选择[!UICONTROL Experience Platform Debugger]扩展图标
 
 1. 配置Debugger以将标记属性映射到&#x200B;*您的*&#x200B;开发环境，如[使用Debugger验证](validate-with-debugger.md)课程中所述
 
    ![Debugger 中显示的 Launch 开发环境](assets/experience-platform-debugger-dev.png)
 
-1. 使用凭据 `test@test.com`/`test` 登录 Luma 网站
-
-1. 返回 [Luma 主页](https://luma.enablementadobe.com/content/luma/us/en.html)
+1. 使用凭据`test@test.com`/`test`登录Luma网站（如果收到消息“电子邮件或密码无效”，则使用这些凭据创建帐户）
 
 1. 在Debugger显示的Platform Web SDK网络信标中，选择“事件”行以在弹出窗口中展开详细信息
 
@@ -165,14 +162,14 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 >[!INFO]
 >
->  有关Adobe Experience Platform查询服务的更多详细信息，请参阅Platform教程部分中的[浏览数据](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorials/queries/explore-data)。
+>  有关Adobe Experience Platform查询服务的更多详细信息，请参阅Platform教程部分中的[浏览数据](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data)。
 
 
 ## 为实时客户个人资料启用数据集和架构
 
 对于Real-Time Customer Data Platform和Journey Optimizer的客户，下一步是为实时客户个人资料启用数据集和架构。 来自Web SDK的数据流将是流入Platform的众多数据源之一，并且您希望将Web数据与其他数据源连接以构建360度客户档案。 要了解有关Real-time Customer Profile的更多信息，请观看此短视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/31672?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >
@@ -236,7 +233,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 1. 在[Experience Platform](https://experience.adobe.com/platform/)界面中，在左侧导航中选择&#x200B;**[!UICONTROL 客户]** > **[!UICONTROL 配置文件]**
 
 1. 由于&#x200B;**[!UICONTROL 身份命名空间]**&#x200B;使用`lumaCRMId`
-1. 复制并粘贴您在Experience Platform Debugger中检查的调用中传递的`lumaCRMId`的值，在本例中为`b642b4217b34b1e8d3bd915fc65c4452`。
+1. 复制并粘贴您在Experience Platform Debugger中检查的调用中传递的`lumaCRMId`的值，在本例中为`f660ab912ec121d1b1e928a0bb4bc61b`。
 
    ![轮廓](assets/experience-platform-validate-dataset-profile.png)
 
@@ -310,7 +307,7 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 1. 选择&#x200B;**[!UICONTROL 下一步]**
 
    ![创建受众](assets/merge-policy-set-active-on-edge.png)
-1. 继续选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以继续执行工作流程的其他步骤，并选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存您的设置
+1. 继续选择&#x200B;**[!UICONTROL 下一步]**&#x200B;以继续执行工作流程的其他步骤，并选择&#x200B;**[!UICONTROL 完成]**以保存您的设置
    ![创建受众](assets/merge-policy-finish.png)
 
 您现在可以创建将在Edge上评估的受众。
@@ -345,4 +342,4 @@ Experience Platform使用您之前创建的相同XDM架构从Luma网站捕获事
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容

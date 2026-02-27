@@ -4,9 +4,9 @@ description: 了解如何使用标记规则将事件与XDM对象一起发送到P
 feature: Tags
 jira: KT-15403
 exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 9b5e7192094e2d3b8eb41cbb4a0f28411e990e8f
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '1803'
 ht-degree: 2%
 
 ---
@@ -16,9 +16,6 @@ ht-degree: 2%
 了解如何使用标记规则将事件与XDM对象一起发送到Adobe Experience Platform Edge Network。 标记规则是事件、条件和操作的组合，用于告知标记属性执行一些操作。 使用Platform Web SDK时，可以使用规则将事件与正确的数据发送到Platform Edge Network。
 
 
->[!WARNING]
->
-> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
 
 ## 学习目标
 
@@ -33,7 +30,7 @@ ht-degree: 2%
 
 ## 先决条件
 
-您熟悉数据收集标记和[Luma演示网站](https://luma.enablementadobe.com/content/luma/us/en.html)，并完成了本教程中以前的课程：
+您熟悉数据收集标记和[Luma演示网站](https://newluma.enablementadobe.com)，并完成了本教程中以前的课程：
 
 * [配置XDM架构](configure-schemas.md)
 * [配置身份命名空间](configure-identities.md)
@@ -56,26 +53,39 @@ ht-degree: 2%
 1. **order**&#x200B;是规则相对于其他规则应触发的顺序
 <!-- minor update -->
 
+## 添加Adobe客户端数据层扩展
+
+Luma网站使用事件驱动的数据层，称为Adobe客户端数据层(ACDL)。 每当发生事件时，它都会被推送到`adobeDataLayer`数组中。 我们将使用这些事件构建规则，尽管有许多现成的选项。
+
+1. 转到&#x200B;**[!UICONTROL 扩展]**
+1. 筛选到&#x200B;**[!UICONTROL Adobe客户端数据层]**
+1. 选择&#x200B;**[!UICONTROL 安装]**
+
+   ![添加Adobe客户端数据层扩展](assets/rules-acdl-extension.png)
+
+1. 保留默认设置
+1. 选择&#x200B;**[!UICONTROL 保存]**
+
 ## 创建标记规则
 
-在标记中，规则用于在各种条件下执行操作（触发调用）。 Platform Web SDK标记扩展包括本课程中使用的两个操作：
+在标记中，规则用于在各种条件下执行操作（触发调用）。 Platform Web SDK标记扩展包括规则中使用的两个操作：
 
-* **[!UICONTROL 更新变量]**&#x200B;将数据元素映射到XDM对象中的属性
-* **[!UICONTROL 发送事件]**&#x200B;将XDM对象发送到Experience Platform Edge Network
+* **[!UICONTROL 更新变量]**&#x200B;将数据元素映射到您的XDM或数据变量
+* **[!UICONTROL 发送事件]**&#x200B;将数据发送到Experience Platform Edge Network
 
 在本课程的其余部分中，我们将：
 
-1. 使用&#x200B;**[!UICONTROL 更新变量]**&#x200B;操作创建规则以定义XDM字段的“全局配置”。
+1. 使用&#x200B;**[!UICONTROL 更新变量]**&#x200B;操作定义XDM字段的“全局配置”。
 
-1. 使用&#x200B;**[!UICONTROL 更新变量]**&#x200B;操作创建其他规则，这些规则将覆盖我们的“全局配置”，并在某些条件下（例如，在产品页面上添加产品详细信息）提供其他XDM字段。
+1. 使用&#x200B;**[!UICONTROL 更新变量]**&#x200B;操作，该操作将覆盖我们的“全局配置”，并在某些条件下（例如，在产品页面上添加产品详细信息）贡献额外的XDM字段。
 
-1. 使用&#x200B;**[!UICONTROL 发送事件]**&#x200B;操作创建另一个规则，该操作会将完整的XDM对象发送到Adobe Experience Platform Edge Network。
+1. 使用&#x200B;**[!UICONTROL 发送事件]**&#x200B;操作将我们想要的所有数据发送到Adobe Experience Platform Edge Network。
 
 所有这些规则将使用“[!UICONTROL 顺序]”选项正确排序。
 
 此视频概述了此过程：
 
->[!VIDEO](https://video.tv.adobe.com/v/3454037/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### 全局配置字段
 
@@ -89,13 +99,13 @@ ht-degree: 2%
 
    ![创建规则](assets/rules-create.png)
 
-1. 将规则命名为 `all pages - library loaded - set global variables - 1`
+1. 将规则命名为 `all pages - adobeDataLayer push - set global variables - 1`
 
 1. 在&#x200B;**[!UICONTROL 事件]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 添加]**
 
    ![命名规则并添加事件](assets/rule-name-new.png)
 
-1. 使用&#x200B;**[!UICONTROL 核心扩展]**&#x200B;并选择&#x200B;**[!UICONTROL Library Loaded (Page Top)]**&#x200B;作为&#x200B;**[!UICONTROL 事件类型]**
+1. 使用&#x200B;**[!UICONTROL Adobe客户端数据层]**&#x200B;扩展并选择&#x200B;**[!UICONTROL 推送的数据]**&#x200B;作为&#x200B;**[!UICONTROL 事件类型]**
 
 1. 选择&#x200B;**[!UICONTROL 高级]**&#x200B;下拉菜单并输入`1`作为&#x200B;**[!UICONTROL 顺序]**
 
@@ -103,7 +113,8 @@ ht-degree: 2%
    >
    > 订单编号越低，执行的时间就越早。 因此，我们给予“全球配置”一个较低的订单编号。
 
-1. 选择&#x200B;**[!UICONTROL Keep Changes]**&#x200B;以返回主规则屏幕
+1. 收听&#x200B;**[!UICONTROL 所有活动]**
+1. 选择&#x200B;**[!UICONTROL Keep Changes]**以返回主规则屏幕
    ![选择库已加载触发器](assets/create-tag-rule-trigger-loaded.png)
 
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 添加]**
@@ -116,48 +127,28 @@ ht-degree: 2%
 
    ![更新变量架构](assets/create-rule-update-variable.png)
 
-现在，将您的[!UICONTROL 数据元素]映射到XDM对象使用的[!UICONTROL 架构]。 您可以映射到单个属性或整个对象。 在本例中，您将映射到各个属性：
+1. 现在，通过将XDM字段映射到相应的值来指定XDM字段：
 
-1. 找到eventType字段并将其选定
-
-1. 输入值`web.webpagedetails.pageViews`
-
-   >[!TIP]
-   >
-   > 要了解在`eventType`字段中要填充哪些值，您必须转到架构页面并选择`eventType`字段以在右边栏上查看建议值。 如果需要，您还可以输入新值。
-   > 架构页面上的![eventType建议值](assets/create-tag-rule-eventType.png)
-
-1. 接下来，在架构中找到`identityMap`对象并将其选定
-
-1. 映射到`identityMap.loginID`数据元素
-
-   ![更新变量标识映射](assets/create-rule-variable-identityMap.png)
+   | XDM字段 | 将映射到 |
+   |---|---|
+   | `eventType` | `Web Webpagedetails Page Views` （开始键入以查看建议值） |
+   | `identityMap` | `Identity Map`数据元素 |
+   | `web.webPageDetails.name` | `Page Name`数据元素 |
+   | `web.webPageDetails.pageViews.value` | `1` |
 
 
    >[!TIP]
    >
-   > 如果数据元素为空，则XDM字段将不会包含在网络请求中。 因此，当用户未经身份验证并且`identityMap.loginID`数据元素为null时，将不会发送`identityMap`对象。 这就是为什么我们可以在我们的“全球配置”中定义它。
-
-1. 向下滚动直到到达&#x200B;**`web`**&#x200B;对象
-
-1. 选择以将其打开
-
-1. 将以下数据元素映射到相应的`web` XDM变量
-
-   * **`web.webPageDetials.name`**&#x200B;至`%page.pageInfo.pageName%`
-   * **`web.webPageDetials.server`**&#x200B;至`%page.pageInfo.server%`
-   * **`web.webPageDetials.siteSection`**&#x200B;至`%page.pageInfo.hierarchie1%`
-
-1. 将 `web.webPageDetials.pageViews.value` 设置为 `1`
-
-   ![更新变量内容](assets/create-rule-xdm-variable-content.png)
+   > 如果数据元素为空，则XDM字段将不会包含在网络请求中。 因此，当用户未经身份验证并且`Identity Map`数据元素为null时，将不会发送`identityMap`对象。 这就是为什么我们可以在我们的“全球配置”中定义它。
 
    >[!TIP]
    >
    > 虽然Adobe Analytics不需要将设置为`eventType`的`web.webpagedetails.pageViews`和`web.webPageDetails.pageViews.value`来处理作为页面查看的信标，但使用标准方式为其他下游应用程序指示页面查看很有用。
 
+1. 完成后，您的`XDM Variable`将类似于此。 请注意已填充和未完全填充的字段如何使用蓝色圆圈指示：
+   ![XDM变量](assets/rule-xdm-variable.png)
+1. 选择&#x200B;**[!UICONTROL 保留更改]**，然后在下一个屏幕中选择&#x200B;**[!UICONTROL 保存]**&#x200B;规则以完成该规则
 
-1. 选择&#x200B;**[!UICONTROL 保留更改]**，然后在下一个屏幕中选择&#x200B;**[!UICONTROL 保存]**&#x200B;规则以完成创建规则
 
 
 ### 产品页面字段
@@ -172,67 +163,47 @@ ht-degree: 2%
 首先在Luma的产品详细信息页面上跟踪产品查看：
 
 1. 选择&#x200B;**[!UICONTROL 添加规则]**
-1. 将其命名为[!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
+1. 将其命名为[!UICONTROL `product detail pages - adobeDataLayer push - set product details variables - 20`]
 1. 选择“事件”下的![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)以添加新触发器
-1. 在&#x200B;**[!UICONTROL 扩展]**&#x200B;下，选择&#x200B;**[!UICONTROL 核心]**
-1. 在&#x200B;**[!UICONTROL Event Type]**&#x200B;下，选择&#x200B;**[!UICONTROL Library Loaded (Page Top)]**
-1. 选择以打开&#x200B;**[!UICONTROL 高级选项]**，键入`20`。 此顺序值确保规则在&#x200B;_之后运行_ `all pages - library loaded - set global variables - 1`，该规则设置全局配置。
+1. 在&#x200B;**[!UICONTROL 扩展]**&#x200B;下，选择&#x200B;**[!UICONTROL Adobe客户端数据层]**
+1. 在&#x200B;**[!UICONTROL 事件类型]**&#x200B;下，选择&#x200B;**[!UICONTROL 推送的数据]**
+1. 选择以打开&#x200B;**[!UICONTROL 高级选项]**，键入`20`。 此顺序值可确保规则在&#x200B;_全局变量规则_&#x200B;之后运行。
+1. 收听&#x200B;**[!UICONTROL 特定事件]**
+1. 输入`productView`作为&#x200B;**[!UICONTROL 要注册的]**&#x200B;事件/密钥
 1. 选择&#x200B;**[!UICONTROL 保留更改]**
 
-   ![Analytics XDM规则](assets/set-up-analytics-pdp.png)
+   ![Analytics XDM规则](assets/rule-pdp-event.png)
 
-1. 在&#x200B;**[!UICONTROL 条件]**&#x200B;下，选择&#x200B;**[!UICONTROL 添加]**
-1. 将&#x200B;**[!UICONTROL 逻辑类型]**&#x200B;保留为&#x200B;**[!UICONTROL 常规]**
-1. 将&#x200B;**[!UICONTROL 扩展]**&#x200B;保留为&#x200B;**[!UICONTROL 核心]**
-1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;**[!UICONTROL 的]**&#x200B;路径
-1. 在右侧，启用&#x200B;**[!UICONTROL 正则表达式]**&#x200B;切换开关
-1. 在&#x200B;**[!UICONTROL 路径下，等于]**&#x200B;设置`/products/`。 对于Luma演示站点，它确保规则仅在产品页面上触发
-1. 选择&#x200B;**[!UICONTROL 保留更改]**
-
-   ![Analytics XDM规则](assets/set-up-analytics-product-condition.png)
 
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;下，选择&#x200B;**[!UICONTROL 添加]**
 1. 选择&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;扩展
 1. 选择&#x200B;**[!UICONTROL 操作类型]**&#x200B;作为&#x200B;**[!UICONTROL 更新变量]**
-1. 选择`xdm.variable.content`作为&#x200B;**[!UICONTROL 数据元素]**
-1. 向下滚动到`commerce`对象
-1. 打开&#x200B;**[!UICONTROL productViews]**&#x200B;对象并将&#x200B;**[!UICONTROL 值]**&#x200B;设置为`1`
+1. 选择`XDM Variable`作为&#x200B;**[!UICONTROL 数据元素]**
+1. 将这些XDM字段映射到相应的值：
 
-   ![设置产品视图](assets/set-up-analytics-prodView.png)
-
-   >[!TIP]
-   >
-   >在XDM中设置commerce.productViews.value=1会自动映射到Analytics中的`prodView`事件
-
-1. 向下滚动到`eventType`并将其设置为`commerce.productViews`
-
-   >[!NOTE]
-   >
-   >由于此规则的顺序较高，因此它将覆盖“全局配置”规则中设置的`eventType`。 `eventType`只能包含一个值，我们建议使用最有价值的事件来设置它。
-
-1. 向下滚动到并选择`productListItems`数组
-1. 选择&#x200B;**[!UICONTROL 提供单个项目]**
-1. 选择&#x200B;**[!UICONTROL 添加项]**
-
-   ![正在设置产品查看事件](assets/set-up-analytics-xdm-individual.png)
-
-   >[!CAUTION]
-   >
-   >**`productListItems`**&#x200B;是`array`数据类型，因此它期望数据作为元素集合进入。 由于Luma演示站点的数据层结构，并且由于一次只能在Luma站点上查看一个产品，因此需要单独添加项目。 在您自己的网站上实施时，根据数据层结构，您可能能够提供整个阵列。
-
-1. 选择以打开&#x200B;**[!UICONTROL 项目1]**
-1. 将&#x200B;**`productListItems.item1.SKU`**&#x200B;映射到`%product.productInfo.sku%`
-
-   ![产品SKU XDM对象变量](assets/set-up-analytics-sku.png)
+   | XDM字段 | 将映射到 |
+   |---|---|
+   | `eventType` | `Commerce Product Views` （开始键入以查看建议值） |
+   | `commerce.productViews.value` | `1` |
+   | `productListItems.name` | `Ecommerce Product Name` （选择&#x200B;**[!UICONTROL 提供单个项目]**&#x200B;和&#x200B;**[!UICONTROL 首先添加项目]** ） |
+   | `productListItems.sku` | `Ecommerce Product Id` |
 
 1. 选择&#x200B;**[!UICONTROL 保留更改]**
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存规则
 
+   >[!NOTE]
+   >
+   >由于此规则的顺序较高，因此它将覆盖“全局配置”规则中设置的`eventType`。 `eventType`只能包含一个值，我们建议使用最有价值的事件来设置它。
+
+   >[!TIP]
+   >
+   >在XDM中设置commerce.productViews.value=1会自动映射到Analytics中的`prodView`事件
+
 
 ### 购物车字段
 
-您可以将整个数组映射到XDM对象，前提是数组与XDM架构的格式匹配。 您创建的自定义代码数据元素`cart.productInfo`将通过Luma上的`digitalData.cart.cartEntries`数据层对象进行循环，并将其转换为XDM架构的`productListItems`对象的所需格式。
+您可以将整个数组映射到XDM对象，前提是数组与XDM架构的格式匹配。 您创建的自定义代码数据元素`Ecommerce Cart Products`将通过Luma网站上的`adobeDataLayer.ecommerce.cart.items`数据层对象进行早期循环，并将其转换为XDM架构的`productListItems`对象的所需格式。
 
 要说明此问题，请参阅Luma站点数据层（左）与转换后的数据元素（右）的以下比较：
 
@@ -242,39 +213,38 @@ ht-degree: 2%
 
 >[!IMPORTANT]
 >
->请注意数值变量的转换方式，数据层中的字符串值（如`price`和`qty`）将重新格式化为数据元素中的数字。 这些格式要求对于Platform中的数据完整性非常重要，可以在[配置架构](configure-schemas.md)步骤中确定。 在示例中，**[!UICONTROL 数量]**&#x200B;使用&#x200B;**[!UICONTROL 整数]**&#x200B;数据类型。
+>请注意数值变量的转换方式，数据层中的字符串值（如`price`和`qty`）将重新格式化为数据元素中的数字。 这些格式要求对于Platform中的数据完整性非常重要，可以在[配置架构](configure-schemas.md)步骤中确定。 在示例中，**[!UICONTROL 数量]**&#x200B;使用&#x200B;**[!UICONTROL 整数]**数据类型。
 > ![XDM架构数据类型](assets/set-up-analytics-quantity-integer.png)
 
 现在，让我们将数组映射到XDM对象：
 
 
-1. 创建名为`ecommerce - library loaded - set shopping cart variables - 20`的新规则
+1. 创建名为`cart page - adobeDataLayer push - set cart variables - 20`的新规则
 1. 选择“事件”下的![+符号](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)以添加新触发器
-1. 在&#x200B;**[!UICONTROL 扩展]**&#x200B;下，选择&#x200B;**[!UICONTROL 核心]**
-1. 在&#x200B;**[!UICONTROL Event Type]**&#x200B;下，选择&#x200B;**[!UICONTROL Library Loaded (Page Top)]**
-1. 选择以打开&#x200B;**[!UICONTROL 高级选项]**，键入`20`
+1. 在&#x200B;**[!UICONTROL 扩展]**&#x200B;下，选择&#x200B;**[!UICONTROL Adobe客户端数据层]**
+1. 在&#x200B;**[!UICONTROL 事件类型]**&#x200B;下，选择&#x200B;**[!UICONTROL 推送的数据]**
+1. 选择以打开&#x200B;**[!UICONTROL 高级选项]**，键入`20`。 此顺序值可确保规则在&#x200B;_全局变量规则_&#x200B;之后运行。
+1. 收听&#x200B;**[!UICONTROL 特定事件]**
+1. 输入`cartView`作为&#x200B;**[!UICONTROL 要注册的]**&#x200B;事件/密钥
 1. 选择&#x200B;**[!UICONTROL 保留更改]**
 
-   ![Analytics XDM规则](assets/set-up-analytics-cart-sequence.png)
 
-1. 在&#x200B;**[!UICONTROL 条件]**&#x200B;下，选择&#x200B;**[!UICONTROL 添加]**
-1. 将&#x200B;**[!UICONTROL 逻辑类型]**&#x200B;保留为&#x200B;**[!UICONTROL 常规]**
-1. 将&#x200B;**[!UICONTROL 扩展]**&#x200B;保留为&#x200B;**[!UICONTROL 核心]**
-1. 选择&#x200B;**[!UICONTROL 条件类型]**&#x200B;作为不含查询字符串&#x200B;**[!UICONTROL 的]**&#x200B;路径
-1. 在右侧，**不**&#x200B;启用&#x200B;**[!UICONTROL 正则表达式]**&#x200B;切换开关
-1. 在&#x200B;**[!UICONTROL 路径下，等于]**&#x200B;设置`/content/luma/us/en/user/cart.html`。 对于Luma演示站点，它确保规则仅在购物车页面上触发
-1. 选择&#x200B;**[!UICONTROL 保留更改]**
-
-   ![Analytics XDM规则](assets/set-up-analytics-cart-condition.png)
+   购物车规则的![事件](assets/rule-cart-event.png)
 
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;下，选择&#x200B;**[!UICONTROL 添加]**
 1. 选择&#x200B;**[!UICONTROL Adobe Experience Platform Web SDK]**&#x200B;扩展
 1. 选择&#x200B;**[!UICONTROL 操作类型]**&#x200B;作为&#x200B;**[!UICONTROL 更新变量]**
-1. 选择`xdm.variable.content`作为&#x200B;**[!UICONTROL 数据元素]**
-1. 向下滚动到`commerce`对象并选择以将其打开。
-1. 打开&#x200B;**[!UICONTROL productListViews]**&#x200B;对象并将&#x200B;**[!UICONTROL 值]**&#x200B;设置为`1`
+1. 选择`XDM Variable`作为&#x200B;**[!UICONTROL 数据元素]**
+1. 将这些XDM字段映射到相应的值：
 
-   ![设置产品视图](assets/set-up-analytics-cart-view.png)
+   | XDM字段 | 将映射到 |
+   |---|---|
+   | `eventType` | `Commerce Product List (Cart) Views` （开始键入以查看建议值） |
+   | `commerce.productListViews.value` | `1` |
+   | `productListItems.name` | `Ecommerce Product Name` （选择&#x200B;**[!UICONTROL 提供单个项目]**&#x200B;和&#x200B;**[!UICONTROL 首先添加项目]** ） |
+   | `productListItems.sku` | `Ecommerce Product Id` |
+
+
 
    >[!TIP]
    >
@@ -349,7 +319,7 @@ ht-degree: 2%
 
 1. 选择&#x200B;**[!UICONTROL 高级]**&#x200B;下拉菜单并在`50`顺序&#x200B;**[!UICONTROL 中输入]**。 这将确保此规则在您配置的所有其他规则（这些规则将`1`或`20`作为其[!UICONTROL 顺序]）之后触发。
 
-1. 选择&#x200B;**[!UICONTROL Keep Changes]**&#x200B;以返回主规则屏幕
+1. 选择&#x200B;**[!UICONTROL Keep Changes]**以返回主规则屏幕
    ![选择库已加载触发器](assets/create-tag-rule-trigger-loaded-send.png)
 
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;部分中，选择&#x200B;**[!UICONTROL 添加]**
@@ -400,4 +370,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容

@@ -4,10 +4,10 @@ description: 了解如何在数据收集界面中安装和配置Platform Web SDK
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '638'
-ht-degree: 10%
+source-wordcount: '602'
+ht-degree: 11%
 
 ---
 
@@ -16,9 +16,6 @@ ht-degree: 10%
 了解如何安装和配置Adobe Experience Platform Web SDK标记扩展。 实施Web SDK的最简单方法是使用Adobe的标签管理器“标签”（以前称为Launch）。 Platform Web SDK标记扩展是向&#x200B;_所有Adobe Experience Cloud应用程序_&#x200B;发送数据所需的&#x200B;_仅标记扩展_，包括[Analytics](setup-analytics.md)、[Target](setup-target.md)、[Audience Manager](setup-audience-manager.md)、Real-Time Customer Data Platform和[Journey Optimizer](setup-web-channel.md)！
 
 
->[!WARNING]
->
-> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
 
 ## 学习目标
 
@@ -42,9 +39,9 @@ ht-degree: 10%
 
 1. 打开[数据收集接口](https://experience.adobe.com/data-collection/){target="_blank"}
 1. 在左侧导航中选择&#x200B;**[!UICONTROL 标记]**
-1. 选择&#x200B;**[!UICONTROL 新建属性]**&#x200B;按钮
+1. 选择&#x200B;**[!UICONTROL 新建属性]**按钮
    ![添加新属性](assets/websdk-property-addNewProperty.png)
-1. 作为&#x200B;**[!UICONTROL Name]**，输入`Web SDK Course` （如果贵公司的多个人员参加本教程，请添加您的姓名到结尾）
+1. 作为&#x200B;**[!UICONTROL Name]**，输入`Luma Web SDK Tutorial` （如果贵公司的多个人员参加本教程，请添加您的姓名到结尾）
 1. 作为&#x200B;**[!UICONTROL 域]**，请输入`enablementadobe.com`（稍后解释）
 1. 选择&#x200B;**[!UICONTROL 保存]**
    ![属性详细信息](assets/websdk-property-propertyDetails.png)
@@ -66,17 +63,14 @@ ht-degree: 10%
 保留大部分默认设置，以后根据需要进行更新。 您现在必须执行的唯一操作是将扩展链接到数据流：
 
 1. 在&#x200B;**[!UICONTROL 数据流]**&#x200B;下，选择&#x200B;**[!UICONTROL 从列表中选择]**&#x200B;输入法
-1. 选择您在其中创建架构、身份命名空间和数据流的沙盒
-1. 选择您之前创建的数据流，`Luma Web SDK`
+1. 配置&#x200B;**[!UICONTROL 生产环境]**。 （属性中的其他标记环境将继承生产设置）：
+   1. 选择您在其中创建架构、身份命名空间和数据流的沙盒
+   1. 选择您之前创建的数据流，`Luma Web SDK: Development Environment`
 1. 选择&#x200B;**[!UICONTROL 保存]**
-
-   >[!NOTE]
-   >
-   > 如果找不到数据流，请转到[配置数据流](configure-datastream.md)课程，然后按照步骤创建一个数据流
 
    ![数据流选择](assets/extension-luma-web-sdk-datastream-extension.png)
 
-有关扩展的每个部分的详细信息，请参阅[配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
+有关扩展的每个部分的详细信息，请参阅[配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
 
 >[!NOTE]
 >
@@ -90,4 +84,4 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容

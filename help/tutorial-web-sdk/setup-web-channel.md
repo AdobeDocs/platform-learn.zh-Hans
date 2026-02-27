@@ -6,24 +6,21 @@ feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
 workflow-type: tm+mt
-source-wordcount: '2594'
-ht-degree: 0%
+source-wordcount: '2497'
+ht-degree: 1%
 
 ---
 
 
 # 使用Web SDK设置Journey Optimizer Web渠道
 
-了解如何使用Adobe Experience Platform Web SDK实施Adobe Journey Optimizer [Web渠道](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/web/get-started-web)。 本课程包括基本Web渠道先决条件、配置的详细步骤以及围绕忠诚度状态的用例的深入探讨。
+了解如何使用Adobe Experience Platform Web SDK实施Adobe Journey Optimizer [Web渠道](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web)。 本课程包括基本Web渠道先决条件、配置的详细步骤以及围绕忠诚度状态的用例的深入探讨。
 
 通过学习本课程，Journey Optimizer用户将能够使用Journey Optimizer Web Designer的Web渠道来实现高级在线个性化。
 
 
->[!WARNING]
->
-> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
 
 ![Web SDK和Adobe Analytics关系图](assets/dc-websdk-ajo.png)
 
@@ -45,8 +42,9 @@ ht-degree: 0%
 
 * 完成有关Platform Web SDK初始配置的所有课程，包括设置数据元素和规则。
 * 确保您的Adobe Experience Platform Web SDK标记扩展版本为2.16或更高版本。
+* 完成“设置Experience Platform”课程，包括创建`Luma Loyalty Rewards – Gold Status`受众的练习。
+* 已下载并启用[Adobe Experience Cloud可视化编辑帮助程序浏览器扩展](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)。
 * 如果您使用Journey Optimizer Web设计器创作您的Web渠道体验，请确保您使用的是Google Chrome或Microsoft®Edge浏览器。
-* 另外，请确保已下载并启用[Adobe Experience Cloud可视化编辑帮助程序浏览器扩展](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)。
 * 确保您的浏览器允许使用第三方Cookie。 可能还需要在浏览器中禁用任何广告拦截器。
 
   >[!CAUTION]
@@ -57,7 +55,7 @@ ht-degree: 0%
   > 1. 网站嵌入在iframe中。
   > 1. 无法从外部访问客户的QA或暂存站点（它是一个内部站点）。
 
-* 从Adobe Experience Manager Assets Essentials库创建Web体验并包含内容时，需要[配置用于发布此内容的子域](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains)。
+* 从Adobe Experience Manager Assets Essentials库创建Web体验并包含内容时，需要[配置用于发布此内容的子域](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains)。
 * 如果使用内容试验功能，请确保您的Web数据集也包含在报表配置中。
 * 目前，支持两种类型的实施，以便能够在Web资产上创作和交付Web渠道营销活动：
    * 仅限客户端：要修改您的网站，必须实施Adobe Experience Platform Web SDK。
@@ -106,9 +104,10 @@ ht-degree: 0%
 
 1. 选中&#x200B;**[!UICONTROL Adobe Journey Optimizer]**&#x200B;框。
 
+1. **[!UICONTROL 保存]**&#x200B;更新的配置。
+
    ![选中AJO框](assets/web-channel-check-ajo-box.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。
 
 这可确保Adobe Experience Platform Edge Network正确处理Journey Optimizer的入站事件。
 
@@ -119,6 +118,7 @@ ht-degree: 0%
 要在合并策略中配置选项，请执行以下操作：
 
 1. 在Experience Platform或Journey Optimizer界面中转到&#x200B;**[!UICONTROL Customer]** > **[!UICONTROL Profiles]**&#x200B;页面。
+1. 确保您位于本教程所用的沙盒中
 1. 选择&#x200B;**[!UICONTROL 合并策略]**&#x200B;选项卡。
 1. 选择您的策略（通常最好使用[!UICONTROL 基于默认时间的]策略），然后在&#x200B;**[!UICONTROL 配置]**&#x200B;步骤中切换&#x200B;**[!UICONTROL Edge上的活动合并策略]**&#x200B;选项。
 
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 要在Web渠道营销活动中使用内容实验，必须确保使用的Web数据集也包含在报表配置中。 Journey Optimizer报表系统以只读方式使用数据集来填充现成的内容试验报表。
 
-[本节](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets)详细介绍了如何添加用于内容试验报告的数据集。
+[本节](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/reporting/channel-report/reporting-configuration#add-datasets)详细介绍了如何添加用于内容试验报告的数据集。
 
 ## 用例概述 — 忠诚度奖励
 
@@ -152,43 +152,36 @@ ht-degree: 0%
 
 1. 在左侧导航中导航到&#x200B;**[!UICONTROL 历程管理]** > **[!UICONTROL 促销活动]**
 1. 单击右上角的&#x200B;**[!UICONTROL 创建营销活动]**。
-1. 在&#x200B;**[!UICONTROL 属性]**&#x200B;部分中，指定您希望如何执行营销活动。 对于忠诚度奖励用例，请选择&#x200B;**计划**。
+1. 选择营销活动的类型。 对于忠诚度奖励用例，请选择&#x200B;**计划 — 营销**。
 
    ![计划的营销活动](assets/web-channel-campaign-properties-scheduled.png)
 
-1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;部分中，选择&#x200B;**[!UICONTROL Web渠道]**。 作为&#x200B;**[!UICONTROL Web表面]**，请选择&#x200B;**[!UICONTROL 页面URL]**。
-
-   >[!NOTE]
-   >
-   >Web表面是指由交付内容的URL标识的Web属性。 它可以对应于单个页面URL或包含多个页面，使您能够在一个或多个网页中应用修改。
-
-1. 选择&#x200B;**[!UICONTROL 页面URL]** Web表面选项可在此营销活动的一个页面上部署体验。 输入Luma页面的URL，`https://luma.enablementadobe.com/content/luma/us/en.html`
-
-1. 定义Web表面后，选择&#x200B;**[!UICONTROL 创建]**。
-
-   ![选择Web表面](assets/web-channel-web-surface.png)
-
-1. 现在向新的Web渠道营销活动添加一些其他详细信息。 首先，命名营销活动。 调用它`Luma Loyalty Rewards – Gold Status`。 （可选）您可以向市场活动添加描述。 还要添加&#x200B;**[!UICONTROL 标记]**&#x200B;以改进整个促销活动分类。
+1. 向新的Web渠道营销活动添加一些其他详细信息。 首先，命名营销活动。 调用它`Luma Loyalty Rewards – Gold Status`。 （可选）您可以向市场活动添加描述。 还要添加&#x200B;**[!UICONTROL 标记]**&#x200B;以改进整个促销活动分类。
 
    ![命名营销活动](assets/web-channel-campaign-name.png)
 
-1. 默认情况下，该营销活动对所有网站访客有效。 对于此用例，只有金会员状态奖励会员才能看到体验。 要启用此功能，请单击&#x200B;**[!UICONTROL 选择受众]**&#x200B;并选择`Luma Loyalty Rewards – Gold Status`受众。
+1. 转到&#x200B;**[!UICONTROL 操作]**&#x200B;选项卡
+1. 选择&#x200B;**[!UICONTROL Web]**&#x200B;作为&#x200B;**[!UICONTROL 操作名称]**。
+1. 选择&#x200B;**[!UICONTROL 创建新配置]**&#x200B;作为&#x200B;**[!UICONTROL Web配置]**。
+1. 作为“通道配置”详细信息，输入以下内容：
+   1. `LumaHomepage`作为&#x200B;**[!UICONTROL Name]**。
+   1. **[!UICONTROL Web]**&#x200B;作为&#x200B;**[!UICONTROL 渠道]**。
+   1. **[!UICONTROL 作为]**&#x200B;营销操作&#x200B;**[!UICONTROL 的Personalization现场]**。
+   1. **[!UICONTROL 单个页面]**&#x200B;作为&#x200B;**[!UICONTROL Web设置]**。
+   1. `https://newluma.enablementadobe.com/index.html`作为&#x200B;**[!UICONTROL 页面URL]**。
+1. **[!UICONTROL 提交]**&#x200B;新渠道配置
 
-1. 在&#x200B;**[!UICONTROL 身份命名空间]**&#x200B;字段中，选择用于标识所选区段内个人的命名空间。 由于您要将促销活动部署在Luma网站上，因此可以选择ECID命名空间。 `Luma Loyalty Rewards – Gold Status`受众中缺少各种身份中的ECID命名空间的配置文件不会成为Web渠道营销活动的目标。
+   ![配置Web渠道](assets/web-channel-configuration.png)
+1. 在Campaign的浏览器选项卡中，选择新的`LumaHomepage`配置
 
-   ![选择标识类型](assets/web-channel-indentity-type.png)
+   >[!TIP]
+   >
+   > 如果下拉列表中未显示新配置，请转到[!UICONTROL 属性]选项卡，然后返回[!UICONTROL 操作]选项卡并再次检查下拉列表。
 
-1. 使用&#x200B;**[!UICONTROL 促销活动开始]**&#x200B;选项安排在今天的日期开始促销活动，使用&#x200B;**[!UICONTROL 促销活动结束]**&#x200B;选项安排在一周内结束。
 
-   ![营销活动计划](assets/web-channel-campaign-schedule.png)
+## 尝试忠诚度奖励内容
 
->[!NOTE]
->
->请记住，对于Web渠道营销活动，Web体验会在访客打开页面时显示。 因此，与Adobe Journey Optimizer中的其他类型的营销活动不同，**[!UICONTROL 操作触发器]**&#x200B;部分不可配置。
-
-### 尝试忠诚度奖励内容
-
-如果向上滚动，则可以在&#x200B;**[!UICONTROL 操作]**&#x200B;部分中创建试验，以测试哪些内容更适合`Luma Loyalty Rewards – Gold Status`受众。 让我们创建并测试两个处理作为Campaign配置的一部分。
+现在您已在[!UICONTROL 操作]部分中选择了&#x200B;**[!UICONTROL Web配置]**，您可以选择创建一个试验来测试哪些内容更适合`Luma Loyalty Rewards – Gold Status`受众。 让我们创建并测试两个处理作为Campaign配置的一部分。
 
 要创建内容试验，请执行以下操作：
 
@@ -196,27 +189,32 @@ ht-degree: 0%
 
    ![创建试验](assets/web-channel-create-content-experiment.png)
 
-1. 首先选择&#x200B;**[!UICONTROL 成功量度]**。 这是确定内容有效性的量度。 选择&#x200B;**[!UICONTROL 独特入站点击次数]**，以查看哪个内容处理在Web体验CTA上产生了更多的点击次数。
-
-   ![选择成功量度](assets/web-channel-content-experiment-metric.png)
-
-1. 使用Web渠道设置试验并选择&#x200B;**[!UICONTROL 入站点击数]**、**[!UICONTROL 独特入站点击数]**、**[!UICONTROL 页面查看数]**&#x200B;或&#x200B;**[!UICONTROL 独特页面查看数]**&#x200B;指标时，**[!UICONTROL 点击操作]**&#x200B;下拉列表可让您准确地跟踪和监视特定页面上的点击数和查看数。
+1. 首先选择&#x200B;**[!UICONTROL 成功量度]**。 这是确定内容有效性的量度。 选择&#x200B;**[!UICONTROL 唯一点击次数]**，以查看哪个内容处理在Web体验CTA上产生了更多点击次数。
 
 1. 或者，您可以指定不接收这两种处理中任何一种的&#x200B;**[!UICONTROL 维持]**。 暂时取消选中此项。
 
 1. 也可以选择平均&#x200B;**[!UICONTROL 分配]**。 选中此选项可确保始终平均拆分处理拆分。
 
+1. 选择&#x200B;**[!UICONTROL 添加处理]**，以便您在试验中有两种处理。
+
+1. 选择&#x200B;**[!UICONTROL 创建]**。
+
+   ![选择成功量度](assets/web-channel-content-experiment-metric.png)
+
+
 [进一步了解Adobe Journey Optimizer Web渠道中的内容实验](https://experienceleague.adobe.com/zh-hans/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment)。
+
+
 
 ### 使用可视化帮助程序编辑内容
 
-现在，让我们创作Web渠道体验。 为此，请使用Adobe Experience Cloud **[!UICONTROL 可视化帮助程序]**。 此工具是一个与Google Chrome和Microsoft® Edge兼容的浏览器扩展。 在尝试构建体验之前，请确保已下载该扩展。 同时确保网页包含Web SDK。
+现在，让我们创作Web渠道体验。 首先，为Google Chrome和Microsoft® Edge安装[Adobe Experience Cloud可视化编辑帮助程序](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca)浏览器扩展（如果尚未安装）。 安装后，请继续执行Journey Optimizer界面中的步骤：
 
-1. 在营销活动的&#x200B;**[!UICONTROL 操作]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL 编辑内容]**。 由于您输入了单个页面URL作为表面，因此您应该可以在编辑器中开始工作。
+1. 选择&#x200B;**[!UICONTROL 编辑内容]**（或导航到营销活动的“内容”选项卡）。 由于您输入了单个页面URL作为表面，因此您应该可以在编辑器中开始工作。
 
    ![编辑内容](assets/web-channel-edit-content.png)
 
-1. 现在，单击&#x200B;**[!UICONTROL 编辑网页]**&#x200B;开始创作。
+1. 现在，单击&#x200B;**[!UICONTROL 编辑网页]**&#x200B;开始创作试验的处理A。
 
    ![编辑网页](assets/web-channel-edit-web-page.png)
 
@@ -224,28 +222,31 @@ ht-degree: 0%
 
    ![添加上下文编辑](assets/web-channel-some-contextual-edit.png)
 
+
+
 1. 还可以使用&#x200B;**[!UICONTROL 表达式编辑器]**&#x200B;将个性化添加到容器中。
 
+   ![打开表达式编辑器](assets/web-channel-open-expression-editor.png)
    ![添加个性化内容](assets/web-channel-add-basic-personalization.png)
 
 1. 确保正确跟踪点击体验。 从上下文菜单中选择&#x200B;**[!UICONTROL 单击跟踪元素]**。
 
    ![点击跟踪](assets/web-channel-click-tracking.png)
 
-1. 使用&#x200B;**[!UICONTROL 优惠决策组件]**&#x200B;在网页中插入优惠。 此组件使用&#x200B;**[!UICONTROL 决策管理]**&#x200B;挑选要交付给Luma访客的最佳优惠。
-
+有许多选项可用于个性化消息传递。
 
 ### HTML设计更改
 
-如果您希望将更高级的更改或自定义的更改作为忠诚度奖励促销活动的一部分，可以使用一些方法。
+如果您希望将更高级的更改或自定义的更改作为忠诚度奖励促销活动的一部分，可以使用一些方法。 在治疗B中探索其中的一些。
 
 使用&#x200B;**[!UICONTROL 组件]**&#x200B;窗格将HTML或其他内容直接添加到Luma网站。
 
 ![浏览组件窗格](assets/web-channel-components-pane.png)
 
-在页面顶部添加新的HTML组件。 从设计界面或&#x200B;**[!UICONTROL 上下文]**&#x200B;窗格编辑组件中的HTML。
+在页面顶部添加新的HTML组件。 再次打开&#x200B;**[!UICONTROL 表达式编辑器]**&#x200B;以编辑HTML。
 
-![添加自定义HTML](assets/web-channel-add-html-component.png)
+![打开表达式编辑器](assets/web-channel-open-expression-editor-html.png)
+
 
 或者，从&#x200B;**[!UICONTROL 修改]**&#x200B;窗格添加HTML编辑。 此窗格允许您在页面上选择一个组件，然后从设计器界面中对其进行编辑。
 
@@ -255,49 +256,75 @@ ht-degree: 0%
 
 现在，查看新的自定义HTML组件以了解契合度。
 
-![审核自定义HTML](assets/web-channel-review-custom-html.png)
+### 将活动定位到受众
 
-使用&#x200B;**[!UICONTROL CSS选择器类型]**&#x200B;修改编辑特定组件。
+默认情况下，该营销活动对所有网站访客有效。 对于此用例，只有金会员状态奖励会员才能看到体验。 要将内容定位到此受众，请执行以下操作：
 
-![修改CSS](assets/web-channel-css-selector.png)
+1. 导航到&#x200B;**[!UICONTROL 受众]**&#x200B;选项卡
 
-使用&#x200B;**页面`<head>`类型**&#x200B;修改添加自定义代码。
+1. 在&#x200B;**[!UICONTROL 身份命名空间]**&#x200B;字段中，选择用于标识所选区段内个人的命名空间。 由于您要将促销活动部署在Luma网站上，因此可以选择ECID命名空间。 `Luma Loyalty Rewards – Gold Status`受众中缺少各种身份中的ECID命名空间的配置文件不会成为Web渠道营销活动的目标。
 
-![修改head](assets/web-channel-page-head-modification.png)
+1. **[!UICONTROL 选择受众]**
 
-使用&#x200B;**[!UICONTROL 可视化帮助程序]**&#x200B;的可能性是无穷的。
+   ![选择受众](assets/web-channel-select-audience.png)
 
-### 模拟忠诚度奖励内容
+1. 选择您在`Luma Loyalty Rewards - Gold Status`设置Experience Platform[课程中创建的](setup-experience-platform.md)受众。
+1. 将&#x200B;**[!UICONTROL 受众保存]**&#x200B;到营销活动
 
-在激活营销活动之前，查看已修改网页的预览。 请记住，您必须将测试用户档案配置为模拟Web渠道体验。
+   ![保存受众](assets/web-channel-save-audience.png)
 
-要模拟体验，请执行以下操作：
 
-1. 在营销活动中选择&#x200B;**[!UICONTROL 模拟内容]**。
+<!--
+### Simulate Loyalty Rewards Content
 
-   ![模拟内容](assets/web-channel-simulate-content.png)
+Look at a preview of the modified web page before activating the campaign. Keep in mind that you must have test profiles configured to simulate web channel experiences.
 
-1. 选择要接收模拟的测试用户档案。 请记住，测试配置文件应位于`Luma Loyalty Rewards – Gold Status`受众中才能获得适当的处理。
+To simulate the experience:
 
-1. 将显示测试用户档案的预览。
+1. Select **[!UICONTROL Simulate content]** within the campaign.
+
+    ![Simulate content](assets/web-channel-simulate-content.png)
+
+1. Choose a test profile to receive the simulation. Keep in mind that the test profile should be in the `Luma Loyalty Rewards – Gold Status` audience to receive the proper treatment.
+
+1. The preview is displayed for the test profile.
+
+1. Select the [!UICONTROL Content] tab
+
+1. Choose the **[!UICONTROL Page URL]** web surface option to deploy the experience on one page for this campaign. Enter the URL for the Luma page, `https://newluma.enablementadobe.com`
+
+1. Once the web surface is defined, select **[!UICONTROL Create]**.
+
+    ![Select web surface](assets/web-channel-web-surface.png)
+-->
+
+### 计划营销活动
+
+默认情况下，当您手动激活和停用营销活动时，营销活动将开始和停止。 但是，您可以选择安排在特定日期和时间启动和停止这些任务。 保留默认设置并选择&#x200B;**查看以激活**：
+
+![营销活动计划](assets/web-channel-campaign-schedule.png)
+
+>[!NOTE]
+>
+>请记住，对于Web渠道营销活动，Web体验会在访客打开页面时显示。 因此，与Adobe Journey Optimizer中的其他类型的营销活动不同，**[!UICONTROL 操作触发器]**&#x200B;部分不可配置。
+
+
 
 ### 激活忠诚度奖励营销活动
 
-最后，激活Web渠道营销活动。
+系统会提示您最后一次确认促销活动详细信息。 选择&#x200B;**[!UICONTROL 激活]**。 营销活动最多可能需要15分钟才能在网站上处于活动状态。
 
-1. 选择&#x200B;**查看以激活**。
-
-1. 系统会提示您最后一次确认促销活动详细信息。 选择&#x200B;**[!UICONTROL 激活]**。 营销活动最多可能需要15分钟才能在网站上处于活动状态。
+![激活营销活动](assets/web-channel-campaign-activate.png)
 
 ### 忠诚度奖励QA
 
-您可以使用一些登录来模拟“金牌状态”用户并授予您的促销活动资格：
+您可以使用一些登录来模拟“金牌状态”用户并授予您的促销活动资格。 您必须在[设置Experience Platform](setup-experience-platform.md)中上载了示例数据，并在网站上使用这些凭据创建帐户，这些凭据才能正常工作。
 
 1. `cleavlandeuler@emailsim.io`/`test`
 1. `leftybeagen@emailsim.io`/`test`
 1. `jenimartinho@emailsim.io`/`test`
 
-作为最佳实践，请监视营销活动实时和全局报告的&#x200B;**[!UICONTROL Web]**&#x200B;选项卡，以查看特定于营销活动的KPI。 对于此营销活动，监视体验展示次数，然后单击率。
+作为最佳实践，请在启动后在“促销活动概述”屏幕上监视&#x200B;**[!UICONTROL Web]**&#x200B;促销活动统计数据，或单击&#x200B;**[!UICONTROL 报告]**&#x200B;以深入报告：
 
 ![查看Web报告](assets/web-channel-web-report.png)
 
@@ -307,7 +334,7 @@ ht-degree: 0%
 
 您可以使用Luma网站上的调试器来验证生产环境中的Web渠道体验。 在忠诚度奖励用例启动并运行后，这是一种最佳实践，可确保正确配置所有内容。
 
-[通过此处](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/debugger/overview)了解如何使用指南在浏览器中配置调试器。
+[通过此处](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview)了解如何使用指南在浏览器中配置调试器。
 
 要使用调试器开始验证，请执行以下操作：
 
@@ -342,4 +369,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)上分享这些内容
