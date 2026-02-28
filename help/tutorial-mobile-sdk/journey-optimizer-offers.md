@@ -526,7 +526,7 @@ Journey Optimizer决策管理可帮助您在适当的时候通过所有接触点
 1. 在左边栏中选择&#x200B;**[!UICONTROL 配置]**，然后选择![ADOBE JOURNEY OPTIMIZER DECISIONING](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下&#x200B;**[!UICONTROL 查看和模拟]**&#x200B;旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 在左边栏中选择&#x200B;**[!UICONTROL 查看和模拟]**。 您的应用程序中的数据流设置和SDK设置均已验证。
-1. 选择顶部栏中的&#x200B;**[!UICONTROL 请求]**。 您会看到您的&#x200B;**[!UICONTROL 优惠]**请求。
+1. 选择顶部栏中的&#x200B;**[!UICONTROL 请求]**。 您会看到您的&#x200B;**[!UICONTROL 优惠]**&#x200B;请求。
    ![AJO Decisioning验证](assets/assurance-decisioning-requests.png){zoomable="yes"}
 
 1. 您可以浏览&#x200B;**[!UICONTROL 模拟]**&#x200B;和&#x200B;**[!UICONTROL 事件列表]**&#x200B;选项卡以获取更多功能，并检查您的Journey Optimizer决策管理设置。

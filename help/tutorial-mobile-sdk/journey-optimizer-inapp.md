@@ -207,7 +207,7 @@ SDK事件中心发布和接收来自已注册的扩展的事件数据，以简�
 1. 在Journey Optimizer UI中，从左边栏中选择&#x200B;**[!UICONTROL 促销活动]**。
 1. 选择&#x200B;**[!UICONTROL 创建营销活动]**。
 1. 在&#x200B;**[!UICONTROL 创建营销活动]**&#x200B;对话框中，选择![时钟](/help/assets/icons/Clock.svg) **[!UICONTROL 计划 — 营销]**，然后选择&#x200B;**[!UICONTROL 确认]**。
-1. 在&#x200B;**[!UICONTROL Campaign - *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]**屏幕中：
+1. 在&#x200B;**[!UICONTROL Campaign - *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]**&#x200B;屏幕中：
 
    1. 在&#x200B;**[!UICONTROL 属性]**&#x200B;选项卡中：
 
@@ -264,7 +264,7 @@ SDK事件中心发布和接收来自已注册的扩展的事件数据，以简�
 
 >[!TAB iOS]
 
-1. 在Xcode项目导航器中，转到&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**。 查找`func sendTrackAction(action: String, data: [String: Any]?)`函数，并根据参数[`MobileCore.track`和](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction)添加以下代码以调用`action``data`函数。
+1. 在Xcode项目导航器中，转到&#x200B;**[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**。 查找`func sendTrackAction(action: String, data: [String: Any]?)`函数，并根据参数[`MobileCore.track`和](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction)添加以下代码以调用`action` `data`函数。
 
 
    ```swift
@@ -283,7 +283,7 @@ SDK事件中心发布和接收来自已注册的扩展的事件数据，以简�
 
 >[!TAB Android]
 
-1. 在Android Studio导航器中，转到&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]**。 查找`fun sendTrackAction(action: String, data: Map<String, String>?)`函数，并根据参数[`MobileCore.track`和](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction)添加以下代码以调用`action``data`函数。
+1. 在Android Studio导航器中，转到&#x200B;**[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]**。 查找`fun sendTrackAction(action: String, data: Map<String, String>?)`函数，并根据参数[`MobileCore.track`和](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction)添加以下代码以调用`action` `data`函数。
 
 
    ```kotlin

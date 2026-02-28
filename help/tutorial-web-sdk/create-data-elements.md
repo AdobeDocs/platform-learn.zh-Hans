@@ -176,10 +176,10 @@ window.adobeDataLayer.push({
 
 按照以下相同步骤创建这些附加数据元素：
 
-* **`User Id`**映射到
+* **`User Id`**&#x200B;映射到
   `adobeDataLayer.0.user.id`
 
-* **`User Logged In`**映射到
+* **`User Logged In`**&#x200B;映射到
   `adobeDataLayer.0.user.loggedIn`
 
 * **`Ecommerce Product Id`**&#x200B;映射到`adobeDataLayer.0.ecommerce.detail.products.0.id`
