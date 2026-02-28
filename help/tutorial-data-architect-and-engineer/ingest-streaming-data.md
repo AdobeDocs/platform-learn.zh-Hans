@@ -44,7 +44,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->虽然本教程侧重于通过Web SDK从网站流式摄取，但您也可以使用[Mobile SDK](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/overview)、[Edge Network Server API](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/server-api/overview)和[HTTP API](https://experienceleague.adobe.com/en/docs/experience-platform/sources/connectors/streaming/http)流式传输数据。
+>虽然本教程侧重于通过Web SDK从网站流式摄取，但您也可以使用[Mobile SDK](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-mobile-sdk/overview)、[Edge Network Server API](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/data-collection/server-api/overview)和[HTTP API](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/sources/connectors/streaming/http)流式传输数据。
 
 ## 需要权限
 
