@@ -24,4 +24,4 @@ ht-degree: 0%
 有关详细信息，请查阅[文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/destinations/catalog/warehouse/snowflake-batch)。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3480182/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3480194/?captions=chi_hans&learn=on&enablevpops)
