@@ -4,7 +4,7 @@ description: 了解如何在数据收集界面中安装和配置Platform Web SDK
 feature: Web SDK, Tags
 jira: KT-15404
 exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
-source-git-commit: 36069689f7b85d4a00b17b90b348e176254108ba
+source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
 workflow-type: tm+mt
 source-wordcount: '602'
 ht-degree: 11%
@@ -39,7 +39,7 @@ ht-degree: 11%
 
 1. 打开[数据收集接口](https://experience.adobe.com/data-collection/){target="_blank"}
 1. 在左侧导航中选择&#x200B;**[!UICONTROL 标记]**
-1. 选择&#x200B;**[!UICONTROL 新建属性]**&#x200B;按钮
+1. 选择&#x200B;**[!UICONTROL 新建属性]**按钮
    ![添加新属性](assets/websdk-property-addNewProperty.png)
 1. 作为&#x200B;**[!UICONTROL Name]**，输入`Luma Web SDK Tutorial` （如果贵公司的多个人员参加本教程，请添加您的姓名到结尾）
 1. 作为&#x200B;**[!UICONTROL 域]**，请输入`enablementadobe.com`（稍后解释）
@@ -70,7 +70,7 @@ ht-degree: 11%
 
    ![数据流选择](assets/extension-luma-web-sdk-datastream-extension.png)
 
-有关扩展的每个部分的详细信息，请参阅[配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
+有关扩展的每个部分的详细信息，请参阅[配置Adobe Experience Platform Web SDK扩展](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration)。
 
 >[!NOTE]
 >
@@ -84,4 +84,4 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996?profile.language=zh-Hans)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)上分享这些内容
