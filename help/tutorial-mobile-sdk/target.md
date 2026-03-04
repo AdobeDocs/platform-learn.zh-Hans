@@ -386,7 +386,7 @@ Target提供了您必须定制和个性化客户体验的所有功能。 Target�
 1. 在左边栏中选择&#x200B;**[!UICONTROL 配置]**，然后选择![OFFER DECISIONING和TARGET](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg)下的&#x200B;**[!UICONTROL 审阅和模拟]**&#x200B;旁边的&#x200B;**[!UICONTROL 添加]**。
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 在左边栏中选择&#x200B;**[!UICONTROL 查看和模拟]**。 您的应用程序中的数据流设置和SDK设置均已验证。
-1. 选择顶部栏中的&#x200B;**[!UICONTROL 请求]**。 您会看到您的&#x200B;**[!DNL Target]**请求。
+1. 选择顶部栏中的&#x200B;**[!UICONTROL 请求]**。 您会看到您的&#x200B;**[!DNL Target]**&#x200B;请求。
    ![AJO Decisioning验证](assets/assurance-decisioning-requests.png){zoomable="yes"}
 
 1. 您可以浏览&#x200B;**[!UICONTROL 模拟]**&#x200B;和&#x200B;**[!UICONTROL 事件列表]**&#x200B;选项卡，以了解有助于验证Target选件设置的其他功能。
