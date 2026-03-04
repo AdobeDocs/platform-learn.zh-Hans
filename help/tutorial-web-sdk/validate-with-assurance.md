@@ -4,7 +4,7 @@ description: 了解如何使用 Adobe Experience Platform Assurance 验证您的
 feature: Web SDK,Tags,Assurance
 jira: KT-15406
 exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 7%
@@ -26,14 +26,14 @@ Adobe Experience Platform Assurance是一项功能，可帮助您检查、验证
 
 ## 先决条件
 
-您熟悉数据收集标记和[Luma演示网站](https://newluma.enablementadobe.com){target="_blank"}，并完成了本教程中以前的课程：
+您熟悉数据收集标记和[Luma演示网站](https://luma.enablementadobe.com){target="_blank"}，并完成了本教程中以前的课程：
 
 * [配置XDM架构](configure-schemas.md)
 * [配置身份命名空间](configure-identities.md)
 * [配置数据流](configure-datastream.md)
 * [Web SDK扩展安装在标记属性中](install-web-sdk.md)
 * [创建数据元素](create-data-elements.md)
-* [创建身份](create-identities.md)
+* [捕获身份](create-identities.md)
 * [创建标记规则](create-tag-rule.md)
 * [使用Debugger进行验证](validate-with-debugger.md)
 
@@ -48,7 +48,7 @@ Adobe Experience Platform Assurance是一项功能，可帮助您检查、验证
 
 在Debugger课程中查看我们如何执行此操作：
 
-1. 转到[Luma演示网站](https://newluma.enablementadobe.com)并使用调试器[将网站上的标记属性切换到您自己的开发属性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
+1. 转到[Luma演示网站](https://luma.enablementadobe.com)并使用调试器[将网站上的标记属性切换到您自己的开发属性](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. 在&#x200B;**[!UICONTROL Experience Platform Debugger]**&#x200B;的左侧导航中，选择&#x200B;**[!UICONTROL 日志]**
 1. 选择&#x200B;**[!UICONTROL Edge]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 连接]**
 
@@ -67,7 +67,7 @@ Adobe Experience Platform Assurance是一项功能，可帮助您检查、验证
    ![创建Assurance会话](assets/assurance-create-session.png)
 1. 选择开始
 1. 为会话命名，例如`Luma Web SDK validation`
-1. 作为&#x200B;**[!UICONTROL 基本URL]**，输入`https://newluma.enablementadobe.com/`
+1. 作为&#x200B;**[!UICONTROL 基本URL]**，输入`https://luma.enablementadobe.com/`
    ![命名Assurance会话](assets/assurance-name-session.png)
 1. 在下一个屏幕中，选择&#x200B;**[!UICONTROL 复制链接]**
 1. 选择图标以将链接复制到剪贴板
@@ -95,4 +95,4 @@ Adobe Experience Platform Assurance是一项功能，可帮助您检查、验证
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=zh-Hans)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)上分享这些内容

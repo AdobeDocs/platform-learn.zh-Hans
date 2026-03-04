@@ -4,9 +4,9 @@ description: 了解如何配置身份命名空间以用于Adobe Experience Platf
 feature: Web SDK,Identities
 jira: KT-15400
 exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
-source-git-commit: 1feddab414a8a7e49f04b8886c275d06516d0114
+source-git-commit: 9985ee11daf48c181cbf209b2a354f5762d31b40
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '625'
 ht-degree: 12%
 
 ---
@@ -15,18 +15,14 @@ ht-degree: 12%
 
 了解如何配置身份标识命名空间，以与 Adobe Experience Platform Web SDK 一起使用。
 
-[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/zh-hans/docs/id-service/using/home)在基于SDK的Adobe应用程序中设置了一个通用访客ID (ECID)，以增强Experience Cloud功能，如应用程序之间的受众共享。 您还可以将自己的客户ID发送到该服务，以启用跨设备定位以及与其他系统(例如客户关系管理(CRM)系统)的集成。
+[Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home)在基于SDK的Adobe应用程序中设置了一个通用访客ID (ECID)，以增强Experience Cloud功能，如应用程序之间的受众共享。 您还可以将自己的客户ID发送到该服务，以启用跨设备定位以及与其他系统(例如客户关系管理(CRM)系统)的集成。
 
-[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/identity/home)（是的，有两个！）使用ECID和客户ID生成标识图，从而允许您将属性和行为合并到实时客户配置文件中。
+[Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home)（是的，有两个！）使用ECID和客户ID生成标识图，从而允许您将属性和行为合并到实时客户配置文件中。
 
 
 >[!NOTE]
 >
 >使用Web SDK实施Adobe Analytics、Adobe Target或Adobe Audience Manager时，_不需要_&#x200B;自定义身份命名空间（身份验证身份可以在`data`对象中传递，而不是你稍后将看到的`xdm`对象中传递）。 平台原生应用程序(如Journey Optimizer、Real-Time Customer Data Platform、Customer Journey Analytics)需要身份命名空间。 虽然您可以决定不在自己的实施中使用身份命名空间，但您应当在本教程中这样做。
-
->[!NOTE]
->
-> 出于演示目的，本课程中的练习允许您使用凭据[用户： &#x200B;](https://newluma.enablementadobe.com) /密码： test **捕获登录到`test@test.com`Luma演示站点**&#x200B;的虚构客户的身份详细信息。
 
 ## 学习目标
 
@@ -46,7 +42,7 @@ ht-degree: 12%
 >
 >实施Adobe Experience Platform Web SDK时不需要[Experience Cloud ID扩展](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension)，因为Web SDK JavaScript库包含访客ID服务功能。
 >
-> 如果您的网站已经在您的网站上通过访客API或Experience Cloud ID服务标签扩展使用Experience Cloud ID服务，并且您希望在迁移到Adobe Experience Platform Web SDK时继续使用它，则必须使用最新版本的访客API或Experience Cloud ID服务标签扩展。 有关详细信息，请参阅[ID迁移](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/edge/identity/overview)。
+> 如果您的网站已经在您的网站上通过访客API或Experience Cloud ID服务标签扩展使用Experience Cloud ID服务，并且您希望在迁移到Adobe Experience Platform Web SDK时继续使用它，则必须使用最新版本的访客API或Experience Cloud ID服务标签扩展。 有关详细信息，请参阅[ID迁移](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview)。
 
 ## 创建身份命名空间
 
@@ -54,7 +50,7 @@ ht-degree: 12%
 
 在开始练习之前，请观看此简短视频，了解有关Adobe Experience Platform中标识的更多信息：
 
->[!VIDEO](https://video.tv.adobe.com/v/3422769?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 现在，为Luma CRM ID创建一个命名空间：
 
@@ -93,10 +89,10 @@ ht-degree: 12%
 
 >[!NOTE]
 >
-> 在[创建身份](create-identities.md)课程中，您将了解在向Platform Edge Network发送身份时如何使用此命名空间。
+> 在[捕获身份](create-identities.md)课程中，您将了解在向Platform Edge Network发送身份时如何使用此命名空间。
 
 现在，标识已准备就绪，可以配置数据流。
 
 >[!NOTE]
 >
->感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848?profile.language=zh-Hans)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Web SDK。 如果您有疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/adobe-experience-platform-18/tutorial-discussion-implement-adobe-experience-cloud-with-web-sdk-tutorial-248848)上分享这些内容
