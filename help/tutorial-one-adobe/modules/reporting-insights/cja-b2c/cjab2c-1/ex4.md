@@ -4,10 +4,10 @@ description: Customer Journey Analytics - Analysis Workspace中的数据准备
 kt: 5342
 doc-type: tutorial
 exl-id: 0bc05318-154a-425c-9e8c-3ddcfe8ad19c
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '759'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 1%
 - 了解Analysis Workspace中的数据准备概念
 - 了解如何进行数据计算
 
-## 1.1.4.1 CJA中的Analysis Workspace UI
+## CJA中的1.1.4.1 Analysis Workspace UI
 
 Analysis Workspace删除了单个Analytics报表的所有典型限制。 它为构建自定义分析项目提供了一个强大、灵活的画布。 将任意数量的数据表、可视化图表和组件（维度、量度、区段和时间粒度）拖放到项目中。 即时创建划分和区段，创建用于分析的同类群组，创建警报，比较区段，进行流量和流失分析，以及简化和计划报表以与业务中的任何人员共享。
 
@@ -29,12 +29,12 @@ Customer Journey Analytics基于Platform数据提供此解决方案。 我们强
 
 如果您以前未使用Analysis Workspace，我们强烈建议您观看此视频：
 
->[!VIDEO](https://video.tv.adobe.com/v/35509?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
 ### 创建项目
 
-现在该创建您的第一个CJA工作区了。 转到CJA中的&#x200B;**Workspace**&#x200B;选项卡。
-单击&#x200B;**创建项目**。
+现在，您可以创建您的第一个CJA工作区了。 转到CJA中的&#x200B;**Workspace**选项卡。
+单击**创建项目**。
 
 ![演示](./images/prmenu.png)
 
@@ -53,7 +53,7 @@ Customer Journey Analytics基于Platform数据提供此解决方案。 我们强
 接下来，您将保存项目并为其命名。 可以使用以下命令进行保存：
 
 | 操作系统 | 捷径 |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | Windows | Control + S |
 | Mac | Command + S |
 
@@ -64,14 +64,14 @@ Customer Journey Analytics基于Platform数据提供此解决方案。 我们强
 请使用此命名约定：
 
 | 名称 | 描述 |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `--aepUserLdap-- - Omnichannel Analysis` | `--aepUserLdap-- - Omnichannel Analysis` |
 
 接下来，单击&#x200B;**保存**。
 
 ![演示](./images/prsave2.png)
 
-## 1.1.4.2计算指标
+## 1.1.4.2计算量度
 
 虽然我们已在数据视图中组织了所有组件，但您仍需要调整其中一些组件，以便业务用户可以开始他们的分析。 此外，在任何分析期间，您可以创建计算量度以更深入地了解分析发现。
 
@@ -110,7 +110,7 @@ Customer Journey Analytics基于Platform数据提供此解决方案。 我们强
 最后，更改计算指标的名称和描述：
 
 | 标题 | 描述 | 外部 ID |
-| ----------------- |-------------| -------------| 
+| ----------------- |-------------| -------------|
 | 转化率 | 转化率 | conversionRate |
 
 然后你就可以拥有这个。 单击&#x200B;**保存**。
@@ -153,7 +153,7 @@ Customer Journey Analytics基于Platform数据提供此解决方案。 我们强
 
 ## 后续步骤
 
-使用Customer Journey Analytics[&#128279;](./ex5.md)转到1.1.5可视化图表(./ex2.md){target="_blank"}
+使用Customer Journey Analytics[转到](./ex5.md)1.1.5可视化图表(./ex2.md){target="_blank"}
 
 返回[Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 

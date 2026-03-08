@@ -4,7 +4,7 @@ description: Real-time CDP — 目标SDK
 kt: 5342
 doc-type: tutorial
 exl-id: c18acbf5-92f5-4cd2-a5aa-a5e9debb98c9
-source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 4%
@@ -70,7 +70,7 @@ ht-degree: 4%
 >
 >如果您没有该Postman收藏集，请返回模块2.1[中的](../rtcdpb2c-1/ex3.md)练习3，并按照其中的说明设置Postman和提供的Postman收藏集。
 
-你会看到这个。 在&#x200B;**Headers**&#x200B;下，您需要手动更新键&#x200B;**x-sandbox-name**&#x200B;的值并将其设置为`--aepSandboxName--`。 选择值&#x200B;**{{SANDBOX_NAME}}**。
+你会看到这个。 在&#x200B;**Headers**&#x200B;下，您需要手动更新键&#x200B;**x-sandbox-name**&#x200B;的值并将其设置为`--aepSandboxName--`。 选择值&#x200B;**`{{SANDBOX_NAME}}`**。
 
 ![数据获取](./images/sdkpm1.png)
 
@@ -117,14 +117,14 @@ ht-degree: 4%
 >
 >请不要忘记，在向Adobe I/O发送请求之前，您需要具有有效的`access_token`。 要获得有效的`access_token`，请运行请求&#x200B;**Adobe IO - OAuth**&#x200B;集合中的&#x200B;**POST — 获取访问令牌**。
 
-单击&#x200B;**发送**&#x200B;后，将创建您的服务器模板，作为响应的一部分，您将看到名为&#x200B;**instanceId**&#x200B;的字段。 请记下它，因为您将在下一步中需要它。 在此示例中，**instanceId**&#x200B;为
+单击&#x200B;**发送**&#x200B;后，将创建您的服务器模板，作为响应的一部分，您将看到名为&#x200B;**instanceId**&#x200B;的字段。 请记下它，因为您将在下一步中需要它。 在此示例中，**instanceId**为
 `52482c90-8a1e-42fc-b729-7f0252e5cebd`。
 
 ![数据获取](./images/sdkpm6.png)
 
 ## 创建目标配置
 
-在Postman中的&#x200B;**目标创作API**&#x200B;下，转到&#x200B;**目标配置**&#x200B;并单击以打开请求&#x200B;**POST — 创建目标配置**。 你会看到这个。 在&#x200B;**Headers**&#x200B;下，您需要手动更新键&#x200B;**x-sandbox-name**&#x200B;的值并将其设置为`--aepSandboxName--`。 选择值&#x200B;**{{SANDBOX_NAME}}**&#x200B;并将其替换为`--aepSandboxName--`。
+在Postman中的&#x200B;**目标创作API**&#x200B;下，转到&#x200B;**目标配置**&#x200B;并单击以打开请求&#x200B;**POST — 创建目标配置**。 你会看到这个。 在&#x200B;**Headers**&#x200B;下，您需要手动更新键&#x200B;**x-sandbox-name**&#x200B;的值并将其设置为`--aepSandboxName--`。 选择值&#x200B;**`{{SANDBOX_NAME}}`**&#x200B;并将其替换为`--aepSandboxName--`。
 
 ![数据获取](./images/sdkpm7.png)
 
@@ -160,7 +160,7 @@ ht-degree: 4%
         }
     ],
     "uiAttributes": {
-        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=zh-Hans",
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
         "category": "streaming",
         "connectionType": "Server-to-server",
         "frequency": "Streaming"
@@ -282,7 +282,7 @@ ht-degree: 4%
 ![DSN](../../../getting-started/gettingstarted/images/web7.png)
 
 在本例中，您希望对查看特定产品的特定客户做出响应。
-从&#x200B;**Citi Signal**&#x200B;主页，转到&#x200B;**手机和设备**，然后单击产品&#x200B;**Galaxy S24**。
+从**Citi Signal**&#x200B;主页，转到&#x200B;**手机和设备**，然后单击产品&#x200B;**Galaxy S24**。
 
 ![数据获取](./images/homegalaxy.png)
 

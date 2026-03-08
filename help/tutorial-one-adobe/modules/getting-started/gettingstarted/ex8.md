@@ -4,7 +4,7 @@ description: 快速入门 — Postman设置
 kt: 5342
 doc-type: tutorial
 exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
-source-git-commit: b8906d1995dcb470789be2a1297eb48cb7690a9c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 3%
@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ## 安装PostBuster
 
-转到[https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}。
+转到[https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}。
 
 单击以下载&#x200B;**PostBuster**&#x200B;的最新版本。
 
@@ -83,31 +83,31 @@ ht-degree: 3%
 
 ```json
 {
-	"CLIENT_SECRET": "",
-	"API_KEY": "",
-	"ACCESS_TOKEN": "",
-	"SCOPES": [
-		"openid",
-		"AdobeID",
-		"read_organizations", 
-		"additional_info.projectedProductContext", 
-		"session",
-		"ff_apis",
-		"firefly_api",
-		"frame.s2s.all"
-	],
-	"TECHNICAL_ACCOUNT_ID": "",
-	"IMS": "ims-na1.adobelogin.com",
-	"IMS_ORG": "",
-	"access_token": "",
-	"IMS_TOKEN": "",
-	"AZURE_STORAGE_URL": "",
-	"AZURE_STORAGE_CONTAINER": "",
-	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": "",
-	"FRAME_IO_BASE_URL": "https://api.frame.io",
-	"FRAME_IO_ACCOUNT_ID": "",
-	"FRAME_IO_WORKSPACE_ID": ""
+    "CLIENT_SECRET": "",
+    "API_KEY": "",
+    "ACCESS_TOKEN": "",
+    "SCOPES": [
+        "openid",
+        "AdobeID",
+        "read_organizations", 
+        "additional_info.projectedProductContext", 
+        "session",
+        "ff_apis",
+        "firefly_api",
+        "frame.s2s.all"
+    ],
+    "TECHNICAL_ACCOUNT_ID": "",
+    "IMS": "ims-na1.adobelogin.com",
+    "IMS_ORG": "",
+    "access_token": "",
+    "IMS_TOKEN": "",
+    "AZURE_STORAGE_URL": "",
+    "AZURE_STORAGE_CONTAINER": "",
+    "AZURE_STORAGE_SAS_READ": "",
+    "AZURE_STORAGE_SAS_WRITE": "",
+    "FRAME_IO_BASE_URL": "https://api.frame.io",
+    "FRAME_IO_ACCOUNT_ID": "",
+    "FRAME_IO_WORKSPACE_ID": ""
 }
 ```
 
@@ -137,7 +137,7 @@ ht-degree: 3%
 逐一复制上述变量，并将其粘贴到PostBuster中的&#x200B;**基本环境**&#x200B;中。
 
 | Adobe I/O中的Variable Name | PostBuster基本环境中的变量名称 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | 客户端 ID | `API_KEY` |
 | 客户端密码 | `CLIENT_SECRET` |
 | 技术帐户ID | `TECHNICAL_ACCOUNT_ID` |
@@ -156,7 +156,7 @@ ht-degree: 3%
 您应会看到包含以下信息的类似响应：
 
 | 键 | 值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **持有人** |
 | access_token | **eyJhbGciOiJS...** |
 | expires_in | **86399** |

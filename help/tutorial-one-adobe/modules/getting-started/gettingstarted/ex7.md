@@ -4,7 +4,7 @@ description: 快速入门 — Postman设置
 kt: 5342
 doc-type: tutorial
 exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
-source-git-commit: 899cb9b17702929105926f216382afcde667a1b6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
@@ -115,7 +115,7 @@ ht-degree: 0%
 您应会看到包含以下信息的类似响应：
 
 | 键 | 值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | token_type | **持有人** |
 | access_token | **eyJhbGciOiJSUz...** |
 | expires_in | **86399** |

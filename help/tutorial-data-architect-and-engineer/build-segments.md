@@ -3,15 +3,15 @@ title: 构建区段
 seo-title: Build segments | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 构建区段
 description: 在本课程中，我们将根据在上一课程中摄取的用户档案数据构建一些区段。
-role: Data Architect
+role: Developer
 feature: Data Governance
 jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -25,10 +25,10 @@ ht-degree: 0%
 **数据架构师**&#x200B;需要在本教程之外创建区段，并通过此任务支持他们的同事。
 
 在开始练习之前，请观看此简短视频，了解有关创建区段的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/31670?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on&enablevpops)
 
 
-## 所需的权限
+## 需要权限
 
 在[配置权限](configure-permissions.md)课程中，您已设置完成本课程所需的所有访问控制，特别是：
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 单击左侧导航中的&#x200B;**[!UICONTROL 区段]**，让我们花些时间查看一下我们的三个区段：
 
 * 我们的两个区段是批处理区段，一个是流式区段。
-* Platform会尽可能默认使用流式客户细分，这样客户在符合条件后即可尽快获得细分资格。 当区段定义过于复杂而无法流式传输时，它们会自动转换为批处理。 在这种情况下，这两个区段将默认使用批处理，因为采购事件的回顾时间范围大于7天。 有关流限制的完整和当前列表，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html?lang=zh-Hans)。
+* Platform会尽可能默认使用流式客户细分，这样客户在符合条件后即可尽快获得细分资格。 当区段定义过于复杂而无法流式传输时，它们会自动转换为批处理。 在这种情况下，这两个区段将默认使用批处理，因为采购事件的回顾时间范围大于7天。 有关流限制的完整和当前列表，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html)。
 * 批处理作业按每日计划运行，可以切换该计划。
 
 ![在过去30天区段内购买相同产品](assets/segment-review.png)

@@ -4,10 +4,10 @@ description: 将ACCS连接到AEM Assets CS
 kt: 5342
 doc-type: tutorial
 exl-id: 2b944efe-3997-46a0-9eb0-61dfda67f5b9
-source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1671'
+ht-degree: 1%
 
 ---
 
@@ -278,13 +278,13 @@ ht-degree: 0%
 为此产品添加以下SKU：
 
 | 键 | 值 | 使用情况 |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | `iPhone-Air-Light-Gold` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Light-Gold-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Light-Gold-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Light-Gold-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 
-然后您应该拥有此项。 单击&#x200B;**保存并关闭**。
+然后您应该拥有此项。 单击&#x200B;**“保存并关闭”。**
 
 ![ACCS+AEM Assets](./images/accsaemassets46.png)
 
@@ -303,14 +303,14 @@ ht-degree: 0%
 为此产品添加以下SKU：
 
 | 键 | 值 | 使用情况 |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | `iPhone-Air-Space-Black` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Space-Black-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Space-Black-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Space-Black-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air` | `1` | `thumbnail, image, swatch_image, small_image` |
 
-然后您应该拥有此项。 单击&#x200B;**保存并关闭**。
+然后您应该拥有此项。 单击&#x200B;**“保存并关闭”。**
 
 ![ACCS+AEM Assets](./images/accsaemassets202.png)
 
@@ -329,13 +329,13 @@ ht-degree: 0%
 为此产品添加以下SKU：
 
 | 键 | 值 | 使用情况 |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | `iPhone-Air-Sky-Blue` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Sky-Blue-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Sky-Blue-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Sky-Blue-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 
-然后您应该拥有此项。 单击&#x200B;**保存并关闭**。
+然后您应该拥有此项。 单击&#x200B;**“保存并关闭”。**
 
 ![ACCS+AEM Assets](./images/accsaemassets206.png)
 
@@ -354,13 +354,13 @@ ht-degree: 0%
 为此产品添加以下SKU：
 
 | 键 | 值 | 使用情况 |
-|:-------------:| :---------------:| :---------------:| 
+|:-------------:| :---------------:| :---------------:|
 | `iPhone-Air-Cloud-White` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Cloud-White-256GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Cloud-White-512GB` | `1` | `thumbnail, image, swatch_image, small_image` |
 | `iPhone-Air-Cloud-White-1TB` | `1` | `thumbnail, image, swatch_image, small_image` |
 
-然后您应该拥有此项。 单击&#x200B;**保存并关闭**。
+然后您应该拥有此项。 单击&#x200B;**“保存并关闭”。**
 
 ![ACCS+AEM Assets](./images/accsaemassets210.png)
 

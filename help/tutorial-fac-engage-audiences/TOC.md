@@ -2,11 +2,11 @@
 user-guide-title: 使用联合受众组合直接从数据仓库吸引受众
 breadcrumb-title: 联合受众构成
 user-guide-description: 本指南通过利用您现有的技术栈栈来使用联合受众组合构建和丰富受众，从而最大限度地减少数据复制。
-role: Data Architect, Data Engineer, Developer
+role: Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 93b787112134919444150974c7149dc10c2d0ca6
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '107'
 ht-degree: 3%

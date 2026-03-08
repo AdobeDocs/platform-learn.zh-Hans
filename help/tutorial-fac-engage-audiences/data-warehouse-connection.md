@@ -3,11 +3,11 @@ title: 数据仓库连接
 seo-title: Configure a data warehouse connection | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: 数据仓库连接
 description: 在本练习中，我们将配置Adobe Experience Platform与您的企业Data Warehouse之间的连接以启用联合受众合成。
-role: Data Architect, Data Engineer
+role: Developer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
-source-git-commit: 7e2f7bbb392eba51c0d6b9ccc8224c2081a01c7c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 我们首先配置Adobe Experience Platform与您的企业Data Warehouse之间的连接。 我们根据数据在Data Warehouse中的存放方式使用架构和数据模型来支持查询构建。
 
-为了演示，我们连接到Snowflake帐户。 联合受众组合支持不断增长的数据仓库连接列表。 查看[更新的集成列表](https://experienceleague.adobe.com/zh-hans/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
+为了演示，我们连接到Snowflake帐户。 联合受众组合支持不断增长的数据仓库连接列表。 查看[更新的集成列表](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}。
 
 ## 步骤
 

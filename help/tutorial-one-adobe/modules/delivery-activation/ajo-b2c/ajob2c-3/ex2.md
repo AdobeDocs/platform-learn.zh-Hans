@@ -4,7 +4,7 @@ description: 使用推送消息配置历程
 kt: 5342
 doc-type: tutorial
 exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
-source-git-commit: fb14ba45333bdd5834ff0c6c2dc48dda35cfe85f
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '770'
 ht-degree: 1%
@@ -33,8 +33,8 @@ ht-degree: 1%
 
 然后，您将看到空的事件配置。
 首先，为您的事件提供如下名称： `--aepUserLdap--StoreEntryEvent`并将描述设置为`Store Entry Event`。
-下一个是&#x200B;**事件类型**&#x200B;选择。 选择&#x200B;**单一**。
-下一个是&#x200B;**事件ID类型**&#x200B;选择。 选择&#x200B;**系统生成的**。
+下一个是**事件类型**&#x200B;选择。 选择&#x200B;**单一**。
+下一个是**事件ID类型**&#x200B;选择。 选择&#x200B;**系统生成的**。
 
 ![ACOP](./images/eventname.png)
 
@@ -103,11 +103,11 @@ ht-degree: 1%
 
 你会看到这个。 您现在可以直接从Real-time Customer Profile中选择任何用户档案属性。
 
-搜索字段&#x200B;**名字**，然后单击字段&#x200B;**名字**&#x200B;旁边的&#x200B;**+**&#x200B;图标。 随后您将看到添加的名字的个性化令牌： **{{profile.person.name.firstName}}**。
+搜索字段&#x200B;**名字**，然后单击字段&#x200B;**名字**&#x200B;旁边的&#x200B;**+**&#x200B;图标。 随后您将看到添加的名字的个性化令牌： **`{{profile.person.name.firstName}}`**。
 
 ![推送](./images/bp9.png)
 
-接下来，添加文本&#x200B;**，欢迎来到我们的商店！**&#x200B;在&#x200B;**{{profile.person.name.firstName}}**&#x200B;之后。
+接下来，添加文本&#x200B;**，欢迎来到我们的商店！**&#x200B;在&#x200B;**`{{profile.person.name.firstName}}`**&#x200B;之后。
 
 单击&#x200B;**保存**。
 

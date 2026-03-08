@@ -4,9 +4,9 @@ description: GenStudio for Performance Marketing的摘要和好处 — 可扩展
 kt: 5342
 doc-type: tutorial
 exl-id: f5b9f7bf-ea95-410f-a2ae-e244641e2412
-source-git-commit: 44559d6278da4bed8a864d0faf092352b8370398
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '45'
 ht-degree: 4%
 
 ---
@@ -18,6 +18,6 @@ ht-degree: 4%
 
 ## 后续步骤
 
-返回至[GenStudio for Performance Marketing — 可扩展性](./genstudioext.md){target="_blank"}
+返回<!--[GenStudio for Performance Marketing - Extensibility](./genstudioext.md){target="_blank"}-->
 
 返回[所有模块](./../../../overview.md){target="_blank"}

@@ -4,9 +4,9 @@ description: 使用BigQuery Google Analytics Connector在Adobe Experience Platfo
 kt: 5342
 doc-type: tutorial
 exl-id: 681f50d4-3c3f-43ae-a87e-36aff2840b88
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ ht-degree: 0%
 对于&#x200B;**数据集ID**，请使用以下命名约定。 对于其他字段，请保留默认设置。
 
 | 命名 | 示例 |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |
 
 单击&#x200B;**创建数据集**。
@@ -252,20 +252,20 @@ GROUP BY
 随后您将看到一个新弹出窗口，其中预填充了您的&#x200B;**项目名称**&#x200B;和&#x200B;**数据集名称**。 数据集名称应该是您在本练习开始时创建的数据集，并采用以下命名约定：
 
 | 命名 | 示例 |
-| ----------------- | ------------- | 
+| ----------------- | ------------- |
 | `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |
 
 现在，您需要输入表名称。 请使用此命名约定：
 
 | 命名 | 示例 |
-| ----------------- |------------- | 
+| ----------------- |------------- |
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |
 
 单击&#x200B;**保存**。
 
 ![演示](./images/ex316.png)
 
-在您创建的表中准备好数据可能需要一些时间。 几分钟后，刷新浏览器。 然后，您应该会在数据集内看到BigQuery项目内&#x200B;**资源管理器**&#x200B;下的`--aepUserLdap--_GAdataTableBigquery`表。
+在您创建的表中准备好数据可能需要一些时间。 几分钟后，刷新浏览器。 然后，您应该会在数据集内看到BigQuery项目内`--aepUserLdap--_GAdataTableBigquery`资源管理器&#x200B;**下的**&#x200B;表。
 
 ![演示](./images/ex319.png)
 

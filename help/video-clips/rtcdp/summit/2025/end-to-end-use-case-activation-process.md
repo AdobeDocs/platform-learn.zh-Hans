@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: 2b2d8cb2-012a-4683-9643-3287b58840f2
-source-git-commit: 90671959b653e120f93bca216a4da116a8f1c3bb
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 了解Adobe端到端用例激活流程从构思到优化的六个阶段。
 
 <!-- 65_S651_3442537_212_endtoend-use-case-activation-process -->
->[!VIDEO](https://video.tv.adobe.com/v/3460252/?learn=on&enablevpops=true&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3458248/?learn=on&enablevpops=true)

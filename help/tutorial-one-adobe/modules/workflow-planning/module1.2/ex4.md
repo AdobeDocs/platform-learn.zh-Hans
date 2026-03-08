@@ -3,7 +3,8 @@ title: Workfront快速入门
 description: Workfront快速入门
 kt: 5342
 doc-type: tutorial
-source-git-commit: 34f37a33e874f55eea37290b5626ab613f575764
+exl-id: 4d431d9d-2e4b-41a4-a31d-b641e2369ced
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '333'
 ht-degree: 1%
@@ -35,7 +36,7 @@ ht-degree: 1%
 您会看到&#x200B;**扩展配置**&#x200B;弹出窗口。 配置以下字段以使用此插件。
 
 | 键 | 值 |
-| --------------- | ------------------------------ | 
+| --------------- | ------------------------------ |
 | **`IMS_ENV`** | **生产** |
 | **`WORKFRONT_INSTANCE_URL`** | **https://experienceplatform.my.workfront.com** |
 | **`SHOW_CUSTOM_FORMS`** | **&#39;{&quot;previewUrl&quot;： true， &quot;publishUrl&quot;： true}&#39;** |

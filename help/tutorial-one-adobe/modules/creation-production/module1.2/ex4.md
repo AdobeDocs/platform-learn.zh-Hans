@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
-source-git-commit: 5af7b64e88dc0f260be030bca73d9fe9219ba255
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1983'
 ht-degree: 1%
@@ -138,7 +138,7 @@ ht-degree: 1%
 输入这些值，然后单击&#x200B;**添加**。
 
 | 键 | 值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `include` | `media_links.original` |
 
 ![帧IO](./images/aemf21b.png)
@@ -353,7 +353,7 @@ ht-degree: 1%
 
 ![帧IO](./images/aemf64.png)
 
-单击&#x200B;**保存并关闭**。
+单击&#x200B;**“保存并关闭”。**
 
 ![帧IO](./images/aemf65.png)
 

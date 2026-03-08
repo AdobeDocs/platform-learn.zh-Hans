@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
-source-git-commit: c9807ef0787f4390d12bc7285cfe71260aa3eabf
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '3353'
 ht-degree: 0%
@@ -372,7 +372,7 @@ ht-degree: 0%
 输入这些值，然后单击&#x200B;**添加**。
 
 | 键 | 值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `include` | `media_links.original` |
 
 ![帧IO](./images/frame58.png)
@@ -441,7 +441,7 @@ ht-degree: 0%
 
 在上一个练习中，您已配置方案`--aepUserLdap-- - Firefly + Photoshop`。 现在，您需要对此场景进行细微更改。
 
-在另一个选项卡中打开方案`--aepUserLdap-- - Firefly + Photoshop`，然后单击第一个&#x200B;**Adobe Photoshop — 应用PSD编辑**&#x200B;模块。 现在，您应该看到输入文件已配置为使用Microsoft Azure中的动态位置。 鉴于在此使用案例中，输入文件不再存储在Microsoft Azure中，而是使用Frame.io存储，因此您需要更改这些设置。
+在另一个选项卡中打开方案`--aepUserLdap-- - Firefly + Photoshop`，然后单击第一个&#x200B;**Adobe Photoshop — 应用PSD编辑**&#x200B;模块。 现在，您应该看到输入文件已配置为使用Microsoft Azure中的动态位置。 鉴于在此用例中，输入文件不再存储在Microsoft Azure中，而是使用Frame.io存储，因此您需要更改这些设置。
 
 ![帧IO](./images/frame63.png)
 
@@ -470,7 +470,7 @@ ht-degree: 0%
 ![帧IO](./images/frame69.png)
 
 将&#x200B;**Body type**&#x200B;设置为&#x200B;**Raw**&#x200B;并将&#x200B;**Content type**&#x200B;设置为&#x200B;**JSON (application/json)**。
-将以下JSON有效负载粘贴到字段&#x200B;**请求内容**&#x200B;中，并启用&#x200B;**分析响应**&#x200B;的复选框。
+将以下JSON有效负载粘贴到字段**请求内容**&#x200B;中，并启用&#x200B;**分析响应**&#x200B;的复选框。
 
 ```json
 {

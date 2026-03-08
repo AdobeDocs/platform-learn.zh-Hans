@@ -1,27 +1,27 @@
 ---
-title: 使用Microsoft Azure和预签名URL优化您的Firefly进程
-description: 了解如何使用Microsoft Azure和预签名URL优化Firefly过程
+title: 使用Microsoft Azure和预签名URL优化Firefly流程
+description: 了解如何使用Microsoft Azure和预签名的URL优化Firefly流程
 role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
-source-git-commit: a1da1c73cbddacde00211190a1ca3d36f7a2c329
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1944'
 ht-degree: 0%
 
 ---
 
-# 1.1.2使用Microsoft Azure和预签名URL优化您的Firefly进程
+# 1.1.2使用Microsoft Azure和预签名的URL优化您的Firefly过程
 
-了解如何使用Microsoft Azure和预签名URL优化Firefly过程。
+了解如何使用Microsoft Azure和预签名的URL优化Firefly流程。
 
 ## 1.1.2.1什么是预签名URL？
 
 预签名URL是一种授予您临时访问存储位置中特定对象权限的URL。 例如，使用URL，用户可以读取对象或写入对象（或更新现有对象）。 URL包含由应用程序设置的特定参数。
 
-在创建内容供应链自动化的上下文中，通常需要针对特定用例执行多个文件操作。 例如，可能需要更改文件的背景，可能需要更改各种图层的文本等。 并非总是可以同时执行所有文件操作，这就需要多步方法。 在每个中间步骤之后，输出是执行下一个步骤所需的临时文件。 执行下一步后，临时文件会快速丢失值，通常不再需要它，因此应将其删除。
+在创建内容supply chain自动化的上下文中，通常需要针对特定用例执行多个文件操作。 例如，可能需要更改文件的背景，可能需要更改各种图层的文本等。 并非总是可以同时执行所有文件操作，这就需要多步方法。 在每个中间步骤之后，输出是执行下一个步骤所需的临时文件。 执行下一步后，临时文件会快速丢失值，通常不再需要它，因此应将其删除。
 
 Adobe Firefly Services当前支持以下域：
 
@@ -40,7 +40,7 @@ Adobe Firefly Services当前支持以下域：
 
 预签名URL使用三个参数来限制用户的访问：
 
-- 存储位置：这可以是AWS S3存储段位置、带有容器的Microsoft Azure存储帐户位置
+- 存储位置：可以是AWS S3存储段位置，也可以是带有容器的Microsoft Azure存储帐户位置
 - 文件名：需要读取、更新、删除的特定文件。
 - 查询字符串参数：查询字符串参数始终以问号开头，后跟一系列复杂的参数
 
@@ -53,13 +53,13 @@ Adobe Firefly Services当前支持以下域：
 
 >[!NOTE]
 >
->如果您已有现有的Azure订阅，则可以跳过此步骤。 请继续该案例中的下一个练习。
+>如果您已经拥有Azure订阅，则可以跳过此步骤。 请继续该案例中的下一个练习。
 
 >[!NOTE]
 >
->如果您作为现场指导研讨会或指导式按需培训的一部分学习本教程，则可能已有权访问Microsoft Azure Storage帐户。 在这种情况下，您无需创建自己的帐户 — 请使用已在培训中提供给您的帐户。
+>如果您将本教程作为现场指导式研讨会或指导式按需培训的一部分来学习，则可能已有权访问Microsoft Azure存储帐户。 在这种情况下，您无需创建自己的帐户 — 请使用已在培训中提供给您的帐户。
 
-转到[https://portal.azure.com](https://portal.azure.com){target="_blank"}并使用您的Azure帐户登录。 如果您没有个人电子邮件地址，请使用个人电子邮件地址创建您的Azure帐户。
+转到[https://portal.azure.com](https://portal.azure.com){target="_blank"}并使用您的Azure帐户登录。 如果您没有电子邮件地址，请使用个人电子邮件地址创建您的Azure帐户。
 
 ![Azure存储](./images/02azureportalemail.png){zoomable="yes"}
 
@@ -67,9 +67,9 @@ Adobe Firefly Services当前支持以下域：
 
 ![Azure存储](./images/03azureloggedin.png){zoomable="yes"}
 
-在左侧菜单上选择&#x200B;**所有资源**，如果您尚未订阅，则会显示Azure订阅屏幕。
+在左侧菜单中选择&#x200B;**所有资源**，如果您尚未订阅，则会显示Azure订阅屏幕。
 
-如果未订阅，请选择&#x200B;**开始使用Azure免费试用**。
+如果您未订阅，请选择&#x200B;**开始使用Azure免费试用**。
 
 ![Azure存储](./images/04azurestartsubscribe.png){zoomable="yes"}
 
@@ -123,11 +123,11 @@ Adobe Firefly Services当前支持以下域：
 
 ## 1.1.2.4安装Azure存储资源管理器
 
-[下载Microsoft Azure Storage Explorer以管理您的文件](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}。 为您的特定操作系统选择正确的版本，然后下载并安装该版本。
+[下载Microsoft Azure Storage Explorer以管理文件](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}。 为您的特定操作系统选择正确的版本，然后下载并安装该版本。
 
 ![Azure存储](./images/az10.png){zoomable="yes"}
 
-打开应用程序并选择&#x200B;**使用Azure登录**。
+打开应用程序，然后选择&#x200B;**使用Azure登录**。
 
 ![Azure存储](./images/az11.png){zoomable="yes"}
 
@@ -147,7 +147,7 @@ Adobe Firefly Services当前支持以下域：
 
 ![Azure存储](./images/az15.png){zoomable="yes"}
 
-返回Microsoft Azure Storage Explorer应用，选择您的订阅，然后选择&#x200B;**打开资源管理器**。
+返回Microsoft Azure Storage Explorer应用程序，选择您的订阅，然后选择&#x200B;**打开资源管理器**。
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ Adobe Firefly Services当前支持以下域：
 ![Azure存储](./images/az22.png){zoomable="yes"}
 
 返回Postman打开请求&#x200B;**POST - Firefly - T2I (styleref) V3**。
-这出现在&#x200B;**正文**&#x200B;中。
+这出现在**正文**&#x200B;中。
 
 ![Azure存储](./images/az23.png){zoomable="yes"}
 
@@ -211,7 +211,7 @@ Adobe Firefly Services当前支持以下域：
 
 ## 1.1.2.6编程文件上传
 
-若要通过Azure存储帐户使用编程文件上传，您需要创建一个新的&#x200B;**共享访问签名(SAS)**&#x200B;令牌，该令牌具有允许您写入文件的权限。
+若要使用Azure存储帐户的程序化文件上传，您需要创建一个新的&#x200B;**共享访问签名(SAS)**&#x200B;令牌，该令牌具有允许您写入文件的权限。
 
 在Azure Storage Explorer中，右键单击您的容器，然后选择&#x200B;**获取共享访问签名**。
 
@@ -239,7 +239,7 @@ Adobe Firefly Services当前支持以下域：
 
 ![Azure存储](./images/az30.png){zoomable="yes"}
 
-将空请求的名称更改为&#x200B;**将文件上载到Azure Storage Account**，将&#x200B;**请求类型**&#x200B;更改为&#x200B;**PUT**，并在URL部分中粘贴SAS令牌URL，然后选择&#x200B;**正文**。
+将空请求的名称更改为&#x200B;**将文件上载到Azure存储帐户**，将&#x200B;**请求类型**&#x200B;更改为&#x200B;**PUT**，并在URL部分中粘贴SAS令牌URL，然后选择&#x200B;**正文**。
 
 ![Azure存储](./images/az31.png){zoomable="yes"}
 
@@ -255,7 +255,7 @@ Adobe Firefly Services当前支持以下域：
 
 ![Azure存储](./images/az33.png){zoomable="yes"}
 
-接下来，将光标放在问号&#x200B;**前面，指定要在Azure存储帐户中使用的文件名？URL中的**，如下所示：
+接下来，将光标放在问号&#x200B;**前面，指定要在Azure Storage帐户中使用的文件名？URL中的**，如下所示：
 
 ![Azure存储](./images/az34.png){zoomable="yes"}
 
@@ -272,7 +272,7 @@ URL当前看起来像这样，但需要更改。
 接下来，转到&#x200B;**标头**&#x200B;以手动添加新标头，如下所示：
 
 | 键 | 值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `x-ms-blob-type` | `BlockBlob` |
 
 
@@ -286,17 +286,17 @@ URL当前看起来像这样，但需要更改。
 
 ![Azure存储](./images/az37.png){zoomable="yes"}
 
-返回到Azure存储资源管理器中刷新文件夹的内容，新上传的文件随即显示。
+返回Azure Storage Explorer刷新文件夹的内容，新上传的文件随即显示。
 
 ![Azure存储](./images/az38.png){zoomable="yes"}
 
 ## 1.1.2.7编程文件使用
 
-若要以编程方式长期读取Azure存储帐户中的文件，您需要创建一个新的&#x200B;**共享访问签名(SAS)**&#x200B;令牌，该令牌具有允许您读取文件的权限。 从技术上讲，您可以使用在上一个练习中创建的SAS令牌，但最佳实践是让单独的令牌仅具有&#x200B;**读取**&#x200B;权限，而单独的令牌仅具有&#x200B;**写入**&#x200B;权限。
+要以编程方式长期读取Azure存储帐户中的文件，您需要创建一个新的&#x200B;**共享访问签名(SAS)**&#x200B;令牌，该令牌具有允许您读取文件的权限。 从技术上讲，您可以使用在上一个练习中创建的SAS令牌，但最佳实践是让单独的令牌仅具有&#x200B;**读取**&#x200B;权限，而单独的令牌仅具有&#x200B;**写入**&#x200B;权限。
 
 ### 长期读取SAS令牌
 
-返回到Azure存储资源管理器，右键单击您的容器，然后选择&#x200B;**获取共享访问签名**。
+返回到Azure Storage Explorer，右键单击您的容器，然后选择&#x200B;**获取共享访问签名**。
 
 ![Azure存储](./images/az27.png){zoomable="yes"}
 
@@ -327,7 +327,7 @@ URL当前看起来像这样，但需要更改。
 
 ### 长期写入SAS令牌
 
-返回到Azure存储资源管理器，右键单击您的容器并选择&#x200B;**获取共享访问签名**。
+返回到Azure Storage Explorer，右键单击您的容器，然后选择&#x200B;**获取共享访问签名**。
 
 ![Azure存储](./images/az27.png){zoomable="yes"}
 

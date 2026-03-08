@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: fa1b2945-f4cf-46e5-8bb5-914ef58be4c0
-source-git-commit: 90671959b653e120f93bca216a4da116a8f1c3bb
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '46'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 探索在Adobe Experience Platform中管理数据和工作流的单个沙盒策略与多沙盒策略之间的利弊得失。
 
 <!-- 62_S601_3442532_179_single-vs-multisandbox-approach-in-aep -->
->[!VIDEO](https://video.tv.adobe.com/v/3462672/?learn=on&enablevpops=true&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3458324/?learn=on&enablevpops=true)

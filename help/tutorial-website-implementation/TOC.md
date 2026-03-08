@@ -4,14 +4,14 @@ breadcrumb-title: Web 教程
 user-guide-description: 了解如何在网站上使用标记实施 Adobe Experience Cloud 解决方案。
 solution: Data Collection
 feature: Tags
-role: Data Engineer, Developer
+role: Developer
 level: Beginner,Intermediate
 jira: KT-2179
 recommendations: noDisplay,noCatalog
-source-git-commit: 42427df298e2c5ae734ce050e935378db51e66a1
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '86'
-ht-degree: 51%
+ht-degree: 53%
 
 ---
 
@@ -30,5 +30,5 @@ ht-degree: 51%
    + [添加 Adobe Analytics](analytics.md)
    + [添加 Adobe Audience Manager](audience-manager.md)
    + [Experience Cloud 集成](integrations.md)
-+ Publish您的资产{#publish}
-   + [Publish您的资产](publish.md)
++ 发布您的资产{#publish}
+   + [发布您的资产](publish.md)

@@ -4,7 +4,7 @@ description: Audience Activation到Microsoft Azure事件中心 — 在Adobe Expe
 kt: 5342
 doc-type: tutorial
 exl-id: e48b7b50-c95b-46da-b696-494da3926325
-source-git-commit: 3d61d91111d8693ab031fbd7b26706c02818108c
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '550'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # 2.4.3在Adobe Experience Platform中配置Azure事件中心目标
 
-## 标识所需的Azure连接参数
+## 确定所需的Azure连接参数
 
 要在Adobe Experience Platform中配置事件中心目标，您需要执行以下操作：
 
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ### 事件中心命名空间
 
-要在Azure Portal中查找上述信息，请导航到[https://portal.azure.com/#home](https://portal.azure.com/#home)。 确保使用正确的Azure帐户。
+要在Azure门户中查找上述信息，请导航到[https://portal.azure.com/#home](https://portal.azure.com/#home)。 确保您使用正确的Azure帐户。
 
 单击Azure门户中的&#x200B;**所有资源**：
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 |---|---|---|
 | sasKeyName | SAS密钥名称 | RootManageSharedAccessKey |
 | sasKey | SAS密钥值 | pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY= |
-| 命名空间 | 事件中心命名空间 | `--aepUserLdap---aep-enablement` |
+| namespace | 事件中心命名空间 | `--aepUserLdap---aep-enablement` |
 | eventHubName | 事件中心 | `--aepUserLdap---aep-enablement-event-hub` |
 
 ## 在Adobe Experience Platform中创建Azure事件中心目标
@@ -109,6 +109,6 @@ ht-degree: 0%
 
 转到[2.4.4创建受众](./ex4.md){target="_blank"}
 
-返回至[Real-Time CDP：Audience Activation至Microsoft Azure事件中心](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
+返回至[Real-Time CDP： Audience Activation至Microsoft Azure事件中心](./segment-activation-microsoft-azure-eventhub.md){target="_blank"}
 
 返回[所有模块](./../../../../overview.md){target="_blank"}

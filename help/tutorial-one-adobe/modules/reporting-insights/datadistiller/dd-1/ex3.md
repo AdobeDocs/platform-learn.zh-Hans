@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 exl-id: ce04fa00-0247-4693-ba60-efc1746b9fec
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 2.1.3使用查询服务
 
-## 目标
+## 目的
 
 - 查找和浏览数据集
 - 了解如何在查询中处理Experience Data Model对象和属性
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 在1之初，我们通过Adobe Experience Platform探索的所有数据集也可以通过SQL接口作为表进行访问。 要列出这些表，可以使用&#x200B;**show tables；**&#x200B;命令。
 
-在&#x200B;**PSQL命令行接口**&#x200B;中执行`show tables;`。 （别忘了用分号结束您的命令）。
+在`show tables;`PSQL命令行接口&#x200B;**中执行**。 （别忘了用分号结束您的命令）。
 
 复制命令`show tables;`并在提示符处粘贴它：
 
@@ -41,14 +41,14 @@ ht-degree: 0%
 tech-insiders:all=> show tables;
                                name                               |                                                  dataSetId                                                   |                                       dataSet                                        | description |        labels        
 ------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------+----------------------
- ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             | 
- ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             | 
+ ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             |
+ ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             |
  ajo_consent_service_dataset                                      | 672a07c80fd5fd2aee4155ca                                                                                     | AJO Consent Service Dataset                                                          |             | 'PROFILE'
  ajo_email_tracking_experience_event_dataset                      | 672a07c926d57d2aef020230                                                                                     | AJO Email Tracking Experience Event Dataset                  :
                                name                               |                                                  dataSetId                                                   |                                       dataSet                                        | description |        labels        
 ------------------------------------------------------------------+--------------------------------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+-------------+----------------------
- ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             | 
- ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             | 
+ ajo_bcc_feedback_event_dataset                                   | 672a07cb7728e82aefa1ec56                                                                                     | AJO BCC Feedback Event Dataset                                                       |             |
+ ajo_classification_dataset                                       | 672a07cab55b0d2aef6f9626                                                                                     | AJO Classification Dataset                                                           |             |
  ajo_consent_service_dataset                                      | 672a07c80fd5fd2aee4155ca                                                                                     | AJO Consent Service Dataset                                                          |             | 'PROFILE'
  ajo_email_tracking_experience_event_dataset                      | 672a07c926d57d2aef020230                                                                                     | AJO Email Tracking Experience Event Dataset   
 ```
@@ -142,7 +142,7 @@ limit 1;
 
 返回到Adobe Experience Platform UI（应在浏览器中打开）或导航到[Adobe Experience Platform](https://experience.adobe.com/platform)。
 
-选择&#x200B;**架构**，在&#x200B;**搜索**&#x200B;字段中输入`Demo System - Event Schema for Website`，然后单击以打开架构`Demo System - Event Schema for Website (Global v1.1) Schema`。
+选择&#x200B;**架构**，在`Demo System - Event Schema for Website`搜索&#x200B;**字段中输入**，然后单击以打开架构`Demo System - Event Schema for Website (Global v1.1) Schema`。
 
 ![browse-schema.png](./images/browseschema.png)
 

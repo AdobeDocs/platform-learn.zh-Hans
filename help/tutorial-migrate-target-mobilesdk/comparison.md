@@ -2,10 +2,10 @@
 title: Target扩展与Offer Decisioning和Target扩展的比较
 description: 了解Offer Decisioning的Target扩展与Target扩展之间的差异，包括功能、功能、设置和数据流。
 exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '833'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
@@ -45,19 +45,19 @@ Offer Decisioning和Target扩展不同于适用于移动设备应用程序的Ado
 
 | 功能 | 目标扩展 | Offer Decisioning和Target扩展(Target通过Edge) |
 |---|---|---|
-| 预取模式 | 支持 | 支持 |
-| 执行模式 | 支持 | 不受支持 |
-| 自定义参数 | 支持 | 支持* |
-| 轮廓参数 | 支持 | 支持* |
-| 实体参数 | 支持 | 支持* |
-| 目标受众 | 支持 | 支持 |
-| Real-Time CDP受众 | 不支持 | 支持 |
-| Real-Time CDP属性 | 不支持 | 支持 |
-| 生命周期量度 | 支持 | 通过数据收集规则支持 |
-| thirdPartyId (mbox3rdPartyId) | 支持 | 通过数据流中的身份映射和Target第三方ID命名空间支持 |
-| 通知（显示、点击） | 支持 | 支持 |
-| 响应令牌 | 支持 | 支持 |
-| 移动设备预览（QA模式） | 支持 | Assurance有限支持 |
+| 预取模式 | 受支持 | 受支持 |
+| 执行模式 | 受支持 | 不受支持 |
+| 自定义参数 | 受支持 | 支持* |
+| 轮廓参数 | 受支持 | 支持* |
+| 实体参数 | 受支持 | 支持* |
+| 目标受众 | 受支持 | 受支持 |
+| Real-Time CDP受众 | 不支持 | 受支持 |
+| Real-Time CDP属性 | 不支持 | 受支持 |
+| 生命周期量度 | 受支持 | 通过数据收集规则支持 |
+| thirdPartyId (mbox3rdPartyId) | 受支持 | 通过数据流中的身份映射和Target第三方ID命名空间支持 |
+| 通知（显示、点击） | 受支持 | 受支持 |
+| 响应令牌 | 受支持 | 受支持 |
+| 移动设备预览（QA模式） | 受支持 | Assurance有限支持 |
 
 >[!IMPORTANT]
 >
@@ -90,4 +90,4 @@ Offer Decisioning和Target扩展不同于适用于移动设备应用程序的Ado
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Offer Decisioning和Target扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=zh-Hans#M625)中发帖让我们知道。
+>我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Offer Decisioning和Target扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)中发帖让我们知道。

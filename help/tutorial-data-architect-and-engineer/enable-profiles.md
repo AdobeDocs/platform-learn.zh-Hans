@@ -3,14 +3,14 @@ title: 启用实时客户档案
 seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 启用实时客户档案
 description: 在本课程中，您将为Real-time Customer Profile启用架构和数据集。
-role: Data Architect
+role: Developer
 feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '1089'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -26,16 +26,16 @@ ht-degree: 0%
 
 尽管听起来很神奇，但您无需为配置文件激活&#x200B;*所有数据*。 事实上，您应该只启用激活用例所需的数据。 启用要用于营销用例、呼叫中心集成等的数据，在这些用例中，您需要快速访问强大的客户档案。 如果您只上传数据进行分析，则可能不应为配置文件启用此功能。
 
-在决定您自己的哪些数据应为配置文件启用时，您应该查看实时客户配置文件数据[&#128279;](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hans)的重要护栏。
+在决定您自己的哪些数据应为配置文件启用时，您应该查看实时客户配置文件数据[的重要](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)护栏。
 
 <!--is this accurate. Are there other considerations to point out? -->
 
 **数据架构师**&#x200B;需要在本教程之外启用Real-Time Customer Profile。
 
 在开始练习之前，请观看此简短视频，了解有关Real-Time Customer Profile的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/31672?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
-## 所需的权限
+## 需要权限
 
 在[配置权限](configure-permissions.md)课程中，您已设置完成本课程所需的所有访问控制。
 
@@ -80,9 +80,9 @@ ht-degree: 0%
 
 现在该使用API启用`Luma CRM Schema`。 如果要跳过此练习并在用户界面中启用它，请直接进行下一步。
 
-### 获取架构的meta：altId
+### 获取架构的meta:altId
 
-首先，让我们获取`Luma CRM Schema`的`meta:altId`：
+首先，让我们获取`meta:altId`的`Luma CRM Schema`：
 
 1. 打开[!DNL Postman]
 1. 如果您没有访问令牌，请打开请求&#x200B;**[!DNL OAuth: Request Access Token]**，然后选择&#x200B;**发送**&#x200B;以请求新的访问令牌，就像在[!DNL Postman]课程中一样。
@@ -90,11 +90,11 @@ ht-degree: 0%
 1. 选择&#x200B;**发送**&#x200B;按钮
 1. 您应该收到200响应
 1. 查看`Luma CRM Schema`项的响应并复制`meta:altId`值
-   ![复制meta：altIid](assets/profile-crm-getMetaAltId.png)
+   ![复制元:altIid](assets/profile-crm-getMetaAltId.png)
 
 ### 启用架构
 
-现在我们有了架构的meta：altId，可以为配置文件启用它：
+现在我们拥有了架构的meta:altId，可以为配置文件启用它：
 
 1. 打开请求&#x200B;**[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]**
 1. 在&#x200B;**参数**&#x200B;中，将您的`meta:altId`值粘贴为`SCHEMA_ID`参数值
@@ -111,7 +111,7 @@ ht-degree: 0%
 1. 选择&#x200B;**发送**&#x200B;按钮
 1. 您应该收到200响应
 
-   ![使用作为SCHEMA_ID参数的自定义meta：altIid为配置文件启用CRM架构](assets/profile-crm-enableProfile.png)
+   ![为配置文件启用CRM架构，您的自定义元数据:altIid用作SCHEMA_ID参数](assets/profile-crm-enableProfile.png)
 
 您应该能够在用户界面中看到已为配置文件启用所有五个架构（您可能需要按SHIFT重新加载才能看到`Luma CRM Schema`已启用）：
 ![所有架构已启用](assets/profile-allSchemasEnabled.png)
@@ -143,7 +143,7 @@ ht-degree: 0%
 
 ### 获取数据集的id
 
-首先，我们需要获取`Luma CRM Dataset`的`id`：
+首先，我们需要获取`id`的`Luma CRM Dataset`：
 
 1. 打开[!DNL Postman]
 1. 如果您没有访问令牌，请打开请求&#x200B;**[!DNL OAuth: Request Access Token]**，然后选择&#x200B;**发送**&#x200B;以请求新的访问令牌，就像在[!DNL Postman]课程中一样。

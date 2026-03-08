@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 42e260e0-8af0-4d71-b634-48c1966bd912
-source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '699'
 ht-degree: 1%
@@ -66,7 +66,7 @@ ht-degree: 1%
 需要定义以下变量：
 
 | 键 | 值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `CONST_client_id` | 您的Adobe I/O项目客户端ID |
 | `CONST_client_secret` | 您的Adobe I/O项目客户端密钥 |
 | `CONST_scope` | 您的Adobe I/O项目范围 |
@@ -124,7 +124,7 @@ ht-degree: 1%
 ![WF Fusion](./images/wffusion20.png)
 
 | 键 | 值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `URL` | `https://ims-na1.adobelogin.com/ims/token/v3` |
 | `Method` | `POST` |
 | `Body Type` | `x-www-form-urlencoded` |
@@ -136,7 +136,7 @@ ht-degree: 1%
 为以下每个值添加项目：
 
 | 键 | 值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `client_id` | `CONST_client_id`的预定义变量 |
 | `client_secret` | `CONST_client_secret`的预定义变量 |
 | `scope` | `CONST_scope`的预定义变量 |

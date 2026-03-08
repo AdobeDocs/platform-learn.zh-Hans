@@ -2,7 +2,7 @@
 title: 将Target从at.js 2.x迁移到Web SDK
 description: 了解如何将Adobe Target实施从at.js 2.x迁移到Adobe Experience Platform Web SDK。 主题包括库概述、实施差异和其他值得注意的标注。
 exl-id: 43b9ae91-4524-4071-9eb4-12a0a8aec242
-source-git-commit: 4690d41f92c83fe17eda588538d397ae1fa28af0
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 1%
@@ -49,11 +49,11 @@ adobe.target.getOffer({
 
 +++
 
-+++使用`applyPropositions`命令的Platform Web SDK等效项：
++++使用`applyPropositions`命令的Platform Web SDK等效项： 
 
 1. 执行`sendEvent`命令以请求一个或多个位置（范围）的选件（建议）
 1. 使用元数据对象执行`applyPropositions`命令，元数据对象提供有关如何将内容应用于每个作用域的页面的说明
-1. 执行事件类型为`decisioning.propositionDisplay`的`sendEvent`命令以跟踪展示
+1. 执行事件类型为`sendEvent`的`decisioning.propositionDisplay`命令以跟踪展示
 
 ```JavaScript
 // Retrieve propositions for homepage_hero location (scope)
@@ -92,21 +92,21 @@ alloy("sendEvent", {
 
 +++
 
-Platform Web SDK为使用指定了`actionType`的`applyPropositions`命令将基于表单的活动应用到页面提供了更好的控制：
+Platform Web SDK为使用指定了`applyPropositions`的`actionType`命令将基于表单的活动应用到页面提供了更好的控制：
 
-| `actionType` | 描述 | at.js `applyOffer()` | 平台Web SDK `applyPropositions` |
+| `actionType` | 描述 | at.js `applyOffer()` | Platform Web SDK `applyPropositions` |
 | --- | --- | --- | --- |
 | `setHtml` | 清除容器的内容，然后将选件添加到容器 | 是（始终使用） | 是 |
 | `replaceHtml` | 移除容器并将其替换为选件 | 否 | 是 |
 | `appendHtml` | 在指定的选择器后附加选件 | 否 | 是 |
 
-请参阅有关使用Platform Web SDK渲染内容的[专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hans)，以获取其他渲染选项和示例。
+有关其他呈现选项和示例，请参阅有关使用Platform Web SDK呈现内容的[专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)。
 
 ## 实施示例
 
 下面的示例页面基于上一节中概述的实现，只是它向`sendEvent`命令添加了其他范围。
 
-+++具有多个范围的Platform Web SDK示例
++++具有多个作用域的Platform Web SDK示例
 
 ```HTML
 <!doctype html>
@@ -197,8 +197,10 @@ Platform Web SDK为使用指定了`actionType`的`applyPropositions`命令将基
 </html>
 ```
 
++++
+
 接下来，了解如何使用Platform Web SDK[传递Target参数](send-parameters.md)。
 
 >[!NOTE]
 >
->我们致力于帮助您成功完成从at.js到Web SDK的Target迁移。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=zh-Hans#M463)中发帖让我们知道。
+>我们致力于帮助您成功从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。

@@ -3,7 +3,7 @@ title: 安装 Adobe Experience Platform Mobile SDK
 description: 了解如何在移动应用程序中实施 Adobe Experience Platform Mobile SDK。
 jira: KT-14627
 exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
-source-git-commit: 008d3ee066861ea9101fe9fe99ccd0a088b63f23
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1768'
 ht-degree: 3%
@@ -253,6 +253,6 @@ import com.adobe.marketing.mobile.optimize.Optimize
 >
 >您现在已安装必要的软件包，并更新了项目以注册所需的Adobe Experience Platform Mobile SDK扩展，您将在本教程的其余部分使用这些扩展。
 >
->感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796?profile.language=zh-Hans)上分享这些内容
+>感谢您投入时间学习Adobe Experience Platform Mobile SDK。 如果您有任何疑问、希望分享一般反馈或有关于未来内容的建议，请在此[Experience League社区讨论帖子](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)上分享这些内容
 
 下一步：**[设置Assurance](assurance.md)**

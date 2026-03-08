@@ -3,15 +3,15 @@ title: 创建沙盒
 seo-title: Create a sandbox | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: 创建沙盒
 description: 在本课程中，您将创建一个开发环境沙盒，您可以在本教程的其余部分使用该沙盒。
-role: Data Architect, Data Engineer
+role: Developer
 feature: Sandboxes
 jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '398'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 2%
 **数据架构师**&#x200B;和&#x200B;**数据工程师**&#x200B;需要在本教程之外创建沙盒。
 
 在开始练习之前，请观看此简短视频，了解更多有关沙箱的信息：
->[!VIDEO](https://video.tv.adobe.com/v/3430297/?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on&enablevpops)
 
-## 所需的权限
+## 需要权限
 
 在[配置权限](configure-permissions.md)课程中，您已设置完成本课程所需的所有访问控制。
 
@@ -51,7 +51,7 @@ ht-degree: 2%
 1. 选择&#x200B;**[!UICONTROL 开发]**&#x200B;作为&#x200B;**[!UICONTROL 类型]**
 1. 命名沙盒`luma-tutorial`（考虑将您的名称添加到末尾）
 1. 为教程命名`Luma Tutorial`（考虑在结尾处添加您的名字）
-1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;按钮
+1. 选择&#x200B;**[!UICONTROL 创建]**按钮
    ![创建沙盒](assets/sandbox-nameSandbox.png)
    >[!NOTE]
    >

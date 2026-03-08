@@ -2,9 +2,9 @@
 title: 规划迁移 — 将移动应用程序中的Adobe Target实施迁移到Offer Decisioning和Target扩展
 description: 了解at.js与Platform Web SDK之间的主要区别，以及如何规划您的迁移工作。
 exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
-source-git-commit: 876e664a213aec954105bf2d5547baab5d8a84ea
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '315'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,8 @@ ht-degree: 0%
 > * **优化SDK**&#x200B;实现&#x200B;**Offer Decisioning和Target扩展**
 
 
-接下来，查看Target扩展与Offer Decisioning和Target扩展的详细[比较](detailed-comparison.md)，以更好地了解技术差异，并确定需要额外关注的领域。
+接下来，查看详细的<!--[comparison of the Target extension and the Offer Decisioning and Target extension](detailed-comparison.md)-->，以更好地了解技术差异，并确定需要额外关注的领域。
 
 >[!NOTE]
 >
->我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Offer Decisioning和Target扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484?profile.language=zh-Hans#M625)中发帖让我们知道。
+>我们致力于帮助您成功将Target移动设备扩展从Target扩展迁移到Offer Decisioning和Target扩展。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625)中发帖让我们知道。

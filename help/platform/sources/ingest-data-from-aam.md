@@ -4,12 +4,12 @@ description: 了解如何使用Audience Manager Data Connector将AAM中的特征
 feature: Sources
 topic: Integrations
 badgeIntegration: label="集成" type="positive"
-role: Data Engineer, Data Architect, Developer
+role: Developer
 level: Intermediate
 thumbnail: 331214.jpg
 jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
-source-git-commit: ad7ae1f2c6dc6ea943f56e74107b9aa8245b35ac
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # 使用Adobe Audience Manager Data Connector引入数据
 
-在此集成视频中，了解如何使用Audience Manager Data Connector将AAM中的特征和区段引入平台，并将其与其他丰富数据相结合。 有关详细信息，请参阅[Audience Manager源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hans)。
+在此集成视频中，了解如何使用Audience Manager Data Connector将AAM中的特征和区段引入平台，并将其与其他丰富数据相结合。 有关详细信息，请参阅[Audience Manager源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/346982/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 
 在重新配置从Adobe Audience Manager移动到Real-Time Customer Data Platform (Real-Time CDP)的流程和人员时，您可以使用Audience Manager Data Connector将AAM中的特征和区段引入平台，将它们与其他丰富数据（包括PII）相结合，并将它们发送给目标合作伙伴。 本视频向您介绍适用于Real-Time CDP的AAM数据连接器的配置。
 

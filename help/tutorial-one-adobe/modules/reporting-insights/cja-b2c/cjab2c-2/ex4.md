@@ -4,9 +4,9 @@ description: 使用BigQuery Google Analytics Connector在Adobe Experience Platfo
 kt: 5342
 doc-type: tutorial
 exl-id: f58af1cf-6f2e-420c-9eed-29382806a9f4
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '720'
 ht-degree: 2%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 2%
 在本练习中使用下面的映射表。
 
 | 源字段 | 目标字段 |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `_id` | `_id` |
 | `_id` | 渠道。_id |
 | `timeStamp` | 时间戳 |
@@ -88,7 +88,7 @@ ht-degree: 2%
 对于某些字段，您需要删除原始映射并为&#x200B;**计算字段**&#x200B;创建新映射。
 
 | 计算字段 | 目标字段 |
-| ----------------- |-------------| 
+| ----------------- |-------------|
 | `iif(Unique_Purchases == null, 0, Unique_Purchases)` | commerce.purchases.value |
 | `iif(Product_Detail_Views == null, 0, Product_Detail_Views)` | commerce.productViews.value |
 | `iif(Adds_To_Cart == null, 0, Adds_To_Cart)` | commerce.productListAdds.value |
@@ -111,7 +111,7 @@ ht-degree: 2%
 
 ![演示](./images/xdm34.png)
 
-## 1.2.4.3连接和数据摄取调度
+## 1.2.4.3连接和数据摄取计划
 
 您现在将看到&#x200B;**计划**&#x200B;选项卡：
 
@@ -129,8 +129,8 @@ ht-degree: 2%
 
 **delta**&#x200B;字段用于计划连接并仅上传进入BigQuery数据集的新行。 增量字段通常始终为时间戳列。 因此，对于未来的计划数据摄取，将仅摄取具有新的、更新的时间戳的行。
 
-选择&#x200B;**时间戳**&#x200B;作为增量字段。
-单击&#x200B;**下一步**。
+选择&#x200B;**时间戳**作为增量字段。
+单击**下一步**。
 
 ![演示](./images/ex437.png)
 

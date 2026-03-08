@@ -2,12 +2,12 @@
 title: 强制同意
 description: 了解如何强制同意
 feature: Consent
-role: User, Developer, Data Architect, Admin
+role: User, Developer, Admin
 level: Beginner
 jira: KT-10362
 thumbnail: 345677.jpeg
 exl-id: 08213d4a-195b-4f5f-b8f6-a516e6b52df4
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '47'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 了解如何创建策略以强制执行客户的同意首选项。 有关详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3412097?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on&enablevpops)
 
 >[!IMPORTANT]
 >

@@ -4,16 +4,16 @@ description: 查询服务 — 查询服务API
 kt: 5342
 doc-type: tutorial
 exl-id: c3afc4fe-df10-4d0e-8c2a-0b056ff797ea
-source-git-commit: 1e3a8d585503eddad4c642a3b13d2b5f7ddc9943
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '995'
 ht-degree: 2%
 
 ---
 
 # 2.1.8查询服务API
 
-## 目标
+## 目的
 
 - 使用查询服务API管理查询模板和查询计划
 
@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 文档
 
-- [Adobe Experience Platform查询服务帮助](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=zh-Hans)
+- [Adobe Experience Platform查询服务帮助](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
 - [查询服务API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## 查询服务API
@@ -58,7 +58,7 @@ limit 10;
 
 在计算机上打开Postman。 在模块2.1中，您创建了一个Postman环境并导入了一个Postman收藏集。 请按照[练习2.1.3](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md)中的说明进行操作，以防您尚未执行该操作。
 
-在您导入的Postman集合中，您将看到一个文件夹&#x200B;**3。 查询服务**。 如果未看到此文件夹，请按照[练习2.1.3](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md)中的说明重新下载[Postman收藏集](./../../../../assets/postman/postman_profile.zip)并在Postman中重新导入该收藏集。
+在您导入的Postman集合中，您将看到一个文件夹&#x200B;**3。 查询服务**。 如果未看到此文件夹，请按照[练习2.1.3](./../../../../assets/postman/postman_profile.zip)中的说明重新下载[Postman收藏集](./../../../../modules/delivery-activation/rtcdp-b2c/rtcdpb2c-1/ex3.md)并在Postman中重新导入该收藏集。
 
 ![QS](./images/pm3.png)
 
@@ -93,9 +93,9 @@ limit 10;
 ```sql
 {
     "name" : "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "--aepSandboxName--:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "--aepSandboxName--:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where --aepTenantId--.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
@@ -106,15 +106,15 @@ limit 10;
 ```json
 {
     "name" : "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "tech-insiders:all",
-	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
+    "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
+    "dbName": "tech-insiders:all",
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
 >[!NOTE]
 >
->上述JSON正文中的键&#x200B;**dbName**&#x200B;引用Adobe Experience Platform实例中使用的沙盒。 如果您使用的是PROD沙盒，则dbName应为&#x200B;**prod：all**；如果您使用其他沙盒（如实例&#x200B;**tech-insiders**），则dbName应等于&#x200B;**tech-insiders：all**。
+>上述JSON正文中的键&#x200B;**dbName**&#x200B;引用Adobe Experience Platform实例中使用的沙盒。 如果您使用的是PROD沙盒，则dbName应为&#x200B;**prod:all**；如果您使用其他沙盒（如实例&#x200B;**tech-insiders**），则dbName应等于&#x200B;**tech-insiders:all**。
 
 接下来，单击蓝色的&#x200B;**发送**&#x200B;按钮以创建该区段并查看其结果。
 

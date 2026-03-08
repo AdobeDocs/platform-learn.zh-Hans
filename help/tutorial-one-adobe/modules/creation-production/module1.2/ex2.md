@@ -6,7 +6,7 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
-source-git-commit: d4cb1ff51c9367fd0d249806e50b676d8a83c557
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '1991'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
 ![WF Fusion](./images/wffusion69.png)
 
 | 键 | 示例值 |
-|:-------------:| :---------------:| 
+|:-------------:| :---------------:|
 | `AZURE_STORAGE_URL` | `https://vangeluw.blob.core.windows.net` |
 | `AZURE_STORAGE_CONTAINER` | `vangeluw` |
 | `AZURE_STORAGE_SAS_READ` | `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D` |
@@ -224,7 +224,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffc21.png)
 
-现在，您需要输入希望Fusion使用的PSD文件的文件位置。 对于&#x200B;**存储**，选择&#x200B;**Azure**，对于&#x200B;**文件位置**，输入`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/{{1.AZURE_STORAGE_SAS_READ}}`。 将光标放在第二个`/`旁边。 然后，查看可用变量并向下滚动以查找变量&#x200B;**psdTemplate**。 单击变量&#x200B;**psdTemplate**&#x200B;以将其选定。
+现在，您需要输入希望Fusion使用的PSD文件的文件位置。 对于&#x200B;**存储**，请选择&#x200B;**Azure**，对于&#x200B;**文件位置**，输入`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/{{1.AZURE_STORAGE_SAS_READ}}`。 将光标放在第二个`/`旁边。 然后，查看可用变量并向下滚动以查找变量&#x200B;**psdTemplate**。 单击变量&#x200B;**psdTemplate**&#x200B;以将其选定。
 
 ![WF Fusion](./images/wffc22.png)
 
@@ -262,12 +262,12 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffc30.png)
 
-为&#x200B;**存储**&#x200B;选择&#x200B;**Azure**，将此`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}`粘贴到&#x200B;**文件位置**&#x200B;下，并在&#x200B;**类型**&#x200B;下选择&#x200B;**vnd.adobe.photoshop**。 单击以启用&#x200B;**显示高级设置**。
+为&#x200B;**Storage**&#x200B;选择&#x200B;**Azure**，将此`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-replacedbg.psd{{1.AZURE_STORAGE_SAS_WRITE}}`粘贴到&#x200B;**文件位置**&#x200B;下，并在&#x200B;**类型**&#x200B;下选择&#x200B;**vnd.adobe.photoshop**。 单击以启用&#x200B;**显示高级设置**。
 
 ![WF Fusion](./images/wffc31.png)
 
-在&#x200B;**高级设置**&#x200B;下，选择&#x200B;**是**&#x200B;以覆盖同名文件。
-单击&#x200B;**添加**。
+在&#x200B;**高级设置**&#x200B;下，选择&#x200B;**是**以覆盖同名文件。
+单击**添加**。
 
 ![WF Fusion](./images/wffc32.png)
 
@@ -309,7 +309,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffc37.png)
 
-对于&#x200B;**输入文件**，为&#x200B;**输入文件存储**&#x200B;选择&#x200B;**Azure**，并确保从上一个请求&#x200B;**Adobe Photoshop — 应用PSD编辑**&#x200B;中选择输出，您可以如下定义： ``{{XX.data[].`_links`.renditions[].href}}`` (将XX替换为上一个模块Adobe Photoshop — 应用PSD编辑的序列号)。
+对于&#x200B;**输入文件**，为&#x200B;**输入文件存储**&#x200B;选择&#x200B;**Azure**，并确保从上一个请求中选择输出&#x200B;**Adobe Photoshop — 应用PSD编辑**，您可以如下定义： ``{{XX.data[].`_links`.renditions[].href}}`` (将XX替换为上一个模块Adobe Photoshop — 应用PSD编辑的序列号)。
 
 接下来，单击&#x200B;**图层**&#x200B;下的&#x200B;**+添加项**&#x200B;以开始添加需要更新的文本图层。
 
@@ -423,7 +423,7 @@ ht-degree: 1%
 
 ![WF Fusion](./images/wffc59.png)
 
-通过使用Azure Storage Explorer，您可以在Azure Storage Explorer中双击新创建的PSD文件来查找并打开该文件。
+使用Azure Storage Explorer，您可以在Azure Storage Explorer中双击新创建的PSD文件来查找和打开该文件。
 
 ![WF Fusion](./images/wffc60.png)
 

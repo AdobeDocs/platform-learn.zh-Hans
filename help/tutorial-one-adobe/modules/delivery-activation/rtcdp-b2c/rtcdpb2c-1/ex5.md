@@ -4,7 +4,7 @@ description: 在呼叫中心查看您的实时客户资料的实际操作情况
 kt: 5342
 doc-type: tutorial
 exl-id: d3bd34a1-5577-4da7-a5a5-0f186b1a73c2
-source-git-commit: 2d5ca888eb24c1f65b4ecd48030ec8d1659b7f84
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '315'
 ht-degree: 5%

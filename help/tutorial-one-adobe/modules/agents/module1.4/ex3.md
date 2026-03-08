@@ -3,7 +3,7 @@ title: 使用数据收集标记实施Brand Concierge
 description: 使用数据收集标记实施Brand Concierge
 kt: 5342
 doc-type: tutorial
-source-git-commit: 3704abb57e9fa64c2ff6d6914b6da8b46a5f44aa
+source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 3%
@@ -120,10 +120,10 @@ window["alloy"]("sendEvent", {
         console.log("Conversation experience fetched", result);
         window["alloy"]("bootstrapConversationalExperience", {
             selector: "#brand-concierge-mount",
-						// src: "main.js",
+                       // src: "main.js",
             src: "https://experience-stage.adobe.net/solutions/experience-platform-brand-concierge-web-agent/static-assets/main.js",
             stylingConfigurations: window.styleConfiguration,
-						stickySession: true
+                        stickySession: true
         })
     });
 ```
