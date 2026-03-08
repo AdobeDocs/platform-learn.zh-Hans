@@ -18,6 +18,6 @@ ht-degree: 80%
 
 从概述图的引导式演练概括地了解 Adobe Experience Platform 的体系结构。
 
->[!VIDEO](https://video.tv.adobe.com/v/32456?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3422778?captions=chi_hans&learn=on&enablevpops)
 
 

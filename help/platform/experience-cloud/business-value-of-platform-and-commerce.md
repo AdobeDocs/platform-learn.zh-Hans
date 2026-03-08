@@ -25,5 +25,5 @@ ht-degree: 1%
 >
 > Magento现在称为Adobe Commerce
 
->[!VIDEO](https://video.tv.adobe.com/v/40376?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/328572?captions=chi_hans&learn=on&enablevpops)
 

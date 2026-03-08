@@ -18,5 +18,5 @@ ht-degree: 0%
 
 了解如何在Adobe Experience Platform用户界面中导航。
 
->[!VIDEO](https://video.tv.adobe.com/v/32792?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3430441?captions=chi_hans&learn=on&enablevpops)
 

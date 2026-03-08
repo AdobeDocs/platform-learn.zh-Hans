@@ -17,7 +17,7 @@ ht-degree: 42%
 
 此视频展示如何使用 HTTP API 端点实时让数据流入 Adobe Experience Platform。
 
->[!VIDEO](https://video.tv.adobe.com/v/331028?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3410926?captions=chi_hans&learn=on&enablevpops)
 
 ## 其他信息
 
