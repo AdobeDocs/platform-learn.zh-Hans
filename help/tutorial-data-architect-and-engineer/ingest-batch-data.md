@@ -242,14 +242,14 @@ ht-degree: 0%
 现在，让我们设置工作流：
 
 1. 在左侧导航中转到&#x200B;**[!UICONTROL 工作流]**
-1. 选择&#x200B;**[!UICONTROL 将CSV映射到XDM架构]**&#x200B;并选择&#x200B;**[!UICONTROL 启动]**按钮
+1. 选择&#x200B;**[!UICONTROL 将CSV映射到XDM架构]**&#x200B;并选择&#x200B;**[!UICONTROL 启动]**&#x200B;按钮
    ![启动工作流](assets/ingestion-products-launchWorkflow.png)
-1. 选择您的`Luma Product Catalog Dataset`并选择&#x200B;**[!UICONTROL 下一步]**按钮
+1. 选择您的`Luma Product Catalog Dataset`并选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮
    ![选择您的数据集](assets/ingestion-products-selectDataset.png)
-1. 添加您下载的`luma-products.csv`文件并选择&#x200B;**[!UICONTROL 下一步]**按钮
+1. 添加您下载的`luma-products.csv`文件并选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮
    ![选择您的数据集](assets/ingestion-products-selectData.png)
 1. 现在您位于映射器界面中，可以在其中将源数据（`luma-products.csv`文件中的列名之一）中的字段映射到目标架构中的XDM字段。 在我们的示例中，列名称与架构字段名称足够接近，因此映射器能够自动检测正确的映射！ 如果映射器无法自动检测右字段，则可以选择目标字段右侧的图标以选择正确的XDM字段。 此外，如果您不想从CSV摄取其中一列，则可以从映射器中删除该行。 欢迎在`luma-products.csv`中随意玩耍和更改列标题，以熟悉映射器的工作方式。
-1. 选择&#x200B;**[!UICONTROL 完成]**按钮
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;按钮
    ![选择您的数据集](assets/ingestion-products-mapper.png)
 
 ### 验证数据
@@ -296,25 +296,25 @@ ht-degree: 0%
 
 1. 在Platform用户界面中，将[!UICONTROL 源]目录筛选为&#x200B;**[!UICONTROL 云存储]**
 1. 请注意，`...`下有指向文档的便捷链接
-1. 在首选云存储供应商的框中，选择&#x200B;**[!UICONTROL 配置]**按钮
+1. 在首选云存储供应商的框中，选择&#x200B;**[!UICONTROL 配置]**&#x200B;按钮
    ![选择配置](assets/ingestion-offline-selectFTP.png)
 1. **[!UICONTROL 身份验证]**&#x200B;是第一步。 输入帐户的名称，例如`Luma's FTP Account`和身份验证详细信息。 对于所有云存储源，此步骤应该都非常相似，尽管字段可能略有不同。 输入帐户的身份验证详细信息后，您可以将其重新用于其他源连接，这些源连接可能按不同计划发送与同一帐户中其他文件不同的数据
 1. 选择&#x200B;**[!UICONTROL 连接到源按钮]**
-1. 当平台成功连接到Source时，选择&#x200B;**[!UICONTROL 下一步]**按钮
+1. 当平台成功连接到Source时，选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮
    ![验证源](assets/ingestion-offline-authentication.png)
 
 1. 在&#x200B;**[!UICONTROL 选择数据]**&#x200B;步骤中，用户界面将使用您的凭据打开云存储解决方案上的文件夹
 1. 选择要摄取的文件，例如`luma-offline-purchases.json`
 1. 选择&#x200B;**[!UICONTROL 作为]**&#x200B;数据格式`XDM JSON`
 1. 然后，您可以预览文件中的json结构和示例数据
-1. 选择&#x200B;**[!UICONTROL 下一步]**按钮
+1. 选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮
    ![选择您的数据文件](assets/ingestion-offline-selectData.png)
 
-1. 在&#x200B;**[!UICONTROL 映射]**&#x200B;步骤中，选择您的`Luma Offline Purchase Events Dataset`并选择&#x200B;**[!UICONTROL 下一步]**按钮。 在消息中请注意，由于我们要摄取的数据是JSON文件，因此没有将源字段映射到目标字段的映射步骤。 JSON数据必须已位于XDM中。 如果您正在摄取CSV，您将在以下步骤中看到完整映射用户界面：
+1. 在&#x200B;**[!UICONTROL 映射]**&#x200B;步骤中，选择您的`Luma Offline Purchase Events Dataset`并选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮。 在消息中请注意，由于我们要摄取的数据是JSON文件，因此没有将源字段映射到目标字段的映射步骤。 JSON数据必须已位于XDM中。 如果您正在摄取CSV，您将在以下步骤中看到完整映射用户界面：
    ![选择您的数据集](assets/ingestion-offline-mapping.png)
-1. 在&#x200B;**[!UICONTROL 计划]**&#x200B;步骤中，您可以选择从Source中摄取数据的频率。 请花些时间查看相关选项。 我们即将执行一次性摄取，因此将&#x200B;**[!UICONTROL 频率]**&#x200B;保留在&#x200B;**[!UICONTROL 一次]**&#x200B;并选择&#x200B;**[!UICONTROL 下一步]**按钮：
+1. 在&#x200B;**[!UICONTROL 计划]**&#x200B;步骤中，您可以选择从Source中摄取数据的频率。 请花些时间查看相关选项。 我们即将执行一次性摄取，因此将&#x200B;**[!UICONTROL 频率]**&#x200B;保留在&#x200B;**[!UICONTROL 一次]**&#x200B;并选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮：
    ![计划您的数据流](assets/ingestion-offline-scheduling.png)
-1. 在&#x200B;**[!UICONTROL 数据流详细信息]**&#x200B;步骤中，您可以选择数据流名称、输入可选描述、打开错误诊断以及部分摄取。 保持设置不变并选择&#x200B;**[!UICONTROL 下一步]**按钮：
+1. 在&#x200B;**[!UICONTROL 数据流详细信息]**&#x200B;步骤中，您可以选择数据流名称、输入可选描述、打开错误诊断以及部分摄取。 保持设置不变并选择&#x200B;**[!UICONTROL 下一步]**&#x200B;按钮：
    ![编辑数据流的详细信息](assets/ingestion-offline-detail.png)
 1. 在&#x200B;**[!UICONTROL 审核]**&#x200B;步骤中，您可以同时审核所有设置并进行编辑或选择&#x200B;**[!UICONTROL 完成]**&#x200B;按钮
 1. 保存后，您将登陆到如下屏幕：

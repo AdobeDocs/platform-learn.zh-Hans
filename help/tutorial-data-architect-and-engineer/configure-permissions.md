@@ -61,12 +61,12 @@ ht-degree: 1%
    ![选择添加新配置文件](assets/adminconsole-newProfile.png)
 
 1. 转到&#x200B;**[!UICONTROL 用户]**&#x200B;选项卡
-1. 选择&#x200B;**[!UICONTROL 添加用户]**按钮
+1. 选择&#x200B;**[!UICONTROL 添加用户]**&#x200B;按钮
    ![选择“添加用户”](assets/adminconsole-addUser.png)
 1. 完成工作流以将教程参与者作为用户添加到产品配置文件
 
 1. 转到&#x200B;**[!UICONTROL 开发人员]**&#x200B;选项卡
-1. 选择&#x200B;**[!UICONTROL 添加开发人员]**按钮
+1. 选择&#x200B;**[!UICONTROL 添加开发人员]**&#x200B;按钮
    ![选择“添加用户”](assets/adminconsole-addDeveloper.png)
 1. 完成工作流以将教程参与者作为开发人员添加到产品配置文件
 
@@ -141,11 +141,11 @@ Experience Platform的粒度权限在Platform界面的“权限”屏幕中进�
 1. 转到&#x200B;**[!UICONTROL 权限]**&#x200B;选项卡
 1. 打开&#x200B;**[!UICONTROL 平台]**
 1. 确保选择所有可用的平台（根据您的许可证，您可能会看到不同的选项）
-1. **[!UICONTROL 保存]**任何更改
+1. **[!UICONTROL 保存]**&#x200B;任何更改
    ![添加平台](assets/adminconsole-launch-addPlatforms.png)
 1. 打开&#x200B;**[!UICONTROL 属性]**
 1. 确保&#x200B;**[!UICONTROL 自动包含]**&#x200B;切换为关闭，以便您无法访问任何属性（我们将在稍后添加）
-1. **[!UICONTROL 保存]**任何更改
+1. **[!UICONTROL 保存]**&#x200B;任何更改
    ![删除属性](assets/adminconsole-launch-removeProperties.png)
 1. 打开&#x200B;**[!UICONTROL 属性权限]**
 1. 选择&#x200B;**[!UICONTROL 全部添加]**&#x200B;以添加所有属性权限
@@ -162,7 +162,7 @@ Experience Platform的粒度权限在Platform界面的“权限”屏幕中进�
 现在将您自己作为用户添加到数据收集配置文件：
 
 1. 转到&#x200B;**[!UICONTROL 用户]**&#x200B;选项卡
-1. 选择&#x200B;**[!UICONTROL 添加用户]**按钮
+1. 选择&#x200B;**[!UICONTROL 添加用户]**&#x200B;按钮
    ![选择“添加用户”](assets/adminconsole-launch-addUser.png)
 1. 完成工作流以将您自己作为用户添加到产品配置文件
 
