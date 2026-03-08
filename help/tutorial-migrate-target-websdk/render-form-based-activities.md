@@ -100,7 +100,7 @@ Platform Web SDK为使用指定了`applyPropositions`的`actionType`命令将基
 | `replaceHtml` | 移除容器并将其替换为选件 | 否 | 是 |
 | `appendHtml` | 在指定的选择器后附加选件 | 否 | 是 |
 
-有关其他呈现选项和示例，请参阅有关使用Platform Web SDK呈现内容的[专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html)。
+有关其他呈现选项和示例，请参阅有关使用Platform Web SDK呈现内容的[专用文档](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html?lang=zh-Hans)。
 
 ## 实施示例
 
@@ -203,4 +203,4 @@ Platform Web SDK为使用指定了`applyPropositions`的`actionType`命令将基
 
 >[!NOTE]
 >
->我们致力于帮助您成功从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463)中发帖让我们知道。
+>我们致力于帮助您成功从at.js迁移到Web SDK。 如果您在迁移过程中遇到障碍或觉得本指南中缺少关键信息，请在[此社区讨论](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587?profile.language=zh-Hans#M463)中发帖让我们知道。

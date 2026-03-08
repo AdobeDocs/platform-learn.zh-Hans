@@ -79,8 +79,8 @@ ht-degree: 0%
 >
 >在本课程的各个屏幕中，您会看到一些选项，**[!UICONTROL 错误诊断]**&#x200B;和&#x200B;**[!UICONTROL 部分摄取]**。 本教程中未介绍这些选项。 一些快速信息：
 >
->* 启用错误诊断会生成有关数据摄取的数据，然后您可以使用数据访问API查看这些数据。 有关详情，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html)。
->* 部分摄取允许您摄取包含错误的数据，最大摄取阈值由您指定。 有关详情，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
+>* 启用错误诊断会生成有关数据摄取的数据，然后您可以使用数据访问API查看这些数据。 有关详情，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html?lang=zh-Hans)。
+>* 部分摄取允许您摄取包含错误的数据，最大摄取阈值由您指定。 有关详情，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html?lang=zh-Hans)
 
 ### 验证数据
 
@@ -115,7 +115,7 @@ ht-degree: 0%
 
 ![数据摄取webhook](assets/ingestion-loyalty-webhook.png)
 
-有关通知的更多详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events)。
+有关通知的更多详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=zh-Hans#available-status-notification-events)。
 
 ## 使用平台API批量摄取数据
 
@@ -226,7 +226,7 @@ ht-degree: 0%
 
 ![数据摄取webhook](assets/ingestion-crm-webhook.png)
 
-有关通知的更多详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events)。
+有关通知的更多详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html?lang=zh-Hans#available-status-notification-events)。
 
 ## 通过工作流引入数据
 
@@ -282,7 +282,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->我们将在本练习中使用的离线购买数据包含日期时间数据。 日期时间数据应采用[ISO 8061格式字符串](https://www.iso.org/iso-8601-date-and-time-format.html)&#x200B;(&quot;2018-07-10T15:05:59.000-08:00&quot;)或以毫秒(1531263959000)为单位的Unix时间格式，并在摄取时转换为目标XDM类型。 有关数据转换和其他约束的详细信息，请参阅[批次摄取API文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types)。
+>我们将在本练习中使用的离线购买数据包含日期时间数据。 日期时间数据应采用[ISO 8061格式字符串](https://www.iso.org/iso-8601-date-and-time-format.html)&#x200B;(&quot;2018-07-10T15:05:59.000-08:00&quot;)或以毫秒(1531263959000)为单位的Unix时间格式，并在摄取时转换为目标XDM类型。 有关数据转换和其他约束的详细信息，请参阅[批次摄取API文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html?lang=zh-Hans#types)。
 
 ### 下载、准备数据并将其上传到您首选的云存储供应商
 
@@ -334,12 +334,12 @@ ht-degree: 0%
 
 Adobe与多个ETL供应商合作，支持将数据摄取到Experience Platform中。 由于第三方供应商的多样性，本教程中不包含ETL，但欢迎您查看以下部分资源：
 
-* [为Adobe Experience Platform开发ETL集成](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
+* [为Adobe Experience Platform开发ETL集成](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html?lang=zh-Hans)
 * [[!DNL Snaplogic] Adobe Experience Platform快照包](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## 其他资源
 
-* [批次摄取文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
+* [批次摄取文档](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html?lang=zh-Hans)
 * [批次摄取API引用](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 现在，让我们使用Web SDK[流式传输数据](ingest-streaming-data.md)

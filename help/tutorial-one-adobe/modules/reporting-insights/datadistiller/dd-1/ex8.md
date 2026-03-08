@@ -23,7 +23,7 @@ ht-degree: 2%
 
 ## 文档
 
-- [Adobe Experience Platform查询服务帮助](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
+- [Adobe Experience Platform查询服务帮助](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html?lang=zh-Hans)
 - [查询服务API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## 查询服务API

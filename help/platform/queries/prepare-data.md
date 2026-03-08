@@ -16,6 +16,6 @@ ht-degree: 0%
 
 # 使用数据Distiller获取数据
 
-了解数据工程师如何使用查询服务来转换数据和输出新数据集。 按计划运行这些查询，以推动自动功能板和分段。 有关详细信息，请访问[从查询结果生成输出数据集](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/create-datasets)。
+了解数据工程师如何使用查询服务来转换数据和输出新数据集。 按计划运行这些查询，以推动自动功能板和分段。 有关详细信息，请访问[从查询结果生成输出数据集](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/ui/create-datasets)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)

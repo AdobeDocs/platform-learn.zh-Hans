@@ -47,7 +47,7 @@ API是解决软件业务挑战的一种方法。 在大多数企业中，这是�
 
 大多数浏览器都有一个“地址栏”，显示某个网页的部分或全部“地址”。 当浏览器“获取”我们单击的链接的页面时，它会在地址栏中显示该页面的“地址”。 那么，网页的“地址”是什么呢？
 
-上面的`https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`是Web上某个页面的地址，它称为URL或统一资源定位器。 URL可以引用此类页面、图像文件、视频或其他文件类型。
+上面的`https://business.adobe.com/cn/products/experience-platform/adobe-experience-platform.html`是Web上某个页面的地址，它称为URL或统一资源定位器。 URL可以引用此类页面、图像文件、视频或其他文件类型。
 
 URL的![部分](../assets/api101-url-parts.jpg)
 
@@ -69,7 +69,7 @@ URL的![部分](../assets/api101-url-parts.jpg)
 
 **Origin**
 
-Origin是另一个要注意的术语，它与URL的部分密切相关。 在基本级别上，原点大致为`scheme`加`host`加`domain`，如`https://business.adobe.com`。 不同的值通常表示不同的源，如`https://business.adobe.com`和`http://business.adobe.com`不是同一源，因为它们具有不同的方案。 由于不同的子域，`https://www.adobe.com`和`https://business.adobe.com`在许多使用中也不是同一来源。
+Origin是另一个要注意的术语，它与URL的部分密切相关。 在基本级别上，原点大致为`scheme`加`host`加`domain`，如`https://business.adobe.com/cn`。 不同的值通常表示不同的源，如`https://business.adobe.com/cn`和`http://business.adobe.com/cn`不是同一源，因为它们具有不同的方案。 由于不同的子域，`https://www.adobe.com`和`https://business.adobe.com/cn`在许多使用中也不是同一来源。
 
 **路径**
 
@@ -133,13 +133,13 @@ Adobe Experience Platform数据访问API是一个Web API，它允许程序员从
 
 现在，您已了解与API相关的基本术语、概念和步骤，我们可以查看实际的API请求示例。
 
-浏览器示例中的页面的URL为`https://business.adobe.com/products/experience-platform/adobe-experience-platform.html`。 单击Adobe Experience Platform链接后，浏览器会对此页面发出`GET`请求。 由于我们有浏览器来为我们工作，因此我们只需单击，但如果程序员希望在软件应用程序中发生该请求，他们必须提供成功完成API请求所需的所有详细信息。
+浏览器示例中的页面的URL为`https://business.adobe.com/cn/products/experience-platform/adobe-experience-platform.html`。 单击Adobe Experience Platform链接后，浏览器会对此页面发出`GET`请求。 由于我们有浏览器来为我们工作，因此我们只需单击，但如果程序员希望在软件应用程序中发生该请求，他们必须提供成功完成API请求所需的所有详细信息。
 
 下面是代码中可能出现的形式：
 
 ```js
 fetch(
-  "https://business.adobe.com/products/experience-platform/adobe-experience-platform.html",
+  "https://business.adobe.com/cn/products/experience-platform/adobe-experience-platform.html",
   {
     headers: {
       accept:

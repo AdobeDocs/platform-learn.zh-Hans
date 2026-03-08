@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 使用Adobe Audience Manager Data Connector引入数据
 
-在此集成视频中，了解如何使用Audience Manager Data Connector将AAM中的特征和区段引入平台，并将其与其他丰富数据相结合。 有关详细信息，请参阅[Audience Manager源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html)。
+在此集成视频中，了解如何使用Audience Manager Data Connector将AAM中的特征和区段引入平台，并将其与其他丰富数据相结合。 有关详细信息，请参阅[Audience Manager源连接器文档](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/331214/?learn=on&enablevpops)
 

@@ -19,6 +19,6 @@ ht-degree: 0%
 
 # 在[!DNL Real-Time CDP]中将合作伙伴属性添加到第一方配置文件
 
-了解如何向您的第一方配置文件添加合作伙伴属性，以通过[!DNL Real-Time CDP]中的其他渠道扩展范围。 有关详细信息，请访问[使用合作伙伴提供的属性补充第一方配置文件](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html)文档。
+了解如何向您的第一方配置文件添加合作伙伴属性，以通过[!DNL Real-Time CDP]中的其他渠道扩展范围。 有关详细信息，请访问[使用合作伙伴提供的属性补充第一方配置文件](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html?lang=zh-Hans)文档。
 
 >[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on&enablevpops)

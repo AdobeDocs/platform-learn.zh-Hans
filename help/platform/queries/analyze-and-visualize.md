@@ -16,6 +16,6 @@ ht-degree: 28%
 
 # 在Tableau中使用查询服务分析和可视化全渠道洞察
 
-通过客户流失分析示例，了解如何将Adobe Experience Platform的查询服务与外部数据可视化工具结合使用。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/en/docs/experience-platform/query/home)。
+通过客户流失分析示例，了解如何将Adobe Experience Platform的查询服务与外部数据可视化工具结合使用。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on&enablevpops)

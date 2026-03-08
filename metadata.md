@@ -5,9 +5,9 @@ solution: Experience Platform
 landing-page-name: experience-platform
 landing-page-breadcrumb-title: Experience Platform
 solution-title: Documentation
-solution-hub-url: https://experienceleague.adobe.com/docs/experience-platform/landing/home.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-platform/landing/home.html?lang=zh-Hans
 getting-started-title: Experience League
-getting-started-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
+getting-started-url: https://experienceleague.adobe.com/zh-hans#recommended/solutions/experience-platform
 tutorials-title: Tutorials
 tutorials-url: /content/help/en/platform-learn/tutorials/overview.html
 git-repo: https://github.com/AdobeDocs/platform-learn.zh-Hans
