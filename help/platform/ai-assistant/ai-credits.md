@@ -17,6 +17,6 @@ ht-degree: 0%
 
 # 监测AI信用使用情况
 
-了解Experience Platform AI积分如何工作，以便您从第一天开始跟踪和管理您的使用情况。 有关详细信息，请参阅[Adobe Experience Platform代理作业和AI积分消耗文档](https://experienceleague.adobe.com/en/docs/core-services/interface/features/ai-credit-consumption)。
+了解Experience Platform AI积分如何工作，以便您从第一天开始跟踪和管理您的使用情况。 有关详细信息，请参阅[Adobe Experience Platform代理作业和AI积分消耗文档](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/features/ai-credit-consumption)。
 
 >[!SLIDE](ai-credits)
