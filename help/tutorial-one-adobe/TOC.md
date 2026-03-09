@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 13a411645ea4e06d06ee6ab27e4f726e87dbbf22
+source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '1540'
 ht-degree: 3%
 
 ---
@@ -290,6 +290,7 @@ ht-degree: 3%
       + [概述](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
       + [1.6.1 AEM Agent快速入门](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
       + [1.6.2 AEM MCP服务器和光标](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
+      + [1.6.3使用ChatGPT和MCP服务器扩展内容片段](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
    + 1.7适用于Adobe Commerce的智能开发人员工具 {#agents7}
       + [概述](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
       + [1.7.1设置开发环境](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)

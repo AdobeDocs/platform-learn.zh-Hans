@@ -4,9 +4,9 @@ description: AEM MCP服务器和光标
 kt: 5342
 doc-type: tutorial
 exl-id: c966623f-3b8b-451a-b5fb-5569ef50c88f
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 726d2d9e6a6faff88128e31d60c95b83ef346406
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '754'
 ht-degree: 0%
 
 ---
@@ -210,6 +210,8 @@ for the environment https://author-pXXXXXX-eXXXXXXX.adobeaemcloud.com/, list all
 ![Cursor + AEM](./images/cursoraiz12.png)
 
 ## 后续步骤
+
+转到[1.6.3使用ChatGPT和MCP服务器缩放内容片段](./ex3.md){target="_blank"}
 
 返回[AEM和代理](./aemagents.md){target="_blank"}
 
