@@ -3,9 +3,9 @@ title: 内容状态
 description: 内容状态
 doc-type: multipage-overview
 exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '596'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 10%
 | 名称 | 上次更新 | 工作100% | 备注 | 时间投资 |
 | ---------------------- | ------------ | ------------ |------------ | ------------ |
 | [1.1 Adobe Workfront计划](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 02/08/2025 | 是 | - | 45分钟 |
-| 使用Adobe Workfront进行[1.2工作流管理](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025 | 是 | 内容尚未完成 | 1小时30分钟 |
+| 使用Adobe Workfront进行[1.2工作流管理](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025 | 是 | - | 1小时30分钟 |
 
 ## 创建与生产
 
@@ -37,8 +37,9 @@ ht-degree: 10%
 | [1.4 Adobe Express和Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025 | 是 | - | 45分钟 |
 | [1.5使用Frame.io简化您的工作流](./modules/creation-production/module1.5/frameio.md){target="_blank"} | 02/08/2025 | 是 | - | 1h |
 | [1.6 GenStudio for Performance Marketing — 可扩展性](./modules/creation-production/module1.6/genstudioext.md){target="_blank"} | 21/08/2025 | 是 | - | 1小时30分钟 |
-| [1.7 Firefly自定义工作流](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 17/02/2026 | 是 | - | - |
-| [1.8企业存储管理](./modules/creation-production/module1.8/esm.md){target="_blank"} | 17/02/2026 | 是 | - | - |
+| [1.7 Firefly自定义工作流](./modules/creation-production/module1.7/workflowbuilder.md){target="_blank"} | 17/02/2026 | 是 | - | 45分钟 |
+| [1.8企业存储管理](./modules/creation-production/module1.8/esm.md){target="_blank"} | 17/02/2026 | 是 | - | 45分钟 |
+| [1.9 Firefly讨论区](./modules/creation-production/module1.9/fireflyboards.md){target="_blank"} | 11/03/2026 | 否 | 开发中的内容 | - |
 
 
 ## 资产管理
@@ -90,7 +91,7 @@ ht-degree: 10%
 | [1.2代理AI](./modules/agents/module1.2/agenticai.md){target="_blank"} | 02/02/2026 | 否 | 正在开发的内容 | 待定 |
 | [1.4 Brand Concierge](./modules/agents/module1.4/brandconcierge.md){target="_blank"} | 2026年1月23日 | 是 | - | 90分钟 |
 | [1.5 Analytics和代理](./modules/agents/module1.5/analyticsagents.md){target="_blank"} | 02/02/2026 | 是 | - | 45分钟 |
-| [1.6 Adobe Experience Manager和代理](./modules/agents/module1.6/aemagents.md){target="_blank"} | 17/02/2026 | 否 | 正在开发的内容 | 待定 |
+| [1.6 Adobe Experience Manager和代理](./modules/agents/module1.6/aemagents.md){target="_blank"} | 11/03/2026 | 是 | - | 90分钟 |
 | [1.7 Adobe Commerce的智能开发人员工具](./modules/agents/module1.7/aiassisteddev.md){target="_blank"} | 17/02/2026 | 是 | - | 45分钟 |
 
 {style="table-layout:auto"}

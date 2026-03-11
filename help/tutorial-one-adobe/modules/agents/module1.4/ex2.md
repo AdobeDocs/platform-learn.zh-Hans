@@ -4,9 +4,9 @@ description: 在您的网站上实施Brand Concierge
 kt: 5342
 doc-type: tutorial
 exl-id: 21c388b0-3604-448d-8d82-514a032e34f8
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '1347'
+source-wordcount: '1349'
 ht-degree: 0%
 
 ---
@@ -412,6 +412,8 @@ window["alloy"]("sendEvent", {
 然后，您应该会看到此Brand Concierge，您可以在其中输入提示。
 
 ![Brand Concierge](./images/aem14.png)
+
+## 后续步骤
 
 返回[Brand Concierge](./brandconcierge.md){target="_blank"}
 

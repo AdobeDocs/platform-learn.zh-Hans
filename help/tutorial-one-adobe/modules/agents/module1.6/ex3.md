@@ -3,9 +3,10 @@ title: 使用ChatGPT和MCP服务器扩展内容片段
 description: 使用ChatGPT和MCP服务器扩展内容片段
 kt: 5342
 doc-type: tutorial
-source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
+exl-id: b7105351-e9de-4b2c-b3d7-2d4c8627f852
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '937'
 ht-degree: 1%
 
 ---
@@ -280,6 +281,34 @@ find the content fragment --aepUserLdap-- - CitiSignal Fiber Max and make a vari
 您现在还可以在AEM UI中看到新变量。
 
 ![Agent Orchestrator](./images/chatgpt17.png)
+
+接下来，使用ChatGPT将内容片段翻译成更多变体。 输入以下提示并单击&#x200B;**发送**。
+
+```
+now do the same thing for the 5 top country's languages that CitiSignal does business with
+```
+
+![Agent Orchestrator](./images/chatgpt18.png)
+
+确认您的语言选择。
+
+![Agent Orchestrator](./images/chatgpt23.png)
+
+单击&#x200B;**CreateFragmentVariation**。
+
+![Agent Orchestrator](./images/chatgpt22.png)
+
+单击&#x200B;**UpdateFragment**。
+
+![Agent Orchestrator](./images/chatgpt24.png)
+
+为您选择的每种语言重复此过程。 完成后，您应该会看到类似这样的内容。
+
+![Agent Orchestrator](./images/chatgpt26.png)
+
+返回到AEM UI并刷新屏幕。 您现在可以在内容片段中看到新变体。
+
+![Agent Orchestrator](./images/chatgpt27.png)
 
 ## 后续步骤
 

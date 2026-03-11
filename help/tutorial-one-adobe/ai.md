@@ -3,9 +3,9 @@ title: Agentic AI技术实验室概述
 description: Agentic AI技术实验室概述
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: 1abfd8d1f270a810dd65d9921c69834df2a9147d
+source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -26,30 +26,6 @@ ht-degree: 0%
 - 识别高倾向性受众
 - 验证历程性能
 - 为CitiSignal Fiber Max转出创建新的历程
-
-[1.2代理和人工智能快速入门](./modules/agents/module1.2/agenticai.md)
-
->[!NOTE]
->
->此模块尚未发布。
-
-**目标**
-
-构建您自己的代理。
-
-学习者将构建自己的代理，该代理使用LLM分析请求。 然后，将利用对请求的分析来构建包含指令的计划，然后逐个执行这些指令。 要做到这一点，工程师需要了解有哪些技能可用。 学习者将自行构建大量技能，其中每一项技能将使用MCP服务器构建，并使用Adobe产品API(如Adobe Firefly Services、Workfront Fusion等)。
-
-- 图像GenAI
-- 文本源人工智能
-
-代理背后的体系结构是什么？
-
-技术元素：
-
-- Azure AI Foundry，LLM，副驾驶
-- n8n
-- MCP服务器， Python笔记本
-- Adobe API的
 
 [1.4Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 

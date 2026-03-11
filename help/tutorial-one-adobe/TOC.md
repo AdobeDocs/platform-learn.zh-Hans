@@ -4,10 +4,10 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 161950ccf1f253913612b9f264e584ca3537b0cd
+source-git-commit: 27804d5124fb1024c515b9ab22e5bbd40c4c80b3
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 3%
+source-wordcount: '1550'
+ht-degree: 4%
 
 ---
 
@@ -15,7 +15,6 @@ ht-degree: 3%
 # 一门Adobe技术教程 {#tutorial-one-adobe}
 
 + [教程概述](/help/tutorial-one-adobe/overview.md)
-+ [GenStudio for Content Supply chain技术支持](/help/tutorial-one-adobe/genstudiocsc.md)
 + [内容状态](/help/tutorial-one-adobe/status.md)
 + [架构](/help/tutorial-one-adobe/architecture.md)
 
@@ -31,6 +30,35 @@ ht-degree: 3%
       + [选项1：Postman设置](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
       + [选项2：PostBuster设置](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
       + [要安装的应用程序](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
+
++ 代理式 AI {#agents}
+   + 1.1Agent Orchestrator {#agents1}
+      + [概述](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
+      + [1.1.1 Agent Orchestrator快速入门](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
+      + [1.1.2适用于ChatGPT Enterprise的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
+      + [1.1.3Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
+      + [1.1.4适用于Google Gemini的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+   + 1.2代理和人工智能快速入门 {#agents2}
+      + [概述](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
+      + [1.2.1 Agentic AI快速入门](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
+   + 1.4Brand Concierge {#agents4}
+      + [概述](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
+      + [1.4.1 Brand Concierge快速入门](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
+      + [1.4.2在您的网站上实施Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
+   + 1.5 Analytics和代理 {#agents5}
+      + [概述](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
+      + [1.5.1 CJA和ChatGPT带MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
+      + [1.5.2 CJA和Claude.ai与MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
+      + [1.5.3 Adobe Analytics和Claude.ai与MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
+   + 1.6AEM与代理 {#agents6}
+      + [概述](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
+      + [1.6.1 AEM Agent快速入门](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
+      + [1.6.2 AEM MCP服务器和光标](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
+      + [1.6.3使用ChatGPT和MCP服务器扩展内容片段](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
+   + 1.7适用于Adobe Commerce的智能开发人员工具 {#agents7}
+      + [概述](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
+      + [1.7.1设置开发环境](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
+      + [1.7.2使用Cursor开发项目](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)
 
 + 工作流和规划 {#wfplanning}
    + 1.1 Workfront规划 {#wfpl1}
@@ -93,6 +121,9 @@ ht-degree: 3%
       + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.8/esm.md)
       + [1.8.1 Workfront、Frame.io和ESM快速入门](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex1.md)
       + [1.8.2创建新资产并进行审查和批准](/help/tutorial-one-adobe/modules/creation-production/module1.8/ex2.md)
+   + 1.9 Firefly展示板 {#crpr9}
+      + [概述](/help/tutorial-one-adobe/modules/creation-production/module1.9/fireflyboards.md)
+      + [1.9.1 Firefly展示板入门](/help/tutorial-one-adobe/modules/creation-production/module1.9/ex1.md)
 
 + 资产管理 {#assetmgmt}
    + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -266,32 +297,3 @@ ht-degree: 3%
          + [概述](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analytics快速入门](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
-
-+ 代理 {#agents}
-   + [Agentic AI概述](/help/tutorial-one-adobe/ai.md)
-   + 1.1Agent Orchestrator {#agents1}
-      + [概述](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
-      + [1.1.1 Agent Orchestrator快速入门](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
-      + [1.1.2适用于ChatGPT Enterprise的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
-      + [1.1.3Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
-   + 1.2代理和人工智能快速入门 {#agents2}
-      + [概述](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
-      + [1.2.1 Agentic AI快速入门](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
-   + 1.4Brand Concierge {#agents4}
-      + [概述](/help/tutorial-one-adobe/modules/agents/module1.4/brandconcierge.md)
-      + [1.4.1 Brand Concierge快速入门](/help/tutorial-one-adobe/modules/agents/module1.4/ex1.md)
-      + [1.4.2在您的网站上实施Brand Concierge](/help/tutorial-one-adobe/modules/agents/module1.4/ex2.md)
-   + 1.5 Analytics和代理 {#agents5}
-      + [概述](/help/tutorial-one-adobe/modules/agents/module1.5/analyticsagents.md)
-      + [1.5.1 CJA和ChatGPT带MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex1.md)
-      + [1.5.2 CJA和Claude.ai与MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex2.md)
-      + [1.5.3 Adobe Analytics和Claude.ai与MCP服务器](/help/tutorial-one-adobe/modules/agents/module1.5/ex3.md)
-   + 1.6AEM与代理 {#agents6}
-      + [概述](/help/tutorial-one-adobe/modules/agents/module1.6/aemagents.md)
-      + [1.6.1 AEM Agent快速入门](/help/tutorial-one-adobe/modules/agents/module1.6/ex1.md)
-      + [1.6.2 AEM MCP服务器和光标](/help/tutorial-one-adobe/modules/agents/module1.6/ex2.md)
-      + [1.6.3使用ChatGPT和MCP服务器扩展内容片段](/help/tutorial-one-adobe/modules/agents/module1.6/ex3.md)
-   + 1.7适用于Adobe Commerce的智能开发人员工具 {#agents7}
-      + [概述](/help/tutorial-one-adobe/modules/agents/module1.7/aiassisteddev.md)
-      + [1.7.1设置开发环境](/help/tutorial-one-adobe/modules/agents/module1.7/ex1.md)
-      + [1.7.2使用Cursor开发项目](/help/tutorial-one-adobe/modules/agents/module1.7/ex2.md)
