@@ -6,9 +6,9 @@ level: Beginner
 jira: KT-5342
 doc-type: Tutorial
 exl-id: 7d9ad7ec-7744-4ba6-9c11-c434e6cdef09
-source-git-commit: 5fe2f1c413f54dd1e3c67d78460d7f2a84248005
+source-git-commit: a3a78b12f8244c8288eb0fffc82ad769776eb118
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1374'
 ht-degree: 0%
 
 ---
@@ -249,8 +249,20 @@ ht-degree: 0%
 
 ![Firefly自定义工作流](./images/ffcw58.png)
 
+返回工作流。 单击&#x200B;**发布**。
+
+![Firefly自定义工作流](./images/ffcw59.png)
+
+您应该会看到此内容。
+
+![Firefly自定义工作流](./images/ffcw60.png)
+
+您的工作流现已发布，现在可以在下一个练习中以编程方式执行。
+
 ## 后续步骤
 
-返回[工作流生成器](./workflowbuilder.md){target="_blank"}
+转到[1.7.2以编程方式执行自定义工作流](./ex2.md){target="_blank"}
+
+返回[Firefly自定义工作流](./workflowbuilder.md){target="_blank"}
 
 返回[所有模块](./../../../overview.md){target="_blank"}
