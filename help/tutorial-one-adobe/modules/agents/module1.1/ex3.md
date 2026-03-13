@@ -4,9 +4,9 @@ description: Adobe Marketing Agent for Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 [!BADGE Beta 版]
 
 +++Beta详细信息
-通过将Adobe Marketing Agent与Microsoft 365 Copilot Beta结合使用，您特此确认Beta是“按原样”提供的，不提供任何形式的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持Beta。 建议您谨慎使用，切勿依赖此类Beta和/或随附材料的正确功能或性能。 Beta被视为Adobe的机密信息。  您向Beta提供的任何“反馈”(有关Beta的信息，包括但不限于您在使用Adobe时遇到的问题或缺陷、建议、改进和推荐)均会分配给Adobe，其中包括针对该反馈的所有权利、标题和兴趣。
+通过将Adobe Marketing Agent与Microsoft 365 Copilot Beta结合使用，您特此确认Beta是“按原样”提供的，不提供任何形式的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持Beta。 建议您谨慎使用，切勿依赖此类Beta和/或随附材料的正确功能或性能。 Beta被视为Adobe的机密信息。  您向Beta提供的任何“反馈”（有关Beta的信息，包括但不限于您在使用Adobe时遇到的问题或缺陷、建议、改进和推荐）均会分配给Adobe，其中包括针对该反馈的所有权利、标题和兴趣。
 
 +++
 
@@ -283,7 +283,7 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 ## 后续步骤
 
-转到[Adobe Marketing Agent for Google Gemini](./ex4.md){target="_blank"}
+转到[Adobe Marketing Agent for Google Gemini Enterprise](./ex4.md){target="_blank"}
 
 返回[Agent Orchestrator](./agentorchestrator.md){target="_blank"}
 
