@@ -33,12 +33,12 @@ ht-degree: 83%
 >
 >要充分使用这些集成，需要满足许多用户权限要求并完成相应的帐户配置和置备步骤，而这些内容都不在本教程的涵盖范围内。 如果您尚未在当前的 Experience Cloud 实施中使用这些集成，则应考虑以下事项：
 >
->* 查看[核心服务集成](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)的完整要求
->* 查看 [Analytics for Target 集成](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)的完整要求
+>* 查看[核心服务集成](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/getting-started)的完整要求
+>* 查看 [Analytics for Target 集成](https://experienceleague.adobe.com/zh-hans/docs/target/using/integrate/a4t/before-implement)的完整要求
 
 ## 受众
 
-[受众](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview)是人员核心服务的一部分，允许您在解决方案之间共享受众。例如，您可以在 Audience Manager 中创建受众，然后使用它通过 Target 来提供个性化内容。
+[受众](https://experienceleague.adobe.com/zh-hans/docs/core-services/interface/services/audiences/overview)是人员核心服务的一部分，允许您在解决方案之间共享受众。例如，您可以在 Audience Manager 中创建受众，然后使用它通过 Target 来提供个性化内容。
 
 实施 A4T（您已经完成）的主要要求包括：
 
@@ -76,7 +76,7 @@ ht-degree: 83%
 
 ## Analytics for Target (A4T)
 
-通过 [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html) 集成，您可以将 Analytics 数据作为报告 Target 中的量度的来源。
+通过 [Analytics for Target (A4T)](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hans) 集成，您可以将 Analytics 数据作为报告 Target 中的量度的来源。
 
 实施 A4T（您已经完成）的主要要求包括：
 
@@ -115,7 +115,7 @@ A4T 的工作方式是将从 Target 向 Analytics 发出的服务器端请求与
 
 ## 客户属性
 
-[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html)是人员核心服务的一部分，允许您上传客户关系管理 (CRM) 数据库中的数据，并在 Adobe Analytics 和 Adobe Target 中利用这些数据。
+[客户属性](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html?lang=zh-Hans)是人员核心服务的一部分，允许您上传客户关系管理 (CRM) 数据库中的数据，并在 Adobe Analytics 和 Adobe Target 中利用这些数据。
 
 实施客户属性（您已经完成）的主要要求包括：
 

@@ -22,7 +22,7 @@ ht-degree: 52%
 
 ## 先决条件
 
-要完成接下来的几个课程，您必须拥有在标记中开发、批准、发布、管理扩展和管理环境的权限。 如果由于用户界面选项不可用而无法完成其中的任何步骤，请联系 Experience Cloud 管理员以请求获取访问权限。有关标记用户权限的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)。
+要完成接下来的几个课程，您必须拥有在标记中开发、批准、发布、管理扩展和管理环境的权限。 如果由于用户界面选项不可用而无法完成其中的任何步骤，请联系 Experience Cloud 管理员以请求获取访问权限。有关标记用户权限的详细信息，请参阅[文档](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=zh-Hans)。
 
 
 ## 学习目标
@@ -49,7 +49,7 @@ ht-degree: 52%
 
 ## 创建资产
 
-资产基本上就是一个容器，在将标记部署到网站时可在其中填充扩展、规则、数据元素和库。资产可以是一个或多个域和子域的任意组合。您可以通过相似的方式管理和跟踪这些资产。例如，假定您有多个基于一个模板的网站，并希望在所有这些网站中跟踪相同的资产。您可以将一个资产应用于多个域。有关创建资产的更多信息，请参阅产品文档中的[“公司和资产”](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html)。
+资产基本上就是一个容器，在将标记部署到网站时可在其中填充扩展、规则、数据元素和库。资产可以是一个或多个域和子域的任意组合。您可以通过相似的方式管理和跟踪这些资产。例如，假定您有多个基于一个模板的网站，并希望在所有这些网站中跟踪相同的资产。您可以将一个资产应用于多个域。有关创建资产的更多信息，请参阅产品文档中的[“公司和资产”](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=zh-Hans)。
 
 **创建资产**
 
