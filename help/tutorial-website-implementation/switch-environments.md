@@ -2,10 +2,10 @@
 title: 使用Adobe Experience Cloud Debugger切换标记环境
 description: 了解如何使用Experience Cloud Debugger加载不同的标记嵌入代码。 本课程是“在网站中实施Experience Cloud”教程的一部分。
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 20%
+source-wordcount: '567'
+ht-degree: 21%
 
 ---
 
@@ -16,17 +16,10 @@ ht-degree: 20%
 
 >[!WARNING]
 >
-> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
+> 本教程及其Luma网站练习将不再进行维护，并将依赖旧版的JavaScript库。 要了解当前的最佳实践，请使用[使用Web SDK实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-web-sdk/overview)。
 
 此技术称为环境切换，当您以后在自己的网站上使用标记时，此技术将非常有用。 您可以在浏览器中加载生产网站，但需要您的&#x200B;*开发*&#x200B;标记环境。 这使您能够放心地做出并验证标记更改，而不依赖于常规代码发布。  毕竟，将营销标记发布与常规代码发布分开是客户最初使用标记的主要原因之一！
 
->[!NOTE]
->
->Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
->
-> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
-> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)**
-> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)**
 
 ## 学习目标
 

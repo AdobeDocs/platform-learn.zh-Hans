@@ -2,10 +2,10 @@
 title: 添加嵌入代码
 description: 了解如何获取标记资产的嵌入代码并在您的网站中实施它们。 本课程是“在网站中实施Experience Cloud”教程的一部分。
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '1069'
-ht-degree: 42%
+source-wordcount: '1016'
+ht-degree: 44%
 
 ---
 
@@ -16,15 +16,8 @@ ht-degree: 42%
 
 >[!WARNING]
 >
-> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
+> 本教程及其Luma网站练习将不再进行维护，并将依赖旧版的JavaScript库。 要了解当前的最佳实践，请使用[使用Web SDK实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-web-sdk/overview)。
 
->[!NOTE]
->
->Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
->
-> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
-> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)**
-> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)**
 
 ## 学习目标
 
@@ -109,7 +102,7 @@ ht-degree: 42%
 <body>
     <h1>Tags: Sample HTML Page</h1>
     <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
-    <p>See <a href="https://docs.adobe.com/content/help/zh-Hans/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
 </body>
 </html>
 ```

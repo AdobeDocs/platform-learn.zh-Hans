@@ -2,10 +2,10 @@
 title: 发布您的标记属性
 description: 了解如何将标记资产从开发环境发布到暂存环境和生产环境。 本课程是“在网站中实施Experience Cloud”教程的一部分。
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
-source-git-commit: 1fc027db2232c8c56de99d12b719ec10275b590a
+source-git-commit: 935b8d18b6aef506fc5f48c64331803fe8a7ea9e
 workflow-type: tm+mt
-source-wordcount: '603'
-ht-degree: 51%
+source-wordcount: '550'
+ht-degree: 56%
 
 ---
 
@@ -16,15 +16,8 @@ ht-degree: 51%
 
 >[!WARNING]
 >
-> 本教程中使用的Luma网站预计将在2026年2月16日这一周内被替换。 作为本教程的一部分完成的工作可能不适用于新网站。
+> 本教程及其Luma网站练习将不再进行维护，并将依赖旧版的JavaScript库。 要了解当前的最佳实践，请使用[使用Web SDK实施Adobe Experience Cloud教程](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/implement-web-sdk/overview)。
 
->[!NOTE]
->
->Adobe Experience Platform Launch正在作为一套数据收集技术集成到Adobe Experience Platform中。 在使用此内容时，您应该了解的界面中推出了几项术语更改：
->
-> * Platform Launch（客户端）现在为&#x200B;**[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=zh-Hans)**
-> * Platform Launch服务器端现在为&#x200B;**[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=zh-Hans)**
-> * Edge配置现在为&#x200B;**[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=zh-Hans)**
 
 ## 学习目标
 
