@@ -4,7 +4,7 @@ description: Adobe Marketing Agent for Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: 8231a25dbb45ab707bb0f4788000e5868cacb662
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
 source-wordcount: '984'
 ht-degree: 0%

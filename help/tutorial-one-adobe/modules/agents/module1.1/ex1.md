@@ -4,7 +4,7 @@ description: Agent Orchestrator快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 0%
@@ -163,7 +163,7 @@ Which of these journeys has 'Fiber' in its name?
 
 **意图**：
 
-了解“CitiSignal — 光纤最大发布促销活动”历程的种子定义 — 哪些特征会推动定位(例如，“SciFi流派偏好设置”、“4+设备”、“流≥300GB/月”)。
+了解“CitiSignal — 光纤最大发布促销活动”历程的种子定义 — 哪些特征会推动定位（例如，“SciFi流派偏好设置”、“4+设备”、“流≥300GB/月”）。
 
 输入以下&#x200B;**提示**：
 

@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: 7850713bf116c8a9aa9dc4e055d0e501aa783cb0
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1577'
 ht-degree: 3%
 
 ---
@@ -15,8 +15,10 @@ ht-degree: 3%
 # 一门Adobe技术教程 {#tutorial-one-adobe}
 
 + [教程概述](/help/tutorial-one-adobe/overview.md)
-+ [内容状态](/help/tutorial-one-adobe/status.md)
 + [架构](/help/tutorial-one-adobe/architecture.md)
++ [代理AI实验室](/help/tutorial-one-adobe/ai.md)
++ [GenStudio Labs](/help/tutorial-one-adobe/genstudiocsc.md)
++ [AEP与应用程序实验室](/help/tutorial-one-adobe/aepapps.md)
 
 + 快速入门 {#gettingstarted}
    + 快速入门 {#gettingstarted}
@@ -38,6 +40,7 @@ ht-degree: 3%
       + [1.1.2适用于ChatGPT Enterprise的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
       + [1.1.3Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Adobe Marketing Agent适用于Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
+      + [1.1.5Adobe Marketing Agent为克劳德](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
    + 1.2代理和人工智能快速入门 {#agents2}
       + [概述](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Agentic AI快速入门](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
@@ -298,3 +301,5 @@ ht-degree: 3%
          + [概述](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
          + [3.1.1 Content Analytics快速入门](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
          + [摘要和优点](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
+
++ [内容状态](/help/tutorial-one-adobe/status.md)

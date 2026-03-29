@@ -1,11 +1,11 @@
 ---
-title: Agentic AI技术实验室概述
-description: Agentic AI技术实验室概述
+title: Agentic AI技术实验室
+description: Agentic AI技术实验室
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,23 @@ ht-degree: 0%
 
 ![技术内部人士](./assets/images/techinsiders.png){width="50px" align="left"}
 
-## 概述 — 工作进行中
+## 代理AI架构
+
+在本视频中，您将了解One Adobe教程中的Agentic AI部分背后的架构。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
+
+下载架构概述图像：
+
+![技术内部人士](./assets/images/architecture_agentic.jpg)
+
+### 开始使用
+
+[快速入门](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+
+在本基本模块中，您将准备所有内容，以便能够访问和使用演示环境。
+
+### Agentic AI技术实验室
 
 [1.1Agent Orchestrator](./modules/agents/module1.1/agentorchestrator.md)
 
@@ -26,6 +42,8 @@ ht-degree: 0%
 - 识别高倾向性受众
 - 验证历程性能
 - 为CitiSignal Fiber Max转出创建新的历程
+
+您还将学习如何使用Adobe Marketing Agent与Microsoft 365 Copilot、ChatGPT for Enterprise、Google Gemini Enterprise和Claude等工具组合。
 
 [1.4Brand Concierge](./modules/agents/module1.4/brandconcierge.md)
 

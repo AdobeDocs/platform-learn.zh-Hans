@@ -3,9 +3,9 @@ title: 一门Adobe教程 — 架构概述
 description: 一门Adobe教程 — 架构概述
 doc-type: multipage-overview
 exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
-source-git-commit: d271e771b75cd4cbc6d526cd8c438d8858930878
+source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '70'
 ht-degree: 0%
 
 ---
@@ -23,36 +23,6 @@ ht-degree: 0%
 下载架构概述图像：
 
 ![技术内部人士](./assets/images/architecture_all.jpg)
-
-## 代理AI架构概述
-
-在本视频中，您将了解One Adobe教程中的Agentic AI部分背后的架构。
-
->[!VIDEO](https://video.tv.adobe.com/v/3481416?quality=12&learn=on)
-
-下载架构概述图像：
-
-![技术内部人士](./assets/images/architecture_agentic.jpg)
-
-## 内容架构概述
-
-在本视频中，您将在本教程中了解GenStudio背后的架构。
-
->[!VIDEO](https://video.tv.adobe.com/v/3481414?quality=12&learn=on)
-
-下载架构概述图像：
-
-![技术内部人士](./assets/images/architecture_content.jpg)
-
-## 数据架构概述
-
-在本视频中，您将了解本教程的Adobe Experience Platform和应用程序部分背后的架构。
-
->[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
-
-下载架构概述图像：
-
-![技术内部人士](./assets/images/architecture_data.jpeg)
 
 >[!NOTE]
 >
