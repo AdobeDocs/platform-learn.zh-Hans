@@ -4,7 +4,7 @@ description: Agent Orchestrator快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: f752b65c9187af8a3a64b09d9cf0a60a108cbde4
+source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
 workflow-type: tm+mt
 source-wordcount: '1403'
 ht-degree: 0%
@@ -58,7 +58,7 @@ ht-degree: 0%
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-Show me purchases by mainCategory over the last 2 months.
+Show me purchases by mainCategory over the last 7 months.
 ```
 
 ![Agent Orchestrator](./images/ao4.png)
@@ -70,7 +70,7 @@ Show me purchases by mainCategory over the last 2 months.
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 2 months per week
+Show me purchases by mainCategory = Fiber over the last 7 months per week
 ```
 
 ![Agent Orchestrator](./images/ao6.png)
@@ -104,7 +104,7 @@ Which field is used to store the preferred genre?
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 2 months
+Show me ordersYTD by preferredGenre for the last 7 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)

@@ -2,9 +2,9 @@
 title: AEP与应用程序技术实验室
 description: AEP与应用程序技术实验室
 doc-type: multipage-overview
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '700'
+source-wordcount: '698'
 ht-degree: 1%
 
 ---
@@ -19,9 +19,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481415?quality=12&learn=on)
 
-下载架构概述图像：
-
-![技术内部人士](./assets/images/architecture_data.jpeg)
+在[此处](./assets/images/architecture_data.jpeg)下载架构概述图像。
 
 ### 开始使用
 

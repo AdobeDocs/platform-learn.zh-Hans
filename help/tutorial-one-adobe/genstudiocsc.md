@@ -3,9 +3,9 @@ title: GenStudio技术实验室
 description: GenStudio技术实验室
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '693'
+source-wordcount: '691'
 ht-degree: 1%
 
 ---
@@ -34,9 +34,7 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481414?quality=12&learn=on)
 
-下载架构概述图像：
-
-![技术内部人士](./assets/images/architecture_content.jpg)
+在[此处](./assets/images/architecture_content.jpg)下载架构概述图像。
 
 ## GenStudio技术实验室
 

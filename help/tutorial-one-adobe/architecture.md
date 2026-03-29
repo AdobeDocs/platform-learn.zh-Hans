@@ -3,9 +3,9 @@ title: 一门Adobe教程 — 架构概述
 description: 一门Adobe教程 — 架构概述
 doc-type: multipage-overview
 exl-id: a7dcbf33-79a2-41b4-b098-fdde9f6c8232
-source-git-commit: 245bb4738d72ee52ef7e99fcb099953153b7b781
+source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
 workflow-type: tm+mt
-source-wordcount: '70'
+source-wordcount: '75'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,11 @@ ht-degree: 0%
 
 >[!VIDEO](https://video.tv.adobe.com/v/3481417?quality=12&learn=on)
 
-下载架构概述图像：
+在[此处](./assets/images/architecture_all.jpg)下载架构概述图像。
 
-![技术内部人士](./assets/images/architecture_all.jpg)
+## 脚本
+
+脚本将很快在此处可用。
 
 >[!NOTE]
 >
