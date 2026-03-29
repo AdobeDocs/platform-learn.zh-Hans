@@ -72,7 +72,7 @@ ht-degree: 0%
 
 ![克劳德.ai](./images/claude5.png)
 
-单击&#x200B;**+**&#x200B;图标，转到&#x200B;**连接器**&#x200B;并确保已启用&#x200B;**Adobe Marketing Agent****。
+单击&#x200B;**+**&#x200B;图标，转到&#x200B;**连接器**&#x200B;并确保已启用&#x200B;**Adobe Marketing Agent**&#x200B;**。
 
 ![克劳德.ai](./images/claude6.png)
 
