@@ -4,9 +4,9 @@ description: Brand Concierge快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: a57050bf40105a0b0c6d4ce615aa640e878ece12
+source-git-commit: fcf99e48868fd0b189291a7215a2871387ea7532
 workflow-type: tm+mt
-source-wordcount: '1121'
+source-wordcount: '1075'
 ht-degree: 1%
 
 ---
@@ -66,19 +66,15 @@ ht-degree: 1%
 
 ![Brand Concierge](./images/bc1.png)
 
-您应该会看到此内容。 单击&#x200B;**沙盒选择**&#x200B;菜单。
+您应该会看到此内容。 单击&#x200B;**沙盒选择**&#x200B;菜单。 选择已分配给您的沙盒。 该沙盒应命名为`techinsidersX`（将X替换为您分配的编号）。
 
 ![Brand Concierge](./images/bc2.png)
 
-选择已分配给您的沙盒。 该沙盒应命名为`--aepUserLdap-- - bc`。
+接下来，填写以下变量：
 
-![Brand Concierge](./images/bc3.png)
+- **公司名称**：花旗信号
 
-单击&#x200B;**开始**。
-
-![Brand Concierge](./images/bc4.png)
-
-对于您的Brand Concierge实例的名称，请使用： `--aepUserLdap-- - CitiSignal Brand Concierge`。
+- **门房名称**： `CitiSignal Sales Assistant`。
 
 在&#x200B;**下输入以下文本：您希望礼宾人员做什么？**。
 
@@ -86,45 +82,19 @@ ht-degree: 1%
 Brand Concierge should help customers find their best device, plan or entertainment deal. Brand Concierge should help users discover internet plans, entertainment deals,  and help find the best available packages. Brand Concierge should also answer questions about devices such as phones and watches.
 ```
 
-单击&#x200B;**创建**。
+- **网站链接**：提供您正在使用的网站的链接
+
+单击&#x200B;**继续**。
 
 ![Brand Concierge](./images/bc5.png)
 
-您应该会看到此内容。 单击&#x200B;**开始**&#x200B;添加知识源。
+您应该会看到此内容。 此信息是基于AI在上一页上提供的输入生成的。 查看信息，在您满意后，单击&#x200B;**生成礼宾**。
 
 ![Brand Concierge](./images/bc6.png)
 
-选择&#x200B;**网站链接**&#x200B;并单击&#x200B;**继续**。
+您应该会看到此内容。 单击&#x200B;**面向消费者的产品咨询**&#x200B;旁边的&#x200B;**+添加**。
 
-![Brand Concierge](./images/bc7.png)
-
-您应该会看到此内容。 输入`CitiSignal website`作为知识源的名称。
-
-您现在需要上传一个包含您网站链接的csv文件。 下载[CitiSignal网站链接CSV文件](./assets/citisignal-website-links.csv)到您的桌面。
-
-单击&#x200B;**浏览文件**。
-
-![Brand Concierge](./images/bc8.png)
-
-打开文件&#x200B;**citisignal-website-links.csv**，并更新链接以指向您自己的CitiSignal网站。
-
-![Brand Concierge](./images/bc8a.png)
-
-选择您刚刚下载和编辑的文件&#x200B;**citisignal-website-links.csv**。 单击&#x200B;**打开**。
-
-![Brand Concierge](./images/bc9.png)
-
-您的文件现已添加到此知识源中。 单击&#x200B;**添加**。
-
-![Brand Concierge](./images/bc10.png)
-
-您应该会看到此内容。 单击&#x200B;**带我回家**。
-
-![Brand Concierge](./images/bc11.png)
-
-您应该会看到此内容。 在&#x200B;**消费者产品咨询**&#x200B;卡片上单击&#x200B;**开始使用**。
-
-![Brand Concierge](./images/bc12.png)
+![Brand Concierge](./images/bc6a.png)
 
 您应该会看到此内容。 使用以下文本填写以下字段。
 
@@ -146,51 +116,57 @@ Prioritize positioning the CitiSignal Fiber Max offering.
 Competitor pricing, competitor products
 ```
 
-您的更新会自动保存。 单击&#x200B;**箭头**&#x200B;返回上一屏幕。
+单击&#x200B;**保存**。
 
 ![Brand Concierge](./images/bc13.png)
 
-您应该会看到此内容。 单击&#x200B;**开始**&#x200B;以自定义您的品牌表达式。
+单击&#x200B;**箭头**&#x200B;返回上一屏幕。
 
-![Brand Concierge](./images/bc14.png)
+![Brand Concierge](./images/bc13a.png)
 
-您可以在&#x200B;**Brand Expression**&#x200B;页面上自行选择，请确保为每个问题选择一个选项。
+转到&#x200B;**知识Source**，然后单击&#x200B;**构建您的知识源**。
 
-![Brand Concierge](./images/bc15.png)
+![Brand Concierge](./images/bc7.png)
 
-向下滚动并选择字段&#x200B;**响应长度**&#x200B;的任何设置。
+选择&#x200B;**网站链接**&#x200B;并单击&#x200B;**继续**。
 
-您的更新会自动保存。
+![Brand Concierge](./images/bc7a.png)
 
-![Brand Concierge](./images/bc16.png)
+您应该会看到此内容。 输入`CitiSignal website`作为知识源的名称。
 
-向上滚动，然后单击&#x200B;**箭头**&#x200B;以返回上一个屏幕。
+您现在需要上传一个包含您网站链接的csv文件。 下载[CitiSignal网站链接CSV文件](./assets/citisignal-website-links.csv)到您的桌面。
 
-![Brand Concierge](./images/bc17.png)
+单击&#x200B;**浏览文件**。
 
-你以后会回到这里的。 单击&#x200B;**知识源**。
+![Brand Concierge](./images/bc8.png)
 
-![Brand Concierge](./images/bc18.png)
+打开文件&#x200B;**citisignal-website-links.csv**，并更新链接以指向您自己的CitiSignal网站。
 
-单击&#x200B;**构建您的知识源**。
+![Brand Concierge](./images/bc8a.png)
 
-![Brand Concierge](./images/bc19.png)
+选择您刚刚下载和编辑的文件&#x200B;**citisignal-website-links.csv**。 单击&#x200B;**打开**。
+
+![Brand Concierge](./images/bc9.png)
+
+您的文件现已添加到此知识源中。 单击&#x200B;**添加**。
+
+![Brand Concierge](./images/bc10.png)
+
+您应该会看到此内容。 单击&#x200B;**构建您的知识源**。
+
+![Brand Concierge](./images/bc11.png)
 
 选择&#x200B;**产品目录**&#x200B;并单击&#x200B;**继续**。
 
 ![Brand Concierge](./images/bc20.png)
 
-您应该会看到此内容。 输入`CitiSignal Products`作为知识源的名称。
+您应该会看到此内容。 输入`CitiSignal Products`作为知识源的名称。 单击&#x200B;**浏览文件**，然后从设备中选择&#x200B;**浏览**。
 
 ![Brand Concierge](./images/bc21.png)
 
 您现在需要上传一个包含您网站链接的csv文件。 将[CitiSignal产品目录](./assets/CitiSignal-catalog.json.zip)下载到您的桌面并解压缩。
 
 ![Brand Concierge](./images/bc26.png)
-
-单击&#x200B;**浏览文件**，然后从设备中选择&#x200B;**浏览**。
-
-![Brand Concierge](./images/bc22.png)
 
 选择文件&#x200B;**CitiSignal-catalog.json**，然后单击&#x200B;**打开**。
 
@@ -200,37 +176,9 @@ Competitor pricing, competitor products
 
 ![Brand Concierge](./images/bc24.png)
 
-你以后会回到这里的。
+你以后会回到这里的。 处理将需要10-20分钟，因此您必须在稍后阶段返回此处以验证处理是否成功。
 
 ![Brand Concierge](./images/bc25.png)
-
-10-20分钟后，两个知识源的&#x200B;**状态**&#x200B;应为&#x200B;**已完成**。 单击&#x200B;**主页**。
-
-![Brand Concierge](./images/bc27.png)
-
-您应该会看到此内容。 单击&#x200B;**网站链接**&#x200B;卡片上的&#x200B;**+连接**。
-
-![Brand Concierge](./images/bc28.png)
-
-选择知识源&#x200B;**CitiSignal网站**，然后单击&#x200B;**保存**。
-
-![Brand Concierge](./images/bc29.png)
-
-您应该会看到此内容。 在&#x200B;**产品目录**&#x200B;卡片上单击&#x200B;**+连接**。
-
-![Brand Concierge](./images/bc30.png)
-
-选择知识源&#x200B;**CitiSignal产品**，然后单击&#x200B;**保存**。
-
-![Brand Concierge](./images/bc31.png)
-
-您应该会看到此内容。 单击&#x200B;**预览**&#x200B;开始与您的Brand Concierge交互。
-
-![Brand Concierge](./images/bc32.png)
-
-您现在可以开始询问与提供的知识源相关的问题。
-
-![Brand Concierge](./images/bc33.png)
 
 ## 1.4.1.3个AEP入门培训步骤
 
@@ -242,7 +190,7 @@ Brand Concierge使用Adobe Experience Platform存储对话中的交互数据。 
 
 ![Brand Concierge](./images/aep1.png)
 
-确保您选择了正确的沙盒，应将其命名为`--aepUserLdap-- - bc`。 在左侧菜单中，向下滚动并选择&#x200B;**数据流**。
+确保您选择了正确的沙盒，应将其命名为`techinsidersX`。 在左侧菜单中，向下滚动并选择&#x200B;**数据流**。
 
 ![Brand Concierge](./images/aep2.png)
 
@@ -264,7 +212,7 @@ Brand Concierge使用Adobe Experience Platform存储对话中的交互数据。 
 
 下一步是启用Brand Concierge配置管理API以配置您刚刚创建的数据流。 在请求处理期间解决IMS组织ID和沙盒详细信息时需要此信息。
 
-转到&#x200B;**管理员控件**。
+转到&#x200B;**主页**，然后选择&#x200B;**管理员控件**。
 
 ![Brand Concierge](./images/admincontrols1.png)
 
@@ -296,77 +244,41 @@ Brand Concierge使用Adobe Experience Platform存储对话中的交互数据。 
 
 ## 1.4.1.5 Agent Orchestrator清单
 
-转到&#x200B;**更新清单**。 您应该会看到此内容。
+转到&#x200B;**更新清单**。 您应该会看到此内容。 查看每个字段中的信息，并根据需要进行更改。 进行更改后，单击**更新清单。
 
 ![Brand Concierge](./images/admincontrols5.png)
 
-现在，您需要更新清单中的字段。 请对此使用以下输入。
+## 1.4.1.6完成知识源设置
 
-**代理名称**：
-
-```
-CitiSignal Sales Assistant
-```
-
-**简介**：
-
-```
-Welcome to CitiSignal! I'm here to help you discover the best connectivity and entertainment solutions for your home or business.
-```
-
-**角色和职责**：
-
-```
-You are CitiSignal's AI Sales Assistant focused on:
-1. **Primary Goal**: Selling connectivity products from the knowledge base
-2. **Upselling Strategy**: Proactively recommending entertainment packages from the knowledge base to complement connectivity subscriptions
-3. **Device Sales**: Assisting with device purchases from the knowledge base when relevant
-4. **Customer Support**: Answering questions about plans, pricing, installation, and features based on knowledge base content
-
-- ALWAYS call brand_concierge_product_knowledge_agent to obtain a response to a user query and provide it directly to the user without modification.
-- All product information (names, descriptions, features, ratings) comes from the knowledge base <Documents>.
-- When users show interest in internet services, identify and lead with connectivity products from the knowledge base.
-- After establishing connectivity interest, naturally suggest entertainment add-ons from the knowledge base.
-- Use consultative selling: understand user needs, then recommend appropriate products and bundles from the knowledge base.
-```
-
-**作用域**：
-
-```
-You are CitiSignal's AI Sales Assistant, specializing in connectivity sales and entertainment bundle upselling.
-
-# Your Primary Objectives:
-1. **Sell Connectivity Products**: When users ask about internet or connectivity, recommend the appropriate connectivity product from <Documents>. Highlight key benefits mentioned in the product description.
-2. **Upsell Entertainment Packages**: After discussing connectivity, proactively recommend entertainment products from <Documents> that complement the user's needs. Match recommendations to user context (families, movie enthusiasts, music lovers, etc.).
-3. **Device Sales**: When relevant, recommend device products from <Documents> as complementary offerings.
-
-# Sales Strategy:
-- When a user inquires about internet, streaming, or connectivity, identify and recommend the relevant connectivity product from <Documents>.
-- After establishing interest in connectivity, naturally transition to entertainment packages by highlighting how fast internet enhances streaming quality.
-- Use natural transition phrases to introduce entertainment upsells.
-- Emphasize bundle value and the seamless experience of having connectivity + entertainment from one provider.
-- Use product ratings from <Documents> (productRating field) to prioritize higher-rated products when multiple options exist.
-
-# Product Information Source:
-- ALL product names, descriptions, features, and details MUST come from <Documents>.
-- Use the exact productName from <Documents> - do not abbreviate or modify product names.
-- Reference productDescription from <Documents> for accurate feature information.
-- Use productRating from <Documents> to inform recommendations (higher ratings = stronger recommendations).
-```
-
-单击&#x200B;**更新清单**。
-
-![Brand Concierge](./images/admincontrols6.png)
-
-单击&#x200B;**主页**。
+转到&#x200B;**知识源**。 10-20分钟后，两个知识源的&#x200B;**状态**&#x200B;应为&#x200B;**已完成**。 一旦两个知识源的状态为&#x200B;**成功**，请单击&#x200B;**主页**。
 
 ![Brand Concierge](./images/admincontrols10.png)
 
+您应该会看到此内容。 单击&#x200B;**网站链接**&#x200B;卡片上的&#x200B;**+连接**。
+
+![Brand Concierge](./images/bc28.png)
+
+选择知识源&#x200B;**CitiSignal网站**，然后单击&#x200B;**保存**。
+
+![Brand Concierge](./images/bc29.png)
+
+您应该会看到此内容。 在&#x200B;**产品目录**&#x200B;卡片上单击&#x200B;**+连接**。
+
+![Brand Concierge](./images/bc30.png)
+
+选择知识源&#x200B;**CitiSignal产品**，然后单击&#x200B;**保存**。
+
+![Brand Concierge](./images/bc31.png)
+
 您应该会看到此内容。 单击&#x200B;**预览**&#x200B;开始与您的Brand Concierge交互。
 
-![Brand Concierge](./images/bc101.png)
+![Brand Concierge](./images/bc32.png)
 
-您现在可以开始询问与提供的知识源相关的问题。 输入问题`what products do you sell?`并单击&#x200B;**发送**。
+您现在可以开始询问与提供的知识源相关的问题。
+
+![Brand Concierge](./images/bc33.png)
+
+输入问题`what products do you sell?`并单击&#x200B;**发送**。
 
 ![Brand Concierge](./images/bc102.png)
 
