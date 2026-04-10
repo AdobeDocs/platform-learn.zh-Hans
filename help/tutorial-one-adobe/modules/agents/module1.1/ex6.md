@@ -1,21 +1,22 @@
 ---
-title: Agent Orchestrator v2
-description: Agent Orchestrator v2
+title: —
+description: —
 kt: 5342
 doc-type: tutorial
-source-git-commit: a1578a5205fd17a6aaf362145c78e19343255d93
+exl-id: ce845231-17d1-40ab-96f7-bd386753e625
+source-git-commit: 5f30a0e941c8260af954ee2b1b289cc8a863b5bb
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1411'
 ht-degree: 0%
 
 ---
 
-# 1.1.6 Agent Orchestrator v2
+# 1.1.6 —
 
 [!BADGE Beta 版]
 
 +++Beta详细信息
-使用Agent Orchestrator v2 Beta即表示您确认Beta是“按原样”提供的，不提供任何形式的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持Beta。 建议您谨慎使用，切勿依赖此类Beta和/或随附材料的正确功能或性能。 Beta被视为Adobe的机密信息。  您向Beta提供的任何“反馈”（有关Beta的信息，包括但不限于您在使用Adobe时遇到的问题或缺陷、建议、改进和推荐）均会分配给Adobe，其中包括针对该反馈的所有权利、标题和兴趣。
+通过使用Agent Orchestrator Beta，您在此确认Beta是“按原样”提供的，不提供任何形式的保证。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持Beta。 建议您谨慎使用，切勿依赖此类Beta和/或随附材料的正确功能或性能。 Beta被视为Adobe的机密信息。  您向Beta提供的任何“反馈”（有关Beta的信息，包括但不限于您在使用Adobe时遇到的问题或缺陷、建议、改进和推荐）均会分配给Adobe，其中包括针对该反馈的所有权利、标题和兴趣。
 
 +++
 
@@ -25,10 +26,10 @@ ht-degree: 0%
 
 - 访问Real-Time CDP、Journey Optimizer和Customer Journey Analytics
 - 访问Adobe Experience Cloud中的AI助手
-- 访问AEP Agent Orchestrator v2
+- 对AEP Agent Orchestrator的访问权限
 - 需要在系统上安装Node.js 18+
 
-## 1.1.6.1设置Agent Orchestrator v2
+## 1.1.6.1设置Agent Orchestrator
 
 ### IAM
 
@@ -42,11 +43,11 @@ ht-degree: 0%
 GRP-XXX
 ```
 
-### 安装Agent Orchestrator v2
+### 安装Agent Orchestrator
 
 在计算机上打开新的终端窗口。
 
-![AOV2](./images/aov2lab1.png)
+![AO](./images/aov2lab1.png)
 
 >[!NOTE]
 >
@@ -58,23 +59,23 @@ GRP-XXX
 npm login --registry=https://XXX/ --auth-type=web
 ```
 
-![AOV2](./images/aov2lab2.png)
+![AO](./images/aov2lab2.png)
 
 您应该会看到此内容。 按&#x200B;**Enter**。
 
-![AOV2](./images/aov2lab3.png)
+![AO](./images/aov2lab3.png)
 
 选择&#x200B;**SAML SSO**。
 
-![AOV2](./images/aov2lab4.png)
+![AO](./images/aov2lab4.png)
 
 单击&#x200B;**是**。
 
-![AOV2](./images/aov2lab5.png)
+![AO](./images/aov2lab5.png)
 
 您应该会看到此内容。
 
-![AOV2](./images/aov2lab6.png)
+![AO](./images/aov2lab6.png)
 
 执行以下命令。
 
@@ -82,7 +83,7 @@ npm login --registry=https://XXX/ --auth-type=web
 npm install -g ao --no-fund --registry=https://XXX/
 ```
 
-![AOV2](./images/aov2lab7.png)
+![AO](./images/aov2lab7.png)
 
 您应该会看到此内容。 执行以下命令：
 
@@ -90,47 +91,47 @@ npm install -g ao --no-fund --registry=https://XXX/
 ao --help
 ```
 
-![AOV2](./images/aov2lab8.png)
+![AO](./images/aov2lab8.png)
 
-Agent Orchestrator v2现已安装。 执行以下命令以启动&#x200B;**Agent Orchestrator v2**。
+现已安装Agent Orchestrator。 执行以下命令以启动&#x200B;**Agent Orchestrator**。
 
 ```
 ao web
 ```
 
-您应该会看到此内容。 按&#x200B;**Enter**&#x200B;以打开Agent Orchestrator v2 Web UI。
+您应该会看到此内容。 按&#x200B;**Enter**&#x200B;以打开Agent Orchestrator Web UI。
 
-![AOV2](./images/aov2lab9.png)
+![AO](./images/aov2lab9.png)
 
-## 1.1.6.2配置Agent Orchestrator v2
+## 1.1.6.2配置Agent Orchestrator
 
 单击&#x200B;**使用AO LLM**。
 
-![AOV2](./images/aov2lab11.png)
+![AO](./images/aov2lab11.png)
 
 单击&#x200B;**登录到生产环境**。
 
-![AOV2](./images/aov2lab12.png)
+![AO](./images/aov2lab12.png)
 
 单击&#x200B;**图层**&#x200B;图标。
 
-![AOV2](./images/aov2lab13.png)
+![AO](./images/aov2lab13.png)
 
 选择&#x200B;**AEP AI助手（代码执行 — BashKit）**。
 
-![AOV2](./images/aov2lab14.png)
+![AO](./images/aov2lab14.png)
 
 单击您的&#x200B;**配置文件**&#x200B;图标，然后选择&#x200B;**设置**。
 
-![AOV2](./images/aov2lab15.png)
+![AO](./images/aov2lab15.png)
 
 转到&#x200B;**插件**&#x200B;并单击&#x200B;**cja**。
 
-![AOV2](./images/aov2lab16.png)
+![AO](./images/aov2lab16.png)
 
 单击&#x200B;**安装**。
 
-![AOV2](./images/aov2lab17.png)
+![AO](./images/aov2lab17.png)
 
 ## 1.1.6.3设置您的上下文
 
@@ -144,7 +145,7 @@ ao web
 list dataviews
 ```
 
-![AOV2](./images/aov2lab18.png)
+![AO](./images/aov2lab18.png)
 
 输入以下命令并单击&#x200B;**发送**。
 
@@ -152,11 +153,11 @@ list dataviews
 switch to dataview Accelerate 2026 B2C
 ```
 
-![AOV2](./images/aov2lab20.png)
+![AO](./images/aov2lab20.png)
 
 您应该会看到此内容。
 
-![AOV2](./images/aov2lab19.png)
+![AO](./images/aov2lab19.png)
 
 ## 1.1.6.4从总体购买趋势开始，锚定上下文并放大fibre
 
