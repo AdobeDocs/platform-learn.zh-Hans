@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: a1578a5205fd17a6aaf362145c78e19343255d93
+source-git-commit: bd6a5ccb155195f12552e24000b7a6d152eada39
 workflow-type: tm+mt
-source-wordcount: '1582'
+source-wordcount: '1579'
 ht-degree: 3%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 3%
       + [1.1.3Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Adobe Marketing Agent适用于Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
       + [1.1.5Adobe Marketing Agent为克劳德](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
-      + [1.1.6 Agent Orchestrator v2](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
+      + [1.1.6 —](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
    + 1.2代理和人工智能快速入门 {#agents2}
       + [概述](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Agentic AI快速入门](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)
