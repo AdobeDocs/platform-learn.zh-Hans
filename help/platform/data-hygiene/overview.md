@@ -49,7 +49,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="数据卫生数据准备" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="数据卫生数据准备"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449285/?captions=chi_hans&format=jpeg&nocache=1740251397387" alt="数据卫生数据准备"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -112,7 +112,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="计划数据集删除" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="计划数据集删除"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430306?captions=chi_hans&format=jpeg&nocache=1740251397716" alt="计划数据集删除"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -135,7 +135,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="假名配置文件和体验事件过期时间" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="假名配置文件和体验事件过期时间"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449867?captions=chi_hans&format=jpeg&nocache=1740251397705" alt="假名配置文件和体验事件过期时间"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -181,7 +181,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../privacy/introduction-to-privacy-services.md" title="Privacy Service简介" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336074?format=jpeg&nocache=1740251397727" alt="Privacy Service简介"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3445721?captions=chi_hans&format=jpeg&nocache=1740251397727" alt="Privacy Service简介"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -220,7 +220,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="使用“upsert”更新特定的配置文件属性" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="使用“upsert”更新特定的配置文件属性"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443451/?captions=chi_hans&format=jpeg&nocache=1740251398874" alt="使用“upsert”更新特定的配置文件属性"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

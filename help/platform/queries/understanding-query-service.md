@@ -18,7 +18,7 @@ ht-degree: 10%
 
 Adobe Experience Platform查询服务使用户能够使用SQL浏览、验证和转换存储在Data Lake中的客户体验数据，并通过数据Distiller加载项提供增强的功能，如数据输出和计划。 此视频概述了一些核心功能，以帮助用户了解如何跨各种基于平台的应用程序利用查询服务。 有关详细信息，请访问[查询服务文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/query/home)。
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/33591?captions=chi_hans&learn=on&enablevpops)
 
 ## 基本用法
 
@@ -36,7 +36,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="run-queries.md" title="使用查询服务运行查询" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29796?format=jpeg&nocache=1759180596408" alt="使用查询服务运行查询"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32702?captions=chi_hans&format=jpeg&nocache=1759180596408" alt="使用查询服务运行查询"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -59,7 +59,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="explore-data.md" title="使用查询服务验证数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333415?format=jpeg&nocache=1759180596397" alt="使用查询服务验证数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414053?captions=chi_hans&format=jpeg&nocache=1759180596397" alt="使用查询服务验证数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -82,7 +82,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="prepare-data.md" title="使用数据Distiller获取数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333699?format=jpeg&nocache=1759180596403" alt="使用数据Distiller获取数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414065?captions=chi_hans&format=jpeg&nocache=1759180596403" alt="使用数据Distiller获取数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -119,7 +119,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="psql-client-tableau.md" title="将Tableau连接到查询服务" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/333702?format=jpeg&nocache=1759180596876" alt="将Tableau连接到查询服务"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3414041?captions=chi_hans&format=jpeg&nocache=1759180596876" alt="将Tableau连接到查询服务"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -165,7 +165,7 @@ CARDS
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="recharge-your-customer-data.md" title="为您的客户数据重新充电，以提供令人振奋的体验" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/342533?format=jpeg&nocache=1759180596865" alt="为您的客户数据重新充电，以提供令人振奋的体验"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3454956?captions=chi_hans&format=jpeg&nocache=1759180596865" alt="为您的客户数据重新充电，以提供令人振奋的体验"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
