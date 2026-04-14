@@ -8,7 +8,7 @@ feature: Schemas
 jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '2619'
 ht-degree: 1%
@@ -43,22 +43,24 @@ Key terms:
 **数据架构师**&#x200B;需要在本教程之外创建架构，但&#x200B;**数据工程师**&#x200B;将与数据架构师创建的架构密切合作。
 
 在开始练习之前，请观看此简短视频，详细了解架构和Experience Data Model (XDM)：
->[!VIDEO](https://video.tv.adobe.com/v/38510?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >
-> 若要在Experience Platform中更深入地研究数据建模，我们建议观看可在Experience League上免费使用的播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/zh-hans/playlists/experience-platform-model-your-customer-experience-data-with-xdm)！
+> 若要在Experience Platform中更深入地研究数据建模，我们建议观看可在Experience League上免费使用的播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)！
 
 ## 需要权限
 
 在[配置权限](configure-permissions.md)课程中，您已设置完成本课程所需的所有访问控制。
 
-<!--, specifically:
+<!--
+, specifically:
 
 * Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)-->
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+-->
 
 
 <!--
@@ -71,7 +73,7 @@ Key terms:
 
 1. 转到Platform用户界面，并确保已选择您的沙盒。
 1. 在左侧导航中转到&#x200B;**[!UICONTROL 架构]**。
-1. 选择右上方的&#x200B;**[!UICONTROL 创建架构]**&#x200B;按钮。
+1. 选择右上方的&#x200B;**[!UICONTROL 创建架构]**按钮。
    具有OOTB字段组的![架构](assets/schemas-loyaltyCreateSchema.png)
 
 1. 在创建架构工作流中，选择&#x200B;**[!UICONTROL 个人资料]**&#x200B;作为架构的基类，因为我们将为单个客户的属性（点、状态等）建模。
@@ -79,14 +81,14 @@ Key terms:
    ![选择基类](assets/schemas-loyaltySelectBaseClass.png)
 
 1. 在`Luma Loyalty Schema`架构显示名称&#x200B;**[!UICONTROL 文本字段中输入]**。 在以下画布中，您还可以查看和验证所选类提供的基本架构结构。
-1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以创建您的架构。
+1. 选择&#x200B;**[!UICONTROL 完成]**以创建您的架构。
    ![完成创建忠诚度架构](assets/schemas-loyaltyFinishSchemaCreation.png)
 
 ### 添加标准字段组
 
 创建架构后，您将被重定向到架构编辑器，您可以在其中向架构添加字段。 您可以直接将单个字段添加到架构或使用字段组。 请务必注意，所有单个字段仍与类或字段组相关联。 您可以从Adobe提供的大量行业标准字段组中进行选择，也可以创建自己的字段组。 当您开始在Experience Platform中对自己的数据进行建模时，最好熟悉Adobe提供的行业标准字段组。 最佳实践是尽可能使用它们，因为它们有时支持下游服务，例如客户人工智能、归因人工智能和Adobe Analytics。
 
-处理您自己的数据时，重要的一步是确定应在Platform中捕获您自己的哪些数据以及应如何对其进行建模。 播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/zh-hans/playlists/experience-platform-model-your-customer-experience-data-with-xdm)中将更深入地讨论这个大主题。 在本教程中，我将指导您完成一些预先确定的架构的实施。
+处理您自己的数据时，重要的一步是确定应在Platform中捕获您自己的哪些数据以及应如何对其进行建模。 播放列表[使用XDM对您的客户体验数据进行建模](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm)中将更深入地讨论这个大主题。 在本教程中，我将指导您完成一些预先确定的架构的实施。
 
 要添加字段组：
 
@@ -100,7 +102,7 @@ Key terms:
 
 1. 选中&#x200B;**[!UICONTROL Industry]** > **[!UICONTROL Retail]**&#x200B;框以公开特定于行业的字段组。
 1. 选择&#x200B;**[!UICONTROL 忠诚度详细信息]**&#x200B;以添加忠诚度计划字段。
-1. 选择&#x200B;**[!UICONTROL 添加字段组]**&#x200B;以将所有三个字段组添加到架构。
+1. 选择&#x200B;**[!UICONTROL 添加字段组]**以将所有三个字段组添加到架构。
    ![将标准字段组添加到忠诚度架构](assets/schemas-loyalty-saveOotbMixins.png)
 
 
@@ -159,7 +161,7 @@ Key terms:
    1. **[!UICONTROL 显示名称]**： `CRM Id`
    1. **[!UICONTROL 类型]**： **[!UICONTROL 字符串]**
 
-您的新字段组应如下所示。 选择&#x200B;**[!UICONTROL Save]**&#x200B;按钮以保存您的架构，但在下一次练习中保持该架构处于打开状态。
+您的新字段组应如下所示。 选择&#x200B;**[!UICONTROL Save]**按钮以保存您的架构，但在下一次练习中保持该架构处于打开状态。
 ![忠诚度字段组完成](assets/schemas-loyalty-identityFieldGroupComplete.png)
 
 ## 创建数据类型
@@ -344,12 +346,12 @@ Key terms:
 首先，我们必须使用自定义类为Luma的产品目录创建架构：
 
 1. 选择&#x200B;**[!UICONTROL 创建架构]**&#x200B;按钮。
-1. 在创建架构工作流中，选择&#x200B;**[!UICONTROL 其他]**&#x200B;选项。
+1. 在创建架构工作流中，选择&#x200B;**[!UICONTROL 其他]**选项。
    ![创建新架构](assets/schemas-newSchema-browseClasses.png)
 1. 选择&#x200B;**[!UICONTROL 创建类]**&#x200B;按钮
 1. 将其命名为`Luma Product Catalog Class`
 1. 将&#x200B;**[!UICONTROL 行为]**&#x200B;保留为&#x200B;**[!UICONTROL 记录]**
-1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。
+1. 选择&#x200B;**[!UICONTROL 创建]**按钮。
    ![创建新类](assets/schemas-productClass.png)
 1. 您创建的&#x200B;**Luma产品目录类**&#x200B;出现在下面的“类”表中。 确保已选择类，然后选择&#x200B;**[!UICONTROL 下一步]**。
    ![新类已添加](assets/schemas-productClassSelected.png)
@@ -358,7 +360,7 @@ Key terms:
    1. productName：产品名称：字符串
    1. productCategory： Product类别：字符串
    1. productColor： Product Color：字符串
-   1. productSku： Product SKU：字符串 | 必填
+   1. productSku： Product SKU： String |必需
    1. productSize： Product Size：字符串
    1. productPrice： Product Price： Double
 1. **[!UICONTROL 保存]**&#x200B;架构

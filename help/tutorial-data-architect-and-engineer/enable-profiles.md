@@ -8,7 +8,7 @@ feature: Profiles
 jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: c7af96b9b062974c125c2c94c3516b7b8c30a533
 workflow-type: tm+mt
 source-wordcount: '1085'
 ht-degree: 0%
@@ -26,21 +26,22 @@ ht-degree: 0%
 
 尽管听起来很神奇，但您无需为配置文件激活&#x200B;*所有数据*。 事实上，您应该只启用激活用例所需的数据。 启用要用于营销用例、呼叫中心集成等的数据，在这些用例中，您需要快速访问强大的客户档案。 如果您只上传数据进行分析，则可能不应为配置文件启用此功能。
 
-在决定您自己的哪些数据应为配置文件启用时，您应该查看实时客户配置文件数据[的重要](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=zh-Hans)护栏。
+在决定您自己的哪些数据应为配置文件启用时，您应该查看实时客户配置文件数据[的重要](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en)护栏。
 
 <!--is this accurate. Are there other considerations to point out? -->
 
 **数据架构师**&#x200B;需要在本教程之外启用Real-Time Customer Profile。
 
 在开始练习之前，请观看此简短视频，了解有关Real-Time Customer Profile的更多信息：
->[!VIDEO](https://video.tv.adobe.com/v/31672?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&enablevpops)
 
 ## 需要权限
 
 在[配置权限](configure-permissions.md)课程中，您已设置完成本课程所需的所有访问控制。
 
 
-<!--* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
+<!--
+* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile

@@ -8,7 +8,7 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: 375b9072-fbb8-4f99-ba8f-968dd9256c06
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '42'
 ht-degree: 0%
@@ -20,4 +20,4 @@ ht-degree: 0%
 了解如何构建Adobe Experience Platform以实现高效实施，平衡集中化和分散化方法。
 
 <!-- 62_S601_3442532_176_architecting-adobe-experience-platform-for-scalability -->
->[!VIDEO](https://video.tv.adobe.com/v/3459714/?captions=chi_hans&learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3458321/?learn=on&enablevpops=true)

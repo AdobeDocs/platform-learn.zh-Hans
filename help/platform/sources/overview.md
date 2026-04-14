@@ -7,7 +7,7 @@ level: Beginner
 jira: KT-3800
 thumbnail: 29694.jpg
 exl-id: e38d643a-27ea-49f4-87c4-eccdb860ea92
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 13%
@@ -18,13 +18,14 @@ ht-degree: 13%
 
 了解如何在Adobe Experience Platform界面中使用源或源连接器。 源是易于配置的集成，可让您将数据从Adobe、第一方和第三方应用程序引入到Platform的Real-time Customer Profile和数据湖。 有关详细信息，请参阅[源文档](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=zh-Hans)。
 
->[!VIDEO](https://video.tv.adobe.com/v/32144?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/29694?learn=on&enablevpops)
 
 <!--should have a whole section for data prep-->
 
 ## 从常见的第三方Adobe源类型中摄取数据
 
-<!-- CARDS
+<!--
+CARDS
 * ingest-data-from-crm.md
 * ingest-data-from-cloud-storage.md
 * ingest-data-from-databases.md
@@ -38,7 +39,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-crm.md" title="使用CRM Source连接器摄取数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32139?captions=chi_hans&format=jpeg&nocache=1740415500926" alt="使用CRM Source连接器摄取数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29711?format=jpeg&nocache=1740415500926" alt="使用CRM Source连接器摄取数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -61,7 +62,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-cloud-storage.md" title="使用Cloud Storage Source连接器引入数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32136?captions=chi_hans&format=jpeg&nocache=1740415500914" alt="使用Cloud Storage Source连接器引入数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29695?format=jpeg&nocache=1740415500914" alt="使用Cloud Storage Source连接器引入数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -84,7 +85,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-databases.md" title="使用数据库源连接器摄取数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345118?captions=chi_hans&format=jpeg&nocache=1740415500936" alt="使用数据库源连接器摄取数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/329317?format=jpeg&nocache=1740415500936" alt="使用数据库源连接器摄取数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -107,7 +108,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-source-connector.md" title="使用Source连接器流式传输数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410101?captions=chi_hans&format=jpeg&nocache=1740415500903" alt="使用Source连接器流式传输数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331943?format=jpeg&nocache=1740415500903" alt="使用Source连接器流式传输数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -130,7 +131,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="streaming-ingestion-http-api.md" title="使用流连接HTTP API端点摄取数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3410926?captions=chi_hans&format=jpeg&nocache=1740415500889" alt="使用流连接HTTP API端点摄取数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331028?format=jpeg&nocache=1740415500889" alt="使用流连接HTTP API端点摄取数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -153,7 +154,8 @@ ht-degree: 13%
 
 ## 从Adobe源摄取数据
 
-<!-- CARDS
+<!--
+CARDS
 * ingest-data-from-adobe-analytics.md
 * ingest-data-from-marketo.md
 * ingest-data-from-aam.md
@@ -165,7 +167,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-adobe-analytics.md" title="使用Adobe Analytics源连接器摄取数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3430251?captions=chi_hans&format=jpeg&nocache=1740415502122" alt="使用Adobe Analytics源连接器摄取数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29687?format=jpeg&nocache=1740415502122" alt="使用Adobe Analytics源连接器摄取数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -188,7 +190,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-marketo.md" title="从Marketo Engage引入数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3451870?captions=chi_hans&format=jpeg&nocache=1740415502109" alt="从Marketo Engage引入数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3419550?format=jpeg&nocache=1740415502109" alt="从Marketo Engage引入数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -211,7 +213,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="ingest-data-from-aam.md" title="使用Adobe Audience Manager Data Connector引入数据" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/346982/?captions=chi_hans&format=jpeg&nocache=1740415502093" alt="使用Adobe Audience Manager Data Connector引入数据"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/331214/?format=jpeg&nocache=1740415502093" alt="使用Adobe Audience Manager Data Connector引入数据"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -232,9 +234,10 @@ ht-degree: 13%
 </div>
 <!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
 
-## 故障排除
+## 疑难解答
 
-<!-- CARDS
+<!--
+CARDS
 * troubleshoot-sftp-connector.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
@@ -244,7 +247,7 @@ ht-degree: 13%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="troubleshoot-sftp-connector.md" title="疑难解答 — 无法连接到SFTP源连接器" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3443484?captions=chi_hans&format=jpeg&nocache=1740415502267" alt="疑难解答 — 无法连接到SFTP源连接器"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416134?format=jpeg&nocache=1740415502267" alt="疑难解答 — 无法连接到SFTP源连接器"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>

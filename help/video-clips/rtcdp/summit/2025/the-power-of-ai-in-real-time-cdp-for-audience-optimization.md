@@ -1,5 +1,5 @@
 ---
-title: 人工智能在Audience OptimizationReal-Time CDP中的强大功能
+title: 人工智能在Real-Time CDP中的强大功能
 description: 了解Adobe Real-Time CDP中的受众人工智能助手如何帮助营销人员通过大小估计、倾向评分和实时见解来优化受众策略。
 doc-type: Video Clips
 duration: 110
@@ -8,16 +8,16 @@ hide: true
 hidefromtoc: true
 recommendations: noCatalog, noDisplay
 exl-id: 97788fad-45c3-495a-8e59-589dab815c8c
-source-git-commit: 070fc02801d3403bf65ca732323338481e25b581
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '66'
 ht-degree: 0%
 
 ---
 
-# 人工智能在Audience OptimizationReal-Time CDP中的强大功能
+# 人工智能在Real-Time CDP中的强大功能
 
 了解Adobe Real-Time CDP中的受众人工智能助手如何帮助营销人员通过大小估计、倾向评分和实时见解来优化受众策略。
 
 <!-- 62_S508_3442517_109_the-power-of-ai-in-realtime-cdp-for-audience-optimization -->
->[!VIDEO](https://video.tv.adobe.com/v/3463027/?captions=chi_hans&learn=on&enablevpops=true)
+>[!VIDEO](https://video.tv.adobe.com/v/3458207/?learn=on&enablevpops=true)

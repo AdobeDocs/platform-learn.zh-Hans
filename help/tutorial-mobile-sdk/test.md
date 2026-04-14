@@ -6,13 +6,13 @@ feature-set: Target
 feature: A/B Tests
 hide: true
 hidefromtoc: true
-source-git-commit: 2b2267e84b26f8c2571e40d7f4c0e08281d36c6c
+exl-id: abf0611e-f977-4e34-a5dc-006b0cc99bf4
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 2%
 
 ---
-
 
 # 使用Markdow或HTML图像元素测试内联图像的使用。
 

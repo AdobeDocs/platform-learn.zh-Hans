@@ -9,24 +9,25 @@ duration: 141
 last-substantial-update: 2024-01-27T00:00:00Z
 jira: KT-14806
 exl-id: 66d8992b-e812-4a5c-a696-45f29106aaab
-source-git-commit: 286c85aa88d44574f00ded67f0de8e0c945a153e
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 25%
+ht-degree: 28%
 
 ---
 
 # 用例行动手册概述
 
-了解用例战术手册如何帮助 Real-Time Customer Data Platform 和 Journey Optimizer 的客户更快地实现价值。用例行动手册是涵盖多个行业和营销目标的几十个模板的目录。 行动手册可生成受众、历程和架构等技术资产，然后可对其进行自定义并发布到其他沙盒。 有关详细信息，请参阅[用例行动手册文档](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html?lang=zh-Hans)。
+了解用例战术手册如何帮助 Real-Time Customer Data Platform 和 Journey Optimizer 的客户更快地实现价值。用例行动手册是涵盖多个行业和营销目标的几十个模板的目录。 行动手册可生成受众、历程和架构等技术资产，然后可对其进行自定义并发布到其他沙盒。 有关详细信息，请参阅[用例行动手册文档](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3441825/?learn=on&enablevpops&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on&enablevpops)
 
 ## 快速入门
 
 了解如何为用例行动手册配置Platform帐户，然后创建和发布行动手册的第一个实例。
 
-<!-- CARDS
+<!--
+CARDS
 * configure-a-playbook-sandbox.md
 * create-and-publish-a-playbook-instance.md
 -->
@@ -37,7 +38,7 @@ ht-degree: 25%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="configure-a-playbook-sandbox.md" title="配置行动手册沙盒" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3449836/?format=jpeg&nocache=1739379898120&captions=chi_hans" alt="配置行动手册沙盒"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3426987/?format=jpeg&nocache=1739379898120" alt="配置行动手册沙盒"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -45,7 +46,7 @@ ht-degree: 25%
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="configure-a-playbook-sandbox.md" target="_blank" rel="referrer" title="配置行动手册沙盒">配置行动手册沙盒</a>
+                        <a href="configure-a-playbook-sandbox.md" target="_blank" rel="referrer" title="配置行动手册沙盒">配置战术手册沙盒</a>
                     </p>
                     <p class="is-size-6">了解如何为用例行动手册配置沙盒。</p>
                 </div>

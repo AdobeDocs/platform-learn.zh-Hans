@@ -9,7 +9,7 @@ duration: 226
 last-substantial-update: 2023-06-21T00:00:00Z
 jira: KT-3688
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
-source-git-commit: 311b296d67cf39867e7c9f3fd9f0458dfefcfdfd
+source-git-commit: fe8d5b8315048d91baf31dc7d8168bddaec56110
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 8%
@@ -26,16 +26,17 @@ ht-degree: 8%
 
 >[!IMPORTANT]
 >
->要访问[Adobe Developer Console](https://developer.adobe.com/console/home)，您必须是[Adobe Admin Console](https://helpx.adobe.com/cn/enterprise/using/admin-roles.html)中的[系统管理员](https://helpx.adobe.com/cn/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.)或[开发人员](https://adminconsole.adobe.com)。
+>要访问[Adobe Developer Console](https://developer.adobe.com/console/home)，您必须是[Adobe Admin Console](https://helpx.adobe.com/enterprise/using/admin-roles.html)中的[系统管理员](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.)或[开发人员](https://adminconsole.adobe.com)。
 >
 > 创建API凭据后，系统管理员必须将该凭据与Experience Platform中的角色关联。
 >
 >有关详细说明，请参阅[添加开发人员并授予API凭据权限](../admin/add-developers.md)。
 
 
->[!VIDEO](https://video.tv.adobe.com/v/31668/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
 
-<!-- CARDS
+<!--
+CARDS
 * generate-an-access-token.md
 * use-apis-with-postman.md
 -->
@@ -46,7 +47,7 @@ ht-degree: 8%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="generate-an-access-token.md" title="使用Postman生成Experience Platform API访问令牌" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32725/?captions=chi_hans&format=jpeg&nocache=1752259602830" alt="使用Postman生成Experience Platform API访问令牌"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29698/?format=jpeg&nocache=1752259602830" alt="使用Postman生成Experience Platform API访问令牌"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -69,7 +70,7 @@ ht-degree: 8%
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="use-apis-with-postman.md" title="在Postman中使用Experience Platform API" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32721/?captions=chi_hans&format=jpeg&nocache=1752259602844" alt="在Postman中使用Experience Platform API"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/29704/?format=jpeg&nocache=1752259602844" alt="在Postman中使用Experience Platform API"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
