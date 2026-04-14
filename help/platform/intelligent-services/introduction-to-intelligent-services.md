@@ -17,7 +17,7 @@ ht-degree: 45%
 
 # 智能服务简介
 
-关于智能服务的高级介绍，此服务可让营销分析师和从业人员在没有数据科学专业知识的背景下，利用客户体验用例中的人工智能和机器学习的功能。 有关详细信息，请访问[智能服务文档](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html)。
+关于智能服务的高级介绍，此服务可让营销分析师和从业人员在没有数据科学专业知识的背景下，利用客户体验用例中的人工智能和机器学习的功能。 有关详细信息，请访问[智能服务文档](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html?lang=zh-Hans)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on&enablevpops)
 
