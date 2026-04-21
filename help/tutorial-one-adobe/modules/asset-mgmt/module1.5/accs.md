@@ -4,9 +4,9 @@ description: Adobe Commerce as a Cloud Service
 kt: 5342
 doc-type: tutorial
 exl-id: f4a448ae-d867-4aa9-970c-7da5c77f48c5
-source-git-commit: fb1fc5c72723cc4e1ede87f90410feb0cc314eea
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '181'
+source-wordcount: '169'
 ht-degree: 2%
 
 ---
@@ -40,10 +40,6 @@ ht-degree: 2%
 [1.5.3将ACCS连接到AEM Assets CS](./ex3.md){target="_blank"}
 
 在本练习中，您会将ACCS后端关联到AEM Assets CS环境。
-
-[摘要和优点](./summary.md){target="_blank"}
-
-本模块的摘要和优势概述。
 
 ![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

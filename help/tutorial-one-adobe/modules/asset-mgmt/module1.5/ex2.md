@@ -4,9 +4,9 @@ description: 将ACCS连接到AEM Sites CS/EDS Storefront
 kt: 5342
 doc-type: tutorial
 exl-id: 81d826a8-c9f0-4e2a-9107-d6e06a4b8427
-source-git-commit: 7280f6b7d3579226f2d8c7f94e75ca8d3f2941cc
+source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 在本练习中，您会将AEM Sites CS/EDS店面链接到ACCS后端。 目前，当您打开AEM Sites CS/EDS店面并转到&#x200B;**手机**&#x200B;产品列表页面时，您尚未看到任何产品。
 
-在本练习结束时，您应该会看到AEM Sites CS/EDS店面的&#x200B;**电话**&#x200B;产品列表页面上显示了您在上一个练习中配置的产品。
+在本练习结束时，您应该会在AEM Sites CS/EDS店面的&#x200B;**手机/手表/计划/娱乐**&#x200B;产品列表页面上看到您在上一个练习中配置的产品。
 
 ![ACCS+AEM Sites](./images/accsaemsites0.png)
 
@@ -49,11 +49,11 @@ ht-degree: 0%
 
 ![ACCS+AEM Sites](./images/accsaemsites4.png)
 
-复制完整生成的JSON有效负载。
+单击&#x200B;**复制**&#x200B;以复制生成的完整JSON有效负载。
 
 ![ACCS+AEM Sites](./images/accsaemsites5.png)
 
-转到在设置AEM Sites CS/EDS环境时创建的GitHub存储库。 该存储库是在[1.1.2设置您的AEM CS环境](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}练习中创建的，应命名为&#x200B;**citisignal-aem-accs**。
+转到在设置AEM Sites CS/EDS环境时创建的GitHub存储库。 该存储库是在练习[1.1.2设置您的AEM CS环境](./../../../modules/asset-mgmt/module2.1/ex3.md){target="_blank"}中创建的，应命名为&#x200B;**citisignal-aem-accs**&#x200B;或&#x200B;**techinsidersodXX-citisignal-aem-accs**，或者，如果您正在参加现场培训，应命名为&#x200B;**techinsidersXX-citisignal-aem-accs**。
 
 ![ACCS+AEM Sites](./images/accsaemsites6.png)
 
@@ -77,14 +77,23 @@ ht-degree: 0%
 
 **config.json**&#x200B;文件现已更新。 您应会在几分钟内在网站上看到所做的更改。 验证是否成功提取更改的方法是转到&#x200B;**手机**&#x200B;产品页面。 您现在应该会看到页面上出现&#x200B;**iPhone Air**。
 
-要访问您的网站，您需要转到`main--citisignal-aem-accs--XXX.aem.page`和/或`main--citisignal-aem-accs--XXX.aem.live`，然后使用您的GitHub用户帐户替换XXX，本例中为`woutervangeluwe`。
-
-在此示例中，完整URL将变为：
-`https://main--citisignal-aem-accs--woutervangeluwe.aem.page`和/或`https://main--citisignal-aem-accs--woutervangeluwe.aem.live`。
+使用&#x200B;**.page**&#x200B;或&#x200B;**.live** URL打开您的网站，然后转到&#x200B;**电话**。 你应该看看这个。
 
 ![ACCS+AEM Sites](./images/accsaemsites11.png)
 
-虽然产品现在已成功显示，但还没有可用于产品的图像。 您将在下一个练习中设置与AEM Assets CS的链接，以获取产品图像。
+转到&#x200B;**监视**。 你应该看看这个。
+
+![ACCS+AEM Sites](./images/accsaemsites12.png)
+
+转到&#x200B;**计划**。 你应该看看这个。
+
+![ACCS+AEM Sites](./images/accsaemsites13.png)
+
+转到&#x200B;**娱乐**。 你应该看看这个。
+
+![ACCS+AEM Sites](./images/accsaemsites14.png)
+
+虽然产品现在已成功显示，但还没有可用于这些产品的图像。 您将在下一个练习中设置与AEM Assets CS的链接，以获取产品图像。
 
 下一步：[将ACCS连接到AEM Assets CS](./ex3.md){target="_blank"}
 
