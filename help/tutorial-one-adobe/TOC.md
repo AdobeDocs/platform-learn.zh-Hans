@@ -4,7 +4,7 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b32d96f1d7cce7c22d56ef1783e7209796635758
+source-git-commit: 19e1d50fdab39f507b91df9e244323e2f54a95ad
 workflow-type: tm+mt
 source-wordcount: '1576'
 ht-degree: 3%
@@ -36,7 +36,7 @@ ht-degree: 3%
 + 代理式 AI {#agents}
    + 1.1Agent Orchestrator {#agents1}
       + [概述](/help/tutorial-one-adobe/modules/agents/module1.1/agentorchestrator.md)
-      + [1.1.1 Agent Orchestrator快速入门](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
+      + [1.1.1人工智能助理和Agent Orchestrator](/help/tutorial-one-adobe/modules/agents/module1.1/ex1.md)
       + [1.1.2适用于ChatGPT Enterprise的Adobe Marketing Agent](/help/tutorial-one-adobe/modules/agents/module1.1/ex2.md)
       + [1.1.3Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Adobe Marketing Agent适用于Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)

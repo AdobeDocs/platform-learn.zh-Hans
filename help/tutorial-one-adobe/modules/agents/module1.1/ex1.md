@@ -1,17 +1,17 @@
 ---
-title: Agent Orchestrator快速入门
-description: Agent Orchestrator快速入门
+title: AI助手和Agent Orchestrator
+description: AI助手和Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: a5000a5d-5540-49bb-b737-aaca1ab0ddd7
-source-git-commit: 7e0214226eaee0586d036d46de39c08046d43893
+source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1387'
 ht-degree: 0%
 
 ---
 
-# 1.1.1 Agent Orchestrator快速入门
+# 1.1.1人工智能助理和Agent Orchestrator
 
 ## 视频
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 1.1.1.1在Agent Orchestrator中设置上下文
 
-转到[https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat](https://experience.adobe.com/#/@experienceplatform/ai-assistant/chat)。
+转到[https://experience.adobe.com/#/ai-assistant/chat](https://experience.adobe.com/#/ai-assistant/chat)。
 
 您应该会看到此内容。 确保您在组织`--aepImsOrgName--`中。
 
@@ -32,10 +32,6 @@ ht-degree: 0%
 ![Agent Orchestrator](./images/ao2.png)
 
 将上下文设置为：
-
-- **文档Source**： **Journey Optimizer**
-
-文档Source设置有助于优先处理哪组Experience League文档，以检查与产品知识/Experience League相关的问题。
 
 - **沙盒**： **Prod — 一个Adobe (VA7)**
 
@@ -104,7 +100,7 @@ Which field is used to store the preferred genre?
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-Show me ordersYTD by preferred genre for the last 2 months
+Show me purchases by preferred genre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/ao8.png)
@@ -131,7 +127,7 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/ao12.png)
 
-您应该会看到此内容。 单击&#x200B;**显示所有结果**。
+您应该会看到此内容。 单击&#x200B;**预览**&#x200B;图标。
 
 ![Agent Orchestrator](./images/ao13.png)
 
@@ -180,7 +176,7 @@ give more details about the first one
 输入以下&#x200B;**提示**：
 
 ```javascript
-What was the initial audience in the journey named 
+Which audiences are used by the journey named
 ```
 
 然后手动键入`+CitiSignal fib`以启用自动完成。 选择历程&#x200B;**CitiSignal - Fiber Max启动项促销活动**。
@@ -217,11 +213,11 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 AI Assistant可为您提供意见和建议。
 
-单击句子&#x200B;**以下是我获得结果的方式**。
+单击句子&#x200B;**说明**。
 
 ![Agent Orchestrator](./images/ao21.png)
 
-然后，您可以查看AI Assistant获得结果的步骤。
+然后，您可以查看一些其他信息和上下文。
 
 ![Agent Orchestrator](./images/ao22.png)
 
@@ -247,7 +243,7 @@ Create an audience that combines people with an average download usage per month
 
 ![Agent Orchestrator](./images/ao33.png)
 
-查看区段查询表达式。 输入`yes`并单击&#x200B;**发送**&#x200B;按钮。
+查看&#x200B;**受众定义**。 输入`yes`并单击&#x200B;**发送**&#x200B;按钮。
 
 ![Agent Orchestrator](./images/ao34.png)
 
@@ -259,17 +255,21 @@ Create an audience that combines people with an average download usage per month
 
 ![Agent Orchestrator](./images/ao36.png)
 
-查看区段定义。 单击&#x200B;**创建**。
+查看&#x200B;**受众建议**。 单击&#x200B;**创建**。
 
 ![Agent Orchestrator](./images/ao37.png)
 
-您的受众现已创建。
+您的受众现已创建。 单击链接以打开受众。
 
 ![Agent Orchestrator](./images/ao38.png)
 
 >[!NOTE]
 >
 >创建新受众时，需要24小时才能使AI Assistant进一步使用这些受众。
+
+您应该会看到此内容。
+
+![Agent Orchestrator](./images/ao38a.png)
 
 ## 1.1.1.8查找与高使用率对应的现有受众，并检查它们是否在使用中
 
@@ -289,17 +289,21 @@ Is there an audience that has "heavy downloaders" in the title?
 
 ![Agent Orchestrator](./images/ao30.png)
 
-您应该会看到此内容。 您现在想要查看您的所有受众以及他们在过去几天中的更改情况。
+您应该会看到此内容。
+
+![Agent Orchestrator](./images/ao30a.png)
+
+您现在想要查看您的所有受众以及他们在过去几天中的更改情况。
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-List how much these audiences changed over the last few days.
+List how much all my audiences changed over the last few days.
 ```
 
 ![Agent Orchestrator](./images/ao31.png)
 
-您应该会看到此内容。 单击&#x200B;**显示更多**。
+您应该会看到此内容。 单击&#x200B;**显示所有结果**。
 
 ![Agent Orchestrator](./images/ao31a.png)
 
@@ -355,25 +359,21 @@ Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_k
 
 ![Agent Orchestrator](./images/aocj1.png)
 
-您应该会看到此内容。 输入`yes`并单击“生成”。
+您应该会看到此内容。 输入`yes`并单击“发送”。
 
 ![Agent Orchestrator](./images/aocj2.png)
 
-您应该会看到此内容。 输入`yes`并单击“生成”。
+您应该会看到此内容。 输入`yes`并单击“发送”。
 
 ![Agent Orchestrator](./images/aocj3.png)
 
-您应该会看到此内容。 输入`The first one`并单击“发送”。
+您应该会看到此内容。 输入`the first one`并单击“发送”。
 
 ![Agent Orchestrator](./images/aocj4.png)
 
 您应该会看到此内容。 输入`yes`并单击“发送”。
 
 ![Agent Orchestrator](./images/aocj5.png)
-
-查看响应。 输入`yes`并单击“发送”。
-
-![Agent Orchestrator](./images/aocj6.png)
 
 单击&#x200B;**审阅**。
 
@@ -383,9 +383,13 @@ Create a  journey towards the audience Heavy Downloaders - Sci-Fi Preference_k
 
 ![Agent Orchestrator](./images/aocj8.png)
 
-您的历程现在已在草稿模式下创建。
+您的历程现在已在草稿模式下创建。 单击您的历程以将其打开。
 
 ![Agent Orchestrator](./images/aocj9.png)
+
+您应该会看到此内容。
+
+![Agent Orchestrator](./images/aocj10.png)
 
 ## 1.1.1.10历程冲突管理
 
@@ -419,13 +423,9 @@ List any conflicts for the journey +CitiSignal Fiber Max
 
 ![Agent Orchestrator](./images/aocj70a.png)
 
-查看历程冲突信息。
+查看潜在的历程冲突信息。
 
 ![Agent Orchestrator](./images/aocj71.png)
-
-向下滚动以查找更多历程冲突详细信息。
-
-![Agent Orchestrator](./images/aocj72.png)
 
 ## 1.1.1.11个试验
 
