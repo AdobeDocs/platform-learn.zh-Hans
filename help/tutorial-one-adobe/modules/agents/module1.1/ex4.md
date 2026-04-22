@@ -4,9 +4,9 @@ description: 适用于Google Gemini Enterprise的Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 62b0b307-599b-4165-819b-cac61a8c5d28
-source-git-commit: c1e6d2110ca242ae8b4ff62cbdc5838392ec130e
+source-git-commit: 8e6a4b67dc8c1ec19d81a25a6c1a51f17255fc6e
 workflow-type: tm+mt
-source-wordcount: '1031'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -197,11 +197,11 @@ openid email profile
 
 在本练习中，需要将上下文设置为使用：
 
-- **沙盒**： **Prod — 加速(VA7)**
+- **沙盒**： **Prod — 一个Adobe (VA7)**
 
   沙盒设置有助于在询问问题时识别沙盒AI助手应查看的沙盒。
 
-- **数据视图**： **加速2026 B2C**
+- **数据视图**： **AdobeOne — 统一客户数据视图**
 
 数据视图设置有助于确定在询问问题时数据视图AI助手应查看的数据视图。
 
@@ -213,19 +213,27 @@ list sandboxes
 
 ![Agent Orchestrator](./images/gemini28.png)
 
-然后，您应该会看到类似以下的内容。 输入命令`switch to sandbox accelerate`并单击&#x200B;**发送**&#x200B;按钮。
+然后，您应该会看到类似以下的内容。 输入以下命令并单击&#x200B;**发送**&#x200B;按钮。
+
+```
+switch to sandbox One Adobe
+```
 
 ![Agent Orchestrator](./images/geminilab10.png)
 
 您应该会看到此内容。 要更改数据视图，请输入以下命令并单击&#x200B;**发送**&#x200B;按钮。
 
-```javascript
+```
 list dataviews
 ```
 
 ![Agent Orchestrator](./images/geminilab11.png)
 
-然后，您应该会看到类似以下的内容。 输入命令`switch dataview to Accelerate 2026 B2C`并单击&#x200B;**发送**&#x200B;按钮。
+然后，您应该会看到类似以下的内容。 输入以下命令并单击&#x200B;**发送**&#x200B;按钮。
+
+```
+switch to AdobeOne - Unified Customer Data View
+```
 
 ![Agent Orchestrator](./images/geminilab12.png)
 
@@ -242,7 +250,7 @@ list dataviews
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/geminilab18.png)
@@ -254,7 +262,7 @@ Show me purchases by mainCategory over the last 7 months.
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
+Show me purchases by mainCategory = Fiber over the last 2 months until today, broken down by week
 ```
 
 ![Agent Orchestrator](./images/geminilab20.png)
@@ -279,7 +287,7 @@ Which field is used to store the preferred genre
 
 ![Agent Orchestrator](./images/geminilab22.png)
 
-您随后应该会看到此消息，其中显示用于流派的字段为&#x200B;**_experienceplatform.individualCharactations.preferences.preferredGenre**。
+您应该会看到此内容，它显示用于流派的字段为&#x200B;**`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**。
 
 ![Agent Orchestrator](./images/geminilab23.png)
 
@@ -288,7 +296,7 @@ Which field is used to store the preferred genre
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me purchases by preferred genre for the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/geminilab24.png)
