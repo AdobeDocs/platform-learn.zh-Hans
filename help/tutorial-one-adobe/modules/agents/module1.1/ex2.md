@@ -4,21 +4,14 @@ description: 适用于ChatGPT Enterprise的Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 765d080e8a3bfe774478eaabfdb5c099701597df
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
 
 # 1.1.2适用于ChatGPT Enterprise的Adobe Marketing Agent
-
-[!BADGE Beta 版]
-
-+++Beta详细信息
-通过在ChatGPT Enterprise Beta中使用Adobe Marketing Agent，您特此确认Beta是“按原样”提供的，不提供任何形式的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持Beta。 建议您谨慎使用，切勿依赖此类Beta和/或随附材料的正确功能或性能。 Beta被视为Adobe的机密信息。  您向Beta提供的任何“反馈”（有关Beta的信息，包括但不限于您在使用Adobe时遇到的问题或缺陷、建议、改进和推荐）均会分配给Adobe，其中包括针对该反馈的所有权利、标题和兴趣。
-
-+++
 
 ## 视频
 
@@ -57,7 +50,7 @@ ht-degree: 0%
 填写以下字段：
 
 - **名称**： `Adobe Marketing Agent`
-- **MCP服务器URL**：请与您的Adobe代表核实
+- **MCP服务器URL**： `https://aep-ai-ama.adobe.io/mcp`
 - **身份验证**： `OAuth`
 
 选中&#x200B;**我了解并希望继续**&#x200B;的复选框。
@@ -88,63 +81,29 @@ ChatGPT现在将尝试连接到您的Adobe帐户。 选择&#x200B;**允许访问
 
 在本练习中，需要将上下文设置为使用：
 
-- **沙盒**： **Prod — 加速(VA7)**
+- **IMS组织**： `--aepImsOrgName--`。
+
+- **沙盒**： **Prod — 一个Adobe**
 
 沙盒设置有助于在询问问题时识别ChatGPT应查看的沙盒。
 
-- **数据视图**： **加速2026 B2C**
+- **数据视图**： **AdobeOne — 统一客户数据视图**
 
 数据视图设置有助于在提问时识别ChatGPT应查看的数据视图。
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-list sandboxes
+change context
 ```
 
 ![Agent Orchestrator](./images/chatgpt11.png)
 
-然后，您应该会看到一个类似的可用沙盒列表。 此示例中的当前沙盒设置为&#x200B;**prod**。
-
-若要将其更改为需要使用的沙盒，请输入以下&#x200B;**提示**，然后单击&#x200B;**发送**&#x200B;按钮。
-
-```javascript
-switch to sandbox accelerate
-```
+然后，您应该会看到一个类似的窗口，其中显示了当前的组织、沙盒和数据视图选择。 根据以上信息，将这些字段更改为正确的组织、沙盒和数据视图。
 
 ![Agent Orchestrator](./images/chatgpt12.png)
 
-您应该会看到此内容。 单击&#x200B;**设置上下文**。
-
-![Agent Orchestrator](./images/chatgpt13.png)
-
-您应该会看到此内容。 输入以下&#x200B;**Prompt**&#x200B;并单击&#x200B;**send**&#x200B;按钮以设置要使用的数据视图。
-
-```javascript
-list dataviews
-```
-
-![Agent Orchestrator](./images/chatgpt14.png)
-
-然后，您应该会看到可用数据视图的类似列表。
-
-要设置需要使用的数据视图，请输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
-
-```javascript
-switch to Accelerate 2026 B2C
-```
-
-![Agent Orchestrator](./images/chatgpt15.png)
-
-您应该会看到此内容。 单击&#x200B;**设置上下文**。
-
-![Agent Orchestrator](./images/chatgpt16.png)
-
-您应该会看到此内容。
-
-![Agent Orchestrator](./images/chatgpt17.png)
-
-您的上下文现已设置正确，因此您接下来可以开始发送特定提示。
+您的上下文现已正确设置，因此您可以开始在下一步发送特定提示。
 
 ## 1.1.2.3从总体购买趋势开始，锚定上下文并放大fibre
 
@@ -155,7 +114,7 @@ switch to Accelerate 2026 B2C
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-Show me purchases by mainCategory over the last 7 months.
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/chatgpt18.png)
@@ -167,7 +126,7 @@ Show me purchases by mainCategory over the last 7 months.
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months per week
+Show me purchases by mainCategory = Fiber over the last 2 months per week
 ```
 
 ![Agent Orchestrator](./images/chatgpt20.png)
@@ -187,12 +146,12 @@ Show me purchases by mainCategory = Fiber over the last 7 months per week
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-Which field is used to store the preferred genre in the sandbox accelerate?
+Which field is used to store the preferred genre?
 ```
 
 ![Agent Orchestrator](./images/chatgpt22.png)
 
-您随后应该会看到此消息，其中显示用于流派的字段为&#x200B;**_experienceplatform.individualCharactations.preferences.preferredGenre**。
+您应该会看到此内容，它显示用于流派的字段为&#x200B;**`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**。
 
 ![Agent Orchestrator](./images/chatgpt23.png)
 
@@ -201,22 +160,14 @@ Which field is used to store the preferred genre in the sandbox accelerate?
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
 ```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+Show me purchases by favouriteGenre for the last 2 months
 ```
 
 ![Agent Orchestrator](./images/chatgpt24.png)
 
-您应该会看到此内容。 单击&#x200B;**研究**。
-
-![Agent Orchestrator](./images/chatgpt25.png)
-
 您应该会看到此内容。
 
-![Agent Orchestrator](./images/chatgpt26.png)
-
-向下滚动查看更多信息。
-
-![Agent Orchestrator](./images/chatgpt27.png)
+![Agent Orchestrator](./images/chatgpt25.png)
 
 ## 1.1.2.5标识现有光纤历程
 
@@ -232,13 +183,9 @@ What journeys exist?
 
 ![Agent Orchestrator](./images/chatgpt28.png)
 
-您应该会看到此内容。 单击&#x200B;**研究**。
+您应该会看到此内容。
 
 ![Agent Orchestrator](./images/chatgpt29.png)
-
-然后，您应该会看到历程列表。
-
-![Agent Orchestrator](./images/chatgpt30.png)
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
@@ -248,17 +195,9 @@ Which of these journeys has 'Fiber' in its name?
 
 ![Agent Orchestrator](./images/chatgpt31.png)
 
-您应该会看到此内容。 单击&#x200B;**研究**。
-
-![Agent Orchestrator](./images/chatgpt32.png)
-
 您应该会看到此内容。
 
-![Agent Orchestrator](./images/chatgpt33.png)
-
-向下滚动查看更多详细信息。
-
-![Agent Orchestrator](./images/chatgpt34.png)
+![Agent Orchestrator](./images/chatgpt32.png)
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
