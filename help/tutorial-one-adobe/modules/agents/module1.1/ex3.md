@@ -4,21 +4,14 @@ description: Adobe Marketing Agent for Microsoft 365 CopilotCopilot
 kt: 5342
 doc-type: tutorial
 exl-id: 9cab0e72-4d46-46ee-8dee-e5ca83889523
-source-git-commit: 8face7d2c69d1830e5151625d013fe86b83c31b3
+source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
 workflow-type: tm+mt
-source-wordcount: '984'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
 
 # 1.1.3Adobe Marketing Agent for Microsoft 365 Copilot
-
-[!BADGE Beta 版]
-
-+++Beta详细信息
-通过将Adobe Marketing Agent与Microsoft 365 Copilot Beta结合使用，您特此确认Beta是“按原样”提供的，不提供任何形式的担保。 Adobe没有义务维护、更正、更新、更改、修改或以其他方式支持Beta。 建议您谨慎使用，切勿依赖此类Beta和/或随附材料的正确功能或性能。 Beta被视为Adobe的机密信息。  您向Beta提供的任何“反馈”（有关Beta的信息，包括但不限于您在使用Adobe时遇到的问题或缺陷、建议、改进和推荐）均会分配给Adobe，其中包括针对该反馈的所有权利、标题和兴趣。
-
-+++
 
 ## 先决条件
 
@@ -83,10 +76,6 @@ Adobe Marketing Agent现在已成功加载。
 
 ![ChatGPT](./images/copilotlogin3.png)
 
-成功进行身份验证后，您可能需要选择要使用的特定实例。 如果您看到此屏幕，请选择实例 — aepImsOrgName—。
-
-![ChatGPT](./images/copilotlogin4.png)
-
 然后，您会看到正在生成类似的代码。 单击&#x200B;**复制**&#x200B;以复制代码。
 
 ![ChatGPT](./images/copilotlogin5.png)
@@ -105,39 +94,21 @@ Adobe Marketing Agent现在已成功加载。
 
 在本练习中，需要将上下文设置为使用：
 
-- **沙盒**： **Prod — 加速(VA7)**
+- **沙盒**： **Prod — 一个Adobe (VA7)**
 
   沙盒设置有助于在询问问题时识别沙盒AI助手应查看的沙盒。
 
-- **数据视图**： **加速2026 B2C**
+- **数据视图**： **AdobeOne — 统一客户数据视图**
 
   数据视图设置有助于确定在询问问题时数据视图AI助手应查看的数据视图。
 
-![Agent Orchestrator](./images/copilotlogin7.png)
+首先，将沙盒更改为正确的沙盒，然后单击&#x200B;**刷新数据视图**。
 
-要更改沙盒，请输入以下命令并单击&#x200B;**发送**&#x200B;按钮。
+![Agent Orchestrator](./images/copilotlogin7a.png)
 
-```javascript
-change sandbox
-```
+然后，选择正确的数据视图并单击&#x200B;**更新**。
 
 ![Agent Orchestrator](./images/copilot9.png)
-
-然后，您应该会看到类似以下的内容。 选择要使用的沙盒，然后单击&#x200B;**选择**。
-
-![Agent Orchestrator](./images/copilot10.png)
-
-您应该会看到此内容。 要更改数据视图，请输入以下命令并单击&#x200B;**发送**&#x200B;按钮。
-
-```javascript
-change dataview
-```
-
-![Agent Orchestrator](./images/copilot11.png)
-
-然后，您应该会看到类似以下的内容。 选择要使用的数据视图，然后单击&#x200B;**选择**。
-
-![Agent Orchestrator](./images/copilot12.png)
 
 您应该会看到此内容。 上下文现已正确设置，以便您接下来可以开始发送特定提示。
 
@@ -151,8 +122,8 @@ change dataview
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
-```javascript
-Show me purchases by mainCategory over the last 7 months.
+```
+Show me purchases by mainCategory over the last 2 months.
 ```
 
 ![Agent Orchestrator](./images/copilot18.png)
@@ -163,8 +134,8 @@ Show me purchases by mainCategory over the last 7 months.
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
-```javascript
-Show me purchases by mainCategory = Fiber over the last 7 months broken down by week
+```
+Show me purchases by mainCategory = Fiber over the last 2 months broken down by week
 ```
 
 ![Agent Orchestrator](./images/copilot20.png)
@@ -183,13 +154,13 @@ Show me purchases by mainCategory = Fiber over the last 7 months broken down by 
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
-```javascript
+```
 Which field is used to store the preferred genre
 ```
 
 ![Agent Orchestrator](./images/copilot22.png)
 
-您随后应该会看到此消息，其中显示用于流派的字段为&#x200B;**_experienceplatform.individualCharactations.preferences.preferredGenre**。
+您应该会看到此内容，它显示用于流派的字段为&#x200B;**`--aepTenantId--.individualCharacteristics.telco.mediaPreferences.favouriteGenre`**。
 
 ![Agent Orchestrator](./images/copilot23.png)
 
@@ -197,8 +168,8 @@ Which field is used to store the preferred genre
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
-```javascript
-Show me ordersYTD by preferredGenre for the last 7 months
+```
+Show me purchases by preferred genre for the last 2 months until today
 ```
 
 ![Agent Orchestrator](./images/copilot24.png)
@@ -219,7 +190,7 @@ Show me ordersYTD by preferredGenre for the last 7 months
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
-```javascript
+```
 What journeys exist? 
 ```
 
@@ -231,7 +202,7 @@ What journeys exist?
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
-```javascript
+```
 Which of these journeys has 'Fiber' in its name?
 ```
 
@@ -243,7 +214,7 @@ Which of these journeys has 'Fiber' in its name?
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
-```javascript
+```
 Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 ```
 
@@ -261,7 +232,7 @@ Show me the details of the journey 'CitiSignal - Fiber Max Launch Promotion'
 
 输入以下&#x200B;**提示**&#x200B;并单击&#x200B;**发送**&#x200B;按钮。
 
-```javascript
+```
 Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journey
 ```
 
@@ -271,13 +242,9 @@ Create a fall-out report on the "CitiSignal - Fiber Max Launch Promotion" journe
 
 ![Agent Orchestrator](./images/copilot38.png)
 
-再向下滚动一点，以查看观察结果和建议。 单击这3个点&#x200B;**...**，然后选择&#x200B;**历程详细信息**&#x200B;以在Adobe Journey Optimizer中打开特定历程。
+再向下滚动一点，以查看观察结果和建议。
 
 ![Agent Orchestrator](./images/copilot40.png)
-
-您应该会看到此内容。
-
-![Agent Orchestrator](./images/copilot41.png)
 
 您现在已经完成了这个实验。
 
