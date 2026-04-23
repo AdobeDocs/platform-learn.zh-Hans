@@ -3,9 +3,10 @@ title: Adobe Marketing Agent为克劳德
 description: Adobe Marketing Agent为克劳德
 kt: 5342
 doc-type: tutorial
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+exl-id: 2563ca77-699b-4cd3-af51-1105cea03c79
+source-git-commit: 2339a3a9c122a3e757c59eec3a9be54acf8d9c1e
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '570'
 ht-degree: 0%
 
 ---
@@ -62,7 +63,7 @@ ht-degree: 0%
 填写以下字段：
 
 - **名称**： `Adobe Marketing Agent`
-- **MCP服务器URL**：请与您的Adobe代表核实
+- **MCP服务器URL**：询问您的Adobe代表
 
 单击&#x200B;**添加**。
 
@@ -72,7 +73,7 @@ ht-degree: 0%
 
 ![克劳德.ai](./images/claude5.png)
 
-单击&#x200B;**+**&#x200B;图标，转到&#x200B;**连接器**&#x200B;并确保已启用&#x200B;**Adobe Marketing Agent**&#x200B;**。
+单击&#x200B;**+**&#x200B;图标，转到&#x200B;**连接器**&#x200B;并确保已启用&#x200B;**Adobe Marketing Agent**。
 
 ![克劳德.ai](./images/claude6.png)
 

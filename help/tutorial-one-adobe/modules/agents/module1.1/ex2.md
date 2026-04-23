@@ -4,9 +4,9 @@ description: 适用于ChatGPT Enterprise的Adobe Marketing Agent
 kt: 5342
 doc-type: tutorial
 exl-id: 0aa0cef5-bc1d-4cb6-be09-a5964686c963
-source-git-commit: 312af1518edd28b4eee577e4ab6b97943a56538d
+source-git-commit: d732dd6abdacc0ebcfa0ab8a09a49dc4b0f2b56b
 workflow-type: tm+mt
-source-wordcount: '739'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 0%
 填写以下字段：
 
 - **名称**： `Adobe Marketing Agent`
-- **MCP服务器URL**： `https://aep-ai-ama.adobe.io/mcp`
+- **MCP服务器URL**：询问您的Adobe代表
 - **身份验证**： `OAuth`
 
 选中&#x200B;**我了解并希望继续**&#x200B;的复选框。
