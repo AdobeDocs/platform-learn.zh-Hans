@@ -4,9 +4,9 @@ description: Brand Concierge快速入门
 kt: 5342
 doc-type: tutorial
 exl-id: e05b60b1-62d7-4b70-834d-ef91782ac388
-source-git-commit: 463636444922fcb8a1c4b538bd09901e665b039e
+source-git-commit: a333ddbf1ed0c51dd9ae1d9a5eff3f0c569a1d1f
 workflow-type: tm+mt
-source-wordcount: '1115'
+source-wordcount: '1255'
 ht-degree: 1%
 
 ---
@@ -136,15 +136,38 @@ Competitor pricing, competitor products
 
 您现在需要上传一个包含您网站链接的csv文件。 下载[CitiSignal网站链接CSV文件](./assets/citisignal-website-links.csv)到您的桌面。
 
+![Brand Concierge](./images/bc8z.png)
+
 单击&#x200B;**浏览文件**。
 
 ![Brand Concierge](./images/bc8.png)
 
 打开文件&#x200B;**citisignal-website-links.csv**，并更新链接以指向您自己的CitiSignal网站。
 
+If you&#39;re doing this tech lab as part of the Tech Insiders Tech Lab deliveries, you have been given access to an existing demo website based on an assigned number. These demo websites come with a custom domain that looks like this, whereby XX stand for the number that has been given to you:
+
+**https://techinsidersXX.adobedemosystem.com/** (for in-person training)
+
+或
+
+**https://techinsidersodXX.adobedemosystem.com/**（用于按需培训）
+
+在下图中，您需要将基本URL替换为您网站的URL。
+
+以下文件中指向产品的链接与您在模块练习1中配置的产品相关
+[1.5 Adobe Commerce as a Cloud Service](./../../../modules/asset-mgmt/module1.5/accs.md){target="_blank"}。
+
 ![Brand Concierge](./images/bc8a.png)
 
-选择您刚刚下载和编辑的文件&#x200B;**citisignal-website-links.csv**。 单击&#x200B;**打开**。
+如果您的数字为&#x200B;**1**，则文件应如下所示：
+
+![Brand Concierge](./images/bc8b.png)
+
+如果您的数字为&#x200B;**90**，则文件应如下所示：
+
+![Brand Concierge](./images/bc8c.png)
+
+按照上述说明更新文件后，请选择下一个文件&#x200B;**citisignal-website-links.csv**。 单击&#x200B;**打开**。
 
 ![Brand Concierge](./images/bc9.png)
 
@@ -228,9 +251,9 @@ Brand Concierge使用Adobe Experience Platform存储对话中的交互数据。 
 
 ![Brand Concierge](./images/admincontrols4.png)
 
-## 1.4.1.4样式配置管理
+## 1.4.1.4 Styling Config Management
 
-转到&#x200B;**样式配置管理**。 单击&#x200B;**初始化样式配置**。
+Go to **Styling Config Management**. Click **Initialize style config**.
 
 ![Brand Concierge](./images/admincontrols7.png)
 
