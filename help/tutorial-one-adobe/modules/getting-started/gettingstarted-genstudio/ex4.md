@@ -1,0 +1,175 @@
+---
+title: Getting Started - Postman setup
+description: Getting Started - Postman setup
+kt: 5342
+doc-type: tutorial
+source-git-commit: 2a552768bb4d0fcc46cb91e0e4afae247b946b16
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 3%
+
+---
+
+# 选项2：PostBuster设置
+
+>[!IMPORTANT]
+>
+>If you&#39;re not an Adobe employee, follow the instructions to [install Postman](./ex3.md){target="_blank"}. The below instructions are only intended for Adobe employees.
+
+## 视频
+
+在本视频中，您将获得本练习涉及的所有步骤的解释和演示。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3476496?quality=12&learn=on)
+
+## Install PostBuster
+
+Go to [https://adobe.service-now.com/esc?id=adb_esc_kb_article&amp;sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}.
+
+Click to download the latest release of **PostBuster**.
+
+![PostBuster](./images/pb1.png)
+
+Click the correct version for your OS.
+
+![PostBuster](./images/pb2.png)
+
+Download the file.
+
+![PostBuster](./images/pb2a.png)
+
+Once the download has completed and has been installed, open PostBuster. 您应该会看到此内容。 单击&#x200B;**导入**。
+
+![PostBuster](./images/pb3.png)
+
+Download [postbuster.json.zip](./../../../assets/postman/postbuster.json.zip){target="_blank"} and extract it on your desktop.
+
+![PostBuster](./images/pbpb.png)
+
+Click **Choose a File**.
+
+![PostBuster](./images/pb4.png)
+
+Select the file **postbuster.json**. 单击&#x200B;**打开**。
+
+![PostBuster](./images/pb5.png)
+
+您应该会看到此内容。 单击&#x200B;**扫描**。
+
+![PostBuster](./images/pb6.png)
+
+单击&#x200B;**导入**。
+
+![PostBuster](./images/pb7.png)
+
+您应该会看到此内容。 单击以打开导入的收藏集。
+
+![PostBuster](./images/pb8.png)
+
+现在，您可以看到自己的收藏集。 您仍需要配置环境以保存某些环境变量。
+
+![PostBuster](./images/pb9.png)
+
+单击&#x200B;**基本环境**，然后单击&#x200B;**编辑**&#x200B;图标。
+
+![PostBuster](./images/pb10.png)
+
+您应该会看到此内容。
+
+![PostBuster](./images/pb11.png)
+
+复制以下环境占位符，并通过替换其中的内容将其粘贴到&#x200B;**基本环境**&#x200B;中。
+
+```json
+{
+    "CLIENT_SECRET": "",
+    "API_KEY": "",
+    "ACCESS_TOKEN": "",
+    "SCOPES": [
+        "openid",
+        "AdobeID",
+        "read_organizations", 
+        "additional_info.projectedProductContext", 
+        "session",
+        "ff_apis",
+        "firefly_api",
+        "frame.s2s.all"
+    ],
+    "TECHNICAL_ACCOUNT_ID": "",
+    "IMS": "ims-na1.adobelogin.com",
+    "IMS_ORG": "",
+    "access_token": "",
+    "IMS_TOKEN": "",
+    "AZURE_STORAGE_URL": "",
+    "AZURE_STORAGE_CONTAINER": "",
+    "AZURE_STORAGE_SAS_READ": "",
+    "AZURE_STORAGE_SAS_WRITE": "",
+    "FRAME_IO_BASE_URL": "https://api.frame.io",
+    "FRAME_IO_ACCOUNT_ID": "",
+    "FRAME_IO_WORKSPACE_ID": ""
+}
+```
+
+然后您应该拥有此项。
+
+![PostBuster](./images/pb12.png)
+
+## 输入Adobe I/O变量
+
+转到[https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}并打开您的项目。
+
+![Adobe I/O新集成](./images/iopr.png)
+
+转到&#x200B;**OAuth服务器到服务器**。
+
+![Adobe I/O新集成](./images/iopbvar1.png)
+
+您现在需要从Adobe I/O项目中复制以下值，并将其粘贴到PostBuster基本环境中。
+
+- 客户端 ID
+- 客户端密码（单击&#x200B;**检索客户端密码**）
+- 技术帐户ID
+- 组织ID（向下滚动以查找您的组织ID）
+
+![Adobe I/O新集成](./images/iopbvar2.png)
+
+逐一复制上述变量，并将其粘贴到PostBuster中的&#x200B;**基本环境**&#x200B;中。
+
+| Adobe I/O中的Variable Name | PostBuster基本环境中的变量名称 |
+|:-------------:| :---------------:|
+| 客户端 ID | `API_KEY` |
+| 客户端密码 | `CLIENT_SECRET` |
+| 技术帐户ID | `TECHNICAL_ACCOUNT_ID` |
+| 组织 ID | `IMS_ORG` |
+
+逐个复制这些变量后，您的PostBuster基本环境应如下所示。
+
+单击&#x200B;**关闭**。
+
+![Adobe I/O新集成](./images/iopbvar3.png)
+
+在&#x200B;**Adobe IO - OAuth**&#x200B;集合中，选择名为&#x200B;**POST — 获取访问令牌**&#x200B;的请求，然后选择&#x200B;**发送**。
+
+![Adobe I/O新集成](./images/iopbvar3a.png)
+
+您应会看到包含以下信息的类似响应：
+
+| 键 | 值 |
+|:-------------:| :---------------:|
+| token_type | **持有人** |
+| access_token | **eyJhbGciOiJS...** |
+| expires_in | **86399** |
+
+Adobe I/O **bearer-token**&#x200B;具有特定值（非常长的access_token）和到期窗口，现在有效期为24小时。 这意味着24小时后，如果您要使用Postman与Adobe API交互，则必须通过再次运行此请求来生成新令牌。
+
+![Adobe I/O新集成](./images/iopbvar4.png)
+
+您的PostBuster环境现已配置完毕，可正常使用。 您现在已经完成了此练习。
+
+## 后续步骤
+
+转到[要安装的应用程序](./ex5.md){target="_blank"}
+
+返回[快速入门 — GenStudio](./getting-started-genstudio.md){target="_blank"}
+
+返回[所有模块](./../../../overview.md){target="_blank"}

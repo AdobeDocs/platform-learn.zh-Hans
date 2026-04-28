@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: b30b61491d55d926b0279ed618aad29f98854187
+source-git-commit: d04fa5f7706817c004849678574e3b75699ca675
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1494'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 + [AEP与应用程序实验室](/help/tutorial-one-adobe/aepapps.md)
 
 + 快速入门 {#gettingstarted}
-   + 快速入门 {#gettingstarted}
+   + Getting started - AEP &amp; Apps {#gettingstarted}
       + [概述](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [安装适用于Experience League文档的Chrome扩展](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
       + [使用Demo System Next设置您的Adobe Experience Platform数据收集客户端资产](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
@@ -37,6 +37,13 @@ ht-degree: 4%
       + [安装适用于Experience League文档的Chrome扩展](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex1.md)
       + [要安装的应用程序](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex2.md)
       + [使用网站](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-agenticai/ex3.md)
+   + 快速入门 — GenStudio {#gettingstartedgenstudio}
+      + [概述](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md)
+      + [安装适用于Experience League文档的Chrome扩展](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex1.md)
+      + [配置Adobe I/O项目](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex2.md)
+      + [选项1：Postman设置](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex3.md)
+      + [选项2：PostBuster设置](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex4.md)
+      + [要安装的应用程序](/help/tutorial-one-adobe/modules/getting-started/gettingstarted-genstudio/ex5.md)
 
 + 代理式 AI {#agents}
    + 1.1Agent Orchestrator {#agents1}

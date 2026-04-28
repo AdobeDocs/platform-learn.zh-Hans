@@ -3,10 +3,10 @@ title: GenStudio技术实验室
 description: GenStudio技术实验室
 doc-type: multipage-overview
 exl-id: be6284eb-60c8-49d7-bde1-d8dc148a07c2
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+source-git-commit: 2a552768bb4d0fcc46cb91e0e4afae247b946b16
 workflow-type: tm+mt
-source-wordcount: '691'
-ht-degree: 1%
+source-wordcount: '697'
+ht-degree: 0%
 
 ---
 
@@ -40,15 +40,15 @@ ht-degree: 1%
 
 下面是作为此次技术支持研讨会的一部分而您将参加的技术实验室。
 
-### 开始使用
+### 快速入门 — GenStudio
 
-[快速入门](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[快速入门](./modules/getting-started/gettingstarted-genstudio/getting-started-genstudio.md){target="_blank"}
 
 在本基本模块中，您将准备所有内容，以便能够访问和使用演示环境。
 
 ### 工作流程和规划
 
-[1.1 Adobe Workfront计划](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+[1.1 Adobe Workfront规划](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
 
 在本模块中，您将配置和使用Adobe Workfront Planning来创建新工作区、定义记录类型、管理记录、创建新请求表单并利用AI助手。
 
@@ -62,11 +62,11 @@ ht-degree: 1%
 
 在本模块中，您将使用Adobe Firefly Services API、Photoshop API和Microsoft Azure存储服务生成图像并以编程方式存储这些图像。
 
-[1.2 Creative Fusion的Workfront工作流自动化](./modules/creation-production/module1.2/automation.md){target="_blank"}
+[1.2使用Workfront Fusion实现Creative工作流自动化](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 在本模块中，您将使用Adobe Workfront Fusion来自动化和扩展内容创建工作流。
 
-[1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+[1.3GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
 
 在本模块中，您将使用Adobe GenStudio for Performance Marketing（面向营销和创意团队的面向人工智能的先进端到端工作流应用程序），通过数字营销活动的企业治理来创建、激活和优化全渠道内容。
 
@@ -96,7 +96,7 @@ ht-degree: 1%
 
 在本模块中，您将设置Adobe Experience Manager Cloud Service Program、Site和Assets存储库。
 
-[1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
+[1.2Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
 
 在本模块中，您将学习AEM Assets。
 
@@ -108,7 +108,7 @@ ht-degree: 1%
 
 在本模块中，您将设置AEM Assets Dynamic Media ，并在Adobe Journey Optimizer中使用Dynamic Media模板。
 
-[1.5 Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
+[1.5Adobe Commerce as a Cloud Service](./modules/asset-mgmt/module1.5/accs.md){target="_blank"}
 
 在本模块中，您将创建Adobe Commerce as a Cloud Service实例。 您将把Commerce实例连接到AEM Sites CS店面和AEM Assets CS环境。
 

@@ -3,9 +3,9 @@ title: Agentic AI技术实验室
 description: Agentic AI技术实验室
 doc-type: multipage-overview
 exl-id: 49515d00-05f6-4a28-96e0-dbdf66d8436b
-source-git-commit: e476d5b516dcbe0f094eb2dfc38f4985798ecc3b
+source-git-commit: 2a552768bb4d0fcc46cb91e0e4afae247b946b16
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '566'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 在[此处](./assets/images/architecture_agentic.jpg)下载架构概述图像。
 
-### 开始使用
+### 快速入门 — Agentic AI
 
-[快速入门](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
+[快速入门](./modules/getting-started/gettingstarted-agenticai/getting-started-agentic-ai.md){target="_blank"}
 
 在本基本模块中，您将准备所有内容，以便能够访问和使用演示环境。
 
@@ -65,7 +65,7 @@ Brand Concierge是一个AI支持的数字伙伴，它改变了品牌与其网站
 - 将ChatGPT和/或Claude.ai连接到&#x200B;**Customer Journey Analytics**&#x200B;并执行数据分析任务
 - 将ChatGPT和/或Claude.ai连接到&#x200B;**Adobe Analytics**&#x200B;并执行数据分析任务
 
-[1.6 AEM和代理](./modules/agents/module1.6/aemagents.md){target="_blank"}
+[1.6AEM与代理](./modules/agents/module1.6/aemagents.md){target="_blank"}
 
 **目标**
 
