@@ -58,7 +58,7 @@ In the **extensions** menu, click the **puzzle piece** icon and pin the **Platfo
 
 ## Configure the Chrome extension
 
-Go to [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} and then click the extension icon to open it.
+Go to [https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} and then click the extension icon to open it.
 
 ![DSN](./images/tuthome.png)
 
@@ -91,7 +91,7 @@ In the left menu of the extension, you&#39;ll now see a new icon with the initia
 
 ## 验证教程内容
 
-作为测试，请转到[此页面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}。
+作为测试，请转到[此页面](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}。
 
 您现在应该会看到，根据Chrome扩展中激活的环境，此页面上的所有&#x200B;**环境变量**&#x200B;都已替换为其真值。
 
