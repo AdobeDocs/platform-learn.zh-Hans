@@ -33,7 +33,7 @@ Go to [https://creativecloud.adobe.com/apps/download/creative-cloud](https://cre
 
 ## Adobe Premiere Pro
 
-Install Adobe Premiere Pro Beta version on your computer from [https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)
+Install Adobe Premiere Pro Beta version on your computer from [https://helpx.adobe.com/cn/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/cn/premiere-pro/using/premiere-pro-beta.html)
 
 ![Adobe I/O新集成](./images/prpro.png)
 
