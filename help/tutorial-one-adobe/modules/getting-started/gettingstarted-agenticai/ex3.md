@@ -2,9 +2,10 @@
 title: 快速入门 — Agentic AI — 使用您的AEM网站和AEP沙盒
 description: 快速入门 — Agentic AI — 使用您的AEM网站和AEP沙盒
 doc-type: multipage-overview
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: bace13f5-51e4-4b1f-99fa-88f4756e79d3
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -30,9 +31,11 @@ ht-degree: 0%
 >
 >以下所有屏幕截图都使用数字1仅供说明之用。 在执行以下步骤时，您需要使用分配给您的编号作为您收到的电子邮件的一部分。
 
-您的AEM程序会使用其名称中分配给您的编号。 您的AEM项目的名称应为：
+您的AEM程序会使用其名称中分配给您的编号。 您的AEM项目的名称应为以下名称之一：
 
-- **技术内部人士 — AEM + ACCS X**，其中X代表分配给您的数字。
+- **`Tech Insiders - AEM + ACCS X`**&#x200B;其中X代表分配给您的编号。
+- **`Tech Insiders On Demand - AEM + ACCS X`**&#x200B;其中X代表分配给您的编号。
+- **`--aepUserLdap-- - CitiSignal AEM+ACCS`**，在这种情况下，您没有编号，因为您使用的是自己创建的AEM程序。
 
 ![DSN](./images/aem1.png)
 
@@ -70,14 +73,14 @@ ht-degree: 0%
 
 要访问您的网站，您可以使用以下默认URL：
 
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/**
-- **https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.page/`**
+- **`https://main--techinsidersX-citisignal-aem-accs--woutervangeluwe.aem.live/`**
 
 您需要使用分配给您的编号来替换这些URL中的X。
 
 此外，还为每个网站创建了一个自定义域名，您可以使用此URL访问该域名：
 
-- **https://techinsidersX.adobedemosystem.com/**
+- **`https://techinsidersX.adobedemosystem.com/`**
 
 您需要使用分配给您的编号来替换这些URL中的X。
 

@@ -3,10 +3,11 @@ title: 快速入门 — 为Experience League文档安装Chrome扩展
 description: 快速入门 — 为Experience League文档安装Chrome扩展
 kt: 5342
 doc-type: tutorial
-source-git-commit: bdade61b2f64a5138807a47f73d8006ce9c564fc
+exl-id: a6057d20-b005-47c9-b294-263eaaf78084
+source-git-commit: 5884a7ae45251c4827ecd799990c93366a7a6662
 workflow-type: tm+mt
-source-wordcount: '624'
-ht-degree: 0%
+source-wordcount: '700'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +24,7 @@ ht-degree: 0%
 | 名称 | 键 | 示例 |
 |:-------------:| :---------------:| :---------------:|
 | IMS 组织 ID | `--aepImsOrgId--` | `907075E95BF479EC0A495C73@AdobeOrg` |
-| IMS组织名称 | `--aepImsOrgName--` | `Experience Platform International` |
+| IMS组织名称 | `--aepImsOrgName--` | `Adobe Tech Insiders` |
 | AEP租户ID | `--aepTenantId--` | `_experienceplatform` |
 | AEP沙盒名称 | `--aepSandboxName--` | `one-adobe` |
 | 学习者配置文件LDAP | `--aepUserLdap--` | `vangeluw` |
@@ -44,44 +45,56 @@ ht-degree: 0%
 
 ![DSN](./images/c2.png)
 
-你会看到这个。 Click **Add extension**.
+你会看到这个。 单击&#x200B;**添加扩展**。
 
 ![DSN](./images/c3.png)
 
-The extension will then be installed, and you&#39;ll see a similar notification.
+随后将安装扩展，您会看到一条类似通知。
 
 ![DSN](./images/c4.png)
 
-In the **extensions** menu, click the **puzzle piece** icon and pin the **Platform Learn - Configuration** extension to the extension menu.
+在&#x200B;**扩展**&#x200B;菜单中，单击&#x200B;**拼图块**&#x200B;图标，并将&#x200B;**Platform Learn - Configuration**&#x200B;扩展固定到扩展菜单。
 
 ![DSN](./images/c6.png)
 
-## Configure the Chrome extension
+## 配置Chrome扩展
 
-Go to [https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} and then click the extension icon to open it.
+转到[https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"}，然后单击扩展图标以将其打开。
 
 ![DSN](./images/tuthome.png)
 
-You&#39;ll then see this popup. Click the **+** icon.
+然后您会看到此弹出窗口。 单击&#x200B;**+**&#x200B;图标。
 
 ![DSN](./images/c7.png)
 
-Enter the values as indicated below, which are all related to your Adobe Experience Platform instance.
+输入如下所示的值，这些值都与您的Adobe Experience Platform实例相关。
 
 ![DSN](./images/c8.png)
 
-**Your LDAP**
+如果您正在参加以下活动之一，请使用如下所示的值。
 
-This is the username that will be used as part of the tutorial. In this example, the LDAP is based off of the email address of this user. The email address is **vangeluw@adobe.com** so the LDAP becomes **vangeluw**.
+| 名称 | 新奥尔良合作伙伴技术实验室 | 技术业内人士现场研讨会 | 技术内部人员按需支持 |
+|:-------------:| :---------------:| :---------------:|:---------------:|
+| IMS 组织 ID | `907075E95BF479EC0A495C73@AdobeOrg` | `907075E95BF479EC0A495C73@AdobeOrg` | `0B6930256441790E0A495FFE@AdobeOrg` |
+| IMS组织名称 | `Adobe Tech Insiders` | `Adobe Tech Insiders` | `CXO Enablement Training LAB` |
+| AEP租户ID | `_experienceplatform` | `_experienceplatform` | `_acsultimatesupport` |
+| AEP沙盒名称 | `one-adobe` | `one-adobe` | `one-adobe` |
+| 学习者配置文件LDAP | `XXX` | `XXX` | `XXX` |
 
-The LDAP is used to ensure that the configuration you&#39;ll be doing will be linked to you, and won&#39;t conflict with other users that may be using the same instance and sandbox that you&#39;re using.
+**您的学习者个人资料LDAP**
 
-Your values should look similar to these.
-Finally, click **Create New**.
+该用户名将在本教程中使用。 在此示例中，LDAP基于此用户的电子邮件地址。 如果电子邮件地址为&#x200B;**vangeluw@adobe.com**，则LDAP将变为&#x200B;**vangeluw**。
+
+如果您正在参加新奥尔良的合作伙伴技术实验室活动，请应用相同的逻辑并使用电子邮件地址的第一部分作为LDAP。
+
+LDAP用于确保您即将执行的配置将链接到您，并且不会与您正在使用的同一实例和沙盒的其他用户发生冲突。
+
+您的值应当类似于以下内容。
+最后，单击**新建**。
 
 ![DSN](./images/c8a.png)
 
-In the left menu of the extension, you&#39;ll now see a new icon with the initials of your environment. Click it. 然后，您将看到&#x200B;**环境变量**&#x200B;与您的特定Adobe Experience Platform实例值之间的映射。 单击&#x200B;**激活配置**。
+在扩展的左侧菜单中，您现在将看到一个包含环境缩写的新图标。 单击它。 然后，您将看到&#x200B;**环境变量**&#x200B;与您的特定Adobe Experience Platform实例值之间的映射。 单击&#x200B;**激活配置**。
 
 ![DSN](./images/c9.png)
 
@@ -91,7 +104,7 @@ In the left menu of the extension, you&#39;ll now see a new icon with the initia
 
 ## 验证教程内容
 
-作为测试，请转到[此页面](https://experienceleague.adobe.com/zh-hans/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}。
+作为测试，请转到[此页面](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/agents/agents1/ex1){target="_blank"}。
 
 您现在应该会看到，根据Chrome扩展中激活的环境，此页面上的所有&#x200B;**环境变量**&#x200B;都已替换为其真值。
 
