@@ -4,9 +4,9 @@ breadcrumb-title: 一门Adobe技术教程
 hide: true
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-source-git-commit: d04fa5f7706817c004849678574e3b75699ca675
+source-git-commit: 11ce179c0a94113dba391790ee6a86d70a7e9241
 workflow-type: tm+mt
-source-wordcount: '1494'
+source-wordcount: '1496'
 ht-degree: 4%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 4%
 + [AEP与应用程序实验室](/help/tutorial-one-adobe/aepapps.md)
 
 + 快速入门 {#gettingstarted}
-   + Getting started - AEP &amp; Apps {#gettingstarted}
+   + 快速入门 — AEP与应用程序 {#gettingstarted}
       + [概述](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
       + [安装适用于Experience League文档的Chrome扩展](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
       + [使用Demo System Next设置您的Adobe Experience Platform数据收集客户端资产](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
@@ -53,7 +53,7 @@ ht-degree: 4%
       + [1.1.3Adobe Marketing Agent for Microsoft 365 Copilot](/help/tutorial-one-adobe/modules/agents/module1.1/ex3.md)
       + [1.1.4 Adobe Marketing Agent适用于Google Gemini Enterprise](/help/tutorial-one-adobe/modules/agents/module1.1/ex4.md)
       + [1.1.5Adobe Marketing Agent为克劳德](/help/tutorial-one-adobe/modules/agents/module1.1/ex5.md)
-      + [1.1.6 ---](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
+      + [1.1.6人工智能工具](/help/tutorial-one-adobe/modules/agents/module1.1/ex6.md)
    + 1.2代理和人工智能快速入门 {#agents2}
       + [概述](/help/tutorial-one-adobe/modules/agents/module1.2/agenticai.md)
       + [1.2.1 Agentic AI快速入门](/help/tutorial-one-adobe/modules/agents/module1.2/ex1.md)

@@ -4,10 +4,10 @@ description: Agent Orchestrator
 kt: 5342
 doc-type: tutorial
 exl-id: de5a58bf-1a50-4fee-ae71-ba1774b990fb
-source-git-commit: 67ea511c48f2393fd671e4218852c8c3312eb440
+source-git-commit: beeb23f59f2191e7f48c9b0283627c8bed1ae11f
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 3%
+source-wordcount: '320'
+ht-degree: 6%
 
 ---
 
@@ -36,25 +36,29 @@ ht-degree: 3%
 
 ## 练习
 
-[1.1.1 AI助手和Agent Orchestrator](./ex1.md){target="_blank"}
+[1.1.1人工智能助理和Agent Orchestrator](./ex1.md){target="_blank"}
 
 在本练习中，您将以CitiSignal Fiber Max启动活动的背景来探索AI Assistant和Agent Orchestrator。
 
-适用于ChatGPT Enterprise的[1.1.2 Adobe Marketing Agent](./ex2.md){target="_blank"}
+[1.1.2适用于ChatGPT Enterprise的Adobe Marketing Agent](./ex2.md){target="_blank"}
 
 在本练习中，您将通过使用带有ChatGPT的Adobe Marketing Agent，在CitiSignal Fibre Max启动促销活动的背景下探索Agent Orchestrator的能力。
 
-[1.1.3 Adobe Marketing Agent for Microsoft 365 Copilot](./ex3.md){target="_blank"}
+[1.1.3Adobe Marketing Agent for Microsoft 365 Copilot](./ex3.md){target="_blank"}
 
 在本练习中，您将通过将Agent Orchestrator与Microsoft Copilot结合使用，在CitiSignal发布Fibre Max活动的背景下探讨Adobe Marketing Agent的能力。
 
-[1.1.4 Adobe Marketing Agent for Google Gemini Enterprise](./ex4.md){target="_blank"}
+[1.1.4 Adobe Marketing Agent适用于Google Gemini Enterprise](./ex4.md){target="_blank"}
 
 在本练习中，您将通过将Agent Orchestrator与Google Gemini结合使用，在CitiSignal发布Fiber Max活动的背景下探索Adobe Marketing Agent的能力。
 
-[1.1.5克劳德的Adobe Marketing Agent](./ex5.md){target="_blank"}
+[1.1.5Adobe Marketing Agent为克劳德](./ex5.md){target="_blank"}
 
 在本练习中，您将结合使用Adobe Marketing Agent与Claude，在CitiSignal为Fibre Max推出营销活动的背景下探讨Agent Orchestrator的能力。
+
+[1.1.6人工智能工具](./ex5.md){target="_blank"}
+
+在本练习中，您将以CitiSignal为Fiber Max发起的活动为背景，使用新的AI工具探索Agent Orchestrator的能力。
 
 ![技术内部人士](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
