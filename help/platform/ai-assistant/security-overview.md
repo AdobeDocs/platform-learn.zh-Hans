@@ -21,4 +21,4 @@ ht-degree: 0%
 
 这是基于<a href="https://www.adobe.com/cc-shared/assets/pdf/trust-center/ungated/whitepapers/experience-cloud/adobe-experience-platform-agent-orchestrator-security-overview.pdf">安全情况说明书</a>的AI Assistant安全功能概述。  有关其他信息，请参阅[AI助手隐私文档](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/ai-assistant/privacy)。
 
->[!VIDEO](https://video.tv.adobe.com/v/3441066/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3441090/?captions=chi_hans&learn=on&enablevpops)
