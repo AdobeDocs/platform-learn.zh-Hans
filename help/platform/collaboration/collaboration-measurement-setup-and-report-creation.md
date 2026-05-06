@@ -20,4 +20,4 @@ ht-degree: 0%
 
 了解如何在Real-Time CDP Collaboration中配置测量。 本指南介绍载入事件数据，以便能够创建链接到发布者促销活动数据的报告。 准确测量可帮助您分析营销活动效果并优化未来策略。 观看嵌入式视频，了解详细的步骤和见解。
 
->[!VIDEO](https://video.tv.adobe.com/v/3486343/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3486356/?captions=chi_hans&learn=on&enablevpops)
